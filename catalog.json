@@ -1028,6 +1028,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-toontown-el-capitoon.ts"
+    },
+    {
+      "id": "dlr-toontown-mickeys-house",
+      "file": "models/dlr-toontown-mickeys-house.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-toontown-mickeys-house.ts"
     }
   ],
   "landmarks": [
@@ -4073,6 +4080,20 @@
       "replaces": [
         "way/987163640",
         "relation/14558732"
+      ]
+    },
+    {
+      "id": "dlr-toontown-mickeys-house",
+      "name": "Mickey's House",
+      "model": "dlr-toontown-mickeys-house",
+      "lng": -117.9193644,
+      "lat": 33.8155436,
+      "bearing": 310,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q6838553",
+      "replaces": [
+        "way/185253879"
       ]
     }
   ]
