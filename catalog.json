@@ -755,6 +755,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-smurfit-stone.ts"
+    },
+    {
+      "id": "chi-two-prudential-plaza",
+      "file": "models/chi-two-prudential-plaza.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-two-prudential-plaza.ts"
     }
   ],
   "landmarks": [
@@ -2858,6 +2865,20 @@
         "way/284816227",
         "way/284816228",
         "way/284816229"
+      ]
+    },
+    {
+      "id": "chi-two-prudential-plaza",
+      "name": "Two Prudential Plaza",
+      "model": "chi-two-prudential-plaza",
+      "lng": -87.62272,
+      "lat": 41.885419,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1121971",
+      "replaces": [
+        "way/64388666"
       ]
     }
   ]
