@@ -951,6 +951,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-field-museum.ts"
+    },
+    {
+      "id": "chi-adler-planetarium",
+      "file": "models/chi-adler-planetarium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-adler-planetarium.ts"
     }
   ],
   "landmarks": [
@@ -3494,6 +3501,22 @@
       "wikidata": "Q1122595",
       "replaces": [
         "way/24825537"
+      ]
+    },
+    {
+      "id": "chi-adler-planetarium",
+      "name": "Adler Planetarium",
+      "model": "chi-adler-planetarium",
+      "lng": -87.6067964,
+      "lat": 41.8663603,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q358052",
+      "replaces": [
+        "way/24825591",
+        "way/766703208",
+        "way/686342956"
       ]
     }
   ]
