@@ -986,6 +986,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-rate-field.ts"
+    },
+    {
+      "id": "chi-united-center",
+      "file": "models/chi-united-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-united-center.ts"
     }
   ],
   "landmarks": [
@@ -3631,6 +3638,23 @@
         "way/1285755829",
         "way/1285778007",
         "way/1285778008"
+      ]
+    },
+    {
+      "id": "chi-united-center",
+      "name": "United Center",
+      "model": "chi-united-center",
+      "lng": -87.674184,
+      "lat": 41.88068,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q639975",
+      "replaces": [
+        "way/205221993",
+        "way/750458683",
+        "way/750458680",
+        "way/750458681"
       ]
     }
   ]
