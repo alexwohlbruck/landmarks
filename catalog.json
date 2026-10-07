@@ -727,6 +727,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-fourth-presbyterian.ts"
+    },
+    {
+      "id": "chi-palmolive-building",
+      "file": "models/chi-palmolive-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-palmolive-building.ts"
     }
   ],
   "landmarks": [
@@ -2767,6 +2774,20 @@
       "wikidata": "Q4290682",
       "replaces": [
         "way/129575948"
+      ]
+    },
+    {
+      "id": "chi-palmolive-building",
+      "name": "Palmolive Building",
+      "model": "chi-palmolive-building",
+      "lng": -87.623512,
+      "lat": 41.899771,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3387206",
+      "replaces": [
+        "way/143756601"
       ]
     }
   ]
