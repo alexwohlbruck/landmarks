@@ -734,6 +734,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-encore.ts"
+    },
+    {
+      "id": "lv-fontainebleau",
+      "file": "models/lv-fontainebleau.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-fontainebleau.ts"
     }
   ],
   "landmarks": [
@@ -2788,6 +2795,20 @@
       "wikidata": "Q1340132",
       "replaces": [
         "way/27910891"
+      ]
+    },
+    {
+      "id": "lv-fontainebleau",
+      "name": "Fontainebleau Las Vegas",
+      "model": "lv-fontainebleau",
+      "lng": -115.159404,
+      "lat": 36.137992,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q278380",
+      "replaces": [
+        "way/134068318"
       ]
     }
   ]
