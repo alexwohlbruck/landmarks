@@ -874,6 +874,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-thompson-center.ts"
+    },
+    {
+      "id": "chi-harold-washington-library",
+      "file": "models/chi-harold-washington-library.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-harold-washington-library.ts"
     }
   ],
   "landmarks": [
@@ -3258,6 +3265,20 @@
       "wikidata": "Q3161356",
       "replaces": [
         "way/230926922"
+      ]
+    },
+    {
+      "id": "chi-harold-washington-library",
+      "name": "Harold Washington Library Center",
+      "model": "chi-harold-washington-library",
+      "lng": -87.6282122,
+      "lat": 41.8763227,
+      "bearing": 359.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3127656",
+      "replaces": [
+        "way/28292694"
       ]
     }
   ]
