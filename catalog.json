@@ -1224,6 +1224,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-nga-west.ts"
+    },
+    {
+      "id": "dc-nga-east",
+      "file": "models/dc-nga-east.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-nga-east.ts"
     }
   ],
   "landmarks": [
@@ -4951,6 +4958,30 @@
         "way/426863091",
         "way/426863096",
         "way/426863098"
+      ]
+    },
+    {
+      "id": "dc-nga-east",
+      "name": "National Gallery of Art, East Building",
+      "model": "dc-nga-east",
+      "lng": -77.0166233,
+      "lat": 38.8912353,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q118314575",
+      "replaces": [
+        "way/66418590",
+        "way/426674750",
+        "way/426674751",
+        "way/426674752",
+        "way/426674753",
+        "way/426674754",
+        "way/426674755",
+        "way/426674756",
+        "way/426674757",
+        "way/426674758",
+        "way/426674759"
       ]
     }
   ]
