@@ -122,7 +122,7 @@ function round(p: Part, cx: number, cy: number, r0: number, z0: number, r1: numb
     const a = (i / n) * TAU, b = ((i + 1) / n) * TAU
     const P = (t: number, r: number, z: number): V3 => [cx + r * Math.cos(t), cy + r * Math.sin(t), z]
     const N = (t: number): V3 => unit3([Math.cos(t), Math.sin(t), k])
-    if (r1 <= 0.001) p.tri(P(a, r0, z0), P(b, r0, z0), [cx, cy, z1], [N(a), N(b), N((a + b) / 2)])
+    if (r1 <= 0.001) p.tri(P(a, r0, z0), P(b, r0, z0), [cx, cy, z1], undefined, undefined, undefined, [N(a), N(b), N((a + b) / 2)])
     else quad(p, P(a, r0, z0), P(b, r0, z0), P(b, r1, z1), P(a, r1, z1), [N(a), N(b), N(b), N(a)])
     if (top && r1 > 0.001) p.tri(P(a, r1, z1), P(b, r1, z1), [cx, cy, z1])
   }
