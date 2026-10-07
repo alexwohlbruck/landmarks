@@ -965,6 +965,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-soldier-field.ts"
+    },
+    {
+      "id": "chi-shedd-aquarium",
+      "file": "models/chi-shedd-aquarium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-shedd-aquarium.ts"
     }
   ],
   "landmarks": [
@@ -3552,6 +3559,24 @@
         "way/766782646",
         "way/766782652",
         "way/766782656"
+      ]
+    },
+    {
+      "id": "chi-shedd-aquarium",
+      "name": "Shedd Aquarium",
+      "model": "chi-shedd-aquarium",
+      "lng": -87.6140757,
+      "lat": 41.8676081,
+      "bearing": 358.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2166515",
+      "replaces": [
+        "relation/17430414",
+        "way/766506552",
+        "way/766511382",
+        "way/766511383",
+        "way/766511381"
       ]
     }
   ]
