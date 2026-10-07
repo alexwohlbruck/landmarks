@@ -762,6 +762,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-excalibur.ts"
+    },
+    {
+      "id": "lv-mandalay-bay",
+      "file": "models/lv-mandalay-bay.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-mandalay-bay.ts"
     }
   ],
   "landmarks": [
@@ -2912,6 +2919,21 @@
         "way/114865290",
         "way/567108281",
         "way/567108283"
+      ]
+    },
+    {
+      "id": "lv-mandalay-bay",
+      "name": "Mandalay Bay",
+      "model": "lv-mandalay-bay",
+      "lng": -115.174814,
+      "lat": 36.091804,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1368043",
+      "replaces": [
+        "way/27858550",
+        "way/118347176"
       ]
     }
   ]
