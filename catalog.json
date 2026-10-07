@@ -741,6 +741,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-900-north-michigan.ts"
+    },
+    {
+      "id": "chi-carbide-carbon",
+      "file": "models/chi-carbide-carbon.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-carbide-carbon.ts"
     }
   ],
   "landmarks": [
@@ -2811,6 +2818,22 @@
         "way/31064552",
         "way/153966972",
         "way/1283045515"
+      ]
+    },
+    {
+      "id": "chi-carbide-carbon",
+      "name": "Carbide & Carbon Building",
+      "model": "chi-carbide-carbon",
+      "lng": -87.625008,
+      "lat": 41.886526,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1925179",
+      "replaces": [
+        "way/148544831",
+        "way/147400407",
+        "way/148544830"
       ]
     }
   ]
