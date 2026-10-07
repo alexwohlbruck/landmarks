@@ -916,6 +916,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-picasso.ts"
+    },
+    {
+      "id": "chi-flamingo",
+      "file": "models/chi-flamingo.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-flamingo.ts"
     }
   ],
   "landmarks": [
@@ -3386,6 +3393,18 @@
       "elevation": 0,
       "minzoom": 16,
       "wikidata": "Q5095736",
+      "replaces": []
+    },
+    {
+      "id": "chi-flamingo",
+      "name": "Flamingo",
+      "model": "chi-flamingo",
+      "lng": -87.6296809,
+      "lat": 41.8788065,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3073296",
       "replaces": []
     }
   ]
