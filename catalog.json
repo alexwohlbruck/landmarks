@@ -727,6 +727,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-wynn.ts"
+    },
+    {
+      "id": "lv-encore",
+      "file": "models/lv-encore.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-encore.ts"
     }
   ],
   "landmarks": [
@@ -2767,6 +2774,20 @@
       "wikidata": "Q1309059",
       "replaces": [
         "way/205501268"
+      ]
+    },
+    {
+      "id": "lv-encore",
+      "name": "Encore Las Vegas",
+      "model": "lv-encore",
+      "lng": -115.16476,
+      "lat": 36.129408,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1340132",
+      "replaces": [
+        "way/27910891"
       ]
     }
   ]
