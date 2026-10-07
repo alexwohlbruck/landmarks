@@ -797,6 +797,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-medinah-temple.ts"
+    },
+    {
+      "id": "chi-holy-name-cathedral",
+      "file": "models/chi-holy-name-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-holy-name-cathedral.ts"
     }
   ],
   "landmarks": [
@@ -2993,6 +3000,20 @@
       "wikidata": "Q14687867",
       "replaces": [
         "way/210680454"
+      ]
+    },
+    {
+      "id": "chi-holy-name-cathedral",
+      "name": "Holy Name Cathedral",
+      "model": "chi-holy-name-cathedral",
+      "lng": -87.627533,
+      "lat": 41.895984,
+      "bearing": 358.7,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2942930",
+      "replaces": [
+        "way/75684994"
       ]
     }
   ]
