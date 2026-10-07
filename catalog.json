@@ -937,6 +937,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-barnstormer.ts"
+    },
+    {
+      "id": "dlr-sleeping-beauty-castle",
+      "file": "models/dlr-sleeping-beauty-castle.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-sleeping-beauty-castle.ts"
     }
   ],
   "landmarks": [
@@ -3609,6 +3616,60 @@
         "way/989772765",
         "way/655715819",
         "way/655715820"
+      ]
+    },
+    {
+      "id": "dlr-sleeping-beauty-castle",
+      "name": "Sleeping Beauty Castle",
+      "model": "dlr-sleeping-beauty-castle",
+      "lng": -117.91954,
+      "lat": 33.8127932,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2746222",
+      "replaces": [
+        "relation/7751688",
+        "way/331440228",
+        "way/123045121",
+        "way/123045134",
+        "way/123045120",
+        "way/123045140",
+        "way/123045135",
+        "way/331440225",
+        "way/123045145",
+        "way/123045122",
+        "way/132311785",
+        "way/312549916",
+        "way/312549915",
+        "way/123045133",
+        "way/123045143",
+        "way/123045150",
+        "way/331430139",
+        "way/332667874",
+        "way/332667877",
+        "way/332667876",
+        "way/332667873",
+        "way/123045128",
+        "way/123045136",
+        "way/123045130",
+        "way/331430135",
+        "way/335137574",
+        "way/335316774",
+        "way/312550372",
+        "way/123045118",
+        "way/123045132",
+        "way/123045142",
+        "way/123045129",
+        "way/123045126",
+        "way/123045141",
+        "way/160998709",
+        "way/331440221",
+        "way/331440238",
+        "way/331440240",
+        "way/123045127",
+        "way/123045147",
+        "way/942038269"
       ]
     }
   ]
