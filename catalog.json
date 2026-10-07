@@ -1196,6 +1196,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-air-and-space.ts"
+    },
+    {
+      "id": "dc-nmaahc",
+      "file": "models/dc-nmaahc.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-nmaahc.ts"
     }
   ],
   "landmarks": [
@@ -4841,6 +4848,21 @@
       "replaces": [
         "relation/16159112",
         "way/535720705"
+      ]
+    },
+    {
+      "id": "dc-nmaahc",
+      "name": "National Museum of African American History and Culture",
+      "model": "dc-nmaahc",
+      "lng": -77.0327036,
+      "lat": 38.8910616,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q3073495",
+      "replaces": [
+        "way/398810868",
+        "way/898560007"
       ]
     }
   ]
