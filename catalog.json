@@ -748,6 +748,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-carbide-carbon.ts"
+    },
+    {
+      "id": "chi-smurfit-stone",
+      "file": "models/chi-smurfit-stone.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-smurfit-stone.ts"
     }
   ],
   "landmarks": [
@@ -2834,6 +2841,23 @@
         "way/148544831",
         "way/147400407",
         "way/148544830"
+      ]
+    },
+    {
+      "id": "chi-smurfit-stone",
+      "name": "Crain Communications Building",
+      "model": "chi-smurfit-stone",
+      "lng": -87.624977,
+      "lat": 41.88483,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2444330",
+      "replaces": [
+        "way/210671717",
+        "way/284816227",
+        "way/284816228",
+        "way/284816229"
       ]
     }
   ]
