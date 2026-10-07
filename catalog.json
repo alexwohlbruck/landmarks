@@ -671,6 +671,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/carowinds-windseeker.ts"
+    },
+    {
+      "id": "lv-strat",
+      "file": "models/lv-strat.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-strat.ts"
     }
   ],
   "landmarks": [
@@ -2536,6 +2543,21 @@
       "minzoom": 14,
       "replaces": [
         "way/893187005"
+      ]
+    },
+    {
+      "id": "lv-strat",
+      "name": "The STRAT Tower",
+      "model": "lv-strat",
+      "lng": -115.15552,
+      "lat": 36.147409,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q845846",
+      "replaces": [
+        "way/135457469",
+        "way/503324066"
       ]
     }
   ]
