@@ -888,6 +888,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-crown-fountain.ts"
+    },
+    {
+      "id": "chi-buckingham-fountain",
+      "file": "models/chi-buckingham-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-buckingham-fountain.ts"
     }
   ],
   "landmarks": [
@@ -3302,6 +3309,18 @@
         "way/126945440",
         "way/126945441"
       ]
+    },
+    {
+      "id": "chi-buckingham-fountain",
+      "name": "Buckingham Fountain",
+      "model": "chi-buckingham-fountain",
+      "lng": -87.618972,
+      "lat": 41.875802,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q158989",
+      "replaces": []
     }
   ]
 }
