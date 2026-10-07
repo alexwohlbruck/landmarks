@@ -1,36 +1,63 @@
 # Landmarks
 
-Hand-made 3D models that stand in for a building's extrusion on the map, the
-way Apple Maps and Mapbox draw the Eiffel Tower as a tower rather than a box.
+Hand-made 3D models of landmarks for maps: a stand-in for a building's plain
+extrusion, the way Apple Maps draws the Eiffel Tower as a tower rather than a
+box. Every model is generated from code, kept small (a few thousand
+triangles, no textures) and drawn in one shared palette, so a city's
+landmarks look like one set.
 
-Barrelman syncs `catalog.json` into the database at startup and serves:
+The dataset is published as static files in the
+[Open Landmarks](https://github.com/benjamintd/open-landmarks) release format
+at **https://alexwohlbruck.github.io/landmarks/**, so any client that reads
+Open Landmarks reads this too. [Barrelman](https://github.com/alexwohlbruck/barrelman)
+imports it beside Open Landmarks and serves both to
+[Parchment](https://github.com/alexwohlbruck/parchment) as one tile layer.
 
-- `GET /tiles/landmarks/{z}/{x}/{y}`: a vector tile with one `landmarks`
-  point layer, one point per placement.
-- `GET /tiles/landmarks/models/{id}.{sha12}.glb`: the models. The file name
-  includes a hash of the content, so these are served as immutable.
+## Layout
+
+| Path | What |
+|---|---|
+| `catalog.json` | Every model and every placement of it |
+| `models/<id>.glb` | The models, as the generators write them |
+| `generators/<id>.ts` | One generator per model: the source of truth for its GLB |
+| `generators/mesh.ts`, `palette.ts`, `coaster-kit.ts` | The shared kit the generators build with |
+| `STYLE.md` | The art style, and how to build a model that holds up to review |
+| `tools/` | `preview.ts` and `sheet.ts`, for looking at models without a browser |
+| `src/` | The release build: validation, placement baking, the published format |
+| `test/` | Tests for the build and the catalog |
+
+`bun install` once; nothing else is needed. Bun runs everything.
+
+| Command | Does |
+|---|---|
+| `bun generators/<id>.ts` | Write `models/<id>.glb` |
+| `bun run validate` | Check the catalog and every model, as the release build does |
+| `bun run preview <id>` | Render one model from every side into `preview/<id>/` |
+| `bun run sheet <id ...>` | Contact sheets for a list of landmarks, into `preview/sheets/` |
+| `bun run sheet --branch-diff` | Contact sheets for everything this branch adds or changes |
+| `bun run build` | Validate, then write the release to `dist/` |
+| `bun test` / `bun run typecheck` | Tests, types |
 
 ## Models and placements
 
 The catalog keeps two lists, because a model and the places it stands are
 different things.
 
-A **model** is a GLB file plus its `license`, `author` and `source`. It has to
-follow the frame contract below.
+A **model** is a GLB plus its `license`, `author` and `source` (its
+generator). A **landmark** places a model:
 
-A **landmark** places a model. It gives:
-
-- `lng`/`lat` of the anchor
-- `bearing`: degrees clockwise from north that the model's north is turned to
-- `scale`, plus an optional `elevation` and `minzoom`
-- `replaces`: the OSM elements it stands in for
+- `id` and `name`;
+- `lng`/`lat` of the anchor;
+- `bearing`: degrees clockwise from north that the model's north is turned to;
+- `scale`, plus an optional `elevation` and `minzoom` (14 when absent);
+- `replaces`: the OSM elements it stands in for, as `way/123` or `relation/456`;
+- `wikidata`, where the landmark has an item.
 
 The Eiffel Tower model is placed twice: in Paris, and on the Las Vegas Strip
-at `scale: 0.5`. The Statue of Liberty is placed on Liberty Island, with
-`elevation: 10` so its pedestal rests on Fort Wood's map geometry. Its five
-`replaces` entries hide only the pedestal parts, preserving the star-shaped fort.
+at `scale: 0.5`. The Statue of Liberty stands on Liberty Island with
+`elevation: 10`, so her pedestal rests on Fort Wood's map geometry.
 
-## The frame contract
+### The frame contract
 
 Every model uses the same frame, so a client can place it from a position, a
 bearing and a scale alone:
@@ -38,20 +65,18 @@ bearing and a scale alone:
 - **+Y is up, -Z is north, +X is east.**
 - **Units are metres.**
 - **The origin is the anchor, on the lowest ground the footprint touches.**
-  The model stands on y = 0. With terrain on, Parchment samples the ground
+  The model stands on y = 0. With terrain on, the map samples the ground
   across the footprint and puts y = 0 at the lowest point, so on a slope the
   uphill side sinks into the hill rather than the downhill side floating.
-- **There is no transform on the root node.** The server sizes models from the
-  POSITION accessors' min/max, which ignores node transforms.
+- **There is no transform on the root node.** Moving parts are child nodes
+  (see Animation in `STYLE.md`).
 
-## What `replaces` must list
+### What `replaces` must list
 
 The client hides buildings by OSM id. List the outline and every
-`building:part` inside it, written as `way/123` or `relation/456`.
-
-Detailed buildings are mapped twice in OSM: an outline over the whole
-footprint, and `building:part` polygons inside it. A ref left off this list
-keeps drawing, and shows through the model as a box.
+`building:part` inside it. Detailed buildings are mapped twice in OSM, an
+outline over the whole footprint and `building:part` polygons inside it, and a
+ref left off this list keeps drawing and shows through the model as a box.
 
 To find the parts, select the outline in the iD editor and look at what sits
 inside it, or ask Overpass:
@@ -64,39 +89,118 @@ Some parts are separate buildings that happen to sit inside the outline, such
 as the ticket booths under the Eiffel Tower. Leave those off if the model
 doesn't cover them.
 
-A roller coaster lists its track ways too, as well as its station. Clients
-draw the `coaster_tracks` layer as lines and hide the ways a landmark
-replaces, so a way left off this list draws through the model. List every way
-the model draws, including the covered and tunnel stretches. Leave off the
-spurs and sidings it doesn't draw (`service=siding`).
+A roller coaster lists its track ways too, as well as its station: maps draw
+coaster tracks as lines and hide the ways a landmark replaces, so a way left
+off draws through the model. List every way the model draws, including
+covered and tunnel stretches, and leave off spurs and sidings it doesn't
+draw (`service=siding`).
 
-## Making a model
+## Adding a model
 
-Follow the art style in [`STYLE.md`](STYLE.md), and check every model with `scripts/landmarks/preview.ts` before adding it.
+1. **Pick the id.** A lowercase slug, prefixed with its city or park when it
+   belongs to a batch (`clt-`, `wdw-`, `carowinds-`). The model, its
+   generator and its first placement share it.
+2. **Gather evidence and build it** as `STYLE.md` describes: OSM, published
+   dimensions, photos from several sides. Record in the generator's header
+   comment where every number came from and what is estimated.
+3. **Write `generators/<id>.ts`** with the kit (`mesh.ts`, `palette.ts`, and
+   `coaster-kit.ts` for rides). The worked examples are
+   `generators/eiffel-tower.ts`, `generators/chrysler-building.ts` and
+   `generators/carowinds-fury-325.ts`. It writes `models/<id>.glb`:
 
-Keep models stylised, simple and accurate. A few thousand triangles is plenty.
-For repeated detail like lattices, railings and window grids, use an
-alpha-masked texture (`alphaMode: MASK`) on a few quads instead of real
-geometry. It looks like the real thing at map distances, and it carries into
-shadows.
+       bun generators/<id>.ts
 
-`scripts/landmarks/mesh.ts` is a small, dependency-free kit for building
-models in code: lofts, slabs, swept tubes, PNG masks and a GLB writer.
-`scripts/landmarks/eiffel-tower.ts` is the worked example. It is the source of
-truth for its asset, so to change the tower, edit the script and regenerate:
+4. **Look at it.** `bun run preview <id>` renders every view the review
+   checklist in `STYLE.md` asks for, with map lighting, into `preview/<id>/`.
+   Pass PNG photos to get side-by-side comparisons.
+5. **Add it to `catalog.json`**: a `models` entry
+   (`"license": "CC0-1.0"`, `"author"`, `"file": "models/<id>.glb"`,
+   `"source": "generators/<id>.ts"`) and a `landmarks` entry placing it.
+6. **`bun run validate`**, then `bun test`.
+7. **Open a pull request** with its contact sheet (below).
 
-    bun scripts/landmarks/eiffel-tower.ts
-
-The Statue of Liberty generator uses the same kit, with smooth, creased
-copper forms and a flat-shaded granite pedestal:
-
-    bun scripts/landmarks/statue-of-liberty.ts
-
-Its local origin is the centre of the pedestal base on top of Fort Wood. The
-heel is at model height 36.9 m and the flame tip at 83 m. Before placement she
-faces south, with the raised torch on the west side; the catalog applies the
-327° bearing. Like the Eiffel Tower generator, this is an offline asset-authoring
-script, not an operational data-refresh task in the admin console.
-
-Models from Blender or another tool work too, as long as they follow the
+Models made in Blender or elsewhere are fine too, as long as they follow the
 frame contract and carry a licence the catalog can state.
+
+## Batch pull requests
+
+New models arrive in batches: one branch and one pull request per city or
+park, usually 20 to 50 models.
+
+- **Ids share a prefix** for the batch (`clt-`, `wdw-`, `nyc-`), so the batch
+  sorts together and its files are easy to find.
+- **One generator per model**, `generators/<id>.ts`, plus its
+  `models/<id>.glb` and its catalog entries. Helpers shared within the batch
+  go in a generator the others import (as `clt-terminal.ts` does for the
+  airport); helpers useful beyond it go in the kit, in their own commit.
+- **One commit per model**, so a model can be reviewed, reverted or dropped
+  alone.
+- **Contact sheets in the PR description.** Reviewers look at the sheets
+  first. Make them with:
+
+      bun run sheet --branch-diff --out review/<batch>
+
+  Each image holds 8 landmarks (`--per` changes it): a three-quarter view
+  from the south-west, turned to the landmark's real bearing, and the same
+  view at phone size, labelled with id, name, anchor and size.
+
+GitHub has no API for attaching images to a pull request, so the sheets are
+committed on the PR branch and linked by commit:
+
+1. `git add review/<batch> && git commit -m "Contact sheets for <batch>"` and push.
+2. Link each image in the PR body by that commit's SHA, so the link outlives
+   the files:
+
+       ![sheet 1](https://raw.githubusercontent.com/alexwohlbruck/landmarks/<sha>/review/<batch>/sheet-1.png)
+
+3. Before merging, `git rm -r review/<batch>` in a last commit. The images
+   stay reachable through the PR's commits. The release workflow fails on
+   `main` if `review/` is still there.
+
+## Releases
+
+`bun run build` validates the catalog and every model, fails on any problem,
+and writes `dist/` in the Open Landmarks format:
+
+| Path | What |
+|---|---|
+| `api/v1/latest.json`, `api/v1/preview.json` | Channel pointers. Both name the current release |
+| `api/v1/releases/<release>/catalogue.json` | The release: count, bounds, attribution, links |
+| `api/v1/releases/<release>/assets.json` | Every asset record |
+| `api/v1/releases/<release>/index/12/<x>/<y>.json` | The same records, by z12 tile |
+| `models/<id>/<sha256>/low.glb` (+ `.gz`) | Models, content-addressed, with a gzip file of each |
+| `assets/<id>/<revision>/asset.json` | One record on its own |
+| `objects/<sha256>/<id>.ts` | The generator that made it |
+
+Each placement is one asset. Open Landmarks has no bearing, scale or
+elevation (its assets are baked in place with `heading: 0`), so the build
+bakes each placement into its own copy of the GLB: static geometry has its
+vertices turned, scaled and lifted, and moving parts have the same transform
+folded into their node and keyframes, so they still move. A placement with
+nothing to bake keeps the model's bytes exactly, and identical bytes are
+stored once. `replaces` becomes `osm` (the first ref) and `additionalOsm`
+(the rest). Two fields are additions to the format: `wikidata`, and `model`
+with `placement`, recording what was baked.
+
+The build reads no clock and no git state, so the same catalog always gives
+the same files and the same release id (`landmarks-<hash>`). Clients that
+skip an unchanged release, as Barrelman does, skip a push that changed
+nothing.
+
+Every push to `main` runs the tests, builds, and deploys `dist/` to GitHub
+Pages (`.github/workflows/release.yml`). There is no separate release step:
+merging is releasing. Pages holds only the current release, so a client
+should read the pointer, catalogue and assets in one go, as Open Landmarks
+clients do.
+
+## Licences
+
+- **Models are CC0-1.0**: public domain, no credit needed. Each states its
+  licence in the catalog and in its asset record; a model under another
+  licence must say so, and a CC-BY one must carry an `attribution`.
+- **Placements are ODbL-1.0.** Anchors and `replaces` are derived from
+  OpenStreetMap, © OpenStreetMap contributors.
+- The code in `src/`, `tools/` and `generators/` is CC0-1.0 as well.
+
+Reference photos used while modelling keep their own licences and are not
+part of this repo.
