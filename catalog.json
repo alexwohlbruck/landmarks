@@ -706,6 +706,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-st-regis.ts"
+    },
+    {
+      "id": "chi-aqua",
+      "file": "models/chi-aqua.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-aqua.ts"
     }
   ],
   "landmarks": [
@@ -2694,6 +2701,29 @@
         "way/465242991",
         "way/465242992",
         "way/465242990"
+      ]
+    },
+    {
+      "id": "chi-aqua",
+      "name": "Aqua",
+      "model": "chi-aqua",
+      "lng": -87.619901,
+      "lat": 41.88631,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q622895",
+      "replaces": [
+        "way/95486962",
+        "way/686330072",
+        "way/1178533833",
+        "way/1178533841",
+        "way/1178533854",
+        "way/1178533855",
+        "way/1178533856",
+        "way/1178533857",
+        "way/1178533858",
+        "way/1178533859"
       ]
     }
   ]
