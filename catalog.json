@@ -1014,6 +1014,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-mark-twain.ts"
+    },
+    {
+      "id": "dlr-peoplemover-track",
+      "file": "models/dlr-peoplemover-track.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-peoplemover-track.ts"
     }
   ],
   "landmarks": [
@@ -4007,6 +4014,44 @@
       "minzoom": 16,
       "wikidata": "Q3006137",
       "replaces": []
+    },
+    {
+      "id": "dlr-peoplemover-track",
+      "name": "PeopleMover",
+      "model": "dlr-peoplemover-track",
+      "lng": -117.9171189,
+      "lat": 33.8127842,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2907508",
+      "replaces": [
+        "way/371961449",
+        "way/524008560",
+        "way/133808477",
+        "way/134478631",
+        "way/134478629",
+        "way/136149024",
+        "way/135566805",
+        "way/135566811",
+        "way/134478628",
+        "way/112299063",
+        "way/1516924401",
+        "way/1516924402",
+        "way/1550883946",
+        "way/1550883947",
+        "way/1550883948",
+        "way/1550883949",
+        "way/1550883951",
+        "way/1550883952",
+        "way/133881710",
+        "way/1550883945",
+        "way/1550883944",
+        "way/134991715",
+        "way/110199422",
+        "way/133808478",
+        "way/524008551"
+      ]
     }
   ]
 }
