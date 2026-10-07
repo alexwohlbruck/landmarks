@@ -811,6 +811,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-marina-city.ts"
+    },
+    {
+      "id": "chi-board-of-trade",
+      "file": "models/chi-board-of-trade.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-board-of-trade.ts"
     }
   ],
   "landmarks": [
@@ -3043,6 +3050,26 @@
         "way/284822930",
         "way/284822932",
         "way/1177923721"
+      ]
+    },
+    {
+      "id": "chi-board-of-trade",
+      "name": "Chicago Board of Trade Building",
+      "model": "chi-board-of-trade",
+      "lng": -87.631869,
+      "lat": 41.877411,
+      "bearing": 359.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2224700",
+      "replaces": [
+        "way/28951633",
+        "way/685519266",
+        "way/685519267",
+        "way/685519269",
+        "way/685519270",
+        "way/1425860168",
+        "way/1425860169"
       ]
     }
   ]
