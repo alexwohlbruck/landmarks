@@ -1182,6 +1182,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-arts-and-industries.ts"
+    },
+    {
+      "id": "dc-hirshhorn",
+      "file": "models/dc-hirshhorn.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-hirshhorn.ts"
     }
   ],
   "landmarks": [
@@ -4791,6 +4798,27 @@
         "way/908820590",
         "way/908820591",
         "way/908820592"
+      ]
+    },
+    {
+      "id": "dc-hirshhorn",
+      "name": "Hirshhorn Museum",
+      "model": "dc-hirshhorn",
+      "lng": -77.0229526,
+      "lat": 38.888177,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1620553",
+      "replaces": [
+        "relation/3374667",
+        "relation/3374669",
+        "way/66418857",
+        "way/251495385",
+        "way/251495386",
+        "way/251495387",
+        "way/251495388",
+        "way/909145546"
       ]
     }
   ]
