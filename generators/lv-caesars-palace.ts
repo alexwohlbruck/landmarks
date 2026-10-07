@@ -4,8 +4,7 @@
  * bun generators/lv-caesars-palace.ts
  *
  * This file also exports the small plan-and-facade kit that the other
- * Las Vegas resorts built alongside it (lv-paris-resort, lv-flamingo,
- * lv-planet-hollywood) import. The model itself is only written when the
+ * Las Vegas resorts built alongside it (lv-paris-resort) import. The model itself is only written when the
  * file is run directly.
  *
  * Map frame: x east, y north, z up, metres. Bearing 1.8°: the towers' long
