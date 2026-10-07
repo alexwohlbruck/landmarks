@@ -713,6 +713,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-aqua.ts"
+    },
+    {
+      "id": "chi-aon-center",
+      "file": "models/chi-aon-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-aon-center.ts"
     }
   ],
   "landmarks": [
@@ -2724,6 +2731,21 @@
         "way/1178533857",
         "way/1178533858",
         "way/1178533859"
+      ]
+    },
+    {
+      "id": "chi-aon-center",
+      "name": "Aon Center",
+      "model": "chi-aon-center",
+      "lng": -87.621548,
+      "lat": 41.885281,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q271695",
+      "replaces": [
+        "way/64388609",
+        "way/284775635"
       ]
     }
   ]
