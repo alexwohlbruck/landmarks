@@ -1049,6 +1049,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-guardians-mission-breakout.ts"
+    },
+    {
+      "id": "dlr-carthay-circle",
+      "file": "models/dlr-carthay-circle.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-carthay-circle.ts"
     }
   ],
   "landmarks": [
@@ -4142,6 +4149,24 @@
         "way/123423748",
         "way/123423749",
         "way/123423747"
+      ]
+    },
+    {
+      "id": "dlr-carthay-circle",
+      "name": "Carthay Circle Theatre",
+      "model": "dlr-carthay-circle",
+      "lng": -117.9189217,
+      "lat": 33.8073827,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q75339567",
+      "replaces": [
+        "way/338063157",
+        "way/338063109",
+        "way/338063116",
+        "way/336940997",
+        "way/336948504"
       ]
     }
   ]
