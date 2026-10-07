@@ -1,6 +1,6 @@
 /**
  * Parachute Jump, Coney Island — original procedural geometry, CC0-1.0.
- * bun scripts/landmarks/parachute-jump.ts
+ * bun generators/parachute-jump.ts
  *
  * Map frame: x east, y north, z up, metres; origin at the centre of the
  * pavilion on the plaza. Placed at bearing 351.5°, the Coney Island street
@@ -287,7 +287,7 @@ const glb = writeGlb('Parachute Jump', parts, {
   bearing: 351.5, elevation: 0, height: 80, canopyRadius: RIM + 1.35, shaftTop: SHAFT_TOP,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/parachute-jump.glb', import.meta.url).pathname
+const out = new URL('../models/parachute-jump.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)
 console.log(parts.map(({ part, material }) => `  ${material.name}: ${part.triangles}`).join('\n'))

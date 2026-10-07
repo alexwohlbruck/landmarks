@@ -1,7 +1,7 @@
 /**
  * Kiddy Hawk (formerly Rugrats Runaway Reptar, then Flying Ace Aerial
  * Chase), Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-kiddy-hawk.ts   (REPORT=1 for the element table)
+ * bun generators/carowinds-kiddy-hawk.ts   (REPORT=1 for the element table)
  *
  * Map frame: x east, y north, z up, metres; bearing 0, so the frame is true
  * north. The origin is the middle of the ride's footprint (see the anchor), at
@@ -85,7 +85,7 @@ const STATION: [number, number][] = [
 
 await buildCoaster({
   name: 'Kiddy Hawk',
-  out: '../../landmarks/models/carowinds-kiddy-hawk.glb',
+  out: '../models/carowinds-kiddy-hawk.glb',
   chain: CHAIN,
   anchor: [210, -101],
   ground: { x0: 175, y0: -130, step: 10, rows: GROUND, base: 193.1 },

@@ -1,7 +1,7 @@
 /**
  * Vest Station water towers, Beatties Ford Road at Patton Ave, Charlotte —
  * procedural, CC0-1.0.
- * bun scripts/landmarks/beatties-ford-water-tower.ts
+ * bun generators/beatties-ford-water-tower.ts
  *
  * Map frame: x east, y north, z up, metres; origin on the ground midway
  * between the two towers' OSM outlines (way/869290547, a 19.7 m circle, and
@@ -221,5 +221,5 @@ if (triangles > 2500) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('Vest Station water towers', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres, origin at ground', height: 40.8, bearing: 0,
 })
-await Bun.write(new URL('../../landmarks/models/beatties-ford-water-tower.glb', import.meta.url), glb)
+await Bun.write(new URL('../models/beatties-ford-water-tower.glb', import.meta.url), glb)
 console.log(`beatties-ford-water-tower.glb: ${triangles} triangles, ${glb.length} bytes`)

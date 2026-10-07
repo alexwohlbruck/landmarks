@@ -2,7 +2,7 @@
  * Charlotte Douglas International Airport (CLT): the FAA air traffic control
  * tower — procedural, CC0-1.0.
  *
- *   bun scripts/landmarks/clt-control-tower.ts
+ *   bun generators/clt-control-tower.ts
  *
  * The 2015 tower south of the terminal (OSM way/589068976, height 113 m;
  * Wikipedia gives 367 ft). A plain white round shaft that flares like a
@@ -55,6 +55,6 @@ const glb = writeGlb('Charlotte Douglas Air Traffic Control Tower', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at ground anchor', bearing: 0, elevation: 0, height: 113,
 })
 if (glb.length > 250_000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/clt-control-tower.glb', import.meta.url).pathname
+const out = new URL('../models/clt-control-tower.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

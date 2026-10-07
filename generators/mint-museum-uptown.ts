@@ -1,7 +1,7 @@
 /**
  * Mint Museum Uptown, Levine Center for the Arts, Charlotte — procedural,
  * CC0-1.0, no textures.
- * bun scripts/landmarks/mint-museum-uptown.ts
+ * bun generators/mint-museum-uptown.ts
  *
  * Map frame: x across the building (the Duke Energy side -x, Levine Avenue of
  * the Arts +x), y from the Tryon front (-y), which faces South Tryon Street
@@ -343,7 +343,7 @@ sweep(outline, [
   { p: metal, d0: -0.7, z0: TOP, d1: -0.7, z1: ROOF, n0: IN, n1: IN },
 ])
 
-// The shared palette (landmarks/STYLE.md). The buff sandstone is the
+// The shared palette (STYLE.md). The buff sandstone is the
 // building's identity, so it is a finish: the photos' golden buff pulled up
 // to the palette's lightness. The soffit's dark-stained wood is the other
 // defining colour, kept dark enough to read but no darker than charcoal.
@@ -365,6 +365,6 @@ const glb = writeGlb('Mint Museum Uptown', parts, {
   bearing: 318.5, osm: 'way/131139755', footprint: [X1 - X0, Y1 - Y0], height: TOP,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/mint-museum-uptown.glb', import.meta.url).pathname
+const out = new URL('../models/mint-museum-uptown.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

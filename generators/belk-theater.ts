@@ -1,7 +1,7 @@
 /**
  * Belk Theater, Blumenthal Performing Arts Center, Charlotte (Cesar Pelli,
  * 1992) — procedural, CC0-1.0.
- * bun scripts/landmarks/belk-theater.ts
+ * bun generators/belk-theater.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 317°: the
  * model's +y runs north-west along the outline's long side (way/502718738,
@@ -275,6 +275,6 @@ const glb = writeGlb('Belk Theater', parts, {
   bearing: 317, osm: 'way/502718738', height: Z_HALL,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const outFile = new URL('../../landmarks/models/belk-theater.glb', import.meta.url).pathname
+const outFile = new URL('../models/belk-theater.glb', import.meta.url).pathname
 await Bun.write(outFile, glb)
 console.log(`${outFile}: ${triangles} triangles, ${glb.length} bytes`)

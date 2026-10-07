@@ -1,13 +1,13 @@
 /**
  * Lady Liberty, authored in metres: east +x, north +y, up +z.
  *
- *   bun scripts/landmarks/statue-of-liberty.ts [out.glb]
+ *   bun generators/statue-of-liberty.ts [out.glb]
  *
  * The pedestal base is 40 m square, the heel is at 36.9 m and the flame tip
  * at 83 m. The catalog raises the pedestal onto Fort Wood; the fort remains
  * map geometry, not part of this asset. She faces south (−y), with her right
  * (west, −x) arm holding the torch. Styled after Apple Maps' landmarks
- * (landmarks/STYLE.md): bevelled granite blocks, the loggia as recessed bands,
+ * (STYLE.md): bevelled granite blocks, the loggia as recessed bands,
  * and a smooth verdigris figure whose head, crown and arm read at 200 px.
  * All geometry is procedural and CC0-1.0; no source mesh or textures.
  */
@@ -353,6 +353,6 @@ const glb = writeGlb('Statue of Liberty', parts, {
 })
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 if (triangles > 5000 || glb.length > 250_000) throw new Error(`Landmark exceeds budget: ${triangles} triangles`)
-const out = process.argv[2] ?? new URL('../../landmarks/models/statue-of-liberty.glb', import.meta.url).pathname
+const out = process.argv[2] ?? new URL('../models/statue-of-liberty.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

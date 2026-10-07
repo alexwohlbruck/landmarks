@@ -1,6 +1,6 @@
 /**
  * St. Patrick's Cathedral, Fifth Avenue — procedural, CC0-1.0, no textures.
- * bun scripts/landmarks/st-patricks-cathedral.ts
+ * bun generators/st-patricks-cathedral.ts
  *
  * Map frame: x across the church, y along its axis with +y towards the east
  * end (Madison Avenue), z up, metres. Placed at bearing 118.4°, so the twin
@@ -414,6 +414,6 @@ const glb = writeGlb("St. Patrick's Cathedral", parts, {
   replaces: ['way/266010379', 'way/161156112', 'way/161156113', 'way/266010403'],
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/st-patricks-cathedral.glb', import.meta.url).pathname
+const out = new URL('../models/st-patricks-cathedral.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

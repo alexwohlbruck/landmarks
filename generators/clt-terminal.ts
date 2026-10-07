@@ -2,7 +2,7 @@
  * Charlotte Douglas International Airport (CLT): the terminal headhouse —
  * procedural, CC0-1.0.
  *
- *   bun scripts/landmarks/clt-terminal.ts
+ *   bun generators/clt-terminal.ts
  *
  * Also the small kit the other CLT models import (`clt-concourse-a`,
  * `clt-concourses-b-c`, `clt-concourses-d-e`, the parking decks and the
@@ -472,7 +472,7 @@ export async function save(id: string, name: string, centre: XY, parts: { part: 
     license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at ground anchor', bearing: BEARING, elevation: 0,
   })
   if (glb.length > 250_000) throw new Error(`${id}: file budget exceeded: ${glb.length}`)
-  const out = new URL(`../../landmarks/models/${id}.glb`, import.meta.url).pathname
+  const out = new URL(`../models/${id}.glb`, import.meta.url).pathname
   await Bun.write(out, glb)
   console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)
 }

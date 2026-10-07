@@ -1,6 +1,6 @@
 /**
  * Flatiron Building — original procedural geometry, CC0-1.0.
- * bun scripts/landmarks/flatiron-building.ts
+ * bun generators/flatiron-building.ts
  *
  * Map frame: x east, y north, z up, metres, rotated so +y runs along the
  * wedge's long axis (BEARING). Anchor is the OSM outline's centroid. The
@@ -283,7 +283,7 @@ const glb = writeGlb('Flatiron Building', parts, {
   replaces: ['way/264768896', 'way/764237515'],
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/flatiron-building.glb', import.meta.url).pathname
+const out = new URL('../models/flatiron-building.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)
 console.log('edges', EDGES.map((e) => `${e.length.toFixed(1)}${e.long ? '*' : ''}`).join(' '))

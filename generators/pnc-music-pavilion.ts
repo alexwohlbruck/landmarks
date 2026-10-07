@@ -1,6 +1,6 @@
 /**
  * PNC Music Pavilion (Truliant Amphitheater since 2025), Charlotte NC — procedural, CC0-1.0.
- * bun scripts/landmarks/pnc-music-pavilion.ts
+ * bun generators/pnc-music-pavilion.ts
  *
  * Map frame: x east, y north, z up, metres; bearing 0. The venue's axis runs
  * due east–west: the stage house is at the east end and faces west, over the
@@ -225,6 +225,6 @@ const glb = writeGlb('PNC Music Pavilion', parts, {
   bearing: 0, elevation: 0, height: FLY_TOP,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/pnc-music-pavilion.glb', import.meta.url).pathname
+const out = new URL('../models/pnc-music-pavilion.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

@@ -1,6 +1,6 @@
 /**
  * Carolina Cyclone, Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-carolina-cyclone.ts   (REPORT=1 for the element table)
+ * bun generators/carowinds-carolina-cyclone.ts   (REPORT=1 for the element table)
  *
  * Map frame: x east, y north, z up, metres; bearing 0. The origin is the
  * middle of the track's footprint (see anchor), at the lowest ground under it.
@@ -73,7 +73,7 @@ const STATION: [number, number][] = [
 
 await buildCoaster({
   name: 'Carolina Cyclone',
-  out: '../../landmarks/models/carowinds-carolina-cyclone.glb',
+  out: '../models/carowinds-carolina-cyclone.glb',
   chain: CHAIN,
   anchor: [-52, 117],
   ground: { x0: -120, y0: 40, step: 20, rows: GROUND, base: 189 },

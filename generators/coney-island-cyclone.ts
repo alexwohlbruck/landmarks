@@ -1,6 +1,6 @@
 /**
  * Coney Island Cyclone — procedural, CC0-1.0.
- * bun scripts/landmarks/coney-island-cyclone.ts
+ * bun generators/coney-island-cyclone.ts
  *
  * Map frame: x east, y north, z up, metres; bearing 0, so the frame is true
  * north. The origin is the middle of the ride's footprint (see ANCHOR), on the
@@ -571,7 +571,7 @@ const glb = writeGlb('Coney Island Cyclone', parts, {
   bearing: 0, elevation: 0, crest: 23, trackLength: Math.round(len3),
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/coney-island-cyclone.glb', import.meta.url).pathname
+const out = new URL('../models/coney-island-cyclone.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)
 console.log(`anchor ${(LON0 + ANCHOR[0] / MX).toFixed(7)}, ${(LAT0 + ANCHOR[1] / MY).toFixed(7)}`)

@@ -1,7 +1,7 @@
 /**
  * Wilderness Run (formerly Taxi Jam, Hey Arnold! Taxi Chase and Lucy's
  * Crabbie Cabbie), Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-wilderness-run.ts   (REPORT=1 for the element table)
+ * bun generators/carowinds-wilderness-run.ts   (REPORT=1 for the element table)
  *
  * Map frame: x east, y north, z up, metres; bearing 0, so the frame is true
  * north. The origin is the middle of the ride's footprint (see the anchor), at
@@ -65,7 +65,7 @@ const STATION: [number, number][] = [
 
 await buildCoaster({
   name: 'Wilderness Run',
-  out: '../../landmarks/models/carowinds-wilderness-run.glb',
+  out: '../models/carowinds-wilderness-run.glb',
   chain: CHAIN,
   anchor: [384, -212],
   ground: { x0: 355, y0: -240, step: 10, rows: GROUND, base: 193.4 },

@@ -1,6 +1,6 @@
 /**
  * Truist Field (Charlotte Knights) — procedural, CC0-1.0, no textures.
- * bun scripts/landmarks/truist-field.ts
+ * bun generators/truist-field.ts
  *
  * Map frame: x across the park (first-base side +x), y from home plate toward
  * centre field, z up, metres. Placed at bearing 83.2°, the line from home
@@ -117,7 +117,7 @@ const OSM: Record<string, XY[]> = {
 const BASES = {home: [-11.1, -32.1], first: [8.3, -12.9], second: [-11.1, 6.7], third: [-30.0, -12.8], mound: [-10.7, -14.5]} as Record<string, XY>
 
 // ---------------------------------------------------------------------------
-// Materials, from the shared palette (landmarks/STYLE.md), at most six. The
+// Materials, from the shared palette (STYLE.md), at most six. The
 // red brick of the Mint Street front and the green seats are the park's
 // identity, so they are finishes pulled to the palette's lightness; the tan
 // precast is `stone`. Several parts share one material: the seats, the padded
@@ -513,6 +513,6 @@ const glb = writeGlb('Truist Field', parts, {
   bearing: 83.2, elevation: 0,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/truist-field.glb', import.meta.url).pathname
+const out = new URL('../models/truist-field.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

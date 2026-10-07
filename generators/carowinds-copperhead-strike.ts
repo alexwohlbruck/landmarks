@@ -1,6 +1,6 @@
 /**
  * Copperhead Strike, Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-copperhead-strike.ts   (REPORT=1 for the element table)
+ * bun generators/carowinds-copperhead-strike.ts   (REPORT=1 for the element table)
  *
  * Built with ./coaster-kit.ts, with its launches (`launches`) and
  * inversions. Map frame: x east, y north, z up, metres; bearing 0. The
@@ -102,7 +102,7 @@ const STATION: [number, number][] = [
 
 await buildCoaster({
   name: 'Copperhead Strike',
-  out: '../../landmarks/models/carowinds-copperhead-strike.glb',
+  out: '../models/carowinds-copperhead-strike.glb',
   chain: CHAIN,
   anchor: [2, -205],
   ground: { x0: -60, y0: -320, step: 20, rows: GROUND, base: 192.2 },

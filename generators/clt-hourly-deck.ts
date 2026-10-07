@@ -2,7 +2,7 @@
  * Charlotte Douglas International Airport (CLT): the Hourly Parking Deck —
  * procedural, CC0-1.0.
  *
- *   bun scripts/landmarks/clt-hourly-deck.ts
+ *   bun generators/clt-hourly-deck.ts
  *
  * The deck facing the terminal across the curbside roadway, built in the
  * CLT 2015 programme with the rental car facility on its lower levels. OSM

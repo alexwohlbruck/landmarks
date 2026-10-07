@@ -1,7 +1,7 @@
 /**
  * Amos' Southend, South End, Charlotte (music hall, 1423 S Tryon St) —
  * procedural, CC0-1.0.
- * bun scripts/landmarks/amos-southend.ts
+ * bun generators/amos-southend.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 130°: the
  * model's +y runs back from South Tryon Street along the outline's long side
@@ -209,6 +209,6 @@ const glb = writeGlb("Amos' Southend", parts, {
   bearing: 130, osm: 'way/432937734', height: Z_H + RISE + 1.0,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/amos-southend.glb', import.meta.url).pathname
+const out = new URL('../models/amos-southend.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

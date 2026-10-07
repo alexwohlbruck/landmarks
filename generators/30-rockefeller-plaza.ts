@@ -1,6 +1,6 @@
 /**
  * 30 Rockefeller Plaza (Comcast Building) — original procedural geometry, CC0-1.0.
- * bun scripts/landmarks/30-rockefeller-plaza.ts
+ * bun generators/30-rockefeller-plaza.ts
  *
  * Built in the street-grid frame: x along the cross streets (Manhattan "east",
  * true bearing 119°), y along the avenues (Manhattan "north", bearing 29°),
@@ -310,7 +310,7 @@ const glb = writeGlb('30 Rockefeller Plaza', parts, {
   frame: 'Y up, -Z north, +X east, metres; origin at the ground anchor',
   note: 'OSM tier footprints; limestone piers with recessed window bands merged across continuous faces',
 })
-const out = new URL('../../landmarks/models/30-rockefeller-plaza.glb', import.meta.url).pathname
+const out = new URL('../models/30-rockefeller-plaza.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)

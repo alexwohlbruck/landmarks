@@ -1,6 +1,6 @@
 /**
  * One World Trade Center — original procedural geometry, CC0-1.0.
- * bun scripts/landmarks/one-world-trade-center.ts
+ * bun generators/one-world-trade-center.ts
  *
  * x/y run along the tower's square faces (the catalog applies the 27.4°
  * bearing), z is metres up. Anchor at the OSM outline's centre
@@ -241,6 +241,6 @@ const glb = writeGlb('One World Trade Center', parts, {
   note: 'Octagonal antiprism tower on a finned podium; ring and spire from OSM parts',
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/one-world-trade-center.glb', import.meta.url).pathname
+const out = new URL('../models/one-world-trade-center.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

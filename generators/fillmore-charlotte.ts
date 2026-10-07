@@ -1,7 +1,7 @@
 /**
  * The Fillmore Charlotte and The Underground (Mill #2 of the AvidXchange
  * Music Factory) — procedural, CC0-1.0.
- * bun scripts/landmarks/fillmore-charlotte.ts
+ * bun generators/fillmore-charlotte.ts
  *
  * Mill #2 of the John B. Ross and Company Mill is the west arm of the
  * complex, about 170 m long down Hamilton Street from NC Music Factory

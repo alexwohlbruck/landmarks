@@ -1,6 +1,6 @@
 /**
  * Skyla Credit Union Amphitheatre, AvidXchange Music Factory — procedural, CC0-1.0.
- * bun scripts/landmarks/music-factory-amphitheatre.ts
+ * bun generators/music-factory-amphitheatre.ts
  *
  * The outdoor amphitheatre north of the mill (opened June 2009 as the Uptown
  * Amphitheatre, later Charlotte Metro Credit Union Amphitheatre, Skyla Credit

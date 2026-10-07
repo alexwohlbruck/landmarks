@@ -1,6 +1,6 @@
 /**
  * Grand Central Terminal — procedural, CC0-1.0, no textures.
- * bun scripts/landmarks/grand-central-terminal.ts
+ * bun generators/grand-central-terminal.ts
  *
  * Map frame: x across the building (Vanderbilt -x, Lexington side +x), y along
  * Park Avenue (42nd Street -y), z up, metres. Placed at bearing 29°, the
@@ -452,6 +452,6 @@ const glb = writeGlb('Grand Central Terminal', parts, {
   bearing: 29, osm: 'way/265947358', footprint: [120.6, 103], height: 45.8,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/grand-central-terminal.glb', import.meta.url).pathname
+const out = new URL('../models/grand-central-terminal.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

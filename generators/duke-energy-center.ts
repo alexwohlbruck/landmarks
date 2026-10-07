@@ -1,7 +1,7 @@
 /**
  * Duke Energy Center (550 South Tryon), Charlotte — original procedural
  * geometry, CC0-1.0.
- * bun scripts/landmarks/duke-energy-center.ts [out.glb]
+ * bun generators/duke-energy-center.ts [out.glb]
  *
  * Anchor: the centroid of OSM way/1550692284 (-80.84874, 35.22416). Bearing
  * 50.3°, the azimuth of the tower's faces in OSM, so model x and y run along
@@ -380,6 +380,6 @@ const glb = writeGlb('Duke Energy Center', parts, {
   osm: 'way/1550692284 with its building:parts',
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = process.argv[2] ?? new URL('../../landmarks/models/duke-energy-center.glb', import.meta.url).pathname
+const out = process.argv[2] ?? new URL('../models/duke-energy-center.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

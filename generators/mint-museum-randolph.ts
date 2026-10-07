@@ -1,7 +1,7 @@
 /**
  * Mint Museum Randolph (the 1836 Charlotte branch of the US Mint, rebuilt in
  * Eastover in 1933–36) — procedural, CC0-1.0, no textures.
- * bun scripts/landmarks/mint-museum-randolph.ts
+ * bun generators/mint-museum-randolph.ts
  *
  * Map frame: x east, y north, z up, metres. Placed at bearing 2.4°, the axis of
  * the OSM outline (way/784079334), whose area centroid is the anchor. That one
@@ -161,7 +161,7 @@ type Opening = { at: number; w: number; lo: number; hi: number; depth?: number }
 /**
  * The flat faces of a plan's walls between z0 and z1, at offset d, with deep
  * openings: stone or stucco round them, and a slate window panel set just
- * into the wall (landmarks/STYLE.md), with a trim sill.
+ * into the wall (STYLE.md), with a trim sill.
  */
 function walls(P: Plan, d: number, c: number, z0: number, z1: number, p: Part, openings: (edge: number) => Opening[] = () => [], skip: number[] = []) {
   const r = ring(P, d, c)
@@ -457,7 +457,7 @@ sweep(galleries, C, [
   gable(trim, xf + 0.25, xb, yc, hw + 0.3, ze, zr, 0.3)
 }
 
-// The shared palette (landmarks/STYLE.md). The cream stucco and the gilded
+// The shared palette (STYLE.md). The cream stucco and the gilded
 // eagle are the Mint's identity, so they are finishes kept to the palette's
 // lightness; the sandstone basement is a muted tan beside them, the slate
 // roof and the deck `roof`.
@@ -476,6 +476,6 @@ const glb = writeGlb('Mint Museum Randolph', parts, {
   bearing: 2.4, osm: 'way/784079334', footprint: [62.7, 60.0],
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/mint-museum-randolph.glb', import.meta.url).pathname
+const out = new URL('../models/mint-museum-randolph.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

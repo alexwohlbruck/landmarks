@@ -3,7 +3,7 @@
  * former First Baptist Church (J. M. McMichael, 1909), a domed neoclassical
  * sanctuary, now the McGlohon Theater, with the church's education wing
  * behind it — procedural, CC0-1.0, no textures.
- * bun scripts/landmarks/mcglohon-theater-spirit-square.ts
+ * bun generators/mcglohon-theater-spirit-square.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 48.7°, the
  * street grid's axis and the outline's short edges: the model's +x runs
@@ -345,6 +345,6 @@ const glb = writeGlb('McGlohon Theater at Spirit Square', parts, {
   bearing: 48.7, osm: 'way/131139724', height: Z_DOME + 3.6,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const outFile = new URL('../../landmarks/models/mcglohon-theater-spirit-square.glb', import.meta.url).pathname
+const outFile = new URL('../models/mcglohon-theater-spirit-square.glb', import.meta.url).pathname
 await Bun.write(outFile, glb)
 console.log(`${outFile}: ${triangles} triangles, ${glb.length} bytes`)

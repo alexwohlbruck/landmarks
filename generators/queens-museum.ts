@@ -1,7 +1,7 @@
 /**
  * Queens Museum (the New York City Building, 1939) — original procedural
  * geometry, CC0-1.0.
- * bun scripts/landmarks/queens-museum.ts
+ * bun generators/queens-museum.ts
  *
  * Authoring frame: x across the building (+x faces the Unisphere, east-north-
  * east), y along its long axis, z up, metres. Catalog bearing 337.3°, anchor
@@ -230,6 +230,6 @@ const glb = writeGlb('Queens Museum', parts, {
   replaces: ['way/284856409'], footprint: { x: [-33, 33], y: [-64, 64] },
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/queens-museum.glb', import.meta.url).pathname
+const out = new URL('../models/queens-museum.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

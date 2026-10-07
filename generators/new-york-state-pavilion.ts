@@ -2,7 +2,7 @@
  * New York State Pavilion, Flushing Meadows–Corona Park — original procedural
  * geometry, CC0-1.0. Philip Johnson, 1964 World's Fair.
  *
- *   bun scripts/landmarks/new-york-state-pavilion.ts
+ *   bun generators/new-york-state-pavilion.ts
  *
  * x = across the tent, y = along its long axis, z = metres up. Anchor is the
  * centroid of the Tent of Tomorrow's OSM outline (relation 13317338),
@@ -286,7 +286,7 @@ const parts = [
 const glb = writeGlb('new-york-state-pavilion', parts, {
   name: 'New York State Pavilion', license: 'CC0-1.0', author: 'Barrelman',
 })
-const path = new URL('../../landmarks/models/new-york-state-pavilion.glb', import.meta.url).pathname
+const path = new URL('../models/new-york-state-pavilion.glb', import.meta.url).pathname
 await Bun.write(path, glb)
 const tris = parts.reduce((n, p) => n + p.part.triangles, 0)
 console.log(`${path}: ${tris} triangles, ${(glb.length / 1024).toFixed(1)} KB`)

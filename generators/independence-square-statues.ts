@@ -1,7 +1,7 @@
 /**
  * The four Kaskey statues of Independence Square, Charlotte — procedural, CC0-1.0.
  *
- *   bun scripts/landmarks/independence-square-statues.ts [out.glb]
+ *   bun generators/independence-square-statues.ts [out.glb]
  *
  * Map frame: x east, y north, z up, metres. The origin is the centre of the
  * Trade and Tryon crossing (OSM node 172358289), and the model is placed at
@@ -21,7 +21,7 @@
  *   Industry        node/8415199022  ( 0.0,-13.3)                — south corner
  *   Transportation  node/7986487900  (-14.6, 0.7)                — west corner
  *
- * Kept deliberately simple (landmarks/STYLE.md): a bevelled granite shaft on a
+ * Kept deliberately simple (STYLE.md): a bevelled granite shaft on a
  * wider base, and a few smooth bronze masses per figure, each posed so its
  * silhouette differs at phone size — the miner's hat and pan, the mill worker
  * with a child on her hip, the railroad worker's arms akimbo, and the woman
@@ -308,7 +308,7 @@ for (const st of statues) {
   place(k.dark, dark, a, x, y)
 }
 
-// Colours, after the shared palette (landmarks/STYLE.md). The pinkish granite
+// Colours, after the shared palette (STYLE.md). The pinkish granite
 // keeps its hue from the reference photos (/tmp/nyc-work/
 // independence-square-statues/photos, p1.jpg and p2.jpg) but is pulled up to
 // the palette's stone lightness, the plinth a shade below it. The bronzes stay
@@ -329,6 +329,6 @@ const glb = writeGlb('Independence Square statues', parts, {
 })
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 if (triangles > 5000 || glb.length > 250_000) throw new Error(`Landmark exceeds budget: ${triangles} triangles`)
-const out = process.argv[2] ?? new URL('../../landmarks/models/independence-square-statues.glb', import.meta.url).pathname
+const out = process.argv[2] ?? new URL('../models/independence-square-statues.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

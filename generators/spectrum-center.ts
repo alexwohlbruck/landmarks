@@ -1,6 +1,6 @@
 /**
  * Spectrum Center, Charlotte — procedural, CC0-1.0, no textures.
- * bun scripts/landmarks/spectrum-center.ts
+ * bun generators/spectrum-center.ts
  *
  * Map frame: x across the arena (Brevard/Blue Line side -x, Caldwell side +x),
  * y along its long axis (Trade Street -y, 5th Street +y), z up, metres. Placed
@@ -17,7 +17,7 @@
  *   axis and crowns gently across it;
  * - the tall glass entrance atrium on the Trade & Caldwell corner.
  *
- * Windows are slate panels set 0.05 m into the wall, per landmarks/STYLE.md.
+ * Windows are slate panels set 0.05 m into the wall, per STYLE.md.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -371,7 +371,7 @@ const SLOT = 4
   capPoly(roof, top, ATRIUM_TOP)
 }
 
-// The shared palette (landmarks/STYLE.md). The red-brown brick is the
+// The shared palette (STYLE.md). The red-brown brick is the
 // arena's identity, so it keeps its hue as a finish pulled up to the
 // palette's lightness; the silver panel faces and the arched roof they
 // rise into are a pale metal finish.
@@ -389,6 +389,6 @@ const glb = writeGlb('Spectrum Center', parts, {
   bearing: 45, osm: 'way/773909122', footprint: [208, 164], height: 43.8,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/spectrum-center.glb', import.meta.url).pathname
+const out = new URL('../models/spectrum-center.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

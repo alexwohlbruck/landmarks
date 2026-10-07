@@ -2,7 +2,7 @@
  * Charlotte Douglas International Airport (CLT): Concourses D and E —
  * procedural, CC0-1.0.
  *
- *   bun scripts/landmarks/clt-concourses-d-e.ts
+ *   bun generators/clt-concourses-d-e.ts
  *
  * Concourse D (way/1347417024), the international pier east of The Plaza:
  * a 10.5 m older pier, then the taller gate hall that runs out to its

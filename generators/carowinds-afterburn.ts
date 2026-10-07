@@ -1,6 +1,6 @@
 /**
  * Afterburn (formerly Top Gun: The Jet Coaster), Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-afterburn.ts   (REPORT=1 for the element table)
+ * bun generators/carowinds-afterburn.ts   (REPORT=1 for the element table)
  *
  * Built with ./coaster-kit.ts, as an inverted coaster (`inverted`): the
  * train hangs under the rails, the box spine sits above them, and the box
@@ -77,7 +77,7 @@ const STATION: [number, number][] = [
 
 await buildCoaster({
   name: 'Afterburn',
-  out: '../../landmarks/models/carowinds-afterburn.glb',
+  out: '../models/carowinds-afterburn.glb',
   chain: CHAIN,
   anchor: [165, -315],
   ground: { x0: 100, y0: -420, step: 20, rows: GROUND, base: 192.1 },

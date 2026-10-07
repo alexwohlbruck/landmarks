@@ -90,7 +90,7 @@ and photos. Every rule here fixes something that went wrong.
 
 ## Colour
 
-- **Start from the shared palette** in `scripts/landmarks/palette.ts`, the
+- **Start from the shared palette** in `generators/palette.ts`, the
   Open Landmarks material library: `stone` `#efe4d3`, `trim` `#fff0dd`,
   `roof` `#9da6ad`, `metal`, `window` `#64798a`, `glass` `#a4c4d9`,
   `entrance`, `copper`, `patina`, `terracotta`. Most masonry is `stone`; most
@@ -257,7 +257,7 @@ the builder hadn't seen.
 
 ### Roller coasters and other rides
 
-Use `scripts/landmarks/coaster-kit.ts`. A coaster's generator should be
+Use `generators/coaster-kit.ts`. A coaster's generator should be
 almost all data.
 
 - **Plan.**
@@ -314,7 +314,7 @@ trust.
 
 ## Checking a model
 
-Run `bun scripts/landmarks/preview.ts <model.glb> <out-dir> [photo.png ...]`.
+Run `bun generators/preview.ts <model.glb> <out-dir> [photo.png ...]`.
 It renders the model with the map's lighting from the south, west, a high
 south-west three-quarter (the usual phone view), the north-east, above, and
 at phone sizes of 200 and 80 px. Give it PNG photos to get side-by-side

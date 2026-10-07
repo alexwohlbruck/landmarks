@@ -1,6 +1,6 @@
 /**
  * Brooklyn Bridge tower — procedural, CC0-1.0, no textures.
- * bun scripts/landmarks/brooklyn-bridge-tower.ts
+ * bun generators/brooklyn-bridge-tower.ts
  *
  * One model, placed twice (the Manhattan and Brooklyn towers are identical).
  * Map frame: x across the bridge, y along its axis, z up, metres. Placed at
@@ -24,7 +24,7 @@
  * No cables and no deck span: the basemap draws the bridge. The roadway
  * through the arches is a flat inset strip, not a stub.
  *
- * Styled to landmarks/STYLE.md: warm granite and limestone, bevelled piers,
+ * Styled to STYLE.md: warm granite and limestone, bevelled piers,
  * a projecting cornice and deck-level string course, archivolts as raised
  * bands inside the curtain face. Mirrored about both axes.
  */
@@ -239,6 +239,6 @@ const glb = writeGlb('Brooklyn Bridge tower', parts, {
   roadway: DECK, archCrown: SPRING + RISE,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/brooklyn-bridge-tower.glb', import.meta.url).pathname
+const out = new URL('../models/brooklyn-bridge-tower.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

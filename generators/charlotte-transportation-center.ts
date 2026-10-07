@@ -1,6 +1,6 @@
 /**
  * Charlotte Transportation Center (CTC), Uptown Charlotte — procedural, CC0-1.0.
- * bun scripts/landmarks/charlotte-transportation-center.ts
+ * bun generators/charlotte-transportation-center.ts
  *
  * Map frame: x across the station (the LYNX Blue Line side −x, Brevard Street
  * +x), y along it (4th Street −y, Trade Street +y), z up, metres. Placed at
@@ -280,7 +280,7 @@ const SHOP: XY = [1.4, 3.8], CLERE: XY = [4.9, 7.2]
 
 // ---------------------------------------------------------------------------
 
-// The shared palette (landmarks/STYLE.md). Two finishes carry the station's
+// The shared palette (STYLE.md). Two finishes carry the station's
 // identity: the teal of its vaults, and CATS blue on the end columns and
 // braces. Both pulled to the palette's lightness. The shed's underside and
 // the interior seen through the end trusses are a mid grey, lighter than the
@@ -300,6 +300,6 @@ const glb = writeGlb('Charlotte Transportation Center', parts, {
   bearing: 47, elevation: 0, height: CROWN,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/charlotte-transportation-center.glb', import.meta.url).pathname
+const out = new URL('../models/charlotte-transportation-center.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

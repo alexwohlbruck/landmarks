@@ -1,6 +1,6 @@
 /**
  * NASCAR Hall of Fame, Charlotte — procedural, CC0-1.0, no textures.
- * bun scripts/landmarks/nascar-hall-of-fame.ts
+ * bun generators/nascar-hall-of-fame.ts
  *
  * Map frame: x across the block (+x towards South Caldwell Street, south-east),
  * y along it (+y towards the plaza and East MLK Jr Boulevard, north-east), z up,
@@ -121,7 +121,7 @@ function prism(poly: XY[], z0: number, z1: number, walls: (a: XY, b: XY) => Band
   const lip = inset(poly, bevel)
   const all = poly.map((a, i) => walls(a, poly[(i + 1) % n]))
   const recessed = all.map(bands => bands.some(b => b.recess))
-  const RECESS = 0.05 // windows sit just into the wall (landmarks/STYLE.md)
+  const RECESS = 0.05 // windows sit just into the wall (STYLE.md)
   const back = inset(poly, RECESS) // mitred, so neighbouring recessed bays meet
   for (let i = 0; i < n; i++) {
     const j = (i + 1) % n, a = poly[i], b = poly[j]
@@ -380,7 +380,7 @@ prism(STEPS_W, 0, 13, () => [{ p: stone, z0: 0, z1: 13 }], roof)
 prism(STEPS_E, 0, 13, () => [{ p: stone, z0: 0, z1: 13 }], roof)
 
 // ---------------------------------------------------------------------------
-// The shared palette (landmarks/STYLE.md). The brushed-stainless bowl is the
+// The shared palette (STYLE.md). The brushed-stainless bowl is the
 // building's whole identity, so it must stand out from everything round it:
 // a bright silver finish, over a roof a step darker than the library `roof`
 // and a dark-grey underside that makes the band read as standing proud. The
@@ -400,6 +400,6 @@ const glb = writeGlb('NASCAR Hall of Fame', parts, {
   bearing: 55, osm: 'way/322278731', footprint: [104, 206], height: 25,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/nascar-hall-of-fame.glb', import.meta.url).pathname
+const out = new URL('../models/nascar-hall-of-fame.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

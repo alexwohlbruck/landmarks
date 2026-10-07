@@ -1,6 +1,6 @@
 /**
  * Camp North End water tower, Statesville Ave, Charlotte — procedural, CC0-1.0.
- * bun scripts/landmarks/camp-north-end-water-tower.ts
+ * bun generators/camp-north-end-water-tower.ts
  *
  * Map frame: x east, y north, z up, metres; origin on the ground at the
  * centre of the OSM outline (way/833631505, man_made=water_tower, historic,
@@ -179,5 +179,5 @@ if (triangles > 2500) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('Camp North End water tower', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres, origin at ground', height: Z_TOP + 0.55, bearing: 0,
 })
-await Bun.write(new URL('../../landmarks/models/camp-north-end-water-tower.glb', import.meta.url), glb)
+await Bun.write(new URL('../models/camp-north-end-water-tower.glb', import.meta.url), glb)
 console.log(`camp-north-end-water-tower.glb: ${triangles} triangles, ${glb.length} bytes`)

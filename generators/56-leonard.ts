@@ -1,7 +1,7 @@
 /**
  * 56 Leonard Street ("the Jenga building", Herzog & de Meuron, 2017) —
  * original procedural geometry, CC0-1.0.
- * bun scripts/landmarks/56-leonard.ts
+ * bun generators/56-leonard.ts
  *
  * x = across the Tribeca grid (121°), y = along it (31°), z = metres up.
  * Anchor is the centroid of OSM way/261499928 (40.7176453, -74.0062596);
@@ -222,6 +222,6 @@ const glb = writeGlb('56 Leonard Street', parts, {
   note: 'Stacked glass boxes on pale slabs; crown cantilevers from photos (OSM has no parts)',
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const outPath = new URL('../../landmarks/models/56-leonard.glb', import.meta.url).pathname
+const outPath = new URL('../models/56-leonard.glb', import.meta.url).pathname
 await Bun.write(outPath, glb)
 console.log(`${outPath}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

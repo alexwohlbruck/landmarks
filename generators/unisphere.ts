@@ -1,6 +1,6 @@
 /**
  * Unisphere — original, stylised CC0 geometry in metres, x east/y north/z up.
- * Run: bun scripts/landmarks/unisphere.ts
+ * Run: bun generators/unisphere.ts
  *
  * A 36.6 m open steel globe tilted 23.5 degrees (north pole leaning north),
  * with the Americas facing west, three orbital rings and a conical tripod
@@ -288,6 +288,6 @@ const glb = writeGlb('Unisphere', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres, origin at ground',
   globeDiameter: 36.6, axialTilt: 23.5, orbitalRings: 3, bearing: 0, elevation: 0,
 })
-await Bun.write(new URL('../../landmarks/models/unisphere.glb', import.meta.url), glb)
+await Bun.write(new URL('../models/unisphere.glb', import.meta.url), glb)
 console.log(`unisphere.glb: ${triangles} triangles, ${glb.length} bytes`)
 console.log(parts.map(({ part, material }) => `${material.name}: ${part.triangles}`).join('\n'))

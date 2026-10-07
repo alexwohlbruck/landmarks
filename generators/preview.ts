@@ -1,7 +1,7 @@
 /**
  * Preview a landmark GLB the way the map lights it, without a browser.
  *
- *   bun scripts/landmarks/preview.ts <model.glb> <out-dir> [photo.png|jpg.png ...]
+ *   bun generators/preview.ts <model.glb> <out-dir> [photo.png|jpg.png ...]
  *
  * A small z-buffer rasteriser with Parchment's landmark lighting: faces turned
  * from the sun keep 72% of their colour, so contrast is as flat as on the map.

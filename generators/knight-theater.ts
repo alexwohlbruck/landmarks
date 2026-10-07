@@ -1,6 +1,6 @@
 /**
  * Knight Theater, Levine Center for the Arts, Charlotte (2010) — procedural, CC0-1.0.
- * bun scripts/landmarks/knight-theater.ts
+ * bun generators/knight-theater.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 315°: the
  * model's +y runs north-west along the outline's long side (way/131139733,
@@ -284,6 +284,6 @@ const glb = writeGlb('Knight Theater', parts, {
   bearing: 315, osm: 'way/131139733', height: Z_BODY,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/knight-theater.glb', import.meta.url).pathname
+const out = new URL('../models/knight-theater.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

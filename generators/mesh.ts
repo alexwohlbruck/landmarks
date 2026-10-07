@@ -5,7 +5,7 @@
  * Geometry is authored in a map-friendly frame — x east, y north, z up,
  * metres, origin at the anchor on the ground — and converted to glTF's Y-up
  * frame on write. That is the frame contract every landmark GLB follows (see
- * `landmarks/README.md`): +Y up, -Z north, +X east, metres, origin at the
+ * `README.md`): +Y up, -Z north, +X east, metres, origin at the
  * anchor, so a client places a model with nothing but a position, a bearing
  * and a scale.
  *
@@ -232,7 +232,7 @@ export type AnimationSpec = { name: string; times: number[]; channels: ChannelSp
 
 /**
  * Moving parts, for the few landmarks that turn. Experimental and outside
- * the Open Landmarks v1 contract; see "Animation" in `landmarks/STYLE.md`.
+ * the Open Landmarks v1 contract; see "Animation" in `STYLE.md`.
  */
 export type GlbOptions = { nodes?: NodeSpec[]; animation?: AnimationSpec }
 

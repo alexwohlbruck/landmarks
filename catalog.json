@@ -5,672 +5,672 @@
       "file": "models/eiffel-tower.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/eiffel-tower.ts"
+      "source": "generators/eiffel-tower.ts"
     },
     {
       "id": "statue-of-liberty",
       "file": "models/statue-of-liberty.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/statue-of-liberty.ts"
+      "source": "generators/statue-of-liberty.ts"
     },
     {
       "id": "soldiers-sailors-arch",
       "file": "models/soldiers-sailors-arch.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/soldiers-sailors-arch.ts"
+      "source": "generators/soldiers-sailors-arch.ts"
     },
     {
       "id": "washington-square-arch",
       "file": "models/washington-square-arch.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/washington-square-arch.ts"
+      "source": "generators/washington-square-arch.ts"
     },
     {
       "id": "chrysler-building",
       "file": "models/chrysler-building.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/chrysler-building.ts"
+      "source": "generators/chrysler-building.ts"
     },
     {
       "id": "empire-state-building",
       "file": "models/empire-state-building.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/empire-state-building.ts"
+      "source": "generators/empire-state-building.ts"
     },
     {
       "id": "guggenheim-museum",
       "file": "models/guggenheim-museum.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/guggenheim-museum.ts"
+      "source": "generators/guggenheim-museum.ts"
     },
     {
       "id": "vessel",
       "file": "models/vessel.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/vessel.ts"
+      "source": "generators/vessel.ts"
     },
     {
       "id": "unisphere",
       "file": "models/unisphere.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/unisphere.ts"
+      "source": "generators/unisphere.ts"
     },
     {
       "id": "30-rockefeller-plaza",
       "file": "models/30-rockefeller-plaza.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/30-rockefeller-plaza.ts"
+      "source": "generators/30-rockefeller-plaza.ts"
     },
     {
       "id": "flatiron-building",
       "file": "models/flatiron-building.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/flatiron-building.ts"
+      "source": "generators/flatiron-building.ts"
     },
     {
       "id": "grand-central-terminal",
       "file": "models/grand-central-terminal.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/grand-central-terminal.ts"
+      "source": "generators/grand-central-terminal.ts"
     },
     {
       "id": "new-york-hall-of-science",
       "file": "models/new-york-hall-of-science.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/new-york-hall-of-science.ts"
+      "source": "generators/new-york-hall-of-science.ts"
     },
     {
       "id": "new-york-state-pavilion",
       "file": "models/new-york-state-pavilion.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/new-york-state-pavilion.ts"
+      "source": "generators/new-york-state-pavilion.ts"
     },
     {
       "id": "one-world-trade-center",
       "file": "models/one-world-trade-center.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/one-world-trade-center.ts"
+      "source": "generators/one-world-trade-center.ts"
     },
     {
       "id": "queens-museum",
       "file": "models/queens-museum.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/queens-museum.ts"
+      "source": "generators/queens-museum.ts"
     },
     {
       "id": "st-patricks-cathedral",
       "file": "models/st-patricks-cathedral.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/st-patricks-cathedral.ts"
+      "source": "generators/st-patricks-cathedral.ts"
     },
     {
       "id": "terrace-on-the-park",
       "file": "models/terrace-on-the-park.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/terrace-on-the-park.ts"
+      "source": "generators/terrace-on-the-park.ts"
     },
     {
       "id": "woolworth-building",
       "file": "models/woolworth-building.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/woolworth-building.ts"
+      "source": "generators/woolworth-building.ts"
     },
     {
       "id": "washington-square-fountain",
       "file": "models/washington-square-fountain.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/washington-square-fountain.ts"
+      "source": "generators/washington-square-fountain.ts"
     },
     {
       "id": "56-leonard",
       "file": "models/56-leonard.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/56-leonard.ts"
+      "source": "generators/56-leonard.ts"
     },
     {
       "id": "brooklyn-bridge-tower",
       "file": "models/brooklyn-bridge-tower.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/brooklyn-bridge-tower.ts"
+      "source": "generators/brooklyn-bridge-tower.ts"
     },
     {
       "id": "parachute-jump",
       "file": "models/parachute-jump.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/parachute-jump.ts"
+      "source": "generators/parachute-jump.ts"
     },
     {
       "id": "hearst-tower",
       "file": "models/hearst-tower.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/hearst-tower.ts"
+      "source": "generators/hearst-tower.ts"
     },
     {
       "id": "wonder-wheel",
       "file": "models/wonder-wheel.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/wonder-wheel.ts"
+      "source": "generators/wonder-wheel.ts"
     },
     {
       "id": "coney-island-cyclone",
       "file": "models/coney-island-cyclone.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/coney-island-cyclone.ts"
+      "source": "generators/coney-island-cyclone.ts"
     },
     {
       "id": "duke-energy-center",
       "file": "models/duke-energy-center.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/duke-energy-center.ts"
+      "source": "generators/duke-energy-center.ts"
     },
     {
       "id": "carillon-charlotte",
       "file": "models/carillon-charlotte.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carillon-charlotte.ts"
+      "source": "generators/carillon-charlotte.ts"
     },
     {
       "id": "truist-field",
       "file": "models/truist-field.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/truist-field.ts"
+      "source": "generators/truist-field.ts"
     },
     {
       "id": "bechtler-museum",
       "file": "models/bechtler-museum.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/bechtler-museum.ts"
+      "source": "generators/bechtler-museum.ts"
     },
     {
       "id": "spectrum-center",
       "file": "models/spectrum-center.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/spectrum-center.ts"
+      "source": "generators/spectrum-center.ts"
     },
     {
       "id": "bank-of-america-stadium",
       "file": "models/bank-of-america-stadium.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/bank-of-america-stadium.ts"
+      "source": "generators/bank-of-america-stadium.ts"
     },
     {
       "id": "independence-square-statues",
       "file": "models/independence-square-statues.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/independence-square-statues.ts"
+      "source": "generators/independence-square-statues.ts"
     },
     {
       "id": "one-wells-fargo-center",
       "file": "models/one-wells-fargo-center.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/one-wells-fargo-center.ts"
+      "source": "generators/one-wells-fargo-center.ts"
     },
     {
       "id": "first-presbyterian-charlotte",
       "file": "models/first-presbyterian-charlotte.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/first-presbyterian-charlotte.ts"
+      "source": "generators/first-presbyterian-charlotte.ts"
     },
     {
       "id": "mint-museum-randolph",
       "file": "models/mint-museum-randolph.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/mint-museum-randolph.ts"
+      "source": "generators/mint-museum-randolph.ts"
     },
     {
       "id": "nascar-hall-of-fame",
       "file": "models/nascar-hall-of-fame.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/nascar-hall-of-fame.ts"
+      "source": "generators/nascar-hall-of-fame.ts"
     },
     {
       "id": "bank-of-america-corporate-center",
       "file": "models/bank-of-america-corporate-center.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/bank-of-america-corporate-center.ts"
+      "source": "generators/bank-of-america-corporate-center.ts"
     },
     {
       "id": "truist-center-charlotte",
       "file": "models/truist-center-charlotte.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/truist-center-charlotte.ts"
+      "source": "generators/truist-center-charlotte.ts"
     },
     {
       "id": "bojangles-coliseum",
       "file": "models/bojangles-coliseum.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/bojangles-coliseum.ts"
+      "source": "generators/bojangles-coliseum.ts"
     },
     {
       "id": "park-expo-center",
       "file": "models/park-expo-center.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/park-expo-center.ts"
+      "source": "generators/park-expo-center.ts"
     },
     {
       "id": "freedom-park-locomotive",
       "file": "models/freedom-park-locomotive.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/freedom-park-locomotive.ts"
+      "source": "generators/freedom-park-locomotive.ts"
     },
     {
       "id": "usnwc-lodge",
       "file": "models/usnwc-lodge.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/usnwc-lodge.ts"
+      "source": "generators/usnwc-lodge.ts"
     },
     {
       "id": "usnwc-climbing-center",
       "file": "models/usnwc-climbing-center.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/usnwc-climbing-center.ts"
+      "source": "generators/usnwc-climbing-center.ts"
     },
     {
       "id": "beatties-ford-water-tower",
       "file": "models/beatties-ford-water-tower.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/beatties-ford-water-tower.ts"
+      "source": "generators/beatties-ford-water-tower.ts"
     },
     {
       "id": "camp-north-end-water-tower",
       "file": "models/camp-north-end-water-tower.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/camp-north-end-water-tower.ts"
+      "source": "generators/camp-north-end-water-tower.ts"
     },
     {
       "id": "freedom-park-bandshell",
       "file": "models/freedom-park-bandshell.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/freedom-park-bandshell.ts"
+      "source": "generators/freedom-park-bandshell.ts"
     },
     {
       "id": "elizabeth-water-tower",
       "file": "models/elizabeth-water-tower.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/elizabeth-water-tower.ts"
+      "source": "generators/elizabeth-water-tower.ts"
     },
     {
       "id": "ballantyne-hotel",
       "file": "models/ballantyne-hotel.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/ballantyne-hotel.ts"
+      "source": "generators/ballantyne-hotel.ts"
     },
     {
       "id": "metalmorphosis",
       "file": "models/metalmorphosis.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/metalmorphosis.ts"
+      "source": "generators/metalmorphosis.ts"
     },
     {
       "id": "il-grande-disco",
       "file": "models/il-grande-disco.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/il-grande-disco.ts"
+      "source": "generators/il-grande-disco.ts"
     },
     {
       "id": "ascendus",
       "file": "models/ascendus.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/ascendus.ts"
+      "source": "generators/ascendus.ts"
     },
     {
       "id": "ballantyne-bowl",
       "file": "models/ballantyne-bowl.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/ballantyne-bowl.ts"
+      "source": "generators/ballantyne-bowl.ts"
     },
     {
       "id": "carowinds-fury-325",
       "file": "models/carowinds-fury-325.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-fury-325.ts"
+      "source": "generators/carowinds-fury-325.ts"
     },
     {
       "id": "carowinds-skytower",
       "file": "models/carowinds-skytower.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-skytower.ts"
+      "source": "generators/carowinds-skytower.ts"
     },
     {
       "id": "carowinds-thunder-striker",
       "file": "models/carowinds-thunder-striker.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-thunder-striker.ts"
+      "source": "generators/carowinds-thunder-striker.ts"
     },
     {
       "id": "clt-terminal",
       "file": "models/clt-terminal.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/clt-terminal.ts"
+      "source": "generators/clt-terminal.ts"
     },
     {
       "id": "clt-concourse-a",
       "file": "models/clt-concourse-a.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/clt-concourse-a.ts"
+      "source": "generators/clt-concourse-a.ts"
     },
     {
       "id": "clt-concourses-b-c",
       "file": "models/clt-concourses-b-c.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/clt-concourses-b-c.ts"
+      "source": "generators/clt-concourses-b-c.ts"
     },
     {
       "id": "clt-concourses-d-e",
       "file": "models/clt-concourses-d-e.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/clt-concourses-d-e.ts"
+      "source": "generators/clt-concourses-d-e.ts"
     },
     {
       "id": "clt-hourly-deck",
       "file": "models/clt-hourly-deck.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/clt-hourly-deck.ts"
+      "source": "generators/clt-hourly-deck.ts"
     },
     {
       "id": "clt-daily-deck-east",
       "file": "models/clt-daily-deck-east.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/clt-daily-deck-east.ts"
+      "source": "generators/clt-daily-deck-east.ts"
     },
     {
       "id": "clt-daily-deck-west",
       "file": "models/clt-daily-deck-west.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/clt-daily-deck-west.ts"
+      "source": "generators/clt-daily-deck-west.ts"
     },
     {
       "id": "clt-control-tower",
       "file": "models/clt-control-tower.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/clt-control-tower.ts"
+      "source": "generators/clt-control-tower.ts"
     },
     {
       "id": "charlotte-transportation-center",
       "file": "models/charlotte-transportation-center.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/charlotte-transportation-center.ts"
+      "source": "generators/charlotte-transportation-center.ts"
     },
     {
       "id": "pnc-music-pavilion",
       "file": "models/pnc-music-pavilion.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/pnc-music-pavilion.ts"
+      "source": "generators/pnc-music-pavilion.ts"
     },
     {
       "id": "knight-theater",
       "file": "models/knight-theater.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/knight-theater.ts"
+      "source": "generators/knight-theater.ts"
     },
     {
       "id": "neighborhood-theatre",
       "file": "models/neighborhood-theatre.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/neighborhood-theatre.ts"
+      "source": "generators/neighborhood-theatre.ts"
     },
     {
       "id": "music-factory-mill",
       "file": "models/music-factory-mill.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/music-factory-mill.ts"
+      "source": "generators/music-factory-mill.ts"
     },
     {
       "id": "fillmore-charlotte",
       "file": "models/fillmore-charlotte.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/fillmore-charlotte.ts"
+      "source": "generators/fillmore-charlotte.ts"
     },
     {
       "id": "music-factory-amphitheatre",
       "file": "models/music-factory-amphitheatre.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/music-factory-amphitheatre.ts"
+      "source": "generators/music-factory-amphitheatre.ts"
     },
     {
       "id": "ovens-auditorium",
       "file": "models/ovens-auditorium.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/ovens-auditorium.ts"
+      "source": "generators/ovens-auditorium.ts"
     },
     {
       "id": "belk-theater",
       "file": "models/belk-theater.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/belk-theater.ts"
+      "source": "generators/belk-theater.ts"
     },
     {
       "id": "visulite-theatre",
       "file": "models/visulite-theatre.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/visulite-theatre.ts"
+      "source": "generators/visulite-theatre.ts"
     },
     {
       "id": "amos-southend",
       "file": "models/amos-southend.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/amos-southend.ts"
+      "source": "generators/amos-southend.ts"
     },
     {
       "id": "evening-muse",
       "file": "models/evening-muse.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/evening-muse.ts"
+      "source": "generators/evening-muse.ts"
     },
     {
       "id": "mint-museum-uptown",
       "file": "models/mint-museum-uptown.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/mint-museum-uptown.ts"
+      "source": "generators/mint-museum-uptown.ts"
     },
     {
       "id": "carowinds-carolina-goldrusher",
       "file": "models/carowinds-carolina-goldrusher.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-carolina-goldrusher.ts"
+      "source": "generators/carowinds-carolina-goldrusher.ts"
     },
     {
       "id": "carowinds-hurler",
       "file": "models/carowinds-hurler.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-hurler.ts"
+      "source": "generators/carowinds-hurler.ts"
     },
     {
       "id": "carowinds-carolina-cyclone",
       "file": "models/carowinds-carolina-cyclone.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-carolina-cyclone.ts"
+      "source": "generators/carowinds-carolina-cyclone.ts"
     },
     {
       "id": "carolina-theatre",
       "file": "models/carolina-theatre.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carolina-theatre.ts"
+      "source": "generators/carolina-theatre.ts"
     },
     {
       "id": "mcglohon-theater-spirit-square",
       "file": "models/mcglohon-theater-spirit-square.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/mcglohon-theater-spirit-square.ts"
+      "source": "generators/mcglohon-theater-spirit-square.ts"
     },
     {
       "id": "milestone-club",
       "file": "models/milestone-club.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/milestone-club.ts"
+      "source": "generators/milestone-club.ts"
     },
     {
       "id": "snug-harbor",
       "file": "models/snug-harbor.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/snug-harbor.ts"
+      "source": "generators/snug-harbor.ts"
     },
     {
       "id": "petras",
       "file": "models/petras.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/petras.ts"
+      "source": "generators/petras.ts"
     },
     {
       "id": "coyote-joes",
       "file": "models/coyote-joes.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/coyote-joes.ts"
+      "source": "generators/coyote-joes.ts"
     },
     {
       "id": "carowinds-flying-cobras",
       "file": "models/carowinds-flying-cobras.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-flying-cobras.ts"
+      "source": "generators/carowinds-flying-cobras.ts"
     },
     {
       "id": "carowinds-ricochet",
       "file": "models/carowinds-ricochet.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-ricochet.ts"
+      "source": "generators/carowinds-ricochet.ts"
     },
     {
       "id": "carowinds-kiddy-hawk",
       "file": "models/carowinds-kiddy-hawk.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-kiddy-hawk.ts"
+      "source": "generators/carowinds-kiddy-hawk.ts"
     },
     {
       "id": "carowinds-wilderness-run",
       "file": "models/carowinds-wilderness-run.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-wilderness-run.ts"
+      "source": "generators/carowinds-wilderness-run.ts"
     },
     {
       "id": "carowinds-woodstock-express",
       "file": "models/carowinds-woodstock-express.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-woodstock-express.ts"
+      "source": "generators/carowinds-woodstock-express.ts"
     },
     {
       "id": "carowinds-snoopys-racing-railway",
       "file": "models/carowinds-snoopys-racing-railway.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-snoopys-racing-railway.ts"
+      "source": "generators/carowinds-snoopys-racing-railway.ts"
     },
     {
       "id": "carowinds-copperhead-strike",
       "file": "models/carowinds-copperhead-strike.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-copperhead-strike.ts"
+      "source": "generators/carowinds-copperhead-strike.ts"
     },
     {
       "id": "carowinds-afterburn",
       "file": "models/carowinds-afterburn.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-afterburn.ts"
+      "source": "generators/carowinds-afterburn.ts"
     },
     {
       "id": "carowinds-vortex",
       "file": "models/carowinds-vortex.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-vortex.ts"
+      "source": "generators/carowinds-vortex.ts"
     },
     {
       "id": "carowinds-windseeker",
       "file": "models/carowinds-windseeker.glb",
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "scripts/landmarks/carowinds-windseeker.ts"
+      "source": "generators/carowinds-windseeker.ts"
     }
   ],
   "landmarks": [

@@ -1,6 +1,6 @@
 /**
  * Hearst Tower — original procedural geometry, CC0-1.0.
- * bun scripts/landmarks/hearst-tower.ts
+ * bun generators/hearst-tower.ts
  *
  * Map frame turned to the Manhattan grid (bearing 29°): x runs along 57th
  * Street (+x toward 8th Avenue), y along 8th Avenue (+y toward 57th Street),
@@ -337,6 +337,6 @@ const glb = writeGlb('Hearst Tower', parts, {
   note: '1928 cast-stone base with pylons; nine-tier diagrid tower with bird\'s-mouth corners',
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/hearst-tower.glb', import.meta.url).pathname
+const out = new URL('../models/hearst-tower.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

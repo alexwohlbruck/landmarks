@@ -1,6 +1,6 @@
 /**
  * Vortex, Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-vortex.ts   (REPORT=1 for the element table)
+ * bun generators/carowinds-vortex.ts   (REPORT=1 for the element table)
  *
  * Built with ./coaster-kit.ts. Map frame: x east, y north, z up, metres;
  * bearing 0. The origin is the middle of the track's footprint (ANCHOR), at
@@ -66,7 +66,7 @@ const STATION: [number, number][] = [
 
 await buildCoaster({
   name: 'Vortex',
-  out: '../../landmarks/models/carowinds-vortex.glb',
+  out: '../models/carowinds-vortex.glb',
   chain: CHAIN,
   anchor: [120, 62],
   ground: { x0: 20, y0: 20, step: 20, rows: GROUND, base: 193.1 },

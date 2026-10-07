@@ -1,7 +1,7 @@
 /**
  * Rose Center for Earth and Space (American Museum of Natural History) —
  * procedural, CC0-1.0.
- * bun scripts/landmarks/rose-center.ts
+ * bun generators/rose-center.ts
  *
  * Map frame: x east, y north, z up, metres; origin at the centre of the glass
  * cube, on the ground. Placed at bearing 27°, the street grid's, so +y faces
@@ -219,6 +219,6 @@ const glb = writeGlb('Rose Center for Earth and Space', parts, {
   bearing: 27, elevation: 0, cube: 2 * H, cubeTop: TOP, sphereDiameter: 2 * R,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/rose-center.glb', import.meta.url).pathname
+const out = new URL('../models/rose-center.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

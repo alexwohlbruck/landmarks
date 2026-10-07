@@ -1,6 +1,6 @@
 /**
  * The Flying Cobras, Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-flying-cobras.ts   (REPORT=1 for the element table)
+ * bun generators/carowinds-flying-cobras.ts   (REPORT=1 for the element table)
  *
  * Map frame: x east, y north, z up, metres; bearing 0, so the frame is true
  * north. The origin is the middle of the ride's footprint (see the anchor), at
@@ -85,7 +85,7 @@ const COBRA: [number, number, number][] = [
 
 await buildCoaster({
   name: 'The Flying Cobras',
-  out: '../../landmarks/models/carowinds-flying-cobras.glb',
+  out: '../models/carowinds-flying-cobras.glb',
   chain: CHAIN,
   shuttle: true,
   anchor: [19, -39],

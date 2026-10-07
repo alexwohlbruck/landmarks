@@ -1,6 +1,6 @@
 /**
  * Ricochet, Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-ricochet.ts   (REPORT=1 for the element table)
+ * bun generators/carowinds-ricochet.ts   (REPORT=1 for the element table)
  *
  * Map frame: x east, y north, z up, metres; bearing 0, so the frame is true
  * north. The origin is the middle of the ride's footprint (see the anchor), at
@@ -79,7 +79,7 @@ const STATION: [number, number][] = [
 
 await buildCoaster({
   name: 'Ricochet',
-  out: '../../landmarks/models/carowinds-ricochet.glb',
+  out: '../models/carowinds-ricochet.glb',
   chain: CHAIN,
   anchor: [14, 139],
   ground: { x0: -20, y0: 100, step: 10, rows: GROUND, base: 191.7 },

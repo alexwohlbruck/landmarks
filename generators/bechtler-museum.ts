@@ -1,6 +1,6 @@
 /**
  * Bechtler Museum of Modern Art and the Firebird — procedural, CC0-1.0.
- * bun scripts/landmarks/bechtler-museum.ts
+ * bun generators/bechtler-museum.ts
  *
  * Map frame: x across the building towards South Tryon Street (south-east),
  * y along Tryon (north-east), z up, metres. Placed at bearing 50°, the axis of
@@ -275,7 +275,7 @@ for (const side of [-1, 1]) {
 
 // ---------------------------------------------------------------------------
 
-// The shared palette (landmarks/STYLE.md): the terracotta box is the
+// The shared palette (STYLE.md): the terracotta box is the
 // palette's own `terracotta`, the roof membrane `roof`. All the glazing is
 // `glass`: the museum's glass is its atrium and skylight, which the style
 // keeps unlit, and the two small windows on Tryon share it, which also lets
@@ -297,6 +297,6 @@ const glb = writeGlb('Bechtler Museum of Modern Art', parts, {
   bearing: 50, elevation: 0, height: H,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/bechtler-museum.glb', import.meta.url).pathname
+const out = new URL('../models/bechtler-museum.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

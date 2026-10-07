@@ -1,7 +1,7 @@
 /**
  * Petra's, Plaza Midwood, Charlotte (bar and live-music venue since 2007,
  * 1917–1919 Commonwealth Avenue) — procedural, CC0-1.0.
- * bun scripts/landmarks/petras.ts
+ * bun generators/petras.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 358°: the
  * model's +y runs back from the parking strip on Commonwealth Avenue, so the
@@ -185,7 +185,7 @@ async function finishModel(id: string, name: string, parts: { part: Part; materi
   if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
   const glb = writeGlb(name, live, { license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at the ground anchor', ...extras })
   if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-  const out = new URL(`../../landmarks/models/${id}.glb`, import.meta.url).pathname
+  const out = new URL(`../models/${id}.glb`, import.meta.url).pathname
   await Bun.write(out, glb)
   console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)
 }

@@ -1,7 +1,7 @@
 /**
  * Bank of America Corporate Center (1992, Cesar Pelli), Charlotte —
  * original procedural geometry, CC0-1.0.
- * bun scripts/landmarks/bank-of-america-corporate-center.ts [out.glb]
+ * bun generators/bank-of-america-corporate-center.ts [out.glb]
  *
  * Map frame: x east, y north, z up, metres; origin at the anchor on the
  * ground. Placed at bearing 48.8°, so the tower's faces, which sit square to
@@ -304,6 +304,6 @@ const glb = writeGlb('Bank of America Corporate Center', parts, {
   replaces: ['way/341587198', 'way/341587200', 'way/341587199', 'way/341587201', 'way/341587202', 'way/341587204', 'way/766639185', 'way/341587207', 'way/341587210', 'way/766639186', 'way/341587214'],
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = process.argv[2] ?? new URL('../../landmarks/models/bank-of-america-corporate-center.glb', import.meta.url).pathname
+const out = process.argv[2] ?? new URL('../models/bank-of-america-corporate-center.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

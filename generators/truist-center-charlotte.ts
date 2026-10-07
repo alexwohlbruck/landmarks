@@ -1,7 +1,7 @@
 /**
  * Truist Center (formerly Hearst Tower, 2002), 214 N Tryon St, Charlotte —
  * original procedural geometry, CC0-1.0.
- * bun scripts/landmarks/truist-center-charlotte.ts [out.glb]
+ * bun generators/truist-center-charlotte.ts [out.glb]
  *
  * Map frame: x east, y north, z up, metres; origin at the anchor on the
  * ground. Placed at bearing 48°, so the tower's faces, square to Uptown's
@@ -330,6 +330,6 @@ const glb = writeGlb('Truist Center', parts, {
   frame: 'Y up, -Z north, +X east, metres; origin at the anchor on the ground',
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = process.argv[2] ?? new URL('../../landmarks/models/truist-center-charlotte.glb', import.meta.url).pathname
+const out = process.argv[2] ?? new URL('../models/truist-center-charlotte.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

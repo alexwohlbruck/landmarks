@@ -1,7 +1,7 @@
 /**
  * Neighborhood Theatre, NoDa, Charlotte (1945 cinema, now a music venue) —
  * procedural, CC0-1.0.
- * bun scripts/landmarks/neighborhood-theatre.ts
+ * bun generators/neighborhood-theatre.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 52°: the
  * model's +y runs back from East 36th Street along the outline's long side
@@ -169,6 +169,6 @@ const glb = writeGlb('Neighborhood Theatre', parts, {
   bearing: 52, osm: 'way/967830177', height: Z_MID,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/neighborhood-theatre.glb', import.meta.url).pathname
+const out = new URL('../models/neighborhood-theatre.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

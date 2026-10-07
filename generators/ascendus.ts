@@ -2,7 +2,7 @@
  * Ascendus, Ed Carpenter's gateway sculpture at the Charlotte Douglas airport
  * turn-off on Billy Graham Parkway — procedural, CC0-1.0.
  *
- *   bun scripts/landmarks/ascendus.ts [out.glb]
+ *   bun generators/ascendus.ts [out.glb]
  *
  * Map frame: x east, y north, z up, metres. The origin is the sculpture's
  * foot (OSM node 12329988037), and the catalog places it at bearing 0.
@@ -95,8 +95,8 @@ const glb = writeGlb('Ascendus', parts, {
   title: 'Ascendus',
   artist: 'Ed Carpenter',
   license: 'CC0-1.0',
-  source: 'scripts/landmarks/ascendus.ts',
+  source: 'generators/ascendus.ts',
 })
-const outPath = process.argv[2] ?? new URL('../../landmarks/models/ascendus.glb', import.meta.url).pathname
+const outPath = process.argv[2] ?? new URL('../models/ascendus.glb', import.meta.url).pathname
 await Bun.write(outPath, glb)
 console.log(`${outPath}: ${tris} triangles, ${glb.length} bytes`)

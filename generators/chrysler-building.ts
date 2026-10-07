@@ -1,6 +1,6 @@
 /**
  * Chrysler Building — a geometry-only, Apple Maps style landmark.
- * bun scripts/landmarks/chrysler-building.ts [out.glb]
+ * bun generators/chrysler-building.ts [out.glb]
  * Authoring frame: x=v, y=u, z=height, metres. Catalog bearing: 29 degrees.
  * The supplied OSM envelopes establish the footprint and setback elevations.
  */
@@ -298,6 +298,6 @@ const parts:{part:Part;material:MaterialSpec}[]=[
 const triangles=parts.reduce((sum,p)=>sum+p.part.triangles,0)
 const glb=writeGlb('Chrysler Building',parts,{frame:'Y up, -Z north, +X east; metres; ground anchor',anchor:[40.75151,-73.9752851],bearing:29,crown:tiers.map(t=>({radius:t.r,spring:t.apex-t.r,apex:t.apex})),style:'geometry-only, broad recessed bands and bevelled piers',recessMetres:RECESS,bevelMetres:BEVEL})
 if(triangles>6500||glb.length>250000)throw new Error(`Budget exceeded: ${triangles} triangles / ${glb.length} bytes`)
-const out=process.argv[2]??new URL('../../landmarks/models/chrysler-building.glb',import.meta.url).pathname
+const out=process.argv[2]??new URL('../models/chrysler-building.glb',import.meta.url).pathname
 await Bun.write(out,glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length/1024).toFixed(1)} KiB); ${walls.length} exposed facade patches`)

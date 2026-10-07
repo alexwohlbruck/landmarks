@@ -2,7 +2,7 @@
  * Charlotte Douglas International Airport (CLT): Concourses B and C —
  * procedural, CC0-1.0.
  *
- *   bun scripts/landmarks/clt-concourses-b-c.ts
+ *   bun generators/clt-concourses-b-c.ts
  *
  * The two piers running south-west and south-east from the Atrium: long
  * two-level gate concourses whose walls jog out at each gate. The OSM outlines

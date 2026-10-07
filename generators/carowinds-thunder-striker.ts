@@ -1,6 +1,6 @@
 /**
  * Thunder Striker (formerly Intimidator), Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-thunder-striker.ts   (REPORT=1 for the element table)
+ * bun generators/carowinds-thunder-striker.ts   (REPORT=1 for the element table)
  *
  * Map frame: x east, y north, z up, metres; bearing 0, so the frame is true
  * north. The origin is the middle of the track's footprint (see ANCHOR), at the
@@ -110,7 +110,7 @@ const STATION: [number, number][] = [
 
 await buildCoaster({
   name: 'Thunder Striker',
-  out: '../../landmarks/models/carowinds-thunder-striker.glb',
+  out: '../models/carowinds-thunder-striker.glb',
   chain: CHAIN,
   anchor: [360, -195],
   ground: { x0: 220, y0: -460, step: 20, rows: GROUND, base: 190.1 },

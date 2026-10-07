@@ -1,6 +1,6 @@
 /**
  * Bank of America Stadium, Charlotte — procedural, CC0-1.0, no textures.
- * bun scripts/landmarks/bank-of-america-stadium.ts
+ * bun generators/bank-of-america-stadium.ts
  *
  * Map frame: x across the field, y along it, z up, metres. Placed at bearing
  * 320°, the field's long axis (OSM pitch way/187011790), so +y points up the
@@ -447,7 +447,7 @@ for (const sx of [-1, 1]) for (const sy of [-1, 1]) {
 }
 
 // ---------------------------------------------------------------------------
-// The shared palette (landmarks/STYLE.md). The Panthers-blue seats and the
+// The shared palette (STYLE.md). The Panthers-blue seats and the
 // black towers and fascia are the stadium's identity: the blue is the team
 // blue, softened towards the palette, the black the style's charcoal floor.
 // Precast, piers, arches, light-rig beams and lamp faces are `stone`, the
@@ -469,6 +469,6 @@ const glb = writeGlb('Bank of America Stadium', parts, {
   bearing: 320, osm: 'relation/12346952', footprint: [243, 268], height: 58,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/bank-of-america-stadium.glb', import.meta.url).pathname
+const out = new URL('../models/bank-of-america-stadium.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

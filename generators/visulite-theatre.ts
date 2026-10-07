@@ -1,7 +1,7 @@
 /**
  * Visulite Theatre, Elizabeth, Charlotte (1938 Art Deco cinema, now a music
  * venue) — procedural, CC0-1.0.
- * bun scripts/landmarks/visulite-theatre.ts
+ * bun generators/visulite-theatre.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 46°: the
  * model's +y runs back from Elizabeth Avenue along the outline's long side
@@ -170,6 +170,6 @@ const glb = writeGlb('Visulite Theatre', parts, {
   bearing: 46, osm: 'way/957552031', height: 8.6,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/visulite-theatre.glb', import.meta.url).pathname
+const out = new URL('../models/visulite-theatre.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

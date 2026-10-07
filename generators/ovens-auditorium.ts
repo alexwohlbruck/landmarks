@@ -1,6 +1,6 @@
 /**
  * Ovens Auditorium, Charlotte (1955, A. G. Odell Jr. & Associates) — procedural, CC0-1.0.
- * bun scripts/landmarks/ovens-auditorium.ts
+ * bun generators/ovens-auditorium.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 42°: the model's
  * +y runs north-east along the building's axis, from the stage house at the
@@ -226,6 +226,6 @@ const glb = writeGlb('Ovens Auditorium', parts, {
   bearing: 42, osm: 'way/836535412', height: Z_FLY + 1,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/ovens-auditorium.glb', import.meta.url).pathname
+const out = new URL('../models/ovens-auditorium.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

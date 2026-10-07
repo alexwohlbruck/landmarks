@@ -1,9 +1,9 @@
 /**
  * The Eiffel Tower, stylised.
  *
- *   bun scripts/landmarks/eiffel-tower.ts [out.glb]
+ *   bun generators/eiffel-tower.ts [out.glb]
  *
- * Writes `landmarks/models/eiffel-tower.glb` by default. The model is the
+ * Writes `models/eiffel-tower.glb` by default. The model is the
  * source of truth for its own asset: change the numbers here and regenerate,
  * rather than editing the GLB.
  *
@@ -147,7 +147,7 @@ const glb = writeGlb(
   { frame: 'Y up, -Z north, +X east, metres, origin at the anchor on the ground' },
 )
 
-const out = process.argv[2] ?? new URL('../../landmarks/models/eiffel-tower.glb', import.meta.url).pathname
+const out = process.argv[2] ?? new URL('../models/eiffel-tower.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 const triangles = lattice.triangles + platforms.triangles + crown.triangles
 console.log(`${out}: ${triangles} triangles, ${(glb.length / 1024).toFixed(1)} KiB`)

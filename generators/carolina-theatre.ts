@@ -2,7 +2,7 @@
  * Carolina Theatre, 230 North Tryon Street, Charlotte (1927 movie palace,
  * restored and reopened in 2025 as part of Belk Place) — procedural,
  * CC0-1.0, no textures.
- * bun scripts/landmarks/carolina-theatre.ts
+ * bun generators/carolina-theatre.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 47.3°, the
  * street grid's axis: the model's +y runs north-east along North Tryon Street
@@ -263,6 +263,6 @@ const glb = writeGlb('Carolina Theatre', parts, {
   bearing: 47.3, osm: 'way/502725466', height: Z_TOP + 1.2,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const outFile = new URL('../../landmarks/models/carolina-theatre.glb', import.meta.url).pathname
+const outFile = new URL('../models/carolina-theatre.glb', import.meta.url).pathname
 await Bun.write(outFile, glb)
 console.log(`${outFile}: ${triangles} triangles, ${glb.length} bytes`)

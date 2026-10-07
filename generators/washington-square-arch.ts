@@ -1,12 +1,12 @@
 /**
  * Washington Square Arch — procedural, CC0-1.0, no textures or source mesh.
- * bun scripts/landmarks/washington-square-arch.ts
+ * bun generators/washington-square-arch.ts
  *
  * Map frame: x = east along the arch's long axis, y = north up Fifth Avenue,
  * z up, metres. Placed at bearing 32°. The OSM envelope is 19.1 × 7.0 m and the
  * real height 23.5 m; the opening is the real 30 × 47 ft (9.0 × 14.3 m).
  *
- * Styled to landmarks/STYLE.md: warm ivory marble, bevelled edges, one bold
+ * Styled to STYLE.md: warm ivory marble, bevelled edges, one bold
  * archivolt, paneled piers, broad spandrel reliefs, an entablature and an
  * attic with recessed panels. The two Washington statues stand at the foot of
  * the north face as chunky mirrored forms. Everything is mirrored about both
@@ -319,6 +319,6 @@ const glb = writeGlb('Washington Square Arch', parts, {
   openingWidth: 2 * R, openingHeight: SPRING + R, northFace: 'War east; Peace west',
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/washington-square-arch.glb', import.meta.url).pathname
+const out = new URL('../models/washington-square-arch.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

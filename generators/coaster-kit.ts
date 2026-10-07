@@ -59,7 +59,7 @@ export interface Element {
 
 export interface CoasterSpec {
   name: string
-  /** Output GLB, relative to scripts/landmarks/. */
+  /** Output GLB, relative to generators/. */
   out: string
   /** The circuit in the park frame, node by node in the direction of travel. */
   chain: [number, number][]

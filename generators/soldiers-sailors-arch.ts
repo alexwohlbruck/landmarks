@@ -1,7 +1,7 @@
 /**
  * Soldiers' and Sailors' Memorial Arch, Grand Army Plaza, Brooklyn.
- * Procedural CC0 geometry, styled to landmarks/STYLE.md.
- * bun scripts/landmarks/soldiers-sailors-arch.ts
+ * Procedural CC0 geometry, styled to STYLE.md.
+ * bun generators/soldiers-sailors-arch.ts
  *
  * Map frame: x = passage axis (+x is the park/south face, which carries the
  * Army and Navy groups), y = the long facade, z = up. Placement in the
@@ -343,6 +343,6 @@ const glb = writeGlb("Soldiers' and Sailors' Memorial Arch", parts, {
   source: 'OSM envelope for way/20679503 and parts; NYC LPC LP-0821',
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/soldiers-sailors-arch.glb', import.meta.url).pathname
+const out = new URL('../models/soldiers-sailors-arch.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

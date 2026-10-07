@@ -1,6 +1,6 @@
 /**
  * Bojangles Coliseum, Charlotte (1955, A. G. Odell Jr.) — procedural, CC0-1.0.
- * bun scripts/landmarks/bojangles-coliseum.ts
+ * bun generators/bojangles-coliseum.ts
  *
  * Map frame: x east, y north, z up, metres; placed at bearing 0. The origin is
  * the centre of the circle fitted to the round part of the OSM outline
@@ -213,6 +213,6 @@ const glb = writeGlb('Bojangles Coliseum', parts, {
   bearing: 0, osm: 'way/323383462', diameter: 2 * R_RIM, height: APEX,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/bojangles-coliseum.glb', import.meta.url).pathname
+const out = new URL('../models/bojangles-coliseum.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

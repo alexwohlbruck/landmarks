@@ -1,7 +1,7 @@
 /**
  * The Milestone Club, Charlotte (punk and underground rock club since 1969,
  * 3400 Tuckaseegee Road, Enderly Park) — procedural, CC0-1.0.
- * bun scripts/landmarks/milestone-club.ts
+ * bun generators/milestone-club.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 28°: the
  * model's +y runs back from Tuckaseegee Road, so the street front is the
@@ -184,7 +184,7 @@ async function finishModel(id: string, name: string, parts: { part: Part; materi
   if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
   const glb = writeGlb(name, live, { license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at the ground anchor', ...extras })
   if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-  const out = new URL(`../../landmarks/models/${id}.glb`, import.meta.url).pathname
+  const out = new URL(`../models/${id}.glb`, import.meta.url).pathname
   await Bun.write(out, glb)
   console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)
 }

@@ -1,6 +1,6 @@
 /**
  * Carolina Skytower, Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-skytower.ts
+ * bun generators/carowinds-skytower.ts
  *
  * Map frame: x east, y north, z up, metres; bearing 0. The origin is the
  * centre of the shaft (OSM way/890251379, a 3.2 m circle tagged height 79.86,
@@ -279,6 +279,6 @@ const glb = writeGlb('Carolina Skytower', parts, {
   bearing: 0, elevation: 0, height: 79.86,
 }, { nodes, animation: { name: 'ride', times, channels } })
 if (glb.length > 250_000) throw new Error(`Size budget exceeded: ${glb.length} bytes`)
-const out = new URL('../../landmarks/models/carowinds-skytower.glb', import.meta.url).pathname
+const out = new URL('../models/carowinds-skytower.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes, ${LOOP} s a loop, ${TURNS} turns`)

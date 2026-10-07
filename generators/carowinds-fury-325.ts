@@ -1,6 +1,6 @@
 /**
  * Fury 325, Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-fury-325.ts   (REPORT=1 for the element table and energy check)
+ * bun generators/carowinds-fury-325.ts   (REPORT=1 for the element table and energy check)
  *
  * Map frame: x east, y north, z up, metres; bearing 0, so the frame is true
  * north. The origin is the middle of the track's footprint (see ANCHOR), at the
@@ -120,7 +120,7 @@ const STATION: [number, number][] = [
 
 await buildCoaster({
   name: 'Fury 325',
-  out: '../../landmarks/models/carowinds-fury-325.glb',
+  out: '../models/carowinds-fury-325.glb',
   chain: CHAIN,
   anchor: [250, 244],
   ground: { x0: -20, y0: 40, step: 20, rows: GROUND, base: 183.1 },

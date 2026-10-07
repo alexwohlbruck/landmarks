@@ -1,7 +1,7 @@
 /**
  * The Evening Muse, NoDa, Charlotte (listening room in a one-storey brick
  * corner shop at 3227 N Davidson St) — procedural, CC0-1.0.
- * bun scripts/landmarks/evening-muse.ts
+ * bun generators/evening-muse.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 322°: the
  * model's +y runs back from North Davidson Street, so the Davidson front is
@@ -246,6 +246,6 @@ const glb = writeGlb('The Evening Muse', parts, {
   bearing: 322, osm: 'way/1192512105', height: ZP + 0.1,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/evening-muse.glb', import.meta.url).pathname
+const out = new URL('../models/evening-muse.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

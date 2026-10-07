@@ -1,6 +1,6 @@
 /**
  * U.S. National Whitewater Center, main building — procedural, CC0-1.0.
- * bun scripts/landmarks/usnwc-lodge.ts
+ * bun generators/usnwc-lodge.ts
  *
  * Map frame: x east, y north, z up, metres; placed at bearing 0. The origin is
  * the area centroid of the OSM outline (way/223914934), and the footprint
@@ -270,6 +270,6 @@ const glb = writeGlb('U.S. National Whitewater Center', parts, {
   bearing: 0, elevation: 0, height: 19.4,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/usnwc-lodge.glb', import.meta.url).pathname
+const out = new URL('../models/usnwc-lodge.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

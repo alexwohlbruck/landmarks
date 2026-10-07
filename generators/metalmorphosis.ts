@@ -2,7 +2,7 @@
  * Metalmorphosis, David Černý's mirrored head at Whitehall Corporate Center,
  * Charlotte — procedural, CC0-1.0.
  *
- *   bun scripts/landmarks/metalmorphosis.ts [out.glb]
+ *   bun generators/metalmorphosis.ts [out.glb]
  *
  * Map frame: x east, y north, z up, metres. The origin is the head's vertical
  * axis on the ground (OSM node 4880354210), and the face looks along +y; the
@@ -170,9 +170,9 @@ const glb = writeGlb('Metalmorphosis', parts, {
   title: 'Metalmorphosis',
   artist: 'David Černý',
   license: 'CC0-1.0',
-  source: 'scripts/landmarks/metalmorphosis.ts',
+  source: 'generators/metalmorphosis.ts',
   note: 'Static face pose; each of the 40 slabs is its own node about the vertical axis through the origin.',
 }, { nodes })
-const out = process.argv[2] ?? new URL('../../landmarks/models/metalmorphosis.glb', import.meta.url).pathname
+const out = process.argv[2] ?? new URL('../models/metalmorphosis.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${tris} triangles, ${glb.length} bytes, ${nodes.length} slab nodes`)

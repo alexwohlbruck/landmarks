@@ -1,6 +1,6 @@
 /**
  * Empire State Building — original procedural geometry, CC0-1.0.
- * bun scripts/landmarks/empire-state-building.ts
+ * bun generators/empire-state-building.ts
  *
  * x = v, y = u, z = metres up. Anchor 40.7485288,-73.9859714;
  * bearing 29°, elevation 0. OSM tier envelopes are preserved. The western
@@ -230,6 +230,6 @@ const glb=writeGlb('Empire State Building',parts,{
   note:'Measured OSM envelopes; bevelled architectural geometry and broad recessed bays',
 })
 if(glb.length>256000)throw new Error(`File budget exceeded: ${glb.length}`)
-const out=new URL('../../landmarks/models/empire-state-building.glb',import.meta.url).pathname
+const out=new URL('../models/empire-state-building.glb',import.meta.url).pathname
 await Bun.write(out,glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length/1024).toFixed(1)} KiB)`)

@@ -1,7 +1,7 @@
 /**
  * Terrace on the Park (the 1964 World's Fair Port Authority heliport) —
  * original procedural geometry, CC0-1.0.
- * bun scripts/landmarks/terrace-on-the-park.ts
+ * bun generators/terrace-on-the-park.ts
  *
  * Authoring frame: x along the long side of the OSM outline (way/284860789),
  * y across it, z up, metres. Catalog bearing 68.5°, anchor at the outline's
@@ -226,6 +226,6 @@ const glb = writeGlb('Terrace on the Park', parts, {
   note: 'OSM outline way/284860789; four mid-side pylons carry a glazed box with a projecting roof deck',
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/terrace-on-the-park.glb', import.meta.url).pathname
+const out = new URL('../models/terrace-on-the-park.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

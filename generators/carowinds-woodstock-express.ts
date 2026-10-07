@@ -1,7 +1,7 @@
 /**
  * Woodstock Express (formerly Scooby-Doo, Scooby-Doo's Ghoster Coaster and
  * Fairly Odd Coaster), Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-woodstock-express.ts   (REPORT=1 for the element table)
+ * bun generators/carowinds-woodstock-express.ts   (REPORT=1 for the element table)
  *
  * Map frame: x east, y north, z up, metres; bearing 0, so the frame is true
  * north. The origin is the middle of the ride's footprint (see the anchor), at
@@ -79,7 +79,7 @@ const STATION: [number, number][] = [
 
 await buildCoaster({
   name: 'Woodstock Express',
-  out: '../../landmarks/models/carowinds-woodstock-express.glb',
+  out: '../models/carowinds-woodstock-express.glb',
   chain: CHAIN,
   anchor: [330, -206],
   ground: { x0: 285, y0: -260, step: 10, rows: GROUND, base: 194 },

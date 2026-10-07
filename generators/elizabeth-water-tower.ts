@@ -1,6 +1,6 @@
 /**
  * Elizabeth water tower, E 8th St at Pecan Ave, Charlotte — procedural, CC0-1.0.
- * bun scripts/landmarks/elizabeth-water-tower.ts
+ * bun generators/elizabeth-water-tower.ts
  *
  * Map frame: x east, y north, z up, metres; origin on the ground at the
  * centre of the OSM outline (way/870467714, man_made=water_tower, a 25.3 m
@@ -192,5 +192,5 @@ if (triangles > 2500) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('Elizabeth water tower', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres, origin at ground', height: Z_TOP + 1.0, bearing: 0,
 })
-await Bun.write(new URL('../../landmarks/models/elizabeth-water-tower.glb', import.meta.url), glb)
+await Bun.write(new URL('../models/elizabeth-water-tower.glb', import.meta.url), glb)
 console.log(`elizabeth-water-tower.glb: ${triangles} triangles, ${glb.length} bytes`)

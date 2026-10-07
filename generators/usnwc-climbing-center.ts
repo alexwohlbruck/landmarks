@@ -1,6 +1,6 @@
 /**
  * U.S. National Whitewater Center, Climbing Center — procedural, CC0-1.0.
- * bun scripts/landmarks/usnwc-climbing-center.ts
+ * bun generators/usnwc-climbing-center.ts
  *
  * Map frame: x east, y north, z up, metres; placed at bearing 0. The origin is
  * midway between the two OSM buildings it replaces: the covered wall
@@ -235,6 +235,6 @@ const glb = writeGlb('U.S. National Whitewater Center Climbing Center', parts, {
   bearing: 0, elevation: 0, height: 16.6,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/usnwc-climbing-center.glb', import.meta.url).pathname
+const out = new URL('../models/usnwc-climbing-center.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

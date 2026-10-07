@@ -1,6 +1,6 @@
 /**
  * WindSeeker, Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-windseeker.ts
+ * bun generators/carowinds-windseeker.ts
  *
  * Map frame: x east, y north, z up, metres; bearing 0. The origin is the
  * centre of the tower: OSM way/893187005, a 6 m circle tagged building=yes,
@@ -367,7 +367,7 @@ const rotations = new Map(yaw)
 for (let i = 0; i < SWINGS; i++) rotations.set(`swing-${i}`, tilt[0])
 const glb = setRotations(raw, rotations)
 if (glb.length > 250_000) throw new Error(`Size budget exceeded: ${glb.length} bytes`)
-const out = new URL('../../landmarks/models/carowinds-windseeker.glb', import.meta.url).pathname
+const out = new URL('../models/carowinds-windseeker.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes, ${LOOP} s a loop, ${TURNS} turns, ` +
   `top speed ${(W_MAX * 60 / TAU).toFixed(1)} rpm, swings out ${(PHI_MAX * 180 / Math.PI).toFixed(1)}°`)

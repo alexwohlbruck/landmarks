@@ -2,7 +2,7 @@
  * Il Grande Disco, Arnaldo Pomodoro's bronze disc at Trade and Tryon,
  * Charlotte — procedural, CC0-1.0.
  *
- *   bun scripts/landmarks/il-grande-disco.ts [out.glb]
+ *   bun generators/il-grande-disco.ts [out.glb]
  *
  * Map frame: x east, y north, z up, metres. The origin is the disc's centre on
  * the ground (OSM node 8415199023), the disc stands in the x–z plane and its
@@ -165,8 +165,8 @@ const glb = writeGlb('Il Grande Disco', parts, {
   title: 'Il Grande Disco',
   artist: 'Arnaldo Pomodoro',
   license: 'CC0-1.0',
-  source: 'scripts/landmarks/il-grande-disco.ts',
+  source: 'generators/il-grande-disco.ts',
 })
-const out = process.argv[2] ?? new URL('../../landmarks/models/il-grande-disco.glb', import.meta.url).pathname
+const out = process.argv[2] ?? new URL('../models/il-grande-disco.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${tris} triangles, ${glb.length} bytes`)

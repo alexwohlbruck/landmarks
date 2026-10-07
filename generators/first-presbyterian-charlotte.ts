@@ -1,7 +1,7 @@
 /**
  * First Presbyterian Church, 200 W Trade St, Charlotte — procedural, CC0-1.0,
  * no textures.
- * bun scripts/landmarks/first-presbyterian-charlotte.ts
+ * bun generators/first-presbyterian-charlotte.ts
  *
  * Only the historic church: the 1857 front, narthex and tower, the 1883–84
  * spire, and the 1894–95 nave, transepts and pulpit end. The Sunday School
@@ -443,6 +443,6 @@ const glb = writeGlb('First Presbyterian Church, Charlotte', parts, {
   replaces: ['way/502718740'],
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/first-presbyterian-charlotte.glb', import.meta.url).pathname
+const out = new URL('../models/first-presbyterian-charlotte.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

@@ -1,6 +1,6 @@
 /**
  * AvidXchange Music Factory: the mill — procedural, CC0-1.0.
- * bun scripts/landmarks/music-factory-mill.ts
+ * bun generators/music-factory-mill.ts
  *
  * The Music Factory is the John B. Ross and Company Mill (1904–c.1960), later
  * the Southern Asbestos Manufacturing Company plant, at the corner of Hamilton
@@ -441,7 +441,7 @@ export async function write(b: Built, budget = 5000) {
     bearing: 0, elevation: 0, height: b.height,
   })
   if (glb.length > 256000) throw new Error(`${b.id}: file budget exceeded: ${glb.length}`)
-  const out = new URL(`../../landmarks/models/${b.id}.glb`, import.meta.url).pathname
+  const out = new URL(`../models/${b.id}.glb`, import.meta.url).pathname
   await Bun.write(out, glb)
   const [lng, lat] = toLngLat(b.anchor)
   console.log(`${out}: ${triangles} triangles, ${glb.length} bytes; anchor ${lng}, ${lat}; base ${b.base.toFixed(1)} m`)

@@ -1,6 +1,6 @@
 /**
  * Washington Square Fountain (Tisch Fountain) — procedural, CC0-1.0.
- * bun scripts/landmarks/washington-square-fountain.ts
+ * bun generators/washington-square-fountain.ts
  *
  * Map frame: x east, y north, z up, metres; origin at the centre of the basin.
  * Placed at bearing 32°, so +y points up the park's axis at the arch, which the
@@ -161,6 +161,6 @@ const glb = writeGlb('Washington Square Fountain', parts, {
   bearing: 32, elevation: 0, diameter: 2 * R, rimHeight: TOP, jetHeight: 9,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/washington-square-fountain.glb', import.meta.url).pathname
+const out = new URL('../models/washington-square-fountain.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

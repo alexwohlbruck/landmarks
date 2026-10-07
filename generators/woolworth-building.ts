@@ -1,6 +1,6 @@
 /**
  * Woolworth Building — original procedural geometry, CC0-1.0.
- * bun scripts/landmarks/woolworth-building.ts
+ * bun generators/woolworth-building.ts
  *
  * Authoring frame: x across Broadway's frontage (bearing 121.5°), y along
  * Broadway (bearing 31.5°), z metres up. Catalog bearing 31.5°, anchor at the
@@ -300,6 +300,6 @@ const glb = writeGlb('Woolworth Building', parts, {
   footprint: { x: [BACK, FRONT], y: [-HALF, HALF] },
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/woolworth-building.glb', import.meta.url).pathname
+const out = new URL('../models/woolworth-building.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

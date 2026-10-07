@@ -1,7 +1,7 @@
 /**
  * Coyote Joe's, Charlotte (country music hall and dance club, 4621 Wilkinson
  * Boulevard; about 3,200 capacity) — procedural, CC0-1.0.
- * bun scripts/landmarks/coyote-joes.ts
+ * bun generators/coyote-joes.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 26°: the
  * model's +y runs along the hall's long axis towards the main parking lot and
@@ -201,7 +201,7 @@ async function finishModel(id: string, name: string, parts: { part: Part; materi
   if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
   const glb = writeGlb(name, live, { license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at the ground anchor', ...extras })
   if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-  const out = new URL(`../../landmarks/models/${id}.glb`, import.meta.url).pathname
+  const out = new URL(`../models/${id}.glb`, import.meta.url).pathname
   await Bun.write(out, glb)
   console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)
 }

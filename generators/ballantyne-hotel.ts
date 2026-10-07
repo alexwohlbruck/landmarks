@@ -1,6 +1,6 @@
 /**
  * The Ballantyne Hotel, Charlotte NC — procedural, CC0-1.0.
- * bun scripts/landmarks/ballantyne-hotel.ts
+ * bun generators/ballantyne-hotel.ts
  *
  * Map frame: x across the main block (east-north-east, towards the pond),
  * y along it (north-north-west), z up, metres. Placed at bearing 346°, the
@@ -537,6 +537,6 @@ const glb = writeGlb('The Ballantyne Hotel', parts, {
   bearing: 346, elevation: 0, height: RIDGE + 11,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/ballantyne-hotel.glb', import.meta.url).pathname
+const out = new URL('../models/ballantyne-hotel.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

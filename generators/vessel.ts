@@ -1,6 +1,6 @@
 /**
  * Vessel, Hudson Yards. Procedural CC0 geometry in metres, x east/y north/z up.
- * bun scripts/landmarks/vessel.ts
+ * bun generators/vessel.ts
  *
  * Sixteen levels of five staggered landings, each joined to the two landings
  * above and below by a straight flight, form the open honeycomb basket that
@@ -130,6 +130,6 @@ const glb = writeGlb('Vessel', parts, {
   bearing: 0, elevation: 0, replaces: ['relation/16231018'],
 })
 if (glb.length > 250_000) throw new Error(`Landmark exceeds 250 KB: ${glb.length}`)
-const out = new URL('../../landmarks/models/vessel.glb', import.meta.url).pathname
+const out = new URL('../models/vessel.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes; ${bands} bands`)

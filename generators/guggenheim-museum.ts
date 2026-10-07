@@ -1,6 +1,6 @@
 /**
  * Solomon R. Guggenheim Museum — original procedural geometry, CC0-1.0.
- * Run: bun scripts/landmarks/guggenheim-museum.ts
+ * Run: bun generators/guggenheim-museum.ts
  *
  * Map frame: x = v (east, into the block), y = u (uptown, along Fifth
  * Avenue), z = metres up. Catalog placement: 40.7829932, -73.958925;
@@ -356,6 +356,6 @@ const glb = writeGlb('Solomon R. Guggenheim Museum', parts, {
   note: 'Spiral rotunda, Monitor and avenue band by Wright; Gwathmey Siegel annex behind. Massing stylised within the OSM envelope.',
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/guggenheim-museum.glb', import.meta.url).pathname
+const out = new URL('../models/guggenheim-museum.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

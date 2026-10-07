@@ -2,7 +2,7 @@
  * Charlotte Douglas International Airport (CLT): Daily Deck West —
  * procedural, CC0-1.0.
  *
- *   bun scripts/landmarks/clt-daily-deck-west.ts
+ *   bun generators/clt-daily-deck-west.ts
  *
  * One of the pair of daily parking decks north of the Hourly Deck
  * (relation/5936266, 3,000 spaces), a plain open deck: open floors at 3.4 m behind

@@ -1,6 +1,6 @@
 /**
  * Hurler, Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-hurler.ts   (REPORT=1 for the element table)
+ * bun generators/carowinds-hurler.ts   (REPORT=1 for the element table)
  *
  * Map frame: x east, y north, z up, metres; bearing 0. The origin is the
  * middle of the track's footprint (see anchor), at the lowest ground under it.
@@ -72,7 +72,7 @@ const STATION: [number, number][] = [
 
 await buildCoaster({
   name: 'Hurler',
-  out: '../../landmarks/models/carowinds-hurler.glb',
+  out: '../models/carowinds-hurler.glb',
   chain: CHAIN,
   anchor: [8.5, 301],
   ground: { x0: -120, y0: 220, step: 20, rows: GROUND, base: 184.6 },

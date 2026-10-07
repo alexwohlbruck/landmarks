@@ -1,6 +1,6 @@
 /**
  * The Park Expo and Conference Center, Charlotte — procedural, CC0-1.0.
- * bun scripts/landmarks/park-expo-center.ts
+ * bun generators/park-expo-center.ts
  *
  * Map frame: x east, y north, z up, metres; placed at bearing 0. The origin is
  * the area centroid of the five OSM buildings it replaces, whose outlines are
@@ -205,6 +205,6 @@ const glb = writeGlb('Park Expo and Conference Center', parts, {
   bearing: 0, osm: buildings.map((b) => b.name), height: Math.max(...buildings.map((b) => b.h)),
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/park-expo-center.glb', import.meta.url).pathname
+const out = new URL('../models/park-expo-center.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

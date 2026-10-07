@@ -1,6 +1,6 @@
 /**
  * Gainesville Midland No. 301, Freedom Park, Charlotte — procedural, CC0-1.0.
- * bun scripts/landmarks/freedom-park-locomotive.ts
+ * bun generators/freedom-park-locomotive.ts
  *
  * Map frame: x to the engine's right, y forward along the track (towards the
  * pilot), z up, metres. Placed at bearing 307°: the engine faces north-west,
@@ -229,5 +229,5 @@ if (triangles > 3000) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('Gainesville Midland No. 301', parts.map(({ part, material }) => ({ part, material })), {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres, origin at ground', length: 21.3, bearing: 307,
 })
-await Bun.write(new URL('../../landmarks/models/freedom-park-locomotive.glb', import.meta.url), glb)
+await Bun.write(new URL('../models/freedom-park-locomotive.glb', import.meta.url), glb)
 console.log(`freedom-park-locomotive.glb: ${triangles} triangles, ${glb.length} bytes`)

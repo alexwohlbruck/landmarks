@@ -2,7 +2,7 @@
  * Charlotte Douglas International Airport (CLT): Concourse A — procedural,
  * CC0-1.0.
  *
- *   bun scripts/landmarks/clt-concourse-a.ts
+ *   bun generators/clt-concourse-a.ts
  *
  * One OSM outline (way/1414163869) holding three generations: the 1986 pier
  * running west from the terminal, the long connector north along runway

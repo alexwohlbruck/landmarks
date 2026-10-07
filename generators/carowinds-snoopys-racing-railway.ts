@@ -1,6 +1,6 @@
 /**
  * Snoopy's Racing Railway, Carowinds: procedural, CC0-1.0.
- * bun scripts/landmarks/carowinds-snoopys-racing-railway.ts   (REPORT=1 for the element table)
+ * bun generators/carowinds-snoopys-racing-railway.ts   (REPORT=1 for the element table)
  *
  * Map frame: x east, y north, z up, metres; bearing 0, so the frame is true
  * north. The origin is the middle of the ride's footprint (see the anchor), at
@@ -79,7 +79,7 @@ const STATION: [number, number][] = [
 
 await buildCoaster({
   name: "Snoopy's Racing Railway",
-  out: '../../landmarks/models/carowinds-snoopys-racing-railway.glb',
+  out: '../models/carowinds-snoopys-racing-railway.glb',
   chain: CHAIN,
   anchor: [358, -114],
   ground: { x0: 315, y0: -155, step: 10, rows: GROUND, base: 195.4 },

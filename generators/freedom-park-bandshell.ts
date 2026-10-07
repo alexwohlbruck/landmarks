@@ -1,6 +1,6 @@
 /**
  * Freedom Park Bandshell, Charlotte — procedural, CC0-1.0.
- * bun scripts/landmarks/freedom-park-bandshell.ts
+ * bun generators/freedom-park-bandshell.ts
  *
  * Map frame: x across the stage, y towards the audience, z up, metres.
  * Placed at bearing 320°: the shell opens north-west across the moat to the
@@ -279,5 +279,5 @@ if (triangles > 3000) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('Freedom Park Bandshell', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres, origin at ground', height: CREST, bearing: 320,
 })
-await Bun.write(new URL('../../landmarks/models/freedom-park-bandshell.glb', import.meta.url), glb)
+await Bun.write(new URL('../models/freedom-park-bandshell.glb', import.meta.url), glb)
 console.log(`freedom-park-bandshell.glb: ${triangles} triangles, ${glb.length} bytes`)

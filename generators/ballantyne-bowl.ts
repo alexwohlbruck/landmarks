@@ -1,6 +1,6 @@
 /**
  * The Amp Ballantyne ("the Ballantyne Bowl"), Charlotte NC — procedural, CC0-1.0.
- * bun scripts/landmarks/ballantyne-bowl.ts
+ * bun generators/ballantyne-bowl.ts
  *
  * Map frame: x across the stage (east-south-east), y towards the audience
  * (north-east), z up, metres. Placed at bearing 43.3°, the axis of the OSM
@@ -176,6 +176,6 @@ const glb = writeGlb('The Amp Ballantyne', parts, {
   bearing: 43.3, elevation: 0, height: TOP,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/ballantyne-bowl.glb', import.meta.url).pathname
+const out = new URL('../models/ballantyne-bowl.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes`)

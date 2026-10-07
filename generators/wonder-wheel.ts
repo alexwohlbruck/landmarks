@@ -1,6 +1,6 @@
 /**
  * Deno's Wonder Wheel, Coney Island — procedural, CC0-1.0.
- * bun scripts/landmarks/wonder-wheel.ts
+ * bun generators/wonder-wheel.ts
  *
  * Map frame: x east, y north, z up, metres; origin on the ground under the
  * axle. The wheel is built turning in the x–z plane, so its axle runs along y.
@@ -271,5 +271,5 @@ if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('Wonder Wheel', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres, origin at ground', height: 46, bearing: 6,
 }, { nodes, animation: { name: 'turn', times, channels } })
-await Bun.write(new URL('../../landmarks/models/wonder-wheel.glb', import.meta.url), glb)
+await Bun.write(new URL('../models/wonder-wheel.glb', import.meta.url), glb)
 console.log(`wonder-wheel.glb: ${triangles} triangles, ${glb.length} bytes, ${LOOP} s a turn`)

@@ -1,7 +1,7 @@
 /**
  * One Wells Fargo Center (1988, formerly First Union Center), Charlotte —
  * original procedural geometry, CC0-1.0.
- * bun scripts/landmarks/one-wells-fargo-center.ts
+ * bun generators/one-wells-fargo-center.ts
  *
  * Map frame: x east, y north, z up, metres; origin at the centre of the tower
  * on the ground. Placed at bearing 5°, so the model's +x runs along the crown's
@@ -259,6 +259,6 @@ const glb = writeGlb('One Wells Fargo Center', parts, {
   replaces: ['way/380092606'],
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/one-wells-fargo-center.glb', import.meta.url).pathname
+const out = new URL('../models/one-wells-fargo-center.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)

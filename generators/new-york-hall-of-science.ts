@@ -1,7 +1,7 @@
 /**
  * New York Hall of Science, Flushing Meadows–Corona Park — original
  * procedural geometry, CC0-1.0.
- * bun scripts/landmarks/new-york-hall-of-science.ts
+ * bun generators/new-york-hall-of-science.ts
  *
  * Map frame: x east, y north, z up, metres. Bearing 0, so x/y are true
  * east/north. Origin is the centroid of OSM way 284860788 (40.7472904,
@@ -304,6 +304,6 @@ const glb = writeGlb('New York Hall of Science', parts, {
   note: 'Lobed Great Hall with broad recessed cobalt cells; plain brick podium, rotunda and north wing; Rocket Park Atlas and Titan II',
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-const out = new URL('../../landmarks/models/new-york-hall-of-science.glb', import.meta.url).pathname
+const out = new URL('../models/new-york-hall-of-science.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)
