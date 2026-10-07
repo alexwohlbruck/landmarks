@@ -685,6 +685,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-trump-tower.ts"
+    },
+    {
+      "id": "chi-875-north-michigan",
+      "file": "models/chi-875-north-michigan.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-875-north-michigan.ts"
     }
   ],
   "landmarks": [
@@ -2612,6 +2619,28 @@
         "way/188356529",
         "way/284773992",
         "way/284773991"
+      ]
+    },
+    {
+      "id": "chi-875-north-michigan",
+      "name": "875 North Michigan Avenue",
+      "model": "chi-875-north-michigan",
+      "lng": -87.623095,
+      "lat": 41.898818,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q217727",
+      "replaces": [
+        "way/31064573",
+        "way/232905278",
+        "way/232905280",
+        "way/232905283",
+        "way/232906397",
+        "way/232914185",
+        "way/1282265474",
+        "way/279951771",
+        "way/279951772"
       ]
     }
   ]
