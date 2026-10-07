@@ -755,6 +755,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-epcot-canada.ts"
+    },
+    {
+      "id": "wdw-epcot-china-temple",
+      "file": "models/wdw-epcot-china-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-china-temple.ts"
     }
   ],
   "landmarks": [
@@ -2940,6 +2947,20 @@
         "way/295396527",
         "way/295396523",
         "way/295396535"
+      ]
+    },
+    {
+      "id": "wdw-epcot-china-temple",
+      "name": "Temple of Heaven (China, EPCOT)",
+      "model": "wdw-epcot-china-temple",
+      "lng": -81.5463174,
+      "lat": 28.3697663,
+      "bearing": 286,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2681898",
+      "replaces": [
+        "way/383670241"
       ]
     }
   ]
