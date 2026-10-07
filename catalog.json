@@ -1217,6 +1217,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-natural-history.ts"
+    },
+    {
+      "id": "dc-nga-west",
+      "file": "models/dc-nga-west.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-nga-west.ts"
     }
   ],
   "landmarks": [
@@ -4914,6 +4921,36 @@
         "way/66418787",
         "way/453546745",
         "way/453546747"
+      ]
+    },
+    {
+      "id": "dc-nga-west",
+      "name": "National Gallery of Art, West Building",
+      "model": "dc-nga-west",
+      "lng": -77.0199074,
+      "lat": 38.8913174,
+      "bearing": 359.11,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q129673434",
+      "replaces": [
+        "way/66418944",
+        "way/426863059",
+        "way/426863062",
+        "way/426863065",
+        "way/426863068",
+        "way/426863072",
+        "way/426863074",
+        "way/426863076",
+        "way/426863079",
+        "way/426863081",
+        "way/426863083",
+        "way/426863084",
+        "way/426863086",
+        "way/426863089",
+        "way/426863091",
+        "way/426863096",
+        "way/426863098"
       ]
     }
   ]
