@@ -825,6 +825,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-cosmopolitan.ts"
+    },
+    {
+      "id": "lv-veer-towers",
+      "file": "models/lv-veer-towers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-veer-towers.ts"
     }
   ],
   "landmarks": [
@@ -3125,6 +3132,21 @@
         "way/134795273",
         "way/27897905",
         "way/472669744"
+      ]
+    },
+    {
+      "id": "lv-veer-towers",
+      "name": "Veer Towers",
+      "model": "lv-veer-towers",
+      "lng": -115.174681,
+      "lat": 36.107407,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q634258",
+      "replaces": [
+        "way/52134835",
+        "way/52134834"
       ]
     }
   ]
