@@ -839,6 +839,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-311-south-wacker.ts"
+    },
+    {
+      "id": "chi-chase-tower",
+      "file": "models/chi-chase-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-chase-tower.ts"
     }
   ],
   "landmarks": [
@@ -3140,6 +3147,24 @@
         "way/1188678582",
         "way/1188678583",
         "way/1188678584"
+      ]
+    },
+    {
+      "id": "chi-chase-tower",
+      "name": "Chase Tower",
+      "model": "chi-chase-tower",
+      "lng": -87.630138,
+      "lat": 41.881623,
+      "bearing": 359.2,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q291304",
+      "replaces": [
+        "way/230613007",
+        "way/284778256",
+        "way/284778257",
+        "way/284778258",
+        "way/284778259"
       ]
     }
   ]
