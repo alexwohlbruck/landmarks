@@ -902,6 +902,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-neon-museum.ts"
+    },
+    {
+      "id": "lv-lou-ruvo",
+      "file": "models/lv-lou-ruvo.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-lou-ruvo.ts"
     }
   ],
   "landmarks": [
@@ -3410,6 +3417,20 @@
       "wikidata": "Q6461932",
       "replaces": [
         "way/543178410"
+      ]
+    },
+    {
+      "id": "lv-lou-ruvo",
+      "name": "Cleveland Clinic Lou Ruvo Center for Brain Health",
+      "model": "lv-lou-ruvo",
+      "lng": -115.1546623,
+      "lat": 36.1672742,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1988897",
+      "replaces": [
+        "way/484153262"
       ]
     }
   ]
