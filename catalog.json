@@ -944,6 +944,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-art-institute-modern-wing.ts"
+    },
+    {
+      "id": "chi-field-museum",
+      "file": "models/chi-field-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-field-museum.ts"
     }
   ],
   "landmarks": [
@@ -3473,6 +3480,20 @@
         "way/943374848",
         "way/943374852",
         "way/1425669058"
+      ]
+    },
+    {
+      "id": "chi-field-museum",
+      "name": "Field Museum",
+      "model": "chi-field-museum",
+      "lng": -87.6170432,
+      "lat": 41.8662113,
+      "bearing": 358.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1122595",
+      "replaces": [
+        "way/24825537"
       ]
     }
   ]
