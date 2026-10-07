@@ -825,6 +825,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-rookery.ts"
+    },
+    {
+      "id": "chi-chicago-temple",
+      "file": "models/chi-chicago-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-chicago-temple.ts"
     }
   ],
   "landmarks": [
@@ -3091,6 +3098,20 @@
       "wikidata": "Q3441853",
       "replaces": [
         "way/73706154"
+      ]
+    },
+    {
+      "id": "chi-chicago-temple",
+      "name": "Chicago Temple Building",
+      "model": "chi-chicago-temple",
+      "lng": -87.630615,
+      "lat": 41.882859,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q14687499",
+      "replaces": [
+        "way/137060374"
       ]
     }
   ]
