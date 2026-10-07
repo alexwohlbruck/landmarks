@@ -1021,6 +1021,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-peoplemover-track.ts"
+    },
+    {
+      "id": "dlr-toontown-el-capitoon",
+      "file": "models/dlr-toontown-el-capitoon.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-toontown-el-capitoon.ts"
     }
   ],
   "landmarks": [
@@ -4051,6 +4058,21 @@
         "way/110199422",
         "way/133808478",
         "way/524008551"
+      ]
+    },
+    {
+      "id": "dlr-toontown-el-capitoon",
+      "name": "El CapiToon Theater",
+      "model": "dlr-toontown-el-capitoon",
+      "lng": -117.9183276,
+      "lat": 33.8156035,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q33082878",
+      "replaces": [
+        "way/987163640",
+        "relation/14558732"
       ]
     }
   ]
