@@ -1084,6 +1084,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-soarin.ts"
+    },
+    {
+      "id": "dc-washington-monument",
+      "file": "models/dc-washington-monument.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-washington-monument.ts"
     }
   ],
   "landmarks": [
@@ -4261,6 +4268,20 @@
       "replaces": [
         "way/312369808",
         "way/121865023"
+      ]
+    },
+    {
+      "id": "dc-washington-monument",
+      "name": "Washington Monument",
+      "model": "dc-washington-monument",
+      "lng": -77.0352425,
+      "lat": 38.8894753,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q178114",
+      "replaces": [
+        "way/766761337"
       ]
     }
   ]
