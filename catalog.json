@@ -958,6 +958,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-adler-planetarium.ts"
+    },
+    {
+      "id": "chi-soldier-field",
+      "file": "models/chi-soldier-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-soldier-field.ts"
     }
   ],
   "landmarks": [
@@ -3517,6 +3524,34 @@
         "way/24825591",
         "way/766703208",
         "way/686342956"
+      ]
+    },
+    {
+      "id": "chi-soldier-field",
+      "name": "Soldier Field",
+      "model": "chi-soldier-field",
+      "lng": -87.616696,
+      "lat": 41.862324,
+      "bearing": 357,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1132413",
+      "replaces": [
+        "relation/16699535",
+        "relation/2305649",
+        "way/766775009",
+        "way/766775011",
+        "way/766775012",
+        "way/766776875",
+        "way/766776876",
+        "way/766776879",
+        "way/766776882",
+        "way/766776883",
+        "way/766776884",
+        "way/766782645",
+        "way/766782646",
+        "way/766782652",
+        "way/766782656"
       ]
     }
   ]
