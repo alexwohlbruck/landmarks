@@ -1000,6 +1000,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-centennial-wheel.ts"
+    },
+    {
+      "id": "chi-lake-point-tower",
+      "file": "models/chi-lake-point-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-lake-point-tower.ts"
     }
   ],
   "landmarks": [
@@ -3676,6 +3683,22 @@
       "wikidata": "Q43153888",
       "replaces": [
         "way/686996484"
+      ]
+    },
+    {
+      "id": "chi-lake-point-tower",
+      "name": "Lake Point Tower",
+      "model": "chi-lake-point-tower",
+      "lng": -87.612315,
+      "lat": 41.891497,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1801054",
+      "replaces": [
+        "relation/19385699",
+        "way/150408224",
+        "way/284814462"
       ]
     }
   ]
