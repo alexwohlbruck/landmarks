@@ -692,6 +692,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-875-north-michigan.ts"
+    },
+    {
+      "id": "chi-water-tower",
+      "file": "models/chi-water-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-water-tower.ts"
     }
   ],
   "landmarks": [
@@ -2641,6 +2648,27 @@
         "way/1282265474",
         "way/279951771",
         "way/279951772"
+      ]
+    },
+    {
+      "id": "chi-water-tower",
+      "name": "Chicago Water Tower",
+      "model": "chi-water-tower",
+      "lng": -87.624437,
+      "lat": 41.897171,
+      "bearing": 358.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q862890",
+      "replaces": [
+        "way/130147025",
+        "way/1283005798",
+        "way/1283005799",
+        "way/1283005800",
+        "way/1283005801",
+        "way/1283005802",
+        "way/1283005803",
+        "way/1283005804"
       ]
     }
   ]
