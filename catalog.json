@@ -769,6 +769,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-mandalay-bay.ts"
+    },
+    {
+      "id": "lv-venetian",
+      "file": "models/lv-venetian.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-venetian.ts"
     }
   ],
   "landmarks": [
@@ -2934,6 +2941,24 @@
       "replaces": [
         "way/27858550",
         "way/118347176"
+      ]
+    },
+    {
+      "id": "lv-venetian",
+      "name": "The Venetian",
+      "model": "lv-venetian",
+      "lng": -115.1692833,
+      "lat": 36.1217638,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1049209",
+      "replaces": [
+        "relation/7770314",
+        "way/30618090",
+        "way/111322067",
+        "way/43875964",
+        "way/543728945"
       ]
     }
   ]
