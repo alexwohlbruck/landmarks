@@ -895,6 +895,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-slotzilla.ts"
+    },
+    {
+      "id": "lv-neon-museum",
+      "file": "models/lv-neon-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-neon-museum.ts"
     }
   ],
   "landmarks": [
@@ -3389,6 +3396,20 @@
       "minzoom": 16,
       "replaces": [
         "way/1093169256"
+      ]
+    },
+    {
+      "id": "lv-neon-museum",
+      "name": "Neon Museum (La Concha lobby)",
+      "model": "lv-neon-museum",
+      "lng": -115.1354129,
+      "lat": 36.1770538,
+      "bearing": 197,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q6461932",
+      "replaces": [
+        "way/543178410"
       ]
     }
   ]
