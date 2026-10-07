@@ -706,6 +706,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-big-thunder-mountain.ts"
+    },
+    {
+      "id": "wdw-chinese-theater",
+      "file": "models/wdw-chinese-theater.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-chinese-theater.ts"
     }
   ],
   "landmarks": [
@@ -2713,6 +2720,22 @@
         "way/71194270",
         "way/1228692340",
         "way/1228692339"
+      ]
+    },
+    {
+      "id": "wdw-chinese-theater",
+      "name": "The Chinese Theater",
+      "model": "wdw-chinese-theater",
+      "lng": -81.560482,
+      "lat": 28.356073,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q33082878",
+      "replaces": [
+        "way/294898804",
+        "way/607996087",
+        "way/607972840"
       ]
     }
   ]
