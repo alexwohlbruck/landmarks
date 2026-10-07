@@ -228,7 +228,7 @@ from, in the generator's header.
 ### Build in order: massing, then the identifying features, then the facade
 
 1. **Massing.** Block out the plain volumes only: tiers, setbacks, the crown
-   envelope, a ride's whole track. Render with `preview.ts` and put each
+   envelope, a ride's whole track. Render with `bun run preview` and put each
    view beside a photo taken from about the same direction. Fix proportions
    until the outline matches in every view you have evidence for. Most
    rejected models went wrong here and were never corrected, however much
@@ -250,7 +250,7 @@ from, in the generator's header.
 ### Compare like with like
 
 Put the photo and the render side by side at the same angle, rendering
-the model from the photo's viewpoint if `preview.ts`'s fixed views don't
+the model from the photo's viewpoint if `bun run preview`'s fixed views don't
 match. A render from the wrong side proves nothing. Name
 what differs before calling a model done. Every review here found something
 the builder hadn't seen.
@@ -314,7 +314,7 @@ trust.
 
 ## Checking a model
 
-Run `bun generators/preview.ts <model.glb> <out-dir> [photo.png ...]`.
+Run `bun run preview <id> [out-dir] [photo.png ...]` (out-dir defaults to `preview/<id>/`).
 It renders the model with the map's lighting from the south, west, a high
 south-west three-quarter (the usual phone view), the north-east, above, and
 at phone sizes of 200 and 80 px. Give it PNG photos to get side-by-side
