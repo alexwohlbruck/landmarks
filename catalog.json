@@ -993,6 +993,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-millennium-falcon.ts"
+    },
+    {
+      "id": "dlr-batuu-spires",
+      "file": "models/dlr-batuu-spires.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-batuu-spires.ts"
     }
   ],
   "landmarks": [
@@ -3944,6 +3951,17 @@
       "replaces": [
         "way/1329137052"
       ]
+    },
+    {
+      "id": "dlr-batuu-spires",
+      "name": "Black Spire Outpost spires",
+      "model": "dlr-batuu-spires",
+      "lng": -117.9211178,
+      "lat": 33.8151645,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": []
     }
   ]
 }
