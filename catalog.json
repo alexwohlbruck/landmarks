@@ -1077,6 +1077,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-golden-zephyr.ts"
+    },
+    {
+      "id": "dlr-soarin",
+      "file": "models/dlr-soarin.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-soarin.ts"
     }
   ],
   "landmarks": [
@@ -4239,6 +4246,21 @@
       "wikidata": "Q3110108",
       "replaces": [
         "way/342771469"
+      ]
+    },
+    {
+      "id": "dlr-soarin",
+      "name": "Soarin' Around the World",
+      "model": "dlr-soarin",
+      "lng": -117.9200872,
+      "lat": 33.808416,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2775778",
+      "replaces": [
+        "way/312369808",
+        "way/121865023"
       ]
     }
   ]
