@@ -692,6 +692,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-sphere.ts"
+    },
+    {
+      "id": "lv-luxor",
+      "file": "models/lv-luxor.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-luxor.ts"
     }
   ],
   "landmarks": [
@@ -2600,6 +2607,46 @@
       "wikidata": "Q60749353",
       "replaces": [
         "way/976405284"
+      ]
+    },
+    {
+      "id": "lv-luxor",
+      "name": "Luxor Las Vegas",
+      "model": "lv-luxor",
+      "lng": -115.175804,
+      "lat": 36.09547,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q637389",
+      "replaces": [
+        "way/27858544",
+        "way/136520122",
+        "way/136516661",
+        "way/136516662",
+        "way/136516663",
+        "way/136516665",
+        "way/136516667",
+        "way/136516668",
+        "way/136516669",
+        "way/136516670",
+        "way/136516672",
+        "way/136516673",
+        "way/136516674",
+        "way/136520109",
+        "way/136520110",
+        "way/136520112",
+        "way/136520113",
+        "way/136520114",
+        "way/136520116",
+        "way/136520117",
+        "way/136520118",
+        "way/136520119",
+        "way/136520121",
+        "way/136520124",
+        "way/118344867",
+        "way/118344869",
+        "way/399368723"
       ]
     }
   ]
