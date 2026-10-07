@@ -839,6 +839,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-mgm-grand.ts"
+    },
+    {
+      "id": "lv-allegiant-stadium",
+      "file": "models/lv-allegiant-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-allegiant-stadium.ts"
     }
   ],
   "landmarks": [
@@ -3176,6 +3183,59 @@
         "way/115095173",
         "way/115095160",
         "way/115095161"
+      ]
+    },
+    {
+      "id": "lv-allegiant-stadium",
+      "name": "Allegiant Stadium",
+      "model": "lv-allegiant-stadium",
+      "lng": -115.18307,
+      "lat": 36.090734,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q27768421",
+      "replaces": [
+        "way/691478555",
+        "way/1249542290",
+        "way/1249571723",
+        "way/1249571724",
+        "way/1249571727",
+        "way/1249571728",
+        "way/1249571730",
+        "way/1249571731",
+        "way/1249571733",
+        "way/1249571734",
+        "way/1249571735",
+        "way/1249571736",
+        "way/1249571737",
+        "way/1249571739",
+        "way/1249571741",
+        "way/1249571742",
+        "way/1249571743",
+        "way/1249571744",
+        "way/1249571745",
+        "way/1249878676",
+        "way/1249878677",
+        "way/1252866554",
+        "way/1252866556",
+        "way/1252866558",
+        "way/1252866560",
+        "way/1252866562",
+        "way/1252866564",
+        "way/1252866565",
+        "way/1252866566",
+        "way/1252866567",
+        "way/1252866568",
+        "way/1252866569",
+        "way/1252866570",
+        "way/1252866571",
+        "way/1252866572",
+        "way/1252866573",
+        "way/1252866574",
+        "way/1252866575",
+        "way/1252866576",
+        "way/1252866577"
       ]
     }
   ]
