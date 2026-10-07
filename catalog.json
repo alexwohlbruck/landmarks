@@ -699,6 +699,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-luxor.ts"
+    },
+    {
+      "id": "lv-new-york-new-york",
+      "file": "models/lv-new-york-new-york.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-new-york-new-york.ts"
     }
   ],
   "landmarks": [
@@ -2647,6 +2654,36 @@
         "way/118344867",
         "way/118344869",
         "way/399368723"
+      ]
+    },
+    {
+      "id": "lv-new-york-new-york",
+      "name": "New York-New York",
+      "model": "lv-new-york-new-york",
+      "lng": -115.1744447,
+      "lat": 36.1022215,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1429071",
+      "replaces": [
+        "way/115661793",
+        "way/115661791",
+        "way/115661792",
+        "way/115661794",
+        "way/115661795",
+        "way/115661796",
+        "way/115661797",
+        "way/115661798",
+        "way/115661799",
+        "way/115661800",
+        "way/115661801",
+        "way/115661802",
+        "way/115661803",
+        "way/115661804",
+        "way/115661805",
+        "way/115661806",
+        "way/115661807"
       ]
     }
   ]
