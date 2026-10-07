@@ -846,6 +846,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-chase-tower.ts"
+    },
+    {
+      "id": "chi-merchandise-mart",
+      "file": "models/chi-merchandise-mart.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-merchandise-mart.ts"
     }
   ],
   "landmarks": [
@@ -3165,6 +3172,29 @@
         "way/284778257",
         "way/284778258",
         "way/284778259"
+      ]
+    },
+    {
+      "id": "chi-merchandise-mart",
+      "name": "Merchandise Mart",
+      "model": "chi-merchandise-mart",
+      "lng": -87.6353729,
+      "lat": 41.8885491,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1921426",
+      "replaces": [
+        "way/28293211",
+        "way/1432322251",
+        "way/1432322252",
+        "way/1432322253",
+        "way/1432322254",
+        "way/1432322255",
+        "way/1432322256",
+        "way/1432322257",
+        "way/1432322258",
+        "way/1432322259"
       ]
     }
   ]
