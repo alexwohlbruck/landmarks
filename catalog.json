@@ -930,6 +930,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-fashion-show-cloud.ts"
+    },
+    {
+      "id": "lv-clark-county-government-center",
+      "file": "models/lv-clark-county-government-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-clark-county-government-center.ts"
     }
   ],
   "landmarks": [
@@ -3493,6 +3500,67 @@
       "minzoom": 15,
       "replaces": [
         "relation/19447588"
+      ]
+    },
+    {
+      "id": "lv-clark-county-government-center",
+      "name": "Clark County Government Center",
+      "model": "lv-clark-county-government-center",
+      "lng": -115.1536529,
+      "lat": 36.1658876,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5127188",
+      "replaces": [
+        "relation/19293385",
+        "way/1410016952",
+        "way/1410018175",
+        "way/1410020941",
+        "way/1410020942",
+        "way/1410020943",
+        "way/1410020944",
+        "way/1410020945",
+        "way/1410021783",
+        "way/1410021784",
+        "way/1410022596",
+        "way/1410023637",
+        "way/1410023828",
+        "way/1410023898",
+        "way/1410024001",
+        "way/1410024039",
+        "way/1410024119",
+        "way/1410024120",
+        "way/1410024424",
+        "way/1410024584",
+        "way/1410024765",
+        "way/1410024775",
+        "way/1410024864",
+        "way/1410025397",
+        "way/1410025398",
+        "way/1410025399",
+        "way/1410025400",
+        "way/1410027177",
+        "way/1410027178",
+        "way/1410027179",
+        "way/1410027180",
+        "way/1410027181",
+        "way/1410027182",
+        "way/1410027183",
+        "way/1410027184",
+        "way/1410027185",
+        "way/1410027186",
+        "way/1410027187",
+        "way/1410027188",
+        "way/1410027189",
+        "way/1410027190",
+        "way/1410027191",
+        "way/1410027192",
+        "way/1410027349",
+        "way/1410028575",
+        "way/1410028576",
+        "way/1410029920",
+        "way/1410029921"
       ]
     }
   ]
