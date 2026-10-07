@@ -790,6 +790,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-wrigley-building.ts"
+    },
+    {
+      "id": "chi-medinah-temple",
+      "file": "models/chi-medinah-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-medinah-temple.ts"
     }
   ],
   "landmarks": [
@@ -2972,6 +2979,20 @@
         "way/686197567",
         "way/686197572",
         "way/686197576"
+      ]
+    },
+    {
+      "id": "chi-medinah-temple",
+      "name": "Medinah Temple",
+      "model": "chi-medinah-temple",
+      "lng": -87.627205,
+      "lat": 41.892894,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q14687867",
+      "replaces": [
+        "way/210680454"
       ]
     }
   ]
