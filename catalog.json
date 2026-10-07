@@ -818,6 +818,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-board-of-trade.ts"
+    },
+    {
+      "id": "chi-rookery",
+      "file": "models/chi-rookery.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-rookery.ts"
     }
   ],
   "landmarks": [
@@ -3070,6 +3077,20 @@
         "way/685519270",
         "way/1425860168",
         "way/1425860169"
+      ]
+    },
+    {
+      "id": "chi-rookery",
+      "name": "The Rookery",
+      "model": "chi-rookery",
+      "lng": -87.63183,
+      "lat": 41.879082,
+      "bearing": 359.1,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3441853",
+      "replaces": [
+        "way/73706154"
       ]
     }
   ]
