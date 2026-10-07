@@ -776,6 +776,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-venetian.ts"
+    },
+    {
+      "id": "lv-palazzo",
+      "file": "models/lv-palazzo.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-palazzo.ts"
     }
   ],
   "landmarks": [
@@ -2959,6 +2966,21 @@
         "way/111322067",
         "way/43875964",
         "way/543728945"
+      ]
+    },
+    {
+      "id": "lv-palazzo",
+      "name": "The Palazzo",
+      "model": "lv-palazzo",
+      "lng": -115.1682593,
+      "lat": 36.1241116,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1514587",
+      "replaces": [
+        "way/180584269",
+        "way/30424125"
       ]
     }
   ]
