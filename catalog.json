@@ -923,6 +923,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-tron-lightcycle-run.ts"
+    },
+    {
+      "id": "wdw-seven-dwarfs-mine-train",
+      "file": "models/wdw-seven-dwarfs-mine-train.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-seven-dwarfs-mine-train.ts"
     }
   ],
   "landmarks": [
@@ -3545,6 +3552,34 @@
         "way/1089770163",
         "way/1283031001",
         "way/1283031000"
+      ]
+    },
+    {
+      "id": "wdw-seven-dwarfs-mine-train",
+      "name": "Seven Dwarfs Mine Train",
+      "model": "wdw-seven-dwarfs-mine-train",
+      "lng": -81.5801226,
+      "lat": 28.4206305,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2182970",
+      "replaces": [
+        "way/1313344974",
+        "way/296781876",
+        "way/295016219",
+        "way/1351675202",
+        "way/346646028",
+        "way/295016221",
+        "way/989772764",
+        "way/989772763",
+        "way/989772769",
+        "way/346646029",
+        "way/989772773",
+        "way/295016225",
+        "way/989772768",
+        "way/295038738",
+        "way/295038729"
       ]
     }
   ]
