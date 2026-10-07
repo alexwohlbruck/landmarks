@@ -986,6 +986,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-big-thunder-mountain.ts"
+    },
+    {
+      "id": "dlr-millennium-falcon",
+      "file": "models/dlr-millennium-falcon.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-millennium-falcon.ts"
     }
   ],
   "landmarks": [
@@ -3923,6 +3930,19 @@
         "way/435910464",
         "way/435910466",
         "way/435910239"
+      ]
+    },
+    {
+      "id": "dlr-millennium-falcon",
+      "name": "Millennium Falcon",
+      "model": "dlr-millennium-falcon",
+      "lng": -117.9212519,
+      "lat": 33.8150244,
+      "bearing": 139,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/1329137052"
       ]
     }
   ]
