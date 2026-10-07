@@ -818,6 +818,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-bellagio.ts"
+    },
+    {
+      "id": "lv-cosmopolitan",
+      "file": "models/lv-cosmopolitan.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-cosmopolitan.ts"
     }
   ],
   "landmarks": [
@@ -3102,6 +3109,22 @@
       "replaces": [
         "way/25723909",
         "way/114703388"
+      ]
+    },
+    {
+      "id": "lv-cosmopolitan",
+      "name": "The Cosmopolitan of Las Vegas",
+      "model": "lv-cosmopolitan",
+      "lng": -115.174091,
+      "lat": 36.110181,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1436845",
+      "replaces": [
+        "way/134795273",
+        "way/27897905",
+        "way/472669744"
       ]
     }
   ]
