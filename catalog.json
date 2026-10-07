@@ -1007,6 +1007,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-lake-point-tower.ts"
+    },
+    {
+      "id": "chi-museum-of-science-industry",
+      "file": "models/chi-museum-of-science-industry.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-museum-of-science-industry.ts"
     }
   ],
   "landmarks": [
@@ -3699,6 +3706,20 @@
         "relation/19385699",
         "way/150408224",
         "way/284814462"
+      ]
+    },
+    {
+      "id": "chi-museum-of-science-industry",
+      "name": "Museum of Science and Industry",
+      "model": "chi-museum-of-science-industry",
+      "lng": -87.582761,
+      "lat": 41.790714,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1414079",
+      "replaces": [
+        "way/24826230"
       ]
     }
   ]
