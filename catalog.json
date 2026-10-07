@@ -720,6 +720,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-aon-center.ts"
+    },
+    {
+      "id": "chi-fourth-presbyterian",
+      "file": "models/chi-fourth-presbyterian.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-fourth-presbyterian.ts"
     }
   ],
   "landmarks": [
@@ -2746,6 +2753,20 @@
       "replaces": [
         "way/64388609",
         "way/284775635"
+      ]
+    },
+    {
+      "id": "chi-fourth-presbyterian",
+      "name": "Fourth Presbyterian Church",
+      "model": "chi-fourth-presbyterian",
+      "lng": -87.624753,
+      "lat": 41.898995,
+      "bearing": 358.7,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q4290682",
+      "replaces": [
+        "way/129575948"
       ]
     }
   ]
