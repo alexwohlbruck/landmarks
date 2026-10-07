@@ -972,6 +972,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-shedd-aquarium.ts"
+    },
+    {
+      "id": "chi-wrigley-field",
+      "file": "models/chi-wrigley-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-wrigley-field.ts"
     }
   ],
   "landmarks": [
@@ -3577,6 +3584,26 @@
         "way/766511382",
         "way/766511383",
         "way/766511381"
+      ]
+    },
+    {
+      "id": "chi-wrigley-field",
+      "name": "Wrigley Field",
+      "model": "chi-wrigley-field",
+      "lng": -87.655543,
+      "lat": 41.948193,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1052807",
+      "replaces": [
+        "relation/17238872",
+        "way/1265638385",
+        "way/1265638386",
+        "way/1265761900",
+        "way/1265761901",
+        "way/1265761902",
+        "way/1265781812"
       ]
     }
   ]
