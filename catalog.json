@@ -832,6 +832,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-chicago-temple.ts"
+    },
+    {
+      "id": "chi-311-south-wacker",
+      "file": "models/chi-311-south-wacker.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-311-south-wacker.ts"
     }
   ],
   "landmarks": [
@@ -3112,6 +3119,27 @@
       "wikidata": "Q14687499",
       "replaces": [
         "way/137060374"
+      ]
+    },
+    {
+      "id": "chi-311-south-wacker",
+      "name": "311 South Wacker Drive",
+      "model": "chi-311-south-wacker",
+      "lng": -87.635751,
+      "lat": 41.877462,
+      "bearing": 358.9,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q224563",
+      "replaces": [
+        "way/147350208",
+        "way/686318733",
+        "way/686318734",
+        "way/1188678576",
+        "way/1188678581",
+        "way/1188678582",
+        "way/1188678583",
+        "way/1188678584"
       ]
     }
   ]
