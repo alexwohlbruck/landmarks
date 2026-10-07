@@ -867,6 +867,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-union-station.ts"
+    },
+    {
+      "id": "chi-thompson-center",
+      "file": "models/chi-thompson-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-thompson-center.ts"
     }
   ],
   "landmarks": [
@@ -3237,6 +3244,20 @@
       "wikidata": "Q1155989",
       "replaces": [
         "way/203442440"
+      ]
+    },
+    {
+      "id": "chi-thompson-center",
+      "name": "James R. Thompson Center",
+      "model": "chi-thompson-center",
+      "lng": -87.6317257,
+      "lat": 41.8851748,
+      "bearing": 358.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3161356",
+      "replaces": [
+        "way/230926922"
       ]
     }
   ]
