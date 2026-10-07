@@ -1175,6 +1175,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-smithsonian-castle.ts"
+    },
+    {
+      "id": "dc-arts-and-industries",
+      "file": "models/dc-arts-and-industries.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-arts-and-industries.ts"
     }
   ],
   "landmarks": [
@@ -4756,6 +4763,34 @@
       "wikidata": "Q605937",
       "replaces": [
         "relation/7393969"
+      ]
+    },
+    {
+      "id": "dc-arts-and-industries",
+      "name": "Arts and Industries Building",
+      "model": "dc-arts-and-industries",
+      "lng": -77.0244787,
+      "lat": 38.8881823,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q713932",
+      "replaces": [
+        "way/42341486",
+        "way/453547702",
+        "way/453547703",
+        "way/453547704",
+        "way/453547705",
+        "way/453547706",
+        "way/453547707",
+        "way/908820585",
+        "way/908820586",
+        "way/908820587",
+        "way/908820588",
+        "way/908820589",
+        "way/908820590",
+        "way/908820591",
+        "way/908820592"
       ]
     }
   ]
