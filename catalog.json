@@ -1140,6 +1140,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-white-house.ts"
+    },
+    {
+      "id": "dc-eisenhower-eob",
+      "file": "models/dc-eisenhower-eob.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-eisenhower-eob.ts"
     }
   ],
   "landmarks": [
@@ -4653,6 +4660,20 @@
         "way/884569677",
         "way/884571790",
         "way/884571793"
+      ]
+    },
+    {
+      "id": "dc-eisenhower-eob",
+      "name": "Eisenhower Executive Office Building",
+      "model": "dc-eisenhower-eob",
+      "lng": -77.0387053,
+      "lat": 38.8975802,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1312965",
+      "replaces": [
+        "relation/4043910"
       ]
     }
   ]
