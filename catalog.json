@@ -916,6 +916,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-tree-of-life.ts"
+    },
+    {
+      "id": "wdw-tron-lightcycle-run",
+      "file": "models/wdw-tron-lightcycle-run.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-tron-lightcycle-run.ts"
     }
   ],
   "landmarks": [
@@ -3521,6 +3528,23 @@
       "wikidata": "Q3538315",
       "replaces": [
         "way/295879946"
+      ]
+    },
+    {
+      "id": "wdw-tron-lightcycle-run",
+      "name": "TRON Lightcycle / Run",
+      "model": "wdw-tron-lightcycle-run",
+      "lng": -81.5771401,
+      "lat": 28.4203863,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q123594444",
+      "replaces": [
+        "way/804994339",
+        "way/1089770163",
+        "way/1283031001",
+        "way/1283031000"
       ]
     }
   ]
