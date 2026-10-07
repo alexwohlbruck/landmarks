@@ -853,6 +853,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-las-tower.ts"
+    },
+    {
+      "id": "lv-welcome-sign",
+      "file": "models/lv-welcome-sign.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-welcome-sign.ts"
     }
   ],
   "landmarks": [
@@ -3257,6 +3264,18 @@
       "replaces": [
         "way/340018195"
       ]
+    },
+    {
+      "id": "lv-welcome-sign",
+      "name": "Welcome to Fabulous Las Vegas sign",
+      "model": "lv-welcome-sign",
+      "lng": -115.1727735,
+      "lat": 36.0820593,
+      "bearing": 355,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q175665",
+      "replaces": []
     }
   ]
 }
