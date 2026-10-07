@@ -867,6 +867,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-circus-circus.ts"
+    },
+    {
+      "id": "lv-rio",
+      "file": "models/lv-rio.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-rio.ts"
     }
   ],
   "landmarks": [
@@ -3303,6 +3310,25 @@
         "way/135332961",
         "way/135448011",
         "way/135448025"
+      ]
+    },
+    {
+      "id": "lv-rio",
+      "name": "Rio Las Vegas",
+      "model": "lv-rio",
+      "lng": -115.1875384,
+      "lat": 36.1173512,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q739914",
+      "replaces": [
+        "way/116876230",
+        "way/27998220",
+        "way/27998223",
+        "way/134938477",
+        "way/134938479",
+        "way/134938481"
       ]
     }
   ]
