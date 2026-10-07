@@ -1105,6 +1105,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-jefferson-memorial.ts"
+    },
+    {
+      "id": "dc-us-capitol",
+      "file": "models/dc-us-capitol.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-us-capitol.ts"
     }
   ],
   "landmarks": [
@@ -4425,6 +4432,42 @@
         "way/248460786",
         "way/248460790",
         "way/66418912"
+      ]
+    },
+    {
+      "id": "dc-us-capitol",
+      "name": "United States Capitol",
+      "model": "dc-us-capitol",
+      "lng": -77.009001,
+      "lat": 38.889813,
+      "bearing": 0.2,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q54109",
+      "replaces": [
+        "way/66418809",
+        "way/657315658",
+        "way/311181726",
+        "way/311181727",
+        "way/507459309",
+        "way/507459310",
+        "way/507459311",
+        "way/507459312",
+        "way/507459313",
+        "way/507459314",
+        "way/507459315",
+        "way/507459316",
+        "way/507459318",
+        "way/507459319",
+        "way/507459320",
+        "way/507459321",
+        "way/507459322",
+        "way/507459324",
+        "way/507842343",
+        "way/507832690",
+        "way/1301380219",
+        "way/1301380220",
+        "way/1301380221"
       ]
     }
   ]
