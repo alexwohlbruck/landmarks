@@ -1210,6 +1210,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-american-indian.ts"
+    },
+    {
+      "id": "dc-natural-history",
+      "file": "models/dc-natural-history.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-natural-history.ts"
     }
   ],
   "landmarks": [
@@ -4891,6 +4898,22 @@
         "way/427843974",
         "way/427843966",
         "way/427843978"
+      ]
+    },
+    {
+      "id": "dc-natural-history",
+      "name": "National Museum of Natural History",
+      "model": "dc-natural-history",
+      "lng": -77.0259675,
+      "lat": 38.8912664,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q148554",
+      "replaces": [
+        "way/66418787",
+        "way/453546745",
+        "way/453546747"
       ]
     }
   ]
