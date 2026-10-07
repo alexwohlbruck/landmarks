@@ -1161,6 +1161,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-mlk-memorial.ts"
+    },
+    {
+      "id": "dc-marine-corps-war-memorial",
+      "file": "models/dc-marine-corps-war-memorial.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-marine-corps-war-memorial.ts"
     }
   ],
   "landmarks": [
@@ -4717,6 +4724,18 @@
       "replaces": [
         "relation/12268799"
       ]
+    },
+    {
+      "id": "dc-marine-corps-war-memorial",
+      "name": "Marine Corps War Memorial",
+      "model": "dc-marine-corps-war-memorial",
+      "lng": -77.0697239,
+      "lat": 38.8904362,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q1403946",
+      "replaces": []
     }
   ]
 }
