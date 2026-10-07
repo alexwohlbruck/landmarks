@@ -1147,6 +1147,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-eisenhower-eob.ts"
+    },
+    {
+      "id": "dc-treasury",
+      "file": "models/dc-treasury.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-treasury.ts"
     }
   ],
   "landmarks": [
@@ -4674,6 +4681,20 @@
       "wikidata": "Q1312965",
       "replaces": [
         "relation/4043910"
+      ]
+    },
+    {
+      "id": "dc-treasury",
+      "name": "Treasury Building",
+      "model": "dc-treasury",
+      "lng": -77.0343146,
+      "lat": 38.8975874,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7836795",
+      "replaces": [
+        "relation/286293"
       ]
     }
   ]
