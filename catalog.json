@@ -811,6 +811,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-epcot-mexico-pyramid.ts"
+    },
+    {
+      "id": "wdw-epcot-morocco",
+      "file": "models/wdw-epcot-morocco.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-morocco.ts"
     }
   ],
   "landmarks": [
@@ -3127,6 +3134,18 @@
         "way/295598769",
         "way/529602448"
       ]
+    },
+    {
+      "id": "wdw-epcot-morocco",
+      "name": "Morocco Pavilion minaret",
+      "model": "wdw-epcot-morocco",
+      "lng": -81.551714,
+      "lat": 28.3680362,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2776572",
+      "replaces": []
     }
   ]
 }
