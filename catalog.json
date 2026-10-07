@@ -797,6 +797,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-paris-resort.ts"
+    },
+    {
+      "id": "lv-aria",
+      "file": "models/lv-aria.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-aria.ts"
     }
   ],
   "landmarks": [
@@ -3030,6 +3037,24 @@
         "way/114697073",
         "way/114697074",
         "way/364846544"
+      ]
+    },
+    {
+      "id": "lv-aria",
+      "name": "Aria Resort & Casino",
+      "model": "lv-aria",
+      "lng": -115.177226,
+      "lat": 36.107191,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q654279",
+      "replaces": [
+        "way/134930092",
+        "way/134930090",
+        "way/134930089",
+        "way/134930091",
+        "way/134930088"
       ]
     }
   ]
