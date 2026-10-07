@@ -951,6 +951,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-matterhorn.ts"
+    },
+    {
+      "id": "dlr-main-street-station",
+      "file": "models/dlr-main-street-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-main-street-station.ts"
     }
   ],
   "landmarks": [
@@ -3738,6 +3745,28 @@
         "way/542182061",
         "way/135568236",
         "way/266075984"
+      ]
+    },
+    {
+      "id": "dlr-main-street-station",
+      "name": "Main Street, U.S.A. Station",
+      "model": "dlr-main-street-station",
+      "lng": -117.91896,
+      "lat": 33.809971,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q68588348",
+      "replaces": [
+        "way/153044358",
+        "way/651349968",
+        "way/133729166",
+        "way/133729165",
+        "way/133729164",
+        "way/193657779",
+        "way/443327358",
+        "way/193657781",
+        "way/193657780"
       ]
     }
   ]
