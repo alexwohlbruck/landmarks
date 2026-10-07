@@ -930,6 +930,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-seven-dwarfs-mine-train.ts"
+    },
+    {
+      "id": "wdw-barnstormer",
+      "file": "models/wdw-barnstormer.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-barnstormer.ts"
     }
   ],
   "landmarks": [
@@ -3580,6 +3587,28 @@
         "way/989772768",
         "way/295038738",
         "way/295038729"
+      ]
+    },
+    {
+      "id": "wdw-barnstormer",
+      "name": "The Barnstormer",
+      "model": "wdw-barnstormer",
+      "lng": -81.5784168,
+      "lat": 28.4205129,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2884723",
+      "replaces": [
+        "way/296370637",
+        "way/296366631",
+        "way/989772770",
+        "way/989772772",
+        "way/989772771",
+        "way/989772767",
+        "way/989772765",
+        "way/655715819",
+        "way/655715820"
       ]
     }
   ]
