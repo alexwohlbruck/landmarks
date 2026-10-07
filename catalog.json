@@ -699,6 +699,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-water-tower.ts"
+    },
+    {
+      "id": "chi-st-regis",
+      "file": "models/chi-st-regis.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-st-regis.ts"
     }
   ],
   "landmarks": [
@@ -2669,6 +2676,24 @@
         "way/1283005802",
         "way/1283005803",
         "way/1283005804"
+      ]
+    },
+    {
+      "id": "chi-st-regis",
+      "name": "St. Regis Chicago",
+      "model": "chi-st-regis",
+      "lng": -87.617251,
+      "lat": 41.887236,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q19817578",
+      "replaces": [
+        "way/464802811",
+        "way/465242989",
+        "way/465242991",
+        "way/465242992",
+        "way/465242990"
       ]
     }
   ]
