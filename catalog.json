@@ -965,6 +965,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-small-world.ts"
+    },
+    {
+      "id": "dlr-haunted-mansion",
+      "file": "models/dlr-haunted-mansion.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-haunted-mansion.ts"
     }
   ],
   "landmarks": [
@@ -3789,6 +3796,22 @@
       "replaces": [
         "way/135699826",
         "way/135489209"
+      ]
+    },
+    {
+      "id": "dlr-haunted-mansion",
+      "name": "The Haunted Mansion",
+      "model": "dlr-haunted-mansion",
+      "lng": -117.9221698,
+      "lat": 33.8117211,
+      "bearing": 327,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2030983",
+      "replaces": [
+        "way/178238274",
+        "way/122193484",
+        "way/122193472"
       ]
     }
   ]
