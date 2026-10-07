@@ -1042,6 +1042,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-pixar-pal-a-round.ts"
+    },
+    {
+      "id": "dlr-guardians-mission-breakout",
+      "file": "models/dlr-guardians-mission-breakout.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-guardians-mission-breakout.ts"
     }
   ],
   "landmarks": [
@@ -4114,6 +4121,28 @@
       "minzoom": 15,
       "wikidata": "Q751240",
       "replaces": []
+    },
+    {
+      "id": "dlr-guardians-mission-breakout",
+      "name": "Guardians of the Galaxy – Mission: Breakout!",
+      "model": "dlr-guardians-mission-breakout",
+      "lng": -117.9169523,
+      "lat": 33.8066398,
+      "bearing": 318,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q26036866",
+      "replaces": [
+        "way/313039853",
+        "way/243895850",
+        "way/243895847",
+        "way/237074300",
+        "way/237074610",
+        "way/237074302",
+        "way/123423748",
+        "way/123423749",
+        "way/123423747"
+      ]
     }
   ]
 }
