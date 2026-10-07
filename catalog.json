@@ -741,6 +741,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-fontainebleau.ts"
+    },
+    {
+      "id": "lv-resorts-world",
+      "file": "models/lv-resorts-world.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-resorts-world.ts"
     }
   ],
   "landmarks": [
@@ -2809,6 +2816,20 @@
       "wikidata": "Q278380",
       "replaces": [
         "way/134068318"
+      ]
+    },
+    {
+      "id": "lv-resorts-world",
+      "name": "Resorts World Las Vegas",
+      "model": "lv-resorts-world",
+      "lng": -115.166194,
+      "lat": 36.134767,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q14705265",
+      "replaces": [
+        "way/316303708"
       ]
     }
   ]
