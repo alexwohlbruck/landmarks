@@ -909,6 +909,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-cloud-gate.ts"
+    },
+    {
+      "id": "chi-picasso",
+      "file": "models/chi-picasso.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-picasso.ts"
     }
   ],
   "landmarks": [
@@ -3368,6 +3375,18 @@
       "replaces": [
         "way/137060274"
       ]
+    },
+    {
+      "id": "chi-picasso",
+      "name": "Chicago Picasso",
+      "model": "chi-picasso",
+      "lng": -87.629979,
+      "lat": 41.883623,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q5095736",
+      "replaces": []
     }
   ]
 }
