@@ -860,6 +860,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-millennium-falcon.ts"
+    },
+    {
+      "id": "wdw-mk-entrance",
+      "file": "models/wdw-mk-entrance.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-mk-entrance.ts"
     }
   ],
   "landmarks": [
@@ -3314,6 +3321,30 @@
       "elevation": 0,
       "minzoom": 16,
       "replaces": []
+    },
+    {
+      "id": "wdw-mk-entrance",
+      "name": "Magic Kingdom Entrance",
+      "model": "wdw-mk-entrance",
+      "lng": -81.5812,
+      "lat": 28.416234,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/296122624",
+        "way/296122627",
+        "way/621686707",
+        "way/621686708",
+        "way/296122623",
+        "way/1107878395",
+        "way/1107878396",
+        "relation/9287955",
+        "way/1107878397",
+        "way/1107878398",
+        "way/1107878399",
+        "way/1107878400"
+      ]
     }
   ]
 }
