@@ -762,6 +762,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-two-prudential-plaza.ts"
+    },
+    {
+      "id": "chi-jewelers-building",
+      "file": "models/chi-jewelers-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-jewelers-building.ts"
     }
   ],
   "landmarks": [
@@ -2879,6 +2886,23 @@
       "wikidata": "Q1121971",
       "replaces": [
         "way/64388666"
+      ]
+    },
+    {
+      "id": "chi-jewelers-building",
+      "name": "Jewelers Building",
+      "model": "chi-jewelers-building",
+      "lng": -87.626793,
+      "lat": 41.886527,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2816312",
+      "replaces": [
+        "way/124865488",
+        "way/686198235",
+        "way/686198236",
+        "way/686198237"
       ]
     }
   ]
