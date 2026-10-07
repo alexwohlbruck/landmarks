@@ -1203,6 +1203,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-nmaahc.ts"
+    },
+    {
+      "id": "dc-american-indian",
+      "file": "models/dc-american-indian.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-american-indian.ts"
     }
   ],
   "landmarks": [
@@ -4863,6 +4870,27 @@
       "replaces": [
         "way/398810868",
         "way/898560007"
+      ]
+    },
+    {
+      "id": "dc-american-indian",
+      "name": "National Museum of the American Indian",
+      "model": "dc-american-indian",
+      "lng": -77.0166689,
+      "lat": 38.8882445,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1075141",
+      "replaces": [
+        "way/66418605",
+        "way/427843981",
+        "way/427843980",
+        "way/427843967",
+        "way/427843969",
+        "way/427843974",
+        "way/427843966",
+        "way/427843978"
       ]
     }
   ]
