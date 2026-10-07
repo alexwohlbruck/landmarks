@@ -979,6 +979,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-wrigley-field.ts"
+    },
+    {
+      "id": "chi-rate-field",
+      "file": "models/chi-rate-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-rate-field.ts"
     }
   ],
   "landmarks": [
@@ -3604,6 +3611,26 @@
         "way/1265761901",
         "way/1265761902",
         "way/1265781812"
+      ]
+    },
+    {
+      "id": "chi-rate-field",
+      "name": "Rate Field",
+      "model": "chi-rate-field",
+      "lng": -87.633696,
+      "lat": 41.829874,
+      "bearing": 308,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q633613",
+      "replaces": [
+        "relation/8167350",
+        "way/1285778036",
+        "way/1285755804",
+        "way/1285755828",
+        "way/1285755829",
+        "way/1285778007",
+        "way/1285778008"
       ]
     }
   ]
