@@ -1056,6 +1056,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-carthay-circle.ts"
+    },
+    {
+      "id": "dlr-avengers-campus",
+      "file": "models/dlr-avengers-campus.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-avengers-campus.ts"
     }
   ],
   "landmarks": [
@@ -4167,6 +4174,21 @@
         "way/338063116",
         "way/336940997",
         "way/336948504"
+      ]
+    },
+    {
+      "id": "dlr-avengers-campus",
+      "name": "Avengers Headquarters",
+      "model": "dlr-avengers-campus",
+      "lng": -117.9175306,
+      "lat": 33.8064138,
+      "bearing": 315,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/980770821",
+        "way/797193567",
+        "way/983358329"
       ]
     }
   ]
