@@ -783,6 +783,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-palazzo.ts"
+    },
+    {
+      "id": "lv-treasure-island",
+      "file": "models/lv-treasure-island.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-treasure-island.ts"
     }
   ],
   "landmarks": [
@@ -2981,6 +2988,21 @@
       "replaces": [
         "way/180584269",
         "way/30424125"
+      ]
+    },
+    {
+      "id": "lv-treasure-island",
+      "name": "Treasure Island",
+      "model": "lv-treasure-island",
+      "lng": -115.1716227,
+      "lat": 36.1247323,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1360313",
+      "replaces": [
+        "way/33959894",
+        "way/27727145"
       ]
     }
   ]
