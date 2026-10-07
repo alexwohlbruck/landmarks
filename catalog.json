@@ -804,6 +804,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-aria.ts"
+    },
+    {
+      "id": "lv-vdara",
+      "file": "models/lv-vdara.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-vdara.ts"
     }
   ],
   "landmarks": [
@@ -3055,6 +3062,24 @@
         "way/134930089",
         "way/134930091",
         "way/134930088"
+      ]
+    },
+    {
+      "id": "lv-vdara",
+      "name": "Vdara Hotel & Spa",
+      "model": "lv-vdara",
+      "lng": -115.178022,
+      "lat": 36.109526,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q280910",
+      "replaces": [
+        "relation/20214578",
+        "way/1481167211",
+        "way/52175577",
+        "way/134932949",
+        "way/134932948"
       ]
     }
   ]
