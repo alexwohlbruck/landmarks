@@ -1238,6 +1238,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-national-archives.ts"
+    },
+    {
+      "id": "dc-national-cathedral",
+      "file": "models/dc-national-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-national-cathedral.ts"
     }
   ],
   "landmarks": [
@@ -5009,6 +5016,24 @@
         "way/427815127",
         "way/427815128",
         "way/427815129"
+      ]
+    },
+    {
+      "id": "dc-national-cathedral",
+      "name": "Washington National Cathedral",
+      "model": "dc-national-cathedral",
+      "lng": -77.0707911,
+      "lat": 38.9306103,
+      "bearing": 340,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q668710",
+      "replaces": [
+        "relation/2682714",
+        "way/1176354409",
+        "way/1176354410",
+        "way/1176354411",
+        "way/1176354412"
       ]
     }
   ]
