@@ -734,6 +734,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-contemporary-resort.ts"
+    },
+    {
+      "id": "wdw-dhs-entrance",
+      "file": "models/wdw-dhs-entrance.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-dhs-entrance.ts"
     }
   ],
   "landmarks": [
@@ -2867,6 +2874,27 @@
         "way/784960406",
         "way/784960407",
         "way/784960408"
+      ]
+    },
+    {
+      "id": "wdw-dhs-entrance",
+      "name": "Disney's Hollywood Studios Entrance",
+      "model": "wdw-dhs-entrance",
+      "lng": -81.5587705,
+      "lat": 28.3583562,
+      "bearing": 45,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "relation/3919136",
+        "way/786082410",
+        "way/786082411",
+        "way/786082412",
+        "way/786082413",
+        "way/786082414",
+        "way/786082415",
+        "way/786082416",
+        "way/786082417"
       ]
     }
   ]
