@@ -1014,6 +1014,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-museum-of-science-industry.ts"
+    },
+    {
+      "id": "chi-bahai-temple",
+      "file": "models/chi-bahai-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-bahai-temple.ts"
     }
   ],
   "landmarks": [
@@ -3720,6 +3727,20 @@
       "wikidata": "Q1414079",
       "replaces": [
         "way/24826230"
+      ]
+    },
+    {
+      "id": "chi-bahai-temple",
+      "name": "Baháʼí House of Worship",
+      "model": "chi-bahai-temple",
+      "lng": -87.68429,
+      "lat": 42.074437,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4843063",
+      "replaces": [
+        "way/369160462"
       ]
     }
   ]
