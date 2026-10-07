@@ -804,6 +804,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-holy-name-cathedral.ts"
+    },
+    {
+      "id": "chi-marina-city",
+      "file": "models/chi-marina-city.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-marina-city.ts"
     }
   ],
   "landmarks": [
@@ -3014,6 +3021,28 @@
       "wikidata": "Q2942930",
       "replaces": [
         "way/75684994"
+      ]
+    },
+    {
+      "id": "chi-marina-city",
+      "name": "Marina City",
+      "model": "chi-marina-city",
+      "lng": -87.6288135,
+      "lat": 41.888083,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q653584",
+      "replaces": [
+        "way/1177923716",
+        "way/1177923717",
+        "way/1177923718",
+        "way/1177923719",
+        "way/284822929",
+        "way/284822924",
+        "way/284822930",
+        "way/284822932",
+        "way/1177923721"
       ]
     }
   ]
