@@ -895,6 +895,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-buckingham-fountain.ts"
+    },
+    {
+      "id": "chi-pritzker-pavilion",
+      "file": "models/chi-pritzker-pavilion.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-pritzker-pavilion.ts"
     }
   ],
   "landmarks": [
@@ -3321,6 +3328,25 @@
       "minzoom": 16,
       "wikidata": "Q158989",
       "replaces": []
+    },
+    {
+      "id": "chi-pritzker-pavilion",
+      "name": "Jay Pritzker Pavilion",
+      "model": "chi-pritzker-pavilion",
+      "lng": -87.621892,
+      "lat": 41.883512,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3180096",
+      "replaces": [
+        "way/126978545",
+        "way/764598205",
+        "way/764598206",
+        "way/764598207",
+        "way/764598208",
+        "way/764598209"
+      ]
     }
   ]
 }
