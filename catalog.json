@@ -1168,6 +1168,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-marine-corps-war-memorial.ts"
+    },
+    {
+      "id": "dc-smithsonian-castle",
+      "file": "models/dc-smithsonian-castle.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-smithsonian-castle.ts"
     }
   ],
   "landmarks": [
@@ -4736,6 +4743,20 @@
       "minzoom": 16,
       "wikidata": "Q1403946",
       "replaces": []
+    },
+    {
+      "id": "dc-smithsonian-castle",
+      "name": "Smithsonian Institution Building",
+      "model": "dc-smithsonian-castle",
+      "lng": -77.0259511,
+      "lat": 38.8887781,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q605937",
+      "replaces": [
+        "relation/7393969"
+      ]
     }
   ]
 }
