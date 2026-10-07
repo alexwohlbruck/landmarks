@@ -1021,6 +1021,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-bahai-temple.ts"
+    },
+    {
+      "id": "chi-robie-house",
+      "file": "models/chi-robie-house.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-robie-house.ts"
     }
   ],
   "landmarks": [
@@ -3741,6 +3748,20 @@
       "wikidata": "Q4843063",
       "replaces": [
         "way/369160462"
+      ]
+    },
+    {
+      "id": "chi-robie-house",
+      "name": "Frederick C. Robie House",
+      "model": "chi-robie-house",
+      "lng": -87.595947,
+      "lat": 41.789811,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q929965",
+      "replaces": [
+        "way/125667497"
       ]
     }
   ]
