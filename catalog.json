@@ -678,6 +678,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-willis-tower.ts"
+    },
+    {
+      "id": "chi-trump-tower",
+      "file": "models/chi-trump-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-trump-tower.ts"
     }
   ],
   "landmarks": [
@@ -2584,6 +2591,27 @@
         "way/1178213001",
         "way/1178226263",
         "way/1178226264"
+      ]
+    },
+    {
+      "id": "chi-trump-tower",
+      "name": "Trump International Hotel & Tower",
+      "model": "chi-trump-tower",
+      "lng": -87.626459,
+      "lat": 41.888875,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q546221",
+      "replaces": [
+        "way/64594680",
+        "way/188338549",
+        "way/188338550",
+        "way/188338548",
+        "way/188338859",
+        "way/188356529",
+        "way/284773992",
+        "way/284773991"
       ]
     }
   ]
