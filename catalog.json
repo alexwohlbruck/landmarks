@@ -937,6 +937,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-art-institute.ts"
+    },
+    {
+      "id": "chi-art-institute-modern-wing",
+      "file": "models/chi-art-institute-modern-wing.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-art-institute-modern-wing.ts"
     }
   ],
   "landmarks": [
@@ -3450,6 +3457,22 @@
         "way/765296570",
         "way/765296577",
         "way/765296578"
+      ]
+    },
+    {
+      "id": "chi-art-institute-modern-wing",
+      "name": "Art Institute of Chicago Modern Wing",
+      "model": "chi-art-institute-modern-wing",
+      "lng": -87.622027,
+      "lat": 41.880287,
+      "bearing": 359.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/765296571",
+        "way/943374848",
+        "way/943374852",
+        "way/1425669058"
       ]
     }
   ]
