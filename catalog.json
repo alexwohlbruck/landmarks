@@ -1119,6 +1119,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-wwii-memorial.ts"
+    },
+    {
+      "id": "dc-air-force-memorial",
+      "file": "models/dc-air-force-memorial.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-air-force-memorial.ts"
     }
   ],
   "landmarks": [
@@ -4552,6 +4559,18 @@
         "way/894587477",
         "way/894589603"
       ]
+    },
+    {
+      "id": "dc-air-force-memorial",
+      "name": "United States Air Force Memorial",
+      "model": "dc-air-force-memorial",
+      "lng": -77.0662258,
+      "lat": 38.8685145,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7889224",
+      "replaces": []
     }
   ]
 }
