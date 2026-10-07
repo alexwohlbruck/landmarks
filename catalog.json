@@ -909,6 +909,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-lou-ruvo.ts"
+    },
+    {
+      "id": "lv-smith-center",
+      "file": "models/lv-smith-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-smith-center.ts"
     }
   ],
   "landmarks": [
@@ -3431,6 +3438,20 @@
       "wikidata": "Q1988897",
       "replaces": [
         "way/484153262"
+      ]
+    },
+    {
+      "id": "lv-smith-center",
+      "name": "The Smith Center for the Performing Arts",
+      "model": "lv-smith-center",
+      "lng": -115.1518646,
+      "lat": 36.1687433,
+      "bearing": 28,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7545102",
+      "replaces": [
+        "way/135294818"
       ]
     }
   ]
