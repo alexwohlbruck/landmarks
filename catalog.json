@@ -720,6 +720,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-cinderella-castle.ts"
+    },
+    {
+      "id": "wdw-contemporary-garden-wing",
+      "file": "models/wdw-contemporary-garden-wing.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-contemporary-garden-wing.ts"
     }
   ],
   "landmarks": [
@@ -2772,6 +2779,19 @@
         "way/1351675222",
         "way/1351675223",
         "way/1351675224"
+      ]
+    },
+    {
+      "id": "wdw-contemporary-garden-wing",
+      "name": "Disney's Contemporary Resort Garden Wing",
+      "model": "wdw-contemporary-garden-wing",
+      "lng": -81.5733415,
+      "lat": 28.4135208,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/344887164"
       ]
     }
   ]
