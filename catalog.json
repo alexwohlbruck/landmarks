@@ -916,6 +916,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-smith-center.ts"
+    },
+    {
+      "id": "lv-crystals",
+      "file": "models/lv-crystals.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-crystals.ts"
     }
   ],
   "landmarks": [
@@ -3452,6 +3459,20 @@
       "wikidata": "Q7545102",
       "replaces": [
         "way/135294818"
+      ]
+    },
+    {
+      "id": "lv-crystals",
+      "name": "The Shops at Crystals",
+      "model": "lv-crystals",
+      "lng": -115.1743244,
+      "lat": 36.1078197,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1281026",
+      "replaces": [
+        "way/52134608"
       ]
     }
   ]
