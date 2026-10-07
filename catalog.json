@@ -811,6 +811,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-vdara.ts"
+    },
+    {
+      "id": "lv-bellagio",
+      "file": "models/lv-bellagio.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-bellagio.ts"
     }
   ],
   "landmarks": [
@@ -3080,6 +3087,21 @@
         "way/52175577",
         "way/134932949",
         "way/134932948"
+      ]
+    },
+    {
+      "id": "lv-bellagio",
+      "name": "Bellagio",
+      "model": "lv-bellagio",
+      "lng": -115.176606,
+      "lat": 36.113113,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q25007",
+      "replaces": [
+        "way/25723909",
+        "way/114703388"
       ]
     }
   ]
