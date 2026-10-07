@@ -874,6 +874,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-rio.ts"
+    },
+    {
+      "id": "lv-seven-magic-mountains",
+      "file": "models/lv-seven-magic-mountains.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-seven-magic-mountains.ts"
     }
   ],
   "landmarks": [
@@ -3330,6 +3337,18 @@
         "way/134938479",
         "way/134938481"
       ]
+    },
+    {
+      "id": "lv-seven-magic-mountains",
+      "name": "Seven Magic Mountains",
+      "model": "lv-seven-magic-mountains",
+      "lng": -115.2709478,
+      "lat": 35.838299,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q124059502",
+      "replaces": []
     }
   ]
 }
