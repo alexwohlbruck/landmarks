@@ -958,6 +958,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-main-street-station.ts"
+    },
+    {
+      "id": "dlr-small-world",
+      "file": "models/dlr-small-world.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-small-world.ts"
     }
   ],
   "landmarks": [
@@ -3767,6 +3774,21 @@
         "way/443327358",
         "way/193657781",
         "way/193657780"
+      ]
+    },
+    {
+      "id": "dlr-small-world",
+      "name": "\"it's a small world\"",
+      "model": "dlr-small-world",
+      "lng": -117.9178443,
+      "lat": 33.8146742,
+      "bearing": 13,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q137529132",
+      "replaces": [
+        "way/135699826",
+        "way/135489209"
       ]
     }
   ]
