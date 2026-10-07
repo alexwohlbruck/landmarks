@@ -972,6 +972,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-haunted-mansion.ts"
+    },
+    {
+      "id": "dlr-space-mountain",
+      "file": "models/dlr-space-mountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-space-mountain.ts"
     }
   ],
   "landmarks": [
@@ -3812,6 +3819,24 @@
         "way/178238274",
         "way/122193484",
         "way/122193472"
+      ]
+    },
+    {
+      "id": "dlr-space-mountain",
+      "name": "Space Mountain",
+      "model": "dlr-space-mountain",
+      "lng": -117.9174999,
+      "lat": 33.8109694,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7572427",
+      "replaces": [
+        "way/122090695",
+        "way/122090687",
+        "way/122090694",
+        "way/122090693",
+        "way/262351999"
       ]
     }
   ]
