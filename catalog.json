@@ -1231,6 +1231,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-nga-east.ts"
+    },
+    {
+      "id": "dc-national-archives",
+      "file": "models/dc-national-archives.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-national-archives.ts"
     }
   ],
   "landmarks": [
@@ -4982,6 +4989,26 @@
         "way/426674757",
         "way/426674758",
         "way/426674759"
+      ]
+    },
+    {
+      "id": "dc-national-archives",
+      "name": "National Archives Building",
+      "model": "dc-national-archives",
+      "lng": -77.0229196,
+      "lat": 38.8928207,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q518155",
+      "replaces": [
+        "way/66418953",
+        "way/427815124",
+        "way/427815125",
+        "way/427815126",
+        "way/427815127",
+        "way/427815128",
+        "way/427815129"
       ]
     }
   ]
