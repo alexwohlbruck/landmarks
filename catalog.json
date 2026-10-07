@@ -1007,6 +1007,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-pirates-blue-bayou.ts"
+    },
+    {
+      "id": "dlr-mark-twain",
+      "file": "models/dlr-mark-twain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-mark-twain.ts"
     }
   ],
   "landmarks": [
@@ -3988,6 +3995,18 @@
         "way/123303460",
         "way/123303438"
       ]
+    },
+    {
+      "id": "dlr-mark-twain",
+      "name": "Mark Twain Riverboat",
+      "model": "dlr-mark-twain",
+      "lng": -117.920704,
+      "lat": 33.812227,
+      "bearing": 180,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3006137",
+      "replaces": []
     }
   ]
 }
