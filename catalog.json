@@ -1000,6 +1000,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-batuu-spires.ts"
+    },
+    {
+      "id": "dlr-pirates-blue-bayou",
+      "file": "models/dlr-pirates-blue-bayou.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-pirates-blue-bayou.ts"
     }
   ],
   "landmarks": [
@@ -3962,6 +3969,25 @@
       "elevation": 0,
       "minzoom": 15,
       "replaces": []
+    },
+    {
+      "id": "dlr-pirates-blue-bayou",
+      "name": "Pirates of the Caribbean and Blue Bayou",
+      "model": "dlr-pirates-blue-bayou",
+      "lng": -117.920831,
+      "lat": 33.811236,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q1713564",
+      "replaces": [
+        "way/824031784",
+        "way/123303434",
+        "way/123303445",
+        "way/123303466",
+        "way/123303460",
+        "way/123303438"
+      ]
     }
   ]
 }
