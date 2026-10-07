@@ -902,6 +902,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-spaceship-earth.ts"
+    },
+    {
+      "id": "wdw-tower-of-terror",
+      "file": "models/wdw-tower-of-terror.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-tower-of-terror.ts"
     }
   ],
   "landmarks": [
@@ -3475,6 +3482,24 @@
         "way/146221550",
         "way/295176801",
         "way/298641632"
+      ]
+    },
+    {
+      "id": "wdw-tower-of-terror",
+      "name": "The Twilight Zone Tower of Terror",
+      "model": "wdw-tower-of-terror",
+      "lng": -81.559919,
+      "lat": 28.360007,
+      "bearing": 41,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1776103",
+      "replaces": [
+        "way/530750421",
+        "way/446195251",
+        "way/446195252",
+        "way/530750420",
+        "way/691274043"
       ]
     }
   ]
