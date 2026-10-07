@@ -769,6 +769,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-jewelers-building.ts"
+    },
+    {
+      "id": "chi-mather-tower",
+      "file": "models/chi-mather-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-mather-tower.ts"
     }
   ],
   "landmarks": [
@@ -2903,6 +2910,22 @@
         "way/686198235",
         "way/686198236",
         "way/686198237"
+      ]
+    },
+    {
+      "id": "chi-mather-tower",
+      "name": "Mather Tower",
+      "model": "chi-mather-tower",
+      "lng": -87.625442,
+      "lat": 41.887616,
+      "bearing": 34.9,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3117510",
+      "replaces": [
+        "way/147399564",
+        "way/592122465",
+        "way/686198765"
       ]
     }
   ]
