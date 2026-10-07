@@ -685,6 +685,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-ak-entrance.ts"
+    },
+    {
+      "id": "wdw-batuu-spires",
+      "file": "models/wdw-batuu-spires.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-batuu-spires.ts"
     }
   ],
   "landmarks": [
@@ -2621,6 +2628,17 @@
         "way/295763704",
         "way/295763710"
       ]
+    },
+    {
+      "id": "wdw-batuu-spires",
+      "name": "Black Spire Outpost spires",
+      "model": "wdw-batuu-spires",
+      "lng": -81.5619811,
+      "lat": 28.3536046,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": []
     }
   ]
 }
