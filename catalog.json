@@ -713,6 +713,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-big-apple-coaster.ts"
+    },
+    {
+      "id": "lv-caesars-palace",
+      "file": "models/lv-caesars-palace.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-caesars-palace.ts"
     }
   ],
   "landmarks": [
@@ -2716,6 +2723,29 @@
         "way/646113823",
         "way/1035252214",
         "way/646113825"
+      ]
+    },
+    {
+      "id": "lv-caesars-palace",
+      "name": "Caesars Palace",
+      "model": "lv-caesars-palace",
+      "lng": -115.1762721,
+      "lat": 36.1165611,
+      "bearing": 1.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q569978",
+      "replaces": [
+        "way/115672893",
+        "way/1176928048",
+        "way/126267789",
+        "way/134944648",
+        "way/134949102",
+        "way/134949098",
+        "way/134949101",
+        "way/134949402",
+        "way/134949715",
+        "way/1168129083"
       ]
     }
   ]
