@@ -692,6 +692,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-batuu-spires.ts"
+    },
+    {
+      "id": "wdw-bay-lake-tower",
+      "file": "models/wdw-bay-lake-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-bay-lake-tower.ts"
     }
   ],
   "landmarks": [
@@ -2639,6 +2646,20 @@
       "elevation": 0,
       "minzoom": 16,
       "replaces": []
+    },
+    {
+      "id": "wdw-bay-lake-tower",
+      "name": "Bay Lake Tower at Disney's Contemporary Resort",
+      "model": "wdw-bay-lake-tower",
+      "lng": -81.5734315,
+      "lat": 28.4164359,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2002896",
+      "replaces": [
+        "way/344911011"
+      ]
     }
   ]
 }
