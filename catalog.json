@@ -706,6 +706,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-new-york-new-york.ts"
+    },
+    {
+      "id": "lv-big-apple-coaster",
+      "file": "models/lv-big-apple-coaster.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-big-apple-coaster.ts"
     }
   ],
   "landmarks": [
@@ -2684,6 +2691,31 @@
         "way/115661805",
         "way/115661806",
         "way/115661807"
+      ]
+    },
+    {
+      "id": "lv-big-apple-coaster",
+      "name": "The Big Apple Coaster",
+      "model": "lv-big-apple-coaster",
+      "lng": -115.174878,
+      "lat": 36.1022266,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1670601",
+      "replaces": [
+        "way/115662438",
+        "way/1035252213",
+        "way/1035252211",
+        "way/1035251668",
+        "way/1035251667",
+        "way/1035252212",
+        "way/1035252215",
+        "way/1035251772",
+        "way/646113820",
+        "way/646113823",
+        "way/1035252214",
+        "way/646113825"
       ]
     }
   ]
