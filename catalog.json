@@ -860,6 +860,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-welcome-sign.ts"
+    },
+    {
+      "id": "lv-circus-circus",
+      "file": "models/lv-circus-circus.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-circus-circus.ts"
     }
   ],
   "landmarks": [
@@ -3276,6 +3283,27 @@
       "minzoom": 16,
       "wikidata": "Q175665",
       "replaces": []
+    },
+    {
+      "id": "lv-circus-circus",
+      "name": "Circus Circus",
+      "model": "lv-circus-circus",
+      "lng": -115.1652462,
+      "lat": 36.1377093,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1092961",
+      "replaces": [
+        "way/135332959",
+        "way/135448016",
+        "way/135332955",
+        "way/135332956",
+        "way/135332957",
+        "way/135332961",
+        "way/135448011",
+        "way/135448025"
+      ]
     }
   ]
 }
