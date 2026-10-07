@@ -1133,6 +1133,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-netherlands-carillon.ts"
+    },
+    {
+      "id": "dc-white-house",
+      "file": "models/dc-white-house.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-white-house.ts"
     }
   ],
   "landmarks": [
@@ -4591,6 +4598,61 @@
       "wikidata": "Q2901761",
       "replaces": [
         "way/41273627"
+      ]
+    },
+    {
+      "id": "dc-white-house",
+      "name": "White House",
+      "model": "dc-white-house",
+      "lng": -77.036553,
+      "lat": 38.8976662,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q35525",
+      "replaces": [
+        "relation/19761182",
+        "way/257920185",
+        "way/257920182",
+        "way/257920157",
+        "way/257920202",
+        "way/257920173",
+        "way/257920159",
+        "way/257920161",
+        "way/257920163",
+        "way/257920165",
+        "way/257920166",
+        "way/257920171",
+        "way/257920188",
+        "way/257920189",
+        "way/257920190",
+        "way/257920191",
+        "way/257920194",
+        "way/257920195",
+        "way/257920196",
+        "way/257920198",
+        "way/257920156",
+        "way/257920203",
+        "way/257920187",
+        "way/257920160",
+        "way/257920162",
+        "way/257920164",
+        "way/257920168",
+        "way/257920169",
+        "way/257920174",
+        "way/257920175",
+        "way/257920176",
+        "way/1445440137",
+        "way/1425481054",
+        "way/1425481055",
+        "way/449101168",
+        "way/449101206",
+        "way/884569672",
+        "way/884569673",
+        "way/884569674",
+        "way/884569677",
+        "way/884571790",
+        "way/884571793"
       ]
     }
   ]
