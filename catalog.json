@@ -923,6 +923,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-flamingo.ts"
+    },
+    {
+      "id": "chi-chicago-theatre",
+      "file": "models/chi-chicago-theatre.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-chicago-theatre.ts"
     }
   ],
   "landmarks": [
@@ -3406,6 +3413,21 @@
       "minzoom": 16,
       "wikidata": "Q3073296",
       "replaces": []
+    },
+    {
+      "id": "chi-chicago-theatre",
+      "name": "Chicago Theatre",
+      "model": "chi-chicago-theatre",
+      "lng": -87.627238,
+      "lat": 41.885396,
+      "bearing": 359.7,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q642866",
+      "replaces": [
+        "way/124873919",
+        "way/1176843051"
+      ]
     }
   ]
 }
