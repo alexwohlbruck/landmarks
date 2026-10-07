@@ -790,6 +790,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-epcot-germany.ts"
+    },
+    {
+      "id": "wdw-epcot-italy",
+      "file": "models/wdw-epcot-italy.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-italy.ts"
     }
   ],
   "landmarks": [
@@ -3061,6 +3068,21 @@
       "wikidata": "Q2129498",
       "replaces": [
         "way/295593358"
+      ]
+    },
+    {
+      "id": "wdw-epcot-italy",
+      "name": "Italy Pavilion (Campanile and Doge's Palace)",
+      "model": "wdw-epcot-italy",
+      "lng": -81.5481578,
+      "lat": 28.3678284,
+      "bearing": 347,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2604149",
+      "replaces": [
+        "way/295592599",
+        "way/295592598"
       ]
     }
   ]
