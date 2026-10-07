@@ -1063,6 +1063,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-avengers-campus.ts"
+    },
+    {
+      "id": "dlr-web-slingers",
+      "file": "models/dlr-web-slingers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-web-slingers.ts"
     }
   ],
   "landmarks": [
@@ -4189,6 +4196,28 @@
         "way/980770821",
         "way/797193567",
         "way/983358329"
+      ]
+    },
+    {
+      "id": "dlr-web-slingers",
+      "name": "WEB SLINGERS: A Spider-Man Adventure",
+      "model": "dlr-web-slingers",
+      "lng": -117.9186724,
+      "lat": 33.8068953,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q85802593",
+      "replaces": [
+        "way/721810397",
+        "way/49824622",
+        "way/951841620",
+        "way/951841621",
+        "way/951842062",
+        "way/980768332",
+        "way/980768333",
+        "way/980768334",
+        "way/980768335"
       ]
     }
   ]
