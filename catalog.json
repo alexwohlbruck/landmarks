@@ -853,6 +853,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-merchandise-mart.ts"
+    },
+    {
+      "id": "chi-333-wacker",
+      "file": "models/chi-333-wacker.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-333-wacker.ts"
     }
   ],
   "landmarks": [
@@ -3195,6 +3202,20 @@
         "way/1432322257",
         "way/1432322258",
         "way/1432322259"
+      ]
+    },
+    {
+      "id": "chi-333-wacker",
+      "name": "333 Wacker Drive",
+      "model": "chi-333-wacker",
+      "lng": -87.6359245,
+      "lat": 41.8860954,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q225835",
+      "replaces": [
+        "way/116017092"
       ]
     }
   ]
