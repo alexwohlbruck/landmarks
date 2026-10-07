@@ -923,6 +923,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-crystals.ts"
+    },
+    {
+      "id": "lv-fashion-show-cloud",
+      "file": "models/lv-fashion-show-cloud.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-fashion-show-cloud.ts"
     }
   ],
   "landmarks": [
@@ -3473,6 +3480,19 @@
       "wikidata": "Q1281026",
       "replaces": [
         "way/52134608"
+      ]
+    },
+    {
+      "id": "lv-fashion-show-cloud",
+      "name": "The Cloud at Fashion Show",
+      "model": "lv-fashion-show-cloud",
+      "lng": -115.1688864,
+      "lat": 36.1269765,
+      "bearing": 29.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "relation/19447588"
       ]
     }
   ]
