@@ -895,6 +895,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-space-mountain.ts"
+    },
+    {
+      "id": "wdw-spaceship-earth",
+      "file": "models/wdw-spaceship-earth.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-spaceship-earth.ts"
     }
   ],
   "landmarks": [
@@ -3452,6 +3459,22 @@
         "way/373171487",
         "way/373171488",
         "way/1106733754"
+      ]
+    },
+    {
+      "id": "wdw-spaceship-earth",
+      "name": "Spaceship Earth",
+      "model": "wdw-spaceship-earth",
+      "lng": -81.5493963,
+      "lat": 28.3752927,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2916749",
+      "replaces": [
+        "way/146221550",
+        "way/295176801",
+        "way/298641632"
       ]
     }
   ]
