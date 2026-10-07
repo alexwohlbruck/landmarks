@@ -769,6 +769,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/wdw-epcot-cosmic-rewind.ts"
+    },
+    {
+      "id": "wdw-epcot-entrance",
+      "file": "models/wdw-epcot-entrance.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-entrance.ts"
     }
   ],
   "landmarks": [
@@ -2982,6 +2989,25 @@
       "wikidata": "Q36259219",
       "replaces": [
         "way/719079634"
+      ]
+    },
+    {
+      "id": "wdw-epcot-entrance",
+      "name": "EPCOT Entrance",
+      "model": "wdw-epcot-entrance",
+      "lng": -81.5494,
+      "lat": 28.3758835,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/295176249",
+        "way/295174214",
+        "way/295174215",
+        "way/295176514",
+        "way/295176518",
+        "way/295174216",
+        "way/689241903"
       ]
     }
   ]
