@@ -846,6 +846,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-allegiant-stadium.ts"
+    },
+    {
+      "id": "lv-las-tower",
+      "file": "models/lv-las-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-las-tower.ts"
     }
   ],
   "landmarks": [
@@ -3236,6 +3243,19 @@
         "way/1252866575",
         "way/1252866576",
         "way/1252866577"
+      ]
+    },
+    {
+      "id": "lv-las-tower",
+      "name": "Harry Reid International Airport control tower",
+      "model": "lv-las-tower",
+      "lng": -115.141597,
+      "lat": 36.084946,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/340018195"
       ]
     }
   ]
