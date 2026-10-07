@@ -685,6 +685,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-high-roller.ts"
+    },
+    {
+      "id": "lv-sphere",
+      "file": "models/lv-sphere.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-sphere.ts"
     }
   ],
   "landmarks": [
@@ -2579,6 +2586,20 @@
       "wikidata": "Q892103",
       "replaces": [
         "way/402543930"
+      ]
+    },
+    {
+      "id": "lv-sphere",
+      "name": "Sphere",
+      "model": "lv-sphere",
+      "lng": -115.162067,
+      "lat": 36.121244,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q60749353",
+      "replaces": [
+        "way/976405284"
       ]
     }
   ]
