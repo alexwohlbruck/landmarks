@@ -860,6 +860,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-333-wacker.ts"
+    },
+    {
+      "id": "chi-union-station",
+      "file": "models/chi-union-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-union-station.ts"
     }
   ],
   "landmarks": [
@@ -3216,6 +3223,20 @@
       "wikidata": "Q225835",
       "replaces": [
         "way/116017092"
+      ]
+    },
+    {
+      "id": "chi-union-station",
+      "name": "Chicago Union Station",
+      "model": "chi-union-station",
+      "lng": -87.6404074,
+      "lat": 41.8786657,
+      "bearing": 358.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1155989",
+      "replaces": [
+        "way/203442440"
       ]
     }
   ]
