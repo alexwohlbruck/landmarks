@@ -888,6 +888,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-fremont-canopy.ts"
+    },
+    {
+      "id": "lv-slotzilla",
+      "file": "models/lv-slotzilla.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-slotzilla.ts"
     }
   ],
   "landmarks": [
@@ -3369,6 +3376,19 @@
       "wikidata": "Q1368842",
       "replaces": [
         "way/1428180251"
+      ]
+    },
+    {
+      "id": "lv-slotzilla",
+      "name": "SlotZilla",
+      "model": "lv-slotzilla",
+      "lng": -115.1412707,
+      "lat": 36.1695016,
+      "bearing": 118,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/1093169256"
       ]
     }
   ]
