@@ -755,6 +755,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-trump.ts"
+    },
+    {
+      "id": "lv-excalibur",
+      "file": "models/lv-excalibur.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-excalibur.ts"
     }
   ],
   "landmarks": [
@@ -2852,6 +2859,59 @@
       "replaces": [
         "way/111380666",
         "way/111380664"
+      ]
+    },
+    {
+      "id": "lv-excalibur",
+      "name": "Excalibur Hotel & Casino",
+      "model": "lv-excalibur",
+      "lng": -115.175458,
+      "lat": 36.098913,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1064873",
+      "replaces": [
+        "relation/8086330",
+        "way/114859870",
+        "way/114857390",
+        "way/114870395",
+        "way/114870398",
+        "way/114857376",
+        "way/114857379",
+        "way/114857381",
+        "way/114857385",
+        "way/114857387",
+        "way/114857388",
+        "way/114857392",
+        "way/114857393",
+        "way/114857395",
+        "way/114857396",
+        "way/114857398",
+        "way/114857399",
+        "way/114857401",
+        "way/114857405",
+        "way/114857406",
+        "way/114857408",
+        "way/114866100",
+        "way/114866101",
+        "way/114866102",
+        "way/114866542",
+        "way/114866543",
+        "way/114866546",
+        "way/114866547",
+        "way/114866549",
+        "way/114866551",
+        "way/114866553",
+        "way/114871424",
+        "way/114865271",
+        "way/114865278",
+        "way/114865280",
+        "way/114865283",
+        "way/114865286",
+        "way/114865290",
+        "way/567108281",
+        "way/567108283"
       ]
     }
   ]
