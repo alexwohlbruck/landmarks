@@ -993,6 +993,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-united-center.ts"
+    },
+    {
+      "id": "chi-centennial-wheel",
+      "file": "models/chi-centennial-wheel.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-centennial-wheel.ts"
     }
   ],
   "landmarks": [
@@ -3655,6 +3662,20 @@
         "way/750458683",
         "way/750458680",
         "way/750458681"
+      ]
+    },
+    {
+      "id": "chi-centennial-wheel",
+      "name": "Centennial Wheel",
+      "model": "chi-centennial-wheel",
+      "lng": -87.607475,
+      "lat": 41.891702,
+      "bearing": 358.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q43153888",
+      "replaces": [
+        "way/686996484"
       ]
     }
   ]
