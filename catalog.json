@@ -937,6 +937,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-clark-county-government-center.ts"
+    },
+    {
+      "id": "lv-mob-museum",
+      "file": "models/lv-mob-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-mob-museum.ts"
     }
   ],
   "landmarks": [
@@ -3561,6 +3568,20 @@
         "way/1410028576",
         "way/1410029920",
         "way/1410029921"
+      ]
+    },
+    {
+      "id": "lv-mob-museum",
+      "name": "The Mob Museum",
+      "model": "lv-mob-museum",
+      "lng": -115.1412791,
+      "lat": 36.172784,
+      "bearing": 28.4,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q6886561",
+      "replaces": [
+        "way/206128504"
       ]
     }
   ]
