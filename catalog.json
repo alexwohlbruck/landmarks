@@ -902,6 +902,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-pritzker-pavilion.ts"
+    },
+    {
+      "id": "chi-cloud-gate",
+      "file": "models/chi-cloud-gate.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-cloud-gate.ts"
     }
   ],
   "landmarks": [
@@ -3346,6 +3353,20 @@
         "way/764598207",
         "way/764598208",
         "way/764598209"
+      ]
+    },
+    {
+      "id": "chi-cloud-gate",
+      "name": "Cloud Gate",
+      "model": "chi-cloud-gate",
+      "lng": -87.623339,
+      "lat": 41.882686,
+      "bearing": 359.4,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q589099",
+      "replaces": [
+        "way/137060274"
       ]
     }
   ]
