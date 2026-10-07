@@ -748,6 +748,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/lv-resorts-world.ts"
+    },
+    {
+      "id": "lv-trump",
+      "file": "models/lv-trump.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-trump.ts"
     }
   ],
   "landmarks": [
@@ -2830,6 +2837,21 @@
       "wikidata": "Q14705265",
       "replaces": [
         "way/316303708"
+      ]
+    },
+    {
+      "id": "lv-trump",
+      "name": "Trump International Hotel Las Vegas",
+      "model": "lv-trump",
+      "lng": -115.172629,
+      "lat": 36.129512,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1281171",
+      "replaces": [
+        "way/111380666",
+        "way/111380664"
       ]
     }
   ]
