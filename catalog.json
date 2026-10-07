@@ -671,6 +671,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/carowinds-windseeker.ts"
+    },
+    {
+      "id": "chi-willis-tower",
+      "file": "models/chi-willis-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-willis-tower.ts"
     }
   ],
   "landmarks": [
@@ -2536,6 +2543,47 @@
       "minzoom": 14,
       "replaces": [
         "way/893187005"
+      ]
+    },
+    {
+      "id": "chi-willis-tower",
+      "name": "Willis Tower",
+      "model": "chi-willis-tower",
+      "lng": -87.6359459,
+      "lat": 41.8787278,
+      "bearing": 358.93,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q29294",
+      "replaces": [
+        "way/380868216",
+        "way/137162289",
+        "way/137162290",
+        "way/137162293",
+        "way/137162295",
+        "way/137162296",
+        "way/137162297",
+        "way/137162298",
+        "way/137162299",
+        "way/233918141",
+        "way/233918220",
+        "way/1178243970",
+        "way/1178243971",
+        "way/1178243972",
+        "way/1178243973",
+        "way/1178226299",
+        "way/1007423276",
+        "way/1178212992",
+        "way/1178212993",
+        "way/1178212994",
+        "way/1178212995",
+        "way/1178212996",
+        "way/1178212997",
+        "way/1178212998",
+        "way/1178212999",
+        "way/1178213001",
+        "way/1178226263",
+        "way/1178226264"
       ]
     }
   ]
