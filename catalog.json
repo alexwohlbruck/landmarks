@@ -776,6 +776,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-mather-tower.ts"
+    },
+    {
+      "id": "chi-tribune-tower",
+      "file": "models/chi-tribune-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-tribune-tower.ts"
     }
   ],
   "landmarks": [
@@ -2926,6 +2933,21 @@
         "way/147399564",
         "way/592122465",
         "way/686198765"
+      ]
+    },
+    {
+      "id": "chi-tribune-tower",
+      "name": "Tribune Tower",
+      "model": "chi-tribune-tower",
+      "lng": -87.623308,
+      "lat": 41.89055,
+      "bearing": 358.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2143136",
+      "replaces": [
+        "way/150407241",
+        "way/127107038"
       ]
     }
   ]
