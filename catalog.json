@@ -678,6 +678,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-incredicoaster.ts"
+    },
+    {
+      "id": "wdw-ak-entrance",
+      "file": "models/wdw-ak-entrance.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-ak-entrance.ts"
     }
   ],
   "landmarks": [
@@ -2597,6 +2604,22 @@
         "way/265898490",
         "way/597969174",
         "way/200375174"
+      ]
+    },
+    {
+      "id": "wdw-ak-entrance",
+      "name": "Disney's Animal Kingdom Entrance",
+      "model": "wdw-ak-entrance",
+      "lng": -81.5900755,
+      "lat": 28.3552589,
+      "bearing": 350,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/295763702",
+        "way/295763703",
+        "way/295763704",
+        "way/295763710"
       ]
     }
   ]
