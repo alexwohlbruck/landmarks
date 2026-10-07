@@ -1070,6 +1070,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-web-slingers.ts"
+    },
+    {
+      "id": "dlr-golden-zephyr",
+      "file": "models/dlr-golden-zephyr.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-golden-zephyr.ts"
     }
   ],
   "landmarks": [
@@ -4218,6 +4225,20 @@
         "way/980768333",
         "way/980768334",
         "way/980768335"
+      ]
+    },
+    {
+      "id": "dlr-golden-zephyr",
+      "name": "Golden Zephyr",
+      "model": "dlr-golden-zephyr",
+      "lng": -117.9222682,
+      "lat": 33.8059615,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3110108",
+      "replaces": [
+        "way/342771469"
       ]
     }
   ]
