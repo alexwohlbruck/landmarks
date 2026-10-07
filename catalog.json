@@ -1189,6 +1189,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-hirshhorn.ts"
+    },
+    {
+      "id": "dc-air-and-space",
+      "file": "models/dc-air-and-space.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-air-and-space.ts"
     }
   ],
   "landmarks": [
@@ -4819,6 +4826,21 @@
         "way/251495387",
         "way/251495388",
         "way/909145546"
+      ]
+    },
+    {
+      "id": "dc-air-and-space",
+      "name": "National Air and Space Museum",
+      "model": "dc-air-and-space",
+      "lng": -77.0198307,
+      "lat": 38.8881333,
+      "bearing": 359.04,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q752669",
+      "replaces": [
+        "relation/16159112",
+        "way/535720705"
       ]
     }
   ]
