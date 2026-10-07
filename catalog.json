@@ -734,6 +734,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/chi-palmolive-building.ts"
+    },
+    {
+      "id": "chi-900-north-michigan",
+      "file": "models/chi-900-north-michigan.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-900-north-michigan.ts"
     }
   ],
   "landmarks": [
@@ -2788,6 +2795,22 @@
       "wikidata": "Q3387206",
       "replaces": [
         "way/143756601"
+      ]
+    },
+    {
+      "id": "chi-900-north-michigan",
+      "name": "900 North Michigan",
+      "model": "chi-900-north-michigan",
+      "lng": -87.62559,
+      "lat": 41.899615,
+      "bearing": 358.9,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q275936",
+      "replaces": [
+        "way/31064552",
+        "way/153966972",
+        "way/1283045515"
       ]
     }
   ]
