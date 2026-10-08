@@ -1399,6 +1399,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-paramount-theatre.ts"
+    },
+    {
+      "id": "sf-fox-oakland",
+      "file": "models/sf-fox-oakland.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-fox-oakland.ts"
     }
   ],
   "landmarks": [
@@ -5524,6 +5531,20 @@
         "way/666974169",
         "way/666976173",
         "way/666976174"
+      ]
+    },
+    {
+      "id": "sf-fox-oakland",
+      "name": "Fox Oakland Theatre",
+      "model": "sf-fox-oakland",
+      "lng": -122.2705411,
+      "lat": 37.8080679,
+      "bearing": 11.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5476853",
+      "replaces": [
+        "way/31149191"
       ]
     }
   ]
