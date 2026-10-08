@@ -1371,6 +1371,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-barclays-center.ts"
+    },
+    {
+      "id": "nyc-brooklyn-museum",
+      "file": "models/nyc-brooklyn-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-brooklyn-museum.ts"
     }
   ],
   "landmarks": [
@@ -5647,6 +5654,21 @@
       "replaces": [
         "relation/8610205",
         "way/250992428"
+      ]
+    },
+    {
+      "id": "nyc-brooklyn-museum",
+      "name": "Brooklyn Museum",
+      "model": "nyc-brooklyn-museum",
+      "lng": -73.9635448,
+      "lat": 40.6709897,
+      "bearing": 15.0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q632682",
+      "replaces": [
+        "way/1432069915",
+        "way/250229991"
       ]
     }
   ]
