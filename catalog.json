@@ -1189,6 +1189,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-70-pine.ts"
+    },
+    {
+      "id": "nyc-united-nations",
+      "file": "models/nyc-united-nations.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-united-nations.ts"
     }
   ],
   "landmarks": [
@@ -4829,6 +4836,26 @@
         "way/286032754",
         "way/286032755",
         "way/286032756"
+      ]
+    },
+    {
+      "id": "nyc-united-nations",
+      "name": "United Nations Headquarters",
+      "model": "nyc-united-nations",
+      "lng": -73.9680976,
+      "lat": 40.7489272,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7888512",
+      "replaces": [
+        "way/137989966",
+        "way/261256937",
+        "way/261256939",
+        "way/261256941",
+        "way/261256936",
+        "way/261256938",
+        "way/261256940"
       ]
     }
   ]
