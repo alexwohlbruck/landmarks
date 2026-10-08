@@ -1343,6 +1343,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-williamsburgh-savings-bank.ts"
+    },
+    {
+      "id": "nyc-arthur-ashe-stadium",
+      "file": "models/nyc-arthur-ashe-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-arthur-ashe-stadium.ts"
     }
   ],
   "landmarks": [
@@ -5560,6 +5567,20 @@
         "way/1517819443",
         "way/1517819444",
         "relation/20712618"
+      ]
+    },
+    {
+      "id": "nyc-arthur-ashe-stadium",
+      "name": "Arthur Ashe Stadium",
+      "model": "nyc-arthur-ashe-stadium",
+      "lng": -73.8470437,
+      "lat": 40.7498907,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q609551",
+      "replaces": [
+        "way/284859611"
       ]
     }
   ]
