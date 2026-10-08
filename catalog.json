@@ -1392,6 +1392,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-oakland-city-hall.ts"
+    },
+    {
+      "id": "sf-paramount-theatre",
+      "file": "models/sf-paramount-theatre.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-paramount-theatre.ts"
     }
   ],
   "landmarks": [
@@ -5498,6 +5505,25 @@
         "way/782510580",
         "way/782510581",
         "way/782510582"
+      ]
+    },
+    {
+      "id": "sf-paramount-theatre",
+      "name": "Paramount Theatre",
+      "model": "sf-paramount-theatre",
+      "lng": -122.2685961,
+      "lat": 37.8098546,
+      "bearing": 27.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q14683611",
+      "replaces": [
+        "way/666976181",
+        "way/666976187",
+        "way/666974159",
+        "way/666974169",
+        "way/666976173",
+        "way/666976174"
       ]
     }
   ]
