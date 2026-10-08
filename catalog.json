@@ -1287,6 +1287,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-spreckels-temple-of-music.ts"
+    },
+    {
+      "id": "sf-dutch-windmill",
+      "file": "models/sf-dutch-windmill.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-dutch-windmill.ts"
     }
   ],
   "landmarks": [
@@ -5058,6 +5065,20 @@
       "wikidata": "Q110559749",
       "replaces": [
         "way/30896932"
+      ]
+    },
+    {
+      "id": "sf-dutch-windmill",
+      "name": "Dutch Windmill",
+      "model": "sf-dutch-windmill",
+      "lng": -122.5094058,
+      "lat": 37.77044089,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q54799943",
+      "replaces": [
+        "way/287921407"
       ]
     }
   ]
