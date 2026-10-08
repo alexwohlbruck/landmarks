@@ -1273,6 +1273,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-st-matthews.ts"
+    },
+    {
+      "id": "dc-watergate",
+      "file": "models/dc-watergate.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-watergate.ts"
     }
   ],
   "landmarks": [
@@ -5237,6 +5244,35 @@
       "wikidata": "Q603535",
       "replaces": [
         "way/55327016"
+      ]
+    },
+    {
+      "id": "dc-watergate",
+      "name": "Watergate complex",
+      "model": "dc-watergate",
+      "lng": -77.0552848,
+      "lat": 38.8988385,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1419538",
+      "replaces": [
+        "way/66417587",
+        "way/445989816",
+        "way/445989815",
+        "way/445989817",
+        "way/445989818",
+        "way/445989819",
+        "way/445989821",
+        "way/445989823",
+        "way/445989825",
+        "way/445989828",
+        "way/445989830",
+        "way/445989831",
+        "way/445989835",
+        "way/445989839",
+        "way/445989841",
+        "way/445989846"
       ]
     }
   ]
