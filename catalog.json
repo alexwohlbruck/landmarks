@@ -1364,6 +1364,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-arlington-house.ts"
+    },
+    {
+      "id": "dc-memorial-amphitheater",
+      "file": "models/dc-memorial-amphitheater.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-memorial-amphitheater.ts"
     }
   ],
   "landmarks": [
@@ -5550,6 +5557,21 @@
       "replaces": [
         "way/41279883",
         "way/1500304896"
+      ]
+    },
+    {
+      "id": "dc-memorial-amphitheater",
+      "name": "Memorial Amphitheater",
+      "model": "dc-memorial-amphitheater",
+      "lng": -77.0728838,
+      "lat": 38.8764195,
+      "bearing": 2.6,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4792362",
+      "replaces": [
+        "relation/15311889",
+        "way/1065498812"
       ]
     }
   ]
