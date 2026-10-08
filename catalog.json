@@ -1091,6 +1091,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-transamerica-pyramid.ts"
+    },
+    {
+      "id": "sf-sentinel-building",
+      "file": "models/sf-sentinel-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-sentinel-building.ts"
     }
   ],
   "landmarks": [
@@ -4288,6 +4295,21 @@
         "way/451336901",
         "way/451336902",
         "way/136615987"
+      ]
+    },
+    {
+      "id": "sf-sentinel-building",
+      "name": "Sentinel Building",
+      "model": "sf-sentinel-building",
+      "lng": -122.4050486,
+      "lat": 37.7965438,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q5150141",
+      "replaces": [
+        "way/288485994",
+        "way/1092161846"
       ]
     }
   ]
