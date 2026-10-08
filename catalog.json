@@ -1343,6 +1343,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-nationals-park.ts"
+    },
+    {
+      "id": "dc-audi-field",
+      "file": "models/dc-audi-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-audi-field.ts"
     }
   ],
   "landmarks": [
@@ -5466,6 +5473,20 @@
       "wikidata": "Q517545",
       "replaces": [
         "relation/1066168"
+      ]
+    },
+    {
+      "id": "dc-audi-field",
+      "name": "Audi Field",
+      "model": "dc-audi-field",
+      "lng": -77.0126718,
+      "lat": 38.8683279,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q5203387",
+      "replaces": [
+        "relation/12361161"
       ]
     }
   ]
