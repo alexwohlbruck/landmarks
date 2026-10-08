@@ -2001,6 +2001,328 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-white-house.ts"
+    },
+    {
+      "id": "la-us-bank-tower",
+      "file": "models/la-us-bank-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-us-bank-tower.ts"
+    },
+    {
+      "id": "la-city-hall",
+      "file": "models/la-city-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-city-hall.ts"
+    },
+    {
+      "id": "la-wilshire-grand",
+      "file": "models/la-wilshire-grand.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-wilshire-grand.ts"
+    },
+    {
+      "id": "la-union-station",
+      "file": "models/la-union-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-union-station.ts"
+    },
+    {
+      "id": "la-broad",
+      "file": "models/la-broad.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-broad.ts"
+    },
+    {
+      "id": "la-grand-la",
+      "file": "models/la-grand-la.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-grand-la.ts"
+    },
+    {
+      "id": "la-bonaventure",
+      "file": "models/la-bonaventure.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-bonaventure.ts"
+    },
+    {
+      "id": "la-gas-company-tower",
+      "file": "models/la-gas-company-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-gas-company-tower.ts"
+    },
+    {
+      "id": "la-wells-fargo-center",
+      "file": "models/la-wells-fargo-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-wells-fargo-center.ts"
+    },
+    {
+      "id": "la-eastern-columbia",
+      "file": "models/la-eastern-columbia.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-eastern-columbia.ts"
+    },
+    {
+      "id": "la-disney-concert-hall",
+      "file": "models/la-disney-concert-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-disney-concert-hall.ts"
+    },
+    {
+      "id": "la-central-library",
+      "file": "models/la-central-library.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-central-library.ts"
+    },
+    {
+      "id": "la-hollywood-bowl",
+      "file": "models/la-hollywood-bowl.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-hollywood-bowl.ts"
+    },
+    {
+      "id": "la-griffith-observatory",
+      "file": "models/la-griffith-observatory.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-griffith-observatory.ts"
+    },
+    {
+      "id": "la-hollywood-sign",
+      "file": "models/la-hollywood-sign.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-hollywood-sign.ts"
+    },
+    {
+      "id": "la-cinerama-dome",
+      "file": "models/la-cinerama-dome.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-cinerama-dome.ts"
+    },
+    {
+      "id": "la-capitol-records",
+      "file": "models/la-capitol-records.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-capitol-records.ts"
+    },
+    {
+      "id": "la-chinese-theatre",
+      "file": "models/la-chinese-theatre.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-chinese-theatre.ts"
+    },
+    {
+      "id": "la-kia-forum",
+      "file": "models/la-kia-forum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-kia-forum.ts"
+    },
+    {
+      "id": "la-sofi-stadium",
+      "file": "models/la-sofi-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-sofi-stadium.ts"
+    },
+    {
+      "id": "la-theme-building",
+      "file": "models/la-theme-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-theme-building.ts"
+    },
+    {
+      "id": "la-randys-donuts",
+      "file": "models/la-randys-donuts.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-randys-donuts.ts"
+    },
+    {
+      "id": "la-dodger-stadium",
+      "file": "models/la-dodger-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-dodger-stadium.ts"
+    },
+    {
+      "id": "la-crypto-arena",
+      "file": "models/la-crypto-arena.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-crypto-arena.ts"
+    },
+    {
+      "id": "la-coliseum",
+      "file": "models/la-coliseum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-coliseum.ts"
+    },
+    {
+      "id": "la-shrine-auditorium",
+      "file": "models/la-shrine-auditorium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-shrine-auditorium.ts"
+    },
+    {
+      "id": "la-lacma-geffen",
+      "file": "models/la-lacma-geffen.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-lacma-geffen.ts"
+    },
+    {
+      "id": "la-petersen",
+      "file": "models/la-petersen.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-petersen.ts"
+    },
+    {
+      "id": "la-academy-museum",
+      "file": "models/la-academy-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-academy-museum.ts"
+    },
+    {
+      "id": "la-bullocks-wilshire",
+      "file": "models/la-bullocks-wilshire.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-bullocks-wilshire.ts"
+    },
+    {
+      "id": "la-wiltern",
+      "file": "models/la-wiltern.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-wiltern.ts"
+    },
+    {
+      "id": "la-la-temple",
+      "file": "models/la-la-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-la-temple.ts"
+    },
+    {
+      "id": "la-getty-center",
+      "file": "models/la-getty-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-getty-center.ts"
+    },
+    {
+      "id": "la-royce-hall",
+      "file": "models/la-royce-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-royce-hall.ts"
+    },
+    {
+      "id": "la-century-plaza-towers",
+      "file": "models/la-century-plaza-towers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-century-plaza-towers.ts"
+    },
+    {
+      "id": "la-pacific-wheel",
+      "file": "models/la-pacific-wheel.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-pacific-wheel.ts"
+    },
+    {
+      "id": "la-queen-mary",
+      "file": "models/la-queen-mary.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-queen-mary.ts"
+    },
+    {
+      "id": "la-vincent-thomas-bridge",
+      "file": "models/la-vincent-thomas-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-vincent-thomas-bridge.ts"
+    },
+    {
+      "id": "la-pasadena-city-hall",
+      "file": "models/la-pasadena-city-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-pasadena-city-hall.ts"
+    },
+    {
+      "id": "la-rose-bowl",
+      "file": "models/la-rose-bowl.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-rose-bowl.ts"
+    },
+    {
+      "id": "la-team-disney",
+      "file": "models/la-team-disney.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-team-disney.ts"
+    },
+    {
+      "id": "la-angelus-temple",
+      "file": "models/la-angelus-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-angelus-temple.ts"
+    },
+    {
+      "id": "la-pacific-design-center",
+      "file": "models/la-pacific-design-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-pacific-design-center.ts"
+    },
+    {
+      "id": "la-walter-pyramid",
+      "file": "models/la-walter-pyramid.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-walter-pyramid.ts"
+    },
+    {
+      "id": "la-watts-towers",
+      "file": "models/la-watts-towers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-watts-towers.ts"
+    },
+    {
+      "id": "la-christ-cathedral",
+      "file": "models/la-christ-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-christ-cathedral.ts"
     }
   ],
   "landmarks": [
@@ -7858,6 +8180,824 @@
         "way/257920180",
         "way/257920181",
         "way/887434559"
+      ]
+    },
+    {
+      "id": "la-us-bank-tower",
+      "name": "U.S. Bank Tower",
+      "model": "la-us-bank-tower",
+      "lng": -118.2544223,
+      "lat": 34.051065,
+      "bearing": 38.2,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q57900",
+      "replaces": [
+        "way/23973401",
+        "way/495115500",
+        "way/901405051",
+        "way/901405052",
+        "way/901405053",
+        "way/901405054",
+        "way/901405055",
+        "way/901405056",
+        "way/901405057",
+        "way/901405058",
+        "way/901405059",
+        "way/901405060"
+      ]
+    },
+    {
+      "id": "la-city-hall",
+      "name": "Los Angeles City Hall",
+      "model": "la-city-hall",
+      "lng": -118.2427693,
+      "lat": 34.0536925,
+      "bearing": 37.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q368489",
+      "replaces": [
+        "relation/6333145",
+        "way/443103746",
+        "way/443103747",
+        "way/443103748",
+        "way/443103749",
+        "way/443103750"
+      ]
+    },
+    {
+      "id": "la-wilshire-grand",
+      "name": "Wilshire Grand Center",
+      "model": "la-wilshire-grand",
+      "lng": -118.2604247,
+      "lat": 34.0501581,
+      "bearing": 37.2,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2582539",
+      "replaces": [
+        "way/496246723",
+        "way/1307580959",
+        "way/901739648"
+      ]
+    },
+    {
+      "id": "la-union-station",
+      "name": "Los Angeles Union Station",
+      "model": "la-union-station",
+      "lng": -118.2357992,
+      "lat": 34.0560743,
+      "bearing": 10,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q198019",
+      "replaces": [
+        "relation/1483140"
+      ]
+    },
+    {
+      "id": "la-broad",
+      "name": "The Broad",
+      "model": "la-broad",
+      "lng": -118.2505937,
+      "lat": 34.0544578,
+      "bearing": 37.2,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q17060100",
+      "replaces": [
+        "way/427532197"
+      ]
+    },
+    {
+      "id": "la-grand-la",
+      "name": "The Grand LA",
+      "model": "la-grand-la",
+      "lng": -118.2487192,
+      "lat": 34.0547307,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/1106947212",
+        "way/1106947213",
+        "way/1106947214",
+        "way/1106947215"
+      ]
+    },
+    {
+      "id": "la-bonaventure",
+      "name": "Westin Bonaventure Hotel",
+      "model": "la-bonaventure",
+      "lng": -118.2558511,
+      "lat": 34.0527584,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q371058",
+      "replaces": [
+        "way/33528271",
+        "way/328826533",
+        "way/328826159"
+      ]
+    },
+    {
+      "id": "la-gas-company-tower",
+      "name": "Gas Company Tower",
+      "model": "la-gas-company-tower",
+      "lng": -118.2531308,
+      "lat": 34.0501109,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2424258",
+      "replaces": [
+        "way/427532192",
+        "way/495115501"
+      ]
+    },
+    {
+      "id": "la-wells-fargo-center",
+      "name": "Wells Fargo Center",
+      "model": "la-wells-fargo-center",
+      "lng": -118.2524055,
+      "lat": 34.052718,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2543729",
+      "replaces": [
+        "way/427532202",
+        "way/427532194",
+        "way/427532221"
+      ]
+    },
+    {
+      "id": "la-eastern-columbia",
+      "name": "Eastern Columbia Building",
+      "model": "la-eastern-columbia",
+      "lng": -118.2562097,
+      "lat": 34.0427452,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q71842",
+      "replaces": [
+        "way/427942790"
+      ]
+    },
+    {
+      "id": "la-disney-concert-hall",
+      "name": "Walt Disney Concert Hall",
+      "model": "la-disney-concert-hall",
+      "lng": -118.2499498,
+      "lat": 34.0553955,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q474326",
+      "replaces": [
+        "relation/6333150",
+        "way/319307757",
+        "way/319307763"
+      ]
+    },
+    {
+      "id": "la-central-library",
+      "name": "Los Angeles Central Library",
+      "model": "la-central-library",
+      "lng": -118.2550325,
+      "lat": 34.0502845,
+      "bearing": 38.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q27676389",
+      "replaces": [
+        "way/428021732",
+        "way/495571355",
+        "way/1106887040"
+      ]
+    },
+    {
+      "id": "la-hollywood-bowl",
+      "name": "Hollywood Bowl",
+      "model": "la-hollywood-bowl",
+      "lng": -118.338902,
+      "lat": 34.112778,
+      "bearing": 24.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q976218",
+      "replaces": [
+        "way/427527131",
+        "way/297126803",
+        "way/297126804",
+        "way/297126805",
+        "way/297126806",
+        "way/297126807",
+        "way/297126808"
+      ]
+    },
+    {
+      "id": "la-griffith-observatory",
+      "name": "Griffith Observatory",
+      "model": "la-griffith-observatory",
+      "lng": -118.300348,
+      "lat": 34.1182539,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q575901",
+      "replaces": [
+        "way/422130705"
+      ]
+    },
+    {
+      "id": "la-hollywood-sign",
+      "name": "Hollywood Sign",
+      "model": "la-hollywood-sign",
+      "lng": -118.321652,
+      "lat": 34.1340991,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q180376",
+      "replaces": [
+        "way/125433363",
+        "way/125433366",
+        "way/125433364",
+        "way/125433365",
+        "way/125433372",
+        "way/125433370",
+        "way/125433367",
+        "way/125433369",
+        "way/125433362"
+      ]
+    },
+    {
+      "id": "la-cinerama-dome",
+      "name": "Cinerama Dome",
+      "model": "la-cinerama-dome",
+      "lng": -118.3281006,
+      "lat": 34.0976248,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2972810",
+      "replaces": [
+        "way/423247168",
+        "way/907828120",
+        "way/907828121",
+        "way/907828122"
+      ]
+    },
+    {
+      "id": "la-capitol-records",
+      "name": "Capitol Records Building",
+      "model": "la-capitol-records",
+      "lng": -118.3263646,
+      "lat": 34.1031194,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2937482",
+      "replaces": [
+        "way/422141102",
+        "way/907834019",
+        "way/907834020"
+      ]
+    },
+    {
+      "id": "la-chinese-theatre",
+      "name": "TCL Chinese Theatre",
+      "model": "la-chinese-theatre",
+      "lng": -118.340951,
+      "lat": 34.1020843,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1122565",
+      "replaces": [
+        "way/424105908"
+      ]
+    },
+    {
+      "id": "la-kia-forum",
+      "name": "Kia Forum",
+      "model": "la-kia-forum",
+      "lng": -118.341972,
+      "lat": 33.958216,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q639129",
+      "replaces": [
+        "way/26320999"
+      ]
+    },
+    {
+      "id": "la-sofi-stadium",
+      "name": "SoFi Stadium",
+      "model": "la-sofi-stadium",
+      "lng": -118.3385824,
+      "lat": 33.9531124,
+      "bearing": 336,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q19520501",
+      "replaces": [
+        "way/748790321",
+        "way/860635712",
+        "way/860635710",
+        "way/860635711",
+        "way/963712167"
+      ]
+    },
+    {
+      "id": "la-theme-building",
+      "name": "Theme Building",
+      "model": "la-theme-building",
+      "lng": -118.4024925,
+      "lat": 33.9441425,
+      "bearing": 353,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3523620",
+      "replaces": [
+        "way/37891817",
+        "way/476168322"
+      ]
+    },
+    {
+      "id": "la-randys-donuts",
+      "name": "Randy's Donuts",
+      "model": "la-randys-donuts",
+      "lng": -118.370379,
+      "lat": 33.961852,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2130840",
+      "replaces": [
+        "way/420317805"
+      ]
+    },
+    {
+      "id": "la-dodger-stadium",
+      "name": "Dodger Stadium",
+      "model": "la-dodger-stadium",
+      "lng": -118.2400507,
+      "lat": 34.0736933,
+      "bearing": 27,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q247420",
+      "replaces": [
+        "way/1353249584",
+        "way/1348907079",
+        "way/1348907080",
+        "way/1348907436",
+        "way/1348909324",
+        "way/1348909325",
+        "way/1348909326",
+        "way/1348909327",
+        "way/1348909328",
+        "way/1348909329",
+        "way/1348910120",
+        "way/1348910121",
+        "way/1348910122",
+        "way/1348910123",
+        "way/1348910124",
+        "way/1348910125",
+        "way/1348910126",
+        "way/1348911392",
+        "way/1348911393",
+        "way/1348911394",
+        "way/1348911395",
+        "way/1348911396",
+        "way/1348911397",
+        "way/1348911398",
+        "way/1348911399",
+        "way/1348911400",
+        "way/1348911401",
+        "way/1348911402",
+        "way/1348911403",
+        "way/1348911404",
+        "way/1348911405",
+        "way/1348911406",
+        "way/1348911644",
+        "way/1348912163",
+        "way/1348912518",
+        "way/1348912519",
+        "way/1348912520",
+        "way/1348912521",
+        "way/1348912522",
+        "way/1348912523",
+        "way/1348912524",
+        "way/1348912525",
+        "way/1348912526",
+        "way/1348912527",
+        "way/1348912528",
+        "way/1348912529",
+        "way/1348912530",
+        "way/1348912531",
+        "way/1348912532",
+        "way/1348912533",
+        "way/1348912534",
+        "way/1348912535",
+        "way/1348912536",
+        "way/1348912537",
+        "way/1348912538",
+        "way/1348912539",
+        "way/1348912540",
+        "way/1348912541",
+        "way/1348912542",
+        "way/1348912543",
+        "way/1348912544"
+      ]
+    },
+    {
+      "id": "la-crypto-arena",
+      "name": "Crypto.com Arena",
+      "model": "la-crypto-arena",
+      "lng": -118.2670807,
+      "lat": 34.0430832,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q186080",
+      "replaces": [
+        "way/428021739",
+        "way/491696575"
+      ]
+    },
+    {
+      "id": "la-coliseum",
+      "name": "Los Angeles Memorial Coliseum",
+      "model": "la-coliseum",
+      "lng": -118.287924,
+      "lat": 34.0140415,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q849784",
+      "replaces": [
+        "way/443675312",
+        "relation/6100581",
+        "way/174863998",
+        "way/174863999"
+      ]
+    },
+    {
+      "id": "la-shrine-auditorium",
+      "name": "Shrine Auditorium",
+      "model": "la-shrine-auditorium",
+      "lng": -118.2813407,
+      "lat": 34.0234236,
+      "bearing": 28,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q731437",
+      "replaces": [
+        "way/407613039"
+      ]
+    },
+    {
+      "id": "la-lacma-geffen",
+      "name": "LACMA David Geffen Galleries",
+      "model": "la-lacma-geffen",
+      "lng": -118.3577537,
+      "lat": 34.0629495,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q141410158",
+      "replaces": [
+        "way/1352498524",
+        "way/1528280559",
+        "way/1352498501",
+        "way/1352498494",
+        "way/1352498495",
+        "way/1352498496",
+        "way/1352498497",
+        "way/1352498498",
+        "way/1352498499",
+        "way/1352498500",
+        "way/1352498502",
+        "way/1352498503",
+        "way/1352498504",
+        "way/1352498526"
+      ]
+    },
+    {
+      "id": "la-petersen",
+      "name": "Petersen Automotive Museum",
+      "model": "la-petersen",
+      "lng": -118.3611471,
+      "lat": 34.0623791,
+      "bearing": 7.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2358105",
+      "replaces": [
+        "way/913343446"
+      ]
+    },
+    {
+      "id": "la-academy-museum",
+      "name": "Academy Museum of Motion Pictures",
+      "model": "la-academy-museum",
+      "lng": -118.3607923,
+      "lat": 34.0632679,
+      "bearing": 7.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q6941059",
+      "replaces": [
+        "way/426357430",
+        "way/1360732450",
+        "way/1360732451",
+        "way/913293589",
+        "way/1113417080",
+        "way/1113417081"
+      ]
+    },
+    {
+      "id": "la-bullocks-wilshire",
+      "name": "Bullocks Wilshire",
+      "model": "la-bullocks-wilshire",
+      "lng": -118.2887936,
+      "lat": 34.0615227,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4996997",
+      "replaces": [
+        "way/427824132",
+        "way/490392556"
+      ]
+    },
+    {
+      "id": "la-wiltern",
+      "name": "The Wiltern",
+      "model": "la-wiltern",
+      "lng": -118.3085199,
+      "lat": 34.061279,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7161584",
+      "replaces": [
+        "way/388772956",
+        "way/1416423923",
+        "way/1416423924"
+      ]
+    },
+    {
+      "id": "la-la-temple",
+      "name": "Los Angeles California Temple",
+      "model": "la-la-temple",
+      "lng": -118.4339217,
+      "lat": 34.0526996,
+      "bearing": 54.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1870450",
+      "replaces": [
+        "way/216534845"
+      ]
+    },
+    {
+      "id": "la-getty-center",
+      "name": "Getty Center",
+      "model": "la-getty-center",
+      "lng": -118.4740401,
+      "lat": 34.0771405,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q29247",
+      "replaces": [
+        "way/481451917",
+        "way/481417424",
+        "way/481417422",
+        "way/1153949919",
+        "way/481417416",
+        "way/481417431",
+        "way/481417423",
+        "way/481417418",
+        "way/481417420",
+        "way/481509203",
+        "way/481417426",
+        "way/481417428",
+        "way/481451919",
+        "way/481451918"
+      ]
+    },
+    {
+      "id": "la-royce-hall",
+      "name": "Royce Hall",
+      "model": "la-royce-hall",
+      "lng": -118.442209,
+      "lat": 34.0728531,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2171194",
+      "replaces": [
+        "way/422876632"
+      ]
+    },
+    {
+      "id": "la-century-plaza-towers",
+      "name": "Century Plaza Towers",
+      "model": "la-century-plaza-towers",
+      "lng": -118.4134974,
+      "lat": 34.0590575,
+      "bearing": 20.6,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1982044",
+      "replaces": [
+        "relation/19619602",
+        "way/104944092",
+        "way/104944087"
+      ]
+    },
+    {
+      "id": "la-pacific-wheel",
+      "name": "Pacific Wheel",
+      "model": "la-pacific-wheel",
+      "lng": -118.497834,
+      "lat": 34.0082275,
+      "bearing": 91,
+      "elevation": 7.5,
+      "minzoom": 15,
+      "replaces": [
+        "way/742372514"
+      ]
+    },
+    {
+      "id": "la-queen-mary",
+      "name": "RMS Queen Mary",
+      "model": "la-queen-mary",
+      "lng": -118.1897081,
+      "lat": 33.7528576,
+      "bearing": 293.7,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q752939",
+      "replaces": [
+        "way/438331516",
+        "way/439768915",
+        "way/439768916",
+        "way/439768917"
+      ]
+    },
+    {
+      "id": "la-vincent-thomas-bridge-east",
+      "name": "Vincent Thomas Bridge (east tower)",
+      "model": "la-vincent-thomas-bridge",
+      "lng": -118.2689686,
+      "lat": 33.7491062,
+      "bearing": 100.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q496944",
+      "replaces": []
+    },
+    {
+      "id": "la-vincent-thomas-bridge-west",
+      "name": "Vincent Thomas Bridge (west tower)",
+      "model": "la-vincent-thomas-bridge",
+      "lng": -118.2738195,
+      "lat": 33.7498368,
+      "bearing": 100.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q496944",
+      "replaces": []
+    },
+    {
+      "id": "la-pasadena-city-hall",
+      "name": "Pasadena City Hall",
+      "model": "la-pasadena-city-hall",
+      "lng": -118.1436449,
+      "lat": 34.147657,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2055241",
+      "replaces": [
+        "way/37741479",
+        "way/1106661997"
+      ]
+    },
+    {
+      "id": "la-rose-bowl",
+      "name": "Rose Bowl",
+      "model": "la-rose-bowl",
+      "lng": -118.1676656,
+      "lat": 34.1613117,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q582280",
+      "replaces": [
+        "way/5208863"
+      ]
+    },
+    {
+      "id": "la-team-disney",
+      "name": "Team Disney – The Michael D. Eisner Building",
+      "model": "la-team-disney",
+      "lng": -118.3272456,
+      "lat": 34.1579334,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q126723759",
+      "replaces": [
+        "relation/6385468",
+        "way/244655045",
+        "way/244924896"
+      ]
+    },
+    {
+      "id": "la-angelus-temple",
+      "name": "Angelus Temple",
+      "model": "la-angelus-temple",
+      "lng": -118.2607566,
+      "lat": 34.0762629,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2463876",
+      "replaces": [
+        "way/60586413",
+        "way/560486417",
+        "way/886564591"
+      ]
+    },
+    {
+      "id": "la-pacific-design-center",
+      "name": "Pacific Design Center",
+      "model": "la-pacific-design-center",
+      "lng": -118.382418,
+      "lat": 34.0823702,
+      "bearing": 63,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7122426",
+      "replaces": [
+        "way/31439559",
+        "way/429370081",
+        "way/535093304",
+        "way/535093308",
+        "way/535093311",
+        "way/390777734"
+      ]
+    },
+    {
+      "id": "la-walter-pyramid",
+      "name": "Walter Pyramid",
+      "model": "la-walter-pyramid",
+      "lng": -118.11441,
+      "lat": 33.78743,
+      "bearing": 353,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q3565858",
+      "replaces": [
+        "way/35452138"
+      ]
+    },
+    {
+      "id": "la-watts-towers",
+      "name": "Watts Towers",
+      "model": "la-watts-towers",
+      "lng": -118.24105,
+      "lat": 33.93872,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q445256",
+      "replaces": []
+    },
+    {
+      "id": "la-christ-cathedral",
+      "name": "Christ Cathedral",
+      "model": "la-christ-cathedral",
+      "lng": -117.898896,
+      "lat": 33.787402,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1051217",
+      "replaces": [
+        "way/29280620",
+        "way/120714044"
       ]
     }
   ]
