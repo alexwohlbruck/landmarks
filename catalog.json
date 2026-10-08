@@ -1154,6 +1154,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-eastern-columbia.ts"
+    },
+    {
+      "id": "la-disney-concert-hall",
+      "file": "models/la-disney-concert-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-disney-concert-hall.ts"
     }
   ],
   "landmarks": [
@@ -4496,6 +4503,22 @@
       "wikidata": "Q71842",
       "replaces": [
         "way/427942790"
+      ]
+    },
+    {
+      "id": "la-disney-concert-hall",
+      "name": "Walt Disney Concert Hall",
+      "model": "la-disney-concert-hall",
+      "lng": -118.2499498,
+      "lat": 34.0553955,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q474326",
+      "replaces": [
+        "relation/6333150",
+        "way/319307757",
+        "way/319307763"
       ]
     }
   ]
