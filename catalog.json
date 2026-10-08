@@ -1224,6 +1224,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-sofi-stadium.ts"
+    },
+    {
+      "id": "la-theme-building",
+      "file": "models/la-theme-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-theme-building.ts"
     }
   ],
   "landmarks": [
@@ -4733,6 +4740,21 @@
         "way/860635710",
         "way/860635711",
         "way/963712167"
+      ]
+    },
+    {
+      "id": "la-theme-building",
+      "name": "Theme Building",
+      "model": "la-theme-building",
+      "lng": -118.4024925,
+      "lat": 33.9441425,
+      "bearing": 353,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3523620",
+      "replaces": [
+        "way/37891817",
+        "way/476168322"
       ]
     }
   ]
