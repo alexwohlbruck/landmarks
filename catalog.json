@@ -1294,6 +1294,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-manhattan-bridge.ts"
+    },
+    {
+      "id": "nyc-williamsburg-bridge",
+      "file": "models/nyc-williamsburg-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-williamsburg-bridge.ts"
     }
   ],
   "landmarks": [
@@ -5361,6 +5368,34 @@
       "wikidata": "Q125050",
       "replaces": [
         "way/317352033"
+      ]
+    },
+    {
+      "id": "nyc-williamsburg-bridge-manhattan",
+      "name": "Williamsburg Bridge (Manhattan tower)",
+      "model": "nyc-williamsburg-bridge",
+      "lng": -73.9748202,
+      "lat": 40.7143946,
+      "bearing": 291.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q125068",
+      "replaces": [
+        "way/1016434034"
+      ]
+    },
+    {
+      "id": "nyc-williamsburg-bridge-brooklyn",
+      "name": "Williamsburg Bridge (Brooklyn tower)",
+      "model": "nyc-williamsburg-bridge",
+      "lng": -73.9694585,
+      "lat": 40.7127579,
+      "bearing": 291.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q125068",
+      "replaces": [
+        "way/1016434035"
       ]
     }
   ]
