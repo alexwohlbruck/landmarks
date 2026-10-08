@@ -13,18 +13,31 @@
  * and CATS is instead renovating the existing station (retail closed in 2025
  * for a fare-paid zone). So this is the existing building:
  *
- * - a long segmental barrel vault over the bus lanes (OSM way/1501142074,
- *   to 17 m, springing at about 7 m against the wings), teal on top, open at
- *   both ends;
+ * - a long segmental barrel vault over the bus lanes (OSM way/1501142074),
+ *   pale aqua metal on top with a row of seven pale skylights along its
+ *   crown (USGS NAIP), open at both ends. Lidar (USGS 3DEP NC Phase 4
+ *   Mecklenburg, 2016) puts its crown at 18.7 m and its springing at about
+ *   10.5 m, just under the wings' crowns; OSM's 8-17 m is low;
  * - at each end, a white steel truss screen filling the arch over the bus
- *   opening, with CATS-blue columns, braces and arch chord (Commons photos
- *   "Charlotte Transportation Center 04" and "…viewed from Third St");
- * - two low wings along the long sides under their own teal vaults: the
- *   concourse and shops on the light-rail side (way/1501142073, 11 m) and
- *   the two-storey block on Brevard (way/1501142075, 12 m), with the flat
- *   stair and lift boxes in their notches folded into them;
+ *   opening: a deep white bottom truss at 7-9.2 m (read off the photos) and a
+ *   lattice of white verticals and chords above it, with CATS-blue columns,
+ *   braces and arch chord. The lattice is open: behind it is the shed's dark
+ *   underside, drawn as a grey panel set 3 m in, not as glass, and the bus
+ *   opening below stays open;
+ * - two low wings along the long sides under their own teal vaults (lidar
+ *   crowns 12 m and 13 m, walls 9 m): the concourse and shops on the
+ *   light-rail side (way/1501142073) and the two-storey block on Brevard
+ *   (way/1501142075), cream walls with storefront glazing at the street and
+ *   a second band only on the faces toward the bus lanes;
  * - the white columns with blue bases inside the shed and the two small
  *   hipped kiosks on the bus islands.
+ *
+ * Photos: Mark Clifton, "Charlotte Transportation Center 01"-"04" (Commons,
+ * CC BY-SA 2.0; the Trade Street end and the street sides); City Dweller 2,
+ * "Charlotte Transportation Center viewed from Third St March 2025" and
+ * "... buses / Interior / Pavilion February 2024" (Commons, CC BY-SA 4.0).
+ * The March 2025 photo is the latest licensed one; the station stood as
+ * built then.
  *
  * The LYNX CTC/Arena light-rail platforms have their own glass canopies on
  * the Blue Line beside and beyond the station; they are a separate structure
@@ -178,37 +191,52 @@ function gableFill(p: Part, a: Arc, y: number, s: number, zb: number, seg: numbe
 
 const XA = -30.5, XB = 23.4            // OSM way/1501142074, across
 const YS = -52.7, YN = 53.4            // its ends: 4th Street, Trade Street
-// OSM gives the vault 8–17 m; the photos from both ends put its springing
-// lower, at about 7 m, tucked against the wings' walls, which rise to 8 m.
-const EAVE = 8, SPRING = 7, CROWN = 17
+// Lidar (2016): the vault's crown is 18.7 m over the lowest ground and its
+// surface is 13 m high 4.5 m in from the light-rail edge, which puts the
+// springing at about 10.5 m, just under the wings' crowns. OSM's 8-17 m and
+// the old 7 m springing were both too low. The wings' walls rise to 9 m.
+const EAVE = 9, SPRING = 10.5, CROWN = 18.7
 const T = 0.9                          // roof depth: truss and decking
 const main = arc(XA, XB, SPRING, CROWN)
 vault(main, YS, YN, T, 18, SPRING - 0.2, soffit)
 const under = (x: number) => zAt(main, Math.min(XB - 0.01, Math.max(XA + 0.01, x)), -T)
 
+// The skylights: seven pale translucent panels across the vault's crown,
+// 20 m by 3.6 m at about 8.8 m centres (USGS NAIP), laid just on the roof.
+for (let k = -3; k <= 3; k++) {
+  const y0 = k * 8.8 - 1.8, y1 = k * 8.8 + 1.8, xa = main.h - 10, xb = main.h + 10, n = 6
+  for (let i = 0; i < n; i++) {
+    const xp = xa + (xb - xa) * i / n, xq = xa + (xb - xa) * (i + 1) / n
+    const np: V3 = unit([xp - main.h, 0, zAt(main, xp) - main.zc0]), nq: V3 = unit([xq - main.h, 0, zAt(main, xq) - main.zc0])
+    quad(stone, [xp, y0, zAt(main, xp, 0.06)], [xq, y0, zAt(main, xq, 0.06)], [xq, y1, zAt(main, xq, 0.06)], [xp, y1, zAt(main, xp, 0.06)], [np, nq, nq, np])
+  }
+}
+
 // The end screens stand under the roof's overhang, on the column line.
 const COLS = [-29.6, -7.4, 1.7, 22.0]   // OSM blue columns, both ends
-const CHORD0 = 5.4, CHORD1 = 6.6        // the bottom truss over the bus opening
+const CHORD0 = 7.0, CHORD1 = 9.2        // the deep bottom truss over the bus opening (photos)
 for (const [yg, s] of [[-51.7, -1], [52.4, 1]] as [number, number][]) {
-  // The dark interior behind the open truss: a recessed slate panel under
-  // the arch. It is `window` so that it glows at night, as the lit shed does
-  // through the real truss.
-  const ar = arc(XA, XB, SPRING, CROWN)
-  const pts = arcPts(ar, 18, -T)
-  for (let i = 0; i < 18; i++) {
-    const P = pts[i], Q = pts[i + 1]
-    quad(glazing, [P.x, yg - s * 0.8, CHORD1], [Q.x, yg - s * 0.8, CHORD1], [Q.x, yg - s * 0.8, Q.z], [P.x, yg - s * 0.8, P.z], [0, s, 0])
+  // Behind the truss: the shed's dark underside, seen through the lattice
+  // above the bottom truss (a soffit-grey panel set 3 m in, not glass). Below
+  // it the bus opening stays open.
+  {
+    const pts = arcPts(main, 18, -T - 0.2), yb = yg - s * 3
+    for (let i = 0; i < 18; i++) {
+      const P = pts[i], Q = pts[i + 1]
+      if (P.z <= CHORD1 && Q.z <= CHORD1) continue
+      quad(soffit, [P.x, yb, CHORD1], [Q.x, yb, CHORD1], [Q.x, yb, Math.max(CHORD1, Q.z)], [P.x, yb, Math.max(CHORD1, P.z)], [0, s, 0])
+    }
   }
   // Bottom truss: a deep white beam across the whole opening.
   box(white, XA, XB, yg - 0.5, yg + 0.5, CHORD0, CHORD1, true)
   // The truss grid above it: white verticals and two horizontal chords.
-  const step = (XB - XA) / 15
-  for (let i = 1; i < 15; i++) {
+  const step = (XB - XA) / 18
+  for (let i = 1; i < 18; i++) {
     const x = XA + i * step
-    if (COLS.some((c) => Math.abs(c - x) < 1.2) || under(x) - 0.2 < CHORD1 + 0.4) continue
-    box(white, x - 0.2, x + 0.2, yg - 0.25, yg + 0.25, CHORD1, under(x) - 0.2)
+    if (COLS.some((c) => Math.abs(c - x) < 1.0) || under(x) - 0.2 < CHORD1 + 0.4) continue
+    box(white, x - 0.22, x + 0.22, yg - 0.25, yg + 0.25, CHORD1, under(x) - 0.2)
   }
-  for (const z of [10.0, 13.4]) {
+  for (const z of [13.0, 16.0]) {
     // Where the chord meets the arch on each side.
     const dx = Math.sqrt((main.R - T) ** 2 - (z + 0.2 - main.zc0) ** 2)
     box(white, main.h - dx, main.h + dx, yg - 0.25, yg + 0.25, z - 0.2, z + 0.2)
@@ -252,14 +280,14 @@ kiosk(-9.5, -2.2, 25.8, 35.2)
 // ---------------------------------------------------------------------------
 // The wings, each under its own low teal vault with a small eave overhang.
 
-const SHOP: XY = [1.4, 3.8], CLERE: XY = [4.9, 7.2]
+const SHOP: XY = [1.2, 4.4], CLERE: XY = [5.4, 8.0]
 // Light-rail side: concourse and shops (OSM 11 m, roof 3 m).
 {
   const x0 = -43.2, x1 = XA, y0 = -40.9, y1 = 42.0
-  body(x0, x1, y0, y1, EAVE, { w: [SHOP, CLERE], e: [SHOP], s: [SHOP, CLERE], n: [SHOP, CLERE] })
-  const a = arc(x0 - 0.5, x1, EAVE, 11)
+  body(x0, x1, y0, y1, EAVE, { w: [SHOP], e: [SHOP, CLERE], s: [SHOP], n: [SHOP] })
+  const a = arc(x0 - 0.5, x1, EAVE, 12)
   vault(a, y0 - 0.5, y1 + 0.5, 0.5, 8, EAVE - 0.3, soffit)
-  for (const [y, s] of [[y0, -1], [y1, 1]] as [number, number][]) gableFill(stone, arc(x0, x1, EAVE, 11 - 0.3), y, s, EAVE, 8)
+  for (const [y, s] of [[y0, -1], [y1, 1]] as [number, number][]) gableFill(stone, arc(x0, x1, EAVE, 12 - 0.3), y, s, EAVE, 8)
 }
 // The small pavilion at its 4th Street end (way/1501142072: 5 m, roof 2 m).
 {
@@ -272,10 +300,10 @@ const SHOP: XY = [1.4, 3.8], CLERE: XY = [4.9, 7.2]
 // Brevard side: the two-storey block (OSM 12 m, roof 4 m).
 {
   const x0 = XB, x1 = 42.0, y0 = -50.2, y1 = 50.9
-  body(x0, x1, y0, y1, EAVE, { e: [SHOP, CLERE], w: [SHOP], s: [SHOP, CLERE], n: [SHOP, CLERE] })
-  const a = arc(x0, x1 + 0.5, EAVE, 12)
+  body(x0, x1, y0, y1, EAVE, { e: [SHOP], w: [SHOP, CLERE], s: [SHOP], n: [SHOP] })
+  const a = arc(x0, x1 + 0.5, EAVE, 13)
   vault(a, y0 - 0.5, y1 + 0.5, 0.5, 10, EAVE - 0.3, soffit)
-  for (const [y, s] of [[y0, -1], [y1, 1]] as [number, number][]) gableFill(stone, arc(x0, x1, EAVE, 12 - 0.3), y, s, EAVE, 10)
+  for (const [y, s] of [[y0, -1], [y1, 1]] as [number, number][]) gableFill(stone, arc(x0, x1, EAVE, 13 - 0.3), y, s, EAVE, 10)
 }
 
 // ---------------------------------------------------------------------------
@@ -286,12 +314,12 @@ const SHOP: XY = [1.4, 3.8], CLERE: XY = [4.9, 7.2]
 // the interior seen through the end trusses are a mid grey, lighter than the
 // real dark soffit so the large surface doesn't read as a hole.
 const parts = [
-  { part: teal, material: finish('ctc-teal', 0x86bfca) },
+  { part: teal, material: finish('ctc-teal', 0x9cc8cb) },
   { part: stone, material: PALETTE.stone },
   { part: white, material: PALETTE.trim },
-  { part: blue, material: finish('cats-blue', 0x4f7fcf) },
+  { part: blue, material: finish('cats-blue', 0x5a86c9) },
   { part: glazing, material: PALETTE.window },
-  { part: soffit, material: finish('shed-soffit', 0x7f878e) },
+  { part: soffit, material: finish('shed-soffit', 0x6f777e) },
 ]
 const triangles = parts.reduce((sum, { part }) => sum + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
