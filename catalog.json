@@ -1301,6 +1301,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-botanic-garden.ts"
+    },
+    {
+      "id": "dc-old-post-office",
+      "file": "models/dc-old-post-office.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-old-post-office.ts"
     }
   ],
   "landmarks": [
@@ -5338,6 +5345,22 @@
       "replaces": [
         "relation/1029372",
         "way/905917535"
+      ]
+    },
+    {
+      "id": "dc-old-post-office",
+      "name": "Old Post Office",
+      "model": "dc-old-post-office",
+      "lng": -77.0275777,
+      "lat": 38.8940953,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1141542",
+      "replaces": [
+        "way/66418840",
+        "way/452899001",
+        "way/452899002"
       ]
     }
   ]
