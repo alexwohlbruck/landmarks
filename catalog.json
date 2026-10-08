@@ -1098,6 +1098,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-sentinel-building.ts"
+    },
+    {
+      "id": "sf-golden-gate-bridge",
+      "file": "models/sf-golden-gate-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-golden-gate-bridge.ts"
     }
   ],
   "landmarks": [
@@ -4310,6 +4317,82 @@
       "replaces": [
         "way/288485994",
         "way/1092161846"
+      ]
+    },
+    {
+      "id": "sf-golden-gate-bridge-south",
+      "name": "Golden Gate Bridge (south tower)",
+      "model": "sf-golden-gate-bridge",
+      "lng": -122.4778913,
+      "lat": 37.8140144,
+      "bearing": 354.7,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q44440",
+      "replaces": [
+        "way/1330586852",
+        "way/1275410144",
+        "way/1329545860",
+        "way/1329549315",
+        "way/1329549317",
+        "way/1329550017",
+        "way/1329550151",
+        "way/1329558939",
+        "way/1329761876",
+        "way/1329761877",
+        "way/1329761878",
+        "way/1329761879",
+        "way/1329761880",
+        "way/1329761881",
+        "way/1329971884",
+        "way/1330049620",
+        "way/1330350431",
+        "way/1330827276",
+        "way/1330827277",
+        "way/1330827678",
+        "way/1330828067",
+        "way/1330828068",
+        "way/1330828260",
+        "way/1330829528",
+        "way/1330830769",
+        "way/1330830988",
+        "way/1330831175"
+      ]
+    },
+    {
+      "id": "sf-golden-gate-bridge-north",
+      "name": "Golden Gate Bridge (north tower)",
+      "model": "sf-golden-gate-bridge",
+      "lng": -122.4792336,
+      "lat": 37.8255026,
+      "bearing": 354.7,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q44440",
+      "replaces": [
+        "way/1330832666",
+        "way/1330832664",
+        "way/1330832665",
+        "way/1330832667",
+        "way/1330832668",
+        "way/1330832669",
+        "way/1330832670",
+        "way/1330832671",
+        "way/1330832673",
+        "way/1330832674",
+        "way/1330832677",
+        "way/1330832678",
+        "way/1330832679",
+        "way/1330832680",
+        "way/1330832681",
+        "way/1330832682",
+        "way/1330832683",
+        "way/1330832684",
+        "way/1330832685",
+        "way/1330832687",
+        "way/1330832688",
+        "way/1330832689",
+        "way/1330832690"
       ]
     }
   ]
