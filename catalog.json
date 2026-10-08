@@ -1084,6 +1084,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-soarin.ts"
+    },
+    {
+      "id": "sea-columbia-center",
+      "file": "models/sea-columbia-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-columbia-center.ts"
     }
   ],
   "landmarks": [
@@ -4261,6 +4268,25 @@
       "replaces": [
         "way/312369808",
         "way/121865023"
+      ]
+    },
+    {
+      "id": "sea-columbia-center",
+      "name": "Columbia Center",
+      "model": "sea-columbia-center",
+      "lng": -122.3307258,
+      "lat": 47.6044938,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q908703",
+      "replaces": [
+        "way/107124288",
+        "way/418132525",
+        "way/418132517",
+        "way/418132520",
+        "way/418132515",
+        "way/331293871"
       ]
     }
   ]
