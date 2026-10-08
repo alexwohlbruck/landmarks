@@ -1161,6 +1161,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-550-madison.ts"
+    },
+    {
+      "id": "nyc-bank-of-america-tower",
+      "file": "models/nyc-bank-of-america-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-bank-of-america-tower.ts"
     }
   ],
   "landmarks": [
@@ -4635,6 +4642,34 @@
         "way/118116805",
         "way/260244593",
         "way/260244595"
+      ]
+    },
+    {
+      "id": "nyc-bank-of-america-tower",
+      "name": "Bank of America Tower",
+      "model": "nyc-bank-of-america-tower",
+      "lng": -73.9847166,
+      "lat": 40.7555573,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q328505",
+      "replaces": [
+        "way/86121621",
+        "way/260153997",
+        "way/260153998",
+        "way/279687416",
+        "way/279687417",
+        "way/279687418",
+        "way/279687419",
+        "way/279687420",
+        "way/279691503",
+        "way/279691506",
+        "way/279691507",
+        "way/279691508",
+        "way/279691511",
+        "way/291927532",
+        "way/291927536"
       ]
     }
   ]
