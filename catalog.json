@@ -1392,6 +1392,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-hoboken-terminal.ts"
+    },
+    {
+      "id": "nyc-verrazzano-narrows-bridge",
+      "file": "models/nyc-verrazzano-narrows-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-verrazzano-narrows-bridge.ts"
     }
   ],
   "landmarks": [
@@ -5727,6 +5734,34 @@
         "way/26808027",
         "way/331072207",
         "way/331072208"
+      ]
+    },
+    {
+      "id": "nyc-verrazzano-narrows-bridge-brooklyn",
+      "name": "Verrazzano-Narrows Bridge (Brooklyn tower)",
+      "model": "nyc-verrazzano-narrows-bridge",
+      "lng": -74.0383721,
+      "lat": 40.6086094,
+      "bearing": 247.1,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q125673",
+      "replaces": [
+        "way/1016642060"
+      ]
+    },
+    {
+      "id": "nyc-verrazzano-narrows-bridge-staten-island",
+      "name": "Verrazzano-Narrows Bridge (Staten Island tower)",
+      "model": "nyc-verrazzano-narrows-bridge",
+      "lng": -74.0524966,
+      "lat": 40.6040508,
+      "bearing": 247.1,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q125673",
+      "replaces": [
+        "way/1016642058"
       ]
     }
   ]
