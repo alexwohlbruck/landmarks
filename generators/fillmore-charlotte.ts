@@ -4,134 +4,161 @@
  * bun generators/fillmore-charlotte.ts
  *
  * Mill #2 of the John B. Ross and Company Mill is the west arm of the
- * complex, about 170 m long down Hamilton Street from NC Music Factory
- * Boulevard. The Charlotte-Mecklenburg Historic Landmarks Commission survey
- * puts The Fillmore's sign over the c.1946 section's west door, and the
- * Underground (2016, 750 people, in a former country bar) is a second venue
- * inside the same building with its own marquee on the west projection
- * (Mapillary, Hamilton Street). It is not a separate building, so it has no
- * model of its own.
+ * complex, about 170 m long up Hamilton Street from NC Music Factory
+ * Boulevard. The Fillmore (2009, about 2,000 people) and The Underground
+ * (2016, 750) are venues inside it, each with its own front on the Hamilton
+ * Street side across the tour-bus lot; neither is a separate building.
  *
  * From south to north, as the ground falls ~7 m:
- * - the c.1920 mill: one storey on the boulevard, a raised basement further
- *   north, a low gable roof with a deep eave and segmental-arched windows;
- *   a flat c.1946 projection at its south-west corner;
- * - the north end of the c.1920 mill, two storeys, and west of it the
- *   one-storey c.1955 projections where The Underground's marquee is;
- * - the c.1946 section with The Fillmore's entrance (red doors under a
- *   flat marquee with a dark sign board, a ramp, a long row of tall steel
- *   windows in red-painted frames) and the pale corrugated metal-clad volume
- *   that rises over its roof;
- * - the plain c.1960 hall at the north end, 125 × 160 ft, flat roofed.
+ * - the c.1920 mill: a long red-brick block under a near-flat roof behind a
+ *   coped parapet, rows of tall segmental-arched windows between brick piers,
+ *   one storey on the boulevard and over a raised basement further north; a
+ *   flat projection at its south-west corner;
+ * - the one-storey projections on the Hamilton Street side, The
+ *   Underground's front with its marquee;
+ * - the c.1946 section with The Fillmore's front: a long low brick wall of
+ *   tall windows on a raised terrace reached by a ramp, red double doors under
+ *   a dark canopy carrying THE FILLMORE in white letters, and over the roof
+ *   the corrugated silver metal volume of the hall;
+ * - a small taller brick block, and the plain c.1960 hall at the north end.
  *
- * OSM: way/414800516 outlines both mills and the bridge between them; this
- * model covers its west arm and `music-factory-mill` the rest, so both are
- * placed at the same minzoom. Map frame: x east, y north, z up; bearing 0.
+ * Evidence:
+ *  - Lidar (USGS 3DEP NC Phase 4 Mecklenburg 2016, 1 m) for every height: the
+ *    c.1920 mill at 221.9–222.3 m NAVD88 (a 0.4 m gable, drawn flat), its
+ *    south-west projection ~222 m, The Underground's projections ~218.4 m,
+ *    the c.1946 section's deck ~218.4 m, its parapet ~219 m, with the silver volume at ~221.7 m (south
+ *    part) and ~220.2 m (north part), the terrace in front of it ~214.8 m, the
+ *    taller block ~221 m, the north hall ~214.6 m; ground from the lidar's
+ *    ground returns (courtyard ~217 m, Hamilton Street 213–216 m, north end
+ *    ~209.5 m).
+ *  - Photos: FillmoreCharlotte.jpg (HangingCurve, CC BY-SA 4.0, Wikimedia
+ *    Commons, 2018: the Fillmore front — brick, tall windows, red doors, dark
+ *    canopy and white letters, the coped parapet, the silver volume behind);
+ *    Southern_Asbestos_Company_Mills.jpg (James Willamor, CC BY-SA 3.0, 2007
+ *    aerial: the long brick mill with two rows of windows on its east face, the
+ *    silver metal volume, the low north hall); Greenville,_Charlotte,_NC,_USA_-
+ *    _panoramio.jpg (James Willamor, CC BY-SA 3.0, 2009, from the amphitheatre:
+ *    the east face, its windows and coping, the silver volume); Mapillary
+ *    street panoramas on Hamilton Street (2022, CC BY-SA 4.0): the Fillmore
+ *    sign facing the lot, The Underground's marquee on the projection nearer
+ *    the street.
+ *  - OSM: way/414800516 outlines both mills and the bridge between them; this
+ *    model covers its west arm and `music-factory-mill` the rest, so both are
+ *    placed at the same minzoom. (OSM puts The Fillmore's name on way/957549179,
+ *    Mill #1; the photos put its door here.)
+ *
+ * Estimated: window counts and sizes; the canopies' sizes; the letters are a
+ * plain white board (the sign is the venue's, but its letters would not read
+ * at map size). Map frame: x east, y north, z up; bearing 0.
  */
 import { Part, type V3 } from './mesh'
-import { PALETTE, finish } from './palette'
-import { BRICK, DOORS, SILVER, plant, MILL2, MILL2_EAST, axes, build, centroid, clean, flatZ, gableZ, ground, inside, quad, solid, write, lowest, type Built, type Mats, type XY, type Zone } from './music-factory-mill'
+import { PALETTE } from './palette'
+import { BRICK, DOORS, SILVER, plant, MILL2, MILL2_EAST, axes, build, centroid, clean, flatZ, ground, inside, quad, softBox, earcut, tri, write, lowest, type Built, type Mats, type XY, type Zone } from './music-factory-mill'
 
 export function buildFillmore(): Built {
-  const wall = new Part(), roof = new Part(), win = new Part(), silver = new Part(), red = new Part(), doors = new Part()
-  // Copings, eaves and flat decks share the cladding's pale metal, and the
-  // sign boards take the roof grey, so the model stays at six materials with
-  // the red frames and the lit doors.
-  const m: Mats = { wall, roof, eave: silver, win, frame: red, deck: silver }
+  const wall = new Part(), roof = new Part(), win = new Part(), silver = new Part(), trim = new Part(), doors = new Part()
+  const m: Mats = { wall, roof, eave: trim, win }
   const ax = axes(25.5), P = MILL2
-  /** Which way a wall faces along Hamilton Street (west) or the courtyard (east). */
-  const west = (o: XY) => o[0] * ax.r[0] + o[1] * ax.r[1] < -0.7, east = (o: XY) => o[0] * ax.r[0] + o[1] * ax.r[1] > 0.7, south = (o: XY) => o[0] * ax.u[0] + o[1] * ax.u[1] < -0.7
-  const zones: Zone[] = []
-  // The two entrances, placed first so the bays leave room for them.
-  const FILLMORE_DOOR: [XY, XY, number] = [[-63.6, 98.1], [-57.2, 111.1], 0.5]
-  const UNDERGROUND_DOOR: [XY, XY, number] = [[-103.2, 68.9], [-91.3, 94.6], 0.62]
-  for (const [A, B, f, r] of [[...FILLMORE_DOOR, 2.3 + 0.6], [...UNDERGROUND_DOOR, 2.6]] as [XY, XY, number, number][])
-    DOORS.push({ p: [A[0] + (B[0] - A[0]) * f, A[1] + (B[1] - A[1]) * f], r })
-  // The c.1920 mill: low gable along the arm, deep eave, segmental-arched
-  // windows between brick piers. Its lower storey on Hamilton Street is
-  // mostly bricked up (the survey), and its south end entirely.
-  const T0 = -86.9, T1 = -56.8, tc = (T0 + T1) / 2, ridge = 225.0, eaveZ = 222.4, k = (ridge - eaveZ) / ((T1 - T0) / 2)
-  const mill = {
-    rows: [[218.4, 221.2], [214.2, 216.6]] as [number, number][], pitch: 3.9, winW: 1.8, piers: true,
-    infill: (o: XY, row: number, i: number) => south(o) || (west(o) && row === 1 && i % 4 !== 1),
-  }
-  // (The west half also takes the narrow jog north of the garage projection.)
-  zones.push({ poly: ax.band(P, -21.5, 17.5, -1e4, tc), z: gableZ(ax, tc, ridge, k), eave: true, ...mill })
-  zones.push({ poly: ax.band(P, -40, -21.5, T0, tc), z: gableZ(ax, tc, ridge, k), eave: true, ...mill })
-  zones.push({ poly: ax.band(P, -40, 17.5, tc, 1e4), z: gableZ(ax, tc, ridge, k), eave: true, ...mill })
-  // Its flat c.1946 garage projection at the south-west corner: garage and
-  // steel doors, its south openings bricked up.
-  zones.push({ poly: ax.band(P, -40, -21.5, -1e4, T0), z: flatZ(222.0), rows: [[218.2, 220.6]], pitch: 4.5, square: true, infill: (o) => !west(o) })
-  // The two-storey north end of the c.1920 mill: nine bays of 1/1 windows.
-  zones.push({ poly: ax.band(P, 17.5, 46.5, -92, 1e4), z: flatZ(223.6), rows: [[219.0, 221.8], [215.0, 217.6]], pitch: 4.0, winW: 1.7, piers: true })
-  // The one-storey c.1955 projections on the west: The Underground. Largely
-  // blank, a few steel windows.
-  zones.push({ poly: ax.band(P, 17.5, 46.5, -1e4, -92), z: flatZ(219.8), rows: [[216.0, 218.2]], pitch: 7.5, winW: 2.2, square: true })
-  // The c.1946 section: The Fillmore's front. A storey on a raised
-  // basement, fifteen bays of tall 8-light steel windows in one continuous
-  // run, their frames painted red on every face towards Hamilton Street,
-  // the jogs included (2018 photo: the windows nearly as tall as the door
-  // opening, the brick between them narrower than a window, their heads
-  // level with the transom over the doors).
-  zones.push({ poly: ax.band(P, 46.5, 80), z: flatZ(221.2), rows: [[215.0, 218.0], [211.0, 214.0]], pitch: 3.2, winW: 2.0, square: true, frame: (o) => !east(o) })
-  // The c.1960 hall: blank brick, its roof dark rather than pale (2007 aerial).
-  zones.push({ poly: ax.band(P, 80, 140), z: flatZ(220.2), roof })
-  build(zones, m, [MILL2_EAST])
-  plant(roof, [[-30, 120, 220.2, 25.5], [-20, 132, 220.2, 25.5], [-38, 140, 220.2, 25.5], [-60, 62, 223.6, 25.5], [-52, 50, 223.6, 25.5], [-78, 78, 219.8, 25.5]])
+  /** A point in the arm's frame: s up the street, t across it (east +). */
+  const at = (s: number, t: number) => ax.at(s, t)
 
-  // The pale metal-clad volume over the c.1946 section, seen above the
-  // parapet from Hamilton Street and from the Fillmore's door.
+  // The two fronts, placed first so the window bays leave room for them.
+  const FILL_S = 68.5, FILL_T = -88.5
+  DOORS.push({ p: at(FILL_S, FILL_T), r: 3.0 })
+  const UNDERGROUND_DOOR: [XY, XY, number] = [[-103.2, 68.9], [-91.3, 94.6], 0.62]
   {
-    const ring = clean([ax.at(52, -83), ax.at(76, -83), ax.at(76, -63), ax.at(52, -63)])
-    solid(silver, ring, 220.5, 225.0, roof)
-    solid(silver, clean([ax.at(51.8, -83.2), ax.at(76.2, -83.2), ax.at(76.2, -62.8), ax.at(51.8, -62.8)]), 225.0, 225.35, roof)
+    const [A, B, f] = UNDERGROUND_DOOR
+    DOORS.push({ p: [A[0] + (B[0] - A[0]) * f, A[1] + (B[1] - A[1]) * f], r: 2.6 })
   }
+
+  const zones: Zone[] = []
+  const add = (z: Zone) => { if (z.poly.length >= 3) zones.push(z) }
+  // The c.1920 mill: tall segmental-arched windows between brick piers, two
+  // rows where the ground falls away.
+  add({ poly: ax.band(P, -45, 60, -88.5, 1e4), z: flatZ(222.3), rows: [[218.2, 220.9], [214.4, 216.7]], pitch: 3.9, winW: 2.1, piers: true })
+  // Its flat south-west projection: steel windows, one row.
+  add({ poly: ax.band(P, -45, -21.5, -1e4, -88.5), z: flatZ(222.0), rows: [[218.0, 220.6]], pitch: 4.5, square: true })
+  // The one-storey projections on Hamilton Street: The Underground.
+  add({ poly: ax.band(P, -21.5, 60, -1e4, -88.5), z: flatZ(218.4), rows: [[215.0, 217.4]], pitch: 6.0, winW: 2.2, square: true })
+  // The c.1946 section: The Fillmore's long front of tall steel windows on
+  // its terrace (the terrace is drawn below, after the walls).
+  add({ poly: ax.band(P, 60, 99, -88.5, 1e4), z: flatZ(219.0), rows: [[215.4, 218.0]], pitch: 3.3, winW: 2.0, square: true })
+  // The c.1960 hall at the north end: low, plain brick between pilasters.
+  add({ poly: ax.band(P, 99, 200), z: flatZ(214.6), rows: [[211.0, 213.6]], pitch: 7.0, winW: 1.4, square: true, piers: true, infill: (o, row, i) => i % 3 !== 1 })
+  build(zones, m, [MILL2_EAST])
+  plant(roof, [[-30, 120, 214.6, 25.5], [-20, 132, 214.6, 25.5], [-58, 60, 222.3, 25.5], [-50, 48, 222.3, 25.5], [-66, 30, 222.3, 25.5], [-44, 78, 222.3, 25.5]])
+
+  // The terrace in front of the Fillmore: a low brick plinth with a paved
+  // top, its ramp folded into it (lidar ~214.8 m).
+  {
+    const T = ax.band(P, 60, 99, -1e4, -88.3), Z = 214.8
+    for (let i = 0; i < T.length; i++) {
+      const A = T[i], B = T[(i + 1) % T.length]
+      quad(wall, [A[0], A[1], Math.min(ground(A), ground(B)) - 2], [B[0], B[1], Math.min(ground(A), ground(B)) - 2], [B[0], B[1], Z], [A[0], A[1], Z], [B[1] - A[1], A[0] - B[0], 0])
+    }
+    for (const [i, j, k] of earcut(T)) tri(roof, [T[i][0], T[i][1], Z], [T[j][0], T[j][1], Z], [T[k][0], T[k][1], Z], [0, 0, 1])
+  }
+
+  // The silver metal volume over the c.1946 section: taller at its south end
+  // (lidar), seen over the parapet from Hamilton Street and the Fillmore door.
+  const box = (s0: number, s1: number, t0: number, t1: number): XY[] => clean([at(s0, t0), at(s1, t0), at(s1, t1), at(s0, t1)])
+  softBox(silver, box(62, 73.5, -80, -63), 217.6, 221.7, 0.3)
+  softBox(silver, box(73.5, 98, -80, -63), 217.6, 220.2, 0.3)
+  // On the hall's east side, by the amphitheatre lawn: a taller brick block
+  // and the tall silver metal box beside it (lidar 218 m and 221 m; the 2009
+  // photo from the seats). They stand just east of the OSM outline.
+  softBox(wall, box(112.8, 119, -57.2, -48.8), 209, 217.8, 0.25, roof)
+  softBox(trim, box(112.65, 119.15, -57.35, -48.65), 217.6, 218.1, 0.15, roof)
+  softBox(silver, box(119, 131.6, -55.2, -48.4), 209, 221.1, 0.3)
+  // The small taller brick block at the hall's south-west corner.
+  softBox(wall, box(98.5, 105.5, -91, -84), 213, 220.7, 0.25, roof)
+  softBox(trim, box(98.35, 105.65, -91.15, -83.85), 220.5, 221.0, 0.15, roof)
 
   /**
-   * An entrance on wall A→B at fraction f: doors `doorW` wide and `doorH`
-   * tall from `sill`, a dark transom band over them, and a flat marquee
-   * canopy `w` wide projecting `D` with a dark sign board on its face.
+   * A front on wall A→B at fraction f: doors `doorW` wide and `doorH` tall
+   * from `sill`, and a flat dark canopy `w` wide projecting `D`, carrying a
+   * white letter board `board` tall set back on its top.
    */
-  function marquee(A: XY, B: XY, f: number, w: number, sill: number, doorW: number, doorH: number, D: number, board: number) {
+  function marquee(A: XY, B: XY, f: number, w: number, sill: number, doorW: number, doorH: number, D: number, board: number, out?: XY) {
     const L = Math.hypot(B[0] - A[0], B[1] - A[1]), u: XY = [(B[0] - A[0]) / L, (B[1] - A[1]) / L]
     // Outward is whichever side of the wall is outside the building.
     const mid: XY = [(A[0] + B[0]) / 2, (A[1] + B[1]) / 2]
-    const o: XY = inside(P, [mid[0] + u[1], mid[1] - u[0]]) ? [-u[1], u[0]] : [u[1], -u[0]]
-    const at = (s: number, d: number, z: number): V3 => [A[0] + u[0] * s + o[0] * d, A[1] + u[1] * s + o[1] * d, z]
+    const o: XY = out ?? (inside(P, [mid[0] + u[1], mid[1] - u[0]]) ? [-u[1], u[0]] : [u[1], -u[0]])
+    const pt = (s: number, d: number, z: number): V3 => [A[0] + u[0] * s + o[0] * d, A[1] + u[1] * s + o[1] * d, z]
     const c = L * f, n: V3 = [o[0], o[1], 0]
-    const panel = (p: Part, a: number, b: number, z0: number, z1: number) => quad(p, at(a, 0.06, z0), at(b, 0.06, z0), at(b, 0.06, z1), at(a, 0.06, z1), n)
-    // Red doors, lit at night as the entrance, and the transom band over them.
-    panel(doors, c - doorW / 2, c + doorW / 2, sill, sill + doorH)
-    panel(roof, c - doorW / 2, c + doorW / 2, sill + doorH, sill + doorH + 0.9)
-    const box = (d0: number, d1: number, a: number, b: number, za: number, zb: number, face: Part, rest: Part, top: Part) => {
-      quad(face, at(a, d1, za), at(b, d1, za), at(b, d1, zb), at(a, d1, zb), n)
-      quad(top, at(a, d0, zb), at(b, d0, zb), at(b, d1, zb), at(a, d1, zb), [0, 0, 1])
-      quad(rest, at(a, d0, za), at(a, d1, za), at(b, d1, za), at(b, d0, za), [0, 0, -1])
-      quad(rest, at(a, d0, za), at(a, d0, zb), at(a, d1, zb), at(a, d1, za), [-u[0], -u[1], 0])
-      quad(rest, at(b, d0, za), at(b, d1, za), at(b, d1, zb), at(b, d0, zb), [u[0], u[1], 0])
+    // Red doors, lit at night as the entrance.
+    quad(doors, pt(c - doorW / 2, 0.06, sill), pt(c + doorW / 2, 0.06, sill), pt(c + doorW / 2, 0.06, sill + doorH), pt(c - doorW / 2, 0.06, sill + doorH), n)
+    const slab = (d0: number, d1: number, a: number, b: number, za: number, zb: number, face: Part, rest: Part) => {
+      quad(face, pt(a, d1, za), pt(b, d1, za), pt(b, d1, zb), pt(a, d1, zb), n)
+      quad(rest, pt(a, d0, za), pt(a, d0, zb), pt(a, d1, zb), pt(a, d1, za), [-u[0], -u[1], 0])
+      quad(rest, pt(b, d0, za), pt(b, d1, za), pt(b, d1, zb), pt(b, d0, zb), [u[0], u[1], 0])
+      quad(rest, pt(a, d0, zb), pt(b, d0, zb), pt(b, d1, zb), pt(a, d1, zb), [0, 0, 1])
+      quad(rest, pt(a, d0, za), pt(a, d1, za), pt(b, d1, za), pt(b, d0, za), [0, 0, -1])
     }
-    // The canopy: one flat slab out from the wall, sitting on the transom,
-    // its face the sign board (no lettering) and its soffit pale.
-    const z0 = sill + doorH + 0.95
-    box(0, D, c - w / 2, c + w / 2, z0, z0 + board, roof, silver, silver)
+    // The canopy, its front a little deeper than its sides, and the board.
+    const z0 = sill + doorH + 0.3
+    slab(0.06, D, c - w / 2, c + w / 2, z0, z0 + 0.9, roof, roof)
+    slab(D * 0.45, D * 0.45 + 0.3, c - w / 2 + 0.2, c + w / 2 - 0.2, z0 + 0.9, z0 + 0.9 + board, trim, trim)
   }
-  // The Fillmore's door, at the head of its ramp mid-way along the c.1946
-  // front: a pair of double doors under the marquee (2018 photo).
-  marquee(...FILLMORE_DOOR, 7.0, ground([-60.4, 104.6]) + 1.7, 4.6, 3.0, 2.4, 1.0)
+  // The Fillmore's door, at the head of its ramp on the terrace (2018 photo:
+  // red double doors, the canopy over them, the letters on it).
+  {
+    const A = at(FILL_S - 10, FILL_T), B = at(FILL_S + 10, FILL_T)
+    marquee(A, B, 0.5, 7.0, 214.9, 4.4, 2.6, 2.8, 1.3, [-ax.r[0], -ax.r[1]])
+  }
   // The Underground's smaller marquee on the west projection.
-  marquee(...UNDERGROUND_DOOR, 5.0, ground([-96.8, 82.8]) + 0.2, 2.4, 2.4, 1.6, 0.8)
+  marquee(...UNDERGROUND_DOOR, 4.6, ground([-96.8, 82.8]) + 0.2, 2.4, 2.4, 1.6, 0.6)
 
   const anchor = centroid(MILL2), base = lowest(clean(MILL2))
   return {
-    id: 'fillmore-charlotte', name: 'The Fillmore Charlotte', anchor, base, height: 225.35 - base,
+    id: 'fillmore-charlotte', name: 'The Fillmore Charlotte', anchor, base, height: 222.3 - base,
     parts: [
       { part: wall, material: BRICK },
       { part: roof, material: PALETTE.roof },
       { part: win, material: PALETTE.window },
+      { part: trim, material: PALETTE.trim },
       { part: silver, material: SILVER },
-      // The Fillmore's red window frames.
-      { part: red, material: finish('fillmore-red', 0xc23a3f) },
-      // Its red doors are its front: lit at night as the entrance.
+      // The Fillmore's red doors are its front: lit at night as the entrance.
       { part: doors, material: { ...PALETTE.entrance, color: 0xc4473e } },
     ],
   }

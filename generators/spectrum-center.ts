@@ -1,42 +1,74 @@
 /**
- * Spectrum Center, Charlotte — procedural, CC0-1.0, no textures.
- * bun generators/spectrum-center.ts
+ * Spectrum Center, Charlotte (Charlotte Hornets arena) — procedural,
+ * CC0-1.0, no textures.  bun generators/spectrum-center.ts
  *
- * Map frame: x across the arena (Brevard/Blue Line side -x, Caldwell side +x),
- * y along its long axis (Trade Street -y, 5th Street +y), z up, metres. Placed
- * at bearing 45°, the Uptown grid; Trade Street runs along the model's -y face.
- * The origin is the centroid of the OSM outline (way/773909122).
+ * Map frame: x across the arena, y along it, z up, metres. Placed at bearing
+ * 45°, the Uptown grid: +y points north-east to 5th Street, -y south-west to
+ * Trade Street, -x north-west to Brevard Street, +x south-east to Caldwell.
+ * The origin is the centroid of the OSM outline (way/773909122); every plan
+ * coordinate below is an OSM building:part in this frame.
  *
- * Masses, after the OSM parts and photos:
- * - a brick podium over the whole outline, with a storefront glass band;
- * - the lower bowl tier (OSM 23 m) wrapping the long sides;
- * - the main drum (OSM 35 m), a rounded square in plan: brick with broad
- *   window bands and a dark louvre band under a pale roof edge, and grey metal
- *   panel faces at the two ends where the high core meets the street;
- * - the high core (OSM 43 m): a pale metal roof that arches along the long
- *   axis and crowns gently across it;
- * - the tall glass entrance atrium on the Trade & Caldwell corner.
+ * What makes it read as itself, from the photos:
+ * - a round drum (a true circle, 69 m in radius, OSM and NAIP) of red brick
+ *   with pale stone bands, broad window bands and a dark metal louvre band
+ *   under a white roof edge;
+ * - the high core roof: a white vault 68 m wide spanning the drum from
+ *   Trade Street to 5th Street, 37 m at its ends and 44 m at mid-span, with
+ *   dark louvre walls along its sides; the rest of the drum roof is white too;
+ * - flat grey metal panel faces either side of the core's ends, each edged
+ *   by a tall glass slot, and the tall dark tower beside the Trade Street
+ *   one on the Caldwell side;
+ * - on Trade Street, the brick face under the core with its tall green glass
+ *   curtain, and the glass entrance box at the Brevard corner under a white
+ *   roof slab;
+ * - lower brick wings round the drum: 24 m along Brevard and Caldwell, a low
+ *   podium on Caldwell and the 15–19 m blocks on 5th Street.
  *
- * Windows are slate panels set 0.05 m into the wall, per STYLE.md.
+ * Evidence
+ * - OSM: outline way/773909122 and its building:parts (core 43 m, drum 35 m,
+ *   wings 23 m, blocks 18, 14, 9 and 7 m, the 38 m tower).
+ * - Measured, lidar (USGS 3DEP NC Phase 4 Mecklenburg 2016, 1 m) in this
+ *   frame, less the 2 m from the lowest returns (a loading pit outside the
+ *   outline) to the lowest ground under it: core 37 m at its ends to 44 m at
+ *   mid-span and level across its width; drum roof 36–37 m; wings 24 m; 5th
+ *   Street blocks 15 and 19 m; podiums 8–10 m; the tower 39 m.
+ * - Measured, USGS NAIP: the drum is a circle; every roof is white.
+ * - Published: opened 2005, Ellerbe Becket with Odell; about 19,000 seats.
+ * - Photos (Wikimedia Commons): Matthew D. Britt, "Spectrum Center 2018"
+ *   (CC BY 2.0, from Fahrenheit across Trade Street, the key view) and
+ *   "Spectrum Center, Charlotte, NC" (CC BY 2.0, the Trade Street entrance
+ *   at night); Mark Clifton, "CityLynx Streetcar 402 at Spectrum Center"
+ *   (CC BY-SA 2.0, Trade Street panel face); Justin Ruckman,
+ *   "CharlotteBobcatsArenaexterior08" (CC BY 2.0, the glass entrance box);
+ *   HangingCurve, "TWCArena2012" (CC BY-SA 3.0); Tnbailey09, "TWCArena2015"
+ *   (CC BY-SA 4.0, a panel face and its glass slot by day); John Ashley /
+ *   Second Ward panoramio (CC BY 2.0 / CC BY-SA 3.0, from Caldwell).
+ *   Mapillary street images (CC BY-SA 4.0) from 5th Street.
+ *
+ * Estimated: the facade bands' heights (scaled from the Trade Street photo),
+ * the panel faces' extent round the drum (photo), the 5th Street face (taken
+ * as the mirror of Trade Street's panels; its curtain is not shown), the
+ * glass box's roof slab. The lower wings' facades are brick with window bands
+ * as photographed on Caldwell; Brevard's is seen only at night.
  */
 import { Part, writeGlb, type V3 } from './mesh'
-import { PALETTE, finish } from './palette'
+import { PALETTE, finish, windowVariant } from './palette'
 
 type XY = [number, number]
-const brick = new Part(), panel = new Part(), dark = new Part(), glass = new Part(), roof = new Part()
+const brick = new Part(), panel = new Part(), white = new Part(), louvre = new Part()
+const win = new Part(), glass = new Part()
 
 const unit = (v: V3): V3 => { const l = Math.hypot(...v) || 1; return [v[0] / l, v[1] / l, v[2] / l] }
 const lerp2 = (a: XY, b: XY, t: number): XY => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t]
 
-// Outline coordinates were measured from the OSM bounding-box centre; the
-// anchor is the outline's centroid, this far from it.
-const OX = -0.9, OY = 5.6
-const at = (p: XY): XY => [p[0] + OX, p[1] + OY]
-
+/** Quad a-b-c-d, counter-clockwise seen from its front, with optional corner normals. */
 function quadN(p: Part, a: V3, b: V3, c: V3, d: V3, n?: [V3, V3, V3, V3]) {
   p.tri(a, b, c, undefined, undefined, undefined, n && [n[0], n[1], n[2]])
   p.tri(a, c, d, undefined, undefined, undefined, n && [n[0], n[2], n[3]])
 }
+
+const area = (pts: XY[]) => pts.reduce((s, p, i) => { const q = pts[(i + 1) % pts.length]; return s + p[0] * q[1] - q[0] * p[1] }, 0) / 2
+const ccw = (pts: XY[]) => (area(pts) < 0 ? [...pts].reverse() : pts)
 
 /** Ear-clipping triangulation of a simple counter-clockwise polygon. */
 function earcut(pts: XY[]): [number, number, number][] {
@@ -59,334 +91,328 @@ function earcut(pts: XY[]): [number, number, number][] {
   return out
 }
 function capPoly(p: Part, pts: XY[], z: number) {
-  for (const [a, b, c] of earcut(pts)) p.tri([pts[a][0], pts[a][1], z], [pts[b][0], pts[b][1], z], [pts[c][0], pts[c][1], z])
+  const q = ccw(pts)
+  for (const [a, b, c] of earcut(q)) p.tri([q[a][0], q[a][1], z], [q[b][0], q[b][1], z], [q[c][0], q[c][1], z])
 }
-/** Move every edge of a counter-clockwise ring outward by d (mitred). */
-function offset(pts: XY[], d: number): XY[] {
-  const n = pts.length
-  return pts.map((p, i) => {
-    const a = pts[(i + n - 1) % n], b = pts[(i + 1) % n]
-    const e0 = unit([p[0] - a[0], p[1] - a[1], 0]), e1 = unit([b[0] - p[0], b[1] - p[1], 0])
-    const n0: XY = [e0[1], -e0[0]], n1: XY = [e1[1], -e1[0]]
-    const m = unit([n0[0] + n1[0], n0[1] + n1[1], 0]), k = d / Math.max(0.35, m[0] * n0[0] + m[1] * n0[1])
-    return [p[0] + m[0] * k, p[1] + m[1] * k]
-  })
-}
-
-// ---------------------------------------------------------------------------
-// Walls: a ring of segments, each a flat panel with recessed window bands
-// between piers. Flush surfaces take the ring's smooth vertex normals so the
-// rounded corners shade as curves.
-
-type RingPt = { p: XY; n: XY }
-type Band = [number, number]
-type SegStyle = { mat: Part; bands: Band[]; bays?: number } | null
-
-/**
- * `pierAt(i)` says whether a pier stands at ring vertex i. Window bands run
- * on unbroken across vertices without one, so a curved wall reads as long
- * ribbon windows between a few broad piers rather than a grid of dots.
- */
-function walls(ring: RingPt[], z0: number, z1: number, style: (i: number, a: XY, b: XY) => SegStyle,
-  pierAt: (i: number) => boolean = () => true, pier = 1.6, depth = 0.05) {
-  const m = ring.length
-  for (let i = 0; i < m; i++) {
-    const A = ring[i], B = ring[(i + 1) % m]
-    const s = style(i, A.p, B.p)
-    if (!s) continue
-    const L = Math.hypot(B.p[0] - A.p[0], B.p[1] - A.p[1])
-    const sn = unit([B.p[1] - A.p[1], A.p[0] - B.p[0], 0])
-    const nAt = (t: number): V3 => unit([A.n[0] * (1 - t) + B.n[0] * t, A.n[1] * (1 - t) + B.n[1] * t, 0])
-    const P = (t: number, z: number, d = 0): V3 => { const q = lerp2(A.p, B.p, t); return [q[0] - sn[0] * d, q[1] - sn[1] * d, z] }
-    const flush = (t0: number, t1: number, za: number, zb: number) => {
-      if (t1 - t0 < 1e-6 || zb - za < 1e-6) return
-      const n0 = nAt(t0), n1 = nAt(t1)
-      quadN(s.mat, P(t0, za), P(t1, za), P(t1, zb), P(t0, zb), [n0, n1, n1, n0])
+/** Douglas–Peucker on a closed ring: OSM's half-metre jogs only cost triangles. */
+function simplify(pts: XY[], tol: number): XY[] {
+  const dp = (a: number, b: number, ring: XY[], keep: boolean[]) => {
+    let best = -1, bd = tol
+    const [x1, y1] = ring[a], [x2, y2] = ring[b], L = Math.hypot(x2 - x1, y2 - y1) || 1
+    for (let i = a + 1; i < b; i++) {
+      const d = Math.abs((x2 - x1) * (y1 - ring[i][1]) - (x1 - ring[i][0]) * (y2 - y1)) / L
+      if (d > bd) { bd = d; best = i }
     }
-    const bands = s.bands.filter(([lo, hi]) => hi > z0 && lo < z1)
-    const bays = s.bays ?? 1
-    if (!bands.length || L < 2 * pier + 1) { flush(0, 1, z0, z1); continue }
-    const pw = Math.min(pier / L, 0.2 / bays)
-    let last = 0
-    for (let k = 0; k < bays; k++) {
-      const left = k > 0 || pierAt(i), right = k < bays - 1 || pierAt((i + 1) % m)
-      const t0 = k / bays + (left ? pw : 0), t1 = (k + 1) / bays - (right ? pw : 0)
-      flush(last, t0, z0, z1)
-      let z = z0
-      for (const [lo, hi] of bands) {
-        flush(t0, t1, z, lo)
-        const a = P(t0, lo), b = P(t1, lo), c = P(t1, hi), d = P(t0, hi)
-        const ar = P(t0, lo, depth), br = P(t1, lo, depth), cr = P(t1, hi, depth), dr = P(t0, hi, depth)
-        quadN(dark, ar, br, cr, dr)                  // window glass
-        quadN(s.mat, a, b, br, ar)                   // sill, facing up
-        quadN(s.mat, dr, cr, c, d)                   // head, facing down
-        if (left) quadN(s.mat, a, ar, dr, d)         // left jamb
-        if (right) quadN(s.mat, br, b, c, cr)        // right jamb
-        z = hi
-      }
-      flush(t0, t1, z, z1)
-      last = t1
-    }
-    flush(last, 1, z0, z1)
+    if (best >= 0) { keep[best] = true; dp(a, best, ring, keep); dp(best, b, ring, keep) }
   }
+  // Split at the two most distant vertices so the ring is two open chains.
+  let i0 = 0, i1 = 0, dmax = -1
+  pts.forEach((p, i) => pts.forEach((q, j) => { const d = Math.hypot(p[0] - q[0], p[1] - q[1]); if (d > dmax) { dmax = d; i0 = i; i1 = j } }))
+  const [a, b] = [Math.min(i0, i1), Math.max(i0, i1)]
+  const ring = [...pts, pts[0]], keep = ring.map((_, i) => i === a || i === b)
+  dp(a, b, ring, keep); dp(b, pts.length, ring, keep)
+  if (a > 0) dp(0, a, ring, keep)
+  keep[0] = true
+  return pts.filter((_, i) => keep[i])
+}
+function inside([x, y]: XY, poly: XY[]) {
+  let c = false
+  for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+    const [x1, y1] = poly[i], [x2, y2] = poly[j]
+    if ((y1 > y) !== (y2 > y) && x < ((x2 - x1) * (y - y1)) / (y2 - y1) + x1) c = !c
+  }
+  return c
 }
 
-/** A 45° chamfered lip at the top of a ring of walls, then the roof cap. */
-function lip(ring: RingPt[], z: number, d: number, mat: Part) {
+// ---------------------------------------------------------------------------
+// The drum: a circle, centre and radius fitted to the OSM drum and core parts
+// (every vertex within 0.3 m) and the NAIP roof.
+
+const CX = -12, CY = -8, R = 69
+const EAVE = 34.5, FASCIA = 36, ROOF = 36.4
+const at = (deg: number, r = R): XY => [CX + r * Math.cos((deg * Math.PI) / 180), CY + r * Math.sin((deg * Math.PI) / 180)]
+
+// The core spans x −46…22: on the circle, 240°–300° on Trade Street and
+// 60°–120° on 5th Street. Grey panel faces flank it, each one flat chord.
+const PANELS: [number, number][] = [[210, 240], [300, 330], [30, 60], [120, 150]]
+const inPanel = (d: number) => PANELS.some(([a, b]) => d > a + 1e-6 && d < b - 1e-6)
+const ANG = Array.from({ length: 48 }, (_, k) => k * 7.5).filter(d => !inPanel(d))
+const panelAt = (a: number, b: number) => PANELS.some(([p, q]) => Math.abs(p - a) < 1e-6 && Math.abs(q - (b === 0 ? 360 : b)) < 1e-6)
+// The tall green glass curtain on Trade Street, under the core's end.
+const CURTAIN: [number, number] = [270, 285]
+
+// ---------------------------------------------------------------------------
+// The lower parts, from OSM, with their lidar heights.
+
+type Block = { pts: XY[]; h: number; glassEnd?: boolean }
+const BLOCKS: Block[] = [
+  // Brevard wing (way/773909126); its south end is the glass entrance box.
+  { h: 24, glassEnd: true, pts: [[-43.4,65.5],[-44.7,65.0],[-49.5,63.1],[-61.2,56.9],[-67.4,52.7],[-73.6,47.4],[-79.5,41.3],[-84.4,35.4],[-90.4,25.8],[-94.3,18.0],[-97.4,9.4],[-99.7,2.7],[-100.6,-4.8],[-100.7,-10.4],[-100.5,-15.3],[-100.0,-22.5],[-98.8,-30.1],[-97.2,-37.5],[-94.0,-46.9],[-74.5,-36.8],[-76.5,-32.5],[-78.7,-26.6],[-80.1,-20.6],[-80.9,-13.9],[-80.9,-2.5],[-79.6,5.2],[-78.0,12.0],[-75.1,19.9],[-72.4,25.2],[-69.3,30.6],[-66.6,34.4],[-61.5,40.5],[-57.6,44.2],[-46.7,51.6],[-43.7,53.7],[-43.7,58.6],[-42.1,58.7]] },
+  // Caldwell wing (way/773909123).
+  { h: 24, pts: [[21.8,61.0],[19.5,62.0],[18.5,58.3],[21.9,57.7],[21.8,52.8],[27.1,49.4],[32.9,44.9],[37.7,40.5],[42.7,34.6],[45.7,30.5],[50.5,21.5],[51.3,19.7],[53.2,13.8],[54.9,7.3],[56.0,1.3],[56.6,-3.3],[56.6,-6.7],[56.0,-16.6],[52.2,-28.9],[49.1,-35.6],[55.1,-38.9],[51.9,-44.7],[50.9,-44.1],[49.7,-46.2],[53.1,-48.1],[57.9,-50.5],[61.6,-42.9],[65.0,-31.9],[66.0,-27.5],[67.3,-17.7],[67.2,-8.7],[66.4,-1.6],[64.6,6.0],[62.1,14.6],[59.8,20.5],[57.2,25.8],[52.9,33.0],[47.2,41.0],[41.7,46.7],[38.0,50.2],[31.3,55.1],[27.8,57.3],[25.5,58.8],[24.7,59.2]] },
+  // Caldwell podium (way/773909124).
+  { h: 8, pts: [[61.6,-42.9],[66.3,-45.2],[89.0,-45.1],[89.0,-43.6],[89.6,-43.6],[89.6,-35.4],[89.7,-28.5],[101.9,-28.0],[101.9,-27.2],[101.6,-27.2],[101.7,-25.9],[102.1,-25.9],[102.3,-16.2],[101.4,-16.2],[101.5,-14.4],[102.3,-14.4],[102.5,-4.1],[101.7,-4.1],[101.7,-2.5],[102.6,-2.5],[102.8,7.9],[101.8,7.9],[101.9,9.9],[102.9,9.9],[103.2,21.7],[102.2,21.7],[102.2,22.3],[101.8,23.1],[102.9,23.7],[99.9,28.9],[97.1,34.4],[96.3,35.5],[95.5,35.0],[94.4,36.1],[95.0,36.7],[62.7,70.5],[62.4,70.1],[60.7,71.9],[60.1,71.3],[38.0,50.2],[41.7,46.7],[47.2,41.0],[52.9,33.0],[57.2,25.8],[59.8,20.5],[62.1,14.6],[64.6,6.0],[66.4,-1.6],[67.2,-8.7],[67.3,-17.7],[66.0,-27.5],[65.0,-31.9]] },
+  // 5th Street blocks (way/773909125, way/1352235646).
+  { h: 15, pts: [[19.5,62.0],[21.8,61.0],[22.0,88.0],[-13.9,88.1],[-14.7,76.9],[-15.3,69.5],[-12.7,69.3],[-13.3,60.9],[-2.6,60.6],[7.3,59.8],[18.5,58.3]] },
+  { h: 19, pts: [[-43.4,65.5],[-39.0,66.8],[-33.3,68.0],[-25.9,69.2],[-18.7,69.7],[-15.3,69.5],[-12.7,69.3],[-13.3,60.9],[-16.9,61.0],[-28.0,60.2],[-38.3,59.2],[-42.1,58.7]] },
+  // Trade Street podiums (way/984713008, way/984713013) and the Brevard
+  // sliver (way/984713012).
+  { h: 9.5, pts: [[-9.0,-73.5],[-9.3,-76.7],[45.5,-76.9],[39.7,-65.5],[42.8,-62.1],[46.3,-58.1],[49.9,-53.1],[53.1,-48.1],[49.7,-46.2],[50.9,-44.1],[46.6,-41.7],[40.9,-54.8],[38.5,-52.7],[37.0,-54.7],[30.2,-64.8],[28.5,-62.3],[26.0,-64.2],[18.0,-71.6],[18.0,-73.4]] },
+  { h: 9.5, pts: [[-55.6,-64.0],[-56.9,-66.8],[-61.4,-66.5],[-62.2,-67.9],[-66.2,-74.9],[-64.3,-74.9],[-48.8,-75.4],[-27.2,-76.1],[-46.4,-72.5],[-46.2,-67.8]] },
+  { h: 9, pts: [[-97.1,28.6],[-90.4,25.8],[-94.3,18.0],[-97.4,9.4],[-99.7,2.7],[-101.4,-4.0],[-102.4,-9.6],[-102.8,-13.1],[-104.0,-13.0],[-104.1,-11.7],[-104.6,-11.3],[-104.9,-5.9],[-104.2,5.1],[-102.2,13.8],[-99.9,21.0]] },
+].map(b => ({ ...b, pts: simplify(b.pts as XY[], 0.9) }))
+// The tall dark tower beside the south-east panel face (way/984713007), 39 m.
+const TOWER: XY[] = [[46.6,-41.7],[51.9,-44.7],[55.1,-38.9],[48.1,-35.0],[44.9,-40.8]]
+const TOWER_H = 39
+
+/** Height of whatever stands at a point outside the drum: the walls start there. */
+const heightAt = (p: XY) => {
+  let h = 0
+  for (const b of BLOCKS) if (inside(p, b.pts)) h = Math.max(h, b.h)
+  if (inside(p, TOWER)) h = Math.max(h, TOWER_H)
+  return h
+}
+/** Street level by side: 5th Street and Brevard stand a few metres up (lidar). */
+const street = ([x, y]: XY) => (y > 50 ? 4 : x < -85 ? 3 : 1)
+
+// ---------------------------------------------------------------------------
+// Walls: a flat face from z0 to z1, with window bands between piers.
+
+type Band = { lo: number; hi: number; mat: Part }
+function wall(A: XY, B: XY, z0: number, z1: number, mat: Part, bands: Band[], bay = 11, nA?: XY, nB?: XY, piers: [boolean, boolean] = [true, true]) {
+  const L = Math.hypot(B[0] - A[0], B[1] - A[1])
+  if (L < 0.2 || z1 - z0 < 0.2) return
+  const sn: V3 = unit([B[1] - A[1], A[0] - B[0], 0])
+  const na: V3 = nA ? [nA[0], nA[1], 0] : sn, nb: V3 = nB ? [nB[0], nB[1], 0] : sn
+  const P = (t: number, z: number, d = 0): V3 => { const q = lerp2(A, B, t); return [q[0] + sn[0] * d, q[1] + sn[1] * d, z] }
+  const nAt = (t: number) => unit([na[0] * (1 - t) + nb[0] * t, na[1] * (1 - t) + nb[1] * t, 0])
+  const flat = (p: Part, t0: number, t1: number, a: number, b: number, d = 0) => {
+    if (t1 - t0 < 1e-6 || b - a < 1e-6) return
+    const n0 = nAt(t0), n1 = nAt(t1)
+    quadN(p, P(t0, a, d), P(t1, a, d), P(t1, b, d), P(t0, b, d), [n0, n1, n1, n0])
+  }
+  flat(mat, 0, 1, z0, z1)
+  const use = bands.filter(b => b.lo >= z0 && b.hi <= z1)
+  if (!use.length || L < 4) return
+  const bays = Math.max(1, Math.round(L / bay)), pier = Math.min(0.9 / L, 0.12 / bays)
+  for (let k = 0; k < bays; k++) {
+    const t0 = k / bays + (k > 0 || piers[0] ? pier : 0), t1 = (k + 1) / bays - (k < bays - 1 || piers[1] ? pier : 0)
+    for (const b of use) flat(b.mat, t0, t1, b.lo, b.hi, 0.04)
+  }
+}
+/** A pale chamfered parapet lip on a wall's top edge. */
+function lipEdge(A: XY, B: XY, z: number, out = 0.6) {
+  const sn = unit([B[1] - A[1], A[0] - B[0], 0])
+  const P = (p: XY, d: number, h: number): V3 => [p[0] + sn[0] * d, p[1] + sn[1] * d, h]
+  const nO: V3 = [sn[0], sn[1], 0], nT = unit([sn[0], sn[1], 1.2])
+  quadN(white, P(A, 0, z - 1.0), P(B, 0, z - 1.0), P(B, out, z - 0.9), P(A, out, z - 0.9), [unit([sn[0], sn[1], -1]), unit([sn[0], sn[1], -1]), nO, nO])
+  quadN(white, P(A, out, z - 0.9), P(B, out, z - 0.9), P(B, out, z - 0.35), P(A, out, z - 0.35), [nO, nO, nO, nO])
+  quadN(white, P(A, out, z - 0.35), P(B, out, z - 0.35), P(B, 0, z), P(A, 0, z), [nT, nT, nT, nT])
+}
+
+// ---------------------------------------------------------------------------
+// Drum walls.
+
+const LOUVRE_LO = 29.5
+for (let i = 0; i < ANG.length; i++) {
+  const a = ANG[i], b = ANG[(i + 1) % ANG.length], bb = b === 0 ? 360 : b
+  const A = at(a), B = at(bb), mid = (a + bb) / 2
+  const outPt = at(mid, R + 2.5)
+  const z0 = heightAt(outPt)
+  const isPanel = panelAt(a, b)
+  const nA: XY = [Math.cos((a * Math.PI) / 180), Math.sin((a * Math.PI) / 180)], nB: XY = [Math.cos((bb * Math.PI) / 180), Math.sin((bb * Math.PI) / 180)]
+  // The louvre band runs right round under the roof edge.
+  wall(A, B, LOUVRE_LO, EAVE, louvre, [], 11, isPanel ? undefined : nA, isPanel ? undefined : nB)
+  if (isPanel) {
+    // A flat grey panel face, a little proud, with a tall glass slot at each
+    // edge broken into three storey groups.
+    wall(A, B, z0, LOUVRE_LO, panel, [])
+    const L = Math.hypot(B[0] - A[0], B[1] - A[1]), s = 3 / L
+    const g0 = Math.max(z0, street(A)) + 1
+    const groups: [number, number][] = [[g0, 15.5], [17, 22], [23.5, 28.5]].filter(([lo, hi]) => hi - lo > 2) as [number, number][]
+    for (const [t0, t1] of [[0.02, 0.02 + s], [0.98 - s, 0.98]])
+      for (const [lo, hi] of groups) wall(lerp2(A, B, t0), lerp2(A, B, t1), lo, hi, glass, [], 99)
+    continue
+  }
+  if (mid > CURTAIN[0] && mid < CURTAIN[1]) {
+    // The green glass curtain, a broad glazed bay in the brick.
+    wall(A, B, z0, LOUVRE_LO, brick, [{ lo: 11.5, hi: 28.5, mat: glass }], 99, nA, nB)
+    continue
+  }
+  const g = street(outPt)
+  const bands: Band[] = [
+    { lo: g + 1.5, hi: g + 7, mat: win },   // storefronts
+    { lo: 11.5, hi: 17.5, mat: win },       // the recessed concourse glazing
+    { lo: 23.5, hi: 27, mat: win },         // upper concourse windows
+  ]
+  // Window bands run on as ribbons across the curve, with a broad pier
+  // every third segment (about 27 m), as photographed.
+  const k = Math.round(a / 7.5), kb = Math.round(bb / 7.5)
+  wall(A, B, z0, LOUVRE_LO, brick, bands, 99, nA, nB, [k % 3 === 0 || panelAt(ANG[(i - 1 + ANG.length) % ANG.length], a), kb % 3 === 0])
+}
+
+// White roof edge: a fascia standing 1 m out from the drum, bevelled.
+{
+  const ring = ANG.map(d => ({ p: at(d), n: [Math.cos((d * Math.PI) / 180), Math.sin((d * Math.PI) / 180)] as XY }))
   const m = ring.length
   for (let i = 0; i < m; i++) {
     const A = ring[i], B = ring[(i + 1) % m]
-    const nA: V3 = unit([A.n[0], A.n[1], 1]), nB: V3 = unit([B.n[0], B.n[1], 1])
-    quadN(mat, [A.p[0], A.p[1], z - d], [B.p[0], B.p[1], z - d],
-      [B.p[0] - B.n[0] * d, B.p[1] - B.n[1] * d, z], [A.p[0] - A.n[0] * d, A.p[1] - A.n[1] * d, z], [nA, nB, nB, nA])
-  }
-}
-const inset = (ring: RingPt[], d: number): XY[] => ring.map(r => [r.p[0] - r.n[0] * d, r.p[1] - r.n[1] * d])
-
-// ---------------------------------------------------------------------------
-// Plan shapes. A superellipse gives the arena's rounded-square bowl.
-
-type Super = { cx: number; cy: number; a: number; b: number; n: number }
-const sgn = (v: number) => (v < 0 ? -1 : 1)
-function superPt(s: Super, th: number): RingPt {
-  const c = Math.cos(th), si = Math.sin(th)
-  const x = s.a * sgn(c) * Math.abs(c) ** (2 / s.n), y = s.b * sgn(si) * Math.abs(si) ** (2 / s.n)
-  const gx = sgn(x) * Math.abs(x / s.a) ** (s.n - 1) / s.a, gy = sgn(y) * Math.abs(y / s.b) ** (s.n - 1) / s.b
-  const g = unit([gx, gy, 0])
-  return { p: [s.cx + x, s.cy + y], n: [g[0], g[1]] }
-}
-const thetaOf = (s: Super, x: number, y: number) => {
-  const dx = (x - s.cx) / s.a, dy = (y - s.cy) / s.b
-  return Math.atan2(sgn(dy) * Math.abs(dy) ** (s.n / 2), sgn(dx) * Math.abs(dx) ** (s.n / 2))
-}
-const halfY = (s: Super, x: number) => s.b * Math.max(0, 1 - Math.abs((x - s.cx) / s.a) ** s.n) ** (1 / s.n)
-function superRing(s: Super, N: number, extraX: number[] = []): RingPt[] {
-  const th = Array.from({ length: N }, (_, k) => (2 * Math.PI * k) / N)
-  for (const x of extraX) for (const side of [-1, 1]) th.push(thetaOf(s, x, s.cy + side * halfY(s, x)))
-  const norm = th.map(t => ((t % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI)).sort((a, b) => a - b)
-  return norm.filter((t, i) => i === 0 || t - norm[i - 1] > 1e-3).map(t => superPt(s, t))
-}
-const insideSuper = (s: Super, p: XY, margin = 0) =>
-  Math.abs((p[0] - s.cx) / (s.a - margin)) ** s.n + Math.abs((p[1] - s.cy) / (s.b - margin)) ** s.n < 1
-
-// Core band (the 43 m high roof) runs the drum's long axis.
-const XL = -45 + OX, XR = 21 + OX
-
-// The main drum (OSM 35 m) and the lower bowl tier (OSM 23 m), both centred
-// on the bowl as the OSM parts are.
-const drum: Super = { cx: -11.5 + OX, cy: -13.5 + OY, a: 68.5, b: 68.5, n: 2.8 }
-const tier: Super = { cx: -16 + OX, cy: -13.5 + OY, a: 82, b: 66, n: 2.6 }
-const DRUM = 35, TIER = 23, PODIUM = 9
-
-// The atrium wraps the south corner, Trade at Caldwell.
-const ATRIUM: XY[] = [[14, -82], [46, -82], [57, -51], [44, -47], [24, -60], [14, -64]].map(p => at(p as XY))
-const ATRIUM_TOP = 27
-
-// ---------------------------------------------------------------------------
-// Podium: the whole outline, simplified, with a storefront glass band.
-
-const outline: XY[] = ([
-  [-64, -81], [46, -82], [41, -71], [54, -54], [62, -48], [67, -51], [90, -51], [91, -34], [103, -34],
-  [104, 17], [96, 31], [63, 65], [39, 45], [23, 55], [23, 82], [-13, 82], [-14, 64], [-38, 61], [-60, 51],
-  [-79, 36], [-89, 20], [-96, 23], [-101, 8], [-104, -12], [-99, -28], [-93, -53], [-74, -42], [-57, -65],
-  [-55, -70], [-62, -73],
-] as XY[]).map(at)
-{
-  const m = outline.length
-  for (let i = 0; i < m; i++) {
-    const A = outline[i], B = outline[(i + 1) % m]
-    const L = Math.hypot(B[0] - A[0], B[1] - A[1])
-    const sn = unit([B[1] - A[1], A[0] - B[0], 0])
-    const seg: RingPt[] = [{ p: A, n: [sn[0], sn[1]] }, { p: B, n: [sn[0], sn[1]] }]
-    const inAtrium = (A[1] < -40 + OY && A[0] > 10 && B[1] < -40 + OY && B[0] > 10 && A[0] < 60 && B[0] < 60)
-    walls([...seg], 0, PODIUM - 0.5, (k) => k === 0 && !inAtrium ? { mat: brick, bands: [[1.2, 6.2]], bays: Math.max(1, Math.round(L / 14)) } : null)
-  }
-  // Chamfered parapet and the flat roof.
-  const top = offset(outline, -0.5)
-  for (let i = 0; i < m; i++) {
-    const j = (i + 1) % m
-    const A = outline[i], B = outline[j], a = top[i], b = top[j]
-    const sn = unit([B[1] - A[1], A[0] - B[0], 1])
-    quadN(brick, [A[0], A[1], PODIUM - 0.5], [B[0], B[1], PODIUM - 0.5], [b[0], b[1], PODIUM], [a[0], a[1], PODIUM], [sn, sn, sn, sn])
-  }
-  capPoly(roof, top, PODIUM)
-}
-
-// The 14 m block on the 5th Street side (OSM way/773909125).
-{
-  const pts: XY[] = ([[-13, 55], [23, 55], [23, 82], [-13, 82]] as XY[]).map(at)
-  for (let i = 0; i < 4; i++) {
-    const A = pts[i], B = pts[(i + 1) % 4]
-    const sn = unit([B[1] - A[1], A[0] - B[0], 0])
-    walls([{ p: A, n: [sn[0], sn[1]] }, { p: B, n: [sn[0], sn[1]] }], PODIUM, 13.5,
-      k => k === 0 && i !== 0 ? { mat: brick, bands: [[10, 12.6]], bays: 2 } : null)
-  }
-  const top = offset(pts, -0.5)
-  for (let i = 0; i < 4; i++) {
-    const A = pts[i], B = pts[(i + 1) % 4], a = top[i], b = top[(i + 1) % 4]
-    const sn = unit([B[1] - A[1], A[0] - B[0], 1])
-    quadN(brick, [A[0], A[1], 13.5], [B[0], B[1], 13.5], [b[0], b[1], 14], [a[0], a[1], 14], [sn, sn, sn, sn])
-  }
-  capPoly(roof, top, 14)
-}
-
-// ---------------------------------------------------------------------------
-// Bowl tier: brick, two broad window bands, skipped where the drum hides it.
-
-{
-  const ring = superRing(tier, 44)
-  walls(ring, PODIUM - 1, TIER - 0.5, (_, a, b) =>
-    insideSuper(drum, a, 0.3) && insideSuper(drum, b, 0.3) ? null : { mat: brick, bands: [[11.5, 15.5], [18, 21]] }, i => i % 4 === 0)
-  lip(ring, TIER, 0.5, brick)
-  const top = inset(ring, 0.5)
-  for (let i = 1; i < top.length - 1; i++) roof.tri([top[0][0], top[0][1], TIER], [top[i][0], top[i][1], TIER], [top[i + 1][0], top[i + 1][1], TIER])
-}
-
-// ---------------------------------------------------------------------------
-// Main drum: brick with window bands where it meets the street, a dark louvre
-// band under the roof edge, grey metal panel faces at the core's two ends.
-
-const isEnd = (a: XY, b: XY) => (a[0] + b[0]) / 2 > XL && (a[0] + b[0]) / 2 < XR
-const inAtriumZone = (a: XY, b: XY) => {
-  const m: XY = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]
-  return m[0] > 16 + OX && m[1] < -42 + OY
-}
-const LOUVRE: Band = [26.5, 33.8]
-const SLOT = 4
-{
-  const ring = superRing(drum, 44, [XL, XR])
-  walls(ring, PODIUM - 1, DRUM - 0.6, (_, a, b) => {
-    if (isEnd(a, b)) return { mat: panel, bands: [] }
-    const exposed = !(insideSuper(tier, a, -0.3) && insideSuper(tier, b, -0.3))
-    const bands: Band[] = exposed && !inAtriumZone(a, b) ? [[11.5, 15.5], [18, 21], LOUVRE] : [LOUVRE]
-    return { mat: brick, bands }
-  }, i => i % 4 === 0)
-  // Pale metal roof edge: a projecting fascia with a bevelled top.
-  const m = ring.length
-  for (let i = 0; i < m; i++) {
-    const A = ring[i], B = ring[(i + 1) % m]
-    if (isEnd(A.p, B.p)) continue
-    const o = 0.5
-    const P = (r: RingPt, d: number, z: number): V3 => [r.p[0] + r.n[0] * d, r.p[1] + r.n[1] * d, z]
+    const o = 1.0
+    const P = (r: typeof A, d: number, z: number): V3 => [r.p[0] + r.n[0] * d, r.p[1] + r.n[1] * d, z]
     const nA: V3 = [A.n[0], A.n[1], 0], nB: V3 = [B.n[0], B.n[1], 0]
-    const uA = unit([A.n[0], A.n[1], 1]), uB = unit([B.n[0], B.n[1], 1])
-    quadN(roof, P(A, 0, DRUM - 1.6), P(B, 0, DRUM - 1.6), P(B, o, DRUM - 1.3), P(A, o, DRUM - 1.3), [unit([A.n[0], A.n[1], -1]), unit([B.n[0], B.n[1], -1]), nB, nA])
-    quadN(roof, P(A, o, DRUM - 1.3), P(B, o, DRUM - 1.3), P(B, o, DRUM - 0.5), P(A, o, DRUM - 0.5), [nA, nB, nB, nA])
-    quadN(roof, P(A, o, DRUM - 0.5), P(B, o, DRUM - 0.5), P(B, 0, DRUM), P(A, 0, DRUM), [uA, uB, uB, uA])
+    const dn = (r: typeof A) => unit([r.n[0], r.n[1], -1]), up = (r: typeof A) => unit([r.n[0], r.n[1], 1.2])
+    quadN(white, P(A, 0, EAVE), P(B, 0, EAVE), P(B, o, EAVE + 0.3), P(A, o, EAVE + 0.3), [dn(A), dn(B), nB, nA])
+    quadN(white, P(A, o, EAVE + 0.3), P(B, o, EAVE + 0.3), P(B, o, FASCIA - 0.3), P(A, o, FASCIA - 0.3), [nA, nB, nB, nA])
+    quadN(white, P(A, o, FASCIA - 0.3), P(B, o, FASCIA - 0.3), P(B, 0, ROOF), P(A, 0, ROOF), [up(A), up(B), up(B), up(A)])
   }
-  for (let i = 0; i < m; i++) {
-    const A = ring[i], B = ring[(i + 1) % m]
-    if (!isEnd(A.p, B.p)) continue
-    const n0: V3 = [A.n[0], A.n[1], 0], n1: V3 = [B.n[0], B.n[1], 0]
-    quadN(panel, [A.p[0], A.p[1], DRUM - 0.6], [B.p[0], B.p[1], DRUM - 0.6], [B.p[0], B.p[1], DRUM], [A.p[0], A.p[1], DRUM], [n0, n1, n1, n0])
-    // The tall glass slots where the panel face meets the brick: flush strips
-    // just proud of the panel, one at each edge of each end face.
-    for (const [from, to] of [[A, B], [B, A]] as [RingPt, RingPt][]) {
-      if (Math.abs(from.p[0] - XL) > 1e-6 && Math.abs(from.p[0] - XR) > 1e-6) continue
-      const L = Math.hypot(to.p[0] - from.p[0], to.p[1] - from.p[1]), t = Math.min(0.9, SLOT / L)
-      const q = lerp2(from.p, to.p, t), sn = unit([B.p[1] - A.p[1], A.p[0] - B.p[0], 0]), e = 0.04
-      const P = (p: XY, z: number): V3 => [p[0] + sn[0] * e, p[1] + sn[1] * e, z]
-      const [a, b] = from === A ? [from.p, q] : [q, from.p]
-      // Broken into storey groups with panel showing between, not one stripe.
-      for (const [lo, hi] of [[PODIUM + 0.6, 17], [18.4, 25.6], [27, 33.4]])
-        dark.quad(P(a, lo), P(b, lo), P(b, hi), P(a, hi))
-    }
-  }
-  for (let i = 1; i < m - 1; i++)
-    roof.tri([ring[0].p[0], ring[0].p[1], DRUM], [ring[i].p[0], ring[i].p[1], DRUM], [ring[i + 1].p[0], ring[i + 1].p[1], DRUM])
 }
 
 // ---------------------------------------------------------------------------
-// High core: a roof that arches along the long axis (eaves 37 m at the ends,
-// 43 m mid-span) and crowns 0.8 m across it. Dark louvre sides under a pale
-// fascia; the ends continue the grey panel faces below.
+// Roofs. The drum's two outer segments are white at 36.4 m; the core vault
+// rises from 37 m at its ends to 44 m at mid-span, level across its width.
 
+const XL = -46, XR = 22
+const halfY = (x: number) => Math.sqrt(Math.max(0, R * R - (x - CX) * (x - CX)))
 {
-  const COLS = 10, ROWS = 14, CROWN = 0.8
-  const eave = (y: number) => { const t = (y - drum.cy) / drum.b; return 36.6 + 6.4 * (1 - t * t) }
-  const z = (x: number, y: number) => { const s = (2 * (x - XL)) / (XR - XL) - 1; return eave(y) + CROWN * (1 - s * s) }
-  const nrm = (x: number, y: number): V3 => {
-    const t = (y - drum.cy) / drum.b, s = (2 * (x - XL)) / (XR - XL) - 1
-    const dzdy = (-2 * 6.4 * t) / drum.b, dzdx = (-2 * CROWN * s * 2) / (XR - XL)
-    return unit([-dzdx, -dzdy, 1])
-  }
+  // West segment: the arc from 120° to 240° closed by the core's edge.
+  const west: XY[] = ANG.filter(d => d >= 120 && d <= 240).map(d => at(d))
+  capPoly(white, west, ROOF)
+  const east: XY[] = [...ANG.filter(d => d >= 300), ...ANG.filter(d => d <= 60)].map(d => at(d))
+  capPoly(white, east, ROOF)
+}
+const VAULT_END = 37, VAULT_TOP = 44
+const vz = (y: number) => { const t = (y - CY) / R; return VAULT_END + (VAULT_TOP - VAULT_END) * (1 - t * t) }
+const vn = (y: number): V3 => unit([0, (2 * (VAULT_TOP - VAULT_END) * (y - CY)) / (R * R), 1])
+{
+  const COLS = 6, ROWS = 14
   const xs = Array.from({ length: COLS + 1 }, (_, k) => XL + ((XR - XL) * k) / COLS)
-  const span = xs.map(x => [drum.cy - halfY(drum, x), drum.cy + halfY(drum, x)])
-  for (let k = 0; k < COLS; k++) {
-    for (let r = 0; r < ROWS; r++) {
-      const pt = (c: number, rr: number): V3 => {
-        const x = xs[c], y = span[c][0] + ((span[c][1] - span[c][0]) * rr) / ROWS
-        return [x, y, z(x, y)]
-      }
-      const a = pt(k, r), b = pt(k + 1, r), c = pt(k + 1, r + 1), d = pt(k, r + 1)
-      // The arched metal roof is the pale silver of the panel faces it
-      // continues, the arena's crown; the flat roofs below stay `roof`.
-      quadN(panel, a, b, c, d, [nrm(a[0], a[1]), nrm(b[0], b[1]), nrm(c[0], c[1]), nrm(d[0], d[1])])
-    }
+  const yAt = (c: number, r: number) => { const h = halfY(xs[c]); return CY - h + (2 * h * r) / ROWS }
+  for (let c = 0; c < COLS; c++) for (let r = 0; r < ROWS; r++) {
+    const P = (cc: number, rr: number): V3 => { const y = yAt(cc, rr); return [xs[cc], y, vz(y)] }
+    const a = P(c, r), b = P(c + 1, r), cc = P(c + 1, r + 1), d = P(c, r + 1)
+    quadN(white, a, b, cc, d, [vn(a[1]), vn(b[1]), vn(cc[1]), vn(d[1])])
   }
-  // Long sides.
+  // The vault's long sides: dark louvres from the drum roof up to a white
+  // fascia that follows the arch.
   for (const [x, dir] of [[XL, -1], [XR, 1]] as [number, number][]) {
-    const c = x === XL ? 0 : COLS
+    const h = halfY(x)
     for (let r = 0; r < ROWS; r++) {
-      const y0 = span[c][0] + ((span[c][1] - span[c][0]) * r) / ROWS, y1 = span[c][0] + ((span[c][1] - span[c][0]) * (r + 1)) / ROWS
-      const [ya, yb] = dir > 0 ? [y0, y1] : [y1, y0]
-      const za = eave(ya), zb = eave(yb), F = 1.1
-      quadN(dark, [x, ya, DRUM], [x, yb, DRUM], [x, yb, zb - F], [x, ya, za - F])
-      // Fascia stands 0.4 m proud with a bevelled top edge.
-      const o = 0.4 * dir, nO: V3 = [dir, 0, 0], nT = unit([dir, 0, 1]), nD = unit([dir, 0, -1])
-      quadN(roof, [x, ya, za - F], [x, yb, zb - F], [x + o, yb, zb - F + 0.3], [x + o, ya, za - F + 0.3], [nD, nD, nO, nO])
-      quadN(roof, [x + o, ya, za - F + 0.3], [x + o, yb, zb - F + 0.3], [x + o, yb, zb - 0.4], [x + o, ya, za - 0.4], [nO, nO, nO, nO])
-      quadN(roof, [x + o, ya, za - 0.4], [x + o, yb, zb - 0.4], [x, yb, zb], [x, ya, za], [nT, nT, nT, nT])
+      let y0 = CY - h + (2 * h * r) / ROWS, y1 = CY - h + (2 * h * (r + 1)) / ROWS
+      if (dir < 0) [y0, y1] = [y1, y0]
+      const z0 = vz(y0), z1 = vz(y1), F = 1.0, o = 0.5 * dir
+      quadN(louvre, [x, y0, ROOF], [x, y1, ROOF], [x, y1, z1 - F], [x, y0, z0 - F])
+      const nO: V3 = [dir, 0, 0], nT = unit([dir, 0, 1.2]), nD = unit([dir, 0, -1])
+      quadN(white, [x, y0, z0 - F], [x, y1, z1 - F], [x + o, y1, z1 - F + 0.25], [x + o, y0, z0 - F + 0.25], [nD, nD, nO, nO])
+      quadN(white, [x + o, y0, z0 - F + 0.25], [x + o, y1, z1 - F + 0.25], [x + o, y1, z1 - 0.3], [x + o, y0, z0 - 0.3], [nO, nO, nO, nO])
+      quadN(white, [x + o, y0, z0 - 0.3], [x + o, y1, z1 - 0.3], [x, y1, z1], [x, y0, z0], [nT, nT, nT, nT])
     }
   }
-  // Curved ends, panel, flush with the drum's panel faces below.
-  for (const end of [0, 1]) {
-    for (let k = 0; k < COLS; k++) {
-      const [c0, c1] = end === 0 ? [k, k + 1] : [k + 1, k]
-      const P = (c: number, h: number): V3 => [xs[c], span[c][end], h]
-      const n = (c: number): V3 => superPt(drum, thetaOf(drum, xs[c], span[c][end])).n.concat(0) as V3
-      const zt = (c: number) => z(xs[c], span[c][end])
-      quadN(panel, P(c0, DRUM), P(c1, DRUM), P(c1, zt(c1)), P(c0, zt(c0)), [n(c0), n(c1), n(c1), n(c0)])
+  // The vault's ends, on the drum, from the roof edge up to the vault eave.
+  for (const [lo, hi] of [[240, 300], [60, 120]]) {
+    const ds = ANG.filter(d => d >= lo && d <= hi)
+    for (let i = 0; i < ds.length - 1; i++) {
+      const A = at(ds[i]), B = at(ds[i + 1])
+      const zA = vz(A[1]), zB = vz(B[1])
+      const n0: V3 = [Math.cos((ds[i] * Math.PI) / 180), Math.sin((ds[i] * Math.PI) / 180), 0]
+      const n1: V3 = [Math.cos((ds[i + 1] * Math.PI) / 180), Math.sin((ds[i + 1] * Math.PI) / 180), 0]
+      quadN(louvre, [A[0], A[1], ROOF], [B[0], B[1], ROOF], [B[0], B[1], zB], [A[0], A[1], zA], [n0, n1, n1, n0])
     }
   }
 }
 
 // ---------------------------------------------------------------------------
-// Entrance atrium: a glass volume on the corner under a thin pale roof slab.
+// Lower parts: brick walls with storefront and upper window bands, a pale
+// parapet lip, white roofs. The Brevard wing's south end is the glass
+// entrance box under an overhanging white roof slab.
 
+const outsideDrum = (p: XY) => Math.hypot(p[0] - CX, p[1] - CY) > R + 0.8
+for (const blk of BLOCKS) {
+  const pts = ccw(blk.pts), m = pts.length
+  for (let i = 0; i < m; i++) {
+    const A = pts[i], B = pts[(i + 1) % m]
+    const M = lerp2(A, B, 0.5)
+    if (!outsideDrum(A) && !outsideDrum(B)) continue
+    const sn = unit([B[1] - A[1], A[0] - B[0], 0])
+    const outside: XY = [M[0] + sn[0] * 1.2, M[1] + sn[1] * 1.2]
+    const z0 = heightAt(outside)
+    if (z0 >= blk.h - 0.5) continue
+    const g = street(M)
+    if (blk.glassEnd && M[1] < -20) {
+      // Glass entrance: full-height light glazing between thin frames.
+      wall(A, B, z0, blk.h, brick, [{ lo: Math.max(z0, g) + 0.3, hi: blk.h - 1.6, mat: glass }], 99)
+      continue
+    }
+    const bands: Band[] = [{ lo: g + 1.5, hi: g + 6.5, mat: win }]
+    if (blk.h - g > 16) bands.push({ lo: blk.h - 8, hi: blk.h - 3, mat: win })
+    wall(A, B, z0, blk.h - 1, brick, bands)
+    lipEdge(A, B, blk.h)
+  }
+  // The wings' flat roofs are the panel grey, so the white arena roof
+  // stands out from them as it does from the street.
+  capPoly(panel, blk.pts, blk.h)
+}
+// The entrance box's roof slab: a white plate 1.6 m thick reaching 4 m out
+// over the glass on its Trade Street and Brevard sides.
 {
-  const m = ATRIUM.length
-  for (let i = 0; i < m; i++) {
-    const A = ATRIUM[i], B = ATRIUM[(i + 1) % m]
-    glass.quad([A[0], A[1], 0], [B[0], B[1], 0], [B[0], B[1], ATRIUM_TOP - 2.2], [A[0], A[1], ATRIUM_TOP - 2.2])
+  const SL = 1.6, H = BLOCKS[0].h, O = 4
+  // The south end of the wing: its outer arc, its Trade Street face, and
+  // back along the drum. Outer points move 4 m out from the drum's centre,
+  // the Trade Street corner 4 m south-east along that face's normal.
+  const outer: XY[] = [[-100.2, -20], [-98.8, -30.1], [-97.2, -37.5], [-94.0, -46.9]]
+  const radial = (p: XY): XY => { const d = Math.hypot(p[0] - CX, p[1] - CY); return [p[0] + ((p[0] - CX) / d) * O, p[1] + ((p[1] - CY) / d) * O] }
+  const sf = unit([-36.8 + 46.9, -(-74.5 + 94.0), 0]) // Trade Street face normal
+  const s0: XY = [-74.5, -36.8]
+  const slab: XY[] = [...outer.map(radial), [s0[0] + sf[0] * O, s0[1] + sf[1] * O], [-77.6, -29.5], [-79.5, -22]]
+  const base: XY[] = [...outer, s0, [-77.6, -29.5], [-79.5, -22]]
+  capPoly(white, slab, H + 0.3)
+  const r = ccw(slab), q = area(slab) < 0 ? [...base].reverse() : base, n = r.length
+  for (let i = 0; i < n; i++) {
+    const A = r[i], B = r[(i + 1) % n]
+    if (!outsideDrum(lerp2(A, B, 0.5)) || Math.hypot(A[0] - q[i][0], A[1] - q[i][1]) + Math.hypot(B[0] - q[(i + 1) % n][0], B[1] - q[(i + 1) % n][1]) < 0.1) continue
+    const sn = unit([B[1] - A[1], A[0] - B[0], 0])
+    quadN(white, [A[0], A[1], H + 0.3 - SL], [B[0], B[1], H + 0.3 - SL], [B[0], B[1], H + 0.3], [A[0], A[1], H + 0.3], [sn, sn, sn, sn])
+    // Soffit, facing down, between the glass line and the slab edge.
+    const a2 = q[i], b2 = q[(i + 1) % n]
+    quadN(white, [a2[0], a2[1], H + 0.3 - SL], [A[0], A[1], H + 0.3 - SL], [B[0], B[1], H + 0.3 - SL], [b2[0], b2[1], H + 0.3 - SL])
   }
-  // Roof slab, flush with the glass and bevelled on top.
-  const top = offset(ATRIUM, -0.5)
-  for (let i = 0; i < m; i++) {
-    const j = (i + 1) % m, A = ATRIUM[i], B = ATRIUM[j], a = top[i], b = top[j]
-    const sn = unit([B[1] - A[1], A[0] - B[0], 0]), st = unit([sn[0], sn[1], 1])
-    quadN(roof, [A[0], A[1], ATRIUM_TOP - 2.2], [B[0], B[1], ATRIUM_TOP - 2.2], [B[0], B[1], ATRIUM_TOP - 0.5], [A[0], A[1], ATRIUM_TOP - 0.5], [sn, sn, sn, sn])
-    quadN(roof, [A[0], A[1], ATRIUM_TOP - 0.5], [B[0], B[1], ATRIUM_TOP - 0.5], [b[0], b[1], ATRIUM_TOP], [a[0], a[1], ATRIUM_TOP], [st, st, st, st])
-  }
-  capPoly(roof, top, ATRIUM_TOP)
 }
 
-// The shared palette (STYLE.md). The red-brown brick is the
-// arena's identity, so it keeps its hue as a finish pulled up to the
-// palette's lightness; the silver panel faces and the arched roof they
-// rise into are a pale metal finish.
+// The tall tower: grey panel, a glass slot on its street faces.
+{
+  const pts = ccw(TOWER), m = pts.length
+  for (let i = 0; i < m; i++) {
+    const A = pts[i], B = pts[(i + 1) % m]
+    const M = lerp2(A, B, 0.5)
+    const sn = unit([B[1] - A[1], A[0] - B[0], 0])
+    const z0 = heightAt([M[0] + sn[0] * 1.2, M[1] + sn[1] * 1.2])
+    wall(A, B, z0, TOWER_H - 0.8, louvre, [])
+    lipEdge(A, B, TOWER_H, 0.4)
+  }
+  capPoly(white, TOWER, TOWER_H)
+}
+
+// ---------------------------------------------------------------------------
+// Materials (six). The red brick is the arena's identity, its hue kept and
+// pulled up to the palette's lightness; the panel faces are mid-grey metal,
+// as are the wings' flat roofs (white in NAIP, greyed so the arena's white
+// roof and roof edges read as its own mass); the louvre
+// band is the dark metal photographed under the roof edge, at the style's
+// charcoal floor. Slate windows; the light green-blue glass of the entrance
+// box, the curtain and the slots is a lighter window variant, lit at night.
 const parts = [
-  { part: brick, material: finish('spectrum-brick', 0xc98b7d) },
-  { part: panel, material: finish('spectrum-panel', 0xc9ced2, 0.6) },
-  { part: dark, material: PALETTE.window },
-  { part: glass, material: PALETTE.glass },
-  { part: roof, material: PALETTE.roof },
+  { part: brick, material: finish('spectrum-brick', 0xbd7d69) },
+  { part: panel, material: finish('spectrum-panel', 0xa6abb1) },
+  { part: white, material: finish('spectrum-roof', 0xeceeee) },
+  { part: louvre, material: finish('spectrum-louvre', 0x5a6068) },
+  { part: win, material: PALETTE.window },
+  { part: glass, material: windowVariant(2, 0xa3c1c4) },
 ]
 const triangles = parts.reduce((s, { part }) => s + part.triangles, 0)
+for (const { part, material } of parts) console.log(material.name.padEnd(18), part.triangles)
 if (triangles > 6500) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('Spectrum Center', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at the ground anchor',
-  bearing: 45, osm: 'way/773909122', footprint: [208, 164], height: 43.8,
+  bearing: 45, osm: 'way/773909122', footprint: [208, 165], height: 44,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
 const out = new URL('../models/spectrum-center.glb', import.meta.url).pathname

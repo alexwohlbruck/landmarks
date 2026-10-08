@@ -9,40 +9,54 @@
  * street grid's axis and the outline's short edges: the model's +x runs
  * south-east from North Tryon Street toward College Street, +y north-east
  * toward East 7th Street. So the church's front faces Tryon on the model's
- * west face, set back about 15 m behind the forecourt. The anchor is the
- * metre-based area centroid of way/131139724, the one OSM outline (17 m)
- * that covers the sanctuary and the wing.
+ * west face. The anchor is the metre-based area centroid of way/131139724,
+ * the one OSM outline that covers the sanctuary and the wing.
  *
- * The dome is the landmark: a round drum ringed with arched windows under a
- * low green copper dome and a small lantern, over the crossing of the nave
- * and transept roofs. The front is three bays: a pedimented centre with the
- * great recessed arch (entrance below, the big arched window above) between
- * two corner pavilions, each crowned with a small green dome. The walls are
- * buff brick with pale stone belt courses and cornice; the sides carry tall
- * round-arched windows and a pedimented transept gable with a big arched
- * window. The education wing behind is a plainer buff block with rows of
- * windows and a hipped roof.
+ * Identity, in order: the pale verdigris dome on a brick drum ringed with
+ * arched windows, with its lantern; the three-part Tryon front, a
+ * pedimented centre with the great arched rose window over a balustrade
+ * and two arched doors, between corner pavilions each under a small dome;
+ * the walls of rose-brown brick with cream stone trim, the ground storey
+ * banded in cream stone; tall arched windows on the transept gables. The
+ * education wing behind is a plainer brick block under a red hipped roof.
  *
- * Dimensions: the plan is OSM's (sanctuary 32 × 21.8 m, wing to the rear);
- * the dome's 11.2 m diameter and its place on the axis 18 m behind the front
- * are measured on USGS NAIP. Heights are scaled from the photos against
- * OSM's 17 m: cornice 13.5 m (the corner pavilions 11.4 m), pediments
- * 17.5 m, dome crown 25.8 m, lantern 29.4 m. The ground falls about 1 m from Tryon to the wing's far end (AWS
- * terrain tiles), so y = 0 is the low end and the front starts at its own
- * ground level.
+ * Dimensions:
+ * - Plan: OSM way/131139724, except the sanctuary's north wall. The 2016
+ *   lidar (USGS 3DEP NC Phase 4, Mecklenburg) puts it at y = 12.6, not
+ *   OSM's 10.0, and centres the dome and the front's gable on y = 0.6; the
+ *   south wall (-11.4) and the Tryon front (-30.5) agree with OSM. So the
+ *   sanctuary is drawn 24 m wide, symmetric about its real axis, and stands
+ *   2.6 m past OSM's north edge over open ground.
+ * - Heights, lidar (above the lowest ground): dome drum cornice 21, dome
+ *   crown 24.2, lantern 27; front pediment apex 18.3 and nave ridge 18;
+ *   transept ridge 18; side walls 12.8; wing 13.5 with its hip to 16.5.
+ * - Read off the photos, scaled by the 24 m front: pavilions 7.2 m wide and
+ *   centre bay 9.6 m (recessed 1 m, as the lidar shows); banded ground
+ *   storey to 7 m; pavilion and side cornice 12.8 m, centre cornice 15.4 m; rose
+ *   window radius 3.3 m springing at 10.2 m; small domes 2.5 m in radius
+ *   rising to 14.9 m.
+ * - Colours: the brick is rose-brown, not buff (the old postcard is
+ *   hand-tinted; the photos and the 2025 restoration show brown brick and
+ *   cream stone); the domes pale verdigris and the wing's hipped roof red,
+ *   as in USGS NAIP.
+ * The ground falls about 1 m from Tryon to the wing's far end, so y = 0 is
+ * the low end and the front starts at its own ground level.
  *
- * References (visual only): "First Baptist Church, Charlotte, N.C."
- * (linen postcard, UNC Libraries Commons, Flickr 22680692338, public domain);
- * Dclemens1971, "Former First Baptist Church", "Main Library and former First
- * Baptist Church 01" and "02" (Commons, CC BY 4.0; the 2025 restoration, under
- * scaffolding); Mapillary (JordanAnderson 2022, CC BY-SA 4.0, the south side);
- * USGS NAIP orthoimagery (public domain).
+ * Photos: "Mcglohon.jpg" (Rschoneman, en.wikipedia, public domain; the
+ * Tryon front, about 2005); Dclemens1971, "Former First Baptist Church",
+ * "Main Library and former First Baptist Church 01" and "02" (Commons, CC BY
+ * 4.0; the 2025 restoration, under scaffolding); Mapillary image
+ * 3391392104465461 (2022, CC BY-SA 4.0, the south side from Tryon);
+ * "First Baptist Church, Charlotte, N.C." (linen postcard, UNC Libraries
+ * Commons, public domain; form only, its colours are tinted); USGS NAIP
+ * (public domain). Not seen in any licensed photo: the wing's College
+ * Street end and its windows, drawn as plain rows.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 
-const buff = new Part(), trim = new Part(), copper = new Part()
-const roof = new Part(), win = new Part(), door = new Part()
+const brick = new Part(), trim = new Part(), copper = new Part()
+const roof = new Part(), win = new Part(), tile = new Part()
 
 type XY = [number, number]
 const unit = (v: V3): V3 => { const l = Math.hypot(...v) || 1; return [v[0] / l, v[1] / l, v[2] / l] }
@@ -186,56 +200,62 @@ function dome(p: Part, c: XY, z0: number, R: number, rise: number, seg = 16, rin
 // Dimensions.
 
 const g = (x: number) => Math.max(0, 0.95 * (29.5 - x) / 60)
-const XF = -30.6, XR = 1.6          // the sanctuary's front (Tryon) and back
-const YS = -11.8, YN = 10.0         // its south and north sides
+const XF = -30.5, XR = 1.6          // the sanctuary's front (the pavilions' faces) and back
+const XC = XF + 1.0                 // the recessed centre bay's face
+const YS = -11.4, YN = 12.6         // its south and north sides (lidar)
 const YC = (YS + YN) / 2            // the axis
 const GF = g(XF)                    // ground at the front
-const Z_COR = 13.5                  // cornice
-const Z_PAV = 11.4                  // the corner pavilions' cornice
-const Z_PED = 17.5                  // pediment apex
-const P = 5.6                       // corner pavilions' depth and width
+const P = 7.2                       // corner pavilions' width (and depth)
 const CY0 = YS + P, CY1 = YN - P    // the centre bay
-const TX0 = -17.5, TX1 = -8.5       // the transept
+const Z_BAND = GF + 7.0             // top of the banded ground storey
+const Z_SIDE = 12.8                 // side walls' cornice
+const Z_PAV = Z_SIDE                // the corner pavilions' cornice
+const Z_COR = 15.4                  // centre bay and transept cornice
+const Z_PED = 18.3                  // pediment apex
+const TX0 = -18.0, TX1 = -8.0       // the transept
 const DC: XY = [-13.0, YC]          // the dome's centre, on the crossing
-const R_DRUM = 5.6, Z_DRUM0 = Z_COR, Z_DRUM1 = 21.6, Z_DOME = 25.8
+const R_DRUM = 5.5, Z_DRUM1 = 21.0, Z_DOME = 24.2
+
+/** A pale band all round a ring, just proud of its walls. */
+function band(ring: XY[], z0: number, z1: number, o = 0.08, b = 0.06) {
+  prism(trim, offset(ccw(ring), o), z0, z1, b, null)
+}
 
 // ---------------------------------------------------------------------------
-// The sanctuary.
+// The sanctuary: low side bays and pavilions, a taller centre bay and
+// transept with gables, the drum and dome over the crossing.
 
-// The body: the centre bay and everything behind the pavilions rise to the
-// main cornice; the two corner pavilions stop lower, under their domes.
-const BODY: XY[] = [[XF + P, YS], [XR, YS], [XR, YN], [XF + P, YN], [XF + P, CY1], [XF, CY1], [XF, CY0], [XF + P, CY0]]
-prism(buff, BODY, 0, Z_COR, 0, null)
-for (const [y0, y1] of [[YS, CY0], [CY1, YN]]) {
-  const r = ccw(rect(XF, XF + P, y0, y1))
-  prism(buff, r, 0, Z_PAV, 0, null)
-  prism(trim, offset(r, 0.25), Z_PAV - 0.6, Z_PAV + 0.25, 0.2, null)
-  cap(roof, offset(r, 0.1), Z_PAV + 0.2)
-}
-// Flat roofs over the aisles and pavilions, behind the cornice.
-cap(roof, offset(ccw(BODY), 0.1), Z_COR + 0.2)
-// Cornice and belt course in pale stone, a little proud, with soft edges.
-prism(trim, offset(ccw(BODY), 0.25), Z_COR - 0.6, Z_COR + 0.25, 0.2, null)
-prism(trim, offset(ccw(rect(XF, XR, YS, YN)), 0.12), GF + 5.6, GF + 6.1, 0.1, null)
-// Nave roof along the axis over the centre bay, transept roof across it.
-gableRoof(roof, XF, XR, CY0, CY1, Z_COR, Z_PED, 'x')
-gableRoof(roof, TX0, TX1, YS, YN, Z_COR, Z_PED, 'y')
+const BODY: XY[] = [[XF, YS], [XR, YS], [XR, YN], [XF, YN], [XF, CY1], [TX0, CY1], [TX0, CY0], [XF, CY0]]
+prism(brick, BODY, 0, Z_SIDE, 0, null)
+cap(roof, offset(ccw(BODY), 0.1), Z_SIDE + 0.25)
+prism(trim, offset(ccw(BODY), 0.3), Z_SIDE - 0.7, Z_SIDE + 0.3, 0.25, null)
+// The corner pavilions are the front ends of the side ranges.
+const PAVS: [number, number][] = [[YS, CY0], [CY1, YN]]
+// The centre bay, recessed 1 m between them, and the nave behind it to the
+// crossing, at the main cornice; the transept across at the same height.
+const CBAY = ccw(rect(XC, TX0, CY0, CY1))
+prism(brick, CBAY, 0, Z_COR, 0, null)
+prism(trim, [[XC - 0.35, CY0 - 0.15], [TX0, CY0 - 0.15], [TX0, CY1 + 0.15], [XC - 0.35, CY1 + 0.15]], Z_COR - 0.9, Z_COR + 0.3, 0.25, null)
+const TRANS = ccw(rect(TX0, TX1, YS, YN))
+prism(brick, TRANS, Z_SIDE, Z_COR, 0, null)
+prism(trim, offset(TRANS, 0.3), Z_COR - 0.9, Z_COR + 0.3, 0.25, null)
+// Gable roofs: the nave along x from the front to the back, the transept along y.
+gableRoof(roof, XC, XR, CY0, CY1, Z_COR, Z_PED, 'x')
+gableRoof(roof, TX0, TX1, YS, YN, Z_COR, Z_PED - 0.3, 'y')
 {
-  // Pediments: the front and back of the nave, both ends of the transept,
-  // each with a pale raking cornice.
-  const peds: [XY, XY, number, number][] = [
-    [[XF, CY1], [XF, CY0], 0, CY1 - CY0],
-    [[XR, CY0], [XR, CY1], 0, CY1 - CY0],
-    [[TX0, YS], [TX1, YS], 0, TX1 - TX0],
-    [[TX1, YN], [TX0, YN], 0, TX1 - TX0],
+  // Pediments: the front, both transept ends, with pale raking cornices; a plain brick gable at the back.
+  const peds: [XY, XY, number][] = [
+    [[XC, CY1], [XC, CY0], Z_PED],
+    [[TX0, YS], [TX1, YS], Z_PED - 0.3],
+    [[TX1, YN], [TX0, YN], Z_PED - 0.3],
+    [[XR, CY0], [XR, CY1], Z_PED],
   ]
-  for (const [A, B, s0, s1] of peds) {
-    const f = face(A, B)
-    f.gable(buff, s0, s1, Z_COR + 0.25, Z_PED)
-    // Raking cornices as thin pale bands just proud.
-    const k = (Z_PED - Z_COR - 0.25) / ((s1 - s0) / 2), h = 0.45
-    poly(trim, [[0, Z_COR + 0.25], [(s0 + s1) / 2, Z_PED], [(s0 + s1) / 2, Z_PED + h], [-0.3, Z_COR + 0.25 + h - 0.3 * k]].map(([s, z]) => fpt(A, B, s, z, 0.1)), edgeN(A, B))
-    poly(trim, [[s1, Z_COR + 0.25], [s1 + 0.3, Z_COR + 0.25 + h - 0.3 * k], [(s0 + s1) / 2, Z_PED + h], [(s0 + s1) / 2, Z_PED]].map(([s, z]) => fpt(A, B, s, z, 0.1)), edgeN(A, B))
+  for (const [A, B, zp] of peds) {
+    const f = face(A, B), L = f.L, z0 = Z_COR + 0.3
+    f.gable(brick, 0, L, z0, zp)
+    const k = (zp - z0) / (L / 2), h = 0.55
+    poly(trim, [[0, z0], [L / 2, zp], [L / 2, zp + h], [-0.35, z0 + h - 0.35 * k]].map(([s, z]) => fpt(A, B, s, z, 0.12)), edgeN(A, B))
+    poly(trim, [[L, z0], [L + 0.35, z0 + h - 0.35 * k], [L / 2, zp + h], [L / 2, zp]].map(([s, z]) => fpt(A, B, s, z, 0.12)), edgeN(A, B))
   }
 }
 function fpt(A: XY, B: XY, s: number, z: number, o: number): V3 {
@@ -243,106 +263,151 @@ function fpt(A: XY, B: XY, s: number, z: number, o: number): V3 {
   return [A[0] + u[0] * s + n[0] * o, A[1] + u[1] * s + n[1] * o, z]
 }
 
+// The banded ground storey, drawn as three broad cream courses (the stone
+// base, one mid course and the belt course) so it reads at phone size
+// rather than shimmering as the real dozen thin bands would.
+{
+  const z = GF + 3.2
+  band(BODY, z, z + 0.7, 0.05, 0.05)
+  band(CBAY, z, z + 0.7, 0.05, 0.05)
+}
+band(BODY, Z_BAND - 0.6, Z_BAND, 0.18, 0.12)
+band(CBAY, Z_BAND - 0.6, Z_BAND, 0.18, 0.12)
+band(BODY, 0, GF + 0.9, 0.1, 0.08) // the stone base
+band(CBAY, 0, GF + 0.6, 0.1, 0.08)
+
 // The drum, ringed with arched windows, its cornice, the dome and the lantern.
 {
   const N = 16
-  prism(buff, circle(DC, R_DRUM, N, Math.PI / N), Z_DRUM0, Z_DRUM1 - 0.5, 0, null, true)
-  prism(trim, circle(DC, R_DRUM + 0.3, N, Math.PI / N), Z_DRUM1 - 0.6, Z_DRUM1, 0.2, null, true)
-  dome(copper, DC, Z_DRUM1, R_DRUM + 0.1, Z_DOME - Z_DRUM1, 16, 5, Math.PI / N)
-  // A window on every other facet.
+  prism(brick, circle(DC, R_DRUM, N, Math.PI / N), Z_COR, Z_DRUM1 - 0.6, 0, null, true)
+  prism(trim, circle(DC, R_DRUM + 0.35, N, Math.PI / N), Z_DRUM1 - 0.8, Z_DRUM1, 0.25, null, true)
+  dome(copper, DC, Z_DRUM1, R_DRUM + 0.15, Z_DOME - Z_DRUM1, 16, 5, Math.PI / N)
   const ring = circle(DC, R_DRUM, N, Math.PI / N)
   for (let i = 0; i < N; i += 2) {
     const f = face(ring[i], ring[(i + 1) % N])
-    f.arch(win, f.L / 2, 1.3, 18.0, 20.0)
+    f.arch(trim, f.L / 2, 1.75, 17.4, 19.2, 0.03)
+    f.arch(win, f.L / 2, 1.25, 17.6, 19.2, 0.07)
   }
-  prism(trim, circle(DC, 1.0, 12), Z_DOME - 0.4, Z_DOME + 2.4, 0.15, null, true)
-  dome(copper, DC, Z_DOME + 2.4, 1.25, 0.9, 12, 3)
-  prism(trim, circle(DC, 0.12, 6), Z_DOME + 3.2, Z_DOME + 3.6, 0, trim)
+  // The lantern: a cream drum, a little dome and a finial.
+  prism(trim, circle(DC, 1.1, 12), Z_DOME - 0.4, Z_DOME + 1.8, 0.15, null, true)
+  for (let i = 0; i < 12; i += 3) {
+    const r = circle(DC, 1.1, 12), f = face(r[i], r[(i + 1) % 12])
+    f.arch(win, f.L / 2, 0.45, Z_DOME + 0.3, Z_DOME + 1.2, 0.03)
+  }
+  dome(copper, DC, Z_DOME + 1.8, 1.3, 0.8, 12, 3)
+  prism(trim, circle(DC, 0.14, 6), Z_DOME + 2.5, Z_DOME + 2.8, 0, trim)
 }
 
-// The corner pavilions' small domes on square bases.
-for (const yc of [YS + P / 2, YN - P / 2]) {
-  const c: XY = [XF + P / 2, yc]
-  prism(buff, rect(c[0] - 2.0, c[0] + 2.0, yc - 2.0, yc + 2.0), Z_PAV, Z_PAV + 1.0, 0.15, null)
-  prism(trim, rect(c[0] - 2.2, c[0] + 2.2, yc - 2.2, yc + 2.2), Z_PAV + 0.9, Z_PAV + 1.3, 0.12, null)
-  dome(copper, c, Z_PAV + 1.3, 2.0, 1.9, 12, 4)
+// The corner pavilions' small domes on low square bases.
+for (const [y0, y1] of PAVS) {
+  const c: XY = [XF + P / 2, (y0 + y1) / 2]
+  prism(brick, rect(c[0] - 2.6, c[0] + 2.6, c[1] - 2.6, c[1] + 2.6), Z_PAV, Z_PAV + 0.5, 0.15, null)
+  dome(copper, c, Z_PAV + 0.5, 2.55, 1.9, 12, 4)
 }
 
-// The front, facing Tryon: the great arch in the centre bay, the pavilions' windows.
+// The Tryon front.
 {
-  const f = face([XF, YN], [XF, YS])           // s runs from the north corner
-  const sc = YN - YC, w = 8.0
-  f.arch(trim, sc, w + 1.1, GF + 5.6, GF + 7.9, 0.02) // its pale archivolt
-  f.arch(win, sc, w, GF + 6.3, GF + 7.9, 0.05)       // the big arched window
-  f.rect(door, sc - 3.0, sc + 3.0, GF, GF + 5.4) // the entrance under it
-  for (const d of [-1.1, 1.1]) f.rect(trim, sc + d - 0.3, sc + d + 0.3, GF, GF + 5.4, 0.08) // its two columns
-  for (const pc of [P / 2, f.L - P / 2]) {
-    for (const d of [-1.3, 0, 1.3]) f.arch(win, pc + d, 0.9, GF + 6.9, GF + 8.9)
-    f.rect(win, pc - 0.9, pc + 0.9, GF + 1.6, GF + 4.6)
+  // The centre bay: two arched doors in cream frames, a column between,
+  // the balustrade, the great arch with its rose window.
+  const f = face([XC, CY1], [XC, CY0]), sc = f.L / 2
+  for (const d of [-2.15, 2.15]) {
+    f.arch(trim, sc + d, 2.5, GF + 0.6, GF + 4.0, 0.03)
+    f.arch(win, sc + d, 1.8, GF + 0.6, GF + 4.0, 0.07)
+  }
+  f.rect(trim, sc - 0.35, sc + 0.35, GF + 0.6, Z_BAND - 0.6, 0.12)
+  f.rect(trim, 0.3, f.L - 0.3, GF + 8.1, GF + 8.9, 0.14)       // the balustrade
+  f.arch(trim, sc, 2 * 4.0, GF + 8.9, 10.2, 0.03)               // the archivolt
+  f.arch(win, sc, 2 * 3.3, GF + 8.9, 10.2, 0.07)                // the rose window
+  for (const k of [-1, 1]) f.rect(trim, sc + k * 1.1 - 0.12, sc + k * 1.1 + 0.12, GF + 8.9, 10.2 + Math.sqrt(3.3 * 3.3 - 1.21) - 0.1, 0.1)
+  f.rect(trim, sc - 3.3, sc + 3.3, 10.05, 10.35, 0.1)            // its transom
+  // A frieze band under the main cornice.
+  f.rect(trim, 0, f.L, Z_COR - 1.6, Z_COR - 1.2, 0.05)
+  // The pavilions' fronts: three arched windows above, one below.
+  const pf = face([XF, YN], [XF, YS])
+  for (const pc of [P / 2, pf.L - P / 2]) {
+    for (const d of [-1.7, 0, 1.7]) {
+      pf.arch(trim, pc + d, 1.45, GF + 8.3, GF + 9.9, 0.03)
+      pf.arch(win, pc + d, 1.05, GF + 8.4, GF + 9.9, 0.07)
+    }
+    pf.rect(trim, pc - 2.6, pc + 2.6, GF + 7.9, GF + 8.3, 0.1)
+    pf.rect(trim, pc - 1.0, pc + 1.0, GF + 2.3, GF + 5.3, 0.06)
+    pf.rect(win, pc - 0.7, pc + 0.7, GF + 2.5, GF + 5.1, 0.1)
   }
 }
-// The sides: pavilion bay, two nave bays, the transept's great arch, two rear bays.
+
+// The sides: the pavilion bay, a nave bay, the transept's great window and
+// paired windows, and the rear bays — all three-arched above, one below.
 for (const [A, B] of [[[XF, YS], [XR, YS]], [[XR, YN], [XF, YN]]] as [XY, XY][]) {
   const f = face(A, B), south = A[1] === YS
   const s = (x: number) => (south ? x - XF : XR - x)
-  const gr = (x: number) => g(x)
-  for (const d of [-1.3, 0, 1.3]) f.arch(win, s(XF + P / 2) + d, 0.9, gr(XF) + 6.9, gr(XF) + 8.9)
-  for (const x of [-22.6, -19.6, -5.9, -2.0]) {
-    f.arch(win, s(x), 1.6, gr(x) + 6.8, gr(x) + 10.4)
-    f.rect(win, s(x) - 0.7, s(x) + 0.7, gr(x) + 1.6, gr(x) + 4.6)
+  const pc = XF + P / 2
+  for (const d of [-1.7, 0, 1.7]) {
+    f.arch(trim, s(pc) + d, 1.45, g(pc) + 8.3, g(pc) + 9.9, 0.03)
+    f.arch(win, s(pc) + d, 1.05, g(pc) + 8.4, g(pc) + 9.9, 0.07)
+  }
+  for (const x of [-21.3, -4.6, -0.6]) {
+    f.arch(trim, s(x), 2.0, g(x) + 7.7, g(x) + 10.6, 0.03)
+    f.arch(win, s(x), 1.5, g(x) + 7.8, g(x) + 10.6, 0.07)
+    f.rect(win, s(x) - 0.65, s(x) + 0.65, g(x) + 2.4, g(x) + 5.1, 0.1)
   }
   const xt = (TX0 + TX1) / 2
-  f.arch(trim, s(xt), 6.3, gr(xt) + 6.1, gr(xt) + 9.9, 0.02)
-  f.arch(win, s(xt), 5.4, gr(xt) + 6.6, gr(xt) + 9.9, 0.05)
-  for (const d of [-1.8, 0, 1.8]) f.rect(win, s(xt) + d - 0.6, s(xt) + d + 0.6, gr(xt) + 1.6, gr(xt) + 4.6)
+  f.arch(trim, s(xt), 4.4, g(xt) + 7.3, g(xt) + 11.6, 0.03)
+  f.arch(win, s(xt), 3.6, g(xt) + 7.4, g(xt) + 11.6, 0.07)
+  for (const d of [-2.4, 2.4]) {
+    f.arch(trim, s(xt) + d, 1.7, g(xt) + 1.6, g(xt) + 4.6, 0.03)
+    f.arch(win, s(xt) + d, 1.2, g(xt) + 1.7, g(xt) + 4.6, 0.07)
+  }
 }
 
 // ---------------------------------------------------------------------------
-// The education wing behind: a plainer buff block with a hipped roof.
+// The education wing behind: a plainer brick block, a cream cornice, a red
+// hipped roof over its middle (NAIP).
 
 {
   const WING: XY[] = [[XR, YS], [23.0, YS], [23.0, -8.5], [29.4, -8.5], [29.5, 12.9], [XR, 12.9]]
-  const ZW = 13.0
-  prism(buff, WING, 0, ZW, 0.3, roof)
-  // The hipped roof over its middle (NAIP shows it red; drawn in roof grey).
-  const x0 = 6.0, x1 = 22.0, y0 = -5.5, y1 = 11.0, zr = ZW + 3.4, inset = 4.5
-  const r0: V3[] = [[x0, y0, ZW], [x1, y0, ZW], [x1, y1, ZW], [x0, y1, ZW]]
+  const ZW = 13.5
+  prism(brick, WING, 0, ZW, 0, null)
+  prism(trim, offset(ccw(WING), 0.25), ZW - 0.6, ZW + 0.2, 0.2, null)
+  cap(roof, offset(ccw(WING), 0.05), ZW + 0.15)
+  band(WING, 0, g(15) + 0.9, 0.08, 0.06)
+  const x0 = 6.0, x1 = 22.0, y0 = -5.5, y1 = 11.0, zb = ZW + 0.15, zr = 16.5, inset = 3.6
+  const r0: V3[] = [[x0, y0, zb], [x1, y0, zb], [x1, y1, zb], [x0, y1, zb]]
   const r1: V3[] = [[x0 + inset, y0 + inset, zr], [x1 - inset, y0 + inset, zr], [x1 - inset, y1 - inset, zr], [x0 + inset, y1 - inset, zr]]
-  for (let i = 0; i < 4; i++) { const j = (i + 1) % 4; poly(roof, [r0[i], r0[j], r1[j], r1[i]], cross3(sub3(r0[j], r0[i]), sub3(r1[i], r0[i]))) }
-  poly(roof, r1, [0, 0, 1])
-  // Rows of windows, a panel per bay.
-  const rows = [[1.8, 4.0], [5.6, 7.8], [9.4, 11.6]]
+  for (let i = 0; i < 4; i++) { const j = (i + 1) % 4; poly(tile, [r0[i], r0[j], r1[j], r1[i]], cross3(sub3(r0[j], r0[i]), sub3(r1[i], r0[i]))) }
+  poly(tile, r1, [0, 0, 1])
+  // Its windows: a panel per bay for each of the three storeys.
+  const rows = [[1.8, 4.2], [5.6, 8.0], [9.4, 11.8]]
   const sides: [XY, XY][] = [[[XR, YS], [23.0, YS]], [[23.0, -8.5], [29.4, -8.5]], [[29.4, -8.5], [29.5, 12.9]], [[29.5, 12.9], [XR, 12.9]]]
   for (const [A, B] of sides) {
-    const f = face(A, B), n = Math.max(1, Math.floor((f.L - 1.2) / 3.4))
-    const pitch = (f.L - 1.2) / n
+    const f = face(A, B), n = Math.max(1, Math.floor((f.L - 1.2) / 3.4)), pitch = (f.L - 1.2) / n
     for (let k = 0; k < n; k++) {
       const sc = 0.6 + pitch * (k + 0.5), xm = A[0] + (B[0] - A[0]) * sc / f.L
-      // Leave the bay nearest the sanctuary blank on the street sides: its corner stair.
       if ((A[0] === XR || B[0] === XR) && Math.abs(xm - XR) < 3) continue
-      for (const [z0, z1] of rows) f.rect(win, sc - 0.9, sc + 0.9, g(xm) + z0, g(xm) + z1)
+      for (const [z0, z1] of rows) f.rect(win, sc - 0.85, sc + 0.85, g(xm) + z0, g(xm) + z1, 0.06)
     }
   }
 }
 
 // ---------------------------------------------------------------------------
 
-// Colours from the photos: buff brick pulled light; pale stone trim; the
-// green copper domes; grey roofs; slate windows; the lit entrance.
+// Colours from the photos: the rose-brown brick pulled light; cream stone
+// trim; pale verdigris domes (NAIP); grey flat and slate roofs; the wing's
+// red hipped roof; slate windows (the doors' and rose window's glazing
+// included, so the front glows at night).
 const parts = [
-  { part: buff, material: finish('buff-brick', 0xe6d5b4) },
+  { part: brick, material: finish('fbc-brick', 0xb0907f) },
   { part: trim, material: PALETTE.trim },
-  { part: copper, material: PALETTE.copper },
+  { part: copper, material: finish('pale-verdigris', 0xa8c5bb) },
   { part: roof, material: PALETTE.roof },
   { part: win, material: PALETTE.window },
-  { part: door, material: PALETTE.entrance },
+  { part: tile, material: PALETTE.terracotta },
 ]
 const triangles = parts.reduce((s, { part }) => s + part.triangles, 0)
 console.log(parts.map(({ part, material }) => `${material.name}: ${part.triangles}`).join(', '))
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('McGlohon Theater at Spirit Square', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at the ground anchor',
-  bearing: 48.7, osm: 'way/131139724', height: Z_DOME + 3.6,
+  bearing: 48.7, osm: 'way/131139724', height: Z_DOME + 2.8,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
 const outFile = new URL('../models/mcglohon-theater-spirit-square.glb', import.meta.url).pathname

@@ -3,35 +3,60 @@
  * bun generators/music-factory-mill.ts
  *
  * The Music Factory is the John B. Ross and Company Mill (1904–c.1960), later
- * the Southern Asbestos Manufacturing Company plant, at the corner of Hamilton
- * Street and Seaboard Street (now NC Music Factory Boulevard). It is two
- * red-brick mills set in an inverted V round a courtyard that opens south
- * onto the boulevard, joined at the courtyard's north end by a bridge
- * section (Charlotte-Mecklenburg Historic Landmarks Commission survey).
+ * the Southern Asbestos Manufacturing Company plant, at Hamilton Street and NC
+ * Music Factory Boulevard. It is two red-brick mills set in an inverted V
+ * round a courtyard that opens south onto the boulevard, joined at the
+ * courtyard's north end by a bridge section (Charlotte-Mecklenburg Historic
+ * Landmarks Commission survey).
  *
  * - Mill #2, the west arm along Hamilton Street, holds The Fillmore Charlotte
  *   and The Underground: `fillmore-charlotte.ts`.
- * - This model is Mill #1, the east arm, with the bridge between them. Its
- *   1904 core is one storey on the courtyard with a low gable roof and a
- *   deep eave, segmental-arched windows in a long row; 1920s–1950s additions
- *   wrap it in two-storey flat-roofed brick, with the c.1955 dust-collector
- *   room and its two metal dust towers in the middle of the east side. The
- *   bridge carries a tall silver metal-clad tower (the AvidXchange sign
- *   tower) and, on its courtyard face, the courtyard stage under a canopy.
+ * - This model is Mill #1, the east arm, with its east wing and the bridge.
+ *   The 1904 mill along the courtyard is one tall storey there, with a long
+ *   row of tall segmental-arched windows between brick piers, and two
+ *   storeys on the east where the ground falls away; 1920s–1950s additions
+ *   wrap it in flat-roofed brick, with the c.1955 dust-collector room and its
+ *   brick tower on the east side. The bridge carries a taller block
+ *   clad in pale metal and, on its courtyard face, the courtyard stage under
+ *   a dark canopy.
  * - The amphitheatre north of the mill is `music-factory-amphitheatre.ts`.
  *
- * OSM: way/957549179 is Mill #1 (tagged there, wrongly, with The Fillmore's
- * name and address); way/414800516 is an older outline over both mills and
- * the bridge, which `fillmore-charlotte` lists, so the two models must be
- * shown together; way/1202433658 is the courtyard stage canopy. None has a
- * height. Heights come from the survey's storey counts, Mapillary street
- * panoramas and the 2009 and 2018 Commons photos, with the ground from the
- * terrarium DEM (the site falls ~7 m from the boulevard to the north end).
+ * Evidence:
+ *  - Lidar (USGS 3DEP NC Phase 4 Mecklenburg 2016, 1 m DSM and ground
+ *    returns) for every roof height and the ground: the 1904 block's very low
+ *    gable (eaves 221.5 m, ridge 222.3 m NAVD88), the 1920s south block and
+ *    the east wing at ~222.9 m, the south projection at ~219.6 m, the east
+ *    annex at ~218.6 m and the east wing's lower north strip at ~218.2 m; the
+ *    dust tower at 227.4 m with its top at ~230.8 m; the bridge's metal-clad
+ *    block at ~228 m, its west part at ~225 m and the box on it at ~230 m; the
+ *    courtyard stage canopy at ~224.8 m. Ground: courtyard ~217 m, the
+ *    boulevard side 216–217 m, the north end and east side ~214 m.
+ *  - NAIP (USGS, public domain): the plan, dark membrane roofs on the 1904
+ *    and south blocks, a white roof on the east wing, rows of rooftop plant.
+ *  - Photos (Wikimedia Commons): Southern_Asbestos_Company_Mills.jpg (James
+ *    Willamor, CC BY-SA 3.0, 2007 aerial from the north-east);
+ *    Greenville,_Charlotte,_NC,_USA_-_panoramio.jpg (James Willamor, CC BY-SA
+ *    3.0, 2009, from the seats: Mill #2's coped parapets and windows, the
+ *    same brick and trim). The 2007 aerial shows Mill #1 from the east-north-
+ *    east: the 1904 block's east face with two rows of square windows and a
+ *    long metal canopy, the brick dust tower with plant on it, the east
+ *    wing's pilasters and white roof, the bridge's metal-clad boxes. Mapillary street panoramas of 2022 on the boulevard (the
+ *    south front behind trees, the courtyard stage and the bridge's metal
+ *    block above it).
+ *  - OSM: way/957549179 is Mill #1 (tagged there, wrongly, with The
+ *    Fillmore's name: The Fillmore's door is on Mill #2's Hamilton Street
+ *    side, in the Mapillary panoramas and HangingCurve's FillmoreCharlotte
+ *    .jpg); way/414800516 is an older outline over both mills and the bridge,
+ *    which `fillmore-charlotte` lists, so the two models are shown together;
+ *    way/1202433658 is the courtyard stage canopy.
+ *
+ * Estimated: window counts and sizes (survey bay counts, the 2009 photo),
+ * which openings are bricked up, the stage canopy's depth.
  *
  * This file also holds the small massing kit the three Music Factory
- * generators share (site frame, DEM, zoned prisms with eaves or coped brick
- * parapets, bays of arched or framed windows between brick piers). Its own model is built only when it is
- * run directly.
+ * generators share (site frame, lidar ground, zoned prisms with coped brick
+ * parapets, bays of arched or framed windows between brick piers). Its own
+ * model is built only when it is run directly.
  *
  * Map frame: x east, y north, z up, metres; bearing 0. Everything is drawn in
  * a site frame round lng −80.8450, lat 35.2390 at absolute elevation, then
@@ -48,32 +73,58 @@ export const ORIGIN = { lng: -80.845, lat: 35.239 }
 const KX = 111320 * Math.cos((ORIGIN.lat * Math.PI) / 180), KY = 110574
 export const toLngLat = (p: XY) => [+(ORIGIN.lng + p[0] / KX).toFixed(7), +(ORIGIN.lat + p[1] / KY).toFixed(7)]
 
-/** Terrarium z15 DEM, 10 m grid: x −110…70, y 170 (first row) … −30. */
-const DEM = `212.4 211.7 211.6 210.8 210.8 210.1 209.2 209.0 208.9 209.0 209.2 209.3 209.2 209.7 210.1 210.2 210.4 210.0 209.6
-212.8 212.4 211.6 211.3 211.2 210.8 209.5 208.9 209.2 209.4 209.4 209.2 209.4 210.3 210.5 210.8 210.7 210.5 210.3
-212.0 211.8 211.7 211.8 211.5 211.3 210.3 209.9 209.6 209.6 209.6 209.7 209.9 210.8 211.0 211.2 211.3 211.0 211.0
-212.2 212.0 212.0 212.0 211.8 211.4 210.6 210.3 209.9 209.8 209.7 209.8 209.8 211.1 211.3 211.4 211.6 211.3 211.5
-213.8 212.5 212.6 212.4 212.1 211.7 211.1 210.7 210.3 210.0 209.8 209.8 210.3 211.3 211.7 212.0 211.9 212.1 212.1
-214.0 212.8 213.0 212.8 212.2 211.9 211.3 211.0 210.5 210.2 209.9 209.8 210.7 211.4 212.0 212.2 212.3 212.6 212.8
-213.9 213.4 213.5 212.9 212.4 212.2 211.7 211.4 210.9 210.5 209.9 209.9 211.0 212.2 212.3 212.7 213.1 213.2 214.4
-214.0 214.2 213.9 213.1 212.7 212.5 212.1 211.9 211.4 211.0 210.7 210.9 212.0 212.7 212.9 213.2 213.5 214.1 215.1
-214.3 214.6 214.1 213.1 212.6 212.6 212.5 212.3 212.0 211.6 212.2 212.1 212.6 212.8 213.1 213.3 213.7 214.3 214.9
-214.8 215.0 214.3 213.4 212.8 212.9 213.0 213.0 213.2 213.4 213.5 213.2 213.3 213.2 213.4 213.6 213.7 214.4 214.7
-215.2 215.2 214.5 213.7 213.3 213.3 213.4 213.4 213.6 213.7 213.6 213.4 213.3 213.5 213.6 213.8 214.1 214.5 214.7
-215.6 215.0 214.8 214.0 213.9 213.9 214.0 214.0 214.0 214.0 213.8 213.5 213.4 213.6 213.9 214.4 214.7 214.9 214.7
-215.6 215.0 214.9 214.2 214.2 214.3 214.4 214.5 214.5 214.6 214.0 213.5 213.5 213.6 213.9 214.2 214.6 215.5 215.7
-215.7 215.2 214.9 214.5 214.9 215.0 215.2 215.3 215.4 215.2 214.4 214.0 213.5 213.7 213.9 214.1 214.1 215.1 216.0
-216.0 215.6 215.4 215.5 215.7 215.9 216.1 216.2 216.0 215.7 215.0 214.6 214.1 213.9 213.9 214.0 214.1 214.5 215.9
-216.4 216.0 215.9 216.2 216.3 216.4 216.7 216.5 216.5 216.3 215.5 215.0 214.4 214.1 213.9 214.0 214.1 214.5 215.8
-217.1 217.1 216.9 216.9 216.9 217.0 217.1 217.0 216.9 216.7 216.0 215.5 214.8 214.3 214.1 214.1 213.9 215.4 215.9
-217.1 217.2 217.2 217.3 217.3 217.1 217.1 217.1 217.0 216.9 216.4 215.9 215.1 214.4 214.1 213.9 214.2 215.8 215.8
-215.8 216.7 217.2 217.3 217.3 217.3 217.2 217.2 217.2 217.1 216.9 216.8 215.6 214.3 214.1 214.1 215.4 215.7 215.7
-217.7 216.9 216.3 216.2 216.9 217.1 217.6 217.5 217.4 217.4 217.3 217.6 217.2 216.1 215.7 215.7 215.8 215.7 215.6
-219.1 218.9 218.4 217.0 216.6 216.3 216.9 217.2 217.6 217.5 217.4 217.3 217.3 216.9 216.5 216.0 215.7 215.6 215.6`
+/**
+ * Bare ground from the 2016 lidar's ground returns, metres NAVD88, on a 5 m
+ * grid: x −115…65, y 170 (first row) … −30. Under the buildings, where there
+ * are no ground returns, it is filled smoothly from the ground round them.
+ */
+const DEM = `214.0 213.9 214.0 214.0 213.6 211.9 211.4 211.2 211.2 211.1 211.1 210.5 210.0 209.6 209.3 209.2 209.2 209.2 209.3 209.4 209.4 209.4 209.4 209.5 209.6 209.5 209.7 209.9 210.3 211.0 212.3 211.8 210.7 210.7 210.5 210.3 210.2
+214.0 214.0 214.0 213.5 212.5 211.9 211.5 211.4 211.3 211.3 211.2 210.4 210.0 209.6 209.3 209.2 209.1 209.2 209.4 209.5 209.5 209.4 209.4 209.4 209.5 209.6 209.8 210.1 210.9 211.5 212.4 211.4 210.9 210.9 210.8 210.6 210.5
+213.8 213.4 213.0 212.8 212.3 211.8 211.6 211.5 211.5 211.5 211.4 211.2 210.2 209.8 209.3 209.1 209.1 209.4 209.6 209.6 209.8 209.7 209.6 209.5 209.5 209.7 209.9 210.2 211.2 212.1 212.3 211.2 211.1 211.0 210.9 210.8 210.7
+212.9 213.1 213.1 212.7 212.2 211.8 211.8 211.7 211.6 211.6 211.5 211.4 211.3 210.2 210.2 210.1 209.0 209.5 209.7 209.8 209.9 209.9 209.8 209.7 209.7 209.8 210.0 210.6 211.3 211.8 211.7 211.3 211.2 211.2 211.2 211.0 210.9
+212.6 212.4 212.3 212.2 212.1 211.9 211.9 211.9 211.9 211.7 211.6 211.4 211.2 210.1 210.2 210.2 209.8 209.8 209.9 209.9 209.9 210.0 210.0 210.0 210.0 210.1 210.2 210.5 211.4 211.7 211.6 211.5 211.4 211.4 211.3 211.2 211.1
+212.6 212.4 212.2 212.1 212.2 212.1 212.1 212.1 212.1 211.9 211.7 211.5 210.2 210.1 210.1 210.2 210.1 210.1 210.1 210.1 210.1 210.1 210.0 210.0 210.1 210.2 210.2 210.3 215.4 215.6 215.8 216.0 216.0 211.5 211.5 211.4 211.3
+212.9 212.5 212.4 212.4 212.4 212.3 212.3 212.3 212.2 212.1 211.9 211.8 210.2 210.2 210.2 210.4 210.4 210.4 210.3 210.3 210.2 210.2 210.1 210.2 210.2 210.2 210.2 214.8 215.1 215.3 215.6 215.8 216.0 216.1 211.7 211.6 211.6
+213.8 213.0 212.6 212.6 212.6 212.5 212.5 212.4 212.4 212.2 212.1 212.1 211.3 211.0 210.9 210.9 210.8 210.7 210.6 210.4 210.3 210.3 210.2 210.2 210.2 210.1 213.1 214.6 214.8 215.1 215.3 215.6 215.8 216.0 216.2 211.9 211.8
+214.2 214.0 213.1 212.8 212.8 212.7 212.7 212.5 212.4 212.4 212.4 212.6 212.0 211.7 211.5 211.3 211.2 211.0 210.8 210.6 210.4 210.3 210.2 210.2 210.2 210.1 214.2 214.3 214.5 214.8 215.1 215.3 215.6 215.9 216.2 212.4 212.2
+213.9 214.1 213.4 213.1 213.0 212.9 212.9 212.7 212.6 212.6 212.6 212.6 212.5 212.3 212.1 211.8 211.5 211.2 211.0 210.7 210.5 210.3 210.2 210.2 210.1 213.1 213.7 214.2 214.3 214.5 214.8 215.1 215.4 215.7 216.0 216.2 212.5
+214.8 214.3 213.6 213.2 213.2 213.1 213.2 213.0 212.8 212.6 212.6 212.8 213.1 212.9 212.8 212.4 211.9 211.5 211.2 210.8 210.5 210.3 210.1 210.1 210.1 212.9 213.1 213.7 214.2 214.3 214.5 214.9 215.2 215.6 215.9 216.2 212.9
+214.8 214.3 213.7 213.5 213.4 213.4 213.4 213.2 212.9 212.8 212.8 212.9 213.2 213.5 213.8 212.9 212.2 211.7 211.3 210.9 210.5 210.2 210.1 210.2 210.1 212.4 212.6 213.0 213.7 214.2 214.3 214.7 215.1 215.4 215.8 216.1 213.3
+214.8 214.1 213.8 213.6 213.5 213.6 213.6 213.2 213.1 212.9 212.9 212.9 213.3 213.7 213.9 213.0 212.4 211.9 211.4 210.9 210.5 210.2 210.2 211.9 212.0 212.1 212.2 212.4 213.1 213.7 214.2 214.5 214.9 215.3 215.7 216.0 213.7
+214.9 214.1 213.9 213.8 213.7 213.8 213.6 213.3 213.1 213.0 212.9 213.0 213.3 213.9 213.5 213.0 212.5 212.0 211.5 211.0 210.5 210.4 210.4 211.8 211.8 211.8 211.9 212.2 213.0 213.1 213.2 214.3 214.8 215.2 215.6 215.8 214.1
+214.8 214.3 214.1 214.0 214.0 213.9 213.7 213.4 213.2 213.1 213.0 213.0 213.1 213.3 213.2 212.9 212.5 212.1 211.6 211.1 210.5 210.5 211.6 211.7 211.7 211.7 211.8 212.1 212.4 213.0 213.7 214.2 214.6 215.1 215.5 215.7 214.4
+214.7 214.4 214.3 214.2 214.2 214.1 213.8 213.5 213.2 213.1 213.0 212.9 212.9 213.1 213.1 212.9 212.6 212.3 211.8 211.2 211.0 210.8 211.6 211.6 211.6 211.7 211.8 211.9 212.2 212.7 213.6 214.2 214.4 214.9 215.3 215.5 214.7
+214.7 214.6 214.5 214.5 214.3 214.0 213.8 213.5 213.2 213.0 212.9 212.9 212.9 213.0 213.1 213.0 212.8 212.6 212.2 211.7 211.4 211.2 211.6 211.6 211.6 211.7 211.7 211.8 212.1 212.5 213.1 214.2 214.4 214.9 215.2 215.3 214.8
+214.8 214.8 214.7 214.7 214.3 214.3 213.9 213.4 213.2 213.0 212.8 212.8 213.0 213.1 213.2 213.2 213.1 213.0 212.8 212.3 212.1 212.1 212.1 211.9 211.6 211.6 211.7 211.8 212.1 212.5 213.1 214.1 214.3 214.8 215.1 215.2 214.8
+215.0 214.9 214.9 215.0 215.0 214.6 214.2 213.7 213.4 212.9 212.8 213.0 213.2 213.3 213.3 213.4 213.4 213.5 213.6 213.2 213.5 212.9 212.7 212.4 211.7 211.7 211.8 211.9 212.2 212.6 213.1 214.2 214.3 214.6 215.0 215.0 214.9
+215.1 215.1 215.1 215.2 215.2 214.8 214.4 214.0 213.7 213.4 213.3 213.3 213.4 213.5 213.6 213.6 213.7 213.8 213.8 213.6 213.5 213.5 213.4 213.4 213.2 213.1 211.8 212.0 212.3 213.0 213.6 213.9 214.2 214.6 214.8 214.9 214.9
+215.3 215.3 215.3 215.4 215.2 214.9 214.6 214.3 214.0 213.8 213.6 213.6 213.7 213.7 213.8 213.8 213.9 213.9 213.9 213.8 213.6 213.6 213.5 213.5 213.3 213.2 213.1 213.0 212.7 213.1 213.6 213.8 214.1 214.4 214.6 214.7 214.8
+215.5 215.5 215.5 215.4 215.3 215.2 214.8 214.5 214.2 214.0 213.9 213.9 213.9 213.9 214.0 214.0 214.1 214.1 214.1 213.9 213.8 213.7 213.7 213.7 213.6 213.4 213.3 213.2 213.2 213.4 213.6 213.9 214.1 214.4 214.6 214.7 214.7
+215.7 215.7 215.6 215.4 215.2 215.1 215.1 214.8 214.2 214.1 214.1 214.1 214.1 214.2 214.2 214.2 214.3 214.2 214.2 214.2 214.0 213.9 213.8 213.8 213.7 213.5 213.4 213.4 213.4 213.6 213.8 214.0 214.2 214.3 214.7 214.9 214.8
+216.0 215.9 215.6 215.3 215.2 215.1 214.8 214.8 213.9 214.0 214.2 214.3 214.4 214.4 214.4 214.4 214.3 214.3 214.3 214.3 214.1 214.0 213.9 213.8 213.7 213.6 213.5 213.5 213.6 213.8 213.9 214.1 214.2 214.4 214.6 215.1 215.1
+216.2 216.1 215.6 215.4 215.2 215.1 214.8 214.5 214.2 214.3 214.4 214.5 214.6 214.6 214.6 214.6 214.6 214.5 214.4 214.4 214.3 214.1 214.0 213.8 213.7 213.6 213.6 213.6 213.8 213.9 214.0 214.1 214.3 214.4 214.6 215.2 215.3
+216.4 215.9 215.6 215.4 215.2 215.1 214.7 214.5 214.4 214.6 214.7 214.8 214.9 214.9 214.8 214.8 214.8 214.7 214.4 214.4 214.4 214.2 214.0 213.7 213.7 213.6 213.6 213.7 213.8 214.0 214.0 214.1 214.2 214.4 214.6 214.9 215.3
+216.5 216.0 215.7 215.5 215.3 215.1 214.8 214.6 214.6 214.8 215.0 215.2 215.3 215.2 215.0 215.1 215.1 215.0 214.8 214.6 214.7 214.5 214.1 213.7 213.7 213.7 213.7 213.8 213.9 214.0 214.1 214.2 214.3 214.5 214.7 214.7 215.2
+216.5 216.1 215.8 215.6 215.4 215.2 214.9 214.7 214.7 215.1 215.4 215.6 215.8 215.8 214.8 215.4 215.6 215.5 215.0 215.0 215.1 214.8 214.3 213.7 213.7 213.6 213.7 213.8 213.9 214.0 214.1 214.3 214.4 214.6 214.8 214.8 215.3
+216.6 216.3 216.0 215.8 215.5 215.4 215.5 214.9 215.0 215.5 215.8 216.1 216.5 217.3 216.1 216.1 216.3 216.4 216.9 216.9 216.1 215.3 214.5 213.7 213.7 213.6 213.7 213.8 213.9 214.1 214.2 214.3 214.4 214.6 214.8 214.8 215.2
+216.8 216.5 216.2 215.9 215.7 215.7 215.9 215.9 215.8 216.0 216.2 216.5 216.9 217.2 217.1 217.1 217.1 216.9 216.9 216.8 217.0 215.7 214.7 213.8 213.7 213.7 213.7 213.9 214.0 214.1 214.2 214.3 214.4 214.6 214.8 214.7 215.1
+217.3 217.2 216.4 216.2 215.9 216.1 216.1 216.2 216.2 216.4 216.6 216.9 217.3 217.2 217.0 216.9 216.9 216.9 216.8 216.9 217.0 216.0 215.0 213.7 213.7 213.8 213.8 213.9 214.0 214.1 214.2 214.3 214.4 214.5 214.8 214.7 215.1
+217.4 217.3 217.2 217.2 216.6 216.1 216.3 216.5 216.6 216.7 216.9 217.1 217.2 217.2 217.0 216.9 216.8 216.8 216.8 216.9 217.0 216.2 215.4 214.6 213.9 213.8 213.8 214.1 214.1 214.2 214.2 214.3 214.3 214.2 214.2 214.7 215.2
+217.3 217.5 217.5 217.6 217.2 217.0 216.9 216.9 217.0 217.1 217.2 217.3 217.3 217.1 217.0 216.9 216.8 216.7 216.7 216.9 217.0 216.4 215.8 215.2 214.8 214.5 214.4 214.3 214.3 214.2 214.1 214.1 214.2 214.1 214.2 214.8 215.7
+217.4 217.4 217.5 217.6 217.6 217.6 217.4 217.3 217.3 217.3 217.4 217.4 217.3 217.1 217.0 216.9 216.9 216.8 216.8 216.9 217.1 216.6 216.2 215.8 215.5 215.2 214.9 214.6 214.4 214.2 214.0 214.1 214.0 214.0 214.7 215.2 216.0
+217.4 217.4 217.5 217.4 217.5 217.6 217.6 217.7 217.7 217.6 217.7 217.5 217.3 217.2 217.1 217.1 216.9 216.9 216.9 217.1 217.1 216.9 216.6 216.3 216.1 215.8 215.3 214.8 214.5 214.3 214.2 214.1 214.1 214.4 214.9 215.8 216.0
+217.4 217.5 217.5 217.5 217.5 217.5 217.5 217.6 217.7 217.7 217.7 217.6 217.6 217.3 217.2 217.2 217.1 217.0 217.0 217.1 217.2 217.1 217.0 216.9 216.7 216.5 215.9 214.9 214.5 214.3 214.2 214.2 214.2 214.5 215.4 215.9 216.0
+216.3 216.4 217.4 217.6 217.6 217.5 217.5 217.6 217.6 217.6 217.6 217.7 217.6 217.6 217.6 217.4 217.3 217.3 217.2 217.2 217.3 217.3 217.5 217.5 217.5 217.5 216.9 214.3 214.3 214.2 214.2 214.2 214.3 215.1 215.8 216.0 216.0
+216.2 216.3 216.4 216.5 216.6 217.4 217.5 217.6 217.6 217.6 217.6 217.6 217.6 217.6 217.7 217.7 217.7 217.7 217.6 217.4 217.3 217.3 217.3 217.4 217.4 217.4 215.5 214.9 214.4 214.5 214.5 214.5 214.7 215.7 216.0 216.0 216.0
+217.4 216.5 216.3 216.5 216.5 216.5 216.7 216.8 217.2 217.6 217.6 217.6 217.6 217.7 217.7 217.7 217.7 217.7 217.8 217.7 217.7 217.5 217.4 217.4 217.5 217.3 216.4 215.8 215.4 215.2 215.1 215.0 215.5 215.9 216.0 216.0 215.9
+219.0 219.0 219.0 217.1 216.8 216.5 216.7 216.7 216.7 216.8 216.9 217.4 217.7 217.7 217.7 217.7 217.7 217.7 217.7 217.7 217.8 217.8 217.8 217.7 217.7 217.4 217.1 216.6 216.1 215.9 215.8 215.9 216.0 216.1 216.0 215.9 215.9
+219.0 219.2 219.1 219.1 219.1 218.4 217.2 216.6 216.6 216.8 216.8 216.9 217.0 217.1 217.6 217.8 217.8 217.8 217.8 217.7 217.7 217.7 217.6 217.7 217.7 217.6 217.6 217.4 217.0 216.6 216.4 216.3 216.4 216.2 216.0 215.9 215.9`
   .split('\n').map((r) => r.trim().split(/\s+/).map(Number))
-/** Ground elevation at a site point, bilinear on the DEM grid. */
+const GX = -115, GY = 170, GS = 5
+/** Ground elevation at a site point, bilinear on the grid. */
 export function ground(p: XY): number {
-  const fx = Math.min(17.999, Math.max(0, (p[0] + 110) / 10)), fy = Math.min(19.999, Math.max(0, (170 - p[1]) / 10))
+  const nx = DEM[0].length - 1, ny = DEM.length - 1
+  const fx = Math.min(nx - 0.001, Math.max(0, (p[0] - GX) / GS)), fy = Math.min(ny - 0.001, Math.max(0, (GY - p[1]) / GS))
   const i = Math.floor(fx), j = Math.floor(fy), u = fx - i, v = fy - j
   return (DEM[j][i] * (1 - u) + DEM[j][i + 1] * u) * (1 - v) + (DEM[j + 1][i] * (1 - u) + DEM[j + 1][i + 1] * u) * v
 }
@@ -197,13 +248,37 @@ export function solid(p: Part, ring: XY[], z0: number, z1: number | ((q: XY) => 
     tri(top, P(ring[0]), P(ring[i]), P(ring[i + 1]), [0, 0, 1])
   }
 }
+/**
+ * A box with its upright edges chamfered by `b` and a chamfered lip of `b`
+ * round its top, for towers and clad blocks: the soft edges catch the light.
+ * `ring` is a convex counter-clockwise rectangle (four corners).
+ */
+export function softBox(p: Part, ring: XY[], z0: number, z1: number, b: number, top: Part = p) {
+  const c: XY = [ring.reduce((s, q) => s + q[0], 0) / ring.length, ring.reduce((s, q) => s + q[1], 0) / ring.length]
+  const cut: XY[] = []
+  ring.forEach((q, i) => {
+    const a = ring[(i + ring.length - 1) % ring.length], d = ring[(i + 1) % ring.length]
+    const to = (r: XY): XY => { const L = Math.hypot(r[0] - q[0], r[1] - q[1]); return [q[0] + (r[0] - q[0]) / L * b, q[1] + (r[1] - q[1]) / L * b] }
+    cut.push(to(a), to(d))
+  })
+  const shrink = (r: XY[], k: number): XY[] => r.map((q) => { const dx = q[0] - c[0], dy = q[1] - c[1], L = Math.hypot(dx, dy); return [q[0] - dx / L * k, q[1] - dy / L * k] as XY })
+  const lid = shrink(cut, b * 1.2)
+  const n = cut.length
+  for (let i = 0; i < n; i++) {
+    const A = cut[i], B = cut[(i + 1) % n], a = lid[i], d = lid[(i + 1) % n]
+    const o: V3 = [B[1] - A[1], A[0] - B[0], 0]
+    quad(p, [A[0], A[1], z0], [B[0], B[1], z0], [B[0], B[1], z1 - b], [A[0], A[1], z1 - b], o)
+    quad(p, [A[0], A[1], z1 - b], [B[0], B[1], z1 - b], [d[0], d[1], z1], [a[0], a[1], z1], [o[0], o[1], 1])
+  }
+  for (let i = 1; i < n - 1; i++) tri(top, [lid[0][0], lid[0][1], z1], [lid[i][0], lid[i][1], z1], [lid[i + 1][0], lid[i + 1][1], z1], [0, 0, 1])
+}
 
 // ---------------------------------------------------------------------------
 // Zoned massing. A building is a set of zones that tile its footprint; each
 // has a planar roof. Walls on the outline run from below ground to the roof;
 // steps between zones get a wall where one roof stands above the next. Flat
-// zones get a brick parapet with a pale coping, the roof deck sunk behind
-// it; gabled zones a deep eave.
+// zones get a brick parapet with a pale chamfered coping, the roof deck sunk
+// behind it; gabled zones a deep eave.
 
 export type Mats = {
   wall: Part; roof: Part; eave: Part; win: Part
@@ -211,11 +286,7 @@ export type Mats = {
   infill?: Part
   /** Painted window frames, for zones that ask for them. */
   frame?: Part
-  /**
-   * Flat decks behind parapets, if not `roof`. The mills' flat roofs are pale
-   * membrane and their gables dark metal (2007 aerial), and that difference
-   * is what lets the low gables read as gables from above.
-   */
+  /** Flat decks behind parapets, if not `roof`. */
   deck?: Part
 }
 export type Zone = {
@@ -245,8 +316,8 @@ export const gableZ = (ax: ReturnType<typeof axes>, tc: number, ridge: number, k
 /** A stable pseudo-random fraction for a point, so infill patterns don't shimmer between builds. */
 export const hash = (p: XY, k = 0) => { const x = Math.sin(p[0] * 127.1 + p[1] * 311.7 + k * 74.7) * 43758.5453; return x - Math.floor(x) }
 
-/** Parapet height above the roof deck, coping width, eave overhang, wall depth below ground. */
-const PARA = 0.5, CAP = 0.35, CHAMFER = 0.1, EAVE = 0.8, BURY = 3
+/** Parapet height above the roof deck, coping width, its chamfer, eave overhang, wall depth below ground. */
+const PARA = 0.6, CAP = 0.45, CHAMFER = 0.18, EAVE = 0.8, BURY = 3
 /** The roof deck: a flat zone's sits behind its parapet. */
 const deck = (zn: Zone, q: XY) => zn.z(q) - (zn.eave ? 0 : PARA)
 /**
@@ -295,7 +366,7 @@ export function build(zones: Zone[], m: Mats, party: [XY, XY][] = []) {
       if (outer[i]) {
         const base = Math.min(ground(A), ground(B)) - BURY
         // A parapet's brick stops under its coping; an eave's at the roof.
-        const top = (q: XY) => zn.z(q) - (para ? 0.12 : 0)
+        const top = (q: XY) => zn.z(q) - (para ? CHAMFER : 0)
         quad(wall, [A[0], A[1], base], [B[0], B[1], base], [B[0], B[1], top(B)], [A[0], A[1], top(A)], [o[0], o[1], 0])
         if (para) {
           // The coping: a chamfered pale cap on the parapet, the line that
@@ -323,7 +394,7 @@ export function build(zones: Zone[], m: Mats, party: [XY, XY][] = []) {
           quad(m.eave, [A[0], A[1], zn.z(A) - 0.6], [B[0], B[1], zn.z(B) - 0.6], [b3[0], b3[1], zb - 0.35], [a3[0], a3[1], za - 0.35], [0, 0, -1])
         }
         // Piers and windows stop under the soffit or the coping.
-        const under = (q: XY) => zn.z(q) - (para ? 0.15 : 0.6)
+        const under = (q: XY) => zn.z(q) - (para ? 0.3 : 0.6)
         if (zn.rows && e.L > 4 && !onParty(A, B)) windows(m, e, zn, under, base)
       } else {
         // A step: wall only where this deck stands above the neighbour's.
@@ -348,16 +419,15 @@ export function plant(p: Part, units: [number, number, number, number][]) {
   for (const [x, y, z, deg] of units) {
     const a = axes(deg), c: XY = [x, y]
     const ring = clean([[-1.6, -1.1], [1.6, -1.1], [1.6, 1.1], [-1.6, 1.1]].map(([s, t]) => { const q = a.at(s, t); return [q[0] + c[0], q[1] + c[1]] as XY }))
-    solid(p, ring, z - PARA - 0.2, z + 1.1)
+    solid(p, ring, z - PARA - 0.2, z + 0.9)
   }
 }
 
 /**
- * The bay rhythm of one outline wall: brick piers standing 0.22 m proud
- * between the bays, and in each bay a window per row, its panel set on the
- * wall between the piers. Early openings have segmental arched heads; steel
- * ones are square, optionally in a painted frame. Bricked-up openings are
- * drawn as darker brick panels.
+ * The bay rhythm of one outline wall: brick piers standing proud between the
+ * bays, and in each bay a window per row, its panel set on the wall between
+ * the piers. Early openings have segmental arched heads; steel ones are
+ * square, optionally in a painted frame.
  */
 function windows(m: Mats, e: { A: XY; B: XY; L: number; o: XY }, zn: Zone, under: (q: XY) => number, base: number) {
   const pitch = zn.pitch ?? 4, w = zn.winW ?? 1.7, count = Math.floor((e.L - 1.2) / pitch)
@@ -368,16 +438,17 @@ function windows(m: Mats, e: { A: XY; B: XY; L: number; o: XY }, zn: Zone, under
   const at = (s: number): XY => [e.A[0] + u[0] * s, e.A[1] + u[1] * s]
   const near = (q: XY, r = 0) => DOORS.some((d) => Math.hypot(q[0] - d.p[0], q[1] - d.p[1]) < d.r + r)
   if (zn.piers) {
-    const pw = Math.max(0.5, pitch - w - 0.5), D = 0.22
+    const pw = Math.max(0.6, pitch - w - 0.6), D = 0.3, b = 0.12
     for (let k = 0; k <= count; k++) {
       const c = start + pitch * k, s0 = c - pw / 2, s1 = c + pw / 2
       // A pier never runs past the wall's ends, or across a door.
       if (s0 < 0.2 || s1 > e.L - 0.2 || near(at(c), pw / 2)) continue
       const z0 = under(at(s0)), z1 = under(at(s1))
-      quad(m.wall, P(s0, base, D), P(s1, base, D), P(s1, z1, D), P(s0, z0, D), N)
-      quad(m.wall, P(s0, base, 0), P(s0, base, D), P(s0, z0, D), P(s0, z0, 0), [-u[0], -u[1], 0])
-      quad(m.wall, P(s1, base, D), P(s1, base, 0), P(s1, z1, 0), P(s1, z1, D), [u[0], u[1], 0])
-      quad(m.wall, P(s0, z0, 0), P(s0, z0, D), P(s1, z1, D), P(s1, z1, 0), [0, 0, 1])
+      // Face, chamfered sides, and a sloped top under the coping.
+      quad(m.wall, P(s0 + b, base, D), P(s1 - b, base, D), P(s1 - b, z1, D), P(s0 + b, z0, D), N)
+      quad(m.wall, P(s0, base, 0), P(s0 + b, base, D), P(s0 + b, z0, D), P(s0, z0, 0), [N[0] - u[0], N[1] - u[1], 0])
+      quad(m.wall, P(s1 - b, base, D), P(s1, base, 0), P(s1, z1, 0), P(s1 - b, z1, D), [N[0] + u[0], N[1] + u[1], 0])
+      quad(m.wall, P(s0, z0, 0), P(s0 + b, z0, D), P(s1 - b, z1, D), P(s1, z1, 0), [0, 0, 1])
     }
   }
   const framed = !!(m.frame && zn.frame?.(e.o)), F = 0.22
@@ -388,7 +459,7 @@ function windows(m: Mats, e: { A: XY; B: XY; L: number; o: XY }, zn: Zone, under
     return off < 1 && s > 0 && s < e.L
   })
   if (door) {
-    const sd = (door.p[0] - e.A[0]) * u[0] + (door.p[1] - e.A[1]) * u[1], first = door.r + w / 2 + 0.01 // just clear of the door test below
+    const sd = (door.p[0] - e.A[0]) * u[0] + (door.p[1] - e.A[1]) * u[1], first = door.r + w / 2 + 0.01
     centres = []
     for (let c = sd - first; c - w / 2 >= 0.3; c -= pitch) centres.push(c)
     for (let c = sd + first; c + w / 2 <= e.L - 0.3; c += pitch) centres.push(c)
@@ -417,6 +488,8 @@ function windows(m: Mats, e: { A: XY; B: XY; L: number; o: XY }, zn: Zone, under
       quad(p, P(s0, z0), P(s1, z0), P(s1, h), P(s0, h), N)
       const arc = [0, 0.25, 0.5, 0.75, 1].map((f) => { const x = (f - 0.5) * w; return P(c + x, h + Math.sqrt(R * R - x * x) - (R - rise)) })
       for (let a = 0; a < 4; a++) tri(p, P(c, h), arc[a], arc[a + 1], N)
+      // A pale stone sill under each arched opening.
+      if (m.eave) quad(m.eave, P(s0 - 0.1, z0 - 0.22, 0.09), P(s1 + 0.1, z0 - 0.22, 0.09), P(s1 + 0.1, z0, 0.09), P(s0 - 0.1, z0, 0.09), N)
     })
   }
 }
@@ -447,13 +520,11 @@ export async function write(b: Built, budget = 5000) {
   console.log(`${out}: ${triangles} triangles, ${glb.length} bytes; anchor ${lng}, ${lat}; base ${b.base.toFixed(1)} m`)
 }
 
-// The palette shared by the mill models: red brick kept near the palette's
+// The palette shared by the mill models: red brick near the palette's
 // lightness but red rather than salmon (it is the complex's identity), roof
-// grey for the low roofs, slate windows, and the silver of the metal towers
-// and cladding, which also takes the eaves and copings.
-export const BRICK = finish('mill-brick', 0xb96652)
-/** Bricked-up openings: the same brick a shade deeper, so the bay rhythm still shows. */
-export const INFILL = finish('mill-brick-infill', 0x9e5646)
+// grey for the dark membrane roofs, slate windows, pale trim for copings and
+// sills, and the silver of the metal towers, cladding and white roofs.
+export const BRICK = finish('mill-brick', 0xb96d58)
 export const SILVER = finish('mill-silver', 0xd3d6d9)
 
 // ---------------------------------------------------------------------------
@@ -471,107 +542,105 @@ export const BRIDGE: XY[] = [[-46.3, 34.7], [-41.0, 32.3], [-30.6, 27.6], [-30.0
 export const MILL2: XY[] = OUTLINE.slice(31, 62)
 /** way/1202433658: the courtyard stage canopy. */
 const STAGE_CANOPY: XY[] = [[-41.0, 32.3], [-42.2, 29.7], [-43.4, 27.0], [-32.9, 22.0], [-30.6, 27.6]]
+/** The east wing's lower north strip (lidar and NAIP; not in OSM). */
+const EAST_STRIP: XY[] = [[14.0, 38.4], [54.0, 40.35], [53.6, 45.5], [14.6, 45.5]]
 
 // ---------------------------------------------------------------------------
 // Mill #1 and the bridge.
 
 export function buildMill(): Built {
-  const wall = new Part(), roof = new Part(), win = new Part(), silver = new Part(), stage = new Part(), infill = new Part()
-  // Eaves and copings share the cladding's pale metal: six materials at most.
-  const m: Mats = { wall, roof, eave: silver, win, infill, deck: silver }
-  const eave = silver
+  const wall = new Part(), roof = new Part(), win = new Part(), silver = new Part(), stage = new Part(), trim = new Part()
+  const m: Mats = { wall, roof, eave: trim, win }
   const ax = axes(-2.5)               // Mill #1 runs a little west of north
   const P = MILL1
   const zones: Zone[] = []
-  /** Which way a wall faces, in this mill's frame. */
-  const west = (o: XY) => o[0] * ax.r[0] + o[1] * ax.r[1] < -0.7, south = (o: XY) => o[0] * ax.u[0] + o[1] * ax.u[1] < -0.7
-  // Bays from the survey and the 2007 aerial: tall segmental-arched openings
-  // about half the bay wide, between brick piers, on every storey; thirteen
-  // bays on the 1904 mill's courtyard side.
-  // The 1904 mill along the courtyard: one storey, low gable, deep eave, a
-  // long row of segmental-arched windows; a basement row shows on the east
-  // where the ground falls away.
-  const GX0 = -24, GX1 = -3.5, tc = (GX0 + GX1) / 2, ridge = 225.0, eaveZ = 222.0, k = (ridge - eaveZ) / ((GX1 - GX0) / 2)
-  const mill1904 = { rows: [[218.0, 221.0], [214.0, 216.4]] as [number, number][], pitch: 4.1, winW: 1.9, piers: true }
-  zones.push({ poly: ax.band(P, -12, 39, GX0, tc), z: gableZ(ax, tc, ridge, k), eave: true, ...mill1904 })
-  zones.push({ poly: ax.band(P, -12, 39, tc, GX1), z: gableZ(ax, tc, ridge, k), eave: true, ...mill1904 })
-  // The 1920s southern L on the boulevard: flat, a short parapet. Its south
-  // wall keeps the bricked-up originals between new openings.
+  // The 1904 mill along the courtyard: a very low gable (lidar), parapets,
+  // tall segmental-arched windows between brick piers on the courtyard, and
+  // a second row under them on the east where the ground falls away.
+  // Thirteen bays on the courtyard side (survey).
+  const GX0 = -24, GX1 = 1.0, tc = -8, ridge = 222.3, k = (222.3 - 221.5) / 12
+  const mill1904 = { rows: [[218.2, 220.9], [214.6, 216.9]] as [number, number][], pitch: 4.1, winW: 2.2, piers: true }
+  zones.push({ poly: ax.band(P, -10.5, 70, GX0, tc), z: gableZ(ax, tc, ridge, k), ...mill1904 })
+  // Its east face: two rows of square-headed windows, no piers (2007 aerial).
+  zones.push({ poly: ax.band(P, -10.5, 70, tc, GX1), z: gableZ(ax, tc, ridge, k), rows: mill1904.rows, pitch: 3.6, winW: 1.8, square: true })
+  // The 1920s block on the boulevard: flat, parapeted, arched openings
+  // between piers; the south projection in front of it one storey lower.
   zones.push({
-    poly: ax.band(P, -40, -12, -40, 12.5), z: flatZ(222.2), rows: [[218.2, 221.0], [214.4, 216.8]], pitch: 3.8, winW: 1.7, piers: true,
-    infill: (o, row, i) => south(o) && (row === 1 || i % 3 === 1),
+    poly: ax.band(P, -10.5, 12.6, GX1, 37.3), z: flatZ(222.9), rows: [[218.0, 221.2]], pitch: 4.0, winW: 1.9, piers: true,
   })
-  // The c.1955 dust-collector room: two storeys, flat, few openings.
-  zones.push({ poly: ax.band(P, -12, 40, GX1, 13), z: flatZ(224.6), rows: [[218.6, 221.0], [214.6, 216.8]], pitch: 4.2, square: true, infill: (o, row, i) => row === 1 || i % 2 === 1 })
-  // The c.1946 wing to the east: a storey on a raised basement, the
-  // basement openings all bricked up and some above.
-  zones.push({ poly: ax.band(P, -40, 13, 12.5, 60), z: flatZ(221.6), rows: [[217.8, 220.2], [214.0, 216.2]], pitch: 3.6, square: true, infill: (o, row, i) => row === 1 || i % 4 === 3 })
-  // The east building north of it (Comedy Zone side): two storeys, flat.
-  zones.push({ poly: ax.band(P, 13, 60, 13, 60), z: flatZ(222.8), rows: [[218.6, 221.0], [214.8, 217.0]], pitch: 4.2, square: true })
-  // The 1920s–40s two-storey additions north of the 1904 block: arched
-  // openings on both storeys, mostly bricked up on the east and north.
-  zones.push({
-    poly: ax.band(P, 39, 80, -40, 13), z: flatZ(223.6), rows: [[218.8, 221.6], [214.6, 217.2]], pitch: 4.0, winW: 1.7, piers: true,
-    infill: (o, row, i) => !west(o) && hash([i, row]) < 0.75,
-  })
-  // The bridge section: two storeys of brick.
-  zones.push({ poly: BRIDGE, z: flatZ(224.2), rows: [[219.6, 222.0]], pitch: 4.2, square: true })
+  zones.push({ poly: ax.band(P, -40, -10.5), z: flatZ(219.6), rows: [[216.9, 218.9]], pitch: 3.6, winW: 1.8, square: true })
+  // The c.1955 dust-collector room north of it, east of the 1904 mill.
+  zones.push({ poly: ax.band(P, 12.6, 30, GX1, 14), z: flatZ(222.9), rows: [[218.4, 221.0], [214.8, 217.0]], pitch: 4.2, square: true, infill: (o, row, i) => row === 1 || i % 2 === 1 })
+  // The east annex and the east wing: two storeys, flat, steel windows.
+  zones.push({ poly: ax.band(P, -10.5, 12.6, 37.3, 60), z: flatZ(218.6), rows: [[215.2, 217.4]], pitch: 4.0, square: true })
+  // The east wing: brick pilasters, few openings (2007 aerial), a white roof.
+  zones.push({ poly: ax.band(P, 12.6, 60, 14, 60), z: flatZ(222.9), rows: [[218.6, 221.2]], pitch: 5.0, winW: 1.6, square: true, piers: true, roof: silver, infill: (o, row, i) => i % 2 === 1 })
+  zones.push({ poly: EAST_STRIP, z: flatZ(218.2), rows: [[214.8, 217.0]], pitch: 4.4, square: true })
+  // The bridge: its west part brick, its east part a taller block clad in
+  // pale metal (the courtyard panorama), one row of windows.
+  zones.push({ poly: ax.band(BRIDGE, -1e4, 1e4, -1e4, -35), z: flatZ(225.2), rows: [[218.6, 221.2]], pitch: 4.2, square: true })
+  zones.push({ poly: ax.band(BRIDGE, -1e4, 1e4, -35, 1e4), z: flatZ(228.0), wall: silver })
   build(zones, m, [MILL2_EAST])
-  plant(roof, [[-12, 50, 223.6, 0], [-8, 58, 223.6, 0], [3, 2, 224.6, 0], [26, 30, 222.8, 0], [40, 25, 222.8, 90], [-12, 20, 223.2, 0]])
+  // Rooftop plant (NAIP): on the 1904 mill, the 1920s block and in a row
+  // down the middle of the east wing.
+  plant(roof, [[-12, 50, 222.0, -2.5], [-8, 58, 222.0, -2.5], [-11, 30, 222.1, -2.5], [6, 0, 222.9, 0], [22, 2, 222.9, 0], [28, -4, 222.9, 0],
+    [29, 22, 222.9, 0], [29, 27, 222.9, 0], [29, 32, 222.9, 0], [34, 22, 222.9, 0], [34, 27, 222.9, 0], [34, 32, 222.9, 0]])
 
-  // The two metal dust towers between the 1904 mill and the dust-collector
-  // room, standing well above it side by side (the grey box behind the seats
-  // in the 2009 photo), with shallow gabled tops.
-  for (const s0 of [12.6, 18.6]) {
-    const ring = clean([ax.at(s0, -4.2), ax.at(s0 + 5.4, -4.2), ax.at(s0 + 5.4, 2.0), ax.at(s0, 2.0)])
-    // Each top is a shallow gable along s: four faces over the box.
-    solid(silver, ring, 222, 230.4, roof)
-    const r = (t: number, z: number) => [ax.at(s0 - 0.3, t), ax.at(s0 + 5.7, t)].map((p) => [p[0], p[1], z] as V3)
-    const [a0, a1] = r(-4.5, 230.4), [b0, b1] = r(-1.1, 231.4), [c0, c1] = r(2.3, 230.4)
-    quad(roof, a0, a1, b1, b0, [0, 0, 1]); quad(roof, b0, b1, c1, c0, [0, 0, 1])
-    tri(silver, a0, b0, c0, [-ax.u[0], -ax.u[1], 0]); tri(silver, a1, c1, b1, [ax.u[0], ax.u[1], 0])
-  }
-
-  // The sign tower over the bridge: a tall silver box on the brick, its cap
-  // a little proud (photos 11 and the courtyard panorama).
+  // The dust tower: a brick tower rising five metres over the roof beside
+  // the 1904 mill, a pale coping, and on it a silver metal plant housing a
+  // further three (lidar; the 2007 aerial).
   {
-    const tw = axes(25.5), c: XY = [-34.5, 44.5]
-    const box = (hs: number, ht: number): XY[] => [[-hs, -ht], [hs, -ht], [hs, ht], [-hs, ht]].map(([s, t]) => { const p = tw.at(s, t); return [p[0] + c[0], p[1] + c[1]] as XY }).reverse()
-    const ring = clean(box(6.0, 5.5))
-    solid(silver, ring, 223.0, 232.4, roof)
-    solid(eave, clean(box(6.4, 5.9)), 232.4, 233.2, roof)
+    const ring = clean([[0.2, 12.6], [8.6, 12.6], [8.6, 22.6], [0.2, 22.6]])
+    softBox(wall, ring, 221.5, 227.1, 0.3, roof)
+    softBox(trim, clean([[0.05, 12.45], [8.75, 12.45], [8.75, 22.75], [0.05, 22.75]]), 226.9, 227.4, 0.15, roof)
+    softBox(silver, clean([[2.1, 15.0], [6.5, 15.0], [6.5, 20.6], [2.1, 20.6]]), 227.2, 230.8, 0.3, roof)
   }
+  // The long metal canopy down the 1904 mill's east face (2007 aerial; lidar
+  // 218 m), on slim posts.
+  {
+    const a = ax.at(26, 0.9), b = ax.at(66, -0.6)
+    const ring = clean([[a[0] - 0.2, a[1]], [a[0] + 2.6, a[1]], [b[0] + 2.6, b[1]], [b[0] - 0.2, b[1]]])
+    solid(silver, ring, 217.6, 218.0)
+    for (let s = 28; s < 66; s += 6) {
+      const r = 0.12
+      const px = a[0] + (b[0] - a[0]) * (s - 26) / 40 + 2.2, py = a[1] + (b[1] - a[1]) * (s - 26) / 40
+      solid(stage, [[px - r, py - r], [px + r, py - r], [px + r, py + r], [px - r, py + r]], 213, 217.6)
+    }
+  }
+  // The box on the bridge's west part (the white box over the courtyard
+  // stage in the panorama).
+  softBox(silver, clean([[-42.6, 35.2], [-38.0, 35.2], [-38.0, 41.0], [-42.6, 41.0]]), 224.4, 230.0, 0.3, roof)
 
   // The courtyard stage on the bridge's south face: a dark stage box under a
-  // canopy that tilts up towards the courtyard, on two slim front posts.
+  // flat canopy with a deep dark fascia, its signboard (lidar top 224.8 m).
   {
-    const canopy = clean(STAGE_CANOPY), cx = axes(25.5), g = 216.2
-    const tilt = (q: XY) => 222.6 + 0.3 * (11.5 - cx.s(q))
-    solid(stage, cx.band(canopy, 7.6), g - 1, g + 6.2, roof)
+    const canopy = clean(STAGE_CANOPY), cx = axes(25.5), g = 217.0, TOPZ = 224.8, FAS = 1.2
+    solid(stage, cx.band(canopy, 8.6), g - 1, TOPZ - FAS, roof)
     for (let i = 1; i < canopy.length - 1; i++) {
-      const V = (q: XY, dz = 0): V3 => [q[0], q[1], tilt(q) + dz]
-      tri(roof, V(canopy[0]), V(canopy[i]), V(canopy[i + 1]), [0, 0, 1])
-      tri(eave, V(canopy[0], -0.35), V(canopy[i + 1], -0.35), V(canopy[i], -0.35), [0, 0, -1])
+      tri(roof, [canopy[0][0], canopy[0][1], TOPZ], [canopy[i][0], canopy[i][1], TOPZ], [canopy[i + 1][0], canopy[i + 1][1], TOPZ], [0, 0, 1])
+      tri(stage, [canopy[0][0], canopy[0][1], TOPZ - FAS], [canopy[i + 1][0], canopy[i + 1][1], TOPZ - FAS], [canopy[i][0], canopy[i][1], TOPZ - FAS], [0, 0, -1])
     }
     for (let i = 0; i < canopy.length; i++) {
       const A = canopy[i], B = canopy[(i + 1) % canopy.length]
-      quad(eave, [A[0], A[1], tilt(A) - 0.35], [B[0], B[1], tilt(B) - 0.35], [B[0], B[1], tilt(B)], [A[0], A[1], tilt(A)], [B[1] - A[1], A[0] - B[0], 0])
+      quad(stage, [A[0], A[1], TOPZ - FAS], [B[0], B[1], TOPZ - FAS], [B[0], B[1], TOPZ], [A[0], A[1], TOPZ], [B[1] - A[1], A[0] - B[0], 0])
     }
-    for (const p of [cx.at(6.2, cx.t(canopy[2]) + 0.6), cx.at(6.2, cx.t(canopy[3]) - 0.6)]) {
+    // The stage deck, a step up from the courtyard, and two slim front posts.
+    solid(trim, cx.band(canopy, 5.75, 8.6), g - 1, g + 1.1, stage)
+    for (const p of [cx.at(6.1, cx.t(canopy[2]) + 0.7), cx.at(6.1, cx.t(canopy[3]) - 0.7)]) {
       const r = 0.2, ring: XY[] = [[p[0] - r, p[1] - r], [p[0] + r, p[1] - r], [p[0] + r, p[1] + r], [p[0] - r, p[1] + r]]
-      solid(stage, ring, g - 1, tilt(p) - 0.3)
+      solid(stage, ring, g - 1, TOPZ - FAS)
     }
   }
 
   const anchor = centroid(MILL1)
   const base = lowest(clean(MILL1.concat()))
   return {
-    id: 'music-factory-mill', name: 'AvidXchange Music Factory mill', anchor, base, height: 233.2 - base,
+    id: 'music-factory-mill', name: 'AvidXchange Music Factory mill', anchor, base, height: 230.8 - base,
     parts: [
       { part: wall, material: BRICK },
-      { part: infill, material: INFILL },
       { part: roof, material: PALETTE.roof },
       { part: win, material: PALETTE.window },
+      { part: trim, material: PALETTE.trim },
       { part: silver, material: SILVER },
       { part: stage, material: finish('stage-charcoal', 0x4a4f57) },
     ],
