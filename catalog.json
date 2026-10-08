@@ -1161,6 +1161,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-345-california.ts"
+    },
+    {
+      "id": "sf-russ-building",
+      "file": "models/sf-russ-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-russ-building.ts"
     }
   ],
   "landmarks": [
@@ -4618,6 +4625,33 @@
         "way/616812360",
         "way/616812361",
         "way/616812362"
+      ]
+    },
+    {
+      "id": "sf-russ-building",
+      "name": "Russ Building",
+      "model": "sf-russ-building",
+      "lng": -122.4028624,
+      "lat": 37.7914192,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7381107",
+      "replaces": [
+        "way/129142347",
+        "way/941918062",
+        "way/941918063",
+        "way/1091964668",
+        "way/1091964669",
+        "way/1091964670",
+        "way/1091964671",
+        "way/1091964672",
+        "way/1091964673",
+        "way/1091964674",
+        "way/1091964675",
+        "way/1091964676",
+        "way/1091964677",
+        "way/1091964678"
       ]
     }
   ]
