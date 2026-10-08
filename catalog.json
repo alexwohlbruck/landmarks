@@ -1329,6 +1329,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-amnh.ts"
+    },
+    {
+      "id": "nyc-citi-field",
+      "file": "models/nyc-citi-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-citi-field.ts"
     }
   ],
   "landmarks": [
@@ -5491,6 +5498,29 @@
       "wikidata": "Q217717",
       "replaces": [
         "way/388436810"
+      ]
+    },
+    {
+      "id": "nyc-citi-field",
+      "name": "Citi Field",
+      "model": "nyc-citi-field",
+      "lng": -73.845831,
+      "lat": 40.757062,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1072882",
+      "replaces": [
+        "way/604023701",
+        "way/1445223372",
+        "way/1445222220",
+        "way/1445222221",
+        "way/1445222222",
+        "way/604024892",
+        "way/1518492091",
+        "way/1553291644",
+        "way/1060517536",
+        "way/1553289790"
       ]
     }
   ]
