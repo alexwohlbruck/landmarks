@@ -1154,6 +1154,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-citigroup-center.ts"
+    },
+    {
+      "id": "nyc-550-madison",
+      "file": "models/nyc-550-madison.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-550-madison.ts"
     }
   ],
   "landmarks": [
@@ -4611,6 +4618,23 @@
         "way/258744608",
         "way/258744609",
         "way/258744612"
+      ]
+    },
+    {
+      "id": "nyc-550-madison",
+      "name": "550 Madison Avenue",
+      "model": "nyc-550-madison",
+      "lng": -73.9733731,
+      "lat": 40.7614226,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1477826",
+      "replaces": [
+        "relation/21151099",
+        "way/118116805",
+        "way/260244593",
+        "way/260244595"
       ]
     }
   ]
