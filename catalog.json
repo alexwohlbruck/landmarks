@@ -1322,6 +1322,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-royce-hall.ts"
+    },
+    {
+      "id": "la-century-plaza-towers",
+      "file": "models/la-century-plaza-towers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-century-plaza-towers.ts"
     }
   ],
   "landmarks": [
@@ -5126,6 +5133,22 @@
       "wikidata": "Q2171194",
       "replaces": [
         "way/422876632"
+      ]
+    },
+    {
+      "id": "la-century-plaza-towers",
+      "name": "Century Plaza Towers",
+      "model": "la-century-plaza-towers",
+      "lng": -118.4134974,
+      "lat": 34.0590575,
+      "bearing": 20.6,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1982044",
+      "replaces": [
+        "relation/19619602",
+        "way/104944092",
+        "way/104944087"
       ]
     }
   ]
