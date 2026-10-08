@@ -1350,6 +1350,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-arthur-ashe-stadium.ts"
+    },
+    {
+      "id": "nyc-ellis-island",
+      "file": "models/nyc-ellis-island.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-ellis-island.ts"
     }
   ],
   "landmarks": [
@@ -5581,6 +5588,22 @@
       "wikidata": "Q609551",
       "replaces": [
         "way/284859611"
+      ]
+    },
+    {
+      "id": "nyc-ellis-island",
+      "name": "Ellis Island Immigration Museum",
+      "model": "nyc-ellis-island",
+      "lng": -74.0394915,
+      "lat": 40.6991381,
+      "bearing": 44.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q102312434",
+      "replaces": [
+        "way/95161971",
+        "way/1177355003",
+        "way/1177355004"
       ]
     }
   ]
