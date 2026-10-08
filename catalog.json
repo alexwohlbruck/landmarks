@@ -1133,6 +1133,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-salesforce-tower.ts"
+    },
+    {
+      "id": "sf-millennium-tower",
+      "file": "models/sf-millennium-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-millennium-tower.ts"
     }
   ],
   "landmarks": [
@@ -4514,6 +4521,21 @@
         "way/1053143803",
         "way/1053143804",
         "way/1053143805"
+      ]
+    },
+    {
+      "id": "sf-millennium-tower",
+      "name": "Millennium Tower",
+      "model": "sf-millennium-tower",
+      "lng": -122.3961896,
+      "lat": 37.7904092,
+      "bearing": 45,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1833555",
+      "replaces": [
+        "way/72963089",
+        "way/73348851"
       ]
     }
   ]
