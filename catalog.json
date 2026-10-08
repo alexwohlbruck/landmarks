@@ -1175,6 +1175,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-101-california.ts"
+    },
+    {
+      "id": "sf-pacific-telephone",
+      "file": "models/sf-pacific-telephone.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-pacific-telephone.ts"
     }
   ],
   "landmarks": [
@@ -4677,6 +4684,22 @@
         "way/436484078",
         "way/1089398909",
         "way/1279505487"
+      ]
+    },
+    {
+      "id": "sf-pacific-telephone",
+      "name": "Pacific Telephone Building",
+      "model": "sf-pacific-telephone",
+      "lng": -122.4000099,
+      "lat": 37.7866793,
+      "bearing": 44.7,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q14681501",
+      "replaces": [
+        "way/80296766",
+        "way/684195506",
+        "way/684195508"
       ]
     }
   ]
