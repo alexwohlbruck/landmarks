@@ -1387,13 +1387,6 @@
       "source": "generators/la-pacific-design-center.ts"
     },
     {
-      "id": "la-urban-light",
-      "file": "models/la-urban-light.glb",
-      "license": "CC0-1.0",
-      "author": "Barrelman",
-      "source": "generators/la-urban-light.ts"
-    },
-    {
       "id": "la-walter-pyramid",
       "file": "models/la-walter-pyramid.glb",
       "license": "CC0-1.0",
@@ -5368,18 +5361,6 @@
         "way/535093311",
         "way/390777734"
       ]
-    },
-    {
-      "id": "la-urban-light",
-      "name": "Urban Light",
-      "model": "la-urban-light",
-      "lng": -118.35921,
-      "lat": 34.06305,
-      "bearing": 7.8,
-      "elevation": 0,
-      "minzoom": 16,
-      "wikidata": "Q7899954",
-      "replaces": []
     },
     {
       "id": "la-walter-pyramid",
