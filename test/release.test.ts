@@ -94,7 +94,8 @@ describe('the release id', () => {
     expect(a.release).toBe(b.release)
     expect([...a.files.keys()]).toEqual([...b.files.keys()])
     for (const [path, bytes] of a.files) expect(sha(b.files.get(path)!)).toBe(sha(bytes))
-  })
+    // Two full builds of 400+ landmarks; bun's 5 s default is too short.
+  }, 60_000)
 
   test('moves when a placement does', () => {
     const catalog = shipped()
