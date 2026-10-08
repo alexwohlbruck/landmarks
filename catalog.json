@@ -1133,6 +1133,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-bonaventure.ts"
+    },
+    {
+      "id": "la-gas-company-tower",
+      "file": "models/la-gas-company-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-gas-company-tower.ts"
     }
   ],
   "landmarks": [
@@ -4430,6 +4437,21 @@
         "way/33528271",
         "way/328826533",
         "way/328826159"
+      ]
+    },
+    {
+      "id": "la-gas-company-tower",
+      "name": "Gas Company Tower",
+      "model": "la-gas-company-tower",
+      "lng": -118.2531308,
+      "lat": 34.0501109,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2424258",
+      "replaces": [
+        "way/427532192",
+        "way/495115501"
       ]
     }
   ]
