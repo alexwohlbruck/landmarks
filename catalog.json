@@ -1140,6 +1140,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-rainier-tower.ts"
+    },
+    {
+      "id": "sea-1201-third-avenue",
+      "file": "models/sea-1201-third-avenue.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-1201-third-avenue.ts"
     }
   ],
   "landmarks": [
@@ -4503,6 +4510,26 @@
         "way/35824879",
         "way/686348090",
         "way/686348091"
+      ]
+    },
+    {
+      "id": "sea-1201-third-avenue",
+      "name": "1201 Third Avenue",
+      "model": "sea-1201-third-avenue",
+      "lng": -122.336163,
+      "lat": 47.6072043,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2301069",
+      "replaces": [
+        "way/140436171",
+        "way/331322651",
+        "way/331322649",
+        "way/331424981",
+        "way/488923802",
+        "way/331322650",
+        "way/331324934"
       ]
     }
   ]
