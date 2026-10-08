@@ -1315,6 +1315,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-getty-center.ts"
+    },
+    {
+      "id": "la-royce-hall",
+      "file": "models/la-royce-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-royce-hall.ts"
     }
   ],
   "landmarks": [
@@ -5105,6 +5112,20 @@
         "way/481417428",
         "way/481451919",
         "way/481451918"
+      ]
+    },
+    {
+      "id": "la-royce-hall",
+      "name": "Royce Hall",
+      "model": "la-royce-hall",
+      "lng": -118.442209,
+      "lat": 34.0728531,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2171194",
+      "replaces": [
+        "way/422876632"
       ]
     }
   ]
