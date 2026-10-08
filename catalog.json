@@ -1266,6 +1266,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-de-young.ts"
+    },
+    {
+      "id": "sf-cal-academy",
+      "file": "models/sf-cal-academy.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-cal-academy.ts"
     }
   ],
   "landmarks": [
@@ -4995,6 +5002,20 @@
         "way/1418750073",
         "way/1418972816",
         "way/1418972817"
+      ]
+    },
+    {
+      "id": "sf-cal-academy",
+      "name": "California Academy of Sciences",
+      "model": "sf-cal-academy",
+      "lng": -122.46609147,
+      "lat": 37.76982799,
+      "bearing": 317.9,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q134486471",
+      "replaces": [
+        "way/28695389"
       ]
     }
   ]
