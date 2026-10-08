@@ -1084,6 +1084,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-soarin.ts"
+    },
+    {
+      "id": "sf-transamerica-pyramid",
+      "file": "models/sf-transamerica-pyramid.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-transamerica-pyramid.ts"
     }
   ],
   "landmarks": [
@@ -4261,6 +4268,26 @@
       "replaces": [
         "way/312369808",
         "way/121865023"
+      ]
+    },
+    {
+      "id": "sf-transamerica-pyramid",
+      "name": "Transamerica Pyramid",
+      "model": "sf-transamerica-pyramid",
+      "lng": -122.4027858,
+      "lat": 37.7951663,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q216865",
+      "replaces": [
+        "way/24222973",
+        "way/451336893",
+        "way/451336895",
+        "way/451336898",
+        "way/451336901",
+        "way/451336902",
+        "way/136615987"
       ]
     }
   ]
