@@ -1413,6 +1413,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-cleopatras-needle.ts"
+    },
+    {
+      "id": "nyc-david-geffen-hall",
+      "file": "models/nyc-david-geffen-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-david-geffen-hall.ts"
     }
   ],
   "landmarks": [
@@ -5805,6 +5812,22 @@
       "minzoom": 16,
       "wikidata": "Q23889472",
       "replaces": []
+    },
+    {
+      "id": "nyc-david-geffen-hall",
+      "name": "David Geffen Hall",
+      "model": "nyc-david-geffen-hall",
+      "lng": -73.9830164,
+      "lat": 40.7728215,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q790654",
+      "replaces": [
+        "way/265354527",
+        "way/330177539",
+        "way/1475173701"
+      ]
     }
   ]
 }
