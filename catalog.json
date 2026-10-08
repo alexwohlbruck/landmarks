@@ -1287,6 +1287,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-academy-museum.ts"
+    },
+    {
+      "id": "la-bullocks-wilshire",
+      "file": "models/la-bullocks-wilshire.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-bullocks-wilshire.ts"
     }
   ],
   "landmarks": [
@@ -5005,6 +5012,21 @@
         "way/913293589",
         "way/1113417080",
         "way/1113417081"
+      ]
+    },
+    {
+      "id": "la-bullocks-wilshire",
+      "name": "Bullocks Wilshire",
+      "model": "la-bullocks-wilshire",
+      "lng": -118.2887936,
+      "lat": 34.0615227,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4996997",
+      "replaces": [
+        "way/427824132",
+        "way/490392556"
       ]
     }
   ]
