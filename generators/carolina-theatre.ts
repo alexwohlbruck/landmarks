@@ -1,43 +1,62 @@
 /**
  * Carolina Theatre, 230 North Tryon Street, Charlotte (1927 movie palace,
- * restored and reopened in 2025 as part of Belk Place) — procedural,
- * CC0-1.0, no textures.
+ * restored and reopened in 2025 behind the new Belk Place lobby) —
+ * procedural, CC0-1.0, no textures.
  * bun generators/carolina-theatre.ts
  *
  * Map frame: x east, y north, z up, metres, placed at bearing 47.3°, the
  * street grid's axis: the model's +y runs north-east along North Tryon Street
- * toward East 6th Street, +x runs south-east along 6th Street toward College
+ * toward 6th Street, +x runs south-east along 6th Street toward College
  * Street. So the Tryon front is the model's west face and 6th Street its
  * north face. The anchor is the metre-based area centroid of the theatre's
  * OSM outline, way/502725466.
  *
- * That outline holds the whole theatre and nothing else, and OSM splits it
- * into parts, which this follows (heights are OSM's):
- * - the glass pavilion on the Tryon corner (Belk Place lobby, parts
- *   1410822079–085, 091; 26–29 m): a lower lobby of clear glass in a pale
- *   frame that stands 0.4 m proud on Tryon and turns the corner onto 6th
- *   Street (1410822091, 16 m), and above it a box of reflective glass under a
- *   white top band, with the vertical CAROLINA blade sign beside the door;
- * - the 1927 auditorium (1410822084): a red-brick hall, 19 m to a low gable
- *   whose ridge runs back from Tryon, blank-walled along 6th Street;
- * - the stage house at the College Street end (1410822086, 22 m);
- * - the low brick annexes along 6th Street (1410822087, 088, 090; 5–7 m),
- *   the two-storey one with its three arched windows;
- * - the back-of-house blocks on the south side (1410822092–095; 20–25 m).
+ * What stands there today. The theatre's 1927 Tryon Street lobby building
+ * is long gone (the 2016 lidar shows an empty lot and an older block where
+ * it stood), so there is no historic brick facade on Tryon any more. The
+ * Tryon front is the glass Belk Place pavilion (2024-25): a two-tier glass
+ * box with the vertical CAROLINA blade sign beside its door. The 1927
+ * brick shows on 6th Street: the auditorium's long wall, the stage house,
+ * and the low annexes with three round-arched windows. The InterContinental
+ * hotel planned with Belk Place is not in OSM and stands outside this
+ * outline (its site is across 6th Street), so it is not modelled and
+ * `replaces` does not touch it.
  *
- * The InterContinental hotel planned above the theatre is not in OSM and not
- * modelled.
+ * Parts follow OSM's building:parts of way/502725466:
+ * - the pavilion (1410822079-085, 091; OSM 23-29 m): a lower lobby of clear
+ *   glass inside a pale frame that stands proud on Tryon and turns 9 m onto
+ *   6th Street (1410822091, 16 m), white piers and a mezzanine beam showing
+ *   through it; above, two floors of reflective blue glass, a dark louvre
+ *   strip and a white coping band at 27 m;
+ * - the auditorium (1410822084): red brick, eaves 17 m and a low gable ridge
+ *   at 21.5 m along its length (lidar);
+ * - the stage house (1410822086): 24.5 m (lidar);
+ * - the annexes along 6th Street (1410822087, 088, 090): 8, 5.5 and 8 m
+ *   (lidar), the two-storey one with its three round-arched windows;
+ * - the back-of-house blocks on the south side (1410822092-095): 27, 25 and
+ *   23 m (lidar).
  *
- * The ground falls about 1.4 m from Tryon to the College Street end (AWS
- * terrain tiles), so y = 0 is the College Street end and each block's height
- * sits on its own ground.
- *
- * References (visual only): City Dweller 2, "Carolina Theater entrance Late
- * March 2025", "Carolina Theater along North Tryon St December 26, 2025",
- * "Intercontinental Hotel at Belk Place Early June 2024" and "... site before
- * construction Late December 2024" (Commons, CC BY-SA 4.0); Fortibus,
- * "Carolina Theatre Charlotte 1" and "2" (Commons, CC BY-SA 4.0, the 6th
- * Street side before restoration); USGS NAIP orthoimagery (public domain).
+ * Evidence:
+ * - OSM way/502725466 and parts (plan; pavilion heights).
+ * - Lidar: USGS 3DEP NC Phase 4 Mecklenburg 2016 (flown before the
+ *   pavilion), heights above the lowest ground: auditorium eaves 17 /
+ *   ridge 21.5, stage house 24.5, back blocks 27/25/23, annexes 8/5.5/8.
+ *   The ground falls about 1.4 m from Tryon to the College Street end, so
+ *   y = 0 is the College Street end and each block sits on its own ground.
+ * - Photos (Wikimedia Commons, all CC BY-SA 4.0): City Dweller 2,
+ *   "Carolina Theater entrance Late March 2025" (from across Tryon at 6th,
+ *   day), "Intercontinental Hotel at Belk Place site before construction
+ *   Late December 2024" and "... Early June 2024" (same corner, day),
+ *   "Carolina Theater December 26, 2025" (from across 6th Street, night),
+ *   "Carolina Theater along North Tryon St December 26, 2025" (Tryon,
+ *   night); Fortibus, "Carolina Theatre Charlotte 1" and "2" (6th Street
+ *   side, before restoration). USGS NAIP orthoimagery (public domain).
+ * - Read off the photos (estimated, ±1 m): lobby frame top 16 m, mezzanine
+ *   beam 11 m, door portal 10 m tall, blade sign 3.8-11 m, coping band
+ *   1.8 m, louvre strip 1.3 m.
+ * - Not seen in any licensed photo: the College Street end and the south
+ *   blocks' faces; drawn plain, with one band of windows on the stage-house
+ *   block's College face as before.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish, windowVariant } from './palette'
@@ -130,129 +149,148 @@ function archNorth(part: Part, xc: number, y: number, w: number, z0: number, zs:
 // Ground: 1.4 m higher on Tryon than at the College Street end.
 const g = (x: number) => Math.max(0, 1.4 * (30.5 - x) / 61)
 
+/** A flat band or strip on a wall, on several faces at once. */
+const strips = (part: Part, faces: [XY, XY][], z0: number, z1: number, o = 0.05) => faces.forEach(([p, q]) => panel(part, p, q, z0, z1, o))
+/** Points along p→q at fraction t. */
+const along = (p: XY, q: XY, t: number): XY => [p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t]
+
 // ---------------------------------------------------------------------------
-// The glass pavilion on the corner.
+// The Belk Place pavilion on the Tryon corner.
 
 const PX0 = -30.1, PX1 = -9.0, PY0 = -9.4, PY1 = 19.6
 const GP = g(-20)
-const Z_LOBBY = GP + 15.5      // top of the lower lobby's frame (OSM strip, 16 m)
-const Z_TOP = GP + 27          // pavilion roof (OSM 26–27 m)
-const Z_BAND = Z_TOP - 1.5     // the white top band
-const Z_LOUVRE = Z_BAND - 0.8  // the dark strip under it
+const Z_LOBBY = GP + 16        // top of the lower lobby's frame (OSM strip, 16 m; photos)
+const Z_TOP = GP + 27          // pavilion coping (OSM 27 m)
+const Z_BAND = Z_TOP - 1.8     // the white coping band
+const Z_LOUVRE = Z_BAND - 1.3  // the dark louvre strip under it
+const Z_FLOOR = (Z_LOBBY + Z_LOUVRE) / 2 // the one floor line in the upper glass
 
-// The box itself is reflective glass from the lobby frame up.
+// The box: reflective glass up to the louvre strip, the strip, then the
+// white coping band with a soft top edge.
 {
   const r = rect(PX0, PX1, PY0, PY1)
-  // Glass walls to the band, then the white band with a soft top edge.
-  walls(glass, r, 0, Z_BAND)
-  prism(trim, r, Z_BAND, Z_TOP, 0.4, roof)
-  // The back extension over the auditorium's front (1410822081, 26 m).
+  walls(glass, r, 0, Z_LOUVRE)
+  walls(roof, r, Z_LOUVRE, Z_BAND)
+  prism(trim, offset(ccw(r), 0.3), Z_BAND, Z_TOP, 0.45, roof)
+  // The back extension over the auditorium's front (1410822081, 26 m) and
+  // the plant screen on the roof (1410822080, 29 m).
   const back = rect(PX1, -4.9, -2.2, 12.2)
-  walls(glass, back, 0, Z_TOP - 1.0, [3])
-  prism(trim, back, Z_TOP - 1.6, Z_TOP - 1.0, 0.2, roof)
-  // A plant screen on the roof (1410822080, 29 m).
-  prism(roof, rect(-16.1, -8.9 - 0.4, 2.4, 12.2), Z_TOP - 0.2, Z_TOP + 1.2, 0.3, roof)
+  walls(glass, back, 0, Z_TOP - 1.6, [3])
+  prism(trim, back, Z_TOP - 1.6, Z_TOP - 0.9, 0.25, roof)
+  prism(roof, rect(-16.1, -9.6, 2.4, 12.2), Z_TOP - 0.2, Z_TOP + 1.4, 0.35)
 }
-// The dark strip under the band, all round.
-for (const [p, q] of [[[PX0, PY1], [PX0, PY0]], [[PX1, PY1], [PX0, PY1]], [[PX0, PY0], [PX1, PY0]]] as [XY, XY][])
-  panel(roof, p, q, Z_LOUVRE, Z_BAND)
-// Upper glass: a floor line and a few mullions in pale trim.
+// Upper glass: the floor line between its two storeys, and mullions in
+// groups, pale trim on the reflective glass.
 {
   const lines = (p: XY, q: XY, z0: number, n: number) => {
-    const L = Math.hypot(q[0] - p[0], q[1] - p[1]), u: XY = [(q[0] - p[0]) / L, (q[1] - p[1]) / L]
-    panel(trim, p, q, (z0 + Z_LOUVRE) / 2 - 0.15, (z0 + Z_LOUVRE) / 2 + 0.15, 0.05)
+    panel(trim, p, q, Z_FLOOR - 0.2, Z_FLOOR + 0.2, 0.05)
+    panel(trim, p, q, z0 - 0.35, z0, 0.05)
     for (let k = 1; k < n; k++) {
-      const s = L * k / n, a: XY = [p[0] + u[0] * (s - 0.12), p[1] + u[1] * (s - 0.12)], b: XY = [p[0] + u[0] * (s + 0.12), p[1] + u[1] * (s + 0.12)]
-      panel(trim, a, b, z0, Z_LOUVRE, 0.05)
+      const L = Math.hypot(q[0] - p[0], q[1] - p[1]), d = 0.16 / L
+      panel(trim, along(p, q, k / n - d), along(p, q, k / n + d), z0, Z_LOUVRE, 0.05)
     }
   }
   lines([PX0, PY1], [PX0, PY0], Z_LOBBY, 6)          // Tryon
-  lines([PX1, PY1], [PX0, PY1], Z_LOBBY - 3, 4)      // 6th Street (the lobby frame stops short)
-  lines([PX0, PY0], [PX1, PY0], 20.5, 4)             // over the Foundation building
+  lines([PX1, PY1], [PX0, PY1], Z_LOBBY, 4)          // 6th Street
+  lines([PX0, PY0], [PX1, PY0], 20.6, 4)             // over the Foundation building
 }
 
-// The lower lobby: a frame of pale panels 0.4 m proud, clear lit glass within.
+// The lower lobby: a pale frame standing 0.6 m proud on Tryon and turning
+// the corner onto 6th Street, clear glass within, the white piers and the
+// mezzanine beam behind it showing through.
+const O = 0.6, F = 0.6, XF = PX0 - O, YF = PY1 + O
 {
-  const F = 0.55, O = 0.4
-  // Tryon face.
-  const xf = PX0 - O
-  prism(trim, [[xf, PY0 + 0.4], [PX0, PY0 + 0.4], [PX0, PY1 - 0.2], [xf, PY1 - 0.2]], 0, Z_LOBBY, 0.2)
-  // Turn the corner onto 6th Street as far as the OSM strip runs.
-  const yf = PY1 + O
-  prism(trim, [[PX0 - O, PY1 - 0.2], [-21.0, PY1 - 0.2], [-21.0, yf], [PX0 - O, yf]], 0, Z_LOBBY, 0.2)
+  prism(trim, [[XF, PY0 + 0.3], [PX0, PY0 + 0.3], [PX0, PY1], [XF, PY1]], 0, Z_LOBBY, 0.3, trim)
+  prism(trim, [[XF, PY1], [-21.0, PY1], [-21.0, YF], [XF, YF]], 0, Z_LOBBY, 0.3, trim)
   // Glass within the frame: Tryon, then 6th Street.
-  panel(win, [xf, PY1 - F], [xf, PY0 + 0.4 + F], GP + 0.0, Z_LOBBY - F, 0.03)
-  panel(win, [-21 - F, yf], [PX0 - O + F, yf], g(-25), Z_LOBBY - F, 0.03)
-  // Interior white piers seen through the glass, and the door's stone portal.
-  for (const y of [3.2, 11.4]) panel(trim, [xf, y + 0.6], [xf, y - 0.6], GP, Z_LOBBY - F, 0.06)
-  panel(trim, [xf, -2.0], [xf, -5.8], GP, GP + 12.2, 0.07)
-  panel(lit, [xf, -2.9], [xf, -4.9], GP, GP + 3.4, 0.1)
-  // 6th Street, beyond the lobby frame: plain glass down to the pavement.
-  panel(win, [PX1 - 0.3, PY1], [-21 + 0.3, PY1], g(-15), Z_LOBBY - 3, 0.04)
+  const yA = YF - F, yB = PY0 + 0.3 + F
+  panel(win, [XF, yA], [XF, yB], GP + 0.3, Z_LOBBY - F, 0.03)
+  panel(win, [-21 - F, YF], [XF + F, YF], g(-25) + 0.3, Z_LOBBY - F, 0.03)
+  // The piers and mezzanine beam seen through the glass.
+  for (const y of [3.0, 11.2]) panel(trim, [XF, y + 0.75], [XF, y - 0.75], GP, Z_LOBBY - F, 0.06)
+  panel(trim, [XF, yA], [XF, yB], GP + 10.6, GP + 11.4, 0.06)
+  panel(trim, [-21 - F, YF], [XF + F, YF], GP + 10.6, GP + 11.4, 0.06)
+  // A pier where the frame's return ends on 6th Street.
+  panel(trim, [-24.2, YF], [-25.4, YF], g(-25), Z_LOBBY - F, 0.06)
+  // The door: a tall pale portal with lit glass doors at its foot.
+  panel(trim, [XF, -1.9], [XF, -5.9], GP, GP + 10, 0.08)
+  panel(lit, [XF, -2.7], [XF, -5.1], GP, GP + 3.4, 0.12)
+  panel(win, [XF, -2.7], [XF, -5.1], GP + 3.9, GP + 9.2, 0.12)
 }
-// The CAROLINA blade sign: a tall slim box standing off the front by the door.
+// The CAROLINA blade sign: a tall dark box standing off the frame just
+// south of the door, lit letters down both faces.
 {
-  const y0 = -7.6, y1 = -6.8, x0 = PX0 - 0.4 - 1.7, x1 = PX0 - 0.4
-  prism(lit, rect(x0, x1, y0, y1), GP + 3.6, GP + 13.2, 0.12, roof)
-  // Its underside.
-  quadN(lit, [x0, y0, GP + 3.6], [x0, y1, GP + 3.6], [x1, y1, GP + 3.6], [x1, y0, GP + 3.6], [[0, 0, -1], [0, 0, -1], [0, 0, -1], [0, 0, -1]])
+  const y0 = -7.85, y1 = -6.85, x0 = XF - 2.2, x1 = XF, z0 = GP + 3.8, z1 = GP + 11
+  prism(roof, rect(x0, x1, y0, y1), z0, z1, 0.15, roof)
+  quadN(roof, [x0, y0, z0], [x0, y1, z0], [x1, y1, z0], [x1, y0, z0], [[0, 0, -1], [0, 0, -1], [0, 0, -1], [0, 0, -1]])
+  panel(lit, [x0 + 0.35, y1], [x1 - 0.35, y1], z0 + 0.45, z1 - 0.45, 0.03)
+  panel(lit, [x1 - 0.35, y0], [x0 + 0.35, y0], z0 + 0.45, z1 - 0.45, 0.03)
+  panel(lit, [x0, y0 + 0.2], [x0, y1 - 0.2], z0 + 0.45, z1 - 0.45, 0.03)
 }
 
 // ---------------------------------------------------------------------------
 // The 1927 theatre in red brick.
 
-// Auditorium: walls to the eaves, a low gable along x with brick gable ends.
+// Auditorium: brick walls to the eaves with a slim parapet on the long
+// sides, a low gable roof whose ridge runs back from Tryon.
+const AX0 = -9.6, AX1 = 20.7, AY0 = -9.3, AY1 = 16.4, AYC = (AY0 + AY1) / 2
+const ZE = 17, ZR = 21.5
 {
-  const X0 = -9.6, X1 = 20.7, Y0 = -9.3, Y1 = 16.4, YC = (Y0 + Y1) / 2
-  const ZE = g(5) + 15, ZR = g(5) + 19
-  walls(brick, rect(X0, X1, Y0, Y1), 0, ZE)
-  // A slim brick parapet on the long sides.
-  prism(brick, rect(X0, X1, Y1 - 0.5, Y1), ZE, ZE + 0.7, 0.2)
-  prism(brick, rect(X0, X1, Y0, Y0 + 0.5), ZE, ZE + 0.7, 0.2)
-  // Roof slopes.
-  const sN = unit([0, ZR - ZE, YC - Y0]), nN = unit([0, -(ZR - ZE), YC - Y0])
-  quadN(roof, [X0, Y0 + 0.5, ZE + 0.4], [X1, Y0 + 0.5, ZE + 0.4], [X1, YC, ZR], [X0, YC, ZR], [sN, sN, sN, sN].map(() => unit([0, -(ZR - ZE), YC - Y0])) as V3[])
-  quadN(roof, [X1, Y1 - 0.5, ZE + 0.4], [X0, Y1 - 0.5, ZE + 0.4], [X0, YC, ZR], [X1, YC, ZR], [nN, nN, nN, nN].map(() => unit([0, ZR - ZE, YC - Y0])) as V3[])
-  // Gable ends (the Tryon one sits behind the pavilion; the College one shows above the stage house's sides).
-  for (const [x, s] of [[X0, -1], [X1, 1]] as [number, number][]) {
-    const N: V3 = [s, 0, 0]
-    const A: V3 = [x, Y0, ZE], B: V3 = [x, Y1, ZE], C: V3 = [x, YC, ZR + 0.5]
+  walls(brick, rect(AX0, AX1, AY0, AY1), 0, ZE)
+  prism(brick, rect(AX0, AX1, AY1 - 0.6, AY1), ZE, ZE + 0.9, 0.25)
+  prism(brick, rect(AX0, AX1, AY0, AY0 + 0.6), ZE, ZE + 0.9, 0.25)
+  const nS = unit([0, -(ZR - ZE), AYC - AY0]), nN = unit([0, ZR - ZE, AYC - AY0])
+  quadN(roof, [AX0, AY0 + 0.6, ZE + 0.5], [AX1, AY0 + 0.6, ZE + 0.5], [AX1, AYC, ZR], [AX0, AYC, ZR], [nS, nS, nS, nS])
+  quadN(roof, [AX1, AY1 - 0.6, ZE + 0.5], [AX0, AY1 - 0.6, ZE + 0.5], [AX0, AYC, ZR], [AX1, AYC, ZR], [nN, nN, nN, nN])
+  // Brick gable ends, a little above the roof.
+  for (const [x, s] of [[AX0, -1], [AX1, 1]] as [number, number][]) {
+    const N: V3 = [s, 0, 0], A: V3 = [x, AY0, ZE + 0.9], B: V3 = [x, AY1, ZE + 0.9], C: V3 = [x, AYC, ZR + 0.6]
     if (s > 0) brick.tri(A, B, C, undefined, undefined, undefined, [N, N, N])
     else brick.tri(B, A, C, undefined, undefined, undefined, [N, N, N])
   }
 }
-// Stage house, at the College Street end.
-prism(brick, rect(20.7, 30.5, -4.0, 14.7), 0, 22, 0.35, roof)
+// Stage house at the College Street end, taller than the auditorium.
+prism(brick, rect(20.7, 30.5, -4.0, 14.7), 0, 24.5, 0.4, roof)
+
 // The annexes along 6th Street.
-prism(brick, rect(-8.9, -0.1, 16.3, 19.5), 0, g(-4.5) + 7.2, 0.3, roof)
-prism(brick, rect(-0.1, 20.8, 16.3, 19.5), 0, g(10) + 5.0, 0.3, roof)
-prism(brick, rect(20.7, 30.6, 14.7, 19.6), 0, 7.0, 0.3, roof)
-// Their windows: three arched on the two-storey annex, two big grid windows below.
-for (const xc of [-6.4, -4.5, -2.6]) archNorth(glass, xc, 19.5, 1.3, g(-4.5) + 3.7, g(-4.5) + 5.6)
-for (const [a, b] of [[1.0, 5.6], [6.4, 11.0]]) panel(glass, [b, 19.5], [a, 19.5], g(3) + 0.9, g(3) + 3.6)
-for (const xc of [23.2, 25.6, 28.0]) panel(glass, [xc + 0.6, 19.6], [xc - 0.6, 19.6], 1.2, 2.6)
-panel(lit, [16.4, 19.5], [14.6, 19.5], g(15), g(15) + 2.6)
+const ZA = g(-4.5) + 8
+prism(brick, rect(-8.9, -0.1, 16.3, 19.5), 0, ZA, 0.35, roof)
+prism(brick, rect(-0.1, 20.8, 16.3, 19.5), 0, g(10) + 5.5, 0.35, roof)
+prism(brick, rect(20.7, 30.6, 14.7, 19.6), 0, 8, 0.35, roof)
+// Pale stone sills and a coping line on the two-storey annex.
+panel(trim, [-0.1, 19.5], [-8.9, 19.5], ZA - 0.6, ZA - 0.2, 0.06)
+panel(trim, [-0.4, 19.5], [-8.6, 19.5], g(-4.5) + 3.4, g(-4.5) + 3.75, 0.06)
+// Its three round-arched windows, in a pale brick arch surround.
+for (const xc of [-6.5, -4.5, -2.5]) {
+  archNorth(trim, xc, 19.5, 1.75, g(-4.5) + 3.75, g(-4.5) + 5.9, 0.05)
+  archNorth(glass, xc, 19.5, 1.25, g(-4.5) + 3.75, g(-4.5) + 5.9, 0.09)
+}
+// The one-storey annex: two big grid windows and the old side door.
+for (const [a, b] of [[1.0, 5.6], [6.4, 11.0]]) panel(glass, [b, 19.5], [a, 19.5], g(3) + 0.9, g(3) + 3.9)
+panel(lit, [16.4, 19.5], [14.6, 19.5], g(15), g(15) + 2.8)
+for (const xc of [23.2, 25.6, 28.0]) panel(glass, [xc + 0.6, 19.6], [xc - 0.6, 19.6], 1.4, 3.4)
 
 // The back-of-house blocks on the south side.
-prism(brick, [[-12.0, -20.9], [-5.6, -21.4], [-5.1, -9.3], [-11.5, -9.3]], 0, g(-8) + 25, 0.35, roof)
-prism(brick, [[-12.2, -26.1], [-3.5, -26.7], [-3.0, -21.5], [-5.6, -21.4], [-12.0, -20.9]], 0, g(-8) + 25, 0.35, roof)
-prism(brick, rect(7.2, 15.0, -14.0, -9.3), 0, g(11) + 23, 0.35, roof)
-prism(brick, [[7.2, -14.0], [15.0, -14.0], [14.7, -19.3], [18.5, -19.3], [18.5, -28.2], [15.5, -28.0], [-3.5, -26.7], [-3.0, -21.5], [-5.6, -21.4], [-5.1, -9.3], [7.2, -9.3]], 0, g(5) + 20, 0.35, roof)
-// A band of windows on the stage-house block's College Street face.
-for (const z of [6, 12]) panel(glass, [18.5, -27.4], [18.5, -20.0], z, z + 2.2)
+prism(brick, [[-12.0, -20.9], [-5.6, -21.4], [-5.1, -9.3], [-11.5, -9.3]], 0, 27, 0.4, roof)
+prism(brick, [[-12.2, -26.1], [-3.5, -26.7], [-3.0, -21.5], [-5.6, -21.4], [-12.0, -20.9]], 0, 27, 0.4, roof)
+prism(brick, rect(7.2, 15.0, -14.0, -9.3), 0, 25, 0.4, roof)
+prism(brick, [[7.2, -14.0], [15.0, -14.0], [14.7, -19.3], [18.5, -19.3], [18.5, -28.2], [15.5, -28.0], [-3.5, -26.7], [-3.0, -21.5], [-5.6, -21.4], [-5.1, -9.3], [7.2, -9.3]], 0, 23, 0.4, roof)
+// Two bands of windows on the stage-house block's College Street face.
+for (const z of [7, 13]) panel(glass, [18.5, -27.4], [18.5, -20.0], z, z + 2.6)
 
 // ---------------------------------------------------------------------------
 
 // Colours from the daylight photos: the orange-red brick pulled light; the
-// pavilion's pale frame and band as trim; its reflective blue-green glass as
-// a light sky slate; the lit lobby glass, door portal glazing and blade sign
-// as entrance, so the lobby glows at night as it does.
+// pavilion's pale frame, piers and coping as trim; the lobby's clear glass,
+// white-lit inside, as a pale window; the upper floors' reflective blue
+// glass as a light sky slate (window-2, so it still glows at night); the
+// door, its lit glass and the sign's letters as entrance.
 const parts = [
-  { part: brick, material: finish('red-brick', 0xc0846f) },
+  { part: brick, material: finish('carolina-brick', 0xc07a62) },
   { part: trim, material: PALETTE.trim },
   { part: roof, material: PALETTE.roof },
-  { part: win, material: { ...PALETTE.window, color: 0xbfcfd9 } },
-  { part: glass, material: windowVariant(2, 0x93acbf) },
+  { part: win, material: { ...PALETTE.window, color: 0xc3d1db } },
+  { part: glass, material: windowVariant(2, 0x8fa9bd) },
   { part: lit, material: PALETTE.entrance },
 ]
 const triangles = parts.reduce((s, { part }) => s + part.triangles, 0)
@@ -260,7 +298,7 @@ console.log(parts.map(({ part, material }) => `${material.name}: ${part.triangle
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('Carolina Theatre', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at the ground anchor',
-  bearing: 47.3, osm: 'way/502725466', height: Z_TOP + 1.2,
+  bearing: 47.3, osm: 'way/502725466', height: Z_TOP + 1.4,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
 const outFile = new URL('../models/carolina-theatre.glb', import.meta.url).pathname
