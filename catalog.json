@@ -1238,6 +1238,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-the-shed.ts"
+    },
+    {
+      "id": "nyc-trinity-church",
+      "file": "models/nyc-trinity-church.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-trinity-church.ts"
     }
   ],
   "landmarks": [
@@ -5054,6 +5061,55 @@
         "way/681503639",
         "way/1220655932",
         "way/1220614724"
+      ]
+    },
+    {
+      "id": "nyc-trinity-church",
+      "name": "Trinity Church",
+      "model": "nyc-trinity-church",
+      "lng": -74.0122266,
+      "lat": 40.7080238,
+      "bearing": 121.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q866896",
+      "replaces": [
+        "way/278039453",
+        "way/276175138",
+        "way/276175139",
+        "way/276175140",
+        "way/276175141",
+        "way/276175142",
+        "way/276175143",
+        "way/276175145",
+        "way/276175146",
+        "way/276175147",
+        "way/276175148",
+        "way/276175149",
+        "way/276175150",
+        "way/276175151",
+        "way/276175152",
+        "way/276175153",
+        "way/276175154",
+        "way/276175155",
+        "way/276175156",
+        "way/276175157",
+        "way/276175158",
+        "way/276175159",
+        "way/276175160",
+        "way/276175161",
+        "way/276175162",
+        "way/276175163",
+        "way/276175164",
+        "way/276175166",
+        "way/276175167",
+        "way/276175168",
+        "way/276175169",
+        "way/276175170",
+        "way/276175171",
+        "way/276175172",
+        "way/276175173",
+        "way/276175174"
       ]
     }
   ]
