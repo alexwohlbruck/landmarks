@@ -1413,6 +1413,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-christ-the-light.ts"
+    },
+    {
+      "id": "sf-oakland-temple",
+      "file": "models/sf-oakland-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-oakland-temple.ts"
     }
   ],
   "landmarks": [
@@ -5570,6 +5577,22 @@
         "way/782773173",
         "way/782773174",
         "way/782773175"
+      ]
+    },
+    {
+      "id": "sf-oakland-temple",
+      "name": "Oakland California Temple",
+      "model": "sf-oakland-temple",
+      "lng": -122.199095,
+      "lat": 37.807815,
+      "bearing": 5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1541513",
+      "replaces": [
+        "way/52391545",
+        "way/894014038",
+        "way/894014037"
       ]
     }
   ]
