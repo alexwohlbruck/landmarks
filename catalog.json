@@ -1154,6 +1154,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-555-california.ts"
+    },
+    {
+      "id": "sf-345-california",
+      "file": "models/sf-345-california.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-345-california.ts"
     }
   ],
   "landmarks": [
@@ -4585,6 +4592,32 @@
         "way/1244283834",
         "way/1244283835",
         "way/1244283836"
+      ]
+    },
+    {
+      "id": "sf-345-california",
+      "name": "345 California Center",
+      "model": "sf-345-california",
+      "lng": -122.4004564,
+      "lat": 37.7925879,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q680905",
+      "replaces": [
+        "way/588355355",
+        "way/616812351",
+        "way/616812352",
+        "way/616812353",
+        "way/616812354",
+        "way/616812355",
+        "way/616812356",
+        "way/616812357",
+        "way/616812358",
+        "way/616812359",
+        "way/616812360",
+        "way/616812361",
+        "way/616812362"
       ]
     }
   ]
