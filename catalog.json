@@ -1105,6 +1105,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-metlife-building.ts"
+    },
+    {
+      "id": "nyc-helmsley-building",
+      "file": "models/nyc-helmsley-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-helmsley-building.ts"
     }
   ],
   "landmarks": [
@@ -4340,6 +4347,32 @@
         "way/1487962791",
         "way/1487962792",
         "way/1487962793"
+      ]
+    },
+    {
+      "id": "nyc-helmsley-building",
+      "name": "Helmsley Building",
+      "model": "nyc-helmsley-building",
+      "lng": -73.9761107,
+      "lat": 40.7543877,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1603308",
+      "replaces": [
+        "way/73850655",
+        "way/264734070",
+        "way/264734071",
+        "way/264734072",
+        "way/264734073",
+        "way/264734074",
+        "way/264734075",
+        "way/291189622",
+        "way/291189624",
+        "way/291189626",
+        "way/291189628",
+        "way/291189630",
+        "way/668477452"
       ]
     }
   ]
