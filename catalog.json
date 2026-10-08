@@ -1147,6 +1147,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-wells-fargo-center.ts"
+    },
+    {
+      "id": "la-eastern-columbia",
+      "file": "models/la-eastern-columbia.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-eastern-columbia.ts"
     }
   ],
   "landmarks": [
@@ -4475,6 +4482,20 @@
         "way/427532202",
         "way/427532194",
         "way/427532221"
+      ]
+    },
+    {
+      "id": "la-eastern-columbia",
+      "name": "Eastern Columbia Building",
+      "model": "la-eastern-columbia",
+      "lng": -118.2562097,
+      "lat": 34.0427452,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q71842",
+      "replaces": [
+        "way/427942790"
       ]
     }
   ]
