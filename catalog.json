@@ -1210,6 +1210,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-chinese-theatre.ts"
+    },
+    {
+      "id": "la-kia-forum",
+      "file": "models/la-kia-forum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-kia-forum.ts"
     }
   ],
   "landmarks": [
@@ -4687,6 +4694,20 @@
       "wikidata": "Q1122565",
       "replaces": [
         "way/424105908"
+      ]
+    },
+    {
+      "id": "la-kia-forum",
+      "name": "Kia Forum",
+      "model": "la-kia-forum",
+      "lng": -118.341972,
+      "lat": 33.958216,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q639129",
+      "replaces": [
+        "way/26320999"
       ]
     }
   ]
