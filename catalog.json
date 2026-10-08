@@ -1273,6 +1273,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-lacma-geffen.ts"
+    },
+    {
+      "id": "la-petersen",
+      "file": "models/la-petersen.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-petersen.ts"
     }
   ],
   "landmarks": [
@@ -4958,6 +4965,20 @@
         "way/1352498503",
         "way/1352498504",
         "way/1352498526"
+      ]
+    },
+    {
+      "id": "la-petersen",
+      "name": "Petersen Automotive Museum",
+      "model": "la-petersen",
+      "lng": -118.3611471,
+      "lat": 34.0623791,
+      "bearing": 7.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2358105",
+      "replaces": [
+        "way/913343446"
       ]
     }
   ]
