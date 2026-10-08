@@ -1210,6 +1210,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-alcatraz-cellhouse.ts"
+    },
+    {
+      "id": "sf-alcatraz-water-tower",
+      "file": "models/sf-alcatraz-water-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-alcatraz-water-tower.ts"
     }
   ],
   "landmarks": [
@@ -4800,6 +4807,20 @@
         "way/128245373",
         "way/128245367",
         "way/24433437"
+      ]
+    },
+    {
+      "id": "sf-alcatraz-water-tower",
+      "name": "Alcatraz Water Tower",
+      "model": "sf-alcatraz-water-tower",
+      "lng": -122.4239316,
+      "lat": 37.8275728,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q1142684",
+      "replaces": [
+        "way/660870452"
       ]
     }
   ]
