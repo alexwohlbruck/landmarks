@@ -1252,6 +1252,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-opera-house.ts"
+    },
+    {
+      "id": "sf-veterans-building",
+      "file": "models/sf-veterans-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-veterans-building.ts"
     }
   ],
   "landmarks": [
@@ -4944,6 +4951,20 @@
       "wikidata": "Q2915772",
       "replaces": [
         "way/32865161"
+      ]
+    },
+    {
+      "id": "sf-veterans-building",
+      "name": "War Memorial Veterans Building",
+      "model": "sf-veterans-building",
+      "lng": -122.4210207,
+      "lat": 37.7795458,
+      "bearing": 350.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5736243",
+      "replaces": [
+        "way/32865757"
       ]
     }
   ]
