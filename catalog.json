@@ -1266,6 +1266,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-national-shrine.ts"
+    },
+    {
+      "id": "dc-st-matthews",
+      "file": "models/dc-st-matthews.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-st-matthews.ts"
     }
   ],
   "landmarks": [
@@ -5216,6 +5223,20 @@
         "way/1426384350",
         "way/1426384351",
         "way/1426384352"
+      ]
+    },
+    {
+      "id": "dc-st-matthews",
+      "name": "Cathedral of St. Matthew the Apostle",
+      "model": "dc-st-matthews",
+      "lng": -77.0402483,
+      "lat": 38.9063933,
+      "bearing": 336,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q603535",
+      "replaces": [
+        "way/55327016"
       ]
     }
   ]
