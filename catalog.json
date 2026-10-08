@@ -1245,6 +1245,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-national-cathedral.ts"
+    },
+    {
+      "id": "dc-washington-temple",
+      "file": "models/dc-washington-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-washington-temple.ts"
     }
   ],
   "landmarks": [
@@ -5034,6 +5041,39 @@
         "way/1176354410",
         "way/1176354411",
         "way/1176354412"
+      ]
+    },
+    {
+      "id": "dc-washington-temple",
+      "name": "Washington D.C. Temple",
+      "model": "dc-washington-temple",
+      "lng": -77.0656093,
+      "lat": 39.0140535,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1810883",
+      "replaces": [
+        "way/87324809",
+        "way/781335032",
+        "way/781335034",
+        "way/845436189",
+        "way/845436190",
+        "way/845436191",
+        "way/845436192",
+        "way/845436193",
+        "way/845436194",
+        "way/845436195",
+        "way/845436196",
+        "way/845436197",
+        "way/845436198",
+        "way/845436199",
+        "way/845436200",
+        "way/845436201",
+        "way/845436202",
+        "way/845436203",
+        "way/845436204",
+        "way/845436205"
       ]
     }
   ]
