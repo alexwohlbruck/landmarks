@@ -1364,6 +1364,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-castle-williams.ts"
+    },
+    {
+      "id": "nyc-barclays-center",
+      "file": "models/nyc-barclays-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-barclays-center.ts"
     }
   ],
   "landmarks": [
@@ -5625,6 +5632,21 @@
       "wikidata": "Q1049532",
       "replaces": [
         "relation/3700068"
+      ]
+    },
+    {
+      "id": "nyc-barclays-center",
+      "name": "Barclays Center",
+      "model": "nyc-barclays-center",
+      "lng": -73.97532637,
+      "lat": 40.68265278,
+      "bearing": 15.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q807966",
+      "replaces": [
+        "relation/8610205",
+        "way/250992428"
       ]
     }
   ]
