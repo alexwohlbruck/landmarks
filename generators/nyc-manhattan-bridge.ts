@@ -30,11 +30,12 @@
  *   navigational clearance (Wikipedia "Manhattan Bridge"; NYC DOT).
  * - Photos (Wikimedia Commons): "Manhattan Bridge tower, Dumbo, Brooklyn,
  *   New York" (Christian David, CC BY-SA 4.0; the Brooklyn tower three-
- *   quarter, flared column feet, pier); "NYC Manhattan Bridge detail"
- *   (portal face end-on: X bays, arch, cornice, finials); "Manhattan Bridge
+ *   quarter, flared column feet, pier); "NYC Manhattan Bridge detail" (Arnoldius,
+ *   CC BY-SA 3.0; portal face end-on: X bays, arch, cornice, finials); "Manhattan Bridge
  *   and One Manhattan Square from Brooklyn Bridge, 20231005" (Jakub Hałun,
  *   CC BY-SA 4.0; the Manhattan tower face-on from the south-west); "Manhattan
- *   Bridge from the Brooklyn Bridge (6214687229)" (side view); HAER
+ *   Bridge from the Brooklyn Bridge (6214687229)" (Tony Hisgett,
+ *   CC BY 2.0; side view); HAER
  *   NY,31-NEYO,164-11 "Manhattan tower looking northwest" (Jet Lowe, public
  *   domain; portal from above).
  * - Column centre lines from the lidar's finial peaks (|x| 6.1 and 14.55);
