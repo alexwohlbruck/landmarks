@@ -1336,6 +1336,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-mission-dolores.ts"
+    },
+    {
+      "id": "sf-st-marys-cathedral",
+      "file": "models/sf-st-marys-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-st-marys-cathedral.ts"
     }
   ],
   "landmarks": [
@@ -5294,6 +5301,23 @@
       "replaces": [
         "way/256442760",
         "way/256442765"
+      ]
+    },
+    {
+      "id": "sf-st-marys-cathedral",
+      "name": "Cathedral of Saint Mary of the Assumption",
+      "model": "sf-st-marys-cathedral",
+      "lng": -122.42537,
+      "lat": 37.78423,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q4347013",
+      "replaces": [
+        "relation/7814696",
+        "way/435831007",
+        "way/436473546",
+        "way/436473547"
       ]
     }
   ]
