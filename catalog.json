@@ -1294,6 +1294,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-museum-of-glass.ts"
+    },
+    {
+      "id": "sea-tacoma-dome",
+      "file": "models/sea-tacoma-dome.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-tacoma-dome.ts"
     }
   ],
   "landmarks": [
@@ -5094,6 +5101,22 @@
       "wikidata": "Q2894440",
       "replaces": [
         "way/30679724"
+      ]
+    },
+    {
+      "id": "sea-tacoma-dome",
+      "name": "Tacoma Dome",
+      "model": "sea-tacoma-dome",
+      "lng": -122.4270038,
+      "lat": 47.2368426,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1570942",
+      "replaces": [
+        "way/32660308",
+        "way/1352265453",
+        "way/1352265454"
       ]
     }
   ]
