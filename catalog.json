@@ -1245,6 +1245,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-dodger-stadium.ts"
+    },
+    {
+      "id": "la-crypto-arena",
+      "file": "models/la-crypto-arena.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-crypto-arena.ts"
     }
   ],
   "landmarks": [
@@ -4857,6 +4864,21 @@
         "way/1348912542",
         "way/1348912543",
         "way/1348912544"
+      ]
+    },
+    {
+      "id": "la-crypto-arena",
+      "name": "Crypto.com Arena",
+      "model": "la-crypto-arena",
+      "lng": -118.2670807,
+      "lat": 34.0430832,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q186080",
+      "replaces": [
+        "way/428021739",
+        "way/491696575"
       ]
     }
   ]
