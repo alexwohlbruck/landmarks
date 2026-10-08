@@ -1287,6 +1287,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-tacoma-union-station.ts"
+    },
+    {
+      "id": "sea-museum-of-glass",
+      "file": "models/sea-museum-of-glass.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-museum-of-glass.ts"
     }
   ],
   "landmarks": [
@@ -5073,6 +5080,20 @@
       "wikidata": "Q7886107",
       "replaces": [
         "way/24656596"
+      ]
+    },
+    {
+      "id": "sea-museum-of-glass",
+      "name": "Museum of Glass",
+      "model": "sea-museum-of-glass",
+      "lng": -122.4340127,
+      "lat": 47.2459117,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2894440",
+      "replaces": [
+        "way/30679724"
       ]
     }
   ]
