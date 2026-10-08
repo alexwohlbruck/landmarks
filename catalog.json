@@ -1105,6 +1105,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-space-needle.ts"
+    },
+    {
+      "id": "sea-municipal-tower",
+      "file": "models/sea-municipal-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-municipal-tower.ts"
     }
   ],
   "landmarks": [
@@ -4345,6 +4352,22 @@
         "way/394956342",
         "way/394956343",
         "way/394956344"
+      ]
+    },
+    {
+      "id": "sea-municipal-tower",
+      "name": "Seattle Municipal Tower",
+      "model": "sea-municipal-tower",
+      "lng": -122.3296022,
+      "lat": 47.6050394,
+      "bearing": 59,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q3177235",
+      "replaces": [
+        "way/107124286",
+        "way/331321180",
+        "way/331321181"
       ]
     }
   ]
