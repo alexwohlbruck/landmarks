@@ -1217,6 +1217,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-kia-forum.ts"
+    },
+    {
+      "id": "la-sofi-stadium",
+      "file": "models/la-sofi-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-sofi-stadium.ts"
     }
   ],
   "landmarks": [
@@ -4708,6 +4715,24 @@
       "wikidata": "Q639129",
       "replaces": [
         "way/26320999"
+      ]
+    },
+    {
+      "id": "la-sofi-stadium",
+      "name": "SoFi Stadium",
+      "model": "la-sofi-stadium",
+      "lng": -118.3385824,
+      "lat": 33.9531124,
+      "bearing": 336,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q19520501",
+      "replaces": [
+        "way/748790321",
+        "way/860635712",
+        "way/860635710",
+        "way/860635711",
+        "way/963712167"
       ]
     }
   ]
