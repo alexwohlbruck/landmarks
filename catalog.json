@@ -1196,6 +1196,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-amazon-spheres.ts"
+    },
+    {
+      "id": "sea-king-street-station",
+      "file": "models/sea-king-street-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-king-street-station.ts"
     }
   ],
   "landmarks": [
@@ -4706,6 +4713,24 @@
         "way/491817111",
         "way/398816077",
         "way/491817110"
+      ]
+    },
+    {
+      "id": "sea-king-street-station",
+      "name": "King Street Station",
+      "model": "sea-king-street-station",
+      "lng": -122.3299103,
+      "lat": 47.5984251,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q536131",
+      "replaces": [
+        "way/4725281",
+        "way/442511849",
+        "way/442511850",
+        "way/442511851",
+        "way/442511852"
       ]
     }
   ]
