@@ -1329,6 +1329,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-grace-cathedral.ts"
+    },
+    {
+      "id": "sf-mission-dolores",
+      "file": "models/sf-mission-dolores.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-mission-dolores.ts"
     }
   ],
   "landmarks": [
@@ -5272,6 +5279,21 @@
         "way/939433955",
         "way/939433956",
         "way/939433957"
+      ]
+    },
+    {
+      "id": "sf-mission-dolores",
+      "name": "Mission Dolores",
+      "model": "sf-mission-dolores",
+      "lng": -122.42692,
+      "lat": 37.764314,
+      "bearing": 355.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1000321",
+      "replaces": [
+        "way/256442760",
+        "way/256442765"
       ]
     }
   ]
