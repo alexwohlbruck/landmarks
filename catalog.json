@@ -1245,6 +1245,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-st-james-cathedral.ts"
+    },
+    {
+      "id": "sea-husky-stadium",
+      "file": "models/sea-husky-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-husky-stadium.ts"
     }
   ],
   "landmarks": [
@@ -4901,6 +4908,20 @@
         "way/108384951",
         "way/1363023932",
         "way/1363023933"
+      ]
+    },
+    {
+      "id": "sea-husky-stadium",
+      "name": "Husky Stadium",
+      "model": "sea-husky-stadium",
+      "lng": -122.301596,
+      "lat": 47.650316,
+      "bearing": 16,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1136463",
+      "replaces": [
+        "relation/3389103"
       ]
     }
   ]
