@@ -1196,6 +1196,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-cinerama-dome.ts"
+    },
+    {
+      "id": "la-capitol-records",
+      "file": "models/la-capitol-records.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-capitol-records.ts"
     }
   ],
   "landmarks": [
@@ -4643,6 +4650,22 @@
         "way/907828120",
         "way/907828121",
         "way/907828122"
+      ]
+    },
+    {
+      "id": "la-capitol-records",
+      "name": "Capitol Records Building",
+      "model": "la-capitol-records",
+      "lng": -118.3263646,
+      "lat": 34.1031194,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2937482",
+      "replaces": [
+        "way/422141102",
+        "way/907834019",
+        "way/907834020"
       ]
     }
   ]
