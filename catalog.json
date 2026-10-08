@@ -1203,6 +1203,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-king-street-station.ts"
+    },
+    {
+      "id": "sea-union-station",
+      "file": "models/sea-union-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-union-station.ts"
     }
   ],
   "landmarks": [
@@ -4731,6 +4738,20 @@
         "way/442511850",
         "way/442511851",
         "way/442511852"
+      ]
+    },
+    {
+      "id": "sea-union-station",
+      "name": "Union Station",
+      "model": "sea-union-station",
+      "lng": -122.3285424,
+      "lat": 47.5986081,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q7886102",
+      "replaces": [
+        "way/45569666"
       ]
     }
   ]
