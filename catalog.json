@@ -1084,6 +1084,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dlr-soarin.ts"
+    },
+    {
+      "id": "la-us-bank-tower",
+      "file": "models/la-us-bank-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-us-bank-tower.ts"
     }
   ],
   "landmarks": [
@@ -4261,6 +4268,31 @@
       "replaces": [
         "way/312369808",
         "way/121865023"
+      ]
+    },
+    {
+      "id": "la-us-bank-tower",
+      "name": "U.S. Bank Tower",
+      "model": "la-us-bank-tower",
+      "lng": -118.2544223,
+      "lat": 34.051065,
+      "bearing": 38.2,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q57900",
+      "replaces": [
+        "way/23973401",
+        "way/495115500",
+        "way/901405051",
+        "way/901405052",
+        "way/901405053",
+        "way/901405054",
+        "way/901405055",
+        "way/901405056",
+        "way/901405057",
+        "way/901405058",
+        "way/901405059",
+        "way/901405060"
       ]
     }
   ]
