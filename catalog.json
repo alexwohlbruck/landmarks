@@ -1378,6 +1378,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-contemporary-jewish-museum.ts"
+    },
+    {
+      "id": "sf-oakland-tribune-tower",
+      "file": "models/sf-oakland-tribune-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-oakland-tribune-tower.ts"
     }
   ],
   "landmarks": [
@@ -5444,6 +5451,24 @@
       "wikidata": "Q5164991",
       "replaces": [
         "way/118106934"
+      ]
+    },
+    {
+      "id": "sf-oakland-tribune-tower",
+      "name": "Oakland Tribune Tower",
+      "model": "sf-oakland-tribune-tower",
+      "lng": -122.270827,
+      "lat": 37.803054,
+      "bearing": 26.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7840494",
+      "replaces": [
+        "way/91760682",
+        "way/425060610",
+        "way/660808995",
+        "way/660808996",
+        "way/660808997"
       ]
     }
   ]
