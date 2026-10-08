@@ -1091,6 +1091,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-us-bank-tower.ts"
+    },
+    {
+      "id": "la-city-hall",
+      "file": "models/la-city-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-city-hall.ts"
     }
   ],
   "landmarks": [
@@ -4293,6 +4300,25 @@
         "way/901405058",
         "way/901405059",
         "way/901405060"
+      ]
+    },
+    {
+      "id": "la-city-hall",
+      "name": "Los Angeles City Hall",
+      "model": "la-city-hall",
+      "lng": -118.2427693,
+      "lat": 34.0536925,
+      "bearing": 37.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q368489",
+      "replaces": [
+        "relation/6333145",
+        "way/443103746",
+        "way/443103747",
+        "way/443103748",
+        "way/443103749",
+        "way/443103750"
       ]
     }
   ]
