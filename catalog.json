@@ -1182,6 +1182,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-griffith-observatory.ts"
+    },
+    {
+      "id": "la-hollywood-sign",
+      "file": "models/la-hollywood-sign.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-hollywood-sign.ts"
     }
   ],
   "landmarks": [
@@ -4590,6 +4597,28 @@
       "wikidata": "Q575901",
       "replaces": [
         "way/422130705"
+      ]
+    },
+    {
+      "id": "la-hollywood-sign",
+      "name": "Hollywood Sign",
+      "model": "la-hollywood-sign",
+      "lng": -118.321652,
+      "lat": 34.1340991,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q180376",
+      "replaces": [
+        "way/125433363",
+        "way/125433366",
+        "way/125433364",
+        "way/125433365",
+        "way/125433372",
+        "way/125433370",
+        "way/125433367",
+        "way/125433369",
+        "way/125433362"
       ]
     }
   ]
