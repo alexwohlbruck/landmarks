@@ -1189,6 +1189,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-hollywood-sign.ts"
+    },
+    {
+      "id": "la-cinerama-dome",
+      "file": "models/la-cinerama-dome.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-cinerama-dome.ts"
     }
   ],
   "landmarks": [
@@ -4619,6 +4626,23 @@
         "way/125433367",
         "way/125433369",
         "way/125433362"
+      ]
+    },
+    {
+      "id": "la-cinerama-dome",
+      "name": "Cinerama Dome",
+      "model": "la-cinerama-dome",
+      "lng": -118.3281006,
+      "lat": 34.0976248,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2972810",
+      "replaces": [
+        "way/423247168",
+        "way/907828120",
+        "way/907828121",
+        "way/907828122"
       ]
     }
   ]
