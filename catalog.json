@@ -1119,6 +1119,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-columbia-center.ts"
+    },
+    {
+      "id": "sea-climate-pledge-arena",
+      "file": "models/sea-climate-pledge-arena.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-climate-pledge-arena.ts"
     }
   ],
   "landmarks": [
@@ -4392,6 +4399,40 @@
         "way/418132520",
         "way/418132515",
         "way/331293871"
+      ]
+    },
+    {
+      "id": "sea-climate-pledge-arena",
+      "name": "Climate Pledge Arena",
+      "model": "sea-climate-pledge-arena",
+      "lng": -122.3539888,
+      "lat": 47.6220039,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q977529",
+      "replaces": [
+        "way/25123756",
+        "way/411521517",
+        "way/411521531",
+        "way/1270549342",
+        "way/1352647807",
+        "way/1352647808",
+        "way/1352647809",
+        "way/1352647810",
+        "way/1352647811",
+        "way/1352647812",
+        "way/1352665595",
+        "way/1352665596",
+        "way/1352665597",
+        "way/1352665598",
+        "way/1352666108",
+        "way/1352666109",
+        "way/1352666110",
+        "way/1352666111",
+        "way/1352666989",
+        "way/1352666990",
+        "way/1352666991"
       ]
     }
   ]
