@@ -45,6 +45,15 @@ describe('validateCatalog', () => {
     expect(validateCatalog({ ...ok, landmarks: [{ ...ok.landmarks[0], replaces: ['5013364'] }] })[0]).toContain('not an OSM ref')
   })
 
+  test('takes an elevation within ±200 m either way, and nothing past it', () => {
+    const at = (elevation: number) => validateCatalog({ ...ok, landmarks: [{ ...ok.landmarks[0], elevation }] })
+    expect(at(10)).toEqual([])
+    expect(at(-7)).toEqual([])
+    expect(at(200)).toEqual([])
+    expect(at(-200.5)).toEqual(['landmark "the-tower": elevation must be a number of metres within ±200'])
+    expect(at(NaN)).toHaveLength(1)
+  })
+
   test('flags a model nothing places', () => {
     const problems = validateCatalog({ ...ok, models: [...ok.models, { ...ok.models[0], id: 'spare' }] })
     expect(problems).toEqual(['model "spare": not placed anywhere'])

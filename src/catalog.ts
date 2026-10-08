@@ -28,7 +28,12 @@ export type CatalogLandmark = {
   /** Degrees clockwise from north that the model's -Z axis is turned to. */
   bearing?: number
   scale?: number
-  /** Metres above the ground the model's origin sits. */
+  /**
+   * Metres the model is raised (positive) or sunk (negative) from where the
+   * map would otherwise stand it, its y = 0 on the lowest ground under its
+   * footprint. For what the terrain doesn't show: a plinth or pier OSM
+   * doesn't map, a field below the street. Absent means 0.
+   */
   elevation?: number
   /** Smallest zoom a client should draw it at. */
   minzoom?: number
@@ -37,6 +42,13 @@ export type CatalogLandmark = {
 }
 
 export type Catalog = { models: CatalogModel[]; landmarks: CatalogLandmark[] }
+
+/**
+ * The most a placement may be raised or sunk, in metres. Well past any real
+ * plinth, pier or sunken bowl: a larger value is a typo or a model whose own
+ * y = 0 is wrong, and should be fixed in the model.
+ */
+export const MAX_ELEVATION_M = 200
 
 /** What a placement without `minzoom` gets: the zoom Barrelman has always used. */
 export const DEFAULT_MIN_ZOOM = 14
@@ -75,7 +87,8 @@ export function validateCatalog(catalog: Catalog): string[] {
     if (!(Math.abs(l.lng) <= 180 && Math.abs(l.lat) <= 85)) problems.push(`${at}: lng/lat out of range`)
     if (l.bearing !== undefined && !Number.isFinite(l.bearing)) problems.push(`${at}: bearing must be a number`)
     if (l.scale !== undefined && !(l.scale > 0)) problems.push(`${at}: scale must be positive`)
-    if (l.elevation !== undefined && !Number.isFinite(l.elevation)) problems.push(`${at}: elevation must be a number`)
+    if (l.elevation !== undefined && !(Number.isFinite(l.elevation) && Math.abs(l.elevation) <= MAX_ELEVATION_M))
+      problems.push(`${at}: elevation must be a number of metres within ±${MAX_ELEVATION_M}`)
     if (l.minzoom !== undefined && !(l.minzoom >= 0 && l.minzoom <= 24)) problems.push(`${at}: minzoom must be 0-24`)
     if (l.wikidata !== undefined && !WIKIDATA_RE.test(l.wikidata)) problems.push(`${at}: "${l.wikidata}" is not a Wikidata id like Q243`)
     for (const ref of l.replaces ?? [])
