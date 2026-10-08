@@ -1252,6 +1252,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-madison-square-garden.ts"
+    },
+    {
+      "id": "nyc-custom-house",
+      "file": "models/nyc-custom-house.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-custom-house.ts"
     }
   ],
   "landmarks": [
@@ -5143,6 +5150,38 @@
         "way/283108471",
         "way/283108472",
         "way/283108476"
+      ]
+    },
+    {
+      "id": "nyc-custom-house",
+      "name": "Alexander Hamilton U.S. Custom House",
+      "model": "nyc-custom-house",
+      "lng": -74.013743,
+      "lat": 40.7040471,
+      "bearing": 1.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2068997",
+      "replaces": [
+        "relation/3695753",
+        "way/972087763",
+        "way/972087764",
+        "way/972087765",
+        "way/972087766",
+        "way/972087767",
+        "way/972087770",
+        "way/972087771",
+        "way/972087772",
+        "way/1002205137",
+        "way/1002205138",
+        "way/1002205139",
+        "way/1002205140",
+        "way/1002205141",
+        "way/1002205142",
+        "way/1002205143",
+        "way/1002205144",
+        "way/1002205145",
+        "way/1002205146"
       ]
     }
   ]
