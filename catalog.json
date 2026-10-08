@@ -1231,6 +1231,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-central-library.ts"
+    },
+    {
+      "id": "sea-t-mobile-park",
+      "file": "models/sea-t-mobile-park.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-t-mobile-park.ts"
     }
   ],
   "landmarks": [
@@ -4835,6 +4842,42 @@
         "way/458203294",
         "way/458203296",
         "way/458203299"
+      ]
+    },
+    {
+      "id": "sea-t-mobile-park",
+      "name": "T-Mobile Park",
+      "model": "sea-t-mobile-park",
+      "lng": -122.33251,
+      "lat": 47.5914,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1193117",
+      "replaces": [
+        "way/1451834508",
+        "way/1451834509",
+        "way/1451834510",
+        "way/1451834511",
+        "way/1451834512",
+        "way/1451834513",
+        "way/1451834514",
+        "way/1451834515",
+        "way/1451834516",
+        "way/1451834517",
+        "way/1451834518",
+        "way/1451834519",
+        "way/1451834520",
+        "way/1451834521",
+        "way/1451834522",
+        "way/1451834523",
+        "way/1453289445",
+        "way/1453289446",
+        "way/1453289447",
+        "way/1453289448",
+        "way/1453289449",
+        "way/1453289450",
+        "way/1453289451"
       ]
     }
   ]
