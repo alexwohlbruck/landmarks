@@ -1098,6 +1098,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-city-hall.ts"
+    },
+    {
+      "id": "la-wilshire-grand",
+      "file": "models/la-wilshire-grand.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-wilshire-grand.ts"
     }
   ],
   "landmarks": [
@@ -4319,6 +4326,22 @@
         "way/443103748",
         "way/443103749",
         "way/443103750"
+      ]
+    },
+    {
+      "id": "la-wilshire-grand",
+      "name": "Wilshire Grand Center",
+      "model": "la-wilshire-grand",
+      "lng": -118.2604247,
+      "lat": 34.0501581,
+      "bearing": 37.2,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2582539",
+      "replaces": [
+        "way/496246723",
+        "way/1307580959",
+        "way/901739648"
       ]
     }
   ]
