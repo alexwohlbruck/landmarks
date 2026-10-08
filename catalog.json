@@ -1287,6 +1287,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-washington-hilton.ts"
+    },
+    {
+      "id": "dc-healy-hall",
+      "file": "models/dc-healy-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-healy-hall.ts"
     }
   ],
   "landmarks": [
@@ -5295,6 +5302,20 @@
       "replaces": [
         "way/66981885",
         "way/1549399804"
+      ]
+    },
+    {
+      "id": "dc-healy-hall",
+      "name": "Healy Hall",
+      "model": "dc-healy-hall",
+      "lng": -77.0727337,
+      "lat": 38.9073077,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4269513",
+      "replaces": [
+        "way/444583709"
       ]
     }
   ]
