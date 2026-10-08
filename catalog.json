@@ -1392,6 +1392,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-urban-light.ts"
+    },
+    {
+      "id": "la-walter-pyramid",
+      "file": "models/la-walter-pyramid.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-walter-pyramid.ts"
     }
   ],
   "landmarks": [
@@ -5359,6 +5366,20 @@
       "minzoom": 16,
       "wikidata": "Q7899954",
       "replaces": []
+    },
+    {
+      "id": "la-walter-pyramid",
+      "name": "Walter Pyramid",
+      "model": "la-walter-pyramid",
+      "lng": -118.11441,
+      "lat": 33.78743,
+      "bearing": 353,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q3565858",
+      "replaces": [
+        "way/35452138"
+      ]
     }
   ]
 }
