@@ -1175,6 +1175,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-two-union-square.ts"
+    },
+    {
+      "id": "sea-great-wheel",
+      "file": "models/sea-great-wheel.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-great-wheel.ts"
     }
   ],
   "landmarks": [
@@ -4634,6 +4641,20 @@
         "way/494784395",
         "way/456870610",
         "way/456870609"
+      ]
+    },
+    {
+      "id": "sea-great-wheel",
+      "name": "Seattle Great Wheel",
+      "model": "sea-great-wheel",
+      "lng": -122.3424857,
+      "lat": 47.6061437,
+      "bearing": 336.2,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7442108",
+      "replaces": [
+        "way/396606878"
       ]
     }
   ]
