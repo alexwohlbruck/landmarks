@@ -1182,6 +1182,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-great-wheel.ts"
+    },
+    {
+      "id": "sea-westin-towers",
+      "file": "models/sea-westin-towers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-westin-towers.ts"
     }
   ],
   "landmarks": [
@@ -4655,6 +4662,26 @@
       "wikidata": "Q7442108",
       "replaces": [
         "way/396606878"
+      ]
+    },
+    {
+      "id": "sea-westin-towers",
+      "name": "The Westin Seattle",
+      "model": "sea-westin-towers",
+      "lng": -122.3382051,
+      "lat": 47.6137035,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7988924",
+      "replaces": [
+        "way/331291911",
+        "way/331281882",
+        "way/331281881",
+        "way/488733959",
+        "way/488733958",
+        "way/770565574",
+        "way/770565573"
       ]
     }
   ]
