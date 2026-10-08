@@ -1126,6 +1126,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-bay-bridge-sas.ts"
+    },
+    {
+      "id": "sf-salesforce-tower",
+      "file": "models/sf-salesforce-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-salesforce-tower.ts"
     }
   ],
   "landmarks": [
@@ -4484,6 +4491,29 @@
       "wikidata": "Q771404",
       "replaces": [
         "way/237735191"
+      ]
+    },
+    {
+      "id": "sf-salesforce-tower",
+      "name": "Salesforce Tower",
+      "model": "sf-salesforce-tower",
+      "lng": -122.396927,
+      "lat": 37.7897756,
+      "bearing": 44,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q14684154",
+      "replaces": [
+        "way/431972186",
+        "way/1053143796",
+        "way/1053143797",
+        "way/1053143798",
+        "way/1053143799",
+        "way/1053143800",
+        "way/1053143801",
+        "way/1053143803",
+        "way/1053143804",
+        "way/1053143805"
       ]
     }
   ]
