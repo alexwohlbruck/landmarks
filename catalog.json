@@ -1126,6 +1126,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-central-park-tower.ts"
+    },
+    {
+      "id": "nyc-steinway-tower",
+      "file": "models/nyc-steinway-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-steinway-tower.ts"
     }
   ],
   "landmarks": [
@@ -4458,6 +4465,35 @@
         "way/1107961664",
         "way/1107961665",
         "way/1107961667"
+      ]
+    },
+    {
+      "id": "nyc-steinway-tower",
+      "name": "Steinway Tower",
+      "model": "nyc-steinway-tower",
+      "lng": -73.9773054,
+      "lat": 40.7647294,
+      "bearing": 28.85,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2631268",
+      "replaces": [
+        "way/261504064",
+        "way/1158813428",
+        "way/1158813429",
+        "way/1158813430",
+        "way/1158813431",
+        "way/1158813432",
+        "way/1158813433",
+        "way/1158813434",
+        "way/1158813435",
+        "way/1158813436",
+        "way/1158813437",
+        "way/1158813438",
+        "way/1158813439",
+        "way/1158813440",
+        "way/1158813441",
+        "way/265147970"
       ]
     }
   ]
