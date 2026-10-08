@@ -1427,6 +1427,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-met-opera.ts"
+    },
+    {
+      "id": "nyc-koch-theater",
+      "file": "models/nyc-koch-theater.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-koch-theater.ts"
     }
   ],
   "landmarks": [
@@ -5851,6 +5858,23 @@
         "way/330177538",
         "way/1475173703",
         "way/1475173704"
+      ]
+    },
+    {
+      "id": "nyc-koch-theater",
+      "name": "David H. Koch Theater",
+      "model": "nyc-koch-theater",
+      "lng": -73.9837676,
+      "lat": 40.7717921,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3018029",
+      "replaces": [
+        "way/265354528",
+        "way/330177536",
+        "way/330177537",
+        "way/1475173705"
       ]
     }
   ]
