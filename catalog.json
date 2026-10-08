@@ -1336,6 +1336,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-pacific-wheel.ts"
+    },
+    {
+      "id": "la-queen-mary",
+      "file": "models/la-queen-mary.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-queen-mary.ts"
     }
   ],
   "landmarks": [
@@ -5169,6 +5176,23 @@
       "minzoom": 15,
       "replaces": [
         "way/742372514"
+      ]
+    },
+    {
+      "id": "la-queen-mary",
+      "name": "RMS Queen Mary",
+      "model": "la-queen-mary",
+      "lng": -118.1897081,
+      "lat": 33.7528576,
+      "bearing": 293.7,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q752939",
+      "replaces": [
+        "way/438331516",
+        "way/439768915",
+        "way/439768916",
+        "way/439768917"
       ]
     }
   ]
