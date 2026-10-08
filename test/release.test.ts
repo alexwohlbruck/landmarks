@@ -8,6 +8,7 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { buildRelease, CatalogError, indexTile, type Asset } from '../src/release'
 import type { Catalog } from '../src/catalog'
+import { place, worldVertices } from './helpers'
 
 const ROOT = join(import.meta.dir, '..')
 const shipped = (): Catalog => JSON.parse(readFileSync(join(ROOT, 'catalog.json'), 'utf8'))
@@ -68,13 +69,42 @@ describe('the release', () => {
     const vegas = release.assets.find((a) => a.id === 'paris-las-vegas-eiffel-tower')!
     expect(paris.model).toBe('eiffel-tower')
     expect(vegas.model).toBe('eiffel-tower')
-    expect(vegas.placement).toEqual({ bearing: 45, scale: 0.5, elevation: 0 })
+    expect(vegas.placement).toEqual({ bearing: 45, scale: 0.5 })
     expect(paris.lods.low.sha256).not.toBe(vegas.lods.low.sha256)
+  })
+
+  test('publishes elevation as a field, only where it is set', () => {
+    const catalog = shipped()
+    for (const l of catalog.landmarks) {
+      const a = release.assets.find((x) => x.id === l.id)!
+      if (l.elevation) expect(a.elevation).toBe(l.elevation)
+      else expect('elevation' in a).toBe(false)
+    }
+  })
+
+  test('draws every raised placement where the baked lift did: same vertices, lower by elevation', () => {
+    const catalog = shipped()
+    const raised = catalog.landmarks.filter((l) => l.elevation)
+    expect(raised.map((l) => l.id)).toContain('statue-of-liberty')
+    for (const l of raised) {
+      const asset = release.assets.find((a) => a.id === l.id)!
+      const model = catalog.models.find((m) => m.id === l.model)!
+      const authored = new Uint8Array(readFileSync(join(ROOT, model.file)))
+      const published = file(asset.lods.low.url)
+      // At rest and part way through any animation, so moving parts are checked too.
+      for (const k of [undefined, 1]) {
+        // What the release used to bake: turned, scaled and lifted by `elevation`.
+        const before = worldVertices(authored, k).flatMap((p) => p.positions).map((p) => place(p, { ...l, elevation: l.elevation }))
+        const now = worldVertices(published, k).flatMap((p) => p.positions).map(([x, y, z]) => [x, y + asset.elevation!, z])
+        expect(now.length).toBe(before.length)
+        now.forEach((v, i) => v.forEach((c, n) => expect(c).toBeCloseTo(before[i][n], 3)))
+      }
+    }
   })
 
   test('keeps a model placed as authored byte for byte', () => {
     const catalog = shipped()
-    const upright = catalog.landmarks.find((l) => !l.bearing && !l.scale && !l.elevation)!
+    const upright = catalog.landmarks.find((l) => !l.bearing && !l.scale)!
     const model = catalog.models.find((m) => m.id === upright.model)!
     const asset = release.assets.find((a) => a.id === upright.id)!
     expect(asset.lods.low.sha256).toBe(sha(new Uint8Array(readFileSync(join(ROOT, model.file)))))

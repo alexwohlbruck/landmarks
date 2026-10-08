@@ -104,8 +104,6 @@ export type Placement = {
   /** Degrees clockwise from north that the model's north (-Z) is turned to. */
   bearing?: number
   scale?: number
-  /** Metres the model's origin is lifted off the ground. */
-  elevation?: number
 }
 
 type Quat = [number, number, number, number]
@@ -134,7 +132,10 @@ const isIdentityNode = (node: any) =>
  * scale 1, as Open Landmarks requires.
  *
  * The placement is one transform Q: turn clockwise by `bearing` about the
- * vertical through the origin, scale by `scale`, lift by `elevation`. It is
+ * vertical through the origin, then scale by `scale`. Elevation is not
+ * baked: it travels as its own field (see `Asset` in release.ts), so the
+ * model's own ground stays at y = 0, where a map grounds it on its terrain
+ * before lifting it. It is
  * applied at the top of the scene and nowhere else:
  *
  *   - the static geometry in an untransformed root node has its vertices
@@ -156,8 +157,7 @@ const isIdentityNode = (node: any) =>
 export function bakePlacement(glb: Uint8Array, placement: Placement): Uint8Array {
   const bearing = placement.bearing ?? 0
   const s = placement.scale ?? 1
-  const e = placement.elevation ?? 0
-  if (bearing % 360 === 0 && s === 1 && e === 0) return glb
+  if (bearing % 360 === 0 && s === 1) return glb
   if (!(s > 0)) throw new Error(`scale ${s} must be positive`)
 
   const gltf = parseGlb(glb)
@@ -172,7 +172,7 @@ export function bakePlacement(glb: Uint8Array, placement: Placement): Uint8Array
   const turn = ([x, y, z]: number[]) => [x * c - z * sn, y, x * sn + z * c]
   const point = (v: number[]) => {
     const [x, y, z] = turn(v)
-    return [x * s, y * s + e, z * s]
+    return [x * s, y * s, z * s]
   }
   // The same turn as a quaternion: a rotation of -b about +Y.
   const q: Quat = [0, Math.sin(-b / 2), 0, Math.cos(-b / 2)]
