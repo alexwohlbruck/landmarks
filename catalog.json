@@ -1315,6 +1315,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-met-museum.ts"
+    },
+    {
+      "id": "nyc-yankee-stadium",
+      "file": "models/nyc-yankee-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-yankee-stadium.ts"
     }
   ],
   "landmarks": [
@@ -5449,6 +5456,20 @@
       "wikidata": "Q160236",
       "replaces": [
         "relation/3698894"
+      ]
+    },
+    {
+      "id": "nyc-yankee-stadium",
+      "name": "Yankee Stadium",
+      "model": "nyc-yankee-stadium",
+      "lng": -73.926453,
+      "lat": 40.829601,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q753529",
+      "replaces": [
+        "way/24801630"
       ]
     }
   ]
