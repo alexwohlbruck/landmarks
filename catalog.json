@@ -1280,6 +1280,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-volunteer-park-conservatory.ts"
+    },
+    {
+      "id": "sea-tacoma-union-station",
+      "file": "models/sea-tacoma-union-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-tacoma-union-station.ts"
     }
   ],
   "landmarks": [
@@ -5052,6 +5059,20 @@
       "wikidata": "Q7941038",
       "replaces": [
         "way/40790435"
+      ]
+    },
+    {
+      "id": "sea-tacoma-union-station",
+      "name": "Tacoma Union Station",
+      "model": "sea-tacoma-union-station",
+      "lng": -122.4362869,
+      "lat": 47.246369,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7886107",
+      "replaces": [
+        "way/24656596"
       ]
     }
   ]
