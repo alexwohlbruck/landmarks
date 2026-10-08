@@ -1336,6 +1336,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-citi-field.ts"
+    },
+    {
+      "id": "nyc-williamsburgh-savings-bank",
+      "file": "models/nyc-williamsburgh-savings-bank.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-williamsburgh-savings-bank.ts"
     }
   ],
   "landmarks": [
@@ -5521,6 +5528,38 @@
         "way/1553291644",
         "way/1060517536",
         "way/1553289790"
+      ]
+    },
+    {
+      "id": "nyc-williamsburgh-savings-bank",
+      "name": "Williamsburgh Savings Bank Tower",
+      "model": "nyc-williamsburgh-savings-bank",
+      "lng": -73.9777183,
+      "lat": 40.6855095,
+      "bearing": -6.7,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q8021187",
+      "replaces": [
+        "way/250979509",
+        "way/700246652",
+        "way/1517819427",
+        "way/1517819428",
+        "way/1517819429",
+        "way/1517819432",
+        "way/1517819433",
+        "way/1517819434",
+        "way/1517819435",
+        "way/1517819436",
+        "way/1517819437",
+        "way/1517819438",
+        "way/1517819439",
+        "way/1517819440",
+        "way/1517819441",
+        "way/1517819442",
+        "way/1517819443",
+        "way/1517819444",
+        "relation/20712618"
       ]
     }
   ]
