@@ -1119,6 +1119,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-bay-bridge-west-inner.ts"
+    },
+    {
+      "id": "sf-bay-bridge-sas",
+      "file": "models/sf-bay-bridge-sas.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-bay-bridge-sas.ts"
     }
   ],
   "landmarks": [
@@ -4463,6 +4470,20 @@
       "wikidata": "Q130699957",
       "replaces": [
         "way/432712478"
+      ]
+    },
+    {
+      "id": "sf-bay-bridge-sas",
+      "name": "Bay Bridge eastern span tower",
+      "model": "sf-bay-bridge-sas",
+      "lng": -122.3585135,
+      "lat": 37.8152652,
+      "bearing": 55,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q771404",
+      "replaces": [
+        "way/237735191"
       ]
     }
   ]
