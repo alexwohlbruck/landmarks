@@ -1301,6 +1301,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-tacoma-dome.ts"
+    },
+    {
+      "id": "sea-washington-state-capitol",
+      "file": "models/sea-washington-state-capitol.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-washington-state-capitol.ts"
     }
   ],
   "landmarks": [
@@ -5117,6 +5124,21 @@
         "way/32660308",
         "way/1352265453",
         "way/1352265454"
+      ]
+    },
+    {
+      "id": "sea-washington-state-capitol",
+      "name": "Washington State Capitol",
+      "model": "sea-washington-state-capitol",
+      "lng": -122.9048534,
+      "lat": 47.0357611,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2620186",
+      "replaces": [
+        "way/31494476",
+        "way/612617948"
       ]
     }
   ]
