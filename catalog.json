@@ -1224,6 +1224,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-alcatraz-lighthouse.ts"
+    },
+    {
+      "id": "sf-ferry-building",
+      "file": "models/sf-ferry-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-ferry-building.ts"
     }
   ],
   "landmarks": [
@@ -4842,6 +4849,29 @@
       "wikidata": "Q4712967",
       "replaces": [
         "way/99202294"
+      ]
+    },
+    {
+      "id": "sf-ferry-building",
+      "name": "San Francisco Ferry Building",
+      "model": "sf-ferry-building",
+      "lng": -122.39343978,
+      "lat": 37.79553247,
+      "bearing": 323.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1408117",
+      "replaces": [
+        "way/558731934",
+        "way/24460886",
+        "way/404449724",
+        "way/406710833",
+        "way/406710834",
+        "way/406710835",
+        "way/406710836",
+        "way/406710837",
+        "way/406710838",
+        "way/406710839"
       ]
     }
   ]
