@@ -1238,6 +1238,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-coit-tower.ts"
+    },
+    {
+      "id": "sf-ghirardelli-square",
+      "file": "models/sf-ghirardelli-square.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-ghirardelli-square.ts"
     }
   ],
   "landmarks": [
@@ -4898,6 +4905,24 @@
         "way/451331533",
         "way/451331534",
         "way/451331535"
+      ]
+    },
+    {
+      "id": "sf-ghirardelli-square",
+      "name": "Ghirardelli Square",
+      "model": "sf-ghirardelli-square",
+      "lng": -122.42283442,
+      "lat": 37.80560018,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5556730",
+      "replaces": [
+        "way/939539785",
+        "way/939539839",
+        "way/939539786",
+        "way/939539784",
+        "way/288388853"
       ]
     }
   ]
