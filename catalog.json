@@ -1315,6 +1315,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-sutro-tower.ts"
+    },
+    {
+      "id": "sf-mount-davidson-cross",
+      "file": "models/sf-mount-davidson-cross.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-mount-davidson-cross.ts"
     }
   ],
   "landmarks": [
@@ -5229,6 +5236,18 @@
         "way/1350860498",
         "way/1350860499"
       ]
+    },
+    {
+      "id": "sf-mount-davidson-cross",
+      "name": "Mount Davidson Cross",
+      "model": "sf-mount-davidson-cross",
+      "lng": -122.4547473,
+      "lat": 37.7383418,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q20508607",
+      "replaces": []
     }
   ]
 }
