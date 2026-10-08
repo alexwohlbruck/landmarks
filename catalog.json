@@ -1112,6 +1112,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-helmsley-building.ts"
+    },
+    {
+      "id": "nyc-chanin-building",
+      "file": "models/nyc-chanin-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-chanin-building.ts"
     }
   ],
   "landmarks": [
@@ -4373,6 +4380,50 @@
         "way/291189628",
         "way/291189630",
         "way/668477452"
+      ]
+    },
+    {
+      "id": "nyc-chanin-building",
+      "name": "Chanin Building",
+      "model": "nyc-chanin-building",
+      "lng": -73.976686,
+      "lat": 40.7512113,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2956104",
+      "replaces": [
+        "way/265947366",
+        "way/281777311",
+        "way/289989982",
+        "way/289989983",
+        "way/289989984",
+        "way/289989985",
+        "way/289989986",
+        "way/289989987",
+        "way/289989988",
+        "way/289989989",
+        "way/289989990",
+        "way/289989991",
+        "way/289989992",
+        "way/289989993",
+        "way/289989994",
+        "way/289989995",
+        "way/289989996",
+        "way/289989997",
+        "way/289989998",
+        "way/289989999",
+        "way/289990000",
+        "way/289990001",
+        "way/289990002",
+        "way/289990003",
+        "way/289990004",
+        "way/289990005",
+        "way/289990006",
+        "way/289990007",
+        "way/289990008",
+        "way/289990287",
+        "way/290805845"
       ]
     }
   ]
