@@ -1273,6 +1273,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-gas-works.ts"
+    },
+    {
+      "id": "sea-volunteer-park-conservatory",
+      "file": "models/sea-volunteer-park-conservatory.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-volunteer-park-conservatory.ts"
     }
   ],
   "landmarks": [
@@ -5031,6 +5038,20 @@
         "way/406480504",
         "way/406480505",
         "way/406480506"
+      ]
+    },
+    {
+      "id": "sea-volunteer-park-conservatory",
+      "name": "Volunteer Park Conservatory",
+      "model": "sea-volunteer-park-conservatory",
+      "lng": -122.3157366,
+      "lat": 47.6321078,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q7941038",
+      "replaces": [
+        "way/40790435"
       ]
     }
   ]
