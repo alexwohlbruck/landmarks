@@ -1217,6 +1217,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-benaroya-hall.ts"
+    },
+    {
+      "id": "sea-lumen-field",
+      "file": "models/sea-lumen-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-lumen-field.ts"
     }
   ],
   "landmarks": [
@@ -4778,6 +4785,31 @@
         "way/417918255",
         "way/417918256",
         "way/417918257"
+      ]
+    },
+    {
+      "id": "sea-lumen-field",
+      "name": "Lumen Field",
+      "model": "sea-lumen-field",
+      "lng": -122.3316267,
+      "lat": 47.595151,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q612736",
+      "replaces": [
+        "way/635152550",
+        "way/635152551",
+        "way/458208106",
+        "way/458208107",
+        "way/458208103",
+        "way/458208112",
+        "way/458208102",
+        "way/458208104",
+        "way/458208105",
+        "way/458208114",
+        "way/458208115",
+        "way/458208116"
       ]
     }
   ]
