@@ -59,7 +59,7 @@ export interface Element {
 
 export interface CoasterSpec {
   name: string
-  /** Output GLB, relative to generators/. */
+  /** Output GLB, relative to scripts/landmarks/. */
   out: string
   /** The circuit in the park frame, node by node in the direction of travel. */
   chain: [number, number][]
@@ -83,7 +83,13 @@ export interface CoasterSpec {
   track: { W: number; RAIL: number; DEPTH: number; SPINE: number }
   station: { ring: [number, number][]; posts: [number, number][]; roofZ: number }
   /** `spine: 'deck'` (opt-in) draws the spine in the deck's material, for a track painted one colour. */
-  colours: { deck: [string, number]; spine: [string, number] | 'deck'; supports: [string, number] | 'trim' }
+  colours: {
+    deck: [string, number]; spine: [string, number] | 'deck'; supports: [string, number] | 'trim'
+    /** Opt-in: the station's walls, posts and soffit (and `covers`' walls) in this finish instead of `stone`, e.g. a dark show building. */
+    station?: [string, number]
+    /** Opt-in: the station roof (and `covers`' roofs) in this finish instead of `roof`. */
+    stationRoof?: [string, number]
+  }
   /** Support radii for low, middle and high track. */
   supportR: [number, number, number]
   meta: { height: number; trackLength: number }
@@ -1082,8 +1088,8 @@ export async function buildCoaster(spec: CoasterSpec) {
     { part: deck, material: finish(...spec.colours.deck) },
     ...(spec.colours.spine === 'deck' ? [] : [{ part: spine, material: finish(...spec.colours.spine) }]),
     { part: white, material: spec.colours.supports === 'trim' ? PALETTE.trim : finish(...spec.colours.supports) },
-    { part: trimPart, material: PALETTE.stone },
-    { part: roofPart, material: PALETTE.roof },
+    { part: trimPart, material: spec.colours.station ? finish(...spec.colours.station) : PALETTE.stone },
+    { part: roofPart, material: spec.colours.stationRoof ? finish(...spec.colours.stationRoof) : PALETTE.roof },
     ...extraParts,
   ]
   const triangles = parts.reduce((sum, { part }) => sum + part.triangles, 0)
