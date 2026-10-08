@@ -1273,6 +1273,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-cal-academy.ts"
+    },
+    {
+      "id": "sf-conservatory-of-flowers",
+      "file": "models/sf-conservatory-of-flowers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-conservatory-of-flowers.ts"
     }
   ],
   "landmarks": [
@@ -5016,6 +5023,20 @@
       "wikidata": "Q134486471",
       "replaces": [
         "way/28695389"
+      ]
+    },
+    {
+      "id": "sf-conservatory-of-flowers",
+      "name": "Conservatory of Flowers",
+      "model": "sf-conservatory-of-flowers",
+      "lng": -122.46023301,
+      "lat": 37.77263055,
+      "bearing": 354.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5163145",
+      "replaces": [
+        "way/30675038"
       ]
     }
   ]
