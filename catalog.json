@@ -1420,6 +1420,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-david-geffen-hall.ts"
+    },
+    {
+      "id": "nyc-met-opera",
+      "file": "models/nyc-met-opera.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-met-opera.ts"
     }
   ],
   "landmarks": [
@@ -5827,6 +5834,23 @@
         "way/265354527",
         "way/330177539",
         "way/1475173701"
+      ]
+    },
+    {
+      "id": "nyc-met-opera",
+      "name": "Metropolitan Opera House",
+      "model": "nyc-met-opera",
+      "lng": -73.9847275,
+      "lat": 40.7728499,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q188031",
+      "replaces": [
+        "way/265354534",
+        "way/330177538",
+        "way/1475173703",
+        "way/1475173704"
       ]
     }
   ]
