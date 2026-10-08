@@ -1301,6 +1301,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-williamsburg-bridge.ts"
+    },
+    {
+      "id": "nyc-nypl",
+      "file": "models/nyc-nypl.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-nypl.ts"
     }
   ],
   "landmarks": [
@@ -5396,6 +5403,31 @@
       "wikidata": "Q125068",
       "replaces": [
         "way/1016434035"
+      ]
+    },
+    {
+      "id": "nyc-nypl",
+      "name": "New York Public Library, Stephen A. Schwarzman Building",
+      "model": "nyc-nypl",
+      "lng": -73.9822362,
+      "lat": 40.753215,
+      "bearing": 29.0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7013887",
+      "replaces": [
+        "way/265302076",
+        "way/292055454",
+        "way/292055455",
+        "way/292055456",
+        "way/292055457",
+        "way/292055458",
+        "way/292055802",
+        "way/292055803",
+        "way/292055804",
+        "way/292055805",
+        "way/292055806",
+        "way/292055807"
       ]
     }
   ]
