@@ -1406,6 +1406,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-hell-gate-bridge.ts"
+    },
+    {
+      "id": "nyc-cleopatras-needle",
+      "file": "models/nyc-cleopatras-needle.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-cleopatras-needle.ts"
     }
   ],
   "landmarks": [
@@ -5786,6 +5793,18 @@
         "way/1016643613",
         "way/1016643614"
       ]
+    },
+    {
+      "id": "nyc-cleopatras-needle",
+      "name": "Cleopatra's Needle",
+      "model": "nyc-cleopatras-needle",
+      "lng": -73.965396,
+      "lat": 40.779636,
+      "bearing": 16.7,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q23889472",
+      "replaces": []
     }
   ]
 }
