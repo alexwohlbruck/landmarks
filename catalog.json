@@ -1385,6 +1385,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-george-washington-bridge.ts"
+    },
+    {
+      "id": "nyc-hoboken-terminal",
+      "file": "models/nyc-hoboken-terminal.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-hoboken-terminal.ts"
     }
   ],
   "landmarks": [
@@ -5704,6 +5711,22 @@
       "wikidata": "Q125821",
       "replaces": [
         "way/741784700"
+      ]
+    },
+    {
+      "id": "nyc-hoboken-terminal",
+      "name": "Hoboken Terminal",
+      "model": "nyc-hoboken-terminal",
+      "lng": -74.028196,
+      "lat": 40.7350212,
+      "bearing": -1.0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q6128305",
+      "replaces": [
+        "way/26808027",
+        "way/331072207",
+        "way/331072208"
       ]
     }
   ]
