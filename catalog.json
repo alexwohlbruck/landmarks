@@ -1238,6 +1238,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-t-mobile-park.ts"
+    },
+    {
+      "id": "sea-st-james-cathedral",
+      "file": "models/sea-st-james-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-st-james-cathedral.ts"
     }
   ],
   "landmarks": [
@@ -4878,6 +4885,22 @@
         "way/1453289449",
         "way/1453289450",
         "way/1453289451"
+      ]
+    },
+    {
+      "id": "sea-st-james-cathedral",
+      "name": "St. James Cathedral",
+      "model": "sea-st-james-cathedral",
+      "lng": -122.3258402,
+      "lat": 47.6076789,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7588439",
+      "replaces": [
+        "way/108384951",
+        "way/1363023932",
+        "way/1363023933"
       ]
     }
   ]
