@@ -1350,6 +1350,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-audi-field.ts"
+    },
+    {
+      "id": "dc-pentagon",
+      "file": "models/dc-pentagon.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-pentagon.ts"
     }
   ],
   "landmarks": [
@@ -5487,6 +5494,40 @@
       "wikidata": "Q5203387",
       "replaces": [
         "relation/12361161"
+      ]
+    },
+    {
+      "id": "dc-pentagon",
+      "name": "The Pentagon",
+      "model": "dc-pentagon",
+      "lng": -77.0559549,
+      "lat": 38.8710072,
+      "bearing": 351.9,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q11208",
+      "replaces": [
+        "relation/89605",
+        "way/547369905",
+        "way/548360860",
+        "way/548362651",
+        "way/548362652",
+        "way/548362653",
+        "way/548364631",
+        "way/548364632",
+        "way/548364633",
+        "way/548365378",
+        "way/548365379",
+        "way/548366946",
+        "way/548366947",
+        "way/548366948",
+        "way/548366949",
+        "way/548366950",
+        "way/548366951",
+        "way/548367399",
+        "way/548367400",
+        "way/548367401",
+        "way/548367402"
       ]
     }
   ]
