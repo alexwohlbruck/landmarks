@@ -1280,6 +1280,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-conservatory-of-flowers.ts"
+    },
+    {
+      "id": "sf-spreckels-temple-of-music",
+      "file": "models/sf-spreckels-temple-of-music.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-spreckels-temple-of-music.ts"
     }
   ],
   "landmarks": [
@@ -5037,6 +5044,20 @@
       "wikidata": "Q5163145",
       "replaces": [
         "way/30675038"
+      ]
+    },
+    {
+      "id": "sf-spreckels-temple-of-music",
+      "name": "Spreckels Temple of Music",
+      "model": "sf-spreckels-temple-of-music",
+      "lng": -122.4685871,
+      "lat": 37.76986089,
+      "bearing": 235,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q110559749",
+      "replaces": [
+        "way/30896932"
       ]
     }
   ]
