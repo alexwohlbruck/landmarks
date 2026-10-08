@@ -1168,6 +1168,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-central-library.ts"
+    },
+    {
+      "id": "la-hollywood-bowl",
+      "file": "models/la-hollywood-bowl.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-hollywood-bowl.ts"
     }
   ],
   "landmarks": [
@@ -4542,6 +4549,26 @@
         "way/428021732",
         "way/495571355",
         "way/1106887040"
+      ]
+    },
+    {
+      "id": "la-hollywood-bowl",
+      "name": "Hollywood Bowl",
+      "model": "la-hollywood-bowl",
+      "lng": -118.338902,
+      "lat": 34.112778,
+      "bearing": 24.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q976218",
+      "replaces": [
+        "way/427527131",
+        "way/297126803",
+        "way/297126804",
+        "way/297126805",
+        "way/297126806",
+        "way/297126807",
+        "way/297126808"
       ]
     }
   ]
