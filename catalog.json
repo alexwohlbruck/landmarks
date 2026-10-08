@@ -1364,6 +1364,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-chase-center.ts"
+    },
+    {
+      "id": "sf-sfmoma",
+      "file": "models/sf-sfmoma.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-sfmoma.ts"
     }
   ],
   "landmarks": [
@@ -5395,6 +5402,27 @@
       "wikidata": "Q15262098",
       "replaces": [
         "way/579646390"
+      ]
+    },
+    {
+      "id": "sf-sfmoma",
+      "name": "San Francisco Museum of Modern Art",
+      "model": "sf-sfmoma",
+      "lng": -122.40066029,
+      "lat": 37.78589533,
+      "bearing": 45,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q913672",
+      "replaces": [
+        "way/41692824",
+        "way/1365384410",
+        "way/1365384411",
+        "way/1365384412",
+        "way/1365384413",
+        "way/1365384414",
+        "way/1365384415",
+        "way/1365384416"
       ]
     }
   ]
