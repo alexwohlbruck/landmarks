@@ -1308,6 +1308,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-la-temple.ts"
+    },
+    {
+      "id": "la-getty-center",
+      "file": "models/la-getty-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-getty-center.ts"
     }
   ],
   "landmarks": [
@@ -5071,6 +5078,33 @@
       "wikidata": "Q1870450",
       "replaces": [
         "way/216534845"
+      ]
+    },
+    {
+      "id": "la-getty-center",
+      "name": "Getty Center",
+      "model": "la-getty-center",
+      "lng": -118.4740401,
+      "lat": 34.0771405,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q29247",
+      "replaces": [
+        "way/481451917",
+        "way/481417424",
+        "way/481417422",
+        "way/1153949919",
+        "way/481417416",
+        "way/481417431",
+        "way/481417423",
+        "way/481417418",
+        "way/481417420",
+        "way/481509203",
+        "way/481417426",
+        "way/481417428",
+        "way/481451919",
+        "way/481451918"
       ]
     }
   ]
