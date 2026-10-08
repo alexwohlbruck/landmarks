@@ -1231,6 +1231,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-ferry-building.ts"
+    },
+    {
+      "id": "sf-coit-tower",
+      "file": "models/sf-coit-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-coit-tower.ts"
     }
   ],
   "landmarks": [
@@ -4872,6 +4879,25 @@
         "way/406710837",
         "way/406710838",
         "way/406710839"
+      ]
+    },
+    {
+      "id": "sf-coit-tower",
+      "name": "Coit Tower",
+      "model": "sf-coit-tower",
+      "lng": -122.40583383,
+      "lat": 37.80237416,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1107297",
+      "replaces": [
+        "way/28824850",
+        "way/451331530",
+        "way/451331532",
+        "way/451331533",
+        "way/451331534",
+        "way/451331535"
       ]
     }
   ]
