@@ -1329,6 +1329,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-century-plaza-towers.ts"
+    },
+    {
+      "id": "la-pacific-wheel",
+      "file": "models/la-pacific-wheel.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-pacific-wheel.ts"
     }
   ],
   "landmarks": [
@@ -5149,6 +5156,19 @@
         "relation/19619602",
         "way/104944092",
         "way/104944087"
+      ]
+    },
+    {
+      "id": "la-pacific-wheel",
+      "name": "Pacific Wheel",
+      "model": "la-pacific-wheel",
+      "lng": -118.497834,
+      "lat": 34.0082275,
+      "bearing": 91,
+      "elevation": 7.5,
+      "minzoom": 15,
+      "replaces": [
+        "way/742372514"
       ]
     }
   ]
