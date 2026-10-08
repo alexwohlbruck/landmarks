@@ -1112,6 +1112,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-bay-bridge-west.ts"
+    },
+    {
+      "id": "sf-bay-bridge-west-inner",
+      "file": "models/sf-bay-bridge-west-inner.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-bay-bridge-west-inner.ts"
     }
   ],
   "landmarks": [
@@ -4428,6 +4435,34 @@
       "wikidata": "Q130699957",
       "replaces": [
         "way/432712479"
+      ]
+    },
+    {
+      "id": "sf-bay-bridge-west-w3",
+      "name": "Bay Bridge west span (tower W3)",
+      "model": "sf-bay-bridge-west-inner",
+      "lng": -122.3806476,
+      "lat": 37.795588,
+      "bearing": 40.4,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q130699957",
+      "replaces": [
+        "way/432712477"
+      ]
+    },
+    {
+      "id": "sf-bay-bridge-west-w5",
+      "name": "Bay Bridge west span (tower W5)",
+      "model": "sf-bay-bridge-west-inner",
+      "lng": -122.3750797,
+      "lat": 37.8007874,
+      "bearing": 40.4,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q130699957",
+      "replaces": [
+        "way/432712478"
       ]
     }
   ]
