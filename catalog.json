@@ -1273,6 +1273,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-city-hall.ts"
+    },
+    {
+      "id": "nyc-oculus",
+      "file": "models/nyc-oculus.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-oculus.ts"
     }
   ],
   "landmarks": [
@@ -5283,6 +5290,20 @@
         "way/214788066",
         "way/214788067",
         "way/214788068"
+      ]
+    },
+    {
+      "id": "nyc-oculus",
+      "name": "The Oculus",
+      "model": "nyc-oculus",
+      "lng": -74.011413,
+      "lat": 40.7115445,
+      "bearing": 128.0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2001751",
+      "replaces": [
+        "way/278033606"
       ]
     }
   ]
