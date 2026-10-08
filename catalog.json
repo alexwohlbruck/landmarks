@@ -1287,6 +1287,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-carnegie-hall.ts"
+    },
+    {
+      "id": "nyc-manhattan-bridge",
+      "file": "models/nyc-manhattan-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-manhattan-bridge.ts"
     }
   ],
   "landmarks": [
@@ -5326,6 +5333,34 @@
       "replaces": [
         "way/265148502",
         "way/1039811293"
+      ]
+    },
+    {
+      "id": "nyc-manhattan-bridge-manhattan",
+      "name": "Manhattan Bridge (Manhattan tower)",
+      "model": "nyc-manhattan-bridge",
+      "lng": -73.9914885,
+      "lat": 40.7088118,
+      "bearing": 337.0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q125050",
+      "replaces": [
+        "way/1255353996"
+      ]
+    },
+    {
+      "id": "nyc-manhattan-bridge-brooklyn",
+      "name": "Manhattan Bridge (Brooklyn tower)",
+      "model": "nyc-manhattan-bridge",
+      "lng": -73.989436,
+      "lat": 40.7051153,
+      "bearing": 337.0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q125050",
+      "replaces": [
+        "way/317352033"
       ]
     }
   ]
