@@ -1189,6 +1189,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-city-hall.ts"
+    },
+    {
+      "id": "sf-bill-graham-auditorium",
+      "file": "models/sf-bill-graham-auditorium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-bill-graham-auditorium.ts"
     }
   ],
   "landmarks": [
@@ -4732,6 +4739,21 @@
         "way/494810826",
         "way/494810839",
         "way/494810841"
+      ]
+    },
+    {
+      "id": "sf-bill-graham-auditorium",
+      "name": "Bill Graham Civic Auditorium",
+      "model": "sf-bill-graham-auditorium",
+      "lng": -122.4173275,
+      "lat": 37.7780526,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4909197",
+      "replaces": [
+        "way/25759141",
+        "way/435831538"
       ]
     }
   ]
