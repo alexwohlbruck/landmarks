@@ -1294,6 +1294,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-dutch-windmill.ts"
+    },
+    {
+      "id": "sf-palace-of-fine-arts",
+      "file": "models/sf-palace-of-fine-arts.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-palace-of-fine-arts.ts"
     }
   ],
   "landmarks": [
@@ -5079,6 +5086,64 @@
       "wikidata": "Q54799943",
       "replaces": [
         "way/287921407"
+      ]
+    },
+    {
+      "id": "sf-palace-of-fine-arts",
+      "name": "Palace of Fine Arts",
+      "model": "sf-palace-of-fine-arts",
+      "lng": -122.4484045,
+      "lat": 37.8029182,
+      "bearing": 350,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q966263",
+      "replaces": [
+        "way/288371295",
+        "way/456820271",
+        "way/456820274",
+        "way/1549377328",
+        "way/1549377329",
+        "way/1549377330",
+        "way/1549377331",
+        "way/1549377332",
+        "way/1549377333",
+        "way/1549377334",
+        "way/1549377335",
+        "way/1549377336",
+        "way/1549377337",
+        "way/1549377338",
+        "way/1549377339",
+        "way/1549377340",
+        "way/1549377341",
+        "way/1549377342",
+        "way/1549377343",
+        "way/1549377344",
+        "way/1549377345",
+        "way/1549377346",
+        "way/1549377347",
+        "way/1549377348",
+        "way/1549377349",
+        "way/1549377350",
+        "way/288371310",
+        "way/288371306",
+        "way/288371313",
+        "way/288371314",
+        "way/288371302",
+        "way/1550664397",
+        "way/1550664398",
+        "way/1550664399",
+        "way/1550664400",
+        "way/1550664401",
+        "way/1550664402",
+        "way/1550664403",
+        "way/1550664404",
+        "way/1550664405",
+        "way/1550664406",
+        "way/1550664407",
+        "way/1550664408",
+        "way/1550664409",
+        "way/1550664410"
       ]
     }
   ]
