@@ -1301,6 +1301,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-wiltern.ts"
+    },
+    {
+      "id": "la-la-temple",
+      "file": "models/la-la-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-la-temple.ts"
     }
   ],
   "landmarks": [
@@ -5050,6 +5057,20 @@
         "way/388772956",
         "way/1416423923",
         "way/1416423924"
+      ]
+    },
+    {
+      "id": "la-la-temple",
+      "name": "Los Angeles California Temple",
+      "model": "la-la-temple",
+      "lng": -118.4339217,
+      "lat": 34.0526996,
+      "bearing": 54.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1870450",
+      "replaces": [
+        "way/216534845"
       ]
     }
   ]
