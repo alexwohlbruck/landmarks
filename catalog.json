@@ -1217,6 +1217,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-alcatraz-water-tower.ts"
+    },
+    {
+      "id": "sf-alcatraz-lighthouse",
+      "file": "models/sf-alcatraz-lighthouse.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-alcatraz-lighthouse.ts"
     }
   ],
   "landmarks": [
@@ -4821,6 +4828,20 @@
       "wikidata": "Q1142684",
       "replaces": [
         "way/660870452"
+      ]
+    },
+    {
+      "id": "sf-alcatraz-lighthouse",
+      "name": "Alcatraz Island Lighthouse",
+      "model": "sf-alcatraz-lighthouse",
+      "lng": -122.4222949,
+      "lat": 37.8262541,
+      "bearing": 45,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4712967",
+      "replaces": [
+        "way/99202294"
       ]
     }
   ]
