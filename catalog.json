@@ -1133,6 +1133,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-steinway-tower.ts"
+    },
+    {
+      "id": "nyc-one-vanderbilt",
+      "file": "models/nyc-one-vanderbilt.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-one-vanderbilt.ts"
     }
   ],
   "landmarks": [
@@ -4494,6 +4501,44 @@
         "way/1158813440",
         "way/1158813441",
         "way/265147970"
+      ]
+    },
+    {
+      "id": "nyc-one-vanderbilt",
+      "name": "One Vanderbilt",
+      "model": "nyc-one-vanderbilt",
+      "lng": -73.9785415,
+      "lat": 40.7529739,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q18398409",
+      "replaces": [
+        "way/265875648",
+        "way/1470380430",
+        "way/1470380431",
+        "way/1470380432",
+        "way/1470380433",
+        "way/1470380434",
+        "way/1470380435",
+        "way/1470380436",
+        "way/1470380437",
+        "way/1470380438",
+        "way/1470380439",
+        "way/1470380440",
+        "way/1470380441",
+        "way/1470380442",
+        "way/1470380443",
+        "way/1470380444",
+        "way/1470380445",
+        "way/1470380446",
+        "way/1470380447",
+        "way/1470380448",
+        "way/1470380449",
+        "way/1470380450",
+        "way/1470380451",
+        "way/1470380452",
+        "way/1470380453"
       ]
     }
   ]
