@@ -1294,6 +1294,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-healy-hall.ts"
+    },
+    {
+      "id": "dc-botanic-garden",
+      "file": "models/dc-botanic-garden.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-botanic-garden.ts"
     }
   ],
   "landmarks": [
@@ -5316,6 +5323,21 @@
       "wikidata": "Q4269513",
       "replaces": [
         "way/444583709"
+      ]
+    },
+    {
+      "id": "dc-botanic-garden",
+      "name": "United States Botanic Garden Conservatory",
+      "model": "dc-botanic-garden",
+      "lng": -77.0129058,
+      "lat": 38.8879645,
+      "bearing": 0.14,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1848855",
+      "replaces": [
+        "relation/1029372",
+        "way/905917535"
       ]
     }
   ]
