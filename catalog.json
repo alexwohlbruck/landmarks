@@ -1385,6 +1385,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-oakland-tribune-tower.ts"
+    },
+    {
+      "id": "sf-oakland-city-hall",
+      "file": "models/sf-oakland-city-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-oakland-city-hall.ts"
     }
   ],
   "landmarks": [
@@ -5469,6 +5476,28 @@
         "way/660808995",
         "way/660808996",
         "way/660808997"
+      ]
+    },
+    {
+      "id": "sf-oakland-city-hall",
+      "name": "Oakland City Hall",
+      "model": "sf-oakland-city-hall",
+      "lng": -122.2725829,
+      "lat": 37.8053134,
+      "bearing": 26.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q932794",
+      "replaces": [
+        "way/36977855",
+        "way/425117755",
+        "way/430610784",
+        "way/782510576",
+        "way/782510578",
+        "way/782510579",
+        "way/782510580",
+        "way/782510581",
+        "way/782510582"
       ]
     }
   ]
