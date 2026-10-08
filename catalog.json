@@ -1126,6 +1126,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-climate-pledge-arena.ts"
+    },
+    {
+      "id": "sea-rainier-square-tower",
+      "file": "models/sea-rainier-square-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-rainier-square-tower.ts"
     }
   ],
   "landmarks": [
@@ -4433,6 +4440,46 @@
         "way/1352666989",
         "way/1352666990",
         "way/1352666991"
+      ]
+    },
+    {
+      "id": "sea-rainier-square-tower",
+      "name": "Rainier Square Tower",
+      "model": "sea-rainier-square-tower",
+      "lng": -122.3348815,
+      "lat": 47.6090211,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q30634662",
+      "replaces": [
+        "way/686348108",
+        "way/686348092",
+        "way/686348093",
+        "way/686348094",
+        "way/686348095",
+        "way/686348096",
+        "way/686348097",
+        "way/686348098",
+        "way/686348099",
+        "way/686348100",
+        "way/686348101",
+        "way/686348102",
+        "way/686348103",
+        "way/686348104",
+        "way/686348105",
+        "way/686348106",
+        "way/686348107",
+        "way/686348109",
+        "way/686348110",
+        "way/686348111",
+        "way/686348112",
+        "way/686348113",
+        "way/686348114",
+        "way/686348115",
+        "way/686348116",
+        "way/686348117",
+        "way/686348118"
       ]
     }
   ]
