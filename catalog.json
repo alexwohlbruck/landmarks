@@ -1308,6 +1308,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-legion-of-honor.ts"
+    },
+    {
+      "id": "sf-sutro-tower",
+      "file": "models/sf-sutro-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-sutro-tower.ts"
     }
   ],
   "landmarks": [
@@ -5175,6 +5182,52 @@
         "way/1410202325",
         "way/1540333313",
         "way/1540333314"
+      ]
+    },
+    {
+      "id": "sf-sutro-tower",
+      "name": "Sutro Tower",
+      "model": "sf-sutro-tower",
+      "lng": -122.4528532,
+      "lat": 37.7552409,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q650097",
+      "replaces": [
+        "relation/3829019",
+        "way/581120610",
+        "way/1350841006",
+        "way/1350828175",
+        "way/1350828176",
+        "way/1350828177",
+        "way/1350828178",
+        "way/1350828179",
+        "way/1350828180",
+        "way/1350828181",
+        "way/1350828182",
+        "way/1350828183",
+        "way/1350848292",
+        "way/1350848293",
+        "way/1350848294",
+        "way/1350848295",
+        "way/1350848296",
+        "way/1350853005",
+        "way/1350853006",
+        "way/1350853007",
+        "way/1350853008",
+        "way/1350853009",
+        "way/1350853010",
+        "way/1350853011",
+        "way/1350853012",
+        "way/1350853013",
+        "way/1350853014",
+        "way/1350855462",
+        "way/1350855463",
+        "way/1350855464",
+        "way/1334229829",
+        "way/1350860498",
+        "way/1350860499"
       ]
     }
   ]
