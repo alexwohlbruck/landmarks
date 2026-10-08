@@ -1364,6 +1364,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-rose-bowl.ts"
+    },
+    {
+      "id": "la-team-disney",
+      "file": "models/la-team-disney.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-team-disney.ts"
     }
   ],
   "landmarks": [
@@ -5267,6 +5274,22 @@
       "wikidata": "Q582280",
       "replaces": [
         "way/5208863"
+      ]
+    },
+    {
+      "id": "la-team-disney",
+      "name": "Team Disney – The Michael D. Eisner Building",
+      "model": "la-team-disney",
+      "lng": -118.3272456,
+      "lat": 34.1579334,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q126723759",
+      "replaces": [
+        "relation/6385468",
+        "way/244655045",
+        "way/244924896"
       ]
     }
   ]
