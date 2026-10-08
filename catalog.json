@@ -1119,6 +1119,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-chanin-building.ts"
+    },
+    {
+      "id": "nyc-central-park-tower",
+      "file": "models/nyc-central-park-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-central-park-tower.ts"
     }
   ],
   "landmarks": [
@@ -4424,6 +4431,33 @@
         "way/289990008",
         "way/289990287",
         "way/290805845"
+      ]
+    },
+    {
+      "id": "nyc-central-park-tower",
+      "name": "Central Park Tower",
+      "model": "nyc-central-park-tower",
+      "lng": -73.9810095,
+      "lat": 40.7664214,
+      "bearing": 28.95,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2631701",
+      "replaces": [
+        "way/261509934",
+        "way/1107961654",
+        "way/1107961655",
+        "way/1107961656",
+        "way/1107961657",
+        "way/1107961658",
+        "way/1107961659",
+        "way/1107961660",
+        "way/1107961661",
+        "way/1107961662",
+        "way/1107961663",
+        "way/1107961664",
+        "way/1107961665",
+        "way/1107961667"
       ]
     }
   ]
