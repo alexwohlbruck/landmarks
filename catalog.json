@@ -1301,6 +1301,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-palace-of-fine-arts.ts"
+    },
+    {
+      "id": "sf-legion-of-honor",
+      "file": "models/sf-legion-of-honor.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-legion-of-honor.ts"
     }
   ],
   "landmarks": [
@@ -5144,6 +5151,30 @@
         "way/1550664408",
         "way/1550664409",
         "way/1550664410"
+      ]
+    },
+    {
+      "id": "sf-legion-of-honor",
+      "name": "California Palace of the Legion of Honor",
+      "model": "sf-legion-of-honor",
+      "lng": -122.50074208,
+      "lat": 37.78454549,
+      "bearing": 49.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2468251",
+      "replaces": [
+        "relation/21115818",
+        "way/1540337302",
+        "way/1540337303",
+        "way/1540337304",
+        "way/1540337305",
+        "way/1540327029",
+        "way/1540327030",
+        "way/1410202318",
+        "way/1410202325",
+        "way/1540333313",
+        "way/1540333314"
       ]
     }
   ]
