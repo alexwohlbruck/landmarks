@@ -1259,6 +1259,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-suzzallo-library.ts"
+    },
+    {
+      "id": "sea-pacific-tower",
+      "file": "models/sea-pacific-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-pacific-tower.ts"
     }
   ],
   "landmarks": [
@@ -4947,6 +4954,30 @@
         "way/1104202901",
         "way/445398678",
         "way/1104202900"
+      ]
+    },
+    {
+      "id": "sea-pacific-tower",
+      "name": "Pacific Tower",
+      "model": "sea-pacific-tower",
+      "lng": -122.31571,
+      "lat": 47.59286,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7122556",
+      "replaces": [
+        "way/4712871",
+        "way/1510326610",
+        "way/1510326611",
+        "way/1510326612",
+        "way/1510326613",
+        "way/1510326614",
+        "way/1510326615",
+        "way/1510326616",
+        "way/1510326617",
+        "way/1510326618",
+        "way/1510326619"
       ]
     }
   ]
