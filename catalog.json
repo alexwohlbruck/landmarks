@@ -1154,6 +1154,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-seattle-tower.ts"
+    },
+    {
+      "id": "sea-pacific-science-center",
+      "file": "models/sea-pacific-science-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-pacific-science-center.ts"
     }
   ],
   "landmarks": [
@@ -4555,6 +4562,30 @@
         "way/417915158",
         "way/417915157",
         "way/417915159"
+      ]
+    },
+    {
+      "id": "sea-pacific-science-center",
+      "name": "Pacific Science Center",
+      "model": "sea-pacific-science-center",
+      "lng": -122.351292,
+      "lat": 47.6194238,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3848341",
+      "replaces": [
+        "way/394955903",
+        "way/394955876",
+        "way/394955877",
+        "way/394955878",
+        "way/394955882",
+        "way/394955883",
+        "way/394955887",
+        "way/394955890",
+        "way/394955894",
+        "way/394955898",
+        "way/394955899"
       ]
     }
   ]
