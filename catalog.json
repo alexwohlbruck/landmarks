@@ -1182,6 +1182,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-pacific-telephone.ts"
+    },
+    {
+      "id": "sf-city-hall",
+      "file": "models/sf-city-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-city-hall.ts"
     }
   ],
   "landmarks": [
@@ -4700,6 +4707,31 @@
         "way/80296766",
         "way/684195506",
         "way/684195508"
+      ]
+    },
+    {
+      "id": "sf-city-hall",
+      "name": "San Francisco City Hall",
+      "model": "sf-city-hall",
+      "lng": -122.4192226,
+      "lat": 37.7792751,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1093944",
+      "replaces": [
+        "relation/7261820",
+        "way/494810783",
+        "way/494810785",
+        "way/494810787",
+        "way/494810790",
+        "way/494810791",
+        "way/494810794",
+        "way/494810820",
+        "way/494810823",
+        "way/494810826",
+        "way/494810839",
+        "way/494810841"
       ]
     }
   ]
