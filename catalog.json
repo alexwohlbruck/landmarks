@@ -1357,6 +1357,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-oracle-park.ts"
+    },
+    {
+      "id": "sf-chase-center",
+      "file": "models/sf-chase-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-chase-center.ts"
     }
   ],
   "landmarks": [
@@ -5374,6 +5381,20 @@
         "way/368215208",
         "way/368214736",
         "way/368214737"
+      ]
+    },
+    {
+      "id": "sf-chase-center",
+      "name": "Chase Center",
+      "model": "sf-chase-center",
+      "lng": -122.38739618,
+      "lat": 37.76787393,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q15262098",
+      "replaces": [
+        "way/579646390"
       ]
     }
   ]
