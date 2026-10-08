@@ -1343,6 +1343,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-queen-mary.ts"
+    },
+    {
+      "id": "la-vincent-thomas-bridge",
+      "file": "models/la-vincent-thomas-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-vincent-thomas-bridge.ts"
     }
   ],
   "landmarks": [
@@ -5194,6 +5201,30 @@
         "way/439768916",
         "way/439768917"
       ]
+    },
+    {
+      "id": "la-vincent-thomas-bridge-east",
+      "name": "Vincent Thomas Bridge (east tower)",
+      "model": "la-vincent-thomas-bridge",
+      "lng": -118.2689686,
+      "lat": 33.7491062,
+      "bearing": 100.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q496944",
+      "replaces": []
+    },
+    {
+      "id": "la-vincent-thomas-bridge-west",
+      "name": "Vincent Thomas Bridge (west tower)",
+      "model": "la-vincent-thomas-bridge",
+      "lng": -118.2738195,
+      "lat": 33.7498368,
+      "bearing": 100.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q496944",
+      "replaces": []
     }
   ]
 }
