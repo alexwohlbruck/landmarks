@@ -1259,6 +1259,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-coliseum.ts"
+    },
+    {
+      "id": "la-shrine-auditorium",
+      "file": "models/la-shrine-auditorium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-shrine-auditorium.ts"
     }
   ],
   "landmarks": [
@@ -4903,6 +4910,20 @@
         "relation/6100581",
         "way/174863998",
         "way/174863999"
+      ]
+    },
+    {
+      "id": "la-shrine-auditorium",
+      "name": "Shrine Auditorium",
+      "model": "la-shrine-auditorium",
+      "lng": -118.2813407,
+      "lat": 34.0234236,
+      "bearing": 28,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q731437",
+      "replaces": [
+        "way/407613039"
       ]
     }
   ]
