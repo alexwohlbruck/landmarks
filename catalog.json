@@ -1147,6 +1147,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-1201-third-avenue.ts"
+    },
+    {
+      "id": "sea-seattle-tower",
+      "file": "models/sea-seattle-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-seattle-tower.ts"
     }
   ],
   "landmarks": [
@@ -4530,6 +4537,24 @@
         "way/488923802",
         "way/331322650",
         "way/331324934"
+      ]
+    },
+    {
+      "id": "sea-seattle-tower",
+      "name": "Seattle Tower",
+      "model": "sea-seattle-tower",
+      "lng": -122.335457,
+      "lat": 47.6076875,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7442196",
+      "replaces": [
+        "way/335417547",
+        "way/232079588",
+        "way/417915158",
+        "way/417915157",
+        "way/417915159"
       ]
     }
   ]
