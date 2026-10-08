@@ -1350,6 +1350,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-old-mint.ts"
+    },
+    {
+      "id": "sf-oracle-park",
+      "file": "models/sf-oracle-park.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-oracle-park.ts"
     }
   ],
   "landmarks": [
@@ -5339,6 +5346,34 @@
       "wikidata": "Q7414079",
       "replaces": [
         "way/32863779"
+      ]
+    },
+    {
+      "id": "sf-oracle-park",
+      "name": "Oracle Park",
+      "model": "sf-oracle-park",
+      "lng": -122.38951278,
+      "lat": 37.77843769,
+      "bearing": 315,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q298585",
+      "replaces": [
+        "relation/7330762",
+        "relation/7325085",
+        "way/499568642",
+        "way/499568643",
+        "way/499568644",
+        "way/499568645",
+        "way/499568646",
+        "way/499568647",
+        "way/499568648",
+        "way/499568649",
+        "way/499568652",
+        "way/368215207",
+        "way/368215208",
+        "way/368214736",
+        "way/368214737"
       ]
     }
   ]
