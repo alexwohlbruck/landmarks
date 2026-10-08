@@ -1378,6 +1378,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-brooklyn-museum.ts"
+    },
+    {
+      "id": "nyc-george-washington-bridge",
+      "file": "models/nyc-george-washington-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-george-washington-bridge.ts"
     }
   ],
   "landmarks": [
@@ -5669,6 +5676,34 @@
       "replaces": [
         "way/1432069915",
         "way/250229991"
+      ]
+    },
+    {
+      "id": "nyc-george-washington-bridge-new-jersey",
+      "name": "George Washington Bridge (New Jersey tower)",
+      "model": "nyc-george-washington-bridge",
+      "lng": -73.9587578,
+      "lat": 40.8528665,
+      "bearing": 284.4,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q125821",
+      "replaces": [
+        "way/741784699"
+      ]
+    },
+    {
+      "id": "nyc-george-washington-bridge-new-york",
+      "name": "George Washington Bridge (New York tower)",
+      "model": "nyc-george-washington-bridge",
+      "lng": -73.946519,
+      "lat": 40.8504589,
+      "bearing": 284.4,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q125821",
+      "replaces": [
+        "way/741784700"
       ]
     }
   ]
