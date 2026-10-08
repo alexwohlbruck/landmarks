@@ -1091,6 +1091,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-432-park.ts"
+    },
+    {
+      "id": "nyc-570-lexington",
+      "file": "models/nyc-570-lexington.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-570-lexington.ts"
     }
   ],
   "landmarks": [
@@ -4284,6 +4291,27 @@
         "way/261499924",
         "way/463593207",
         "way/463386820"
+      ]
+    },
+    {
+      "id": "nyc-570-lexington",
+      "name": "General Electric Building",
+      "model": "nyc-570-lexington",
+      "lng": -73.9724489,
+      "lat": 40.7570846,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q244391",
+      "replaces": [
+        "way/137885993",
+        "way/137887333",
+        "way/137887335",
+        "way/137887345",
+        "way/137887870",
+        "way/137887871",
+        "way/137889011",
+        "way/668481028"
       ]
     }
   ]
