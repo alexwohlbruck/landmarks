@@ -1373,13 +1373,6 @@
       "source": "generators/sf-sfmoma.ts"
     },
     {
-      "id": "sf-contemporary-jewish-museum",
-      "file": "models/sf-contemporary-jewish-museum.glb",
-      "license": "CC0-1.0",
-      "author": "Barrelman",
-      "source": "generators/sf-contemporary-jewish-museum.ts"
-    },
-    {
       "id": "sf-oakland-tribune-tower",
       "file": "models/sf-oakland-tribune-tower.glb",
       "license": "CC0-1.0",
@@ -5479,20 +5472,6 @@
         "way/1365384414",
         "way/1365384415",
         "way/1365384416"
-      ]
-    },
-    {
-      "id": "sf-contemporary-jewish-museum",
-      "name": "Contemporary Jewish Museum",
-      "model": "sf-contemporary-jewish-museum",
-      "lng": -122.40369393,
-      "lat": 37.78601495,
-      "bearing": 45,
-      "elevation": 0,
-      "minzoom": 16,
-      "wikidata": "Q5164991",
-      "replaces": [
-        "way/118106934"
       ]
     },
     {
