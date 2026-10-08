@@ -673,6 +673,419 @@
       "source": "generators/carowinds-windseeker.ts"
     },
     {
+      "id": "dlr-incredicoaster",
+      "file": "models/dlr-incredicoaster.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-incredicoaster.ts"
+    },
+    {
+      "id": "wdw-ak-entrance",
+      "file": "models/wdw-ak-entrance.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-ak-entrance.ts"
+    },
+    {
+      "id": "wdw-batuu-spires",
+      "file": "models/wdw-batuu-spires.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-batuu-spires.ts"
+    },
+    {
+      "id": "wdw-bay-lake-tower",
+      "file": "models/wdw-bay-lake-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-bay-lake-tower.ts"
+    },
+    {
+      "id": "wdw-big-thunder-mountain",
+      "file": "models/wdw-big-thunder-mountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-big-thunder-mountain.ts"
+    },
+    {
+      "id": "wdw-chinese-theater",
+      "file": "models/wdw-chinese-theater.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-chinese-theater.ts"
+    },
+    {
+      "id": "wdw-cinderella-castle",
+      "file": "models/wdw-cinderella-castle.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-cinderella-castle.ts"
+    },
+    {
+      "id": "wdw-contemporary-garden-wing",
+      "file": "models/wdw-contemporary-garden-wing.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-contemporary-garden-wing.ts"
+    },
+    {
+      "id": "wdw-contemporary-resort",
+      "file": "models/wdw-contemporary-resort.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-contemporary-resort.ts"
+    },
+    {
+      "id": "wdw-dhs-entrance",
+      "file": "models/wdw-dhs-entrance.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-dhs-entrance.ts"
+    },
+    {
+      "id": "wdw-epcot-american-adventure",
+      "file": "models/wdw-epcot-american-adventure.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-american-adventure.ts"
+    },
+    {
+      "id": "wdw-epcot-canada",
+      "file": "models/wdw-epcot-canada.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-canada.ts"
+    },
+    {
+      "id": "wdw-epcot-china-temple",
+      "file": "models/wdw-epcot-china-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-china-temple.ts"
+    },
+    {
+      "id": "wdw-epcot-cosmic-rewind",
+      "file": "models/wdw-epcot-cosmic-rewind.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-cosmic-rewind.ts"
+    },
+    {
+      "id": "wdw-epcot-entrance",
+      "file": "models/wdw-epcot-entrance.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-entrance.ts"
+    },
+    {
+      "id": "wdw-epcot-france",
+      "file": "models/wdw-epcot-france.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-france.ts"
+    },
+    {
+      "id": "wdw-epcot-germany",
+      "file": "models/wdw-epcot-germany.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-germany.ts"
+    },
+    {
+      "id": "wdw-epcot-italy",
+      "file": "models/wdw-epcot-italy.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-italy.ts"
+    },
+    {
+      "id": "wdw-epcot-japan-pagoda",
+      "file": "models/wdw-epcot-japan-pagoda.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-japan-pagoda.ts"
+    },
+    {
+      "id": "wdw-epcot-mexico-pyramid",
+      "file": "models/wdw-epcot-mexico-pyramid.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-mexico-pyramid.ts"
+    },
+    {
+      "id": "wdw-epcot-morocco",
+      "file": "models/wdw-epcot-morocco.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-morocco.ts"
+    },
+    {
+      "id": "wdw-epcot-test-track",
+      "file": "models/wdw-epcot-test-track.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-test-track.ts"
+    },
+    {
+      "id": "wdw-epcot-uk",
+      "file": "models/wdw-epcot-uk.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-epcot-uk.ts"
+    },
+    {
+      "id": "wdw-expedition-everest",
+      "file": "models/wdw-expedition-everest.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-expedition-everest.ts"
+    },
+    {
+      "id": "wdw-haunted-mansion",
+      "file": "models/wdw-haunted-mansion.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-haunted-mansion.ts"
+    },
+    {
+      "id": "wdw-main-street-station",
+      "file": "models/wdw-main-street-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-main-street-station.ts"
+    },
+    {
+      "id": "wdw-millennium-falcon",
+      "file": "models/wdw-millennium-falcon.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-millennium-falcon.ts"
+    },
+    {
+      "id": "wdw-mk-entrance",
+      "file": "models/wdw-mk-entrance.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-mk-entrance.ts"
+    },
+    {
+      "id": "wdw-pandora-floating-mountains",
+      "file": "models/wdw-pandora-floating-mountains.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-pandora-floating-mountains.ts"
+    },
+    {
+      "id": "wdw-rock-n-roller-coaster",
+      "file": "models/wdw-rock-n-roller-coaster.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-rock-n-roller-coaster.ts"
+    },
+    {
+      "id": "wdw-slinky-dog-dash",
+      "file": "models/wdw-slinky-dog-dash.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-slinky-dog-dash.ts"
+    },
+    {
+      "id": "wdw-space-mountain",
+      "file": "models/wdw-space-mountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-space-mountain.ts"
+    },
+    {
+      "id": "wdw-spaceship-earth",
+      "file": "models/wdw-spaceship-earth.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-spaceship-earth.ts"
+    },
+    {
+      "id": "wdw-tower-of-terror",
+      "file": "models/wdw-tower-of-terror.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-tower-of-terror.ts"
+    },
+    {
+      "id": "wdw-tree-of-life",
+      "file": "models/wdw-tree-of-life.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-tree-of-life.ts"
+    },
+    {
+      "id": "wdw-tron-lightcycle-run",
+      "file": "models/wdw-tron-lightcycle-run.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-tron-lightcycle-run.ts"
+    },
+    {
+      "id": "wdw-seven-dwarfs-mine-train",
+      "file": "models/wdw-seven-dwarfs-mine-train.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-seven-dwarfs-mine-train.ts"
+    },
+    {
+      "id": "wdw-barnstormer",
+      "file": "models/wdw-barnstormer.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/wdw-barnstormer.ts"
+    },
+    {
+      "id": "dlr-sleeping-beauty-castle",
+      "file": "models/dlr-sleeping-beauty-castle.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-sleeping-beauty-castle.ts"
+    },
+    {
+      "id": "dlr-matterhorn",
+      "file": "models/dlr-matterhorn.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-matterhorn.ts"
+    },
+    {
+      "id": "dlr-main-street-station",
+      "file": "models/dlr-main-street-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-main-street-station.ts"
+    },
+    {
+      "id": "dlr-small-world",
+      "file": "models/dlr-small-world.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-small-world.ts"
+    },
+    {
+      "id": "dlr-haunted-mansion",
+      "file": "models/dlr-haunted-mansion.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-haunted-mansion.ts"
+    },
+    {
+      "id": "dlr-space-mountain",
+      "file": "models/dlr-space-mountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-space-mountain.ts"
+    },
+    {
+      "id": "dlr-big-thunder-mountain",
+      "file": "models/dlr-big-thunder-mountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-big-thunder-mountain.ts"
+    },
+    {
+      "id": "dlr-millennium-falcon",
+      "file": "models/dlr-millennium-falcon.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-millennium-falcon.ts"
+    },
+    {
+      "id": "dlr-batuu-spires",
+      "file": "models/dlr-batuu-spires.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-batuu-spires.ts"
+    },
+    {
+      "id": "dlr-pirates-blue-bayou",
+      "file": "models/dlr-pirates-blue-bayou.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-pirates-blue-bayou.ts"
+    },
+    {
+      "id": "dlr-mark-twain",
+      "file": "models/dlr-mark-twain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-mark-twain.ts"
+    },
+    {
+      "id": "dlr-peoplemover-track",
+      "file": "models/dlr-peoplemover-track.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-peoplemover-track.ts"
+    },
+    {
+      "id": "dlr-toontown-el-capitoon",
+      "file": "models/dlr-toontown-el-capitoon.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-toontown-el-capitoon.ts"
+    },
+    {
+      "id": "dlr-toontown-mickeys-house",
+      "file": "models/dlr-toontown-mickeys-house.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-toontown-mickeys-house.ts"
+    },
+    {
+      "id": "dlr-pixar-pal-a-round",
+      "file": "models/dlr-pixar-pal-a-round.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-pixar-pal-a-round.ts"
+    },
+    {
+      "id": "dlr-guardians-mission-breakout",
+      "file": "models/dlr-guardians-mission-breakout.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-guardians-mission-breakout.ts"
+    },
+    {
+      "id": "dlr-carthay-circle",
+      "file": "models/dlr-carthay-circle.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-carthay-circle.ts"
+    },
+    {
+      "id": "dlr-avengers-campus",
+      "file": "models/dlr-avengers-campus.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-avengers-campus.ts"
+    },
+    {
+      "id": "dlr-web-slingers",
+      "file": "models/dlr-web-slingers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-web-slingers.ts"
+    },
+    {
+      "id": "dlr-golden-zephyr",
+      "file": "models/dlr-golden-zephyr.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-golden-zephyr.ts"
+    },
+    {
+      "id": "dlr-soarin",
+      "file": "models/dlr-soarin.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dlr-soarin.ts"
+    },
+    {
       "id": "lv-strat",
       "file": "models/lv-strat.glb",
       "license": "CC0-1.0",
@@ -2809,6 +3222,1318 @@
       "minzoom": 14,
       "replaces": [
         "way/893187005"
+      ]
+    },
+    {
+      "id": "dlr-incredicoaster",
+      "name": "Incredicoaster",
+      "model": "dlr-incredicoaster",
+      "lng": -117.9217081,
+      "lat": 33.8047468,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1026847",
+      "replaces": [
+        "way/194882116",
+        "way/200375182",
+        "way/521998250",
+        "way/521998240",
+        "way/521998233",
+        "way/111215901",
+        "way/521998238",
+        "way/113935842",
+        "way/113935836",
+        "way/113935835",
+        "way/113935839",
+        "way/113935830",
+        "way/113935833",
+        "way/521998245",
+        "way/123412465",
+        "way/521998248",
+        "way/123412463",
+        "way/123412464",
+        "way/123412462",
+        "way/113935838",
+        "way/265898488",
+        "way/265898491",
+        "way/265898489",
+        "way/265898487",
+        "way/521998243",
+        "way/521998235",
+        "way/113935831",
+        "way/99409025",
+        "way/99409023",
+        "way/132509494",
+        "way/108039685",
+        "way/597969178",
+        "way/597969179",
+        "way/597969171",
+        "way/111215896",
+        "way/108039686",
+        "way/598399296",
+        "way/597969172",
+        "way/265898490",
+        "way/597969174",
+        "way/200375174"
+      ]
+    },
+    {
+      "id": "wdw-ak-entrance",
+      "name": "Disney's Animal Kingdom Entrance",
+      "model": "wdw-ak-entrance",
+      "lng": -81.5900755,
+      "lat": 28.3552589,
+      "bearing": 350,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/295763702",
+        "way/295763703",
+        "way/295763704",
+        "way/295763710"
+      ]
+    },
+    {
+      "id": "wdw-batuu-spires",
+      "name": "Black Spire Outpost spires",
+      "model": "wdw-batuu-spires",
+      "lng": -81.5619811,
+      "lat": 28.3536046,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": []
+    },
+    {
+      "id": "wdw-bay-lake-tower",
+      "name": "Bay Lake Tower at Disney's Contemporary Resort",
+      "model": "wdw-bay-lake-tower",
+      "lng": -81.5734315,
+      "lat": 28.4164359,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2002896",
+      "replaces": [
+        "way/344911011"
+      ]
+    },
+    {
+      "id": "wdw-big-thunder-mountain",
+      "name": "Big Thunder Mountain Railroad",
+      "model": "wdw-big-thunder-mountain",
+      "lng": -81.5846891,
+      "lat": 28.4205673,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q859406",
+      "replaces": [
+        "way/324922573",
+        "way/310114442",
+        "way/71194272",
+        "way/820348480",
+        "way/71194300",
+        "way/71194287",
+        "way/1351939293",
+        "way/1351939292",
+        "way/71194288",
+        "way/71194279",
+        "way/1351939291",
+        "way/1351939290",
+        "way/683642206",
+        "way/1351939289",
+        "way/71194292",
+        "way/71194289",
+        "way/71194297",
+        "way/1351939288",
+        "way/71194298",
+        "way/1351939287",
+        "way/71194274",
+        "way/71194276",
+        "way/71194281",
+        "way/71194273",
+        "way/1351939284",
+        "way/1351939283",
+        "way/71194299",
+        "way/71194271",
+        "way/1228692341",
+        "way/1228692337",
+        "way/71194269",
+        "way/71194270",
+        "way/1228692340",
+        "way/1228692339"
+      ]
+    },
+    {
+      "id": "wdw-chinese-theater",
+      "name": "The Chinese Theater",
+      "model": "wdw-chinese-theater",
+      "lng": -81.560482,
+      "lat": 28.356073,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q33082878",
+      "replaces": [
+        "way/294898804",
+        "way/607996087",
+        "way/607972840"
+      ]
+    },
+    {
+      "id": "wdw-cinderella-castle",
+      "name": "Cinderella Castle",
+      "model": "wdw-cinderella-castle",
+      "lng": -81.5811782,
+      "lat": 28.4195023,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2742709",
+      "replaces": [
+        "way/121516748",
+        "way/1109167338",
+        "way/1109167339",
+        "way/1109167340",
+        "way/1109167341",
+        "way/1109167342",
+        "way/1109167343",
+        "way/1109167344",
+        "way/1109167348",
+        "way/1109167349",
+        "way/1109167350",
+        "way/1109167351",
+        "way/1109167352",
+        "way/1351675222",
+        "way/1351675223",
+        "way/1351675224"
+      ]
+    },
+    {
+      "id": "wdw-contemporary-garden-wing",
+      "name": "Disney's Contemporary Resort Garden Wing",
+      "model": "wdw-contemporary-garden-wing",
+      "lng": -81.5733415,
+      "lat": 28.4135208,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/344887164"
+      ]
+    },
+    {
+      "id": "wdw-contemporary-resort",
+      "name": "Disney's Contemporary Resort",
+      "model": "wdw-contemporary-resort",
+      "lng": -81.574435,
+      "lat": 28.4149175,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2919960",
+      "replaces": [
+        "way/344910189",
+        "way/563012186",
+        "way/563012188",
+        "way/563012189",
+        "way/563012190",
+        "way/563012191",
+        "way/563012192",
+        "way/563012193",
+        "way/563718274",
+        "way/563718278",
+        "way/563718280",
+        "way/563718282",
+        "way/563718283",
+        "way/563718287",
+        "way/563718289",
+        "way/563718292",
+        "way/563718293",
+        "way/563718295",
+        "way/692275601",
+        "way/692275604",
+        "way/692275605",
+        "way/692275606",
+        "way/692275607",
+        "way/692275608",
+        "way/692275609",
+        "way/692275610",
+        "way/692275611",
+        "way/692275617",
+        "way/692834841",
+        "way/692834842",
+        "way/692834843",
+        "way/692834844",
+        "way/692834845",
+        "way/784959511",
+        "way/784959512",
+        "way/784959513",
+        "way/784959514",
+        "way/784959515",
+        "way/784959516",
+        "way/784959517",
+        "way/784959518",
+        "way/784959519",
+        "way/784959520",
+        "way/784959521",
+        "way/784959522",
+        "way/784959677",
+        "way/784959678",
+        "way/784959679",
+        "way/784959680",
+        "way/784959681",
+        "way/784960404",
+        "way/784960405",
+        "way/784960406",
+        "way/784960407",
+        "way/784960408"
+      ]
+    },
+    {
+      "id": "wdw-dhs-entrance",
+      "name": "Disney's Hollywood Studios Entrance",
+      "model": "wdw-dhs-entrance",
+      "lng": -81.5587705,
+      "lat": 28.3583562,
+      "bearing": 45,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "relation/3919136",
+        "way/786082410",
+        "way/786082411",
+        "way/786082412",
+        "way/786082413",
+        "way/786082414",
+        "way/786082415",
+        "way/786082416",
+        "way/786082417"
+      ]
+    },
+    {
+      "id": "wdw-epcot-american-adventure",
+      "name": "The American Adventure",
+      "model": "wdw-epcot-american-adventure",
+      "lng": -81.5493874,
+      "lat": 28.36722,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2897054",
+      "replaces": [
+        "way/295592223",
+        "way/515970173"
+      ]
+    },
+    {
+      "id": "wdw-epcot-canada",
+      "name": "Canada Pavilion (Hôtel du Canada)",
+      "model": "wdw-epcot-canada",
+      "lng": -81.55165,
+      "lat": 28.37155,
+      "bearing": 34,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2905034",
+      "replaces": [
+        "way/295396527",
+        "way/295396523",
+        "way/295396535"
+      ]
+    },
+    {
+      "id": "wdw-epcot-china-temple",
+      "name": "Temple of Heaven (China, EPCOT)",
+      "model": "wdw-epcot-china-temple",
+      "lng": -81.5463174,
+      "lat": 28.3697663,
+      "bearing": 286,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2681898",
+      "replaces": [
+        "way/383670241"
+      ]
+    },
+    {
+      "id": "wdw-epcot-cosmic-rewind",
+      "name": "Guardians of the Galaxy: Cosmic Rewind",
+      "model": "wdw-epcot-cosmic-rewind",
+      "lng": -81.547025,
+      "lat": 28.3754942,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q36259219",
+      "replaces": [
+        "way/719079634"
+      ]
+    },
+    {
+      "id": "wdw-epcot-entrance",
+      "name": "EPCOT Entrance",
+      "model": "wdw-epcot-entrance",
+      "lng": -81.5494,
+      "lat": 28.3758835,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/295176249",
+        "way/295174214",
+        "way/295174215",
+        "way/295176514",
+        "way/295176518",
+        "way/295174216",
+        "way/689241903"
+      ]
+    },
+    {
+      "id": "wdw-epcot-france",
+      "name": "France Pavilion and Eiffel Tower (EPCOT)",
+      "model": "wdw-epcot-france",
+      "lng": -81.5529155,
+      "lat": 28.3687766,
+      "bearing": 47.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/305094683",
+        "way/295447782",
+        "way/305094845",
+        "way/305094686",
+        "way/305094846",
+        "way/305094685",
+        "way/805286022",
+        "way/173599405",
+        "way/311286680",
+        "way/311286681",
+        "way/311286682",
+        "way/311286683",
+        "way/311286684"
+      ]
+    },
+    {
+      "id": "wdw-epcot-germany",
+      "name": "Germany Pavilion",
+      "model": "wdw-epcot-germany",
+      "lng": -81.54694,
+      "lat": 28.36816,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2129498",
+      "replaces": [
+        "way/295593358"
+      ]
+    },
+    {
+      "id": "wdw-epcot-italy",
+      "name": "Italy Pavilion (Campanile and Doge's Palace)",
+      "model": "wdw-epcot-italy",
+      "lng": -81.5481578,
+      "lat": 28.3678284,
+      "bearing": 347,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2604149",
+      "replaces": [
+        "way/295592599",
+        "way/295592598"
+      ]
+    },
+    {
+      "id": "wdw-epcot-japan-pagoda",
+      "name": "Goju-no-to Pagoda (Japan, EPCOT)",
+      "model": "wdw-epcot-japan-pagoda",
+      "lng": -81.5502911,
+      "lat": 28.367906,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2162898",
+      "replaces": [
+        "way/295587740"
+      ]
+    },
+    {
+      "id": "wdw-epcot-mexico-pyramid",
+      "name": "Mexico Pavilion",
+      "model": "wdw-epcot-mexico-pyramid",
+      "lng": -81.54695,
+      "lat": 28.37185,
+      "bearing": 54,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2776455",
+      "replaces": [
+        "way/295598769",
+        "way/529602448"
+      ]
+    },
+    {
+      "id": "wdw-epcot-morocco",
+      "name": "Morocco Pavilion minaret",
+      "model": "wdw-epcot-morocco",
+      "lng": -81.551714,
+      "lat": 28.3680362,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2776572",
+      "replaces": []
+    },
+    {
+      "id": "wdw-epcot-test-track",
+      "name": "Test Track",
+      "model": "wdw-epcot-test-track",
+      "lng": -81.54721781,
+      "lat": 28.37284435,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q645233",
+      "replaces": [
+        "way/295315993",
+        "way/295949487",
+        "way/721055302",
+        "way/1539425232"
+      ]
+    },
+    {
+      "id": "wdw-epcot-uk",
+      "name": "United Kingdom Pavilion",
+      "model": "wdw-epcot-uk",
+      "lng": -81.55163,
+      "lat": 28.37038,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2904061",
+      "replaces": [
+        "way/44486037",
+        "way/784027061",
+        "way/295399246",
+        "way/44486036",
+        "way/784025250"
+      ]
+    },
+    {
+      "id": "wdw-expedition-everest",
+      "name": "Expedition Everest",
+      "model": "wdw-expedition-everest",
+      "lng": -81.5862667,
+      "lat": 28.3581626,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1341067",
+      "replaces": [
+        "way/146269361",
+        "way/146269359",
+        "relation/3937134",
+        "way/187631574",
+        "way/187631576",
+        "way/187631578",
+        "way/187631580",
+        "way/187631584",
+        "way/187631602",
+        "way/773718966",
+        "way/773718967",
+        "way/957958010",
+        "way/957958011",
+        "way/957958012",
+        "way/957958013",
+        "way/957958014",
+        "way/1228688570",
+        "way/1228688571",
+        "way/1228688572",
+        "way/1228688573",
+        "way/1228688575",
+        "way/204972538",
+        "way/1228688574"
+      ]
+    },
+    {
+      "id": "wdw-haunted-mansion",
+      "name": "The Haunted Mansion",
+      "model": "wdw-haunted-mansion",
+      "lng": -81.583103,
+      "lat": 28.4204763,
+      "bearing": 8,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2030983",
+      "replaces": [
+        "way/41831418",
+        "way/1107979231",
+        "way/1107979232",
+        "way/1107979233",
+        "way/1107979234",
+        "way/1107979235",
+        "way/1107979236"
+      ]
+    },
+    {
+      "id": "wdw-main-street-station",
+      "name": "Main Street, U.S.A. Station",
+      "model": "wdw-main-street-station",
+      "lng": -81.5812004,
+      "lat": 28.4164917,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/296125663",
+        "way/1107878401",
+        "way/1107878402",
+        "way/1107878403",
+        "way/1107878404",
+        "way/1107878405",
+        "way/1107878406",
+        "way/1107878407",
+        "way/1107878408",
+        "way/1107878409",
+        "way/1107878410",
+        "way/1107878411"
+      ]
+    },
+    {
+      "id": "wdw-millennium-falcon",
+      "name": "Millennium Falcon",
+      "model": "wdw-millennium-falcon",
+      "lng": -81.561814,
+      "lat": 28.353751,
+      "bearing": 322,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": []
+    },
+    {
+      "id": "wdw-mk-entrance",
+      "name": "Magic Kingdom Entrance",
+      "model": "wdw-mk-entrance",
+      "lng": -81.5812,
+      "lat": 28.416234,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/296122624",
+        "way/296122627",
+        "way/621686707",
+        "way/621686708",
+        "way/296122623",
+        "way/1107878395",
+        "way/1107878396",
+        "relation/9287955",
+        "way/1107878397",
+        "way/1107878398",
+        "way/1107878399",
+        "way/1107878400"
+      ]
+    },
+    {
+      "id": "wdw-pandora-floating-mountains",
+      "name": "Floating Mountains of Pandora",
+      "model": "wdw-pandora-floating-mountains",
+      "lng": -81.5919766,
+      "lat": 28.3554349,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/668089393",
+        "way/668089395",
+        "way/668089396",
+        "way/668089397",
+        "way/668089398"
+      ]
+    },
+    {
+      "id": "wdw-rock-n-roller-coaster",
+      "name": "Rock ’n’ Roller Coaster Starring The Muppets",
+      "model": "wdw-rock-n-roller-coaster",
+      "lng": -81.5615788,
+      "lat": 28.3596178,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q1502476",
+      "replaces": [
+        "way/357021885",
+        "way/357021883"
+      ]
+    },
+    {
+      "id": "wdw-slinky-dog-dash",
+      "name": "Slinky Dog Dash",
+      "model": "wdw-slinky-dog-dash",
+      "lng": -81.5628374,
+      "lat": 28.3560478,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q35006966",
+      "replaces": [
+        "way/685092736",
+        "way/751717116",
+        "way/1294595151",
+        "way/1294595160",
+        "way/1294595158",
+        "way/798615126",
+        "way/1294595156",
+        "way/1294595155",
+        "way/1294595157",
+        "way/1294595154",
+        "way/685772990",
+        "way/1294595159",
+        "way/1294595153",
+        "way/1294595152",
+        "way/685772991"
+      ]
+    },
+    {
+      "id": "wdw-space-mountain",
+      "name": "Space Mountain",
+      "model": "wdw-space-mountain",
+      "lng": -81.5772341,
+      "lat": 28.4191494,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2306317",
+      "replaces": [
+        "way/296326395",
+        "way/1106733755",
+        "way/373171485",
+        "way/373171486",
+        "way/373171487",
+        "way/373171488",
+        "way/1106733754"
+      ]
+    },
+    {
+      "id": "wdw-spaceship-earth",
+      "name": "Spaceship Earth",
+      "model": "wdw-spaceship-earth",
+      "lng": -81.5493963,
+      "lat": 28.3752927,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2916749",
+      "replaces": [
+        "way/146221550",
+        "way/295176801",
+        "way/298641632"
+      ]
+    },
+    {
+      "id": "wdw-tower-of-terror",
+      "name": "The Twilight Zone Tower of Terror",
+      "model": "wdw-tower-of-terror",
+      "lng": -81.559919,
+      "lat": 28.360007,
+      "bearing": 41,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1776103",
+      "replaces": [
+        "way/530750421",
+        "way/446195251",
+        "way/446195252",
+        "way/530750420",
+        "way/691274043"
+      ]
+    },
+    {
+      "id": "wdw-tree-of-life",
+      "name": "The Tree of Life",
+      "model": "wdw-tree-of-life",
+      "lng": -81.5905973,
+      "lat": 28.3579434,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3538315",
+      "replaces": [
+        "way/295879946"
+      ]
+    },
+    {
+      "id": "wdw-tron-lightcycle-run",
+      "name": "TRON Lightcycle / Run",
+      "model": "wdw-tron-lightcycle-run",
+      "lng": -81.5771401,
+      "lat": 28.4203863,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q123594444",
+      "replaces": [
+        "way/804994339",
+        "way/1089770163",
+        "way/1283031001",
+        "way/1283031000"
+      ]
+    },
+    {
+      "id": "wdw-seven-dwarfs-mine-train",
+      "name": "Seven Dwarfs Mine Train",
+      "model": "wdw-seven-dwarfs-mine-train",
+      "lng": -81.5801226,
+      "lat": 28.4206305,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2182970",
+      "replaces": [
+        "way/1313344974",
+        "way/296781876",
+        "way/295016219",
+        "way/1351675202",
+        "way/346646028",
+        "way/295016221",
+        "way/989772764",
+        "way/989772763",
+        "way/989772769",
+        "way/346646029",
+        "way/989772773",
+        "way/295016225",
+        "way/989772768",
+        "way/295038738",
+        "way/295038729"
+      ]
+    },
+    {
+      "id": "wdw-barnstormer",
+      "name": "The Barnstormer",
+      "model": "wdw-barnstormer",
+      "lng": -81.5784168,
+      "lat": 28.4205129,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2884723",
+      "replaces": [
+        "way/296370637",
+        "way/296366631",
+        "way/989772770",
+        "way/989772772",
+        "way/989772771",
+        "way/989772767",
+        "way/989772765",
+        "way/655715819",
+        "way/655715820"
+      ]
+    },
+    {
+      "id": "dlr-sleeping-beauty-castle",
+      "name": "Sleeping Beauty Castle",
+      "model": "dlr-sleeping-beauty-castle",
+      "lng": -117.91954,
+      "lat": 33.8127932,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2746222",
+      "replaces": [
+        "relation/7751688",
+        "way/331440228",
+        "way/123045121",
+        "way/123045134",
+        "way/123045120",
+        "way/123045140",
+        "way/123045135",
+        "way/331440225",
+        "way/123045145",
+        "way/123045122",
+        "way/132311785",
+        "way/312549916",
+        "way/312549915",
+        "way/123045133",
+        "way/123045143",
+        "way/123045150",
+        "way/331430139",
+        "way/332667874",
+        "way/332667877",
+        "way/332667876",
+        "way/332667873",
+        "way/123045128",
+        "way/123045136",
+        "way/123045130",
+        "way/331430135",
+        "way/335137574",
+        "way/335316774",
+        "way/312550372",
+        "way/123045118",
+        "way/123045132",
+        "way/123045142",
+        "way/123045129",
+        "way/123045126",
+        "way/123045141",
+        "way/160998709",
+        "way/331440221",
+        "way/331440238",
+        "way/331440240",
+        "way/123045127",
+        "way/123045147",
+        "way/942038269"
+      ]
+    },
+    {
+      "id": "dlr-matterhorn",
+      "name": "Matterhorn Bobsleds",
+      "model": "dlr-matterhorn",
+      "lng": -117.9178493,
+      "lat": 33.8130456,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1849003",
+      "replaces": [
+        "way/107280556",
+        "way/123170498",
+        "way/123170497",
+        "way/122504258",
+        "way/136148707",
+        "way/122504261",
+        "way/122504260",
+        "way/122504263",
+        "way/123180127",
+        "way/135935735",
+        "way/542212418",
+        "way/136148698",
+        "way/542212421",
+        "way/136148704",
+        "way/542212425",
+        "way/135568234",
+        "way/136148701",
+        "way/136148703",
+        "way/542212428",
+        "way/136148706",
+        "way/542212430",
+        "way/135568239",
+        "way/135568231",
+        "way/542182059",
+        "way/542182060",
+        "way/542212416",
+        "way/942638295",
+        "way/542212395",
+        "way/942638294",
+        "way/136148702",
+        "way/542212399",
+        "way/942638293",
+        "way/136148700",
+        "way/542212401",
+        "way/542184358",
+        "way/542212404",
+        "way/136148705",
+        "way/542212406",
+        "way/135568240",
+        "way/542212414",
+        "way/136148697",
+        "way/542212411",
+        "way/135568227",
+        "way/542212409",
+        "way/135935730",
+        "way/542182061",
+        "way/135568236",
+        "way/266075984"
+      ]
+    },
+    {
+      "id": "dlr-main-street-station",
+      "name": "Main Street, U.S.A. Station",
+      "model": "dlr-main-street-station",
+      "lng": -117.91896,
+      "lat": 33.809971,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q68588348",
+      "replaces": [
+        "way/153044358",
+        "way/651349968",
+        "way/133729166",
+        "way/133729165",
+        "way/133729164",
+        "way/193657779",
+        "way/443327358",
+        "way/193657781",
+        "way/193657780"
+      ]
+    },
+    {
+      "id": "dlr-small-world",
+      "name": "\"it's a small world\"",
+      "model": "dlr-small-world",
+      "lng": -117.9178443,
+      "lat": 33.8146742,
+      "bearing": 13,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q137529132",
+      "replaces": [
+        "way/135699826",
+        "way/135489209"
+      ]
+    },
+    {
+      "id": "dlr-haunted-mansion",
+      "name": "The Haunted Mansion",
+      "model": "dlr-haunted-mansion",
+      "lng": -117.9221698,
+      "lat": 33.8117211,
+      "bearing": 327,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2030983",
+      "replaces": [
+        "way/178238274",
+        "way/122193484",
+        "way/122193472"
+      ]
+    },
+    {
+      "id": "dlr-space-mountain",
+      "name": "Space Mountain",
+      "model": "dlr-space-mountain",
+      "lng": -117.9174999,
+      "lat": 33.8109694,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7572427",
+      "replaces": [
+        "way/122090695",
+        "way/122090687",
+        "way/122090694",
+        "way/122090693",
+        "way/262351999"
+      ]
+    },
+    {
+      "id": "dlr-big-thunder-mountain",
+      "name": "Big Thunder Mountain Railroad",
+      "model": "dlr-big-thunder-mountain",
+      "lng": -117.9203327,
+      "lat": 33.8132457,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q859406",
+      "replaces": [
+        "way/266074156",
+        "way/49884643",
+        "way/111665796",
+        "way/111665765",
+        "way/111665769",
+        "way/111665786",
+        "way/111665768",
+        "way/111665783",
+        "way/111665763",
+        "way/111665776",
+        "way/111665775",
+        "way/111665767",
+        "way/111665780",
+        "way/111665797",
+        "way/111665770",
+        "way/111666071",
+        "way/111665789",
+        "way/111665757",
+        "way/111665791",
+        "way/111665785",
+        "way/111665771",
+        "way/111665792",
+        "way/111665790",
+        "way/111665760",
+        "way/111665759",
+        "way/111665766",
+        "way/111665778",
+        "way/111665762",
+        "way/111665764",
+        "way/111665795",
+        "way/111665782",
+        "way/123412143",
+        "way/111665774",
+        "way/123412154",
+        "way/123412155",
+        "way/111666072",
+        "way/111665788",
+        "way/111665772",
+        "way/265090600",
+        "way/111665784",
+        "way/111665773",
+        "way/196827012",
+        "way/122634163",
+        "way/122634161",
+        "way/185252217",
+        "way/185252218",
+        "way/185252219",
+        "way/249164682",
+        "way/249164683",
+        "way/107526325",
+        "way/49884638",
+        "way/470832530",
+        "way/123412144",
+        "way/123412145",
+        "way/109502928",
+        "way/435911119",
+        "way/435911120",
+        "way/435910962",
+        "way/435912347",
+        "way/435910963",
+        "way/435912891",
+        "way/435912892",
+        "way/435910463",
+        "way/435910464",
+        "way/435910466",
+        "way/435910239"
+      ]
+    },
+    {
+      "id": "dlr-millennium-falcon",
+      "name": "Millennium Falcon",
+      "model": "dlr-millennium-falcon",
+      "lng": -117.9212519,
+      "lat": 33.8150244,
+      "bearing": 139,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/1329137052"
+      ]
+    },
+    {
+      "id": "dlr-batuu-spires",
+      "name": "Black Spire Outpost spires",
+      "model": "dlr-batuu-spires",
+      "lng": -117.9211178,
+      "lat": 33.8151645,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": []
+    },
+    {
+      "id": "dlr-pirates-blue-bayou",
+      "name": "Pirates of the Caribbean and Blue Bayou",
+      "model": "dlr-pirates-blue-bayou",
+      "lng": -117.920831,
+      "lat": 33.811236,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q1713564",
+      "replaces": [
+        "way/824031784",
+        "way/123303434",
+        "way/123303445",
+        "way/123303466",
+        "way/123303460",
+        "way/123303438"
+      ]
+    },
+    {
+      "id": "dlr-mark-twain",
+      "name": "Mark Twain Riverboat",
+      "model": "dlr-mark-twain",
+      "lng": -117.920704,
+      "lat": 33.812227,
+      "bearing": 180,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3006137",
+      "replaces": []
+    },
+    {
+      "id": "dlr-peoplemover-track",
+      "name": "PeopleMover",
+      "model": "dlr-peoplemover-track",
+      "lng": -117.9171189,
+      "lat": 33.8127842,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2907508",
+      "replaces": [
+        "way/371961449",
+        "way/524008560",
+        "way/133808477",
+        "way/134478631",
+        "way/134478629",
+        "way/136149024",
+        "way/135566805",
+        "way/135566811",
+        "way/134478628",
+        "way/112299063",
+        "way/1516924401",
+        "way/1516924402",
+        "way/1550883946",
+        "way/1550883947",
+        "way/1550883948",
+        "way/1550883949",
+        "way/1550883951",
+        "way/1550883952",
+        "way/133881710",
+        "way/1550883945",
+        "way/1550883944",
+        "way/134991715",
+        "way/110199422",
+        "way/133808478",
+        "way/524008551"
+      ]
+    },
+    {
+      "id": "dlr-toontown-el-capitoon",
+      "name": "El CapiToon Theater",
+      "model": "dlr-toontown-el-capitoon",
+      "lng": -117.9183276,
+      "lat": 33.8156035,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q33082878",
+      "replaces": [
+        "way/987163640",
+        "relation/14558732"
+      ]
+    },
+    {
+      "id": "dlr-toontown-mickeys-house",
+      "name": "Mickey's House",
+      "model": "dlr-toontown-mickeys-house",
+      "lng": -117.9193644,
+      "lat": 33.8155436,
+      "bearing": 310,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q6838553",
+      "replaces": [
+        "way/185253879"
+      ]
+    },
+    {
+      "id": "dlr-pixar-pal-a-round",
+      "name": "Pixar Pal-A-Round",
+      "model": "dlr-pixar-pal-a-round",
+      "lng": -117.9221876,
+      "lat": 33.8051347,
+      "bearing": 40,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q751240",
+      "replaces": []
+    },
+    {
+      "id": "dlr-guardians-mission-breakout",
+      "name": "Guardians of the Galaxy – Mission: Breakout!",
+      "model": "dlr-guardians-mission-breakout",
+      "lng": -117.9169523,
+      "lat": 33.8066398,
+      "bearing": 318,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q26036866",
+      "replaces": [
+        "way/313039853",
+        "way/243895850",
+        "way/243895847",
+        "way/237074300",
+        "way/237074610",
+        "way/237074302",
+        "way/123423748",
+        "way/123423749",
+        "way/123423747"
+      ]
+    },
+    {
+      "id": "dlr-carthay-circle",
+      "name": "Carthay Circle Theatre",
+      "model": "dlr-carthay-circle",
+      "lng": -117.9189217,
+      "lat": 33.8073827,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q75339567",
+      "replaces": [
+        "way/338063157",
+        "way/338063109",
+        "way/338063116",
+        "way/336940997",
+        "way/336948504"
+      ]
+    },
+    {
+      "id": "dlr-avengers-campus",
+      "name": "Avengers Headquarters",
+      "model": "dlr-avengers-campus",
+      "lng": -117.9175306,
+      "lat": 33.8064138,
+      "bearing": 315,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/980770821",
+        "way/797193567",
+        "way/983358329"
+      ]
+    },
+    {
+      "id": "dlr-web-slingers",
+      "name": "WEB SLINGERS: A Spider-Man Adventure",
+      "model": "dlr-web-slingers",
+      "lng": -117.9186724,
+      "lat": 33.8068953,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q85802593",
+      "replaces": [
+        "way/721810397",
+        "way/49824622",
+        "way/951841620",
+        "way/951841621",
+        "way/951842062",
+        "way/980768332",
+        "way/980768333",
+        "way/980768334",
+        "way/980768335"
+      ]
+    },
+    {
+      "id": "dlr-golden-zephyr",
+      "name": "Golden Zephyr",
+      "model": "dlr-golden-zephyr",
+      "lng": -117.9222682,
+      "lat": 33.8059615,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3110108",
+      "replaces": [
+        "way/342771469"
+      ]
+    },
+    {
+      "id": "dlr-soarin",
+      "name": "Soarin' Around the World",
+      "model": "dlr-soarin",
+      "lng": -117.9200872,
+      "lat": 33.808416,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2775778",
+      "replaces": [
+        "way/312369808",
+        "way/121865023"
       ]
     },
     {
