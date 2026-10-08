@@ -1350,6 +1350,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-vincent-thomas-bridge.ts"
+    },
+    {
+      "id": "la-pasadena-city-hall",
+      "file": "models/la-pasadena-city-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-pasadena-city-hall.ts"
     }
   ],
   "landmarks": [
@@ -5225,6 +5232,21 @@
       "minzoom": 14,
       "wikidata": "Q496944",
       "replaces": []
+    },
+    {
+      "id": "la-pasadena-city-hall",
+      "name": "Pasadena City Hall",
+      "model": "la-pasadena-city-hall",
+      "lng": -118.1436449,
+      "lat": 34.147657,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2055241",
+      "replaces": [
+        "way/37741479",
+        "way/1106661997"
+      ]
     }
   ]
 }
