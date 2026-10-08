@@ -1231,6 +1231,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-federal-hall.ts"
+    },
+    {
+      "id": "nyc-the-shed",
+      "file": "models/nyc-the-shed.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-the-shed.ts"
     }
   ],
   "landmarks": [
@@ -5031,6 +5038,22 @@
         "way/276177610",
         "way/276177614",
         "way/276177616"
+      ]
+    },
+    {
+      "id": "nyc-the-shed",
+      "name": "The Shed",
+      "model": "nyc-the-shed",
+      "lng": -74.0027245,
+      "lat": 40.7532544,
+      "bearing": 29.0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q15961661",
+      "replaces": [
+        "way/681503639",
+        "way/1220655932",
+        "way/1220614724"
       ]
     }
   ]
