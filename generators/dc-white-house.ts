@@ -1,5 +1,6 @@
 /**
- * The White House (Executive Residence) — procedural, CC0-1.0, no textures.
+ * The White House: the Executive Residence, the West Colonnade and the
+ * West Wing — procedural, CC0-1.0, no textures.
  * bun generators/dc-white-house.ts
  *
  * Also the shared kit for the President's Park group (dc-white-house,
@@ -20,15 +21,22 @@
  *   part of the residence, so it is modelled and replaced too.
  * - The South Portico's two curved stairs are separate buildings (h=2) just
  *   outside the outline; modelled and replaced.
- * - Not modelled, not replaced: the West Colonnade (way/238241017), the West
- *   Wing (relation/19761232) and the East Wing. The original East Wing and
- *   East Colonnade were demolished in October 2025 for the ballroom project
- *   (Wikipedia, "White House"); OSM now maps that site as
- *   building=construction "State Ballroom" (way/1536631257), a construction
- *   site with no finished form to model. So the model is the residence
- *   alone, which is also what the lead's outline covers. The NAIP aerial used
- *   here predates the demolition and still shows the old East Wing; it was
- *   used only for the residence.
+ * - The West Colonnade (way/238241017) and the West Wing (relation/19761232
+ *   and its parts: main block 257920201, penthouse 257920192, east block
+ *   257920184, the Cabinet Room's raised roof 257920197, the Oval Office
+ *   238241023, the north portico 257920193 with roof 1445440857 and columns
+ *   257920178–181, and the west entrance canopy, building=roof 887434559)
+ *   are modelled and replaced.
+ * - The east side is not modelled. The East Wing and the East Colonnade were
+ *   demolished on 20–23 October 2025 (Wikipedia, "East Wing": AP photos of
+ *   23 October show "the entire East Wing, including the East Colonnade"
+ *   gone). OSM maps the site, from the residence's east wall outwards, as
+ *   building=construction "State Ballroom" (way/1536631257, checked
+ *   2026-07-08). G. Edward Johnson's aerials of 9 September 2026 show the
+ *   ballroom as a concrete and steel frame, and a new low glazed link against
+ *   the residence's east end, still wrapped and scaffolded with workers on
+ *   its roof. Neither is finished, so neither is drawn, and nothing on that
+ *   side is replaced.
  * - Indoor room polygons tagged building:part inside the outline (toilets,
  *   indoor=room, height 0 or none) are not buildings; they are listed in
  *   `replaces` only because they sit wholly inside the model and a client
@@ -76,6 +84,33 @@
  *   solarium on the South Portico to 20 m; the stairs' rise.
  * - The Truman Balcony is drawn as a deep slab with a railing band across
  *   the South Portico's columns, about 10 m up.
+ * - Wings, evidence. OSM (measured): every plan above. Published
+ *   (Wikipedia, "West Wing"): Eric Gugler's 1934 rebuild added the set-back
+ *   "penthouse" storey; the ground floor is partly a basement, so the first
+ *   floor, the Rose Garden and the colonnade sit at about the south lawn's
+ *   level. Photos: "White House W. Wing in April 2019.jpg" (Dan Scavino,
+ *   public domain; the colonnade against the residence's west end),
+ *   "Exterior of the White House West wing 001.jpg" (Geraldshields11, CC BY-SA
+ *   4.0; the press room's arched north wall), "Oval Office Exterior.jpg"
+ *   (Nilington, public domain), "Entrance of the West Wing under snow.jpg"
+ *   (Chuck Kennedy, White House, public domain; the north portico), "Trump
+ *   White House Rose Garden (September 5, 2025).jpg" (Speaker Mike Johnson,
+ *   public domain), "Aerial view of the White House.jpg" (Carol M.
+ *   Highsmith, public domain; roofs from the north), and "2026-09-09
+ *   helipad construction White House Washington DC 12-33-53.jpg", "2026-09-09
+ *   construction at the White House Washington DC 12-38-13.jpg" and "Marine
+ *   One approaching the Ellipse Washington DC 2026-09-09 12-39-04 2.jpg" (G.
+ *   Edward Johnson, CC BY 4.0; the colonnade and the West Wing from the
+ *   south, and the east side today). The elevation "White House West
+ *   Wing.svg" (Hstoops, CC0) was used only to confirm the massing.
+ * - Wings, estimated: the colonnade's top at 5.7 m, columns 3.5 m (OSM says
+ *   7 m, but photos put the parapet just under the residence's State-floor
+ *   sills); the West Wing's cornice 6.2 m, penthouse wall to 8.55 m, and the
+ *   window counts and spacing, read from the photos. The West Wing's roof
+ *   edge is a plain parapet, not a balustrade: no photo shows balusters on
+ *   it. OSM heights (7 m parapet, 10 m penthouse roof, 8 m Cabinet Room
+ *   roof, 9 m Oval Office dome) are followed. The terracotta roof colour
+ *   comes from OSM roof:colour=brown and the aerials.
  * - Simplified: window pediments are flat hoods; balusters are a light grey
  *   panel between white piers; the flagpole, lamps and the North Portico's
  *   lantern are left out.
@@ -509,17 +544,183 @@ function build() {
   for (const x of [-4.7, 4.7]) { panel(win, 'n', YN, x - W / 2, x + W / 2, 5.6, 9.2); panel(win, 'n', YN, x - W / 2, x + W / 2, 10.9, 13.4) }
   panel(win, 'n', YN, -W / 2, W / 2, 10.9, 13.4)
 
+  const terrace = new Part()
+  wings(paint, bal, win, roof, door, terrace)
+
   return [
     { part: paint, material: finish('white-house-paint', 0xfaf7f1) },
     { part: bal, material: finish('baluster', 0xd8d6d0) },
     { part: win, material: PALETTE.window },
     { part: door, material: PALETTE.entrance },
     { part: roof, material: finish('white-house-roof', 0xcdc9c1) },
+    { part: terrace, material: finish('terrace-roof', 0xc9a495) },
   ]
+}
+
+// ===========================================================================
+// The West Colonnade and the West Wing. Same frame as the residence; plan
+// from the OSM ways named at each block. y = 0 (the south lawn) is also, to
+// within half a metre, the Rose Garden and the West Wing's first floor: the
+// colonnade enters the residence at its ground floor, and the Oval Office
+// opens onto the colonnade.
+
+/** Points round an ellipse, CCW from +x, angles in degrees. */
+function ellipse(cx: number, cy: number, a: number, b: number, seg: number, a0 = 0, a1 = 360): XY[] {
+  const n = a1 - a0 === 360 ? seg : seg + 1
+  return Array.from({ length: n }, (_, k) => {
+    const t = ((a0 + ((a1 - a0) * k) / seg) * Math.PI) / 180
+    return [cx + a * Math.cos(t), cy + b * Math.sin(t)] as XY
+  })
+}
+
+/** A smooth-shaded closed elliptical wall, facing out. */
+function ellipseWall(p: Part, cx: number, cy: number, a: number, b: number, seg: number, z0: number, z1: number) {
+  const pts = ellipse(cx, cy, a, b, seg)
+  const nrm = ([x, y]: XY): V3 => unit([(x - cx) / (a * a), (y - cy) / (b * b), 0])
+  for (let k = 0; k < seg; k++) {
+    const A = pts[k], B = pts[(k + 1) % seg], nA = nrm(A), nB = nrm(B)
+    const b0: V3 = [A[0], A[1], z0], b1: V3 = [B[0], B[1], z0], t0: V3 = [A[0], A[1], z1], t1: V3 = [B[0], B[1], z1]
+    p.tri(b0, b1, t1, undefined, undefined, undefined, [nA, nB, nB])
+    p.tri(b0, t1, t0, undefined, undefined, undefined, [nA, nB, nA])
+  }
+}
+
+/** A flat panel on an elliptical wall at angle t (degrees), w wide. */
+function ellipsePanel(p: Part, cx: number, cy: number, a: number, b: number, t: number, w: number, z0: number, z1: number, d = 0.05) {
+  const r = (t * Math.PI) / 180
+  const P: XY = [cx + a * Math.cos(r), cy + b * Math.sin(r)]
+  const T = unit([-a * Math.sin(r), b * Math.cos(r), 0]), N = unit([Math.cos(r) / a, Math.sin(r) / b, 0])
+  const at = (s: number, z: number): V3 => [P[0] + T[0] * s + N[0] * d, P[1] + T[1] * s + N[1] * d, z]
+  qf(p, at(-w / 2, z0), at(w / 2, z0), at(w / 2, z1), at(-w / 2, z1), N)
+}
+
+/** A plain shaft with a square abacus: the colonnades' Tuscan columns. */
+function tuscan(p: Part, x: number, y: number, r: number, z0: number, z1: number) {
+  cylinder(p, x, y, r, z0, z1 - 0.3, 8, r * 0.88)
+  cbox(p, rect(x - r * 1.25, x + r * 1.25, y - r * 1.25, y + r * 1.25), z1 - 0.3, z1, { bottom: true, top: false })
+}
+
+function wings(paint: Part, shade: Part, win: Part, roof: Part, door: Part, terrace: Part) {
+  // ---- West Colonnade (way/238241017): an open Tuscan colonnade along the
+  // Rose Garden, the enclosed West Terrace (press briefing room) behind it,
+  // one flat terrace roof behind a plain parapet. Its top sits just under the
+  // residence's State-floor sills (photo), so 5.7 m, not OSM's 7. The
+  // entablature and parapet together are about half the columns' height
+  // (two photos).
+  const C_FLOOR = 0.4, C_COL = 3.9, C_ENT = 4.9, C_TOP = 5.7
+  const COL = rect(-64.3, -26.1, -7.5, 3.2), BACK = -3.9 // back wall of the open walk
+  cbox(paint, rect(COL.x0, COL.x1, BACK, COL.y1), 0, C_ENT, { top: false })
+  cbox(paint, rect(COL.x0, COL.x1, COL.y0, BACK), 0, C_FLOOR, { top: true })
+  cbox(paint, rect(COL.x0, COL.x1, COL.y0, BACK), C_COL, C_ENT, { top: false, bottom: true })
+  cbox(paint, grow(COL, 0, 0.2), C_ENT - 0.3, C_ENT + 0.05, { b: 0.1, top: false, bottom: true })
+  terrace.cap(ring(grow(COL, 0, -0.3), 0, C_ENT + 0.1), true)
+  cbox(paint, rect(COL.x0, COL.x1, COL.y0 - 0.05, COL.y0 + 0.3), C_ENT + 0.05, C_TOP, { b: 0.08 })
+  cbox(paint, rect(COL.x0, -43.1, COL.y1 - 0.3, COL.y1 + 0.05), C_ENT + 0.05, C_TOP, { b: 0.08 })
+  const cols = 10, cx0 = -61.0, cx1 = -29.4, pitch = (cx1 - cx0) / (cols - 1)
+  for (let k = 0; k < cols; k++) tuscan(paint, cx0 + k * pitch, COL.y0 + 0.5, 0.34, C_FLOOR, C_COL)
+  // The walk behind the columns is in shade in every photo: its back wall
+  // takes the baluster grey, so the columns read against it.
+  panel(shade, 's', BACK, COL.x0, COL.x1, C_FLOOR, C_COL, 0.02)
+  // Arched French doors on the back wall, one per bay, and the press room's
+  // arched windows on the north side (photos).
+  for (let k = 0; k < cols - 1; k++) {
+    const x = cx0 + (k + 0.5) * pitch
+    panel(win, 's', BACK, x - 0.65, x + 0.65, C_FLOOR + 0.1, 3.3)
+  }
+  for (let x = -61.6; x < -44; x += 2.4) panel(win, 'n', COL.y1, x - 0.6, x + 0.6, 1.0, 3.8)
+  // The curved press-room bay at the north-west corner of the residence, and
+  // the steps back to the residence's wall.
+  prism(paint, [[-43.1, 2.9], [-34.0, 2.9], [-34.0, 10.3], [-35.5, 10.1], [-38.3, 9.2], [-39.9, 8.3], [-41.4, 7.3], [-43.1, 6.5]], 0, C_TOP, terrace)
+  cbox(paint, rect(-34.0, -31.0, 2.9, 6.5), 0, C_TOP, { top: terrace })
+  cbox(paint, rect(-31.0, -26.1, 2.9, 4.2), 0, C_TOP, { top: terrace })
+
+  // ---- West Wing (relation/19761232). Heights: walls to a cornice at 6.2 m
+  // and a parapet to 7 m (OSM h=7); the 1934 "penthouse" storey set back
+  // 1.5 m (OSM part 257920192) under a low pale mansard to 9.8 m (OSM h=10,
+  // roof 1.5 m).
+  const W_CORN = 5.6, W_ROOF = 6.2, W_PAR = 7.0
+  const MB = rect(-110.0, -78.3, -36.8, -6.5) // main block, way/257920201's west part
+  cbox(paint, MB, 0, W_CORN, { c: 0.2, top: false })
+  cbox(paint, grow(MB, 0.3), W_CORN, W_ROOF, { c: 0.3, b: 0.15, top: false, bottom: true })
+  wallRing(paint, MB, 0.35, W_ROOF, W_PAR)
+  roof.cap(ring(grow(MB, -0.35), 0, W_ROOF), true)
+  const PH = rect(-108.5, -79.8, -35.3, -8.1)
+  cbox(paint, PH, W_ROOF, 8.3, { top: false })
+  cbox(paint, grow(PH, 0.15), 8.3, 8.55, { b: 0.08, top: false, bottom: true })
+  hip(roof, grow(PH, 0.1), 8.55, 9.8, 1.6)
+  for (let x = -106.5; x <= -81; x += 2.55) for (const [side, at] of [['s', PH.y0], ['n', PH.y1]] as [Side, number][]) panel(win, side, at, x - 0.45, x + 0.45, 7.0, 7.9)
+  for (let y = -33.2; y <= -10; y += 2.55) for (const [side, at] of [['w', PH.x0], ['e', PH.x1]] as [Side, number][]) panel(win, side, at, y - 0.45, y + 0.45, 7.0, 7.9)
+  // Tall first-floor windows (photos: one row, plain frames).
+  const tall = (side: Side, at: number, a: number) => panel(win, side, at, a - 0.65, a + 0.65, 1.3, 4.6)
+  for (const x of [-107.5, -104.5, -101.5, -96.6, -91.8, -87.0, -84.0, -81.0]) tall('n', MB.y1, x)
+  for (let x = -108.0; x <= -80.9; x += 3.0) tall('s', MB.y0, x)
+  for (const y of [-34.4, -31.2, -28.0, -19.2, -16.0, -12.8, -9.6]) tall('w', MB.x0, y)
+  panel(door, 'n', MB.y1, -95.0, -93.4, 0.3, 3.6)
+  panel(door, 'w', MB.x0, -24.4, -22.8, 0.3, 3.4)
+  // North entrance portico (257920193, roof 1445440857, columns
+  // 257920178–181): four columns under a flat canopy, 4–6 m (OSM).
+  for (const x of [-90.3, -92.95, -95.6, -98.2]) tuscan(paint, x, -0.85, 0.3, 0, 4.2)
+  cbox(paint, rect(-98.8, -89.6, MB.y1, -0.35), 4.2, 5.8, { b: 0.15, bottom: true, top: roof })
+  // West entrance canopy (building=roof way/887434559) on two posts.
+  cbox(paint, rect(-118.5, -110.0, -26.0, -21.2), 3.2, 3.55, { b: 0.08, bottom: true })
+  for (const y of [-25.6, -21.6]) cbox(paint, rect(-118.3, -118.0, y - 0.15, y + 0.15), 0, 3.2, { top: false })
+
+  // East block (257920184): the Oval Office, the Cabinet Room's raised roof
+  // (257920197, h=8) and the press offices, under terracotta-coloured roof
+  // (OSM roof:colour brown; aerials). Along its east side an open loggia
+  // faces the Rose Garden and meets the colonnade at the corner.
+  const EB = rect(-78.3, -64.3, -35.6, -7.6), ANNEX = rect(-76.5, -64.3, -7.6, 3.2), LOG_X = -68.0
+  cbox(paint, rect(EB.x0, LOG_X, EB.y0, EB.y1), 0, W_CORN, { top: false })
+  cbox(paint, ANNEX, 0, W_CORN, { top: false })
+  cbox(paint, rect(LOG_X, EB.x1, EB.y0, EB.y1), 0, C_FLOOR, { top: true })
+  cbox(paint, rect(LOG_X, EB.x1, EB.y0, EB.y1), 4.2, W_CORN, { top: false, bottom: true })
+  for (let k = 0; k < 7; k++) tuscan(paint, EB.x1 - 0.5, EB.y0 + 0.7 + k * ((EB.y1 - EB.y0 - 1.4) / 6), 0.3, C_FLOOR, 4.2)
+  panel(shade, 'e', LOG_X, EB.y0, EB.y1, C_FLOOR, 4.2, 0.02)
+  for (const y of [-24.0, -20.0, -16.0, -12.0]) panel(win, 'e', LOG_X, y - 0.7, y + 0.7, C_FLOOR + 0.1, 3.6)
+  panel(door, 'e', LOG_X, -29.2, -27.8, C_FLOOR + 0.1, 3.0)
+  for (const x of [-74.0, -70.5, -67.0]) tall('n', ANNEX.y1, x)
+  for (const y of [-3.0, 0.5]) tall('w', ANNEX.x0, y)
+  // Cornice and parapet round the outside edges only (the west edge abuts
+  // the main block; the Oval Office carries its own).
+  cbox(paint, rect(-70.0, EB.x1 + 0.3, EB.y0 - 0.3, EB.y0 + 0.3), W_CORN, W_ROOF, { b: 0.15, top: false, bottom: true })
+  cbox(paint, rect(EB.x1 - 0.3, EB.x1 + 0.3, EB.y0, ANNEX.y1), W_CORN, W_ROOF, { b: 0.15, top: false, bottom: true })
+  cbox(paint, rect(ANNEX.x0 - 0.3, EB.x1, ANNEX.y1 - 0.3, ANNEX.y1 + 0.3), W_CORN, W_ROOF, { b: 0.15, top: false, bottom: true })
+  cbox(paint, rect(ANNEX.x0 - 0.3, ANNEX.x0 + 0.3, MB.y1, ANNEX.y1), W_CORN, W_ROOF, { b: 0.15, top: false, bottom: true })
+  cbox(paint, rect(-70.0, EB.x1, EB.y0, EB.y0 + 0.35), W_ROOF, W_PAR, { b: 0.08 })
+  cbox(paint, rect(EB.x1 - 0.35, EB.x1, EB.y0, ANNEX.y1), W_ROOF, W_PAR, { b: 0.08 })
+  cbox(paint, rect(ANNEX.x0, EB.x1, ANNEX.y1 - 0.35, ANNEX.y1), W_ROOF, W_PAR, { b: 0.08 })
+  cbox(paint, rect(ANNEX.x0, ANNEX.x0 + 0.35, MB.y1, ANNEX.y1), W_ROOF, W_PAR, { b: 0.08 })
+  terrace.cap(ring(rect(EB.x0, EB.x1, EB.y0, EB.y1), 0, W_ROOF), true)
+  terrace.cap(ring(ANNEX, 0, W_ROOF), true)
+  const CR = rect(-74.9, -68.4, -26.3, -7.6)
+  cbox(paint, CR, W_ROOF, 7.75, { top: false })
+  cbox(terrace, grow(CR, 0.12), 7.75, 7.95, { b: 0.08, bottom: true })
+
+  // The Oval Office (way/238241023): an oval bay on the south side, its
+  // long axis north–south (OSM: 9.4 × 11.6 m outside), three tall windows
+  // to the lawn, and a low white drum and dome over it (OSM dome, h=9).
+  const O: XY = [-74.1, -32.0], OA = 4.7, OB = 5.8, OS = 24
+  ellipseWall(paint, O[0], O[1], OA, OB, OS, 0, W_CORN)
+  ellipseWall(paint, O[0], O[1], OA + 0.25, OB + 0.25, OS, W_CORN, W_ROOF)
+  {
+    const i = ellipse(O[0], O[1], OA, OB, OS), o = ellipse(O[0], O[1], OA + 0.25, OB + 0.25, OS)
+    for (let k = 0; k < OS; k++) {
+      const l = (k + 1) % OS
+      qf(paint, [i[k][0], i[k][1], W_CORN], [o[k][0], o[k][1], W_CORN], [o[l][0], o[l][1], W_CORN], [i[l][0], i[l][1], W_CORN], [0, 0, -1])
+    }
+  }
+  ellipseWall(paint, O[0], O[1], OA + 0.05, OB + 0.05, OS, W_ROOF, W_PAR)
+  paint.cap(ellipse(O[0], O[1], OA + 0.25, OB + 0.25, OS).map(([x, y]) => [x, y, W_ROOF] as V3), true)
+  paint.cap(ellipse(O[0], O[1], OA + 0.05, OB + 0.05, OS).map(([x, y]) => [x, y, W_PAR] as V3), true)
+  ellipseWall(paint, O[0], O[1], OA * 0.78, OB * 0.78, OS, W_PAR, 7.6)
+  const dome = [0.78, 0.6, 0.3].map((s, k) => ellipse(O[0], O[1], OA * s, OB * s, OS).map(([x, y]) => [x, y, [7.6, 8.4, 8.85][k]] as V3))
+  paint.loft(dome)
+  paint.cap(dome[2], true)
+  for (const t of [-62, -90, -118]) ellipsePanel(win, O[0], O[1], OA, OB, t, 1.4, 0.6, 4.6)
 }
 
 if (import.meta.main) {
   await save('dc-white-house', 'White House', build(), {
-    bearing: 0, osm: 'relation/19761182', footprint: [52.2, 46.4], height: 23,
-  })
+    bearing: 0, osm: 'relation/19761182', footprint: [144.7, 64.8], height: 23,
+  }, 6500)
 }
