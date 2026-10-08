@@ -1420,6 +1420,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-oakland-temple.ts"
+    },
+    {
+      "id": "sf-sather-tower",
+      "file": "models/sf-sather-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-sather-tower.ts"
     }
   ],
   "landmarks": [
@@ -5593,6 +5600,21 @@
         "way/52391545",
         "way/894014038",
         "way/894014037"
+      ]
+    },
+    {
+      "id": "sf-sather-tower",
+      "name": "Sather Tower",
+      "model": "sf-sather-tower",
+      "lng": -122.257822,
+      "lat": 37.872056,
+      "bearing": 344.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q357019",
+      "replaces": [
+        "way/24024507",
+        "way/1013163515"
       ]
     }
   ]
