@@ -1203,6 +1203,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-8-spruce.ts"
+    },
+    {
+      "id": "nyc-municipal-building",
+      "file": "models/nyc-municipal-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-municipal-building.ts"
     }
   ],
   "landmarks": [
@@ -4890,6 +4897,38 @@
         "way/1089406292",
         "way/1089406293",
         "way/1089406294"
+      ]
+    },
+    {
+      "id": "nyc-municipal-building",
+      "name": "David N. Dinkins Municipal Building",
+      "model": "nyc-municipal-building",
+      "lng": -74.0036752,
+      "lat": 40.7129838,
+      "bearing": 36,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1156778",
+      "replaces": [
+        "relation/13625437",
+        "way/214744070",
+        "way/214744071",
+        "way/214744072",
+        "way/214744073",
+        "way/214744074",
+        "way/214744075",
+        "way/214744077",
+        "way/214744080",
+        "way/214744081",
+        "way/214744082",
+        "way/214744084",
+        "way/214744085",
+        "way/214744086",
+        "way/214744087",
+        "way/214744089",
+        "way/214744090",
+        "way/1016693500",
+        "way/1016693502"
       ]
     }
   ]
