@@ -1126,6 +1126,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-grand-la.ts"
+    },
+    {
+      "id": "la-bonaventure",
+      "file": "models/la-bonaventure.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-bonaventure.ts"
     }
   ],
   "landmarks": [
@@ -4407,6 +4414,22 @@
         "way/1106947213",
         "way/1106947214",
         "way/1106947215"
+      ]
+    },
+    {
+      "id": "la-bonaventure",
+      "name": "Westin Bonaventure Hotel",
+      "model": "la-bonaventure",
+      "lng": -118.2558511,
+      "lat": 34.0527584,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q371058",
+      "replaces": [
+        "way/33528271",
+        "way/328826533",
+        "way/328826159"
       ]
     }
   ]
