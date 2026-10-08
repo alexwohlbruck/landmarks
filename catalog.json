@@ -1266,6 +1266,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-pacific-tower.ts"
+    },
+    {
+      "id": "sea-gas-works",
+      "file": "models/sea-gas-works.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-gas-works.ts"
     }
   ],
   "landmarks": [
@@ -4978,6 +4985,52 @@
         "way/1510326617",
         "way/1510326618",
         "way/1510326619"
+      ]
+    },
+    {
+      "id": "sea-gas-works",
+      "name": "Gas Works Park",
+      "model": "sea-gas-works",
+      "lng": -122.3348334,
+      "lat": 47.6451277,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5526323",
+      "replaces": [
+        "way/191328724",
+        "way/191328729",
+        "way/191328731",
+        "way/191328732",
+        "way/191328734",
+        "way/191328736",
+        "way/986412515",
+        "way/449626306",
+        "way/449626307",
+        "way/449626308",
+        "way/449626309",
+        "way/449626310",
+        "way/449626311",
+        "way/449626312",
+        "way/449626313",
+        "way/449626314",
+        "way/449626315",
+        "way/406480498",
+        "way/406480499",
+        "way/406480500",
+        "way/406480501",
+        "way/406480502",
+        "way/52137309",
+        "way/52137316",
+        "way/191328710",
+        "way/191328713",
+        "way/191328715",
+        "way/191328723",
+        "way/191328727",
+        "way/1418097788",
+        "way/406480504",
+        "way/406480505",
+        "way/406480506"
       ]
     }
   ]
