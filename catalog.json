@@ -1322,6 +1322,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-house-of-the-temple.ts"
+    },
+    {
+      "id": "dc-supreme-court",
+      "file": "models/dc-supreme-court.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-supreme-court.ts"
     }
   ],
   "landmarks": [
@@ -5403,6 +5410,20 @@
       "wikidata": "Q176356",
       "replaces": [
         "way/67086344"
+      ]
+    },
+    {
+      "id": "dc-supreme-court",
+      "name": "Supreme Court of the United States",
+      "model": "dc-supreme-court",
+      "lng": -77.0044385,
+      "lat": 38.8906244,
+      "bearing": 0.11,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1579670",
+      "replaces": [
+        "relation/286501"
       ]
     }
   ]
