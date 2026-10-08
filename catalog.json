@@ -1322,6 +1322,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-mount-davidson-cross.ts"
+    },
+    {
+      "id": "sf-grace-cathedral",
+      "file": "models/sf-grace-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-grace-cathedral.ts"
     }
   ],
   "landmarks": [
@@ -5248,6 +5255,24 @@
       "minzoom": 15,
       "wikidata": "Q20508607",
       "replaces": []
+    },
+    {
+      "id": "sf-grace-cathedral",
+      "name": "Grace Cathedral",
+      "model": "sf-grace-cathedral",
+      "lng": -122.41347,
+      "lat": 37.79185,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q3082361",
+      "replaces": [
+        "way/32946942",
+        "way/939433954",
+        "way/939433955",
+        "way/939433956",
+        "way/939433957"
+      ]
     }
   ]
 }
