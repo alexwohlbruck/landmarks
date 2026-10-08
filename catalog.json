@@ -1112,6 +1112,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-union-station.ts"
+    },
+    {
+      "id": "la-broad",
+      "file": "models/la-broad.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-broad.ts"
     }
   ],
   "landmarks": [
@@ -4363,6 +4370,20 @@
       "wikidata": "Q198019",
       "replaces": [
         "relation/1483140"
+      ]
+    },
+    {
+      "id": "la-broad",
+      "name": "The Broad",
+      "model": "la-broad",
+      "lng": -118.2505937,
+      "lat": 34.0544578,
+      "bearing": 37.2,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q17060100",
+      "replaces": [
+        "way/427532197"
       ]
     }
   ]
