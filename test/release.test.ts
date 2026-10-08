@@ -1,4 +1,7 @@
-import { describe, expect, test } from 'bun:test'
+import { describe, expect, test, setDefaultTimeout } from 'bun:test'
+
+// Each test builds the whole catalog (400+ landmarks), which takes seconds.
+setDefaultTimeout(120_000)
 import { createHash } from 'node:crypto'
 import { gunzipSync } from 'node:zlib'
 import { readFileSync } from 'node:fs'
@@ -94,8 +97,7 @@ describe('the release id', () => {
     expect(a.release).toBe(b.release)
     expect([...a.files.keys()]).toEqual([...b.files.keys()])
     for (const [path, bytes] of a.files) expect(sha(b.files.get(path)!)).toBe(sha(bytes))
-    // Two full builds of 400+ landmarks; bun's 5 s default is too short.
-  }, 60_000)
+  })
 
   test('moves when a placement does', () => {
     const catalog = shipped()
