@@ -1140,6 +1140,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-gas-company-tower.ts"
+    },
+    {
+      "id": "la-wells-fargo-center",
+      "file": "models/la-wells-fargo-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-wells-fargo-center.ts"
     }
   ],
   "landmarks": [
@@ -4452,6 +4459,22 @@
       "replaces": [
         "way/427532192",
         "way/495115501"
+      ]
+    },
+    {
+      "id": "la-wells-fargo-center",
+      "name": "Wells Fargo Center",
+      "model": "la-wells-fargo-center",
+      "lng": -118.2524055,
+      "lat": 34.052718,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2543729",
+      "replaces": [
+        "way/427532202",
+        "way/427532194",
+        "way/427532221"
       ]
     }
   ]
