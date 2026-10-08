@@ -1357,6 +1357,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-pasadena-city-hall.ts"
+    },
+    {
+      "id": "la-rose-bowl",
+      "file": "models/la-rose-bowl.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-rose-bowl.ts"
     }
   ],
   "landmarks": [
@@ -5246,6 +5253,20 @@
       "replaces": [
         "way/37741479",
         "way/1106661997"
+      ]
+    },
+    {
+      "id": "la-rose-bowl",
+      "name": "Rose Bowl",
+      "model": "la-rose-bowl",
+      "lng": -118.1676656,
+      "lat": 34.1613117,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q582280",
+      "replaces": [
+        "way/5208863"
       ]
     }
   ]
