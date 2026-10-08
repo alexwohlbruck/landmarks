@@ -11,10 +11,10 @@
  *
  * What makes it the Crystal Cathedral: a four-pointed star in plan, long
  * east-west, entirely of reflective glass on a white space frame, so it
- * reads silvery-light; sheer walls with sharp prows at the long arms' tips;
- * a flat glass roof over the long arms at full height, and the two short
- * arms' roofs sloping down to their tips, which is what makes the roofline
- * fold; the 90-foot doors in the east prow between two pale lattice
+ * reads silver; sheer walls with sharp prows at the long arms' tips; a
+ * faceted glass roof rising from every eave to a 39 m ridge down the long
+ * axis, with ridges falling from the centre to the two short arms' tips,
+ * which is what makes the roofline fold and the whole read as a crystal; the 90-foot doors in the east prow between two pale lattice
  * frames; and the Crean Tower beside it, a slender spire of polished steel
  * prisms with a jagged crown, nearly twice the cathedral's height.
  *
@@ -46,16 +46,20 @@
  *   ... 01, 05" (Farragutful, CC BY-SA 4.0; from the west and south-west),
  *   "Crystal Cathedral (3348568229)" (Bert Kaufmann, CC BY 2.0), "Philip
  *   Johnson - Crystal Cathedral" (CC BY; from the south).
- * - Colour: mirror glass reflecting sky (photos), drawn as the lighter
- *   window variant (sky grey-blue) so it reads light, with pale `trim`
- *   lines at the corners and the eaves for the white frame; the roof glass
- *   `glass`; the tower's polished steel near white.
- * - Estimated: the short arms' tip height (19 m, about half the roof, from
+ * - Colour: mirror glass (photos), drawn as a pale silver-grey window
+ *   variant (#c9d0d6) and the roof `glass` in silver-grey (#bcc5cc), with
+ *   broad white `trim` bars on the ridges, eaves and corners for the space
+ *   frame; the tower's polished steel near white round a darker core.
+ * - Estimated: the roof's facets. The photos show the long walls' tops
+ *   nearly level and NAIP shades the long arms' roof evenly, so the real
+ *   roof there may be flatter than drawn; the long walls are drawn falling
+ *   from 39 m at the prows to 31 m at the re-entrant corners, with the roof
+ *   rising from them to the ridge, so the faceted form reads from above.
+ *   The short arms' tip height (19 m, about half the roof, from
  *   two photos taken from opposite ends); the east prow cut to a 9 m face
  *   for the doors, and the frames' size (2.3 m wide, 27 m tall); the Crean
- *   Tower's prisms (a ring of twelve round a core, an inner ring of six and
- *   a central needle, staggered to make the crown; the shaft 9-10 m across
- *   and nearly straight to about 46 m), from photos and OSM's footprint.
+ *   Tower's prisms (four rings stepping in and up, to 30, 44, 56 and 65 m,
+ *   and a needle to 72 m; 7.5 m across at the foot), from photos.
  * - Left out: the glass grid (fine lines), the cross, the low entrance
  *   porches, the reflecting pools.
  */
@@ -65,7 +69,8 @@ import { PALETTE, finish, windowVariant } from './palette'
 const walls = new Part(), roofGlass = new Part(), trim = new Part()
 const door = new Part(), steel = new Part(), core = new Part()
 
-const H = 39 // the flat roof over the long arms
+const H = 39 // the ridge, and the long arms' prows
+const EAVE = 31 // the long walls' tops at the re-entrant corners
 const TIP_Z = 19 // the short arms' tips
 // The star, counter-clockwise from the east prow. The east tip is cut to a
 // 9 m face for the doors and their frames.
@@ -75,57 +80,64 @@ const EF = LONG - 4.5 / slope // where the prow is 9 m wide
 type P2 = [number, number, number] // x, y, top height
 const STAR: P2[] = [
   [EF, -4.5, H], [EF, 4.5, H],
-  [RX, RY, H], [0, SHORT, TIP_Z], [-RX, RY, H],
+  [RX, RY, EAVE], [0, SHORT, TIP_Z], [-RX, RY, EAVE],
   [-LONG, 0, H],
-  [-RX, -RY, H], [0, -SHORT, TIP_Z], [RX, -RY, H],
+  [-RX, -RY, EAVE], [0, -SHORT, TIP_Z], [RX, -RY, EAVE],
 ]
 
 const v = (p: P2, z: number): V3 => [p[0], p[1], z]
 const norm2 = (x: number, y: number) => { const l = Math.hypot(x, y); return [x / l, y / l] }
 
-// Walls: each side from the ground to its (possibly sloping) top.
+// Walls: each side from the ground to its sloping top. Every wall top runs
+// up to a point, so no wall is a plain box side.
 for (let i = 0; i < STAR.length; i++) {
   const a = STAR[i], b = STAR[(i + 1) % STAR.length]
   walls.quad(v(a, 0), v(b, 0), v(b, b[2]), v(a, a[2]))
 }
 
-// Roof: the flat band over the long arms, and the two sloping short-arm
-// roofs. The band is the hexagon prow - NE - (W tip) - SW... split in two
-// convex halves at x = 0 (fans from the centre).
-{
-  const C: V3 = [0, 0, H]
-  const band = [[EF, -4.5], [EF, 4.5], [RX, RY], [-RX, RY], [-LONG, 0], [-RX, -RY], [RX, -RY]]
-  for (let i = 0; i < band.length; i++) {
-    const a = band[i], b = band[(i + 1) % band.length]
-    roofGlass.tri(C, [a[0], a[1], H], [b[0], b[1], H])
-  }
-  roofGlass.tri([RX, RY, H], [0, SHORT, TIP_Z], [-RX, RY, H])
-  roofGlass.tri([-RX, -RY, H], [0, -SHORT, TIP_Z], [RX, -RY, H])
+// Roof: faceted glass planes rising from every eave to a ridge along the
+// long axis at 39 m, and to two ridges running from the centre down to the
+// short arms' tips. Built for the north half and mirrored.
+const roofTri = (a: V3, b: V3, c: V3) => {
+  // wind it to face up
+  const u = [b[0] - a[0], b[1] - a[1]], w = [c[0] - a[0], c[1] - a[1]]
+  if (u[0] * w[1] - u[1] * w[0] >= 0) roofGlass.tri(a, b, c)
+  else roofGlass.tri(a, c, b)
+}
+for (const sy of [1, -1]) {
+  const P = (x: number, y: number, z: number): V3 => [x, y * sy, z]
+  const prow = P(EF, 4.5, H), ne = P(RX, RY, EAVE), tip = P(0, SHORT, TIP_Z), nw = P(-RX, RY, EAVE)
+  const rE = P(EF, 0, H), rRX = P(RX, 0, H), r0 = P(0, 0, H), rNX = P(-RX, 0, H), wTip = P(-LONG, 0, H)
+  roofTri(rE, prow, ne); roofTri(rE, ne, rRX)
+  roofTri(rRX, ne, r0); roofTri(r0, ne, tip)
+  roofTri(r0, tip, nw); roofTri(r0, nw, rNX)
+  roofTri(rNX, nw, wTip)
 }
 
-// Trim: the white frame where it shows from afar. A band along every eave
-// and a post at every corner, set 5 cm proud of the glass.
+// Trim: the white space frame where it shows from afar. Broad bars along
+// the ridges, posts at every corner, and a band along every eave.
+/** A square bar `t` across between two points. */
+function barT(a: V3, b: V3, t: number) {
+  const d = [b[0] - a[0], b[1] - a[1], b[2] - a[2]], l = Math.hypot(d[0], d[1], d[2])
+  const dn = d.map(x => x / l)
+  let s = [-dn[1], dn[0], 0]; const sl = Math.hypot(s[0], s[1])
+  s = sl < 1e-6 ? [1, 0, 0] : [s[0] / sl, s[1] / sl, 0]
+  const u = [dn[1] * s[2] - dn[2] * s[1], dn[2] * s[0] - dn[0] * s[2], dn[0] * s[1] - dn[1] * s[0]]
+  const h = t / 2
+  const ring = (p: V3) => [[-h, -h], [h, -h], [h, h], [-h, h]].map(([i, j]) => [p[0] + s[0] * i + u[0] * j, p[1] + s[1] * i + u[1] * j, p[2] + s[2] * i + u[2] * j] as V3)
+  const A = ring(a), B = ring(b)
+  for (let i = 0; i < 4; i++) { const j = (i + 1) % 4; trim.quad(A[i], A[j], B[j], B[i]) }
+  trim.quad(A[3], A[2], A[1], A[0]); trim.quad(B[0], B[1], B[2], B[3])
+}
 {
-  const off = 0.05, band = 0.7, post = 0.8
-  for (let i = 0; i < STAR.length; i++) {
+  const t = 1.1
+  barT([-LONG + 0.6, 0, H], [EF, 0, H], t) // the long ridge
+  barT([0, 0, H], [0, SHORT - 0.6, TIP_Z], t) // the short arms' ridges
+  barT([0, 0, H], [0, -SHORT + 0.6, TIP_Z], t)
+  for (const p of STAR) barT([p[0], p[1], 0], [p[0], p[1], p[2]], t) // corner posts
+  for (let i = 0; i < STAR.length; i++) { // eaves
     const a = STAR[i], b = STAR[(i + 1) % STAR.length]
-    const [dx, dy] = norm2(b[0] - a[0], b[1] - a[1])
-    const nx = dy * off, ny = -dx * off // outward (the star runs counter-clockwise)
-    const A = (p: P2, along: number, z: number): V3 => [p[0] + nx + dx * along, p[1] + ny + dy * along, z]
-    // eave band, following the top
-    trim.quad(A(a, 0, a[2] - band), A(b, 0, b[2] - band), A(b, 0, b[2]), A(a, 0, a[2]))
-    // corner posts, a strip at each end of this face
-    trim.quad(A(a, 0, 0), A(a, post, 0), A(a, post, a[2] + (b[2] - a[2]) * post / Math.hypot(b[0] - a[0], b[1] - a[1])), A(a, 0, a[2]))
-    const L = Math.hypot(b[0] - a[0], b[1] - a[1])
-    trim.quad(A(a, L - post, 0), A(a, L, 0), A(a, L, b[2]), A(a, L - post, a[2] + (b[2] - a[2]) * (L - post) / L))
-  }
-  // A rim on the roof's edge, so the eave reads as a white line from above.
-  const rim = 0.6
-  for (let i = 0; i < STAR.length; i++) {
-    const a = STAR[i], b = STAR[(i + 1) % STAR.length]
-    const [dx, dy] = norm2(b[0] - a[0], b[1] - a[1])
-    const ix = -dy * rim, iy = dx * rim // inward
-    trim.quad([a[0], a[1], a[2] + 0.06], [b[0], b[1], b[2] + 0.06], [b[0] + ix, b[1] + iy, b[2] + 0.06], [a[0] + ix, a[1] + iy, a[2] + 0.06])
+    barT([a[0], a[1], a[2]], [b[0], b[1], b[2]], 0.9)
   }
 }
 
@@ -145,23 +157,23 @@ for (let i = 0; i < STAR.length; i++) {
 }
 
 // ---------------------------------------------------------------------------
-// The Crean Tower (OSM way/120714044's centre, from the anchor).
+// The Crean Tower (OSM way/120714044's centre, from the anchor): mirrored
+// steel prisms in four tiers, each ring inside and taller than the last,
+// round a dark core, up to a needle at 72 m.
 const TX = -31.9, TY = 37.2
 {
-  // The core: a slim tapering octagon behind the prisms, the dark of the
-  // open structure inside them.
   const oct = (r: number, z: number) => Array.from({ length: 8 }, (_, i) => {
     const a = (Math.PI / 8) + (i * Math.PI) / 4
     return [TX + r * Math.cos(a), TY + r * Math.sin(a), z] as V3
   })
-  core.loft([oct(3.4, 0), oct(3.0, 50)])
-  core.cap(oct(3.0, 50), true)
+  core.loft([oct(2.4, 0), oct(1.9, 30), oct(1.3, 46), oct(0.7, 60)])
+  core.cap(oct(0.7, 60), true)
 
-  // A prism: a triangular section pointing outward at angle `a`, from the
-  // ground to `h`, leaning in from radius r0 to r1, with a pointed top.
-  const prism = (a: number, r0: number, r1: number, h: number, w: number) => {
+  // A prism: a triangular section pointing outward at angle `a`, standing
+  // at radius r from the ground to `h`, with a pointed top.
+  const prism = (a: number, r: number, h: number, w: number) => {
     const c = Math.cos(a), s = Math.sin(a)
-    const sec = (r: number, z: number): V3[] => {
+    const sec = (z: number): V3[] => {
       const cx = TX + r * c, cy = TY + r * s
       return [
         [cx + c * w * 0.55, cy + s * w * 0.55, z],
@@ -169,30 +181,28 @@ const TX = -31.9, TY = 37.2
         [cx + s * w / 2 - c * w * 0.3, cy - c * w / 2 - s * w * 0.3, z],
       ]
     }
-    const tipZ = h, shoulder = h - 3.5
-    const rs = r0 + (r1 - r0) * (shoulder / h)
-    const b = sec(r0, 0), t = sec(rs, shoulder)
-    steel.loft([b, t])
-    const apex: V3 = [TX + r1 * c, TY + r1 * s, tipZ]
+    const shoulder = h - 3.5 * w
+    const t = sec(shoulder)
+    steel.loft([sec(0), t])
+    const apex: V3 = [TX + r * c, TY + r * s, h]
     for (let i = 0; i < 3; i++) steel.tri(t[i], t[(i + 1) % 3], apex)
   }
-  // Outer ring of twelve, alternating heights; an inner ring of six; and
-  // the needle. The tallest stand in the middle, so the crown steps up.
-  // The shaft barely tapers (photos); the crown is the prisms' staggered
-  // tips, from 46 m at the rim up to the needle at 72 m.
-  const OUTER = [46, 53, 49, 57]
-  for (let i = 0; i < 12; i++) prism((i * Math.PI) / 6, 4.3, 3.9, OUTER[i % 4], 1.7)
-  for (let i = 0; i < 6; i++) prism((i * Math.PI) / 3 + Math.PI / 12, 2.4, 2.0, i % 2 ? 61 : 66, 1.8)
-  prism(0, 0.01, 0.01, 72, 2.0)
+  const TIERS: [number, number, number, number][] = [ // radius, top, count, width
+    [3.0, 30, 12, 1.4], [2.3, 44, 10, 1.3], [1.6, 56, 8, 1.15], [0.9, 65, 6, 1.0],
+  ]
+  TIERS.forEach(([r, h, n, w], k) => {
+    for (let i = 0; i < n; i++) prism((2 * Math.PI * (i + 0.5 * (k % 2))) / n, r, h, w)
+  })
+  prism(0, 0.01, 72, 1.3)
 }
 
 const parts = [
-  { part: walls, material: windowVariant(2, 0xaec2d2) },
-  { part: roofGlass, material: PALETTE.glass },
+  { part: walls, material: windowVariant(2, 0xc9d0d6) },
+  { part: roofGlass, material: { ...PALETTE.glass, color: 0xbcc5cc } },
   { part: trim, material: PALETTE.trim },
   { part: door, material: PALETTE.window }, // the doorway reads dark between its frames
-  { part: steel, material: finish('crean-steel', 0xdfe3e6, 0.4) },
-  { part: core, material: PALETTE.roof },
+  { part: steel, material: finish('crean-steel', 0xd8dde1, 0.4) },
+  { part: core, material: finish('crean-core', 0x858e96) },
 ]
 const triangles = parts.reduce((s, { part }) => s + part.triangles, 0)
 for (const { part, material } of parts) console.log(material.name.padEnd(14), part.triangles)
