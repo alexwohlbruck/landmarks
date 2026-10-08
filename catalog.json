@@ -1168,6 +1168,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-bank-of-america-tower.ts"
+    },
+    {
+      "id": "nyc-new-york-times-building",
+      "file": "models/nyc-new-york-times-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-new-york-times-building.ts"
     }
   ],
   "landmarks": [
@@ -4670,6 +4677,29 @@
         "way/279691511",
         "way/291927532",
         "way/291927536"
+      ]
+    },
+    {
+      "id": "nyc-new-york-times-building",
+      "name": "The New York Times Building",
+      "model": "nyc-new-york-times-building",
+      "lng": -73.9897139,
+      "lat": 40.7559146,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q192680",
+      "replaces": [
+        "relation/1860567",
+        "way/138152327",
+        "way/260282082",
+        "way/260282083",
+        "way/260282084",
+        "way/260282085",
+        "way/260282086",
+        "way/260282087",
+        "way/260282088",
+        "way/260282089"
       ]
     }
   ]
