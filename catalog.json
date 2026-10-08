@@ -1399,6 +1399,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-verrazzano-narrows-bridge.ts"
+    },
+    {
+      "id": "nyc-hell-gate-bridge",
+      "file": "models/nyc-hell-gate-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-hell-gate-bridge.ts"
     }
   ],
   "landmarks": [
@@ -5762,6 +5769,22 @@
       "wikidata": "Q125673",
       "replaces": [
         "way/1016642058"
+      ]
+    },
+    {
+      "id": "nyc-hell-gate-bridge",
+      "name": "Hell Gate Bridge",
+      "model": "nyc-hell-gate-bridge",
+      "lng": -73.9220019,
+      "lat": 40.7825405,
+      "bearing": 314.6,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1035131",
+      "replaces": [
+        "way/394608567",
+        "way/1016643613",
+        "way/1016643614"
       ]
     }
   ]
