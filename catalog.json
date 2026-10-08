@@ -1140,6 +1140,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-one-vanderbilt.ts"
+    },
+    {
+      "id": "nyc-one57",
+      "file": "models/nyc-one57.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-one57.ts"
     }
   ],
   "landmarks": [
@@ -4539,6 +4546,34 @@
         "way/1470380451",
         "way/1470380452",
         "way/1470380453"
+      ]
+    },
+    {
+      "id": "nyc-one57",
+      "name": "One57",
+      "model": "nyc-one57",
+      "lng": -73.9790093,
+      "lat": 40.7655013,
+      "bearing": 28.9,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2023928",
+      "replaces": [
+        "way/260283692",
+        "way/292145960",
+        "way/292145961",
+        "way/292145962",
+        "way/292145963",
+        "way/292145964",
+        "way/292145965",
+        "way/292145966",
+        "way/292145967",
+        "way/292145968",
+        "way/292145969",
+        "way/292145970",
+        "way/292145971",
+        "way/292145972",
+        "way/292145973"
       ]
     }
   ]
