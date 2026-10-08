@@ -1112,6 +1112,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-municipal-tower.ts"
+    },
+    {
+      "id": "sea-smith-tower",
+      "file": "models/sea-smith-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-smith-tower.ts"
     }
   ],
   "landmarks": [
@@ -4368,6 +4375,23 @@
         "way/107124286",
         "way/331321180",
         "way/331321181"
+      ]
+    },
+    {
+      "id": "sea-smith-tower",
+      "name": "Smith Tower",
+      "model": "sea-smith-tower",
+      "lng": -122.3317301,
+      "lat": 47.6019798,
+      "bearing": 61.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1196348",
+      "replaces": [
+        "way/52781661",
+        "way/418140386",
+        "way/418140384",
+        "way/418140385"
       ]
     }
   ]
