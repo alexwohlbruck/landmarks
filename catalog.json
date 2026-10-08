@@ -1252,6 +1252,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-husky-stadium.ts"
+    },
+    {
+      "id": "sea-suzzallo-library",
+      "file": "models/sea-suzzallo-library.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-suzzallo-library.ts"
     }
   ],
   "landmarks": [
@@ -4922,6 +4929,24 @@
       "wikidata": "Q1136463",
       "replaces": [
         "relation/3389103"
+      ]
+    },
+    {
+      "id": "sea-suzzallo-library",
+      "name": "Suzzallo Library",
+      "model": "sea-suzzallo-library",
+      "lng": -122.308168,
+      "lat": 47.655773,
+      "bearing": 10,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7651462",
+      "replaces": [
+        "relation/2955450",
+        "way/1104202902",
+        "way/1104202901",
+        "way/445398678",
+        "way/1104202900"
       ]
     }
   ]
