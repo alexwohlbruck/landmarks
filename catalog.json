@@ -2659,6 +2659,230 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-sather-tower.ts"
+    },
+    {
+      "id": "sea-f5-tower",
+      "file": "models/sea-f5-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-f5-tower.ts"
+    },
+    {
+      "id": "sea-space-needle",
+      "file": "models/sea-space-needle.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-space-needle.ts"
+    },
+    {
+      "id": "sea-municipal-tower",
+      "file": "models/sea-municipal-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-municipal-tower.ts"
+    },
+    {
+      "id": "sea-smith-tower",
+      "file": "models/sea-smith-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-smith-tower.ts"
+    },
+    {
+      "id": "sea-columbia-center",
+      "file": "models/sea-columbia-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-columbia-center.ts"
+    },
+    {
+      "id": "sea-climate-pledge-arena",
+      "file": "models/sea-climate-pledge-arena.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-climate-pledge-arena.ts"
+    },
+    {
+      "id": "sea-rainier-square-tower",
+      "file": "models/sea-rainier-square-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-rainier-square-tower.ts"
+    },
+    {
+      "id": "sea-rainier-tower",
+      "file": "models/sea-rainier-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-rainier-tower.ts"
+    },
+    {
+      "id": "sea-1201-third-avenue",
+      "file": "models/sea-1201-third-avenue.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-1201-third-avenue.ts"
+    },
+    {
+      "id": "sea-seattle-tower",
+      "file": "models/sea-seattle-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-seattle-tower.ts"
+    },
+    {
+      "id": "sea-pacific-science-center",
+      "file": "models/sea-pacific-science-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-pacific-science-center.ts"
+    },
+    {
+      "id": "sea-chihuly-glasshouse",
+      "file": "models/sea-chihuly-glasshouse.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-chihuly-glasshouse.ts"
+    },
+    {
+      "id": "sea-two-union-square",
+      "file": "models/sea-two-union-square.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-two-union-square.ts"
+    },
+    {
+      "id": "sea-great-wheel",
+      "file": "models/sea-great-wheel.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-great-wheel.ts"
+    },
+    {
+      "id": "sea-westin-towers",
+      "file": "models/sea-westin-towers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-westin-towers.ts"
+    },
+    {
+      "id": "sea-amazon-spheres",
+      "file": "models/sea-amazon-spheres.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-amazon-spheres.ts"
+    },
+    {
+      "id": "sea-king-street-station",
+      "file": "models/sea-king-street-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-king-street-station.ts"
+    },
+    {
+      "id": "sea-union-station",
+      "file": "models/sea-union-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-union-station.ts"
+    },
+    {
+      "id": "sea-benaroya-hall",
+      "file": "models/sea-benaroya-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-benaroya-hall.ts"
+    },
+    {
+      "id": "sea-lumen-field",
+      "file": "models/sea-lumen-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-lumen-field.ts"
+    },
+    {
+      "id": "sea-central-library",
+      "file": "models/sea-central-library.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-central-library.ts"
+    },
+    {
+      "id": "sea-t-mobile-park",
+      "file": "models/sea-t-mobile-park.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-t-mobile-park.ts"
+    },
+    {
+      "id": "sea-st-james-cathedral",
+      "file": "models/sea-st-james-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-st-james-cathedral.ts"
+    },
+    {
+      "id": "sea-husky-stadium",
+      "file": "models/sea-husky-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-husky-stadium.ts"
+    },
+    {
+      "id": "sea-suzzallo-library",
+      "file": "models/sea-suzzallo-library.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-suzzallo-library.ts"
+    },
+    {
+      "id": "sea-pacific-tower",
+      "file": "models/sea-pacific-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-pacific-tower.ts"
+    },
+    {
+      "id": "sea-gas-works",
+      "file": "models/sea-gas-works.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-gas-works.ts"
+    },
+    {
+      "id": "sea-volunteer-park-conservatory",
+      "file": "models/sea-volunteer-park-conservatory.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-volunteer-park-conservatory.ts"
+    },
+    {
+      "id": "sea-tacoma-union-station",
+      "file": "models/sea-tacoma-union-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-tacoma-union-station.ts"
+    },
+    {
+      "id": "sea-museum-of-glass",
+      "file": "models/sea-museum-of-glass.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-museum-of-glass.ts"
+    },
+    {
+      "id": "sea-tacoma-dome",
+      "file": "models/sea-tacoma-dome.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-tacoma-dome.ts"
+    },
+    {
+      "id": "sea-washington-state-capitol",
+      "file": "models/sea-washington-state-capitol.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-washington-state-capitol.ts"
     }
   ],
   "landmarks": [
@@ -10331,6 +10555,660 @@
       "replaces": [
         "way/24024507",
         "way/1013163515"
+      ]
+    },
+    {
+      "id": "sea-f5-tower",
+      "name": "F5 Tower",
+      "model": "sea-f5-tower",
+      "lng": -122.3310654,
+      "lat": 47.6052122,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q5447583",
+      "replaces": [
+        "way/333212849"
+      ]
+    },
+    {
+      "id": "sea-space-needle",
+      "name": "Space Needle",
+      "model": "sea-space-needle",
+      "lng": -122.349286,
+      "lat": 47.620504,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q5317",
+      "replaces": [
+        "way/12903132",
+        "way/394254329",
+        "way/394254331",
+        "way/394254332",
+        "way/394254333",
+        "way/394254334",
+        "way/394254335",
+        "way/394254336",
+        "way/394254337",
+        "way/394254484",
+        "way/394254485",
+        "way/394254486",
+        "way/394254487",
+        "way/394254488",
+        "way/394956342",
+        "way/394956343",
+        "way/394956344"
+      ]
+    },
+    {
+      "id": "sea-municipal-tower",
+      "name": "Seattle Municipal Tower",
+      "model": "sea-municipal-tower",
+      "lng": -122.3296022,
+      "lat": 47.6050394,
+      "bearing": 59,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q3177235",
+      "replaces": [
+        "way/107124286",
+        "way/331321180",
+        "way/331321181"
+      ]
+    },
+    {
+      "id": "sea-smith-tower",
+      "name": "Smith Tower",
+      "model": "sea-smith-tower",
+      "lng": -122.3317301,
+      "lat": 47.6019798,
+      "bearing": 61.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1196348",
+      "replaces": [
+        "way/52781661",
+        "way/418140386",
+        "way/418140384",
+        "way/418140385"
+      ]
+    },
+    {
+      "id": "sea-columbia-center",
+      "name": "Columbia Center",
+      "model": "sea-columbia-center",
+      "lng": -122.3307466,
+      "lat": 47.6045019,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q908703",
+      "replaces": [
+        "way/107124288",
+        "way/418132525",
+        "way/418132517",
+        "way/418132520",
+        "way/418132515",
+        "way/331293871"
+      ]
+    },
+    {
+      "id": "sea-climate-pledge-arena",
+      "name": "Climate Pledge Arena",
+      "model": "sea-climate-pledge-arena",
+      "lng": -122.3539888,
+      "lat": 47.6220039,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q977529",
+      "replaces": [
+        "way/25123756",
+        "way/411521517",
+        "way/411521531",
+        "way/1270549342",
+        "way/1352647807",
+        "way/1352647808",
+        "way/1352647809",
+        "way/1352647810",
+        "way/1352647811",
+        "way/1352647812",
+        "way/1352665595",
+        "way/1352665596",
+        "way/1352665597",
+        "way/1352665598",
+        "way/1352666108",
+        "way/1352666109",
+        "way/1352666110",
+        "way/1352666111",
+        "way/1352666989",
+        "way/1352666990",
+        "way/1352666991"
+      ]
+    },
+    {
+      "id": "sea-rainier-square-tower",
+      "name": "Rainier Square Tower",
+      "model": "sea-rainier-square-tower",
+      "lng": -122.3348815,
+      "lat": 47.6090211,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q30634662",
+      "replaces": [
+        "way/686348108",
+        "way/686348092",
+        "way/686348093",
+        "way/686348094",
+        "way/686348095",
+        "way/686348096",
+        "way/686348097",
+        "way/686348098",
+        "way/686348099",
+        "way/686348100",
+        "way/686348101",
+        "way/686348102",
+        "way/686348103",
+        "way/686348104",
+        "way/686348105",
+        "way/686348106",
+        "way/686348107",
+        "way/686348109",
+        "way/686348110",
+        "way/686348111",
+        "way/686348112",
+        "way/686348113",
+        "way/686348114",
+        "way/686348115",
+        "way/686348116",
+        "way/686348117",
+        "way/686348118"
+      ]
+    },
+    {
+      "id": "sea-rainier-tower",
+      "name": "Rainier Tower",
+      "model": "sea-rainier-tower",
+      "lng": -122.3343526,
+      "lat": 47.6088171,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q7284914",
+      "replaces": [
+        "way/35824879",
+        "way/686348090",
+        "way/686348091"
+      ]
+    },
+    {
+      "id": "sea-1201-third-avenue",
+      "name": "1201 Third Avenue",
+      "model": "sea-1201-third-avenue",
+      "lng": -122.336163,
+      "lat": 47.6072043,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2301069",
+      "replaces": [
+        "way/140436171",
+        "way/331322651",
+        "way/331322649",
+        "way/331424981",
+        "way/488923802",
+        "way/331322650",
+        "way/331324934"
+      ]
+    },
+    {
+      "id": "sea-seattle-tower",
+      "name": "Seattle Tower",
+      "model": "sea-seattle-tower",
+      "lng": -122.335457,
+      "lat": 47.6076875,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7442196",
+      "replaces": [
+        "way/335417547",
+        "way/232079588",
+        "way/417915158",
+        "way/417915157",
+        "way/417915159"
+      ]
+    },
+    {
+      "id": "sea-pacific-science-center",
+      "name": "Pacific Science Center",
+      "model": "sea-pacific-science-center",
+      "lng": -122.351292,
+      "lat": 47.6194238,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3848341",
+      "replaces": [
+        "way/394955903",
+        "way/394955876",
+        "way/394955877",
+        "way/394955878",
+        "way/394955882",
+        "way/394955883",
+        "way/394955887",
+        "way/394955890",
+        "way/394955894",
+        "way/394955898",
+        "way/394955899"
+      ]
+    },
+    {
+      "id": "sea-chihuly-glasshouse",
+      "name": "Chihuly Garden and Glass Glasshouse",
+      "model": "sea-chihuly-glasshouse",
+      "lng": -122.3500188,
+      "lat": 47.6206252,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q5097315",
+      "replaces": [
+        "way/329416207"
+      ]
+    },
+    {
+      "id": "sea-two-union-square",
+      "name": "Two Union Square",
+      "model": "sea-two-union-square",
+      "lng": -122.3320767,
+      "lat": 47.6104347,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q3049315",
+      "replaces": [
+        "way/331281880",
+        "way/491467380",
+        "way/491467379",
+        "way/491467381",
+        "way/494784395",
+        "way/456870610",
+        "way/456870609"
+      ]
+    },
+    {
+      "id": "sea-great-wheel",
+      "name": "Seattle Great Wheel",
+      "model": "sea-great-wheel",
+      "lng": -122.3424857,
+      "lat": 47.6061437,
+      "bearing": 336.2,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7442108",
+      "replaces": [
+        "way/396606878"
+      ]
+    },
+    {
+      "id": "sea-westin-towers",
+      "name": "The Westin Seattle",
+      "model": "sea-westin-towers",
+      "lng": -122.3382051,
+      "lat": 47.6137035,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7988924",
+      "replaces": [
+        "way/331291911",
+        "way/331281882",
+        "way/331281881",
+        "way/488733959",
+        "way/488733958",
+        "way/770565574",
+        "way/770565573"
+      ]
+    },
+    {
+      "id": "sea-amazon-spheres",
+      "name": "The Spheres",
+      "model": "sea-amazon-spheres",
+      "lng": -122.3394654,
+      "lat": 47.615663,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q48596158",
+      "replaces": [
+        "way/868099742",
+        "way/491817111",
+        "way/398816077",
+        "way/491817110"
+      ]
+    },
+    {
+      "id": "sea-king-street-station",
+      "name": "King Street Station",
+      "model": "sea-king-street-station",
+      "lng": -122.3299103,
+      "lat": 47.5984251,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q536131",
+      "replaces": [
+        "way/4725281",
+        "way/442511849",
+        "way/442511850",
+        "way/442511851",
+        "way/442511852"
+      ]
+    },
+    {
+      "id": "sea-union-station",
+      "name": "Union Station",
+      "model": "sea-union-station",
+      "lng": -122.3285424,
+      "lat": 47.5986081,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q7886102",
+      "replaces": [
+        "way/45569666"
+      ]
+    },
+    {
+      "id": "sea-benaroya-hall",
+      "name": "Benaroya Hall",
+      "model": "sea-benaroya-hall",
+      "lng": -122.3369718,
+      "lat": 47.6081067,
+      "bearing": 328.3,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3892069",
+      "replaces": [
+        "way/69273374",
+        "way/417918253",
+        "way/417918254",
+        "way/417918255",
+        "way/417918256",
+        "way/417918257"
+      ]
+    },
+    {
+      "id": "sea-lumen-field",
+      "name": "Lumen Field",
+      "model": "sea-lumen-field",
+      "lng": -122.3316267,
+      "lat": 47.595151,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q612736",
+      "replaces": [
+        "way/635152550",
+        "way/635152551",
+        "way/458208106",
+        "way/458208107",
+        "way/458208103",
+        "way/458208112",
+        "way/458208102",
+        "way/458208104",
+        "way/458208105",
+        "way/458208114",
+        "way/458208115",
+        "way/458208116"
+      ]
+    },
+    {
+      "id": "sea-central-library",
+      "name": "Seattle Central Library",
+      "model": "sea-central-library",
+      "lng": -122.3326627,
+      "lat": 47.6066885,
+      "bearing": 328.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2531939",
+      "replaces": [
+        "way/37056442",
+        "way/458203290",
+        "way/458203294",
+        "way/458203296",
+        "way/458203299"
+      ]
+    },
+    {
+      "id": "sea-t-mobile-park",
+      "name": "T-Mobile Park",
+      "model": "sea-t-mobile-park",
+      "lng": -122.33251,
+      "lat": 47.5914,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1193117",
+      "replaces": [
+        "way/1451834508",
+        "way/1451834509",
+        "way/1451834510",
+        "way/1451834511",
+        "way/1451834512",
+        "way/1451834513",
+        "way/1451834514",
+        "way/1451834515",
+        "way/1451834516",
+        "way/1451834517",
+        "way/1451834518",
+        "way/1451834519",
+        "way/1451834520",
+        "way/1451834521",
+        "way/1451834522",
+        "way/1451834523",
+        "way/1453289445",
+        "way/1453289446",
+        "way/1453289447",
+        "way/1453289448",
+        "way/1453289449",
+        "way/1453289450",
+        "way/1453289451"
+      ]
+    },
+    {
+      "id": "sea-st-james-cathedral",
+      "name": "St. James Cathedral",
+      "model": "sea-st-james-cathedral",
+      "lng": -122.3258402,
+      "lat": 47.6076789,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7588439",
+      "replaces": [
+        "way/108384951",
+        "way/1363023932",
+        "way/1363023933"
+      ]
+    },
+    {
+      "id": "sea-husky-stadium",
+      "name": "Husky Stadium",
+      "model": "sea-husky-stadium",
+      "lng": -122.301596,
+      "lat": 47.650316,
+      "bearing": 16,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1136463",
+      "replaces": [
+        "relation/3389103"
+      ]
+    },
+    {
+      "id": "sea-suzzallo-library",
+      "name": "Suzzallo Library",
+      "model": "sea-suzzallo-library",
+      "lng": -122.308168,
+      "lat": 47.655773,
+      "bearing": 10,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7651462",
+      "replaces": [
+        "relation/2955450",
+        "way/1104202902",
+        "way/1104202901",
+        "way/445398678",
+        "way/1104202900"
+      ]
+    },
+    {
+      "id": "sea-pacific-tower",
+      "name": "Pacific Tower",
+      "model": "sea-pacific-tower",
+      "lng": -122.31571,
+      "lat": 47.59286,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7122556",
+      "replaces": [
+        "way/4712871",
+        "way/1510326610",
+        "way/1510326611",
+        "way/1510326612",
+        "way/1510326613",
+        "way/1510326614",
+        "way/1510326615",
+        "way/1510326616",
+        "way/1510326617",
+        "way/1510326618",
+        "way/1510326619"
+      ]
+    },
+    {
+      "id": "sea-gas-works",
+      "name": "Gas Works Park",
+      "model": "sea-gas-works",
+      "lng": -122.3348334,
+      "lat": 47.6451277,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5526323",
+      "replaces": [
+        "way/191328724",
+        "way/191328729",
+        "way/191328731",
+        "way/191328732",
+        "way/191328734",
+        "way/191328736",
+        "way/986412515",
+        "way/449626306",
+        "way/449626307",
+        "way/449626308",
+        "way/449626309",
+        "way/449626310",
+        "way/449626311",
+        "way/449626312",
+        "way/449626313",
+        "way/449626314",
+        "way/449626315",
+        "way/406480498",
+        "way/406480499",
+        "way/406480500",
+        "way/406480501",
+        "way/406480502",
+        "way/52137309",
+        "way/52137316",
+        "way/191328710",
+        "way/191328713",
+        "way/191328715",
+        "way/191328723",
+        "way/191328727",
+        "way/1418097788",
+        "way/406480504",
+        "way/406480505",
+        "way/406480506"
+      ]
+    },
+    {
+      "id": "sea-volunteer-park-conservatory",
+      "name": "Volunteer Park Conservatory",
+      "model": "sea-volunteer-park-conservatory",
+      "lng": -122.3157366,
+      "lat": 47.6321078,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q7941038",
+      "replaces": [
+        "way/40790435"
+      ]
+    },
+    {
+      "id": "sea-tacoma-union-station",
+      "name": "Tacoma Union Station",
+      "model": "sea-tacoma-union-station",
+      "lng": -122.4362869,
+      "lat": 47.246369,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7886107",
+      "replaces": [
+        "way/24656596"
+      ]
+    },
+    {
+      "id": "sea-museum-of-glass",
+      "name": "Museum of Glass",
+      "model": "sea-museum-of-glass",
+      "lng": -122.4340127,
+      "lat": 47.2459117,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2894440",
+      "replaces": [
+        "way/30679724"
+      ]
+    },
+    {
+      "id": "sea-tacoma-dome",
+      "name": "Tacoma Dome",
+      "model": "sea-tacoma-dome",
+      "lng": -122.4270038,
+      "lat": 47.2368426,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1570942",
+      "replaces": [
+        "way/32660308",
+        "way/1352265453",
+        "way/1352265454"
+      ]
+    },
+    {
+      "id": "sea-washington-state-capitol",
+      "name": "Washington State Capitol",
+      "model": "sea-washington-state-capitol",
+      "lng": -122.9048534,
+      "lat": 47.0357611,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2620186",
+      "replaces": [
+        "way/31494476",
+        "way/612617948"
       ]
     }
   ]
