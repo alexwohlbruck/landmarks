@@ -1322,6 +1322,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-yankee-stadium.ts"
+    },
+    {
+      "id": "nyc-amnh",
+      "file": "models/nyc-amnh.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-amnh.ts"
     }
   ],
   "landmarks": [
@@ -5470,6 +5477,20 @@
       "wikidata": "Q753529",
       "replaces": [
         "way/24801630"
+      ]
+    },
+    {
+      "id": "nyc-amnh",
+      "name": "American Museum of Natural History",
+      "model": "nyc-amnh",
+      "lng": -73.9740746,
+      "lat": 40.7811959,
+      "bearing": 29.0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q217717",
+      "replaces": [
+        "way/388436810"
       ]
     }
   ]
