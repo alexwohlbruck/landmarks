@@ -1105,6 +1105,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-wilshire-grand.ts"
+    },
+    {
+      "id": "la-union-station",
+      "file": "models/la-union-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-union-station.ts"
     }
   ],
   "landmarks": [
@@ -4342,6 +4349,20 @@
         "way/496246723",
         "way/1307580959",
         "way/901739648"
+      ]
+    },
+    {
+      "id": "la-union-station",
+      "name": "Los Angeles Union Station",
+      "model": "la-union-station",
+      "lng": -118.2357992,
+      "lat": 34.0560743,
+      "bearing": 10,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q198019",
+      "replaces": [
+        "relation/1483140"
       ]
     }
   ]
