@@ -1280,6 +1280,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-watergate.ts"
+    },
+    {
+      "id": "dc-washington-hilton",
+      "file": "models/dc-washington-hilton.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-washington-hilton.ts"
     }
   ],
   "landmarks": [
@@ -5273,6 +5280,21 @@
         "way/445989839",
         "way/445989841",
         "way/445989846"
+      ]
+    },
+    {
+      "id": "dc-washington-hilton",
+      "name": "Washington Hilton",
+      "model": "dc-washington-hilton",
+      "lng": -77.0449051,
+      "lat": 38.91651,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q4260660",
+      "replaces": [
+        "way/66981885",
+        "way/1549399804"
       ]
     }
   ]
