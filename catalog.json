@@ -1168,6 +1168,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-russ-building.ts"
+    },
+    {
+      "id": "sf-101-california",
+      "file": "models/sf-101-california.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-101-california.ts"
     }
   ],
   "landmarks": [
@@ -4652,6 +4659,24 @@
         "way/1091964676",
         "way/1091964677",
         "way/1091964678"
+      ]
+    },
+    {
+      "id": "sf-101-california",
+      "name": "101 California Street",
+      "model": "sf-101-california",
+      "lng": -122.3981556,
+      "lat": 37.7928605,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2536727",
+      "replaces": [
+        "way/1279505488",
+        "way/436484073",
+        "way/436484078",
+        "way/1089398909",
+        "way/1279505487"
       ]
     }
   ]
