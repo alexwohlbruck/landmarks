@@ -360,57 +360,64 @@ function build() {
   })
 
   // The tower shaft: an elongated octagon (broad chamfered corners) rising
-  // from the 91 m roof. Brick to 174 m (the lancets start a little below); above that the crown storeys turn
-  // pale terracotta, with tall pointed lancets on every face.
+  // from the 91 m roof. Two graded setback rings ease the step from the base
+  // on every side, as the real base steps back in stages. Brick to 174 m
+  // (the lancets start a little below); above that the crown storeys turn
+  // pale terracotta, with tall pointed lancets on the broad faces.
   const T = { x0: -10.4, x1: 8.4, y0: -12.4, y1: 8.4 }
-  const shaft = chamferRect(T.x0, T.y0, T.x1, T.y1, 2.6)
-  const pts = prism({ wall: brick, win, roof: null, ring: shaft, z0: 91, z1: 174, facade: towerFacade, bevel: 0.5 })
+  const C = 4.4
+  const ringFacade: Facade = { ...towerFacade, group: 2, head: 1.6, sill: 1.4 }
+  const shaft = chamferRect(T.x0, T.y0, T.x1, T.y1, C)
+  const grow = (d: number) => chamferRect(T.x0 - d, T.y0 - d, T.x1 + d, T.y1 + d, C + d * 0.41)
+  prism({ wall: brick, win, roof, ring: grow(3), z0: 91, z1: 101, facade: ringFacade, bevel: 0.45 })
+  prism({ wall: brick, win, roof, ring: grow(1.5), z0: 101, z1: 111, facade: ringFacade, bevel: 0.45 })
+  prism({ wall: brick, win, roof: null, ring: shaft, z0: 111, z1: 174, facade: towerFacade, bevel: 0.5 })
   prism({ wall: crown, win: null, roof, ring: shaft, z0: 174, z1: 182, facade: null, bevel: 0.5 })
   for (let i = 0; i < shaft.length; i++) {
     const a = shaft[i], b = shaft[(i + 1) % shaft.length]
     const L = Math.hypot(b[0] - a[0], b[1] - a[1])
-    if (L < 6) continue // the chamfered corners stay solid
-    lancets(win, a, b, 167.5, 180.5, L > 12 ? 4 : 3, 0.4, 2.4, 1.6)
+    lancets(win, a, b, 167.5, 180.5, L > 12 ? 3 : L > 8 ? 2 : 1, L > 8 ? 0.4 : 0.34, 2.4, L > 8 ? 1.4 : 1.2)
   }
-  void pts
 
-  // Crown: a ring of Gothic pinnacles on the parapet, paired at each
-  // chamfered corner and tallest at the middle of each face, round a stepped
-  // tracery core that carries the radio-wave finial.
+  // Crown: an openwork ring of slender Gothic spikes on a flared parapet,
+  // tall pinnacles at the chamfered corners, and a stepped tracery core with
+  // its own spikes carrying the radio-wave finial (lidar: 193–195 m).
   const cx = (T.x0 + T.x1) / 2, cy = (T.y0 + T.y1) / 2
-  const pr = insetRing(shaft, 1.1)
+  prism({ wall: crown, win: null, roof: crown, ring: grow(0.5), z0: 181, z1: 183, facade: null, bevel: 0.3 })
+  const pr = insetRing(shaft, 0.6)
   const pin = (x: number, y: number, s: number, z: number, h: number) =>
     spire(crown, [[x - s, y - s], [x + s, y - s], [x + s, y + s], [x - s, y + s]], z, [x, y, z + h])
   for (let i = 0; i < pr.length; i++) {
     const a = pr[i], b = pr[(i + 1) % pr.length]
     const L = Math.hypot(b[0] - a[0], b[1] - a[1])
-    if (L < 6) { // corner: a pair of tall pinnacles
-      for (const t of [0.2, 0.8]) pin(a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, 0.75, 182, 9)
+    if (L < 8) { // chamfered corner: a cluster of tall pinnacles
+      pin(a[0], a[1], 0.7, 183, 10)
+      pin((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, 0.6, 183, 8)
       continue
     }
-    const n = 5
+    const n = 6
     for (let k = 1; k < n; k++) {
       const t = k / n, mid = 1 - Math.abs(t - 0.5) * 2
-      pin(a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, 0.6, 182, 4 + 4 * mid)
+      pin(a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, 0.5, 183, 5 + 4 * mid)
     }
   }
-  const core1 = chamferRect(cx - 6, cy - 6.6, cx + 6, cy + 6.6, 2.2)
-  prism({ wall: crown, win: null, roof: crown, ring: core1, z0: 182, z1: 187.5, facade: null, bevel: 0.35 })
-  const c1 = insetRing(core1, 0.9)
+  const core1 = chamferRect(cx - 5.6, cy - 6.2, cx + 5.6, cy + 6.2, 2.6)
+  prism({ wall: crown, win: null, roof: crown, ring: core1, z0: 183, z1: 188, facade: null, bevel: 0.35 })
+  const c1 = insetRing(core1, 0.8)
   for (let i = 0; i < c1.length; i++) {
     const a = c1[i], b = c1[(i + 1) % c1.length]
-    for (const t of [0.25, 0.75]) pin(a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, 0.55, 187.5, 6)
+    for (const t of [0, 0.5]) pin(a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, 0.5, 188, 6.5)
   }
-  const core2 = chamferRect(cx - 3.4, cy - 3.8, cx + 3.4, cy + 3.8, 1.3)
-  prism({ wall: crown, win: null, roof: crown, ring: core2, z0: 187.5, z1: 191, facade: null, bevel: 0.3 })
+  const core2 = chamferRect(cx - 3.2, cy - 3.6, cx + 3.2, cy + 3.6, 1.4)
+  prism({ wall: crown, win: null, roof: crown, ring: core2, z0: 188, z1: 192, facade: null, bevel: 0.3 })
   // Radio waves: four flaring blades round a central spike.
   for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1]] as XY[]) {
     const px = -dy, py = dx
     const base = (s: number, d: number, z: number): V3 => [cx + dx * d + px * s, cy + dy * d + py * s, z]
-    const blade: V3[] = [base(-0.6, 0.8, 191), base(0.6, 0.8, 191), base(0, 3.4, 195)]
+    const blade: V3[] = [base(-0.6, 0.8, 192), base(0.6, 0.8, 192), base(0, 3.4, 196)]
     tip.tri(blade[0], blade[1], blade[2]); tip.tri(blade[1], blade[0], blade[2])
   }
-  spire(tip, chamferRect(cx - 1.1, cy - 1.1, cx + 1.1, cy + 1.1, 0.35), 191, [cx, cy, 196])
+  spire(tip, chamferRect(cx - 1.1, cy - 1.1, cx + 1.1, cy + 1.1, 0.35), 192, [cx, cy, 197])
 
   finishModel('General Electric Building', 'nyc-570-lexington', [
     { part: brick, material: finish('ge-brick', 0xd09a7c) },
@@ -418,7 +425,7 @@ function build() {
     { part: roof, material: PALETTE.roof },
     { part: crown, material: finish('ge-terracotta', 0xe2cfb4) },
     { part: tip, material: finish('ge-crown-metal', 0xb9b2a6) },
-  ], { bearing: 29, osm: 'way/137885993', height: 196 })
+  ], { bearing: 29, osm: 'way/137885993', height: 197 })
 }
 
 if (import.meta.main) build()
