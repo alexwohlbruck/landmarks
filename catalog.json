@@ -1098,6 +1098,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-570-lexington.ts"
+    },
+    {
+      "id": "nyc-metlife-building",
+      "file": "models/nyc-metlife-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-metlife-building.ts"
     }
   ],
   "landmarks": [
@@ -4312,6 +4319,27 @@
         "way/137887871",
         "way/137889011",
         "way/668481028"
+      ]
+    },
+    {
+      "id": "nyc-metlife-building",
+      "name": "MetLife Building",
+      "model": "nyc-metlife-building",
+      "lng": -73.976653,
+      "lat": 40.7535134,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q464482",
+      "replaces": [
+        "way/137564642",
+        "way/137564641",
+        "way/137565295",
+        "way/1487962789",
+        "way/1487962790",
+        "way/1487962791",
+        "way/1487962792",
+        "way/1487962793"
       ]
     }
   ]
