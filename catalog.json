@@ -1196,6 +1196,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-united-nations.ts"
+    },
+    {
+      "id": "nyc-8-spruce",
+      "file": "models/nyc-8-spruce.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-8-spruce.ts"
     }
   ],
   "landmarks": [
@@ -4856,6 +4863,33 @@
         "way/261256936",
         "way/261256938",
         "way/261256940"
+      ]
+    },
+    {
+      "id": "nyc-8-spruce",
+      "name": "8 Spruce Street",
+      "model": "nyc-8-spruce",
+      "lng": -74.0056081,
+      "lat": 40.7108998,
+      "bearing": 51,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q274916",
+      "replaces": [
+        "way/109473848",
+        "way/274750635",
+        "way/274750636",
+        "way/274750637",
+        "way/274750638",
+        "way/274750639",
+        "way/274750643",
+        "way/274750646",
+        "way/274750647",
+        "way/1089406290",
+        "way/1089406291",
+        "way/1089406292",
+        "way/1089406293",
+        "way/1089406294"
       ]
     }
   ]
