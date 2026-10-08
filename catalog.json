@@ -1441,6 +1441,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-plaza-hotel.ts"
+    },
+    {
+      "id": "nyc-san-remo",
+      "file": "models/nyc-san-remo.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-san-remo.ts"
     }
   ],
   "landmarks": [
@@ -5944,6 +5951,20 @@
         "way/703143221",
         "way/703143222",
         "way/703143223"
+      ]
+    },
+    {
+      "id": "nyc-san-remo",
+      "name": "The San Remo",
+      "model": "nyc-san-remo",
+      "lng": -73.9751329,
+      "lat": 40.7779994,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1319147",
+      "replaces": [
+        "way/269293207"
       ]
     }
   ]
