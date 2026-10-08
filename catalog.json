@@ -1189,6 +1189,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-westin-towers.ts"
+    },
+    {
+      "id": "sea-amazon-spheres",
+      "file": "models/sea-amazon-spheres.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-amazon-spheres.ts"
     }
   ],
   "landmarks": [
@@ -4682,6 +4689,23 @@
         "way/488733958",
         "way/770565574",
         "way/770565573"
+      ]
+    },
+    {
+      "id": "sea-amazon-spheres",
+      "name": "The Spheres",
+      "model": "sea-amazon-spheres",
+      "lng": -122.3394654,
+      "lat": 47.615663,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q48596158",
+      "replaces": [
+        "way/868099742",
+        "way/491817111",
+        "way/398816077",
+        "way/491817110"
       ]
     }
   ]
