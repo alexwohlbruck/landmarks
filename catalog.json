@@ -1224,6 +1224,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-35-hudson-yards.ts"
+    },
+    {
+      "id": "nyc-federal-hall",
+      "file": "models/nyc-federal-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-federal-hall.ts"
     }
   ],
   "landmarks": [
@@ -4993,6 +5000,37 @@
         "way/1089415979",
         "way/1089415980",
         "way/1089415981"
+      ]
+    },
+    {
+      "id": "nyc-federal-hall",
+      "name": "Federal Hall National Memorial",
+      "model": "nyc-federal-hall",
+      "lng": -74.0102481,
+      "lat": 40.7073274,
+      "bearing": 36.6,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q858689",
+      "replaces": [
+        "way/109337830",
+        "way/276177619",
+        "way/276177584",
+        "way/276177585",
+        "way/276177586",
+        "way/276177587",
+        "way/276177588",
+        "way/276177589",
+        "way/276177590",
+        "way/276177593",
+        "way/276177595",
+        "way/276177598",
+        "way/276177602",
+        "way/276177605",
+        "way/276177607",
+        "way/276177610",
+        "way/276177614",
+        "way/276177616"
       ]
     }
   ]
