@@ -50,12 +50,18 @@ and photos. Every rule here fixes something that went wrong.
 
 - **Build up from the lowest ground the building touches.** The model's
   y = 0 is the lowest terrain point under its footprint. The map finds that
-  point itself, from its own terrain, so `elevation` stays 0: it is only
-  extra lift for a model standing on something the terrain doesn't know
-  about, like Liberty on Fort Wood. On a slope, the walls on the
+  point itself, from its own terrain. On a slope, the walls on the
   uphill side run down to y = 0 too, so they sink into the hill rather than
   leaving the downhill side floating over a gap. Never put y = 0 at the
   anchor's own ground height, or at the average.
+- **Use `elevation` only for ground the terrain doesn't show.** Leave it at
+  0 for an ordinary building, on a slope or not. Raise the model (positive)
+  when it stands on something OSM doesn't map: Liberty on Fort Wood, a wheel
+  on a pier. Sink it (negative) when its base is below the street around
+  it: a stadium field dug below grade keeps y = 0 at the field, and
+  `elevation` is minus the field's depth below the street outside. Never
+  move y = 0 off the model's own base to fake either. See Elevation in
+  `README.md`.
 - **Nothing important in the bottom of the uphill walls.** Doors, plinths
   and the first band of windows on the uphill side end up below ground, so
   start the facade detail at that side's real ground level.
