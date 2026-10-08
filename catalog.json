@@ -1336,6 +1336,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-jefferson-building.ts"
+    },
+    {
+      "id": "dc-nationals-park",
+      "file": "models/dc-nationals-park.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-nationals-park.ts"
     }
   ],
   "landmarks": [
@@ -5445,6 +5452,20 @@
       "wikidata": "Q2615945",
       "replaces": [
         "relation/1029374"
+      ]
+    },
+    {
+      "id": "dc-nationals-park",
+      "name": "Nationals Park",
+      "model": "dc-nationals-park",
+      "lng": -77.0075468,
+      "lat": 38.8728428,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q517545",
+      "replaces": [
+        "relation/1066168"
       ]
     }
   ]
