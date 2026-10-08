@@ -1086,6 +1086,363 @@
       "source": "generators/dlr-soarin.ts"
     },
     {
+      "id": "chi-willis-tower",
+      "file": "models/chi-willis-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-willis-tower.ts"
+    },
+    {
+      "id": "chi-trump-tower",
+      "file": "models/chi-trump-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-trump-tower.ts"
+    },
+    {
+      "id": "chi-875-north-michigan",
+      "file": "models/chi-875-north-michigan.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-875-north-michigan.ts"
+    },
+    {
+      "id": "chi-water-tower",
+      "file": "models/chi-water-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-water-tower.ts"
+    },
+    {
+      "id": "chi-st-regis",
+      "file": "models/chi-st-regis.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-st-regis.ts"
+    },
+    {
+      "id": "chi-aqua",
+      "file": "models/chi-aqua.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-aqua.ts"
+    },
+    {
+      "id": "chi-aon-center",
+      "file": "models/chi-aon-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-aon-center.ts"
+    },
+    {
+      "id": "chi-fourth-presbyterian",
+      "file": "models/chi-fourth-presbyterian.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-fourth-presbyterian.ts"
+    },
+    {
+      "id": "chi-palmolive-building",
+      "file": "models/chi-palmolive-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-palmolive-building.ts"
+    },
+    {
+      "id": "chi-900-north-michigan",
+      "file": "models/chi-900-north-michigan.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-900-north-michigan.ts"
+    },
+    {
+      "id": "chi-carbide-carbon",
+      "file": "models/chi-carbide-carbon.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-carbide-carbon.ts"
+    },
+    {
+      "id": "chi-smurfit-stone",
+      "file": "models/chi-smurfit-stone.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-smurfit-stone.ts"
+    },
+    {
+      "id": "chi-two-prudential-plaza",
+      "file": "models/chi-two-prudential-plaza.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-two-prudential-plaza.ts"
+    },
+    {
+      "id": "chi-jewelers-building",
+      "file": "models/chi-jewelers-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-jewelers-building.ts"
+    },
+    {
+      "id": "chi-mather-tower",
+      "file": "models/chi-mather-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-mather-tower.ts"
+    },
+    {
+      "id": "chi-tribune-tower",
+      "file": "models/chi-tribune-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-tribune-tower.ts"
+    },
+    {
+      "id": "chi-wrigley-building",
+      "file": "models/chi-wrigley-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-wrigley-building.ts"
+    },
+    {
+      "id": "chi-medinah-temple",
+      "file": "models/chi-medinah-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-medinah-temple.ts"
+    },
+    {
+      "id": "chi-holy-name-cathedral",
+      "file": "models/chi-holy-name-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-holy-name-cathedral.ts"
+    },
+    {
+      "id": "chi-marina-city",
+      "file": "models/chi-marina-city.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-marina-city.ts"
+    },
+    {
+      "id": "chi-board-of-trade",
+      "file": "models/chi-board-of-trade.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-board-of-trade.ts"
+    },
+    {
+      "id": "chi-rookery",
+      "file": "models/chi-rookery.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-rookery.ts"
+    },
+    {
+      "id": "chi-chicago-temple",
+      "file": "models/chi-chicago-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-chicago-temple.ts"
+    },
+    {
+      "id": "chi-311-south-wacker",
+      "file": "models/chi-311-south-wacker.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-311-south-wacker.ts"
+    },
+    {
+      "id": "chi-chase-tower",
+      "file": "models/chi-chase-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-chase-tower.ts"
+    },
+    {
+      "id": "chi-merchandise-mart",
+      "file": "models/chi-merchandise-mart.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-merchandise-mart.ts"
+    },
+    {
+      "id": "chi-333-wacker",
+      "file": "models/chi-333-wacker.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-333-wacker.ts"
+    },
+    {
+      "id": "chi-union-station",
+      "file": "models/chi-union-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-union-station.ts"
+    },
+    {
+      "id": "chi-thompson-center",
+      "file": "models/chi-thompson-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-thompson-center.ts"
+    },
+    {
+      "id": "chi-harold-washington-library",
+      "file": "models/chi-harold-washington-library.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-harold-washington-library.ts"
+    },
+    {
+      "id": "chi-crown-fountain",
+      "file": "models/chi-crown-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-crown-fountain.ts"
+    },
+    {
+      "id": "chi-buckingham-fountain",
+      "file": "models/chi-buckingham-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-buckingham-fountain.ts"
+    },
+    {
+      "id": "chi-pritzker-pavilion",
+      "file": "models/chi-pritzker-pavilion.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-pritzker-pavilion.ts"
+    },
+    {
+      "id": "chi-cloud-gate",
+      "file": "models/chi-cloud-gate.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-cloud-gate.ts"
+    },
+    {
+      "id": "chi-picasso",
+      "file": "models/chi-picasso.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-picasso.ts"
+    },
+    {
+      "id": "chi-flamingo",
+      "file": "models/chi-flamingo.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-flamingo.ts"
+    },
+    {
+      "id": "chi-chicago-theatre",
+      "file": "models/chi-chicago-theatre.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-chicago-theatre.ts"
+    },
+    {
+      "id": "chi-art-institute",
+      "file": "models/chi-art-institute.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-art-institute.ts"
+    },
+    {
+      "id": "chi-art-institute-modern-wing",
+      "file": "models/chi-art-institute-modern-wing.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-art-institute-modern-wing.ts"
+    },
+    {
+      "id": "chi-field-museum",
+      "file": "models/chi-field-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-field-museum.ts"
+    },
+    {
+      "id": "chi-adler-planetarium",
+      "file": "models/chi-adler-planetarium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-adler-planetarium.ts"
+    },
+    {
+      "id": "chi-soldier-field",
+      "file": "models/chi-soldier-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-soldier-field.ts"
+    },
+    {
+      "id": "chi-shedd-aquarium",
+      "file": "models/chi-shedd-aquarium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-shedd-aquarium.ts"
+    },
+    {
+      "id": "chi-wrigley-field",
+      "file": "models/chi-wrigley-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-wrigley-field.ts"
+    },
+    {
+      "id": "chi-rate-field",
+      "file": "models/chi-rate-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-rate-field.ts"
+    },
+    {
+      "id": "chi-united-center",
+      "file": "models/chi-united-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-united-center.ts"
+    },
+    {
+      "id": "chi-centennial-wheel",
+      "file": "models/chi-centennial-wheel.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-centennial-wheel.ts"
+    },
+    {
+      "id": "chi-lake-point-tower",
+      "file": "models/chi-lake-point-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-lake-point-tower.ts"
+    },
+    {
+      "id": "chi-museum-of-science-industry",
+      "file": "models/chi-museum-of-science-industry.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-museum-of-science-industry.ts"
+    },
+    {
+      "id": "chi-bahai-temple",
+      "file": "models/chi-bahai-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-bahai-temple.ts"
+    },
+    {
+      "id": "chi-robie-house",
+      "file": "models/chi-robie-house.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-robie-house.ts"
+    },
+    {
       "id": "lv-strat",
       "file": "models/lv-strat.glb",
       "license": "CC0-1.0",
@@ -4534,6 +4891,875 @@
       "replaces": [
         "way/312369808",
         "way/121865023"
+      ]
+    },
+    {
+      "id": "chi-willis-tower",
+      "name": "Willis Tower",
+      "model": "chi-willis-tower",
+      "lng": -87.6359459,
+      "lat": 41.8787278,
+      "bearing": 358.93,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q29294",
+      "replaces": [
+        "way/380868216",
+        "way/137162289",
+        "way/137162290",
+        "way/137162293",
+        "way/137162295",
+        "way/137162296",
+        "way/137162297",
+        "way/137162298",
+        "way/137162299",
+        "way/233918141",
+        "way/233918220",
+        "way/1178243970",
+        "way/1178243971",
+        "way/1178243972",
+        "way/1178243973",
+        "way/1178226299",
+        "way/1007423276",
+        "way/1178212992",
+        "way/1178212993",
+        "way/1178212994",
+        "way/1178212995",
+        "way/1178212996",
+        "way/1178212997",
+        "way/1178212998",
+        "way/1178212999",
+        "way/1178213001",
+        "way/1178226263",
+        "way/1178226264"
+      ]
+    },
+    {
+      "id": "chi-trump-tower",
+      "name": "Trump International Hotel & Tower",
+      "model": "chi-trump-tower",
+      "lng": -87.626459,
+      "lat": 41.888875,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q546221",
+      "replaces": [
+        "way/64594680",
+        "way/188338549",
+        "way/188338550",
+        "way/188338548",
+        "way/188338859",
+        "way/188356529",
+        "way/284773992",
+        "way/284773991"
+      ]
+    },
+    {
+      "id": "chi-875-north-michigan",
+      "name": "875 North Michigan Avenue",
+      "model": "chi-875-north-michigan",
+      "lng": -87.623095,
+      "lat": 41.898818,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q217727",
+      "replaces": [
+        "way/31064573",
+        "way/232905278",
+        "way/232905280",
+        "way/232905283",
+        "way/232906397",
+        "way/232914185",
+        "way/1282265474",
+        "way/279951771",
+        "way/279951772"
+      ]
+    },
+    {
+      "id": "chi-water-tower",
+      "name": "Chicago Water Tower",
+      "model": "chi-water-tower",
+      "lng": -87.624437,
+      "lat": 41.897171,
+      "bearing": 358.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q862890",
+      "replaces": [
+        "way/130147025",
+        "way/1283005798",
+        "way/1283005799",
+        "way/1283005800",
+        "way/1283005801",
+        "way/1283005802",
+        "way/1283005803",
+        "way/1283005804"
+      ]
+    },
+    {
+      "id": "chi-st-regis",
+      "name": "St. Regis Chicago",
+      "model": "chi-st-regis",
+      "lng": -87.617251,
+      "lat": 41.887236,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q19817578",
+      "replaces": [
+        "way/464802811",
+        "way/465242989",
+        "way/465242991",
+        "way/465242992",
+        "way/465242990"
+      ]
+    },
+    {
+      "id": "chi-aqua",
+      "name": "Aqua",
+      "model": "chi-aqua",
+      "lng": -87.619901,
+      "lat": 41.88631,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q622895",
+      "replaces": [
+        "way/95486962",
+        "way/686330072",
+        "way/1178533833",
+        "way/1178533841",
+        "way/1178533854",
+        "way/1178533855",
+        "way/1178533856",
+        "way/1178533857",
+        "way/1178533858",
+        "way/1178533859"
+      ]
+    },
+    {
+      "id": "chi-aon-center",
+      "name": "Aon Center",
+      "model": "chi-aon-center",
+      "lng": -87.621548,
+      "lat": 41.885281,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q271695",
+      "replaces": [
+        "way/64388609",
+        "way/284775635"
+      ]
+    },
+    {
+      "id": "chi-fourth-presbyterian",
+      "name": "Fourth Presbyterian Church",
+      "model": "chi-fourth-presbyterian",
+      "lng": -87.624753,
+      "lat": 41.898995,
+      "bearing": 358.7,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q4290682",
+      "replaces": [
+        "way/129575948"
+      ]
+    },
+    {
+      "id": "chi-palmolive-building",
+      "name": "Palmolive Building",
+      "model": "chi-palmolive-building",
+      "lng": -87.623512,
+      "lat": 41.899771,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3387206",
+      "replaces": [
+        "way/143756601"
+      ]
+    },
+    {
+      "id": "chi-900-north-michigan",
+      "name": "900 North Michigan",
+      "model": "chi-900-north-michigan",
+      "lng": -87.62559,
+      "lat": 41.899615,
+      "bearing": 358.9,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q275936",
+      "replaces": [
+        "way/31064552",
+        "way/153966972",
+        "way/1283045515"
+      ]
+    },
+    {
+      "id": "chi-carbide-carbon",
+      "name": "Carbide & Carbon Building",
+      "model": "chi-carbide-carbon",
+      "lng": -87.625008,
+      "lat": 41.886526,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1925179",
+      "replaces": [
+        "way/148544831",
+        "way/147400407",
+        "way/148544830"
+      ]
+    },
+    {
+      "id": "chi-smurfit-stone",
+      "name": "Crain Communications Building",
+      "model": "chi-smurfit-stone",
+      "lng": -87.624977,
+      "lat": 41.88483,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2444330",
+      "replaces": [
+        "way/210671717",
+        "way/284816227",
+        "way/284816228",
+        "way/284816229"
+      ]
+    },
+    {
+      "id": "chi-two-prudential-plaza",
+      "name": "Two Prudential Plaza",
+      "model": "chi-two-prudential-plaza",
+      "lng": -87.62272,
+      "lat": 41.885419,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1121971",
+      "replaces": [
+        "way/64388666"
+      ]
+    },
+    {
+      "id": "chi-jewelers-building",
+      "name": "Jewelers Building",
+      "model": "chi-jewelers-building",
+      "lng": -87.626793,
+      "lat": 41.886527,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2816312",
+      "replaces": [
+        "way/124865488",
+        "way/686198235",
+        "way/686198236",
+        "way/686198237"
+      ]
+    },
+    {
+      "id": "chi-mather-tower",
+      "name": "Mather Tower",
+      "model": "chi-mather-tower",
+      "lng": -87.625442,
+      "lat": 41.887616,
+      "bearing": 34.9,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3117510",
+      "replaces": [
+        "way/147399564",
+        "way/592122465",
+        "way/686198765"
+      ]
+    },
+    {
+      "id": "chi-tribune-tower",
+      "name": "Tribune Tower",
+      "model": "chi-tribune-tower",
+      "lng": -87.623308,
+      "lat": 41.89055,
+      "bearing": 358.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2143136",
+      "replaces": [
+        "way/150407241",
+        "way/127107038"
+      ]
+    },
+    {
+      "id": "chi-wrigley-building",
+      "name": "Wrigley Building",
+      "model": "chi-wrigley-building",
+      "lng": -87.624884,
+      "lat": 41.88974,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1464592",
+      "replaces": [
+        "relation/17460539",
+        "way/686197567",
+        "way/686197572",
+        "way/686197576"
+      ]
+    },
+    {
+      "id": "chi-medinah-temple",
+      "name": "Medinah Temple",
+      "model": "chi-medinah-temple",
+      "lng": -87.627205,
+      "lat": 41.892894,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q14687867",
+      "replaces": [
+        "way/210680454"
+      ]
+    },
+    {
+      "id": "chi-holy-name-cathedral",
+      "name": "Holy Name Cathedral",
+      "model": "chi-holy-name-cathedral",
+      "lng": -87.627533,
+      "lat": 41.895984,
+      "bearing": 358.7,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2942930",
+      "replaces": [
+        "way/75684994"
+      ]
+    },
+    {
+      "id": "chi-marina-city",
+      "name": "Marina City",
+      "model": "chi-marina-city",
+      "lng": -87.6288135,
+      "lat": 41.888083,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q653584",
+      "replaces": [
+        "way/1177923716",
+        "way/1177923717",
+        "way/1177923718",
+        "way/1177923719",
+        "way/284822929",
+        "way/284822924",
+        "way/284822930",
+        "way/284822932",
+        "way/1177923721"
+      ]
+    },
+    {
+      "id": "chi-board-of-trade",
+      "name": "Chicago Board of Trade Building",
+      "model": "chi-board-of-trade",
+      "lng": -87.631869,
+      "lat": 41.877411,
+      "bearing": 359.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2224700",
+      "replaces": [
+        "way/28951633",
+        "way/685519266",
+        "way/685519267",
+        "way/685519269",
+        "way/685519270",
+        "way/1425860168",
+        "way/1425860169"
+      ]
+    },
+    {
+      "id": "chi-rookery",
+      "name": "The Rookery",
+      "model": "chi-rookery",
+      "lng": -87.63183,
+      "lat": 41.879082,
+      "bearing": 359.1,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3441853",
+      "replaces": [
+        "way/73706154"
+      ]
+    },
+    {
+      "id": "chi-chicago-temple",
+      "name": "Chicago Temple Building",
+      "model": "chi-chicago-temple",
+      "lng": -87.630615,
+      "lat": 41.882859,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q14687499",
+      "replaces": [
+        "way/137060374"
+      ]
+    },
+    {
+      "id": "chi-311-south-wacker",
+      "name": "311 South Wacker Drive",
+      "model": "chi-311-south-wacker",
+      "lng": -87.635751,
+      "lat": 41.877462,
+      "bearing": 358.9,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q224563",
+      "replaces": [
+        "way/147350208",
+        "way/686318733",
+        "way/686318734",
+        "way/1188678576",
+        "way/1188678581",
+        "way/1188678582",
+        "way/1188678583",
+        "way/1188678584"
+      ]
+    },
+    {
+      "id": "chi-chase-tower",
+      "name": "Chase Tower",
+      "model": "chi-chase-tower",
+      "lng": -87.630138,
+      "lat": 41.881623,
+      "bearing": 359.2,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q291304",
+      "replaces": [
+        "way/230613007",
+        "way/284778256",
+        "way/284778257",
+        "way/284778258",
+        "way/284778259"
+      ]
+    },
+    {
+      "id": "chi-merchandise-mart",
+      "name": "Merchandise Mart",
+      "model": "chi-merchandise-mart",
+      "lng": -87.6353729,
+      "lat": 41.8885491,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1921426",
+      "replaces": [
+        "way/28293211",
+        "way/1432322251",
+        "way/1432322252",
+        "way/1432322253",
+        "way/1432322254",
+        "way/1432322255",
+        "way/1432322256",
+        "way/1432322257",
+        "way/1432322258",
+        "way/1432322259"
+      ]
+    },
+    {
+      "id": "chi-333-wacker",
+      "name": "333 Wacker Drive",
+      "model": "chi-333-wacker",
+      "lng": -87.6359245,
+      "lat": 41.8860954,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q225835",
+      "replaces": [
+        "way/116017092"
+      ]
+    },
+    {
+      "id": "chi-union-station",
+      "name": "Chicago Union Station",
+      "model": "chi-union-station",
+      "lng": -87.6404074,
+      "lat": 41.8786657,
+      "bearing": 358.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1155989",
+      "replaces": [
+        "way/203442440"
+      ]
+    },
+    {
+      "id": "chi-thompson-center",
+      "name": "James R. Thompson Center",
+      "model": "chi-thompson-center",
+      "lng": -87.6317257,
+      "lat": 41.8851748,
+      "bearing": 358.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3161356",
+      "replaces": [
+        "way/230926922"
+      ]
+    },
+    {
+      "id": "chi-harold-washington-library",
+      "name": "Harold Washington Library Center",
+      "model": "chi-harold-washington-library",
+      "lng": -87.6282122,
+      "lat": 41.8763227,
+      "bearing": 359.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3127656",
+      "replaces": [
+        "way/28292694"
+      ]
+    },
+    {
+      "id": "chi-crown-fountain",
+      "name": "Crown Fountain",
+      "model": "chi-crown-fountain",
+      "lng": -87.623744,
+      "lat": 41.881486,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3005469",
+      "replaces": [
+        "way/126945440",
+        "way/126945441"
+      ]
+    },
+    {
+      "id": "chi-buckingham-fountain",
+      "name": "Buckingham Fountain",
+      "model": "chi-buckingham-fountain",
+      "lng": -87.618972,
+      "lat": 41.875802,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q158989",
+      "replaces": []
+    },
+    {
+      "id": "chi-pritzker-pavilion",
+      "name": "Jay Pritzker Pavilion",
+      "model": "chi-pritzker-pavilion",
+      "lng": -87.621892,
+      "lat": 41.883512,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3180096",
+      "replaces": [
+        "way/126978545",
+        "way/764598205",
+        "way/764598206",
+        "way/764598207",
+        "way/764598208",
+        "way/764598209"
+      ]
+    },
+    {
+      "id": "chi-cloud-gate",
+      "name": "Cloud Gate",
+      "model": "chi-cloud-gate",
+      "lng": -87.623339,
+      "lat": 41.882686,
+      "bearing": 359.4,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q589099",
+      "replaces": [
+        "way/137060274"
+      ]
+    },
+    {
+      "id": "chi-picasso",
+      "name": "Chicago Picasso",
+      "model": "chi-picasso",
+      "lng": -87.629979,
+      "lat": 41.883623,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q5095736",
+      "replaces": []
+    },
+    {
+      "id": "chi-flamingo",
+      "name": "Flamingo",
+      "model": "chi-flamingo",
+      "lng": -87.6296809,
+      "lat": 41.8788065,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3073296",
+      "replaces": []
+    },
+    {
+      "id": "chi-chicago-theatre",
+      "name": "Chicago Theatre",
+      "model": "chi-chicago-theatre",
+      "lng": -87.627238,
+      "lat": 41.885396,
+      "bearing": 359.7,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q642866",
+      "replaces": [
+        "way/124873919",
+        "way/1176843051"
+      ]
+    },
+    {
+      "id": "chi-art-institute",
+      "name": "Art Institute of Chicago",
+      "model": "chi-art-institute",
+      "lng": -87.62366,
+      "lat": 41.879567,
+      "bearing": 359.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q239303",
+      "replaces": [
+        "way/765296570",
+        "way/765296577",
+        "way/765296578"
+      ]
+    },
+    {
+      "id": "chi-art-institute-modern-wing",
+      "name": "Art Institute of Chicago Modern Wing",
+      "model": "chi-art-institute-modern-wing",
+      "lng": -87.622027,
+      "lat": 41.880287,
+      "bearing": 359.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/765296571",
+        "way/943374848",
+        "way/943374852",
+        "way/1425669058"
+      ]
+    },
+    {
+      "id": "chi-field-museum",
+      "name": "Field Museum",
+      "model": "chi-field-museum",
+      "lng": -87.6170432,
+      "lat": 41.8662113,
+      "bearing": 358.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1122595",
+      "replaces": [
+        "way/24825537"
+      ]
+    },
+    {
+      "id": "chi-adler-planetarium",
+      "name": "Adler Planetarium",
+      "model": "chi-adler-planetarium",
+      "lng": -87.6067964,
+      "lat": 41.8663603,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q358052",
+      "replaces": [
+        "way/24825591",
+        "way/766703208",
+        "way/686342956"
+      ]
+    },
+    {
+      "id": "chi-soldier-field",
+      "name": "Soldier Field",
+      "model": "chi-soldier-field",
+      "lng": -87.616696,
+      "lat": 41.862324,
+      "bearing": 357,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1132413",
+      "replaces": [
+        "relation/16699535",
+        "relation/2305649",
+        "way/766775009",
+        "way/766775011",
+        "way/766775012",
+        "way/766776875",
+        "way/766776876",
+        "way/766776879",
+        "way/766776882",
+        "way/766776883",
+        "way/766776884",
+        "way/766782645",
+        "way/766782646",
+        "way/766782652",
+        "way/766782656"
+      ]
+    },
+    {
+      "id": "chi-shedd-aquarium",
+      "name": "Shedd Aquarium",
+      "model": "chi-shedd-aquarium",
+      "lng": -87.6140757,
+      "lat": 41.8676081,
+      "bearing": 358.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2166515",
+      "replaces": [
+        "relation/17430414",
+        "way/766506552",
+        "way/766511382",
+        "way/766511383",
+        "way/766511381"
+      ]
+    },
+    {
+      "id": "chi-wrigley-field",
+      "name": "Wrigley Field",
+      "model": "chi-wrigley-field",
+      "lng": -87.655543,
+      "lat": 41.948193,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1052807",
+      "replaces": [
+        "relation/17238872",
+        "way/1265638385",
+        "way/1265638386",
+        "way/1265761900",
+        "way/1265761901",
+        "way/1265761902",
+        "way/1265781812"
+      ]
+    },
+    {
+      "id": "chi-rate-field",
+      "name": "Rate Field",
+      "model": "chi-rate-field",
+      "lng": -87.633696,
+      "lat": 41.829874,
+      "bearing": 308,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q633613",
+      "replaces": [
+        "relation/8167350",
+        "way/1285778036",
+        "way/1285755804",
+        "way/1285755828",
+        "way/1285755829",
+        "way/1285778007",
+        "way/1285778008"
+      ]
+    },
+    {
+      "id": "chi-united-center",
+      "name": "United Center",
+      "model": "chi-united-center",
+      "lng": -87.674184,
+      "lat": 41.88068,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q639975",
+      "replaces": [
+        "way/205221993",
+        "way/750458683",
+        "way/750458680",
+        "way/750458681"
+      ]
+    },
+    {
+      "id": "chi-centennial-wheel",
+      "name": "Centennial Wheel",
+      "model": "chi-centennial-wheel",
+      "lng": -87.607475,
+      "lat": 41.891702,
+      "bearing": 358.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q43153888",
+      "replaces": [
+        "way/686996484"
+      ]
+    },
+    {
+      "id": "chi-lake-point-tower",
+      "name": "Lake Point Tower",
+      "model": "chi-lake-point-tower",
+      "lng": -87.612315,
+      "lat": 41.891497,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1801054",
+      "replaces": [
+        "relation/19385699",
+        "way/150408224",
+        "way/284814462"
+      ]
+    },
+    {
+      "id": "chi-museum-of-science-industry",
+      "name": "Museum of Science and Industry",
+      "model": "chi-museum-of-science-industry",
+      "lng": -87.582761,
+      "lat": 41.790714,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1414079",
+      "replaces": [
+        "way/24826230"
+      ]
+    },
+    {
+      "id": "chi-bahai-temple",
+      "name": "Baháʼí House of Worship",
+      "model": "chi-bahai-temple",
+      "lng": -87.68429,
+      "lat": 42.074437,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4843063",
+      "replaces": [
+        "way/369160462"
+      ]
+    },
+    {
+      "id": "chi-robie-house",
+      "name": "Frederick C. Robie House",
+      "model": "chi-robie-house",
+      "lng": -87.595947,
+      "lat": 41.789811,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q929965",
+      "replaces": [
+        "way/125667497"
       ]
     },
     {
