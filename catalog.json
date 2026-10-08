@@ -1259,6 +1259,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-kennedy-center.ts"
+    },
+    {
+      "id": "dc-national-shrine",
+      "file": "models/dc-national-shrine.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-national-shrine.ts"
     }
   ],
   "landmarks": [
@@ -5167,6 +5174,48 @@
         "way/427085664",
         "way/427085665",
         "way/1375362774"
+      ]
+    },
+    {
+      "id": "dc-national-shrine",
+      "name": "Basilica of the National Shrine of the Immaculate Conception",
+      "model": "dc-national-shrine",
+      "lng": -77.000649,
+      "lat": 38.9333351,
+      "bearing": 353.6,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q82387",
+      "replaces": [
+        "way/297739340",
+        "way/1373214415",
+        "way/1373214416",
+        "way/1373214417",
+        "way/1426384328",
+        "way/1426384329",
+        "way/1426384330",
+        "way/1426384331",
+        "way/1426384332",
+        "way/1426384333",
+        "way/1426384334",
+        "way/1426384335",
+        "way/1426384336",
+        "way/1426384337",
+        "way/1426384338",
+        "way/1426384339",
+        "way/1426384340",
+        "way/1426384341",
+        "way/1426384342",
+        "way/1426384343",
+        "way/1426384344",
+        "way/1426384345",
+        "way/1426384346",
+        "way/1426384347",
+        "way/1426384348",
+        "way/1426384349",
+        "way/1426384350",
+        "way/1426384351",
+        "way/1426384352"
       ]
     }
   ]
