@@ -1357,6 +1357,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-pentagon.ts"
+    },
+    {
+      "id": "dc-arlington-house",
+      "file": "models/dc-arlington-house.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-arlington-house.ts"
     }
   ],
   "landmarks": [
@@ -5528,6 +5535,21 @@
         "way/548367400",
         "way/548367401",
         "way/548367402"
+      ]
+    },
+    {
+      "id": "dc-arlington-house",
+      "name": "Arlington House, The Robert E. Lee Memorial",
+      "model": "dc-arlington-house",
+      "lng": -77.0726362,
+      "lat": 38.8811764,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q675702",
+      "replaces": [
+        "way/41279883",
+        "way/1500304896"
       ]
     }
   ]
