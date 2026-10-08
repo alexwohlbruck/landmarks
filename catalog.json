@@ -1175,6 +1175,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-new-york-times-building.ts"
+    },
+    {
+      "id": "nyc-40-wall-street",
+      "file": "models/nyc-40-wall-street.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-40-wall-street.ts"
     }
   ],
   "landmarks": [
@@ -4700,6 +4707,49 @@
         "way/260282087",
         "way/260282088",
         "way/260282089"
+      ]
+    },
+    {
+      "id": "nyc-40-wall-street",
+      "name": "40 Wall Street",
+      "model": "nyc-40-wall-street",
+      "lng": -74.0097378,
+      "lat": 40.7070222,
+      "bearing": 37,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q218305",
+      "replaces": [
+        "way/278042253",
+        "way/277555173",
+        "way/277555174",
+        "way/286057075",
+        "way/286057077",
+        "way/286057080",
+        "way/286057082",
+        "way/286057085",
+        "way/286057087",
+        "way/286057089",
+        "way/286057091",
+        "way/286057094",
+        "way/286057096",
+        "way/286057098",
+        "way/286057100",
+        "way/286057102",
+        "way/286057105",
+        "way/286057107",
+        "way/286057109",
+        "way/286057111",
+        "way/286057113",
+        "way/286057115",
+        "way/286057117",
+        "way/286057119",
+        "way/286057122",
+        "way/286057124",
+        "way/378615994",
+        "way/378615999",
+        "way/378616009",
+        "way/378616016"
       ]
     }
   ]
