@@ -1105,6 +1105,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-golden-gate-bridge.ts"
+    },
+    {
+      "id": "sf-bay-bridge-west",
+      "file": "models/sf-bay-bridge-west.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-bay-bridge-west.ts"
     }
   ],
   "landmarks": [
@@ -4393,6 +4400,34 @@
         "way/1330832688",
         "way/1330832689",
         "way/1330832690"
+      ]
+    },
+    {
+      "id": "sf-bay-bridge-west-w2",
+      "name": "Bay Bridge west span (tower W2)",
+      "model": "sf-bay-bridge-west",
+      "lng": -122.3858231,
+      "lat": 37.7907531,
+      "bearing": 40.4,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q130699957",
+      "replaces": [
+        "way/432712476"
+      ]
+    },
+    {
+      "id": "sf-bay-bridge-west-w6",
+      "name": "Bay Bridge west span (tower W6)",
+      "model": "sf-bay-bridge-west",
+      "lng": -122.3698997,
+      "lat": 37.8056222,
+      "bearing": 40.4,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q130699957",
+      "replaces": [
+        "way/432712479"
       ]
     }
   ]
