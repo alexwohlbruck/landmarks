@@ -1203,6 +1203,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-capitol-records.ts"
+    },
+    {
+      "id": "la-chinese-theatre",
+      "file": "models/la-chinese-theatre.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-chinese-theatre.ts"
     }
   ],
   "landmarks": [
@@ -4666,6 +4673,20 @@
         "way/422141102",
         "way/907834019",
         "way/907834020"
+      ]
+    },
+    {
+      "id": "la-chinese-theatre",
+      "name": "TCL Chinese Theatre",
+      "model": "la-chinese-theatre",
+      "lng": -118.340951,
+      "lat": 34.1020843,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1122565",
+      "replaces": [
+        "way/424105908"
       ]
     }
   ]
