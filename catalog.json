@@ -1266,6 +1266,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-shrine-auditorium.ts"
+    },
+    {
+      "id": "la-lacma-geffen",
+      "file": "models/la-lacma-geffen.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-lacma-geffen.ts"
     }
   ],
   "landmarks": [
@@ -4924,6 +4931,33 @@
       "wikidata": "Q731437",
       "replaces": [
         "way/407613039"
+      ]
+    },
+    {
+      "id": "la-lacma-geffen",
+      "name": "LACMA David Geffen Galleries",
+      "model": "la-lacma-geffen",
+      "lng": -118.3577537,
+      "lat": 34.0629495,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q141410158",
+      "replaces": [
+        "way/1352498524",
+        "way/1528280559",
+        "way/1352498501",
+        "way/1352498494",
+        "way/1352498495",
+        "way/1352498496",
+        "way/1352498497",
+        "way/1352498498",
+        "way/1352498499",
+        "way/1352498500",
+        "way/1352498502",
+        "way/1352498503",
+        "way/1352498504",
+        "way/1352498526"
       ]
     }
   ]
