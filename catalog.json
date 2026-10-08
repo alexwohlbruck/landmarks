@@ -1231,6 +1231,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-theme-building.ts"
+    },
+    {
+      "id": "la-randys-donuts",
+      "file": "models/la-randys-donuts.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-randys-donuts.ts"
     }
   ],
   "landmarks": [
@@ -4755,6 +4762,20 @@
       "replaces": [
         "way/37891817",
         "way/476168322"
+      ]
+    },
+    {
+      "id": "la-randys-donuts",
+      "name": "Randy's Donuts",
+      "model": "la-randys-donuts",
+      "lng": -118.370379,
+      "lat": 33.961852,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2130840",
+      "replaces": [
+        "way/420317805"
       ]
     }
   ]
