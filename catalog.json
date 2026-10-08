@@ -1315,6 +1315,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-national-building-museum.ts"
+    },
+    {
+      "id": "dc-house-of-the-temple",
+      "file": "models/dc-house-of-the-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-house-of-the-temple.ts"
     }
   ],
   "landmarks": [
@@ -5382,6 +5389,20 @@
       "wikidata": "Q624008",
       "replaces": [
         "way/48040795"
+      ]
+    },
+    {
+      "id": "dc-house-of-the-temple",
+      "name": "House of the Temple",
+      "model": "dc-house-of-the-temple",
+      "lng": -77.0358382,
+      "lat": 38.9137036,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q176356",
+      "replaces": [
+        "way/67086344"
       ]
     }
   ]
