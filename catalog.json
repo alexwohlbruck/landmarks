@@ -1098,6 +1098,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-f5-tower.ts"
+    },
+    {
+      "id": "sea-space-needle",
+      "file": "models/sea-space-needle.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-space-needle.ts"
     }
   ],
   "landmarks": [
@@ -4308,6 +4315,36 @@
       "wikidata": "Q5447583",
       "replaces": [
         "way/333212849"
+      ]
+    },
+    {
+      "id": "sea-space-needle",
+      "name": "Space Needle",
+      "model": "sea-space-needle",
+      "lng": -122.349286,
+      "lat": 47.620504,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q5317",
+      "replaces": [
+        "way/12903132",
+        "way/394254329",
+        "way/394254331",
+        "way/394254332",
+        "way/394254333",
+        "way/394254334",
+        "way/394254335",
+        "way/394254336",
+        "way/394254337",
+        "way/394254484",
+        "way/394254485",
+        "way/394254486",
+        "way/394254487",
+        "way/394254488",
+        "way/394956342",
+        "way/394956343",
+        "way/394956344"
       ]
     }
   ]
