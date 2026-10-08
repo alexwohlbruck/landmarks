@@ -1175,6 +1175,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-hollywood-bowl.ts"
+    },
+    {
+      "id": "la-griffith-observatory",
+      "file": "models/la-griffith-observatory.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-griffith-observatory.ts"
     }
   ],
   "landmarks": [
@@ -4569,6 +4576,20 @@
         "way/297126806",
         "way/297126807",
         "way/297126808"
+      ]
+    },
+    {
+      "id": "la-griffith-observatory",
+      "name": "Griffith Observatory",
+      "model": "la-griffith-observatory",
+      "lng": -118.300348,
+      "lat": 34.1182539,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q575901",
+      "replaces": [
+        "way/422130705"
       ]
     }
   ]
