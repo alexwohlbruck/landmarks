@@ -1147,6 +1147,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-181-fremont.ts"
+    },
+    {
+      "id": "sf-555-california",
+      "file": "models/sf-555-california.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-555-california.ts"
     }
   ],
   "landmarks": [
@@ -4557,6 +4564,27 @@
       "wikidata": "Q4554120",
       "replaces": [
         "way/445566153"
+      ]
+    },
+    {
+      "id": "sf-555-california",
+      "name": "555 California Street",
+      "model": "sf-555-california",
+      "lng": -122.4037122,
+      "lat": 37.7921133,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q243921",
+      "replaces": [
+        "way/288511106",
+        "way/1243267628",
+        "way/1244283830",
+        "way/1244283832",
+        "way/1244283833",
+        "way/1244283834",
+        "way/1244283835",
+        "way/1244283836"
       ]
     }
   ]
