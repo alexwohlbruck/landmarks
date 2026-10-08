@@ -1329,6 +1329,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/dc-supreme-court.ts"
+    },
+    {
+      "id": "dc-jefferson-building",
+      "file": "models/dc-jefferson-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-jefferson-building.ts"
     }
   ],
   "landmarks": [
@@ -5424,6 +5431,20 @@
       "wikidata": "Q1579670",
       "replaces": [
         "relation/286501"
+      ]
+    },
+    {
+      "id": "dc-jefferson-building",
+      "name": "Library of Congress, Thomas Jefferson Building",
+      "model": "dc-jefferson-building",
+      "lng": -77.0047094,
+      "lat": 38.8886833,
+      "bearing": 359.88,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2615945",
+      "replaces": [
+        "relation/1029374"
       ]
     }
   ]
