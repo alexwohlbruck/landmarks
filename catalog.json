@@ -3359,6 +3359,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-brooklyn-war-memorial.ts"
+    },
+    {
+      "id": "nyc-charging-bull",
+      "file": "models/nyc-charging-bull.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-charging-bull.ts"
     }
   ],
   "landmarks": [
@@ -13290,6 +13297,18 @@
       "replaces": [
         "way/250373213"
       ]
+    },
+    {
+      "id": "nyc-charging-bull",
+      "name": "Charging Bull",
+      "model": "nyc-charging-bull",
+      "lng": -74.0134462,
+      "lat": 40.7055641,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q860129",
+      "replaces": []
     }
   ]
 }
