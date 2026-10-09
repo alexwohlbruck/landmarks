@@ -2911,6 +2911,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-noda-mills.ts"
+    },
+    {
+      "id": "clt-chadbourn-mill",
+      "file": "models/clt-chadbourn-mill.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-chadbourn-mill.ts"
     }
   ],
   "landmarks": [
@@ -11309,6 +11316,21 @@
         "way/1279174945",
         "way/1279174946",
         "way/1279174947"
+      ]
+    },
+    {
+      "id": "clt-chadbourn-mill",
+      "name": "Chadbourn Mill",
+      "model": "clt-chadbourn-mill",
+      "lng": -80.8136797,
+      "lat": 35.2435679,
+      "bearing": 317.6,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/1059956512",
+        "way/1059956513",
+        "way/1059956514"
       ]
     }
   ]
