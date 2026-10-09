@@ -3499,6 +3499,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-pinkys-westside.ts"
+    },
+    {
+      "id": "la-two-california-plaza",
+      "file": "models/la-two-california-plaza.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-two-california-plaza.ts"
     }
   ],
   "landmarks": [
@@ -13795,6 +13802,20 @@
       "minzoom": 16,
       "replaces": [
         "way/324418138"
+      ]
+    },
+    {
+      "id": "la-two-california-plaza",
+      "name": "Two California Plaza",
+      "model": "la-two-california-plaza",
+      "lng": -118.2516517,
+      "lat": 34.0514465,
+      "bearing": 37.9,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2319313",
+      "replaces": [
+        "way/48847807"
       ]
     }
   ]
