@@ -14,13 +14,33 @@
  * - the north wing: two storeys of the same cladding, lower, its upper floor
  *   broken into bays under shallow silver eaves, the restaurant terrace at
  *   its foot;
- * - between them a board-formed concrete stair core and a glazed hall, all
- *   under a big mono-pitch canopy roof that rises to the north and is held
- *   over the plaza on tall slender steel columns.
+ * - between them a board-formed concrete stair core and a glazed hall, under
+ *   a long, thin, nearly flat canopy roof held over the plaza on tall slender
+ *   steel columns.
  *
- * No published heights; storeys counted from the photos: south block 13 m,
- * north wing 11 m, core 16 m, canopy 15.4 m at its south eave rising to
- * 19.4 m at the north.
+ * Rework (2026-10), massing changes and their evidence:
+ * - Heights from USGS 3DEP lidar (2016, Mecklenburg County), above the
+ *   lowest ground under the footprint (the west plaza; the east side is a
+ *   bank about 4 m higher): north wing 11.8 m (was 11), the middle 12 m (was
+ *   14.5), the south block 12 m for 14 m south-west of the canopy and 10.3 m
+ *   at its Guest Services end (was 13 throughout).
+ * - The canopy: lidar reads a strip 8 m wide and about 37 m long at a bearing
+ *   of 121.7°, 14 m at its north-east edge and 13 m at its south-west edge,
+ *   reaching out over the plaza at its north-west end; the NAIP aerial shows
+ *   the same pale strip. The earlier canopy ran the other way (at 30°) over
+ *   the whole south block and stood 15.4 to 19.4 m, which lidar rules out.
+ * - The concrete stair core moved from (-10.8, -4.2), where lidar reads a
+ *   12 m roof, to the bay jutting from the south block's plaza front at its
+ *   north-west end, under the canopy, as the River Center photo shows it; it
+ *   now stops just under the canopy (12.7 m, was 16.6).
+ * - Colour: the cladding is a more orange cedar, from the evening and
+ *   daylight photos, pulled to palette lightness.
+ *
+ * Photos: Commons "USNWC River Center.jpg" and "Featured Photo of the
+ * USNWC.jpg" (US National Whitewater Center, CC BY-SA 4.0), "US National
+ * Whitewater Center.jpg" (Doug Letterman, CC BY 2.0), "Charlotte Whitewater
+ * 03.jpg" (HowardMorland, public domain), "US National Whitewater Center (10
+ * March 2007).jpg" (Dunnce, public domain).
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -44,6 +64,29 @@ const range = (a: number, b: number) => Array.from({ length: b - a + 1 }, (_, k)
 const NORTH = block([...range(0, 7), ...range(28, 43)])
 const MIDDLE = block([...range(7, 14), ...range(22, 28)])
 const SOUTH = block(range(14, 22))
+
+// The canopy's high (north-east) edge, from lidar: a straight line at a
+// bearing of 121.7° through these two points. `perp` is the distance from it,
+// negative to the south-west.
+const EDGE_A: XY = [-23, -4.4], EDGE_B: XY = [8.5, -23.8]
+const EDGE_U: XY = (() => { const l = Math.hypot(EDGE_B[0] - EDGE_A[0], EDGE_B[1] - EDGE_A[1]); return [(EDGE_B[0] - EDGE_A[0]) / l, (EDGE_B[1] - EDGE_A[1]) / l] })()
+const SW: XY = [-0.525, -0.851] // the unit normal to that edge, south-west
+const perp = (p: XY) => (p[0] - EDGE_A[0]) * SW[0] * -1 + (p[1] - EDGE_A[1]) * SW[1] * -1
+/** Clip a ring to the side of a line where f >= 0 (f linear). */
+function clip(ring: XY[], f: (p: XY) => number): XY[] {
+  const out: XY[] = []
+  for (let i = 0; i < ring.length; i++) {
+    const a = ring[i], b = ring[(i + 1) % ring.length], fa = f(a), fb = f(b)
+    if (fa >= 0) out.push(a)
+    if ((fa >= 0) !== (fb >= 0)) { const t = fa / (fa - fb); out.push([a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t]) }
+  }
+  return out
+}
+// Lidar: the south block's roof is 12 m for about 14 m south-west of the
+// canopy's high edge and 10.3 m beyond (Guest Services' end).
+const SPLIT = -14
+const SOUTH_N = clip(SOUTH, (p) => perp(p) - SPLIT)
+const SOUTH_S = clip(SOUTH, (p) => SPLIT - perp(p))
 
 // ---------------------------------------------------------------------------
 // Geometry helpers.
@@ -159,25 +202,30 @@ const nearCore = (a: XY, b: XY) => SHARED(a, b) || [a, b].every((p) => p[0] > -1
 // ---------------------------------------------------------------------------
 // Masses.
 
-const H_SOUTH = 13, H_MID = 14.5, H_NORTH = 11, BASE = 4.2
+// Heights from USGS 3DEP lidar (2016), above the lowest ground under the
+// footprint (the west plaza side; the east side is a bank about 4 m higher).
+const H_SOUTH = 10.3, H_SOUTH_N = 12.0, H_MID = 12.0, H_NORTH = 11.8, BASE = 4.2
 
 // South block: concrete ground floor, cedar above, parapet bevel, pale roof.
 prism(concrete, SOUTH, 0, flat(BASE), 0, null)
-prism(cedar, SOUTH, BASE, flat(H_SOUTH), 0.45, roof)
-// Upper-floor windows in two rows — tall single panes, as the photos show —
-// and glazed shopfronts in the concrete base.
-punch(SOUTH, [[6.4, 11.2]], SHARED, 4.6, 1.4)
+prism(cedar, SOUTH_S, BASE, flat(H_SOUTH), 0.45, roof)
+prism(cedar, SOUTH_N, BASE, flat(H_SOUTH_N), 0.45, roof)
+// Upper-floor windows — tall single panes, as the photos show — and glazed
+// shopfronts in the concrete base.
+const notSplit = (a: XY, b: XY) => SHARED(a, b) || (Math.abs(perp(a) - SPLIT) < 0.05 && Math.abs(perp(b) - SPLIT) < 0.05)
+punch(SOUTH_S, [[5.6, 9.0]], notSplit, 4.6, 1.4)
+punch(SOUTH_N, [[5.6, 9.6]], notSplit, 4.6, 1.4)
 punch(SOUTH, [[0.9, 3.3]], SHARED, 7, 3.2)
 
 // The middle: the glazed hall between core and south block.
 prism(cedar, MIDDLE, 0, flat(H_MID), 0.45, roof)
-punch(MIDDLE, [[1.0, 3.6], [6.4, 12.4]], nearCore, 5, 1.5)
+punch(MIDDLE, [[1.0, 3.6], [6.0, 10.4]], nearCore, 5, 1.5)
 // The tall curtain wall of the hall, facing the plaza beside the core (photo:
 // the glazed strip right of the concrete tower).
 {
   const A = FP[21], B = FP[22] // south block's north-west face toward the core
   // CCW order runs B→A for this face (outline is clockwise).
-  windows(B, A, 2, 3.2, 4.8, 12.0)
+  windows(B, A, 2, 3.2, 4.8, 10.8)
 }
 
 // North wing: a ground floor and a first floor of bays along the plaza front,
@@ -218,38 +266,35 @@ prism(cedar, NORTH_UP, H_BAYS - 0.3, flat(H_NORTH), 0.45, roof)
   }
 }
 // Rooftop plant on the south block, east of the canopy (Featured photo).
-prism(concrete, rect([-14.6, -38.2], (30 * Math.PI) / 180, 1.8, 4.0), H_SOUTH - 0.5, flat(H_SOUTH + 1.5), 0.25, roof)
+prism(concrete, rect([-14.6, -36.2], (30 * Math.PI) / 180, 1.8, 3.6), H_SOUTH - 0.5, flat(H_SOUTH + 1.4), 0.25, roof)
 // Rooftop plant on the north wing, low and set back, as seen over the parapet.
 prism(concrete, [[8, 8], [18, 5], [20, 11], [10, 14]], H_NORTH - 0.5, flat(H_NORTH + 1.6), 0.25, roof)
 
-// The stair core: board-formed concrete, standing proud of the plaza face.
-const CORE_C: XY = [-10.8, -4.2], CORE_A = (30 * Math.PI) / 180
-prism(concrete, rect(CORE_C, CORE_A, 4.0, 3.4), 0, flat(16.6), 0.35)
-
-// The canopy: one mono-pitch roof over the south block, the hall and the core,
-// rising toward the north, overhanging the plaza on the west.
+// The canopy: one long, thin, nearly flat roof between the north wing and
+// the south block, its high edge to the north-east (lidar 14 m) falling to
+// 13 m at its south-west edge, which reaches out over the plaza at its north-
+// west end on tall slender steel columns. Lidar and the NAIP aerial both show
+// it as a strip 8 m wide and 37 m long at 121.7°; the earlier model had it
+// running the other way, over the whole south block, and 4 to 5 m too high.
+const CAN_W = 8, CAN_T = 0.7
+const canTop: Z = (p) => 14 - Math.min(CAN_W, Math.max(0, -perp(p))) / CAN_W
 {
-  const ang = CORE_A, pts = [...SOUTH, ...MIDDLE]
-  const C: XY = [0, 0]
-  const proj = (p: XY) => [Math.sin(ang) * (p[0] - C[0]) + Math.cos(ang) * (p[1] - C[1]), Math.cos(ang) * (p[0] - C[0]) - Math.sin(ang) * (p[1] - C[1])]
-  const us = pts.map((p) => proj(p)[0]), vs = pts.map((p) => proj(p)[1])
-  // It stops short of the south block's south end, whose parapet and plant
-  // show in the Featured photo, and runs a little past the core to the north.
-  const u0 = Math.min(...us) + 7, u1 = Math.max(...us) - 2
-  // West edge: 2.5 m past the south block's plaza face (18→19), so the
-  // columns stand in the plaza in front of the core.
-  const v0 = Math.min(proj(FP[18])[1], proj(FP[19])[1]) - 2.5, v1 = Math.max(...vs) - 9
-  const ring: XY[] = [frame(C, ang, u0, v0), frame(C, ang, u0, v1), frame(C, ang, u1, v1), frame(C, ang, u1, v0)]
-  const zS = 15.4, zN = 19.4, T = 0.9
-  const top: Z = (p) => zS + (zN - zS) * ((proj(p)[0] - u0) / (u1 - u0))
-  prism(trim, ring, (p) => top(p) - T, top, 0.3, roof, roof)
-  // Tall slender steel columns hold the overhang over the plaza, three in a
-  // row in front of the core and two more along the south block.
-  for (const u of [u1 - 1.2, u1 - 6.5, u1 - 12, u0 + 2]) {
-    const c = frame(C, ang, u, v0 + 1.0)
-    prism(roof, rect(c, ang, 0.3, 0.3), 0, (p) => top(p) - T, 0, null)
+  const ring: XY[] = [EDGE_A, [EDGE_A[0] + SW[0] * CAN_W, EDGE_A[1] + SW[1] * CAN_W], [EDGE_B[0] + SW[0] * CAN_W, EDGE_B[1] + SW[1] * CAN_W], EDGE_B]
+  prism(trim, ring, (p) => canTop(p) - CAN_T, canTop, 0.3, roof, roof)
+  // Columns in front of the core and the hall, along the south-west edge.
+  for (const along of [1.5, 8, 14.5]) {
+    const c: XY = [EDGE_A[0] + EDGE_U[0] * along + SW[0] * (CAN_W - 0.8), EDGE_A[1] + EDGE_U[1] * along + SW[1] * (CAN_W - 0.8)]
+    prism(roof, rect(c, (121.7 * Math.PI) / 180, 0.3, 0.3), 0, (p) => canTop(p) - CAN_T, 0, null)
   }
 }
+
+// The stair core: board-formed concrete, the bay that juts from the south
+// block's plaza front at its north-west end (OSM outline nodes 19-21), under
+// the canopy, which passes over it with its columns in front (photo). The
+// earlier model stood it 16.6 m tall at (-10.8, -4.2), where lidar reads a
+// 12 m roof and nothing taller, so it was moved to the bay and brought just
+// under the canopy.
+prism(concrete, rect([-21.45, -8.4], (31.5 * Math.PI) / 180, 4.1, 3.2), 0, flat(12.7), 0.35)
 
 // ---------------------------------------------------------------------------
 
@@ -257,7 +302,7 @@ prism(concrete, rect(CORE_C, CORE_A, 4.0, 3.4), 0, flat(16.6), 0.35)
 // pulled to the palette's lightness; concrete is the palette stone; roofs,
 // canopy and columns the palette roof grey; eaves and fascias trim.
 const parts = [
-  { part: cedar, material: finish('usnwc-cedar', 0xd9906a) },
+  { part: cedar, material: finish('usnwc-cedar', 0xdc8a58) },
   { part: concrete, material: PALETTE.stone },
   { part: roof, material: PALETTE.roof },
   { part: trim, material: PALETTE.trim },
@@ -267,7 +312,7 @@ const triangles = parts.reduce((sum, { part }) => sum + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('U.S. National Whitewater Center', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at ground anchor',
-  bearing: 0, elevation: 0, height: 19.4,
+  bearing: 0, elevation: 0, height: 14,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
 const out = new URL('../models/usnwc-lodge.glb', import.meta.url).pathname
