@@ -3471,6 +3471,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-trolley-barn.ts"
+    },
+    {
+      "id": "clt-dilworth-artisan-station",
+      "file": "models/clt-dilworth-artisan-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-dilworth-artisan-station.ts"
     }
   ],
   "landmarks": [
@@ -13708,6 +13715,19 @@
       "minzoom": 16,
       "replaces": [
         "way/146307369"
+      ]
+    },
+    {
+      "id": "clt-dilworth-artisan-station",
+      "name": "Dilworth Artisan Station",
+      "model": "clt-dilworth-artisan-station",
+      "lng": -80.8578341,
+      "lat": 35.2129646,
+      "bearing": 42,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/432937709"
       ]
     }
   ]
