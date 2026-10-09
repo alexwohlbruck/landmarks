@@ -1504,6 +1504,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-uss-maine-monument.ts"
+    },
+    {
+      "id": "nyc-deutsche-bank-center",
+      "file": "models/nyc-deutsche-bank-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-deutsche-bank-center.ts"
     }
   ],
   "landmarks": [
@@ -6156,6 +6163,28 @@
       "minzoom": 16,
       "wikidata": "Q17198579",
       "replaces": []
+    },
+    {
+      "id": "nyc-deutsche-bank-center",
+      "name": "Deutsche Bank Center",
+      "model": "nyc-deutsche-bank-center",
+      "lng": -73.982817,
+      "lat": 40.768278,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q842578",
+      "replaces": [
+        "way/167923911",
+        "way/183199498",
+        "way/183199499",
+        "way/183199500",
+        "way/183199501",
+        "way/183199502",
+        "way/183199503",
+        "way/183199504",
+        "way/183199505"
+      ]
     }
   ]
 }
