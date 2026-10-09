@@ -1462,6 +1462,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-metlife-tower.ts"
+    },
+    {
+      "id": "nyc-new-york-life",
+      "file": "models/nyc-new-york-life.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-new-york-life.ts"
     }
   ],
   "landmarks": [
@@ -6015,6 +6022,28 @@
         "way/263480040",
         "way/263480041",
         "way/263480042"
+      ]
+    },
+    {
+      "id": "nyc-new-york-life",
+      "name": "New York Life Building",
+      "model": "nyc-new-york-life",
+      "lng": -73.9855822,
+      "lat": 40.7427464,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1499859",
+      "replaces": [
+        "way/109280421",
+        "way/158856531",
+        "way/158856532",
+        "way/158856533",
+        "way/158856535",
+        "way/607446387",
+        "way/607446389",
+        "way/607446391",
+        "way/607446393"
       ]
     }
   ]
