@@ -281,13 +281,6 @@
       "source": "generators/bojangles-coliseum.ts"
     },
     {
-      "id": "park-expo-center",
-      "file": "models/park-expo-center.glb",
-      "license": "CC0-1.0",
-      "author": "Barrelman",
-      "source": "generators/park-expo-center.ts"
-    },
-    {
       "id": "freedom-park-locomotive",
       "file": "models/freedom-park-locomotive.glb",
       "license": "CC0-1.0",
@@ -3873,23 +3866,6 @@
       "wikidata": "Q4938627",
       "replaces": [
         "way/323383462"
-      ]
-    },
-    {
-      "id": "park-expo-center",
-      "name": "Park Expo and Conference Center",
-      "model": "park-expo-center",
-      "lng": -80.7980642,
-      "lat": 35.2064296,
-      "bearing": 0,
-      "elevation": 0,
-      "minzoom": 15,
-      "replaces": [
-        "way/836535381",
-        "way/836535382",
-        "way/836535383",
-        "way/836535384",
-        "way/836535385"
       ]
     },
     {
