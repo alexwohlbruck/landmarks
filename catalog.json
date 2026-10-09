@@ -3506,6 +3506,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-two-california-plaza.ts"
+    },
+    {
+      "id": "la-cathedral",
+      "file": "models/la-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-cathedral.ts"
     }
   ],
   "landmarks": [
@@ -13816,6 +13823,21 @@
       "wikidata": "Q2319313",
       "replaces": [
         "way/48847807"
+      ]
+    },
+    {
+      "id": "la-cathedral",
+      "name": "Cathedral of Our Lady of the Angels",
+      "model": "la-cathedral",
+      "lng": -118.2455647,
+      "lat": 34.0580782,
+      "bearing": 45.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1631067",
+      "replaces": [
+        "way/39550465",
+        "way/425993507"
       ]
     }
   ]
