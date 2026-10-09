@@ -9,14 +9,37 @@
  *
  * Two structures, after Commons "USNWC Climbing Center" (taken from the lawn
  * to the south):
- * - the covered wall: a sculpted concrete rock face 14 m (46 ft) high with a
- *   lower boulder lobe beside it, under a thin mono-pitch steel roof on four
- *   slender columns, open to the south;
- * - the spire: 14.3 m (47 ft) of stacked faux-rock strata, a tall east pillar
- *   with a tilted, flared cap and a shorter west pillar with an overhanging
- *   lip about two-thirds of the way up.
+ * - the covered wall: a sculpted concrete rock face under a thin mono-pitch
+ *   steel roof, open to the south. Three abutting buttresses fill the roof's
+ *   west two-thirds; a lower boulder lobe stands beside them, and slender
+ *   steel posts hold the roof in the open east bay in front of the lobe;
+ * - the spire: 14.3 m (47 ft, published) of stacked faux-rock strata, a tall
+ *   east pillar with a tilted, flared cap and a shorter west pillar with an
+ *   overhanging lip about two-thirds of the way up.
  *
- * Heights are the operator's published figures (whitewater.org, Wikipedia).
+ * Rework (2026-10), massing changes and their evidence:
+ * - Roof lowered from 16.2 m to 11.3–11.9 m. USGS 3DEP lidar (2016) reads the
+ *   roof top at 9 to 12 m above the ground under it (2.5 m above the local
+ *   minimum), never higher, and in the Commons photo the roof stands about
+ *   1.1 times the rock's height, which a person at its foot puts near 10 m.
+ *   The rock buttresses came down with it, to 9.6–10.6 m, and the lobe to
+ *   5.6 m (photo: about half the rock's height).
+ * - The rock was moved east to where the photo puts it (u −4.6 to +3.6 under
+ *   the roof, with the roof cantilevered past its west end) and the lobe to
+ *   the east end; the posts moved from the four corners to the open east
+ *   bay, where the photo shows them.
+ * - The spire's plan was narrowed to 0.72 of the old one: in the photo the
+ *   shaft is about 2.7 m wide and 4 m across the shoulder, against the old
+ *   model's 4 and 6 m. Its strata, cap and shoulder are unchanged.
+ * - Lidar shows a 2.5 m step in the roof at its middle that no photo shows;
+ *   the photos (2019) show one plane, so the roof is drawn as one plane.
+ *
+ * Photos: Commons "USNWC Climbing Center.jpg" (US National Whitewater Center,
+ * CC BY-SA 4.0) and "Usnwc-climbing.jpg" (CC BY-SA 3.0); "USNWC River
+ * Center.jpg" shows the spire from the north-east. Colours from those: the
+ * covered rock a grey-brown, the spire a sandier tan, the roof mid-grey with
+ * a darker fascia, the posts pale.
+ *
  * The rock is built as stacked, bevelled, irregular blocks: chunky strata that
  * read at map distance, not a sculpted surface.
  */
@@ -24,7 +47,7 @@ import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 
 type XY = [number, number]
-const rock = new Part(), rockDark = new Part(), roof = new Part(), trim = new Part()
+const rock = new Part(), rockDark = new Part(), roof = new Part(), trim = new Part(), fascia = new Part()
 
 const unit = (v: V3): V3 => { const l = Math.hypot(...v) || 1; return [v[0] / l, v[1] / l, v[2] / l] }
 
@@ -107,8 +130,11 @@ function prism(p: Part, ring: XY[], bottom: number | Z, top: Z, b: number, lid: 
  * v to its right), half-sizes `hu`/`hv`, corners cut by varying amounts so no
  * two blocks match.
  */
-function stratum(p: Part, c: XY, ang: number, hu: number, hv: number, z0: number, z1: number, cut: number[], b = 0.3) {
-  const [a, bb, cc, d] = cut
+function stratum(p: Part, c0: XY, ang: number, hu0: number, hv0: number, z0: number, z1: number, cut0: number[], b = 0.3) {
+  // The spire is drawn 0.72 times its first, wider plan (see the header).
+  const c: XY = [SPIRE_C[0] + (c0[0] - SPIRE_C[0]) * K, SPIRE_C[1] + (c0[1] - SPIRE_C[1]) * K]
+  const hu = hu0 * K, hv = hv0 * K
+  const [a, bb, cc, d] = cut0.map((x) => x * K)
   const ring: XY[] = [
     frame(c, ang, -hu + a, -hv), frame(c, ang, -hu, -hv + a),
     frame(c, ang, -hu, hv - bb), frame(c, ang, -hu + bb, hv),
@@ -122,19 +148,22 @@ function stratum(p: Part, c: XY, ang: number, hu: number, hv: number, z0: number
 // The covered wall.
 
 const WALL_C: XY = [-13.1, 4.85], WA = (115.5 * Math.PI) / 180
-// Roof: the OSM outline, a little proud all round; high at the open south
-// front, falling to the back.
+// Roof: the OSM outline, a little proud all round, one thin plane falling
+// gently from the open south front to the back. Lidar (2016) puts its top at
+// 11.3 to 12 m above the ground under it; the old 16.2 m came from the
+// published height of the rock, which the photo scale (and lidar) say is lower.
 {
   const ring = rect(WALL_C, WA, 8.3, 5.75)
   const front = (q: XY) => {
     const d: XY = [q[0] - WALL_C[0], q[1] - WALL_C[1]]
     return d[0] * Math.cos(WA) - d[1] * Math.sin(WA) // v: + toward the open front
   }
-  const top: Z = (q) => 16.2 + 0.06 * front(q)
-  prism(trim, ring, (q) => top(q) - 0.55, top, 0.2, roof, roof)
-  // Four slender columns, inset from the roof's corners.
-  for (const [u, v] of [[-7.4, 4.9], [7.4, 4.9], [-7.4, -4.9], [7.4, -4.9]]) {
-    prism(roof, rect(frame(WALL_C, WA, u, v), WA, 0.28, 0.28), 0, (q) => top(q) - 0.55, 0, null)
+  const top: Z = (q) => 11.6 + 0.05 * front(q)
+  prism(fascia, ring, (q) => top(q) - 0.6, top, 0.2, roof, fascia)
+  // Steel posts. The photo shows them only in the open east bay, in front of
+  // the boulder lobe; the back pair stands behind the rock, out of sight.
+  for (const [u, v] of [[5.0, 4.9], [7.6, 4.9], [5.0, -4.9], [7.6, -4.9], [-7.4, -5.0], [-1.5, -5.0]]) {
+    prism(trim, rect(frame(WALL_C, WA, u, v), WA, 0.22, 0.22), 0, (q) => top(q) - 0.6, 0, null)
   }
 }
 // The rock face along the back of the shelter, its left two-thirds: three
@@ -145,9 +174,9 @@ const WALL_C: XY = [-13.1, 4.85], WA = (115.5 * Math.PI) / 180
 {
   const B: [number, number, number, number, number][] = [
     // u centre, half-width, base depth, height, lean
-    [-5.4, 2.2, 3.0, 13.0, 0.9],
-    [-1.3, 2.1, 3.4, 14.0, 1.3],
-    [2.6, 1.9, 3.0, 12.6, 0.8],
+    [-3.0, 1.75, 3.0, 10.6, 0.9],
+    [0.4, 1.75, 3.4, 10.0, 1.2],
+    [2.9, 0.95, 3.0, 9.6, 0.7],
   ]
   for (const [u, hw, depth, h, lean] of B) {
     const oct = (dv: number, hv: number, w: number, z: number): V3[] => {
@@ -170,7 +199,7 @@ const WALL_C: XY = [-13.1, 4.85], WA = (115.5 * Math.PI) / 180
       return ([[-w + k, -hv], [-w, -hv + k], [-w, hv - k], [-w + k, hv], [w - k, hv], [w, hv - k], [w, -hv + k], [w - k, -hv]] as XY[])
         .map(([a, bv]) => { const q = frame(c, WA, a, bv); return [q[0], q[1], z] as V3 })
     }
-    const rings = [oct(5.3, 2.0, 2.0, 2.0, 0), oct(5.4, 2.6, 2.6, 2.3, 4.0), oct(5.3, 2.5, 2.4, 2.1, 6.4), oct(5.0, 2.2, 1.7, 1.5, 7.4)]
+    const rings = [oct(5.9, 2.0, 2.0, 2.0, 0), oct(6.0, 2.6, 2.6, 2.3, 3.0), oct(5.9, 2.5, 2.4, 2.1, 4.8), oct(5.6, 2.2, 1.7, 1.5, 5.6)]
     rockDark.loft(rings)
     rockDark.cap(rings[3], true)
   }
@@ -180,6 +209,7 @@ const WALL_C: XY = [-13.1, 4.85], WA = (115.5 * Math.PI) / 180
 // The spire. Built facing the lawn to the south: u east, v south.
 
 const SPIRE_C: XY = [13.15, -4.85], SA = (123.1 * Math.PI) / 180 // the OSM square's own axis
+const K = 0.72
 {
   // East pillar: seven strata to 12.9 m, the top two flaring east, then a
   // tilted cap to 14.3 m.
@@ -195,8 +225,8 @@ const SPIRE_C: XY = [13.15, -4.85], SA = (123.1 * Math.PI) / 180 // the OSM squa
   })
   // The cap: a thin slab, longer than the pillar is wide, rising to the east.
   {
-    const c = frame(SPIRE_C, SA, 1.5, 0)
-    const ring = rect(c, SA + Math.PI / 2, 2.0, 2.6)
+    const c = frame(SPIRE_C, SA, 1.5 * K, 0)
+    const ring = rect(c, SA + Math.PI / 2, 2.0 * K, 2.6 * K)
     const rise: Z = (q) => {
       const d: XY = [q[0] - c[0], q[1] - c[1]]
       return z + 0.75 + 0.18 * (d[0] * Math.sin(SA) + d[1] * Math.cos(SA))
@@ -220,19 +250,20 @@ const SPIRE_C: XY = [13.15, -4.85], SA = (123.1 * Math.PI) / 180 // the OSM squa
 // ---------------------------------------------------------------------------
 
 // The faux rock: the spire a warm sandy tan in sun, the covered wall a
-// greyer, browner stone; both pulled to the palette's lightness. Roof and
-// columns are the palette roof grey, the roof's fascia trim.
+// greyer, browner stone; both pulled to the palette's lightness. The roof is
+// the palette roof grey over a darker steel fascia; the posts are pale.
 const parts = [
   { part: rock, material: finish('usnwc-rock', 0xd6c4a6) },
-  { part: rockDark, material: finish('usnwc-rock-shade', 0xbdb2a2) },
+  { part: rockDark, material: finish('usnwc-rock-shade', 0xb8b1a5) },
   { part: roof, material: PALETTE.roof },
   { part: trim, material: PALETTE.trim },
+  { part: fascia, material: finish('usnwc-fascia', 0x7a8288) },
 ]
 const triangles = parts.reduce((sum, { part }) => sum + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('U.S. National Whitewater Center Climbing Center', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at ground anchor',
-  bearing: 0, elevation: 0, height: 16.6,
+  bearing: 0, elevation: 0, height: 14.3,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
 const out = new URL('../models/usnwc-climbing-center.glb', import.meta.url).pathname
