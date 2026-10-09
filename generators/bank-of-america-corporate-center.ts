@@ -14,22 +14,51 @@
  * cross; a silver-finned square band (224–235 m) carries a stepped crown of
  * silver rods in three rings, ending at 264 m.
  *
- * Sources: heights are OSM's building:parts (exact). Plan dimensions are
- * measured from Google's photorealistic 3D renders (top and elevation views),
- * which put the slabs at ±24.6 m and 25 m wide. OSM's tier outlines trace the
- * core corners, not the slabs, so they are used for the core steps only. The
- * crown's ring radii are from the elevation silhouettes.
+ * Sources: heights are OSM's building:parts, checked against lidar
+ * (Mecklenburg 2016, USGS 3DEP NC Phase 4, 1 m): less the 6 m the lidar box's
+ * lowest ground lies below the plaza, it reads 43, 162, 178, 208, 225 and
+ * 267 m, every tier within a metre or two of OSM. Lidar also puts the tower
+ * 2-4 m north-east of the anchor; the anchor is left as catalogued. Plan
+ * dimensions were first measured from Google's photorealistic 3D renders
+ * (slabs at ±24.6 m and 25 m wide); lidar confirms them (46-48 m across).
+ * OSM's tier outlines trace the core corners, not the slabs, so they are used
+ * for the core steps only. The crown's ring radii are from the elevation
+ * silhouettes and Commons photos.
+ *
+ * What makes it recognisable, each drawn as plain geometry:
+ * - the bullet-shaped top: setbacks stepping in to a crown of silver rods
+ *   in rings, short and dense, brightest part of the tower (rods drawn
+ *   wider and fewer than the real ones so they read on a phone);
+ * - rows of silver rods along each setback's parapet (jbarreiros's and
+ *   Kiran891's photos);
+ * - the notched corners running up the shaft between the slabs: dark glass
+ *   broken by granite bands, as the punched windows are;
+ * - warm pale granite with dark punched windows, grouped per STYLE.md as one
+ *   panel per window pair and three floors; a rose-granite base.
+ *
+ * Photos (Wikimedia Commons): "Bank of America, Charlotte NC (crop)"
+ * (jbarreiros, CC BY 2.0); "Bank of America Corporate Center" (Nop, public
+ * domain); "Bank of America Corporate Center, Charlotte, North Carolina
+ * (5811071198)" (Ken Lund, CC BY-SA 2.0); "Bank of America Corporate Center
+ * Charlotte NC" (Kiran891, CC BY-SA 4.0); "Bank of America Corporate Center
+ * Charlotte" (kreg.steppe, CC BY 2.0); "BofA Corp Center" (Jt12081988, CC
+ * BY-SA 4.0); "One South at the Plaza, Omni Hotel, Bank of America Corporate
+ * Center, Truist Center, Ritz-Carlton" (Kiran891, CC BY-SA 4.0).
+ *
+ * Estimated: the rod counts and widths, the notch width (widened slightly so
+ * the notch reads), the plinth's height and openings, the window pairs.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 
 type XY = [number, number]
 
-// The plinth shares the walls' material and the glazing the windows'. The
-// re-entrant corner notches are pale glass, like the crown's body, so that
-// they read as a seam rather than a dark stripe from base to crown.
-const granite = new Part(), base = granite, facade = new Part(), glass = facade
-const silver = new Part(), steel = new Part(), terrace = new Part(), notchGlass = steel
+// The plinth is rose granite; the glazing shares the windows' material. The
+// re-entrant corner notches are dark glass like the windows, cut by granite
+// bands at every window group so they read as a notch, not a dark stripe.
+// The crown's drums are a grey-blue glass that sets the bright rods off.
+const granite = new Part(), base = new Part(), facade = new Part(), glass = facade
+const silver = new Part(), steel = new Part(), terrace = new Part()
 
 // ---------- helpers ----------
 
@@ -69,14 +98,14 @@ function wall(part: Part, a: XY, b: XY, z0: number, z1: number) {
 function band(a: XY, b: XY, z0: number, z1: number, sill: number, head: number, headPart = granite, r = .6) {
   const n = outward(a, b), ai = add2(a, n, -r), bi = add2(b, n, -r)
   const lo = z0 + sill, hi = z1 - head
-  if (sill > 0) wall(granite, a, b, z0, lo)
+  if (sill > 0) wall(headPart, a, b, z0, lo)
   if (head > 0) wall(headPart, a, b, hi, z1)
   wall(glass, ai, bi, lo, hi)
   const t = norm2([b[0] - a[0], b[1] - a[1]])
-  poly(granite, [at(a, lo), at(ai, lo), at(ai, hi), at(a, hi)], [t[0], t[1], 0])
-  poly(granite, [at(b, lo), at(bi, lo), at(bi, hi), at(b, hi)], [-t[0], -t[1], 0])
-  if (sill > 0) poly(granite, [at(a, lo), at(b, lo), at(bi, lo), at(ai, lo)], [0, 0, 1])
-  if (head > 0) poly(granite, [at(a, hi), at(b, hi), at(bi, hi), at(ai, hi)], [0, 0, -1])
+  poly(headPart, [at(a, lo), at(ai, lo), at(ai, hi), at(a, hi)], [t[0], t[1], 0])
+  poly(headPart, [at(b, lo), at(bi, lo), at(bi, hi), at(b, hi)], [-t[0], -t[1], 0])
+  if (sill > 0) poly(headPart, [at(a, lo), at(b, lo), at(bi, lo), at(ai, lo)], [0, 0, 1])
+  if (head > 0) poly(headPart, [at(a, hi), at(b, hi), at(bi, hi), at(ai, hi)], [0, 0, -1])
 }
 
 /** A star-shaped ring capped by a fan from the origin. */
@@ -88,19 +117,19 @@ function cap(part: Part, ring: XY[], z: number) {
 }
 
 /**
- * A crown rod: a slim fin of triangular section standing on the wall at `p`,
- * facing `n`, from `z0` to `z1` and then a short point. Its back faces the
- * crown's wall and is left open: three hundred rods' worth of hidden
- * triangles is what keeps the file under budget.
+ * A crown rod: a fin of triangular section standing on the wall at `p`,
+ * facing `n`, from `z0` up to `z1` at its sides and `z1 + tip` at its front
+ * ridge, so it ends in a point. Each side is one quad; the back faces the
+ * wall and is left open. Four triangles a rod is what lets the tower carry
+ * some four hundred of them inside the file budget.
  */
-function fin(part: Part, p: XY, n: XY, z0: number, z1: number, tip: number, w = .6, d = 1.1) {
+function fin(part: Part, p: XY, n: XY, z0: number, z1: number, tip: number, w = .8, d = 1.3) {
   const t: XY = [-n[1], n[0]]
   const b1 = add2(add2(p, t, -w / 2), n, -.2), b2 = add2(add2(p, t, w / 2), n, -.2), o = add2(p, n, d)
-  const apex: V3 = [p[0] + n[0] * d * .3, p[1] + n[1] * d * .3, z1 + tip]
   for (const [a, b] of [[b1, o], [o, b2]] as [XY, XY][]) {
     const m = outward(a, b)
-    poly(part, [at(a, z0), at(b, z0), at(b, z1), at(a, z1)], [m[0], m[1], 0])
-    poly(part, [at(a, z1), at(b, z1), apex], [m[0], m[1], .5])
+    const za = a === o ? z1 + tip : z1, zb = b === o ? z1 + tip : z1
+    poly(part, [at(a, z0), at(b, z0), at(b, zb), at(a, za)], [m[0], m[1], 0])
   }
 }
 
@@ -113,11 +142,13 @@ const SLAB_SEGS = 6  // facets across a bowed slab face
 
 /**
  * Windows are slate panels on the granite (STYLE.md, Windows): one panel per
- * bay, four floors tall, with the granite left showing between bays as
- * piers and between groups as spandrels. Groups are counted from the ground,
+ * window pair, two floors tall, with the granite left showing between bays as
+ * piers and between groups as spandrels; two floors a group, so a panel is
+ * about as tall as two of the real window pairs and the face keeps its
+ * punched look (taller groups read as stripes). Groups are counted from the ground,
  * so they line up across every face and tier.
  */
-const FLOOR = 3.9, GROUP = 4 * FLOOR, SPANDREL = 2.4, PIER = 1.8, PROUD = .04
+const FLOOR = 3.9, GROUP = 2 * FLOOR, SPANDREL = 2.4, PIER = 1.7, PROUD = .04
 
 /** Window panels on the wall over a→b, `bays` across, standing just proud of it. */
 function panels(a: XY, b: XY, z0: number, z1: number, bays: number, pier: number) {
@@ -126,7 +157,7 @@ function panels(a: XY, b: XY, z0: number, z1: number, bays: number, pier: number
   const t: XY = [(b[0] - a[0]) / L, (b[1] - a[1]) / L], bay = L / bays
   for (let g = Math.floor(z0 / GROUP); g * GROUP < z1; g++) {
     const lo = Math.max(g * GROUP + SPANDREL / 2, z0 + 1), hi = Math.min((g + 1) * GROUP - SPANDREL / 2, z1 - 1)
-    if (hi - lo < 4) continue
+    if (hi - lo < 3) continue
     for (let k = 0; k < bays; k++) {
       const p = add2(add2(a, t, k * bay + pier / 2), n, PROUD), q = add2(add2(a, t, (k + 1) * bay - pier / 2), n, PROUD)
       wall(facade, p, q, lo, hi)
@@ -150,15 +181,15 @@ function windowedFace(pts: XY[], z0: number, z1: number, bayW = 4.2) {
 
 /**
  * Tier plans. `c` is the core corner and `n` the glazed notch cut out of it.
- * The notches are kept narrow so they read as a seam; `c` is set so that
+ * The notches are a little wider than main's seam so they read; `c` is set so that
  * 2c − n, the corner's reach in the diagonal views, matches the renders.
  */
 type Tier = { z0: number; z1: number; P: number; c: number; n: number }
 const tiers: Tier[] = [
-  { z0: 42, z1: 161, P: 24.6, c: 20.1, n: 2.2 },
-  { z0: 161, z1: 177, P: 24.6, c: 18.6, n: 1.8 },
-  { z0: 177, z1: 208, P: 22.3, c: 17.45, n: 1.5 },
-  { z0: 208, z1: 224, P: 19.5, c: 17.1, n: 1.2 },
+  { z0: 42, z1: 161, P: 24.6, c: 20.7, n: 3.4 },
+  { z0: 161, z1: 177, P: 24.6, c: 19.2, n: 3.0 },
+  { z0: 177, z1: 208, P: 22.3, c: 18.0, n: 2.6 },
+  { z0: 208, z1: 224, P: 19.5, c: 17.6, n: 2.2 },
 ]
 
 type Kind = 'slab' | 'trim' | 'return' | 'core' | 'notch'
@@ -190,22 +221,38 @@ function outline(P: number, c: number, n: number): Run[] {
   return runs
 }
 
-function tierWalls(t: Tier, next: Tier | undefined, silverHead: boolean) {
+/** A row of rods along the parapet a→b, about `gap` apart, standing `h` above `z`. */
+function rodRow(a: XY, b: XY, z: number, h: number, gap = 2.1) {
+  const L = Math.hypot(b[0] - a[0], b[1] - a[1]), k = Math.max(1, Math.round(L / gap)), n = outward(a, b)
+  for (let i = 0; i < k; i++) {
+    const p: XY = [a[0] + (b[0] - a[0]) * (i + .5) / k, a[1] + (b[1] - a[1]) * (i + .5) / k]
+    fin(silver, p, n, z - 3, z + h - 1.2, 1.2, .45, .8)
+  }
+}
+
+function tierWalls(t: Tier, next: Tier | undefined, rods: boolean) {
   const runs = outline(t.P, t.c, t.n)
   for (const r of runs) {
     // a slab that carries on into the next tier has no parapet here
-    const head = silverHead && !(r.kind === 'slab' && next?.P === t.P) ? 2.5 : 0
-    const top = t.z1 - head
-    if (r.kind === 'notch') r.pts.slice(1).forEach((b, i) => wall(notchGlass, r.pts[i], b, t.z0, t.z1))
-    else if (r.kind === 'trim') wall(granite, r.pts[0], r.pts[1], t.z0, top)
-    else windowedFace(r.pts, t.z0, top)
-    if (head) r.pts.slice(1).forEach((b, i) => wall(silver, r.pts[i], b, top, t.z1))
+    const parapet = rods && !(r.kind === 'slab' && next?.P === t.P)
+    if (r.kind === 'notch') {
+      // dark glass in the window groups, granite bands between
+      r.pts.slice(1).forEach((b, i) => {
+        wall(granite, r.pts[i], b, t.z0, t.z1)
+        panels(r.pts[i], b, t.z0, t.z1, 1, .5)
+      })
+    } else if (r.kind === 'trim') wall(granite, r.pts[0], r.pts[1], t.z0, t.z1)
+    else windowedFace(r.pts, t.z0, t.z1)
+    // the setback's comb of silver rods, along slab faces and their returns
+    if (parapet && r.kind === 'slab') {
+      r.pts.slice(1).forEach((b, i) => rodRow(r.pts[i], b, t.z1, 3.2))
+    }
   }
   const ring = runs.flatMap((r) => r.pts.slice(0, -1))
   cap(terrace, ring, t.z1)
 }
 
-tiers.forEach((t, i) => tierWalls(t, tiers[i + 1], i >= 1))
+tiers.forEach((t, i) => tierWalls(t, tiers[i + 1], true))
 
 // ---------- base, 0–42 m: a full square, the slabs' own width ----------
 // A 12 m granite plinth with three tall glazed openings a face, then
@@ -271,29 +318,30 @@ function ring(r: number, z0: number, z1: number, rods: number, rodTop: number, s
   cap(steel, pts, z1)
   for (let i = 0; i < rods; i++) {
     const a = i / rods * 2 * Math.PI, n: XY = [Math.cos(a), Math.sin(a)]
-    fin(silver, [n[0] * r * .98, n[1] * r * .98], n, z0 + 1, rodTop, 1.4)
+    fin(silver, [n[0] * r * .98, n[1] * r * .98], n, z0 + 1, rodTop, 2.4, .55, 1.1)
   }
 }
 // Rings of rods. The elevations step 14.4 m → 245, 11.4 m → 253, ≈7.5 m →
 // 256 and a 5.2 m drum → 264; the top view shows another rim at ≈12.5 m.
 const RINGS: [number, number, number, number][] = [
   // radius, wall top, rod top, rods
-  [14.4, 241.5, 243.6, 68],
-  [12.7, 245, 246.8, 60],
-  [11.0, 249.5, 251.6, 52],
-  [7.8, 254, 255.2, 36],
-  [5.2, 261.5, 262.6, 32],
+  [14.4, 240, 243.6, 48],
+  [12.7, 243.5, 246.8, 42],
+  [11.0, 248, 251.6, 36],
+  [7.8, 252.5, 255.2, 28],
+  [5.2, 259.5, 262.6, 22],
 ]
 RINGS.forEach(([r, top, rod, n], i) => ring(r, i ? RINGS[i - 1][1] : BAND1, top, n, rod, i > 2 ? 12 : 16))
 
 // ---------- write ----------
-// Identity colours, muted to the palette's lightness: the rose-greige
-// granite and the silver crown.
+// Identity colours, muted to the palette's lightness: the warm pale granite,
+// the rose-granite plinth and the bright silver crown.
 const parts = [
-  { part: granite, material: finish('boa-granite', 0xe9dbd2) },
+  { part: granite, material: finish('boa-granite', 0xecdfd4) },
+  { part: base, material: finish('boa-rose', 0xd9b2a4) },
   { part: facade, material: PALETTE.window },
-  { part: silver, material: finish('boa-silver', 0xe4e8ea, .5) },
-  { part: steel, material: PALETTE.glass },
+  { part: silver, material: finish('boa-silver', 0xf6f8f9, .4) },
+  { part: steel, material: { ...PALETTE.glass, color: 0x91a7b8 } },
   { part: terrace, material: PALETTE.roof },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
