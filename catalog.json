@@ -3478,6 +3478,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-dilworth-artisan-station.ts"
+    },
+    {
+      "id": "clt-common-market-south-end",
+      "file": "models/clt-common-market-south-end.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-common-market-south-end.ts"
     }
   ],
   "landmarks": [
@@ -13728,6 +13735,19 @@
       "minzoom": 16,
       "replaces": [
         "way/432937709"
+      ]
+    },
+    {
+      "id": "clt-common-market-south-end",
+      "name": "Common Market South End",
+      "model": "clt-common-market-south-end",
+      "lng": -80.8635992,
+      "lat": 35.210359,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/553077609"
       ]
     }
   ]
