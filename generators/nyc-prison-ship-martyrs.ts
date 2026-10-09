@@ -14,8 +14,9 @@
  *
  * y = 0 is the foot of the stair, the lowest ground under the model. The
  * hilltop plaza round the column is 4.7 m higher (lidar), so the column's
- * plinths start at z = 4.7; the plaza itself is the map's paving and is not
- * drawn, only the stair that climbs to it. Elevation 0.
+ * plinths start at z = 4.7. The stair climbs to a terrace drawn just under
+ * the plaza's level with battered sides, so that it lands on the column's
+ * plaza (with terrain on, the hill swallows the terrace). Elevation 0.
  *
  * Evidence
  * - Published (Wikipedia; NYC Parks): a granite Doric column 149 ft (45 m)
@@ -52,7 +53,7 @@ import { Part, type V3 } from './mesh'
 import { finishModel, prism, chamferRect } from './nyc-570-lexington'
 import { TAU, smooth, solid, lathe, ellipsoid, block } from './nyc-columbus-monument'
 
-const granite = new Part(), steps = new Part(), bronze = new Part(), door = new Part()
+const granite = new Part(), steps = new Part(), bronze = new Part(), door = new Part(), terrace = new Part()
 
 // --- The great stair: 33 risers from the foot (y = 46.2) up to the plaza
 // edge (y = 34), 30 m wide, between granite cheek walls. ---
@@ -71,14 +72,14 @@ const PZ = 4.7
       if (s > 0) steps.quad(a, b, c, d); else steps.quad(b, a, d, c)
     }
   }
-  // Cheek walls: a sloping granite parapet 1.1 m wide each side, its coping
-  // 0.6 m above the nosings, squared off at the foot.
+  // Cheek walls: a low sloping granite parapet 1.1 m wide each side, its
+  // coping 0.35 m above the nosings, ending at the foot.
   for (const s of [-1, 1]) {
     const x0 = s > 0 ? X : -X - 1.1, x1 = s > 0 ? X + 1.1 : -X
-    const top = (y: number) => PZ + 0.6 - (PZ * (y - yTop)) / (yBot - yTop)
+    const top = (y: number) => PZ + 0.35 - (PZ * (y - yTop)) / (yBot - yTop)
     const yEnd = yBot + 0.6
     // profile in the y–z plane, extruded across x0..x1
-    const prof: [number, number][] = [[yTop - 1.6, 0], [yEnd, 0], [yEnd, 1.0], [yBot - 1.0, top(yBot - 1.0)], [yTop, top(yTop)], [yTop - 1.6, top(yTop)]]
+    const prof: [number, number][] = [[yTop, PZ - 0.6], [yEnd, 0], [yEnd, 0.45], [yBot - 1.0, top(yBot - 1.0)], [yTop, top(yTop)]]
     const ring = (x: number) => prof.map(([y, z]): V3 => [x, y, z])
     const A = ring(x0), B = ring(x1)
     for (let i = 0; i < prof.length; i++) {
@@ -89,15 +90,28 @@ const PZ = 4.7
     for (let i = 1; i < prof.length - 1; i++) { granite.tri(B[0], B[i], B[i + 1]); granite.tri(A[0], A[i + 1], A[i]) }
     // The pedestal at the head of the wall and its granite ball.
     const cx = (x0 + x1) / 2, cy = yTop - 0.9
-    block(granite, cx - 0.9, cy - 0.9, cx + 0.9, cy + 0.9, PZ - 0.5, PZ + 1.25, 0.08, 0.1)
-    block(granite, cx - 1.0, cy - 1.0, cx + 1.0, cy + 1.0, PZ + 1.25, PZ + 1.45, 0.08, 0.08)
-    smooth(granite, q => ellipsoid(q, [cx, cy, PZ + 2.05], [0.62, 0.62, 0.62], 12, 6), 70)
+    block(granite, cx - 0.8, cy - 0.8, cx + 0.8, cy + 0.8, PZ - 0.1, PZ + 0.9, 0.08, 0.1)
+    smooth(granite, q => ellipsoid(q, [cx, cy, PZ + 1.35], [0.5, 0.5, 0.5], 12, 6), 70)
   }
+}
+
+// --- The hilltop terrace the stair lands on, continuous with the column's
+// plaza: its top just under the plaza level (the map's terrain carries the
+// real paving), its sides battered down like the hill's slopes, so with
+// terrain on it sinks into the hilltop and without terrain the stair still
+// rises up a slope to the column rather than standing alone. ---
+{
+  const T = PZ - 0.04, x = 16.1, yN = 34.0, yS = -12.0, b = 2.2 * PZ
+  const top: V3[] = [[-x, yS, T], [x, yS, T], [x, yN, T], [-x, yN, T]]
+  const foot: V3[] = [[-x - b, yS - b, 0], [x + b, yS - b, 0], [x + b, yN, 0], [-x - b, yN, 0]]
+  terrace.cap(top, true)
+  // the three battered sides (the fourth, under the stair's head, is hidden)
+  for (const [i, j] of [[0, 1], [1, 2], [3, 0]]) terrace.quad(foot[i], foot[j], top[j], top[i])
 }
 
 // --- The column: two square plinths, the fluted shaft, the Doric capital,
 // a square abacus (the viewing platform). ---
-prism({ wall: steps, win: null, roof: steps, ring: chamferRect(-8.2, -8.2, 8.2, 8.2, 0), z0: 0, z1: PZ + 0.5, facade: null, bevel: 0.12 })
+prism({ wall: steps, win: null, roof: steps, ring: chamferRect(-8.2, -8.2, 8.2, 8.2, 0), z0: PZ - 0.3, z1: PZ + 0.5, facade: null, bevel: 0.12 })
 prism({ wall: granite, win: null, roof: granite, ring: chamferRect(-4.75, -4.75, 4.75, 4.75, 0), z0: PZ + 0.5, z1: PZ + 1.0, facade: null, bevel: 0.12 })
 const S0 = PZ + 1.0, S1 = PZ + 33.0
 {
@@ -178,4 +192,5 @@ finishModel("Prison Ship Martyrs' Monument", 'nyc-prison-ship-martyrs', [
   { part: steps, material: { name: 'granite-steps', color: 0xd6d3cb, roughness: 0.85 } },
   { part: bronze, material: { name: 'bronze-patina', color: 0x6fa595, roughness: 0.7 } },
   { part: door, material: { name: 'bronze', color: 0x55756b, roughness: 0.75 } },
+  { part: terrace, material: { name: 'paving', color: 0xc9c3b8, roughness: 0.9 } },
 ], { bearing: 315, osm: 'way/296157576', height: PZ + 43.75 }, 5000)
