@@ -1539,6 +1539,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-soldiers-sailors-riverside.ts"
+    },
+    {
+      "id": "nyc-bethesda-fountain",
+      "file": "models/nyc-bethesda-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-bethesda-fountain.ts"
     }
   ],
   "landmarks": [
@@ -6283,6 +6290,18 @@
       "replaces": [
         "way/270975149"
       ]
+    },
+    {
+      "id": "nyc-bethesda-fountain",
+      "name": "Bethesda Fountain (Angel of the Waters)",
+      "model": "nyc-bethesda-fountain",
+      "lng": -73.970845,
+      "lat": 40.774311,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q532029",
+      "replaces": []
     }
   ]
 }
