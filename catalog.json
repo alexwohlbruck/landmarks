@@ -1455,6 +1455,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-riverside-church.ts"
+    },
+    {
+      "id": "nyc-metlife-tower",
+      "file": "models/nyc-metlife-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-metlife-tower.ts"
     }
   ],
   "landmarks": [
@@ -5986,6 +5993,28 @@
       "wikidata": "Q1156586",
       "replaces": [
         "way/274986253"
+      ]
+    },
+    {
+      "id": "nyc-metlife-tower",
+      "name": "Metropolitan Life Insurance Company Tower",
+      "model": "nyc-metlife-tower",
+      "lng": -73.9873592,
+      "lat": 40.7412668,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q652452",
+      "replaces": [
+        "way/158404390",
+        "way/263480034",
+        "way/263480035",
+        "way/263480036",
+        "way/263480038",
+        "way/263480039",
+        "way/263480040",
+        "way/263480041",
+        "way/263480042"
       ]
     }
   ]
