@@ -2890,6 +2890,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-cne-ford-plant.ts"
+    },
+    {
+      "id": "clt-cne-kahn-boilerhouse",
+      "file": "models/clt-cne-kahn-boilerhouse.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-cne-kahn-boilerhouse.ts"
     }
   ],
   "landmarks": [
@@ -11241,6 +11248,19 @@
         "way/835828575",
         "way/835828576",
         "way/835828577"
+      ]
+    },
+    {
+      "id": "clt-cne-kahn-boilerhouse",
+      "name": "Kahn Boilerhouse",
+      "model": "clt-cne-kahn-boilerhouse",
+      "lng": -80.834421,
+      "lat": 35.247782,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/324609976"
       ]
     }
   ]
