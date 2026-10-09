@@ -3345,6 +3345,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-bethesda-fountain.ts"
+    },
+    {
+      "id": "nyc-sherman-monument",
+      "file": "models/nyc-sherman-monument.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-sherman-monument.ts"
     }
   ],
   "landmarks": [
@@ -5518,7 +5525,7 @@
     },
     {
       "id": "wdw-epcot-canada",
-      "name": "Canada Pavilion (H\u00f4tel du Canada)",
+      "name": "Canada Pavilion (Hôtel du Canada)",
       "model": "wdw-epcot-canada",
       "lng": -81.55165,
       "lat": 28.37155,
@@ -5843,7 +5850,7 @@
     },
     {
       "id": "wdw-rock-n-roller-coaster",
-      "name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
+      "name": "Rock ’n’ Roller Coaster Starring The Muppets",
       "model": "wdw-rock-n-roller-coaster",
       "lng": -81.5615788,
       "lat": 28.3596178,
@@ -6420,7 +6427,7 @@
     },
     {
       "id": "dlr-guardians-mission-breakout",
-      "name": "Guardians of the Galaxy \u2013 Mission: Breakout!",
+      "name": "Guardians of the Galaxy – Mission: Breakout!",
       "model": "dlr-guardians-mission-breakout",
       "lng": -117.9169523,
       "lat": 33.8066398,
@@ -7367,7 +7374,7 @@
     },
     {
       "id": "chi-bahai-temple",
-      "name": "Bah\u00e1\u02bc\u00ed House of Worship",
+      "name": "Baháʼí House of Worship",
       "model": "chi-bahai-temple",
       "lng": -87.68429,
       "lat": 42.074437,
@@ -9932,7 +9939,7 @@
     },
     {
       "id": "la-team-disney",
-      "name": "Team Disney \u2013 The Michael D. Eisner Building",
+      "name": "Team Disney – The Michael D. Eisner Building",
       "model": "la-team-disney",
       "lng": -118.3272456,
       "lat": 34.1579334,
@@ -13249,6 +13256,18 @@
       "elevation": 0,
       "minzoom": 17,
       "wikidata": "Q532029",
+      "replaces": []
+    },
+    {
+      "id": "nyc-sherman-monument",
+      "name": "William Tecumseh Sherman Monument",
+      "model": "nyc-sherman-monument",
+      "lng": -73.973061,
+      "lat": 40.764811,
+      "bearing": 28,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q18159288",
       "replaces": []
     }
   ]
