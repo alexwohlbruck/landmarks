@@ -554,6 +554,13 @@
       "source": "generators/mcglohon-theater-spirit-square.ts"
     },
     {
+      "id": "coyote-joes",
+      "file": "models/coyote-joes.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/coyote-joes.ts"
+    },
+    {
       "id": "carowinds-flying-cobras",
       "file": "models/carowinds-flying-cobras.glb",
       "license": "CC0-1.0",
@@ -4440,6 +4447,19 @@
       "wikidata": "Q22061093",
       "replaces": [
         "way/131139724"
+      ]
+    },
+    {
+      "id": "coyote-joes",
+      "name": "Coyote Joe's",
+      "model": "coyote-joes",
+      "lng": -80.9160661,
+      "lat": 35.2275192,
+      "bearing": 26,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/849535273"
       ]
     },
     {
