@@ -5,24 +5,50 @@
  * Map frame: x across the stage, y towards the audience, z up, metres.
  * Placed at bearing 320°: the shell opens north-west across the moat to the
  * grass amphitheatre (way/1185804824). The anchor is the centroid of the OSM
- * outline (way/921811959), 21.4 m across and 16 m deep in this frame; the
- * model keeps to that extent, but not to its oval shape, which is too smooth
- * to be the roof.
+ * outline (way/921811959), 21.4 m across and 16 m deep in this frame. The
+ * roof follows the lidar rather than OSM's smooth oval, which sits about
+ * 2 m forward of the real shell.
  *
  * A thin white concrete shell vault on an island in the lake. It runs front
- * to back, a rounded trapezoid in plan that widens towards the audience. The
- * front edge sweeps up into a broad arch (7.3 m at the crest) and kicks out
- * into upturned gull-wing tips at both front corners; the back edge is lower
- * and plainer. Three curved concrete ribs carry it: each has two legs that
+ * to back, a rounded trapezoid in plan that narrows towards the audience. The
+ * front edge sweeps up into a broad arch (6.4 m at the crest) and kicks out
+ * into upturned gull-wing tips at both front corners; the back edge is
+ * plainer. Three curved concrete ribs carry it: each has two legs that
  * rise from the ground and flare out into the wings, with an arch springing
  * between them, and the side bays between the front two ribs are X-braced.
  * Behind the stage stands a pale acoustic wall with a curved top, and the
  * stage is a deck on a stacked-stone base whose front bows out towards the
  * audience.
  *
- * Heights are from the photos, scaled to the OSM width: crest 7.3 m, shell
- * 0.3 m thick, arches springing at 3.4 m, stage 1.1 m. The island is flat,
- * so y = 0 is its ground. The water and the island's walls are the map's.
+ * Shell 0.3 m thick, arches springing at 3.4 m, stage 1.1 m (photos). The
+ * island is flat, so y = 0 is its ground. The water and the island's walls
+ * are the map's.
+ *
+ * 2026 rework. The vault, its three ribs and X-braces, the arched front edge,
+ * the back wall and the bowed stage are kept. Two massing fixes, both from
+ * the Mecklenburg County lidar (USGS 3DEP NC Phase 4, flown 2016, 0.5 m DSM
+ * sampled in this frame; the island lawn reads 1.6 m above the moat):
+ * - Plan: the roof is widest at the BACK (half-width ~10 m at y = -2 to -6)
+ *   and narrows to ~7 m at the front (y = +4), from y = -9.6 at the back to
+ *   +6.4 at the front arch. The old model had it the other way round,
+ *   widening towards the audience; the USGS NAIP orthophoto shows the same
+ *   wide-backed plan, and the Mecklenburg County photo (below) shows the roof
+ *   running further out on the side beyond the front arch.
+ * - Heights: the crest is level front to back at 6.4 m over the island (the
+ *   old one rose from 5.6 to 7.3 m towards the front), and the sides fall to
+ *   about 4.4 m at the back corners and 4.9 m at the front ones. The
+ *   upturned front tips are kept, a little smaller (0.8 m against 1.0 m):
+ *   the Caplanides photo shows the front edge flaring up at its ends, which
+ *   the 0.5 m lidar is too coarse to resolve.
+ * The back wall and stage move back with the shell (1.6 m).
+ * Colour: the roof top is near-white (the brightest surface in NAIP).
+ *
+ * Photos: "Freedom Park Pavilion, Charlotte, NC", Leo Caplanides, Mecklenburg
+ * County (Wikimedia Commons, CC BY-SA 3.0), a small front three-quarter view;
+ * look-only, not licensed for reuse here: zzazazz on Flickr (CC BY-NC 2.0),
+ * "Freedom Park Summer Panorama" and "Another Freedom Park Panorama", which
+ * show it across the moat. No licensed close daylight photo exists on
+ * Commons, Openverse or Mapillary.
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -57,21 +83,23 @@ function face(p: Part, pts: V3[], n: V3) {
 // --- The roof -----------------------------------------------------------------
 // A thin concrete vault running front to back. (u, v) parametrise it: u runs
 // across from -1 to 1, v from the back edge (0) to the front edge (1).
-// In plan it is a rounded trapezoid, widening to the front; in section it is
-// an arch that rises towards the front, where its edge sweeps up into a broad
-// arch and kicks out into gull-wing tips. The back edge is lower and plainer.
+// In plan it is a rounded trapezoid, narrowing to the front; in section an
+// arch, level along its length, whose front edge kicks out into gull-wing
+// tips. The back edge is plainer.
 const SHELL = 0.3
-const halfWidth = (v: number) => 7.0 + 3.6 * v * v
-const yBack = (u: number) => -7.0 - 0.5 * (1 - u * u)
-const yFront = (u: number) => 6.7 + 0.7 * (1 - u * u)
-const crest = (v: number) => 5.6 + 1.7 * v ** 1.5
-const eave = (v: number) => 3.9 + 0.4 * v
-const kick = (v: number) => 1.0 * v ** 3
+// Plan and heights from the 2016 county lidar (see the header): wide at the
+// back, narrowing to the arched front; crest level front to back.
+const halfWidth = (v: number) => 6.8 + 3.4 * (1 - v ** 1.6)
+const yBack = (u: number) => -9.6 + 2.4 * u * u
+const yFront = (u: number) => 4.6 + 1.8 * (1 - u * u)
+const crest = (v: number) => 6.35 + 0.1 * v
+const eave = (v: number) => 4.4 + 0.5 * v
+const kick = (v: number) => 0.8 * v ** 3
 const smooth = (a: number, b: number, t: number) => { const s = Math.min(1, Math.max(0, (t - a) / (b - a))); return s * s * (3 - 2 * s) }
 /** Height of the upper surface at (u, v). */
 const zTop = (u: number, v: number) => {
   const a = Math.abs(u)
-  return eave(v) + (crest(v) - eave(v)) * Math.cos((Math.PI / 2) * a) ** 0.85 + kick(v) * smooth(0.72, 1, a) ** 2
+  return eave(v) + (crest(v) - eave(v)) * Math.cos((Math.PI / 2) * a) ** 1.2 + kick(v) * smooth(0.72, 1, a) ** 2
 }
 const point = (u: number, v: number): [number, number] => [u * halfWidth(v), yBack(u) + (yFront(u) - yBack(u)) * v]
 /** (u, v) under a plan point, by a few fixed-point steps. */
@@ -220,7 +248,7 @@ for (const s of [-1, 1]) {
 
 // --- Back wall ------------------------------------------------------------------
 {
-  const y = -5.7, d = 0.35, half = 4.8
+  const y = -7.3, d = 0.35, half = 4.8
   const topZ = (x: number) => 3.4 + 1.6 * Math.sqrt(Math.max(0, 1 - (x / half) ** 2))
   const xs = span(-half, half, 12)
   for (let i = 0; i < xs.length - 1; i++) {
@@ -237,16 +265,16 @@ for (const s of [-1, 1]) {
 
 // --- Stage ------------------------------------------------------------------------
 {
-  const H = 1.1, back = -5.5, sideFront = 2.6, apex = 6.0, half = 5.4
+  const H = 1.1, back = -7.1, sideFront = 2.6, apex = 6.0, half = 5.4
   // Plan, counter-clockwise from the back left corner: back edge, right side,
   // the bowed front, left side.
-  const plan: [number, number][] = [[-4.6, back], [4.6, back], [half, -4.2]]
+  const plan: [number, number][] = [[-4.6, back], [4.6, back], [half, -5.4]]
   const n = 12
   for (let i = 0; i <= n; i++) {
     const t = i / n, x = half * Math.cos(Math.PI * t)
     plan.push([x, sideFront + (apex - sideFront) * Math.sin(Math.PI * t)])
   }
-  plan.push([-half, -4.2])
+  plan.push([-half, -5.4])
   const lip = 0.12
   for (let i = 0; i < plan.length; i++) {
     const [ax, ay] = plan[i], [bx, by] = plan[(i + 1) % plan.length]
@@ -264,11 +292,11 @@ for (const s of [-1, 1]) {
 }
 
 const parts = [
-  // White painted concrete from the 2022 daylight photo; the roof's upper
-  // face a shade darker, as weathered concrete is; the acoustic wall a warm
-  // pale grey; the stage base the island's tan stacked fieldstone.
+  // White painted concrete. The roof's upper face is the brightest thing in
+  // the NAIP orthophoto, so it is near-white rather than a weathered grey;
+  // the acoustic wall a warm pale grey; the stage base tan stacked fieldstone.
   { part: concrete, material: PALETTE.stone },
-  { part: top, material: finish('shell-roof', 0xdcd8d0) },
+  { part: top, material: finish('shell-roof', 0xf2f0eb) },
   { part: wall, material: finish('acoustic-wall', 0xcac6bc) },
   { part: stoneBase, material: finish('fieldstone', 0xb9ab95) },
   { part: deck, material: finish('stage-deck', 0xd2cec6) },

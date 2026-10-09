@@ -22,6 +22,12 @@
  * The DEM is nearly flat here (0.3 m fall to the rear), so the front ground
  * sits at G above y = 0.
  *
+ * Rework (2026-10): no massing change. Lidar (Mecklenburg 2016, 0.5 m)
+ * reads the roof about 4.5 m and the parapets 5.2-5.6 m above the sidewalk,
+ * within its ~0.4 m noise of the old heights, and the 2024 photo scales to a
+ * 5.0 m parapet. Only the red paint is pulled lighter (0xb44c42 -> 0xbf5f55)
+ * to sit at the palette's lightness.
+ *
  * References (visual only): City Dweller 2, "The Evening Muse Mid-April 2024"
  * and "The Rat's Nest Mid-April 2024" (Commons, CC BY-SA 4.0); James
  * Willamor, "NoDa, Charlotte, NC, USA - panoramio (2)" (Commons, CC BY-SA 3.0);
@@ -231,7 +237,7 @@ arched(win, 2, 6.45, 7.05, 3.05, 3.5)
 // little light; one lavender-purple for the awnings, kickplates, name board
 // and the mural's purple; the mural's yellow.
 const parts = [
-  { part: brick, material: finish('red-brick', 0xb44c42) },
+  { part: brick, material: finish('red-brick', 0xbf5f55) },
   { part: purple, material: finish('muse-purple', 0x8a84cc) },
   { part: yellow, material: finish('muse-yellow', 0xe6c25c) },
   { part: win, material: PALETTE.window },

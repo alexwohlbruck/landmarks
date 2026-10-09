@@ -16,14 +16,28 @@
  * chimney behind. The picket fence and picnic tables of the front yard, and
  * the back patio and stage, are outside the building and left to the map.
  *
- * Measured: the outline (OSM). Estimated: the heights (one storey, about
- * 4.7 m, the raised middle 5.9 m), the openings and the awning, all from one
- * night photo of the front. Invented: the side and rear walls, which no photo
- * shows, are drawn as plain brick. No licensed exterior photo was found, so
- * the front rests on a look-only reference.
+ * Measured: the outline (OSM) and the heights, from the USGS 3DEP NC Phase 4
+ * Mecklenburg 2016 lidar (0.5 m DSM sampled in this frame, above the front
+ * yard's ground, the lowest around the footprint): a low gable roof whose
+ * ridge runs parallel to the street at 5.6 m, eaves at 4.1 m front and back,
+ * the raised middle of the front 5.1 m over its middle 5.4 m, tin canopies at
+ * about 2.6 m over the door and over the small left window, and a short
+ * chimney near the south end (5.9 m).
+ * Estimated: the openings and the sign, from one night photo of the front.
+ * Invented: the side and rear walls, which no photo shows, are plain brick.
+ * No licensed exterior photo exists (Commons, Openverse, Mapillary), so the
+ * front and the colours rest on a look-only reference.
  *
- * The DEM is nearly flat here (0.4 m over the footprint), so the front ground
- * sits at G above y = 0.
+ * Rework (2026-10), massing changes and their evidence: the old model had a
+ * flat roof inside 4.7 m parapets; the lidar shows the roof rising 1.5 m to a
+ * ridge along the middle of the building, with gable ends on the north and
+ * south walls, so it is now a gable roof. The raised front middle drops from
+ * 5.9 to 5.1 m, the awning from 3.6 to 3.2 m at the wall, and the chimney
+ * moves from the front slope's middle (where the lidar shows nothing) to the
+ * south end, at the 0.6 m bump the lidar shows there.
+ *
+ * The ground is nearly flat here (0.4 m over the footprint), so y = 0 is the
+ * front yard.
  *
  * References: USGS NAIP aerial (public domain) for the footprint and the dark
  * flat roof. Look-only: Drea Photo Artistry's night photo of the front yard
@@ -194,15 +208,45 @@ const win = new Part(), lit = new Part(), roof = new Part()
 // The OSM outline in the model frame, anticlockwise: 0 the north wall (model
 // west), 1 the Gordon Street front, 2 the south wall, 3 the rear.
 const P: XY[] = [[-8.05, 5.66], [-8.0, -5.73], [8.06, -5.64], [8.01, 5.71]]
-const G = 0.15
-const Z = 4.7, ZM = 5.9
 const S = new Shell(P, brick, roof, 4.3)
-const L = [0, 1, 2, 3].map(i => S.edge(i).L)
-S.walls(0, [[0, L[0], Z]])
-S.walls(1, [[0, 5.3, Z], [5.3, 10.7, ZM], [10.7, L[1], Z]])
-S.walls(2, [[0, L[2], Z]])
-S.walls(3, [[0, L[3], Z]])
-S.roof()
+
+// The body: brick walls under a low gable roof whose ridge runs parallel to
+// the street front (lidar). The outline is a rectangle to within 0.1 m, so the
+// walls are drawn on its mean rectangle.
+const X = 8.03, Y = 5.69
+const ZE = 4.1, ZR = 5.6, ZM = 5.1 // eaves, ridge, top of the raised front (lidar)
+const OV = 0.3, VG = 0.2, TH = 0.18 // eave overhang, verge overhang, roof thickness
+const k = (ZR - ZE) / Y
+const W: V3 = [-1, 0, 0], E: V3 = [1, 0, 0], FR: V3 = [0, -1, 0], BK: V3 = [0, 1, 0]
+quad(brick, [-X, -Y, 0], [X, -Y, 0], [X, -Y, ZE], [-X, -Y, ZE], FR)
+quad(brick, [X, Y, 0], [-X, Y, 0], [-X, Y, ZE], [X, Y, ZE], BK)
+for (const [x, n] of [[-X, W], [X, E]] as [number, V3][]) {
+  const g: V3[] = [[x, -Y, 0], [x, Y, 0], [x, Y, ZE], [x, 0, ZR], [x, -Y, ZE]]
+  for (let i = 1; i < g.length - 1; i++) tri(brick, g[0], g[i], g[i + 1], n)
+}
+// The two roof slopes, each a thin slab overhanging the walls a little.
+for (const sgn of [-1, 1]) {
+  const y0 = sgn * (Y + OV), z0 = ZE - k * OV
+  const n = unit([0, sgn * k, 1]), x0 = -X - VG, x1 = X + VG
+  quad(roof, [x0, y0, z0], [x1, y0, z0], [x1, 0, ZR], [x0, 0, ZR], n)
+  quad(roof, [x0, y0, z0 - TH], [x1, y0, z0 - TH], [x1, 0, ZR - TH], [x0, 0, ZR - TH], [0, -n[1], -n[2]])
+  quad(roof, [x0, y0, z0 - TH], [x1, y0, z0 - TH], [x1, y0, z0], [x0, y0, z0], [0, sgn, 0])
+  for (const [x, nx] of [[x0, W], [x1, E]] as [number, V3][]) quad(roof, [x, y0, z0 - TH], [x, 0, ZR - TH], [x, 0, ZR], [x, y0, z0], nx)
+}
+
+// The raised middle of the front: a brick false front standing above the
+// eaves, with a chamfered coping, carrying the name board.
+{
+  const x0 = -2.7, x1 = 2.7, ya = -Y, yb = -Y + 0.4, c = 0.12
+  quad(brick, [x0, ya, 0], [x1, ya, 0], [x1, ya, ZM - c], [x0, ya, ZM - c], FR)
+  quad(brick, [x1, yb, ZE], [x0, yb, ZE], [x0, yb, ZM - c], [x1, yb, ZM - c], BK)
+  quad(brick, [x0, ya, ZM - c], [x1, ya, ZM - c], [x1, ya + c, ZM], [x0, ya + c, ZM], unit([0, -1, 1]))
+  quad(brick, [x0, ya + c, ZM], [x1, ya + c, ZM], [x1, yb, ZM], [x0, yb, ZM], UP)
+  for (const [x, n] of [[x0, W], [x1, E]] as [number, V3][]) {
+    quad(brick, [x, ya, ZE - 0.3], [x, yb, ZE - 0.3], [x, yb, ZM], [x, ya, ZM - c], n)
+    tri(brick, [x, ya, ZM - c], [x, yb, ZM], [x, ya + c, ZM], n)
+  }
+}
 
 /** A sloped tin awning: from the wall at zt out by `dep`, down to zf. */
 function awning(i: number, s0: number, s1: number, zt: number, zf: number, dep: number) {
@@ -221,16 +265,19 @@ function awning(i: number, s0: number, s1: number, zt: number, zf: number, dep: 
 }
 
 // --- The front: the name board high in the raised middle, the tin awning
-// under it, the door and a lit window beneath; a small window to the left.
-S.box(sign, 1, 5.8, 10.2, 3.95, 5.7, 0, 0.18, lit)
-awning(1, 4.6, 11.4, 3.6, 3.05, 1.6)
-S.panel(lit, 1, 6.3, 7.4, G, G + 2.2)
-S.panel(win, 1, 8.0, 10.4, G + 0.9, G + 2.3)
-S.panel(win, 1, 1.2, 2.6, G + 1.0, G + 2.2)
+// under it over the door and the lit window, and a short awning over the
+// small window to the left (lidar shows both canopies at about 2.6 m).
+S.box(sign, 1, 6.0, 10.0, 3.55, 4.9, 0, 0.18, lit)
+awning(1, 5.4, 10.4, 3.2, 2.6, 1.0)
+awning(1, 0.9, 2.9, 3.2, 2.6, 0.9)
+S.panel(lit, 1, 6.3, 7.4, 0, 2.2)
+S.panel(win, 1, 8.0, 10.0, 0.9, 2.25)
+S.panel(win, 1, 1.2, 2.6, 1.0, 2.2)
 
-// --- The brick chimney behind the front, to the right of the sign.
+// --- The brick chimney on the front slope's south end, to the right of the
+// sign as seen from the street (the lidar's bump at x 7.3, y -2.6).
 {
-  const c: XY = [5.0, -2.2], h = 0.4, z0 = 4.3, z1 = 6.6
+  const c: XY = [7.0, -2.6], h = 0.4, z0 = 4.4, z1 = 5.9
   const q: XY[] = [[c[0] - h, c[1] - h], [c[0] + h, c[1] - h], [c[0] + h, c[1] + h], [c[0] - h, c[1] + h]]
   q.forEach((a, k) => {
     const b = q[(k + 1) % 4], n = unit([b[1] - a[1], -(b[0] - a[0]), 0])
@@ -248,4 +295,4 @@ await finishModel('snug-harbor', 'Snug Harbor', [
   { part: lit, material: PALETTE.entrance },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
-], { bearing: 94, osm: 'way/323193812', height: 6.6 })
+], { bearing: 94, osm: 'way/323193812', height: 5.9 })

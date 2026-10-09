@@ -26,7 +26,32 @@
  *
  * Ground: the terrain under the footprint is lowest just behind the stage
  * (~193.8 m). The stage floor is ~1.4 m above that and the back row of seats
- * under the roof's west edge ~4.2 m, from the terrarium DEM.
+ * under the roof's west edge ~4.2 m, from the terrarium DEM. *
+ * 2026 rework: heights corrected from the Mecklenburg County lidar (USGS
+ * 3DEP NC Phase 4, flown 2016, after the 1991 build; 1 m DSM sampled in this
+ * frame, ground_min 194.0 m just behind the stage, as before). The plan was
+ * already right and is kept; the old heights were read from photos and ran
+ * well over:
+ * - roof deck top 21.2 -> 17.0 m (lidar 16-17 m, slightly higher at the
+ *   stage end); the truss band and proscenium come down with it;
+ * - fly tower 30.0 -> 24.8 m (lidar 24-25 m), its east face 37.4 -> 35.2 m
+ *   (lidar edge at x = 35);
+ * - wings and backstage block 18.0 / 11.0 -> 6.5 m (lidar 6 m over their
+ *   whole roofs outside the pavilion roof);
+ * - the tall cream walls flanking the stage, which the 2016 photo from the
+ *   seats shows rising to the roof trusses, are kept as 1.6 m-thick walls
+ *   along the wings' west faces, set in under the roof's chamfered edge.
+ * Photos: "Barack Obama 'Early Vote Event with President Barack Obama' -
+ * Charlotte DSC05320" (Kristopher Harris, Wikimedia Commons, CC BY 2.0; set of
+ * the 4 Nov 2016 rally here): the stage and its flanking walls from the
+ * seats. No licensed exterior daylight photo was found on Commons, Openverse
+ * or Mapillary; the plan, roof colours and fly-tower hatches are from the
+ * USGS NAIP orthophoto.
+ *
+ * Bowl: the stage sits at the lowest ground with the lawn rising westward,
+ * ~4 m at the roof's west edge and ~8 m 55 m out (lidar). Nothing is below
+ * the surrounding grade, so the placement keeps elevation 0; the lawn and
+ * the blue seat sections round the roof are the map's ground.
  */
 import { Part, cross, len, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -98,14 +123,16 @@ const mirror = (pts: XY[]): XY[] => pts.map(([x, y]) => [x, -y] as XY).reverse()
 // ---------------------------------------------------------------------------
 // Heights above the lowest ground (just behind the stage).
 
+// From the Mecklenburg County lidar (USGS 3DEP NC Phase 4, flown 2016, 1 m
+// DSM): roof deck 16-17 m, fly tower 24-25 m, wings and backstage 6 m.
 const STAGE_FLOOR = 2.6
-const TRUSS_BOT = 17.4    // underside of the trusses, flush with the side walls' tops
-const ZONE_BOT = 18.0     // underside of the deck's recessed truss band
-const DECK_BOT = 19.9     // underside of the white deck edge
-const DECK_TOP = 21.2
-const WING_TOP = 18.0
-const FLY_TOP = 30.0
-const DOCK_TOP = 11.0
+const TRUSS_BOT = 13.2    // underside of the trusses, flush with the side walls' tops
+const ZONE_BOT = 13.8     // underside of the deck's recessed truss band
+const DECK_BOT = 15.7     // underside of the white deck edge
+const DECK_TOP = 17.0
+const WING_TOP = 6.5
+const FLY_TOP = 24.8
+const DOCK_TOP = 6.5
 
 // ---------------------------------------------------------------------------
 // The roof: the OSM octagon, made symmetrical about the axis.
@@ -181,22 +208,32 @@ for (const [x, y] of [[-40.0, 15.2], [-40.0, -15.2], [-30.6, 37.6], [-30.6, -37.
 // from the proscenium, as its grey roof shows in the orthophoto.
 // Its shadow falls ~14 m across the north wing's roof, so it stands well
 // clear of the pavilion roof. Its light roof carries two rows of four hatches.
-const FLY = rect(20.7, 37.4, -16.4, 16.4)
+const FLY = rect(20.7, 35.2, -16.4, 16.4)
 block(stone, membrane, FLY, 0, FLY_TOP, 0.5)
 for (const x of [24.6, 30.2]) for (const y of [-10.3, -4.6, 4.6, 10.3]) {
   block(roofTop, roofTop, rect(x - 1.1, x + 1.1, y - 1.1, y + 1.1), FLY_TOP - 0.1, FLY_TOP + 0.8, 0.2)
 }
 // The backstage block behind it, lower.
-block(stone, roofTop, [[37.4, -16.4], [41.0, -16.4], [41.0, -15.8], [45.1, -15.8], [45.1, 15.8], [41.0, 15.8], [41.0, 16.4], [37.4, 16.4]], 0, DOCK_TOP, 0.4)
-// The wings: their west faces are the side walls flanking the seats.
+block(stone, roofTop, [[35.2, -16.4], [41.0, -16.4], [41.0, -15.8], [45.1, -15.8], [45.1, 15.8], [41.0, 15.8], [41.0, 16.4], [35.2, 16.4]], 0, DOCK_TOP, 0.4)
+// The wings: low service blocks either side of the fly tower, 6 m in the
+// lidar. The north wing's roof is white like the pavilion's; the south one's
+// dark (NAIP).
 const WING_N: XY[] = [[20.7, 16.4], [41.0, 16.4], [41.0, 25.0], [35.0, 36.0], [28.5, 45.6], [10.4, 33.2]]
-// The north wing's roof is white like the pavilion's; the south one's dark.
 block(stone, membrane, WING_N, 0, WING_TOP, 0.4)
 block(stone, roofTop, mirror(WING_N), 0, WING_TOP, 0.4)
+// The tall cream side walls flanking the stage, along the wings' west faces
+// and up to the roof trusses (2016 photo from the seats); 1.6 m thick.
+{
+  const A: XY = [20.7, 16.4], B: XY = [10.4, 33.2]
+  const dx = A[0] - B[0], dy = A[1] - B[1], l = Math.hypot(dx, dy), nx = -dy / l * 1.6, ny = dx / l * 1.6
+  const WALL_N: XY[] = [B, [B[0] - nx, B[1] - ny], [A[0] - nx, A[1] - ny], A] // counter-clockwise, set in under the roof edge
+  block(stone, roofTop, WALL_N, 0, TRUSS_BOT + 0.01, 0.3)
+  block(stone, roofTop, mirror(WALL_N), 0, TRUSS_BOT + 0.01, 0.3)
+}
 
 // The proscenium opening: a dark recess between broad piers, under the roof.
 {
-  const x = 20.7 - 0.04, y = 11.8, z0 = STAGE_FLOOR, z1 = 16.6
+  const x = 20.7 - 0.04, y = 11.8, z0 = STAGE_FLOOR, z1 = 12.4
   quad(stage, [x, -y, z0], [x, y, z0], [x, y, z1], [x, -y, z1], [-1, 0, 0])
   // The stage lip below it, a pale step out into the pit.
   block(stone, stone, rect(17.6, 20.7, -y, y), 0, STAGE_FLOOR, 0.15)

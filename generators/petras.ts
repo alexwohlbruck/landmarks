@@ -16,10 +16,22 @@
  * rounded-end board with a coral underline that runs past its right end
  * (drawn without the script lettering).
  *
- * Measured: the outline and the 5 m height (OSM). Estimated: the shopfront,
- * canopy and sign sizes and positions, from two front photos. Invented: the
- * rear wing's walls, which no photo shows, are plain brick. No licensed
- * exterior photo was found, so the front rests on look-only references.
+ * Measured: the outline (OSM) and the heights, from the USGS 3DEP NC Phase 4
+ * Mecklenburg 2016 lidar (0.5 m DSM sampled in this frame, above the front's
+ * west corner, the lowest ground): the front parapet 4.4 m, the other
+ * parapets 4.2 m, the roof 3.6 m at the front to 4.0 m at the back (drawn
+ * flat at 3.8 m). OSM's height=5 is a rounded tag the lidar doesn't bear out.
+ * Estimated: the shopfront, canopy and sign sizes and positions, from two
+ * front photos, scaled down with the front. Invented: the rear wing's walls,
+ * which no photo shows, are plain brick. No licensed exterior photo exists
+ * (Commons, Openverse, Mapillary), so the front and colours rest on look-only
+ * references.
+ *
+ * Rework (2026-10): heights brought down from 5.0/5.1 m to the lidar; the
+ * form, the sign and the colours are the earlier model's. Doubt: the 2016
+ * lidar shows a canopy about 1 m deep at roughly 4 m, higher than the 2026
+ * photo's canopy under the sign; the canopy was probably replaced with the
+ * sign, so the photo's arrangement is kept.
  *
  * The DEM rises 0.5 m along the front from west to east and 1.1 m to the
  * rear, so y = 0 is the front's west corner; the shopfront starts at the east
@@ -197,21 +209,21 @@ const canopy = new Part(), win = new Part(), roof = new Part()
 // 1 its west side (onto the patio), 2 the front room's back, 3 the west party
 // wall, 4 the shopfront, 5 the east party wall.
 const P: XY[] = [[6.61, 16.76], [-1.61, 16.76], [-1.63, 1.92], [-9.16, 1.92], [-9.18, -12.25], [6.43, -12.15]]
-const TOP = 5.0
-const S = new Shell(P, brick, roof, TOP - 0.35)
+const TOP = 4.2, FRONT = 4.4 // parapets (lidar)
+const S = new Shell(P, brick, roof, 3.8)
 const L = P.map((_, i) => S.edge(i).L)
-for (let i = 0; i < P.length; i++) S.walls(i, [[0, L[i], i === 4 ? TOP + 0.1 : TOP]])
+for (let i = 0; i < P.length; i++) S.walls(i, [[0, L[i], i === 4 ? FRONT : TOP]])
 S.roof()
 const F = 4, g = (s: number) => 0.5 * s / L[F]    // front ground, rising east
 
 // --- The shopfront: a teal surround, two window bays and the teal door with
 // a transom over it.
-const Z1 = 3.1
+const Z1 = 2.75
 S.panel(teal, F, 1.6, 14.0, 0, Z1, 0.03)
-S.panel(win, F, 2.0, 6.8, g(2) + 0.45, Z1 - 0.3, 0.05)
-S.panel(win, F, 8.8, 13.6, g(8.8) + 0.45, Z1 - 0.3, 0.05)
-S.box(teal, F, 7.1, 8.5, 0, g(8.5) + 2.45, 0, 0.09)
-S.panel(win, F, 7.25, 8.35, g(8.5) + 2.6, Z1 - 0.3, 0.05)
+S.panel(win, F, 2.0, 6.8, g(2) + 0.45, Z1 - 0.25, 0.05)
+S.panel(win, F, 8.8, 13.6, g(8.8) + 0.45, Z1 - 0.25, 0.05)
+S.box(teal, F, 7.1, 8.5, 0, g(8.5) + 2.1, 0, 0.09)
+S.panel(win, F, 7.25, 8.35, g(8.5) + 2.22, Z1 - 0.1, 0.05)
 
 // --- The canopy: a flat dark slab across the front, its edges chamfered.
 {
@@ -222,9 +234,9 @@ S.panel(win, F, 7.25, 8.35, g(8.5) + 2.6, Z1 - 0.3, 0.05)
 
 // --- The sign: a teal pill over the door with the coral underline running
 // past its right end.
-S.solid(teal, F, pill(5.3, 10.3, 3.6, 4.85), 0, 0.14)
-S.panel(coral, F, 8.3, 11.2, 3.74, 3.94, 0.17)
-S.panel(coral, F, 8.7, 10.0, 4.06, 4.24, 0.17)
+S.solid(teal, F, pill(5.5, 10.1, 3.2, 4.22), 0, 0.14)
+S.panel(coral, F, 8.3, 11.0, 3.32, 3.5, 0.17)
+S.panel(coral, F, 8.7, 9.9, 3.6, 3.76, 0.17)
 
 // Colours from the 2026 photo: the warm red-brown brick pulled light, the
 // sign's teal and coral, the dark canopy.
@@ -235,4 +247,4 @@ await finishModel('petras', "Petra's", [
   { part: canopy, material: finish('petras-canopy', 0x5e5752) },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
-], { bearing: 358, osm: 'way/323192880', height: TOP + 0.1 })
+], { bearing: 358, osm: 'way/323192880', height: FRONT })

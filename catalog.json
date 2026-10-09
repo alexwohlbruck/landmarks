@@ -3387,6 +3387,62 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-peace-fountain.ts"
+    },
+    {
+      "id": "clt-cne-ford-plant",
+      "file": "models/clt-cne-ford-plant.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-cne-ford-plant.ts"
+    },
+    {
+      "id": "clt-cne-kahn-boilerhouse",
+      "file": "models/clt-cne-kahn-boilerhouse.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-cne-kahn-boilerhouse.ts"
+    },
+    {
+      "id": "clt-highland-park-mill-3",
+      "file": "models/clt-highland-park-mill-3.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-highland-park-mill-3.ts"
+    },
+    {
+      "id": "clt-noda-mills",
+      "file": "models/clt-noda-mills.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-noda-mills.ts"
+    },
+    {
+      "id": "clt-chadbourn-mill",
+      "file": "models/clt-chadbourn-mill.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-chadbourn-mill.ts"
+    },
+    {
+      "id": "clt-design-center-tower",
+      "file": "models/clt-design-center-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-design-center-tower.ts"
+    },
+    {
+      "id": "clt-design-center",
+      "file": "models/clt-design-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-design-center.ts"
+    },
+    {
+      "id": "clt-optimist-hall",
+      "file": "models/clt-optimist-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-optimist-hall.ts"
     }
   ],
   "landmarks": [
@@ -13366,6 +13422,168 @@
       "minzoom": 17,
       "wikidata": "Q7157367",
       "replaces": []
+    },
+    {
+      "id": "clt-cne-ford-plant",
+      "name": "Historic Ford Factory",
+      "model": "clt-cne-ford-plant",
+      "lng": -80.8342425,
+      "lat": 35.2471457,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/835067654",
+        "way/324608492",
+        "way/835064741",
+        "way/835064742",
+        "way/835067653",
+        "way/835800986",
+        "way/835800987",
+        "way/835800988",
+        "way/838339976",
+        "way/835828574",
+        "way/835828575",
+        "way/835828576",
+        "way/835828577"
+      ]
+    },
+    {
+      "id": "clt-cne-kahn-boilerhouse",
+      "name": "Kahn Boilerhouse",
+      "model": "clt-cne-kahn-boilerhouse",
+      "lng": -80.834421,
+      "lat": 35.247782,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/324609976"
+      ]
+    },
+    {
+      "id": "clt-highland-park-mill-3",
+      "name": "Highland Park Mill No. 3",
+      "model": "clt-highland-park-mill-3",
+      "lng": -80.8095799,
+      "lat": 35.2460371,
+      "bearing": 55,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q14707968",
+      "replaces": [
+        "way/323193350",
+        "way/323201833",
+        "way/323192273"
+      ]
+    },
+    {
+      "id": "clt-noda-mills",
+      "name": "Mecklenburg Mill (Lofts at NoDa Mills)",
+      "model": "clt-noda-mills",
+      "lng": -80.8024797,
+      "lat": 35.2493994,
+      "bearing": 350.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/323193332",
+        "way/1279174943",
+        "way/1279174944",
+        "way/1279174945",
+        "way/1279174946",
+        "way/1279174947"
+      ]
+    },
+    {
+      "id": "clt-chadbourn-mill",
+      "name": "Chadbourn Mill",
+      "model": "clt-chadbourn-mill",
+      "lng": -80.8136797,
+      "lat": 35.2435679,
+      "bearing": 317.6,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/1059956512",
+        "way/1059956513",
+        "way/1059956514"
+      ]
+    },
+    {
+      "id": "clt-design-center-tower",
+      "name": "Design Center Tower",
+      "model": "clt-design-center-tower",
+      "lng": -80.8600897,
+      "lat": 35.2121411,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q106726569",
+      "replaces": [
+        "way/990903147",
+        "way/990903148"
+      ]
+    },
+    {
+      "id": "clt-design-center",
+      "name": "Design Center of the Carolinas",
+      "model": "clt-design-center",
+      "lng": -80.86029,
+      "lat": 35.21151,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q19461793",
+      "replaces": [
+        "relation/16116037",
+        "way/1416657152",
+        "way/1416657153",
+        "way/1416657154",
+        "way/1416657155",
+        "way/1416657156",
+        "way/1416657157",
+        "way/1416657158"
+      ]
+    },
+    {
+      "id": "clt-optimist-hall",
+      "name": "Optimist Hall",
+      "model": "clt-optimist-hall",
+      "lng": -80.8273601,
+      "lat": 35.2343613,
+      "bearing": 53,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/323198228",
+        "way/1502058328",
+        "way/1502058329",
+        "way/1502058330",
+        "way/1502058331",
+        "way/1502058332",
+        "way/1502058333",
+        "way/1502058334",
+        "way/1502058335",
+        "way/1502058336",
+        "way/1502058337",
+        "way/1502058338",
+        "way/1502058339",
+        "way/1502058340",
+        "way/1502058341",
+        "way/1502058342",
+        "way/1502058343",
+        "way/1502058344",
+        "way/1502058345",
+        "way/1502058346",
+        "way/1502058347",
+        "way/1502058348",
+        "way/1502058349",
+        "way/1502058350",
+        "way/1502058351",
+        "way/1196692782",
+        "way/1196692830"
+      ]
     }
   ]
 }

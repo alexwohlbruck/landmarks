@@ -13,25 +13,43 @@
  * - the lobby: a long two-storey box whose upper floor is a continuous band
  *   of tall glass between a thin cream floor slab and a thin cream fascia,
  *   floating over a recessed glazed ground floor. A flat canopy on four
- *   square columns projects over the doors in the middle (OSM's 20 × 6 m
- *   front bump). The south-east end of the upper floor is a solid wall of
- *   turquoise glazed tile, with a low cream box beside it;
+ *   square columns projects over the doors in the middle. The south-east end
+ *   of the upper floor is a solid wall of turquoise glazed tile, with a low
+ *   cream box beside it;
  * - the auditorium: a tall, windowless block of buff precast panels whose
- *   front wall bows out in plan and rises well over the lobby, and whose
- *   south-east side fans out towards the front (the curve in the OSM outline);
- * - the stage house: the tallest block, plain panels, with low back-of-house
- *   wings round it and a low wing down the north-west side.
+ *   front wall bows out in plan over the lobby, whose roof rises towards the
+ *   front over the balcony, and whose south-east side swells out in plan;
+ * - the stage house: the tallest block, plain panels, with a smoke-vent hatch
+ *   on its roof, low back-of-house wings round it and a lobby-height wing
+ *   down the north-west side.
  *
- * Heights are not in OSM. From the photos: lobby ~11 m over the plaza, the
- * auditorium about twice that, and the stage house some 7 m higher again
- * (its shadow across the auditorium roof in the NAIP image). The terrain
- * falls about 1.8 m from the plaza to the back corner (Terrarium z15), so
- * y = 0 is the back and the plaza sits at G.
+ * Rework (2026). Forms kept from the first model: the lobby (glass band,
+ * slab, fascia, canopy, tile end, cream box), the bowed hall, the stage house
+ * and its hatch, the wings. Heights and the hall's plan are now lidar (USGS
+ * 3DEP NC Phase 4 Mecklenburg 2016, 0.5 m DSM, sampled in this frame). y = 0
+ * is the lowest ground at the back (4.3 m over the tile's lowest return); the
+ * plaza is 1.8 m higher. Measured, each changed from the first model:
+ * - stage house 22.6 m (was 28), hatch +2.2 m; it sits 2.5 m further
+ *   south-east, x -14.5..18.5 (was -16..16), matching the hatch's centre;
+ * - hall roof slopes from 15.4 m at the back to 20.3 m at the front (was a
+ *   flat 21 m): the roof rises over the balcony;
+ * - the hall's bowed front: apex at y 28.7, ends at 25.5 (was 33.5 and 27),
+ *   so the bow is shallower and 5 m further back than first drawn;
+ * - the hall's east side reaches x 25 near mid-depth and only x 21 at the
+ *   front; the OSM outline's front-east corner (x 25, y 27) is a 4.9 m skirt,
+ *   not hall;
+ * - lobby 10.8 m (was 12.9), x -14.5..18.5; canopy 5.4 m, x -8.5..12.5;
+ * - north-west wing 10.8 m from y -2 forward (was 7.5 m), 4.9 m behind;
+ *   back of house 4.9 m (was 10); south-east loading annex 7.7 m (was 9).
  *
- * References: USGS NAIP orthoimagery (public domain) for the plan and roof;
- * James Willamor's 2007 aerial on Commons (CC BY-SA 3.0); and, as visual
- * reference only, the venue's own photos of the front and south-east corner
- * and its 1955 opening photograph (boplex.com).
+ * References: lidar as above; USGS NAIP orthoimagery (public domain) for the
+ * plan and roof; James Willamor's 2007 aerial on Commons ("Ovens Auditorium,
+ * Charlotte, NC - panoramio (cropped)", CC BY-SA 3.0) for the buff panels
+ * and the stage house; and, as visual reference only, the venue's own photos
+ * of the front and south-east corner and its 1955 opening photograph
+ * (boplex.com), which are the only evidence for the lobby's glass band and
+ * the turquoise tile. No licensed street photo of the front was found
+ * (Mapillary covers only Independence Boulevard, behind the sound wall).
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish, windowVariant } from './palette'
@@ -40,7 +58,7 @@ const panel = new Part(), trim = new Part(), roof = new Part()
 const tile = new Part(), win = new Part(), glassUp = new Part()
 
 type XY = [number, number]
-const G = 1.6 // plaza level above the model's y = 0
+const G = 1.8 // plaza level above the model's y = 0 (lidar ground)
 
 const unit = (v: V3): V3 => { const l = Math.hypot(...v) || 1; return [v[0] / l, v[1] / l, v[2] / l] }
 function quadN(p: Part, a: V3, b: V3, c: V3, d: V3, n?: V3[]) {
@@ -131,47 +149,70 @@ function panelY(p: Part, y: number, x0: number, x1: number, z0: number, z1: numb
 }
 
 // ---------------------------------------------------------------------------
-// The auditorium: a fan in plan, bowed front, flat roof.
+// The auditorium: a fan in plan, bowed front, roof rising towards the front.
 
-const Z_HALL = 21
-const HALL_X0 = -16.5
-/** The bowed front: a circular arc, apex y = 33.5 at x = 4.25, ends y ≈ 27 at x = -16.5 and 25. */
-const ARC = { cx: 4.25, cy: -4.5, r: 38 }
+/** The roof plane: 15.4 m at y = -13, 20.3 m at y = 26 (lidar). */
+const hallRoof = (y: number) => 15.4 + ((y + 13) * (20.3 - 15.4)) / 39
+const HALL_X0 = -17, HALL_X1 = 21
+/** The bowed front: a circular arc, apex y = 28.7 at x = 2, ends y = 25.5. */
+const ARC = { cx: 2, cy: -29.3, r: 58 }
 const arcY = (x: number) => ARC.cy + Math.sqrt(ARC.r ** 2 - (x - ARC.cx) ** 2)
-const hall: XY[] = [[HALL_X0, -12.6], [15.8, -12.6], [17.2, -9.3], [19.6, -4.8], [21.4, -0.4], [22.9, 6.6], [24.0, 14.5], [24.7, 21.0], [25.0, 27.0]]
-const hallSmooth: boolean[] = [false, false, true, true, true, true, true, true, false]
-for (let i = 1; i < 12; i++) { const x = 25 - (41.5 * i) / 12; hall.push([x, arcY(x)]); hallSmooth.push(true) }
+const hall: XY[] = [[HALL_X0, -12.6], [13.5, -12.6], [17.6, -9.6], [21.4, -6], [23.9, -2], [24.8, 2.5], [24.3, 7], [22.8, 11.5], [21.5, 16], [HALL_X1, 21], [HALL_X1, arcY(HALL_X1)]]
+const hallSmooth: boolean[] = [false, true, true, true, true, true, true, true, true, true, false]
+for (let i = 1; i < 12; i++) { const x = HALL_X1 - ((HALL_X1 - HALL_X0) * i) / 12; hall.push([x, arcY(x)]); hallSmooth.push(true) }
 hall.push([HALL_X0, arcY(HALL_X0)]); hallSmooth.push(false)
+
+/** A solid whose top follows z = top(y), with a bevelled top edge of size b. */
+function slopedPrism(p: Part, r: XY[], z0: number, top: (y: number) => number, b: number, cap0: Part, smooth?: boolean[]) {
+  if (area(r) <= 0) throw new Error('rings must be counter-clockwise')
+  const n = r.length, vn = smooth ? vertexNormals(r, smooth) : r.map(() => null), r2 = offset(r, -b)
+  for (let i = 0; i < n; i++) {
+    const j = (i + 1) % n, a = r[i], c = r[j], E = edgeN(a, c)
+    const na = vn[i] ?? E, nb = vn[j] ?? E
+    quadN(p, [a[0], a[1], z0], [c[0], c[1], z0], [c[0], c[1], top(c[1]) - b], [a[0], a[1], top(a[1]) - b], [na, nb, nb, na])
+    const Ma = unit([na[0], na[1], 1]), Mb = unit([nb[0], nb[1], 1])
+    quadN(p, [a[0], a[1], top(a[1]) - b], [c[0], c[1], top(c[1]) - b], [r2[j][0], r2[j][1], top(r2[j][1])], [r2[i][0], r2[i][1], top(r2[i][1])], [Ma, Mb, Mb, Ma])
+  }
+  const k = (5.0 / 39), N = unit([0, -k, 1])
+  for (const [a, b2, c] of triangulate(r2)) {
+    const A: V3 = [r2[a][0], r2[a][1], top(r2[a][1])], B: V3 = [r2[b2][0], r2[b2][1], top(r2[b2][1])], C: V3 = [r2[c][0], r2[c][1], top(r2[c][1])]
+    cap0.tri(A, B, C, undefined, undefined, undefined, [N, N, N])
+  }
+}
 // The top edge is a broad chamfer, which catches the light in the aerials.
-prism(panel, hall, 0, Z_HALL, 1.0, roof, hallSmooth)
+slopedPrism(panel, hall, 0, hallRoof, 0.9, roof, hallSmooth)
+// The low skirt filling the OSM outline's front-east corner beside the hall.
+prism(panel, [[20.5, 10], [24.2, 12.6], [24.8, 21], [25, 27], [20.5, 27]], 0, 4.9, 0.3)
 
 // ---------------------------------------------------------------------------
 // The stage house and the low wings behind and beside it.
 
-const Z_FLY = 28
-prism(panel, rect(-16, -31, 16, -12.4), 0, Z_FLY, 0.8)
+const Z_FLY = 22.6
+const STAGE = rect(-14.5, -32.5, 18.5, -12.4)
+prism(panel, STAGE, 0, Z_FLY - 0.9, 0.0, null)
+// A cream coping band round the top, as the aerial shows.
+prism(trim, offset(STAGE, 0.12), Z_FLY - 0.9, Z_FLY, 0.45)
 // The long smoke-vent hatch on its roof.
-prism(roof, rect(-9, -24.5, 7, -21.5), Z_FLY, Z_FLY + 1.0, 0.25)
-// Back of house, the south-east annex (loading), and the north-west wing.
-prism(panel, rect(-17, -41.9, 16.8, -30.8), 0, 10, 0.35)
-prism(panel, [[16.6, -38.3], [28.1, -38.3], [28.1, -17.2], [23.0, -16.8], [22.9, -13.4], [16.6, -12.8]], 0, 9, 0.35)
-prism(panel, [[-25.9, -41.7], [-16.8, -41.7], [-16.8, 30.5], [-20, 30.5], [-25.9, 29.1]], 0, 7.5, 0.35)
+prism(roof, rect(-7.5, -26, 11.5, -21), Z_FLY, Z_FLY + 2.2, 0.35)
+// Back of house, the south-east loading annex, and the north-west wing.
+prism(panel, rect(-17, -42.5, 16.8, -30.8), 0, 4.9, 0.35)
+prism(panel, [[16.6, -38.3], [27.5, -38.3], [27.5, -17.2], [16.6, -17.2]], 0, 7.7, 0.35)
+prism(panel, [[16.6, -17.2], [27.5, -17.2], [27.5, -13.4], [16.6, -12.8]], 0, 4.9, 0.3)
+prism(panel, [[-25.9, -41.7], [-16.8, -41.7], [-16.8, -14], [-20, -14], [-20, -2], [-25.9, -2]], 0, 4.9, 0.35)
+prism(panel, [[-27, -2], [-16.5, -2], [-16.5, 33], [-27, 33]], 0, 10.8, 0.4)
 
 // ---------------------------------------------------------------------------
 // The lobby.
 
-const LX0 = -15, LX1 = 21.5, LY0 = 26, LY1 = 42.3 // upper-floor box
-const GF = 40.6                                   // ground-floor glass line, set back
-const Z_SLAB0 = G + 4.4, Z_SLAB1 = G + 5.3        // cream floor slab
-const Z_FAS0 = G + 10.4, Z_TOP = G + 11.3         // cream fascia
+const LX0 = -14.5, LX1 = 18.5, LY0 = 26, LY1 = 41.8 // upper-floor box
+const GF = 40.1                                   // ground-floor glass line, set back
+const Z_SLAB0 = G + 4.0, Z_SLAB1 = G + 4.8        // cream floor slab
+const Z_FAS0 = 10.0, Z_TOP = 10.8                 // cream fascia (lidar roof 10.8)
 
 // Ground floor: a glazed box set back under the upper floor, on a plinth that
 // the plaza buries at the front.
 prism(trim, rect(LX0 + 0.6, LY0, LX1 - 0.4, GF), 0, G, 0.0, null)
-{
-  const r = rect(LX0 + 0.6, LY0, LX1 - 0.4, GF)
-  walls(win, r, G, Z_SLAB0)
-}
+walls(win, rect(LX0 + 0.6, LY0, LX1 - 0.4, GF), G, Z_SLAB0)
 // Upper floor: slab, glass band, fascia; the slab and fascia stand a little
 // proud of the glass.
 const upper = rect(LX0, LY0, LX1, LY1)
@@ -180,40 +221,41 @@ cap(trim, offset(upper, 0.25), Z_SLAB0, false)
 walls(glassUp, upper, Z_SLAB1, Z_FAS0)
 prism(trim, offset(upper, 0.25), Z_FAS0, Z_TOP, 0.2, roof)
 cap(trim, offset(upper, 0.25), Z_FAS0, false)
-// Mullions: pale lines every ~2.6 m on the front, so it reads as a glass wall.
+// Mullions: pale lines every ~2.5 m on the front, so it reads as a glass wall.
 {
   const n = 13, w = 0.11, y = LY1 + 0.06
   for (let i = 1; i < n; i++) {
     const x = LX0 + ((LX1 - LX0) * i) / n
     panelY(trim, y, x - w, x + w, Z_SLAB1, Z_FAS0, 1)
   }
-  // and on the north-west end
-  for (const yy of [29.5, 33.5, 37.8]) panelX(trim, LX0 - 0.06, yy - w, yy + w, Z_SLAB1, Z_FAS0, -1)
+  // and on the north-west end, in front of the wing
+  for (const yy of [35.5, 38.6]) panelX(trim, LX0 - 0.06, yy - w, yy + w, Z_SLAB1, Z_FAS0, -1)
 }
 // The south-east end of the upper floor: turquoise glazed tile, flush on the glass.
 panelX(tile, LX1 + 0.05, LY0 + 0.4, LY1 - 0.9, Z_SLAB1, Z_FAS0, 1)
 
-// The entrance canopy: a thin flat slab on four square columns.
+// The entrance canopy: a thin flat slab on four square columns (lidar 5.4 m).
 {
-  const C0 = -6.5, C1 = 13.3, CY = 48
+  const C0 = -8.5, C1 = 12.5, CY = 48.4, Z0 = 4.6, Z1 = 5.4
   const slab: XY[] = rect(C0, LY1, C1, CY)
-  prism(trim, slab, Z_SLAB0, Z_SLAB1 - 0.1, 0.15, roof)
-  cap(trim, slab, Z_SLAB0, false)
-  for (const x of [-5.6, 0.4, 6.4, 12.4]) prism(trim, rect(x - 0.35, CY - 1.05, x + 0.35, CY - 0.35), 0, Z_SLAB0, 0.0, null)
+  prism(trim, slab, Z0, Z1, 0.15, roof)
+  cap(trim, slab, Z0, false)
+  for (const x of [-7.4, -0.8, 5.8, 11.4]) prism(trim, rect(x - 0.35, CY - 1.05, x + 0.35, CY - 0.35), 0, Z0, 0.0, null)
 }
-// The low cream box beside the south-east end.
-prism(trim, rect(20.6, 21, 27.2, 35.2), 0, Z_SLAB0, 0.3)
+// The low cream box beside the south-east end (lidar 6 m).
+prism(trim, rect(18.5, 21, 27.2, 35.2), 0, 6.0, 0.3)
 
 // ---------------------------------------------------------------------------
 
 // Colours from the daylight photos. The precast panels are a warm buff, pulled
-// to the palette's lightness; cream trim; the lobby's upper glass reads light
-// blue-grey, the recessed ground floor darker; the tile is turquoise, kept
-// muted.
+// to the palette's lightness; cream trim; the roofs are pale gravel and
+// concrete in the Willamor aerial and NAIP, so a light warm grey rather than
+// the palette's darker roof; the lobby's upper glass reads light blue-grey,
+// the recessed ground floor darker; the tile is turquoise, kept muted.
 const parts = [
-  { part: panel, material: finish('ovens-panel', 0xe0cfb2) },
+  { part: panel, material: finish('ovens-panel', 0xdfd0b4) },
   { part: trim, material: PALETTE.trim },
-  { part: roof, material: PALETTE.roof },
+  { part: roof, material: finish('ovens-roof', 0xcfcdc6) },
   { part: tile, material: finish('ovens-tile', 0x5fb3cc) },
   { part: win, material: PALETTE.window },
   { part: glassUp, material: windowVariant(2, 0x93abbe) },
@@ -223,7 +265,7 @@ console.log(parts.map(({ part, material }) => `${material.name}: ${part.triangle
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('Ovens Auditorium', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at the ground anchor',
-  bearing: 42, osm: 'way/836535412', height: Z_FLY + 1,
+  bearing: 42, osm: 'way/836535412', height: Z_FLY + 2.2,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
 const out = new URL('../models/ovens-auditorium.glb', import.meta.url).pathname
