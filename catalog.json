@@ -1497,6 +1497,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-twa-flight-center.ts"
+    },
+    {
+      "id": "nyc-uss-maine-monument",
+      "file": "models/nyc-uss-maine-monument.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-uss-maine-monument.ts"
     }
   ],
   "landmarks": [
@@ -6137,6 +6144,18 @@
         "way/1556624966",
         "way/1556624967"
       ]
+    },
+    {
+      "id": "nyc-uss-maine-monument",
+      "name": "USS Maine National Monument",
+      "model": "nyc-uss-maine-monument",
+      "lng": -73.980975,
+      "lat": 40.768238,
+      "bearing": 76,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q17198579",
+      "replaces": []
     }
   ]
 }
