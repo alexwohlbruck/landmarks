@@ -6,18 +6,40 @@
  * the centre of the circle fitted to the round part of the OSM outline
  * (way/323383462, r = 51.0 m), so the drum is centred on it.
  *
- * The building is its dome: a shallow steel spherical cap, 332 ft (101 m)
- * across, once the largest free-span dome in the world, rising to 112 ft
- * (34.1 m). Commons aerials (James Willamor, "Bojangles' Coliseum.jpg" and "Bojangles
- * Coliseum and The Park ... panoramio") put the tension ring at a little under
- * half that height and the cap's rise at about 0.37 of its radius, so:
- * - a cylindrical drum, r 50.2 m, to 14.8 m: a painted blue plinth, then the
- *   concourse glazing between a ring of concrete piers, then concrete fascia;
- * - the tension ring, a grey concrete band barely proud of the drum;
- * - the cap, from r 50.8 m at 15.7 m to the crown at 34.1 m, with the small
- *   vent ring at its top;
- * - the low entrance block that OSM draws as an annulus sector on the
- *   south-west side, out to r 62.5 m.
+ * The building is its dome: a shallow aluminium-clad steel cap, 332 ft (101 m)
+ * across, once the largest free-span dome in the world, published as rising
+ * to 112 ft (34.1 m). Under it a drum ringed by a band of tall windows between
+ * concrete piers, on a painted blue plinth, and a low entrance block on the
+ * south-west.
+ *
+ * Rework (2026): forms kept from the first model (drum, piers, window ring,
+ * blue plinth, tension ring, cap, vent, annex). What changed, and why:
+ * - Heights are now lidar (USGS 3DEP NC Phase 4 Mecklenburg 2016, 1 m DSM,
+ *   radial medians about the OSM centre). y = 0 is the lowest ground round
+ *   the drum (north-west side), about 0.6 m under the average. Measured: the
+ *   cap's edge 17.3 m at r 52; 24.6 m at r 40; 29.6 m at r 30; 33.1 m at
+ *   r 20; crown 35.6 m (the published 34.1 m is from the plaza). A spherical
+ *   cap through (52.2, 17.3) and (0, 35.6) fits every ring within 0.6 m. The
+ *   first model had the ring at 15.7 m and the crown at 34.1 m.
+ * - The cap's rim overhangs the drum by 2 m: the lidar edge is at r 52.2
+ *   (the OSM circle, 51.0, traces the wall line), and the Willamor aerial
+ *   shows the drum set back in shadow under the rim. Was 0.8 m.
+ * - The entrance block is 8.0 m (lidar), out to r 63 between bearings
+ *   203.5° and 239° (was 7.2 m, to 242.5°).
+ * - The window ring: a Mapillary view of the north side (2021) shows the
+ *   upper wall is folded concrete, so each bay's window head runs on a slant
+ *   from about 11 m down to 8 m, the same way round the whole drum; the
+ *   sills sit on the blue plinth at 3.4 m (scaled off the photo by the
+ *   lidar wall height). Drawn as one panel per bay with a
+ *   slanted head (a sawtooth round the ring), between the piers.
+ * - Colours re-read from the photos: teal-blue plinth, warm grey concrete,
+ *   pale aluminium cap, pulled to the palette's lightness.
+ *
+ * Evidence: lidar as above; USGS NAIP (public domain) for the plan, the
+ * annex and the vent; Commons "Bojangles Coliseum and The Park, Charlotte,
+ * NC - panoramio" (James Willamor, CC BY-SA 3.0) for the overall look;
+ * Mapillary 141268124780537 and 535495337492794 (2021, CC BY-SA 4.0) for the
+ * north drum. Estimated: the slant of the window heads, pier width.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -58,13 +80,14 @@ function revolve(p: Part, b0: number, b1: number, seg: number, prof: [number, nu
 // Dimensions.
 
 const R_WALL = 50.2          // drum face
-const R_RIM = 51.0           // tension ring, the OSM circle
-const Z_BLUE = 3.4           // top of the painted plinth
-const Z_WIN0 = 3.9, Z_WIN1 = 9.6
-const Z_WALL = 14.8          // underside of the ring
-const Z_SPRING = 15.7        // where the cap springs from the ring
-const R_SPRING = 50.8
-const APEX = 34.1            // 112 ft
+const R_RIM = 52.2           // tension ring: the lidar edge, 1.2 m past the OSM circle
+const Z_BLUE = 3.1           // top of the painted plinth
+const Z_WIN0 = 3.4           // sills
+const Z_HEAD_HI = 11.0, Z_HEAD_LO = 8.0 // each bay's slanted window head
+const Z_WALL = 16.3          // underside of the ring
+const Z_SPRING = 17.3        // where the cap springs from the ring (lidar)
+const R_SPRING = 52.2
+const APEX = 35.6            // lidar crown above y = 0
 const RISE = APEX - Z_SPRING
 const R_SPHERE = (R_SPRING ** 2 + RISE ** 2) / (2 * RISE)
 const PIERS = 40
@@ -73,7 +96,7 @@ const FACETS = 3             // drum facets per bay, so the glazing follows the 
 const SEG = PIERS * FACETS
 
 // The entrance block on the south-west, between these bearings (OSM).
-const ANNEX0 = 203.5, ANNEX1 = 242.5, R_ANNEX = 62.3, Z_ANNEX = 7.2
+const ANNEX0 = 203.5, ANNEX1 = 239, R_ANNEX = 63.0, Z_ANNEX = 8.0
 
 // ---------------------------------------------------------------------------
 // Drum: blue plinth, then concrete, with a glazing panel in every bay.
@@ -93,9 +116,11 @@ for (let k = 0; k < PIERS; k++) {
     const r = R_WALL + 0.04
     const edges = Array.from({ length: FACETS + 1 }, (_, i) => b0 + (bayDeg * i) / FACETS)
     edges[0] += half; edges[FACETS] -= half
+    // The head falls from Z_HEAD_HI at the bay's start to Z_HEAD_LO at its end.
+    const head = (bb: number) => Z_HEAD_HI + ((Z_HEAD_LO - Z_HEAD_HI) * (bb - b0)) / bayDeg
     for (let i = 0; i < FACETS; i++) {
       const a = edges[i], b = edges[i + 1]
-      quadN(win, P(b, r, Z_WIN0), P(a, r, Z_WIN0), P(a, r, Z_WIN1), P(b, r, Z_WIN1), [N(b), N(a), N(a), N(b)])
+      quadN(win, P(b, r, Z_WIN0), P(a, r, Z_WIN0), P(a, r, head(a)), P(b, r, head(b)), [N(b), N(a), N(a), N(b)])
     }
   }
   // A pier on the bay line: a bevelled concrete fin, full height of the drum.
@@ -194,13 +219,14 @@ revolve(domeP, 0, 360, SEG, [[R_RIM, Z_SPRING - 0.3], [R_SPRING, Z_SPRING]], [[0
 
 // ---------------------------------------------------------------------------
 
-// Colours from the daylight Commons aerials and a Mapillary street view of the
-// north side: a white cap and ring; light grey concrete piers and fascia; the
-// plinth's painted blue, pulled to the palette's lightness; slate glazing.
+// Colours from the daylight Commons aerial and the Mapillary views of the north
+// side: a pale aluminium cap; warm grey concrete piers, fascia and ring; the
+// plinth's painted teal-blue (about #2a4c57 in shade), pulled to the palette's
+// lightness; slate glazing.
 const parts = [
-  { part: domeP, material: finish('dome', 0xf1f2ef, 0.6) },
-  { part: concrete, material: finish('concrete', 0xd6d5cf) },
-  { part: blue, material: finish('coliseum-blue', 0x8db4c8) },
+  { part: domeP, material: finish('dome', 0xeef0ee, 0.6) },
+  { part: concrete, material: finish('concrete', 0xd4d1c8) },
+  { part: blue, material: finish('coliseum-blue', 0x86b3c2) },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
   { part: door, material: PALETTE.entrance },
