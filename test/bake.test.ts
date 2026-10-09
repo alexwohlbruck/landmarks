@@ -25,16 +25,16 @@ describe('bakePlacement', () => {
   })
 
   test('moves every vertex exactly as Parchment places the unbaked model', () => {
-    const placement = { bearing: 44.3, scale: 0.5, elevation: 10 }
+    const placement = { bearing: 44.3, scale: 0.5 }
     const [{ positions: before, normals: n0 }] = worldVertices(arm)
     const [{ positions: after, normals: n1 }] = worldVertices(bakePlacement(arm, placement))
     expectClose(after, before.map((p) => place(p, placement)))
-    // Normals turn with the model but are not scaled or lifted.
+    // Normals turn with the model but are not scaled.
     expectClose(n1, n0.map((n) => place(n, { bearing: 44.3 })))
   })
 
   test('keeps the root free of transforms and its bounds accurate', () => {
-    const baked = bakePlacement(arm, { bearing: 30, scale: 2, elevation: 3 })
+    const baked = bakePlacement(arm, { bearing: 30, scale: 2 })
     const { json } = parseGlb(baked)
     const root = json.nodes[json.scenes[0].nodes[0]]
     expect(root.matrix ?? root.translation ?? root.rotation ?? root.scale).toBeUndefined()
@@ -43,14 +43,20 @@ describe('bakePlacement', () => {
     // √2 and they may differ by that much.
     const was = glbBounds(arm)
     const now = glbBounds(baked)
-    expect(now.height).toBeCloseTo(was.height * 2 + 3, 4)
+    expect(now.height).toBeCloseTo(was.height * 2, 4)
     expect(now.radius).toBeGreaterThan((was.radius * 2) / Math.SQRT2)
     expect(now.radius).toBeLessThan(was.radius * 2 * Math.SQRT2)
   })
 
   test('returns the same bytes when there is nothing to bake', () => {
     expect(bakePlacement(arm, {})).toBe(arm)
-    expect(bakePlacement(arm, { bearing: 0, scale: 1, elevation: 0 })).toBe(arm)
+    expect(bakePlacement(arm, { bearing: 0, scale: 1 })).toBe(arm)
+  })
+
+  test('never lifts the model: its ground stays at y = 0 for the map to find', () => {
+    // Elevation is published beside the model, not in it; see release.ts.
+    const baked = bakePlacement(arm, { bearing: 90, elevation: 10 } as any)
+    expect(Math.min(...worldVertices(baked)[0].positions.map((p) => p[1]))).toBeCloseTo(0, 6)
   })
 
   test('keeps a moving part moving the same way, turned', () => {
@@ -67,7 +73,7 @@ describe('bakePlacement', () => {
         ],
       },
     })
-    const placement = { bearing: 117, scale: 1.5, elevation: 4 }
+    const placement = { bearing: 117, scale: 1.5 }
     const baked = bakePlacement(glb, placement)
     for (const k of [undefined, 0, 1, 2, 3])
       worldVertices(baked, k).forEach((part, i) =>
@@ -77,7 +83,7 @@ describe('bakePlacement', () => {
   test('bakes the real animated models without losing their motion', () => {
     for (const id of ['wonder-wheel', 'carowinds-skytower', 'carowinds-windseeker']) {
       const glb = new Uint8Array(readFileSync(join(MODELS, `${id}.glb`)))
-      const placement = { bearing: 200, scale: 1, elevation: 0 }
+      const placement = { bearing: 200, scale: 1 }
       const baked = bakePlacement(glb, placement)
       for (const k of [0, 1, 2]) {
         const before = worldVertices(glb, k).flatMap((p) => p.positions)

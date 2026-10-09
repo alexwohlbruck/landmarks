@@ -50,12 +50,40 @@ generator). A **landmark** places a model:
 - `lng`/`lat` of the anchor;
 - `bearing`: degrees clockwise from north that the model's north is turned to;
 - `scale`, plus an optional `elevation` and `minzoom` (14 when absent);
+  `elevation` is in metres, positive to raise the model and negative to sink
+  it, within ±200 (0 when absent);
 - `replaces`: the OSM elements it stands in for, as `way/123` or `relation/456`;
 - `wikidata`, where the landmark has an item.
 
 The Eiffel Tower model is placed twice: in Paris, and on the Las Vegas Strip
 at `scale: 0.5`. The Statue of Liberty stands on Liberty Island with
 `elevation: 10`, so her pedestal rests on Fort Wood's map geometry.
+
+### Elevation
+
+The map stands every model on its terrain: it puts y = 0 on the lowest
+ground under the footprint. `elevation` moves the model up or down from
+there, for ground the terrain doesn't show. Leave it at 0 unless one of
+these applies:
+
+- **Something under the model that OSM doesn't map**, so the map draws no
+  building for it to stand on: a plinth, a fort, a pier, a deck. Liberty
+  stands 10 m up on Fort Wood. The Pacific Wheel stands 7.5 m up on the
+  Santa Monica Pier.
+- **A base below the street.** A stadium whose field is dug below the
+  street around it keeps y = 0 at the field, and `elevation` is minus the
+  depth: how far the field is below the street outside. Nationals Park's
+  field is about 7 m below the street, so it would take `elevation: -7`. The map
+  then sets the street-level parts of the model on the street, with terrain
+  on or off, and hides whatever ends up below the ground.
+
+Measure the depth from a section drawing, a published field level or
+street-level imagery, not from the map's terrain. The terrain is often too
+coarse, or older than the dig: it shows SoFi Stadium's field 1.9 m below the
+street, where the real field is about 30 m down.
+
+A positive value lifts the whole model rigidly. Its base no longer follows
+the terrain, so don't use it to make up for a slope; the map handles slopes.
 
 ### The frame contract
 
@@ -172,15 +200,22 @@ and writes `dist/` in the Open Landmarks format:
 | `assets/<id>/<revision>/asset.json` | One record on its own |
 | `objects/<sha256>/<id>.ts` | The generator that made it |
 
-Each placement is one asset. Open Landmarks has no bearing, scale or
-elevation (its assets are baked in place with `heading: 0`), so the build
-bakes each placement into its own copy of the GLB: static geometry has its
-vertices turned, scaled and lifted, and moving parts have the same transform
+Each placement is one asset. Open Landmarks has no bearing or scale (its
+assets are baked in place with `heading: 0`), so the build bakes each
+placement's bearing and scale into its own copy of the GLB: static geometry
+has its vertices turned and scaled, and moving parts have the same transform
 folded into their node and keyframes, so they still move. A placement with
 nothing to bake keeps the model's bytes exactly, and identical bytes are
 stored once. `replaces` becomes `osm` (the first ref) and `additionalOsm`
-(the rest). Two fields are additions to the format: `wikidata`, and `model`
-with `placement`, recording what was baked.
+(the rest). Three fields are additions to the format: `wikidata`;
+`elevation`, sent only when it isn't 0; and `model` with `placement`,
+recording what was baked.
+
+Elevation is not baked. A map finds a model's ground from its lowest
+vertices and sets them on the terrain, so a lift baked into the geometry
+gets pulled back down. Sent as a field, it is applied after the model has
+been grounded. A reader that doesn't know the field draws the model at
+ground level.
 
 The build reads no clock and no git state, so the same catalog always gives
 the same files and the same release id (`landmarks-<hash>`). Clients that

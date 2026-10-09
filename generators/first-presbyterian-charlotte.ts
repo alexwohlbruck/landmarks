@@ -22,10 +22,26 @@
  * nomination) plus the 25 ft the 1884 rebuild added (the church's history).
  * Eaves, ridge and tower stages are scaled from photos.
  *
- * Colours follow the shared palette (STYLE.md): the tan stucco is the one
- * identity finish, pulled light; slate roofs and the spire are `roof`, the
- * Sunday School's green metal roof `copper`. Windows are flush slate panels,
- * one per arched opening.
+ * Rework (2026): heights checked against lidar (USGS 3DEP NC Phase 4,
+ * Mecklenburg 2016), above the lowest ground under the outline: nave eaves
+ * 12–13 m and ridge 18 m (unchanged); the Fellowship Hall's ridge 17 m and
+ * the Sunday School 18 m, its small tower 20 m, the link and corner blocks
+ * 12 m — the old wings were 4–6 m too low. The lidar puts the church about
+ * 2.5 m east and south of the OSM outline (an imagery offset in the
+ * tracing); the model stays on OSM, which is what it replaces. The spire's
+ * pale bands are re-read off the photos (9, 24 and 31 m up the 40 m spire);
+ * the corner pinnacles and spikes are slate, as in the photos, not pale.
+ *
+ * Photos: AlexiusHoratius (Commons, CC BY-SA 3.0), Foolish Productions
+ * Photography (Commons, CC BY-SA 4.0), Dmadeo (Commons, CC BY-SA 3.0), all of
+ * the Trade Street front and the tower; USGS NAIP for the roofs. No licensed
+ * photo shows the rear wings close up: their walls are plain and estimated.
+ *
+ * Colours follow the shared palette (STYLE.md): the warm tan stucco of the
+ * photos is the identity finish, pulled light; the roofs and the spire share
+ * one dark slate grey (dark in the NAIP aerial), the Sunday School's flat
+ * roof is pale green (`copper`). Windows are flush slate panels, one per
+ * arched opening.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -108,7 +124,7 @@ const oct = (cx: number, cy: number, apothem: number): XY[] => {
 /** A slim square shaft under a four-sided spike: the Gothic pinnacle. */
 function pinnacle(cx: number, cy: number, z0: number, z1: number, half: number, tip: number, p = trim) {
   prism(p, sq(cx, cy, half), z0, z1, 0, null)
-  spike(p, sq(cx, cy, half), z1, [cx, cy, tip])
+  spike(slate, sq(cx, cy, half), z1, [cx, cy, tip])
 }
 
 type Opening = { at: XY; w: number; zb: number; zs: number; back?: Part }
@@ -179,8 +195,8 @@ const W = 6.8                             // half width of the nave (OSM 13.6 m)
 const TR0 = 5.7, TR1 = 13.4, TRX = 8.7
 const EAVE = 12.5, RIDGE = 18
 const T_HALF = 3.2, T_FRONT = -21.1, T_BACK = T_FRONT + 2 * T_HALF, T_CY = (T_FRONT + T_BACK) / 2
-const T_TOP = 22.6                        // top of the tower shaft
-const PARAPET = 24.2                      // top of the corbelled parapet band
+const T_TOP = 23.6                        // top of the tower shaft (lidar: parapet corners 25 m)
+const PARAPET = 25.2                      // top of the corbelled parapet band
 const SPIRE_BASE = PARAPET, SPIRE_A = 2.45, SPIRE_TOP = 61.2, TIP = 64
 
 // ---------------------------------------------------------------- nave
@@ -222,7 +238,7 @@ for (const s of SIDES) corners.push([s * (TRX - .4), TR0 + .4], [s * (TRX - .4),
 for (const [x, y] of corners) {
   prism(stucco, oct(x, y, .55), 0, EAVE + 1.6, .12, null)
   prism(trim, oct(x, y, .65), EAVE + 1.6, EAVE + 2.1, .1, trim)
-  spike(trim, oct(x, y, .5), EAVE + 2.1, [x, y, EAVE + 6.4])
+  spike(slate, oct(x, y, .5), EAVE + 2.1, [x, y, EAVE + 6.4])
 }
 // Small pinnacles on the gable apexes.
 pinnacle(0, REAR, RIDGE - .6, RIDGE + .8, .35, RIDGE + 3.2)
@@ -262,19 +278,19 @@ for (const s of SIDES) pinnacle(s * TRX, (TR0 + TR1) / 2, RIDGE - .6, RIDGE + .8
   for (const dx of SIDES) for (const dy of SIDES) {
     const px = dx * (h + .05), py = cy + dy * (h + .05)
     prism(trim, sq(px, py, .4), PARAPET, PARAPET + 1.6, .1, null)
-    spike(trim, sq(px, py, .4), PARAPET + 1.6, [px, py, PARAPET + 6.2])
+    spike(slate, sq(px, py, .4), PARAPET + 1.6, [px, py, PARAPET + 6.2])
   }
 }
 
 // ---------------------------------------------------------------- spire
-// Its own darker slate: on plain `roof` it vanished against the roofs behind it.
-const spireSlate = new Part()
+// The same dark slate as the roofs (the NAIP aerial shows them dark grey).
+const spireSlate = slate
 {
   const cy = T_CY
   const apothem = (z: number) => SPIRE_A + (.22 - SPIRE_A) * (z - SPIRE_BASE) / (SPIRE_TOP - SPIRE_BASE)
   const ring = (z: number, grow = 0) => oct(0, cy, apothem(z) + grow).map(([x, y]) => [x, y, z] as V3)
   // Octagonal slate spire, broken by pale trim bands as on the real one.
-  const bands = [32, 42.5, 51.5]
+  const bands = [33.4, 48, 55.2]
   const levels = [SPIRE_BASE, ...bands.flatMap(z => [z, z + .7]), SPIRE_TOP]
   for (let i = 0; i < levels.length - 1; i++) {
     const isBand = i % 2 === 1
@@ -332,13 +348,13 @@ const solids: { rect: Rect; h: number }[] = [
 const office: Wing = { h: 10.5, rects: [
   [-48.9, -24.1, -18.3, 13.3], [-48.9, -26.4, -20.4, -24.1], [-18.3, 7, -16.6, 13.3]] }
 const officePorches: Wing = { h: 9, rects: [[-33.9, -31.5, -24.1, -26.4], [-45.3, -29.5, -36.4, -26.4]] }
-const hall: Wing = { h: 6.5, rects: [[-47.5, 13.3, -7.7, 29.4]] }
-const hallAnnex: Wing = { h: 6.5, rects: [[-50.7, 19.1, -47.5, 29.4]] }
-const school: Wing = { h: 10.5, rects: [[5.5, 4.9, 24.8, 32.1], [24.8, 18.6, 26.2, 32.1]] }
-const schoolFront: Wing = { h: 9, rects: [[10.6, -1.9, 24.8, 4.9]] }
-const schoolTower: Wing = { h: 14, rects: [[10.6, -1.9, 14.4, 1.9]] }
-const link: Wing = { h: 8, rects: [[24.8, 12.2, 32.7, 18.6]] }
-const corner: Wing = { h: 11, rects: [[32.7, -1.8, 48.5, 18.6], [48.5, 10.6, 49.6, 18.8], [31.4, 18.6, 48.7, 32]] }
+const hall: Wing = { h: 11.5, rects: [[-47.5, 13.3, -7.7, 29.4]] }
+const hallAnnex: Wing = { h: 8, rects: [[-50.7, 19.1, -47.5, 29.4]] }
+const school: Wing = { h: 14, rects: [[5.5, 4.9, 24.8, 32.1], [24.8, 18.6, 26.2, 32.1]] }
+const schoolFront: Wing = { h: 12, rects: [[10.6, -1.9, 24.8, 4.9]] }
+const schoolTower: Wing = { h: 20, rects: [[10.6, -1.9, 14.4, 1.9]] }
+const link: Wing = { h: 12, rects: [[24.8, 12.2, 32.7, 18.6]] }
+const corner: Wing = { h: 12, rects: [[32.7, -1.8, 48.5, 18.6], [48.5, 10.6, 49.6, 18.8], [31.4, 18.6, 48.7, 32]] }
 const wings = [office, officePorches, hall, hallAnnex, school, schoolFront, schoolTower, link, corner]
 for (const w of wings) for (const rect of w.rects) solids.push({ rect, h: w.h })
 
@@ -405,7 +421,7 @@ for (const r of office.rects.slice(1)) capRect(flat, r, office.h)
 for (const r of officePorches.rects) capRect(flat, r, officePorches.h)
 // Fellowship Hall: a steep slate roof, ridge across the block.
 {
-  const [x0, y0, x1, y1] = hall.rects[0], ym = (y0 + y1) / 2, ze = hall.h, zr = ze + 6.3, o = .3
+  const [x0, y0, x1, y1] = hall.rects[0], ym = (y0 + y1) / 2, ze = hall.h, zr = 17, o = .3
   const drop = o * (zr - ze) / ((y1 - y0) / 2)
   poly(slate, [[x0 - o, y0 - o, ze - drop], [x0 - o, ym, zr], [x1 + o, ym, zr], [x1 + o, y0 - o, ze - drop]], [0, -1, 1])
   poly(slate, [[x0 - o, y1 + o, ze - drop], [x0 - o, ym, zr], [x1 + o, ym, zr], [x1 + o, y1 + o, ze - drop]], [0, 1, 1])
@@ -414,7 +430,7 @@ for (const r of officePorches.rects) capRect(flat, r, officePorches.h)
   capRect(flat, hallAnnex.rects[0], hallAnnex.h)
 }
 // Sunday School: slate slopes round the pale green roof seen from above.
-mansard(school.rects[0], school.h, 2.2, 3, green)
+mansard(school.rects[0], school.h, 4, 3.5, green)
 capRect(flat, school.rects[1], school.h)
 capRect(flat, schoolFront.rects[0], schoolFront.h)
 // Its small tower, with a plain coping.
@@ -427,13 +443,12 @@ for (const r of corner.rects) capRect(flat, r, corner.h)
 
 // ---------------------------------------------------------------- write
 const parts = [
-  { part: stucco, material: finish('fpc-stucco', 0xeedbbf) },
+  { part: stucco, material: finish('fpc-stucco', 0xecd0ae) },
   { part: trim, material: PALETTE.trim },
   { part: glass, material: PALETTE.window },
   { part: door, material: PALETTE.entrance },
-  { part: slate, material: PALETTE.roof },
+  { part: slate, material: finish('fpc-slate', 0x838b93) },
   { part: green, material: PALETTE.copper },
-  { part: spireSlate, material: finish('fpc-spire-slate', 0x7e8791) },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 if (triangles > 6500) throw new Error(`Triangle budget exceeded: ${triangles}`)

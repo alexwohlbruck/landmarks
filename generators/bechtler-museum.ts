@@ -4,27 +4,56 @@
  *
  * Map frame: x across the building towards South Tryon Street (south-east),
  * y along Tryon (north-east), z up, metres. Placed at bearing 50°, the axis of
- * the OSM outline (way/131139728, 34.2 × 27.6 m). The anchor is the outline's
- * centroid, so the box is centred on the origin.
+ * the OSM outline (way/131139728, 34.2 × 27.6 m; no building:parts). The
+ * anchor is the outline's centroid, so the box is centred on the origin. The
+ * back (-x) face abuts the Knight Theater (way/131139733 shares that edge).
  *
- * Mario Botta's museum is a terracotta box whose top two floors run over the
- * whole footprint, while the ground floors are cut away at the south corner
- * (Tryon and Levine Avenue of the Arts). The overhang there is held by a
- * single cigar-shaped brick column; behind it sit the glass entrance atrium, a
- * low louvred block on the Levine side and a taller louvred block on Tryon.
+ * Mario Botta's museum (2010) is a terracotta-tiled box whose top two floors
+ * run over the whole footprint while the ground floors are cut away under the
+ * Tryon front and the Tryon / Levine Avenue of the Arts corner. The overhang
+ * is held by a single cigar-shaped column, swollen low down and flaring into
+ * a round capital under the soffit. Under it, from Levine to the north end:
+ * a low block on Levine Avenue with a gallery window set back above it, the
+ * four-storey glass entrance atrium deep in the cut, and a taller block on
+ * Tryon (shop window at its foot, gallery window under the soffit), both set
+ * well back under the overhang. The real blocks are clad in fine terracotta
+ * louvres; at map scale they are plain terracotta walls.
  *
- * OSM says 30 m, but the photos put the parapet at about 25 m and the soffit
- * at 60% of it, so the model uses those.
+ * Evidence
+ * - Measured, Mecklenburg County 2016 lidar (USGS 3DEP NC Phase 4, 0.5 m):
+ *   roof 23.5-24 m above the lowest ground under the footprint, flat, no
+ *   raised skylight; ground falls about 1 m from Tryon to the back corner.
+ *   OSM's height=30 is too high. H = 24.
+ * - Measured, USGS NAIP: plan (agrees with OSM within 1 m) and a pale roof
+ *   crossed by rows of gallery skylights, drawn as two flush glass fields.
+ * - From photos (head-on Tryon view, Commons "Bechtler Museum of Modern
+ *   Art.jpg", Bechtler, CC BY-SA 3.0): the soffit at 60% of the height
+ *   (14.3 m); the column ~2.8 m across at its widest; the atrium 9 m wide;
+ *   the Tryon block 9.3 m wide. From the corner (Commons
+ *   "BechtlerMuseumCharlotte.jpg", Prasit Frazee, CC BY-SA 3.0; Flickr
+ *   kouk 4228639458 and James Willamor 4681876601 / 6964767914, CC BY 2.0 /
+ *   CC BY-SA 2.0) and the Levine side (Commons "Bechtler Museum of
+ *   Contemporary Art.jpg", Daniel Lobo, CC BY 2.0): the low block at ~7 m,
+ *   the solid back third of the Levine face, the column position.
+ * - Estimated: depths of the cut, from where the soffit meets each mass in
+ *   the head-on Tryon photo (camera ~22 m out): the north block 8.5 m back,
+ *   the column 10 m, the atrium glass ~20 m; the north-east face, which no
+ *   photo shows, is plain terracotta.
+ * - Colours: the tiles are orange terracotta (~#d06e46 lit in daylight
+ *   photos), pulled to palette lightness; the soffit a deeper tone of the
+ *   same hue, since it is always in shade and the map draws no shadows.
  *
- * The Firebird (Niki de Saint Phalle, OSM node/5016558822) stands on the plaza
- * off the south corner: a mirror-mosaic figure on an arch of two legs, arms
- * raised, a gold sun on its chest and a gold crown. It is a few smooth masses.
+ * The Firebird (Niki de Saint Phalle, 1991, ~5.3 m; OSM node/5016558822)
+ * stands on the plaza off the Levine face: a mirror-mosaic figure on an arch
+ * of two legs, arms raised, a gold sun on its chest and a gold crown. It is a
+ * few smooth masses, silver mirror with gold, as it reads in the photos.
  */
 import { Part, cross, len, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 
-const brick = new Part(), glass = new Part(), roof = new Part()
-const gold = new Part(), blue = new Part(), red = new Part()
+const brick = new Part(), deep = new Part(), roof = new Part()
+const glass = new Part(), win = new Part(), gold = new Part()
+const pale = glass // the Firebird's mirror mosaic reads as sky in daylight
 
 type XY = [number, number]
 const unit = (v: V3): V3 => { const l = len(v) || 1; return [v[0] / l, v[1] / l, v[2] / l] }
@@ -71,7 +100,7 @@ function lid(p: Part, r: Rect, d: number, z: number, up: boolean) {
   const n: V3 = [0, 0, up ? 1 : -1]
   for (let i = 1; i < 7; i++) tri(p, pts[0], pts[i], pts[i + 1], [n, n, n])
 }
-const OUT: XY = [1, 0], UP: XY = [0, 1], DOWN: XY = [0, -1], S = Math.SQRT1_2
+const OUT: XY = [1, 0], UP: XY = [0, 1], S = Math.SQRT1_2
 /** A solid block: bevel under, plain face, bevel over, then the caps. */
 function block(p: Part, r: Rect, z0: number, z1: number, o: { bb?: number; bt?: number; top?: Part | null; bottom?: Part | null } = {}) {
   const bb = o.bb ?? 0, bt = o.bt ?? 0
@@ -83,8 +112,8 @@ function block(p: Part, r: Rect, z0: number, z1: number, o: { bb?: number; bt?: 
 }
 
 // ---------------------------------------------------------------------------
-// Walls with recessed openings: the face is tiled in brick around them, and
-// each opening gets brick reveals and a back panel in its own material.
+// Walls with openings: the face is tiled in terracotta around them, and each
+// opening gets a panel in its own material, set just into the wall.
 
 type Opening = { s0: number; s1: number; z0: number; z1: number; depth: number; back: Part }
 function wall(a: XY, b: XY, z0: number, z1: number, openings: Opening[]) {
@@ -104,65 +133,83 @@ function wall(a: XY, b: XY, z0: number, z1: number, openings: Opening[]) {
   for (const o of openings) {
     const D = o.depth
     quad(o.back, v(o.s0, o.z0, D), v(o.s1, o.z0, D), v(o.s1, o.z1, D), v(o.s0, o.z1, D), n)
+    if (D < 0.08) continue
     quad(brick, v(o.s0, o.z0), v(o.s1, o.z0), v(o.s1, o.z0, D), v(o.s0, o.z0, D), [0, 0, 1])
     quad(brick, v(o.s0, o.z1), v(o.s1, o.z1), v(o.s1, o.z1, D), v(o.s0, o.z1, D), [0, 0, -1])
     if (o.s0 > 0) quad(brick, v(o.s0, o.z0), v(o.s0, o.z1), v(o.s0, o.z1, D), v(o.s0, o.z0, D), uu)
     if (o.s1 < L) quad(brick, v(o.s1, o.z0), v(o.s1, o.z1), v(o.s1, o.z1, D), v(o.s1, o.z0, D), [-u[0], -u[1], 0])
   }
 }
-/** Broad louvre bands: the facade's horizontal brick slats, a few recesses deep enough to shade. */
-const louvres = (L: number, zs: number[], h: number, margin = 0.6): Opening[] =>
-  zs.map((z) => ({ s0: margin, s1: L - margin, z0: z, z1: z + h, depth: 0.4, back: brick }))
+/** A closed box of walls, counter-clockwise, each side with its openings. */
+function walls(x0: number, x1: number, y0: number, y1: number, z0: number, z1: number,
+  o: { s?: Opening[]; e?: Opening[]; n?: Opening[]; w?: Opening[] | null; top?: boolean }) {
+  wall([x0, y0], [x1, y0], z0, z1, o.s ?? [])
+  wall([x1, y0], [x1, y1], z0, z1, o.e ?? [])
+  wall([x1, y1], [x0, y1], z0, z1, o.n ?? [])
+  if (o.w !== null) wall([x0, y1], [x0, y0], z0, z1, o.w ?? [])
+  if (o.top) lid(brick, { x0, x1, y0, y1, c: 0.02 }, 0, z1, true)
+}
 
 // ---------------------------------------------------------------------------
 // The museum.
 
 const X0 = -17.1, X1 = 17.1, Y0 = -13.8, Y1 = 13.8
-const H = 25          // parapet
-const SOF = 15        // underside of the cantilevered upper floors
-const XA = 1.5        // where the full-height back of the building ends
+const H = 24          // parapet, lidar
+const SOF = 14.3      // underside of the cantilevered upper floors
+const XB = -7         // where the full-height back of the building ends
+const LOW = 7.2       // top of the low block on Levine Avenue
+const XT = 8.6        // Tryon face of the north block, 8.5 m under the overhang
+const XA = -2.5       // the atrium glass, deep in the cut
+const XL = 3          // Tryon end of the low Levine block
 
-// The upper box over the whole footprint: pale roof membrane on top, brick
-// soffit below, bevelled all round so its edges catch the light.
-block(brick, { x0: X0, x1: X1, y0: Y0, y1: Y1, c: 0.5 }, SOF, H, { bb: 0.35, bt: 0.45, top: roof, bottom: brick })
-// The skylight over the central atrium.
-block(glass, { x0: -7, x1: 1, y0: -3.5, y1: 3.5, c: 0.3 }, H - 0.1, H + 0.7, { bt: 0.3 })
+// The upper box over the whole footprint: roof membrane inside a terracotta
+// rim, bevelled all round. The soffit takes the deeper terracotta: it is in
+// shade in every photo, and it is what shows the cut-away under the box.
+block(brick, { x0: X0, x1: X1, y0: Y0, y1: Y1, c: 0.5 }, SOF, H, { bb: 0.4, bt: 0.5, top: roof, bottom: deep })
 
-// The back of the building, solid brick from the ground to the box: the plain
-// full-height wall on the Levine side (photo 02).
-block(brick, { x0: X0, x1: XA, y0: Y0, y1: Y1, c: 0.5 }, 0, SOF)
+// Gallery skylights (NAIP shows rows of them): two flush glass fields on the
+// roof, kept below the parapet line.
+for (const [y0, y1] of [[-7.5, -4.3], [4.3, 7.5]])
+  lid(glass, { x0: -10, x1: 10, y0, y1, c: 0.3 }, 0, H + 0.03, true)
 
-// The louvred block on Tryon, north of the entrance: a shop window at the
-// foot, louvres, a gallery window under the soffit (photo 03). Set back from
-// the box's faces, so the overhang reads on Tryon and on the north-east side.
+// The back of the building, solid from the ground to the box: the plain
+// full-height third of the Levine face and the wall against the Knight.
+block(brick, { x0: X0, x1: XB, y0: Y0, y1: Y1, c: 0.5 }, 0, SOF + 0.45, { top: null })
+
+// The north block on Tryon, set 8.5 m back under the overhang: a shop
+// window at its foot and a gallery window under the soffit, plain terracotta
+// between.
 {
-  const x0 = XA, x1 = 15.9, y0 = 3.0, y1 = 12.3
-  wall([x1, y0], [x1, y1], 0, SOF, [
-    { s0: 0.6, s1: y1 - y0 - 0.6, z0: 0.4, z1: 4.0, depth: 0.05, back: glass },
-    ...louvres(y1 - y0, [5.4, 7.7, 10.0], 1.0),
-    { s0: 0.6, s1: y1 - y0 - 0.6, z0: 12.0, z1: 14.3, depth: 0.05, back: glass },
-  ])
-  wall([x1, y1], [x0, y1], 0, SOF, louvres(x1 - x0, [5.4, 7.7, 10.0], 1.0))
-  wall([x0, y0], [x1, y0], 0, SOF, [])
+  const y0 = 3.0, y1 = 12.3, W = y1 - y0
+  walls(XB, XT, y0, y1, 0, SOF, {
+    e: [
+      { s0: 0.7, s1: W - 0.7, z0: 0.3, z1: 4.0, depth: 0.05, back: win },
+      { s0: 0.7, s1: W - 0.7, z0: 11.4, z1: 13.7, depth: 0.05, back: win },
+    ],
+    n: [], s: [], w: null,
+  })
 }
 
-// The entrance atrium: a glass box filling the inside corner of the cut-away,
-// set back from the Tryon block.
-block(glass, { x0: XA - 0.5, x1: 13.2, y0: -2.6, y1: 3.0, c: 0.02 }, 0, SOF, { top: null })
+// The entrance atrium: four storeys of glazing at the back of the cut. It
+// reads dark under the overhang by day and is lit at night, so it is drawn
+// as `window`.
+block(win, { x0: XB - 0.2, x1: XA, y0: -6.0, y1: 3.0, c: 0.02 }, 0, SOF, { top: null })
 
-// The low louvred block on the Levine side, with a recessed window above it
-// up to the soffit (photos 01 and 02).
-{
-  const x0 = XA - 0.5, x1 = 7.6, y0 = Y0, y1 = -8.0, top = 7.6
-  wall([x0, y0], [x1, y0], 0, top, louvres(x1 - x0, [2.6, 4.9], 1.0, 0.5))
-  wall([x1, y0], [x1, y1], 0, top, louvres(y1 - y0, [2.6, 4.9], 1.0, 0.5))
-  wall([x1, y1], [x0, y1], 0, top, [])
-  lid(brick, { x0, x1, y0, y1, c: 0.02 }, 0, top, true)
-  block(glass, { x0, x1: 6.4, y0: -12.5, y1: -8.0, c: 0.02 }, top, SOF, { top: null })
-}
+// The low block on Levine Avenue, flush with the box's face, with lobby
+// glazing at the foot of its Tryon end; above it, set back from Levine
+// Avenue, a gallery with a long window.
+walls(XB, XL, Y0, -6.0, 0, LOW, {
+  e: [{ s0: 0.6, s1: -6.0 - Y0 - 0.6, z0: 0.3, z1: 3.4, depth: 0.05, back: win }],
+  s: [], n: [], w: null, top: true,
+})
+walls(XB, 0, -10.5, -6.0, LOW, SOF, {
+  s: [{ s0: 0.5, s1: 6.5, z0: LOW + 0.8, z1: SOF - 0.6, depth: 0.05, back: win }],
+  e: [], n: [], w: null,
+})
 
-// The column: a single brick spindle, swollen in the middle and narrow at
-// both ends, flaring into a round capital under the soffit (photo 03).
+// The column: a single terracotta spindle standing on the plaza, swollen in
+// its lower third and narrowing upwards, flaring into a round capital under
+// the soffit (every photo shows the cigar shape, not a straight shaft).
 function lathe(p: Part, cx: number, cy: number, prof: XY[], seg: number) {
   const nrm = prof.map((_, i) => {
     const [r0, z0] = prof[Math.max(0, i - 1)], [r1, z1] = prof[Math.min(prof.length - 1, i + 1)]
@@ -176,12 +223,13 @@ function lathe(p: Part, cx: number, cy: number, prof: XY[], seg: number) {
       quad(p, P(prof[i], a), P(prof[i], b), P(prof[i + 1], b), P(prof[i + 1], a), [N(nrm[i], a), N(nrm[i], b), N(nrm[i + 1], b), N(nrm[i + 1], a)])
   }
 }
-lathe(brick, 10.6, -6.2, [[0.6, 0], [0.85, 1.2], [1.15, 3.5], [1.3, 6.2], [1.2, 9], [0.92, 11.6], [0.66, 13.6], [0.75, 14.4], [1.5, 15.0]], 16)
+lathe(brick, 7.0, -4.6, [[1.0, 0], [1.2, 1.5], [1.36, 3.6], [1.42, 5.4], [1.34, 7.6], [1.15, 9.8], [0.98, 11.8], [0.9, 13.0],
+  [0.98, 13.5], [1.55, 13.95], [1.7, SOF + 0.05]], 16)
 
 // ---------------------------------------------------------------------------
 // The Firebird, in its own frame: u across the arch, f forward, z up. It faces
 // the Tryon/Levine corner, so the arch is seen face-on from the intersection
-// (photo 01) and edge-on from Levine Avenue (photo 02).
+// and edge-on from Levine Avenue.
 
 const BIRD: XY = [13.8, -22.2]          // OSM node/5016558822 in the model frame
 const bearingLocal = (140 * Math.PI) / 180
@@ -238,20 +286,19 @@ function tube(p: Part, path: [number, number, number][], k = 1, seg = 10) {
     path.push([R * Math.cos(t), spring + R * Math.sin(t), 0.37])
   }
   path.push([R, spring, 0.37], [R, 0.55, 0.42], [R, 0, 0.5])
-  tube(glass, path, 1.25)
+  tube(pale, path, 1.25)
 }
 // Body, chest sun, head.
-blob(glass, [0, 0, 3.05], [0.85, 0.62, 0.92], 14, 9)
-blob(gold, [0, 0.5, 3.0], [0.42, 0.16, 0.42], 12, 6)
-blob(glass, [0, 0.04, 4.28], [0.42, 0.4, 0.46])
-blob(red, [0, 0.42, 4.18], [0.13, 0.2, 0.12], 8, 5)
+blob(pale, [0, 0, 3.05], [0.85, 0.62, 0.92], 14, 9)
+blob(gold, [0, 0.5, 3.0], [0.44, 0.17, 0.44], 12, 6)
+blob(pale, [0, 0.04, 4.28], [0.42, 0.4, 0.46])
 // The crown: five gold rays fanned over the head like a sun.
 for (const deg of [-64, -32, 0, 32, 64]) {
   const a = (deg * Math.PI) / 180, d: XY = [Math.sin(a), Math.cos(a)]
   const c: V3 = [d[0] * 0.62, -0.05, 4.32 + d[1] * 0.62]
   // A ray is an ellipsoid stretched along its own direction: build it upright
   // and rotate in the u–z plane.
-  const seg = 8, rings = 5, rL = 0.3, rW = 0.11, rD = 0.09
+  const seg = 8, rings = 5, rL = 0.32, rW = 0.12, rD = 0.09
   const pt = (i: number, j: number) => {
     const th = (i / seg) * 2 * Math.PI, ph = -Math.PI / 2 + (j / rings) * Math.PI
     const e: V3 = [Math.cos(ph) * Math.cos(th), Math.cos(ph) * Math.sin(th), Math.sin(ph)]
@@ -267,28 +314,26 @@ for (const deg of [-64, -32, 0, 32, 64]) {
       quad(gold, A.p, B.p, C.p, D.p, [A.n, B.n, C.n, D.n])
     }
 }
-// Arms raised in a W, blue, each ending in a broad red hand.
+// Arms raised in a W, each ending in a broad flame-like hand.
 for (const side of [-1, 1]) {
-  tube(blue, [[side * 0.55, 3.35, 0.27], [side * 1.0, 3.5, 0.25], [side * 1.4, 3.75, 0.23], [side * 1.62, 4.2, 0.22], [side * 1.68, 4.6, 0.21]], 1.1, 8)
-  blob(red, [side * 1.72, 0, 4.92], [0.3, 0.16, 0.4], 10, 6)
+  tube(pale, [[side * 0.55, 3.35, 0.27], [side * 1.0, 3.5, 0.25], [side * 1.4, 3.75, 0.23], [side * 1.62, 4.2, 0.22], [side * 1.68, 4.6, 0.21]], 1.1, 8)
+  blob(pale, [side * 1.72, 0, 4.92], [0.3, 0.16, 0.42], 10, 6)
 }
 
 // ---------------------------------------------------------------------------
 
-// The shared palette (STYLE.md): the terracotta box is the
-// palette's own `terracotta`, the roof membrane `roof`. All the glazing is
-// `glass`: the museum's glass is its atrium and skylight, which the style
-// keeps unlit, and the two small windows on Tryon share it, which also lets
-// the Firebird's mirror mosaic read as sky-blue glass and leaves the bird's
-// gold, blue and red their own materials within six. Those stay saturated:
-// the bird is small sculpture, and its colours are what it is.
+// Six materials. The terracotta is the photos' orange tile pulled to palette
+// lightness; `bechtler-soffit` is the same hue deeper, for the soffit, which
+// is in shade in every photo. The roof is `roof`; the skylights and the
+// Firebird's mirror mosaic (which reflects the sky) are `glass`; the atrium,
+// shop and gallery windows are `window`.
 const parts = [
-  { part: brick, material: PALETTE.terracotta },
-  { part: glass, material: PALETTE.glass },
+  { part: brick, material: finish('bechtler-terracotta', 0xcd7d58) },
+  { part: deep, material: finish('bechtler-soffit', 0x9a5238) },
   { part: roof, material: PALETTE.roof },
+  { part: glass, material: PALETTE.glass },
+  { part: win, material: PALETTE.window },
   { part: gold, material: finish('firebird-gold', 0xdcaa2e, 0.5) },
-  { part: blue, material: finish('firebird-blue', 0x3a74c4) },
-  { part: red, material: finish('firebird-red', 0xd2463a) },
 ]
 const triangles = parts.reduce((sum, { part }) => sum + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)

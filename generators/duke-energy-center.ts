@@ -1,6 +1,6 @@
 /**
- * Duke Energy Center (550 South Tryon), Charlotte — original procedural
- * geometry, CC0-1.0.
+ * Duke Energy Center (550 South Tryon, 2010, Thompson, Ventulett, Stainback &
+ * Associates), Charlotte — original procedural geometry, CC0-1.0.
  * bun generators/duke-energy-center.ts [out.glb]
  *
  * Anchor: the centroid of OSM way/1550692284 (-80.84874, 35.22416). Bearing
@@ -8,23 +8,66 @@
  * the faces: -y faces south-west, +x south-east, +y north-east and -x
  * north-west. Coordinates below are OSM vertices rotated into that frame.
  *
- * The tower is a 48.6 m square with chamfered corners. Its crown is a gable
- * laid along the diagonal: the two corners on the ridge (true north and south)
- * rise to 240 m and the other two drop to 180 m, so every face ends in a
- * single steep slope, and seen across a low corner the crown reads as a V.
- * Inside the screen walls the roof climbs from the low corners to a flat deck
- * at about 219 m, leaving the top open, with a beam spanning the ridge, as the
- * OSM parts record. The 60 m parking and office podium sits on the north-west
- * side, its south-west wall in line with the tower's.
+ * Massing. The tower is a 48.6 m square (OSM) with chamfered corners. Its
+ * crown is a gable laid along the diagonal: the two corners on the ridge
+ * (true north and south) rise to 240 m and the other two drop, so every face
+ * ends in a single steep slope, and seen across a low corner the crown reads
+ * as a V. Inside the screen walls the roof climbs in steps from the low
+ * corners to a flat deck, leaving the top open, with a beam spanning the
+ * ridge. The 53 m podium sits on the north-west side, its south-west wall in
+ * line with the tower's.
+ *
+ * Heights. y = 0 is the street at the south and west corners (lidar ground,
+ * ~1 m above the lowest return in the box).
+ * - ridge 240 m: published 786 ft (240 m); lidar 241-242 m above ground_min,
+ *   so 240-241 above the street. Measured and published agree.
+ * - low corners: lidar, Mecklenburg 2016 (USGS 3DEP NC Phase 4). The west
+ *   corner's coping is a flat 188 m above ground_min (187 m), the east
+ *   corner's 176 m (175 m). The two are really unequal, by about 12 m; the
+ *   OSM parts (min 180) average them. Each face's coping is a straight slope
+ *   between those and the ridge, which lidar confirms cell by cell.
+ * - inner deck 218.5 m and beam top 239.5 m: lidar (deck reads 219-220 above
+ *   ground_min, the beam line 241 along the whole ridge diagonal).
+ * - podium roof 53 m, parapet 54.4 m: lidar (53-56 above ground_min across
+ *   the roof). OSM tags 60, which is too high.
  *
  * What makes it recognisable, each drawn as plain geometry:
- * - every face is a light, reflective glass panel inside a broad pale stone
- *   frame that runs up both edges and along the sloped top;
+ * - every face is light reflective glass inside a broad pale stone frame
+ *   that runs up both edges and along the sloped top;
  * - the corners are recessed slots, full height, between the two faces'
- *   frames; their darker glass is the stripe the tower lights at night;
- * - the two south faces carry stone sunshades that step out floor by floor
- *   from the low (east and west) corners, so they make a staircase triangle
- *   that widens downwards (photos from Tryon St and from the south-west).
+ *   frames (lit orange at night; mid grey-blue glass by day, not a dark
+ *   stripe);
+ * - the two south faces carry stone sunshades that step out from the low
+ *   (east and west) corners, so they make a staircase triangle that widens
+ *   downwards (photos from Tryon St and from the south-west);
+ * - the V crown with its stepped inner roof and ridge beam;
+ * - the podium: a pale stone frame with a solid panelled top band on its
+ *   south-west face, glass floors below, a colonnade at the street, and a
+ *   planted roof garden on the half next to the tower (NAIP shows the
+ *   garden, with mechanical plant on the north-west half; the night photo
+ *   shows trees along the roof edge).
+ *
+ * Facade. The curtain wall is ribbon glass with a pale spandrel every floor
+ * (Commons photo from Tryon St), which reads as horizontal banding with no
+ * strong verticals. Drawn per STYLE.md as light glass panels three
+ * floors (12.6 m) tall between thin pale spandrel bands (two floors
+ * shimmered at 80 px). The sunshades are broad
+ * stone ledges, one per two floors, thick enough that the shaded part
+ * of the face reads paler, as it does in photos. The lobby is two storeys of glass between stone
+ * piers under a stone lintel.
+ *
+ * Estimated: floor height 4.2 m (54 floors), the lobby and podium band
+ * heights (read from photos), where the sunshades reach full width (66 m),
+ * the garden's outline (NAIP, corrected for lean by eye).
+ *
+ * Photos: Duke_Energy_Center_Charlotte.jpg (City Dweller 2, CC BY-SA 4.0,
+ * Commons; the south-west face, sunshades, lobby and podium);
+ * Duke_Energy_Center_2020.jpg (Jt12081988, CC BY-SA 4.0, Commons; from the
+ * west, V crown, slot and podium); Duke_Energy_Center_and_The_Westin_Charlotte,
+ * _2010.jpg (Justin Cozart, CC BY-SA 2.0, Commons; from the south); Flickr
+ * 4356679366 and 3759375083, 4274251424 (James Willamor, CC BY-SA 2.0; crown
+ * and beam). USGS NAIP (public domain) for the podium roof. No commercial
+ * imagery or 3D tiles were used.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish, windowVariant } from './palette'
@@ -32,7 +75,6 @@ import { PALETTE, finish, windowVariant } from './palette'
 type XY = [number, number]
 const glass = new Part(), slotGlass = new Part(), stone = new Part(), trim = new Part()
 const roof = new Part(), garden = new Part()
-
 
 const unit = (v: V3): V3 => { const l = Math.hypot(...v) || 1; return v.map(n => n / l) as V3 }
 const add = (a: XY, b: XY, k = 1): XY => [a[0] + b[0] * k, a[1] + b[1] * k]
@@ -105,16 +147,18 @@ function strip(a: XY, b: XY, s0: number, s1: number, depth: number, bevel: numbe
 }
 
 
+
 const RECESS = .7
 const flat = (z: number) => () => z
 
 // ---------------------------------------------------------------- tower
 const CX = 34.5, CY = .25, H = 24.35, CH = 4
-const TOP = 240, LOW = 180
+const TOP = 240, LOW_W = 187, LOW_E = 175
 const D = 2 * H - CH
-/** Distance along the low diagonal, zero on the ridge between the high corners. */
+/** Distance along the low diagonal: zero on the ridge, negative towards the west corner. */
 const sOf = (q: XY) => (q[0] - CX) + (q[1] - CY)
-const rim = (q: XY) => TOP - (TOP - LOW) * Math.min(1, Math.abs(sOf(q)) / D)
+const lowOf = (s: number) => s < 0 ? LOW_W : LOW_E
+const rim = (q: XY) => { const s = sOf(q); return TOP - (TOP - lowOf(s)) * Math.min(1, Math.abs(s) / D) }
 
 const P = (u: number, v: number): XY => [CX + u, CY + v]
 // Counter-clockwise from the west chamfer's south end. The two high chamfers
@@ -124,22 +168,23 @@ const ring10: XY[] = [
   P(H, H - CH), P(H - CH, H), P(-H + CH, H), P(-H + CH / 2, H - CH / 2), P(-H, H - CH), P(-H, -H + CH),
 ]
 type Face = { name: string; i: number; j: number; base: number; shades?: 'start' | 'end' }
-const PODIUM = 60, BASE = 6
+const PODIUM = 53, PARAPET = 54.4
 const faces: Face[] = [
   // The sunshades start at each south face's low corner: the west end of
   // the south-west face, the east end of the south-east face.
-  { name: 'south-west', i: 0, j: 1, base: BASE, shades: 'start' },
-  { name: 'south-east', i: 3, j: 4, base: BASE, shades: 'end' },
-  { name: 'north-east', i: 5, j: 6, base: BASE },
+  { name: 'south-west', i: 0, j: 1, base: 0, shades: 'start' },
+  { name: 'south-east', i: 3, j: 4, base: 0, shades: 'end' },
+  { name: 'north-east', i: 5, j: 6, base: 0 },
   { name: 'north-west', i: 8, j: 9, base: PODIUM },
 ]
 // The corner chamfers, each [start, (ridge midpoint), end] along the ring.
 const corners = [[1, 2, 3], [4, 5], [6, 7, 8], [9, 0]]
 
 // The inner deck sits DROP below the rim plane and levels off at DECK, which
-// happens at |s| = K. Every ring is split there so walls and roof agree.
-const DECK = 219, DROP = 3
-const K = D * (TOP - DROP - DECK) / (TOP - LOW)
+// happens at |s| = K on each side. Every ring is split there so walls and
+// roof agree.
+const DECK = 218.5, DROP = 3
+const KW = D * (TOP - DROP - DECK) / (TOP - LOW_W), KE = D * (TOP - DROP - DECK) / (TOP - LOW_E)
 function split(ring: XY[], cuts: number[]): XY[] {
   const out: XY[] = []
   ring.forEach((a, i) => {
@@ -151,14 +196,14 @@ function split(ring: XY[], cuts: number[]): XY[] {
   })
   return out
 }
-const outer = split(ring10, [K, -K])
+const outer = split(ring10, [KE, -KW])
 /** The screen walls above the roof are this thick, frame front to inner face. */
 const SCREEN = 2.1
 const inner = inset(outer, SCREEN)
 const deck = (q: XY) => Math.min(DECK, rim(q) - DROP)
 
 // Frame proportions. The coping is measured vertically; on a face sloping
-// 56° that leaves a band about as broad as the side frames.
+// ~50° that leaves a band about as broad as the side frames.
 const FW = 4.6, BEV = .45, COPE = 6.5, SLOT = 1.8
 const under = (q: XY) => rim(q) - COPE
 
@@ -185,7 +230,9 @@ function cornerFrame(at: (s: number, n: number) => XY, corner: number, dir: 1 | 
   return dir === 1 ? ring : ring.reverse()
 }
 
-// Glass, frames and base on each face. Every face edge runs from a high
+// The lobby: two storeys of glass between stone piers, under a stone lintel.
+const LOBBY = 9.5, LINTEL = 2.2
+// Glass, frames and lobby on each face. Every face edge runs from a high
 // corner to a low one, so the rim is linear along it and a face's glass is a
 // single sloped-top panel.
 for (const f of faces) {
@@ -196,15 +243,20 @@ for (const f of faces) {
   // Frames run from the street (they are buried in the podium on its side).
   prism(stone, cornerFrame(at, 0, -1), flat(0), q => under(q) + .1, { top: false })
   prism(stone, cornerFrame(at, L, 1), flat(0), q => under(q) + .1, { top: false })
-  if (f.base === BASE) prism(stone, [at(FW, 0), at(L - FW, 0), at(L - FW, RECESS + .1), at(FW, RECESS + .1)], flat(0), flat(BASE), { crease: 0 })
+  if (f.base !== 0) continue
+  prism(stone, strip(at(0, 0), at(L, 0), FW - .1, L - FW + .1, RECESS + .05, .35), flat(LOBBY), flat(LOBBY + LINTEL), { crease: 0 })
+  const piers = 6
+  for (let k = 1; k < piers; k++) {
+    const s = FW + (L - 2 * FW) * k / piers
+    prism(stone, strip(at(0, 0), at(L, 0), s - .8, s + .8, RECESS + .05, .3), flat(0), flat(LOBBY), { top: false })
+  }
 }
 
-// The corner slots: a recessed strip of darker glass between the frames,
-// from the street to the coping that bridges over it.
+// The corner slots: a recessed strip of glass between the frames, from the
+// street to the coping that bridges over it.
 for (const c of corners) {
   const a = ring10[c[0]], b = ring10[c[c.length - 1]]
   const m = unit([(b[1] - a[1]), -(b[0] - a[0]), 0])
-  // inward normal of the chamfer a→b (left of the counter-clockwise edge)
   const inw: XY = [-m[0], -m[1]]
   const back = c.map(i => add(ring10[i], inw, SLOT))
   for (let k = 0; k + 1 < back.length; k++) {
@@ -221,10 +273,10 @@ for (let i = 0; i < outer.length; i++) {
 }
 // The screens' inner face, glazed like the faces, down into the solid tower
 // so every tread below meets it.
-walls(glass, [...inner].reverse(), flat(LOW - 6), rim)
+walls(glass, [...inner].reverse(), flat(LOW_E - 6), rim)
 
-// The roof inside the screens: two slopes rising from the low corners to a
-// flat deck. Clip the convex inner ring into convex pieces.
+// The roof inside the screens: two stepped slopes rising from the low corners
+// to a flat deck. Clip the convex inner ring into convex pieces.
 function clip(ring: XY[], keep: (s: number) => number): XY[] {
   const out: XY[] = []
   ring.forEach((a, i) => {
@@ -234,12 +286,13 @@ function clip(ring: XY[], keep: (s: number) => number): XY[] {
   })
   return out
 }
-// The slopes are stepped, as on the real crown: flat treads, each at the
-// height the slope reaches at its outer edge, with glazed risers between.
-const sMax = Math.max(...inner.map(q => Math.abs(sOf(q))))
+// Flat treads, each at the height the slope reaches at its outer edge, with
+// glazed risers between (the real crown's glazed steps).
+const sMaxE = Math.max(...inner.map(q => sOf(q))), sMaxW = Math.max(...inner.map(q => -sOf(q)))
 const STEPS = 5
-cap(roof, clip(clip(inner, s => s + K), s => K - s), deck)
+cap(roof, clip(clip(inner, s => s + KW), s => KE - s), deck)
 for (const side of [1, -1]) {
+  const K = side > 0 ? KE : KW, sMax = side > 0 ? sMaxE : sMaxW
   const at = (s: number): XY => [CX + s / 2, CY + s / 2]
   for (let k = 0; k < STEPS; k++) {
     const c0 = K + (sMax - K) * k / STEPS, c1 = K + (sMax - K) * (k + 1) / STEPS
@@ -261,56 +314,60 @@ for (const side of [1, -1]) {
   const L = Math.hypot(b[0] - a[0], b[1] - a[1])
   const d: XY = [(b[0] - a[0]) / L, (b[1] - a[1]) / L], side: XY = [-d[1], d[0]]
   const beam: XY[] = [add(a, side, -w), add(b, side, -w), add(b, side, w), add(a, side, w)]
-  prism(stone, beam, flat(233), flat(237.5), { bottom: true, crease: 0 })
+  prism(stone, beam, flat(235), flat(239.5), { bottom: true, crease: 0 })
 }
 
-// The sunshades: stone ledges flush with the frames, so the bounds stay the
-// OSM footprint. One per floor and a half (the real ones are one a floor,
-// which shimmers at map distance), each longer than the one above, so their
-// free ends step down diagonally across the face. They reach the full width
-// above the podium roof and run full width from there to the lobby.
-const SHADE_TOP = LOW - COPE - 3, SHADE_FULL = 66, SHADE_EVERY = 5.6, SHADE = 1, SHADE_OUT = 0
-const shadeLen = (z: number, span: number) =>
-  Math.min(span, 2.5 + (span - 2.5) * (SHADE_TOP - z) / (SHADE_TOP - SHADE_FULL))
-const shadeZ: number[] = []
-for (let z = SHADE_TOP; z > BASE + 4; z -= SHADE_EVERY) shadeZ.push(z)
-/** The s-range a face's sunshade covers at height z, or null. */
+// ---------------------------------------------------------------- facade
+// Spandrel bands every three floors from the lobby lintel up, stopping under
+// the coping.
+const FLOOR = 4.2, EVERY = 3 * FLOOR, BAND = .8
+const bandZ: number[] = []
+for (let z = LOBBY + LINTEL + EVERY; z < TOP; z += EVERY) bandZ.push(z)
+
+// Sunshades: stone ledges flush with the frames (so the bounds stay the OSM
+// footprint), one per two floors (the real ones are one a floor, which
+// shimmers at map distance). Each is longer than the one above, so their free
+// ends step down diagonally across the face from a few metres under the low
+// corner's coping; from SHADE_FULL down to the lobby they run full width.
+const SHADE_FULL = 66, SHADE_EVERY = 2 * FLOOR, SHADE = 2
+function shadeTop(f: Face) {
+  const { L, at } = frameOf(f)
+  return under(f.shades === 'start' ? at(FW, RECESS) : at(L - FW, RECESS)) - 3
+}
 function shadeSpan(f: Face, L: number, z: number): [number, number] | null {
-  if (!f.shades || z > SHADE_TOP + SHADE) return null
-  const len = shadeLen(z, L - 2 * FW)
+  if (!f.shades) return null
+  const top = shadeTop(f), span = L - 2 * FW
+  const len = Math.min(span, 2.5 + (span - 2.5) * (top - z) / (top - SHADE_FULL))
   return f.shades === 'start' ? [FW, FW + len] : [L - FW - len, L - FW]
 }
-for (const f of faces) {
-  if (!f.shades) continue
-  const { L, at } = frameOf(f)
-  for (const z of shadeZ) {
-    const [s0, s1] = shadeSpan(f, L, z)!
-    // Butt into the frame, open at the free end.
-    prism(stone, [at(s0, -SHADE_OUT), at(s1, -SHADE_OUT), at(s1, RECESS), at(s0, RECESS)],
-      flat(z), flat(z + SHADE), { crease: 0, bottom: true })
-  }
+const shadeZ = (f: Face) => {
+  const out: number[] = []
+  if (f.shades) for (let z = shadeTop(f); z > LOBBY + LINTEL + 2; z -= SHADE_EVERY) out.push(z)
+  return out
 }
 
-// Faint pale floor lines across the glass every four floors, stopping under
-// the coping and short of the sunshades.
-const LINE_EVERY = 16.8, LINE = .5
 for (const f of faces) {
   const { L, at } = frameOf(f)
-  for (let z = LINE_EVERY; z < TOP; z += LINE_EVERY) {
-    if (z < f.base + 1) continue
-    // where the line clears the coping: under() is linear along the face
-    const u0 = under(at(FW, RECESS)), u1 = under(at(L - FW, RECESS))
-    const clear = (s: number) => u0 + (u1 - u0) * (s - FW) / (L - 2 * FW) - (z + LINE)
+  const u0 = under(at(FW, RECESS)), u1 = under(at(L - FW, RECESS))
+  const uAt = (s: number) => u0 + (u1 - u0) * (s - FW) / (L - 2 * FW)
+  const shades = shadeZ(f)
+  for (const z of shades) {
+    const [s0, s1] = shadeSpan(f, L, z)!
+    prism(stone, [at(s0, 0), at(s1, 0), at(s1, RECESS), at(s0, RECESS)], flat(z), flat(z + SHADE), { crease: 0, bottom: true })
+  }
+  for (const z of bandZ) {
+    if (z < f.base + 2) continue
+    // the trim band where it clears the coping and the nearest sunshade
+    const clear = (s: number) => uAt(s) - (z + BAND) - .4
     let s0 = FW, s1 = L - FW
     if (clear(s0) < 0 && clear(s1) < 0) continue
     if (clear(s0) < 0) s0 = FW + (L - 2 * FW) * (-clear(FW)) / (clear(L - FW) - clear(FW))
     if (clear(s1) < 0) s1 = FW + (L - 2 * FW) * (clear(FW)) / (clear(FW) - clear(L - FW))
-    // Skip the stretch a nearby sunshade already covers.
-    const near = shadeZ.find(zs => Math.abs(zs - z) < SHADE_EVERY / 2)
+    const near = shades.find(zs => Math.abs(zs - z) < SHADE_EVERY / 2 + 1)
     const sh = near !== undefined ? shadeSpan(f, L, near) : null
-    if (sh) { if (f.shades === 'start') s0 = Math.max(s0, sh[1]); else s1 = Math.min(s1, sh[0]) }
+    if (sh) { if (f.shades === 'start') s0 = Math.max(s0, sh[1] + .6); else s1 = Math.min(s1, sh[0] - .6) }
     if (s1 - s0 < 1) continue
-    prism(trim, [at(s0, RECESS - .2), at(s1, RECESS - .2), at(s1, RECESS), at(s0, RECESS)], flat(z), flat(z + LINE), { crease: 0 })
+    prism(trim, [at(s0, RECESS - .2), at(s1, RECESS - .2), at(s1, RECESS), at(s0, RECESS)], flat(z), flat(z + BAND), { crease: 0, bottom: true })
   }
 }
 
@@ -321,52 +378,58 @@ const podium: XY[] = [
 ]
 const podShell = inset(podium, RECESS)
 walls(glass, podShell, flat(0), flat(PODIUM))
-// Glass between a stone plinth with broad bays and a deep panelled top band.
-const BAND = 9, PLINTH = 7
+// The south-west face (edge 0) wears a solid panelled top band inside its
+// stone frame; the other faces are glass to the top (photos from the west).
+const COLONNADE = 10, TOPBAND = 41
 for (let i = 0; i < podium.length; i++) {
   const j = (i + 1) % podium.length, a = podium[i], b = podium[j]
   // The edge buried in the tower carries no facade.
   if (a[0] >= 12 && b[0] >= 12) continue
   const L = Math.hypot(b[0] - a[0], b[1] - a[1])
-  prism(stone, [a, b, podShell[j], podShell[i]], flat(PODIUM - BAND), flat(PODIUM + .9), { crease: 0 })
-  prism(stone, [a, b, podShell[j], podShell[i]], flat(PLINTH), flat(PLINTH + 1.6), { crease: 0 })
-  if (L < 8) {
-    prism(stone, [a, b, podShell[j], podShell[i]], flat(0), flat(PLINTH), { crease: 0 })
-    continue
-  }
-  const count = Math.round(L / 9.5)
+  const slab = (z0: number, z1: number) => prism(stone, [a, b, podShell[j], podShell[i]], flat(z0), flat(z1), { crease: 0 })
+  if (L < 8) { slab(0, PODIUM); continue }
+  const front = i === 0
+  // Colonnade piers and the lintel over them.
+  const count = Math.round(L / 8)
   for (let k = 0; k <= count; k++) {
-    const s = L * k / count, w = k === 0 || k === count ? 1.8 : .9
-    prism(stone, strip(a, b, Math.max(0, s - w), Math.min(L, s + w), RECESS, .35), flat(0), flat(PLINTH), { top: false })
+    const s = L * k / count, w = k === 0 || k === count ? 2.2 : .9
+    prism(stone, strip(a, b, Math.max(0, s - w), Math.min(L, s + w), RECESS, .35), flat(0), flat(COLONNADE), { top: false })
   }
-  // Slim pale mullions on the plinth's bay lines, and a stone band where the
-  // parking floors give way to offices.
-  for (let k = 1; k < count; k++) {
-    const s = L * k / count
-    prism(trim, strip(a, b, s - .55, s + .55, RECESS * .85, .25), flat(PLINTH + 1.6), flat(PODIUM - BAND + .1), { top: false })
+  slab(COLONNADE, COLONNADE + 1.4)
+  // Corner frames run the full height.
+  prism(stone, strip(a, b, 0, 2.2, RECESS, .35), flat(COLONNADE), flat(PODIUM), { top: false })
+  prism(stone, strip(a, b, L - 2.2, L, RECESS, .35), flat(COLONNADE), flat(PODIUM), { top: false })
+  // Spandrels every two to three floors.
+  const zTop = front ? TOPBAND : PODIUM - 1
+  for (let z = COLONNADE + 1.4 + 9.5; z < zTop - 4; z += 10)
+    prism(trim, strip(a, b, 2.2, L - 2.2, RECESS * .7, .2), flat(z), flat(z + 1), { top: true })
+  if (front) {
+    prism(stone, strip(a, b, 2.2, L - 2.2, RECESS, .3), flat(TOPBAND), flat(PODIUM), { top: false })
+    // Two faint panel joints across the band.
+    for (const z of [TOPBAND + 4, TOPBAND + 8])
+      prism(trim, strip(a, b, 2.6, L - 2.6, -.08, .05), flat(z), flat(z + .45), { top: true })
   }
-  prism(stone, [a, b, podShell[j], podShell[i]], flat(33), flat(34.6), { crease: 0 })
-  // Corner frames run the full height, as on the tower.
-  prism(stone, strip(a, b, 0, 1.8, RECESS, .35), flat(PLINTH), flat(PODIUM - BAND + .1), { top: false })
-  prism(stone, strip(a, b, L - 1.8, L, RECESS, .35), flat(PLINTH), flat(PODIUM - BAND + .1), { top: false })
 }
-// Roof: a parapet ring, membrane, and the planted terrace.
+// Roof: a parapet ring, membrane, and the planted garden by the tower.
 const parapet = inset(podium, 1.2)
 for (let i = 0; i < podium.length; i++) {
   const j = (i + 1) % podium.length
   const v = (q: XY, z: number): V3 => [q[0], q[1], z]
-  stone.quad(v(podShell[i], PODIUM + .9), v(podShell[j], PODIUM + .9), v(parapet[j], PODIUM + .9), v(parapet[i], PODIUM + .9))
-  stone.quad(v(parapet[j], PODIUM + .9), v(parapet[i], PODIUM + .9), v(parapet[i], PODIUM), v(parapet[j], PODIUM))
+  stone.quad(v(podShell[i], PODIUM), v(podShell[j], PODIUM), v(podium[j], PODIUM), v(podium[i], PODIUM))
+  prism(stone, [podShell[i], podShell[j], parapet[j], parapet[i]], flat(PODIUM), flat(PARAPET), { crease: 0 })
 }
 cap(roof, parapet, flat(PODIUM), true)
-cap(garden, [[-50, -15], [2, -15], [2, 16], [-50, 16]], flat(PODIUM + .05))
+cap(garden, [[-24, -14], [8, -14], [8, 18], [-24, 18]], flat(PODIUM + .05))
+// Two plant rooms on the north-west half of the roof (NAIP).
+prism(roof, strip([-52, -10], [-30, -10], 0, 22, 9, .4).map(q => q) as XY[], flat(PODIUM), flat(PODIUM + 3.5), { crease: 0 })
+prism(roof, [[-52, 4], [-34, 4], [-34, 16], [-52, 16]], flat(PODIUM), flat(PODIUM + 2.5), { crease: 0 })
 
 // ---------------------------------------------------------------- write
 const parts = [
   // Light, reflective curtain wall, as the tower reads in daylight.
   { part: glass, material: windowVariant(2, 0xa9bfd1) },
-  // The corner slots' deeper glass: the stripe the tower lights at night.
-  { part: slotGlass, material: PALETTE.window },
+  // The corner slots' glass: a step deeper than the faces, never dark.
+  { part: slotGlass, material: { ...PALETTE.window, color: 0x97adc0 } },
   { part: stone, material: PALETTE.stone },
   { part: trim, material: PALETTE.trim },
   { part: roof, material: PALETTE.roof },

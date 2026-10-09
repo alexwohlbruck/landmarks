@@ -1086,6 +1086,1805 @@
       "source": "generators/dlr-soarin.ts"
     },
     {
+      "id": "chi-willis-tower",
+      "file": "models/chi-willis-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-willis-tower.ts"
+    },
+    {
+      "id": "chi-trump-tower",
+      "file": "models/chi-trump-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-trump-tower.ts"
+    },
+    {
+      "id": "chi-875-north-michigan",
+      "file": "models/chi-875-north-michigan.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-875-north-michigan.ts"
+    },
+    {
+      "id": "chi-water-tower",
+      "file": "models/chi-water-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-water-tower.ts"
+    },
+    {
+      "id": "chi-st-regis",
+      "file": "models/chi-st-regis.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-st-regis.ts"
+    },
+    {
+      "id": "chi-aqua",
+      "file": "models/chi-aqua.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-aqua.ts"
+    },
+    {
+      "id": "chi-aon-center",
+      "file": "models/chi-aon-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-aon-center.ts"
+    },
+    {
+      "id": "chi-fourth-presbyterian",
+      "file": "models/chi-fourth-presbyterian.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-fourth-presbyterian.ts"
+    },
+    {
+      "id": "chi-palmolive-building",
+      "file": "models/chi-palmolive-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-palmolive-building.ts"
+    },
+    {
+      "id": "chi-900-north-michigan",
+      "file": "models/chi-900-north-michigan.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-900-north-michigan.ts"
+    },
+    {
+      "id": "chi-carbide-carbon",
+      "file": "models/chi-carbide-carbon.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-carbide-carbon.ts"
+    },
+    {
+      "id": "chi-smurfit-stone",
+      "file": "models/chi-smurfit-stone.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-smurfit-stone.ts"
+    },
+    {
+      "id": "chi-two-prudential-plaza",
+      "file": "models/chi-two-prudential-plaza.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-two-prudential-plaza.ts"
+    },
+    {
+      "id": "chi-jewelers-building",
+      "file": "models/chi-jewelers-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-jewelers-building.ts"
+    },
+    {
+      "id": "chi-mather-tower",
+      "file": "models/chi-mather-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-mather-tower.ts"
+    },
+    {
+      "id": "chi-tribune-tower",
+      "file": "models/chi-tribune-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-tribune-tower.ts"
+    },
+    {
+      "id": "chi-wrigley-building",
+      "file": "models/chi-wrigley-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-wrigley-building.ts"
+    },
+    {
+      "id": "chi-medinah-temple",
+      "file": "models/chi-medinah-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-medinah-temple.ts"
+    },
+    {
+      "id": "chi-holy-name-cathedral",
+      "file": "models/chi-holy-name-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-holy-name-cathedral.ts"
+    },
+    {
+      "id": "chi-marina-city",
+      "file": "models/chi-marina-city.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-marina-city.ts"
+    },
+    {
+      "id": "chi-board-of-trade",
+      "file": "models/chi-board-of-trade.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-board-of-trade.ts"
+    },
+    {
+      "id": "chi-rookery",
+      "file": "models/chi-rookery.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-rookery.ts"
+    },
+    {
+      "id": "chi-chicago-temple",
+      "file": "models/chi-chicago-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-chicago-temple.ts"
+    },
+    {
+      "id": "chi-311-south-wacker",
+      "file": "models/chi-311-south-wacker.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-311-south-wacker.ts"
+    },
+    {
+      "id": "chi-chase-tower",
+      "file": "models/chi-chase-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-chase-tower.ts"
+    },
+    {
+      "id": "chi-merchandise-mart",
+      "file": "models/chi-merchandise-mart.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-merchandise-mart.ts"
+    },
+    {
+      "id": "chi-333-wacker",
+      "file": "models/chi-333-wacker.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-333-wacker.ts"
+    },
+    {
+      "id": "chi-union-station",
+      "file": "models/chi-union-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-union-station.ts"
+    },
+    {
+      "id": "chi-thompson-center",
+      "file": "models/chi-thompson-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-thompson-center.ts"
+    },
+    {
+      "id": "chi-harold-washington-library",
+      "file": "models/chi-harold-washington-library.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-harold-washington-library.ts"
+    },
+    {
+      "id": "chi-crown-fountain",
+      "file": "models/chi-crown-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-crown-fountain.ts"
+    },
+    {
+      "id": "chi-buckingham-fountain",
+      "file": "models/chi-buckingham-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-buckingham-fountain.ts"
+    },
+    {
+      "id": "chi-pritzker-pavilion",
+      "file": "models/chi-pritzker-pavilion.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-pritzker-pavilion.ts"
+    },
+    {
+      "id": "chi-cloud-gate",
+      "file": "models/chi-cloud-gate.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-cloud-gate.ts"
+    },
+    {
+      "id": "chi-picasso",
+      "file": "models/chi-picasso.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-picasso.ts"
+    },
+    {
+      "id": "chi-flamingo",
+      "file": "models/chi-flamingo.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-flamingo.ts"
+    },
+    {
+      "id": "chi-chicago-theatre",
+      "file": "models/chi-chicago-theatre.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-chicago-theatre.ts"
+    },
+    {
+      "id": "chi-art-institute",
+      "file": "models/chi-art-institute.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-art-institute.ts"
+    },
+    {
+      "id": "chi-art-institute-modern-wing",
+      "file": "models/chi-art-institute-modern-wing.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-art-institute-modern-wing.ts"
+    },
+    {
+      "id": "chi-field-museum",
+      "file": "models/chi-field-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-field-museum.ts"
+    },
+    {
+      "id": "chi-adler-planetarium",
+      "file": "models/chi-adler-planetarium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-adler-planetarium.ts"
+    },
+    {
+      "id": "chi-soldier-field",
+      "file": "models/chi-soldier-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-soldier-field.ts"
+    },
+    {
+      "id": "chi-shedd-aquarium",
+      "file": "models/chi-shedd-aquarium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-shedd-aquarium.ts"
+    },
+    {
+      "id": "chi-wrigley-field",
+      "file": "models/chi-wrigley-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-wrigley-field.ts"
+    },
+    {
+      "id": "chi-rate-field",
+      "file": "models/chi-rate-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-rate-field.ts"
+    },
+    {
+      "id": "chi-united-center",
+      "file": "models/chi-united-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-united-center.ts"
+    },
+    {
+      "id": "chi-centennial-wheel",
+      "file": "models/chi-centennial-wheel.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-centennial-wheel.ts"
+    },
+    {
+      "id": "chi-lake-point-tower",
+      "file": "models/chi-lake-point-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-lake-point-tower.ts"
+    },
+    {
+      "id": "chi-museum-of-science-industry",
+      "file": "models/chi-museum-of-science-industry.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-museum-of-science-industry.ts"
+    },
+    {
+      "id": "chi-bahai-temple",
+      "file": "models/chi-bahai-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-bahai-temple.ts"
+    },
+    {
+      "id": "chi-robie-house",
+      "file": "models/chi-robie-house.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/chi-robie-house.ts"
+    },
+    {
+      "id": "lv-strat",
+      "file": "models/lv-strat.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-strat.ts"
+    },
+    {
+      "id": "lv-high-roller",
+      "file": "models/lv-high-roller.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-high-roller.ts"
+    },
+    {
+      "id": "lv-sphere",
+      "file": "models/lv-sphere.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-sphere.ts"
+    },
+    {
+      "id": "lv-luxor",
+      "file": "models/lv-luxor.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-luxor.ts"
+    },
+    {
+      "id": "lv-new-york-new-york",
+      "file": "models/lv-new-york-new-york.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-new-york-new-york.ts"
+    },
+    {
+      "id": "lv-big-apple-coaster",
+      "file": "models/lv-big-apple-coaster.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-big-apple-coaster.ts"
+    },
+    {
+      "id": "lv-caesars-palace",
+      "file": "models/lv-caesars-palace.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-caesars-palace.ts"
+    },
+    {
+      "id": "lv-wynn",
+      "file": "models/lv-wynn.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-wynn.ts"
+    },
+    {
+      "id": "lv-encore",
+      "file": "models/lv-encore.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-encore.ts"
+    },
+    {
+      "id": "lv-fontainebleau",
+      "file": "models/lv-fontainebleau.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-fontainebleau.ts"
+    },
+    {
+      "id": "lv-resorts-world",
+      "file": "models/lv-resorts-world.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-resorts-world.ts"
+    },
+    {
+      "id": "lv-trump",
+      "file": "models/lv-trump.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-trump.ts"
+    },
+    {
+      "id": "lv-excalibur",
+      "file": "models/lv-excalibur.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-excalibur.ts"
+    },
+    {
+      "id": "lv-mandalay-bay",
+      "file": "models/lv-mandalay-bay.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-mandalay-bay.ts"
+    },
+    {
+      "id": "lv-venetian",
+      "file": "models/lv-venetian.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-venetian.ts"
+    },
+    {
+      "id": "lv-palazzo",
+      "file": "models/lv-palazzo.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-palazzo.ts"
+    },
+    {
+      "id": "lv-treasure-island",
+      "file": "models/lv-treasure-island.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-treasure-island.ts"
+    },
+    {
+      "id": "lv-paris-resort",
+      "file": "models/lv-paris-resort.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-paris-resort.ts"
+    },
+    {
+      "id": "lv-aria",
+      "file": "models/lv-aria.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-aria.ts"
+    },
+    {
+      "id": "lv-vdara",
+      "file": "models/lv-vdara.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-vdara.ts"
+    },
+    {
+      "id": "lv-bellagio",
+      "file": "models/lv-bellagio.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-bellagio.ts"
+    },
+    {
+      "id": "lv-cosmopolitan",
+      "file": "models/lv-cosmopolitan.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-cosmopolitan.ts"
+    },
+    {
+      "id": "lv-veer-towers",
+      "file": "models/lv-veer-towers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-veer-towers.ts"
+    },
+    {
+      "id": "lv-mgm-grand",
+      "file": "models/lv-mgm-grand.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-mgm-grand.ts"
+    },
+    {
+      "id": "lv-allegiant-stadium",
+      "file": "models/lv-allegiant-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-allegiant-stadium.ts"
+    },
+    {
+      "id": "lv-las-tower",
+      "file": "models/lv-las-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-las-tower.ts"
+    },
+    {
+      "id": "lv-welcome-sign",
+      "file": "models/lv-welcome-sign.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-welcome-sign.ts"
+    },
+    {
+      "id": "lv-circus-circus",
+      "file": "models/lv-circus-circus.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-circus-circus.ts"
+    },
+    {
+      "id": "lv-rio",
+      "file": "models/lv-rio.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-rio.ts"
+    },
+    {
+      "id": "lv-seven-magic-mountains",
+      "file": "models/lv-seven-magic-mountains.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-seven-magic-mountains.ts"
+    },
+    {
+      "id": "lv-fremont-canopy",
+      "file": "models/lv-fremont-canopy.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-fremont-canopy.ts"
+    },
+    {
+      "id": "lv-slotzilla",
+      "file": "models/lv-slotzilla.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-slotzilla.ts"
+    },
+    {
+      "id": "lv-neon-museum",
+      "file": "models/lv-neon-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-neon-museum.ts"
+    },
+    {
+      "id": "lv-lou-ruvo",
+      "file": "models/lv-lou-ruvo.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-lou-ruvo.ts"
+    },
+    {
+      "id": "lv-smith-center",
+      "file": "models/lv-smith-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-smith-center.ts"
+    },
+    {
+      "id": "lv-crystals",
+      "file": "models/lv-crystals.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-crystals.ts"
+    },
+    {
+      "id": "lv-fashion-show-cloud",
+      "file": "models/lv-fashion-show-cloud.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-fashion-show-cloud.ts"
+    },
+    {
+      "id": "lv-clark-county-government-center",
+      "file": "models/lv-clark-county-government-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-clark-county-government-center.ts"
+    },
+    {
+      "id": "lv-mob-museum",
+      "file": "models/lv-mob-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/lv-mob-museum.ts"
+    },
+    {
+      "id": "dc-washington-monument",
+      "file": "models/dc-washington-monument.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-washington-monument.ts"
+    },
+    {
+      "id": "dc-lincoln-memorial",
+      "file": "models/dc-lincoln-memorial.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-lincoln-memorial.ts"
+    },
+    {
+      "id": "dc-jefferson-memorial",
+      "file": "models/dc-jefferson-memorial.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-jefferson-memorial.ts"
+    },
+    {
+      "id": "dc-us-capitol",
+      "file": "models/dc-us-capitol.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-us-capitol.ts"
+    },
+    {
+      "id": "dc-wwii-memorial",
+      "file": "models/dc-wwii-memorial.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-wwii-memorial.ts"
+    },
+    {
+      "id": "dc-air-force-memorial",
+      "file": "models/dc-air-force-memorial.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-air-force-memorial.ts"
+    },
+    {
+      "id": "dc-netherlands-carillon",
+      "file": "models/dc-netherlands-carillon.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-netherlands-carillon.ts"
+    },
+    {
+      "id": "dc-eisenhower-eob",
+      "file": "models/dc-eisenhower-eob.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-eisenhower-eob.ts"
+    },
+    {
+      "id": "dc-treasury",
+      "file": "models/dc-treasury.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-treasury.ts"
+    },
+    {
+      "id": "dc-mlk-memorial",
+      "file": "models/dc-mlk-memorial.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-mlk-memorial.ts"
+    },
+    {
+      "id": "dc-marine-corps-war-memorial",
+      "file": "models/dc-marine-corps-war-memorial.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-marine-corps-war-memorial.ts"
+    },
+    {
+      "id": "dc-smithsonian-castle",
+      "file": "models/dc-smithsonian-castle.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-smithsonian-castle.ts"
+    },
+    {
+      "id": "dc-arts-and-industries",
+      "file": "models/dc-arts-and-industries.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-arts-and-industries.ts"
+    },
+    {
+      "id": "dc-hirshhorn",
+      "file": "models/dc-hirshhorn.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-hirshhorn.ts"
+    },
+    {
+      "id": "dc-air-and-space",
+      "file": "models/dc-air-and-space.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-air-and-space.ts"
+    },
+    {
+      "id": "dc-nmaahc",
+      "file": "models/dc-nmaahc.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-nmaahc.ts"
+    },
+    {
+      "id": "dc-american-indian",
+      "file": "models/dc-american-indian.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-american-indian.ts"
+    },
+    {
+      "id": "dc-natural-history",
+      "file": "models/dc-natural-history.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-natural-history.ts"
+    },
+    {
+      "id": "dc-nga-west",
+      "file": "models/dc-nga-west.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-nga-west.ts"
+    },
+    {
+      "id": "dc-nga-east",
+      "file": "models/dc-nga-east.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-nga-east.ts"
+    },
+    {
+      "id": "dc-national-archives",
+      "file": "models/dc-national-archives.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-national-archives.ts"
+    },
+    {
+      "id": "dc-national-cathedral",
+      "file": "models/dc-national-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-national-cathedral.ts"
+    },
+    {
+      "id": "dc-washington-temple",
+      "file": "models/dc-washington-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-washington-temple.ts"
+    },
+    {
+      "id": "dc-kennedy-center",
+      "file": "models/dc-kennedy-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-kennedy-center.ts"
+    },
+    {
+      "id": "dc-national-shrine",
+      "file": "models/dc-national-shrine.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-national-shrine.ts"
+    },
+    {
+      "id": "dc-st-matthews",
+      "file": "models/dc-st-matthews.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-st-matthews.ts"
+    },
+    {
+      "id": "dc-watergate",
+      "file": "models/dc-watergate.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-watergate.ts"
+    },
+    {
+      "id": "dc-washington-hilton",
+      "file": "models/dc-washington-hilton.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-washington-hilton.ts"
+    },
+    {
+      "id": "dc-healy-hall",
+      "file": "models/dc-healy-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-healy-hall.ts"
+    },
+    {
+      "id": "dc-botanic-garden",
+      "file": "models/dc-botanic-garden.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-botanic-garden.ts"
+    },
+    {
+      "id": "dc-old-post-office",
+      "file": "models/dc-old-post-office.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-old-post-office.ts"
+    },
+    {
+      "id": "dc-national-building-museum",
+      "file": "models/dc-national-building-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-national-building-museum.ts"
+    },
+    {
+      "id": "dc-house-of-the-temple",
+      "file": "models/dc-house-of-the-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-house-of-the-temple.ts"
+    },
+    {
+      "id": "dc-supreme-court",
+      "file": "models/dc-supreme-court.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-supreme-court.ts"
+    },
+    {
+      "id": "dc-jefferson-building",
+      "file": "models/dc-jefferson-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-jefferson-building.ts"
+    },
+    {
+      "id": "dc-nationals-park",
+      "file": "models/dc-nationals-park.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-nationals-park.ts"
+    },
+    {
+      "id": "dc-audi-field",
+      "file": "models/dc-audi-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-audi-field.ts"
+    },
+    {
+      "id": "dc-pentagon",
+      "file": "models/dc-pentagon.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-pentagon.ts"
+    },
+    {
+      "id": "dc-arlington-house",
+      "file": "models/dc-arlington-house.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-arlington-house.ts"
+    },
+    {
+      "id": "dc-memorial-amphitheater",
+      "file": "models/dc-memorial-amphitheater.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-memorial-amphitheater.ts"
+    },
+    {
+      "id": "dc-white-house",
+      "file": "models/dc-white-house.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/dc-white-house.ts"
+    },
+    {
+      "id": "la-us-bank-tower",
+      "file": "models/la-us-bank-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-us-bank-tower.ts"
+    },
+    {
+      "id": "la-city-hall",
+      "file": "models/la-city-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-city-hall.ts"
+    },
+    {
+      "id": "la-wilshire-grand",
+      "file": "models/la-wilshire-grand.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-wilshire-grand.ts"
+    },
+    {
+      "id": "la-union-station",
+      "file": "models/la-union-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-union-station.ts"
+    },
+    {
+      "id": "la-broad",
+      "file": "models/la-broad.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-broad.ts"
+    },
+    {
+      "id": "la-grand-la",
+      "file": "models/la-grand-la.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-grand-la.ts"
+    },
+    {
+      "id": "la-bonaventure",
+      "file": "models/la-bonaventure.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-bonaventure.ts"
+    },
+    {
+      "id": "la-gas-company-tower",
+      "file": "models/la-gas-company-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-gas-company-tower.ts"
+    },
+    {
+      "id": "la-wells-fargo-center",
+      "file": "models/la-wells-fargo-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-wells-fargo-center.ts"
+    },
+    {
+      "id": "la-eastern-columbia",
+      "file": "models/la-eastern-columbia.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-eastern-columbia.ts"
+    },
+    {
+      "id": "la-disney-concert-hall",
+      "file": "models/la-disney-concert-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-disney-concert-hall.ts"
+    },
+    {
+      "id": "la-central-library",
+      "file": "models/la-central-library.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-central-library.ts"
+    },
+    {
+      "id": "la-hollywood-bowl",
+      "file": "models/la-hollywood-bowl.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-hollywood-bowl.ts"
+    },
+    {
+      "id": "la-griffith-observatory",
+      "file": "models/la-griffith-observatory.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-griffith-observatory.ts"
+    },
+    {
+      "id": "la-hollywood-sign",
+      "file": "models/la-hollywood-sign.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-hollywood-sign.ts"
+    },
+    {
+      "id": "la-cinerama-dome",
+      "file": "models/la-cinerama-dome.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-cinerama-dome.ts"
+    },
+    {
+      "id": "la-capitol-records",
+      "file": "models/la-capitol-records.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-capitol-records.ts"
+    },
+    {
+      "id": "la-chinese-theatre",
+      "file": "models/la-chinese-theatre.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-chinese-theatre.ts"
+    },
+    {
+      "id": "la-kia-forum",
+      "file": "models/la-kia-forum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-kia-forum.ts"
+    },
+    {
+      "id": "la-sofi-stadium",
+      "file": "models/la-sofi-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-sofi-stadium.ts"
+    },
+    {
+      "id": "la-theme-building",
+      "file": "models/la-theme-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-theme-building.ts"
+    },
+    {
+      "id": "la-randys-donuts",
+      "file": "models/la-randys-donuts.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-randys-donuts.ts"
+    },
+    {
+      "id": "la-dodger-stadium",
+      "file": "models/la-dodger-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-dodger-stadium.ts"
+    },
+    {
+      "id": "la-crypto-arena",
+      "file": "models/la-crypto-arena.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-crypto-arena.ts"
+    },
+    {
+      "id": "la-coliseum",
+      "file": "models/la-coliseum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-coliseum.ts"
+    },
+    {
+      "id": "la-shrine-auditorium",
+      "file": "models/la-shrine-auditorium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-shrine-auditorium.ts"
+    },
+    {
+      "id": "la-lacma-geffen",
+      "file": "models/la-lacma-geffen.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-lacma-geffen.ts"
+    },
+    {
+      "id": "la-petersen",
+      "file": "models/la-petersen.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-petersen.ts"
+    },
+    {
+      "id": "la-academy-museum",
+      "file": "models/la-academy-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-academy-museum.ts"
+    },
+    {
+      "id": "la-bullocks-wilshire",
+      "file": "models/la-bullocks-wilshire.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-bullocks-wilshire.ts"
+    },
+    {
+      "id": "la-wiltern",
+      "file": "models/la-wiltern.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-wiltern.ts"
+    },
+    {
+      "id": "la-la-temple",
+      "file": "models/la-la-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-la-temple.ts"
+    },
+    {
+      "id": "la-getty-center",
+      "file": "models/la-getty-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-getty-center.ts"
+    },
+    {
+      "id": "la-royce-hall",
+      "file": "models/la-royce-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-royce-hall.ts"
+    },
+    {
+      "id": "la-century-plaza-towers",
+      "file": "models/la-century-plaza-towers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-century-plaza-towers.ts"
+    },
+    {
+      "id": "la-pacific-wheel",
+      "file": "models/la-pacific-wheel.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-pacific-wheel.ts"
+    },
+    {
+      "id": "la-queen-mary",
+      "file": "models/la-queen-mary.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-queen-mary.ts"
+    },
+    {
+      "id": "la-vincent-thomas-bridge",
+      "file": "models/la-vincent-thomas-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-vincent-thomas-bridge.ts"
+    },
+    {
+      "id": "la-pasadena-city-hall",
+      "file": "models/la-pasadena-city-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-pasadena-city-hall.ts"
+    },
+    {
+      "id": "la-rose-bowl",
+      "file": "models/la-rose-bowl.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-rose-bowl.ts"
+    },
+    {
+      "id": "la-team-disney",
+      "file": "models/la-team-disney.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-team-disney.ts"
+    },
+    {
+      "id": "la-angelus-temple",
+      "file": "models/la-angelus-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-angelus-temple.ts"
+    },
+    {
+      "id": "la-pacific-design-center",
+      "file": "models/la-pacific-design-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-pacific-design-center.ts"
+    },
+    {
+      "id": "la-walter-pyramid",
+      "file": "models/la-walter-pyramid.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-walter-pyramid.ts"
+    },
+    {
+      "id": "la-watts-towers",
+      "file": "models/la-watts-towers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-watts-towers.ts"
+    },
+    {
+      "id": "la-christ-cathedral",
+      "file": "models/la-christ-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-christ-cathedral.ts"
+    },
+    {
+      "id": "sf-transamerica-pyramid",
+      "file": "models/sf-transamerica-pyramid.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-transamerica-pyramid.ts"
+    },
+    {
+      "id": "sf-sentinel-building",
+      "file": "models/sf-sentinel-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-sentinel-building.ts"
+    },
+    {
+      "id": "sf-golden-gate-bridge",
+      "file": "models/sf-golden-gate-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-golden-gate-bridge.ts"
+    },
+    {
+      "id": "sf-bay-bridge-west",
+      "file": "models/sf-bay-bridge-west.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-bay-bridge-west.ts"
+    },
+    {
+      "id": "sf-bay-bridge-west-inner",
+      "file": "models/sf-bay-bridge-west-inner.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-bay-bridge-west-inner.ts"
+    },
+    {
+      "id": "sf-bay-bridge-sas",
+      "file": "models/sf-bay-bridge-sas.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-bay-bridge-sas.ts"
+    },
+    {
+      "id": "sf-salesforce-tower",
+      "file": "models/sf-salesforce-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-salesforce-tower.ts"
+    },
+    {
+      "id": "sf-millennium-tower",
+      "file": "models/sf-millennium-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-millennium-tower.ts"
+    },
+    {
+      "id": "sf-181-fremont",
+      "file": "models/sf-181-fremont.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-181-fremont.ts"
+    },
+    {
+      "id": "sf-555-california",
+      "file": "models/sf-555-california.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-555-california.ts"
+    },
+    {
+      "id": "sf-345-california",
+      "file": "models/sf-345-california.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-345-california.ts"
+    },
+    {
+      "id": "sf-russ-building",
+      "file": "models/sf-russ-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-russ-building.ts"
+    },
+    {
+      "id": "sf-101-california",
+      "file": "models/sf-101-california.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-101-california.ts"
+    },
+    {
+      "id": "sf-pacific-telephone",
+      "file": "models/sf-pacific-telephone.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-pacific-telephone.ts"
+    },
+    {
+      "id": "sf-city-hall",
+      "file": "models/sf-city-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-city-hall.ts"
+    },
+    {
+      "id": "sf-bill-graham-auditorium",
+      "file": "models/sf-bill-graham-auditorium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-bill-graham-auditorium.ts"
+    },
+    {
+      "id": "sf-davies-symphony-hall",
+      "file": "models/sf-davies-symphony-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-davies-symphony-hall.ts"
+    },
+    {
+      "id": "sf-alcatraz-cellhouse",
+      "file": "models/sf-alcatraz-cellhouse.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-alcatraz-cellhouse.ts"
+    },
+    {
+      "id": "sf-alcatraz-water-tower",
+      "file": "models/sf-alcatraz-water-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-alcatraz-water-tower.ts"
+    },
+    {
+      "id": "sf-alcatraz-lighthouse",
+      "file": "models/sf-alcatraz-lighthouse.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-alcatraz-lighthouse.ts"
+    },
+    {
+      "id": "sf-ferry-building",
+      "file": "models/sf-ferry-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-ferry-building.ts"
+    },
+    {
+      "id": "sf-coit-tower",
+      "file": "models/sf-coit-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-coit-tower.ts"
+    },
+    {
+      "id": "sf-ghirardelli-square",
+      "file": "models/sf-ghirardelli-square.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-ghirardelli-square.ts"
+    },
+    {
+      "id": "sf-opera-house",
+      "file": "models/sf-opera-house.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-opera-house.ts"
+    },
+    {
+      "id": "sf-veterans-building",
+      "file": "models/sf-veterans-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-veterans-building.ts"
+    },
+    {
+      "id": "sf-de-young",
+      "file": "models/sf-de-young.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-de-young.ts"
+    },
+    {
+      "id": "sf-cal-academy",
+      "file": "models/sf-cal-academy.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-cal-academy.ts"
+    },
+    {
+      "id": "sf-conservatory-of-flowers",
+      "file": "models/sf-conservatory-of-flowers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-conservatory-of-flowers.ts"
+    },
+    {
+      "id": "sf-spreckels-temple-of-music",
+      "file": "models/sf-spreckels-temple-of-music.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-spreckels-temple-of-music.ts"
+    },
+    {
+      "id": "sf-dutch-windmill",
+      "file": "models/sf-dutch-windmill.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-dutch-windmill.ts"
+    },
+    {
+      "id": "sf-palace-of-fine-arts",
+      "file": "models/sf-palace-of-fine-arts.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-palace-of-fine-arts.ts"
+    },
+    {
+      "id": "sf-legion-of-honor",
+      "file": "models/sf-legion-of-honor.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-legion-of-honor.ts"
+    },
+    {
+      "id": "sf-sutro-tower",
+      "file": "models/sf-sutro-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-sutro-tower.ts"
+    },
+    {
+      "id": "sf-mount-davidson-cross",
+      "file": "models/sf-mount-davidson-cross.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-mount-davidson-cross.ts"
+    },
+    {
+      "id": "sf-grace-cathedral",
+      "file": "models/sf-grace-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-grace-cathedral.ts"
+    },
+    {
+      "id": "sf-mission-dolores",
+      "file": "models/sf-mission-dolores.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-mission-dolores.ts"
+    },
+    {
+      "id": "sf-st-marys-cathedral",
+      "file": "models/sf-st-marys-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-st-marys-cathedral.ts"
+    },
+    {
+      "id": "sf-old-mint",
+      "file": "models/sf-old-mint.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-old-mint.ts"
+    },
+    {
+      "id": "sf-oracle-park",
+      "file": "models/sf-oracle-park.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-oracle-park.ts"
+    },
+    {
+      "id": "sf-chase-center",
+      "file": "models/sf-chase-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-chase-center.ts"
+    },
+    {
+      "id": "sf-sfmoma",
+      "file": "models/sf-sfmoma.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-sfmoma.ts"
+    },
+    {
+      "id": "sf-oakland-tribune-tower",
+      "file": "models/sf-oakland-tribune-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-oakland-tribune-tower.ts"
+    },
+    {
+      "id": "sf-oakland-city-hall",
+      "file": "models/sf-oakland-city-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-oakland-city-hall.ts"
+    },
+    {
+      "id": "sf-paramount-theatre",
+      "file": "models/sf-paramount-theatre.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-paramount-theatre.ts"
+    },
+    {
+      "id": "sf-fox-oakland",
+      "file": "models/sf-fox-oakland.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-fox-oakland.ts"
+    },
+    {
+      "id": "sf-christ-the-light",
+      "file": "models/sf-christ-the-light.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-christ-the-light.ts"
+    },
+    {
+      "id": "sf-oakland-temple",
+      "file": "models/sf-oakland-temple.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-oakland-temple.ts"
+    },
+    {
+      "id": "sf-sather-tower",
+      "file": "models/sf-sather-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sf-sather-tower.ts"
+    },
+    {
+      "id": "sea-f5-tower",
+      "file": "models/sea-f5-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-f5-tower.ts"
+    },
+    {
+      "id": "sea-space-needle",
+      "file": "models/sea-space-needle.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-space-needle.ts"
+    },
+    {
+      "id": "sea-municipal-tower",
+      "file": "models/sea-municipal-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-municipal-tower.ts"
+    },
+    {
+      "id": "sea-smith-tower",
+      "file": "models/sea-smith-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-smith-tower.ts"
+    },
+    {
+      "id": "sea-columbia-center",
+      "file": "models/sea-columbia-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-columbia-center.ts"
+    },
+    {
+      "id": "sea-climate-pledge-arena",
+      "file": "models/sea-climate-pledge-arena.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-climate-pledge-arena.ts"
+    },
+    {
+      "id": "sea-rainier-square-tower",
+      "file": "models/sea-rainier-square-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-rainier-square-tower.ts"
+    },
+    {
+      "id": "sea-rainier-tower",
+      "file": "models/sea-rainier-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-rainier-tower.ts"
+    },
+    {
+      "id": "sea-1201-third-avenue",
+      "file": "models/sea-1201-third-avenue.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-1201-third-avenue.ts"
+    },
+    {
+      "id": "sea-seattle-tower",
+      "file": "models/sea-seattle-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-seattle-tower.ts"
+    },
+    {
+      "id": "sea-pacific-science-center",
+      "file": "models/sea-pacific-science-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-pacific-science-center.ts"
+    },
+    {
+      "id": "sea-chihuly-glasshouse",
+      "file": "models/sea-chihuly-glasshouse.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-chihuly-glasshouse.ts"
+    },
+    {
+      "id": "sea-two-union-square",
+      "file": "models/sea-two-union-square.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-two-union-square.ts"
+    },
+    {
+      "id": "sea-great-wheel",
+      "file": "models/sea-great-wheel.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-great-wheel.ts"
+    },
+    {
+      "id": "sea-westin-towers",
+      "file": "models/sea-westin-towers.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-westin-towers.ts"
+    },
+    {
+      "id": "sea-amazon-spheres",
+      "file": "models/sea-amazon-spheres.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-amazon-spheres.ts"
+    },
+    {
+      "id": "sea-king-street-station",
+      "file": "models/sea-king-street-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-king-street-station.ts"
+    },
+    {
+      "id": "sea-union-station",
+      "file": "models/sea-union-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-union-station.ts"
+    },
+    {
+      "id": "sea-benaroya-hall",
+      "file": "models/sea-benaroya-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-benaroya-hall.ts"
+    },
+    {
+      "id": "sea-lumen-field",
+      "file": "models/sea-lumen-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-lumen-field.ts"
+    },
+    {
+      "id": "sea-central-library",
+      "file": "models/sea-central-library.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-central-library.ts"
+    },
+    {
+      "id": "sea-t-mobile-park",
+      "file": "models/sea-t-mobile-park.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-t-mobile-park.ts"
+    },
+    {
+      "id": "sea-st-james-cathedral",
+      "file": "models/sea-st-james-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-st-james-cathedral.ts"
+    },
+    {
+      "id": "sea-husky-stadium",
+      "file": "models/sea-husky-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-husky-stadium.ts"
+    },
+    {
+      "id": "sea-suzzallo-library",
+      "file": "models/sea-suzzallo-library.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-suzzallo-library.ts"
+    },
+    {
+      "id": "sea-pacific-tower",
+      "file": "models/sea-pacific-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-pacific-tower.ts"
+    },
+    {
+      "id": "sea-gas-works",
+      "file": "models/sea-gas-works.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-gas-works.ts"
+    },
+    {
+      "id": "sea-volunteer-park-conservatory",
+      "file": "models/sea-volunteer-park-conservatory.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-volunteer-park-conservatory.ts"
+    },
+    {
+      "id": "sea-tacoma-union-station",
+      "file": "models/sea-tacoma-union-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-tacoma-union-station.ts"
+    },
+    {
+      "id": "sea-museum-of-glass",
+      "file": "models/sea-museum-of-glass.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-museum-of-glass.ts"
+    },
+    {
+      "id": "sea-tacoma-dome",
+      "file": "models/sea-tacoma-dome.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-tacoma-dome.ts"
+    },
+    {
+      "id": "sea-washington-state-capitol",
+      "file": "models/sea-washington-state-capitol.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/sea-washington-state-capitol.ts"
+    },
+    {
       "id": "nyc-432-park",
       "file": "models/nyc-432-park.glb",
       "license": "CC0-1.0",
@@ -3719,7 +5518,7 @@
     },
     {
       "id": "wdw-epcot-canada",
-      "name": "Canada Pavilion (Hôtel du Canada)",
+      "name": "Canada Pavilion (H\u00f4tel du Canada)",
       "model": "wdw-epcot-canada",
       "lng": -81.55165,
       "lat": 28.37155,
@@ -4044,7 +5843,7 @@
     },
     {
       "id": "wdw-rock-n-roller-coaster",
-      "name": "Rock ’n’ Roller Coaster Starring The Muppets",
+      "name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
       "model": "wdw-rock-n-roller-coaster",
       "lng": -81.5615788,
       "lat": 28.3596178,
@@ -4621,7 +6420,7 @@
     },
     {
       "id": "dlr-guardians-mission-breakout",
-      "name": "Guardians of the Galaxy – Mission: Breakout!",
+      "name": "Guardians of the Galaxy \u2013 Mission: Breakout!",
       "model": "dlr-guardians-mission-breakout",
       "lng": -117.9169523,
       "lat": 33.8066398,
@@ -4723,6 +6522,5155 @@
       "replaces": [
         "way/312369808",
         "way/121865023"
+      ]
+    },
+    {
+      "id": "chi-willis-tower",
+      "name": "Willis Tower",
+      "model": "chi-willis-tower",
+      "lng": -87.6359459,
+      "lat": 41.8787278,
+      "bearing": 358.93,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q29294",
+      "replaces": [
+        "way/380868216",
+        "way/137162289",
+        "way/137162290",
+        "way/137162293",
+        "way/137162295",
+        "way/137162296",
+        "way/137162297",
+        "way/137162298",
+        "way/137162299",
+        "way/233918141",
+        "way/233918220",
+        "way/1178243970",
+        "way/1178243971",
+        "way/1178243972",
+        "way/1178243973",
+        "way/1178226299",
+        "way/1007423276",
+        "way/1178212992",
+        "way/1178212993",
+        "way/1178212994",
+        "way/1178212995",
+        "way/1178212996",
+        "way/1178212997",
+        "way/1178212998",
+        "way/1178212999",
+        "way/1178213001",
+        "way/1178226263",
+        "way/1178226264"
+      ]
+    },
+    {
+      "id": "chi-trump-tower",
+      "name": "Trump International Hotel & Tower",
+      "model": "chi-trump-tower",
+      "lng": -87.626459,
+      "lat": 41.888875,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q546221",
+      "replaces": [
+        "way/64594680",
+        "way/188338549",
+        "way/188338550",
+        "way/188338548",
+        "way/188338859",
+        "way/188356529",
+        "way/284773992",
+        "way/284773991"
+      ]
+    },
+    {
+      "id": "chi-875-north-michigan",
+      "name": "875 North Michigan Avenue",
+      "model": "chi-875-north-michigan",
+      "lng": -87.623095,
+      "lat": 41.898818,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q217727",
+      "replaces": [
+        "way/31064573",
+        "way/232905278",
+        "way/232905280",
+        "way/232905283",
+        "way/232906397",
+        "way/232914185",
+        "way/1282265474",
+        "way/279951771",
+        "way/279951772"
+      ]
+    },
+    {
+      "id": "chi-water-tower",
+      "name": "Chicago Water Tower",
+      "model": "chi-water-tower",
+      "lng": -87.624437,
+      "lat": 41.897171,
+      "bearing": 358.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q862890",
+      "replaces": [
+        "way/130147025",
+        "way/1283005798",
+        "way/1283005799",
+        "way/1283005800",
+        "way/1283005801",
+        "way/1283005802",
+        "way/1283005803",
+        "way/1283005804"
+      ]
+    },
+    {
+      "id": "chi-st-regis",
+      "name": "St. Regis Chicago",
+      "model": "chi-st-regis",
+      "lng": -87.617251,
+      "lat": 41.887236,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q19817578",
+      "replaces": [
+        "way/464802811",
+        "way/465242989",
+        "way/465242991",
+        "way/465242992",
+        "way/465242990"
+      ]
+    },
+    {
+      "id": "chi-aqua",
+      "name": "Aqua",
+      "model": "chi-aqua",
+      "lng": -87.619901,
+      "lat": 41.88631,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q622895",
+      "replaces": [
+        "way/95486962",
+        "way/686330072",
+        "way/1178533833",
+        "way/1178533841",
+        "way/1178533854",
+        "way/1178533855",
+        "way/1178533856",
+        "way/1178533857",
+        "way/1178533858",
+        "way/1178533859"
+      ]
+    },
+    {
+      "id": "chi-aon-center",
+      "name": "Aon Center",
+      "model": "chi-aon-center",
+      "lng": -87.621548,
+      "lat": 41.885281,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q271695",
+      "replaces": [
+        "way/64388609",
+        "way/284775635"
+      ]
+    },
+    {
+      "id": "chi-fourth-presbyterian",
+      "name": "Fourth Presbyterian Church",
+      "model": "chi-fourth-presbyterian",
+      "lng": -87.624753,
+      "lat": 41.898995,
+      "bearing": 358.7,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q4290682",
+      "replaces": [
+        "way/129575948"
+      ]
+    },
+    {
+      "id": "chi-palmolive-building",
+      "name": "Palmolive Building",
+      "model": "chi-palmolive-building",
+      "lng": -87.623512,
+      "lat": 41.899771,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3387206",
+      "replaces": [
+        "way/143756601"
+      ]
+    },
+    {
+      "id": "chi-900-north-michigan",
+      "name": "900 North Michigan",
+      "model": "chi-900-north-michigan",
+      "lng": -87.62559,
+      "lat": 41.899615,
+      "bearing": 358.9,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q275936",
+      "replaces": [
+        "way/31064552",
+        "way/153966972",
+        "way/1283045515"
+      ]
+    },
+    {
+      "id": "chi-carbide-carbon",
+      "name": "Carbide & Carbon Building",
+      "model": "chi-carbide-carbon",
+      "lng": -87.625008,
+      "lat": 41.886526,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1925179",
+      "replaces": [
+        "way/148544831",
+        "way/147400407",
+        "way/148544830"
+      ]
+    },
+    {
+      "id": "chi-smurfit-stone",
+      "name": "Crain Communications Building",
+      "model": "chi-smurfit-stone",
+      "lng": -87.624977,
+      "lat": 41.88483,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2444330",
+      "replaces": [
+        "way/210671717",
+        "way/284816227",
+        "way/284816228",
+        "way/284816229"
+      ]
+    },
+    {
+      "id": "chi-two-prudential-plaza",
+      "name": "Two Prudential Plaza",
+      "model": "chi-two-prudential-plaza",
+      "lng": -87.62272,
+      "lat": 41.885419,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1121971",
+      "replaces": [
+        "way/64388666"
+      ]
+    },
+    {
+      "id": "chi-jewelers-building",
+      "name": "Jewelers Building",
+      "model": "chi-jewelers-building",
+      "lng": -87.626793,
+      "lat": 41.886527,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2816312",
+      "replaces": [
+        "way/124865488",
+        "way/686198235",
+        "way/686198236",
+        "way/686198237"
+      ]
+    },
+    {
+      "id": "chi-mather-tower",
+      "name": "Mather Tower",
+      "model": "chi-mather-tower",
+      "lng": -87.625442,
+      "lat": 41.887616,
+      "bearing": 34.9,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3117510",
+      "replaces": [
+        "way/147399564",
+        "way/592122465",
+        "way/686198765"
+      ]
+    },
+    {
+      "id": "chi-tribune-tower",
+      "name": "Tribune Tower",
+      "model": "chi-tribune-tower",
+      "lng": -87.623308,
+      "lat": 41.89055,
+      "bearing": 358.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2143136",
+      "replaces": [
+        "way/150407241",
+        "way/127107038"
+      ]
+    },
+    {
+      "id": "chi-wrigley-building",
+      "name": "Wrigley Building",
+      "model": "chi-wrigley-building",
+      "lng": -87.624884,
+      "lat": 41.88974,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1464592",
+      "replaces": [
+        "relation/17460539",
+        "way/686197567",
+        "way/686197572",
+        "way/686197576"
+      ]
+    },
+    {
+      "id": "chi-medinah-temple",
+      "name": "Medinah Temple",
+      "model": "chi-medinah-temple",
+      "lng": -87.627205,
+      "lat": 41.892894,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q14687867",
+      "replaces": [
+        "way/210680454"
+      ]
+    },
+    {
+      "id": "chi-holy-name-cathedral",
+      "name": "Holy Name Cathedral",
+      "model": "chi-holy-name-cathedral",
+      "lng": -87.627533,
+      "lat": 41.895984,
+      "bearing": 358.7,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2942930",
+      "replaces": [
+        "way/75684994"
+      ]
+    },
+    {
+      "id": "chi-marina-city",
+      "name": "Marina City",
+      "model": "chi-marina-city",
+      "lng": -87.6288135,
+      "lat": 41.888083,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q653584",
+      "replaces": [
+        "way/1177923716",
+        "way/1177923717",
+        "way/1177923718",
+        "way/1177923719",
+        "way/284822929",
+        "way/284822924",
+        "way/284822930",
+        "way/284822932",
+        "way/1177923721"
+      ]
+    },
+    {
+      "id": "chi-board-of-trade",
+      "name": "Chicago Board of Trade Building",
+      "model": "chi-board-of-trade",
+      "lng": -87.631869,
+      "lat": 41.877411,
+      "bearing": 359.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2224700",
+      "replaces": [
+        "way/28951633",
+        "way/685519266",
+        "way/685519267",
+        "way/685519269",
+        "way/685519270",
+        "way/1425860168",
+        "way/1425860169"
+      ]
+    },
+    {
+      "id": "chi-rookery",
+      "name": "The Rookery",
+      "model": "chi-rookery",
+      "lng": -87.63183,
+      "lat": 41.879082,
+      "bearing": 359.1,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3441853",
+      "replaces": [
+        "way/73706154"
+      ]
+    },
+    {
+      "id": "chi-chicago-temple",
+      "name": "Chicago Temple Building",
+      "model": "chi-chicago-temple",
+      "lng": -87.630615,
+      "lat": 41.882859,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q14687499",
+      "replaces": [
+        "way/137060374"
+      ]
+    },
+    {
+      "id": "chi-311-south-wacker",
+      "name": "311 South Wacker Drive",
+      "model": "chi-311-south-wacker",
+      "lng": -87.635751,
+      "lat": 41.877462,
+      "bearing": 358.9,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q224563",
+      "replaces": [
+        "way/147350208",
+        "way/686318733",
+        "way/686318734",
+        "way/1188678576",
+        "way/1188678581",
+        "way/1188678582",
+        "way/1188678583",
+        "way/1188678584"
+      ]
+    },
+    {
+      "id": "chi-chase-tower",
+      "name": "Chase Tower",
+      "model": "chi-chase-tower",
+      "lng": -87.630138,
+      "lat": 41.881623,
+      "bearing": 359.2,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q291304",
+      "replaces": [
+        "way/230613007",
+        "way/284778256",
+        "way/284778257",
+        "way/284778258",
+        "way/284778259"
+      ]
+    },
+    {
+      "id": "chi-merchandise-mart",
+      "name": "Merchandise Mart",
+      "model": "chi-merchandise-mart",
+      "lng": -87.6353729,
+      "lat": 41.8885491,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1921426",
+      "replaces": [
+        "way/28293211",
+        "way/1432322251",
+        "way/1432322252",
+        "way/1432322253",
+        "way/1432322254",
+        "way/1432322255",
+        "way/1432322256",
+        "way/1432322257",
+        "way/1432322258",
+        "way/1432322259"
+      ]
+    },
+    {
+      "id": "chi-333-wacker",
+      "name": "333 Wacker Drive",
+      "model": "chi-333-wacker",
+      "lng": -87.6359245,
+      "lat": 41.8860954,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q225835",
+      "replaces": [
+        "way/116017092"
+      ]
+    },
+    {
+      "id": "chi-union-station",
+      "name": "Chicago Union Station",
+      "model": "chi-union-station",
+      "lng": -87.6404074,
+      "lat": 41.8786657,
+      "bearing": 358.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1155989",
+      "replaces": [
+        "way/203442440"
+      ]
+    },
+    {
+      "id": "chi-thompson-center",
+      "name": "James R. Thompson Center",
+      "model": "chi-thompson-center",
+      "lng": -87.6317257,
+      "lat": 41.8851748,
+      "bearing": 358.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3161356",
+      "replaces": [
+        "way/230926922"
+      ]
+    },
+    {
+      "id": "chi-harold-washington-library",
+      "name": "Harold Washington Library Center",
+      "model": "chi-harold-washington-library",
+      "lng": -87.6282122,
+      "lat": 41.8763227,
+      "bearing": 359.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3127656",
+      "replaces": [
+        "way/28292694"
+      ]
+    },
+    {
+      "id": "chi-crown-fountain",
+      "name": "Crown Fountain",
+      "model": "chi-crown-fountain",
+      "lng": -87.623744,
+      "lat": 41.881486,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3005469",
+      "replaces": [
+        "way/126945440",
+        "way/126945441"
+      ]
+    },
+    {
+      "id": "chi-buckingham-fountain",
+      "name": "Buckingham Fountain",
+      "model": "chi-buckingham-fountain",
+      "lng": -87.618972,
+      "lat": 41.875802,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q158989",
+      "replaces": []
+    },
+    {
+      "id": "chi-pritzker-pavilion",
+      "name": "Jay Pritzker Pavilion",
+      "model": "chi-pritzker-pavilion",
+      "lng": -87.621892,
+      "lat": 41.883512,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3180096",
+      "replaces": [
+        "way/126978545",
+        "way/764598205",
+        "way/764598206",
+        "way/764598207",
+        "way/764598208",
+        "way/764598209"
+      ]
+    },
+    {
+      "id": "chi-cloud-gate",
+      "name": "Cloud Gate",
+      "model": "chi-cloud-gate",
+      "lng": -87.623339,
+      "lat": 41.882686,
+      "bearing": 359.4,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q589099",
+      "replaces": [
+        "way/137060274"
+      ]
+    },
+    {
+      "id": "chi-picasso",
+      "name": "Chicago Picasso",
+      "model": "chi-picasso",
+      "lng": -87.629979,
+      "lat": 41.883623,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q5095736",
+      "replaces": []
+    },
+    {
+      "id": "chi-flamingo",
+      "name": "Flamingo",
+      "model": "chi-flamingo",
+      "lng": -87.6296809,
+      "lat": 41.8788065,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3073296",
+      "replaces": []
+    },
+    {
+      "id": "chi-chicago-theatre",
+      "name": "Chicago Theatre",
+      "model": "chi-chicago-theatre",
+      "lng": -87.627238,
+      "lat": 41.885396,
+      "bearing": 359.7,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q642866",
+      "replaces": [
+        "way/124873919",
+        "way/1176843051"
+      ]
+    },
+    {
+      "id": "chi-art-institute",
+      "name": "Art Institute of Chicago",
+      "model": "chi-art-institute",
+      "lng": -87.62366,
+      "lat": 41.879567,
+      "bearing": 359.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q239303",
+      "replaces": [
+        "way/765296570",
+        "way/765296577",
+        "way/765296578"
+      ]
+    },
+    {
+      "id": "chi-art-institute-modern-wing",
+      "name": "Art Institute of Chicago Modern Wing",
+      "model": "chi-art-institute-modern-wing",
+      "lng": -87.622027,
+      "lat": 41.880287,
+      "bearing": 359.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/765296571",
+        "way/943374848",
+        "way/943374852",
+        "way/1425669058"
+      ]
+    },
+    {
+      "id": "chi-field-museum",
+      "name": "Field Museum",
+      "model": "chi-field-museum",
+      "lng": -87.6170432,
+      "lat": 41.8662113,
+      "bearing": 358.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1122595",
+      "replaces": [
+        "way/24825537"
+      ]
+    },
+    {
+      "id": "chi-adler-planetarium",
+      "name": "Adler Planetarium",
+      "model": "chi-adler-planetarium",
+      "lng": -87.6067964,
+      "lat": 41.8663603,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q358052",
+      "replaces": [
+        "way/24825591",
+        "way/766703208",
+        "way/686342956"
+      ]
+    },
+    {
+      "id": "chi-soldier-field",
+      "name": "Soldier Field",
+      "model": "chi-soldier-field",
+      "lng": -87.616696,
+      "lat": 41.862324,
+      "bearing": 357,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1132413",
+      "replaces": [
+        "relation/16699535",
+        "relation/2305649",
+        "way/766775009",
+        "way/766775011",
+        "way/766775012",
+        "way/766776875",
+        "way/766776876",
+        "way/766776879",
+        "way/766776882",
+        "way/766776883",
+        "way/766776884",
+        "way/766782645",
+        "way/766782646",
+        "way/766782652",
+        "way/766782656"
+      ]
+    },
+    {
+      "id": "chi-shedd-aquarium",
+      "name": "Shedd Aquarium",
+      "model": "chi-shedd-aquarium",
+      "lng": -87.6140757,
+      "lat": 41.8676081,
+      "bearing": 358.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2166515",
+      "replaces": [
+        "relation/17430414",
+        "way/766506552",
+        "way/766511382",
+        "way/766511383",
+        "way/766511381"
+      ]
+    },
+    {
+      "id": "chi-wrigley-field",
+      "name": "Wrigley Field",
+      "model": "chi-wrigley-field",
+      "lng": -87.655543,
+      "lat": 41.948193,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1052807",
+      "replaces": [
+        "relation/17238872",
+        "way/1265638385",
+        "way/1265638386",
+        "way/1265761900",
+        "way/1265761901",
+        "way/1265761902",
+        "way/1265781812"
+      ]
+    },
+    {
+      "id": "chi-rate-field",
+      "name": "Rate Field",
+      "model": "chi-rate-field",
+      "lng": -87.633696,
+      "lat": 41.829874,
+      "bearing": 308,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q633613",
+      "replaces": [
+        "relation/8167350",
+        "way/1285778036",
+        "way/1285755804",
+        "way/1285755828",
+        "way/1285755829",
+        "way/1285778007",
+        "way/1285778008"
+      ]
+    },
+    {
+      "id": "chi-united-center",
+      "name": "United Center",
+      "model": "chi-united-center",
+      "lng": -87.674184,
+      "lat": 41.88068,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q639975",
+      "replaces": [
+        "way/205221993",
+        "way/750458683",
+        "way/750458680",
+        "way/750458681"
+      ]
+    },
+    {
+      "id": "chi-centennial-wheel",
+      "name": "Centennial Wheel",
+      "model": "chi-centennial-wheel",
+      "lng": -87.607475,
+      "lat": 41.891702,
+      "bearing": 358.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q43153888",
+      "replaces": [
+        "way/686996484"
+      ]
+    },
+    {
+      "id": "chi-lake-point-tower",
+      "name": "Lake Point Tower",
+      "model": "chi-lake-point-tower",
+      "lng": -87.612315,
+      "lat": 41.891497,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1801054",
+      "replaces": [
+        "relation/19385699",
+        "way/150408224",
+        "way/284814462"
+      ]
+    },
+    {
+      "id": "chi-museum-of-science-industry",
+      "name": "Museum of Science and Industry",
+      "model": "chi-museum-of-science-industry",
+      "lng": -87.582761,
+      "lat": 41.790714,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1414079",
+      "replaces": [
+        "way/24826230"
+      ]
+    },
+    {
+      "id": "chi-bahai-temple",
+      "name": "Bah\u00e1\u02bc\u00ed House of Worship",
+      "model": "chi-bahai-temple",
+      "lng": -87.68429,
+      "lat": 42.074437,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4843063",
+      "replaces": [
+        "way/369160462"
+      ]
+    },
+    {
+      "id": "chi-robie-house",
+      "name": "Frederick C. Robie House",
+      "model": "chi-robie-house",
+      "lng": -87.595947,
+      "lat": 41.789811,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q929965",
+      "replaces": [
+        "way/125667497"
+      ]
+    },
+    {
+      "id": "lv-strat",
+      "name": "The STRAT Tower",
+      "model": "lv-strat",
+      "lng": -115.15552,
+      "lat": 36.147409,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q845846",
+      "replaces": [
+        "way/135457469",
+        "way/503324066"
+      ]
+    },
+    {
+      "id": "lv-high-roller",
+      "name": "High Roller",
+      "model": "lv-high-roller",
+      "lng": -115.168164,
+      "lat": 36.117694,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q892103",
+      "replaces": [
+        "way/402543930"
+      ]
+    },
+    {
+      "id": "lv-sphere",
+      "name": "Sphere",
+      "model": "lv-sphere",
+      "lng": -115.162067,
+      "lat": 36.121244,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q60749353",
+      "replaces": [
+        "way/976405284"
+      ]
+    },
+    {
+      "id": "lv-luxor",
+      "name": "Luxor Las Vegas",
+      "model": "lv-luxor",
+      "lng": -115.175804,
+      "lat": 36.09547,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q637389",
+      "replaces": [
+        "way/27858544",
+        "way/136520122",
+        "way/136516661",
+        "way/136516662",
+        "way/136516663",
+        "way/136516665",
+        "way/136516667",
+        "way/136516668",
+        "way/136516669",
+        "way/136516670",
+        "way/136516672",
+        "way/136516673",
+        "way/136516674",
+        "way/136520109",
+        "way/136520110",
+        "way/136520112",
+        "way/136520113",
+        "way/136520114",
+        "way/136520116",
+        "way/136520117",
+        "way/136520118",
+        "way/136520119",
+        "way/136520121",
+        "way/136520124",
+        "way/118344867",
+        "way/118344869",
+        "way/399368723"
+      ]
+    },
+    {
+      "id": "lv-new-york-new-york",
+      "name": "New York-New York",
+      "model": "lv-new-york-new-york",
+      "lng": -115.1744447,
+      "lat": 36.1022215,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1429071",
+      "replaces": [
+        "way/115661793",
+        "way/115661791",
+        "way/115661792",
+        "way/115661794",
+        "way/115661795",
+        "way/115661796",
+        "way/115661797",
+        "way/115661798",
+        "way/115661799",
+        "way/115661800",
+        "way/115661801",
+        "way/115661802",
+        "way/115661803",
+        "way/115661804",
+        "way/115661805",
+        "way/115661806",
+        "way/115661807"
+      ]
+    },
+    {
+      "id": "lv-big-apple-coaster",
+      "name": "The Big Apple Coaster",
+      "model": "lv-big-apple-coaster",
+      "lng": -115.174878,
+      "lat": 36.1022266,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1670601",
+      "replaces": [
+        "way/115662438",
+        "way/1035252213",
+        "way/1035252211",
+        "way/1035251668",
+        "way/1035251667",
+        "way/1035252212",
+        "way/1035252215",
+        "way/1035251772",
+        "way/646113820",
+        "way/646113823",
+        "way/1035252214",
+        "way/646113825"
+      ]
+    },
+    {
+      "id": "lv-caesars-palace",
+      "name": "Caesars Palace",
+      "model": "lv-caesars-palace",
+      "lng": -115.1762721,
+      "lat": 36.1165611,
+      "bearing": 1.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q569978",
+      "replaces": [
+        "way/115672893",
+        "way/1176928048",
+        "way/126267789",
+        "way/134944648",
+        "way/134949102",
+        "way/134949098",
+        "way/134949101",
+        "way/134949402",
+        "way/134949715",
+        "way/1168129083"
+      ]
+    },
+    {
+      "id": "lv-wynn",
+      "name": "Wynn Las Vegas",
+      "model": "lv-wynn",
+      "lng": -115.165516,
+      "lat": 36.126665,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1309059",
+      "replaces": [
+        "way/205501268"
+      ]
+    },
+    {
+      "id": "lv-encore",
+      "name": "Encore Las Vegas",
+      "model": "lv-encore",
+      "lng": -115.16476,
+      "lat": 36.129408,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1340132",
+      "replaces": [
+        "way/27910891"
+      ]
+    },
+    {
+      "id": "lv-fontainebleau",
+      "name": "Fontainebleau Las Vegas",
+      "model": "lv-fontainebleau",
+      "lng": -115.159404,
+      "lat": 36.137992,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q278380",
+      "replaces": [
+        "way/134068318"
+      ]
+    },
+    {
+      "id": "lv-resorts-world",
+      "name": "Resorts World Las Vegas",
+      "model": "lv-resorts-world",
+      "lng": -115.166194,
+      "lat": 36.134767,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q14705265",
+      "replaces": [
+        "way/316303708"
+      ]
+    },
+    {
+      "id": "lv-trump",
+      "name": "Trump International Hotel Las Vegas",
+      "model": "lv-trump",
+      "lng": -115.172629,
+      "lat": 36.129512,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1281171",
+      "replaces": [
+        "way/111380666",
+        "way/111380664"
+      ]
+    },
+    {
+      "id": "lv-excalibur",
+      "name": "Excalibur Hotel & Casino",
+      "model": "lv-excalibur",
+      "lng": -115.175458,
+      "lat": 36.098913,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1064873",
+      "replaces": [
+        "relation/8086330",
+        "way/114859870",
+        "way/114857390",
+        "way/114870395",
+        "way/114870398",
+        "way/114857376",
+        "way/114857379",
+        "way/114857381",
+        "way/114857385",
+        "way/114857387",
+        "way/114857388",
+        "way/114857392",
+        "way/114857393",
+        "way/114857395",
+        "way/114857396",
+        "way/114857398",
+        "way/114857399",
+        "way/114857401",
+        "way/114857405",
+        "way/114857406",
+        "way/114857408",
+        "way/114866100",
+        "way/114866101",
+        "way/114866102",
+        "way/114866542",
+        "way/114866543",
+        "way/114866546",
+        "way/114866547",
+        "way/114866549",
+        "way/114866551",
+        "way/114866553",
+        "way/114871424",
+        "way/114865271",
+        "way/114865278",
+        "way/114865280",
+        "way/114865283",
+        "way/114865286",
+        "way/114865290",
+        "way/567108281",
+        "way/567108283"
+      ]
+    },
+    {
+      "id": "lv-mandalay-bay",
+      "name": "Mandalay Bay",
+      "model": "lv-mandalay-bay",
+      "lng": -115.174814,
+      "lat": 36.091804,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1368043",
+      "replaces": [
+        "way/27858550",
+        "way/118347176"
+      ]
+    },
+    {
+      "id": "lv-venetian",
+      "name": "The Venetian",
+      "model": "lv-venetian",
+      "lng": -115.1692833,
+      "lat": 36.1217638,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1049209",
+      "replaces": [
+        "relation/7770314",
+        "way/30618090",
+        "way/111322067",
+        "way/43875964",
+        "way/543728945"
+      ]
+    },
+    {
+      "id": "lv-palazzo",
+      "name": "The Palazzo",
+      "model": "lv-palazzo",
+      "lng": -115.1682593,
+      "lat": 36.1241116,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1514587",
+      "replaces": [
+        "way/180584269",
+        "way/30424125"
+      ]
+    },
+    {
+      "id": "lv-treasure-island",
+      "name": "Treasure Island",
+      "model": "lv-treasure-island",
+      "lng": -115.1716227,
+      "lat": 36.1247323,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1360313",
+      "replaces": [
+        "way/33959894",
+        "way/27727145"
+      ]
+    },
+    {
+      "id": "lv-paris-resort",
+      "name": "Paris Las Vegas",
+      "model": "lv-paris-resort",
+      "lng": -115.17049,
+      "lat": 36.1123056,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q691491",
+      "replaces": [
+        "way/33974140",
+        "way/27831697",
+        "way/114722037",
+        "way/114697072",
+        "way/114697073",
+        "way/114697074",
+        "way/364846544"
+      ]
+    },
+    {
+      "id": "lv-aria",
+      "name": "Aria Resort & Casino",
+      "model": "lv-aria",
+      "lng": -115.177226,
+      "lat": 36.107191,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q654279",
+      "replaces": [
+        "way/134930092",
+        "way/134930090",
+        "way/134930089",
+        "way/134930091",
+        "way/134930088"
+      ]
+    },
+    {
+      "id": "lv-vdara",
+      "name": "Vdara Hotel & Spa",
+      "model": "lv-vdara",
+      "lng": -115.178022,
+      "lat": 36.109526,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q280910",
+      "replaces": [
+        "relation/20214578",
+        "way/1481167211",
+        "way/52175577",
+        "way/134932949",
+        "way/134932948"
+      ]
+    },
+    {
+      "id": "lv-bellagio",
+      "name": "Bellagio",
+      "model": "lv-bellagio",
+      "lng": -115.176606,
+      "lat": 36.113113,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q25007",
+      "replaces": [
+        "way/25723909",
+        "way/114703388"
+      ]
+    },
+    {
+      "id": "lv-cosmopolitan",
+      "name": "The Cosmopolitan of Las Vegas",
+      "model": "lv-cosmopolitan",
+      "lng": -115.174091,
+      "lat": 36.110181,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1436845",
+      "replaces": [
+        "way/134795273",
+        "way/27897905",
+        "way/472669744"
+      ]
+    },
+    {
+      "id": "lv-veer-towers",
+      "name": "Veer Towers",
+      "model": "lv-veer-towers",
+      "lng": -115.174681,
+      "lat": 36.107407,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q634258",
+      "replaces": [
+        "way/52134835",
+        "way/52134834"
+      ]
+    },
+    {
+      "id": "lv-mgm-grand",
+      "name": "MGM Grand Las Vegas",
+      "model": "lv-mgm-grand",
+      "lng": -115.169646,
+      "lat": 36.10242,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q713960",
+      "replaces": [
+        "way/115093734",
+        "way/115095169",
+        "way/115095172",
+        "way/115095167",
+        "way/115095174",
+        "way/115095166",
+        "way/115095173",
+        "way/115095160",
+        "way/115095161"
+      ]
+    },
+    {
+      "id": "lv-allegiant-stadium",
+      "name": "Allegiant Stadium",
+      "model": "lv-allegiant-stadium",
+      "lng": -115.18307,
+      "lat": 36.090734,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q27768421",
+      "replaces": [
+        "way/691478555",
+        "way/1249542290",
+        "way/1249571723",
+        "way/1249571724",
+        "way/1249571727",
+        "way/1249571728",
+        "way/1249571730",
+        "way/1249571731",
+        "way/1249571733",
+        "way/1249571734",
+        "way/1249571735",
+        "way/1249571736",
+        "way/1249571737",
+        "way/1249571739",
+        "way/1249571741",
+        "way/1249571742",
+        "way/1249571743",
+        "way/1249571744",
+        "way/1249571745",
+        "way/1249878676",
+        "way/1249878677",
+        "way/1252866554",
+        "way/1252866556",
+        "way/1252866558",
+        "way/1252866560",
+        "way/1252866562",
+        "way/1252866564",
+        "way/1252866565",
+        "way/1252866566",
+        "way/1252866567",
+        "way/1252866568",
+        "way/1252866569",
+        "way/1252866570",
+        "way/1252866571",
+        "way/1252866572",
+        "way/1252866573",
+        "way/1252866574",
+        "way/1252866575",
+        "way/1252866576",
+        "way/1252866577"
+      ]
+    },
+    {
+      "id": "lv-las-tower",
+      "name": "Harry Reid International Airport control tower",
+      "model": "lv-las-tower",
+      "lng": -115.141597,
+      "lat": 36.084946,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/340018195"
+      ]
+    },
+    {
+      "id": "lv-welcome-sign",
+      "name": "Welcome to Fabulous Las Vegas sign",
+      "model": "lv-welcome-sign",
+      "lng": -115.1727735,
+      "lat": 36.0820593,
+      "bearing": 355,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q175665",
+      "replaces": []
+    },
+    {
+      "id": "lv-circus-circus",
+      "name": "Circus Circus",
+      "model": "lv-circus-circus",
+      "lng": -115.1652462,
+      "lat": 36.1377093,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1092961",
+      "replaces": [
+        "way/135332959",
+        "way/135448016",
+        "way/135332955",
+        "way/135332956",
+        "way/135332957",
+        "way/135332961",
+        "way/135448011",
+        "way/135448025"
+      ]
+    },
+    {
+      "id": "lv-rio",
+      "name": "Rio Las Vegas",
+      "model": "lv-rio",
+      "lng": -115.1875384,
+      "lat": 36.1173512,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q739914",
+      "replaces": [
+        "way/116876230",
+        "way/27998220",
+        "way/27998223",
+        "way/134938477",
+        "way/134938479",
+        "way/134938481"
+      ]
+    },
+    {
+      "id": "lv-seven-magic-mountains",
+      "name": "Seven Magic Mountains",
+      "model": "lv-seven-magic-mountains",
+      "lng": -115.2709478,
+      "lat": 35.838299,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q124059502",
+      "replaces": []
+    },
+    {
+      "id": "lv-fremont-canopy",
+      "name": "Fremont Street Experience canopy",
+      "model": "lv-fremont-canopy",
+      "lng": -115.1440772,
+      "lat": 36.1707045,
+      "bearing": 117.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1368842",
+      "replaces": [
+        "way/1428180251"
+      ]
+    },
+    {
+      "id": "lv-slotzilla",
+      "name": "SlotZilla",
+      "model": "lv-slotzilla",
+      "lng": -115.1412707,
+      "lat": 36.1695016,
+      "bearing": 118,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/1093169256"
+      ]
+    },
+    {
+      "id": "lv-neon-museum",
+      "name": "Neon Museum (La Concha lobby)",
+      "model": "lv-neon-museum",
+      "lng": -115.1354129,
+      "lat": 36.1770538,
+      "bearing": 197,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q6461932",
+      "replaces": [
+        "way/543178410"
+      ]
+    },
+    {
+      "id": "lv-lou-ruvo",
+      "name": "Cleveland Clinic Lou Ruvo Center for Brain Health",
+      "model": "lv-lou-ruvo",
+      "lng": -115.1546623,
+      "lat": 36.1672742,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1988897",
+      "replaces": [
+        "way/484153262"
+      ]
+    },
+    {
+      "id": "lv-smith-center",
+      "name": "The Smith Center for the Performing Arts",
+      "model": "lv-smith-center",
+      "lng": -115.1518646,
+      "lat": 36.1687433,
+      "bearing": 28,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7545102",
+      "replaces": [
+        "way/135294818"
+      ]
+    },
+    {
+      "id": "lv-crystals",
+      "name": "The Shops at Crystals",
+      "model": "lv-crystals",
+      "lng": -115.1743244,
+      "lat": 36.1078197,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1281026",
+      "replaces": [
+        "way/52134608"
+      ]
+    },
+    {
+      "id": "lv-fashion-show-cloud",
+      "name": "The Cloud at Fashion Show",
+      "model": "lv-fashion-show-cloud",
+      "lng": -115.1688864,
+      "lat": 36.1269765,
+      "bearing": 29.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "relation/19447588"
+      ]
+    },
+    {
+      "id": "lv-clark-county-government-center",
+      "name": "Clark County Government Center",
+      "model": "lv-clark-county-government-center",
+      "lng": -115.1536529,
+      "lat": 36.1658876,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5127188",
+      "replaces": [
+        "relation/19293385",
+        "way/1410016952",
+        "way/1410018175",
+        "way/1410020941",
+        "way/1410020942",
+        "way/1410020943",
+        "way/1410020944",
+        "way/1410020945",
+        "way/1410021783",
+        "way/1410021784",
+        "way/1410022596",
+        "way/1410023637",
+        "way/1410023828",
+        "way/1410023898",
+        "way/1410024001",
+        "way/1410024039",
+        "way/1410024119",
+        "way/1410024120",
+        "way/1410024424",
+        "way/1410024584",
+        "way/1410024765",
+        "way/1410024775",
+        "way/1410024864",
+        "way/1410025397",
+        "way/1410025398",
+        "way/1410025399",
+        "way/1410025400",
+        "way/1410027177",
+        "way/1410027178",
+        "way/1410027179",
+        "way/1410027180",
+        "way/1410027181",
+        "way/1410027182",
+        "way/1410027183",
+        "way/1410027184",
+        "way/1410027185",
+        "way/1410027186",
+        "way/1410027187",
+        "way/1410027188",
+        "way/1410027189",
+        "way/1410027190",
+        "way/1410027191",
+        "way/1410027192",
+        "way/1410027349",
+        "way/1410028575",
+        "way/1410028576",
+        "way/1410029920",
+        "way/1410029921"
+      ]
+    },
+    {
+      "id": "lv-mob-museum",
+      "name": "The Mob Museum",
+      "model": "lv-mob-museum",
+      "lng": -115.1412791,
+      "lat": 36.172784,
+      "bearing": 28.4,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q6886561",
+      "replaces": [
+        "way/206128504"
+      ]
+    },
+    {
+      "id": "dc-washington-monument",
+      "name": "Washington Monument",
+      "model": "dc-washington-monument",
+      "lng": -77.0352425,
+      "lat": 38.8894753,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q178114",
+      "replaces": [
+        "way/766761337"
+      ]
+    },
+    {
+      "id": "dc-lincoln-memorial",
+      "name": "Lincoln Memorial",
+      "model": "dc-lincoln-memorial",
+      "lng": -77.0501719,
+      "lat": 38.8892721,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q213559",
+      "replaces": [
+        "way/398769543",
+        "way/443679930",
+        "way/443679931",
+        "way/443679932",
+        "way/443679933",
+        "way/443679934",
+        "way/443679935",
+        "way/443679936",
+        "way/443679937",
+        "way/443679938",
+        "way/443679939",
+        "way/443679941",
+        "way/443679943",
+        "way/443679944",
+        "way/443679945",
+        "way/443679946",
+        "way/443679947",
+        "way/443679948",
+        "way/443679949",
+        "way/443679950",
+        "way/443679951",
+        "way/443679952",
+        "way/443679953",
+        "way/443679954",
+        "way/443679955",
+        "way/443679956",
+        "way/443679957",
+        "way/443679958",
+        "way/443679959",
+        "way/443679960",
+        "way/443679961",
+        "way/443679962",
+        "way/443679963",
+        "way/443679964",
+        "way/443679965",
+        "way/443679966",
+        "way/443679967",
+        "way/443679968",
+        "way/443679969",
+        "way/443679970",
+        "way/443679971",
+        "way/443679972",
+        "way/443679973",
+        "way/443679974",
+        "way/443679975",
+        "way/443679976",
+        "way/443679977",
+        "way/443679978",
+        "way/443679979",
+        "way/443679980",
+        "way/443679981",
+        "way/443679982",
+        "way/443679983"
+      ]
+    },
+    {
+      "id": "dc-jefferson-memorial",
+      "name": "Thomas Jefferson Memorial",
+      "model": "dc-jefferson-memorial",
+      "lng": -77.0365506,
+      "lat": 38.8814218,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q326183",
+      "replaces": [
+        "way/248460669",
+        "way/1491844988",
+        "way/248460682",
+        "way/248460688",
+        "way/248460689",
+        "way/248460690",
+        "way/248460691",
+        "way/248460692",
+        "way/248460693",
+        "way/248460694",
+        "way/248460695",
+        "way/248460696",
+        "way/248460697",
+        "way/248460698",
+        "way/248460699",
+        "way/248460700",
+        "way/248460701",
+        "way/248460702",
+        "way/248460703",
+        "way/248460704",
+        "way/248460705",
+        "way/248460706",
+        "way/248460707",
+        "way/248460708",
+        "way/248460709",
+        "way/248460710",
+        "way/248460711",
+        "way/248460715",
+        "way/248460718",
+        "way/248460723",
+        "way/248460727",
+        "way/248460732",
+        "way/248460737",
+        "way/248460742",
+        "way/248460745",
+        "way/248460747",
+        "way/248460751",
+        "way/248460753",
+        "way/248460754",
+        "way/248460756",
+        "way/248460766",
+        "way/248460767",
+        "way/248460770",
+        "way/248460774",
+        "way/248460777",
+        "way/248460779",
+        "way/248460781",
+        "way/248460786",
+        "way/248460790",
+        "way/66418912"
+      ]
+    },
+    {
+      "id": "dc-us-capitol",
+      "name": "United States Capitol",
+      "model": "dc-us-capitol",
+      "lng": -77.009001,
+      "lat": 38.889813,
+      "bearing": 0.2,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q54109",
+      "replaces": [
+        "way/66418809",
+        "way/657315658",
+        "way/311181726",
+        "way/311181727",
+        "way/507459309",
+        "way/507459310",
+        "way/507459311",
+        "way/507459312",
+        "way/507459313",
+        "way/507459314",
+        "way/507459315",
+        "way/507459316",
+        "way/507459318",
+        "way/507459319",
+        "way/507459320",
+        "way/507459321",
+        "way/507459322",
+        "way/507459324",
+        "way/507842343",
+        "way/507832690",
+        "way/1301380219",
+        "way/1301380220",
+        "way/1301380221"
+      ]
+    },
+    {
+      "id": "dc-wwii-memorial",
+      "name": "National World War II Memorial",
+      "model": "dc-wwii-memorial",
+      "lng": -77.0405074,
+      "lat": 38.8893982,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1470020",
+      "replaces": [
+        "way/574904167",
+        "way/894587413",
+        "way/894587414",
+        "way/894587415",
+        "way/894587416",
+        "way/894587417",
+        "way/894587418",
+        "way/894587419",
+        "way/894587420",
+        "way/894587421",
+        "way/894587422",
+        "way/894587423",
+        "way/894587424",
+        "way/894587425",
+        "way/894587426",
+        "way/894587427",
+        "way/894587428",
+        "way/894587431",
+        "way/894587432",
+        "way/894587433",
+        "way/894587434",
+        "way/894587435",
+        "way/894587436",
+        "way/894587437",
+        "way/894587438",
+        "way/894587439",
+        "way/894587440",
+        "way/894587441",
+        "way/894587442",
+        "way/894587443",
+        "way/894587444",
+        "way/894587445",
+        "way/894587447",
+        "way/894587448",
+        "way/894587449",
+        "way/894587450",
+        "way/894587451",
+        "way/894587452",
+        "way/894587453",
+        "way/894587454",
+        "way/894587455",
+        "way/894587456",
+        "way/894587457",
+        "way/894587458",
+        "way/894587459",
+        "way/894587460",
+        "way/894587461",
+        "way/894587463",
+        "way/894587464",
+        "way/894587465",
+        "way/894587466",
+        "way/894587467",
+        "way/894587468",
+        "way/894587469",
+        "way/894587470",
+        "way/894587471",
+        "way/894587472",
+        "way/894587473",
+        "way/894587474",
+        "way/894587475",
+        "way/894587476",
+        "way/894587477",
+        "way/894589603"
+      ]
+    },
+    {
+      "id": "dc-air-force-memorial",
+      "name": "United States Air Force Memorial",
+      "model": "dc-air-force-memorial",
+      "lng": -77.0662258,
+      "lat": 38.8685145,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7889224",
+      "replaces": []
+    },
+    {
+      "id": "dc-netherlands-carillon",
+      "name": "Netherlands Carillon",
+      "model": "dc-netherlands-carillon",
+      "lng": -77.0694954,
+      "lat": 38.8882159,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2901761",
+      "replaces": [
+        "way/41273627"
+      ]
+    },
+    {
+      "id": "dc-eisenhower-eob",
+      "name": "Eisenhower Executive Office Building",
+      "model": "dc-eisenhower-eob",
+      "lng": -77.0387053,
+      "lat": 38.8975802,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1312965",
+      "replaces": [
+        "relation/4043910"
+      ]
+    },
+    {
+      "id": "dc-treasury",
+      "name": "Treasury Building",
+      "model": "dc-treasury",
+      "lng": -77.0343146,
+      "lat": 38.8975874,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7836795",
+      "replaces": [
+        "relation/286293"
+      ]
+    },
+    {
+      "id": "dc-mlk-memorial",
+      "name": "Martin Luther King Jr. Memorial",
+      "model": "dc-mlk-memorial",
+      "lng": -77.0442258,
+      "lat": 38.8862254,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q536802",
+      "replaces": [
+        "relation/12268799"
+      ]
+    },
+    {
+      "id": "dc-marine-corps-war-memorial",
+      "name": "Marine Corps War Memorial",
+      "model": "dc-marine-corps-war-memorial",
+      "lng": -77.0697239,
+      "lat": 38.8904362,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q1403946",
+      "replaces": []
+    },
+    {
+      "id": "dc-smithsonian-castle",
+      "name": "Smithsonian Institution Building",
+      "model": "dc-smithsonian-castle",
+      "lng": -77.0259511,
+      "lat": 38.8887781,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q605937",
+      "replaces": [
+        "relation/7393969"
+      ]
+    },
+    {
+      "id": "dc-arts-and-industries",
+      "name": "Arts and Industries Building",
+      "model": "dc-arts-and-industries",
+      "lng": -77.0244787,
+      "lat": 38.8881823,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q713932",
+      "replaces": [
+        "way/42341486",
+        "way/453547702",
+        "way/453547703",
+        "way/453547704",
+        "way/453547705",
+        "way/453547706",
+        "way/453547707",
+        "way/908820585",
+        "way/908820586",
+        "way/908820587",
+        "way/908820588",
+        "way/908820589",
+        "way/908820590",
+        "way/908820591",
+        "way/908820592"
+      ]
+    },
+    {
+      "id": "dc-hirshhorn",
+      "name": "Hirshhorn Museum",
+      "model": "dc-hirshhorn",
+      "lng": -77.0229526,
+      "lat": 38.888177,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1620553",
+      "replaces": [
+        "relation/3374667",
+        "relation/3374669",
+        "way/66418857",
+        "way/251495385",
+        "way/251495386",
+        "way/251495387",
+        "way/251495388",
+        "way/909145546"
+      ]
+    },
+    {
+      "id": "dc-air-and-space",
+      "name": "National Air and Space Museum",
+      "model": "dc-air-and-space",
+      "lng": -77.0198307,
+      "lat": 38.8881333,
+      "bearing": 359.04,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q752669",
+      "replaces": [
+        "relation/16159112",
+        "way/535720705"
+      ]
+    },
+    {
+      "id": "dc-nmaahc",
+      "name": "National Museum of African American History and Culture",
+      "model": "dc-nmaahc",
+      "lng": -77.0327036,
+      "lat": 38.8910616,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q3073495",
+      "replaces": [
+        "way/398810868",
+        "way/898560007"
+      ]
+    },
+    {
+      "id": "dc-american-indian",
+      "name": "National Museum of the American Indian",
+      "model": "dc-american-indian",
+      "lng": -77.0166689,
+      "lat": 38.8882445,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1075141",
+      "replaces": [
+        "way/66418605",
+        "way/427843981",
+        "way/427843980",
+        "way/427843967",
+        "way/427843969",
+        "way/427843974",
+        "way/427843966",
+        "way/427843978"
+      ]
+    },
+    {
+      "id": "dc-natural-history",
+      "name": "National Museum of Natural History",
+      "model": "dc-natural-history",
+      "lng": -77.0259675,
+      "lat": 38.8912664,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q148554",
+      "replaces": [
+        "way/66418787",
+        "way/453546745",
+        "way/453546747"
+      ]
+    },
+    {
+      "id": "dc-nga-west",
+      "name": "National Gallery of Art, West Building",
+      "model": "dc-nga-west",
+      "lng": -77.0199074,
+      "lat": 38.8913174,
+      "bearing": 359.11,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q129673434",
+      "replaces": [
+        "way/66418944",
+        "way/426863059",
+        "way/426863062",
+        "way/426863065",
+        "way/426863068",
+        "way/426863072",
+        "way/426863074",
+        "way/426863076",
+        "way/426863079",
+        "way/426863081",
+        "way/426863083",
+        "way/426863084",
+        "way/426863086",
+        "way/426863089",
+        "way/426863091",
+        "way/426863096",
+        "way/426863098"
+      ]
+    },
+    {
+      "id": "dc-nga-east",
+      "name": "National Gallery of Art, East Building",
+      "model": "dc-nga-east",
+      "lng": -77.0166233,
+      "lat": 38.8912353,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q118314575",
+      "replaces": [
+        "way/66418590",
+        "way/426674750",
+        "way/426674751",
+        "way/426674752",
+        "way/426674753",
+        "way/426674754",
+        "way/426674755",
+        "way/426674756",
+        "way/426674757",
+        "way/426674758",
+        "way/426674759"
+      ]
+    },
+    {
+      "id": "dc-national-archives",
+      "name": "National Archives Building",
+      "model": "dc-national-archives",
+      "lng": -77.0229196,
+      "lat": 38.8928207,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q518155",
+      "replaces": [
+        "way/66418953",
+        "way/427815124",
+        "way/427815125",
+        "way/427815126",
+        "way/427815127",
+        "way/427815128",
+        "way/427815129"
+      ]
+    },
+    {
+      "id": "dc-national-cathedral",
+      "name": "Washington National Cathedral",
+      "model": "dc-national-cathedral",
+      "lng": -77.0707911,
+      "lat": 38.9306103,
+      "bearing": 340,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q668710",
+      "replaces": [
+        "relation/2682714",
+        "way/1176354409",
+        "way/1176354410",
+        "way/1176354411",
+        "way/1176354412"
+      ]
+    },
+    {
+      "id": "dc-washington-temple",
+      "name": "Washington D.C. Temple",
+      "model": "dc-washington-temple",
+      "lng": -77.0656093,
+      "lat": 39.0140535,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1810883",
+      "replaces": [
+        "way/87324809",
+        "way/781335032",
+        "way/781335034",
+        "way/845436189",
+        "way/845436190",
+        "way/845436191",
+        "way/845436192",
+        "way/845436193",
+        "way/845436194",
+        "way/845436195",
+        "way/845436196",
+        "way/845436197",
+        "way/845436198",
+        "way/845436199",
+        "way/845436200",
+        "way/845436201",
+        "way/845436202",
+        "way/845436203",
+        "way/845436204",
+        "way/845436205"
+      ]
+    },
+    {
+      "id": "dc-kennedy-center",
+      "name": "John F. Kennedy Center for the Performing Arts",
+      "model": "dc-kennedy-center",
+      "lng": -77.0557579,
+      "lat": 38.8959012,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1631981",
+      "replaces": [
+        "way/66418634",
+        "way/427085592",
+        "way/427085593",
+        "way/427085595",
+        "way/427085597",
+        "way/427085598",
+        "way/427085599",
+        "way/427085600",
+        "way/427085601",
+        "way/427085602",
+        "way/427085603",
+        "way/427085604",
+        "way/427085606",
+        "way/427085607",
+        "way/427085608",
+        "way/427085609",
+        "way/427085610",
+        "way/427085611",
+        "way/427085612",
+        "way/427085613",
+        "way/427085614",
+        "way/427085615",
+        "way/427085616",
+        "way/427085617",
+        "way/427085618",
+        "way/427085619",
+        "way/427085620",
+        "way/427085621",
+        "way/427085622",
+        "way/427085623",
+        "way/427085624",
+        "way/427085625",
+        "way/427085626",
+        "way/427085627",
+        "way/427085628",
+        "way/427085629",
+        "way/427085630",
+        "way/427085631",
+        "way/427085632",
+        "way/427085633",
+        "way/427085634",
+        "way/427085635",
+        "way/427085636",
+        "way/427085637",
+        "way/427085638",
+        "way/427085639",
+        "way/427085640",
+        "way/427085641",
+        "way/427085642",
+        "way/427085643",
+        "way/427085644",
+        "way/427085645",
+        "way/427085646",
+        "way/427085647",
+        "way/427085648",
+        "way/427085649",
+        "way/427085650",
+        "way/427085651",
+        "way/427085652",
+        "way/427085653",
+        "way/427085654",
+        "way/427085655",
+        "way/427085656",
+        "way/427085657",
+        "way/427085658",
+        "way/427085659",
+        "way/427085660",
+        "way/427085661",
+        "way/427085662",
+        "way/427085663",
+        "way/427085664",
+        "way/427085665",
+        "way/1375362774"
+      ]
+    },
+    {
+      "id": "dc-national-shrine",
+      "name": "Basilica of the National Shrine of the Immaculate Conception",
+      "model": "dc-national-shrine",
+      "lng": -77.000649,
+      "lat": 38.9333351,
+      "bearing": 353.6,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q82387",
+      "replaces": [
+        "way/297739340",
+        "way/1373214415",
+        "way/1373214416",
+        "way/1373214417",
+        "way/1426384328",
+        "way/1426384329",
+        "way/1426384330",
+        "way/1426384331",
+        "way/1426384332",
+        "way/1426384333",
+        "way/1426384334",
+        "way/1426384335",
+        "way/1426384336",
+        "way/1426384337",
+        "way/1426384338",
+        "way/1426384339",
+        "way/1426384340",
+        "way/1426384341",
+        "way/1426384342",
+        "way/1426384343",
+        "way/1426384344",
+        "way/1426384345",
+        "way/1426384346",
+        "way/1426384347",
+        "way/1426384348",
+        "way/1426384349",
+        "way/1426384350",
+        "way/1426384351",
+        "way/1426384352"
+      ]
+    },
+    {
+      "id": "dc-st-matthews",
+      "name": "Cathedral of St. Matthew the Apostle",
+      "model": "dc-st-matthews",
+      "lng": -77.0402483,
+      "lat": 38.9063933,
+      "bearing": 336,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q603535",
+      "replaces": [
+        "way/55327016"
+      ]
+    },
+    {
+      "id": "dc-watergate",
+      "name": "Watergate complex",
+      "model": "dc-watergate",
+      "lng": -77.0552848,
+      "lat": 38.8988385,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1419538",
+      "replaces": [
+        "way/66417587",
+        "way/445989816",
+        "way/445989815",
+        "way/445989817",
+        "way/445989818",
+        "way/445989819",
+        "way/445989821",
+        "way/445989823",
+        "way/445989825",
+        "way/445989828",
+        "way/445989830",
+        "way/445989831",
+        "way/445989835",
+        "way/445989839",
+        "way/445989841",
+        "way/445989846"
+      ]
+    },
+    {
+      "id": "dc-washington-hilton",
+      "name": "Washington Hilton",
+      "model": "dc-washington-hilton",
+      "lng": -77.0449051,
+      "lat": 38.91651,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q4260660",
+      "replaces": [
+        "way/66981885",
+        "way/1549399804"
+      ]
+    },
+    {
+      "id": "dc-healy-hall",
+      "name": "Healy Hall",
+      "model": "dc-healy-hall",
+      "lng": -77.0727337,
+      "lat": 38.9073077,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4269513",
+      "replaces": [
+        "way/444583709"
+      ]
+    },
+    {
+      "id": "dc-botanic-garden",
+      "name": "United States Botanic Garden Conservatory",
+      "model": "dc-botanic-garden",
+      "lng": -77.0129058,
+      "lat": 38.8879645,
+      "bearing": 0.14,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1848855",
+      "replaces": [
+        "relation/1029372",
+        "way/905917535"
+      ]
+    },
+    {
+      "id": "dc-old-post-office",
+      "name": "Old Post Office",
+      "model": "dc-old-post-office",
+      "lng": -77.0275777,
+      "lat": 38.8940953,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1141542",
+      "replaces": [
+        "way/66418840",
+        "way/452899001",
+        "way/452899002"
+      ]
+    },
+    {
+      "id": "dc-national-building-museum",
+      "name": "National Building Museum",
+      "model": "dc-national-building-museum",
+      "lng": -77.0175512,
+      "lat": 38.8977548,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q624008",
+      "replaces": [
+        "way/48040795"
+      ]
+    },
+    {
+      "id": "dc-house-of-the-temple",
+      "name": "House of the Temple",
+      "model": "dc-house-of-the-temple",
+      "lng": -77.0358382,
+      "lat": 38.9137036,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q176356",
+      "replaces": [
+        "way/67086344"
+      ]
+    },
+    {
+      "id": "dc-supreme-court",
+      "name": "Supreme Court of the United States",
+      "model": "dc-supreme-court",
+      "lng": -77.0044385,
+      "lat": 38.8906244,
+      "bearing": 0.11,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1579670",
+      "replaces": [
+        "relation/286501"
+      ]
+    },
+    {
+      "id": "dc-jefferson-building",
+      "name": "Library of Congress, Thomas Jefferson Building",
+      "model": "dc-jefferson-building",
+      "lng": -77.0047094,
+      "lat": 38.8886833,
+      "bearing": 359.88,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2615945",
+      "replaces": [
+        "relation/1029374"
+      ]
+    },
+    {
+      "id": "dc-nationals-park",
+      "name": "Nationals Park",
+      "model": "dc-nationals-park",
+      "lng": -77.0075468,
+      "lat": 38.8728428,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q517545",
+      "replaces": [
+        "relation/1066168"
+      ]
+    },
+    {
+      "id": "dc-audi-field",
+      "name": "Audi Field",
+      "model": "dc-audi-field",
+      "lng": -77.0126718,
+      "lat": 38.8683279,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q5203387",
+      "replaces": [
+        "relation/12361161"
+      ]
+    },
+    {
+      "id": "dc-pentagon",
+      "name": "The Pentagon",
+      "model": "dc-pentagon",
+      "lng": -77.0559549,
+      "lat": 38.8710072,
+      "bearing": 351.9,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q11208",
+      "replaces": [
+        "relation/89605",
+        "way/547369905",
+        "way/548360860",
+        "way/548362651",
+        "way/548362652",
+        "way/548362653",
+        "way/548364631",
+        "way/548364632",
+        "way/548364633",
+        "way/548365378",
+        "way/548365379",
+        "way/548366946",
+        "way/548366947",
+        "way/548366948",
+        "way/548366949",
+        "way/548366950",
+        "way/548366951",
+        "way/548367399",
+        "way/548367400",
+        "way/548367401",
+        "way/548367402"
+      ]
+    },
+    {
+      "id": "dc-arlington-house",
+      "name": "Arlington House, The Robert E. Lee Memorial",
+      "model": "dc-arlington-house",
+      "lng": -77.0726362,
+      "lat": 38.8811764,
+      "bearing": 359.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q675702",
+      "replaces": [
+        "way/41279883",
+        "way/1500304896"
+      ]
+    },
+    {
+      "id": "dc-memorial-amphitheater",
+      "name": "Memorial Amphitheater",
+      "model": "dc-memorial-amphitheater",
+      "lng": -77.0728838,
+      "lat": 38.8764195,
+      "bearing": 2.6,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4792362",
+      "replaces": [
+        "relation/15311889",
+        "way/1065498812"
+      ]
+    },
+    {
+      "id": "dc-white-house",
+      "name": "White House",
+      "model": "dc-white-house",
+      "lng": -77.036553,
+      "lat": 38.8976662,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q35525",
+      "replaces": [
+        "relation/19761182",
+        "way/257920185",
+        "way/257920182",
+        "way/257920157",
+        "way/257920202",
+        "way/257920173",
+        "way/257920159",
+        "way/257920161",
+        "way/257920163",
+        "way/257920165",
+        "way/257920166",
+        "way/257920171",
+        "way/257920188",
+        "way/257920189",
+        "way/257920190",
+        "way/257920191",
+        "way/257920194",
+        "way/257920195",
+        "way/257920196",
+        "way/257920198",
+        "way/257920156",
+        "way/257920203",
+        "way/257920187",
+        "way/257920160",
+        "way/257920162",
+        "way/257920164",
+        "way/257920168",
+        "way/257920169",
+        "way/257920174",
+        "way/257920175",
+        "way/257920176",
+        "way/1445440137",
+        "way/1425481054",
+        "way/1425481055",
+        "way/449101168",
+        "way/449101206",
+        "way/884569672",
+        "way/884569673",
+        "way/884569674",
+        "way/884569677",
+        "way/884571790",
+        "way/884571793",
+        "relation/19761232",
+        "way/238241017",
+        "way/257920201",
+        "way/257920192",
+        "way/257920184",
+        "way/257920197",
+        "way/238241023",
+        "way/257920193",
+        "way/1445440857",
+        "way/257920178",
+        "way/257920179",
+        "way/257920180",
+        "way/257920181",
+        "way/887434559"
+      ]
+    },
+    {
+      "id": "la-us-bank-tower",
+      "name": "U.S. Bank Tower",
+      "model": "la-us-bank-tower",
+      "lng": -118.2544223,
+      "lat": 34.051065,
+      "bearing": 38.2,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q57900",
+      "replaces": [
+        "way/23973401",
+        "way/495115500",
+        "way/901405051",
+        "way/901405052",
+        "way/901405053",
+        "way/901405054",
+        "way/901405055",
+        "way/901405056",
+        "way/901405057",
+        "way/901405058",
+        "way/901405059",
+        "way/901405060"
+      ]
+    },
+    {
+      "id": "la-city-hall",
+      "name": "Los Angeles City Hall",
+      "model": "la-city-hall",
+      "lng": -118.2427693,
+      "lat": 34.0536925,
+      "bearing": 37.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q368489",
+      "replaces": [
+        "relation/6333145",
+        "way/443103746",
+        "way/443103747",
+        "way/443103748",
+        "way/443103749",
+        "way/443103750"
+      ]
+    },
+    {
+      "id": "la-wilshire-grand",
+      "name": "Wilshire Grand Center",
+      "model": "la-wilshire-grand",
+      "lng": -118.2604247,
+      "lat": 34.0501581,
+      "bearing": 37.2,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2582539",
+      "replaces": [
+        "way/496246723",
+        "way/1307580959",
+        "way/901739648"
+      ]
+    },
+    {
+      "id": "la-union-station",
+      "name": "Los Angeles Union Station",
+      "model": "la-union-station",
+      "lng": -118.2357992,
+      "lat": 34.0560743,
+      "bearing": 10,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q198019",
+      "replaces": [
+        "relation/1483140"
+      ]
+    },
+    {
+      "id": "la-broad",
+      "name": "The Broad",
+      "model": "la-broad",
+      "lng": -118.2505937,
+      "lat": 34.0544578,
+      "bearing": 37.2,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q17060100",
+      "replaces": [
+        "way/427532197"
+      ]
+    },
+    {
+      "id": "la-grand-la",
+      "name": "The Grand LA",
+      "model": "la-grand-la",
+      "lng": -118.2487192,
+      "lat": 34.0547307,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/1106947212",
+        "way/1106947213",
+        "way/1106947214",
+        "way/1106947215"
+      ]
+    },
+    {
+      "id": "la-bonaventure",
+      "name": "Westin Bonaventure Hotel",
+      "model": "la-bonaventure",
+      "lng": -118.2558511,
+      "lat": 34.0527584,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q371058",
+      "replaces": [
+        "way/33528271",
+        "way/328826533",
+        "way/328826159"
+      ]
+    },
+    {
+      "id": "la-gas-company-tower",
+      "name": "Gas Company Tower",
+      "model": "la-gas-company-tower",
+      "lng": -118.2531308,
+      "lat": 34.0501109,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2424258",
+      "replaces": [
+        "way/427532192",
+        "way/495115501"
+      ]
+    },
+    {
+      "id": "la-wells-fargo-center",
+      "name": "Wells Fargo Center",
+      "model": "la-wells-fargo-center",
+      "lng": -118.2524055,
+      "lat": 34.052718,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2543729",
+      "replaces": [
+        "way/427532202",
+        "way/427532194",
+        "way/427532221"
+      ]
+    },
+    {
+      "id": "la-eastern-columbia",
+      "name": "Eastern Columbia Building",
+      "model": "la-eastern-columbia",
+      "lng": -118.2562097,
+      "lat": 34.0427452,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q71842",
+      "replaces": [
+        "way/427942790"
+      ]
+    },
+    {
+      "id": "la-disney-concert-hall",
+      "name": "Walt Disney Concert Hall",
+      "model": "la-disney-concert-hall",
+      "lng": -118.2499498,
+      "lat": 34.0553955,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q474326",
+      "replaces": [
+        "relation/6333150",
+        "way/319307757",
+        "way/319307763"
+      ]
+    },
+    {
+      "id": "la-central-library",
+      "name": "Los Angeles Central Library",
+      "model": "la-central-library",
+      "lng": -118.2550325,
+      "lat": 34.0502845,
+      "bearing": 38.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q27676389",
+      "replaces": [
+        "way/428021732",
+        "way/495571355",
+        "way/1106887040"
+      ]
+    },
+    {
+      "id": "la-hollywood-bowl",
+      "name": "Hollywood Bowl",
+      "model": "la-hollywood-bowl",
+      "lng": -118.338902,
+      "lat": 34.112778,
+      "bearing": 24.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q976218",
+      "replaces": [
+        "way/427527131",
+        "way/297126803",
+        "way/297126804",
+        "way/297126805",
+        "way/297126806",
+        "way/297126807",
+        "way/297126808"
+      ]
+    },
+    {
+      "id": "la-griffith-observatory",
+      "name": "Griffith Observatory",
+      "model": "la-griffith-observatory",
+      "lng": -118.300348,
+      "lat": 34.1182539,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q575901",
+      "replaces": [
+        "way/422130705"
+      ]
+    },
+    {
+      "id": "la-hollywood-sign",
+      "name": "Hollywood Sign",
+      "model": "la-hollywood-sign",
+      "lng": -118.321652,
+      "lat": 34.1340991,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q180376",
+      "replaces": [
+        "way/125433363",
+        "way/125433366",
+        "way/125433364",
+        "way/125433365",
+        "way/125433372",
+        "way/125433370",
+        "way/125433367",
+        "way/125433369",
+        "way/125433362"
+      ]
+    },
+    {
+      "id": "la-cinerama-dome",
+      "name": "Cinerama Dome",
+      "model": "la-cinerama-dome",
+      "lng": -118.3281006,
+      "lat": 34.0976248,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2972810",
+      "replaces": [
+        "way/423247168",
+        "way/907828120",
+        "way/907828121",
+        "way/907828122"
+      ]
+    },
+    {
+      "id": "la-capitol-records",
+      "name": "Capitol Records Building",
+      "model": "la-capitol-records",
+      "lng": -118.3263646,
+      "lat": 34.1031194,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2937482",
+      "replaces": [
+        "way/422141102",
+        "way/907834019",
+        "way/907834020"
+      ]
+    },
+    {
+      "id": "la-chinese-theatre",
+      "name": "TCL Chinese Theatre",
+      "model": "la-chinese-theatre",
+      "lng": -118.340951,
+      "lat": 34.1020843,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1122565",
+      "replaces": [
+        "way/424105908"
+      ]
+    },
+    {
+      "id": "la-kia-forum",
+      "name": "Kia Forum",
+      "model": "la-kia-forum",
+      "lng": -118.341972,
+      "lat": 33.958216,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q639129",
+      "replaces": [
+        "way/26320999"
+      ]
+    },
+    {
+      "id": "la-sofi-stadium",
+      "name": "SoFi Stadium",
+      "model": "la-sofi-stadium",
+      "lng": -118.3385824,
+      "lat": 33.9531124,
+      "bearing": 336,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q19520501",
+      "replaces": [
+        "way/748790321",
+        "way/860635712",
+        "way/860635710",
+        "way/860635711",
+        "way/963712167"
+      ]
+    },
+    {
+      "id": "la-theme-building",
+      "name": "Theme Building",
+      "model": "la-theme-building",
+      "lng": -118.4024925,
+      "lat": 33.9441425,
+      "bearing": 353,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3523620",
+      "replaces": [
+        "way/37891817",
+        "way/476168322"
+      ]
+    },
+    {
+      "id": "la-randys-donuts",
+      "name": "Randy's Donuts",
+      "model": "la-randys-donuts",
+      "lng": -118.370379,
+      "lat": 33.961852,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2130840",
+      "replaces": [
+        "way/420317805"
+      ]
+    },
+    {
+      "id": "la-dodger-stadium",
+      "name": "Dodger Stadium",
+      "model": "la-dodger-stadium",
+      "lng": -118.2400507,
+      "lat": 34.0736933,
+      "bearing": 27,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q247420",
+      "replaces": [
+        "way/1353249584",
+        "way/1348907079",
+        "way/1348907080",
+        "way/1348907436",
+        "way/1348909324",
+        "way/1348909325",
+        "way/1348909326",
+        "way/1348909327",
+        "way/1348909328",
+        "way/1348909329",
+        "way/1348910120",
+        "way/1348910121",
+        "way/1348910122",
+        "way/1348910123",
+        "way/1348910124",
+        "way/1348910125",
+        "way/1348910126",
+        "way/1348911392",
+        "way/1348911393",
+        "way/1348911394",
+        "way/1348911395",
+        "way/1348911396",
+        "way/1348911397",
+        "way/1348911398",
+        "way/1348911399",
+        "way/1348911400",
+        "way/1348911401",
+        "way/1348911402",
+        "way/1348911403",
+        "way/1348911404",
+        "way/1348911405",
+        "way/1348911406",
+        "way/1348911644",
+        "way/1348912163",
+        "way/1348912518",
+        "way/1348912519",
+        "way/1348912520",
+        "way/1348912521",
+        "way/1348912522",
+        "way/1348912523",
+        "way/1348912524",
+        "way/1348912525",
+        "way/1348912526",
+        "way/1348912527",
+        "way/1348912528",
+        "way/1348912529",
+        "way/1348912530",
+        "way/1348912531",
+        "way/1348912532",
+        "way/1348912533",
+        "way/1348912534",
+        "way/1348912535",
+        "way/1348912536",
+        "way/1348912537",
+        "way/1348912538",
+        "way/1348912539",
+        "way/1348912540",
+        "way/1348912541",
+        "way/1348912542",
+        "way/1348912543",
+        "way/1348912544"
+      ]
+    },
+    {
+      "id": "la-crypto-arena",
+      "name": "Crypto.com Arena",
+      "model": "la-crypto-arena",
+      "lng": -118.2670807,
+      "lat": 34.0430832,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q186080",
+      "replaces": [
+        "way/428021739",
+        "way/491696575"
+      ]
+    },
+    {
+      "id": "la-coliseum",
+      "name": "Los Angeles Memorial Coliseum",
+      "model": "la-coliseum",
+      "lng": -118.287924,
+      "lat": 34.0140415,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q849784",
+      "replaces": [
+        "way/443675312",
+        "relation/6100581",
+        "way/174863998",
+        "way/174863999"
+      ]
+    },
+    {
+      "id": "la-shrine-auditorium",
+      "name": "Shrine Auditorium",
+      "model": "la-shrine-auditorium",
+      "lng": -118.2813407,
+      "lat": 34.0234236,
+      "bearing": 28,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q731437",
+      "replaces": [
+        "way/407613039"
+      ]
+    },
+    {
+      "id": "la-lacma-geffen",
+      "name": "LACMA David Geffen Galleries",
+      "model": "la-lacma-geffen",
+      "lng": -118.3577537,
+      "lat": 34.0629495,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q141410158",
+      "replaces": [
+        "way/1352498524",
+        "way/1528280559",
+        "way/1352498501",
+        "way/1352498494",
+        "way/1352498495",
+        "way/1352498496",
+        "way/1352498497",
+        "way/1352498498",
+        "way/1352498499",
+        "way/1352498500",
+        "way/1352498502",
+        "way/1352498503",
+        "way/1352498504",
+        "way/1352498526"
+      ]
+    },
+    {
+      "id": "la-petersen",
+      "name": "Petersen Automotive Museum",
+      "model": "la-petersen",
+      "lng": -118.3611471,
+      "lat": 34.0623791,
+      "bearing": 7.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2358105",
+      "replaces": [
+        "way/913343446"
+      ]
+    },
+    {
+      "id": "la-academy-museum",
+      "name": "Academy Museum of Motion Pictures",
+      "model": "la-academy-museum",
+      "lng": -118.3607923,
+      "lat": 34.0632679,
+      "bearing": 7.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q6941059",
+      "replaces": [
+        "way/426357430",
+        "way/1360732450",
+        "way/1360732451",
+        "way/913293589",
+        "way/1113417080",
+        "way/1113417081"
+      ]
+    },
+    {
+      "id": "la-bullocks-wilshire",
+      "name": "Bullocks Wilshire",
+      "model": "la-bullocks-wilshire",
+      "lng": -118.2887936,
+      "lat": 34.0615227,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4996997",
+      "replaces": [
+        "way/427824132",
+        "way/490392556"
+      ]
+    },
+    {
+      "id": "la-wiltern",
+      "name": "The Wiltern",
+      "model": "la-wiltern",
+      "lng": -118.3085199,
+      "lat": 34.061279,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7161584",
+      "replaces": [
+        "way/388772956",
+        "way/1416423923",
+        "way/1416423924"
+      ]
+    },
+    {
+      "id": "la-la-temple",
+      "name": "Los Angeles California Temple",
+      "model": "la-la-temple",
+      "lng": -118.4339217,
+      "lat": 34.0526996,
+      "bearing": 54.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1870450",
+      "replaces": [
+        "way/216534845"
+      ]
+    },
+    {
+      "id": "la-getty-center",
+      "name": "Getty Center",
+      "model": "la-getty-center",
+      "lng": -118.4740401,
+      "lat": 34.0771405,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q29247",
+      "replaces": [
+        "way/481451917",
+        "way/481417424",
+        "way/481417422",
+        "way/1153949919",
+        "way/481417416",
+        "way/481417431",
+        "way/481417423",
+        "way/481417418",
+        "way/481417420",
+        "way/481509203",
+        "way/481417426",
+        "way/481417428",
+        "way/481451919",
+        "way/481451918"
+      ]
+    },
+    {
+      "id": "la-royce-hall",
+      "name": "Royce Hall",
+      "model": "la-royce-hall",
+      "lng": -118.442209,
+      "lat": 34.0728531,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2171194",
+      "replaces": [
+        "way/422876632"
+      ]
+    },
+    {
+      "id": "la-century-plaza-towers",
+      "name": "Century Plaza Towers",
+      "model": "la-century-plaza-towers",
+      "lng": -118.4134974,
+      "lat": 34.0590575,
+      "bearing": 20.6,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1982044",
+      "replaces": [
+        "relation/19619602",
+        "way/104944092",
+        "way/104944087"
+      ]
+    },
+    {
+      "id": "la-pacific-wheel",
+      "name": "Pacific Wheel",
+      "model": "la-pacific-wheel",
+      "lng": -118.497834,
+      "lat": 34.0082275,
+      "bearing": 91,
+      "elevation": 7.5,
+      "minzoom": 15,
+      "replaces": [
+        "way/742372514"
+      ]
+    },
+    {
+      "id": "la-queen-mary",
+      "name": "RMS Queen Mary",
+      "model": "la-queen-mary",
+      "lng": -118.1897081,
+      "lat": 33.7528576,
+      "bearing": 293.7,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q752939",
+      "replaces": [
+        "way/438331516",
+        "way/439768915",
+        "way/439768916",
+        "way/439768917"
+      ]
+    },
+    {
+      "id": "la-vincent-thomas-bridge-east",
+      "name": "Vincent Thomas Bridge (east tower)",
+      "model": "la-vincent-thomas-bridge",
+      "lng": -118.2689686,
+      "lat": 33.7491062,
+      "bearing": 100.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q496944",
+      "replaces": []
+    },
+    {
+      "id": "la-vincent-thomas-bridge-west",
+      "name": "Vincent Thomas Bridge (west tower)",
+      "model": "la-vincent-thomas-bridge",
+      "lng": -118.2738195,
+      "lat": 33.7498368,
+      "bearing": 100.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q496944",
+      "replaces": []
+    },
+    {
+      "id": "la-pasadena-city-hall",
+      "name": "Pasadena City Hall",
+      "model": "la-pasadena-city-hall",
+      "lng": -118.1436449,
+      "lat": 34.147657,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2055241",
+      "replaces": [
+        "way/37741479",
+        "way/1106661997"
+      ]
+    },
+    {
+      "id": "la-rose-bowl",
+      "name": "Rose Bowl",
+      "model": "la-rose-bowl",
+      "lng": -118.1676656,
+      "lat": 34.1613117,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q582280",
+      "replaces": [
+        "way/5208863"
+      ]
+    },
+    {
+      "id": "la-team-disney",
+      "name": "Team Disney \u2013 The Michael D. Eisner Building",
+      "model": "la-team-disney",
+      "lng": -118.3272456,
+      "lat": 34.1579334,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q126723759",
+      "replaces": [
+        "relation/6385468",
+        "way/244655045",
+        "way/244924896"
+      ]
+    },
+    {
+      "id": "la-angelus-temple",
+      "name": "Angelus Temple",
+      "model": "la-angelus-temple",
+      "lng": -118.2607566,
+      "lat": 34.0762629,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2463876",
+      "replaces": [
+        "way/60586413",
+        "way/560486417",
+        "way/886564591"
+      ]
+    },
+    {
+      "id": "la-pacific-design-center",
+      "name": "Pacific Design Center",
+      "model": "la-pacific-design-center",
+      "lng": -118.382418,
+      "lat": 34.0823702,
+      "bearing": 63,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7122426",
+      "replaces": [
+        "way/31439559",
+        "way/429370081",
+        "way/535093304",
+        "way/535093308",
+        "way/535093311",
+        "way/390777734"
+      ]
+    },
+    {
+      "id": "la-walter-pyramid",
+      "name": "Walter Pyramid",
+      "model": "la-walter-pyramid",
+      "lng": -118.11441,
+      "lat": 33.78743,
+      "bearing": 353,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q3565858",
+      "replaces": [
+        "way/35452138"
+      ]
+    },
+    {
+      "id": "la-watts-towers",
+      "name": "Watts Towers",
+      "model": "la-watts-towers",
+      "lng": -118.24105,
+      "lat": 33.93872,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q445256",
+      "replaces": []
+    },
+    {
+      "id": "la-christ-cathedral",
+      "name": "Christ Cathedral",
+      "model": "la-christ-cathedral",
+      "lng": -117.898896,
+      "lat": 33.787402,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1051217",
+      "replaces": [
+        "way/29280620",
+        "way/120714044"
+      ]
+    },
+    {
+      "id": "sf-transamerica-pyramid",
+      "name": "Transamerica Pyramid",
+      "model": "sf-transamerica-pyramid",
+      "lng": -122.4027858,
+      "lat": 37.7951663,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q216865",
+      "replaces": [
+        "way/24222973",
+        "way/451336893",
+        "way/451336895",
+        "way/451336898",
+        "way/451336901",
+        "way/451336902",
+        "way/136615987"
+      ]
+    },
+    {
+      "id": "sf-sentinel-building",
+      "name": "Sentinel Building",
+      "model": "sf-sentinel-building",
+      "lng": -122.4050486,
+      "lat": 37.7965438,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q5150141",
+      "replaces": [
+        "way/288485994",
+        "way/1092161846"
+      ]
+    },
+    {
+      "id": "sf-golden-gate-bridge-south",
+      "name": "Golden Gate Bridge (south tower)",
+      "model": "sf-golden-gate-bridge",
+      "lng": -122.4778913,
+      "lat": 37.8140144,
+      "bearing": 354.7,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q44440",
+      "replaces": [
+        "way/1330586852",
+        "way/1275410144",
+        "way/1329545860",
+        "way/1329549315",
+        "way/1329549317",
+        "way/1329550017",
+        "way/1329550151",
+        "way/1329558939",
+        "way/1329761876",
+        "way/1329761877",
+        "way/1329761878",
+        "way/1329761879",
+        "way/1329761880",
+        "way/1329761881",
+        "way/1329971884",
+        "way/1330049620",
+        "way/1330350431",
+        "way/1330827276",
+        "way/1330827277",
+        "way/1330827678",
+        "way/1330828067",
+        "way/1330828068",
+        "way/1330828260",
+        "way/1330829528",
+        "way/1330830769",
+        "way/1330830988",
+        "way/1330831175"
+      ]
+    },
+    {
+      "id": "sf-golden-gate-bridge-north",
+      "name": "Golden Gate Bridge (north tower)",
+      "model": "sf-golden-gate-bridge",
+      "lng": -122.4792336,
+      "lat": 37.8255026,
+      "bearing": 354.7,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q44440",
+      "replaces": [
+        "way/1330832666",
+        "way/1330832664",
+        "way/1330832665",
+        "way/1330832667",
+        "way/1330832668",
+        "way/1330832669",
+        "way/1330832670",
+        "way/1330832671",
+        "way/1330832673",
+        "way/1330832674",
+        "way/1330832677",
+        "way/1330832678",
+        "way/1330832679",
+        "way/1330832680",
+        "way/1330832681",
+        "way/1330832682",
+        "way/1330832683",
+        "way/1330832684",
+        "way/1330832685",
+        "way/1330832687",
+        "way/1330832688",
+        "way/1330832689",
+        "way/1330832690"
+      ]
+    },
+    {
+      "id": "sf-bay-bridge-west-w2",
+      "name": "Bay Bridge west span (tower W2)",
+      "model": "sf-bay-bridge-west",
+      "lng": -122.3858231,
+      "lat": 37.7907531,
+      "bearing": 40.4,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q130699957",
+      "replaces": [
+        "way/432712476"
+      ]
+    },
+    {
+      "id": "sf-bay-bridge-west-w6",
+      "name": "Bay Bridge west span (tower W6)",
+      "model": "sf-bay-bridge-west",
+      "lng": -122.3698997,
+      "lat": 37.8056222,
+      "bearing": 40.4,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q130699957",
+      "replaces": [
+        "way/432712479"
+      ]
+    },
+    {
+      "id": "sf-bay-bridge-west-w3",
+      "name": "Bay Bridge west span (tower W3)",
+      "model": "sf-bay-bridge-west-inner",
+      "lng": -122.3806476,
+      "lat": 37.795588,
+      "bearing": 40.4,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q130699957",
+      "replaces": [
+        "way/432712477"
+      ]
+    },
+    {
+      "id": "sf-bay-bridge-west-w5",
+      "name": "Bay Bridge west span (tower W5)",
+      "model": "sf-bay-bridge-west-inner",
+      "lng": -122.3750797,
+      "lat": 37.8007874,
+      "bearing": 40.4,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q130699957",
+      "replaces": [
+        "way/432712478"
+      ]
+    },
+    {
+      "id": "sf-bay-bridge-sas",
+      "name": "Bay Bridge eastern span tower",
+      "model": "sf-bay-bridge-sas",
+      "lng": -122.3585135,
+      "lat": 37.8152652,
+      "bearing": 55,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q771404",
+      "replaces": [
+        "way/237735191"
+      ]
+    },
+    {
+      "id": "sf-salesforce-tower",
+      "name": "Salesforce Tower",
+      "model": "sf-salesforce-tower",
+      "lng": -122.396927,
+      "lat": 37.7897756,
+      "bearing": 44,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q14684154",
+      "replaces": [
+        "way/431972186",
+        "way/1053143796",
+        "way/1053143797",
+        "way/1053143798",
+        "way/1053143799",
+        "way/1053143800",
+        "way/1053143801",
+        "way/1053143803",
+        "way/1053143804",
+        "way/1053143805"
+      ]
+    },
+    {
+      "id": "sf-millennium-tower",
+      "name": "Millennium Tower",
+      "model": "sf-millennium-tower",
+      "lng": -122.3961896,
+      "lat": 37.7904092,
+      "bearing": 45,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1833555",
+      "replaces": [
+        "way/72963089",
+        "way/73348851"
+      ]
+    },
+    {
+      "id": "sf-181-fremont",
+      "name": "181 Fremont",
+      "model": "sf-181-fremont",
+      "lng": -122.3953407,
+      "lat": 37.7897333,
+      "bearing": 45,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q4554120",
+      "replaces": [
+        "way/445566153"
+      ]
+    },
+    {
+      "id": "sf-555-california",
+      "name": "555 California Street",
+      "model": "sf-555-california",
+      "lng": -122.4037122,
+      "lat": 37.7921133,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q243921",
+      "replaces": [
+        "way/288511106",
+        "way/1243267628",
+        "way/1244283830",
+        "way/1244283832",
+        "way/1244283833",
+        "way/1244283834",
+        "way/1244283835",
+        "way/1244283836"
+      ]
+    },
+    {
+      "id": "sf-345-california",
+      "name": "345 California Center",
+      "model": "sf-345-california",
+      "lng": -122.4004564,
+      "lat": 37.7925879,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q680905",
+      "replaces": [
+        "way/588355355",
+        "way/616812351",
+        "way/616812352",
+        "way/616812353",
+        "way/616812354",
+        "way/616812355",
+        "way/616812356",
+        "way/616812357",
+        "way/616812358",
+        "way/616812359",
+        "way/616812360",
+        "way/616812361",
+        "way/616812362"
+      ]
+    },
+    {
+      "id": "sf-russ-building",
+      "name": "Russ Building",
+      "model": "sf-russ-building",
+      "lng": -122.4028624,
+      "lat": 37.7914192,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7381107",
+      "replaces": [
+        "way/129142347",
+        "way/941918062",
+        "way/941918063",
+        "way/1091964668",
+        "way/1091964669",
+        "way/1091964670",
+        "way/1091964671",
+        "way/1091964672",
+        "way/1091964673",
+        "way/1091964674",
+        "way/1091964675",
+        "way/1091964676",
+        "way/1091964677",
+        "way/1091964678"
+      ]
+    },
+    {
+      "id": "sf-101-california",
+      "name": "101 California Street",
+      "model": "sf-101-california",
+      "lng": -122.3981556,
+      "lat": 37.7928605,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2536727",
+      "replaces": [
+        "way/1279505488",
+        "way/436484073",
+        "way/436484078",
+        "way/1089398909",
+        "way/1279505487"
+      ]
+    },
+    {
+      "id": "sf-pacific-telephone",
+      "name": "Pacific Telephone Building",
+      "model": "sf-pacific-telephone",
+      "lng": -122.4000099,
+      "lat": 37.7866793,
+      "bearing": 44.7,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q14681501",
+      "replaces": [
+        "way/80296766",
+        "way/684195506",
+        "way/684195508"
+      ]
+    },
+    {
+      "id": "sf-city-hall",
+      "name": "San Francisco City Hall",
+      "model": "sf-city-hall",
+      "lng": -122.4192226,
+      "lat": 37.7792751,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1093944",
+      "replaces": [
+        "relation/7261820",
+        "way/494810783",
+        "way/494810785",
+        "way/494810787",
+        "way/494810790",
+        "way/494810791",
+        "way/494810794",
+        "way/494810820",
+        "way/494810823",
+        "way/494810826",
+        "way/494810839",
+        "way/494810841"
+      ]
+    },
+    {
+      "id": "sf-bill-graham-auditorium",
+      "name": "Bill Graham Civic Auditorium",
+      "model": "sf-bill-graham-auditorium",
+      "lng": -122.4173275,
+      "lat": 37.7780526,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4909197",
+      "replaces": [
+        "way/25759141",
+        "way/435831538"
+      ]
+    },
+    {
+      "id": "sf-davies-symphony-hall",
+      "name": "Louise M. Davies Symphony Hall",
+      "model": "sf-davies-symphony-hall",
+      "lng": -122.4205864,
+      "lat": 37.7776139,
+      "bearing": 350.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q6688842",
+      "replaces": [
+        "way/32865746",
+        "way/679356534",
+        "way/679356535",
+        "way/679356536"
+      ]
+    },
+    {
+      "id": "sf-alcatraz-cellhouse",
+      "name": "Alcatraz Main Cellhouse",
+      "model": "sf-alcatraz-cellhouse",
+      "lng": -122.4229929,
+      "lat": 37.826688,
+      "bearing": 315.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/128245373",
+        "way/128245367",
+        "way/24433437"
+      ]
+    },
+    {
+      "id": "sf-alcatraz-water-tower",
+      "name": "Alcatraz Water Tower",
+      "model": "sf-alcatraz-water-tower",
+      "lng": -122.4239316,
+      "lat": 37.8275728,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q1142684",
+      "replaces": [
+        "way/660870452"
+      ]
+    },
+    {
+      "id": "sf-alcatraz-lighthouse",
+      "name": "Alcatraz Island Lighthouse",
+      "model": "sf-alcatraz-lighthouse",
+      "lng": -122.4222949,
+      "lat": 37.8262541,
+      "bearing": 45,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q4712967",
+      "replaces": [
+        "way/99202294"
+      ]
+    },
+    {
+      "id": "sf-ferry-building",
+      "name": "San Francisco Ferry Building",
+      "model": "sf-ferry-building",
+      "lng": -122.39343978,
+      "lat": 37.79553247,
+      "bearing": 323.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1408117",
+      "replaces": [
+        "way/558731934",
+        "way/24460886",
+        "way/404449724",
+        "way/406710833",
+        "way/406710834",
+        "way/406710835",
+        "way/406710836",
+        "way/406710837",
+        "way/406710838",
+        "way/406710839"
+      ]
+    },
+    {
+      "id": "sf-coit-tower",
+      "name": "Coit Tower",
+      "model": "sf-coit-tower",
+      "lng": -122.40583383,
+      "lat": 37.80237416,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1107297",
+      "replaces": [
+        "way/28824850",
+        "way/451331530",
+        "way/451331532",
+        "way/451331533",
+        "way/451331534",
+        "way/451331535"
+      ]
+    },
+    {
+      "id": "sf-ghirardelli-square",
+      "name": "Ghirardelli Square",
+      "model": "sf-ghirardelli-square",
+      "lng": -122.42283442,
+      "lat": 37.80560018,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5556730",
+      "replaces": [
+        "way/939539785",
+        "way/939539839",
+        "way/939539786",
+        "way/939539784",
+        "way/288388853"
+      ]
+    },
+    {
+      "id": "sf-opera-house",
+      "name": "War Memorial Opera House",
+      "model": "sf-opera-house",
+      "lng": -122.4209046,
+      "lat": 37.7785751,
+      "bearing": 350.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2915772",
+      "replaces": [
+        "way/32865161"
+      ]
+    },
+    {
+      "id": "sf-veterans-building",
+      "name": "War Memorial Veterans Building",
+      "model": "sf-veterans-building",
+      "lng": -122.4210207,
+      "lat": 37.7795458,
+      "bearing": 350.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5736243",
+      "replaces": [
+        "way/32865757"
+      ]
+    },
+    {
+      "id": "sf-de-young",
+      "name": "de Young Museum",
+      "model": "sf-de-young",
+      "lng": -122.46871572,
+      "lat": 37.77147861,
+      "bearing": 317.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1470276",
+      "replaces": [
+        "relation/1652482",
+        "way/444230154",
+        "way/1418750068",
+        "way/1418750069",
+        "way/1418750070",
+        "way/1418750071",
+        "way/1418750072",
+        "way/1418750073",
+        "way/1418972816",
+        "way/1418972817"
+      ]
+    },
+    {
+      "id": "sf-cal-academy",
+      "name": "California Academy of Sciences",
+      "model": "sf-cal-academy",
+      "lng": -122.46609147,
+      "lat": 37.76982799,
+      "bearing": 317.9,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q134486471",
+      "replaces": [
+        "way/28695389"
+      ]
+    },
+    {
+      "id": "sf-conservatory-of-flowers",
+      "name": "Conservatory of Flowers",
+      "model": "sf-conservatory-of-flowers",
+      "lng": -122.46023301,
+      "lat": 37.77263055,
+      "bearing": 354.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5163145",
+      "replaces": [
+        "way/30675038"
+      ]
+    },
+    {
+      "id": "sf-spreckels-temple-of-music",
+      "name": "Spreckels Temple of Music",
+      "model": "sf-spreckels-temple-of-music",
+      "lng": -122.4685871,
+      "lat": 37.76986089,
+      "bearing": 235,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q110559749",
+      "replaces": [
+        "way/30896932"
+      ]
+    },
+    {
+      "id": "sf-dutch-windmill",
+      "name": "Dutch Windmill",
+      "model": "sf-dutch-windmill",
+      "lng": -122.5094058,
+      "lat": 37.77044089,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q54799943",
+      "replaces": [
+        "way/287921407"
+      ]
+    },
+    {
+      "id": "sf-palace-of-fine-arts",
+      "name": "Palace of Fine Arts",
+      "model": "sf-palace-of-fine-arts",
+      "lng": -122.4484045,
+      "lat": 37.8029182,
+      "bearing": 350,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q966263",
+      "replaces": [
+        "way/288371295",
+        "way/456820271",
+        "way/456820274",
+        "way/1549377328",
+        "way/1549377329",
+        "way/1549377330",
+        "way/1549377331",
+        "way/1549377332",
+        "way/1549377333",
+        "way/1549377334",
+        "way/1549377335",
+        "way/1549377336",
+        "way/1549377337",
+        "way/1549377338",
+        "way/1549377339",
+        "way/1549377340",
+        "way/1549377341",
+        "way/1549377342",
+        "way/1549377343",
+        "way/1549377344",
+        "way/1549377345",
+        "way/1549377346",
+        "way/1549377347",
+        "way/1549377348",
+        "way/1549377349",
+        "way/1549377350",
+        "way/288371310",
+        "way/288371306",
+        "way/288371313",
+        "way/288371314",
+        "way/288371302",
+        "way/1550664397",
+        "way/1550664398",
+        "way/1550664399",
+        "way/1550664400",
+        "way/1550664401",
+        "way/1550664402",
+        "way/1550664403",
+        "way/1550664404",
+        "way/1550664405",
+        "way/1550664406",
+        "way/1550664407",
+        "way/1550664408",
+        "way/1550664409",
+        "way/1550664410"
+      ]
+    },
+    {
+      "id": "sf-legion-of-honor",
+      "name": "California Palace of the Legion of Honor",
+      "model": "sf-legion-of-honor",
+      "lng": -122.50074208,
+      "lat": 37.78454549,
+      "bearing": 49.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2468251",
+      "replaces": [
+        "relation/21115818",
+        "way/1540337302",
+        "way/1540337303",
+        "way/1540337304",
+        "way/1540337305",
+        "way/1540327029",
+        "way/1540327030",
+        "way/1410202318",
+        "way/1410202325",
+        "way/1540333313",
+        "way/1540333314"
+      ]
+    },
+    {
+      "id": "sf-sutro-tower",
+      "name": "Sutro Tower",
+      "model": "sf-sutro-tower",
+      "lng": -122.4528532,
+      "lat": 37.7552409,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q650097",
+      "replaces": [
+        "relation/3829019",
+        "way/581120610",
+        "way/1350841006",
+        "way/1350828175",
+        "way/1350828176",
+        "way/1350828177",
+        "way/1350828178",
+        "way/1350828179",
+        "way/1350828180",
+        "way/1350828181",
+        "way/1350828182",
+        "way/1350828183",
+        "way/1350848292",
+        "way/1350848293",
+        "way/1350848294",
+        "way/1350848295",
+        "way/1350848296",
+        "way/1350853005",
+        "way/1350853006",
+        "way/1350853007",
+        "way/1350853008",
+        "way/1350853009",
+        "way/1350853010",
+        "way/1350853011",
+        "way/1350853012",
+        "way/1350853013",
+        "way/1350853014",
+        "way/1350855462",
+        "way/1350855463",
+        "way/1350855464",
+        "way/1334229829",
+        "way/1350860498",
+        "way/1350860499"
+      ]
+    },
+    {
+      "id": "sf-mount-davidson-cross",
+      "name": "Mount Davidson Cross",
+      "model": "sf-mount-davidson-cross",
+      "lng": -122.4547473,
+      "lat": 37.7383418,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q20508607",
+      "replaces": []
+    },
+    {
+      "id": "sf-grace-cathedral",
+      "name": "Grace Cathedral",
+      "model": "sf-grace-cathedral",
+      "lng": -122.41347,
+      "lat": 37.79185,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q3082361",
+      "replaces": [
+        "way/32946942",
+        "way/939433954",
+        "way/939433955",
+        "way/939433956",
+        "way/939433957"
+      ]
+    },
+    {
+      "id": "sf-mission-dolores",
+      "name": "Mission Dolores",
+      "model": "sf-mission-dolores",
+      "lng": -122.42692,
+      "lat": 37.764314,
+      "bearing": 355.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1000321",
+      "replaces": [
+        "way/256442760",
+        "way/256442765"
+      ]
+    },
+    {
+      "id": "sf-st-marys-cathedral",
+      "name": "Cathedral of Saint Mary of the Assumption",
+      "model": "sf-st-marys-cathedral",
+      "lng": -122.42537,
+      "lat": 37.78423,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q4347013",
+      "replaces": [
+        "relation/7814696",
+        "way/435831007",
+        "way/436473546",
+        "way/436473547"
+      ]
+    },
+    {
+      "id": "sf-old-mint",
+      "name": "Old San Francisco Mint",
+      "model": "sf-old-mint",
+      "lng": -122.407238,
+      "lat": 37.782728,
+      "bearing": 315,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7414079",
+      "replaces": [
+        "way/32863779"
+      ]
+    },
+    {
+      "id": "sf-oracle-park",
+      "name": "Oracle Park",
+      "model": "sf-oracle-park",
+      "lng": -122.38951278,
+      "lat": 37.77843769,
+      "bearing": 315,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q298585",
+      "replaces": [
+        "relation/7330762",
+        "relation/7325085",
+        "way/499568642",
+        "way/499568643",
+        "way/499568644",
+        "way/499568645",
+        "way/499568646",
+        "way/499568647",
+        "way/499568648",
+        "way/499568649",
+        "way/499568652",
+        "way/368215207",
+        "way/368215208",
+        "way/368214736",
+        "way/368214737"
+      ]
+    },
+    {
+      "id": "sf-chase-center",
+      "name": "Chase Center",
+      "model": "sf-chase-center",
+      "lng": -122.38739618,
+      "lat": 37.76787393,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q15262098",
+      "replaces": [
+        "way/579646390"
+      ]
+    },
+    {
+      "id": "sf-sfmoma",
+      "name": "San Francisco Museum of Modern Art",
+      "model": "sf-sfmoma",
+      "lng": -122.40066029,
+      "lat": 37.78589533,
+      "bearing": 45,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q913672",
+      "replaces": [
+        "way/41692824",
+        "way/1365384410",
+        "way/1365384411",
+        "way/1365384412",
+        "way/1365384413",
+        "way/1365384414",
+        "way/1365384415",
+        "way/1365384416"
+      ]
+    },
+    {
+      "id": "sf-oakland-tribune-tower",
+      "name": "Oakland Tribune Tower",
+      "model": "sf-oakland-tribune-tower",
+      "lng": -122.270827,
+      "lat": 37.803054,
+      "bearing": 26.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7840494",
+      "replaces": [
+        "way/91760682",
+        "way/425060610",
+        "way/660808995",
+        "way/660808996",
+        "way/660808997"
+      ]
+    },
+    {
+      "id": "sf-oakland-city-hall",
+      "name": "Oakland City Hall",
+      "model": "sf-oakland-city-hall",
+      "lng": -122.2725829,
+      "lat": 37.8053134,
+      "bearing": 26.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q932794",
+      "replaces": [
+        "way/36977855",
+        "way/425117755",
+        "way/430610784",
+        "way/782510576",
+        "way/782510578",
+        "way/782510579",
+        "way/782510580",
+        "way/782510581",
+        "way/782510582"
+      ]
+    },
+    {
+      "id": "sf-paramount-theatre",
+      "name": "Paramount Theatre",
+      "model": "sf-paramount-theatre",
+      "lng": -122.2685961,
+      "lat": 37.8098546,
+      "bearing": 27.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q14683611",
+      "replaces": [
+        "way/666976181",
+        "way/666976187",
+        "way/666974159",
+        "way/666974169",
+        "way/666976173",
+        "way/666976174"
+      ]
+    },
+    {
+      "id": "sf-fox-oakland",
+      "name": "Fox Oakland Theatre",
+      "model": "sf-fox-oakland",
+      "lng": -122.2705411,
+      "lat": 37.8080679,
+      "bearing": 11.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5476853",
+      "replaces": [
+        "way/31149191"
+      ]
+    },
+    {
+      "id": "sf-christ-the-light",
+      "name": "Cathedral of Christ the Light",
+      "model": "sf-christ-the-light",
+      "lng": -122.263119,
+      "lat": 37.81056,
+      "bearing": 356,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q722744",
+      "replaces": [
+        "way/26720620",
+        "way/782773169",
+        "way/782773173",
+        "way/782773174",
+        "way/782773175"
+      ]
+    },
+    {
+      "id": "sf-oakland-temple",
+      "name": "Oakland California Temple",
+      "model": "sf-oakland-temple",
+      "lng": -122.199095,
+      "lat": 37.807815,
+      "bearing": 5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1541513",
+      "replaces": [
+        "way/52391545",
+        "way/894014038",
+        "way/894014037"
+      ]
+    },
+    {
+      "id": "sf-sather-tower",
+      "name": "Sather Tower",
+      "model": "sf-sather-tower",
+      "lng": -122.257822,
+      "lat": 37.872056,
+      "bearing": 344.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q357019",
+      "replaces": [
+        "way/24024507",
+        "way/1013163515"
+      ]
+    },
+    {
+      "id": "sea-f5-tower",
+      "name": "F5 Tower",
+      "model": "sea-f5-tower",
+      "lng": -122.3310654,
+      "lat": 47.6052122,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q5447583",
+      "replaces": [
+        "way/333212849"
+      ]
+    },
+    {
+      "id": "sea-space-needle",
+      "name": "Space Needle",
+      "model": "sea-space-needle",
+      "lng": -122.349286,
+      "lat": 47.620504,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q5317",
+      "replaces": [
+        "way/12903132",
+        "way/394254329",
+        "way/394254331",
+        "way/394254332",
+        "way/394254333",
+        "way/394254334",
+        "way/394254335",
+        "way/394254336",
+        "way/394254337",
+        "way/394254484",
+        "way/394254485",
+        "way/394254486",
+        "way/394254487",
+        "way/394254488",
+        "way/394956342",
+        "way/394956343",
+        "way/394956344"
+      ]
+    },
+    {
+      "id": "sea-municipal-tower",
+      "name": "Seattle Municipal Tower",
+      "model": "sea-municipal-tower",
+      "lng": -122.3296022,
+      "lat": 47.6050394,
+      "bearing": 59,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q3177235",
+      "replaces": [
+        "way/107124286",
+        "way/331321180",
+        "way/331321181"
+      ]
+    },
+    {
+      "id": "sea-smith-tower",
+      "name": "Smith Tower",
+      "model": "sea-smith-tower",
+      "lng": -122.3317301,
+      "lat": 47.6019798,
+      "bearing": 61.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1196348",
+      "replaces": [
+        "way/52781661",
+        "way/418140386",
+        "way/418140384",
+        "way/418140385"
+      ]
+    },
+    {
+      "id": "sea-columbia-center",
+      "name": "Columbia Center",
+      "model": "sea-columbia-center",
+      "lng": -122.3307466,
+      "lat": 47.6045019,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q908703",
+      "replaces": [
+        "way/107124288",
+        "way/418132525",
+        "way/418132517",
+        "way/418132520",
+        "way/418132515",
+        "way/331293871"
+      ]
+    },
+    {
+      "id": "sea-climate-pledge-arena",
+      "name": "Climate Pledge Arena",
+      "model": "sea-climate-pledge-arena",
+      "lng": -122.3539888,
+      "lat": 47.6220039,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q977529",
+      "replaces": [
+        "way/25123756",
+        "way/411521517",
+        "way/411521531",
+        "way/1270549342",
+        "way/1352647807",
+        "way/1352647808",
+        "way/1352647809",
+        "way/1352647810",
+        "way/1352647811",
+        "way/1352647812",
+        "way/1352665595",
+        "way/1352665596",
+        "way/1352665597",
+        "way/1352665598",
+        "way/1352666108",
+        "way/1352666109",
+        "way/1352666110",
+        "way/1352666111",
+        "way/1352666989",
+        "way/1352666990",
+        "way/1352666991"
+      ]
+    },
+    {
+      "id": "sea-rainier-square-tower",
+      "name": "Rainier Square Tower",
+      "model": "sea-rainier-square-tower",
+      "lng": -122.3348815,
+      "lat": 47.6090211,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q30634662",
+      "replaces": [
+        "way/686348108",
+        "way/686348092",
+        "way/686348093",
+        "way/686348094",
+        "way/686348095",
+        "way/686348096",
+        "way/686348097",
+        "way/686348098",
+        "way/686348099",
+        "way/686348100",
+        "way/686348101",
+        "way/686348102",
+        "way/686348103",
+        "way/686348104",
+        "way/686348105",
+        "way/686348106",
+        "way/686348107",
+        "way/686348109",
+        "way/686348110",
+        "way/686348111",
+        "way/686348112",
+        "way/686348113",
+        "way/686348114",
+        "way/686348115",
+        "way/686348116",
+        "way/686348117",
+        "way/686348118"
+      ]
+    },
+    {
+      "id": "sea-rainier-tower",
+      "name": "Rainier Tower",
+      "model": "sea-rainier-tower",
+      "lng": -122.3343526,
+      "lat": 47.6088171,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q7284914",
+      "replaces": [
+        "way/35824879",
+        "way/686348090",
+        "way/686348091"
+      ]
+    },
+    {
+      "id": "sea-1201-third-avenue",
+      "name": "1201 Third Avenue",
+      "model": "sea-1201-third-avenue",
+      "lng": -122.336163,
+      "lat": 47.6072043,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2301069",
+      "replaces": [
+        "way/140436171",
+        "way/331322651",
+        "way/331322649",
+        "way/331424981",
+        "way/488923802",
+        "way/331322650",
+        "way/331324934"
+      ]
+    },
+    {
+      "id": "sea-seattle-tower",
+      "name": "Seattle Tower",
+      "model": "sea-seattle-tower",
+      "lng": -122.335457,
+      "lat": 47.6076875,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7442196",
+      "replaces": [
+        "way/335417547",
+        "way/232079588",
+        "way/417915158",
+        "way/417915157",
+        "way/417915159"
+      ]
+    },
+    {
+      "id": "sea-pacific-science-center",
+      "name": "Pacific Science Center",
+      "model": "sea-pacific-science-center",
+      "lng": -122.351292,
+      "lat": 47.6194238,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3848341",
+      "replaces": [
+        "way/394955903",
+        "way/394955876",
+        "way/394955877",
+        "way/394955878",
+        "way/394955882",
+        "way/394955883",
+        "way/394955887",
+        "way/394955890",
+        "way/394955894",
+        "way/394955898",
+        "way/394955899"
+      ]
+    },
+    {
+      "id": "sea-chihuly-glasshouse",
+      "name": "Chihuly Garden and Glass Glasshouse",
+      "model": "sea-chihuly-glasshouse",
+      "lng": -122.3500188,
+      "lat": 47.6206252,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q5097315",
+      "replaces": [
+        "way/329416207"
+      ]
+    },
+    {
+      "id": "sea-two-union-square",
+      "name": "Two Union Square",
+      "model": "sea-two-union-square",
+      "lng": -122.3320767,
+      "lat": 47.6104347,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q3049315",
+      "replaces": [
+        "way/331281880",
+        "way/491467380",
+        "way/491467379",
+        "way/491467381",
+        "way/494784395",
+        "way/456870610",
+        "way/456870609"
+      ]
+    },
+    {
+      "id": "sea-great-wheel",
+      "name": "Seattle Great Wheel",
+      "model": "sea-great-wheel",
+      "lng": -122.3424857,
+      "lat": 47.6061437,
+      "bearing": 336.2,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7442108",
+      "replaces": [
+        "way/396606878"
+      ]
+    },
+    {
+      "id": "sea-westin-towers",
+      "name": "The Westin Seattle",
+      "model": "sea-westin-towers",
+      "lng": -122.3382051,
+      "lat": 47.6137035,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7988924",
+      "replaces": [
+        "way/331291911",
+        "way/331281882",
+        "way/331281881",
+        "way/488733959",
+        "way/488733958",
+        "way/770565574",
+        "way/770565573"
+      ]
+    },
+    {
+      "id": "sea-amazon-spheres",
+      "name": "The Spheres",
+      "model": "sea-amazon-spheres",
+      "lng": -122.3394654,
+      "lat": 47.615663,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q48596158",
+      "replaces": [
+        "way/868099742",
+        "way/491817111",
+        "way/398816077",
+        "way/491817110"
+      ]
+    },
+    {
+      "id": "sea-king-street-station",
+      "name": "King Street Station",
+      "model": "sea-king-street-station",
+      "lng": -122.3299103,
+      "lat": 47.5984251,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q536131",
+      "replaces": [
+        "way/4725281",
+        "way/442511849",
+        "way/442511850",
+        "way/442511851",
+        "way/442511852"
+      ]
+    },
+    {
+      "id": "sea-union-station",
+      "name": "Union Station",
+      "model": "sea-union-station",
+      "lng": -122.3285424,
+      "lat": 47.5986081,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q7886102",
+      "replaces": [
+        "way/45569666"
+      ]
+    },
+    {
+      "id": "sea-benaroya-hall",
+      "name": "Benaroya Hall",
+      "model": "sea-benaroya-hall",
+      "lng": -122.3369718,
+      "lat": 47.6081067,
+      "bearing": 328.3,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3892069",
+      "replaces": [
+        "way/69273374",
+        "way/417918253",
+        "way/417918254",
+        "way/417918255",
+        "way/417918256",
+        "way/417918257"
+      ]
+    },
+    {
+      "id": "sea-lumen-field",
+      "name": "Lumen Field",
+      "model": "sea-lumen-field",
+      "lng": -122.3316267,
+      "lat": 47.595151,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q612736",
+      "replaces": [
+        "way/635152550",
+        "way/635152551",
+        "way/458208106",
+        "way/458208107",
+        "way/458208103",
+        "way/458208112",
+        "way/458208102",
+        "way/458208104",
+        "way/458208105",
+        "way/458208114",
+        "way/458208115",
+        "way/458208116"
+      ]
+    },
+    {
+      "id": "sea-central-library",
+      "name": "Seattle Central Library",
+      "model": "sea-central-library",
+      "lng": -122.3326627,
+      "lat": 47.6066885,
+      "bearing": 328.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2531939",
+      "replaces": [
+        "way/37056442",
+        "way/458203290",
+        "way/458203294",
+        "way/458203296",
+        "way/458203299"
+      ]
+    },
+    {
+      "id": "sea-t-mobile-park",
+      "name": "T-Mobile Park",
+      "model": "sea-t-mobile-park",
+      "lng": -122.33251,
+      "lat": 47.5914,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1193117",
+      "replaces": [
+        "way/1451834508",
+        "way/1451834509",
+        "way/1451834510",
+        "way/1451834511",
+        "way/1451834512",
+        "way/1451834513",
+        "way/1451834514",
+        "way/1451834515",
+        "way/1451834516",
+        "way/1451834517",
+        "way/1451834518",
+        "way/1451834519",
+        "way/1451834520",
+        "way/1451834521",
+        "way/1451834522",
+        "way/1451834523",
+        "way/1453289445",
+        "way/1453289446",
+        "way/1453289447",
+        "way/1453289448",
+        "way/1453289449",
+        "way/1453289450",
+        "way/1453289451"
+      ]
+    },
+    {
+      "id": "sea-st-james-cathedral",
+      "name": "St. James Cathedral",
+      "model": "sea-st-james-cathedral",
+      "lng": -122.3258402,
+      "lat": 47.6076789,
+      "bearing": 328.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7588439",
+      "replaces": [
+        "way/108384951",
+        "way/1363023932",
+        "way/1363023933"
+      ]
+    },
+    {
+      "id": "sea-husky-stadium",
+      "name": "Husky Stadium",
+      "model": "sea-husky-stadium",
+      "lng": -122.301596,
+      "lat": 47.650316,
+      "bearing": 16,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1136463",
+      "replaces": [
+        "relation/3389103"
+      ]
+    },
+    {
+      "id": "sea-suzzallo-library",
+      "name": "Suzzallo Library",
+      "model": "sea-suzzallo-library",
+      "lng": -122.308168,
+      "lat": 47.655773,
+      "bearing": 10,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7651462",
+      "replaces": [
+        "relation/2955450",
+        "way/1104202902",
+        "way/1104202901",
+        "way/445398678",
+        "way/1104202900"
+      ]
+    },
+    {
+      "id": "sea-pacific-tower",
+      "name": "Pacific Tower",
+      "model": "sea-pacific-tower",
+      "lng": -122.31571,
+      "lat": 47.59286,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7122556",
+      "replaces": [
+        "way/4712871",
+        "way/1510326610",
+        "way/1510326611",
+        "way/1510326612",
+        "way/1510326613",
+        "way/1510326614",
+        "way/1510326615",
+        "way/1510326616",
+        "way/1510326617",
+        "way/1510326618",
+        "way/1510326619"
+      ]
+    },
+    {
+      "id": "sea-gas-works",
+      "name": "Gas Works Park",
+      "model": "sea-gas-works",
+      "lng": -122.3348334,
+      "lat": 47.6451277,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5526323",
+      "replaces": [
+        "way/191328724",
+        "way/191328729",
+        "way/191328731",
+        "way/191328732",
+        "way/191328734",
+        "way/191328736",
+        "way/986412515",
+        "way/449626306",
+        "way/449626307",
+        "way/449626308",
+        "way/449626309",
+        "way/449626310",
+        "way/449626311",
+        "way/449626312",
+        "way/449626313",
+        "way/449626314",
+        "way/449626315",
+        "way/406480498",
+        "way/406480499",
+        "way/406480500",
+        "way/406480501",
+        "way/406480502",
+        "way/52137309",
+        "way/52137316",
+        "way/191328710",
+        "way/191328713",
+        "way/191328715",
+        "way/191328723",
+        "way/191328727",
+        "way/1418097788",
+        "way/406480504",
+        "way/406480505",
+        "way/406480506"
+      ]
+    },
+    {
+      "id": "sea-volunteer-park-conservatory",
+      "name": "Volunteer Park Conservatory",
+      "model": "sea-volunteer-park-conservatory",
+      "lng": -122.3157366,
+      "lat": 47.6321078,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q7941038",
+      "replaces": [
+        "way/40790435"
+      ]
+    },
+    {
+      "id": "sea-tacoma-union-station",
+      "name": "Tacoma Union Station",
+      "model": "sea-tacoma-union-station",
+      "lng": -122.4362869,
+      "lat": 47.246369,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7886107",
+      "replaces": [
+        "way/24656596"
+      ]
+    },
+    {
+      "id": "sea-museum-of-glass",
+      "name": "Museum of Glass",
+      "model": "sea-museum-of-glass",
+      "lng": -122.4340127,
+      "lat": 47.2459117,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2894440",
+      "replaces": [
+        "way/30679724"
+      ]
+    },
+    {
+      "id": "sea-tacoma-dome",
+      "name": "Tacoma Dome",
+      "model": "sea-tacoma-dome",
+      "lng": -122.4270038,
+      "lat": 47.2368426,
+      "bearing": 351,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1570942",
+      "replaces": [
+        "way/32660308",
+        "way/1352265453",
+        "way/1352265454"
+      ]
+    },
+    {
+      "id": "sea-washington-state-capitol",
+      "name": "Washington State Capitol",
+      "model": "sea-washington-state-capitol",
+      "lng": -122.9048534,
+      "lat": 47.0357611,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2620186",
+      "replaces": [
+        "way/31494476",
+        "way/612617948"
       ]
     },
     {

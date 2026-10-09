@@ -1,215 +1,245 @@
 /**
- * One Wells Fargo Center (1988, formerly First Union Center), Charlotte —
- * original procedural geometry, CC0-1.0.
+ * One Wells Fargo Center ("the jukebox"; 1988, formerly First Union Center,
+ * Thompson, Ventulett, Stainback & Associates), Charlotte — original
+ * procedural geometry, CC0-1.0.
  * bun generators/one-wells-fargo-center.ts
  *
- * Map frame: x east, y north, z up, metres; origin at the centre of the tower
- * on the ground. Placed at bearing 5°, so the model's +x runs along the crown's
- * barrel vault (true bearing 95°, the diagonal of Uptown's 50° street grid)
- * and its arched glass ends face true east and west.
+ * Map frame: x east, y north, z up, metres; origin at the catalog anchor on the
+ * ground. Placed at bearing 5°, so +x runs along the crown's barrel vault
+ * (true bearing 95°) and Uptown's street grid lies on the diagonals.
  *
- * The tower is a square on the street grid (≈53 m a side, so a diamond in this
- * frame) with its east and west corners cut off by flat end walls, |x| = E.
- * Each end wall carries a full-height glass bay with a dark slot that rises
- * into the vault's semicircular glass end, the "jukebox". The north and south
- * corners step back in grid-aligned sawtooth notches, more at each setback, so
- * the top floors narrow to a slab under the vault. Granite faces carry flush
- * slate window panels, one per bay and three floors, with granite piers and
- * spandrels between; there is no punched-window grid.
+ * Plan (lidar, Mecklenburg 2016, USGS 3DEP NC Phase 4, 1 m; matches the OSM
+ * outline way/380092606 to a metre on every side it records). A square on
+ * the street grid, |x − 7.5| + |y| ≤ 37.5, cut by two end walls square to the
+ * vault: the west one at x = −20 is only as wide as the vault's glass bay
+ * (|y| ≤ 10), the east one at x = 20.5 runs 50 m (|y| ≤ 25). OSM's west tip
+ * (to x = −33) is a low stepped lobby block, 20-30 m.
  *
- * Colours follow the shared palette (STYLE.md): the rose granite is the one
- * identity finish, pulled to the stone's lightness; the vault is pale glass,
- * the end bays slate `window` with pale `trim` lines and a glass slot.
+ * Heights above the street (lidar; ground within a metre of the lowest
+ * return): the north and south tips stop at 81 / 85 / 89 m in three steps;
+ * the shaft (|y| ≤ 25.5) rises to 155 m, then steps in 4-5 m at a time to
+ * 159, 164 and 170 m, each step a planted terrace (photos); the barrel vault,
+ * radius 9.5 m, rises to 180 m. Published: 588 ft (179 m), 42 floors.
+ * OSM's height=192 is too high.
  *
- * OSM: way/380092606 is the tower outline (192 m, no parts). Its east wall is
- * the end wall at x = +19.6; its west tip runs 13 m past where the symmetric
- * end wall stands, and that sliver is left uncovered. The north and south
- * tips stop ≈3 m short of OSM's, where the base sawtooth notches them.
+ * What makes it recognisable, each drawn as plain geometry:
+ * - the barrel vault of pale glass, its ends filled by the "jukebox": a
+ *   full-height glass bay on each end wall under a semicircular arch, with
+ *   an outer and an inner pale ring and a dark slot rising into the inner
+ *   arch (photos from the east and west);
+ * - the stepped terraces either side of the vault;
+ * - the sawtooth: every wall that runs square to the vault rather than on the
+ *   street grid is notched into grid-aligned teeth, so the shaft's north and
+ *   south faces and the east wall's flanks read as stepped corners (photo
+ *   from S College St);
+ * - rose granite with large square windows. Drawn per STYLE.md as one panel
+ *   per bay and three floors, granite piers and spandrels between.
+ *
+ * Colours: the granite is reddish brown in photos; pulled to the palette's
+ * lightness as a rose finish. Windows and the bay are reflective glass that
+ * reads light blue in daylight, so a light window colour, not slate. The slot
+ * is the one dark line; it is a defining feature and stays mid slate.
+ *
+ * Estimated: tooth size (2.2 m deep, from photos), the ring radii and slot
+ * width (photos), the lobby block's steps (lidar, coarse), floor height 3.9 m.
+ *
+ * Photos: One_Wells_Fargo_Center_S_College.jpg and One_Wells_Fargo_Center_
+ * November_2023.jpg (City Dweller 2, CC BY-SA 4.0, Commons); Wachoviahq.jpg
+ * (CC BY-SA 3.0, Commons); One_Wells_Fargo_Center,_Three_Wells_Fargo_Center
+ * .jpg (Kiran891, CC BY-SA 4.0, Commons); Flickr 2675013257 (James Willamor,
+ * CC BY-SA 2.0; the crown). No commercial imagery or 3D tiles were used.
  */
 import { Part, writeGlb, type V3 } from './mesh'
-import { PALETTE, finish } from './palette'
+import { PALETTE, finish, windowVariant } from './palette'
 
 type XY = [number, number]
-type Rim = { points: XY[]; normals: V3[] }
+const granite = new Part(), windows = new Part(), slot = new Part(), glass = new Part()
+const trim = new Part(), roof = new Part()
 
-const granite = new Part(), windows = new Part(), glass = new Part()
-const terraces = new Part(), trim = new Part()
-
-const R = 37.5        // half-diagonal of the grid square: the north/south tips
-const E = 19.6        // end walls, from OSM's east wall and the vault's ends
-const RV = 11         // barrel vault radius (≈22 m wide, from imagery)
-const TOP = 179       // top of the vault
-const SPRING = TOP - RV
-const ATTIC = SPRING - 5
-const BAY = RV - 1.2  // half-width of the end bays, inside the arch ring
-const SLOT = 2.2      // half-width of the dark slot
-const BEVEL = .5
-const ARC = 12        // segments per semicircle
-const GROUP = 12      // window panels span three ≈4 m floors
-const SPANDREL = 1.8  // granite between panel groups
-const LIFT = .04      // panels sit just proud of the wall (Open Landmarks: ≤ .06)
+const CXD = 7.5, RD = 37.5          // the street-grid square
+const XW = -20, XE = 20.5           // end walls
+const RV = 9.5, SPRING = 170.5, TOP = SPRING + RV
+const BAY = RV                      // the jukebox bay's half-width
+const TOOTH = 2.2                   // sawtooth depth (45° faces 3.1 m wide)
+const FLOOR = 3.9, GROUP = 2 * FLOOR
+const LIFT = .04
+const ARC = 12
 
 const unit = (v: V3): V3 => { const l = Math.hypot(...v) || 1; return v.map(n => n / l) as V3 }
-const up: V3 = [0, 0, 1]
-const at = (ring: XY[], z: number): V3[] => ring.map(([x, y]) => [x, y, z])
 
-function quad(p: Part, a: V3, b: V3, c: V3, d: V3, na: V3, nb: V3, nc = nb, nd = na) {
-  p.tri(a, b, c, undefined, undefined, undefined, [na, nb, nc])
-  p.tri(a, c, d, undefined, undefined, undefined, [na, nc, nd])
-}
-
-/**
- * The tower's plan at a stage: the chamfered diamond, cut on the north and
- * south by a grid-aligned sawtooth whose valleys sit at |y| = cut. `teeth` is
- * how many valleys; 0 cuts straight across between the end walls.
- */
-function plan(cut: number, teeth: number): XY[] {
-  if (teeth === 0) return [[E, -cut], [E, cut], [-E, cut], [-E, -cut]]
-  const t = (R - cut) / (teeth + 1)
-  const ring: XY[] = [[E, -(R - E)], [E, R - E]]
-  const peaks: XY[] = []
-  for (let k = 0; k <= 2 * teeth; k++) {
-    const x = R - cut - t - k * t
-    peaks.push([x, k % 2 ? cut : cut + t])
-  }
-  ring.push(...peaks, [-E, R - E], [-E, -(R - E)])
-  ring.push(...peaks.map(([x, y]): XY => [-x, -y]))
-  return ring
-}
-
-/** Bevel each convex plan corner, with smooth analytic normals. */
-function soften(ring: XY[], radius = BEVEL): Rim {
-  const points: XY[] = [], normals: V3[] = []
-  for (let i = 0; i < ring.length; i++) {
-    const a = ring[(i + ring.length - 1) % ring.length], b = ring[i], c = ring[(i + 1) % ring.length]
-    const l0 = Math.hypot(b[0] - a[0], b[1] - a[1]), l1 = Math.hypot(c[0] - b[0], c[1] - b[1])
-    const u: XY = [(b[0] - a[0]) / l0, (b[1] - a[1]) / l0], v: XY = [(c[0] - b[0]) / l1, (c[1] - b[1]) / l1]
-    const turn = u[0] * v[1] - u[1] * v[0]
-    if (turn < 1e-5) {
-      points.push(b); normals.push(unit([u[1] + v[1], -u[0] - v[0], 0])); continue
-    }
-    const r = Math.min(radius, l0 * .2, l1 * .2)
-    points.push([b[0] - u[0] * r, b[1] - u[1] * r], [b[0] + v[0] * r, b[1] + v[1] * r])
-    normals.push([u[1], -u[0], 0], [v[1], -v[0], 0])
-  }
-  return { points, normals }
-}
-
-function inset(ring: XY[], d: number): XY[] {
-  return ring.map((b, i) => {
-    const a = ring[(i + ring.length - 1) % ring.length], c = ring[(i + 1) % ring.length]
-    const u = unit([b[1] - a[1], a[0] - b[0], 0]), v = unit([c[1] - b[1], b[0] - c[0], 0])
-    const k = 1 + u[0] * v[0] + u[1] * v[1]
-    return [b[0] - (u[0] + v[0]) * d / k, b[1] - (u[1] + v[1]) * d / k]
+/** Clip a CCW convex ring by the half-plane f(p) ≥ 0. */
+function clip(ring: XY[], f: (p: XY) => number): XY[] {
+  const out: XY[] = []
+  ring.forEach((a, i) => {
+    const b = ring[(i + 1) % ring.length], fa = f(a), fb = f(b)
+    if (fa >= 0) out.push(a)
+    if ((fa >= 0) !== (fb >= 0)) { const t = fa / (fa - fb); out.push([a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t]) }
   })
+  return out
 }
-
-function cap(p: Part, ring: XY[], z: number, upward = true) {
-  const c: V3 = [ring.reduce((s, v) => s + v[0], 0) / ring.length, ring.reduce((s, v) => s + v[1], 0) / ring.length, z]
-  const pts = at(ring, z)
-  for (let i = 0; i < ring.length; i++) {
-    const j = (i + 1) % ring.length
-    if (upward) p.tri(c, pts[i], pts[j]); else p.tri(c, pts[j], pts[i])
-  }
-}
-
-function wall(p: Part, rim: Rim, z0: number, z1: number) {
-  const a = at(rim.points, z0), b = at(rim.points, z1)
-  for (let i = 0; i < a.length; i++) {
-    const j = (i + 1) % a.length
-    quad(p, a[i], a[j], b[j], b[i], rim.normals[i], rim.normals[j])
-  }
+const diamond: XY[] = [[CXD + RD, 0], [CXD, RD], [CXD - RD, 0], [CXD, -RD]]
+/** The plan of a stage: the grid square, the end walls and |y| ≤ c. */
+function basePlan(c: number): XY[] {
+  let r = clip(diamond, p => p[0] - XW)
+  r = clip(r, p => XE - p[0])
+  r = clip(r, p => c - p[1])
+  r = clip(r, p => p[1] + c)
+  // drop near-duplicate points
+  return r.filter((p, i) => { const q = r[(i + 1) % r.length]; return Math.hypot(p[0] - q[0], p[1] - q[1]) > .05 })
 }
 
 /**
- * Granite faces with flush slate window panels: one column per bay, one panel
- * per three floors, so piers and spandrels show between them. End walls keep
- * their middle for the glass bay and take one column per flank.
+ * Notch the straight stretch s0..s1 of edge a→b into grid-aligned teeth: each
+ * tooth is two 45° faces meeting TOOTH inside the line.
  */
-function facade(rim: Rim, bottom: number, top: number) {
-  const groups = Math.round((top - bottom) / GROUP), step = (top - bottom) / groups
-  for (let i = 0; i < rim.points.length; i++) {
-    const a = rim.points[i], b = rim.points[(i + 1) % rim.points.length]
-    const length = Math.hypot(b[0] - a[0], b[1] - a[1]), ux = (b[0] - a[0]) / length, uy = (b[1] - a[1]) / length
-    const n: V3 = [uy, -ux, 0]
-    const v = (s: number, z: number, out = 0): V3 => [a[0] + ux * s + uy * out, a[1] + uy * s - ux * out, z]
-    quad(granite, v(0, bottom), v(length, bottom), v(length, top), v(0, top), rim.normals[i], rim.normals[(i + 1) % rim.points.length])
-    const end = Math.abs(n[0]) > .99 && Math.abs(Math.abs(a[0]) - E) < 1e-6
-    let bands: [number, number][] = []
-    if (end) {
-      // Mid-line of the end wall is y = 0; the bay overlay covers |y| < BAY.
-      const s0 = Math.abs(a[1]), flank = s0 - BAY
-      if (flank > 4.5) {
-        const w = flank * .5, c1 = (flank) / 2, c2 = length - flank / 2
-        bands = [[c1 - w / 2, c1 + w / 2], [c2 - w / 2, c2 + w / 2]]
-      }
-    } else if (length >= 4.5) {
-      const count = Math.max(1, Math.round(length / 7))
-      const spacing = length / count, w = spacing * .56
-      bands = Array.from({ length: count }, (_, j): [number, number] => [spacing * (j + .5) - w / 2, spacing * (j + .5) + w / 2])
+function teeth(a: XY, b: XY, s0: number, s1: number): XY[] {
+  const L = Math.hypot(b[0] - a[0], b[1] - a[1]), d: XY = [(b[0] - a[0]) / L, (b[1] - a[1]) / L], n: XY = [-d[1], d[0]]
+  const m = Math.max(1, Math.round((s1 - s0) / (2 * TOOTH))), w = (s1 - s0) / m
+  const pts: XY[] = []
+  const at = (s: number, k: number): XY => [a[0] + d[0] * s + n[0] * k, a[1] + d[1] * s + n[1] * k]
+  for (let i = 0; i < m; i++) { pts.push(at(s0 + i * w, 0), at(s0 + (i + .5) * w, w / 2)) }
+  pts.push(at(s1, 0))
+  return pts
+}
+
+/**
+ * A stage's ring with its sawtooth. `ns` notches the north and south faces;
+ * the east wall is notched outside the bay wherever it is longer than it.
+ */
+function plan(c: number, ns: boolean): XY[] {
+  const r = basePlan(c), out: XY[] = []
+  r.forEach((a, i) => {
+    const b = r[(i + 1) % r.length]
+    const L = Math.hypot(b[0] - a[0], b[1] - a[1])
+    const horizontal = Math.abs(a[1] - b[1]) < 1e-6 && Math.abs(Math.abs(a[1]) - c) < 1e-6
+    const east = Math.abs(a[0] - XE) < 1e-6 && Math.abs(b[0] - XE) < 1e-6
+    if (ns && horizontal && L > 4) { out.push(...teeth(a, b, 0, L).slice(0, -1)); return }
+    if (east && L > 2 * BAY + 4) {
+      // The ring runs north along the east wall: flank, bay, flank.
+      const flank = (L - 2 * BAY) / 2
+      out.push(...teeth(a, b, 0, flank), ...teeth(a, b, flank + 2 * BAY, L).slice(0, -1))
+      return
     }
-    // A stage under a group tall stays plain granite: a single-floor strip
-    // would read as a thin dark line from the map.
+    out.push(a)
+  })
+  return out
+}
+
+/** Walls of a ring from z0 to z1, smooth across shallow corners. */
+function walls(p: Part, ring: XY[], z0: number, z1: number) {
+  const n = ring.length
+  const en = ring.map((a, i) => { const b = ring[(i + 1) % n]; return unit([b[1] - a[1], a[0] - b[0], 0]) })
+  const vn = (i: number, e: number): V3 => {
+    const other = e === i ? en[(i + n - 1) % n] : en[(i + 1) % n], own = en[e]
+    return own[0] * other[0] + own[1] * other[1] > Math.cos(50 * Math.PI / 180) ? unit([own[0] + other[0], own[1] + other[1], 0]) : own
+  }
+  for (let i = 0; i < n; i++) {
+    const j = (i + 1) % n, a = ring[i], b = ring[j], na = vn(i, i), nb = vn(j, i)
+    p.tri([a[0], a[1], z0], [b[0], b[1], z0], [b[0], b[1], z1], undefined, undefined, undefined, [na, nb, nb])
+    p.tri([a[0], a[1], z0], [b[0], b[1], z1], [a[0], a[1], z1], undefined, undefined, undefined, [na, nb, na])
+  }
+}
+function cap(p: Part, ring: XY[], z: number) {
+  // ear-free fan from the centroid: every stage ring is star-shaped about it
+  const c: XY = [ring.reduce((s, q) => s + q[0], 0) / ring.length, ring.reduce((s, q) => s + q[1], 0) / ring.length]
+  for (let i = 0; i < ring.length; i++) {
+    const a = ring[i], b = ring[(i + 1) % ring.length]
+    p.tri([c[0], c[1], z], [a[0], a[1], z], [b[0], b[1], z])
+  }
+}
+
+/** Is this wall segment part of a jukebox bay (an end wall within |y| ≤ BAY)? */
+const inBay = (a: XY, b: XY) =>
+  (Math.abs(a[0] - XW) < 1e-6 || Math.abs(a[0] - XE) < 1e-6) && Math.abs(a[0] - b[0]) < 1e-6 &&
+  Math.abs((a[1] + b[1]) / 2) < BAY + .01 && Math.abs(a[1] - b[1]) <= 2 * BAY + .02
+
+/** Window panels: one per bay and three floors, granite between. */
+function facade(ring: XY[], z0: number, z1: number) {
+  const groups = Math.max(1, Math.round((z1 - z0) / GROUP)), step = (z1 - z0) / groups
+  for (let i = 0; i < ring.length; i++) {
+    const a = ring[i], b = ring[(i + 1) % ring.length]
+    if (inBay(a, b)) continue
+    const L = Math.hypot(b[0] - a[0], b[1] - a[1])
+    if (L < 1.8) continue
+    const d: XY = [(b[0] - a[0]) / L, (b[1] - a[1]) / L]
+    const v = (s: number, z: number): V3 => [a[0] + d[0] * s + d[1] * LIFT, a[1] + d[1] * s - d[0] * LIFT, z]
+    const count = Math.max(1, Math.round(L / 5.2)), sp = L / count, w = sp * (L < 3 ? .5 : .66)
     for (let g = 0; g < groups; g++) {
-      const z0 = bottom + g * step + SPANDREL / 2, z1 = bottom + (g + 1) * step - SPANDREL / 2
-      for (const [s0, s1] of bands) windows.quad(v(s0, z0, LIFT), v(s1, z0, LIFT), v(s1, z1, LIFT), v(s0, z1, LIFT))
+      const za = z0 + g * step + 1, zb = z0 + (g + 1) * step - 1
+      if (zb - za < 3) continue
+      for (let k = 0; k < count; k++) {
+        const s = sp * (k + .5)
+        windows.quad(v(s - w / 2, za), v(s + w / 2, za), v(s + w / 2, zb), v(s - w / 2, zb))
+      }
     }
   }
 }
 
-/** A bevelled granite coping around a setback, with a `roof` terrace. */
-function terrace(rim: Rim, bottom: number, top: number) {
-  const middle = inset(rim.points, .45), inner = inset(rim.points, 1)
-  const a = at(rim.points, bottom), b = at(middle, top), c = at(inner, top - .5)
-  for (let i = 0; i < a.length; i++) {
-    const j = (i + 1) % a.length, ni = rim.normals[i], nj = rim.normals[j]
-    quad(granite, a[i], a[j], b[j], b[i], ni, nj, up, up)
-    quad(granite, b[i], b[j], c[j], c[i], up, up, [-nj[0], -nj[1], 0], [-ni[0], -ni[1], 0])
-  }
-  cap(terraces, inner, top - .5)
-}
-
-// Granite stages. The end walls run straight up; the north and south corners
-// notch back at each setback, as on the real tower.
-const stages: { z0: number; z1: number; cut: number; teeth: number }[] = [
-  { z0: 0, z1: 118, cut: 31.5, teeth: 1 },
-  { z0: 118, z1: 155, cut: 19, teeth: 3 },
-  { z0: 155, z1: 159, cut: 17.4, teeth: 0 },
-  { z0: 159, z1: ATTIC, cut: 14.2, teeth: 0 },
+// ---------------------------------------------------------------- stages
+const BASE = 6 // a plain granite plinth under the first window group
+const stages = [
+  { z0: 0, z1: 81, c: RD, ns: false },
+  { z0: 81, z1: 85, c: 35.3, ns: false },
+  { z0: 85, z1: 89, c: 31, ns: false },
+  { z0: 89, z1: 155, c: 25.5, ns: true },
+  { z0: 155, z1: 159, c: 22.5, ns: false },
+  { z0: 159, z1: 164, c: 17.5, ns: false },
+  { z0: 164, z1: SPRING, c: 13, ns: false },
 ]
 for (const s of stages) {
-  const rim = soften(plan(s.cut, s.teeth))
-  if (s.z0 === 0) {
-    wall(granite, rim, 0, 4)
-    facade(rim, 4, s.z1 - .6)
-  } else facade(rim, s.z0, s.z1 - .6)
-  terrace(rim, s.z1 - .6, s.z1)
+  const ring = plan(s.c, s.ns)
+  walls(granite, ring, s.z0, s.z1)
+  facade(ring, s.z0 === 0 ? BASE : s.z0, s.z1 - .4)
+  cap(roof, ring, s.z1)
+  // a pale coping lip at each terrace
+  walls(trim, ring.map(p => p), s.z1 - .5, s.z1)
 }
 
-// The glass attic under the vault, inset from the top stage's long faces.
-const attic: XY[] = [[E, -RV], [E, RV], [-E, RV], [-E, -RV]]
-for (const i of [1, 3]) {
-  const [a, b] = [attic[i], attic[(i + 1) % 4]]
-  windows.quad([a[0], a[1], ATTIC - .5], [b[0], b[1], ATTIC - .5], [b[0], b[1], SPRING], [a[0], a[1], SPRING])
+// The stepped lobby block west of the tower (OSM's west tip; lidar steps).
+const lobby: { x0: number; x1: number; y0: number; y1: number; z: number }[] = [
+  { x0: -23, x1: XW + .2, y0: -9.5, y1: 9.5, z: 29.5 },
+  { x0: -27, x1: -23, y0: -10, y1: 5, z: 25 },
+  { x0: -31, x1: -27, y0: -8, y1: 1, z: 20 },
+]
+for (const b of lobby) {
+  const ring: XY[] = [[b.x0, b.y0], [b.x1, b.y0], [b.x1, b.y1], [b.x0, b.y1]]
+  walls(granite, ring, 0, b.z)
+  cap(roof, ring, b.z)
+  // a glazed band per floor group, on the three outward faces
+  for (let z = 5; z + 6 < b.z; z += 8) {
+    const g = (p: XY, q: XY, nx: number, ny: number) => windows.quad([p[0] + nx * LIFT, p[1] + ny * LIFT, z], [q[0] + nx * LIFT, q[1] + ny * LIFT, z], [q[0] + nx * LIFT, q[1] + ny * LIFT, z + 5], [p[0] + nx * LIFT, p[1] + ny * LIFT, z + 5])
+    g([b.x0 + 1, b.y0], [b.x1 - 1, b.y0], 0, -1)
+    g([b.x1 - 1, b.y1], [b.x0 + 1, b.y1], 0, 1)
+    g([b.x0, b.y1 - 1], [b.x0, b.y0 + 1], -1, 0)
+  }
 }
 
-// The barrel vault: a true semicircle, smooth-shaded, pale glass.
+// ---------------------------------------------------------------- vault
 const arc = Array.from({ length: ARC + 1 }, (_, k) => {
   const t = Math.PI * k / ARC
   return { y: RV * Math.cos(t), z: SPRING + RV * Math.sin(t), n: [0, Math.cos(t), Math.sin(t)] as V3 }
 })
 for (let k = 0; k < ARC; k++) {
   const p = arc[k], q = arc[k + 1]
-  quad(glass, [E, p.y, p.z], [-E, p.y, p.z], [-E, q.y, q.z], [E, q.y, q.z], p.n, p.n, q.n, q.n)
+  glass.tri([XE, p.y, p.z], [XW, p.y, p.z], [XW, q.y, q.z], undefined, undefined, undefined, [p.n, p.n, q.n])
+  glass.tri([XE, p.y, p.z], [XW, q.y, q.z], [XE, q.y, q.z], undefined, undefined, undefined, [p.n, q.n, q.n])
+}
+// A few pale ribs over the vault (the real one is ribbed every bay).
+for (const x of [-12, -4, 4, 12]) {
+  for (let k = 0; k < ARC; k++) {
+    const p = arc[k], q = arc[k + 1], o = .05
+    const P = (e: typeof p, dx: number): V3 => [x + dx, e.y * (1 + o / RV), e.z - SPRING + SPRING + e.n[2] * o]
+    trim.quad(P(p, .35), P(p, -.35), P(q, -.35), P(q, .35))
+  }
 }
 
-// Each end: the slate bay up the wall, its fan in the arch with a pale ring,
-// and the glass slot rising into the fan with its own round top, framed in
-// trim with a few floor lines across the bay. All flush shapes laid in
-// layers just proud of the end wall.
+// ---------------------------------------------------------------- jukebox
+// Each end wall: the glass bay from the street to the arch, the half-disc of
+// glass closing the vault, an outer and an inner pale ring whose legs run
+// down the bay, and the dark slot rising into the inner arch.
 for (const side of [1, -1]) {
-  const x = (d: number) => side * (E + d)
-  // Orient each face outward: on the west end, swap the y order.
+  const X = side > 0 ? XE : XW
+  const x = (d: number) => X + side * d
   const face = (p: Part, d: number, y0: number, y1: number, z0: number, z1: number) => {
     const [ya, yb] = side > 0 ? [y0, y1] : [y1, y0]
     p.quad([x(d), ya, z0], [x(d), yb, z0], [x(d), yb, z1], [x(d), ya, z1])
@@ -223,39 +253,42 @@ for (const side of [1, -1]) {
       else p.quad(P(r0, a), P(r1, a), P(r1, b), P(r0, b))
     }
   }
-  // Wall below the springline, outside the bay, up to the attic's edge.
-  face(windows, 0, -RV, RV, ATTIC - .5, SPRING)
-  face(windows, .02, -BAY, BAY, 4, ATTIC - .5)
+  const OUT = 1.1, IN0 = 3.4, IN1 = 4.2, SL = 1
+  face(windows, .02, -BAY, BAY, 0, SPRING)
   fan(windows, 0, 0, RV)
-  fan(trim, .04, BAY, RV)
-  face(trim, .04, BAY, RV, ATTIC - .5, SPRING)
-  face(trim, .04, -RV, -BAY, ATTIC - .5, SPRING)
-  // The slot: straight up from the plaza, a semicircle on top, in a trim frame.
-  const slotTop = SPRING + BAY - 2.6 - SLOT, FRAME = .5
-  face(trim, .04, -SLOT - FRAME, -SLOT, 4, slotTop)
-  face(trim, .04, SLOT, SLOT + FRAME, 4, slotTop)
-  fan(trim, .04, SLOT, SLOT + FRAME, slotTop)
-  face(glass, .04, -SLOT, SLOT, 4, slotTop)
-  fan(glass, .04, 0, SLOT, slotTop)
-  // Floor lines across the bay either side of the slot, one per panel group.
-  for (let z = 4 + GROUP; z < ATTIC - 4; z += GROUP) {
-    face(trim, .04, -BAY, -SLOT - FRAME, z - .3, z + .3)
-    face(trim, .04, SLOT + FRAME, BAY, z - .3, z + .3)
-  }
+  // outer ring and its legs
+  fan(trim, .04, RV - OUT, RV)
+  face(trim, .04, RV - OUT, RV, BASE, SPRING)
+  face(trim, .04, -RV, -RV + OUT, BASE, SPRING)
+  // inner ring and its legs
+  fan(trim, .04, IN0, IN1)
+  face(trim, .04, IN0, IN1, BASE, SPRING)
+  face(trim, .04, -IN1, -IN0, BASE, SPRING)
+  // the slot, with a round top inside the inner arch
+  const slotTop = SPRING + 1.2
+  face(slot, .05, -SL, SL, BASE, slotTop)
+  fan(slot, .05, 0, SL, slotTop)
+  // a granite lintel band over the entrance, across the bay
+  face(granite, .04, -BAY, BAY, 0, BASE)
 }
 
+// ---------------------------------------------------------------- write
 const parts = [
-  { part: granite, material: finish('owf-granite', 0xead1c7) },
-  { part: windows, material: PALETTE.window },
-  { part: glass, material: PALETTE.glass },
+  { part: granite, material: finish('owf-granite', 0xd9b0a1) },
+  // Reflective glass, light in daylight; glows at night.
+  { part: windows, material: { ...PALETTE.window, color: 0x93abbf } },
+  // The jukebox slot: the one dark line, a defining feature.
+  { part: slot, material: windowVariant(2, 0x56687a) },
+  // The vault reads a deeper blue than the bay in every photo.
+  { part: glass, material: { ...PALETTE.glass, color: 0x86a3bb } },
   { part: trim, material: PALETTE.trim },
-  { part: terraces, material: PALETTE.roof },
+  { part: roof, material: PALETTE.roof },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 if (triangles > 6500) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('One Wells Fargo Center', parts, {
   license: 'CC0-1.0', bearing: 5, elevation: 0, height: TOP,
-  frame: 'Y up, -Z north, +X east, metres; origin at the tower centre on the ground',
+  frame: 'Y up, -Z north, +X east, metres; origin at the catalog anchor on the ground',
   replaces: ['way/380092606'],
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)

@@ -16,11 +16,18 @@
  * Writing exactly that means any Open Landmarks client, Barrelman's importer
  * among them, reads this dataset with no special case.
  *
- * Open Landmarks has no bearing, scale or elevation: an asset's geometry is
- * baked in place, with heading 0. Our catalog places one model many times, so
- * each placement becomes its own asset with the placement baked into a copy
+ * Open Landmarks has no bearing or scale: an asset's geometry is baked in
+ * place, with heading 0. Our catalog places one model many times, so each
+ * placement becomes its own asset with its bearing and scale baked into a copy
  * of the GLB (see bakePlacement). A placement with nothing to bake keeps the
  * model's exact bytes, and identical bytes are stored once.
+ *
+ * Elevation is the exception. It is published as its own field rather than
+ * baked, because a map grounds a model by its geometry: it reads the lowest
+ * points as the model's ground and sets them on the terrain, which would
+ * pull a baked lift straight back down. As a field, the model's ground stays
+ * at y = 0 and the map applies the offset after grounding it. An asset with
+ * no `elevation` (every Open Landmarks asset) stands at 0.
  *
  * Nothing here reads the clock or git, and every list is sorted, so the same
  * catalog always builds byte-identical files and the same release id. A
@@ -76,9 +83,15 @@ export type Asset = {
   artisticLicense: string
   spatialDataLicense: 'ODbL-1.0'
   licenseScope: string
+  /**
+   * Not in Open Landmarks' schema: metres the model is raised (positive) or
+   * sunk (negative) from where the map grounds it. Not baked into the GLB,
+   * and omitted when 0, which is what a reader should assume when it is absent.
+   */
+  elevation?: number
   /** Not in Open Landmarks' schema: the catalog model and the placement baked into the GLB. */
   model: string
-  placement: { bearing: number; scale: number; elevation: number }
+  placement: { bearing: number; scale: number }
   source?: { url: string; bytes: number; sha256: string }
   bounds: [number, number, number, number]
   revision: string
@@ -163,7 +176,8 @@ export function buildRelease(root: string, catalog: Catalog = JSON.parse(readFil
     const model = models.get(l.model)!
     let bytes = modelBytes.get(model.id)
     if (!bytes) modelBytes.set(model.id, (bytes = new Uint8Array(readFileSync(join(root, model.file)))))
-    const placement = { bearing: l.bearing ?? 0, scale: l.scale ?? 1, elevation: l.elevation ?? 0 }
+    const placement = { bearing: l.bearing ?? 0, scale: l.scale ?? 1 }
+    const elevation = l.elevation ?? 0
     let baked: Uint8Array
     try {
       baked = bakePlacement(bytes, placement)
@@ -173,7 +187,8 @@ export function buildRelease(root: string, catalog: Catalog = JSON.parse(readFil
     }
     const lod = lodFor(l, baked, byHash, files)
     const { height, radius } = glbBounds(baked)
-    maxHeightM = Math.max(maxHeightM, height)
+    // How high it reaches above the ground, as before elevation stopped being baked.
+    maxHeightM = Math.max(maxHeightM, height + elevation)
 
     let source: Asset['source']
     if (model.source) {
@@ -205,6 +220,7 @@ export function buildRelease(root: string, catalog: Catalog = JSON.parse(readFil
       additionalOsm: rest,
       ...(l.wikidata ? { wikidata: l.wikidata } : {}),
       ...(model.attribution ? { attribution: model.attribution } : {}),
+      ...(elevation ? { elevation } : {}),
       authors: [model.author],
       artisticLicense: model.license,
       spatialDataLicense: 'ODbL-1.0',
