@@ -2897,6 +2897,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-cne-kahn-boilerhouse.ts"
+    },
+    {
+      "id": "clt-highland-park-mill-3",
+      "file": "models/clt-highland-park-mill-3.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-highland-park-mill-3.ts"
     }
   ],
   "landmarks": [
@@ -11261,6 +11268,22 @@
       "minzoom": 15,
       "replaces": [
         "way/324609976"
+      ]
+    },
+    {
+      "id": "clt-highland-park-mill-3",
+      "name": "Highland Park Mill No. 3",
+      "model": "clt-highland-park-mill-3",
+      "lng": -80.8095799,
+      "lat": 35.2460371,
+      "bearing": 55,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q14707968",
+      "replaces": [
+        "way/323193350",
+        "way/323201833",
+        "way/323192273"
       ]
     }
   ]
