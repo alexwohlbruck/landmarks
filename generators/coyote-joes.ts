@@ -33,6 +33,21 @@
  * roof and the porch block. Look-only: the exterior photo on Charlotte's Got
  * A Lot (charlottesgotalot.com, the venue's listing, 2017) and WBTV news
  * stills of the neon (2023, 2025). Mapillary has no view of the building.
+ *
+ * 2026-10 rework. Heights from the USGS 3DEP lidar (2016), above the lowest
+ * ground under the footprint (by the west sheds; the entrance is 1.7 m above
+ * it, was taken as 0.9): hall eaves 8.2 m (the roof is a very low gable,
+ * 8.0 to 8.6 m, drawn flat). Massing changes, from the lidar: the west sheds
+ * are lean-tos, 4.6 m at the outer wall rising to 5.6 m at the hall (were
+ * flat at 4.9 m); the porch roof has a flat top at 4.4 m above the porch
+ * floor with shingled slopes down to about 3.7 m (was a pointed hip). Kept:
+ * plan, porch posts, doors, the neon moon, saguaro and coyote, colours.
+ * Doubts: the lidar puts the whole building about 2.5 m east and 2 m north
+ * of the OSM outline; the model keeps the outline it replaces. No licensed
+ * exterior photo exists still (Commons/Openverse: concert and selfie shots,
+ * all NC-licensed; Mapillary's nearest views are 120 m off and look away),
+ * so the walls stay plain steel with no window panels, as no photo shows
+ * any, and the red neon name stays out.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish, type Swatch } from './palette'
@@ -209,29 +224,46 @@ async function finishModel(id: string, name: string, parts: { part: Part; materi
 const steel = new Part(), roof = new Part(), shingle = new Part()
 const lit = new Part(), yellow = new Part(), green = new Part()
 
-const G = 0.9                        // entrance-end ground above the south ground
+const G = 1.7                        // entrance-end ground above the lowest ground, by the west sheds (lidar)
 
 // --- The hall: the OSM outline less the west sheds and the porch block,
 // anticlockwise from the south-west corner. 2 is the north wall east of the
 // porch, which carries the neon.
 const HALL: XY[] = [[-16.3, -29.6], [18.7, -29.65], [19.2, 25.8], [-0.2, 25.8], [-0.2, 27.6], [-13.0, 27.6], [-13.0, 17.4], [-16.3, 17.4]]
-const ZH = 8.1
+const ZH = 8.2                       // lidar: eaves 8.0-8.1, a very low ridge 8.6
 const H = new Shell(HALL, steel, roof, ZH - 0.3, 0.3, 0.15)
 HALL.forEach((_, i) => H.walls(i, [[0, H.edge(i).L, ZH]]))
 H.roof()
 
 // --- The lower steel sheds along the west side (their east wall is the
 // hall's).
-const SHED: XY[] = [[-23.8, -12.5], [-16.3, -12.5], [-16.3, 17.4], [-18.1, 17.4], [-18.1, 8.7], [-23.8, 8.7]]
-const ZS = 4.9
-const W = new Shell(SHED, steel, roof, ZS - 0.25, 0.3, 0.15)
-SHED.forEach((_, i) => { if (i !== 1) W.walls(i, [[0, W.edge(i).L, ZS]]) })
-W.roof()
+// The lidar shows their roof as a lean-to, rising from 4.6 m at the outer
+// wall to 5.6 m against the hall, so each block is a box with a sloped top.
+const SX0 = -23.8, SX1 = -16.3, ZS0 = 4.6, ZS1 = 5.6
+const zs = (x: number) => ZS0 + (ZS1 - ZS0) * (x - SX0) / (SX1 - SX0)
+function leanTo(x0: number, x1: number, y0: number, y1: number) {
+  const B = 0.15
+  const c = (x: number, y: number, z: number): V3 => [x, y, z]
+  // Walls (west, south, north); the east side is the hall's wall.
+  quad(steel, c(x0, y0, 0), c(x0, y1, 0), c(x0, y1, zs(x0) - B), c(x0, y0, zs(x0) - B), [-1, 0, 0])
+  for (const [y, ny] of [[y0, -1], [y1, 1]] as [number, number][]) {
+    quad(steel, c(x0, y, 0), c(x1, y, 0), c(x1, y, zs(x1) - B), c(x0, y, zs(x0) - B), [0, ny, 0])
+  }
+  // A small chamfer round the outer edges, then the sloped roof.
+  const nr = unit([-(ZS1 - ZS0) / (SX1 - SX0), 0, 1])
+  quad(steel, c(x0, y0 + B, zs(x0)), c(x0, y1 - B, zs(x0)), c(x0, y1, zs(x0) - B), c(x0, y0, zs(x0) - B), unit([-1, 0, 1]))
+  for (const [y, yi, ny] of [[y0, y0 + B, -1], [y1, y1 - B, 1]] as [number, number, number][]) {
+    quad(steel, c(x0, y, zs(x0) - B), c(x1, y, zs(x1) - B), c(x1, yi, zs(x1)), c(x0, yi, zs(x0)), unit([0, ny, 1]))
+  }
+  quad(roof, c(x0, y0 + B, zs(x0)), c(x1, y0 + B, zs(x1)), c(x1, y1 - B, zs(x1)), c(x0, y1 - B, zs(x0)), nr)
+}
+leanTo(SX0, SX1, -12.5, 8.7)
+leanTo(-18.1, SX1, 8.7, 17.4)
 
 // --- The porch: a shingled hip roof on posts over the entrance, filling the
 // OSM block north of the hall.
 const PX0 = -0.2, PX1 = 10.8, PY0 = 25.8, PY1 = 36.65
-const ZE = G + 3.4, ZR = G + 5.6, OV = 0.45
+const ZE = G + 3.7, ZR = G + 4.4, OV = 0.45, INSET = 1.6   // lidar: flat top 4.4 above the porch floor, edges about 3.7
 function post(x: number, y: number) {
   const h = 0.2, q: XY[] = [[x - h, y - h], [x + h, y - h], [x + h, y + h], [x - h, y + h]]
   q.forEach((a, k) => {
@@ -244,7 +276,9 @@ for (const y of [PY0 + 3.8, PY0 + 7.4]) { post(PX0 + 0.5, y); post(PX1 - 0.5, y)
 {
   // Eave ring (open to the hall's wall on the south) and the hip.
   const e: XY[] = [[PX0 - OV, PY0], [PX1 + OV, PY0], [PX1 + OV, PY1 + OV], [PX0 - OV, PY1 + OV]]
-  const cx = (PX0 + PX1) / 2, ridge: XY[] = [[cx - 0.01, PY0], [cx + 0.01, PY0], [cx, PY1 + OV - (PX1 - PX0) / 2 - OV]]
+  // A hip roof with a flat top: the 2016 lidar shows a flat crown at ZR
+  // across most of the porch, so the shingled slopes stop at an inset deck.
+  const t: XY[] = [[PX0 + INSET, PY0], [PX1 - INSET, PY0], [PX1 - INSET, PY1 - INSET], [PX0 + INSET, PY1 - INSET]]
   const top = (p: XY): V3 => [p[0], p[1], ZR], eave = (p: XY, dz = 0): V3 => [p[0], p[1], ZE + dz]
   const F = 0.3                                     // fascia depth
   const slope = (a: V3, b: V3, c: V3, d?: V3) => {
@@ -253,11 +287,11 @@ for (const y of [PY0 + 3.8, PY0 + 7.4]) { post(PX0 + 0.5, y); post(PX1 - 0.5, y)
     if (n[2] < 0) n = [-n[0], -n[1], -n[2]]
     if (d) quad(shingle, a, b, c, d, n); else tri(shingle, a, b, c, n)
   }
-  const R = top(ridge[2])
   // West, north and east slopes; the south edge runs into the hall wall.
-  slope(eave(e[0]), eave(e[3]), R, top([cx, PY0]))
-  slope(eave(e[3]), eave(e[2]), R)
-  slope(eave(e[2]), eave(e[1]), top([cx, PY0]), R)
+  slope(eave(e[0]), eave(e[3]), top(t[3]), top(t[0]))
+  slope(eave(e[3]), eave(e[2]), top(t[2]), top(t[3]))
+  slope(eave(e[2]), eave(e[1]), top(t[1]), top(t[2]))
+  quad(shingle, top(t[0]), top(t[1]), top(t[2]), top(t[3]), UP)
   for (const [a, b, n] of [[e[0], e[3], [-1, 0, 0]], [e[3], e[2], [0, 1, 0]], [e[2], e[1], [1, 0, 0]]] as [XY, XY, V3][]) {
     quad(shingle, eave(a, -F), eave(b, -F), eave(b), eave(a), n)
   }

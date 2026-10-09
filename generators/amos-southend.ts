@@ -32,6 +32,23 @@
  * (the 2017 Gin Mill rendering, and a 2016 view from above showing the hall's
  * barrel roof); WBTV (the pre-2017 front); amossouthend.com (the AMOS' blade
  * sign). USGS NAIP (public domain) and the OSM outline for the plan.
+ *
+ * 2026-10 rework. Heights from the USGS 3DEP NC Phase 4 Mecklenburg lidar
+ * (flown 2016), above the lowest ground under the footprint: the hall's
+ * eaves 6.2 m (was 7.0), its crown 8.0 m (was 8.6), the front block's roof
+ * 5.9 m (was 5.55). Massing change, from the lidar: the barrel is hipped,
+ * not gabled. Its crown falls to the eave line over the last ~5.5 m at both
+ * ends (profile along the crown: 6.6, 6.9, 7.4, 7.7, 8.1, 8.3, 8.7 m over
+ * the first 6 m behind the front block; the mirror of it at the back), so the
+ * arched gable ends are gone. The rooftop units are moved to where the lidar
+ * shows them (three along the crown, one to its west). Kept as they were:
+ * plan, front block, its windows and eave, stair, both blade signs, colours.
+ * Doubts: the flight predates the Gin Mill's 2017 remodel, which added the
+ * deep eave over Tryon (no overhang shows in 2016), so the eave rests on the
+ * look-only photos; the lidar puts the hall's back wall about 2 m north of
+ * the OSM outline, which the model keeps. Still no licensed exterior photo
+ * (Commons and Openverse hold only concert shots; Mapillary has no imagery
+ * within 400 m), so colours and openings come from the look-only references.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -76,11 +93,12 @@ const westPanel = (p: Part, x: number, y0: number, y1: number, z0: number, z1: n
 const G = 0.8                 // Tryon sidewalk above the lowest ground, at the back
 // Front block (the Gin Mill).
 const FX0 = -10.9, FX1 = 7.7, FY0 = -22.4, FY1 = -10.2
-const Z_F = G + 4.4           // its walls
+const Z_F = G + 4.75          // its walls; the roof plate on them tops out at 5.9 (lidar)
 // Hall (Amos').
 const HX0 = -9.5, HX1 = 10.7, HY0 = -10.2, HY1 = 21.6
-const Z_H = 7.0               // hall eaves
-const RISE = 1.6              // barrel roof rise, to about OSM's 8 m above Tryon
+const Z_H = 6.2               // hall eaves (lidar 6.1-6.3)
+const RISE = 1.8              // barrel roof rise, crown 8.0 (lidar 7.9-8.0)
+const HIP = 5.5               // the barrel's ends fall to the eaves over this run (lidar)
 const SEG = 8                 // segments across the barrel
 
 // ---- Front block: brick, with the notch on its west side from the outline.
@@ -127,7 +145,8 @@ westPanel(brick, HX0, -12.8, FY1, 0, Z_F)
 }
 
 // ---- The hall: white-painted block walls under a shallow barrel roof.
-box(paint, HX0, HX1, HY0, HY1, 0, Z_H, 0, paint, [true, true, true, true])
+// The walls stop under the roof's edge band, so no cap fights the low hip corners.
+box(paint, HX0, HX1, HY0, HY1, 0, Z_H - 0.3, 0, paint, [true, true, true, true])
 {
   const W2 = (HX1 - HX0) / 2, xc = (HX0 + HX1) / 2
   // A circular arc through the eaves and the crown.
@@ -137,28 +156,42 @@ box(paint, HX0, HX1, HY0, HY1, 0, Z_H, 0, paint, [true, true, true, true])
     // At t = ±half this is the eave line; at t = 0 it is RISE higher.
     return { x: xc + R * Math.sin(t), z: Z_H + R * (Math.cos(t) - Math.cos(half)), n: unit([Math.sin(t), 0, Math.cos(t)]) }
   })
-  const ov = 0.3 // a little overhang at the gable ends and eaves
-  for (let i = 0; i < SEG; i++) {
-    const a = arc[i], b = arc[i + 1]
-    roof.tri([a.x, HY0 - ov, a.z], [b.x, HY0 - ov, b.z], [b.x, HY1 + ov, b.z], undefined, undefined, undefined, [a.n, b.n, b.n])
-    roof.tri([a.x, HY0 - ov, a.z], [b.x, HY1 + ov, b.z], [a.x, HY1 + ov, a.z], undefined, undefined, undefined, [a.n, b.n, a.n])
+  const ov = 0.3 // a little overhang at the ends and eaves
+  // The 2016 lidar shows the barrel hipped, not gabled: at both ends the
+  // crown falls to the eave line over about 5.5 m. So the roof is the arc
+  // scaled down to nothing over the last HIP metres at each end.
+  const ys = [HY0 - ov, HY0 + HIP, HY1 - HIP, HY1 + ov], gs = [0, 1, 1, 0]
+  const at = (i: number, j: number): V3 => { const a = arc[i]; return [a.x, ys[j], Z_H + (a.z - Z_H) * gs[j]] }
+  const faceN = (p: V3, q: V3, r: V3): V3 => {
+    const u = [q[0] - p[0], q[1] - p[1], q[2] - p[2]], v = [r[0] - p[0], r[1] - p[1], r[2] - p[2]]
+    return unit([u[1] * v[2] - u[2] * v[1], u[2] * v[0] - u[0] * v[2], u[0] * v[1] - u[1] * v[0]])
   }
-  // The gable ends: fans from the eave line up to the arc, front and back.
-  for (const [y, n] of [[HY0, S], [HY1, NN]] as [number, V3][]) {
+  for (let j = 0; j < 3; j++) {
     for (let i = 0; i < SEG; i++) {
-      const a = arc[i], b = arc[i + 1]
-      const A: V3 = [a.x, y, Z_H], B: V3 = [b.x, y, Z_H], C: V3 = [b.x, y, b.z - 0.02], D: V3 = [a.x, y, a.z - 0.02]
-      if (n === S) quadN(paint, A, B, C, D, S)
-      else quadN(paint, B, A, D, C, NN)
+      const A = at(i, j), B = at(i + 1, j), C = at(i + 1, j + 1), D = at(i, j + 1)
+      if (j === 1) {
+        // The straight middle: smooth along the arc.
+        const na = arc[i].n, nb = arc[i + 1].n
+        roof.tri(A, B, C, undefined, undefined, undefined, [na, nb, nb])
+        roof.tri(A, C, D, undefined, undefined, undefined, [na, nb, na])
+      } else {
+        let n = faceN(A, B, C); if (n[2] < 0) n = [-n[0], -n[1], -n[2]]
+        let m = faceN(A, C, D); if (m[2] < 0) m = [-m[0], -m[1], -m[2]]
+        roof.tri(A, B, C, undefined, undefined, undefined, [n, n, n])
+        roof.tri(A, C, D, undefined, undefined, undefined, [m, m, m])
+      }
     }
   }
   // A thin roof edge under the overhang, so the barrel reads as a lid.
-  box(roof, HX0 - 0.15, HX1 + 0.15, HY0 - 0.3, HY1 + 0.3, Z_H - 0.3, Z_H, 0, roof, [true, true, true, true], roof)
+  box(roof, HX0 - 0.15, HX1 + 0.15, HY0 - 0.3, HY1 + 0.3, Z_H - 0.32, Z_H - 0.03, 0, roof, [true, true, true, true], roof)
 }
 
 // Rooftop units on the hall, as in the view from above.
-box(metal, -3.5, -0.5, 2, 5, Z_H + RISE - 0.1, Z_H + RISE + 1.0, 0.1, roof)
-box(metal, 2.0, 4.2, 9, 11.5, Z_H + RISE - 0.3, Z_H + RISE + 0.7, 0.1, roof)
+// Placed from the lidar: three along the crown, one west of it.
+box(metal, 0.4, 3.4, 1.5, 3.8, Z_H + RISE - 0.1, Z_H + RISE + 1.3, 0.1, roof)
+box(metal, 0.4, 3.4, 7.0, 10.5, Z_H + RISE - 0.1, Z_H + RISE + 1.4, 0.1, roof)
+box(metal, 0.4, 3.4, 13.5, 17.0, Z_H + RISE - 0.1, Z_H + RISE + 1.4, 0.1, roof)
+box(metal, -4.2, -2.0, -1.0, 1.2, Z_H + RISE - 0.5, Z_H + RISE + 0.6, 0.1, roof)
 
 // The hall's front strip, where it steps out past the Gin Mill on the parking
 // side: Amos' doors, brick below the white wall as in the photos.
@@ -206,7 +239,7 @@ console.log(parts.map(({ part, material }) => `${material.name}: ${part.triangle
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb("Amos' Southend", parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at the ground anchor',
-  bearing: 130, osm: 'way/432937734', height: Z_H + RISE + 1.0,
+  bearing: 130, osm: 'way/432937734', height: Z_H + RISE + 1.4,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
 const out = new URL('../models/amos-southend.glb', import.meta.url).pathname

@@ -3443,6 +3443,62 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-optimist-hall.ts"
+    },
+    {
+      "id": "clt-atherton-mill",
+      "file": "models/clt-atherton-mill.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-atherton-mill.ts"
+    },
+    {
+      "id": "clt-the-line",
+      "file": "models/clt-the-line.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-the-line.ts"
+    },
+    {
+      "id": "clt-railyard",
+      "file": "models/clt-railyard.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-railyard.ts"
+    },
+    {
+      "id": "clt-trolley-barn",
+      "file": "models/clt-trolley-barn.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-trolley-barn.ts"
+    },
+    {
+      "id": "clt-dilworth-artisan-station",
+      "file": "models/clt-dilworth-artisan-station.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-dilworth-artisan-station.ts"
+    },
+    {
+      "id": "clt-common-market-south-end",
+      "file": "models/clt-common-market-south-end.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-common-market-south-end.ts"
+    },
+    {
+      "id": "clt-savona-mill",
+      "file": "models/clt-savona-mill.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-savona-mill.ts"
+    },
+    {
+      "id": "clt-pinkys-westside",
+      "file": "models/clt-pinkys-westside.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-pinkys-westside.ts"
     }
   ],
   "landmarks": [
@@ -13583,6 +13639,162 @@
         "way/1502058351",
         "way/1196692782",
         "way/1196692830"
+      ]
+    },
+    {
+      "id": "clt-atherton-mill",
+      "name": "Atherton Mill",
+      "model": "clt-atherton-mill",
+      "lng": -80.861742,
+      "lat": 35.20767,
+      "bearing": 33.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/432937694",
+        "way/1196988216"
+      ]
+    },
+    {
+      "id": "clt-the-line",
+      "name": "The Line",
+      "model": "clt-the-line",
+      "lng": -80.8620071,
+      "lat": 35.2090565,
+      "bearing": 33.7,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/1059972611",
+        "way/1203857912",
+        "way/1203857913",
+        "way/1203857916",
+        "way/1203857917",
+        "way/1203857918",
+        "way/1203857919"
+      ]
+    },
+    {
+      "id": "clt-railyard",
+      "name": "The Railyard",
+      "model": "clt-railyard",
+      "lng": -80.8555847,
+      "lat": 35.2173604,
+      "bearing": 41,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/695524312",
+        "way/849315325",
+        "way/1121531932",
+        "way/1208420096",
+        "way/1208420097",
+        "way/1208420098",
+        "way/1208420099",
+        "way/1208420100",
+        "way/1208420101",
+        "way/1208420102",
+        "way/1208420103",
+        "way/1208420104",
+        "way/1208420105",
+        "way/1208420106",
+        "way/1208420107",
+        "way/1208420108",
+        "way/1208420109",
+        "way/1208420110",
+        "way/1208420111",
+        "way/1208420112",
+        "way/1208420113",
+        "way/1208420133",
+        "way/1208420134",
+        "way/1208420135",
+        "way/1208420136",
+        "way/1208420137",
+        "way/1208420138",
+        "way/1208420139",
+        "way/1208420140",
+        "way/1208420141",
+        "way/1208420142",
+        "way/1208420143",
+        "way/1208420144",
+        "way/1208420145",
+        "way/1208420146",
+        "way/1208420147",
+        "way/1208420148",
+        "way/1208420149",
+        "way/1208420150"
+      ]
+    },
+    {
+      "id": "clt-trolley-barn",
+      "name": "Trolley Barn Fermentory & Food Hall",
+      "model": "clt-trolley-barn",
+      "lng": -80.8615582,
+      "lat": 35.2086705,
+      "bearing": 33,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/146307369"
+      ]
+    },
+    {
+      "id": "clt-dilworth-artisan-station",
+      "name": "Dilworth Artisan Station",
+      "model": "clt-dilworth-artisan-station",
+      "lng": -80.8578341,
+      "lat": 35.2129646,
+      "bearing": 42,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/432937709"
+      ]
+    },
+    {
+      "id": "clt-common-market-south-end",
+      "name": "Common Market South End",
+      "model": "clt-common-market-south-end",
+      "lng": -80.8635992,
+      "lat": 35.210359,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/553077609"
+      ]
+    },
+    {
+      "id": "clt-savona-mill",
+      "name": "Savona Mill",
+      "model": "clt-savona-mill",
+      "lng": -80.8670846,
+      "lat": 35.2418928,
+      "bearing": 23.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q21016162",
+      "replaces": [
+        "way/324411943",
+        "way/1329177209",
+        "way/1329177211",
+        "way/1329177212",
+        "way/1329177213",
+        "way/1329177214",
+        "way/1329177215"
+      ]
+    },
+    {
+      "id": "clt-pinkys-westside",
+      "name": "Pinky's Westside Grill",
+      "model": "clt-pinkys-westside",
+      "lng": -80.8674184,
+      "lat": 35.2291488,
+      "bearing": 10,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/324418138"
       ]
     }
   ]
