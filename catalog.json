@@ -3380,6 +3380,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-bailey-fountain.ts"
+    },
+    {
+      "id": "nyc-peace-fountain",
+      "file": "models/nyc-peace-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-peace-fountain.ts"
     }
   ],
   "landmarks": [
@@ -13346,6 +13353,18 @@
       "elevation": 0,
       "minzoom": 17,
       "wikidata": "Q4848351",
+      "replaces": []
+    },
+    {
+      "id": "nyc-peace-fountain",
+      "name": "Peace Fountain",
+      "model": "nyc-peace-fountain",
+      "lng": -73.9630524,
+      "lat": 40.8034978,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q7157367",
       "replaces": []
     }
   ]
