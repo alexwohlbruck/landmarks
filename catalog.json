@@ -505,13 +505,6 @@
       "source": "generators/belk-theater.ts"
     },
     {
-      "id": "amos-southend",
-      "file": "models/amos-southend.glb",
-      "license": "CC0-1.0",
-      "author": "Barrelman",
-      "source": "generators/amos-southend.ts"
-    },
-    {
       "id": "evening-muse",
       "file": "models/evening-muse.glb",
       "license": "CC0-1.0",
@@ -4331,19 +4324,6 @@
       "minzoom": 15,
       "replaces": [
         "way/502718738"
-      ]
-    },
-    {
-      "id": "amos-southend",
-      "name": "Amos' Southend",
-      "model": "amos-southend",
-      "lng": -80.8551394,
-      "lat": 35.2167061,
-      "bearing": 130,
-      "elevation": 0,
-      "minzoom": 16,
-      "replaces": [
-        "way/432937734"
       ]
     },
     {
