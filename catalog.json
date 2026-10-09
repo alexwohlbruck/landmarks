@@ -3366,6 +3366,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-charging-bull.ts"
+    },
+    {
+      "id": "nyc-firemens-memorial",
+      "file": "models/nyc-firemens-memorial.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-firemens-memorial.ts"
     }
   ],
   "landmarks": [
@@ -13308,6 +13315,18 @@
       "elevation": 0,
       "minzoom": 17,
       "wikidata": "Q860129",
+      "replaces": []
+    },
+    {
+      "id": "nyc-firemens-memorial",
+      "name": "Firemen's Memorial",
+      "model": "nyc-firemens-memorial",
+      "lng": -73.97321,
+      "lat": 40.798596,
+      "bearing": 115,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q18148473",
       "replaces": []
     }
   ]
