@@ -1525,6 +1525,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-pulitzer-fountain.ts"
+    },
+    {
+      "id": "nyc-prison-ship-martyrs",
+      "file": "models/nyc-prison-ship-martyrs.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-prison-ship-martyrs.ts"
     }
   ],
   "landmarks": [
@@ -6239,6 +6246,22 @@
       "minzoom": 17,
       "wikidata": "Q18157051",
       "replaces": []
+    },
+    {
+      "id": "nyc-prison-ship-martyrs",
+      "name": "Prison Ship Martyrs' Monument",
+      "model": "nyc-prison-ship-martyrs",
+      "lng": -73.975533,
+      "lat": 40.69179,
+      "bearing": 315,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q7245761",
+      "replaces": [
+        "way/296157576",
+        "way/296157582",
+        "way/296157583"
+      ]
     }
   ]
 }
