@@ -3443,6 +3443,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-optimist-hall.ts"
+    },
+    {
+      "id": "clt-atherton-mill",
+      "file": "models/clt-atherton-mill.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-atherton-mill.ts"
     }
   ],
   "landmarks": [
@@ -13583,6 +13590,20 @@
         "way/1502058351",
         "way/1196692782",
         "way/1196692830"
+      ]
+    },
+    {
+      "id": "clt-atherton-mill",
+      "name": "Atherton Mill",
+      "model": "clt-atherton-mill",
+      "lng": -80.861742,
+      "lat": 35.20767,
+      "bearing": 33.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/432937694",
+        "way/1196988216"
       ]
     }
   ]
