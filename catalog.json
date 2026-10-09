@@ -1476,6 +1476,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-grants-tomb.ts"
+    },
+    {
+      "id": "nyc-st-john-the-divine",
+      "file": "models/nyc-st-john-the-divine.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-st-john-the-divine.ts"
     }
   ],
   "landmarks": [
@@ -6065,6 +6072,20 @@
       "wikidata": "Q1025105",
       "replaces": [
         "way/271922197"
+      ]
+    },
+    {
+      "id": "nyc-st-john-the-divine",
+      "name": "Cathedral of St. John the Divine",
+      "model": "nyc-st-john-the-divine",
+      "lng": -73.961648,
+      "lat": 40.803753,
+      "bearing": 118.1,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q865655",
+      "replaces": [
+        "relation/3624833"
       ]
     }
   ]
