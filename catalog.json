@@ -3452,6 +3452,13 @@
       "source": "generators/clt-atherton-cotton-mill.ts"
     },
     {
+      "id": "clt-atherton-mill",
+      "file": "models/clt-atherton-mill.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-atherton-mill.ts"
+    },
+    {
       "id": "clt-the-line",
       "file": "models/clt-the-line.glb",
       "license": "CC0-1.0",
@@ -13688,6 +13695,33 @@
       "replaces": [
         "way/432937694",
         "way/1196988216"
+      ]
+    },
+    {
+      "id": "clt-atherton-mill",
+      "name": "Atherton Mill",
+      "model": "clt-atherton-mill",
+      "lng": -80.860672,
+      "lat": 35.209277,
+      "bearing": 34,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q19461795",
+      "replaces": [
+        "way/432937693",
+        "way/1205364106",
+        "way/1205364107",
+        "way/1205364108",
+        "way/1205364109",
+        "way/1205364110",
+        "way/1205364111",
+        "way/1205364112",
+        "way/1205364113",
+        "way/1205364114",
+        "way/1205364115",
+        "way/1205364116",
+        "way/1205364117",
+        "way/1205364118"
       ]
     },
     {
