@@ -1,5 +1,5 @@
 /**
- * Truist Field (Charlotte Knights) — procedural, CC0-1.0, no textures.
+ * Truist Field (Charlotte Knights, AAA) — procedural, CC0-1.0, no textures.
  * bun generators/truist-field.ts
  *
  * Map frame: x across the park (first-base side +x), y from home plate toward
@@ -7,21 +7,56 @@
  * plate to second base in OSM (nodes 9602382279 → 9602382281), so the
  * outfield and the Uptown skyline beyond it lie along +y. The anchor is the
  * centroid of the stadium outline (relation/3417038, outer way/255166737).
+ * z = 0 is the lowest ground under the outline, the field's level; Mint
+ * Street (behind home plate) stands about 3 m higher, Graham Street (third
+ * base) about 5 m, the right-field side 4–5 m and the outfield plaza 5–6 m
+ * (lidar ground returns), so every part's height is its OSM height above its
+ * own street, and its facade detail starts there.
  *
- * The park is mapped in detail as building:parts, and the model is built from
- * them rather than redrawn: each part's polygon is extruded to its OSM height
- * in brick and tan precast as the photos show, the seating ring
- * (way/1553955043) becomes a raked bowl of green seats rising away from the
- * field, and the tan grandstand (way/1553955036) carries a band of slate
- * suite windows and a flat canopy roof reaching out over the seats. The field
- * is the map's own; its layers are built but not written. The six light
- * standards stand where the real ones do (see LIGHTS), slim poles with flat
- * lamp panels aimed at the infield, and the left-centre video board stands
- * on its lot. The outfield side stays low, as it is, so the skyline view over
- * centre field is what the shape says.
+ * The park is mapped in detail as building:parts and the model is built from
+ * them (the table OSM below): each part's polygon is extruded to its height.
+ * What makes it read as itself, from the photos:
+ * - one low bowl of dark green seats wrapping the infield from the
+ *   third-base corner round to right field (way/1553955043), raked 1.8 →
+ *   4.5 m (lidar), with low bleachers behind the outfield wall;
+ * - behind it the grandstand (way/1553955036): a dark open concourse at the
+ *   top of the seats, the glazed club and suite level above, and a thin white
+ *   roof reaching out over the back rows at 15–16 m;
+ * - the red brick and tan precast street fronts on Mint and Graham Streets,
+ *   brick piers with tan caps, shop windows at street level;
+ * - the main gate's flat canopy on its brick piers, the plaza ring over the
+ *   home-plate entrance, the right-field club and its pyramid-roofed
+ *   pavilion;
+ * - six tall light standards and the left-centre video board, with the
+ *   outfield left low so the skyline shows over centre field.
+ * The field is the map's (STYLE.md, "Don't model the ground").
+ *
+ * Evidence
+ * - OSM: outline relation/3417038 and every building:part (heights).
+ * - Measured, lidar (USGS 3DEP NC Phase 4 Mecklenburg 2016, 1 m, the park
+ *   opened 2014), in this frame: field 1 m; seats 1–4.5 m; grandstand roof
+ *   15–16 m all round from third base to right field; Mint Street block 11–12
+ *   m; right-field club 14 m; video board top 17 m; the six light standards'
+ *   lamp banks, positions and tops (34–40 m, the table LIGHTS).
+ * - Measured, USGS NAIP: plan of the stands, seats, roofs (white over the
+ *   grandstand) and the video board.
+ * - Published: opened April 2014; capacity 10,200; HOK (now Populous) with
+ *   Odell (Wikipedia).
+ * - Photos (Wikimedia Commons): Jeffrey Hayes, "Truist Field - Charlotte
+ *   Knights" (CC BY 2.0, the stands and skyline from third base); HangingCurve,
+ *   "BB&T Ballpark", "BB&T Ballpark right field", "BB&T Ballpark scoreboard"
+ *   and "BB&T Ballpark Skyline" (CC BY-SA 3.0); James Willamor, "BB&T
+ *   Ballpark 2" (CC BY-SA 2.0, the main gate); Dmadeo, "BB&T Stadium,
+ *   Charlotte, NC" (CC BY-SA 3.0, the Mint Street front); Sds1970, "BB&T
+ *   Ballpark (Center Field View)" (CC BY-SA 3.0, the grandstand); City
+ *   Dweller 2, "Truist Field Knights Stadium" (CC BY-SA 4.0, the gate).
+ *
+ * Estimated: the facade bands (photos), the canopy's overhang (3.5 m, NAIP),
+ * the bowl's rake between the lidar's front and back rows, the outfield
+ * bleachers' height, the lamp banks' size (6 × 4.8 m, photos).
  */
 import { Part, writeGlb, type V3 } from './mesh'
-import { PALETTE, finish } from './palette'
+import { finish, PALETTE } from './palette'
 
 type XY = [number, number]
 // OSM geometry in the model frame (metres; +y from home plate toward centre field).
@@ -114,21 +149,17 @@ const OSM: Record<string, XY[]> = {
   // way/1553955067 building:part=yes height=7
   '1553955067': [[-7.6,-102.7],[-7.0,-102.7],[-6.4,-102.5],[-6.7,-101.6],[-7.8,-101.8]],
 }
+
 const BASES = {home: [-11.1, -32.1], first: [8.3, -12.9], second: [-11.1, 6.7], third: [-30.0, -12.8], mound: [-10.7, -14.5]} as Record<string, XY>
 
-// ---------------------------------------------------------------------------
-// Materials, from the shared palette (STYLE.md), at most six. The
-// red brick of the Mint Street front and the green seats are the park's
-// identity, so they are finishes pulled to the palette's lightness; the tan
-// precast is `stone`. Several parts share one material: the seats, the padded
-// field wall and the batter's eye are one green; the flat roofs, concourse,
-// light poles and lamp frames are `roof`; the canopy fascia and the lit lamp
-// faces `trim`; the video board a `window` screen.
-
+// Materials (six). Red brick and tan precast are the street fronts' look and
+// the dark green seats the bowl's, each a finish pulled to the palette's
+// lightness. The grandstand's thin roof is white as NAIP shows it; the other
+// flat roofs, the concourse, the light poles and the board frame are `roof`
+// grey; glazing, the open concourse and the video screen are `window`.
 const brick = new Part(), tan = new Part(), glass = new Part(), roof = new Part()
-const seats = new Part(), canopyTop = new Part(), grass = new Part(), dirt = new Part()
-const wallGreen = seats, concourse = roof, metal = roof, lamps = canopyTop, board = glass
-
+const seats = new Part(), white = new Part()
+const metal = roof, concourse = roof, lamps = white, board = glass
 // ---------------------------------------------------------------------------
 // 2D helpers
 
@@ -269,167 +300,213 @@ function slab(ringIn: XY[], z0: number, z1: number, side: Part, top: Part, bevel
   cap(under, ring, z0, false)
 }
 
-// ---------------------------------------------------------------------------
-// The field: flat colour layers, stacked a decimetre apart so they never
-// fight, over the OSM pitch.
 
+// ---------------------------------------------------------------------------
+// Ground and heights.
+
+/** Street level outside a point (lidar ground returns), above the field. */
+const street = ([x, y]: XY) => (y < -62 ? 3 : x < -55 ? 5 : x > 45 ? 4.5 : y > 45 ? 5.5 : 1.5)
 const pitch = ccw(OSM['255166738'])
-cap(dirt, pitch, 0.35)                      // warning track and foul ground
-cap(grass, ccw(OSM['906204305']), 0.45)     // outfield and foul grass
-cap(dirt, ccw(OSM['906204303']), 0.55)      // the infield skin and home circle
-cap(grass, ccw(OSM['906204304']), 0.65)     // infield grass
-cap(dirt, ccw(OSM['906204302']), 0.75)      // the mound
+const bowl = ccw(OSM['1553955043'])
+
+/**
+ * A part: walls per edge with that edge's bands (null skips the edge), a
+ * soft bevel at the top and a flat roof. Edges are skipped where the
+ * neighbouring part outside them is as tall, so hidden walls cost nothing.
+ */
+type Part3 = { id: string; h: number }
+const PARTS: Part3[] = []
+const heightOutside = (p: XY, self: string) => {
+  let h = 0
+  for (const q of PARTS) if (q.id !== self && inside(p, OSM[q.id])) h = Math.max(h, q.h)
+  if (inside(p, bowl)) h = Math.max(h, 4.5)
+  return h
+}
+function inside([x, y]: XY, poly: XY[]) {
+  let c = false
+  for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+    const [x1, y1] = poly[i], [x2, y2] = poly[j]
+    if ((y1 > y) !== (y2 > y) && x < ((x2 - x1) * (y - y1)) / (y2 - y1) + x1) c = !c
+  }
+  return c
+}
+function building(id: string, h: number, bandsFor: (z0: number, g: number, a: XY, b: XY) => Band[], top: Part | null, bevel = 0.4) {
+  const ring = ccw(OSM[id])
+  ring.forEach((a, i) => {
+    const b = ring[(i + 1) % ring.length]
+    const L = Math.hypot(b[0] - a[0], b[1] - a[1])
+    if (L < 0.3) return
+    const u = unit2([b[0] - a[0], b[1] - a[1]]), n: XY = [u[1], -u[0]]
+    const m: XY = [(a[0] + b[0]) / 2 + n[0] * 1.2, (a[1] + b[1]) / 2 + n[1] * 1.2]
+    const z0 = heightOutside(m, id)
+    if (z0 >= h - 0.3) return
+    for (const band of bandsFor(z0, street(m), a, b)) {
+      const lo = Math.max(band.z0, z0), hi = Math.min(band.z1, h - bevel)
+      if (hi > lo + 0.05) wallBand(a, b, { ...band, z0: lo, z1: hi })
+    }
+  })
+  if (!top) return
+  const inn = inset(ring, bevel)
+  ring.forEach((a, i) => {
+    const j = (i + 1) % ring.length, b = ring[j]
+    const u = unit2([b[0] - a[0], b[1] - a[1]]), n: V3 = [u[1], -u[0], 0]
+    const s: V3 = [n[0] * 0.5, n[1] * 0.5, 0.85]
+    face(tan, [v3(a, h - bevel), v3(b, h - bevel), v3(inn[j], h), v3(inn[i], h)], s, [n, n, s, s])
+  })
+  cap(top, inn, h, true, triangulate(ring))
+}
+
+/**
+ * A street front: brick with shop windows (or gates) at street level between
+ * piers, a tan stringcourse, brick, and a tan precast top; taller fronts get
+ * a band of upper windows in the tan.
+ */
+const front = (h: number, shops = true) => (_z0: number, g: number): Band[] => {
+  const out: Band[] = [{ z0: 0, z1: g + 0.8, mat: brick }]
+  out.push(shops ? { z0: g + 0.8, z1: g + 4.4, mat: brick, windows: { glass, bay: 7, pier: 1.6 } } : { z0: g + 0.8, z1: g + 4.4, mat: brick })
+  out.push({ z0: g + 4.4, z1: g + 5.0, mat: tan })
+  const cap0 = Math.max(g + 5.0, h - 2.2)
+  out.push({ z0: g + 5.0, z1: cap0, mat: brick })
+  if (h - g > 11) out.push({ z0: cap0 - 0.01, z1: h, mat: tan })
+  else out.push({ z0: cap0, z1: h, mat: tan })
+  return out
+}
 
 // ---------------------------------------------------------------------------
 // The seating bowl: way/1553955043 rings the field as one C-shaped polygon.
 // Each vertex is raised by its distance from the field, so the triangles
-// between the front row and the back form the rake. The grandstand round the
-// infield rises to the concourse at 6.6 m; the outfield seats stay low.
+// between the front row and the back form the rake: 1.8 m at the field wall
+// to 4.5 m at the back round the infield (lidar), 3.5 m in the outfield
+// bleachers. Triangles wholly at the back are the concourse walk, grey.
 
-const FRONT = 1.6                           // top of the field wall
-const bowl = ccw(OSM['1553955043'])
+const FRONT = 1.8
 const fromField = bowl.map((p) => distToRing(p, pitch).d)
-const rise = (p: XY) => { const t = Math.max(0, Math.min(1, (p[1] - 0) / 40)); return 5.0 * (1 - t) + 2.6 * t }
-// Front-row corners sit on the field wall; the back row is at full height,
-// so every triangle spanning the band is seating and only the deep corners
-// behind it read as concourse.
-const rake = (d: number) => Math.max(0, Math.min(1, (d - 1) / 6))
+const rise = (p: XY) => { const t = Math.max(0, Math.min(1, (p[1] - 0) / 40)); return 2.7 * (1 - t) + 1.7 * t }
+const rake = (d: number) => Math.max(0, Math.min(1, (d - 1) / 9))
 const bowlZ = bowl.map((p, i) => FRONT + rise(p) * rake(fromField[i]))
 const atTop = bowl.map((_, i) => rake(fromField[i]) >= 1)
 for (const [a, b, c] of triangulate(bowl)) {
   const P = [a, b, c].map((i) => v3(bowl[i], bowlZ[i]))
-  const flat = atTop[a] && atTop[b] && atTop[c]
-  ;(flat ? concourse : seats).tri(P[0], P[1], P[2])
+  ;(atTop[a] && atTop[b] && atTop[c] ? concourse : seats).tri(P[0], P[1], P[2])
 }
 bowl.forEach((a, i) => {
   const j = (i + 1) % bowl.length, b = bowl[j]
   const front = fromField[i] < 2 && fromField[j] < 2
   const u = unit2([b[0] - a[0], b[1] - a[1]]), n: V3 = [u[1], -u[0], 0]
-  face(front ? wallGreen : brick, [v3(a, 0), v3(b, 0), v3(b, bowlZ[j]), v3(a, bowlZ[i])], n)
+  face(front ? seats : brick, [v3(a, 0), v3(b, 0), v3(b, bowlZ[j]), v3(a, bowlZ[i])], n)
 })
-
 // Dugouts: low flat roofs at the field wall.
-for (const id of ['1553955044', '1553955045'])
-  extrude(OSM[id], [{ z0: 0, z1: FRONT + 0.2, mat: wallGreen }], roof, 0.2)
+for (const id of ['1553955044', '1553955045']) {
+  PARTS.push({ id, h: FRONT + 0.4 })
+  building(id, FRONT + 0.4, () => [{ z0: 0, z1: 9, mat: seats }], roof, 0.15)
+}
 
 // ---------------------------------------------------------------------------
-// The grandstand: brick concourse base, tan suite level with its band of
-// windows, and a flat canopy roof reaching out over the seats.
+// Heights: OSM's above each part's own street (lidar checks in brackets).
 
-const stand = ccw(OSM['1553955036'])
-extrude(stand, [
-  { z0: 0, z1: 3.6, mat: brick },
-  { z0: 3.6, z1: 4.1, mat: tan },            // the precast stringcourse across the brick piers
-  { z0: 4.1, z1: 6.2, mat: brick },
-  { z0: 6.2, z1: 7.0, mat: tan },
-  { z0: 7.0, z1: 10.6, mat: tan, windows: { glass, bay: 6.5, pier: 1.1 } },
-  { z0: 10.6, z1: 12, mat: tan },
-], null)
+const H = {
+  stand: 15.5,           // way/1553955036, OSM 12 [15–16]
+  mint: 11.2,            // way/1553955035, OSM 8 [11–12]
+  rfClub: 14,            // way/1553955040, OSM 11 [11–14]
+}
+const plain: [string, number][] = [
+  ['1553955034', 17], ['1553955047', 16], ['1553955037', 16.5], ['1553955041', 15.5],
+  ['1553955038', 10.5], ['1553955039', 11.5], ['1553955049', 7.5], ['1553955050', 9.5],
+  ['1553955051', 11], ['1553955065', 6], ['1553955054', 6.5],
+]
+PARTS.push({ id: '1553955036', h: H.stand }, { id: '1553955035', h: H.mint }, { id: '1553955040', h: H.rfClub },
+  ...plain.map(([id, h]) => ({ id, h })), { id: '1553955042', h: 13.5 })
+
+// ---------------------------------------------------------------------------
+// The grandstand. Its street faces are brick fronts; its field faces, above
+// the seats, are the open concourse (dark), a tan slab edge, the glazed club
+// and suite level and a tan band under the roof.
+
+const nearBowl = (a: XY, b: XY) => distToRing([(a[0] + b[0]) / 2, (a[1] + b[1]) / 2], bowl).d < 3
+building('1553955036', H.stand - 0.6, (z0, g, a, b) => nearBowl(a, b) ? [
+  { z0: 0, z1: 8.4, mat: glass },
+  { z0: 8.4, z1: 9.2, mat: tan },
+  { z0: 9.2, z1: 13.2, mat: tan, windows: { glass, bay: 6.5, pier: 0.9 } },
+  { z0: 13.2, z1: 16, mat: tan },
+] : front(H.stand - 0.6)(z0, g), null)
 {
-  // The canopy: the stand's own outline with its field-side corners carried
-  // 3.5 m out over the seats, towards the nearest point of the field. Thin,
-  // pale and flat as the white membrane roof is from the air, with a pale
-  // fascia and a grey underside, so it reads as a canopy and not a block.
-  const nearBowl = stand.map((p) => distToRing(p, bowl).d < 2.5)
+  // The roof: the stand's outline with its field-side corners carried 3.5 m
+  // out over the back rows, thin and white, with a tan-grey soffit.
+  const stand = ccw(OSM['1553955036'])
+  const near = stand.map((p) => distToRing(p, bowl).d < 2.5)
   const canopy = stand.map((p, i): XY => {
-    if (!nearBowl[i]) return p
+    if (!near[i]) return p
     const { at } = distToRing(p, pitch), d = unit2([at[0] - p[0], at[1] - p[1]])
     return [p[0] + d[0] * 3.5, p[1] + d[1] * 3.5]
   })
-  slab(canopy, 12.1, 12.9, canopyTop, canopyTop, 0.3, roof)
+  slab(canopy, H.stand - 0.9, H.stand, white, white, 0.3, roof)
 }
 
-// ---------------------------------------------------------------------------
-// The rest of the parts, at their OSM heights.
+// Mint Street concourse block, the street fronts and the rest.
+building('1553955035', H.mint, front(H.mint), roof)
+building('1553955040', H.rfClub, (_z0, g) => [
+  { z0: 0, z1: g + 4, mat: brick },
+  { z0: g + 4, z1: H.rfClub - 1.2, mat: tan, windows: { glass, bay: 6, pier: 1.0 } },
+  { z0: H.rfClub - 1.2, z1: H.rfClub, mat: tan }], roof)
+for (const [id, h] of plain) building(id, h, front(h, h - street([0, 0]) > 8), roof)
 
-const BR = (h: number, cream = 0.7): Band[] => [{ z0: 0, z1: h - cream, mat: brick }, { z0: h - cream, z1: h, mat: tan }]
-const stack: [string, Band[]][] = [
-  // The brick concourse block along Mint Street, with its gates and shop fronts.
-  ['1553955035', [
-    { z0: 0, z1: 1.0, mat: brick },
-    { z0: 1.0, z1: 4.6, mat: brick, windows: { glass, bay: 7, pier: 1.6 } },
-    { z0: 4.6, z1: 7.2, mat: brick }, { z0: 7.2, z1: 8, mat: tan }]],
-  ['1553955034', [{ z0: 0, z1: 6, mat: brick }, { z0: 6, z1: 13, mat: tan }]],
-  ['1553955047', [{ z0: 0, z1: 6, mat: brick }, { z0: 6, z1: 13, mat: tan }]],
-  ['1553955037', [{ z0: 0, z1: 6, mat: brick }, { z0: 6, z1: 12, mat: tan }]], // over way/1553955051
-  ['1553955038', BR(5)], ['1553955039', BR(6)], ['1553955049', BR(3, 0.5)], ['1553955050', BR(5)],
-  ['1553955065', BR(3, 0.5)],
-  // The right-field club: brick base and a glazed upper floor.
-  ['1553955040', [
-    { z0: 0, z1: 4, mat: brick },
-    { z0: 4, z1: 9.4, mat: tan, windows: { glass, bay: 6, pier: 1.2 } },
-    { z0: 9.4, z1: 11, mat: tan }]],
-  ['1553955041', [{ z0: 0, z1: 5, mat: brick }, { z0: 5, z1: 11, mat: tan }]],
-  ['1553955054', [{ z0: 0, z1: 2, mat: concourse }]],
-]
-for (const [id, bands] of stack) extrude(OSM[id], bands, roof)
-
-// The pavilion with a pyramid roof (way/1553955042: 13 m, 3 m of roof).
+// The right-field pavilion with its pyramid roof (way/1553955042).
 {
   const r = ccw(OSM['1553955042'])
-  extrude(r, [{ z0: 0, z1: 5, mat: brick }, { z0: 5, z1: 10, mat: tan }], null, 0.01)
-  const c = centroid(r), apex = v3(c, 13)
-  r.forEach((a, i) => roof.tri(v3(a, 10), v3(r[(i + 1) % r.length], 10), apex))
+  building('1553955042', 12, front(12, false), null, 0.01)
+  const c = centroid(r), apex = v3(c, 16)
+  r.forEach((a, i) => roof.tri(v3(a, 12), v3(r[(i + 1) % r.length], 12), apex))
 }
 
-// The plaza canopy on its posts (way/1553955048, 9–11 m).
-slab(OSM['1553955048'], 9, 11, tan, roof, 0.25)
-// Its posts are the gate's brick piers with tan precast tops (photos of the gate).
+// The plaza canopy on its posts (way/1553955048, 13.5–15.5 m above the field).
+// Its edge and underside are dark grey steel, as photographed at the gate.
+slab(OSM['1553955048'], 13.5, 15.5, roof, roof, 0.25)
 for (const id of ['1553955060', '1553955061', '1553955062', '1553955063', '1553955064'])
-  extrude(OSM[id], [{ z0: 0, z1: 6.4, mat: brick }, { z0: 6.4, z1: 9, mat: tan }], null, 0.01)
+  extrude(OSM[id], [{ z0: 0, z1: 11, mat: brick }, { z0: 11, z1: 13.5, mat: tan }], null, 0.01)
 for (const id of ['1553955053', '1553955057', '1553955059'])
-  extrude(OSM[id], [{ z0: 0, z1: 7, mat: brick }, { z0: 7, z1: 9, mat: tan }], null, 0.01)
+  extrude(OSM[id], [{ z0: 0, z1: 11.5, mat: brick }, { z0: 11.5, z1: 13.5, mat: tan }], null, 0.01)
 
-// The dark structure in centre field (way/1553955052, dark metal). OSM says
-// 11 m, but its shadow in the 2023 imagery is only about 3 m long, so it is
-// drawn 4 m tall: a low dark-green batter's eye, not a window, so it stays
-// dark at night and the outfield stays low under the skyline.
-extrude(OSM['1553955052'], [{ z0: 0, z1: 4, mat: wallGreen }], wallGreen, 0.3)
+// The batter's eye in centre field (way/1553955052): a dark screen 13 m up
+// (lidar), 7.5 m above the plaza behind it; dark green, unlit.
+extrude(OSM['1553955052'], [{ z0: 0, z1: 13, mat: seats }], seats, 0.3)
 
-// The ring over the entrance plaza (relation/21303960, 7–9 m) on its two posts.
+// The ring over the home-plate entrance plaza (relation/21303960, OSM 7–9 m
+// above Mint Street) on its two brick posts.
 {
   const outer = OSM['1553955046'], hole = OSM['1216128113']
   const c = centroid(ccw(outer))
   const R = outer.reduce((s, p) => s + Math.hypot(p[0] - c[0], p[1] - c[1]), 0) / outer.length
   const r = hole.reduce((s, p) => s + Math.hypot(p[0] - c[0], p[1] - c[1]), 0) / hole.length
-  const SEG = 20, at = (rad: number, k: number): XY => [c[0] + rad * Math.cos((k * 2 * Math.PI) / SEG), c[1] + rad * Math.sin((k * 2 * Math.PI) / SEG)]
+  const z0 = 10, z1 = 12
+  const SEG = 16, at = (rad: number, k: number): XY => [c[0] + rad * Math.cos((k * 2 * Math.PI) / SEG), c[1] + rad * Math.sin((k * 2 * Math.PI) / SEG)]
   for (let k = 0; k < SEG; k++) {
     const o0 = at(R, k), o1 = at(R, k + 1), i0 = at(r, k), i1 = at(r, k + 1)
     const mo = unit2([(o0[0] + o1[0]) / 2 - c[0], (o0[1] + o1[1]) / 2 - c[1]])
-    face(brick, [v3(o0, 7), v3(o1, 7), v3(o1, 9), v3(o0, 9)], [mo[0], mo[1], 0])
-    face(brick, [v3(i0, 7), v3(i1, 7), v3(i1, 9), v3(i0, 9)], [-mo[0], -mo[1], 0])
-    face(tan, [v3(o0, 9), v3(o1, 9), v3(i1, 9), v3(i0, 9)], UP)
-    face(brick, [v3(o0, 7), v3(o1, 7), v3(i1, 7), v3(i0, 7)], DOWN)
+    face(tan, [v3(o0, z0), v3(o1, z0), v3(o1, z1), v3(o0, z1)], [mo[0], mo[1], 0])
+    face(tan, [v3(i0, z0), v3(i1, z0), v3(i1, z1), v3(i0, z1)], [-mo[0], -mo[1], 0])
+    face(roof, [v3(o0, z1), v3(o1, z1), v3(i1, z1), v3(i0, z1)], UP)
+    face(tan, [v3(o0, z0), v3(o1, z0), v3(i1, z0), v3(i0, z0)], DOWN)
   }
-  for (const id of ['1553955066', '1553955067']) extrude(OSM[id], [{ z0: 0, z1: 7, mat: brick }], null, 0.01)
+  for (const id of ['1553955066', '1553955067']) extrude(OSM[id], [{ z0: 0, z1: z0, mat: brick }], null, 0.01)
 }
 
 // ---------------------------------------------------------------------------
-// Light standards. The park has six, none of them in OSM, and they are not
-// spread round the bowl: two stand on the Graham Street sidewalk behind the
-// third-base stand, one behind the left-centre video board, one in the
-// right-field corner concourse, one against the right-field club and one on
-// the grandstand roof behind first base. Positions are the pole bases in Esri
-// World Imagery of 18 February 2023, which registers on the OSM outline to
-// within a metre. Heights are the lamp banks' noon shadows on the ground at
-// that date's sun (about 43°), checked against the streetlights beside them;
-// the banks' widths are their shadows' widths, about 5 m.
-//
-// Each is a single slim pole carrying one flat, modest lamp panel, its lit
-// face turned to the infield (home plate → second base in OSM) and tilted
-// down at it, as the real banks are aimed.
+// Light standards: six, none in OSM, placed and sized from the lidar. Each
+// lamp bank shows as a cluster of returns 5–6 m across; its centre is the
+// pole's position, its top the bank's top. A slim tapered pole carries one
+// framed lamp panel, 6 m by 4.8 m, its lit face turned to the infield and
+// tipped down at it, as the real banks are aimed.
 
-/** [x, y, height of the lamp panel's centre above the lowest ground]. */
+/** [x, y, top of the lamp bank above the field]. */
 const LIGHTS: [number, number, number][] = [
-  [-88.5, -5.5, 22.2],  // Graham Street, behind the third-base stand
-  [-59.6, -46.8, 21.1], // Graham Street, behind third base nearer home
-  [-59.5, 81.7, 20.2],  // left-centre, behind the video board
-  [44.2, 61.5, 24.5],   // right-field corner concourse
-  [67.6, 10.5, 28.8],   // against the right-field club, above its roof
-  [29.8, -48.2, 31.3],  // grandstand roof, behind first base
+  [-85.3, -5.5, 37.8],  // Graham Street, behind the third-base stand
+  [-51.4, -46.7, 39.8], // behind third base, nearer home
+  [-59.9, 80.7, 34.0],  // left-centre, behind the video board
+  [47.0, 60.4, 34.4],   // right-field corner concourse
+  [67.8, 11.0, 37.9],   // against the right-field club
+  [31.0, -48.0, 39.8],  // grandstand roof, behind first base
 ]
 const AIM: XY = [(BASES.home[0] + BASES.second[0]) / 2, (BASES.home[1] + BASES.second[1]) / 2]
-
 /** An oriented box from its centre and three half-extent axes; `mats` per face: [+a, -a, +b, -b, +c, -c]. */
 function obox(c: V3, ax: [V3, V3, V3], h: [number, number, number], mats: Part[]) {
   const P = (a: number, b: number, d: number): V3 => [0, 1, 2].map((i) => c[i] + ax[0][i] * a * h[0] + ax[1][i] * b * h[1] + ax[2][i] * d * h[2]) as V3
@@ -441,31 +518,23 @@ function obox(c: V3, ax: [V3, V3, V3], h: [number, number, number], mats: Part[]
   })
 }
 
-function lightStandard([x, y, zc]: [number, number, number]) {
+
+function lightStandard([x, y, top]: [number, number, number]) {
   const f = unit2([AIM[0] - x, AIM[1] - y]), s: XY = [f[1], -f[0]]
+  const W = 3.0, Hh = 2.4, T = 0.35, zc = top - Hh
   const dist = Math.hypot(AIM[0] - x, AIM[1] - y)
-  // Banks are aimed a little short of the target's true depression, as real
-  // ones are, and never steeper than 35° so the face still reads from the side.
   const tilt = Math.min(35, Math.max(12, (Math.atan2(zc, dist) * 180) / Math.PI * 0.85)) * Math.PI / 180
-  // The panel: 5.0 m across, 3.6 m tall, 0.5 m deep, its centre 0.5 m in front
-  // of the pole. Axes: across, the face normal (toward the field, tipped
-  // down), and the panel's own up (leaning toward the field at the top).
   const nrm: V3 = [f[0] * Math.cos(tilt), f[1] * Math.cos(tilt), -Math.sin(tilt)]
   const upv: V3 = [f[0] * Math.sin(tilt), f[1] * Math.sin(tilt), Math.cos(tilt)]
   const acr: V3 = [s[0], s[1], 0]
-  const c: V3 = [x + f[0] * 0.5, y + f[1] * 0.5, zc]
-  const W = 2.5, H = 1.8, T = 0.25
-  // The frame, in pole grey, with the lit face set just proud of it inside a
-  // 0.25 m border, so it reads as a framed bank of lamps.
-  obox(c, [acr, nrm, upv], [W, T, H], [metal, metal, metal, metal, metal, metal])
+  const c: V3 = [x + f[0] * 0.6, y + f[1] * 0.6, zc]
+  obox(c, [acr, nrm, upv], [W, T, Hh], [metal, metal, metal, metal, metal, metal])
   const fc: V3 = [c[0] + nrm[0] * (T + 0.03), c[1] + nrm[1] * (T + 0.03), c[2] + nrm[2] * (T + 0.03)]
   const Q = (a: number, b: number): V3 => [fc[0] + acr[0] * a + upv[0] * b, fc[1] + acr[1] * a + upv[1] * b, fc[2] + acr[2] * a + upv[2] * b]
-  face(lamps, [Q(-W + 0.25, -H + 0.25), Q(W - 0.25, -H + 0.25), Q(W - 0.25, H - 0.25), Q(-W + 0.25, H - 0.25)], nrm)
-  // The pole: octagonal, 1.1 m across at the foot tapering to 0.75 m, up the
-  // back of the panel to its centre. Smooth-shaded, so it reads as round.
-  const SEG = 8, r0 = 0.55, r1 = 0.38, top = zc
+  face(lamps, [Q(-W + 0.3, -Hh + 0.3), Q(W - 0.3, -Hh + 0.3), Q(W - 0.3, Hh - 0.3), Q(-W + 0.3, Hh - 0.3)], nrm)
+  const SEG = 8, r0 = 0.65, r1 = 0.42
   const ring = (r: number, z: number) => Array.from({ length: SEG }, (_, k): V3 => [x + r * Math.cos((k + 0.5) * 2 * Math.PI / SEG), y + r * Math.sin((k + 0.5) * 2 * Math.PI / SEG), z])
-  const lo = ring(r0, 0), hi = ring(r1, top)
+  const lo = ring(r0, 0), hi = ring(r1, zc)
   for (let k = 0; k < SEG; k++) {
     const l = (k + 1) % SEG, m = (k + 1) * 2 * Math.PI / SEG
     const na: V3 = [Math.cos((k + 0.5) * 2 * Math.PI / SEG), Math.sin((k + 0.5) * 2 * Math.PI / SEG), 0]
@@ -476,37 +545,35 @@ function lightStandard([x, y, zc]: [number, number, number]) {
 LIGHTS.forEach(lightStandard)
 
 // ---------------------------------------------------------------------------
-// The video board in left-centre, outside the OSM outline on the lot beyond
-// the bleachers (not mapped; placed from the same imagery, its truss 25 m
-// long). A 22 m by 7.5 m screen on two legs, its face turned to the field.
-// The screen is `window`, so it lights up at night as the real one does.
+// The video board in left-centre, on the plaza beyond the bleachers (not in
+// OSM; NAIP and lidar, top 17 m): a 22 m by 8 m screen on two legs, its face
+// turned to the field, with the park's name header across its top.
 {
   const a: XY = [-67.4, 74.8], b: XY = [-47.9, 90.9]
   const u = unit2([b[0] - a[0], b[1] - a[1]]), mid: XY = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]
   let n: XY = [u[1], -u[0]]
   if (n[0] * (BASES.home[0] - mid[0]) + n[1] * (BASES.home[1] - mid[1]) < 0) n = [-n[0], -n[1]]
-  const z0 = 3.0, z1 = 10.5, W = 11, D = 0.7
-  const c: V3 = [mid[0], mid[1], (z0 + z1) / 2]
-  obox(c, [[u[0], u[1], 0], [n[0], n[1], 0], UP], [W, D, (z1 - z0) / 2], [metal, metal, board, metal, metal, metal])
+  const z0 = 8.0, z1 = 16.2, W = 11, D = 0.8
+  obox([mid[0], mid[1], (z0 + z1) / 2], [[u[0], u[1], 0], [n[0], n[1], 0], UP], [W, D, (z1 - z0) / 2], [metal, metal, board, metal, metal, metal])
+  obox([mid[0], mid[1], z1 + 0.4], [[u[0], u[1], 0], [n[0], n[1], 0], UP], [W - 2, 0.3, 0.4], [white, white, white, white, white, white])
   for (const e of [-6.5, 6.5]) {
     const p: XY = [mid[0] + u[0] * e - n[0] * 0.2, mid[1] + u[1] * e - n[1] * 0.2]
-    obox([p[0], p[1], z0 / 2], [[u[0], u[1], 0], [n[0], n[1], 0], UP], [0.45, 0.45, z0 / 2], [metal, metal, metal, metal, metal, metal])
+    obox([p[0], p[1], z0 / 2], [[u[0], u[1], 0], [n[0], n[1], 0], UP], [0.5, 0.5, z0 / 2], [metal, metal, metal, metal, metal, metal])
   }
 }
 
 // ---------------------------------------------------------------------------
 
-// grass and dirt are built but not written: the map draws the field
-// (STYLE.md, "Don't model the ground").
 const parts = [
-  { part: brick, material: finish('truist-field-brick', 0xc98f7c) },
-  { part: tan, material: PALETTE.stone },
+  { part: brick, material: finish('truist-field-brick', 0xbd7a66) },
+  { part: tan, material: finish('truist-field-precast', 0xe6d6bb) },
   { part: glass, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
-  { part: canopyTop, material: PALETTE.trim },
-  { part: seats, material: finish('knights-green', 0x5f8a6c) },
+  { part: white, material: finish('truist-field-roof', 0xeeefed) },
+  { part: seats, material: finish('knights-green', 0x56735f) },
 ]
 const triangles = parts.reduce((sum, { part }) => sum + part.triangles, 0)
+for (const { part, material } of parts) console.log(material.name.padEnd(22), part.triangles)
 if (triangles > 6500) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('Truist Field', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at ground anchor',

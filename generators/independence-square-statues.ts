@@ -4,28 +4,47 @@
  *   bun generators/independence-square-statues.ts [out.glb]
  *
  * Map frame: x east, y north, z up, metres. The origin is the centre of the
- * Trade and Tryon crossing (OSM node 172358289), and the model is placed at
+ * Trade and Tryon crossing (OSM node 172358289); the model is placed at
  * bearing 48°, so its +y runs up North Tryon Street and its ±x along Trade.
  *
- * Raymond Kaskey's four bronzes (1995) stand one on each corner, set back from
- * the kerb, all facing the middle of the crossing. Each is a half-length
- * figure, about 2.8× life, rising from the top of a tall square shaft of
- * pinkish granite like a ship's figurehead, with a tapering bronze pendant
- * hanging down the shaft's front face below it. Shaft top 4.5 m, overall about 7.6 m; The
- * Future's raised child reaches 8.9 m.
+ * Raymond Kaskey's four bronzes (1995) stand one on each corner, all facing
+ * into the crossing. Each is a figure of about 2.7× life cut off at the
+ * thighs, set on top of a tall square shaft of pinkish granite like a ship's
+ * figurehead, with a bronze pendant (a relief portrait or emblem tapering to
+ * a point) hanging down the shaft's front face below it. The shaft stands on
+ * a wider granite base.
  *
- * Positions are the OSM artwork nodes (tourism=artwork, artist Raymond
- * Kaskey), measured from the junction node:
- *   Commerce        node/8415199021  ( 1.9, 14.4) m east/north — north corner
- *   The Future      node/8415199020  (15.4, -1.6)                — east corner
- *   Industry        node/8415199022  ( 0.0,-13.3)                — south corner
- *   Transportation  node/7986487900  (-14.6, 0.7)                — west corner
- *
- * Kept deliberately simple (STYLE.md): a bevelled granite shaft on a
- * wider base, and a few smooth bronze masses per figure, each posed so its
- * silhouette differs at phone size — the miner's hat and pan, the mill worker
- * with a child on her hip, the railroad worker's arms akimbo, and the woman
- * holding a child high over her head. There is no building to replace.
+ * Evidence
+ * - Positions and heights: lidar (USGS 3DEP NC Phase 4, Mecklenburg 2016,
+ *   0.5 m). Each statue shows as a 1.5 m blob standing 7.4 m above the
+ *   paving (The Future 7.9 m, the child held up). Blob centres, metres
+ *   east/north of the junction node, against the OSM artwork nodes:
+ *     Commerce        ( 2.4,  13.9)   node/8415199021 at ( 1.9,  14.4)
+ *     The Future      (15.6,  -2.4)   node/8415199020 at (15.3,  -1.6)
+ *     Industry        (-0.7, -16.0)   node/8415199022 at ( 0.1, -13.2)
+ *     Transportation  (-14.0,  0.1)   node/7986487900 at (-14.6,  0.7)
+ *   The model uses the lidar centres; Industry's OSM node is 2.8 m short.
+ * - Proportions, from the full-height photos (Stabbur's Master, Flickr, CC
+ *   BY-SA 2.0, "Charlotte's Sculptures on the Square", four of them, one per
+ *   statue, people for scale), scaled to the lidar height: base 1.2 m square
+ *   and 1.15 m tall with a sloped collar; shaft 0.86 m square, its top (where
+ *   the bronze begins) 4.85 m up; pendant tips 2.7–3.3 m up; head about
+ *   0.62 m tall, shoulders about 1.1 m across.
+ * - Poses, from close-ups (nan palmero, Flickr, CC BY 2.0, one per statue):
+ *   Commerce, the gold miner in a broad-brimmed hat, holding his pan in front
+ *   of him with both hands, coins spilling from it, a portrait of a man in
+ *   spectacles on the pendant; Industry, the mill worker, her left hand
+ *   shading her eyes, elbow high, her right fist on her hip, in a belted
+ *   smock and skirt, a man in a cap on the pendant; Transportation, the
+ *   railroad worker in a vest, a sledgehammer gripped upright before his
+ *   chest, kneeling forward over a winged wheel; The Future, a woman with
+ *   long hair, bare to the waist, holding a child high over her head at full
+ *   stretch, a woman's face with flowing hair on the pendant.
+ * - Colours from the photos: the granite is a pink-brown grey, pulled up to
+ *   the palette's stone lightness; the bronze is a dark brown, lifted to a
+ *   warm mid brown so the figures read as bronze at map lighting rather than
+ *   as black, with a darker bronze for hats, hair, the pendants and props.
+ * - Estimated: depth of the figures, exact limb angles, the pendants' relief.
  */
 import { Part, addGltfTriangles, cross, sub, len, writeGlb, type V3 } from './mesh'
 import { finish } from './palette'
@@ -153,124 +172,185 @@ function disc(p: Part, c: V3, r: number, t: number, tilt: number, n = 14) {
 // ------------------------------------------------------------- one statue
 //
 // Each statue is authored in its own frame — the shaft centred on the
-// origin, the figure facing +y — then turned to face the crossing.
+// origin, the figure facing +y — then turned to face the crossing. Seen from
+// the front, the figure's right hand is at +x.
 
-const SHAFT_TOP = 4.5
+const SHAFT = 0.43 // half-width of the granite shaft
+const SHAFT_TOP = 4.85
 type Kit = { granite: Part; base: Part; bronze: Part; dark: Part }
 
 function pedestal(k: Kit) {
-  // A wider plinth, a chamfered step, and the tall shaft (1.0 m square in the
-  // photos, about a fifth of its height).
-  block(k.base, 0, 0.9, 0.68, 0.68, { b: 0.1 })
-  block(k.base, 0.9, 1.05, 0.6, 0.6, { b: 0.08, top: [0.52, 0.52] })
-  block(k.granite, 1.05, SHAFT_TOP, 0.5, 0.5, { b: 0.08 })
+  // The base, then a sloped collar up to the shaft.
+  block(k.base, 0, 0.95, 0.6, 0.6, { b: 0.1 })
+  block(k.base, 0.95, 1.15, 0.6, 0.6, { b: 0.08, top: [SHAFT + 0.02, SHAFT + 0.02] })
+  block(k.granite, 1.15, SHAFT_TOP, SHAFT, SHAFT, { b: 0.06 })
 }
 
 /**
- * The bronze shared by all four: hips merging into the shaft top, a torso
- * leaning a little out over the front face, neck and head, and the pendant
- * hanging down the shaft below. `lean` pushes the torso forward.
+ * The bronze shared by all four: hips set square on the shaft top, a waist,
+ * chest and shoulders, a neck. `skirt` flares the hips for the women's
+ * skirts; `lean` pushes the chest forward.
  */
-function torso(k: Kit, { broad = 0.62, lean = 0.2, pendant = 1.5, pendantW = 0.46 } = {}) {
-  // Hips start square on the shaft top (its corners at ±0.5 m), then round
-  // off into the waist and chest.
+function torso(k: Kit, { broad = 0.56, lean = 0.08, skirt = 0, chest = 0.3 } = {}) {
+  const w = SHAFT + 0.03
   body(k.bronze, [
-    [SHAFT_TOP - 0.05, 0.5, 0.5, 0, 0, 5],
-    [SHAFT_TOP + 0.2, 0.53, 0.52, 0, 0.06, 4],
-    // Thighs and lap, as in the photos: the figure is cut off at the knee.
-    [SHAFT_TOP + 0.6, 0.54, 0.5, 0, 0.12, 3],
-    [5.5, 0.5, 0.42, 0, lean, 2.4],
-    [5.95, broad * 0.92, 0.44, 0, lean + 0.04],
-    [6.45, broad, 0.44, 0, lean + 0.02],
-    [6.72, broad * 0.9, 0.36, 0, lean],
-    [6.9, 0.34, 0.25, 0, lean],
-  ])
-  tube(k.bronze, [[0, lean, 6.8], [0, lean + 0.04, 7.08]], [0.2, 0.18], [0.2, 0.18], 8)
-  // The pendant: a broad bronze tongue down the front face of the shaft,
-  // narrowing to a blunt tip.
-  body(k.dark, [
-    [SHAFT_TOP - pendant, 0.1, 0.05, 0, 0.53],
-    [SHAFT_TOP - pendant * 0.65, pendantW * 0.6, 0.11, 0, 0.58],
-    [SHAFT_TOP - pendant * 0.3, pendantW * 0.9, 0.17, 0, 0.62],
-    [SHAFT_TOP + 0.05, pendantW, 0.2, 0, 0.63],
-    [SHAFT_TOP + 0.35, pendantW * 0.7, 0.12, 0, 0.58],
-  ], 10)
+    [SHAFT_TOP - 0.04, w + skirt, w + skirt * 0.6, 0, 0, 5],
+    [SHAFT_TOP + 0.35, w + skirt * 0.8, w + skirt * 0.4, 0, 0.04, 3.5],
+    [5.3, 0.44, 0.3, 0, lean * 0.6, 2.4],
+    [5.6, 0.42, 0.28, 0, lean * 0.8],
+    [6.05, broad * 0.92, chest, 0, lean],
+    [6.38, broad, chest * 0.95, 0, lean * 0.9],
+    [6.55, broad * 0.78, chest * 0.8, 0, lean * 0.8],
+    [6.66, 0.2, 0.18, 0, lean * 0.8],
+  ], 12)
+  tube(k.bronze, [[0, lean * 0.8, 6.6], [0, lean * 0.8 + 0.02, 6.84]], [0.15, 0.14], [0.15, 0.14], 8)
 }
 
-/** Head centred over the neck; returns its centre. */
-function head(k: Kit, lean: number, r: V3 = [0.25, 0.28, 0.33]): V3 {
-  const c: V3 = [0, lean + 0.05, 7.3]
-  ellipsoid(k.bronze, c, r, 10, 6)
-  return c
+/** Head on the neck; returns its centre. `tilt` lifts the face (looking up). */
+function head(k: Kit, at: V3, r: V3 = [0.24, 0.27, 0.31]): V3 {
+  ellipsoid(k.bronze, at, r, 10, 6)
+  return at
+}
+
+/** An arm: shoulder → elbow → hand, with a rounded elbow and a fist. */
+function arm(k: Kit, [s, e, w]: V3[], [a, b, c] = [0.15, 0.13, 0.11]) {
+  tube(k.bronze, [s, e], [a, b], [a, b], 8)
+  ellipsoid(k.bronze, e, [b, b, b], 8, 4)
+  tube(k.bronze, [e, w], [b, c], [b, c], 8)
+  ellipsoid(k.bronze, w, [c + 0.03, c + 0.03, c + 0.04], 8, 4)
 }
 
 /**
- * An arm: shoulder → elbow → wrist. Upper arm and forearm are separate
- * tubes joined by a rounded elbow, so a sharp bend stays round.
+ * The pendant down the shaft's front face: a relief medallion at the top
+ * (a head, or the winged wheel), tapering to a point at `tip`.
  */
-function arm(k: Kit, [s, e, w]: V3[], [a, b, c] = [0.2, 0.17, 0.14]) {
-  tube(k.bronze, [s, e], [a, b])
-  ellipsoid(k.bronze, e, [b, b, b], 8, 4)
-  tube(k.bronze, [e, w], [b, c])
-  ellipsoid(k.bronze, w, [c + 0.02, c + 0.02, c + 0.02], 8, 4)
+function pendant(k: Kit, tip: number, top = SHAFT_TOP - 0.05, wide = 0.36) {
+  const y = SHAFT
+  body(k.dark, [
+    [tip, 0.02, 0.02, 0, y + 0.03],
+    [tip + (top - tip) * 0.35, wide * 0.45, 0.07, 0, y + 0.06],
+    [tip + (top - tip) * 0.75, wide * 0.8, 0.1, 0, y + 0.08],
+    [top, wide, 0.12, 0, y + 0.09],
+  ], 8)
+}
+/** A relief face on the pendant's top, with a cap or hair. */
+function medallion(k: Kit, z: number, hat: 'cap' | 'hair' | 'bare') {
+  const y = SHAFT + 0.14
+  ellipsoid(k.bronze, [0, y, z], [0.23, 0.13, 0.3], 8, 5)
+  if (hat === 'cap') ellipsoid(k.dark, [0, y + 0.02, z + 0.24], [0.26, 0.14, 0.11], 8, 3)
+  if (hat === 'hair') {
+    ellipsoid(k.dark, [-0.22, y - 0.02, z - 0.15], [0.12, 0.08, 0.38], 6, 4)
+    ellipsoid(k.dark, [0.22, y - 0.02, z - 0.15], [0.12, 0.08, 0.38], 6, 4)
+  }
 }
 
 const statues: { name: string; at: XY; build: (k: Kit) => void }[] = [
   {
-    // Commerce: the gold miner, in a broad-brimmed hat, holding his pan.
-    name: 'Commerce', at: [1.9, 14.4],
+    // Commerce: the gold miner in a broad-brimmed hat, holding his pan out
+    // in front of him, coins spilling from it.
+    name: 'Commerce', at: [2.4, 13.9],
     build: k => {
-      const L = 0.2
-      torso(k, { lean: L })
-      const h = head(k, L)
-      disc(k.dark, [h[0], h[1], h[2] + 0.2], 0.52, 0.06, 0.15)
-      ellipsoid(k.dark, [h[0], h[1] - 0.02, h[2] + 0.3], [0.27, 0.29, 0.2], 10, 4)
-      for (const s of [-1, 1]) arm(k, [[s * 0.6, L, 6.6], [s * 0.82, L + 0.3, 6.0], [s * 0.42, L + 0.75, 5.9]])
-      disc(k.dark, [0, L + 0.92, 5.85], 0.44, 0.1, -0.55)
-    },
-  },
-  {
-    // The Future: a woman lifting a child high over her head, her robe
-    // sweeping forward into the pendant.
-    name: 'The Future', at: [15.4, -1.6],
-    build: k => {
-      const L = 0.28
-      torso(k, { lean: L, broad: 0.56, pendant: 1.9, pendantW: 0.5 })
-      const h = head(k, L, [0.23, 0.26, 0.31])
-      ellipsoid(k.dark, [h[0], h[1] - 0.12, h[2] + 0.02], [0.25, 0.24, 0.3], 10, 5)
-      arm(k, [[0.52, L, 6.65], [0.72, L + 0.15, 7.35], [0.42, L + 0.3, 8.05]], [0.18, 0.15, 0.13])
-      arm(k, [[-0.52, L, 6.65], [-0.62, L + 0.25, 7.3], [-0.3, L + 0.32, 8.0]], [0.18, 0.15, 0.13])
-      // The child, held aloft between her hands.
-      ellipsoid(k.bronze, [0.06, L + 0.32, 8.4], [0.32, 0.24, 0.45], 10, 6)
-      ellipsoid(k.bronze, [0.06, L + 0.34, 9.0], [0.21, 0.21, 0.22], 8, 5)
-      // Robe billowing out in front of her hips.
-      ellipsoid(k.dark, [0, L + 0.5, 5.15], [0.55, 0.4, 0.42], 10, 5)
-    },
-  },
-  {
-    // Industry: the mill worker, a child held against her left hip.
-    name: 'Industry', at: [0, -13.3],
-    build: k => {
-      const L = 0.2
+      const L = 0.1
       torso(k, { lean: L, broad: 0.58 })
-      const h = head(k, L, [0.24, 0.27, 0.32])
-      ellipsoid(k.dark, [h[0], h[1] - 0.16, h[2] + 0.08], [0.22, 0.2, 0.22], 10, 5)
-      // Her right hand to her breast, elbow out; her left arm round the child.
-      arm(k, [[0.56, L, 6.6], [0.95, L + 0.15, 6.05], [0.18, L + 0.55, 6.25]])
-      const c: V3 = [-0.62, L + 0.42, 5.6]
-      ellipsoid(k.bronze, c, [0.26, 0.24, 0.4], 10, 6)
-      ellipsoid(k.bronze, [c[0] - 0.03, c[1] + 0.02, c[2] + 0.55], [0.2, 0.2, 0.21], 8, 5)
-      arm(k, [[-0.56, L, 6.6], [-0.92, L + 0.1, 5.95], [-0.45, L + 0.65, 5.45]])
+      const h = head(k, [0, L + 0.03, 7.05])
+      // The hat: a wide brim and a round crown.
+      disc(k.dark, [h[0], h[1], h[2] + 0.2], 0.5, 0.06, 0.12)
+      ellipsoid(k.dark, [h[0], h[1] - 0.02, h[2] + 0.3], [0.26, 0.28, 0.18], 10, 4)
+      // The beard.
+      ellipsoid(k.dark, [0, h[1] + 0.2, h[2] - 0.2], [0.14, 0.09, 0.16], 6, 4)
+      // Arms bent, hands on the pan's rim at either side.
+      for (const s of [-1, 1]) arm(k, [[s * 0.52, L, 6.4], [s * 0.66, L + 0.25, 5.75], [s * 0.46, L + 0.62, 5.72]])
+      disc(k.dark, [0, L + 0.66, 5.72], 0.48, 0.12, -0.45, 14)
+      // Coins pouring over the pan's front lip down his lap.
+      ellipsoid(k.dark, [0, L + 0.68, 5.25], [0.17, 0.13, 0.32], 6, 4)
+      pendant(k, 3.3)
+      medallion(k, 4.42, 'bare')
     },
   },
   {
-    // Transportation: the railroad worker, bare-chested, arms akimbo.
-    name: 'Transportation', at: [-14.6, 0.7],
+    // The Future: a woman holding a child high over her head, her hair down
+    // her back, drapery from the waist.
+    name: 'The Future', at: [15.6, -2.4],
     build: k => {
-      const L = 0.15
-      torso(k, { lean: L, broad: 0.72 })
-      head(k, L, [0.25, 0.28, 0.32])
-      for (const s of [-1, 1]) arm(k, [[s * 0.7, L, 6.6], [s * 1.12, L - 0.05, 5.95], [s * 0.6, L + 0.1, 5.4]], [0.2, 0.17, 0.14])
+      const L = 0.06
+      torso(k, { lean: L, broad: 0.5, skirt: 0.08, chest: 0.28 })
+      // Head tipped back, looking up at the child.
+      const h = head(k, [0, L - 0.02, 7.02], [0.22, 0.26, 0.29])
+      ellipsoid(k.dark, [0, h[1] - 0.16, h[2] - 0.2], [0.24, 0.16, 0.42], 8, 5)
+      // Both arms raised at full stretch.
+      for (const s of [-1, 1]) arm(k, [[s * 0.46, L, 6.42], [s * 0.6, L + 0.12, 7.05], [s * 0.3, L + 0.2, 7.55]], [0.14, 0.12, 0.1])
+      // The child, held flat overhead, head to one side, legs kicking.
+      ellipsoid(k.bronze, [0, L + 0.2, 7.72], [0.42, 0.2, 0.2], 10, 5)
+      ellipsoid(k.bronze, [0.52, L + 0.24, 7.8], [0.18, 0.18, 0.19], 8, 4)
+      for (const d of [-0.06, 0.08]) tube(k.bronze, [[-0.32, L + 0.2 + d, 7.76], [-0.58, L + 0.2 + d, 7.98], [-0.76, L + 0.2 + d, 7.84]], [0.09, 0.08, 0.07], [0.09, 0.08, 0.07], 6)
+      // Her drapery falls over the shaft's top and down its front.
+      body(k.bronze, [
+        [4.25, 0.2, 0.08, 0, SHAFT + 0.06],
+        [4.55, 0.42, 0.12, 0, SHAFT + 0.08],
+        [SHAFT_TOP + 0.05, 0.5, 0.16, 0, SHAFT + 0.06],
+      ], 10)
+      pendant(k, 2.7, 4.3)
+      medallion(k, 3.92, 'hair')
+    },
+  },
+  {
+    // Industry: the mill worker, shading her eyes with her left hand, her
+    // right fist on her hip, in a belted smock over a skirt.
+    name: 'Industry', at: [-0.7, -16.0],
+    build: k => {
+      const L = 0.06
+      torso(k, { lean: L, broad: 0.55, skirt: 0.1, chest: 0.3 })
+      // The belt at the waist.
+      body(k.dark, [[5.52, 0.45, 0.31, 0, L * 0.8], [5.64, 0.45, 0.31, 0, L * 0.8]], 12)
+      const h = head(k, [0, L + 0.03, 7.02])
+      // Hair gathered at the back of the head.
+      ellipsoid(k.dark, [0, h[1] - 0.12, h[2] + 0.04], [0.25, 0.2, 0.28], 8, 5)
+      // Left arm up, elbow out high, hand flat over the brow.
+      arm(k, [[-0.5, L, 6.42], [-0.86, L + 0.1, 7.18], [-0.1, L + 0.36, 7.12]], [0.15, 0.13, 0.11])
+      // Right arm akimbo, fist on the hip.
+      arm(k, [[0.5, L, 6.42], [0.86, L - 0.08, 5.85], [0.44, L + 0.04, 5.42]], [0.15, 0.13, 0.11])
+      pendant(k, 3.2)
+      medallion(k, 4.4, 'cap')
+    },
+  },
+  {
+    // Transportation: the railroad worker in a vest, a sledgehammer gripped
+    // upright before his chest, kneeling forward over a winged wheel.
+    name: 'Transportation', at: [-14.0, 0.1],
+    build: k => {
+      const L = 0.1
+      torso(k, { lean: L, broad: 0.68, chest: 0.34 })
+      head(k, [0, L + 0.03, 7.05])
+      // Kneeling forward like a figurehead: thighs out over the shaft's
+      // front, knees well forward, shins folding back down onto its face.
+      for (const s of [-1, 1]) {
+        tube(k.bronze, [[s * 0.2, 0.0, 5.25], [s * 0.19, 0.62, 4.72]], [0.25, 0.22], [0.25, 0.22], 8)
+        ellipsoid(k.bronze, [s * 0.19, 0.64, 4.68], [0.21, 0.21, 0.21], 8, 4)
+        tube(k.bronze, [[s * 0.19, 0.64, 4.66], [s * 0.16, SHAFT + 0.18, 4.05]], [0.2, 0.16], [0.2, 0.16], 8)
+      }
+      // Both forearms in, fists one above the other on the hammer's handle.
+      arm(k, [[0.62, L, 6.38], [0.84, L + 0.28, 5.8], [0.05, L + 0.52, 5.92]], [0.19, 0.16, 0.13])
+      arm(k, [[-0.62, L, 6.38], [-0.86, L + 0.28, 5.92], [-0.05, L + 0.54, 6.14]], [0.19, 0.16, 0.13])
+      // The hammer: handle upright, head across at the shoulders.
+      tube(k.dark, [[0, L + 0.58, 5.3], [0, L + 0.58, 6.45]], [0.05, 0.05], [0.05, 0.05], 6)
+      tube(k.dark, [[-0.3, L + 0.58, 6.5], [0.3, L + 0.58, 6.5]], [0.1, 0.1], [0.1, 0.1], 6)
+      // The winged wheel under his knees, the pendant below it.
+      disc(k.dark, [0, SHAFT + 0.28, 3.85], 0.28, 0.14, Math.PI / 2, 12)
+      // The wings: a broad swept fan either side of the wheel, up to the knees.
+      for (const s of [-1, 1]) {
+        smooth(k.dark, mesh => {
+          const root: V3 = [s * 0.18, SHAFT + 0.22, 3.85]
+          const fan: V3[] = [[s * 0.4, SHAFT + 0.12, 3.6], [s * 0.6, SHAFT + 0.1, 4.0], [s * 0.6, SHAFT + 0.12, 4.45], [s * 0.36, SHAFT + 0.16, 4.5]]
+          for (let i = 0; i < fan.length - 1; i++) {
+            if (s > 0) mesh.tri(root, fan[i + 1], fan[i])
+            else mesh.tri(root, fan[i], fan[i + 1])
+            // the back face, against the shaft
+            const a = [fan[i][0], SHAFT + 0.02, fan[i][2]] as V3, c = [fan[i + 1][0], SHAFT + 0.02, fan[i + 1][2]] as V3
+            mesh.quad(...(s > 0 ? [fan[i + 1], c, a, fan[i]] : [fan[i], a, c, fan[i + 1]]) as [V3, V3, V3, V3])
+          }
+        }, 10)
+      }
+      pendant(k, 2.8, 3.7, 0.3)
     },
   },
 ]
@@ -293,34 +373,30 @@ function place(src: Part, dst: Part, a: number, x: number, y: number) {
 }
 
 const b = BEARING * Math.PI / 180
-for (const st of statues) {
-  // OSM east/north offset → model frame (rotate by −bearing about up).
-  const [e, n] = st.at
-  const x = e * Math.cos(b) - n * Math.sin(b), y = e * Math.sin(b) + n * Math.cos(b)
+// True east/north → model frame (turn by −bearing about up).
+const toModel = ([e, n]: XY): XY => [e * Math.cos(b) - n * Math.sin(b), e * Math.sin(b) + n * Math.cos(b)]
+// They face the middle of the four, which is about a metre off the node.
+const mid = statues.map(s => toModel(s.at)).reduce((m, p) => [m[0] + p[0] / 4, m[1] + p[1] / 4], [0, 0] as XY)
+// ONLY=<name> builds one statue alone, for close-up review renders.
+for (const st of statues.filter(s => !process.env.ONLY || s.name === process.env.ONLY)) {
+  const [x, y] = toModel(st.at)
   const k: Kit = { granite: new Part(), base: new Part(), bronze: new Part(), dark: new Part() }
   pedestal(k)
   st.build(k)
-  // Face the centre of the crossing: local +y → direction (−x, −y).
-  const a = Math.atan2(x, -y)
+  // Local +y → towards the middle.
+  const a = Math.atan2(x - mid[0], -(y - mid[1]))
   place(k.granite, granite, a, x, y)
   place(k.base, base, a, x, y)
   place(k.bronze, bronze, a, x, y)
   place(k.dark, dark, a, x, y)
 }
 
-// Colours, after the shared palette (STYLE.md). The pinkish granite
-// keeps its hue from the reference photos (/tmp/nyc-work/
-// independence-square-statues/photos, p1.jpg and p2.jpg) but is pulled up to
-// the palette's stone lightness, the plinth a shade below it. The bronzes stay
-// a dark bronze: they are small sculpture, the one place the style allows a
-// colour darker than the window slate, and it is what makes them read
-// against the pale shafts and street.
 const parts = [
-  { part: granite, material: finish('kaskey-granite', 0xd9cac3) },
-  { part: base, material: finish('kaskey-granite-base', 0xc9b9b2) },
-  { part: bronze, material: finish('kaskey-bronze', 0x725f50) },
-  // Darker patina: hair, hats, pans and the pendants.
-  { part: dark, material: finish('kaskey-bronze-dark', 0x56483e) },
+  { part: granite, material: finish('kaskey-granite', 0xdccbc2) },
+  { part: base, material: finish('kaskey-granite-base', 0xcdbbb2) },
+  { part: bronze, material: finish('kaskey-bronze', 0x725d4b) },
+  // Darker bronze: hats, hair, the pan, the hammer, the pendants.
+  { part: dark, material: finish('kaskey-bronze-dark', 0x5c4b3f) },
 ]
 const glb = writeGlb('Independence Square statues', parts, {
   license: 'CC0-1.0',
@@ -328,7 +404,7 @@ const glb = writeGlb('Independence Square statues', parts, {
   bearing: BEARING, statues: statues.map(s => s.name),
 })
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
-if (triangles > 5000 || glb.length > 250_000) throw new Error(`Landmark exceeds budget: ${triangles} triangles`)
+if (triangles > 6500 || glb.length > 250_000) throw new Error(`Landmark exceeds budget: ${triangles} triangles, ${glb.length} bytes`)
 const out = process.argv[2] ?? new URL('../models/independence-square-statues.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${triangles} triangles, ${glb.length} bytes (${(glb.length / 1024).toFixed(1)} KiB)`)
