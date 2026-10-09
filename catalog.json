@@ -568,13 +568,6 @@
       "source": "generators/milestone-club.ts"
     },
     {
-      "id": "petras",
-      "file": "models/petras.glb",
-      "license": "CC0-1.0",
-      "author": "Barrelman",
-      "source": "generators/petras.ts"
-    },
-    {
       "id": "coyote-joes",
       "file": "models/coyote-joes.glb",
       "license": "CC0-1.0",
@@ -4495,19 +4488,6 @@
       "wikidata": "Q138333281",
       "replaces": [
         "way/867520324"
-      ]
-    },
-    {
-      "id": "petras",
-      "name": "Petra's",
-      "model": "petras",
-      "lng": -80.8125546,
-      "lat": 35.2190446,
-      "bearing": 358,
-      "elevation": 0,
-      "minzoom": 16,
-      "replaces": [
-        "way/323192880"
       ]
     },
     {
