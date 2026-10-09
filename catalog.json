@@ -3485,6 +3485,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-common-market-south-end.ts"
+    },
+    {
+      "id": "clt-savona-mill",
+      "file": "models/clt-savona-mill.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-savona-mill.ts"
     }
   ],
   "landmarks": [
@@ -13748,6 +13755,26 @@
       "minzoom": 16,
       "replaces": [
         "way/553077609"
+      ]
+    },
+    {
+      "id": "clt-savona-mill",
+      "name": "Savona Mill",
+      "model": "clt-savona-mill",
+      "lng": -80.8670846,
+      "lat": 35.2418928,
+      "bearing": 23.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q21016162",
+      "replaces": [
+        "way/324411943",
+        "way/1329177209",
+        "way/1329177211",
+        "way/1329177212",
+        "way/1329177213",
+        "way/1329177214",
+        "way/1329177215"
       ]
     }
   ]
