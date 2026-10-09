@@ -3527,6 +3527,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-intuit-dome.ts"
+    },
+    {
+      "id": "la-chiat-day",
+      "file": "models/la-chiat-day.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-chiat-day.ts"
     }
   ],
   "landmarks": [
@@ -13881,6 +13888,20 @@
       "wikidata": "Q54958436",
       "replaces": [
         "way/1209626565"
+      ]
+    },
+    {
+      "id": "la-chiat-day",
+      "name": "Chiat/Day Building",
+      "model": "la-chiat-day",
+      "lng": -118.4766671,
+      "lat": 33.9954922,
+      "bearing": 57.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q194004",
+      "replaces": [
+        "way/413241944"
       ]
     }
   ]
