@@ -9,36 +9,58 @@
  * the south end of the Vest Water Treatment Plant. Bearing 0.
  *
  * The plant on Beatties Ford Road is Vest Station (Charlotte Water Works,
- * 1924, a designated Charlotte-Mecklenburg historic landmark); the city's
- * Franklin plant is elsewhere, on Brookshire Boulevard. The landmark report
- * (Loken, 1990) singles out "its two towering water tanks".
+ * 1924, a designated Charlotte-Mecklenburg historic landmark); the landmark
+ * report (Loken, 1990) singles out "its two towering water tanks".
  *
- * The south one, Charlotte Water's "Patton Avenue water tank", is the 1924
- * "elevated 1,000,000 gallon storage tank at the head of the distribution
- * system" (Historic Landmarks Commission survey). It is a tall cylinder with
- * a hemi-ellipsoidal bottom and a shallow conical roof with a rolled dark
- * eave and a ball finial, a walkway where cylinder meets bowl, eight battered
- * lattice columns, a wide riser, and rings of struts with crossed rods. A
- * 16 m tank, 12 m of cylinder and a 7.8 m bowl hold about 0.9 million gallons,
- * close to the published million. The heights come from the Levine Museum
- * photo, scaled by that 16 m: walkway at 24.4 m, roof apex at 40 m. It was
- * repainted pale grey with black steel around 2022 (Charlotte Water's 2022
- * lighting submittal, and a 2022 Mapillary frame from Brookshire Freeway).
+ * The south one, Charlotte Water's "Patton Avenue water tank", is a tall
+ * cylinder with a hemi-ellipsoidal bottom, a conical roof with a rolled eave
+ * and a ball finial, a walkway where cylinder meets bowl, eight near-vertical
+ * columns, a wide riser, and rings of struts with crossed rods. The north one
+ * is a squat saucer on six short columns: a shallow bowl, a short band with
+ * a walkway, a low dome and a ball finial. Both pale grey on near-black
+ * steel since the 2022 repaint.
  *
- * The north one is a smaller saucer-shaped tank on six short columns, 12.4 m
- * across; its date and capacity are not published, and its height (top
- * about 12 m) is scaled from the Levine photo.
+ * Rework (2026): the forms of the first model are kept; heights, sizes,
+ * positions and colours now follow the lidar and the photos.
  *
- * The plant building itself is not modelled: see the report that came with
- * this model.
+ * Evidence
+ *  - Lidar, USGS 3DEP NC Phase 4 Mecklenburg 2016, 0.5 m DSM and ground.
+ *    y = 0 is the lowest ground under the two towers, 225.2 m NAVD88.
+ *    South tank: a disc 20.6 m across (eave lip included), centred at
+ *    (3.5, -21.2), 1.3 m south of the OSM circle; eave 47.6 m at r 10 m, the
+ *    roof falling 0.53 m per metre from the finial, ball top 54.4 m.
+ *    North tank: a disc 13 m across centred at (-5.7, 20.2), 2.1 m west of
+ *    its OSM circle; rim 14.4 m at r 6.5 m, dome 16.6 m, finial top 17.8 m.
+ *    The OSM circles were most likely traced off tank tops leaning in
+ *    off-nadir imagery; the lidar sees each tank straight above its legs,
+ *    so the towers stand at the lidar centres.
+ *  - Mapillary street frames (CC BY-SA 4.0) from Brookshire Freeway, April
+ *    2022 (ids 582383733235380, 5292041420848463, 537280747751815), 170-380 m
+ *    west: the pale grey tank, its cylinder about 0.6 of its width tall, the
+ *    bowl about half, the black columns and riser, two strut rings showing
+ *    between the trees; the north saucer's dome, rim railing and finial over
+ *    the trees. Beatties Ford Road frames, August 2018 (806619373392749,
+ *    4132372766823868).
+ *  - Published: Historic Landmarks Commission survey, "elevated 1,000,000
+ *    gallon storage tank" (1924).
  *
- * Chunky for the map (STYLE.md): columns 1 m square, rods 0.45 m; no ladders,
- * railings, lights or lettering. The black steel is pulled to a mid grey.
+ * Massing changes from the first model, with their evidence: the south tank
+ * was 16 m wide with its walkway at 24.4 m and apex at 40 m, scaled off an
+ * undated photo; the lidar gives a 20.6 m disc and a 54.4 m top, so the tank
+ * is now 18.8 m wide (19.8 m over the eave), walkway at 36 m, eave 47.6 m.
+ * The north saucer was topped at 12.6 m; the lidar puts its rim at 14.4 m
+ * and its finial at 17.8 m, so it is raised 4.6 m. Both moved to the lidar
+ * centres (above). The columns, now under a wider tank, stay near vertical
+ * as the 2022 frames show them.
  *
- * Photos: Charlotte Water, Vest WTP tank lighting submittal to the Historic
- * Landmarks Commission (2022), photos of the existing tank; "An undated photo
- * of water towers at Vest Station", Charlotte Water Blog via Levine Museum
- * of the New South; Mapillary street frames (CC BY-SA 4.0), 2018 and 2022.
+ * Estimated: the cylinder and bowl split of the south tank (photo ratios; at
+ * this size it holds about 1.25 million gallons, above the published
+ * million, which may be a nominal or earlier figure), the strut-ring
+ * heights, the north saucer's bowl and band (mostly hidden by trees in every
+ * frame), member sizes, thickened to read at phone size (columns 1.1 m, struts
+ * 0.64 m, rods 0.4 m). The near-black steel is pulled to charcoal, per STYLE.md.
+ *
+ * The plant building itself is not modelled.
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 import { finish } from './palette'
@@ -61,7 +83,7 @@ function tri(p: Part, a: V3, b: V3, c: V3, n: V3[]) {
  * of the profile is smooth-shaded; a repeated point starts a new run, which
  * is how a crease (the eave, the walkway's edge) is made.
  */
-function lathe(p: Part, profile: [number, number][], seg: number, cx = 0, cy = 0, a0 = 0) {
+function lathe(p: Part, profile: [number, number][], seg: number, cx = 0, cy = 0) {
   const runs: [number, number][][] = [[]]
   for (const q of profile) {
     const run = runs.at(-1)!
@@ -71,7 +93,6 @@ function lathe(p: Part, profile: [number, number][], seg: number, cx = 0, cy = 0
   }
   for (const run of runs) {
     if (run.length < 2) continue
-    // Normals in the (r, z) plane, averaged at interior points.
     const segN = run.slice(1).map((q, i) => {
       const dr = q[0] - run[i][0], dz = q[1] - run[i][1]
       const l = Math.hypot(dr, dz) || 1
@@ -84,7 +105,7 @@ function lathe(p: Part, profile: [number, number][], seg: number, cx = 0, cy = 0
     })
     for (let k = 0; k < run.length - 1; k++) {
       for (let s = 0; s < seg; s++) {
-        const t0 = a0 + (s / seg) * TAU, t1 = a0 + ((s + 1) / seg) * TAU
+        const t0 = (s / seg) * TAU, t1 = ((s + 1) / seg) * TAU
         const P = (i: number, t: number): V3 => [cx + run[i][0] * Math.cos(t), cy + run[i][0] * Math.sin(t), run[i][1]]
         const N = (i: number, t: number): V3 => [nrm[i][0] * Math.cos(t), nrm[i][0] * Math.sin(t), nrm[i][1]]
         tri(p, P(k, t0), P(k, t1), P(k + 1, t1), [N(k, t0), N(k, t1), N(k + 1, t1)])
@@ -94,22 +115,28 @@ function lathe(p: Part, profile: [number, number][], seg: number, cx = 0, cy = 0
   }
 }
 
-/** Points along an ellipse quadrant from (r0, z0) round to the axis or the rim. */
+/** Points along an ellipse quadrant between the rim (r, zRim) and the axis. */
 function head(r: number, depth: number, zRim: number, up: boolean, steps: number): [number, number][] {
   const out: [number, number][] = []
   for (let i = 0; i <= steps; i++) {
     const a = (i / steps) * (Math.PI / 2)
-    // up: from the rim (a=0) to the apex; down: from the apex to the rim.
     const t = up ? a : Math.PI / 2 - a
     out.push([r * Math.cos(t), zRim + (up ? 1 : -1) * depth * Math.sin(t)])
   }
   return out
 }
 
+/** A ball from z0 up to z0 + 2r, about (cx, cy). */
+function ball(p: Part, r: number, z0: number, cx: number, cy: number) {
+  const prof: [number, number][] = []
+  for (let i = 0; i <= 6; i++) { const a = -Math.PI / 2 + (i / 6) * Math.PI; prof.push([r * Math.cos(a), z0 + r + r * Math.sin(a)]) }
+  lathe(p, prof, 10, cx, cy)
+}
+
 /**
  * A square-section member from a to b, flat-shaded, half-width w. Its sides
- * face the radial and tangential directions of the tower centred at c, so columns read as
- * square from the street rather than twisting with their slope.
+ * face the radial and tangential directions of the tower centred at c, so
+ * columns read as square from the street rather than twisting with their slope.
  */
 function beam(p: Part, a: V3, b: V3, w: number, caps = false, c: [number, number] = [0, 0]) {
   const t = unit(sub(b, a))
@@ -124,34 +151,35 @@ function beam(p: Part, a: V3, b: V3, w: number, caps = false, c: [number, number
   }
   for (let i = 0; i < 4; i++) {
     const j = (i + 1) % 4
-    const c = [corner(a, i), corner(a, j), corner(b, j), corner(b, i)]
-    const ctr: V3 = [(c[0][0] + c[2][0]) / 2, (c[0][1] + c[2][1]) / 2, (c[0][2] + c[2][2]) / 2]
+    const q = [corner(a, i), corner(a, j), corner(b, j), corner(b, i)]
+    const ctr: V3 = [(q[0][0] + q[2][0]) / 2, (q[0][1] + q[2][1]) / 2, (q[0][2] + q[2][2]) / 2]
     const n = unit(sub(ctr, [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2, (a[2] + b[2]) / 2]))
-    tri(p, c[0], c[1], c[2], [n, n, n])
-    tri(p, c[0], c[2], c[3], [n, n, n])
+    tri(p, q[0], q[1], q[2], [n, n, n])
+    tri(p, q[0], q[2], q[3], [n, n, n])
   }
   if (caps) for (const [o, s] of [[a, -1], [b, 1]] as [V3, number][]) {
     const n: V3 = [t[0] * s, t[1] * s, t[2] * s]
-    const c = [0, 1, 2, 3].map((i) => corner(o, i))
-    tri(p, c[0], c[1], c[2], [n, n, n])
-    tri(p, c[0], c[2], c[3], [n, n, n])
+    const q = [0, 1, 2, 3].map((i) => corner(o, i))
+    tri(p, q[0], q[1], q[2], [n, n, n])
+    tri(p, q[0], q[2], q[3], [n, n, n])
   }
 }
 
-
 // ---------------------------------------------------------------- the towers
 
-const tank = new Part()   // pale grey shells and roofs
+const tank = new Part()   // pale grey shells, roofs and finials
 const steel = new Part()  // columns, struts, rods, risers, walkways, eave
 
-const SOUTH: [number, number] = [3.61, -19.95]
-const NORTH: [number, number] = [-3.61, 19.95]
+const SOUTH: [number, number] = [3.46, -21.22]   // lidar centres
+const NORTH: [number, number] = [-5.69, 20.18]
+
+const LEG = 0.55, STRUT = 0.32, ROD = 0.2          // half-widths: bold columns, lighter bracing so the tank leads
 
 type Tower = {
   c: [number, number]
   legs: number
   rFoot: number          // column radius at the ground
-  rTop: number           // and where it meets the tank
+  rTop: number           // and where it meets the walkway
   zTop: number           // top of the columns
   tiers: number[]        // strut rings; crossed rods brace the panels between
   riser: number          // riser radius
@@ -164,62 +192,65 @@ function frame(t: Tower) {
     const r = t.rFoot + (t.rTop - t.rFoot) * (z / t.zTop)
     return [t.c[0] + r * Math.cos(a), t.c[1] + r * Math.sin(a), z]
   }
-  for (let i = 0; i < t.legs; i++) beam(steel, at(i, 0), at(i, t.zTop), 0.5, true, t.c)
+  for (let i = 0; i < t.legs; i++) beam(steel, at(i, 0), at(i, t.zTop), LEG, true, t.c)
   for (let k = 1; k < t.tiers.length; k++)
-    for (let i = 0; i < t.legs; i++) beam(steel, at(i, t.tiers[k]), at((i + 1) % t.legs, t.tiers[k]), 0.35, false, t.c)
+    for (let i = 0; i < t.legs; i++) beam(steel, at(i, t.tiers[k]), at((i + 1) % t.legs, t.tiers[k]), STRUT, false, t.c)
   for (let k = 0; k < t.tiers.length - 1; k++) {
-    const z0 = t.tiers[k] + 0.4, z1 = t.tiers[k + 1] - 0.4
+    const z0 = t.tiers[k] + 0.5, z1 = t.tiers[k + 1] - 0.5
     for (let i = 0; i < t.legs; i++) {
       const j = (i + 1) % t.legs
-      beam(steel, at(i, z0), at(j, z1), 0.22, false, t.c)
-      beam(steel, at(j, z0), at(i, z1), 0.22, false, t.c)
+      beam(steel, at(i, z0), at(j, z1), ROD, false, t.c)
+      beam(steel, at(j, z0), at(i, z1), ROD, false, t.c)
     }
   }
   lathe(steel, [[t.riser, 0], [t.riser, t.zRiser]], 12, t.c[0], t.c[1])
 }
 
-/** A walkway: a flat ring with a deep fascia, which is how its railing reads. */
+/**
+ * A walkway: a dark floor slab under a pale band where the railing is, which
+ * is how the white-painted rail reads from the street.
+ */
 function walkway(c: [number, number], r0: number, r1: number, z: number, seg: number) {
-  lathe(steel, [[r0, z - 0.25], [r1, z - 0.25], [r1, z - 0.25], [r1, z + 0.85], [r1, z + 0.85], [r0, z + 0.85]], seg, c[0], c[1])
+  lathe(steel, [[r0, z - 0.35], [r1, z - 0.35], [r1, z - 0.35], [r1, z + 0.05], [r1, z + 0.05], [r0, z + 0.05]], seg, c[0], c[1])
+  lathe(tank, [[r1, z + 0.05], [r1, z + 1.0], [r1, z + 1.0], [r1 - 0.25, z + 1.0]], seg, c[0], c[1])
 }
 
-// South: the 1924 million-gallon tank.
+// South: the 1924 tank.
 {
-  const R = 8.0, Z_BOT = 16.6, Z_CYL = 24.4, Z_EAVE = 36.4, Z_APEX = 40.0, SEG = 20
-  const bowl = head(R, Z_CYL - Z_BOT, Z_CYL, false, 6)
-  lathe(tank, [...bowl, [R, Z_CYL], [R, Z_CYL], [R, Z_EAVE - 0.3]], SEG, ...SOUTH)
-  // Roof: a shallow, slightly convex cone from the eave to the finial.
-  lathe(tank, [[8.3, Z_EAVE + 0.2], [5.6, Z_EAVE + 1.45], [2.8, Z_EAVE + 2.75], [0.5, Z_APEX - 0.05], [0, Z_APEX]], SEG, ...SOUTH)
-  // The rolled eave, dark like the steel.
-  lathe(steel, [[R - 0.05, Z_EAVE - 0.5], [8.35, Z_EAVE - 0.4], [8.55, Z_EAVE - 0.1], [8.5, Z_EAVE + 0.15], [8.2, Z_EAVE + 0.3]], SEG, ...SOUTH)
-  // Ball finial.
-  lathe(tank, [[0, Z_APEX], [0.35, Z_APEX + 0.08], [0.5, Z_APEX + 0.4], [0.35, Z_APEX + 0.72], [0, Z_APEX + 0.8]], 10, ...SOUTH)
-  walkway(SOUTH, R - 0.05, R + 0.8, Z_CYL, SEG)
-  frame({ c: SOUTH, legs: 8, rFoot: 9.6, rTop: R + 0.05, zTop: Z_CYL + 0.3, tiers: [0, 6.4, 12.5, 18.6], riser: 1.1, zRiser: Z_BOT + 0.5 })
+  const R = 9.4, Z_CYL = 36.0, Z_BOT = 27.5, Z_EAVE = 47.6, Z_APEX = 52.8, SEG = 24
+  const bowl = head(R, Z_CYL - Z_BOT, Z_CYL, false, 7)
+  lathe(tank, [...bowl, [R, Z_CYL], [R, Z_CYL], [R, Z_EAVE - 0.35]], SEG, ...SOUTH)
+  // Roof: a cone of 0.53 m per metre (lidar), slightly rounded at the top.
+  lathe(tank, [[9.85, Z_EAVE + 0.2], [6.5, Z_EAVE + 2.0], [3.0, Z_EAVE + 3.85], [1.0, Z_APEX - 0.15], [0, Z_APEX]], SEG, ...SOUTH)
+  // The rolled eave, pale like the roof (2022 frames).
+  lathe(tank, [[R - 0.05, Z_EAVE - 0.6], [R + 0.35, Z_EAVE - 0.5], [R + 0.55, Z_EAVE - 0.15], [R + 0.5, Z_EAVE + 0.15], [R + 0.4, Z_EAVE + 0.3]], SEG, ...SOUTH)
+  ball(tank, 0.8, Z_APEX - 0.2, ...SOUTH)
+  walkway(SOUTH, R - 0.05, R + 0.9, Z_CYL, SEG)
+  frame({ c: SOUTH, legs: 8, rFoot: 9.9, rTop: R + 0.3, zTop: Z_CYL + 0.3, tiers: [0, 9.0, 18.0, 26.5], riser: 1.2, zRiser: Z_BOT + 0.6 })
 }
 
-// North: the squat tank, a flattened saucer: a shallow lower head, a narrow
-// band carrying the walkway, and a low dome with a finial.
+// North: the squat saucer: a shallow lower head, a narrow band carrying the
+// walkway, a low dome and a ball finial.
 {
-  const R = 6.2, Z_BOT = 6.0, LOWER = 2.3, BAND = 1.1, UPPER = 2.7, SEG = 18
-  const Z_EQ = Z_BOT + LOWER, Z_TOP = Z_EQ + BAND + UPPER
+  const R = 6.3, Z_BOT = 10.8, LOWER = 2.4, BAND = 1.2, UPPER = 2.2, SEG = 20
+  const Z_EQ = Z_BOT + LOWER, Z_TOP = Z_EQ + BAND + UPPER          // 13.2, 16.6
   const lower = head(R, LOWER, Z_EQ, false, 5)
   const upper = head(R, UPPER, Z_EQ + BAND, true, 6)
   lathe(tank, [...lower, [R, Z_EQ], [R, Z_EQ + BAND], [R, Z_EQ + BAND], ...upper], SEG, ...NORTH)
-  lathe(tank, [[0.5, Z_TOP - 0.05], [0.5, Z_TOP + 0.4], [0.5, Z_TOP + 0.4], [0, Z_TOP + 0.65]], 10, ...NORTH)
-  walkway(NORTH, R - 0.05, R + 0.6, Z_EQ + 0.15, SEG)
-  frame({ c: NORTH, legs: 6, rFoot: 6.6, rTop: R + 0.05, zTop: Z_EQ + 0.3, tiers: [0, Z_BOT - 1.2], riser: 0.9, zRiser: Z_BOT + 0.4 })
+  ball(tank, 0.6, Z_TOP - 0.05, ...NORTH)
+  walkway(NORTH, R - 0.05, R + 0.7, Z_EQ + BAND, SEG)
+  frame({ c: NORTH, legs: 6, rFoot: 6.6, rTop: R + 0.2, zTop: Z_EQ + 0.3, tiers: [0, 5.2, Z_BOT - 0.6], riser: 0.9, zRiser: Z_BOT + 0.4 })
 }
 
 const parts = [
-  { part: tank, material: finish('tank-grey', 0xdcdfdc, 0.6) },
-  { part: steel, material: finish('tower-steel', 0x6d7278, 0.7) },
+  { part: tank, material: finish('tank-grey', 0xdcdfdd, 0.6) },
+  { part: steel, material: finish('tower-steel', 0x4a4f57, 0.7) },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 console.log(parts.map(({ part, material }) => `${material.name}: ${part.triangles}`).join('\n'))
-if (triangles > 2500) throw new Error(`Triangle budget exceeded: ${triangles}`)
+if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('Vest Station water towers', parts, {
-  license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres, origin at ground', height: 40.8, bearing: 0,
+  license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres, origin at ground', height: 54.4, bearing: 0,
 })
 await Bun.write(new URL('../models/beatties-ford-water-tower.glb', import.meta.url), glb)
 console.log(`beatties-ford-water-tower.glb: ${triangles} triangles, ${glb.length} bytes`)
