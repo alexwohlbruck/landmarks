@@ -3520,6 +3520,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-fox-plaza.ts"
+    },
+    {
+      "id": "la-intuit-dome",
+      "file": "models/la-intuit-dome.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-intuit-dome.ts"
     }
   ],
   "landmarks": [
@@ -13860,6 +13867,20 @@
       "replaces": [
         "relation/5459884",
         "way/367173868"
+      ]
+    },
+    {
+      "id": "la-intuit-dome",
+      "name": "Intuit Dome",
+      "model": "la-intuit-dome",
+      "lng": -118.3422306,
+      "lat": 33.9437415,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q54958436",
+      "replaces": [
+        "way/1209626565"
       ]
     }
   ]
