@@ -2918,6 +2918,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-chadbourn-mill.ts"
+    },
+    {
+      "id": "clt-design-center-tower",
+      "file": "models/clt-design-center-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-design-center-tower.ts"
     }
   ],
   "landmarks": [
@@ -11331,6 +11338,21 @@
         "way/1059956512",
         "way/1059956513",
         "way/1059956514"
+      ]
+    },
+    {
+      "id": "clt-design-center-tower",
+      "name": "Design Center Tower",
+      "model": "clt-design-center-tower",
+      "lng": -80.8600897,
+      "lat": 35.2121411,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q106726569",
+      "replaces": [
+        "way/990903147",
+        "way/990903148"
       ]
     }
   ]
