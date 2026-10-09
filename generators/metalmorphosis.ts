@@ -5,25 +5,41 @@
  *   bun generators/metalmorphosis.ts [out.glb]
  *
  * Map frame: x east, y north, z up, metres. The origin is the head's vertical
- * axis on the ground (OSM node 4880354210), and the face looks along +y; the
- * catalog's bearing turns that towards Whitehall Corporate Center IV's plaza.
+ * axis on the ground (OSM node 4880354210, amenity=fountain), and the face
+ * looks along +y; the catalog's bearing (41°) turns it north-east, away from
+ * Whitehall Corporate Center IV, which is how the photos taken from the plaza
+ * with the building behind the head see the face.
  *
- * The real sculpture (2007) is about 7 m of polished stainless steel in a
- * reflecting pool: a head on a thick neck, cut into 40 horizontal slabs that
- * the motors spin apart and bring back into a face. This is the face pose,
- * modelled static. Each slab is its own glTF node (`slab-01` at the bottom to
- * `slab-40` at the crown), authored about the shared vertical axis through the
- * origin with no node transform, so a later animation only has to add a
- * rotation per node. The stepped plinth the head stands on is the root mesh;
- * the pool is the map's.
+ * The real sculpture (2007) is about 7.6 m (25 ft) of polished stainless steel
+ * in a reflecting pool: a head on a neck, cut into horizontal slabs that
+ * motors spin apart and bring back into a face. Frame 0 is the face pose. Each
+ * slab is its own glTF node (`slab-01` at the bottom to `slab-40` at the
+ * crown), authored about the shared vertical axis through the origin with no
+ * node transform, and one 60 s animation turns them (see the bottom).
  *
  * Each slab is a flat prism whose outline is the head's horizontal section at
- * that height — skull, cheeks, the nose, lips and brow standing proud, the eye
- * sockets set back — so the face reads in the stepped "pixel" way the real one
- * does. Proportions come from the photos credited in the report: chin at about
- * 3.1 m, the neck nearly as deep as the face, the head 4.5 m chin to crown.
+ * that height (skull, cheeks, the nose, lips and brow standing proud, the eye
+ * sockets set back) with its top edge chamfered so every slice shows as a
+ * bright line, the way the polished slabs do.
+ *
+ * Evidence (rework, 2026-10):
+ * - Photos: Flickr nan palmero 29980303791, 29980311451, 30063403805,
+ *   29980300871 (CC BY 2.0); louisepython 17809476624 (CC BY 2.0). Profile,
+ *   three-quarter and front views.
+ * - Published: 7.6 m tall, about 13 t, 40-odd layers (Wikipedia, artist).
+ * - USGS NAIP (public domain): the pool is round, about 14 m across, centred
+ *   on the head within a metre.
+ * - Measured from the profile photo (estimated, ±10%): the head is about 1.7
+ *   times as deep as the neck, its back overhanging the neck by about 1.2 m,
+ *   the chin at 3.0 m above the sculpture's base; the head is 4.7 m wide.
+ *   The earlier model had a head barely deeper than its neck; it was widened
+ *   and deepened to these proportions.
+ * - Estimated from photos: the basin's polished black granite wall stands
+ *   0.9 m above the paving, the water at 0.75 m; the sculpture's stepped base
+ *   rises from the water. The pool is modelled because it is raised and OSM
+ *   maps no water there; its water is a flat cap just under the coping.
  */
-import { Part, addGltfTriangles, writeGlb, type NodeSpec, type V3 } from './mesh'
+import { Part, addGltfTriangles, axisAngle, writeGlb, type ChannelSpec, type NodeSpec, type Quat, type V3 } from './mesh'
 import { finish } from './palette'
 
 const STEEL = finish('stainless', 0xcdd5dc, 0.3)
@@ -31,7 +47,13 @@ const STEP = finish('stainless-2', 0xb3bdc6, 0.3)
 // Slab undersides mirror the pool and the warm paving, so they read darker and
 // warmer than the sky-lit sides; that is what draws the brow, nose and lips.
 const UNDER = finish('stainless-under', 0xa49c94, 0.3)
+// The basin is black polished granite; pulled up to charcoal, the darkest the
+// palette allows. The water is a dark slate, lighter than the stone.
+const GRANITE = finish('granite-black', 0x55595f, 0.4)
+const WATER = finish('pool-water', 0x7d8e98, 0.2)
 
+/** The pool's water level, which the sculpture's own base stands at. */
+const LIFT = 0.75
 const PLINTH_TOP = 0.7
 const TOP = 7.6
 const SLABS = 40
@@ -54,11 +76,13 @@ function table(rows: number[][], z: number): number {
 
 // The head's sections, as [z, value]. yFront is the face (cheek) plane and
 // yBack the back of the skull, both from the axis; rx is the half-width.
-const yFront = [[0.6, 1.6], [2.9, 1.62], [3.0, 2.0], [3.35, 2.02], [3.45, 1.66], [3.6, 1.66], [3.7, 2.02],
-  [3.9, 2.02], [4.0, 1.7], [4.1, 2.06], [4.3, 2.06], [4.4, 1.62], [5.3, 1.62], [5.6, 2.0], [5.85, 2.0], [6.0, 1.72],
-  [6.4, 1.56], [6.8, 1.3]]
-const yBack = [[0.6, 1.62], [2.9, 1.52], [3.2, 1.85], [3.8, 2.1], [4.6, 2.25], [5.6, 2.3]]
-const rx = [[0.6, 1.62], [2.9, 1.5], [3.2, 1.74], [3.8, 1.9], [4.4, 1.99], [5.0, 2.05], [5.6, 2.06]]
+const yFront = [[0.6, 1.45], [2.85, 1.45], [2.95, 2.35], [3.35, 2.37], [3.45, 1.99], [3.6, 1.99], [3.7, 2.37],
+  [3.9, 2.37], [4.0, 2.05], [4.1, 2.4], [4.3, 2.4], [4.4, 1.95], [5.3, 1.95], [5.6, 2.35], [5.85, 2.35], [6.0, 2.05],
+  [6.4, 1.9], [6.8, 1.6]]
+const yBack = [[0.6, 1.45], [2.9, 1.4], [3.2, 2.15], [3.8, 2.6], [4.6, 2.85], [5.6, 2.9]]
+const rx = [[0.6, 1.6], [2.9, 1.55], [3.2, 1.9], [3.8, 2.2], [4.4, 2.32], [5.0, 2.38], [5.6, 2.38]]
+/** The cheek plane: the neck's front, then the face's. */
+const plane = (z: number) => table([[2.85, 1.45], [3.0, 1.95]], z)
 
 /** The crown: above the eyes every section shrinks like an ellipsoid's. */
 const CROWN = 5.6
@@ -77,9 +101,9 @@ function outline(z: number, i: number): XY[] {
   // The brow stands out from the dome; above it the face falls back with it.
   // The face plane, and what the brow, lips and chin add to it on the front
   // only, so they read as features rather than as bands round the head.
-  const plane = Math.min(table(yFront, z), 1.62)
-  const f = z <= 5.85 ? plane : Math.min(plane, 2.1 * s)
-  const relief = Math.max(0, table(yFront, z) - 1.62)
+  const face = plane(z)
+  const f = z <= 5.85 ? face : Math.min(face, 2.45 * s)
+  const relief = Math.max(0, table(yFront, z) - face)
   const b = table(yBack, z) * s
   const neck = z < 3.0
   const pts: XY[] = []
@@ -96,15 +120,18 @@ function outline(z: number, i: number): XY[] {
     pts.push([x, y])
   }
   // The nose: a narrow block on the face, deepest at its tip.
-  const nose = z > 4.35 && z < 5.55 ? table([[4.35, 2.6], [4.6, 2.5], [5.1, 2.12], [5.55, 1.95]], z) : 0
+  const nose = z > 4.35 && z < 5.55 ? table([[4.35, 3.0], [4.6, 2.9], [5.1, 2.5], [5.55, 2.3]], z) : 0
   if (nose) {
-    const half = z < 4.7 ? 0.42 : 0.3
+    const half = z < 4.7 ? 0.5 : 0.36
     const at = N / 4 // the +y point
     const yf = pts[at][1]
     pts.splice(at, 1, [half + 0.04, yf], [half, nose], [-half, nose], [-half - 0.04, yf])
   }
-  if (neck) {
-    const dx = jitter(i, 1) * 0.07, dy = jitter(i, 2) * 0.07, t = jitter(i, 3) * 0.05
+  {
+    // Every slab sits a little off the next, as the real ones do even in the
+    // face pose; the neck most, the face least, so the nose and brow line up.
+    const k = neck ? 1 : 0.55
+    const dx = jitter(i, 1) * 0.08 * k, dy = jitter(i, 2) * 0.06 * k, t = jitter(i, 3) * 0.05 * k
     return pts.map(([x, y]) => [x * Math.cos(t) - y * Math.sin(t) + dx, x * Math.sin(t) + y * Math.cos(t) + dy])
   }
   return pts
@@ -116,15 +143,23 @@ function outline(z: number, i: number): XY[] {
  */
 function prism(target: Part, pts: XY[], z0: number, z1: number, under = target) {
   const p = new Part()
-  const lo: V3[] = pts.map(([x, y]) => [x, y, z0])
-  const hi: V3[] = pts.map(([x, y]) => [x, y, z1])
-  p.loft([lo, hi])
   const cx = pts.reduce((s, q) => s + q[0], 0) / pts.length
   const cy = pts.reduce((s, q) => s + q[1], 0) / pts.length
+  // Each slab's top edge is chamfered back, steeper than the crease angle, so
+  // it catches the sky as a thin bright line: that is how the slices read.
+  const BEV = 0.06, RISE = 0.035
+  const inset = pts.map(([x, y]): XY => {
+    const d = Math.hypot(x - cx, y - cy) || 1, k = Math.max(0, 1 - BEV / d)
+    return [cx + (x - cx) * k, cy + (y - cy) * k]
+  })
+  const lo: V3[] = pts.map(([x, y]) => [x, y, z0 + LIFT])
+  const shoulder: V3[] = pts.map(([x, y]) => [x, y, z1 + LIFT - RISE])
+  const hi: V3[] = inset.map(([x, y]) => [x, y, z1 + LIFT])
+  p.loft([lo, shoulder, hi])
   for (let k = 0; k < pts.length; k++) {
     const j = (k + 1) % pts.length
-    p.tri([cx, cy, z1], hi[k], hi[j])
-    p.tri([cx, cy, z0], lo[j], lo[k])
+    p.tri([cx, cy, z1 + LIFT], hi[k], hi[j])
+    p.tri([cx, cy, z0 + LIFT], lo[j], lo[k])
   }
   const smooth = new Part()
   addGltfTriangles(smooth, new Float32Array(p.pos),
@@ -163,16 +198,61 @@ for (let i = 0; i < SLABS; i++) {
   })
 }
 
-const parts = [{ part: plinth, material: STEP }]
-const tris = [plinth, ...nodes.flatMap((n) => n.parts.map((q) => q.part))].reduce((s, p) => s + p.triangles, 0)
-if (tris > 3000 || 0) throw new Error(`over budget: ${tris} triangles`)
+// The pool: a round basin of polished black granite about 0.9 m high and
+// 14 m across (NAIP), brim-full, the water standing just under the coping.
+// The map has no polygon for it, and it is raised, so it belongs to the model.
+const granite = new Part(), water = new Part()
+{
+  const R = 7.0, T = 0.45, H = 0.9, B = 0.08, SEG = 40
+  const ring = (r: number, z: number): V3[] =>
+    Array.from({ length: SEG }, (_, k) => { const a = (k / SEG) * Math.PI * 2; return [r * Math.cos(a), r * Math.sin(a), z] })
+  // Outer wall, a bevel to the coping, the coping, and the inner lip down to the water.
+  const outer = [ring(R, 0), ring(R, H - B), ring(R - B, H), ring(R - T + B, H), ring(R - T, H - B), ring(R - T, LIFT)]
+  for (let k = 0; k < outer.length - 1; k++) {
+    const smooth = new Part()
+    smooth.loft([outer[k], outer[k + 1]])
+    // Smooth round the drum: each corner takes the radial normal of its angle.
+    for (let t = 0; t < smooth.pos.length / 3; t++) {
+      const x = smooth.pos[t * 3], z = smooth.pos[t * 3 + 2]
+      const l = Math.hypot(x, z) || 1, inner = k >= 3 ? -1 : 1
+      const up = k === 1 || k === 3 ? 0.7 : k === 2 ? 1 : 0
+      const h = Math.sqrt(Math.max(0, 1 - up * up))
+      granite.pos.push(smooth.pos[t * 3], smooth.pos[t * 3 + 1], smooth.pos[t * 3 + 2])
+      granite.nrm.push(inner * h * x / l, up, inner * h * z / l)
+      granite.uv.push(0, 0)
+    }
+  }
+  water.cap(ring(R - T, LIFT), true)
+}
+
+const parts = [{ part: plinth, material: STEP }, { part: granite, material: GRANITE }, { part: water, material: WATER }]
+
+// The slabs turn. The real motors spin each slab on its own, scattering the
+// face and bringing it back; here every slab makes one or two whole turns,
+// some each way, and the face holds between runs. 60 s a loop (the real
+// show runs at about the same pace but irregularly); keys every 1.5 s keep
+// each step well under half a turn, so LINEAR quaternions turn the right way.
+const LOOP = 60, KEYS = 40
+const times = Array.from({ length: KEYS + 1 }, (_, i) => (i / KEYS) * LOOP)
+const ease = (t: number) => (t <= 0 ? 0 : t >= 1 ? 1 : t * t * (3 - 2 * t))
+const channels: ChannelSpec[] = nodes.map((_, i) => {
+  const turns = [1, -1, 2, -1, 1, -2, 1, -1][i % 8] * (i % 5 === 0 ? -1 : 1)
+  // Start a little staggered by height, so the scatter ripples up the head.
+  const t0 = 18 + (i / SLABS) * 6, t1 = t0 + 24
+  const values: Quat[] = times.map((t) => axisAngle([0, 0, 1], turns * Math.PI * 2 * ease((t - t0) / (t1 - t0))))
+  return { node: i, path: 'rotation', values }
+})
+
+
+const tris = [plinth, granite, water, ...nodes.flatMap((n) => n.parts.map((q) => q.part))].reduce((s, p) => s + p.triangles, 0)
+if (tris > 5000) throw new Error(`over budget: ${tris} triangles`)
 const glb = writeGlb('Metalmorphosis', parts, {
   title: 'Metalmorphosis',
   artist: 'David Černý',
   license: 'CC0-1.0',
   source: 'generators/metalmorphosis.ts',
-  note: 'Static face pose; each of the 40 slabs is its own node about the vertical axis through the origin.',
-}, { nodes })
+  note: 'Frame 0 is the face pose; each of the 40 slabs is its own node turning about the vertical axis through the origin.',
+}, { nodes, animation: { name: 'turn', times, channels } })
 const out = process.argv[2] ?? new URL('../models/metalmorphosis.glb', import.meta.url).pathname
 await Bun.write(out, glb)
 console.log(`${out}: ${tris} triangles, ${glb.length} bytes, ${nodes.length} slab nodes`)
