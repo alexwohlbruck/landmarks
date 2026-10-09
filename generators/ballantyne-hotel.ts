@@ -21,6 +21,42 @@
  * - octagonal pavilions with hipped roofs and ball finials at the corners
  *   (photos 02 and 03).
  *
+ * Rework (2026-10, charlotte-neighbourhoods): same frame, anchor, plan
+ * outline and identifying forms (pediment pavilion, cupola, porch, loggia
+ * stacks, octagonal pavilions, monogram block). Evidence for each change:
+ * - Heights: Mecklenburg 2016 lidar (USGS 3DEP NC Phase 4, 1 m DSM, sampled
+ *   in this frame). y = 0 is the pond-side ground (~7 m over the tile's
+ *   ground_min). The tower's parapet stands at 30.5-31 m (old 35), the
+ *   pediment ridge 35-37 (old 40.5), the cupola dome 44 (old 49.4). Now
+ *   8 storeys of 3.1 m over the lower level, parapet 31.0, ridge 35.9, dome
+ *   top 44.2. Wings: south wings 13-14 m (eave 10-10.5), east arm 15-18 m
+ *   on ground rising 4.5 m (eave 14), its west link 10-11 m (eave 7.5);
+ *   pavilion apexes 17-17.5 m (old 19-19.8).
+ * - The tower runs from y = -21 to 72, symmetrical about the pediment at
+ *   25: the lidar keeps its full height 20 m further south than the old
+ *   model (which ended at -1.3 and put a 12 m wing there), and the NAIP
+ *   aerial's flat white tower roof agrees. So a south end block (-21 to -5,
+ *   with a rooftop box like the north one) mirrors the monogram block, the
+ *   south loggia stack moves to 1.5 (mirroring 49), and the south wing now
+ *   starts at -21. North of y = 72 the lidar drops to ~10 m over y = 0
+ *   (5-6 m over its own, higher ground): the old full-height "monogram
+ *   block" there is now a one-storey annex, and the monogram block is the
+ *   full-height north end, 55.6 to 72.
+ * - Facade: the tower's bays were 1.3 m slots three floors tall that read as
+ *   full-height stripes; now one 1.5 m panel per bay per pair of floors with
+ *   1.3 m spandrels (Commons photos: punched windows, one per bay per floor).
+ * - Roofs: the east arm and the pavilions have grey-teal standing-seam
+ *   roofs (NAIP; "Ballantyne Hotel Stream Park view"), a `finish`; the
+ *   south wings' roofs read pale grey, so they stay `roof`. The cupola dome
+ *   is darker (it reads near-black in every photo), pulled to #5d6673.
+ * Photos (Wikimedia Commons): "Stream Park and Ballantyne Hotel Mid-April
+ * 2024.jpg", "Ballantyne Hotel Stream Park view Mid-April 2024.jpg", "The
+ * Ballantyne Hotel from Johnston Rd Mid-April 2024.jpg" (City Dweller 2,
+ * CC BY-SA 4.0); "Ballantyne Hotel.jpg", "Sunset over Ballantyne Hotel.jpg"
+ * (Ihar Sinelchenkau, CC0). Doubt: in the Stream Park photo the tower south
+ * of the pediment looks shorter than the lidar's 36 m; the lidar and the
+ * aerial are trusted over perspective.
+ *
  * The brief asked for brick; every photo shows cream render with white
  * trim, so that is what the model uses: `stone` and `trim`.
  *
@@ -33,7 +69,7 @@
 import { Part, cross, len, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 
-const stone = new Part(), trim = new Part(), roof = new Part(), win = new Part(), dome = new Part()
+const stone = new Part(), trim = new Part(), roof = new Part(), win = new Part(), dome = new Part(), metal = new Part()
 
 type XY = [number, number]
 const unit = (v: V3): V3 => { const l = len(v) || 1; return [v[0] / l, v[1] / l, v[2] / l] }
@@ -123,14 +159,14 @@ function stripe(p: Part, r: Rect, z: number, h: number) {
  * a flat top `w` in from the edge (deep plans, where the real roofs are
  * hipped round a flat deck).
  */
-function hipRoof(r: Rect, z: number, w: number, slope: number) {
+function hipRoof(r: Rect, z: number, w: number, slope: number, cover = metal) {
   const half = Math.min(r.x1 - r.x0, r.y1 - r.y0) / 2
   const run = Math.min(w, half - 0.05)
   const rise = run * slope
   const n: XY = [rise, run + 0.3]
   const l = Math.hypot(n[0], n[1])
-  band(roof, r, 0.3, z, -run, z + rise, [n[0] / l, n[1] / l], [n[0] / l, n[1] / l])
-  lid(roof, r, -run, z + rise)
+  band(cover, r, 0.3, z, -run, z + rise, [n[0] / l, n[1] / l], [n[0] / l, n[1] / l])
+  lid(cover, r, -run, z + rise)
   // The eave's underside, so the overhang has a thickness from below.
   lid(trim, r, 0.3, z, false)
   return z + rise
@@ -208,13 +244,15 @@ const faces = (r: Rect): [XY, XY][] => [
 // ---------------------------------------------------------------------------
 // The tower.
 
-const BELT1 = 4.2, BELT2 = 14.0, BELT3 = 23.7  // over the pond-side lower level, the third and sixth floors
-const CORNICE = 33.4, PARAPET = 35.0
-// One panel per bay for each group of three floors, with a belt course and a
-// broad spandrel between groups, so the bays never run together into stripes.
-const TOWER_ROWS: Row[] = [
-  { z0: 5.8, z1: 13.1, w: 1.3 }, { z0: 15.4, z1: 22.9, w: 1.3 }, { z0: 25.1, z1: 32.6, w: 1.3 },
-]
+// Eight storeys of 3.1 m over the pond-side lower level; lidar puts the
+// parapet 31 m above y = 0.
+const BELT1 = 4.2, FLOOR1 = 4.8, STOREY = 3.1
+const BELT2 = FLOOR1 + 2 * STOREY - 0.2, BELT3 = FLOOR1 + 6 * STOREY - 0.2 // over the 2nd and 6th floors
+const CORNICE = 29.6, PARAPET = 31.0
+// One panel per bay for each pair of floors, with a 1.3 m spandrel between
+// pairs, so the bays read as stacked windows, never as full-height stripes.
+const pair = (k: number, w: number, arch = false): Row => ({ z0: FLOOR1 + 2 * k * STOREY + 0.7, z1: FLOOR1 + (2 * k + 1) * STOREY + 2.5, w, arch })
+const TOWER_ROWS: Row[] = [0, 1, 2, 3].map((k) => pair(k, 1.5))
 const LOWER_ROW: Row[] = [{ z0: 1.0, z1: 3.7, arch: true, w: 2.2 }]
 
 function towerWalls(r: Rect, top: number) {
@@ -233,12 +271,10 @@ function flatTop(r: Rect, top: number) {
 
 // Loggias: stacks of balconies with an arched head, at the pediment's centre
 // and one bay in from each end (photos 01 and 04).
-const LOGGIAS = [25.5, 49.0, 2.6]
+const LOGGIAS = [25.5, 49.0, 1.5]
 const loggia = (y: number) => LOGGIAS.some((l) => Math.abs(l - y) < 1.9)
 
-const LOGGIA_ROWS: Row[] = [
-  { z0: 5.8, z1: 13.1, w: 2.6 }, { z0: 15.4, z1: 22.9, w: 2.6 }, { z0: 25.1, z1: 32.9, w: 2.6, arch: true },
-]
+const LOGGIA_ROWS: Row[] = [0, 1, 2, 3].map((k) => pair(k, 2.6, k === 3))
 
 function towerPanels(r: Rect, which: number[], opts: { skip?: (s: number, L: number) => boolean } = {}) {
   faces(r).forEach(([a, b], i) => {
@@ -254,37 +290,49 @@ function towerPanels(r: Rect, which: number[], opts: { skip?: (s: number, L: num
   })
 }
 
-// South section, pediment pavilion, north section, monogram block.
-const T_SOUTH: Rect = { x0: -14.9, x1: 13.5, y0: -1.3, y1: 15.0, c: 0.4 }
+// The tower is symmetrical about the pediment (lidar: full height from
+// y = -21 to 72, the pediment and cupola at 25, wider end blocks at both
+// ends): south end block, south section, pediment pavilion, north section,
+// and the monogram block at the north end.
+const T_SEND: Rect = { x0: -14.9, x1: 15.2, y0: -21.0, y1: -5.0, c: 0.4 }
+const T_SOUTH: Rect = { x0: -14.9, x1: 13.5, y0: -5.0, y1: 15.0, c: 0.4 }
 const T_MID: Rect = { x0: -16.3, x1: 14.9, y0: 15.0, y1: 36.0, c: 0.4 }
 const T_NORTH: Rect = { x0: -14.9, x1: 13.5, y0: 36.0, y1: 55.6, c: 0.4 }
-const T_NEND: Rect = { x0: -15.3, x1: 15.2, y0: 55.6, y1: 68.0, c: 0.4 }
-const T_BLOCK: Rect = { x0: -10.1, x1: 14.6, y0: 68.0, y1: 86.0, c: 0.4 }
-for (const r of [T_SOUTH, T_MID, T_NORTH, T_NEND, T_BLOCK]) rectMass(r, PARAPET)
+const T_NEND: Rect = { x0: -15.3, x1: 15.2, y0: 55.6, y1: 72.0, c: 0.4 }
+for (const r of [T_SEND, T_SOUTH, T_MID, T_NORTH, T_NEND]) rectMass(r, PARAPET)
 
-for (const r of [T_SOUTH, T_NORTH, T_NEND, T_BLOCK]) { towerWalls(r, PARAPET); flatTop(r, PARAPET) }
+for (const r of [T_SEND, T_SOUTH, T_NORTH, T_NEND]) { towerWalls(r, PARAPET); flatTop(r, PARAPET) }
 towerWalls(T_MID, CORNICE + 0.8)
 
-// Bays on the long faces, the south face above the low wing, and the
-// monogram block's west and north faces (its east face is blank but for the
-// monogram; the middle of its north face too).
-towerPanels(T_SOUTH, [0, 1, 3])
+// Bays on the long faces and the south end. The monogram block's east face
+// is blank but for the monogram, and the middle of its north face too.
+towerPanels(T_SEND, [0, 1, 3])
+towerPanels(T_SOUTH, [1, 3])
 towerPanels(T_MID, [1, 3], { skip: (s, L) => s < 1.2 || s > L - 1.2 })
 towerPanels(T_NORTH, [1, 3])
-towerPanels(T_NEND, [1, 3])
-towerPanels(T_BLOCK, [2, 3], { skip: (s, L) => s > L * 0.3 && s < L * 0.7 })
+towerPanels(T_NEND, [2, 3], { skip: (s, L) => s > L * 0.3 && s < L * 0.7 })
 
-// The rooftop box on the monogram block.
+// Rooftop boxes on both end blocks (lidar: ~2 m over the parapet).
+for (const [y0, y1] of [[60, 70], [-19, -9]] as XY[]) {
+  const r: Rect = { x0: -3.5, x1: 7.5, y0, y1, c: 0.3 }
+  band(stone, r, 0, PARAPET - 0.2, 0, PARAPET + 2.3, OUT, OUT)
+  flatTop(r, PARAPET + 2.5)
+}
+
+// North of the tower, a one-storey annex runs on to the north-west
+// pavilion (lidar ~5 m over its own ground, ~10 m over y = 0).
 {
-  const r: Rect = { x0: -3.5, x1: 7.5, y0: 72, y1: 82, c: 0.3 }
-  band(stone, r, 0, PARAPET - 0.2, 0, 38.3, OUT, OUT)
-  flatTop(r, 38.5)
+  const r: Rect = { x0: -10.1, x1: 13.3, y0: 72.0, y1: 83.0, c: 0.3 }
+  rectMass(r, 10.5)
+  band(stone, r, 0, 0, 0, 9.8, OUT, OUT)
+  cornice(trim, r, 9.8, 0.5, 0.25)
+  flatTop(r, 10.5)
 }
 
 // The centre pavilion's gable roof, running across the tower, with a
 // pediment at each end: stone tympanum, white raking cornices, an oculus.
 const GABLE_Y0 = T_MID.y0, GABLE_Y1 = T_MID.y1, GABLE_YC = (GABLE_Y0 + GABLE_Y1) / 2
-const EAVE = CORNICE + 0.8, RIDGE = EAVE + 6.3
+const EAVE = CORNICE + 0.8, RIDGE = EAVE + 5.5
 {
   const x0 = T_MID.x0 - 0.45, x1 = T_MID.x1 + 0.45, o = 0.35
   const nS = unit([0, -(RIDGE - EAVE), GABLE_YC - GABLE_Y0])
@@ -364,7 +412,7 @@ function ball(p: Part, c: V3, r: number, h: number, lat0 = -Math.PI / 2, seg = 1
   const base: Rect = { x0: cx - 4.0, x1: cx + 4.0, y0: cy - 4.0, y1: cy + 4.0, c: 0.4 }
   band(roof, base, 0, RIDGE - 1.6, 0, RIDGE - 0.2, OUT, OUT)
   hipRoof(base, RIDGE - 0.2, 1.3, 0.7)
-  const z0 = RIDGE + 0.6, z1 = z0 + 5.0
+  const z0 = RIDGE + 0.6, z1 = z0 + 4.2
   octWalls(trim, cx, cy, R, RIDGE, z1)
   // Arched openings on the eight faces.
   const corners = octagon(cx, cy, R, 0)
@@ -377,9 +425,9 @@ function ball(p: Part, c: V3, r: number, h: number, lat0 = -Math.PI / 2, seg = 1
   octWalls(trim, cx, cy, R, z1, z1 + 0.2, R + 0.35)
   octWalls(trim, cx, cy, R + 0.35, z1 + 0.2, z1 + 0.65)
   octLid(trim, cx, cy, R + 0.35, z1 + 0.65)
-  ball(dome, [cx, cy, z1 + 0.65], R * 0.98, 3.3, 0, 12, 4)
+  ball(dome, [cx, cy, z1 + 0.65], R * 0.98, 2.8, 0, 12, 4)
   // The spire: a slim cone on a small ball.
-  const zb = z1 + 0.65 + 3.3
+  const zb = z1 + 0.65 + 2.8
   ball(dome, [cx, cy, zb + 0.2], 0.4, 0.4, -Math.PI / 2, 8, 4)
   const tip: V3 = [cx, cy, zb + 5.0]
   for (let k = 0; k < 6; k++) {
@@ -433,14 +481,18 @@ function ball(p: Part, c: V3, r: number, h: number, lat0 = -Math.PI / 2, seg = 1
 // The low wings: render walls with arched windows on the main floor and
 // square ones above, a cornice, and a hipped metal roof.
 
-const WING_EAVE = 12.0
-const WING_ROWS: Row[] = [
-  { z0: 1.2, z1: 3.6, w: 1.4 },
-  { z0: 5.4, z1: 8.6, arch: true, w: 1.8 },
-  { z0: 9.4, z1: 11.2, w: 1.4 },
+// Eaves from the lidar, per wing. Window rows hang from the eave, so a taller
+// wing on higher ground keeps its arched main floor under the cornice.
+const WING_EAVE = 10.5
+const wingRows = (eave: number): Row[] => [
+  { z0: eave - 10.8, z1: eave - 8.4, w: 1.4 },
+  { z0: eave - 6.6, z1: eave - 3.4, arch: true, w: 1.8 },
+  { z0: eave - 2.6, z1: eave - 0.8, w: 1.4 },
 ]
+const wingEave = new Map<Rect, number>()
 function wing(r: Rect, eave = WING_EAVE, hip = 4.5) {
   rectMass(r, eave + 0.6)
+  wingEave.set(r, eave)
   band(stone, r, 0, 0, 0, eave, OUT, OUT)
   stripe(trim, r, BELT1, 0.5)
   cornice(trim, r, eave, 0.6, 0.3)
@@ -450,10 +502,10 @@ function wingWindows(r: Rect, which = [0, 1, 2, 3]) {
   const { pts } = ring(r, 0, 0)
   // The ring's straight faces, between the chamfers.
   const sides: [XY, XY][] = [0, 2, 4, 6].map((i) => [[pts[i][0], pts[i][1]], [pts[i + 1][0], pts[i + 1][1]]])
-  sides.forEach(([a, b], i) => { if (which.includes(i)) panels(a, b, WING_ROWS, 4.2, { margin: 1.2 }) })
+  sides.forEach(([a, b], i) => { if (which.includes(i)) panels(a, b, wingRows(wingEave.get(r) ?? WING_EAVE), 4.2, { margin: 1.2 }) })
 }
 
-const L_SOUTH: Rect = { x0: -14.6, x1: 15.4, y0: -47.0, y1: -1.3, c: 0.3 }
+const L_SOUTH: Rect = { x0: -13.2, x1: 15.4, y0: -47.0, y1: -21.0, c: 0.3 }
 const L_SW: Rect = { x0: -16.5, x1: 20.6, y0: -83.0, y1: -47.0, c: [3.4, 0.3, 0.3, 0.3] }
 const E_WEST: Rect = { x0: 20.6, x1: 38.5, y0: -72.5, y1: -47.0, c: 0.3 }
 const E_MAIN: Rect = { x0: 38.5, x1: 89.0, y0: -76.5, y1: -55.5, c: 0.3 }
@@ -462,7 +514,7 @@ const E_BUMP: Rect = { x0: 34.1, x1: 40.0, y0: -48.0, y1: -42.1, c: 0.3 }
 const E_SOUTH: Rect = { x0: 57.7, x1: 76.8, y0: -80.0, y1: -76.5, c: 0.3 }
 const W_ENTRY: Rect = { x0: -25.0, x1: -14.6, y0: -44.5, y1: -37.9, c: 0.3 }
 
-const wings = [wing(L_SOUTH), wing(L_SW), wing(E_WEST), wing(E_MAIN), wing(E_END, 13.0, 3.3)]
+const wings = [wing(L_SOUTH), wing(L_SW, 10.0), wing(E_WEST, 7.5), wing(E_MAIN, 14.0), wing(E_END, 14.0, 3.3)]
 // Small one-storey annexes with flat roofs.
 for (const r of [E_BUMP, E_SOUTH, W_ENTRY]) {
   rectMass(r, 9.6)
@@ -482,7 +534,7 @@ function pavilion(cx: number, cy: number, a: number, eave: number, apex: number)
   octWalls(stone, cx, cy, R, 0, eave)
   octWalls(trim, cx, cy, R, eave, eave + 0.25, R + 0.3)
   octWalls(trim, cx, cy, R + 0.3, eave + 0.25, eave + 0.7)
-  octRoof(roof, cx, cy, R + 0.35, eave + 0.7, apex)
+  octRoof(metal, cx, cy, R + 0.35, eave + 0.7, apex)
   ball(trim, [cx, cy, apex + 0.55], 0.6, 0.6, -Math.PI / 2, 10, 5)
   return R
 }
@@ -503,8 +555,8 @@ function pavilionWindows(cx: number, cy: number, R: number, eave: number) {
 }
 const C_POND: [number, number, number] = [20.7, -40.5, 5.9]
 const C_NW: [number, number, number] = [-7.0, 86.0, 6.2]
-const rPond = pavilion(C_POND[0], C_POND[1], C_POND[2], 13.5, 19.0)
-const rNW = pavilion(C_NW[0], C_NW[1], C_NW[2], 14.0, 19.8)
+const rPond = pavilion(C_POND[0], C_POND[1], C_POND[2], 12.0, 17.5)
+const rNW = pavilion(C_NW[0], C_NW[1], C_NW[2], 12.0, 17.2)
 
 // Windows last, once every mass is known.
 wingWindows(L_SOUTH, [1, 3])
@@ -512,9 +564,10 @@ wingWindows(L_SW, [0, 1, 3])
 wingWindows(E_WEST, [0, 2])
 wingWindows(E_MAIN, [0, 1, 2])
 wingWindows(E_END, [0, 1, 2])
-for (const w of wings) hipRoof(w.r, w.eave + 0.6, w.hip, 0.55)
-pavilionWindows(C_POND[0], C_POND[1], rPond, 13.5)
-pavilionWindows(C_NW[0], C_NW[1], rNW, 14.0)
+// The south wings' roofs read pale grey in the NAIP aerial, the east arm's teal.
+for (const w of wings) hipRoof(w.r, w.eave + 0.6, w.hip, 0.55, w.r === L_SOUTH || w.r === L_SW ? roof : metal)
+pavilionWindows(C_POND[0], C_POND[1], rPond, 12.0)
+pavilionWindows(C_NW[0], C_NW[1], rNW, 12.0)
 
 // ---------------------------------------------------------------------------
 
@@ -527,7 +580,10 @@ const parts = [
   { part: trim, material: PALETTE.trim },
   { part: roof, material: PALETTE.roof },
   { part: win, material: PALETTE.window },
-  { part: dome, material: finish('cupola-dome', 0x8794a1) },
+  { part: dome, material: finish('cupola-dome', 0x5d6673) },
+  // The hipped standing-seam roofs of the wings and pavilions read grey-teal
+  // (NAIP, photo 02), pulled to the palette's roof lightness.
+  { part: metal, material: finish('ballantyne-seam-roof', 0x98aeb0) },
 ]
 const triangles = parts.reduce((sum, { part }) => sum + part.triangles, 0)
 if (process.env.DEBUG) for (const { part, material } of parts) console.log(material.name, part.triangles)
