@@ -18,6 +18,32 @@
  *   skylights on the east slope and the white-roofed glass entrance atrium on
  *   the east front.
  *
+ * Rework (2026-10, charlotte-neighbourhoods): same frame, plan and forms.
+ * - Heights lowered to the Mecklenburg 2016 lidar (USGS 3DEP NC Phase 4,
+ *   1 m DSM; y = 0 sits ~0.7 m above that tile's ground_min). The DSM puts the
+ *   Mint's ridge 11.3 m above y = 0 and its walls ~8 m, the galleries' ridge
+ *   ring ~10.5 m, their flat deck ~9.3 m, the atrium gable ~11.5 m. The old
+ *   model stood 1-2 m taller everywhere (Mint ridge 13.3, eave 9.4; gallery
+ *   ridge 11.8, deck 10; atrium 13.1). Now: Mint eave 8.4 / ridge 11.4,
+ *   galleries eave 7.8 / ridge 10.5 / deck 9.3, atrium 8.5 / 11.6. The
+ *   pediment keeps its shape (rise 3.0 m, matching the 1936 photo's ~1:3
+ *   pediment-to-wall ratio); the eagle is scaled to fill it so it reads.
+ * - The galleries' upper "windows" are blind: tan recessed panels in the
+ *   stucco (Expedia fountain photo, Mint Museum 2015 photo), so they are now
+ *   sandstone panels, not slate glass. The basement windows are real glass.
+ * - Stucco pulled from yellow cream to the pale greige of the 2015 photos.
+ * - Atrium: extra white transoms at 0.6 m and 5.85 m (2015 photo).
+ * - A deeper Mint (the 1936 photo's side looks five bays deep; the lidar
+ *   ridge falls ~3 m east of the modelled one) was tried and rejected: the
+ *   NAIP aerial shows the west range only ~11 m deep, and the lidar tile is
+ *   offset ~1.5 m east of OSM at the west wall.
+ * Photos: commons "Mint Museum of Art Randolph Charlotte, NC Aug 2015.tif"
+ * (Mint Museum, CC BY-SA 4.0); "Mint Museum of Art Randolph Front With
+ * Fountain.jpg" (Expedia, CC BY-SA 4.0); "1936 Mint Museum of Art Building
+ * Charlotte, NC.jpg" (Whitsett Photography, CC BY-SA 4.0); "Cover of The Mint
+ * Museum of Art at Charlotte, A Brief History.jpg" (CC0). Aerial: USGS NAIP.
+ * No Mapillary coverage on the site.
+ *
  * Ground: USGS 3DEP spot heights round the footprint span only 0.6 m
  * (192.46 m at the south-east corner to 193.08 m by the south-west). y = 0 is
  * the lowest of them; every wall runs down to it, and doors, windows and the
@@ -156,7 +182,7 @@ function corners(P: Plan, d: number, c: number, z0: number, z1: number, p: Part)
  * Opening in a wall, placed by the world coordinate along the wall (x on an
  * east–west wall, y on a north–south one): centre, width, sill, head.
  */
-type Opening = { at: number; w: number; lo: number; hi: number; depth?: number }
+type Opening = { at: number; w: number; lo: number; hi: number; depth?: number; fill?: Part }
 
 /**
  * The flat faces of a plan's walls between z0 and z1, at offset d, with deep
@@ -192,7 +218,7 @@ function walls(P: Plan, d: number, c: number, z0: number, z1: number, p: Part, o
       quad(p, at(o.a, o.hi), at(o.b, o.hi), at(o.b, o.hi, D), at(o.a, o.hi, D), [0, 0, -1])
       // The sill catches light, so it is trim; the glass sits at the back.
       quad(trim, at(o.a, o.lo), at(o.b, o.lo), at(o.b, o.lo, D), at(o.a, o.lo, D), [0, 0, 1])
-      quad(glass, at(o.a, o.lo, D), at(o.b, o.lo, D), at(o.b, o.hi, D), at(o.a, o.hi, D), N)
+      quad(o.fill ?? glass, at(o.a, o.lo, D), at(o.b, o.lo, D), at(o.b, o.hi, D), at(o.a, o.hi, D), N)
       s = o.b
     }
     panel(s, s1, z0, z1)
@@ -270,18 +296,18 @@ const mint: Plan = [
   [HX0, YC + PW], [PX, YC + PW], [PX, YC - PW], [HX0, YC - PW],
 ]
 const C = 0.35
-const H_BASE = 2.75, H_WALL = 8.6, H_EAVE = 9.4, H_RIDGE = 13.3
+const H_BASE = 2.45, H_WALL = 7.65, H_EAVE = 8.4, H_RIDGE = 11.4
 
 // Main-storey windows, basement windows below them, and the door.
 // Main windows are drawn with their dark shutters as one opening (p9).
-const tall = (at: number): Opening => ({ at, w: 1.9, lo: 3.55, hi: 6.95 })
-const low = (at: number): Opening => ({ at, w: 1.25, lo: 0.95, hi: 2.05 })
+const tall = (at: number): Opening => ({ at, w: 1.9, lo: 3.2, hi: 6.2 })
+const low = (at: number): Opening => ({ at, w: 1.25, lo: 0.85, hi: 1.85 })
 const wingY = (k: number, y0: number, y1: number) => y0 + ((y1 - y0) * (k + 0.5)) / 3
 const westUpper = [0, 1, 2].map(k => wingY(k, HY0 + 0.6, YC - PW)).concat([0, 1, 2].map(k => wingY(k, YC + PW, HY1 - 0.6)))
 const sideX = [HX0 + 2.6, HX1 - 2.8]
 const mintUpper = (e: number): Opening[] => {
   if (e === 7 || e === 3) return westUpper.filter(y => (e === 7 ? y < YC : y > YC)).map(tall)
-  if (e === 5) return [tall(YC - 4.6), tall(YC + 4.6), { at: YC, w: 1.7, lo: H_BASE, hi: 6.0 }]
+  if (e === 5) return [tall(YC - 4.6), tall(YC + 4.6), { at: YC, w: 1.7, lo: H_BASE, hi: 5.4 }]
   if (e === 0 || e === 2) return sideX.map(tall)
   return []
 }
@@ -301,12 +327,12 @@ walls(mint, 0, C, H_BASE, H_WALL, stucco, mintUpper)
 corners(mint, 0, C, H_BASE, H_WALL, stucco)
 sweep(mint, C, [
   face(trim, 0, H_WALL, H_WALL + 0.2), bevelOut(trim, 0, H_WALL + 0.2, 0.45, H_WALL + 0.5),
-  face(trim, 0.45, H_WALL + 0.5, H_WALL + 0.68), bevelUp(trim, 0.45, H_WALL + 0.68, 0.3, H_EAVE),
+  face(trim, 0.45, H_WALL + 0.5, H_WALL + 0.6), bevelUp(trim, 0.45, H_WALL + 0.6, 0.3, H_EAVE),
 ])
 
 // Hipped roof over the main range; the pavilion's pediment roof runs back
-// into it. Both rise 3.9 m (the pediment's proportions in the 1936 photos),
-// so the pediment's apex meets the ridge.
+// into it. Both rise 3.0 m (lidar ridge; the pediment's proportions in the
+// 1936 photo), so the pediment's apex meets the ridge.
 const RO = 0.3 // roof edge outside the wall plane
 hip(HX0 - RO, HX1 + RO, HY0 - RO, HY1 + RO, H_EAVE, H_RIDGE)
 const ridgeX = (HX0 + HX1) / 2
@@ -327,7 +353,7 @@ gable(roof, PX - RO, ridgeX, YC, PW + RO, H_EAVE, H_RIDGE)
   const zt = H_EAVE + 0.02, apex = H_RIDGE - 0.4, hw = PW - 0.1
   tri(stucco, [PX, YC - hw, zt], [PX, YC + hw, zt], [PX, YC, apex], [-1, 0, 0])
   // The gilded eagle, wings spread: a flat gold shape just proud of the tympanum.
-  const k = 1.1, zc = H_EAVE + 1.15
+  const k = 1.05, zc = H_EAVE + 0.8
   const half: XY[] = [[0, 1.25], [0.3, 1.0], [0.45, 0.65], [1.6, 1.0], [2.5, 0.85], [2.15, 0.55], [1.4, 0.35], [0.5, 0.2], [0.35, -0.35], [0.6, -0.7]]
   const outline: XY[] = [...half, ...[...half].reverse().slice(0, -1).map(([s, z]) => [-s, z] as XY)]
     .map(([s, z]) => [YC + s * k, zc + z * k] as XY)
@@ -359,11 +385,11 @@ gable(roof, PX - RO, ridgeX, YC, PW + RO, H_EAVE, H_RIDGE)
   const treads = 5, run = 0.55, sw = 1.7, rise = (H_BASE - 0.35) / (treads + 1)
   for (let t = 0; t < treads; t++)
     box(stone, x0 - run * (t + 1), x0 - run * t, YC - sw, YC + sw, 0, H_BASE - rise * (t + 1))
-  for (const s of [-1, 1]) column(x0 + 0.55, YC + s * 1.5, 0.3, H_BASE, 6.15, trim)
+  for (const s of [-1, 1]) column(x0 + 0.55, YC + s * 1.5, 0.3, H_BASE, 5.55, trim)
   const ent: Plan = [[x0, YC - hw], [PX, YC - hw], [PX, YC + hw], [x0, YC + hw]]
-  sweep(ent, 0.1, [face(trim, 0, 6.15, 6.85), bevelUp(trim, 0, 6.85, -0.2, 7.05)], [1])
-  capPoly(trim, ring(ent, -0.2, 0.1).pts, 7.05)
-  capPoly(trim, ring(ent, 0, 0.1).pts, 6.15, false)
+  sweep(ent, 0.1, [face(trim, 0, 5.55, 6.15), bevelUp(trim, 0, 6.15, -0.2, 6.35)], [1])
+  capPoly(trim, ring(ent, -0.2, 0.1).pts, 6.35)
+  capPoly(trim, ring(ent, 0, 0.1).pts, 5.55, false)
 }
 
 // ---------------------------------------------------------------------------
@@ -376,8 +402,8 @@ const galleries: Plan = [
   [HX1, -17.38], [-14.93, -17.38], [-14.93, -29.59], [28.2, -29.59], [28.2, AY0],
   [AX, AY0], [AX, AY1], [28.2, AY1], [28.2, 29.58], [-14.19, 29.58], [-14.19, 17.72], [HX1, 17.72],
 ]
-const G_BASE = 2.6, G_WALL = 8.0, G_EAVE = 8.8, G_RIDGE = 11.8, G_SLOPE = 6.0, G_BACK = 7.2, G_DECK = 10.0
-const g = (at: number): Opening => ({ at, w: 1.6, lo: 3.4, hi: 6.9 })
+const G_BASE = 2.4, G_WALL = 7.1, G_EAVE = 7.8, G_RIDGE = 10.5, G_SLOPE = 6.0, G_BACK = 7.0, G_DECK = 9.3
+const g = (at: number): Opening => ({ at, w: 1.6, lo: 3.1, hi: 6.2, depth: 0.12, fill: stone })
 const even = (a: number, b: number, n: number) => Array.from({ length: n }, (_, k) => a + ((b - a) * (k + 0.5)) / n)
 const galleryWindows = (e: number): Opening[] => {
   switch (e) {
@@ -394,7 +420,7 @@ const galleryWindows = (e: number): Opening[] => {
 }
 const hidden = [4, 5, 6, 11] // atrium notch and the Mint party wall
 // Basement windows sit under the gallery windows, as on the Mint (p3).
-const galleryLow = (e: number) => galleryWindows(e).map(o => ({ ...o, w: 1.3, lo: 0.95, hi: 1.95 }))
+const galleryLow = (e: number) => galleryWindows(e).map(o => ({ ...o, w: 1.3, lo: 0.85, hi: 1.8, depth: 0.05, fill: undefined }))
 walls(galleries, 0.1, C, 0, G_BASE - 0.15, stone, galleryLow, hidden)
 corners(galleries, 0.1, C, 0, G_BASE - 0.15, stone)
 sweep(galleries, C, [bevelUp(stone, 0.1, G_BASE - 0.15, 0, G_BASE)], hidden)
@@ -402,7 +428,7 @@ walls(galleries, 0, C, G_BASE, G_WALL, stucco, galleryWindows, hidden)
 corners(galleries, 0, C, G_BASE, G_WALL, stucco)
 sweep(galleries, C, [
   face(trim, 0, G_WALL, G_WALL + 0.2), bevelOut(trim, 0, G_WALL + 0.2, 0.45, G_WALL + 0.5),
-  face(trim, 0.45, G_WALL + 0.5, G_WALL + 0.62), bevelUp(trim, 0.45, G_WALL + 0.62, 0.3, G_EAVE),
+  face(trim, 0.45, G_WALL + 0.5, G_WALL + 0.58), bevelUp(trim, 0.45, G_WALL + 0.58, 0.3, G_EAVE),
 ], [11])
 
 // A ring of hipped ranges round a lower flat core (the aerial shows the
@@ -436,7 +462,7 @@ sweep(galleries, C, [
 // The entrance atrium: a glass box with a white gabled roof, its front a hair
 // past the gallery cornice so that ends inside it.
 {
-  const xf = 28.7, ze = 9.4, zr = 13.1, yc = (AY0 + AY1) / 2, hw = (AY1 - AY0) / 2
+  const xf = 28.7, ze = 8.5, zr = 11.6, yc = (AY0 + AY1) / 2, hw = (AY1 - AY0) / 2
   const xb = AX - 0.3
   // Glass faces: front, and the two sides where they rise above the galleries.
   quad(glass, [xf, AY0, 0], [xf, AY1, 0], [xf, AY1, ze], [xf, AY0, ze], [1, 0, 0])
@@ -452,7 +478,9 @@ sweep(galleries, C, [
     quad(trim, [xf + d, AY0 - d, z1], [xf + d, AY1 + d, z1], [AX, AY1 + d, z1], [AX, AY0 - d, z1], [0, 0, 1])
   }
   band(ze - 0.5, ze)
-  band(3.1, 3.4, 0.08)
+  band(3.0, 3.25, 0.08)
+  band(5.75, 5.95, 0.08)
+  band(0.5, 0.7, 0.08)
   for (const y of [yc - 2.5, yc + 2.5]) box(trim, xf, xf + 0.1, y - 0.12, y + 0.12, 0.55, ze - 0.5)
   gable(trim, xf + 0.25, xb, yc, hw + 0.3, ze, zr, 0.3)
 }
@@ -462,7 +490,7 @@ sweep(galleries, C, [
 // lightness; the sandstone basement is a muted tan beside them, the slate
 // roof and the deck `roof`.
 const parts = [
-  { part: stucco, material: finish('mint-stucco', 0xf0e2c6) },
+  { part: stucco, material: finish('mint-stucco', 0xeee5d1) },
   { part: stone, material: finish('mint-sandstone', 0xdcc6a2) },
   { part: trim, material: PALETTE.trim },
   { part: roof, material: PALETTE.roof },
