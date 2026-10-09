@@ -568,13 +568,6 @@
       "source": "generators/milestone-club.ts"
     },
     {
-      "id": "snug-harbor",
-      "file": "models/snug-harbor.glb",
-      "license": "CC0-1.0",
-      "author": "Barrelman",
-      "source": "generators/snug-harbor.ts"
-    },
-    {
       "id": "petras",
       "file": "models/petras.glb",
       "license": "CC0-1.0",
@@ -4502,19 +4495,6 @@
       "wikidata": "Q138333281",
       "replaces": [
         "way/867520324"
-      ]
-    },
-    {
-      "id": "snug-harbor",
-      "name": "Snug Harbor",
-      "model": "snug-harbor",
-      "lng": -80.8132541,
-      "lat": 35.2199698,
-      "bearing": 94,
-      "elevation": 0,
-      "minzoom": 16,
-      "replaces": [
-        "way/323193812"
       ]
     },
     {
