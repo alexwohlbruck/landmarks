@@ -3450,6 +3450,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-atherton-mill.ts"
+    },
+    {
+      "id": "clt-the-line",
+      "file": "models/clt-the-line.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-the-line.ts"
     }
   ],
   "landmarks": [
@@ -13604,6 +13611,25 @@
       "replaces": [
         "way/432937694",
         "way/1196988216"
+      ]
+    },
+    {
+      "id": "clt-the-line",
+      "name": "The Line",
+      "model": "clt-the-line",
+      "lng": -80.8620071,
+      "lat": 35.2090565,
+      "bearing": 33.7,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/1059972611",
+        "way/1203857912",
+        "way/1203857913",
+        "way/1203857916",
+        "way/1203857917",
+        "way/1203857918",
+        "way/1203857919"
       ]
     }
   ]
