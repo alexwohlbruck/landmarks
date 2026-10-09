@@ -27,6 +27,28 @@
  * Ground: the pond behind the stage is the low side. The terrain tiles put
  * the lawn edge about 1.5 m above it, so the stage deck at 2.8 m stands
  * about 1.3 m over the front plaza, as in the photos.
+ *
+ * 2026 rework (colour and detail; massing unchanged). Evidence, all City
+ * Dweller 2 on Wikimedia Commons, CC BY-SA 4.0: "The Amp Ballantyne Labor Day
+ * Weekend 2023" (front), "...side view Mid-April 2024", "...viewed from behind
+ * the stage Mid-April 2024", "...Pond Mid-April 2024" (rear, across the pond).
+ * - The roof's top is a pale membrane, not grey: the side view shows a light
+ *   upper surface above the dark fascia. A mid-grey deck made the model read
+ *   from above as a dark slab; now it reads as the bright plate it is.
+ * - Soffit, concrete and stone re-sampled from the daylight photos (soffit in
+ *   shade #ac9278, concrete sunlit #e9e9e9 / shade #8c94a5, stacked stone
+ *   #7e817e) and pulled to the palette's lightness: a paler, less orange
+ *   timber, a cool board-formed grey, a grey stacked stone.
+ * - Added the dark lighting battens that run front to back under the flat
+ *   soffit between the pylons (eight lines in the front and rear photos).
+ * - Massing kept: the rear photo scales the pylons at about 8 m above the
+ *   stage (stage rail and door as the yardstick), as the old model had.
+ *
+ * Bowl: the lawn terraces rise from the stage towards Ballantyne Corporate
+ * Place, roughly 6 to 8 m (estimated from the photos; the 2016 county lidar
+ * predates the venue). The stage is at the low point beside the pond, not
+ * below the street around it, so the placement keeps elevation 0 and the
+ * lawn is the map's.
  */
 import { Part, cross, len, writeGlb, type V3 } from './mesh'
 import { finish } from './palette'
@@ -144,6 +166,16 @@ function pylon(side: 1 | -1) {
 pylon(1)
 pylon(-1)
 
+// The lighting battens: dark pipes hung front to back under the flat soffit,
+// eight across between the pylons' inner faces (front and rear photos).
+for (let i = 0; i < 8; i++) {
+  const x = -6.3 + i * 1.8
+  const bat: Rect = { x0: x - 0.14, x1: x + 0.14, y0: -9.6, y1: 4.0, c: 0.04 }
+  band(fascia, bat, 0, SOFFIT_LOW - 0.75, 0, SOFFIT_LOW - 0.45, OUT, OUT)
+  lid(fascia, bat, 0, SOFFIT_LOW - 0.45, true)
+  lid(fascia, bat, 0, SOFFIT_LOW - 0.75, false)
+}
+
 // ---------------------------------------------------------------------------
 // The stage plinth: a concrete deck, its pond side faced in stacked stone.
 
@@ -156,18 +188,19 @@ band(stone, PLINTH, 0, 0, 0, STONE_TOP, OUT, OUT)
 
 // ---------------------------------------------------------------------------
 
-// Colours from photos 04–06 in daylight, on the shared palette. The concrete
-// is a pale board-formed grey and the soffit a light warm timber, both kept at
-// the palette's lightness. The roof's dark steel edge and the bearing blocks
-// are charcoal, the darkest STYLE.md allows for a defining colour (the real
-// steel is near-black navy); the deck is a mid grey a step lighter, so from
-// above it reads as a dark-edged plate rather than a pale slab.
+// Colours from the daylight photos, on the shared palette. The concrete is a
+// pale, cool board-formed grey; the soffit a light warm timber; both kept at
+// the palette's lightness. The roof's top is a pale membrane, so from above
+// the canopy reads as a bright plate with a crisp dark edge. The steel fascia,
+// bearing blocks and battens are charcoal, the darkest STYLE.md allows for a
+// defining colour (the real steel is near-black navy). The pond-side base is
+// grey stacked stone.
 const parts = [
-  { part: concrete, material: finish('concrete', 0xdcd9d2) },
-  { part: timber, material: finish('timber', 0xe6c296) },
-  { part: roof, material: finish('roof-deck', 0x8d949b) },
+  { part: concrete, material: finish('concrete', 0xd8d8d5) },
+  { part: timber, material: finish('timber', 0xdcc5a5) },
+  { part: roof, material: finish('membrane', 0xe6e7e5) },
   { part: fascia, material: finish('steel-fascia', 0x4a4f57) },
-  { part: stone, material: finish('fieldstone', 0xb9b5ad) },
+  { part: stone, material: finish('fieldstone', 0xb3b5b1) },
 ]
 const triangles = parts.reduce((sum, { part }) => sum + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
