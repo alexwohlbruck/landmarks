@@ -1490,6 +1490,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-columbus-monument.ts"
+    },
+    {
+      "id": "nyc-twa-flight-center",
+      "file": "models/nyc-twa-flight-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-twa-flight-center.ts"
     }
   ],
   "landmarks": [
@@ -6113,6 +6120,22 @@
         "way/259888098",
         "way/259888099",
         "way/259888101"
+      ]
+    },
+    {
+      "id": "nyc-twa-flight-center",
+      "name": "TWA Flight Center",
+      "model": "nyc-twa-flight-center",
+      "lng": -73.7777456,
+      "lat": 40.6457561,
+      "bearing": -3.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q29257",
+      "replaces": [
+        "way/284907419",
+        "way/1556624966",
+        "way/1556624967"
       ]
     }
   ]
