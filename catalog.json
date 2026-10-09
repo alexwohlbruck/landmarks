@@ -1469,6 +1469,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-new-york-life.ts"
+    },
+    {
+      "id": "nyc-grants-tomb",
+      "file": "models/nyc-grants-tomb.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-grants-tomb.ts"
     }
   ],
   "landmarks": [
@@ -6044,6 +6051,20 @@
         "way/607446389",
         "way/607446391",
         "way/607446393"
+      ]
+    },
+    {
+      "id": "nyc-grants-tomb",
+      "name": "General Grant National Memorial",
+      "model": "nyc-grants-tomb",
+      "lng": -73.963051,
+      "lat": 40.813454,
+      "bearing": 21.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1025105",
+      "replaces": [
+        "way/271922197"
       ]
     }
   ]
