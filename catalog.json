@@ -1518,6 +1518,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-haupt-conservatory.ts"
+    },
+    {
+      "id": "nyc-pulitzer-fountain",
+      "file": "models/nyc-pulitzer-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-pulitzer-fountain.ts"
     }
   ],
   "landmarks": [
@@ -6220,6 +6227,18 @@
         "way/334963825",
         "way/334963826"
       ]
+    },
+    {
+      "id": "nyc-pulitzer-fountain",
+      "name": "Pulitzer Fountain",
+      "model": "nyc-pulitzer-fountain",
+      "lng": -73.97362,
+      "lat": 40.764043,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q18157051",
+      "replaces": []
     }
   ]
 }
