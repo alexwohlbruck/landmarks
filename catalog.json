@@ -1532,6 +1532,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-prison-ship-martyrs.ts"
+    },
+    {
+      "id": "nyc-soldiers-sailors-riverside",
+      "file": "models/nyc-soldiers-sailors-riverside.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-soldiers-sailors-riverside.ts"
     }
   ],
   "landmarks": [
@@ -6261,6 +6268,20 @@
         "way/296157576",
         "way/296157582",
         "way/296157583"
+      ]
+    },
+    {
+      "id": "nyc-soldiers-sailors-riverside",
+      "name": "Soldiers' and Sailors' Monument",
+      "model": "nyc-soldiers-sailors-riverside",
+      "lng": -73.978929,
+      "lat": 40.792096,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3489276",
+      "replaces": [
+        "way/270975149"
       ]
     }
   ]
