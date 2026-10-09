@@ -2883,6 +2883,468 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sea-washington-state-capitol.ts"
+    },
+    {
+      "id": "nyc-432-park",
+      "file": "models/nyc-432-park.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-432-park.ts"
+    },
+    {
+      "id": "nyc-570-lexington",
+      "file": "models/nyc-570-lexington.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-570-lexington.ts"
+    },
+    {
+      "id": "nyc-metlife-building",
+      "file": "models/nyc-metlife-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-metlife-building.ts"
+    },
+    {
+      "id": "nyc-helmsley-building",
+      "file": "models/nyc-helmsley-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-helmsley-building.ts"
+    },
+    {
+      "id": "nyc-chanin-building",
+      "file": "models/nyc-chanin-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-chanin-building.ts"
+    },
+    {
+      "id": "nyc-central-park-tower",
+      "file": "models/nyc-central-park-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-central-park-tower.ts"
+    },
+    {
+      "id": "nyc-steinway-tower",
+      "file": "models/nyc-steinway-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-steinway-tower.ts"
+    },
+    {
+      "id": "nyc-one-vanderbilt",
+      "file": "models/nyc-one-vanderbilt.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-one-vanderbilt.ts"
+    },
+    {
+      "id": "nyc-one57",
+      "file": "models/nyc-one57.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-one57.ts"
+    },
+    {
+      "id": "nyc-citigroup-center",
+      "file": "models/nyc-citigroup-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-citigroup-center.ts"
+    },
+    {
+      "id": "nyc-550-madison",
+      "file": "models/nyc-550-madison.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-550-madison.ts"
+    },
+    {
+      "id": "nyc-bank-of-america-tower",
+      "file": "models/nyc-bank-of-america-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-bank-of-america-tower.ts"
+    },
+    {
+      "id": "nyc-new-york-times-building",
+      "file": "models/nyc-new-york-times-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-new-york-times-building.ts"
+    },
+    {
+      "id": "nyc-40-wall-street",
+      "file": "models/nyc-40-wall-street.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-40-wall-street.ts"
+    },
+    {
+      "id": "nyc-70-pine",
+      "file": "models/nyc-70-pine.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-70-pine.ts"
+    },
+    {
+      "id": "nyc-united-nations",
+      "file": "models/nyc-united-nations.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-united-nations.ts"
+    },
+    {
+      "id": "nyc-8-spruce",
+      "file": "models/nyc-8-spruce.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-8-spruce.ts"
+    },
+    {
+      "id": "nyc-municipal-building",
+      "file": "models/nyc-municipal-building.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-municipal-building.ts"
+    },
+    {
+      "id": "nyc-30-hudson-yards",
+      "file": "models/nyc-30-hudson-yards.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-30-hudson-yards.ts"
+    },
+    {
+      "id": "nyc-35-hudson-yards",
+      "file": "models/nyc-35-hudson-yards.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-35-hudson-yards.ts"
+    },
+    {
+      "id": "nyc-federal-hall",
+      "file": "models/nyc-federal-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-federal-hall.ts"
+    },
+    {
+      "id": "nyc-the-shed",
+      "file": "models/nyc-the-shed.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-the-shed.ts"
+    },
+    {
+      "id": "nyc-trinity-church",
+      "file": "models/nyc-trinity-church.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-trinity-church.ts"
+    },
+    {
+      "id": "nyc-madison-square-garden",
+      "file": "models/nyc-madison-square-garden.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-madison-square-garden.ts"
+    },
+    {
+      "id": "nyc-custom-house",
+      "file": "models/nyc-custom-house.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-custom-house.ts"
+    },
+    {
+      "id": "nyc-moynihan-train-hall",
+      "file": "models/nyc-moynihan-train-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-moynihan-train-hall.ts"
+    },
+    {
+      "id": "nyc-city-hall",
+      "file": "models/nyc-city-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-city-hall.ts"
+    },
+    {
+      "id": "nyc-oculus",
+      "file": "models/nyc-oculus.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-oculus.ts"
+    },
+    {
+      "id": "nyc-carnegie-hall",
+      "file": "models/nyc-carnegie-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-carnegie-hall.ts"
+    },
+    {
+      "id": "nyc-manhattan-bridge",
+      "file": "models/nyc-manhattan-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-manhattan-bridge.ts"
+    },
+    {
+      "id": "nyc-williamsburg-bridge",
+      "file": "models/nyc-williamsburg-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-williamsburg-bridge.ts"
+    },
+    {
+      "id": "nyc-nypl",
+      "file": "models/nyc-nypl.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-nypl.ts"
+    },
+    {
+      "id": "nyc-met-museum",
+      "file": "models/nyc-met-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-met-museum.ts"
+    },
+    {
+      "id": "nyc-yankee-stadium",
+      "file": "models/nyc-yankee-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-yankee-stadium.ts"
+    },
+    {
+      "id": "nyc-amnh",
+      "file": "models/nyc-amnh.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-amnh.ts"
+    },
+    {
+      "id": "nyc-citi-field",
+      "file": "models/nyc-citi-field.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-citi-field.ts"
+    },
+    {
+      "id": "nyc-williamsburgh-savings-bank",
+      "file": "models/nyc-williamsburgh-savings-bank.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-williamsburgh-savings-bank.ts"
+    },
+    {
+      "id": "nyc-arthur-ashe-stadium",
+      "file": "models/nyc-arthur-ashe-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-arthur-ashe-stadium.ts"
+    },
+    {
+      "id": "nyc-ellis-island",
+      "file": "models/nyc-ellis-island.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-ellis-island.ts"
+    },
+    {
+      "id": "nyc-castle-williams",
+      "file": "models/nyc-castle-williams.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-castle-williams.ts"
+    },
+    {
+      "id": "nyc-barclays-center",
+      "file": "models/nyc-barclays-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-barclays-center.ts"
+    },
+    {
+      "id": "nyc-brooklyn-museum",
+      "file": "models/nyc-brooklyn-museum.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-brooklyn-museum.ts"
+    },
+    {
+      "id": "nyc-george-washington-bridge",
+      "file": "models/nyc-george-washington-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-george-washington-bridge.ts"
+    },
+    {
+      "id": "nyc-hoboken-terminal",
+      "file": "models/nyc-hoboken-terminal.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-hoboken-terminal.ts"
+    },
+    {
+      "id": "nyc-verrazzano-narrows-bridge",
+      "file": "models/nyc-verrazzano-narrows-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-verrazzano-narrows-bridge.ts"
+    },
+    {
+      "id": "nyc-hell-gate-bridge",
+      "file": "models/nyc-hell-gate-bridge.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-hell-gate-bridge.ts"
+    },
+    {
+      "id": "nyc-cleopatras-needle",
+      "file": "models/nyc-cleopatras-needle.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-cleopatras-needle.ts"
+    },
+    {
+      "id": "nyc-david-geffen-hall",
+      "file": "models/nyc-david-geffen-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-david-geffen-hall.ts"
+    },
+    {
+      "id": "nyc-met-opera",
+      "file": "models/nyc-met-opera.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-met-opera.ts"
+    },
+    {
+      "id": "nyc-koch-theater",
+      "file": "models/nyc-koch-theater.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-koch-theater.ts"
+    },
+    {
+      "id": "nyc-plaza-hotel",
+      "file": "models/nyc-plaza-hotel.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-plaza-hotel.ts"
+    },
+    {
+      "id": "nyc-san-remo",
+      "file": "models/nyc-san-remo.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-san-remo.ts"
+    },
+    {
+      "id": "nyc-riverside-church",
+      "file": "models/nyc-riverside-church.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-riverside-church.ts"
+    },
+    {
+      "id": "nyc-metlife-tower",
+      "file": "models/nyc-metlife-tower.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-metlife-tower.ts"
+    },
+    {
+      "id": "nyc-new-york-life",
+      "file": "models/nyc-new-york-life.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-new-york-life.ts"
+    },
+    {
+      "id": "nyc-grants-tomb",
+      "file": "models/nyc-grants-tomb.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-grants-tomb.ts"
+    },
+    {
+      "id": "nyc-st-john-the-divine",
+      "file": "models/nyc-st-john-the-divine.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-st-john-the-divine.ts"
+    },
+    {
+      "id": "nyc-columbus-monument",
+      "file": "models/nyc-columbus-monument.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-columbus-monument.ts"
+    },
+    {
+      "id": "nyc-twa-flight-center",
+      "file": "models/nyc-twa-flight-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-twa-flight-center.ts"
+    },
+    {
+      "id": "nyc-uss-maine-monument",
+      "file": "models/nyc-uss-maine-monument.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-uss-maine-monument.ts"
+    },
+    {
+      "id": "nyc-deutsche-bank-center",
+      "file": "models/nyc-deutsche-bank-center.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-deutsche-bank-center.ts"
+    },
+    {
+      "id": "nyc-haupt-conservatory",
+      "file": "models/nyc-haupt-conservatory.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-haupt-conservatory.ts"
+    },
+    {
+      "id": "nyc-pulitzer-fountain",
+      "file": "models/nyc-pulitzer-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-pulitzer-fountain.ts"
+    },
+    {
+      "id": "nyc-prison-ship-martyrs",
+      "file": "models/nyc-prison-ship-martyrs.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-prison-ship-martyrs.ts"
+    },
+    {
+      "id": "nyc-soldiers-sailors-riverside",
+      "file": "models/nyc-soldiers-sailors-riverside.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-soldiers-sailors-riverside.ts"
+    },
+    {
+      "id": "nyc-bethesda-fountain",
+      "file": "models/nyc-bethesda-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-bethesda-fountain.ts"
     }
   ],
   "landmarks": [
@@ -5056,7 +5518,7 @@
     },
     {
       "id": "wdw-epcot-canada",
-      "name": "Canada Pavilion (Hôtel du Canada)",
+      "name": "Canada Pavilion (H\u00f4tel du Canada)",
       "model": "wdw-epcot-canada",
       "lng": -81.55165,
       "lat": 28.37155,
@@ -5381,7 +5843,7 @@
     },
     {
       "id": "wdw-rock-n-roller-coaster",
-      "name": "Rock ’n’ Roller Coaster Starring The Muppets",
+      "name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
       "model": "wdw-rock-n-roller-coaster",
       "lng": -81.5615788,
       "lat": 28.3596178,
@@ -5958,7 +6420,7 @@
     },
     {
       "id": "dlr-guardians-mission-breakout",
-      "name": "Guardians of the Galaxy – Mission: Breakout!",
+      "name": "Guardians of the Galaxy \u2013 Mission: Breakout!",
       "model": "dlr-guardians-mission-breakout",
       "lng": -117.9169523,
       "lat": 33.8066398,
@@ -6905,7 +7367,7 @@
     },
     {
       "id": "chi-bahai-temple",
-      "name": "Baháʼí House of Worship",
+      "name": "Bah\u00e1\u02bc\u00ed House of Worship",
       "model": "chi-bahai-temple",
       "lng": -87.68429,
       "lat": 42.074437,
@@ -9470,7 +9932,7 @@
     },
     {
       "id": "la-team-disney",
-      "name": "Team Disney – The Michael D. Eisner Building",
+      "name": "Team Disney \u2013 The Michael D. Eisner Building",
       "model": "la-team-disney",
       "lng": -118.3272456,
       "lat": 34.1579334,
@@ -11210,6 +11672,1584 @@
         "way/31494476",
         "way/612617948"
       ]
+    },
+    {
+      "id": "nyc-432-park",
+      "name": "432 Park Avenue",
+      "model": "nyc-432-park",
+      "lng": -73.9718683,
+      "lat": 40.7617056,
+      "bearing": 28.75,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q233940",
+      "replaces": [
+        "way/261499924",
+        "way/463593207",
+        "way/463386820"
+      ]
+    },
+    {
+      "id": "nyc-570-lexington",
+      "name": "General Electric Building",
+      "model": "nyc-570-lexington",
+      "lng": -73.9724489,
+      "lat": 40.7570846,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q244391",
+      "replaces": [
+        "way/137885993",
+        "way/137887333",
+        "way/137887335",
+        "way/137887345",
+        "way/137887870",
+        "way/137887871",
+        "way/137889011",
+        "way/668481028"
+      ]
+    },
+    {
+      "id": "nyc-metlife-building",
+      "name": "MetLife Building",
+      "model": "nyc-metlife-building",
+      "lng": -73.976653,
+      "lat": 40.7535134,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q464482",
+      "replaces": [
+        "way/137564642",
+        "way/137564641",
+        "way/137565295",
+        "way/1487962789",
+        "way/1487962790",
+        "way/1487962791",
+        "way/1487962792",
+        "way/1487962793"
+      ]
+    },
+    {
+      "id": "nyc-helmsley-building",
+      "name": "Helmsley Building",
+      "model": "nyc-helmsley-building",
+      "lng": -73.9761107,
+      "lat": 40.7543877,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1603308",
+      "replaces": [
+        "way/73850655",
+        "way/264734070",
+        "way/264734071",
+        "way/264734072",
+        "way/264734073",
+        "way/264734074",
+        "way/264734075",
+        "way/291189622",
+        "way/291189624",
+        "way/291189626",
+        "way/291189628",
+        "way/291189630",
+        "way/668477452"
+      ]
+    },
+    {
+      "id": "nyc-chanin-building",
+      "name": "Chanin Building",
+      "model": "nyc-chanin-building",
+      "lng": -73.976686,
+      "lat": 40.7512113,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2956104",
+      "replaces": [
+        "way/265947366",
+        "way/281777311",
+        "way/289989982",
+        "way/289989983",
+        "way/289989984",
+        "way/289989985",
+        "way/289989986",
+        "way/289989987",
+        "way/289989988",
+        "way/289989989",
+        "way/289989990",
+        "way/289989991",
+        "way/289989992",
+        "way/289989993",
+        "way/289989994",
+        "way/289989995",
+        "way/289989996",
+        "way/289989997",
+        "way/289989998",
+        "way/289989999",
+        "way/289990000",
+        "way/289990001",
+        "way/289990002",
+        "way/289990003",
+        "way/289990004",
+        "way/289990005",
+        "way/289990006",
+        "way/289990007",
+        "way/289990008",
+        "way/289990287",
+        "way/290805845"
+      ]
+    },
+    {
+      "id": "nyc-central-park-tower",
+      "name": "Central Park Tower",
+      "model": "nyc-central-park-tower",
+      "lng": -73.9810095,
+      "lat": 40.7664214,
+      "bearing": 28.95,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2631701",
+      "replaces": [
+        "way/261509934",
+        "way/1107961654",
+        "way/1107961655",
+        "way/1107961656",
+        "way/1107961657",
+        "way/1107961658",
+        "way/1107961659",
+        "way/1107961660",
+        "way/1107961661",
+        "way/1107961662",
+        "way/1107961663",
+        "way/1107961664",
+        "way/1107961665",
+        "way/1107961667"
+      ]
+    },
+    {
+      "id": "nyc-steinway-tower",
+      "name": "Steinway Tower",
+      "model": "nyc-steinway-tower",
+      "lng": -73.9773054,
+      "lat": 40.7647294,
+      "bearing": 28.85,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2631268",
+      "replaces": [
+        "way/261504064",
+        "way/1158813428",
+        "way/1158813429",
+        "way/1158813430",
+        "way/1158813431",
+        "way/1158813432",
+        "way/1158813433",
+        "way/1158813434",
+        "way/1158813435",
+        "way/1158813436",
+        "way/1158813437",
+        "way/1158813438",
+        "way/1158813439",
+        "way/1158813440",
+        "way/1158813441",
+        "way/265147970"
+      ]
+    },
+    {
+      "id": "nyc-one-vanderbilt",
+      "name": "One Vanderbilt",
+      "model": "nyc-one-vanderbilt",
+      "lng": -73.9785415,
+      "lat": 40.7529739,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q18398409",
+      "replaces": [
+        "way/265875648",
+        "way/1470380430",
+        "way/1470380431",
+        "way/1470380432",
+        "way/1470380433",
+        "way/1470380434",
+        "way/1470380435",
+        "way/1470380436",
+        "way/1470380437",
+        "way/1470380438",
+        "way/1470380439",
+        "way/1470380440",
+        "way/1470380441",
+        "way/1470380442",
+        "way/1470380443",
+        "way/1470380444",
+        "way/1470380445",
+        "way/1470380446",
+        "way/1470380447",
+        "way/1470380448",
+        "way/1470380449",
+        "way/1470380450",
+        "way/1470380451",
+        "way/1470380452",
+        "way/1470380453"
+      ]
+    },
+    {
+      "id": "nyc-one57",
+      "name": "One57",
+      "model": "nyc-one57",
+      "lng": -73.9790093,
+      "lat": 40.7655013,
+      "bearing": 28.9,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2023928",
+      "replaces": [
+        "way/260283692",
+        "way/292145960",
+        "way/292145961",
+        "way/292145962",
+        "way/292145963",
+        "way/292145964",
+        "way/292145965",
+        "way/292145966",
+        "way/292145967",
+        "way/292145968",
+        "way/292145969",
+        "way/292145970",
+        "way/292145971",
+        "way/292145972",
+        "way/292145973"
+      ]
+    },
+    {
+      "id": "nyc-citigroup-center",
+      "name": "Citigroup Center",
+      "model": "nyc-citigroup-center",
+      "lng": -73.9699362,
+      "lat": 40.7583409,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q391243",
+      "replaces": [
+        "way/164105516",
+        "way/258744590",
+        "way/258744593",
+        "way/258744594",
+        "way/258744595",
+        "way/258744596",
+        "way/258744597",
+        "way/258744599",
+        "way/258744600",
+        "way/258744601",
+        "way/258744602",
+        "way/258744603",
+        "way/258744605",
+        "way/258744606",
+        "way/258744608",
+        "way/258744609",
+        "way/258744612"
+      ]
+    },
+    {
+      "id": "nyc-550-madison",
+      "name": "550 Madison Avenue",
+      "model": "nyc-550-madison",
+      "lng": -73.9733731,
+      "lat": 40.7614226,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1477826",
+      "replaces": [
+        "relation/21151099",
+        "way/118116805",
+        "way/260244593",
+        "way/260244595"
+      ]
+    },
+    {
+      "id": "nyc-bank-of-america-tower",
+      "name": "Bank of America Tower",
+      "model": "nyc-bank-of-america-tower",
+      "lng": -73.9847166,
+      "lat": 40.7555573,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q328505",
+      "replaces": [
+        "way/86121621",
+        "way/260153997",
+        "way/260153998",
+        "way/279687416",
+        "way/279687417",
+        "way/279687418",
+        "way/279687419",
+        "way/279687420",
+        "way/279691503",
+        "way/279691506",
+        "way/279691507",
+        "way/279691508",
+        "way/279691511",
+        "way/291927532",
+        "way/291927536"
+      ]
+    },
+    {
+      "id": "nyc-new-york-times-building",
+      "name": "The New York Times Building",
+      "model": "nyc-new-york-times-building",
+      "lng": -73.9897139,
+      "lat": 40.7559146,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q192680",
+      "replaces": [
+        "relation/1860567",
+        "way/138152327",
+        "way/260282082",
+        "way/260282083",
+        "way/260282084",
+        "way/260282085",
+        "way/260282086",
+        "way/260282087",
+        "way/260282088",
+        "way/260282089"
+      ]
+    },
+    {
+      "id": "nyc-40-wall-street",
+      "name": "40 Wall Street",
+      "model": "nyc-40-wall-street",
+      "lng": -74.0097378,
+      "lat": 40.7070222,
+      "bearing": 37,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q218305",
+      "replaces": [
+        "way/278042253",
+        "way/277555173",
+        "way/277555174",
+        "way/286057075",
+        "way/286057077",
+        "way/286057080",
+        "way/286057082",
+        "way/286057085",
+        "way/286057087",
+        "way/286057089",
+        "way/286057091",
+        "way/286057094",
+        "way/286057096",
+        "way/286057098",
+        "way/286057100",
+        "way/286057102",
+        "way/286057105",
+        "way/286057107",
+        "way/286057109",
+        "way/286057111",
+        "way/286057113",
+        "way/286057115",
+        "way/286057117",
+        "way/286057119",
+        "way/286057122",
+        "way/286057124",
+        "way/378615994",
+        "way/378615999",
+        "way/378616009",
+        "way/378616016"
+      ]
+    },
+    {
+      "id": "nyc-70-pine",
+      "name": "70 Pine Street",
+      "model": "nyc-70-pine",
+      "lng": -74.0077211,
+      "lat": 40.7064716,
+      "bearing": 38,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q262041",
+      "replaces": [
+        "way/278069587",
+        "way/286032699",
+        "way/286032700",
+        "way/286032701",
+        "way/286032702",
+        "way/286032703",
+        "way/286032704",
+        "way/286032705",
+        "way/286032706",
+        "way/286032707",
+        "way/286032708",
+        "way/286032709",
+        "way/286032710",
+        "way/286032711",
+        "way/286032712",
+        "way/286032713",
+        "way/286032714",
+        "way/286032715",
+        "way/286032716",
+        "way/286032717",
+        "way/286032718",
+        "way/286032719",
+        "way/286032720",
+        "way/286032721",
+        "way/286032722",
+        "way/286032723",
+        "way/286032724",
+        "way/286032725",
+        "way/286032726",
+        "way/286032727",
+        "way/286032728",
+        "way/286032729",
+        "way/286032730",
+        "way/286032731",
+        "way/286032732",
+        "way/286032733",
+        "way/286032734",
+        "way/286032735",
+        "way/286032736",
+        "way/286032737",
+        "way/286032738",
+        "way/286032739",
+        "way/286032740",
+        "way/286032741",
+        "way/286032742",
+        "way/286032743",
+        "way/286032744",
+        "way/286032745",
+        "way/286032746",
+        "way/286032747",
+        "way/286032748",
+        "way/286032749",
+        "way/286032750",
+        "way/286032751",
+        "way/286032752",
+        "way/286032753",
+        "way/286032754",
+        "way/286032755",
+        "way/286032756"
+      ]
+    },
+    {
+      "id": "nyc-united-nations",
+      "name": "United Nations Headquarters",
+      "model": "nyc-united-nations",
+      "lng": -73.9680976,
+      "lat": 40.7489272,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q7888512",
+      "replaces": [
+        "way/137989966",
+        "way/261256937",
+        "way/261256939",
+        "way/261256941",
+        "way/261256936",
+        "way/261256938",
+        "way/261256940"
+      ]
+    },
+    {
+      "id": "nyc-8-spruce",
+      "name": "8 Spruce Street",
+      "model": "nyc-8-spruce",
+      "lng": -74.0056081,
+      "lat": 40.7108998,
+      "bearing": 51,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q274916",
+      "replaces": [
+        "way/109473848",
+        "way/274750635",
+        "way/274750636",
+        "way/274750637",
+        "way/274750638",
+        "way/274750639",
+        "way/274750643",
+        "way/274750646",
+        "way/274750647",
+        "way/1089406290",
+        "way/1089406291",
+        "way/1089406292",
+        "way/1089406293",
+        "way/1089406294"
+      ]
+    },
+    {
+      "id": "nyc-municipal-building",
+      "name": "David N. Dinkins Municipal Building",
+      "model": "nyc-municipal-building",
+      "lng": -74.0036752,
+      "lat": 40.7129838,
+      "bearing": 36,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1156778",
+      "replaces": [
+        "relation/13625437",
+        "way/214744070",
+        "way/214744071",
+        "way/214744072",
+        "way/214744073",
+        "way/214744074",
+        "way/214744075",
+        "way/214744077",
+        "way/214744080",
+        "way/214744081",
+        "way/214744082",
+        "way/214744084",
+        "way/214744085",
+        "way/214744086",
+        "way/214744087",
+        "way/214744089",
+        "way/214744090",
+        "way/1016693500",
+        "way/1016693502"
+      ]
+    },
+    {
+      "id": "nyc-30-hudson-yards",
+      "name": "30 Hudson Yards",
+      "model": "nyc-30-hudson-yards",
+      "lng": -74.00059,
+      "lat": 40.7539463,
+      "bearing": 29.0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q15264266",
+      "replaces": [
+        "way/264656626",
+        "way/1485516277",
+        "way/1485516278",
+        "way/1485516279",
+        "way/1485516280",
+        "way/1485516281",
+        "way/1485516282",
+        "way/1485516283",
+        "way/1485516284",
+        "way/1485848980",
+        "way/1485848981",
+        "way/1485848982"
+      ]
+    },
+    {
+      "id": "nyc-35-hudson-yards",
+      "name": "35 Hudson Yards",
+      "model": "nyc-35-hudson-yards",
+      "lng": -74.0022556,
+      "lat": 40.7546479,
+      "bearing": 29.0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q15264622",
+      "replaces": [
+        "way/468721008",
+        "way/1089415971",
+        "way/1089415972",
+        "way/1089415973",
+        "way/1089415974",
+        "way/1089415975",
+        "way/1089415976",
+        "way/1089415977",
+        "way/1089415978",
+        "way/1089415979",
+        "way/1089415980",
+        "way/1089415981"
+      ]
+    },
+    {
+      "id": "nyc-federal-hall",
+      "name": "Federal Hall National Memorial",
+      "model": "nyc-federal-hall",
+      "lng": -74.0102481,
+      "lat": 40.7073274,
+      "bearing": 36.6,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q858689",
+      "replaces": [
+        "way/109337830",
+        "way/276177619",
+        "way/276177584",
+        "way/276177585",
+        "way/276177586",
+        "way/276177587",
+        "way/276177588",
+        "way/276177589",
+        "way/276177590",
+        "way/276177593",
+        "way/276177595",
+        "way/276177598",
+        "way/276177602",
+        "way/276177605",
+        "way/276177607",
+        "way/276177610",
+        "way/276177614",
+        "way/276177616"
+      ]
+    },
+    {
+      "id": "nyc-the-shed",
+      "name": "The Shed",
+      "model": "nyc-the-shed",
+      "lng": -74.0027245,
+      "lat": 40.7532544,
+      "bearing": 29.0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q15961661",
+      "replaces": [
+        "way/681503639",
+        "way/1220655932",
+        "way/1220614724"
+      ]
+    },
+    {
+      "id": "nyc-trinity-church",
+      "name": "Trinity Church",
+      "model": "nyc-trinity-church",
+      "lng": -74.0122266,
+      "lat": 40.7080238,
+      "bearing": 121.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q866896",
+      "replaces": [
+        "way/278039453",
+        "way/276175138",
+        "way/276175139",
+        "way/276175140",
+        "way/276175141",
+        "way/276175142",
+        "way/276175143",
+        "way/276175145",
+        "way/276175146",
+        "way/276175147",
+        "way/276175148",
+        "way/276175149",
+        "way/276175150",
+        "way/276175151",
+        "way/276175152",
+        "way/276175153",
+        "way/276175154",
+        "way/276175155",
+        "way/276175156",
+        "way/276175157",
+        "way/276175158",
+        "way/276175159",
+        "way/276175160",
+        "way/276175161",
+        "way/276175162",
+        "way/276175163",
+        "way/276175164",
+        "way/276175166",
+        "way/276175167",
+        "way/276175168",
+        "way/276175169",
+        "way/276175170",
+        "way/276175171",
+        "way/276175172",
+        "way/276175173",
+        "way/276175174"
+      ]
+    },
+    {
+      "id": "nyc-madison-square-garden",
+      "name": "Madison Square Garden",
+      "model": "nyc-madison-square-garden",
+      "lng": -73.99349171,
+      "lat": 40.75052901,
+      "bearing": 29.0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q186125",
+      "replaces": [
+        "way/138141251",
+        "way/138141255",
+        "way/283108463",
+        "way/283108464",
+        "way/283108465",
+        "way/283108466",
+        "way/283108467",
+        "way/283108468",
+        "way/283108469",
+        "way/283108470",
+        "way/283108471",
+        "way/283108472",
+        "way/283108476"
+      ]
+    },
+    {
+      "id": "nyc-custom-house",
+      "name": "Alexander Hamilton U.S. Custom House",
+      "model": "nyc-custom-house",
+      "lng": -74.013743,
+      "lat": 40.7040471,
+      "bearing": 1.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2068997",
+      "replaces": [
+        "relation/3695753",
+        "way/972087763",
+        "way/972087764",
+        "way/972087765",
+        "way/972087766",
+        "way/972087767",
+        "way/972087770",
+        "way/972087771",
+        "way/972087772",
+        "way/1002205137",
+        "way/1002205138",
+        "way/1002205139",
+        "way/1002205140",
+        "way/1002205141",
+        "way/1002205142",
+        "way/1002205143",
+        "way/1002205144",
+        "way/1002205145",
+        "way/1002205146"
+      ]
+    },
+    {
+      "id": "nyc-moynihan-train-hall",
+      "name": "Moynihan Train Hall (James A. Farley Building)",
+      "model": "nyc-moynihan-train-hall",
+      "lng": -73.99588965,
+      "lat": 40.75153424,
+      "bearing": 29.0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q2466300",
+      "replaces": [
+        "way/264667030",
+        "way/464922596",
+        "way/464922597",
+        "way/464922598",
+        "way/464922599",
+        "way/464922601",
+        "way/464922603",
+        "way/464922605",
+        "way/464922608",
+        "way/464922612",
+        "way/464922613",
+        "way/464922617",
+        "way/464922618",
+        "way/464922619",
+        "way/464922620",
+        "way/464922623",
+        "way/464922624",
+        "way/464922627",
+        "way/464922628",
+        "way/464922629",
+        "way/464922630",
+        "way/464922631",
+        "way/464922632",
+        "way/464922635",
+        "way/464922636",
+        "way/464922637",
+        "way/464922638",
+        "way/464922639",
+        "way/464922641",
+        "way/464922642",
+        "way/464922643",
+        "way/464922645",
+        "way/464922646",
+        "way/464922647",
+        "way/890243248",
+        "way/890243249",
+        "way/890243250",
+        "way/890243251",
+        "way/1021258189",
+        "way/1021258190",
+        "way/1021258191",
+        "way/1021258192",
+        "way/1021258193",
+        "way/1021258194",
+        "way/1021258195",
+        "way/1021258264"
+      ]
+    },
+    {
+      "id": "nyc-city-hall",
+      "name": "New York City Hall",
+      "model": "nyc-city-hall",
+      "lng": -74.0059933,
+      "lat": 40.712751,
+      "bearing": 33.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1065206",
+      "replaces": [
+        "way/575213527",
+        "way/1015701476",
+        "way/1015701477",
+        "way/1015701478",
+        "way/1015701479",
+        "way/1015701480",
+        "way/1015701481",
+        "way/1015701482",
+        "way/214788062",
+        "way/214788063",
+        "way/214788064",
+        "way/214788065",
+        "way/214788066",
+        "way/214788067",
+        "way/214788068"
+      ]
+    },
+    {
+      "id": "nyc-oculus",
+      "name": "The Oculus",
+      "model": "nyc-oculus",
+      "lng": -74.011413,
+      "lat": 40.7115445,
+      "bearing": 128.0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2001751",
+      "replaces": [
+        "way/278033606"
+      ]
+    },
+    {
+      "id": "nyc-carnegie-hall",
+      "name": "Carnegie Hall",
+      "model": "nyc-carnegie-hall",
+      "lng": -73.9799197,
+      "lat": 40.7650035,
+      "bearing": 29.0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q200959",
+      "replaces": [
+        "way/265148502",
+        "way/1039811293"
+      ]
+    },
+    {
+      "id": "nyc-manhattan-bridge-manhattan",
+      "name": "Manhattan Bridge (Manhattan tower)",
+      "model": "nyc-manhattan-bridge",
+      "lng": -73.9914885,
+      "lat": 40.7088118,
+      "bearing": 337.0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q125050",
+      "replaces": [
+        "way/1255353996"
+      ]
+    },
+    {
+      "id": "nyc-manhattan-bridge-brooklyn",
+      "name": "Manhattan Bridge (Brooklyn tower)",
+      "model": "nyc-manhattan-bridge",
+      "lng": -73.989436,
+      "lat": 40.7051153,
+      "bearing": 337.0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q125050",
+      "replaces": [
+        "way/317352033"
+      ]
+    },
+    {
+      "id": "nyc-williamsburg-bridge-manhattan",
+      "name": "Williamsburg Bridge (Manhattan tower)",
+      "model": "nyc-williamsburg-bridge",
+      "lng": -73.9748202,
+      "lat": 40.7143946,
+      "bearing": 291.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q125068",
+      "replaces": [
+        "way/1016434034"
+      ]
+    },
+    {
+      "id": "nyc-williamsburg-bridge-brooklyn",
+      "name": "Williamsburg Bridge (Brooklyn tower)",
+      "model": "nyc-williamsburg-bridge",
+      "lng": -73.9694585,
+      "lat": 40.7127579,
+      "bearing": 291.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q125068",
+      "replaces": [
+        "way/1016434035"
+      ]
+    },
+    {
+      "id": "nyc-nypl",
+      "name": "New York Public Library, Stephen A. Schwarzman Building",
+      "model": "nyc-nypl",
+      "lng": -73.9822362,
+      "lat": 40.753215,
+      "bearing": 29.0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7013887",
+      "replaces": [
+        "way/265302076",
+        "way/292055454",
+        "way/292055455",
+        "way/292055456",
+        "way/292055457",
+        "way/292055458",
+        "way/292055802",
+        "way/292055803",
+        "way/292055804",
+        "way/292055805",
+        "way/292055806",
+        "way/292055807"
+      ]
+    },
+    {
+      "id": "nyc-met-museum",
+      "name": "The Metropolitan Museum of Art",
+      "model": "nyc-met-museum",
+      "lng": -73.9634337,
+      "lat": 40.7794361,
+      "bearing": 29.0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q160236",
+      "replaces": [
+        "relation/3698894"
+      ]
+    },
+    {
+      "id": "nyc-yankee-stadium",
+      "name": "Yankee Stadium",
+      "model": "nyc-yankee-stadium",
+      "lng": -73.926453,
+      "lat": 40.829601,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q753529",
+      "replaces": [
+        "way/24801630"
+      ]
+    },
+    {
+      "id": "nyc-amnh",
+      "name": "American Museum of Natural History",
+      "model": "nyc-amnh",
+      "lng": -73.9740746,
+      "lat": 40.7811959,
+      "bearing": 29.0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q217717",
+      "replaces": [
+        "way/388436810"
+      ]
+    },
+    {
+      "id": "nyc-citi-field",
+      "name": "Citi Field",
+      "model": "nyc-citi-field",
+      "lng": -73.845831,
+      "lat": 40.757062,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1072882",
+      "replaces": [
+        "way/604023701",
+        "way/1445223372",
+        "way/1445222220",
+        "way/1445222221",
+        "way/1445222222",
+        "way/604024892",
+        "way/1518492091",
+        "way/1553291644",
+        "way/1060517536",
+        "way/1553289790"
+      ]
+    },
+    {
+      "id": "nyc-williamsburgh-savings-bank",
+      "name": "Williamsburgh Savings Bank Tower",
+      "model": "nyc-williamsburgh-savings-bank",
+      "lng": -73.9777183,
+      "lat": 40.6855095,
+      "bearing": -6.7,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q8021187",
+      "replaces": [
+        "way/250979509",
+        "way/700246652",
+        "way/1517819427",
+        "way/1517819428",
+        "way/1517819429",
+        "way/1517819432",
+        "way/1517819433",
+        "way/1517819434",
+        "way/1517819435",
+        "way/1517819436",
+        "way/1517819437",
+        "way/1517819438",
+        "way/1517819439",
+        "way/1517819440",
+        "way/1517819441",
+        "way/1517819442",
+        "way/1517819443",
+        "way/1517819444",
+        "relation/20712618"
+      ]
+    },
+    {
+      "id": "nyc-arthur-ashe-stadium",
+      "name": "Arthur Ashe Stadium",
+      "model": "nyc-arthur-ashe-stadium",
+      "lng": -73.8470437,
+      "lat": 40.7498907,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q609551",
+      "replaces": [
+        "way/284859611"
+      ]
+    },
+    {
+      "id": "nyc-ellis-island",
+      "name": "Ellis Island Immigration Museum",
+      "model": "nyc-ellis-island",
+      "lng": -74.0394915,
+      "lat": 40.6991381,
+      "bearing": 44.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q102312434",
+      "replaces": [
+        "way/95161971",
+        "way/1177355003",
+        "way/1177355004"
+      ]
+    },
+    {
+      "id": "nyc-castle-williams",
+      "name": "Castle Williams",
+      "model": "nyc-castle-williams",
+      "lng": -74.0193366,
+      "lat": 40.6928249,
+      "bearing": -3.2,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q1049532",
+      "replaces": [
+        "relation/3700068"
+      ]
+    },
+    {
+      "id": "nyc-barclays-center",
+      "name": "Barclays Center",
+      "model": "nyc-barclays-center",
+      "lng": -73.97532637,
+      "lat": 40.68265278,
+      "bearing": 15.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q807966",
+      "replaces": [
+        "relation/8610205",
+        "way/250992428"
+      ]
+    },
+    {
+      "id": "nyc-brooklyn-museum",
+      "name": "Brooklyn Museum",
+      "model": "nyc-brooklyn-museum",
+      "lng": -73.9635448,
+      "lat": 40.6709897,
+      "bearing": 15.0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q632682",
+      "replaces": [
+        "way/1432069915",
+        "way/250229991"
+      ]
+    },
+    {
+      "id": "nyc-george-washington-bridge-new-jersey",
+      "name": "George Washington Bridge (New Jersey tower)",
+      "model": "nyc-george-washington-bridge",
+      "lng": -73.9587578,
+      "lat": 40.8528665,
+      "bearing": 284.4,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q125821",
+      "replaces": [
+        "way/741784699"
+      ]
+    },
+    {
+      "id": "nyc-george-washington-bridge-new-york",
+      "name": "George Washington Bridge (New York tower)",
+      "model": "nyc-george-washington-bridge",
+      "lng": -73.946519,
+      "lat": 40.8504589,
+      "bearing": 284.4,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q125821",
+      "replaces": [
+        "way/741784700"
+      ]
+    },
+    {
+      "id": "nyc-hoboken-terminal",
+      "name": "Hoboken Terminal",
+      "model": "nyc-hoboken-terminal",
+      "lng": -74.028196,
+      "lat": 40.7350212,
+      "bearing": -1.0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q6128305",
+      "replaces": [
+        "way/26808027",
+        "way/331072207",
+        "way/331072208"
+      ]
+    },
+    {
+      "id": "nyc-verrazzano-narrows-bridge-brooklyn",
+      "name": "Verrazzano-Narrows Bridge (Brooklyn tower)",
+      "model": "nyc-verrazzano-narrows-bridge",
+      "lng": -74.0383721,
+      "lat": 40.6086094,
+      "bearing": 247.1,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q125673",
+      "replaces": [
+        "way/1016642060"
+      ]
+    },
+    {
+      "id": "nyc-verrazzano-narrows-bridge-staten-island",
+      "name": "Verrazzano-Narrows Bridge (Staten Island tower)",
+      "model": "nyc-verrazzano-narrows-bridge",
+      "lng": -74.0524966,
+      "lat": 40.6040508,
+      "bearing": 247.1,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q125673",
+      "replaces": [
+        "way/1016642058"
+      ]
+    },
+    {
+      "id": "nyc-hell-gate-bridge",
+      "name": "Hell Gate Bridge",
+      "model": "nyc-hell-gate-bridge",
+      "lng": -73.9220019,
+      "lat": 40.7825405,
+      "bearing": 314.6,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1035131",
+      "replaces": [
+        "way/394608567",
+        "way/1016643613",
+        "way/1016643614"
+      ]
+    },
+    {
+      "id": "nyc-cleopatras-needle",
+      "name": "Cleopatra's Needle",
+      "model": "nyc-cleopatras-needle",
+      "lng": -73.965396,
+      "lat": 40.779636,
+      "bearing": 16.7,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q23889472",
+      "replaces": []
+    },
+    {
+      "id": "nyc-david-geffen-hall",
+      "name": "David Geffen Hall",
+      "model": "nyc-david-geffen-hall",
+      "lng": -73.9830164,
+      "lat": 40.7728215,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q790654",
+      "replaces": [
+        "way/265354527",
+        "way/330177539",
+        "way/1475173701"
+      ]
+    },
+    {
+      "id": "nyc-met-opera",
+      "name": "Metropolitan Opera House",
+      "model": "nyc-met-opera",
+      "lng": -73.9847275,
+      "lat": 40.7728499,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q188031",
+      "replaces": [
+        "way/265354534",
+        "way/330177538",
+        "way/1475173703",
+        "way/1475173704"
+      ]
+    },
+    {
+      "id": "nyc-koch-theater",
+      "name": "David H. Koch Theater",
+      "model": "nyc-koch-theater",
+      "lng": -73.9837676,
+      "lat": 40.7717921,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q3018029",
+      "replaces": [
+        "way/265354528",
+        "way/330177536",
+        "way/330177537",
+        "way/1475173705"
+      ]
+    },
+    {
+      "id": "nyc-plaza-hotel",
+      "name": "The Plaza",
+      "model": "nyc-plaza-hotel",
+      "lng": -73.9744567,
+      "lat": 40.7644557,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1066676",
+      "replaces": [
+        "relation/9771573",
+        "way/703143170",
+        "way/703143171",
+        "way/703143175",
+        "way/703143176",
+        "way/703143177",
+        "way/703143178",
+        "way/703143179",
+        "way/703143180",
+        "way/703143181",
+        "way/703143182",
+        "way/703143183",
+        "way/703143184",
+        "way/703143185",
+        "way/703143186",
+        "way/703143187",
+        "way/703143188",
+        "way/703143189",
+        "way/703143190",
+        "way/703143191",
+        "way/703143192",
+        "way/703143193",
+        "way/703143194",
+        "way/703143198",
+        "way/703143199",
+        "way/703143200",
+        "way/703143201",
+        "way/703143202",
+        "way/703143203",
+        "way/703143204",
+        "way/703143205",
+        "way/703143206",
+        "way/703143207",
+        "way/703143208",
+        "way/703143209",
+        "way/703143210",
+        "way/703143211",
+        "way/703143212",
+        "way/703143213",
+        "way/703143214",
+        "way/703143215",
+        "way/703143216",
+        "way/703143217",
+        "way/703143218",
+        "way/703143219",
+        "way/703143220",
+        "way/703143221",
+        "way/703143222",
+        "way/703143223"
+      ]
+    },
+    {
+      "id": "nyc-san-remo",
+      "name": "The San Remo",
+      "model": "nyc-san-remo",
+      "lng": -73.9751329,
+      "lat": 40.7779994,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1319147",
+      "replaces": [
+        "way/269293207"
+      ]
+    },
+    {
+      "id": "nyc-riverside-church",
+      "name": "The Riverside Church",
+      "model": "nyc-riverside-church",
+      "lng": -73.963026,
+      "lat": 40.811984,
+      "bearing": 29.4,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1156586",
+      "replaces": [
+        "way/274986253"
+      ]
+    },
+    {
+      "id": "nyc-metlife-tower",
+      "name": "Metropolitan Life Insurance Company Tower",
+      "model": "nyc-metlife-tower",
+      "lng": -73.9873592,
+      "lat": 40.7412668,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q652452",
+      "replaces": [
+        "way/158404390",
+        "way/263480034",
+        "way/263480035",
+        "way/263480036",
+        "way/263480038",
+        "way/263480039",
+        "way/263480040",
+        "way/263480041",
+        "way/263480042"
+      ]
+    },
+    {
+      "id": "nyc-new-york-life",
+      "name": "New York Life Building",
+      "model": "nyc-new-york-life",
+      "lng": -73.9855822,
+      "lat": 40.7427464,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1499859",
+      "replaces": [
+        "way/109280421",
+        "way/158856531",
+        "way/158856532",
+        "way/158856533",
+        "way/158856535",
+        "way/607446387",
+        "way/607446389",
+        "way/607446391",
+        "way/607446393"
+      ]
+    },
+    {
+      "id": "nyc-grants-tomb",
+      "name": "General Grant National Memorial",
+      "model": "nyc-grants-tomb",
+      "lng": -73.963051,
+      "lat": 40.813454,
+      "bearing": 21.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1025105",
+      "replaces": [
+        "way/271922197"
+      ]
+    },
+    {
+      "id": "nyc-st-john-the-divine",
+      "name": "Cathedral of St. John the Divine",
+      "model": "nyc-st-john-the-divine",
+      "lng": -73.961648,
+      "lat": 40.803753,
+      "bearing": 118.1,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q865655",
+      "replaces": [
+        "relation/3624833"
+      ]
+    },
+    {
+      "id": "nyc-columbus-monument",
+      "name": "Columbus Monument",
+      "model": "nyc-columbus-monument",
+      "lng": -73.981898,
+      "lat": 40.768069,
+      "bearing": 29.4,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q86518088",
+      "replaces": [
+        "way/608947452",
+        "way/259888095",
+        "way/259888096",
+        "way/259888097",
+        "way/259888098",
+        "way/259888099",
+        "way/259888101"
+      ]
+    },
+    {
+      "id": "nyc-twa-flight-center",
+      "name": "TWA Flight Center",
+      "model": "nyc-twa-flight-center",
+      "lng": -73.7777456,
+      "lat": 40.6457561,
+      "bearing": -3.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q29257",
+      "replaces": [
+        "way/284907419",
+        "way/1556624966",
+        "way/1556624967"
+      ]
+    },
+    {
+      "id": "nyc-uss-maine-monument",
+      "name": "USS Maine National Monument",
+      "model": "nyc-uss-maine-monument",
+      "lng": -73.980975,
+      "lat": 40.768238,
+      "bearing": 76,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q17198579",
+      "replaces": []
+    },
+    {
+      "id": "nyc-deutsche-bank-center",
+      "name": "Deutsche Bank Center",
+      "model": "nyc-deutsche-bank-center",
+      "lng": -73.982817,
+      "lat": 40.768278,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q842578",
+      "replaces": [
+        "way/167923911",
+        "way/183199498",
+        "way/183199499",
+        "way/183199500",
+        "way/183199501",
+        "way/183199502",
+        "way/183199503",
+        "way/183199504",
+        "way/183199505"
+      ]
+    },
+    {
+      "id": "nyc-haupt-conservatory",
+      "name": "Enid A. Haupt Conservatory",
+      "model": "nyc-haupt-conservatory",
+      "lng": -73.8821292,
+      "lat": 40.8639038,
+      "bearing": -31.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5378850",
+      "replaces": [
+        "way/284835739",
+        "way/333933247",
+        "way/335587477",
+        "way/334959161",
+        "way/334959164",
+        "way/334960333",
+        "way/334961377",
+        "way/334961620",
+        "way/334961621",
+        "way/334962878",
+        "way/334962999",
+        "way/334963049",
+        "way/334963115",
+        "way/334963825",
+        "way/334963826"
+      ]
+    },
+    {
+      "id": "nyc-pulitzer-fountain",
+      "name": "Pulitzer Fountain",
+      "model": "nyc-pulitzer-fountain",
+      "lng": -73.97362,
+      "lat": 40.764043,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q18157051",
+      "replaces": []
+    },
+    {
+      "id": "nyc-prison-ship-martyrs",
+      "name": "Prison Ship Martyrs' Monument",
+      "model": "nyc-prison-ship-martyrs",
+      "lng": -73.975533,
+      "lat": 40.69179,
+      "bearing": 315,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q7245761",
+      "replaces": [
+        "way/296157576",
+        "way/296157582",
+        "way/296157583"
+      ]
+    },
+    {
+      "id": "nyc-soldiers-sailors-riverside",
+      "name": "Soldiers' and Sailors' Monument",
+      "model": "nyc-soldiers-sailors-riverside",
+      "lng": -73.978929,
+      "lat": 40.792096,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3489276",
+      "replaces": [
+        "way/270975149"
+      ]
+    },
+    {
+      "id": "nyc-bethesda-fountain",
+      "name": "Bethesda Fountain (Angel of the Waters)",
+      "model": "nyc-bethesda-fountain",
+      "lng": -73.970845,
+      "lat": 40.774311,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q532029",
+      "replaces": []
     }
   ]
 }
