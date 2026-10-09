@@ -3464,6 +3464,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-railyard.ts"
+    },
+    {
+      "id": "clt-trolley-barn",
+      "file": "models/clt-trolley-barn.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-trolley-barn.ts"
     }
   ],
   "landmarks": [
@@ -13688,6 +13695,19 @@
         "way/1208420148",
         "way/1208420149",
         "way/1208420150"
+      ]
+    },
+    {
+      "id": "clt-trolley-barn",
+      "name": "Trolley Barn Fermentory & Food Hall",
+      "model": "clt-trolley-barn",
+      "lng": -80.8615582,
+      "lat": 35.2086705,
+      "bearing": 33,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/146307369"
       ]
     }
   ]
