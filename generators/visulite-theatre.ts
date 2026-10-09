@@ -25,6 +25,20 @@
  * The DEM falls 0.9 m from the back to the front-west corner, so y = 0 is the
  * front and the walls simply run up from it.
  *
+ * Rework (2026-10): heights brought to the USGS 3DEP NC Phase 4 Mecklenburg
+ * 2016 lidar (0.5 m DSM, sampled in this frame). The auditorium roof is flat
+ * at 5.1 m above the front sidewalk (was 6.4) and the front parapet stands
+ * at 6.7 m (was 7.3); the ground rises 0.8 m from the front sidewalk to the
+ * back lane. The blade is lowered with the front, to 8.0 m (was 8.6). The
+ * roof the lidar sees is the OSM outline's size but sits about 1.5 m east of
+ * it in this frame; the OSM outline is kept, as it is what the map hides.
+ * Everything else, form and colour, is the earlier model's: no licensed
+ * daylight photo of the building exists on Commons, Openverse (only NC/ND
+ * Flickr) or Mapillary (no coverage within 130 m), so the front still rests
+ * on the look-only references below. The 2016 lidar shows no marquee over
+ * the west half of the sidewalk; it is kept from the 2025 reference photo
+ * (it may postdate the flight), and is the main doubt.
+ *
  * References (visual only): WCCB / Deeandra Michel, "Get to know your city:
  * Elizabeth" (March 2025, the current front); Cinema Treasures photos 215802,
  * 165355, 286221 (older fronts); Flickr "Management's Dark Cloud" (shallowend,
@@ -79,8 +93,8 @@ function southShape(p: Part, pts: XY[], y: number) {
 // Dimensions, from the OSM outline and the 2025 street photo.
 
 const X0 = -6.8, X1 = 6.8, Y0 = -19.17, Y1 = 19.17
-const Z_BODY = 6.4            // auditorium roof
-const Z_FRONT = 7.3           // front parapet
+const Z_BODY = 5.1            // auditorium roof (lidar)
+const Z_FRONT = 6.7           // front parapet (lidar)
 const Z_PALE = 3.3            // top of the pale ground storey
 const D = 0.7                 // depth of the front wall's parapet block
 
@@ -143,7 +157,7 @@ const MX0 = X0 + 0.1, MX1 = 0.5, MY = Y0 - 2.4, MZ0 = 3.2, MZ1 = 4.9
 // The vertical blade at the marquee's outer west end: a thin upright fin
 // standing out from the wall, pale faces in a dark frame.
 {
-  const x0 = MX0 + 0.05, x1 = MX0 + 0.45, y0 = MY + 0.2, y1 = Y0, z0 = MZ0 - 0.4, z1 = 8.6
+  const x0 = MX0 + 0.05, x1 = MX0 + 0.45, y0 = MY + 0.2, y1 = Y0, z0 = MZ0 - 0.4, z1 = 8.0
   box(dark, x0, x1, y0, y1, z0, z1, 0.08, dark, [true, true, false, true], dark)
   quadN(board, [x0 - 0.03, y1 - 0.25, z0 + 0.4], [x0 - 0.03, y0 + 0.25, z0 + 0.4], [x0 - 0.03, y0 + 0.25, z1 - 0.35], [x0 - 0.03, y1 - 0.25, z1 - 0.35], W)
   quadN(board, [x1 + 0.03, y0 + 0.25, z0 + 0.4], [x1 + 0.03, y1 - 0.25, z0 + 0.4], [x1 + 0.03, y1 - 0.25, z1 - 0.35], [x1 + 0.03, y0 + 0.25, z1 - 0.35], E)
@@ -167,7 +181,7 @@ console.log(parts.map(({ part, material }) => `${material.name}: ${part.triangle
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
 const glb = writeGlb('Visulite Theatre', parts, {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at the ground anchor',
-  bearing: 46, osm: 'way/957552031', height: 8.6,
+  bearing: 46, osm: 'way/957552031', height: 8.0,
 })
 if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
 const out = new URL('../models/visulite-theatre.glb', import.meta.url).pathname
