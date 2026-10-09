@@ -21,7 +21,23 @@
  * Kept toy-like: a round boiler and smokebox, stack, bell, two domes, a boxy
  * headlight, a cab with windows, eight driving wheels as discs with a side
  * rod, a wedge pilot, and a plain tender on two trucks. No piping, handrails
- * or lettering.
+ * or lettering. *
+ * 2026 rework (colour and detail; the engine's massing is unchanged):
+ * - The engine is held at charcoal #4a4f57's lightness: the old near-black
+ *   (#3f4144) was darker than STYLE.md allows.
+ * - The tender is dark green, not black: "Locomotivated 0320" (mliu92,
+ *   Flickr, CC BY-SA 2.0, 2012) shows its green side lettered GAINESVILLE
+ *   MIDLAND; the Allen Forrest photos (AL904, Flickr, CC BY-NC-ND 2.0, 2017;
+ *   look-only) agree. The 2018 Commons photo doesn't show the tender, so a
+ *   repaint since then can't be ruled out.
+ * - The headlight is the big box lamp on a bracket at the top of the
+ *   smokebox front, standing forward of the stack (all photos); the old one
+ *   was a small block on the smokebox.
+ * - The stack is a straight cylinder with a thin lip, not flared.
+ * - The bell is black (2017 and 2018 photos), not brass; brass was 2012.
+ * Photos: "GM301 2018.jpg" (JLWikiUser202X, Wikimedia Commons, CC BY-SA 4.0,
+ * front left three-quarter), mliu92's "Locomotivated 0320" (front right) and
+ * "Bolt Upright 0321" (rivet detail), both CC BY-SA 2.0.
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -29,7 +45,7 @@ import { PALETTE, finish } from './palette'
 const body = new Part()    // black: boiler, cab, tender, frame
 const steel = new Part()   // wheels and rods, a shade lighter so the discs read
 const glass = new Part()   // cab windows
-const brass = new Part()   // bell
+const tender = new Part()  // the tender's tank and coal space, dark green
 const plate = new Part()   // number plate on the smokebox door
 const lamp = new Part()    // headlight lens
 
@@ -170,16 +186,23 @@ box(body, -1.05, 1.05, Y(10.2), Y(8.6), 1.5, 3.3, 0.12)
 
 // Stack, bell, the two domes and the headlight along the top.
 const TOP = BOILER_Z + 0.88
-cyl(body, [0, Y(2.0), TOP - 0.25], [0, Y(2.0), 4.62], 0.3, 0.34, 12, [false, false])
-cyl(body, [0, Y(2.0), 4.62], [0, Y(2.0), 4.78], 0.4, 0.38, 12)
-cyl(brass, [0, Y(3.75), TOP - 0.1], [0, Y(3.75), TOP + 0.28], 0.06, 0.06, 6, [false, false])
-cyl(brass, [0, Y(3.75), TOP + 0.22], [0, Y(3.75), TOP + 0.62], 0.26, 0.14, 12)
+// The stack is a plain straight cylinder with a thin lip (2012-2018 photos),
+// not a flared cap.
+cyl(body, [0, Y(2.0), TOP - 0.25], [0, Y(2.0), 4.68], 0.32, 0.32, 12, [false, false])
+cyl(body, [0, Y(2.0), 4.68], [0, Y(2.0), 4.78], 0.36, 0.36, 12)
+// The bell, painted black like the rest since at least 2017.
+cyl(body, [0, Y(3.75), TOP - 0.1], [0, Y(3.75), TOP + 0.28], 0.06, 0.06, 6, [false, false])
+cyl(body, [0, Y(3.75), TOP + 0.22], [0, Y(3.75), TOP + 0.62], 0.26, 0.14, 12)
 for (const [u, h] of [[5.0, 0.62], [6.45, 0.66]]) {
   cyl(body, [0, Y(u), TOP - 0.2], [0, Y(u), TOP + h - 0.18], 0.44, 0.44, 14, [false, false])
   cyl(body, [0, Y(u), TOP + h - 0.18], [0, Y(u), TOP + h], 0.44, 0.24, 14)
 }
-box(body, -0.34, 0.34, Y(1.75), Y(1.05), TOP - 0.05, TOP + 0.6, 0.08)
-face(lamp, [[-0.24, Y(1.03), TOP + 0.08], [0.24, Y(1.03), TOP + 0.08], [0.24, Y(1.03), TOP + 0.5], [-0.24, Y(1.03), TOP + 0.5]], [0, 1, 0])
+// The headlight: a big box lamp on a bracket at the top of the smokebox
+// front, standing forward of the stack, its lens facing ahead. It is one of
+// the first things seen from the path, so it is drawn at full size.
+box(body, -0.12, 0.12, Y(1.5), Y(1.15), TOP - 0.2, TOP + 0.12, 0.03)
+box(body, -0.4, 0.4, Y(1.62), Y(0.95), TOP + 0.1, TOP + 0.86, 0.09)
+face(lamp, [[-0.3, Y(0.93), TOP + 0.2], [0.3, Y(0.93), TOP + 0.2], [0.3, Y(0.93), TOP + 0.76], [-0.3, Y(0.93), TOP + 0.76]], [0, 1, 0])
 
 // --- Cab ----------------------------------------------------------------------
 const CAB0 = Y(12.3), CAB1 = Y(9.6), CABW = 1.5
@@ -204,22 +227,24 @@ for (const s of [-1, 1]) {
 // --- Tender -------------------------------------------------------------------
 const T0 = Y(21.2), T1 = Y(12.7)
 box(body, -1.32, 1.32, T0 + 0.2, T1 - 0.2, 0.95, 1.4, 0.05)
-box(body, -1.5, 1.5, T0, T1, 1.35, 3.55, 0.1)
+box(tender, -1.5, 1.5, T0, T1, 1.35, 3.55, 0.1)
 // The coal space: a low raised coaming round the front of the top.
-box(body, -1.5, 1.5, T1 - 2.8, T1, 3.5, 3.85, 0.08)
+box(tender, -1.5, 1.5, T1 - 2.8, T1, 3.5, 3.85, 0.08)
 for (const ax of [T0 + 1.0, T0 + 2.6, T1 - 2.6, T1 - 1.0])
   for (const s of [-1, 1]) wheel(ax, 0.42, s * 0.74, 0.13, 12)
 for (const c of [T0 + 1.8, T1 - 1.8])
   for (const s of [-1, 1]) box(steel, s > 0 ? 0.84 : -1.0, s > 0 ? 1.0 : -0.84, c - 1.25, c + 1.25, 0.28, 0.8, 0.05)
 
 const parts = [
-  // Black engine and tender. Kept a little off pure black, as the shared
-  // palette never goes darker than this; the running gear one step lighter,
-  // so the eight driving wheels read as discs against the body.
-  { part: body, material: finish('locomotive-black', 0x3f4144, 0.6) },
-  { part: steel, material: finish('locomotive-steel', 0x63676c, 0.55) },
+  // Black engine, held at STYLE.md's charcoal floor (#4a4f57) rather than the
+  // real gloss black; the running gear one step lighter, so the eight driving
+  // wheels read as discs against the body. The tender is the dark green it
+  // carries with "GAINESVILLE MIDLAND" in white (2012 and 2017 photos),
+  // pulled to the same lightness so it reads as green beside the black.
+  { part: body, material: finish('locomotive-black', 0x4a4e54, 0.6) },
+  { part: steel, material: finish('locomotive-steel', 0x6c7076, 0.55) },
+  { part: tender, material: finish('tender-green', 0x4f6656, 0.6) },
   { part: glass, material: PALETTE.window },
-  { part: brass, material: finish('brass', 0xc9a85a, 0.5) },
   { part: plate, material: PALETTE.trim },
   { part: lamp, material: PALETTE.entrance },
 ]
