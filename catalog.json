@@ -2932,6 +2932,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-design-center.ts"
+    },
+    {
+      "id": "clt-optimist-hall",
+      "file": "models/clt-optimist-hall.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-optimist-hall.ts"
     }
   ],
   "landmarks": [
@@ -11381,6 +11388,45 @@
         "way/1416657156",
         "way/1416657157",
         "way/1416657158"
+      ]
+    },
+    {
+      "id": "clt-optimist-hall",
+      "name": "Optimist Hall",
+      "model": "clt-optimist-hall",
+      "lng": -80.8273601,
+      "lat": 35.2343613,
+      "bearing": 53,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/323198228",
+        "way/1502058328",
+        "way/1502058329",
+        "way/1502058330",
+        "way/1502058331",
+        "way/1502058332",
+        "way/1502058333",
+        "way/1502058334",
+        "way/1502058335",
+        "way/1502058336",
+        "way/1502058337",
+        "way/1502058338",
+        "way/1502058339",
+        "way/1502058340",
+        "way/1502058341",
+        "way/1502058342",
+        "way/1502058343",
+        "way/1502058344",
+        "way/1502058345",
+        "way/1502058346",
+        "way/1502058347",
+        "way/1502058348",
+        "way/1502058349",
+        "way/1502058350",
+        "way/1502058351",
+        "way/1196692782",
+        "way/1196692830"
       ]
     }
   ]
