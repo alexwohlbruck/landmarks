@@ -1,11 +1,12 @@
 /**
- * Atherton Cotton Mills (1892–93), 2108 South Boulevard, South End,
+ * Atherton Cotton Mill (1892–93), 2108 South Boulevard, South End,
  * Charlotte — procedural, CC0-1.0.
- * bun generators/clt-atherton-mill.ts
+ * bun generators/clt-atherton-cotton-mill.ts
  *
  * D. A. Tompkins's mill, the first factory in Dilworth's industrial district,
  * a designated Charlotte-Mecklenburg historic landmark, converted to
- * condominiums. The Landmarks Commission survey (Mattson & Morrill, 1997)
+ * condominiums (Atherton Lofts, 2006). The Landmarks Commission survey
+ * (Mattson & Morrill, 1997)
  * describes it: "a single building with the longitudinal plan common to
  * nineteenth century textile factories. Oriented north-south ... constructed
  * on a slope, which provided two floors of work space on the west side and a
@@ -19,11 +20,15 @@
  * tall, massive square, brick smokestack with flared base and corbeled cap."
  * That stack, beside the Rail Trail, is the mill's landmark.
  *
- * NOTE on the id: the lead's brief pointed at way/432937693, the "Atherton
- * Mill" retail centre at Tremont (the 1919 Parks-Cramer machine shop and the
- * Schoenith warehouse, north of the mill). The 1893 mill itself is
- * way/432937694, 230 m south-west, with its stack (way/1196988216). This
- * model is the 1893 mill and its stack.
+ * Identity: Mecklenburg County's LocalHistoricProperty layer records
+ * "Atherton Cotton Mill", 1893, 2108 South Bv, PID 12103C99, at
+ * 35.20774, -80.86197, inside way/432937694; the county's 2108 South Bv
+ * address point (-80.861771, 35.207669) and the condominium parcel 12103C99
+ * lie under the outline too
+ * (https://hl.mecknc.gov/Properties/Designated-Historic-Landmarks/charlotte/dilworth/atherton-cotton-mills).
+ * OSM has no name on the way. The retail centre called "Atherton Mill"
+ * (way/432937693, 230 m north-east) is the 1919 Parks-Cramer Company
+ * Complex, modelled separately as clt-atherton-mill.
  *
  * Evidence:
  *  - OSM way/432937694 (outline; building:levels 2, height 9) and
@@ -210,7 +215,7 @@ export function buildAtherton(): Built {
   squareStack([-30.8, 33.2], 33)
 
   return {
-    id: 'clt-atherton-mill', name: 'Atherton Mill', anchor: [0, 0], height: 33,
+    id: 'clt-atherton-cotton-mill', name: 'Atherton Cotton Mill', anchor: [0, 0], height: 33,
     parts: [
       { part: brick, material: BRICK },
       { part: roof, material: ROOF },
