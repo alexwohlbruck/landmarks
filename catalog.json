@@ -3492,6 +3492,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-savona-mill.ts"
+    },
+    {
+      "id": "clt-pinkys-westside",
+      "file": "models/clt-pinkys-westside.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/clt-pinkys-westside.ts"
     }
   ],
   "landmarks": [
@@ -13775,6 +13782,19 @@
         "way/1329177213",
         "way/1329177214",
         "way/1329177215"
+      ]
+    },
+    {
+      "id": "clt-pinkys-westside",
+      "name": "Pinky's Westside Grill",
+      "model": "clt-pinkys-westside",
+      "lng": -80.8674184,
+      "lat": 35.2291488,
+      "bearing": 10,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/324418138"
       ]
     }
   ]
