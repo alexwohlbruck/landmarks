@@ -244,6 +244,33 @@ export function endCap(p: Part, profile0: V3[], out: XY) {
   }
 }
 
+/**
+ * Place an opening w wide centred at distance s along a run of wall edges
+ * (counter-clockwise ring, so the outward normal is to the right). Spanning a
+ * corner, it sits on the chord, stood off by the corner's bulge; one that
+ * would bulge more than 0.12 m or spans two corners is left out.
+ */
+export function placeOnRun(run: [XY, XY, number][], s: number, w: number, draw: (a: XY, b: XY, n: XY, off: number) => void) {
+  // the points at s - w/2 and s + w/2 along the run, and the corner (if any) between
+  const pts: XY[] = [run[0][0], ...run.map((e) => e[1])]
+  const cum = [0]
+  for (let i = 0; i < run.length; i++) cum.push(cum[i] + len2(sub2(pts[i + 1], pts[i])))
+  const pos = (t: number): [XY, number] => {
+    for (let i = 0; i < run.length; i++) if (t <= cum[i + 1] || i === run.length - 1) {
+      const u = nrm2(sub2(pts[i + 1], pts[i]))
+      return [add2(pts[i], u, t - cum[i]), i]
+    }
+    return [pts[0], 0]
+  }
+  const [pa, ia] = pos(s - w / 2), [pb, ib] = pos(s + w / 2)
+  if (ib - ia > 1) return
+  const u = nrm2(sub2(pb, pa)), n: XY = [u[1], -u[0]]
+  // a corner between the ends bulges past the chord: stand the panel off by that much
+  const sag = ib > ia ? (pts[ib][0] - pa[0]) * n[0] + (pts[ib][1] - pa[1]) * n[1] : 0
+  if (sag > 0.12 || sag < -0.12) return
+  draw(pa, pb, n, 0.05 + Math.max(0, sag))
+}
+
 /** Write the GLB, check the budget, print the size. */
 export async function save(id: string, name: string, parts: { part: Part; material: Swatch & { doubleSided?: boolean } }[], extras: Record<string, unknown>, maxTris = 6500) {
   const used = parts.filter((p) => p.part.triangles > 0)
@@ -493,26 +520,7 @@ function build() {
       else runs.push([e])
     }
     if (runs.length > 1 && runs[0][0][2] === runs[runs.length - 1][0][2]) runs[0].unshift(...runs.pop()!)
-    const place = (run: [XY, XY, number][], s: number, w: number, draw: (a: XY, b: XY, n: XY, off: number) => void) => {
-      // the points at s - w/2 and s + w/2 along the run, and the corner (if any) between
-      const pts: XY[] = [run[0][0], ...run.map((e) => e[1])]
-      const cum = [0]
-      for (let i = 0; i < run.length; i++) cum.push(cum[i] + len2(sub2(pts[i + 1], pts[i])))
-      const pos = (t: number): [XY, number] => {
-        for (let i = 0; i < run.length; i++) if (t <= cum[i + 1] || i === run.length - 1) {
-          const u = nrm2(sub2(pts[i + 1], pts[i]))
-          return [add2(pts[i], u, t - cum[i]), i]
-        }
-        return [pts[0], 0]
-      }
-      const [pa, ia] = pos(s - w / 2), [pb, ib] = pos(s + w / 2)
-      if (ib - ia > 1) return
-      const u = nrm2(sub2(pb, pa)), n: XY = [u[1], -u[0]]
-      // a corner between the ends bulges past the chord: stand the panel off by that much
-      const sag = ib > ia ? (pts[ib][0] - pa[0]) * n[0] + (pts[ib][1] - pa[1]) * n[1] : 0
-      if (sag > 0.12 || sag < -0.12) return
-      draw(pa, pb, n, 0.05 + Math.max(0, sag))
-    }
+    const place = placeOnRun
     for (const run of runs) {
       const total = run.reduce((t, [p, q]) => t + len2(sub2(q, p)), 0)
       const hi = run[0][2] === FACADE_HI
