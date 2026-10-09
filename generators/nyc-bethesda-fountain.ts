@@ -10,8 +10,8 @@
  * fountain's centre as the lidar shows it, ~1 m west and 0.5 m south of the
  * centroid of the OSM pool way/958635828 (amenity=fountain, natural=water,
  * not a building), so `replaces` is empty. y = 0 is the pool's water; the
- * pool, its water and the rim (a low kerb at the terrace's level) are the
- * map's and are not drawn.
+ * water is the map's. The pool's low granite rim wall (0.75 m) is drawn so
+ * the fountain reads as rising from inside its basin.
  *
  * Evidence
  * - Published (Wikipedia; Central Park Conservancy; NYC Parks): bronze angel
@@ -29,7 +29,7 @@
  *   (CC BY-SA 4.0, from the terrace stairs).
  *
  * Estimated from the front photos scaled to the lidar heights: the octagonal
- * granite base (5.0 m across the flats, to 1.3 m) with its carved band, the
+ * granite base (5.0 m across the flats, 0.9 m above the water) with its carved band, the
  * ring of eight short granite columns (to 2.1 m) round a core, the lower
  * basin's bowl (5.3 m across the flats) and rim, the octagonal pedestal of
  * the cherub group, the leafy stem, the upper basin (2.9 m across), the rock
@@ -55,12 +55,12 @@ const V = 1 / Math.cos(Math.PI / 8) // apothem → vertex radius
 
 // --- The octagonal granite base standing in the pool, its carved band and
 // stepped top. ---
-oct(granite, ([[2.5, 0], [2.5, 0.72], [2.4, 0.78], [2.4, 1.0], [2.52, 1.08], [2.15, 1.18], [2.15, 1.3]] as [number, number][]).map(([a, z]) => [a * V, z]))
+oct(granite, ([[2.5, 0], [2.5, 0.42], [2.4, 0.48], [2.4, 0.62], [2.52, 0.68], [2.15, 0.78], [2.15, 0.88]] as [number, number][]).map(([a, z]) => [a * V, z]))
 // The ring of eight short granite columns and the core they stand round.
-oct(granite, ([[1.15, 1.3], [1.15, 2.1]] as [number, number][]).map(([a, z]) => [a * V, z]), false)
+oct(granite, ([[1.15, 0.88], [1.15, 2.1]] as [number, number][]).map(([a, z]) => [a * V, z]), false)
 for (let k = 0; k < 8; k++) {
   const a = k * TAU / 8, cx = 1.85 * Math.cos(a), cy = 1.85 * Math.sin(a)
-  smooth(cols, q => lathe(q, [[0.24, 1.3], [0.24, 1.4], [0.17, 1.45], [0.15, 1.92], [0.22, 1.99], [0.24, 2.1]], 8, cx, cy, false), 50)
+  smooth(cols, q => lathe(q, [[0.24, 0.88], [0.24, 0.98], [0.17, 1.03], [0.15, 1.92], [0.22, 1.99], [0.24, 2.1]], 8, cx, cy, false), 50)
 }
 // --- The lower basin: a broad octagonal bowl with a wide rim, dished inside. ---
 oct(basin, ([[1.75, 2.08], [2.15, 2.15], [2.55, 2.38], [2.78, 2.68], [2.84, 2.84], [2.84, 2.98], [2.6, 3.0], [2.55, 2.88]] as [number, number][]).map(([a, z]) => [a * V, z]))
@@ -68,6 +68,20 @@ oct(basin, ([[1.75, 2.08], [2.15, 2.15], [2.55, 2.38], [2.78, 2.68], [2.84, 2.84
 oct(basin, ([[1.15, 2.1], [1.75, 2.08]] as [number, number][]).map(([a, z]) => [a * V, z]), false)
 // The cherubs' octagonal pedestal.
 oct(granite, ([[1.05, 2.88], [1.05, 3.1], [0.95, 3.15], [0.95, 3.38], [1.02, 3.42], [0.9, 3.46]] as [number, number][]).map(([a, z]) => [a * V, z]))
+
+// --- The great basin's low rim: a granite kerb wall ~0.75 m high round the
+// pool (OSM way/958635828, 28 m across, centred ~1 m east and 0.5 m north of
+// the fountain). The water inside it is the map's. ---
+{
+  const n = 40, cx = 1.0, cy = 0.5, ro = 14.1, ri = 13.4, h = 0.75
+  const at = (r: number, k: number, z: number): V3 => [cx + r * Math.cos(k * TAU / n), cy + r * Math.sin(k * TAU / n), z]
+  for (let k = 0; k < n; k++) {
+    const l = k + 1
+    granite.quad(at(ro, k, 0), at(ro, l, 0), at(ro, l, h), at(ro, k, h))
+    granite.quad(at(ri, l, 0), at(ri, k, 0), at(ri, k, h), at(ri, l, h))
+    granite.quad(at(ri, k, h), at(ro, k, h), at(ro, l, h), at(ri, l, h))
+  }
+}
 
 // --- Bronze: the cherub group, stem, upper basin, rock and the angel. ---
 smooth(bronze, q => {
@@ -129,7 +143,7 @@ for (const s of [-1, 1]) {
 }
 
 finishModel('Bethesda Fountain', 'nyc-bethesda-fountain', [
-  { part: granite, material: { name: 'granite', color: 0x857b74, roughness: 0.85 } },
+  { part: granite, material: { name: 'granite', color: 0x8a8580, roughness: 0.85 } },
   { part: cols, material: { name: 'granite-red', color: 0xa38a7f, roughness: 0.8 } },
   { part: basin, material: { name: 'basin', color: 0xa59a8c, roughness: 0.85 } },
   { part: bronze, material: { name: 'bronze', color: 0x56635c, roughness: 0.7 } },

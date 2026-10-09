@@ -3345,6 +3345,48 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-bethesda-fountain.ts"
+    },
+    {
+      "id": "nyc-sherman-monument",
+      "file": "models/nyc-sherman-monument.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-sherman-monument.ts"
+    },
+    {
+      "id": "nyc-brooklyn-war-memorial",
+      "file": "models/nyc-brooklyn-war-memorial.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-brooklyn-war-memorial.ts"
+    },
+    {
+      "id": "nyc-charging-bull",
+      "file": "models/nyc-charging-bull.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-charging-bull.ts"
+    },
+    {
+      "id": "nyc-firemens-memorial",
+      "file": "models/nyc-firemens-memorial.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-firemens-memorial.ts"
+    },
+    {
+      "id": "nyc-bailey-fountain",
+      "file": "models/nyc-bailey-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-bailey-fountain.ts"
+    },
+    {
+      "id": "nyc-peace-fountain",
+      "file": "models/nyc-peace-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-peace-fountain.ts"
     }
   ],
   "landmarks": [
@@ -5518,7 +5560,7 @@
     },
     {
       "id": "wdw-epcot-canada",
-      "name": "Canada Pavilion (H\u00f4tel du Canada)",
+      "name": "Canada Pavilion (Hôtel du Canada)",
       "model": "wdw-epcot-canada",
       "lng": -81.55165,
       "lat": 28.37155,
@@ -5843,7 +5885,7 @@
     },
     {
       "id": "wdw-rock-n-roller-coaster",
-      "name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
+      "name": "Rock ’n’ Roller Coaster Starring The Muppets",
       "model": "wdw-rock-n-roller-coaster",
       "lng": -81.5615788,
       "lat": 28.3596178,
@@ -6420,7 +6462,7 @@
     },
     {
       "id": "dlr-guardians-mission-breakout",
-      "name": "Guardians of the Galaxy \u2013 Mission: Breakout!",
+      "name": "Guardians of the Galaxy – Mission: Breakout!",
       "model": "dlr-guardians-mission-breakout",
       "lng": -117.9169523,
       "lat": 33.8066398,
@@ -7367,7 +7409,7 @@
     },
     {
       "id": "chi-bahai-temple",
-      "name": "Bah\u00e1\u02bc\u00ed House of Worship",
+      "name": "Baháʼí House of Worship",
       "model": "chi-bahai-temple",
       "lng": -87.68429,
       "lat": 42.074437,
@@ -9932,7 +9974,7 @@
     },
     {
       "id": "la-team-disney",
-      "name": "Team Disney \u2013 The Michael D. Eisner Building",
+      "name": "Team Disney – The Michael D. Eisner Building",
       "model": "la-team-disney",
       "lng": -118.3272456,
       "lat": 34.1579334,
@@ -13249,6 +13291,80 @@
       "elevation": 0,
       "minzoom": 17,
       "wikidata": "Q532029",
+      "replaces": []
+    },
+    {
+      "id": "nyc-sherman-monument",
+      "name": "William Tecumseh Sherman Monument",
+      "model": "nyc-sherman-monument",
+      "lng": -73.973061,
+      "lat": 40.764811,
+      "bearing": 28,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q18159288",
+      "replaces": []
+    },
+    {
+      "id": "nyc-brooklyn-war-memorial",
+      "name": "Brooklyn War Memorial",
+      "model": "nyc-brooklyn-war-memorial",
+      "lng": -73.990626,
+      "lat": 40.698443,
+      "bearing": 2,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q34811306",
+      "replaces": [
+        "way/250373213"
+      ]
+    },
+    {
+      "id": "nyc-charging-bull",
+      "name": "Charging Bull",
+      "model": "nyc-charging-bull",
+      "lng": -74.0134462,
+      "lat": 40.7055641,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q860129",
+      "replaces": []
+    },
+    {
+      "id": "nyc-firemens-memorial",
+      "name": "Firemen's Memorial",
+      "model": "nyc-firemens-memorial",
+      "lng": -73.97321,
+      "lat": 40.798596,
+      "bearing": 115,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q18148473",
+      "replaces": []
+    },
+    {
+      "id": "nyc-bailey-fountain",
+      "name": "Bailey Fountain",
+      "model": "nyc-bailey-fountain",
+      "lng": -73.970092,
+      "lat": 40.673885,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q4848351",
+      "replaces": []
+    },
+    {
+      "id": "nyc-peace-fountain",
+      "name": "Peace Fountain",
+      "model": "nyc-peace-fountain",
+      "lng": -73.9630524,
+      "lat": 40.8034978,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q7157367",
       "replaces": []
     }
   ]
