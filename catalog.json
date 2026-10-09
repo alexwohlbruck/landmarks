@@ -3513,6 +3513,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-cathedral.ts"
+    },
+    {
+      "id": "la-fox-plaza",
+      "file": "models/la-fox-plaza.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-fox-plaza.ts"
     }
   ],
   "landmarks": [
@@ -13838,6 +13845,21 @@
       "replaces": [
         "way/39550465",
         "way/425993507"
+      ]
+    },
+    {
+      "id": "la-fox-plaza",
+      "name": "Fox Plaza",
+      "model": "la-fox-plaza",
+      "lng": -118.4132792,
+      "lat": 34.0551887,
+      "bearing": 3.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1920322",
+      "replaces": [
+        "relation/5459884",
+        "way/367173868"
       ]
     }
   ]
