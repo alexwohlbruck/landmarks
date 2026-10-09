@@ -3499,6 +3499,41 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/clt-pinkys-westside.ts"
+    },
+    {
+      "id": "la-two-california-plaza",
+      "file": "models/la-two-california-plaza.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-two-california-plaza.ts"
+    },
+    {
+      "id": "la-cathedral",
+      "file": "models/la-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-cathedral.ts"
+    },
+    {
+      "id": "la-fox-plaza",
+      "file": "models/la-fox-plaza.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-fox-plaza.ts"
+    },
+    {
+      "id": "la-intuit-dome",
+      "file": "models/la-intuit-dome.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-intuit-dome.ts"
+    },
+    {
+      "id": "la-chiat-day",
+      "file": "models/la-chiat-day.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/la-chiat-day.ts"
     }
   ],
   "landmarks": [
@@ -13795,6 +13830,78 @@
       "minzoom": 16,
       "replaces": [
         "way/324418138"
+      ]
+    },
+    {
+      "id": "la-two-california-plaza",
+      "name": "Two California Plaza",
+      "model": "la-two-california-plaza",
+      "lng": -118.2516517,
+      "lat": 34.0514465,
+      "bearing": 37.9,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q2319313",
+      "replaces": [
+        "way/48847807"
+      ]
+    },
+    {
+      "id": "la-cathedral",
+      "name": "Cathedral of Our Lady of the Angels",
+      "model": "la-cathedral",
+      "lng": -118.2455647,
+      "lat": 34.0580782,
+      "bearing": 45.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1631067",
+      "replaces": [
+        "way/39550465",
+        "way/425993507"
+      ]
+    },
+    {
+      "id": "la-fox-plaza",
+      "name": "Fox Plaza",
+      "model": "la-fox-plaza",
+      "lng": -118.4132792,
+      "lat": 34.0551887,
+      "bearing": 3.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1920322",
+      "replaces": [
+        "relation/5459884",
+        "way/367173868"
+      ]
+    },
+    {
+      "id": "la-intuit-dome",
+      "name": "Intuit Dome",
+      "model": "la-intuit-dome",
+      "lng": -118.3422306,
+      "lat": 33.9437415,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q54958436",
+      "replaces": [
+        "way/1209626565"
+      ]
+    },
+    {
+      "id": "la-chiat-day",
+      "name": "Chiat/Day Building",
+      "model": "la-chiat-day",
+      "lng": -118.4766671,
+      "lat": 33.9954922,
+      "bearing": 57.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q194004",
+      "replaces": [
+        "way/413241944"
       ]
     }
   ]
