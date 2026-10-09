@@ -3373,6 +3373,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-firemens-memorial.ts"
+    },
+    {
+      "id": "nyc-bailey-fountain",
+      "file": "models/nyc-bailey-fountain.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-bailey-fountain.ts"
     }
   ],
   "landmarks": [
@@ -13327,6 +13334,18 @@
       "elevation": 0,
       "minzoom": 17,
       "wikidata": "Q18148473",
+      "replaces": []
+    },
+    {
+      "id": "nyc-bailey-fountain",
+      "name": "Bailey Fountain",
+      "model": "nyc-bailey-fountain",
+      "lng": -73.970092,
+      "lat": 40.673885,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q4848351",
       "replaces": []
     }
   ]
