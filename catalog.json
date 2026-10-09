@@ -3352,6 +3352,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/nyc-sherman-monument.ts"
+    },
+    {
+      "id": "nyc-brooklyn-war-memorial",
+      "file": "models/nyc-brooklyn-war-memorial.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-brooklyn-war-memorial.ts"
     }
   ],
   "landmarks": [
@@ -13269,6 +13276,20 @@
       "minzoom": 17,
       "wikidata": "Q18159288",
       "replaces": []
+    },
+    {
+      "id": "nyc-brooklyn-war-memorial",
+      "name": "Brooklyn War Memorial",
+      "model": "nyc-brooklyn-war-memorial",
+      "lng": -73.990626,
+      "lat": 40.698443,
+      "bearing": 2,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q34811306",
+      "replaces": [
+        "way/250373213"
+      ]
     }
   ]
 }
