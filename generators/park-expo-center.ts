@@ -8,20 +8,50 @@
  * - Independence Hall (way/836535381): the long brick hall on Independence
  *   Boulevard, with a glazed entrance vestibule on its north-east face;
  * - Freedom Hall (way/836535382): the taller brick hall to its west;
- * - the low lobby between them (way/836535383) and the covered link south to
+ * - the lobby between them (way/836535383) and the covered link south to
  * - Liberty Hall (way/836535385): the big pale precast hall with the curved
  *   south wall.
  *
- * Nothing in OSM gives heights. They are read off the Commons aerial
- * "Bojangles Coliseum and The Park, Charlotte, NC" (panoramio), scaled by the
- * cars on the boulevard, and a Mapillary view of Liberty Hall's east end:
- * Independence 10 m, Freedom 13.5 m, Liberty 10.5 m, the lobby 6 m, the link 5 m.
+ * Rework (2026-10): same outlines, anchor, bearing and replaces as before.
+ *
+ * Heights, measured: USGS 3DEP NC Phase 4 Mecklenburg 2016 lidar, 1 m DSM, as
+ * roof level above the lowest ground around the complex (about 4.5 m above
+ * the creek-side ground_min of the tile, by the west lobby and Freedom Hall):
+ * Independence 13.6 (old 10), Freedom 22.2 (old 13.5), Liberty 13.0 (old
+ * 10.5), lobby 7.0 (old 6), link 8.2 (old 5). Every roof is flat to ±0.2 m.
+ * The site falls from Liberty Hall (ground ~3.5 m up) to the lobby, so
+ * Liberty's walls run into the slope as STYLE.md asks.
+ *
+ * Massing change, with evidence: the lidar shows a raised block inside the
+ * lobby outline, in the corner between Freedom and Independence, with its roof
+ * at 15.0 m (just above Independence) and a curved south edge. The Commons
+ * aerial below shows it too: a pale block with a rounded front rising over the
+ * lobby roof behind Independence's west end. The old model had the whole
+ * lobby at 6 m; it is now a 7 m lobby with that 15 m block in its north corner.
+ *
+ * Photos (licensed):
+ * - "Bojangles Coliseum and The Park, Charlotte, NC" (panoramio), James
+ *   Willamor, CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Bojangles_Coliseum_and_The_Park,_Charlotte,_NC_-_panoramio.jpg
+ *   (2009 aerial from the north): red-brown brick halls with a pale coping,
+ *   dark grey membrane roofs on the brick halls, pale cream precast Liberty
+ *   Hall with a light roof, the glazed vestibule, the raised lobby block.
+ * - Mapillary 284918830089944 (2021-07, CC BY-SA 4.0), from Independence
+ *   Boulevard looking west-north-west: Liberty Hall's pale cream precast wall
+ *   with a light cap, Independence's red-brown brick beyond.
+ * Colours are those photos' hues pulled to the palette's lightness.
+ *
+ * Facade: the halls are windowless exhibition boxes, so the only window
+ * panels are where the real glazing is: the vestibule, the lobby's east front
+ * and the link's two sides. Brick walls keep their shallow bevelled pilasters.
+ * Liberty's row of small precast diamonds is too fine to read and is left out.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 
 type XY = [number, number]
 const brick = new Part(), stone = new Part(), roof = new Part(), membrane = new Part()
+/** The pale coping on the brick halls, in Liberty's precast colour. */
+const coping = stone
 const win = new Part(), door = new Part()
 
 const unit = (v: V3): V3 => { const l = Math.hypot(...v) || 1; return [v[0] / l, v[1] / l, v[2] / l] }
@@ -71,6 +101,8 @@ const ccw = (pts: XY[]) => (area(pts) < 0 ? [...pts].reverse() : pts)
 type Opening = { s0: number; s1: number; z0: number; z1: number; part: Part }
 type Building = {
   name: string; pts: XY[]; h: number; wall: Part; top: Part
+  /** The coping's material, if it differs from the wall. */
+  cap?: Part
   /** Pilaster spacing on long faces, if the real walls have them. */
   pilasters?: number
   /** Window and door panels, by the index of the edge they sit on. */
@@ -78,32 +110,32 @@ type Building = {
 }
 
 const independence: Building = {
-  name: 'Independence Hall', h: 10, wall: brick, top: roof, pilasters: 9.5,
-  pts: [[-47.8, 70.6], [-27.7, 57.5], [18.3, 27.8], [56.3, 3.2], [74.1, 32.0], [80.3, 42.0], [89.1, 56.1],
+  name: 'Independence Hall', h: 13.6, wall: brick, top: roof, cap: coping, pilasters: 9.5,
+  pts: [[-47.8, 70.6], [-27.7, 57.5], [2.0, 38.3], [18.3, 27.8], [56.3, 3.2], [74.1, 32.0], [80.3, 42.0], [89.1, 56.1],
     [45.5, 83.9], [47.3, 86.6], [31.8, 96.5], [30.2, 94.0], [-14.1, 122.4]],
   // The vestibule: doors below a band of glazing across its 18 m front, and
   // glazing on its two short returns.
   openings: {
-    7: [{ s0: 0.5, s1: 2.7, z0: 1.0, z1: 8.6, part: win }],
-    8: [{ s0: 1.2, s1: 17.2, z0: 0.2, z1: 3.4, part: door }, { s0: 1.2, s1: 17.2, z0: 4.0, z1: 8.6, part: win }],
-    9: [{ s0: 0.5, s1: 2.7, z0: 1.0, z1: 8.6, part: win }],
+    8: [{ s0: 0.5, s1: 2.7, z0: 1.0, z1: 8.6, part: win }],
+    9: [{ s0: 1.2, s1: 17.2, z0: 0.2, z1: 3.4, part: door }, { s0: 1.2, s1: 17.2, z0: 4.0, z1: 8.6, part: win }],
+    10: [{ s0: 0.5, s1: 2.7, z0: 1.0, z1: 8.6, part: win }],
   },
 }
 const freedom: Building = {
-  name: 'Freedom Hall', h: 13.5, wall: brick, top: roof, pilasters: 8.5,
+  name: 'Freedom Hall', h: 22.2, wall: brick, top: roof, cap: coping, pilasters: 8.5,
   pts: [[-47.8, 70.6], [-78.6, 89.1], [-83.8, 78.7], [-87.2, 81.5], [-94.9, 71.3], [-90.6, 68.8], [-101.4, 51.7],
     [-105.1, 54.3], [-109.2, 48.3], [-105.5, 46.2], [-116.7, 30.9], [-91.4, 13.9], [-86.7, 21.7], [-60.9, 5.3],
     [-57.2, 11.8], [-53.0, 9.6], [-48.2, 16.8], [-51.5, 19.4], [-41.0, 36.4], [-37.8, 41.6], [-27.7, 57.5]],
 }
 const lobby: Building = {
-  name: 'lobby', h: 6, wall: stone, top: membrane,
+  name: 'lobby', h: 7, wall: stone, top: membrane,
   pts: [[-41.0, 36.4], [-28.2, 29.0], [-32.6, 6.3], [-31.0, 6.0], [-25.7, 5.1], [-10.5, 2.6], [3.6, 0.2],
     [12.9, 15.1], [10.6, 16.7], [18.3, 27.8], [-27.7, 57.5], [-37.8, 41.6]],
   // Its glazed east front on the parking side.
   openings: { 6: [{ s0: 1.5, s1: 16, z0: 0.2, z1: 4.6, part: win }] },
 }
 const link: Building = {
-  name: 'link', h: 5, wall: stone, top: membrane,
+  name: 'link', h: 8.2, wall: stone, top: membrane,
   pts: [[-25.7, 5.1], [-30.1, -21.0], [-30.9, -25.7], [-31.7, -30.8], [-16.9, -33.4], [-10.5, 2.6]],
   openings: {
     0: [{ s0: 2, s1: 24, z0: 0.8, z1: 4.0, part: win }],
@@ -111,13 +143,20 @@ const link: Building = {
   },
 }
 const liberty: Building = {
-  name: 'Liberty Hall', h: 10.5, wall: stone, top: membrane,
+  name: 'Liberty Hall', h: 13.0, wall: stone, top: membrane,
   pts: [[-31.7, -30.8], [-36.2, -30.0], [-37.5, -39.0], [-42.4, -38.1], [-43.2, -47.3], [-47.9, -46.5],
     [-49.0, -55.6], [-53.8, -54.6], [-55.4, -63.5], [-61.3, -62.0], [-63.1, -75.0], [-45.1, -90.9],
     [-21.0, -104.5], [0.0, -111.3], [23.8, -115.3], [46.8, -115.0], [66.7, -111.4], [88.6, -102.3],
     [93.6, -73.1], [84.8, -71.5], [88.3, -52.3], [-16.9, -33.4]],
 }
-const buildings = [independence, freedom, lobby, link, liberty]
+// The raised block in the lobby's north corner (lidar, 15.0 m): its north-west
+// and north-east sides are Freedom's and Independence's walls, its south front
+// curves round from Freedom to a straight run east.
+const raised: Building = {
+  name: 'lobby, raised block', h: 15, wall: stone, top: membrane,
+  pts: [[-27.7, 57.5], [-37.8, 41.6], [-34.0, 40.2], [-30.5, 38.0], [-27.0, 36.2], [-23.0, 34.8], [1.0, 34.6], [2.0, 38.3]],
+}
+const buildings = [independence, freedom, lobby, raised, link, liberty]
 for (const b of buildings) {
   const fixed = ccw(b.pts)
   if (fixed !== b.pts && b.openings) throw new Error(`${b.name}: openings are indexed on a clockwise ring`)
@@ -157,7 +196,7 @@ for (const b of buildings) {
     const at = (s: number, z: number, d = 0): V3 => [A[0] + u[0] * s + out[0] * d, A[1] + u[1] * s + out[1] * d, z]
     if (z0 < b.h - PARAPET) quadN(b.wall, at(0, z0), at(L, z0), at(L, b.h - PARAPET), at(0, b.h - PARAPET), out)
     // The bevelled coping.
-    quadN(b.wall, at(0, b.h - PARAPET), at(L, b.h - PARAPET), [c[0], c[1], b.h], [a[0], a[1], b.h], unit([out[0], out[1], 1]))
+    quadN(b.cap ?? b.wall, at(0, b.h - PARAPET), at(L, b.h - PARAPET), [c[0], c[1], b.h], [a[0], a[1], b.h], unit([out[0], out[1], 1]))
     if (hidden >= b.h) continue
     // Window and door panels, 4 cm proud of the wall.
     for (const o of b.openings?.[i] ?? [])
@@ -186,12 +225,12 @@ for (const b of buildings) {
 // ---------------------------------------------------------------------------
 
 // Colours from the daylight Commons aerial and Mapillary: red-brown brick
-// (pulled to the palette's lightness), pale buff precast on Liberty Hall, the
-// lobby and the link, dark grey membrane on the brick halls and light grey on
-// the rest, slate glazing.
+// (pulled to the palette's lightness), pale cream precast on Liberty Hall, the
+// lobby, the link and the brick halls' coping, dark grey membrane on the brick
+// halls and light grey on the rest, slate glazing.
 const parts = [
   { part: brick, material: finish('expo-brick', 0xc4846d) },
-  { part: stone, material: PALETTE.stone },
+  { part: stone, material: finish('expo-precast', 0xece0c6) },
   { part: roof, material: PALETTE.roof },
   { part: membrane, material: finish('membrane', 0xd8d8d3) },
   { part: win, material: PALETTE.window },
