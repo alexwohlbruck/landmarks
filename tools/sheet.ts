@@ -8,7 +8,7 @@
  *   options: --out <dir>  (default preview/sheets)   --per <n>  (models per image, default 8)
  *
  * Each landmark gets a high three-quarter view from the south-west and the
- * same view at phone size (200 px), labelled with its id, name, anchor and
+ * same view at phone sizes (200 px and 80 px), labelled with its id, name, anchor and
  * size. The model is drawn turned to its catalog bearing, so "south-west" is
  * the real south-west and the view can be checked against a photo. Images
  * are written as sheet-1.png, sheet-2.png, ... two columns wide.
@@ -77,6 +77,7 @@ if (!picked.length) {
 
 const BIG = 400
 const PHONE = 200
+const TINY = 80
 const PAD = 20
 const LINE = 22
 const CELL_W = PAD + BIG + PAD + PHONE + PAD
@@ -95,6 +96,8 @@ function cell(l: CatalogLandmark) {
   const top = PAD + 3 * LINE + 8
   blit(im, render(scene, BIG, BIG, 225, 35), PAD, top)
   blit(im, render(scene, PHONE, PHONE, 225, 35, 4), PAD + BIG + PAD, top + BIG - PHONE)
+  // The smallest a landmark is drawn on a phone: its identifying features must survive this.
+  blit(im, render(scene, TINY, TINY, 225, 35, 4), PAD + BIG + PAD + (PHONE - TINY) / 2, top + BIG - PHONE - PAD - TINY)
   return im
 }
 
