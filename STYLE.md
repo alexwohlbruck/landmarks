@@ -77,9 +77,10 @@ and photos. Every rule here fixes something that went wrong.
 - **Windows are slate panels on the walls.** Use the `window` material
   (`#64798a`) as flat panels set on, or just into, the wall they belong to
   (within 0.06 m of it, as Open Landmarks checks). They follow the real bay
-  rhythm and storey groups: on a tower, one panel per bay spanning two to
-  four floors, with the wall showing between bays and between groups as
-  piers and spandrels. On a low building, a panel per real window or per
+  rhythm and storey groups: on a tower, one panel per bay spanning two or
+  three floors, with the wall showing between bays and between groups as
+  piers and spandrels. Three floors per panel usually calms an 80 px view
+  where two shimmers. On a low building, a panel per real window or per
   arched opening.
 - **Not a texture, not a stripe, not a dot grid.** No painted window grids;
   no full-height dark stripes from base to crown; no single-floor dot grids
@@ -221,15 +222,19 @@ from, in the generator's header.
     in one picture.
 - **Public-domain aerials.** USGS NAIP orthoimagery (US) and state
   orthophotos give the true plan and roof colours, and shadows give heights.
-- **Look-only references.** News, venue and agency photos, and historic
-  postcards, may be looked at and described but never copied. Note them
+- **Look-only references.** News, venue and agency photos, historic
+  postcards, and photos under non-commercial (NC) or no-derivatives (ND)
+  licences may be looked at and described but never copied. Note them
   separately in the header: a model resting on them isn't clean for Open
   Landmarks until licensed photos confirm it.
-- **Commercial maps (Google, Apple, Mapbox).** Their imagery and 3D tiles
-  are reference at most, and only when nothing else exists.
-  - A model shaped against them can't be contributed to Open Landmarks. Say
-    so in its header.
-  - Never copy their geometry.
+- **Never commercial maps.** Google, Apple, Bing and Mapbox imagery, Street
+  View and photorealistic 3D tiles are not evidence, not even when nothing
+  else exists. Their terms forbid deriving content from them, and a model
+  shaped against them can't be published as CC0 or contributed to Open
+  Landmarks. Where no open evidence exists, say so in the header and keep
+  the model plain.
+
+`docs/evidence.md` lists the sources and the tools that fetch them.
 
 ### Build in order: massing, then the identifying features, then the facade
 
@@ -318,16 +323,63 @@ a side no photo shows, an OSM tag that looked wrong. Whoever picks the model
 up next, or reviews it for Open Landmarks, needs to know which parts to
 trust.
 
+## Reworking an approved model
+
+Once a model's silhouette and crown have been approved, they are fixed. A
+later restyle, such as bringing an older model up to the current facade
+rules, changes only the facade treatment and the colours.
+
+- Read the old generator and render the old model before changing anything.
+  Keep every form it got right.
+- Lidar may correct a height that is clearly wrong. Scale the approved form
+  to the measured height. Don't redesign it from the point cloud.
+- Change the massing only where lidar or photos show the old shape is
+  clearly wrong. Record the evidence for each such change in the header.
+- The rework must look more like the photos than the old model did, never
+  less.
+
+The reworks of Truist Center and Bank of America Corporate Center were
+rejected for breaking this. Their crowns were re-derived from lidar: Truist
+lost its gables and BoA's top was reshaped.
+
+## Rejected looks
+
+Each of these was built, reviewed and rejected. Don't repeat them.
+
+- **Pale "harmonised" colours.** Models came out plain white. Colours come
+  from daylight photos, pulled to the palette's lightness.
+- **Painted window grids and thin dark stripes.** They read as prison bars
+  and shimmer. Windows are broad panels between bevelled piers.
+- **Per-floor pinstripes and window dot grids.** Group panels across two or
+  three storeys.
+- **Ovals where the building has semicircles,** as on the Chrysler crown.
+- **Ornament off the ends of the building:** arches wider than their face,
+  spikes or cones near corners.
+- **Asymmetry on a symmetrical building,** such as a terrace on one side of
+  the Empire State Building only.
+- **3D spikes for flush windows.** The Chrysler's triangular windows are
+  flat inset triangles.
+- **A boxy stepped tower with pinstripes and a tall spire cluster** for Bank
+  of America Corporate Center. The real one has a rounded bullet top, a
+  short spiky coronet and pale granite with punched windows. It was merged
+  from a contact sheet without opening the reference photos.
+- **A rework that redesigns an approved crown** (see above).
+
 ## Checking a model
 
 Run `bun run preview <id> [out-dir] [photo.png ...]` (out-dir defaults to `preview/<id>/`).
 It renders the model with the map's lighting from the south, west, a high
 south-west three-quarter (the usual phone view), the north-east, above, and
 at phone sizes of 200 and 80 px. Give it PNG photos to get side-by-side
-comparisons. Look at every view and check:
+comparisons. For a photo that matches none of the fixed views, render the
+model from the photo's side with `bun tools/view.ts` and pair the two with
+`bun tools/montage.ts`. Look at every view and check:
 
 - the silhouette and proportions match the photos;
 - the colours match the photos, material by material;
 - it is symmetrical wherever the building is;
 - nothing pokes past an edge or a corner;
 - it still reads as itself in the 80 px view.
+
+`bun tools/glb-stats.ts <id>` checks the budget: triangles, size, material
+count, and that the lowest point is at y = 0.

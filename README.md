@@ -22,7 +22,8 @@ imports it beside Open Landmarks and serves both to
 | `generators/<id>.ts` | One generator per model: the source of truth for its GLB |
 | `generators/mesh.ts`, `palette.ts`, `coaster-kit.ts` | The shared kit the generators build with |
 | `STYLE.md` | The art style, and how to build a model that holds up to review |
-| `tools/` | `preview.ts` and `sheet.ts`, for looking at models without a browser |
+| `docs/` | How a batch of models is made, from candidates to deploy, and the agent briefs |
+| `tools/` | Renderers for looking at models without a browser, evidence fetchers (lidar, OSM, photos), and the merge script |
 | `src/` | The release build: validation, placement baking, the published format |
 | `test/` | Tests for the build and the catalog |
 
@@ -37,6 +38,11 @@ imports it beside Open Landmarks and serves both to
 | `bun run sheet --branch-diff` | Contact sheets for everything this branch adds or changes |
 | `bun run build` | Validate, then write the release to `dist/` |
 | `bun test` / `bun run typecheck` | Tests, types |
+
+The full process for a batch, and every tool in `tools/`, is in
+[`docs/workflow.md`](docs/workflow.md). Where evidence comes from, and what
+may not be used, is in [`docs/evidence.md`](docs/evidence.md). The briefs
+handed to agents that build or lead a batch are in [`docs/briefs/`](docs/briefs/).
 
 ## Models and placements
 
