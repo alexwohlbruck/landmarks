@@ -11,7 +11,7 @@ import { parseGlb, writeGlb } from '../glb'
 export type V3 = [number, number, number]
 
 /** A material as authored: the sRGB hex the generator wrote, before our 2.2 gamma. */
-export type SourceMaterial = { name: string; hex: number; roughness: number; metalness: number; textured: boolean; masked: boolean }
+export type SourceMaterial = { name: string; hex: number; roughness: number; metalness: number; textured: boolean; masked: boolean; doubleSided: boolean }
 
 export type Triangle = { material: number; p: [V3, V3, V3]; n: [V3, V3, V3] }
 
@@ -85,6 +85,7 @@ export function flatten(glb: Uint8Array): FlatMesh {
       metalness: pbr.metallicFactor ?? 1,
       textured: !!pbr.baseColorTexture,
       masked: (m.alphaMode ?? 'OPAQUE') !== 'OPAQUE',
+      doubleSided: !!m.doubleSided,
     }
   })
   const triangles: Triangle[] = []
@@ -153,7 +154,7 @@ export function clean(triangles: Triangle[]): { triangles: Triangle[]; dropped: 
  * shared only where position and normal are bit-identical, so welding can
  * never collapse a thin triangle.
  */
-export function writeStatic(name: string, triangles: Triangle[], materials: Array<{ name: string; pbr: object }>): Uint8Array {
+export function writeStatic(name: string, triangles: Triangle[], materials: Array<{ name: string; pbr: object; doubleSided?: boolean }>): Uint8Array {
   const views: any[] = [], accessors: any[] = [], primitives: any[] = [], chunks: Uint8Array[] = []
   let length = 0
   const push = (bytes: Uint8Array, target: number) => {
@@ -200,7 +201,7 @@ export function writeStatic(name: string, triangles: Triangle[], materials: Arra
     scenes: [{ name, nodes: [0] }],
     nodes: [{ name, mesh: 0 }],
     meshes: [{ name, primitives }],
-    materials: used.map((m) => ({ name: m.name, pbrMetallicRoughness: m.pbr })),
+    materials: used.map((m) => ({ name: m.name, pbrMetallicRoughness: m.pbr, ...(m.doubleSided ? { doubleSided: true } : {}) })),
     accessors,
     bufferViews: views,
     buffers: [{ byteLength: length }],

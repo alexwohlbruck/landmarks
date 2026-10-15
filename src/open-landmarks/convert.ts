@@ -44,6 +44,8 @@ export function convert(
   const supportNames = new Set([...library.windowSupportMaterials, ...resolved.supports])
 
   const names = [...new Set([...resolved.names, resolved.glazing])]
+  // Thin surfaces drawn from both sides (a wheel's rim, a canopy) stay so after folding.
+  const doubleSided = new Set(resolved.names.filter((_, i) => flat.materials[i].doubleSided))
   const base = clean(clipBelowGround(flat.triangles).map((t) => ({ ...t, material: names.indexOf(resolved.names[t.material]) })))
 
   const roles = () => ({
@@ -78,7 +80,8 @@ export function convert(
       result = attach(source.map((t) => ({ ...t, material: names.indexOf(final(names[t.material])) })))
       result = { ...result, triangles: result.triangles.map((t) => ({ ...t, material: names.indexOf(final(names[t.material])) })) }
     }
-    return { lod: write(id, result.triangles, names, spec), merged, attached: result, dropped: result.dropped }
+    const sided = new Set([...doubleSided].map(final))
+    return { lod: write(id, result.triangles, names, spec, sided), merged, attached: result, dropped: result.dropped }
   }
 
   const detail = build(true)
@@ -106,7 +109,7 @@ export function convert(
   }
 }
 
-function write(id: string, triangles: Triangle[], names: string[], spec: (name: string) => LibraryEntry): Lod {
+function write(id: string, triangles: Triangle[], names: string[], spec: (name: string) => LibraryEntry, doubleSided: Set<string>): Lod {
   const min: V3 = [Infinity, Infinity, Infinity], max: V3 = [-Infinity, -Infinity, -Infinity]
   for (const t of triangles) for (const p of t.p) for (let k = 0; k < 3; k++) {
     min[k] = Math.min(min[k], p[k])
@@ -114,7 +117,7 @@ function write(id: string, triangles: Triangle[], names: string[], spec: (name: 
   }
   const materials = names.map((name) => {
     const { color, roughness, metalness } = spec(name)
-    return { name, pbr: { baseColorFactor: [...linear(color), 1], metallicFactor: metalness, roughnessFactor: roughness } }
+    return { name, doubleSided: doubleSided.has(name), pbr: { baseColorFactor: [...linear(color), 1], metallicFactor: metalness, roughnessFactor: roughness } }
   })
   return { glb: writeStatic(id, triangles, materials), triangles: triangles.length, min, max }
 }

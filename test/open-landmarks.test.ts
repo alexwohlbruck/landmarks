@@ -61,7 +61,7 @@ test('clipBelowGround cuts at y = 0 and keeps the area above', () => {
 })
 
 describe('materials', () => {
-  const source = (name: string, hex: number, roughness = 0.85) => ({ name, hex, roughness, metalness: 0, textured: false, masked: false })
+  const source = (name: string, hex: number, roughness = 0.85) => ({ name, hex, roughness, metalness: 0, textured: false, masked: false, doubleSided: false })
 
   test('a library colour keeps its name; any other becomes a finish named after the model', () => {
     const r = resolveMaterials('tower', [source('stone', 0xefe4d3), source('stone', 0xd9cbc1), source('granite', 0xd9cbc1)], library)
@@ -84,18 +84,20 @@ describe('materials', () => {
   })
 })
 
-test('convert writes one flat static node at the library colours, standing on y = 0', () => {
+test('convert writes one flat static node at the library colours, standing on y = 0, keeping double sides', () => {
   const walls = box([-5, -5, -1], [5, 5, 20])
   const glazing = new Part()
   glazing.quad([-2, -5.04, 2], [2, -5.04, 2], [2, -5.04, 6], [-2, -5.04, 6])
   const glb = writeGlb('t', [
-    { part: walls, material: { name: 'stone', color: 0xefe4d3 } },
+    { part: walls, material: { name: 'stone', color: 0xefe4d3, doubleSided: true } },
     { part: glazing, material: { name: 'window', color: 0x64798a, roughness: 0.35 } },
   ])
   const out = convert('t', 't', glb, { bearing: 30 }, library)
   const { json } = parseGlb(out.detail.glb)
   expect(json.nodes).toEqual([{ name: 't', mesh: 0 }])
   expect(json.materials.map((m: any) => m.name).sort()).toEqual(['stone', 'window'])
+  expect(json.materials.find((m: any) => m.name === 'stone').doubleSided).toBe(true)
+  expect(json.materials.find((m: any) => m.name === 'window').doubleSided).toBeUndefined()
   const stone = json.materials.find((m: any) => m.name === 'stone').pbrMetallicRoughness.baseColorFactor
   expect(stone[0]).toBeCloseTo(((0xef / 255 + 0.055) / 1.055) ** 2.4, 6)
   const [{ positions }] = worldVertices(out.detail.glb)
