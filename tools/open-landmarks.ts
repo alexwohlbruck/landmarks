@@ -32,11 +32,18 @@ mkdirSync(cache, { recursive: true })
 const root = join(import.meta.dir, '..')
 const catalog: Catalog = JSON.parse(readFileSync(join(root, 'catalog.json'), 'utf8'))
 const library: Library = JSON.parse(readFileSync(join(target, 'materials.json'), 'utf8'))
-// A rerun drops the finishes of the models it exports, so one model never matches another's finish.
+const anyOurs = (name: string) => catalog.models.some((m) => name.startsWith(`${m.id}-`))
+// Models convert against their library alone, so one of ours never takes another's finish.
+const theirLibrary: Library = {
+  ...library,
+  materials: Object.fromEntries(Object.entries(library.materials).filter(([n]) => !anyOurs(n))),
+  windowSupportMaterials: library.windowSupportMaterials.filter((n) => !anyOurs(n)),
+}
+// A rerun drops the finishes of the models it exports; the rest stay as they are.
 const selected = catalog.models.filter((m) => !only || catalog.landmarks.some((l) => l.model === m.id && only.includes(l.id)))
-const ours = (name: string) => selected.some((m) => name.startsWith(`${m.id}-`))
-for (const name of Object.keys(library.materials)) if (ours(name)) delete library.materials[name]
-library.windowSupportMaterials = library.windowSupportMaterials.filter((n) => !ours(n))
+const exporting = (name: string) => selected.some((m) => name.startsWith(`${m.id}-`))
+for (const name of Object.keys(library.materials)) if (exporting(name)) delete library.materials[name]
+library.windowSupportMaterials = library.windowSupportMaterials.filter((n) => !exporting(n))
 // The last commit that touched the models, so a link to a generator doesn't move with unrelated work.
 const commit = execSync('git log -1 --format=%H -- generators models catalog.json', { cwd: root }).toString().trim()
 const osm = new Osm(join(cache, 'osm.json'))
@@ -114,7 +121,7 @@ for (const l of candidates) {
   const id = ids.get(l.id)!
   let converted
   try {
-    converted = convert(id, model.id, new Uint8Array(readFileSync(join(root, model.file))), { bearing: l.bearing, scale: l.scale }, library)
+    converted = convert(id, model.id, new Uint8Array(readFileSync(join(root, model.file))), { bearing: l.bearing, scale: l.scale }, theirLibrary)
   } catch (err) {
     skipped.push({ id: l.id, reason: (err as Error).message })
     continue
@@ -158,7 +165,6 @@ for (const l of candidates) {
 }
 
 // Theirs first in their order, then ours sorted, so a full and a partial export write the same file.
-const anyOurs = (name: string) => catalog.models.some((m) => name.startsWith(`${m.id}-`))
 const merged = { ...library.materials, ...finishes }
 const names = Object.keys(merged)
 library.materials = Object.fromEntries([...names.filter((n) => !anyOurs(n)), ...names.filter(anyOurs).sort()].map((n) => [n, merged[n]]))
