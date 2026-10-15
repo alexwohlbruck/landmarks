@@ -10,6 +10,7 @@
     "validate": "bun src/build.ts --check",
     "preview": "bun tools/preview.ts",
     "sheet": "bun tools/sheet.ts",
+    "open-landmarks": "bun tools/open-landmarks.ts",
     "test": "bun test",
     "typecheck": "tsc --noEmit"
   },
