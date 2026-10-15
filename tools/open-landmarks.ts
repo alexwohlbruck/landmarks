@@ -32,11 +32,13 @@ mkdirSync(cache, { recursive: true })
 const root = join(import.meta.dir, '..')
 const catalog: Catalog = JSON.parse(readFileSync(join(root, 'catalog.json'), 'utf8'))
 const library: Library = JSON.parse(readFileSync(join(target, 'materials.json'), 'utf8'))
-// Rerunning starts from their library alone, so one model never matches another's finish.
-const ours = (name: string) => catalog.models.some((m) => name.startsWith(`${m.id}-`))
+// A rerun drops the finishes of the models it exports, so one model never matches another's finish.
+const selected = catalog.models.filter((m) => !only || catalog.landmarks.some((l) => l.model === m.id && only.includes(l.id)))
+const ours = (name: string) => selected.some((m) => name.startsWith(`${m.id}-`))
 for (const name of Object.keys(library.materials)) if (ours(name)) delete library.materials[name]
 library.windowSupportMaterials = library.windowSupportMaterials.filter((n) => !ours(n))
-const commit = execSync('git rev-parse HEAD', { cwd: root }).toString().trim()
+// The last commit that touched the models, so a link to a generator doesn't move with unrelated work.
+const commit = execSync('git log -1 --format=%H -- generators models catalog.json', { cwd: root }).toString().trim()
 const osm = new Osm(join(cache, 'osm.json'))
 const commons = new Commons(join(cache, 'commons.json'))
 
@@ -59,14 +61,16 @@ function duplicateOf(l: CatalogLandmark): string | undefined {
   }
 }
 
-const CITY: Record<string, string> = {
-  sf: 'san-francisco', chi: 'chicago', nyc: 'new-york', la: 'los-angeles', lv: 'las-vegas', dc: 'washington-dc',
-  sea: 'seattle', clt: 'charlotte', wdw: 'walt-disney-world', dlr: 'disneyland', carowinds: 'carowinds',
-}
+/** Where a landmark is, for ids and grouping: its park by prefix, else the nearest city. */
+const PARK: Record<string, string> = { carowinds: 'carowinds', wdw: 'walt-disney-world', dlr: 'disneyland' }
+const CITIES: Array<[string, number, number]> = [
+  ['charlotte', -80.84, 35.23], ['new-york', -73.98, 40.74], ['chicago', -87.63, 41.88], ['washington-dc', -77.03, 38.9],
+  ['los-angeles', -118.25, 34.05], ['san-francisco', -122.42, 37.77], ['seattle', -122.33, 47.6], ['las-vegas', -115.17, 36.12],
+]
+const cityOf = (l: CatalogLandmark) =>
+  PARK[l.id.split('-')[0]] ??
+  CITIES.reduce((best, c) => (Math.hypot(c[1] - l.lng, c[2] - l.lat) < Math.hypot(best[1] - l.lng, best[2] - l.lat) ? c : best))[0]
 const slug = (s: string) => s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
-const cityOf = (l: CatalogLandmark) => CITY[l.id.split('-')[0]] ?? 'charlotte'
-
-const PARKS = new Set(['carowinds', 'wdw', 'dlr'])
 
 /**
  * Their ids name the landmark, not our batch: "coit-tower". A ride, a
@@ -80,7 +84,7 @@ function assignIds(landmarks: CatalogLandmark[]): Map<string, string> {
   const ids = new Map<string, string>()
   landmarks.forEach((l, i) => {
     let id = base[i]
-    const vague = PARKS.has(l.id.split('-')[0]) || !id.includes('-')
+    const vague = l.id.split('-')[0] in PARK || !id.includes('-')
     if (vague || counts.get(id)! > 1 || taken.has(id)) id = `${id}-${cityOf(l)}`
     if (taken.has(id) || [...ids.values()].includes(id)) id = `${base[i]}-${slug(l.id)}`
     ids.set(l.id, id)
@@ -90,12 +94,14 @@ function assignIds(landmarks: CatalogLandmark[]): Map<string, string> {
 }
 
 const skipped: Array<{ id: string; reason: string }> = []
-const candidates = catalog.landmarks.filter((l) => !only || only.includes(l.id)).filter((l) => {
+const fresh = catalog.landmarks.filter((l) => {
   const dup = duplicateOf(l)
-  if (dup) skipped.push({ id: l.id, reason: `already in Open Landmarks as ${dup}` })
+  if (dup && (!only || only.includes(l.id))) skipped.push({ id: l.id, reason: `already in Open Landmarks as ${dup}` })
   return !dup
 })
-const ids = assignIds(candidates)
+// Ids come from the whole catalogue, so exporting a few never renames one.
+const ids = assignIds(fresh)
+const candidates = fresh.filter((l) => !only || only.includes(l.id))
 const models = new Map(catalog.models.map((m) => [m.id, m]))
 await osm.load(candidates.flatMap((l) => l.replaces ?? []))
 
@@ -151,8 +157,13 @@ for (const l of candidates) {
   })
 }
 
-for (const [name, entry] of Object.entries(finishes).sort(([a], [b]) => (a < b ? -1 : 1))) library.materials[name] = entry
-library.windowSupportMaterials = [...new Set([...library.windowSupportMaterials, ...[...supports].sort()])]
+// Theirs first in their order, then ours sorted, so a full and a partial export write the same file.
+const anyOurs = (name: string) => catalog.models.some((m) => name.startsWith(`${m.id}-`))
+const merged = { ...library.materials, ...finishes }
+const names = Object.keys(merged)
+library.materials = Object.fromEntries([...names.filter((n) => !anyOurs(n)), ...names.filter(anyOurs).sort()].map((n) => [n, merged[n]]))
+const walls = [...new Set([...library.windowSupportMaterials, ...supports])]
+library.windowSupportMaterials = [...walls.filter((n) => !anyOurs(n)), ...walls.filter(anyOurs).sort()]
 writeFileSync(join(target, 'materials.json'), `${JSON.stringify(library, null, 2)}\n`)
 writeFileSync(join(cache, 'report.json'), JSON.stringify({ commit, written, skipped }, null, 2))
 console.log(`wrote ${written.length} submissions, ${Object.keys(finishes).length} finishes; skipped ${skipped.length}:`)
