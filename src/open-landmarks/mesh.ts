@@ -245,3 +245,37 @@ export function clipBelowGround(triangles: Triangle[]): Triangle[] {
   }
   return out
 }
+
+/**
+ * Drop every connected piece smaller than `size` metres across: railings,
+ * mullions, finials. What a low LOD should lose first, since it never opens
+ * a hole in a larger surface.
+ */
+export function dropSmallPieces(triangles: Triangle[], size: number): Triangle[] {
+  const key = (p: V3) => p.map((v) => Math.round(v * 1e3)).join(',')
+  const parent = triangles.map((_, i) => i)
+  const find = (i: number): number => (parent[i] === i ? i : (parent[i] = find(parent[i])))
+  const owner = new Map<string, number>()
+  triangles.forEach((t, i) => {
+    for (const p of t.p) {
+      const k = key(p), j = owner.get(k)
+      if (j === undefined) owner.set(k, i)
+      else parent[find(i)] = find(j)
+    }
+  })
+  const lo = new Map<number, V3>(), hi = new Map<number, V3>()
+  triangles.forEach((t, i) => {
+    const r = find(i)
+    const a = lo.get(r) ?? [Infinity, Infinity, Infinity], b = hi.get(r) ?? [-Infinity, -Infinity, -Infinity]
+    for (const p of t.p) for (let k = 0; k < 3; k++) {
+      a[k] = Math.min(a[k], p[k])
+      b[k] = Math.max(b[k], p[k])
+    }
+    lo.set(r, a)
+    hi.set(r, b)
+  })
+  return triangles.filter((_, i) => {
+    const r = find(i), a = lo.get(r)!, b = hi.get(r)!
+    return Math.hypot(b[0] - a[0], b[1] - a[1], b[2] - a[2]) >= size
+  })
+}

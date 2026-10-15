@@ -4,7 +4,7 @@
  */
 import { bakePlacement, parseGlb } from '../glb'
 import { fitBudget, resolveMaterials, WINDOW, type Library, type LibraryEntry } from './materials'
-import { clean, clipBelowGround, cross, flatten, sub, writeStatic, type Triangle, type V3 } from './mesh'
+import { clean, clipBelowGround, cross, dropSmallPieces, flatten, sub, writeStatic, type Triangle, type V3 } from './mesh'
 import { attachWindows, demoteUnsupported } from './windows'
 
 export type Lod = { glb: Uint8Array; triangles: number; min: V3; max: V3 }
@@ -19,8 +19,12 @@ export type Converted = {
   report: { dropped: number; renormalled: number; attachedM2: number; detachedM2: number }
 }
 
-/** Their low LOD budget. Over it, the low LOD keeps partly attached panels whole, as glazing. */
-const LOW_TRIANGLES = 8000
+/**
+ * Their low LOD budget. Over it, the low LOD keeps partly attached panels
+ * whole, as glazing, then sheds its smallest pieces until it fits.
+ */
+const LOW = { triangles: 8000, bytes: 250_000 }
+const fits = (lod: Lod) => lod.triangles <= LOW.triangles && lod.glb.length <= LOW.bytes
 
 const linear = (hex: string) => [1, 3, 5].map((i) => {
   const c = parseInt(hex.slice(i, i + 2), 16) / 255
@@ -47,7 +51,7 @@ export function convert(
     glazing: names.indexOf(resolved.glazing),
     supports: new Set(names.flatMap((n, i) => (supportNames.has(n) ? [i] : []))),
   })
-  const build = (split: boolean) => {
+  const build = (split: boolean, pieceM = 0) => {
     const attach = (triangles: Triangle[]) => {
       if (!names.includes(WINDOW)) return { triangles, attached: 0, detached: 0, dropped: 0 }
       const attached = attachWindows(triangles, { ...roles(), split })
@@ -59,7 +63,8 @@ export function convert(
     const into = new Map<string, string>()
     const final = (n: string): string => (into.has(n) ? final(into.get(n)!) : n)
     const merged: Converted['merged'] = []
-    let result = attach(base.triangles)
+    const source = pieceM ? dropSmallPieces(base.triangles, pieceM) : base.triangles
+    let result = attach(source)
     for (;;) {
       const area = new Map<string, number>()
       for (const t of result.triangles) {
@@ -70,15 +75,18 @@ export function convert(
       if (!folds.length) break
       for (const f of folds) into.set(f.from, f.into)
       merged.push(...folds)
-      result = attach(base.triangles.map((t) => ({ ...t, material: names.indexOf(final(names[t.material])) })))
+      result = attach(source.map((t) => ({ ...t, material: names.indexOf(final(names[t.material])) })))
       result = { ...result, triangles: result.triangles.map((t) => ({ ...t, material: names.indexOf(final(names[t.material])) })) }
     }
     return { lod: write(id, result.triangles, names, spec), merged, attached: result, dropped: result.dropped }
   }
 
   const detail = build(true)
-  const low = detail.lod.triangles <= LOW_TRIANGLES ? detail : build(false)
-  if (low.lod.triangles > LOW_TRIANGLES) throw new Error(`${low.lod.triangles} triangles is over the low LOD budget`)
+  let low = fits(detail.lod) ? detail : build(false)
+  for (let piece = 0.25; !fits(low.lod); piece *= 2) {
+    if (piece > 64) throw new Error(`low LOD cannot fit ${LOW.triangles} triangles and ${LOW.bytes} bytes`)
+    low = build(false, piece)
+  }
 
   const usedNames = new Set(parseGlb(detail.lod.glb).json.materials.map((m: any) => m.name))
   for (const m of parseGlb(low.lod.glb).json.materials) usedNames.add(m.name)
