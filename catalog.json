@@ -3639,6 +3639,13 @@
       "author": "Barrelman",
       "file": "models/clt-cne-raceway-building.glb",
       "source": "generators/clt-cne-raceway-building.ts"
+    },
+    {
+      "id": "clt-cne-200-camp-road",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-200-camp-road.glb",
+      "source": "generators/clt-cne-200-camp-road.ts"
     }
   ],
   "landmarks": [
@@ -14436,6 +14443,21 @@
       "minzoom": 15,
       "replaces": [
         "way/324611745"
+      ]
+    },
+    {
+      "id": "clt-cne-200-camp-road",
+      "name": "200 Camp Road",
+      "model": "clt-cne-200-camp-road",
+      "lng": -80.8310415,
+      "lat": 35.2473435,
+      "bearing": 39.2,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/324612144",
+        "way/835850352",
+        "way/835850353"
       ]
     }
   ]
