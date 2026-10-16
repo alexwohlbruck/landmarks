@@ -3653,6 +3653,13 @@
       "author": "Barrelman",
       "file": "models/clt-cne-crossroad-shed.glb",
       "source": "generators/clt-cne-crossroad-shed.ts"
+    },
+    {
+      "id": "clt-cne-301-camp-road",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-301-camp-road.glb",
+      "source": "generators/clt-cne-301-camp-road.ts"
     }
   ],
   "landmarks": [
@@ -14480,6 +14487,28 @@
         "way/324608641",
         "way/835850905",
         "way/835850906"
+      ]
+    },
+    {
+      "id": "clt-cne-301-camp-road",
+      "name": "301 Camp Road",
+      "model": "clt-cne-301-camp-road",
+      "lng": -80.834093,
+      "lat": 35.2457858,
+      "bearing": 39.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/324608422",
+        "way/819519804",
+        "way/835814331",
+        "way/835814332",
+        "way/835817783",
+        "way/835817784",
+        "way/835817785",
+        "way/835817786",
+        "way/835817787",
+        "way/835817788"
       ]
     }
   ]
