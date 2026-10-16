@@ -3660,6 +3660,13 @@
       "author": "Barrelman",
       "file": "models/clt-cne-301-camp-road.glb",
       "source": "generators/clt-cne-301-camp-road.ts"
+    },
+    {
+      "id": "clt-cne-201-camp-road",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-201-camp-road.glb",
+      "source": "generators/clt-cne-201-camp-road.ts"
     }
   ],
   "landmarks": [
@@ -14509,6 +14516,36 @@
         "way/835817786",
         "way/835817787",
         "way/835817788"
+      ]
+    },
+    {
+      "id": "clt-cne-201-camp-road",
+      "name": "201 Camp Road",
+      "model": "clt-cne-201-camp-road",
+      "lng": -80.8323195,
+      "lat": 35.2463603,
+      "bearing": 39.34,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/324608496",
+        "way/835808918",
+        "way/835808919",
+        "way/835808920",
+        "way/835808921",
+        "way/835808922",
+        "way/835808923",
+        "way/835808924",
+        "way/835808925",
+        "way/835808926",
+        "way/835808927",
+        "way/835808928",
+        "way/835808929",
+        "way/835808930",
+        "way/835808931",
+        "way/835808932",
+        "way/835844005",
+        "way/1108286803"
       ]
     }
   ]
