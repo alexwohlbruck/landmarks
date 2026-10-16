@@ -3569,6 +3569,13 @@
       "author": "Barrelman",
       "file": "models/clt-plaza-building.glb",
       "source": "generators/clt-plaza-building.ts"
+    },
+    {
+      "id": "clt-atrium-building",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-atrium-building.glb",
+      "source": "generators/clt-atrium-building.ts"
     }
   ],
   "landmarks": [
@@ -14043,6 +14050,19 @@
       "minzoom": 16,
       "replaces": [
         "way/432929160"
+      ]
+    },
+    {
+      "id": "clt-atrium-building",
+      "name": "Atrium Building",
+      "model": "clt-atrium-building",
+      "lng": -80.8607692,
+      "lat": 35.2117473,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/432929165"
       ]
     }
   ]
