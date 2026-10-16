@@ -3625,6 +3625,13 @@
       "author": "Barrelman",
       "file": "models/clt-cne-hercules-south.glb",
       "source": "generators/clt-cne-hercules-south.ts"
+    },
+    {
+      "id": "clt-cne-building-3",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-building-3.glb",
+      "source": "generators/clt-cne-building-3.ts"
     }
   ],
   "landmarks": [
@@ -14387,6 +14394,28 @@
         "way/835823916",
         "way/835823917",
         "way/497199335"
+      ]
+    },
+    {
+      "id": "clt-cne-building-3",
+      "name": "Building 3, Camp North End",
+      "model": "clt-cne-building-3",
+      "lng": -80.8333358,
+      "lat": 35.2488851,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/494906712",
+        "way/835823918",
+        "way/835823919",
+        "way/835823920",
+        "way/835823921",
+        "way/835823922",
+        "way/835823923",
+        "way/835823924",
+        "way/835823925",
+        "way/835823926"
       ]
     }
   ]
