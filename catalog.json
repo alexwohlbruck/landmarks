@@ -3632,6 +3632,13 @@
       "author": "Barrelman",
       "file": "models/clt-cne-building-3.glb",
       "source": "generators/clt-cne-building-3.ts"
+    },
+    {
+      "id": "clt-cne-raceway-building",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-raceway-building.glb",
+      "source": "generators/clt-cne-raceway-building.ts"
     }
   ],
   "landmarks": [
@@ -14416,6 +14423,19 @@
         "way/835823924",
         "way/835823925",
         "way/835823926"
+      ]
+    },
+    {
+      "id": "clt-cne-raceway-building",
+      "name": "Raceway Building",
+      "model": "clt-cne-raceway-building",
+      "lng": -80.8327406,
+      "lat": 35.2476582,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/324611745"
       ]
     }
   ]
