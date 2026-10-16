@@ -3555,6 +3555,13 @@
       "author": "Barrelman",
       "file": "models/clt-dfa-building.glb",
       "source": "generators/clt-dfa-building.ts"
+    },
+    {
+      "id": "clt-110-east",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-110-east.glb",
+      "source": "generators/clt-110-east.ts"
     }
   ],
   "landmarks": [
@@ -13985,6 +13992,37 @@
         "way/1205358625",
         "way/1205358626",
         "way/1205358627"
+      ]
+    },
+    {
+      "id": "clt-110-east",
+      "name": "110 East",
+      "model": "clt-110-east",
+      "lng": -80.8588445,
+      "lat": 35.2118057,
+      "bearing": 34,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q115519219",
+      "replaces": [
+        "way/1152461493",
+        "way/1278215436",
+        "way/1278215437",
+        "way/1430326680",
+        "way/1430326681",
+        "way/1430326682",
+        "way/1430326683",
+        "way/1430326684",
+        "way/1430326685",
+        "way/1430326686",
+        "way/1430326687",
+        "way/1430326688",
+        "way/1430326689",
+        "way/1430326690",
+        "way/1430326691",
+        "way/1430326692",
+        "way/1430326693",
+        "way/1430326694"
       ]
     }
   ]
