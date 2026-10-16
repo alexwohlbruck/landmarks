@@ -3667,6 +3667,13 @@
       "author": "Barrelman",
       "file": "models/clt-cne-201-camp-road.glb",
       "source": "generators/clt-cne-201-camp-road.ts"
+    },
+    {
+      "id": "clt-cne-701-keswick",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-701-keswick.glb",
+      "source": "generators/clt-cne-701-keswick.ts"
     }
   ],
   "landmarks": [
@@ -14546,6 +14553,26 @@
         "way/835808932",
         "way/835844005",
         "way/1108286803"
+      ]
+    },
+    {
+      "id": "clt-cne-701-keswick",
+      "name": "701 Keswick Avenue",
+      "model": "clt-cne-701-keswick",
+      "lng": -80.8333009,
+      "lat": 35.2454296,
+      "bearing": 39.67,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/702547987",
+        "way/835808943",
+        "way/835808944",
+        "way/835808946",
+        "way/1108280895",
+        "way/1109057437",
+        "way/1109057438",
+        "relation/14759154"
       ]
     }
   ]
