@@ -3695,6 +3695,13 @@
       "author": "Barrelman",
       "file": "models/clt-cne-1720-statesville.glb",
       "source": "generators/clt-cne-1720-statesville.ts"
+    },
+    {
+      "id": "clt-cne-330-camp-road",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-330-camp-road.glb",
+      "source": "generators/clt-cne-330-camp-road.ts"
     }
   ],
   "landmarks": [
@@ -14662,6 +14669,19 @@
         "way/1017983348",
         "way/1017983349",
         "way/1017983350"
+      ]
+    },
+    {
+      "id": "clt-cne-330-camp-road",
+      "name": "330 Camp Road",
+      "model": "clt-cne-330-camp-road",
+      "lng": -80.8337665,
+      "lat": 35.2464025,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/324608444"
       ]
     }
   ]
