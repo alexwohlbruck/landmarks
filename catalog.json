@@ -3548,6 +3548,13 @@
       "author": "Barrelman",
       "file": "models/clt-vantage-south-end.glb",
       "source": "generators/clt-vantage-south-end.ts"
+    },
+    {
+      "id": "clt-dfa-building",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-dfa-building.glb",
+      "source": "generators/clt-dfa-building.ts"
     }
   ],
   "landmarks": [
@@ -13957,6 +13964,27 @@
       "replaces": [
         "way/1059944465",
         "way/1059944467"
+      ]
+    },
+    {
+      "id": "clt-dfa-building",
+      "name": "Dimensional Place",
+      "model": "clt-dfa-building",
+      "lng": -80.8570754,
+      "lat": 35.2153495,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/544817787",
+        "way/1205358620",
+        "way/1205358621",
+        "way/1205358622",
+        "way/1205358623",
+        "way/1205358624",
+        "way/1205358625",
+        "way/1205358626",
+        "way/1205358627"
       ]
     }
   ]
