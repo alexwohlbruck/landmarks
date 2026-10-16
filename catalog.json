@@ -3562,6 +3562,13 @@
       "author": "Barrelman",
       "file": "models/clt-110-east.glb",
       "source": "generators/clt-110-east.ts"
+    },
+    {
+      "id": "clt-plaza-building",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-plaza-building.glb",
+      "source": "generators/clt-plaza-building.ts"
     }
   ],
   "landmarks": [
@@ -14023,6 +14030,19 @@
         "way/1430326692",
         "way/1430326693",
         "way/1430326694"
+      ]
+    },
+    {
+      "id": "clt-plaza-building",
+      "name": "Plaza Building",
+      "model": "clt-plaza-building",
+      "lng": -80.8610028,
+      "lat": 35.2110362,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/432929160"
       ]
     }
   ]
