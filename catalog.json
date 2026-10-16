@@ -3702,6 +3702,13 @@
       "author": "Barrelman",
       "file": "models/clt-cne-330-camp-road.glb",
       "source": "generators/clt-cne-330-camp-road.ts"
+    },
+    {
+      "id": "clt-cne-bunkhouse",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-bunkhouse.glb",
+      "source": "generators/clt-cne-bunkhouse.ts"
     }
   ],
   "landmarks": [
@@ -14682,6 +14689,21 @@
       "minzoom": 16,
       "replaces": [
         "way/324608444"
+      ]
+    },
+    {
+      "id": "clt-cne-bunkhouse",
+      "name": "Bunkhouse",
+      "model": "clt-cne-bunkhouse",
+      "lng": -80.8332717,
+      "lat": 35.2462969,
+      "bearing": 39.13,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/324608458",
+        "way/835852293",
+        "way/901294559"
       ]
     }
   ]
