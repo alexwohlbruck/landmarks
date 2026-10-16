@@ -3611,6 +3611,13 @@
       "author": "Barrelman",
       "file": "models/clt-thirsty-beaver.glb",
       "source": "generators/clt-thirsty-beaver.ts"
+    },
+    {
+      "id": "clt-urban-district-market",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-urban-district-market.glb",
+      "source": "generators/clt-urban-district-market.ts"
     }
   ],
   "landmarks": [
@@ -14316,6 +14323,19 @@
       "wikidata": "Q123524350",
       "replaces": [
         "way/323198175"
+      ]
+    },
+    {
+      "id": "clt-urban-district-market",
+      "name": "Urban District Market",
+      "model": "clt-urban-district-market",
+      "lng": -80.8144199,
+      "lat": 35.2407037,
+      "bearing": 316.6,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/323201452"
       ]
     }
   ]
