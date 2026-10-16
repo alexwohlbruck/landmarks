@@ -3688,6 +3688,13 @@
       "author": "Barrelman",
       "file": "models/clt-cne-1701-n-graham.glb",
       "source": "generators/clt-cne-1701-n-graham.ts"
+    },
+    {
+      "id": "clt-cne-1720-statesville",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-1720-statesville.glb",
+      "source": "generators/clt-cne-1720-statesville.ts"
     }
   ],
   "landmarks": [
@@ -14636,6 +14643,25 @@
         "way/835812872",
         "way/835842061",
         "way/836225484"
+      ]
+    },
+    {
+      "id": "clt-cne-1720-statesville",
+      "name": "1720 Statesville Avenue",
+      "model": "clt-cne-1720-statesville",
+      "lng": -80.8351307,
+      "lat": 35.2447837,
+      "bearing": 39.47,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/1017983351",
+        "way/1017983345",
+        "way/1017983346",
+        "way/1017983347",
+        "way/1017983348",
+        "way/1017983349",
+        "way/1017983350"
       ]
     }
   ]
