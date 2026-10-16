@@ -3681,6 +3681,13 @@
       "author": "Barrelman",
       "file": "models/clt-cne-gama-goat.glb",
       "source": "generators/clt-cne-gama-goat.ts"
+    },
+    {
+      "id": "clt-cne-1701-n-graham",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-1701-n-graham.glb",
+      "source": "generators/clt-cne-1701-n-graham.ts"
     }
   ],
   "landmarks": [
@@ -14606,6 +14613,29 @@
         "way/835812885",
         "way/835842063",
         "way/836935996"
+      ]
+    },
+    {
+      "id": "clt-cne-1701-n-graham",
+      "name": "1701 N. Graham Street",
+      "model": "clt-cne-1701-n-graham",
+      "lng": -80.8327981,
+      "lat": 35.2447076,
+      "bearing": 39.45,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "relation/8793520",
+        "way/835812864",
+        "way/835812865",
+        "way/835812866",
+        "way/835812867",
+        "way/835812868",
+        "way/835812869",
+        "way/835812871",
+        "way/835812872",
+        "way/835842061",
+        "way/836225484"
       ]
     }
   ]
