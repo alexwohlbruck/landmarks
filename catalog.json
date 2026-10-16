@@ -3541,6 +3541,13 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-chiat-day.ts"
+    },
+    {
+      "id": "clt-vantage-south-end",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-vantage-south-end.glb",
+      "source": "generators/clt-vantage-south-end.ts"
     }
   ],
   "landmarks": [
@@ -13936,6 +13943,20 @@
       "wikidata": "Q194004",
       "replaces": [
         "way/413241944"
+      ]
+    },
+    {
+      "id": "clt-vantage-south-end",
+      "name": "Vantage South End",
+      "model": "clt-vantage-south-end",
+      "lng": -80.8535481,
+      "lat": 35.2196437,
+      "bearing": 41,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/1059944465",
+        "way/1059944467"
       ]
     }
   ]
