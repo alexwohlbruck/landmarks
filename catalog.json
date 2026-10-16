@@ -3674,6 +3674,13 @@
       "author": "Barrelman",
       "file": "models/clt-cne-701-keswick.glb",
       "source": "generators/clt-cne-701-keswick.ts"
+    },
+    {
+      "id": "clt-cne-gama-goat",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-gama-goat.glb",
+      "source": "generators/clt-cne-gama-goat.ts"
     }
   ],
   "landmarks": [
@@ -14573,6 +14580,32 @@
         "way/1109057437",
         "way/1109057438",
         "relation/14759154"
+      ]
+    },
+    {
+      "id": "clt-cne-gama-goat",
+      "name": "Gama Goat Building",
+      "model": "clt-cne-gama-goat",
+      "lng": -80.8316634,
+      "lat": 35.2459136,
+      "bearing": 39.62,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/632256525",
+        "way/835812873",
+        "way/835812874",
+        "way/835812875",
+        "way/835812876",
+        "way/835812877",
+        "way/835812878",
+        "way/835812879",
+        "way/835812880",
+        "way/835812881",
+        "way/835812883",
+        "way/835812885",
+        "way/835842063",
+        "way/836935996"
       ]
     }
   ]
