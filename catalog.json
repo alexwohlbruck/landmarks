@@ -3709,6 +3709,13 @@
       "author": "Barrelman",
       "file": "models/clt-cne-bunkhouse.glb",
       "source": "generators/clt-cne-bunkhouse.ts"
+    },
+    {
+      "id": "clt-cne-generals-office",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-generals-office.glb",
+      "source": "generators/clt-cne-generals-office.ts"
     }
   ],
   "landmarks": [
@@ -14704,6 +14711,21 @@
         "way/324608458",
         "way/835852293",
         "way/901294559"
+      ]
+    },
+    {
+      "id": "clt-cne-generals-office",
+      "name": "The General's Office",
+      "model": "clt-cne-generals-office",
+      "lng": -80.8334231,
+      "lat": 35.2464367,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/672998898",
+        "way/835851711",
+        "relation/18229983"
       ]
     }
   ]
