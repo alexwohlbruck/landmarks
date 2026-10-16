@@ -3583,6 +3583,13 @@
       "author": "Barrelman",
       "file": "models/clt-bank-of-america-tower.glb",
       "source": "generators/clt-bank-of-america-tower.ts"
+    },
+    {
+      "id": "clt-ally-center",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-ally-center.glb",
+      "source": "generators/clt-ally-center.ts"
     }
   ],
   "landmarks": [
@@ -14089,6 +14096,27 @@
         "way/1409111132",
         "way/1413181399",
         "way/1413181400"
+      ]
+    },
+    {
+      "id": "clt-ally-center",
+      "name": "Ally Charlotte Center",
+      "model": "clt-ally-center",
+      "lng": -80.8488837,
+      "lat": 35.2227002,
+      "bearing": 49.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q48840112",
+      "replaces": [
+        "way/1046738978",
+        "way/1351695576",
+        "way/1351695577",
+        "way/1351695578",
+        "way/1351695582",
+        "way/1351695583",
+        "way/1351695584",
+        "way/1351695585"
       ]
     }
   ]
