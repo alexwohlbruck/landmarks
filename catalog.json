@@ -3618,6 +3618,13 @@
       "author": "Barrelman",
       "file": "models/clt-urban-district-market.glb",
       "source": "generators/clt-urban-district-market.ts"
+    },
+    {
+      "id": "clt-cne-hercules-south",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-hercules-south.glb",
+      "source": "generators/clt-cne-hercules-south.ts"
     }
   ],
   "landmarks": [
@@ -14336,6 +14343,50 @@
       "minzoom": 16,
       "replaces": [
         "way/323201452"
+      ]
+    },
+    {
+      "id": "clt-cne-hercules-south",
+      "name": "Hercules South",
+      "model": "clt-cne-hercules-south",
+      "lng": -80.8334757,
+      "lat": 35.2482131,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/324611653",
+        "way/835823888",
+        "way/835823889",
+        "way/835823890",
+        "way/835823891",
+        "way/835823892",
+        "way/835823893",
+        "way/835823894",
+        "way/835823895",
+        "way/835823896",
+        "way/835823897",
+        "way/835823898",
+        "way/835823899",
+        "way/835823900",
+        "way/835823901",
+        "way/835823902",
+        "way/835823903",
+        "way/835823904",
+        "way/835823905",
+        "way/835823906",
+        "way/835823907",
+        "way/835823908",
+        "way/835823909",
+        "way/835823910",
+        "way/835823911",
+        "way/835823912",
+        "way/835823913",
+        "way/835823914",
+        "way/835823915",
+        "way/835823916",
+        "way/835823917",
+        "way/497199335"
       ]
     }
   ]
