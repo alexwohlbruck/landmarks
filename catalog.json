@@ -3604,6 +3604,13 @@
       "author": "Barrelman",
       "file": "models/clt-epicentre.glb",
       "source": "generators/clt-epicentre.ts"
+    },
+    {
+      "id": "clt-thirsty-beaver",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-thirsty-beaver.glb",
+      "source": "generators/clt-thirsty-beaver.ts"
     }
   ],
   "landmarks": [
@@ -14295,6 +14302,20 @@
         "relation/20499228",
         "relation/20499229",
         "relation/20454106"
+      ]
+    },
+    {
+      "id": "clt-thirsty-beaver",
+      "name": "Thirsty Beaver Saloon",
+      "model": "clt-thirsty-beaver",
+      "lng": -80.8173163,
+      "lat": 35.2213364,
+      "bearing": 10.4,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q123524350",
+      "replaces": [
+        "way/323198175"
       ]
     }
   ]
