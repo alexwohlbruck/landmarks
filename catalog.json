@@ -3541,6 +3541,181 @@
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/la-chiat-day.ts"
+    },
+    {
+      "id": "clt-vantage-south-end",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-vantage-south-end.glb",
+      "source": "generators/clt-vantage-south-end.ts"
+    },
+    {
+      "id": "clt-dfa-building",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-dfa-building.glb",
+      "source": "generators/clt-dfa-building.ts"
+    },
+    {
+      "id": "clt-110-east",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-110-east.glb",
+      "source": "generators/clt-110-east.ts"
+    },
+    {
+      "id": "clt-plaza-building",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-plaza-building.glb",
+      "source": "generators/clt-plaza-building.ts"
+    },
+    {
+      "id": "clt-atrium-building",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-atrium-building.glb",
+      "source": "generators/clt-atrium-building.ts"
+    },
+    {
+      "id": "clt-bank-of-america-tower",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-bank-of-america-tower.glb",
+      "source": "generators/clt-bank-of-america-tower.ts"
+    },
+    {
+      "id": "clt-ally-center",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-ally-center.glb",
+      "source": "generators/clt-ally-center.ts"
+    },
+    {
+      "id": "clt-convention-center",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-convention-center.glb",
+      "source": "generators/clt-convention-center.ts"
+    },
+    {
+      "id": "clt-epicentre",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-epicentre.glb",
+      "source": "generators/clt-epicentre.ts"
+    },
+    {
+      "id": "clt-thirsty-beaver",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-thirsty-beaver.glb",
+      "source": "generators/clt-thirsty-beaver.ts"
+    },
+    {
+      "id": "clt-urban-district-market",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-urban-district-market.glb",
+      "source": "generators/clt-urban-district-market.ts"
+    },
+    {
+      "id": "clt-cne-hercules-south",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-hercules-south.glb",
+      "source": "generators/clt-cne-hercules-south.ts"
+    },
+    {
+      "id": "clt-cne-building-3",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-building-3.glb",
+      "source": "generators/clt-cne-building-3.ts"
+    },
+    {
+      "id": "clt-cne-raceway-building",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-raceway-building.glb",
+      "source": "generators/clt-cne-raceway-building.ts"
+    },
+    {
+      "id": "clt-cne-200-camp-road",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-200-camp-road.glb",
+      "source": "generators/clt-cne-200-camp-road.ts"
+    },
+    {
+      "id": "clt-cne-crossroad-shed",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-crossroad-shed.glb",
+      "source": "generators/clt-cne-crossroad-shed.ts"
+    },
+    {
+      "id": "clt-cne-301-camp-road",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-301-camp-road.glb",
+      "source": "generators/clt-cne-301-camp-road.ts"
+    },
+    {
+      "id": "clt-cne-201-camp-road",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-201-camp-road.glb",
+      "source": "generators/clt-cne-201-camp-road.ts"
+    },
+    {
+      "id": "clt-cne-701-keswick",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-701-keswick.glb",
+      "source": "generators/clt-cne-701-keswick.ts"
+    },
+    {
+      "id": "clt-cne-gama-goat",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-gama-goat.glb",
+      "source": "generators/clt-cne-gama-goat.ts"
+    },
+    {
+      "id": "clt-cne-1701-n-graham",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-1701-n-graham.glb",
+      "source": "generators/clt-cne-1701-n-graham.ts"
+    },
+    {
+      "id": "clt-cne-1720-statesville",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-1720-statesville.glb",
+      "source": "generators/clt-cne-1720-statesville.ts"
+    },
+    {
+      "id": "clt-cne-330-camp-road",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-330-camp-road.glb",
+      "source": "generators/clt-cne-330-camp-road.ts"
+    },
+    {
+      "id": "clt-cne-bunkhouse",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-bunkhouse.glb",
+      "source": "generators/clt-cne-bunkhouse.ts"
+    },
+    {
+      "id": "clt-cne-generals-office",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "file": "models/clt-cne-generals-office.glb",
+      "source": "generators/clt-cne-generals-office.ts"
     }
   ],
   "landmarks": [
@@ -13936,6 +14111,621 @@
       "wikidata": "Q194004",
       "replaces": [
         "way/413241944"
+      ]
+    },
+    {
+      "id": "clt-vantage-south-end",
+      "name": "Vantage South End",
+      "model": "clt-vantage-south-end",
+      "lng": -80.8535481,
+      "lat": 35.2196437,
+      "bearing": 41,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/1059944465",
+        "way/1059944467"
+      ]
+    },
+    {
+      "id": "clt-dfa-building",
+      "name": "Dimensional Place",
+      "model": "clt-dfa-building",
+      "lng": -80.8570754,
+      "lat": 35.2153495,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/544817787",
+        "way/1205358620",
+        "way/1205358621",
+        "way/1205358622",
+        "way/1205358623",
+        "way/1205358624",
+        "way/1205358625",
+        "way/1205358626",
+        "way/1205358627"
+      ]
+    },
+    {
+      "id": "clt-110-east",
+      "name": "110 East",
+      "model": "clt-110-east",
+      "lng": -80.8588445,
+      "lat": 35.2118057,
+      "bearing": 34,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q115519219",
+      "replaces": [
+        "way/1152461493",
+        "way/1278215436",
+        "way/1278215437",
+        "way/1430326680",
+        "way/1430326681",
+        "way/1430326682",
+        "way/1430326683",
+        "way/1430326684",
+        "way/1430326685",
+        "way/1430326686",
+        "way/1430326687",
+        "way/1430326688",
+        "way/1430326689",
+        "way/1430326690",
+        "way/1430326691",
+        "way/1430326692",
+        "way/1430326693",
+        "way/1430326694"
+      ]
+    },
+    {
+      "id": "clt-plaza-building",
+      "name": "Plaza Building",
+      "model": "clt-plaza-building",
+      "lng": -80.8610028,
+      "lat": 35.2110362,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/432929160"
+      ]
+    },
+    {
+      "id": "clt-atrium-building",
+      "name": "Atrium Building",
+      "model": "clt-atrium-building",
+      "lng": -80.8607692,
+      "lat": 35.2117473,
+      "bearing": 30,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/432929165"
+      ]
+    },
+    {
+      "id": "clt-bank-of-america-tower",
+      "name": "Bank of America Tower",
+      "model": "clt-bank-of-america-tower",
+      "lng": -80.8499841,
+      "lat": 35.2236852,
+      "bearing": 49.7,
+      "elevation": 0,
+      "minzoom": 13,
+      "replaces": [
+        "way/715062087",
+        "way/1351689077",
+        "way/1351689080",
+        "way/1409111131",
+        "way/1409111132",
+        "way/1413181399",
+        "way/1413181400"
+      ]
+    },
+    {
+      "id": "clt-ally-center",
+      "name": "Ally Charlotte Center",
+      "model": "clt-ally-center",
+      "lng": -80.8488837,
+      "lat": 35.2227002,
+      "bearing": 49.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q48840112",
+      "replaces": [
+        "way/1046738978",
+        "way/1351695576",
+        "way/1351695577",
+        "way/1351695578",
+        "way/1351695582",
+        "way/1351695583",
+        "way/1351695584",
+        "way/1351695585"
+      ]
+    },
+    {
+      "id": "clt-convention-center",
+      "name": "Charlotte Convention Center",
+      "model": "clt-convention-center",
+      "lng": -80.8453989,
+      "lat": 35.2221174,
+      "bearing": 50,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q5085885",
+      "replaces": [
+        "way/239813217",
+        "way/1352238822",
+        "way/1352238823",
+        "way/1352238824",
+        "way/1352238825",
+        "way/1352238826",
+        "way/1352238827",
+        "way/1352238828",
+        "way/1352238829",
+        "way/1352238830",
+        "way/1352238838",
+        "way/1352238839",
+        "way/1352238840",
+        "way/1352238841",
+        "way/1352238842",
+        "way/1352238843",
+        "way/1352238844",
+        "way/1352238845",
+        "way/1352238846",
+        "way/1352238847",
+        "way/1352238848",
+        "way/1352238849",
+        "way/1352238850",
+        "way/1352238851",
+        "way/1352238852",
+        "way/1352238853",
+        "way/1352238854",
+        "way/1352238855",
+        "way/1352238856",
+        "way/1352238857",
+        "way/1352238858",
+        "way/1352238860",
+        "way/1352238861",
+        "way/1352238862",
+        "way/1352238863",
+        "way/1352238864",
+        "way/1352238865",
+        "way/1352238866",
+        "way/1352238867",
+        "way/1352238868",
+        "way/1352238869",
+        "way/1352238870",
+        "way/1352238871",
+        "way/1352238872",
+        "way/1352238873",
+        "way/1352238874",
+        "way/1352238875",
+        "way/1352238876",
+        "way/1352238877",
+        "way/1352238878",
+        "way/1352238879",
+        "way/1352238880",
+        "way/1352238881",
+        "way/1352238882",
+        "way/1352238883",
+        "way/1352238884",
+        "relation/18569997"
+      ]
+    },
+    {
+      "id": "clt-epicentre",
+      "name": "EpiCentre (Queen City Quarter)",
+      "model": "clt-epicentre",
+      "lng": -80.8420033,
+      "lat": 35.2253475,
+      "bearing": 48,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q114608472",
+      "replaces": [
+        "way/985619872",
+        "way/1500646960",
+        "way/1500646961",
+        "way/1500646962",
+        "way/1500646964",
+        "way/1500646965",
+        "way/1500646966",
+        "way/1500646967",
+        "way/1500646968",
+        "way/1500646969",
+        "way/1500646970",
+        "way/1500646971",
+        "way/1500646972",
+        "way/1500646974",
+        "way/676164657",
+        "way/676164658",
+        "way/1188214516",
+        "way/1500646951",
+        "way/1500646952",
+        "way/1500646953",
+        "way/1500955903",
+        "way/1500955904",
+        "way/1500646950",
+        "way/1499786340",
+        "way/1499786341",
+        "way/1499786342",
+        "way/1499786343",
+        "way/1499786344",
+        "way/1499786345",
+        "way/676164662",
+        "way/1499786347",
+        "way/1499786348",
+        "way/1499786349",
+        "way/1499786350",
+        "way/1499786351",
+        "way/1499786352",
+        "way/1499786353",
+        "way/1499786346",
+        "way/1499786354",
+        "way/1499786355",
+        "way/1499786356",
+        "way/1499786357",
+        "way/1499786358",
+        "way/1499786359",
+        "way/1499786360",
+        "way/1499786361",
+        "way/1499786362",
+        "way/1499786363",
+        "way/1499786364",
+        "way/1499786365",
+        "way/1499786366",
+        "way/1499786367",
+        "way/1499786368",
+        "way/1499786369",
+        "way/1499786370",
+        "way/1499786371",
+        "way/1499786372",
+        "way/1499786373",
+        "way/1499786374",
+        "way/1499786375",
+        "way/1499786376",
+        "way/1499786377",
+        "way/1499786378",
+        "way/1499786380",
+        "way/1499786381",
+        "way/1499786382",
+        "way/1499786383",
+        "way/1499786384",
+        "way/1499786385",
+        "way/1499786386",
+        "way/1499786387",
+        "way/1500646963",
+        "way/1500646954",
+        "way/1500646955",
+        "way/1500646956",
+        "way/1500646957",
+        "way/1500646958",
+        "way/1500646959",
+        "relation/20499228",
+        "relation/20499229",
+        "relation/20454106"
+      ]
+    },
+    {
+      "id": "clt-thirsty-beaver",
+      "name": "Thirsty Beaver Saloon",
+      "model": "clt-thirsty-beaver",
+      "lng": -80.8173163,
+      "lat": 35.2213364,
+      "bearing": 10.4,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q123524350",
+      "replaces": [
+        "way/323198175"
+      ]
+    },
+    {
+      "id": "clt-urban-district-market",
+      "name": "Urban District Market",
+      "model": "clt-urban-district-market",
+      "lng": -80.8144199,
+      "lat": 35.2407037,
+      "bearing": 316.6,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/323201452"
+      ]
+    },
+    {
+      "id": "clt-cne-hercules-south",
+      "name": "Hercules South",
+      "model": "clt-cne-hercules-south",
+      "lng": -80.8334757,
+      "lat": 35.2482131,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/324611653",
+        "way/835823888",
+        "way/835823889",
+        "way/835823890",
+        "way/835823891",
+        "way/835823892",
+        "way/835823893",
+        "way/835823894",
+        "way/835823895",
+        "way/835823896",
+        "way/835823897",
+        "way/835823898",
+        "way/835823899",
+        "way/835823900",
+        "way/835823901",
+        "way/835823902",
+        "way/835823903",
+        "way/835823904",
+        "way/835823905",
+        "way/835823906",
+        "way/835823907",
+        "way/835823908",
+        "way/835823909",
+        "way/835823910",
+        "way/835823911",
+        "way/835823912",
+        "way/835823913",
+        "way/835823914",
+        "way/835823915",
+        "way/835823916",
+        "way/835823917",
+        "way/497199335"
+      ]
+    },
+    {
+      "id": "clt-cne-building-3",
+      "name": "Building 3, Camp North End",
+      "model": "clt-cne-building-3",
+      "lng": -80.8333358,
+      "lat": 35.2488851,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/494906712",
+        "way/835823918",
+        "way/835823919",
+        "way/835823920",
+        "way/835823921",
+        "way/835823922",
+        "way/835823923",
+        "way/835823924",
+        "way/835823925",
+        "way/835823926"
+      ]
+    },
+    {
+      "id": "clt-cne-raceway-building",
+      "name": "Raceway Building",
+      "model": "clt-cne-raceway-building",
+      "lng": -80.8327406,
+      "lat": 35.2476582,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/324611745"
+      ]
+    },
+    {
+      "id": "clt-cne-200-camp-road",
+      "name": "200 Camp Road",
+      "model": "clt-cne-200-camp-road",
+      "lng": -80.8310415,
+      "lat": 35.2473435,
+      "bearing": 39.2,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/324612144",
+        "way/835850352",
+        "way/835850353"
+      ]
+    },
+    {
+      "id": "clt-cne-crossroad-shed",
+      "name": "Crossroad Shed, Camp North End",
+      "model": "clt-cne-crossroad-shed",
+      "lng": -80.8305513,
+      "lat": 35.2480828,
+      "bearing": 31.8,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/324608641",
+        "way/835850905",
+        "way/835850906"
+      ]
+    },
+    {
+      "id": "clt-cne-301-camp-road",
+      "name": "301 Camp Road",
+      "model": "clt-cne-301-camp-road",
+      "lng": -80.834093,
+      "lat": 35.2457858,
+      "bearing": 39.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/324608422",
+        "way/819519804",
+        "way/835814331",
+        "way/835814332",
+        "way/835817783",
+        "way/835817784",
+        "way/835817785",
+        "way/835817786",
+        "way/835817787",
+        "way/835817788"
+      ]
+    },
+    {
+      "id": "clt-cne-201-camp-road",
+      "name": "201 Camp Road",
+      "model": "clt-cne-201-camp-road",
+      "lng": -80.8323195,
+      "lat": 35.2463603,
+      "bearing": 39.34,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/324608496",
+        "way/835808918",
+        "way/835808919",
+        "way/835808920",
+        "way/835808921",
+        "way/835808922",
+        "way/835808923",
+        "way/835808924",
+        "way/835808925",
+        "way/835808926",
+        "way/835808927",
+        "way/835808928",
+        "way/835808929",
+        "way/835808930",
+        "way/835808931",
+        "way/835808932",
+        "way/835844005",
+        "way/1108286803"
+      ]
+    },
+    {
+      "id": "clt-cne-701-keswick",
+      "name": "701 Keswick Avenue",
+      "model": "clt-cne-701-keswick",
+      "lng": -80.8333009,
+      "lat": 35.2454296,
+      "bearing": 39.67,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/702547987",
+        "way/835808943",
+        "way/835808944",
+        "way/835808946",
+        "way/1108280895",
+        "way/1109057437",
+        "way/1109057438",
+        "relation/14759154"
+      ]
+    },
+    {
+      "id": "clt-cne-gama-goat",
+      "name": "Gama Goat Building",
+      "model": "clt-cne-gama-goat",
+      "lng": -80.8316634,
+      "lat": 35.2459136,
+      "bearing": 39.62,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/632256525",
+        "way/835812873",
+        "way/835812874",
+        "way/835812875",
+        "way/835812876",
+        "way/835812877",
+        "way/835812878",
+        "way/835812879",
+        "way/835812880",
+        "way/835812881",
+        "way/835812883",
+        "way/835812885",
+        "way/835842063",
+        "way/836935996"
+      ]
+    },
+    {
+      "id": "clt-cne-1701-n-graham",
+      "name": "1701 N. Graham Street",
+      "model": "clt-cne-1701-n-graham",
+      "lng": -80.8327981,
+      "lat": 35.2447076,
+      "bearing": 39.45,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "relation/8793520",
+        "way/835812864",
+        "way/835812865",
+        "way/835812866",
+        "way/835812867",
+        "way/835812868",
+        "way/835812869",
+        "way/835812871",
+        "way/835812872",
+        "way/835842061",
+        "way/836225484"
+      ]
+    },
+    {
+      "id": "clt-cne-1720-statesville",
+      "name": "1720 Statesville Avenue",
+      "model": "clt-cne-1720-statesville",
+      "lng": -80.8351307,
+      "lat": 35.2447837,
+      "bearing": 39.47,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/1017983351",
+        "way/1017983345",
+        "way/1017983346",
+        "way/1017983347",
+        "way/1017983348",
+        "way/1017983349",
+        "way/1017983350"
+      ]
+    },
+    {
+      "id": "clt-cne-330-camp-road",
+      "name": "330 Camp Road",
+      "model": "clt-cne-330-camp-road",
+      "lng": -80.8337665,
+      "lat": 35.2464025,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/324608444"
+      ]
+    },
+    {
+      "id": "clt-cne-bunkhouse",
+      "name": "Bunkhouse",
+      "model": "clt-cne-bunkhouse",
+      "lng": -80.8332717,
+      "lat": 35.2462969,
+      "bearing": 39.13,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/324608458",
+        "way/835852293",
+        "way/901294559"
+      ]
+    },
+    {
+      "id": "clt-cne-generals-office",
+      "name": "The General's Office",
+      "model": "clt-cne-generals-office",
+      "lng": -80.8334231,
+      "lat": 35.2464367,
+      "bearing": 6.3,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/672998898",
+        "way/835851711",
+        "relation/18229983"
       ]
     }
   ]
