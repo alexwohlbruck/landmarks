@@ -45,6 +45,15 @@ and photos. Every rule here fixes something that went wrong.
 - **Big readable forms, little detail.** No mullions, ledges, thin ribs,
   railings, fine sculpture or lettering. If it won't read at 200 px on a
   phone, leave it out.
+- **Bridges are the exception, in their detail model.** A suspension
+  bridge's cables, suspenders and stays are what make it itself, so they
+  are modelled, along with trusses and railings, in a detail GLB the map
+  draws close up (see Levels of detail and Bridges in `README.md`). The
+  low model keeps the towers, anchorages, cables and the deck structure as
+  solid bands, and drops everything thin. Draw thin members a little
+  thicker than they are (a suspender 0.3–0.45 m, a cable about twice its
+  real diameter) and at no more than half their real density, so they read
+  without shimmering.
 
 ## Ground
 
@@ -120,6 +129,8 @@ and photos. Every rule here fixes something that went wrong.
 
 - At most 5,000 triangles for most landmarks; 6,500 for the most complex,
   and never over Open Landmarks' low-LOD cap of 8,000 triangles and 250 KB.
+- A detail model, where there is one, stays under Open Landmarks' detail
+  cap: 40,000 triangles and 1.5 MB.
 - No textures. Open Landmarks allows none, and its validator rejects them.
 - Use 8 to 12 segments per semicircle and 12 to 16 around a full circle.
 

@@ -20,7 +20,7 @@ imports it beside Open Landmarks and serves both to
 | `catalog.json` | Every model and every placement of it |
 | `models/<id>.glb` | The models, as the generators write them |
 | `generators/<id>.ts` | One generator per model: the source of truth for its GLB |
-| `generators/mesh.ts`, `palette.ts`, `coaster-kit.ts` | The shared kit the generators build with |
+| `generators/mesh.ts`, `palette.ts`, `coaster-kit.ts`, `bridge-kit.ts` | The shared kit the generators build with |
 | `STYLE.md` | The art style, and how to build a model that holds up to review |
 | `docs/` | How a batch of models is made, from candidates to deploy, and the agent briefs |
 | `tools/` | Renderers for looking at models without a browser, evidence fetchers (lidar, OSM, photos), and the merge script |
@@ -50,7 +50,8 @@ The catalog keeps two lists, because a model and the places it stands are
 different things.
 
 A **model** is a GLB plus its `license`, `author` and `source` (its
-generator). A **landmark** places a model:
+generator), and optionally a `detail` GLB with a `detailZoom` (see Levels
+of detail). A **landmark** places a model:
 
 - `id` and `name`;
 - `lng`/`lat` of the anchor;
@@ -104,6 +105,58 @@ bearing and a scale alone:
   uphill side sinks into the hill rather than the downhill side floating.
 - **There is no transform on the root node.** Moving parts are child nodes
   (see Animation in `STYLE.md`).
+
+### Levels of detail
+
+A model is one GLB, its low level of detail, held to the budget in
+`STYLE.md`. A model whose identity is in parts too thin or too many for that
+budget, such as a bridge's suspenders, may add a finer GLB in the same frame:
+
+    "detail": "models/<id>.detail.glb", "detailZoom": 16
+
+A map draws the low model below `detailZoom` (17 when absent) and the detail
+model from there up. The detail model is the whole landmark, not an
+addition to the low one, and has Open Landmarks' detail budget: 40,000
+triangles, 1.5 MB, six materials. The low model drops the thin parts and
+keeps everything that reads from far off. The release publishes it as the
+asset's `lods.detail`, baked like the low one.
+
+### Bridges
+
+A bridge is one placement for the whole structure, not one per tower: the
+towers, anchorages, cables, suspenders and stays, trusses or girders and
+the deck's underside, and the frame of any raised walkway. The map draws the
+rest from OSM: every surface people drive, walk or ride on, and the approach
+viaducts and ramps outside the bridge's `man_made=bridge` outline, with their
+own piers and parapets.
+
+- **No road surfaces.** A bridge model draws nothing at road level across a
+  roadway or walkway: trusses stand beside the decks, the underside hangs
+  below them, railings stand on their edges, and the tops stay open for the
+  map's decks to show through.
+- **`replaces` lists the outline.** List the bridge's `man_made=bridge`
+  outline (a way or a multipolygon relation) beside the towers, anchorages
+  and any other buildings the model covers. The outline is what tells the
+  map to leave out its own piers and parapets across it, so list it only
+  when the model draws the structure across the whole outline. An outline
+  that runs on over approach viaducts the model doesn't draw leaves those
+  approaches without piers.
+- **Heights.** y = 0 is the water under the main span, the lowest ground
+  under the footprint. The trusses are built around the roadway the map
+  draws, so the two meet: for a suspended span the map raises its decks to
+  the outline's `height` at midspan and lowers them along a parabola to the
+  towers. Record in the generator the roadway heights the model was built
+  to.
+- **Feet on the terrain.** Towers in the water stand at y = 0. Anything
+  standing on land, such as an anchorage, runs down to the ground under it
+  vertex by vertex, at the DEM's height above its own water reading. A map
+  that finds a model's ground from its lowest vertices then drapes the
+  bridge over its terrain instead of setting it rigidly on the mean ground
+  of a kilometre-long footprint.
+
+`generators/bridge-kit.ts` has the shared pieces: cables, rods, open and
+solid trusses, terrain-footed walls. `nyc-brooklyn-bridge.ts` and
+`sf-golden-gate-bridge.ts` are the worked examples.
 
 ### What `replaces` must list
 

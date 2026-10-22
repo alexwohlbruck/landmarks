@@ -178,7 +178,7 @@ terrain or lidar ground. Note the value and its source in the header.
                 "wikidata": "<Q-id, or omit>", "replaces": ["way/123"] } }
 ```
 
-For a model placed several times (each tower of a bridge), use
+For a model placed several times (the Eiffel Tower, in Paris and Las Vegas), use
 `"landmarks": [ ... ]`.
 
 ## The generator header
