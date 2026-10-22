@@ -6,31 +6,42 @@
  * The whole bridge, anchorage to anchorage, as one placement: both towers,
  * both anchorages, four main cables, the vertical suspenders, the diagonal
  * stays fanning from each tower, the four stiffening trusses, the deck's
- * underside and the elevated promenade's frame. Writes two GLBs: the low
- * model (towers, anchorages, cables, trusses as solid bands) and a detail
+ * underside and the elevated promenade, its walking surface included.
+ * Writes two GLBs: the low model (towers, anchorages, cables, promenade,
+ * trusses as solid bands) and a detail
  * model (trusses opened into lattice, plus suspenders, stays, floor beams
  * and the promenade's cross beams), which a map draws from detailZoom up.
  *
  * Frame: x across the bridge, y along it toward Manhattan, z up, metres.
  * Placed at bearing 316.18°, the line from the Brooklyn tower's centroid to
- * the Manhattan one's; the anchor is midway between them. The map owns every
- * walking and driving surface (roadways, promenade): nothing here is a slab
- * at road level, so the map's own decks show between the trusses.
+ * the Manhattan one's; the anchor is midway between them. The map owns the
+ * roadways' surfaces: nothing here is a slab at road level, so the map's
+ * own decks show between the trusses.
  *
  * Height. z = 0 is the waterline, the lowest ground under the footprint,
  * which the map draws at the river's surface (3DEP reads the East River at
  * -1.6 m NAVD88, so a height above the water is the DEM plus 1.6). The
- * roadway the trusses are built around is the map's own profile for this
- * bridge, so its decks sit between them:
- * - main span: 41 m at midspan (OSM height=41 on the outline), falling as
- *   a parabola to 36.5 m at the towers;
- * - side spans: straight from the towers down to 27.2 m at the Brooklyn
- *   anchorage and 23.6 m at the Manhattan one.
- * Lidar puts the real roadway 0.8 m higher on the main span and, on the
- * Manhattan side span, up to 4.5 m higher (about 28 m at the anchorage):
- * the map's Manhattan end is low. The trusses follow the map, not the
- * lidar, so the two agree on the map; if its profile changes, change
- * `road` below. The cables are the lidar's, in absolute height.
+ * trusses are built around the map's own two roadways, so its decks sit
+ * between them; each side follows its own roadway:
+ * - main span: 41 − 0.01·S·(2u − 1)², S = 485.1 m between the towers: 41 m
+ *   at midspan (OSM height=41 on the outline), 36.1 m at the towers;
+ * - side spans and anchorages, from the map's decks: at the Brooklyn
+ *   anchorage 34.2 m (west roadway) and 32.1 m (east), 32.8 and 30.3 at its
+ *   landward end; at the Manhattan anchorage 26.6 and 27.9, then 24.4 and
+ *   25.9 at its landward end.
+ * Lidar puts the real roadways a little differently (0.8 m higher at
+ * midspan, about 27 m over both anchorages); the trusses follow the map, so
+ * the two agree on the map. If its profile changes, change `SIDES` below.
+ * The cables are the lidar's, in absolute height.
+ *
+ * The map draws the roadways' surfaces and markings; this model owns the
+ * promenade outright: its walking surface 3.4 m above the higher roadway
+ * (lidar; 44.4 m at midspan, 39.6 m at the towers), anchorage to anchorage
+ * and over both anchorages, widening into a balcony round each tower's
+ * centre pier; the inner trusses either side stand 1.2 m above it as its
+ * railings. The anchorages' roofs and the string course over the towers'
+ * piers stay 0.25–0.4 m under the roadways; under the arches the masonry
+ * steps down a further metre.
  *
  * Standing on the terrain. The towers stand in the river at z = 0. Each
  * anchorage's walls run down to the ground under them, vertex by vertex,
@@ -75,10 +86,10 @@
  *   over the side span); "Victorian Gothic - New York, NY - Brooklyn Bridge"
  *   (9.4–9.7) (Bmzuckerman, CC BY 4.0; towers, cables and the stay web).
  * - The towers are the approved tower model's design, unchanged but for the
- *   string course: its top is lowered from 36.5 to 35.9 m and the roadway
- *   strip through the arches is gone, so the map's roadway (36.2–36.7 m at
- *   the towers) passes through the arches above the masonry rather than
- *   fighting it.
+ *   string course: its top is lowered from 36.5 to 35.6 m, it has no top
+ *   under the arches, and the roadway strip through them is gone, so the
+ *   map's roadways (36.1–36.3 m at the towers) pass through the arches
+ *   above the masonry rather than fighting it.
  *
  * Estimated or simplified:
  * - The trusses' depth below the roadway (1.8 m) and the floor beams; no
@@ -90,8 +101,9 @@
  * - The anchorages' walls are drawn plumb; the real ones batter in about
  *   2 m a side. Their footprints are OSM's, longer than the published
  *   129 ft because OSM includes the vaults behind the anchor block.
- * - At the towers the promenade wraps round the centre pier on a balcony;
- *   that walking surface is the map's, and the frame stops at the towers.
+ * - The balconies' extent at the towers (12.6 m wide, 4 m past each face)
+ *   and the promenade's line over the anchorages, where the real one starts
+ *   its descent to the street.
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 import {
@@ -116,7 +128,7 @@ const BD = 3.6                  // end buttress half-depth
 const LD = 8.4                  // lower block half-depth
 
 const PLINTH = 2.0
-const DECK0 = 34.4, DECK = 35.9 // string course, 0.3 m under the map's roadway at the towers
+const DECK0 = 34.1, DECK = 35.6 // string course, 0.3 m or more under the map's roadways at the towers
 const SPRING = 61.0, RISE = 9.0 // pointed arches: 10 m wide, crown at 70 m
 const COR0 = 79.4, COR1 = 81.2  // cornice
 const TOP = 82.2                // wall top
@@ -202,7 +214,15 @@ function tower(at: number) {
       rbox(stone, OX0 + .4, EX, y0, y1, PLINTH, DECK0, { r: .45, lid: null })
   }, [1, -1], [1])
   rbox(stone, -PX, PX, -LD, LD, PLINTH, DECK0, { r: .45, lid: null })
-  rbox(trim, -EX - .35, EX + .35, -LD - .35, LD + .35, DECK0, DECK, { r: .5, top: .25, bot: .2, lid: roof })
+  rbox(trim, -EX - .35, EX + .35, -LD - .35, LD + .35, DECK0, DECK, { r: .5, top: .25, bot: .2, lid: null })
+  // Its top over the piers only: the roadways pass through the arches, where
+  // a floor in shadow sits a metre further down, under the map's decks.
+  const LT = LD + .1
+  flat(roof, [[-PX, -LT, DECK], [PX, -LT, DECK], [PX, LT, DECK], [-PX, LT, DECK]], [0, 0, 1])
+  mirrored(() => {
+    flat(roof, [[OX0, -LT, DECK], [EX + .1, -LT, DECK], [EX + .1, LT, DECK], [OX0, LT, DECK]], [0, 0, 1])
+    flat(soffit, [[PX, -LT, DECK - 1], [OX0, -LT, DECK - 1], [OX0, LT, DECK - 1], [PX, LT, DECK - 1]], [0, 0, 1])
+  }, [1, -1], [1])
 
   // Above the roadway: piers, buttresses, curtain wall.
   rbox(stone, -PX, PX, -PD, PD, DECK, TOP, { r: .5, lid: roof })
@@ -264,31 +284,55 @@ const FACE = LD + .5            // the towers' faces, from their centre lines
 const YB = -524.2, YM = 526.5   // the anchorages' river faces: the outline's ends
 
 /**
- * The map's roadway, metres above the water, along the bridge: fitted to the
- * decks the map generates here (within 0.25 m of both roadways). Its main
- * span is 41 − 0.01·S'·(2u − 1)² with S' = 522 m, a little wider than the
- * towers' 485 m, so it meets the towers at 36.5 m.
+ * The map's two roadways, metres above the water, side by side (s = -1 the
+ * west roadway at x < 0, +1 the east): the main span is 41 − 0.01·S·(2u − 1)²,
+ * 41 m at midspan and 36.1 m at the towers; the side spans and the
+ * anchorages are read off the map's decks every 20 m (within 0.35 m).
  */
-const road = (y: number): number => {
-  if (Math.abs(y) <= TY) return 41 - 7.659e-5 * y * y
-  return y < 0 ? sideB(y) : sideM(y)
+const MAIN = (y: number) => 41 - 0.01 * S * (y / TY) ** 2
+const SIDES: Record<number, (y: number) => number> = {
+  [-1]: piecewise([
+    [-620, 32.78], [-600, 33.06], [-580, 33.34], [-560, 33.63], [-540, 33.92], [-520, 34.21], [-500, 34.49],
+    [-480, 34.78], [-460, 35.06], [-440, 35.35], [-420, 35.64], [-400, 35.93], [-380, 36.18], [-360, 36.29],
+    [-340, 36.24], [-320, 36.13], [-300, 36.0], [-280, 35.91], [-260, 35.93], [-TY, 36.08],
+    [TY, 36.16], [260, 35.64], [280, 35.1], [300, 34.59], [320, 34.1], [340, 33.03], [360, 32.43], [380, 31.79],
+    [400, 31.1], [420, 30.39], [440, 29.69], [460, 28.98], [480, 28.27], [500, 27.57], [520, 26.86], [540, 26.16],
+    [560, 25.45], [580, 24.74], [595, 24.21],
+  ]),
+  [1]: piecewise([
+    [-620, 30.19], [-600, 30.58], [-580, 30.97], [-560, 31.36], [-540, 31.75], [-520, 32.14], [-500, 32.53],
+    [-480, 32.92], [-460, 33.31], [-440, 33.7], [-420, 34.09], [-400, 34.48], [-380, 34.85], [-360, 35.13],
+    [-340, 35.31], [-320, 35.45], [-300, 35.72], [-280, 35.73], [-260, 35.95], [-TY, 36.23],
+    [TY, 36.05], [260, 35.55], [280, 35.02], [300, 34.51], [320, 34.01], [340, 33.52], [360, 32.99], [380, 32.42],
+    [400, 31.81], [420, 31.19], [440, 30.57], [460, 30.07], [480, 29.34], [500, 28.72], [520, 28.11], [540, 27.49],
+    [560, 26.87], [580, 26.26], [595, 25.8],
+  ]),
 }
-const TOWER_ROAD = 41 - 7.659e-5 * TY * TY
-const sideB = piecewise([[YB, 27.21], [-TY, 36.53]])
-const sideM = piecewise([[TY, 36.69], [YM, 23.57]])
+const road = (y: number, s: number): number => (Math.abs(y) <= TY ? MAIN(y) : SIDES[s](y))
+const higher = (y: number) => Math.max(road(y, -1), road(y, 1))
+const lower = (y: number) => Math.min(road(y, -1), road(y, 1))
+const TOWER_ROAD = MAIN(TY)
 
 const TRUSS_UP = 4.6            // truss tops above the roadway (lidar)
 const UNDER = 1.8               // the underside below it
-const PROM = 3.4                // the promenade's surface above it (lidar)
+const PROM = 3.4                // the promenade's surface above the higher roadway (lidar)
+const RAIL = 1.2                // the inner trusses' tops above the promenade: its railings
 const OUT = 12.9, IN = 2.6      // truss centre lines
 const EDGE = 13.15              // outer edge of the deck structure
+const WALK = IN - .25           // the promenade's half-width, between the inner trusses
+const BALCONY = 6.3             // its half-width where it wraps round a tower's centre pier
 const CABLES = [-13.75, -1.75, 1.75, 13.75]
 const CABLE_R = 0.4
 const SADDLE = 83.5, LOW = 43.2
 const BAY = 4.57                // two of the real 7.5 ft suspender bays
+const BACK_B = -617.1, BACK_M = 590.7 // the anchorages' landward ends (OSM)
 
 // Spans between towers and anchorages: [from, to], each clear of the towers.
 const spans: [number, number][] = [[YB, -TY - FACE], [-TY + FACE, TY - FACE], [TY + FACE, YM]]
+// The promenade runs on over both anchorages.
+const walkSpans: [number, number][] = [[BACK_B, -TY - FACE], [-TY + FACE, TY - FACE], [TY + FACE, BACK_M]]
+
+const prom = (y: number) => higher(y) + PROM
 
 const smooth = (t: number) => (t <= 0 ? 0 : t >= 1 ? 1 : t * t * (3 - 2 * t))
 const mainCable = (y: number) => {
@@ -298,58 +342,81 @@ const mainCable = (y: number) => {
   const atFace = LOW + (SADDLE - LOW) * ((TY - FACE) / TY) ** 2
   return Math.abs(y) >= TY - FACE ? SADDLE : z + (SADDLE - atFace) * smooth(near / 15)
 }
-const sideCableB = parabola([-TY - FACE, SADDLE], [-380, 41.3], [YB, road(YB) + 0.8])
-const sideCableM = parabola([TY + FACE, SADDLE], [380, 41.0], [YM, road(YM) + 0.8])
+const sideCableB = parabola([-TY - FACE, SADDLE], [-380, 41.3], [YB, higher(YB) + 0.8])
+const sideCableM = parabola([TY + FACE, SADDLE], [380, 41.0], [YM, higher(YM) + 0.8])
 /** A main cable's height along the bridge, never through the roadway. */
 const cable = (y: number): number => {
   const z = Math.abs(y) <= TY + FACE ? mainCable(y) : y < 0 ? sideCableB(y) : sideCableM(y)
-  return Math.max(z, road(y) + 0.8)
+  return Math.max(z, higher(y) + 0.8)
 }
 
-/** Stations across a span: where the curve of the deck bends, every 20 m on the main span. */
-const curve = ([a, b]: [number, number]) => (a < 0 && b > 0 ? stations(a, b, 20) : [a, b])
+/** Stations along a span, every 20 m: the deck's profile bends between them. */
+const curve = ([a, b]: [number, number]) => stations(a, b, 20)
+/** The low model's stations, twice as far apart: within 0.1 m of the finer ones. */
+const far = ([a, b]: [number, number]) => stations(a, b, 40)
 /** Panel points across a span, one per modelled suspender. */
 const bays = ([a, b]: [number, number]) => stations(a, b, BAY)
 
 const steelLow = new Part(), steelDetail = new Part()
 const webDetail = new Part()                 // lattice strips, double-sided
 const soffitDetail = new Part()
+const walk = new Part(), walkDetail = new Part() // the promenade's walking surface
 
-const top = (y: number) => road(y) + TRUSS_UP
-const bot = (y: number) => road(y) - UNDER
+const outerTop = (s: number) => (y: number) => road(y, s) + TRUSS_UP
+const outerBot = (s: number) => (y: number) => road(y, s) - UNDER
+const innerTop = (y: number) => prom(y) + RAIL
+const innerBot = (y: number) => lower(y) - UNDER
 
 for (const span of spans) {
   const ys = curve(span)
   for (const s of [1, -1]) {
-    // Low: each truss a solid band; its underside is the soffit's.
-    for (const xc of [OUT, IN])
-      band(steelLow, s * (xc - .25), s * (xc + .25), ys, top, bot, { out: true, in: true, top: true, ends: true })
-    // Detail: chords and lattice.
-    for (const xc of [OUT, IN]) truss(steelDetail, webDetail, s * xc, bays(span), top, bot, { curve: ys })
+    // Low: each outer truss a solid band; its underside is the soffit's.
+    band(steelLow, s * (OUT - .25), s * (OUT + .25), far(span), outerTop(s), outerBot(s), { out: true, in: true, top: true, ends: true })
+    truss(steelDetail, webDetail, s * OUT, bays(span), outerTop(s), outerBot(s), { curve: ys })
+    // The underside under each roadway, facing down only.
+    band(soffit, 0, s * EDGE, far(span), outerBot(s), outerBot(s), { bottom: true })
+    band(soffitDetail, 0, s * EDGE, ys, outerBot(s), outerBot(s), { bottom: true })
   }
-  // The underside, facing down only: from above, the map's decks cover it.
-  for (const p of [soffit, soffitDetail]) band(p, -EDGE, EDGE, ys, bot, bot, { bottom: true })
   // Floor beams under it, every second bay.
   for (const y of bays(span).filter((_, i) => i % 2 === 0)) {
-    const z = bot(y)
+    const z = lower(y) - UNDER
     band(soffitDetail, -EDGE, EDGE, [y - .3, y + .3], () => z, () => z - .7, { out: false, in: false, bottom: true, ends: true })
   }
-  // The promenade's frame: cross beams under its walking surface, between the inner trusses.
-  for (const y of bays(span)) {
-    const z = road(y) + PROM - .12
-    band(steelDetail, -IN + .25, IN - .25, [y - .2, y + .2], () => z, () => z - .45, { out: false, in: false, bottom: true, ends: true })
+}
+
+// The promenade: its walking surface over the higher roadway, the inner
+// trusses either side of it as its railings, and cross beams under it.
+for (const span of walkSpans) {
+  const ys = curve(span)
+  for (const s of [1, -1]) {
+    band(steelLow, s * (IN - .25), s * (IN + .25), far(span), innerTop, innerBot, { out: true, top: true, ends: true })
+    truss(steelDetail, webDetail, s * IN, bays(span), innerTop, innerBot, { curve: ys })
   }
+  band(walk, -WALK, WALK, far(span), prom, prom, { top: true })
+  band(walkDetail, -WALK, WALK, ys, prom, (y) => prom(y) - .3, { top: true, bottom: true })
+  for (const y of bays(span)) {
+    const z = prom(y) - .3
+    band(steelDetail, -WALK, WALK, [y - .2, y + .2], () => z, () => z - .45, { out: false, in: false, bottom: true, ends: true })
+  }
+}
+// At each tower it widens into a balcony round the centre pier, over the
+// inner lanes, with a railing along each side.
+for (const t of [-TY, TY]) {
+  const ys = stations(t - FACE - 4, t + FACE + 4, 6.5)
+  for (const p of [walk, walkDetail]) band(p, -BALCONY, BALCONY, ys, prom, (y) => prom(y) - .5, { out: true, in: true, top: true, bottom: true, ends: true })
+  for (const s of [1, -1])
+    band(steelDetail, s * (BALCONY - .15), s * (BALCONY + .1), ys, (y) => prom(y) + RAIL, (y) => prom(y) - .5, { out: true, in: true, top: true, ends: true })
 }
 
 // Cables, anchorage to anchorage, over the saddles. The ends dive into the
 // anchorages' masonry.
 const cablePath = (x: number, step: number): V3[] => [
-  [x, YB - 9, road(YB) - 3],
+  [x, YB - 9, lower(YB) - 3],
   ...spans.flatMap(([a, b]) => stations(a, b, step).map((y) => [x, y, cable(y)] as V3)),
-  [x, YM + 9, road(YM) - 3],
+  [x, YM + 9, lower(YM) - 3],
 ]
 for (const x of CABLES) {
-  tube(steelLow, cablePath(x, 24), CABLE_R, 5)
+  tube(steelLow, cablePath(x, 30), CABLE_R, 5)
   tube(steelDetail, cablePath(x, 8), CABLE_R, 8)
 }
 
@@ -358,7 +425,7 @@ for (const span of spans)
   for (const y of bays(span)) {
     if (Math.abs(Math.abs(y) - TY) < FACE + 6) continue
     for (const x of CABLES) {
-      const z0 = bot(y) + .6, z1 = cable(y) - CABLE_R * .5
+      const z0 = road(y, Math.sign(x)) - UNDER + .6, z1 = cable(y) - CABLE_R * .5
       if (z1 - z0 > 1) rod(steelDetail, [x, y, z0], [x, y, z1], .16)
     }
   }
@@ -372,7 +439,10 @@ for (const t of [-TY, TY])
       const y = y0 + dir * (12 + i * BAY)
       if (y < YB || y > YM) continue
       const zTop = 79.4 + 2.6 * (i / (STAYS - 1))
-      for (const x of CABLES) rod(steelDetail, [x, y0, zTop], [x, y, top(y) - .5], .18)
+      for (const x of CABLES) {
+        const end = Math.abs(x) > IN ? road(y, Math.sign(x)) + TRUSS_UP - .5 : prom(y) - .5
+        rod(steelDetail, [x, y0, zTop], [x, y, end], .18)
+      }
     }
   }
 
@@ -492,8 +562,9 @@ function anchorage(y0: number, y1: number, ground: GroundGrid, topAt: (y: number
     }
 }
 
-anchorage(YB, -617.1, BROOKLYN_GROUND, () => 26.6)
-anchorage(YM, 590.7, MANHATTAN_GROUND, piecewise([[YM, 23.15], [562, 25.0], [590.7, 24.2]]))
+// Their roofs stay 0.4 m under the lower of the map's two roadways over them.
+anchorage(YB, BACK_B, BROOKLYN_GROUND, (y) => lower(y) - .4)
+anchorage(YM, BACK_M, MANHATTAN_GROUND, (y) => lower(y) - .4)
 
 // ---- Write -----------------------------------------------------------------------
 
@@ -508,15 +579,18 @@ const masonry = [
   { part: stone, material: { name: 'granite', color: 0xd2c2ab } },
   { part: curtain, material: { name: 'curtain-wall', color: 0xc3b19a } },
   { part: trim, material: { name: 'limestone-trim', color: 0xdcd0bd } },
-  { part: roof, material: { name: 'tower-top', color: 0xb8aa95 } },
 ]
+// The tower tops and the promenade's boards share one warm grey-buff.
+const TOPS = { name: 'tower-top', color: 0xb8aa95 }
 const low = [
   ...masonry,
+  { part: merged(roof, walk), material: TOPS },
   { part: soffit, material: { name: 'soffit', color: 0x857766 } },
   { part: steelLow, material: { name: 'bridge-steel', color: STEEL } },
 ]
 const detail = [
   ...masonry,
+  { part: merged(roof, walkDetail), material: TOPS },
   { part: merged(soffit, soffitDetail), material: { name: 'soffit', color: 0x857766 } },
   { part: merged(steelDetail, webDetail), material: { name: 'bridge-steel', color: STEEL, doubleSided: true } },
 ]
@@ -524,7 +598,8 @@ const detail = [
 const extras = {
   license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin midway between the towers, on the water',
   bearing: 316.18, elevation: 0, towers: [-TY, TY], anchorageFaces: [YB, YM],
-  roadwayMidspan: road(0), roadwayAtTowers: TOWER_ROAD, roadwayEnds: [road(YB), road(YM)],
+  roadwayMidspan: MAIN(0), roadwayAtTowers: TOWER_ROAD, roadwayEnds: [[road(YB, -1), road(YB, 1)], [road(YM, -1), road(YM, 1)]],
+  promenadeMidspan: prom(0),
 }
 const count = (list: { part: Part }[]) => list.reduce((n, { part }) => n + part.triangles, 0)
 for (const [file, list, maxTris, maxBytes] of [
