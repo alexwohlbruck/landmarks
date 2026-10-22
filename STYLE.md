@@ -49,6 +49,8 @@ and photos. Every rule here fixes something that went wrong.
   bridge's cables, suspenders and stays are what make it itself, so they
   are modelled, along with trusses and railings, in a detail GLB the map
   draws close up (see Levels of detail and Bridges in `README.md`). The
+  model owns walkways and tracks on the bridge, surfaces included; the map
+  draws the road surfaces and their markings. The
   low model keeps the towers, anchorages, cables and the deck structure as
   solid bands, and drops everything thin. Draw thin members a little
   thicker than they are (a suspender 0.3–0.45 m, a cable about twice its

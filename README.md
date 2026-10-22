@@ -125,15 +125,21 @@ asset's `lods.detail`, baked like the low one.
 
 A bridge is one placement for the whole structure, not one per tower: the
 towers, anchorages, cables, suspenders and stays, trusses or girders and
-the deck's underside, and the frame of any raised walkway. The map draws the
-rest from OSM: every surface people drive, walk or ride on, and the approach
-viaducts and ramps outside the bridge's `man_made=bridge` outline, with their
-own piers and parapets.
+the deck's underside. The model owns the walkways and tracks on the bridge,
+their surfaces included. The map draws the road surfaces and their
+markings, and the approach viaducts and ramps outside the bridge's
+`man_made=bridge` outline, with their own piers and parapets.
 
 - **No road surfaces.** A bridge model draws nothing at road level across a
-  roadway or walkway: trusses stand beside the decks, the underside hangs
-  below them, railings stand on their edges, and the tops stay open for the
-  map's decks to show through.
+  roadway: trusses stand beside the roadways, the underside hangs below
+  them, railings stand on their edges, and the tops stay open for the map's
+  roadways to show through. A raised promenade or a rail deck is the
+  model's, walking or riding surface and all, since the map leaves those out
+  within the model's reach.
+- **Masonry just under a roadway is allowed.** An anchorage's roof or a
+  tower's string course may sit under the map's roadway, 0.25 m or more
+  below it, so the roadway rests on it rather than floating. Keep it out of
+  arches and openings the roadway passes through.
 - **`replaces` lists the outline.** List the bridge's `man_made=bridge`
   outline (a way or a multipolygon relation) beside the towers, anchorages
   and any other buildings the model covers. The outline is what tells the
