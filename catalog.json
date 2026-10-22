@@ -2343,6 +2343,8 @@
     {
       "id": "sf-golden-gate-bridge",
       "file": "models/sf-golden-gate-bridge.glb",
+      "detail": "models/sf-golden-gate-bridge.detail.glb",
+      "detailZoom": 16,
       "license": "CC0-1.0",
       "author": "Barrelman",
       "source": "generators/sf-golden-gate-bridge.ts"
@@ -10421,16 +10423,17 @@
       ]
     },
     {
-      "id": "sf-golden-gate-bridge-south",
-      "name": "Golden Gate Bridge (south tower)",
+      "id": "sf-golden-gate-bridge",
+      "name": "Golden Gate Bridge",
       "model": "sf-golden-gate-bridge",
-      "lng": -122.4778913,
-      "lat": 37.8140144,
-      "bearing": 354.7,
+      "lng": -122.4785624,
+      "lat": 37.8197585,
+      "bearing": 354.69,
       "elevation": 0,
       "minzoom": 13,
       "wikidata": "Q44440",
       "replaces": [
+        "relation/21407754",
         "way/1330586852",
         "way/1275410144",
         "way/1329545860",
@@ -10457,20 +10460,7 @@
         "way/1330829528",
         "way/1330830769",
         "way/1330830988",
-        "way/1330831175"
-      ]
-    },
-    {
-      "id": "sf-golden-gate-bridge-north",
-      "name": "Golden Gate Bridge (north tower)",
-      "model": "sf-golden-gate-bridge",
-      "lng": -122.4792336,
-      "lat": 37.8255026,
-      "bearing": 354.7,
-      "elevation": 0,
-      "minzoom": 13,
-      "wikidata": "Q44440",
-      "replaces": [
+        "way/1330831175",
         "way/1330832666",
         "way/1330832664",
         "way/1330832665",
@@ -10493,7 +10483,9 @@
         "way/1330832687",
         "way/1330832688",
         "way/1330832689",
-        "way/1330832690"
+        "way/1330832690",
+        "way/1560010162",
+        "way/1560010163"
       ]
     },
     {
