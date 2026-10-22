@@ -95,7 +95,7 @@
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 import {
-  band, face, footedWall, groundAt, parabola, piecewise, rod, stations, truss, tube, type GroundGrid,
+  band, footedWall, groundAt, merged, parabola, piecewise, rod, stations, truss, tube, type GroundGrid,
 } from './bridge-kit'
 
 // ---- Towers -------------------------------------------------------------------
@@ -499,12 +499,6 @@ anchorage(YM, 590.7, MANHATTAN_GROUND, piecewise([[YM, 23.15], [562, 25.0], [590
 
 tower(-TY)
 tower(TY)
-
-function merged(...ps: Part[]): Part {
-  const out = new Part()
-  for (const p of ps) { out.pos.push(...p.pos); out.nrm.push(...p.nrm); out.uv.push(...p.uv) }
-  return out
-}
 
 // Colours from daylight photos: the towers' warm buff granite and limestone,
 // the cornice a touch paler, the curtain and blind arches a touch deeper,

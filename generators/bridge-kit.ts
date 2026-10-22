@@ -207,3 +207,18 @@ export function footedWall(
 export function cablePath(x: number, y0: number, y1: number, z: (y: number) => number, step: number): V3[] {
   return stations(y0, y1, step).map((y) => [x, y, z(y)] as V3)
 }
+
+/** One part holding the triangles of several. */
+export function merged(...parts: Part[]): Part {
+  const out = new Part()
+  for (const p of parts) for (const key of ['pos', 'nrm', 'uv'] as const) for (const v of p[key]) out[key].push(v)
+  return out
+}
+
+/** A copy of a part moved `dy` metres along the bridge (map-frame y). */
+export function movedAlong(p: Part, dy: number): Part {
+  const out = merged(p)
+  // Parts store glTF's frame, where map-frame y is -z.
+  for (let i = 2; i < out.pos.length; i += 3) out.pos[i] -= dy
+  return out
+}
