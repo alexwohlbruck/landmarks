@@ -147,6 +147,20 @@ describe('the release id', () => {
   })
 })
 
+test('publishes a detail file as the detail LOD, baked like the low one', () => {
+  const catalog = shipped()
+  const at = catalog.models.findIndex((m) => m.id === 'eiffel-tower')
+  catalog.models[at] = { ...catalog.models[at], detail: 'models/chrysler-building.glb', detailZoom: 16 }
+  const { assets, files } = buildRelease(ROOT, catalog)
+  const vegas = assets.find((a) => a.model === 'eiffel-tower' && a.placement.scale !== 1)!
+  const { detail } = vegas.lods
+  expect(detail?.url).toMatch(new RegExp(`^/models/${vegas.id}/${detail?.sha256}/detail\\.glb$`))
+  expect(sha(files.get(detail!.url.slice(1))!)).toBe(detail!.sha256)
+  expect(detail!.sha256).not.toBe(sha(new Uint8Array(readFileSync(join(ROOT, 'models/chrysler-building.glb')))))
+  expect(vegas.detailZoom).toBe(16)
+  expect(assets.find((a) => a.model === 'chrysler-building')!.detailZoom).toBeUndefined()
+})
+
 test('refuses to build a catalog with problems, listing them all', () => {
   const catalog = shipped()
   catalog.landmarks[0] = { ...catalog.landmarks[0], model: 'missing', replaces: ['123'] }

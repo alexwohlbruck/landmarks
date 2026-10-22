@@ -47,6 +47,8 @@ export const INDEX_ZOOM = 12
 export const REPOSITORY = 'https://github.com/alexwohlbruck/landmarks'
 /** The pointers published. Both name the same release: there is no review queue here. */
 export const CHANNELS = ['latest', 'preview'] as const
+/** The zoom a detail LOD is drawn from when its model doesn't say: Barrelman's default. */
+export const DEFAULT_DETAIL_ZOOM = 17
 
 const OSM_ATTRIBUTION = '© OpenStreetMap contributors'
 const LICENSE_SCOPE =
@@ -71,7 +73,9 @@ export type Asset = {
   units: 'metres'
   axes: typeof AXES
   minZoom: number
-  lods: { low: Lod }
+  lods: { low: Lod; detail?: Lod }
+  /** Smallest zoom the detail LOD is drawn at, where there is one. */
+  detailZoom?: number
   triangles: number
   entranceLights: number[][]
   osm: OsmRef | null
@@ -137,17 +141,19 @@ export class CatalogError extends Error {
 export function checkCatalog(root: string, catalog: Catalog): string[] {
   const problems = validateCatalog(catalog)
   for (const m of catalog.models ?? []) {
-    const path = join(root, m.file ?? '')
-    if (!m.file || !existsSync(path)) {
-      problems.push(`model "${m.id}": ${m.file} does not exist`)
-      continue
-    }
-    try {
-      const { height, radius } = glbBounds(new Uint8Array(readFileSync(path)))
-      // Standing on its origin, not centred on it.
-      if (!(height > 0) || !(radius > 0)) problems.push(`model "${m.id}": has no extent above its origin`)
-    } catch (err) {
-      problems.push(`model "${m.id}": ${(err as Error).message}`)
+    for (const file of [m.file, ...(m.detail ? [m.detail] : [])]) {
+      const path = join(root, file ?? '')
+      if (!file || !existsSync(path)) {
+        problems.push(`model "${m.id}": ${file} does not exist`)
+        continue
+      }
+      try {
+        const { height, radius } = glbBounds(new Uint8Array(readFileSync(path)))
+        // Standing on its origin, not centred on it.
+        if (!(height > 0) || !(radius > 0)) problems.push(`model "${m.id}": ${file} has no extent above its origin`)
+      } catch (err) {
+        problems.push(`model "${m.id}": ${(err as Error).message}`)
+      }
     }
     if (m.source && !existsSync(join(root, m.source))) problems.push(`model "${m.id}": source ${m.source} does not exist`)
   }
@@ -174,19 +180,29 @@ export function buildRelease(root: string, catalog: Catalog = JSON.parse(readFil
   const placements = [...catalog.landmarks].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
   for (const l of placements) {
     const model = models.get(l.model)!
-    let bytes = modelBytes.get(model.id)
-    if (!bytes) modelBytes.set(model.id, (bytes = new Uint8Array(readFileSync(join(root, model.file)))))
+    const read = (file: string) => {
+      let bytes = modelBytes.get(file)
+      if (!bytes) modelBytes.set(file, (bytes = new Uint8Array(readFileSync(join(root, file)))))
+      return bytes
+    }
     const placement = { bearing: l.bearing ?? 0, scale: l.scale ?? 1 }
     const elevation = l.elevation ?? 0
     let baked: Uint8Array
+    let bakedDetail: Uint8Array | undefined
     try {
-      baked = bakePlacement(bytes, placement)
+      baked = bakePlacement(read(model.file), placement)
+      if (model.detail) bakedDetail = bakePlacement(read(model.detail), placement)
     } catch (err) {
       problems.push(`landmark "${l.id}": cannot bake its placement: ${(err as Error).message}`)
       continue
     }
-    const lod = lodFor(l, baked, byHash, files)
-    const { height, radius } = glbBounds(baked)
+    const lod = lodFor(l, baked, 'low', byHash, files)
+    const detail = bakedDetail && lodFor(l, bakedDetail, 'detail', byHash, files)
+    const bounds = glbBounds(baked)
+    // The detail model may reach further (a cable past the low model's ends).
+    const outer = bakedDetail ? glbBounds(bakedDetail) : bounds
+    const height = Math.max(bounds.height, outer.height)
+    const radius = Math.max(bounds.radius, outer.radius)
     // How high it reaches above the ground, as before elevation stopped being baked.
     maxHeightM = Math.max(maxHeightM, height + elevation)
 
@@ -213,7 +229,8 @@ export function buildRelease(root: string, catalog: Catalog = JSON.parse(readFil
       units: 'metres',
       axes: AXES,
       minZoom: l.minzoom ?? DEFAULT_MIN_ZOOM,
-      lods: { low: lod },
+      lods: detail ? { low: lod, detail } : { low: lod },
+      ...(detail ? { detailZoom: model.detailZoom ?? DEFAULT_DETAIL_ZOOM } : {}),
       triangles: lod.triangles,
       entranceLights: [],
       osm: first ?? null,
@@ -286,13 +303,19 @@ export function buildRelease(root: string, catalog: Catalog = JSON.parse(readFil
 }
 
 /** The LOD record for a baked GLB, storing its bytes once however many placements share them. */
-function lodFor(l: CatalogLandmark, baked: Uint8Array, byHash: Map<string, Lod>, files: Map<string, Uint8Array>): Lod {
+function lodFor(
+  l: CatalogLandmark,
+  baked: Uint8Array,
+  level: 'low' | 'detail',
+  byHash: Map<string, Lod>,
+  files: Map<string, Uint8Array>,
+): Lod {
   const sha = sha256(baked)
   const seen = byHash.get(sha)
   if (seen) return seen
   // A gzip header carries no name or time from zlib, so this is deterministic.
   const gz = new Uint8Array(gzipSync(baked, { level: 9 }))
-  const url = `/models/${l.id}/${sha}/low.glb`
+  const url = `/models/${l.id}/${sha}/${level}.glb`
   files.set(url.slice(1), baked)
   files.set(`${url.slice(1)}.gz`, gz)
   const lod: Lod = {
