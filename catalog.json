@@ -148,11 +148,13 @@
       "source": "generators/56-leonard.ts"
     },
     {
-      "id": "brooklyn-bridge-tower",
-      "file": "models/brooklyn-bridge-tower.glb",
+      "id": "nyc-brooklyn-bridge",
+      "file": "models/nyc-brooklyn-bridge.glb",
+      "detail": "models/nyc-brooklyn-bridge.detail.glb",
+      "detailZoom": 16,
       "license": "CC0-1.0",
       "author": "Barrelman",
-      "source": "generators/brooklyn-bridge-tower.ts"
+      "source": "generators/nyc-brooklyn-bridge.ts"
     },
     {
       "id": "parachute-jump",
@@ -4186,31 +4188,21 @@
       ]
     },
     {
-      "id": "brooklyn-bridge-tower-manhattan",
-      "name": "Brooklyn Bridge, Manhattan tower",
-      "model": "brooklyn-bridge-tower",
-      "lng": -73.9983344,
-      "lat": 40.7072687,
-      "bearing": 316.2,
+      "id": "nyc-brooklyn-bridge",
+      "name": "Brooklyn Bridge",
+      "model": "nyc-brooklyn-bridge",
+      "lng": -73.9963446,
+      "lat": 40.7056859,
+      "bearing": 316.18,
       "elevation": 0,
       "minzoom": 13,
       "wikidata": "Q125006",
       "replaces": [
-        "way/1255363983"
-      ]
-    },
-    {
-      "id": "brooklyn-bridge-tower-brooklyn",
-      "name": "Brooklyn Bridge, Brooklyn tower",
-      "model": "brooklyn-bridge-tower",
-      "lng": -73.9943541,
-      "lat": 40.7041037,
-      "bearing": 316.2,
-      "elevation": 0,
-      "minzoom": 13,
-      "wikidata": "Q125006",
-      "replaces": [
-        "way/317352708"
+        "way/375157262",
+        "way/1255363983",
+        "way/317352708",
+        "way/888759002",
+        "way/1255363984"
       ]
     },
     {
