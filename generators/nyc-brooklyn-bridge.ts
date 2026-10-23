@@ -686,8 +686,9 @@ const detail = [
   ...masonry,
   { part: merged(soffit, soffitDetail), material: SOFFIT },
   { part: merged(steelDetail, webDetail, roof, walkDetail, posts), material: { name: 'bridge-steel', color: STEEL, doubleSided: true, floodlight: roadwayLit } },
-  { part: wires, material: { name: 'wire-steel', color: STEEL } },
   { part: lamps, material: LAMP },
+  // Last: a map draws wires by their coverage, and blends them over what is already drawn.
+  { part: wires, material: { name: 'wire-steel', color: STEEL, floodlight: roadwayLit } },
 ]
 
 const extras = {
