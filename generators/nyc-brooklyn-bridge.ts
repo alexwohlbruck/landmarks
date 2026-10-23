@@ -442,13 +442,16 @@ for (const x of CABLES) {
   tube(steelDetail, cablePath(x, 8), CABLE_R, 8)
 }
 
+// Suspenders and stays are `wire`: a map thins them out where they are finer than a pixel.
+const wires = new Part()
+
 // Suspenders: from each cable down to the floor beams, at every modelled bay.
 for (const span of spans)
   for (const y of bays(span)) {
     if (Math.abs(Math.abs(y) - TY) < FACE + 6) continue
     for (const x of CABLES) {
       const z0 = road(y, Math.sign(x)) - UNDER + .6, z1 = cable(y) - CABLE_R * .5
-      if (z1 - z0 > 1) rod(steelDetail, [x, y, z0], [x, y, z1], .16)
+      if (z1 - z0 > 1) rod(wires, [x, y, z0], [x, y, z1], .16)
     }
   }
 
@@ -463,7 +466,7 @@ for (const t of [-TY, TY])
       const zTop = 79.4 + 2.6 * (i / (STAYS - 1))
       for (const x of CABLES) {
         const end = Math.abs(x) > IN ? road(y, Math.sign(x)) + TRUSS_UP - .5 : prom(y) - .5
-        rod(steelDetail, [x, y0, zTop], [x, y, end], .18)
+        rod(wires, [x, y0, zTop], [x, y, end], .18)
       }
     }
   }
@@ -683,6 +686,7 @@ const detail = [
   ...masonry,
   { part: merged(soffit, soffitDetail), material: SOFFIT },
   { part: merged(steelDetail, webDetail, roof, walkDetail, posts), material: { name: 'bridge-steel', color: STEEL, doubleSided: true, floodlight: roadwayLit } },
+  { part: wires, material: { name: 'wire-steel', color: STEEL } },
   { part: lamps, material: LAMP },
 ]
 
