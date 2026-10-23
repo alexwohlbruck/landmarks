@@ -117,7 +117,7 @@
  *   2 m a side. Their footprints are OSM's, longer than the published
  *   129 ft because OSM includes the vaults behind the anchor block.
  * - The night lighting's layout: the necklace's 83 lights a cable spread
- *   evenly by length, and promenade lanterns every 46 m a side, staggered,
+ *   evenly by length, and promenade lanterns every 69 m a side, staggered,
  *   from the photos rather than a plan. The roadway lamps are drawn only as
  *   the warm light on the outer trusses. Where the towers' 56 fixtures
  *   stand isn't published, so their wash is a guess at uplighting from the
@@ -601,27 +601,29 @@ for (const x of [CABLES[0], CABLES[3]]) {
   const runs = spans.map(([a, b]) => cableTop(x).filter(([, y]) => y >= a && y <= b))
   const length = (r: V3[]) => r.slice(1).reduce((n, p, i) => n + Math.hypot(...sub(p, r[i])), 0)
   const total = runs.reduce((n, r) => n + length(r), 0)
+  const counts = runs.map((run) => Math.round((NECKLACE * length(run)) / total))
+  counts[1] = NECKLACE - counts[0] - counts[2]
   runs.forEach((run, i) => {
-    const count = Math.round((NECKLACE * length(run)) / total)
-    along(run, count).forEach((p, k) => {
+    along(run, counts[i]).forEach((p, k) => {
       bead(lamps, p, 0.75)
       if (k % 3 === 1 + (i % 2)) bead(lampsLow, p, 3.2, true)
     })
   })
 }
 
-// Promenade lanterns: a cast-iron post with a lantern on each railing line,
-// every ten bays (46 m) a side, the two sides staggered by half that.
-const POST = 3.6
+// Promenade lanterns: a cast-iron post with a lantern on each railing, every
+// 15 bays (69 m) a side, the two sides staggered by half that, half a bay off
+// the suspenders and clear of the inner cables where they cross lantern height.
+const POST = 3.6, LANTERN = .6
 const posts = new Part()
 for (const span of walkSpans)
   for (const s of [1, -1]) {
-    const x = s * (WALK - .3)
-    for (const y of stations(span[0], span[1], BAY * 10).slice(1, -1).map((y) => y + (s > 0 ? BAY * 5 : 0))) {
-      if (y >= span[1] - 4) continue
-      const z = prom(y)
-      rod(posts, [x, y, z], [x, y, z + POST], .12, 4)
-      bead(lamps, [x, y, z + POST + .5], .7)
+    const x = s * IN
+    for (const y of stations(span[0], span[1], BAY * 15).slice(1, -1).map((y) => y + BAY / 2 + (s > 0 ? BAY * 7.5 : 0))) {
+      const head: V3 = [x, y, prom(y) + POST + .5]
+      if (y >= span[1] - 4 || Math.abs(cable(y) - head[2]) < LANTERN + CABLE_R + .5) continue
+      rod(posts, [x, y, innerTop(y)], [x, y, prom(y) + POST], .12, 4)
+      bead(lamps, head, LANTERN)
     }
   }
 
@@ -634,8 +636,8 @@ const floodlit = (reach: number) => (p: V3, n: V3): number => {
   const d = Math.min(Math.abs(p[1] - TY), Math.abs(p[1] + TY))
   if (d > reach || Math.abs(p[0]) > EX + 1) return 0
   const height = p[2] >= DECK0
-    ? 1 - 0.6 * Math.min(1, (p[2] - DECK) / (CAP - DECK))
-    : 0.6 + 0.2 * (p[2] / DECK0)
+    ? 1 - 0.7 * Math.min(1, (p[2] - DECK) / (CAP - DECK))
+    : 0.55 + 0.25 * (p[2] / DECK0)
   const facing = n[2] > 0.7 ? 0.3 : Math.abs(n[0]) > Math.abs(n[1]) && n[2] > -0.5 ? 0.85 : 1
   return height * facing
 }
@@ -650,7 +652,7 @@ const roadwayLit = (p: V3): number => {
   const s = Math.sign(p[0]) || 1
   if (Math.abs(Math.abs(p[0]) - OUT) > .6) return 0
   const r = road(p[1], s)
-  return p[2] > r - UNDER - .1 && p[2] < r + TRUSS_UP + .1 ? .35 : 0
+  return p[2] > r - UNDER - .1 && p[2] < r + TRUSS_UP + .1 ? .5 : 0
 }
 
 // ---- Write -----------------------------------------------------------------------
