@@ -98,6 +98,26 @@ describe('bakePlacement', () => {
     }
   })
 
+  test('writes floodlight per vertex from height and facing, and keeps it through a bake', () => {
+    // Lit only on its walls, brighter the lower they are.
+    const floodlight = (p: number[], n: number[]) => (Math.abs(n[2]) > 0.5 ? 0 : 1 - p[2] / 4)
+    const lit = writeGlb('lit', [{ part: box([0, 0, 0], [1, 1, 2]), material: { ...material, floodlight } }])
+    const read = (glb: Uint8Array) => {
+      const { json, bin } = parseGlb(glb)
+      const [p] = json.meshes[0].primitives
+      const at = (i: number) => json.bufferViews[json.accessors[i].bufferView].byteOffset
+      const f = new Float32Array(bin.slice(at(p.attributes._FLOODLIGHT)).buffer, 0, json.accessors[p.attributes._FLOODLIGHT].count)
+      const y = new Float32Array(bin.slice(at(p.attributes.POSITION)).buffer, 0, f.length * 3).filter((_, k) => k % 3 === 1)
+      const ny = new Float32Array(bin.slice(at(p.attributes.NORMAL)).buffer, 0, f.length * 3).filter((_, k) => k % 3 === 1)
+      return [...f].map((v, i) => [v, y[i], ny[i]])
+    }
+    const before = read(lit)
+    for (const [f, y, ny] of before) expect(f).toBeCloseTo(Math.abs(ny) > 0.5 ? 0 : 1 - y / 4, 5)
+    expect(read(bakePlacement(lit, { bearing: 30 })).map(([f]) => f)).toEqual(before.map(([f]) => f))
+    const unlit = parseGlb(writeGlb('unlit', [{ part: box([0, 0, 0], [1, 1, 2]), material: { ...material, floodlight: () => 0 } }]))
+    expect(unlit.json.meshes[0].primitives[0].attributes._FLOODLIGHT).toBeUndefined()
+  })
+
   test('refuses a mesh drawn both by the root and a moving node', () => {
     const glb = writeGlb('shared', [{ part: box([-1, -1, 0], [1, 1, 2]), material }], {}, {
       nodes: [{ name: 'lamp', translation: [5, 0, 0], parts: [{ part: new Part(), material }] }],

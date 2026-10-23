@@ -222,3 +222,42 @@ export function movedAlong(p: Part, dy: number): Part {
   for (let i = 2; i < out.pos.length; i += 3) out.pos[i] -= dy
   return out
 }
+
+/**
+ * A light point: a flat-shaded double hexagonal pyramid of radius `r` (12
+ * faces), round enough to read as a dot from any side, or a tetrahedron (4)
+ * for a low model.
+ */
+export function bead(p: Part, c: V3, r: number, tetra = false) {
+  const at = (v: V3) => add(c, scale(v, r))
+  if (tetra) {
+    const [a, b, d, e] = ([[0, 0, 1], [0.943, 0, -0.333], [-0.471, 0.816, -0.333], [-0.471, -0.816, -0.333]] as V3[]).map(at)
+    for (const [x, y, z] of [[a, b, d], [a, d, e], [a, e, b], [b, e, d]]) p.tri(x, y, z)
+    return
+  }
+  const ring = Array.from({ length: 6 }, (_, i) => at([Math.cos((i * Math.PI) / 3), Math.sin((i * Math.PI) / 3), 0]))
+  const top = at([0, 0, 1]), bottom = at([0, 0, -1])
+  for (let i = 0; i < 6; i++) {
+    const a = ring[i], b = ring[(i + 1) % 6]
+    p.tri(top, a, b)
+    p.tri(bottom, b, a)
+  }
+}
+
+/**
+ * `count` points spread evenly by length along a polyline, half a gap in
+ * from each end: lights strung along a cable.
+ */
+export function along(path: V3[], count: number): V3[] {
+  const lengths = [0]
+  for (let i = 1; i < path.length; i++) lengths.push(lengths[i - 1] + Math.hypot(...sub(path[i], path[i - 1])))
+  const total = lengths[lengths.length - 1], out: V3[] = []
+  let k = 1
+  for (let n = 0; n < count; n++) {
+    const s = (total * (n + 0.5)) / count
+    while (k < path.length - 1 && lengths[k] < s) k++
+    const t = (s - lengths[k - 1]) / (lengths[k] - lengths[k - 1] || 1)
+    out.push(add(path[k - 1], scale(sub(path[k], path[k - 1]), t)))
+  }
+  return out
+}

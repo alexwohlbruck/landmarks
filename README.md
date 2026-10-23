@@ -33,7 +33,7 @@ imports it beside Open Landmarks and serves both to
 |---|---|
 | `bun generators/<id>.ts` | Write `models/<id>.glb` |
 | `bun run validate` | Check the catalog and every model, as the release build does |
-| `bun run preview <id>` | Render one model from every side into `preview/<id>/` |
+| `bun run preview <id> [--night]` | Render one model from every side into `preview/<id>/`, or as the map draws it at night |
 | `bun run sheet <id ...>` | Contact sheets for a list of landmarks, into `preview/sheets/` |
 | `bun run sheet --branch-diff` | Contact sheets for everything this branch adds or changes |
 | `bun run build` | Validate, then write the release to `dist/` |

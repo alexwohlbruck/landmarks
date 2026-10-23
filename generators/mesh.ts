@@ -193,6 +193,12 @@ export type MaterialSpec = {
    * `cell` and `quad` with explicit UVs set them.
    */
   texture?: { png: Uint8Array }
+  /**
+   * How much of the night's floodlighting falls on a vertex, 0–1, from its
+   * map-frame position and normal. Written as the `_FLOODLIGHT` attribute;
+   * see Night in `STYLE.md`.
+   */
+  floodlight?: (p: V3, n: V3) => number
 }
 
 /** A quaternion, [x, y, z, w], in the map frame like everything else here. */
@@ -235,6 +241,17 @@ export type AnimationSpec = { name: string; times: number[]; channels: ChannelSp
  * the Open Landmarks v1 contract; see "Animation" in `STYLE.md`.
  */
 export type GlbOptions = { nodes?: NodeSpec[]; animation?: AnimationSpec }
+
+/** Each welded vertex's floodlight share, or null when none is lit. glTF (x, y, z) is map (x, -z, y). */
+function floodlightOf(pos: Float32Array, nrm: Float32Array, light: (p: V3, n: V3) => number): Float32Array | null {
+  const out = new Float32Array(pos.length / 3)
+  for (let i = 0; i < out.length; i++) {
+    const p: V3 = [pos[i * 3], -pos[i * 3 + 2], pos[i * 3 + 1]]
+    const n: V3 = [nrm[i * 3], -nrm[i * 3 + 2], nrm[i * 3 + 1]]
+    out[i] = Math.min(1, Math.max(0, light(p, n)))
+  }
+  return out.some((v) => v > 0) ? out : null
+}
 
 /** map frame → glTF frame, the same rotation `Part.tri` applies. */
 const toGltf = (p: V3): V3 => [p[0], p[2], -p[1]]
@@ -317,11 +334,13 @@ export function writeGlb(
       const index = known >= 0 ? known : addMaterial(material)
       const textured = !!(material.mask || material.texture)
       const { pos, nrm, uv, index: corners } = weld(part, textured)
+      const flood = material.floodlight && floodlightOf(pos, nrm, material.floodlight)
       primitives.push({
         attributes: {
           POSITION: accessor(pos, 'VEC3', 34962, true),
           NORMAL: accessor(nrm, 'VEC3', 34962),
           ...(textured ? { TEXCOORD_0: accessor(uv, 'VEC2', 34962) } : {}),
+          ...(flood ? { _FLOODLIGHT: accessor(flood, 'SCALAR', 34962) } : {}),
         },
         indices: accessor(corners, 'SCALAR', 34963),
         material: index,

@@ -164,8 +164,24 @@ only decides what glows.
   roofs and crowns, the Rose Center's cube.
 - **`entrance`**: a main entrance's doors or glazing, which glow at night.
   Only where the model already has a separate material for it.
+- **`lamp`**: light fittings that are part of the landmark's identity at
+  night, such as a bridge's cable lights and lamp posts. They glow warm
+  white at night and show their own colour by day, so give them the
+  fitting's paint rather than a bright colour. Any name starting with
+  `lamp` is a lamp. Draw them as small solid beads, a little larger than
+  the real fitting, at their real spacing or sparser in a low model, so
+  they read as points rather than shimmer.
 
-Everything else is unlit. (Parchment also glows painted `window*` textures
+Everything else is unlit, unless it is floodlit. A landmark whose stone is
+floodlit at night, such as a bridge's towers, carries a `_FLOODLIGHT`
+vertex attribute: a float from 0 to 1 per vertex, how much of the
+floodlighting falls there. The map washes those surfaces back toward their
+own colour in warm white light at night, and ignores the attribute by day.
+Set it with `floodlight` on a material in `mesh.ts`, as a function of each
+vertex's position and normal, so it can be shaped like the real lighting
+(brightest near the fixtures, faces looking up barely lit) and limited to
+the parts that are really lit. It costs no material, and readers that don't
+know it ignore it. (Parchment also glows painted `window*` textures
 by their alpha, for older models; new models have no textures.)
 
 ## Animation (experimental)
