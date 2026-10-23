@@ -157,6 +157,13 @@
       "source": "generators/nyc-brooklyn-bridge.ts"
     },
     {
+      "id": "nyc-brooklyn-bridge-brooklyn-approach",
+      "file": "models/nyc-brooklyn-bridge-brooklyn-approach.glb",
+      "license": "CC0-1.0",
+      "author": "Barrelman",
+      "source": "generators/nyc-brooklyn-bridge-brooklyn-approach.ts"
+    },
+    {
       "id": "parachute-jump",
       "file": "models/parachute-jump.glb",
       "license": "CC0-1.0",
@@ -4205,6 +4212,21 @@
         "way/317352708",
         "way/888759002",
         "way/1255363984"
+      ]
+    },
+    {
+      "id": "nyc-brooklyn-bridge-brooklyn-approach",
+      "name": "Brooklyn Bridge, Brooklyn approach",
+      "model": "nyc-brooklyn-bridge-brooklyn-approach",
+      "lng": -73.9905599,
+      "lat": 40.7010858,
+      "bearing": 316.18,
+      "elevation": 0,
+      "minzoom": 13,
+      "replaces": [
+        "way/1255692942",
+        "way/1255692947",
+        "way/888759008"
       ]
     },
     {

@@ -160,6 +160,13 @@ markings, and the approach viaducts and ramps outside the bridge's
   bridge over its terrain instead of setting it rigidly on the mean ground
   of a kilometre-long footprint.
 
+A masonry approach outside the outline, which OSM maps as
+`bridge:support=abutment` buildings between the street crossings, can be a
+placement of its own: it replaces those buildings, leaves the crossings'
+outlines and every deck on top to the map, and builds its top 0.4 m under
+the map's roadways and its feet on the map's terrain
+(`nyc-brooklyn-bridge-brooklyn-approach.ts`).
+
 `generators/bridge-kit.ts` has the shared pieces: cables, rods, open and
 solid trusses, terrain-footed walls. `nyc-brooklyn-bridge.ts` and
 `sf-golden-gate-bridge.ts` are the worked examples.
