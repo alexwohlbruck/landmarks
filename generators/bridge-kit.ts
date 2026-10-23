@@ -249,6 +249,7 @@ export function bead(p: Part, c: V3, r: number, tetra = false) {
  * from each end: lights strung along a cable.
  */
 export function along(path: V3[], count: number): V3[] {
+  if (path.length < 2) return path.length ? Array.from({ length: count }, () => path[0]) : []
   const lengths = [0]
   for (let i = 1; i < path.length; i++) lengths.push(lengths[i - 1] + Math.hypot(...sub(path[i], path[i - 1])))
   const total = lengths[lengths.length - 1], out: V3[] = []

@@ -165,10 +165,10 @@ only decides what glows.
 - **`entrance`**: a main entrance's doors or glazing, which glow at night.
   Only where the model already has a separate material for it.
 - **`lamp`**: light fittings that are part of the landmark's identity at
-  night, such as a bridge's cable lights and lamp posts. They glow warm
-  white at night and show their own colour by day, so give them the
-  fitting's paint rather than a bright colour. Any name starting with
-  `lamp` is a lamp. Draw them as small solid beads, a little larger than
+  night, such as a bridge's cable lights and lantern heads. Parchment draws
+  them as warm white points at night and not at all by day; other readers
+  draw them in their own colour by day, so give them the fitting's paint
+  rather than a bright colour. Any name starting with `lamp` is a lamp. Draw them as small solid beads, a little larger than
   the real fitting, at their real spacing or sparser in a low model, so
   they read as points rather than shimmer.
 

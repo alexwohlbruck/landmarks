@@ -195,8 +195,8 @@ export type MaterialSpec = {
   texture?: { png: Uint8Array }
   /**
    * How much of the night's floodlighting falls on a vertex, 0–1, from its
-   * map-frame position and normal. Written as the `_FLOODLIGHT` attribute;
-   * see Night in `STYLE.md`.
+   * map-frame position and normal (in its node's frame, for a moving part).
+   * Written as the `_FLOODLIGHT` attribute; see Night in `STYLE.md`.
    */
   floodlight?: (p: V3, n: V3) => number
 }

@@ -18,13 +18,16 @@ export const NIGHT_BACKGROUND = [24, 29, 42]
 
 /**
  * Night, as the map draws it: unlit surfaces sink to a dim blue, windows
- * and entrances glow warm, `lamp*` materials glow at full strength, and
+ * and entrances glow warm, `lamp*` materials are drawn as their light (and
+ * not at all by day), and
  * the `_FLOODLIGHT` attribute washes a surface back toward its own colour
  * in warm white light. Linear-light colours.
  */
+const linear = (hex: string) => [1, 3, 5].map((i) => Math.pow(parseInt(hex.slice(i, i + 2), 16) / 255, 2.2))
 const NIGHT = {
-  dim: 0.16, tint: [0.012, 0.016, 0.03],
-  window: [1.0, 0.72, 0.4], lamp: [1.0, 0.9, 0.72], flood: [1.0, 0.9, 0.76], floodStrength: 0.9,
+  dim: 0.16, tint: [0.012, 0.016, 0.03], window: [1.0, 0.72, 0.4],
+  // Parchment's LAMP_LIGHT and FLOODLIGHT (web/src/lib/map-objects/landmarks.ts).
+  lamp: linear('#ffe7c4'), flood: linear('#ffeacf'), floodStrength: 0.9,
 }
 const glows = (name: string) => name.startsWith('lamp') ? NIGHT.lamp : name.startsWith('window') || name === 'entrance' ? NIGHT.window : null
 
@@ -147,6 +150,8 @@ export function render(scene: Scene, w: number, h: number, az: number, el: numbe
   for (let i = 0; i < W * H; i++) buffer.set(bgl, i * 3)
   const half = norm(sun.map((s, i) => s + camera[i]))
   for (const prim of primitives) {
+    // The map draws lamps only at night.
+    if (!night && (prim.mat.name ?? '').startsWith('lamp')) continue
     const { p, n, uv, ix, mat, flood } = prim, glow = night ? glows(mat.name ?? '') : null, pbr = mat.pbrMetallicRoughness, tex = pbr.baseColorTexture ? textures[gltf.textures[pbr.baseColorTexture.index].source] : null
     const pos: number[][] = [], normal: number[][] = []
     for (let i = 0; i < p.length / 3; i++) {
