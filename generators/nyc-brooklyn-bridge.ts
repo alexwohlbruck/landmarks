@@ -91,6 +91,21 @@
  *   map's roadways (36.1–36.3 m at the towers) pass through the arches
  *   above the masonry rather than fighting it.
  *
+ * Night lighting (`lamp` beads, and `_FLOODLIGHT` on the towers' masonry):
+ * - NYC DOT, "NYC DOT Celebrates New Year's 'Glow Up' for the Historic
+ *   Brooklyn Bridge" (press release, January 2024): 56 new LED lights
+ *   illuminate the towers, the first time since the 1983 centennial; the
+ *   166 "necklace" lights on the cables were converted to LED in 2021.
+ *   Reported as "bright white" (Our Town Downtown, January 2024).
+ * - Photos, Wikimedia Commons: "Brooklyn Bridge at night - 2016" (Mike
+ *   Sinko, CC BY 2.0), "Brooklyn Bridge, Manhattan at night 1" and "3"
+ *   (Rhododendrites, 2015, CC BY-SA 4.0), "Brooklyn Bridge at night from
+ *   BPP" (Jkoss6, CC BY-SA 4.0), "Brooklyn Bridge, New York" (Pierre
+ *   Blaché, 2019, CC0), "Cops on the bridge" (2017, CC BY 2.0). They show
+ *   the necklace on the two outer cables only, over the main and both side
+ *   spans; lamps along the outer trusses over the roadways; and cast-iron
+ *   lantern posts along the promenade's railings.
+ *
  * Estimated or simplified:
  * - The trusses' depth below the roadway (1.8 m) and the floor beams; no
  *   open evidence shows the underside's depth.
@@ -101,13 +116,20 @@
  * - The anchorages' walls are drawn plumb; the real ones batter in about
  *   2 m a side. Their footprints are OSM's, longer than the published
  *   129 ft because OSM includes the vaults behind the anchor block.
+ * - The night lighting's layout: the necklace's 83 lights a cable spread
+ *   evenly by length, and promenade lanterns every 46 m a side, staggered,
+ *   from the photos rather than a plan. The roadway lamps are drawn only as
+ *   the warm light on the outer trusses. Where the towers' 56 fixtures
+ *   stand isn't published, so their wash is a guess at uplighting from the
+ *   roadway and the water. One warm white stands for every light, though
+ *   the 2015 photos show the roadway lamps amber.
  * - The balconies' extent at the towers (12.6 m wide, 4 m past each face)
  *   and the promenade's line over the anchorages, where the real one starts
  *   its descent to the street.
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 import {
-  band, footedWall, groundAt, merged, parabola, piecewise, rod, stations, truss, tube, type GroundGrid,
+  along, band, bead, footedWall, groundAt, merged, parabola, piecewise, rod, stations, truss, tube, type GroundGrid,
 } from './bridge-kit'
 
 // ---- Towers -------------------------------------------------------------------
@@ -566,6 +588,71 @@ function anchorage(y0: number, y1: number, ground: GroundGrid, topAt: (y: number
 anchorage(YB, BACK_B, BROOKLYN_GROUND, (y) => lower(y) - .4)
 anchorage(YM, BACK_M, MANHATTAN_GROUND, (y) => lower(y) - .4)
 
+// ---- Night lights ------------------------------------------------------------------
+// The necklace: 166 lights on the cables (NYC DOT), on the two outer cables
+// only in every night photo, so 83 a cable, about 13 m apart, spread evenly
+// from anchorage to anchorage. Each sits on top of its cable. The low model
+// keeps every third, larger, so it reads from far off.
+const NECKLACE = 83
+const lamps = new Part(), lampsLow = new Part()
+const cableTop = (x: number): V3[] => spans.flatMap(([a, b]) => stations(a, b, 4).map((y) => [x, y, cable(y) + CABLE_R] as V3))
+for (const x of [CABLES[0], CABLES[3]]) {
+  // Per span, by its share of the cable's length, so none hangs in a tower.
+  const runs = spans.map(([a, b]) => cableTop(x).filter(([, y]) => y >= a && y <= b))
+  const length = (r: V3[]) => r.slice(1).reduce((n, p, i) => n + Math.hypot(...sub(p, r[i])), 0)
+  const total = runs.reduce((n, r) => n + length(r), 0)
+  runs.forEach((run, i) => {
+    const count = Math.round((NECKLACE * length(run)) / total)
+    along(run, count).forEach((p, k) => {
+      bead(lamps, p, 0.75)
+      if (k % 3 === 1 + (i % 2)) bead(lampsLow, p, 3.2, true)
+    })
+  })
+}
+
+// Promenade lanterns: a cast-iron post with a lantern on each railing line,
+// every ten bays (46 m) a side, the two sides staggered by half that.
+const POST = 3.6
+const posts = new Part()
+for (const span of walkSpans)
+  for (const s of [1, -1]) {
+    const x = s * (WALK - .3)
+    for (const y of stations(span[0], span[1], BAY * 10).slice(1, -1).map((y) => y + (s > 0 ? BAY * 5 : 0))) {
+      if (y >= span[1] - 4) continue
+      const z = prom(y)
+      rod(posts, [x, y, z], [x, y, z + POST], .12, 4)
+      bead(lamps, [x, y, z + POST + .5], .7)
+    }
+  }
+
+// The towers' floodlights: 56 LED fixtures since January 2024 (NYC DOT),
+// lighting every face. Where they stand isn't published; the wash here is
+// brightest at the roadway and fades toward the cornice, the lower block a
+// little dimmer from the water up. Faces looking down (arch soffits) catch
+// it fully, faces looking up hardly at all. Nothing else is floodlit.
+const floodlit = (reach: number) => (p: V3, n: V3): number => {
+  const d = Math.min(Math.abs(p[1] - TY), Math.abs(p[1] + TY))
+  if (d > reach || Math.abs(p[0]) > EX + 1) return 0
+  const height = p[2] >= DECK0
+    ? 1 - 0.6 * Math.min(1, (p[2] - DECK) / (CAP - DECK))
+    : 0.6 + 0.2 * (p[2] / DECK0)
+  const facing = n[2] > 0.7 ? 0.3 : Math.abs(n[0]) > Math.abs(n[1]) && n[2] > -0.5 ? 0.85 : 1
+  return height * facing
+}
+// The masonry ends at the towers' plinths; the soffit's arches end short of
+// where the deck's underside meets the tower.
+const floodlight = floodlit(FACE + .05)
+
+// The roadway lamps, on the outer trusses over each roadway, would be a
+// speckle of dots at map scale; what they show from off the bridge is the
+// outer trusses lit warm from inside, so that is drawn instead.
+const roadwayLit = (p: V3): number => {
+  const s = Math.sign(p[0]) || 1
+  if (Math.abs(Math.abs(p[0]) - OUT) > .6) return 0
+  const r = road(p[1], s)
+  return p[2] > r - UNDER - .1 && p[2] < r + TRUSS_UP + .1 ? .35 : 0
+}
+
 // ---- Write -----------------------------------------------------------------------
 
 tower(-TY)
@@ -573,26 +660,28 @@ tower(TY)
 
 // Colours from daylight photos: the towers' warm buff granite and limestone,
 // the cornice a touch paler, the curtain and blind arches a touch deeper,
-// the shadowed soffits; the steel's buff paint, pulled to the palette.
+// the shadowed soffits; the steel's buff paint, pulled to the palette, which
+// the tower tops and the promenade's boards share. Lamps are their fixtures'
+// paint, the steel's, by day and glow at night.
 const STEEL = 0xb9a78f
 const masonry = [
-  { part: stone, material: { name: 'granite', color: 0xd2c2ab } },
-  { part: curtain, material: { name: 'curtain-wall', color: 0xc3b19a } },
-  { part: trim, material: { name: 'limestone-trim', color: 0xdcd0bd } },
+  { part: stone, material: { name: 'granite', color: 0xd2c2ab, floodlight } },
+  { part: curtain, material: { name: 'curtain-wall', color: 0xc3b19a, floodlight } },
+  { part: trim, material: { name: 'limestone-trim', color: 0xdcd0bd, floodlight } },
 ]
-// The tower tops and the promenade's boards share one warm grey-buff.
-const TOPS = { name: 'tower-top', color: 0xb8aa95 }
+const SOFFIT = { name: 'soffit', color: 0x857766, floodlight: floodlit(LD + .2) }
+const LAMP = { name: 'lamp', color: STEEL }
 const low = [
   ...masonry,
-  { part: merged(roof, walk), material: TOPS },
-  { part: soffit, material: { name: 'soffit', color: 0x857766 } },
-  { part: steelLow, material: { name: 'bridge-steel', color: STEEL } },
+  { part: soffit, material: SOFFIT },
+  { part: merged(steelLow, roof, walk), material: { name: 'bridge-steel', color: STEEL, floodlight: roadwayLit } },
+  { part: lampsLow, material: LAMP },
 ]
 const detail = [
   ...masonry,
-  { part: merged(roof, walkDetail), material: TOPS },
-  { part: merged(soffit, soffitDetail), material: { name: 'soffit', color: 0x857766 } },
-  { part: merged(steelDetail, webDetail), material: { name: 'bridge-steel', color: STEEL, doubleSided: true } },
+  { part: merged(soffit, soffitDetail), material: SOFFIT },
+  { part: merged(steelDetail, webDetail, roof, walkDetail, posts), material: { name: 'bridge-steel', color: STEEL, doubleSided: true, floodlight: roadwayLit } },
+  { part: lamps, material: LAMP },
 ]
 
 const extras = {
