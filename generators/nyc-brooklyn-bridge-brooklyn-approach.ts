@@ -23,7 +23,8 @@
  * them, so the roadways rest on the masonry rather than floating over it or
  * being cut by it: under each roadway its own height, across the strip under
  * the promenade a slope from one roadway to the other, and past a roadway's
- * outer edge that roadway's height, as a ledge. The map has the west
+ * outer edge that roadway's height, as a ledge; and under the promenade
+ * where it comes down below the roadways, at Cadman Plaza East, its height. The map has the west
  * roadway 2.5 to 3 m above the east one here; the real ones are level, and
  * the blocks follow the map. If the map's profile changes, regenerate
  * `ROADS` (from barrelman's bridge_decks) and this model.
@@ -258,8 +259,8 @@ function roadAt(y: number, k: 1 | 2 | 3): [number, number, number] | null {
   return null
 }
 
-/** The roadway surface the masonry meets at (x, y), NAVD88. */
-function roadway(x: number, y: number): number {
+/** The roadways' surface at (x, y), NAVD88: sloped across the gap between them, held flat past their outer edges. */
+function roadways(x: number, y: number): number {
   const w = roadAt(y, 1), e = roadAt(y, 2)
   if (!w || !e) return (w ?? e)![2]
   const over = [w, e].filter(([a, b]) => x >= a && x <= b).map(([, , h]) => h)
@@ -268,6 +269,13 @@ function roadway(x: number, y: number): number {
   if (x > e[1]) return e[2]
   const t = (x - w[1]) / (e[0] - w[1])
   return w[2] + (e[2] - w[2]) * Math.min(Math.max(t, 0), 1)
+}
+
+/** The lowest deck over (x, y): the roadways, or the promenade where it comes down below them. */
+function roadway(x: number, y: number): number {
+  const walk = roadAt(y, 3)
+  const under = roadways(x, y)
+  return walk && x >= walk[0] && x <= walk[1] ? Math.min(under, walk[2]) : under
 }
 
 const foot = (x: number, y: number) => g(x, y) - D0
@@ -321,7 +329,7 @@ function clip(pts: [number, number][], n: [number, number], d: number): [number,
 
 /** Where the top bends across the band of y from `ya`: the roadways' edges at its middle. */
 const cutsAt = (ya: number) =>
-  [roadAt(ya + TILE / 2, 1), roadAt(ya + TILE / 2, 2)].flatMap((r) => (r ? [r[0], r[1]] : [])).sort((a, b) => a - b)
+  ([1, 2, 3] as const).map((k) => roadAt(ya + TILE / 2, k)).flatMap((r) => (r ? [r[0], r[1]] : [])).sort((a, b) => a - b)
 
 /**
  * The top: cut into bands along y and, within each, at the roadways' edges,
