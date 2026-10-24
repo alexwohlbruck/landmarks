@@ -26,7 +26,7 @@
  * - main span: 41 − 0.01·S·(2u − 1)², S = 485.1 m between the towers: 41 m
  *   at midspan (OSM height=41 on the outline), 36.1 m at the towers;
  * - side spans and anchorages, from the map's decks: at the Brooklyn
- *   anchorage 34.2 m (west roadway) and 32.1 m (east), 32.8 and 30.3 at its
+ *   anchorage 32.5 m (west roadway) and 32.1 m (east), 30.8 and 30.2 at its
  *   landward end; at the Manhattan anchorage 26.6 and 27.9, then 24.4 and
  *   25.9 at its landward end.
  * Lidar puts the real roadways a little differently (0.8 m higher at
@@ -314,12 +314,12 @@ const YB = -524.2, YM = 526.5   // the anchorages' river faces: the outline's en
 const MAIN = (y: number) => 41 - 0.01 * S * (y / TY) ** 2
 const SIDES: Record<number, (y: number) => number> = {
   [-1]: piecewise([
-    [-620, 32.78], [-600, 33.06], [-580, 33.34], [-560, 33.63], [-540, 33.92], [-520, 34.21], [-500, 34.49],
-    [-480, 34.78], [-460, 35.06], [-440, 35.35], [-420, 35.64], [-400, 35.93], [-380, 36.18], [-360, 36.29],
-    [-340, 36.24], [-320, 36.13], [-300, 36.0], [-280, 35.91], [-260, 35.93], [-TY, 36.08],
-    [TY, 36.16], [260, 35.64], [280, 35.1], [300, 34.59], [320, 34.1], [340, 33.03], [360, 32.43], [380, 31.79],
-    [400, 31.1], [420, 30.39], [440, 29.69], [460, 28.98], [480, 28.27], [500, 27.57], [520, 26.86], [540, 26.16],
-    [560, 25.45], [580, 24.74], [595, 24.21],
+    [-620, 30.74], [-600, 31.10], [-580, 31.47], [-560, 31.84], [-540, 32.20], [-520, 32.57], [-500, 32.94],
+    [-480, 33.31], [-460, 33.68], [-440, 34.04], [-420, 34.38], [-400, 34.67], [-380, 34.91], [-360, 35.07],
+    [-340, 35.17], [-320, 35.24], [-300, 35.30], [-280, 35.42], [-260, 35.69], [-TY, 36.13], [TY, 36.12],
+    [260, 35.49], [280, 34.84], [300, 34.22], [320, 33.61], [340, 33.00], [360, 32.38], [380, 31.72],
+    [400, 31.05], [420, 30.36], [440, 29.66], [460, 28.95], [480, 28.25], [500, 27.54], [520, 26.83],
+    [540, 26.13], [560, 25.43], [580, 24.71], [595, 24.19],
   ]),
   [1]: piecewise([
     [-620, 30.19], [-600, 30.58], [-580, 30.97], [-560, 31.36], [-540, 31.75], [-520, 32.14], [-500, 32.53],
@@ -443,15 +443,17 @@ for (const x of CABLES) {
 }
 
 // Suspenders and stays are `wire`: a map thins them out where they are finer than a pixel.
+// Every other one is `fine`, which a map leaves out where the fan closes up, so it reads as a fan rather than a net.
 const wires = new Part()
+const fine = new Part()
 
 // Suspenders: from each cable down to the floor beams, at every modelled bay.
 for (const span of spans)
-  for (const y of bays(span)) {
+  for (const [k, y] of bays(span).entries()) {
     if (Math.abs(Math.abs(y) - TY) < FACE + 6) continue
     for (const x of CABLES) {
       const z0 = road(y, Math.sign(x)) - UNDER + .6, z1 = cable(y) - CABLE_R * .5
-      if (z1 - z0 > 1) rod(wires, [x, y, z0], [x, y, z1], .16)
+      if (z1 - z0 > 1) rod(k % 2 ? fine : wires, [x, y, z0], [x, y, z1], .16)
     }
   }
 
@@ -466,7 +468,7 @@ for (const t of [-TY, TY])
       const zTop = 79.4 + 2.6 * (i / (STAYS - 1))
       for (const x of CABLES) {
         const end = Math.abs(x) > IN ? road(y, Math.sign(x)) + TRUSS_UP - .5 : prom(y) - .5
-        rod(wires, [x, y0, zTop], [x, y, end], .18)
+        rod(i % 2 ? fine : wires, [x, y0, zTop], [x, y, end], .18)
       }
     }
   }
@@ -689,6 +691,7 @@ const detail = [
   { part: lamps, material: LAMP },
   // Last: a map draws wires by their coverage, and blends them over what is already drawn.
   { part: wires, material: { name: 'wire-steel', color: STEEL, floodlight: roadwayLit } },
+  { part: fine, material: { name: 'wire-steel-fine', color: STEEL, floodlight: roadwayLit } },
 ]
 
 const extras = {
