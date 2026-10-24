@@ -23,8 +23,8 @@ imports it beside Open Landmarks and serves both to
 | `generators/mesh.ts`, `palette.ts`, `coaster-kit.ts`, `bridge-kit.ts` | The shared kit the generators build with |
 | `STYLE.md` | The art style, and how to build a model that holds up to review |
 | `docs/` | How a batch of models is made, from candidates to deploy, and the agent briefs |
-| `tools/` | Renderers for looking at models without a browser, evidence fetchers (lidar, OSM, photos), and the merge script |
-| `src/` | The release build: validation, placement baking, the published format |
+| `tools/` | Renderers for looking at models without a browser, evidence fetchers (lidar, OSM, photos), the merge script, and the Open Landmarks export |
+| `src/` | The release build: validation, placement baking, the published format; `src/open-landmarks/`, the submission export |
 | `test/` | Tests for the build and the catalog |
 
 `bun install` once; nothing else is needed. Bun runs everything.
@@ -300,6 +300,37 @@ merging is releasing. Pages holds only the current release, so a client
 should read the pointer, catalogue and assets in one go, as Open Landmarks
 clients do.
 
+## Contributing to Open Landmarks
+
+The release above is read by Open Landmarks clients; contributing a model to
+the Open Landmarks repository itself is a separate export, because a
+submission there is stricter than a release here:
+
+    bun run open-landmarks <open-landmarks checkout>
+    blender -b --factory-startup --python tools/open-landmarks-blend.py -- <checkout>/collection <id ...>
+    cd <checkout> && node tools/render-previews.mjs <id ...>   # then click Render
+
+The first writes `collection/<id>/` for every placement Open Landmarks
+doesn't already have (matched by OSM element, Wikidata item or footprint),
+with `asset.json`, both LODs and `spatial-source.json`, and adds the finishes
+the models need to their `materials.json`. On the way it:
+
+- flattens the model to one static node, moving parts in their rest pose;
+- cuts away footings below y = 0, since they stand a model on its lowest point;
+- converts colours exactly: our kit encodes with a 2.2 gamma, they check the
+  sRGB curve, so a colour off their swatches becomes a finish named after the
+  model rather than being snapped to one;
+- clips `window` panels to the walls behind them, setting proud panels 2 cm
+  off the wall, and keeps any glazing with no wall behind it as a
+  `<model>-glazing` finish in the window colour;
+- folds the closest colours together where a model would otherwise use more
+  than their six materials, and says so in the asset's notes.
+
+Ids there name the landmark (`sutro-tower`), not our batch. OSM versions,
+tags and geometry come from the OSM API and Commons credits from the Commons
+API, cached in `.cache/open-landmarks/`. Textured models are skipped: v1
+takes plain colour only.
+
 ## Licences
 
 - **Models are CC0-1.0**: public domain, no credit needed. Each states its
@@ -308,6 +339,9 @@ clients do.
 - **Placements are ODbL-1.0.** Anchors and `replaces` are derived from
   OpenStreetMap, © OpenStreetMap contributors.
 - The code in `src/`, `tools/` and `generators/` is CC0-1.0 as well.
+- **Copies contributed to Open Landmarks are CC BY 4.0**, under their
+  contributor grant, credited to Alex Wohlbruck. The CC0 originals here are
+  unaffected.
 
 Reference photos used while modelling keep their own licences and are not
 part of this repo.
