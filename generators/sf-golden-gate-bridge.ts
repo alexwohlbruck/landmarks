@@ -1,15 +1,57 @@
 /**
- * Golden Gate Bridge towers (1937; Joseph Strauss, Charles Ellis, Leon
- * Moisseiff; art-deco styling by Irving Morrow) — procedural, CC0-1.0.
+ * Golden Gate Bridge (1937; Joseph Strauss, Charles Ellis, Leon Moisseiff;
+ * art-deco styling by Irving Morrow) — procedural, CC0-1.0.
  * bun generators/sf-golden-gate-bridge.ts
  *
- * One tower, placed twice (south and north). Map frame: x across the
- * bridge, y along it, z up, metres; origin at the centre of the pier on
- * the water. Placed at bearing 354.7°, the line from the south tower to
- * the north one. Only the towers: the deck, the stiffening truss and the
- * suspenders are left to the map, as the batch brief asks. The main cables
- * are left out too: stubs of them read as horns at map scale. Their
- * saddle housings stay on the leg tops.
+ * The whole suspension bridge as one placement, pylon S1 to pylon N1: both
+ * towers, the two main cables, the suspenders, the stiffening trusses under
+ * the roadway, the floor beams and lateral bracing, the sidewalk railings,
+ * and the pylons' concrete legs where the cables turn down. Writes a low
+ * model (towers with plain-edged legs, cables, the trusses as solid bands)
+ * and a detail model (the approved towers in full, the trusses as lattice,
+ * suspenders, railings, floor beams), which a map draws from detailZoom up.
+ *
+ * Frame: x across the bridge, y along it toward Marin, z up, metres; origin
+ * midway between the towers, on the water. Placed at bearing 354.69°, the
+ * line from the south tower's centroid to the north one's. The map owns the
+ * roadway and sidewalk surfaces: the trusses hang below them, the railings
+ * stand beside them, and nothing here is a slab at road level.
+ *
+ * Height. z = 0 is the water. Structure heights are lidar heights above the
+ * water's own returns (0.5 m NAVD88), as the towers always were; ground
+ * heights are 3DEP bare earth plus 1.1 m, the DEM's water reading here, so
+ * the pylons' feet land on the terrain the map draws. The roadway, from
+ * lidar: 81.2 m at midspan, 74.1 m at the towers, 66 m at the pylons. The
+ * OSM outline records no height, so the map has none of its own to build
+ * to; these are the heights to give it.
+ *
+ * Standing on the terrain: the towers stand in the water at z = 0 and the
+ * pylons' legs run down to the ground under them vertex by vertex, from
+ * 4 m tables of 3DEP heights in this frame (SOUTH_GROUND, NORTH_GROUND), so
+ * every foot sits 1.1 m above the DEM.
+ *
+ * The span's sources:
+ * - OSM: the outline relation/21407754 (way/370672707), 29 m wide, from
+ *   y = -975 to +976; Pylon S1, way/1560010162 and way/1560010163, its two
+ *   legs either side of the roadway (Pylon N1 is not mapped; drawn as S1's
+ *   mirror).
+ * - Lidar (USGS 3DEP CA_SanFrancisco_1_B23, 2023, 0.5 m grids across the
+ *   deck at midspan, y = -320, -560, ±810, ±960 and over both pylons): the
+ *   roadway above; the cables 27.5 m apart, 85.1 m high at midspan (centre)
+ *   and 194.8 m at y = -560, a parabola to 226.7 m at the saddles (the
+ *   published sag is 470 ft, 143 m); on the side spans 137.9 m at y = ±810
+ *   and 75.8 m at ±960, entering the pylons' housings at about 72 m; the
+ *   housings' tops 75.4 m; the suicide-deterrent net (2023), 6.7 m under the
+ *   sidewalks, which is left out.
+ * - Published (Wikipedia "Golden Gate Bridge"; goldengate.org): main span
+ *   4,200 ft, side spans 1,125 ft; cables 36 3/8 in; stiffening trusses
+ *   25 ft deep, 90 ft apart; suspenders in pairs every 50 ft.
+ * - Estimated: the truss panels (25 ft, Warren with verticals), the floor
+ *   beams' depth, the railing's height (1.3 m), the pylon legs' plain
+ *   concrete form (their art-deco relief is left out). The cables are drawn
+ *   1.3 m thick and the suspenders 0.44 m, a little over the real ones.
+ *
+ * The towers' sources, unchanged:
  *
  * What makes it the Golden Gate: International Orange; two tall stepped
  * legs, cruciform in plan, whose faces carry broad vertical recesses; four
@@ -57,6 +99,7 @@
  *   the map's flat lighting; the pier's concrete pale grey.
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
+import { band, footedWall, groundAt, merged, movedAlong, parabola, rod, stations, strip, truss, tube, type GroundGrid } from './bridge-kit'
 import { finish, type Swatch } from './palette'
 
 // ---- Shared helpers (also used by the Bay Bridge towers) -------------------
@@ -138,11 +181,12 @@ export const countParts = (parts: { part: Part }[]) => parts.reduce((s, p) => s 
 
 // ---- The Golden Gate tower --------------------------------------------------
 
-if (import.meta.main) {
-  const lit = new Part()     // International Orange
-  const shade = new Part()   // the same paint on recessed faces
-  const pier = new Part()    // concrete
-
+/**
+ * One tower, centred on its pier on the water, into the three parts given.
+ * `simple` is the far view's: plain-edged legs, no corbelled brackets or
+ * fluting, so two towers fit the low model's budget.
+ */
+function tower(lit: Part, shade: Part, pier: Part, simple = false) {
   /**
    * The legs' faces: a wing's face is recessed when another wing of the
    * same section stands proud of it in that direction. `proudX`/`proudY`
@@ -179,7 +223,9 @@ if (import.meta.main) {
       wings.forEach(([xi, xo, hd], k) => {
         const [a, b] = s > 0 ? [xi, xo] : [-xo, -xi]
         const last = k === wings.length - 1
-        box(legSkin(last, k === 0), a, b, -hd, hd, z0, z1, { r: 0.25, top: z1 === 224.6 ? 0.4 : 0.15, bottom: false })
+        box(legSkin(last, k === 0), a, b, -hd, hd, z0, z1, simple
+          ? { r: 0, bottom: false }
+          : { r: 0.25, top: z1 === 224.6 ? 0.4 : 0.15, bottom: false })
       })
     }
   }
@@ -207,6 +253,7 @@ if (import.meta.main) {
    * the legs at height z, hanging down (dir -1) or standing up (dir +1).
    */
   function brackets(z: number, dir: number) {
+    if (simple) return
     const xi = inner(z + dir * 0.5)
     for (const s of [-1, 1]) for (const [w, k] of [[3.0, 0], [1.9, 1], [0.9, 2]]) {
       const za = dir > 0 ? z + k * 1.3 : z - (k + 1) * 1.3
@@ -223,7 +270,7 @@ if (import.meta.main) {
   }
   for (const [, z1] of struts.slice(0, 3)) brackets(z1, 1) // bottom corners of the opening above
   // The top strut's face is fluted: broad vertical ribs across its recess.
-  for (let i = -3; i <= 3; i++) box(L, i * 2.9 - 0.7, i * 2.9 + 0.7, -1.75, 1.75, 216.5, 221.8, { r: 0 , bottom: false })
+  if (!simple) for (let i = -3; i <= 3; i++) box(L, i * 2.9 - 0.7, i * 2.9 + 0.7, -1.75, 1.75, 216.5, 221.8, { r: 0 , bottom: false })
 
   // Under the deck: the truss's seat, then two X-braced panels of about
   // equal height (photos; OSM puts the middle strut at 50–52 m, which
@@ -235,16 +282,168 @@ if (import.meta.main) {
     const zm = (z0 + z1) / 2
     beam(L, [0, 0, zm - 2.4], [0, 0, zm + 2.4], 3.4, 3.0, [0, 1, 0])
   }
+}
+
+// ---- The span ------------------------------------------------------------------
+
+const S = 1275.77               // tower centre to tower centre (OSM)
+const TY = S / 2                // towers at y = ±TY
+const FACE = 7.5                // the deck stops this far from a tower's centre line
+const END = 975                 // the outline's ends, at pylons S1 and N1
+const HOUSING = [972.6, 982.7]  // the pylons' cable housings, along y (OSM, Pylon S1)
+
+/**
+ * The roadway, metres above the water, from lidar: a vertical curve 81.2 m
+ * high at midspan and 74.1 m at the towers, falling on through the side
+ * spans to 66 m at the pylons.
+ */
+const road = (y: number): number => {
+  const a = Math.abs(y)
+  return a <= TY ? 81.2 - 1.74e-5 * y * y : side(a)
+}
+const side = parabola([TY, 81.2 - 1.74e-5 * TY * TY], [810, 70.6], [960, 66.5])
+
+const CABLE_X = 13.75, CABLE_R = 0.65
+const SADDLE = 226.7, LOW = 85.1
+const mainCable = (y: number) => LOW + (SADDLE - LOW) * (y / TY) ** 2
+const sideCable = parabola([TY, SADDLE], [810, 137.9], [960, 75.8])
+const cable = (y: number) => Math.max(Math.abs(y) <= TY ? mainCable(y) : sideCable(Math.abs(y)), road(y) + 1.5)
+
+const TRUSS_DOWN = 7.6          // the stiffening trusses' depth under the roadway (25 ft)
+const TRUSS_W = 0.8
+const PANEL = 7.62              // truss panels, 25 ft; suspenders every second panel (50 ft)
+const RAIL_X = 14.3
+
+const spans: [number, number][] = [[-END, -TY - FACE], [-TY + FACE, TY - FACE], [TY + FACE, END]]
+const curve = ([a, b]: [number, number]) => stations(a, b, 50)
+const panels = ([a, b]: [number, number]) => stations(a, b, PANEL)
+
+// 3DEP bare-earth heights above the water (NAVD88 + 1.1), 4 m apart in this
+// frame, under the pylons: rows along |y| from 966, columns across from x = -22.
+const SOUTH_GROUND: GroundGrid = { y0: -990, x0: -22, step: 4, z: [
+  [4.5, 6.1, 6.1, 6.0, 6.1, 6.3, 6.7, 6.7, 6.8, 6.7, 6.7, 6.7],
+  [3.6, 6.2, 6.2, 6.1, 6.2, 6.3, 6.5, 6.5, 6.6, 6.7, 7.0, 7.0],
+  [4.5, 6.2, 6.2, 6.1, 6.2, 6.2, 6.4, 6.3, 6.3, 6.5, 6.7, 6.5],
+  [5.4, 6.2, 6.2, 6.1, 6.2, 6.2, 6.2, 6.2, 6.1, 6.2, 6.3, 6.1],
+  [3.9, 4.1, 5.0, 3.6, 4.0, 5.0, 3.8, 5.6, 5.9, 6.0, 6.0, 5.8],
+  [0.9, 0.8, 0.9, 1.0, 1.2, 1.2, 1.2, 1.7, 1.9, 2.0, 3.5, 2.0],
+  [0.9, 0.8, 0.9, 1.0, 1.0, 1.1, 1.0, 1.1, 1.1, 1.4, 1.8, 1.1],
+] }
+const NORTH_GROUND: GroundGrid = { y0: 966, x0: -22, step: 4, z: [
+  [61.4, 57.9, 55.9, 55.3, 52.8, 50.3, 47.8, 45.2, 41.9, 39.7, 37.5, 31.4],
+  [60.9, 56.5, 56.0, 55.0, 52.0, 48.1, 45.5, 42.8, 39.0, 36.2, 33.1, 30.0],
+  [56.6, 56.3, 54.9, 52.1, 48.8, 45.2, 41.9, 38.7, 35.0, 33.9, 30.1, 28.9],
+  [56.3, 56.3, 54.6, 52.6, 49.2, 45.8, 42.4, 39.0, 35.6, 33.8, 29.8, 28.7],
+  [56.3, 56.3, 55.1, 53.1, 49.3, 45.7, 42.3, 38.9, 35.5, 33.1, 29.3, 29.0],
+  [56.3, 56.4, 56.0, 53.6, 49.8, 46.2, 42.4, 38.8, 35.3, 32.5, 29.4, 29.1],
+  [56.4, 56.3, 56.3, 54.9, 51.4, 47.8, 44.3, 40.7, 37.1, 34.0, 30.7, 29.3],
+] }
+
+if (import.meta.main) {
+  const lit = new Part(), shade = new Part(), pier = new Part()
+  const litFar = new Part(), shadeFar = new Part(), pierFar = new Part()
+  tower(lit, shade, pier)
+  tower(litFar, shadeFar, pierFar, true)
+  const towers = (p: Part) => merged(movedAlong(p, -TY), movedAlong(p, TY))
+
+  const steelLow = new Part(), steelDetail = new Part(), web = new Part()
+  const under = new Part(), underDetail = new Part()
+  const concrete = new Part()
+  const top = (y: number) => road(y) - .4
+  const bot = (y: number) => road(y) - TRUSS_DOWN
+
+  for (const span of spans) {
+    const ys = curve(span)
+    for (const s of [-1, 1]) {
+      const x0 = s * (CABLE_X - TRUSS_W / 2), x1 = s * (CABLE_X + TRUSS_W / 2)
+      band(steelLow, x0, x1, ys, top, bot, { out: true, top: true, bottom: true, ends: true })
+      truss(steelDetail, web, s * CABLE_X, panels(span), top, bot, { chordW: TRUSS_W, topD: .9, botD: .9, member: .45, curve: ys })
+      // Railing along the sidewalk's outer edge: a top rail on posts.
+      band(steelDetail, s * (RAIL_X - .08), s * (RAIL_X + .08), ys, (y) => road(y) + 1.3, (y) => road(y) + 1.1)
+      for (const y of stations(span[0], span[1], 3.81))
+        rod(steelDetail, [s * RAIL_X, y, road(y) - .4], [s * RAIL_X, y, road(y) + 1.15], .07, 3)
+    }
+    // The deck's underside, facing down, between the trusses.
+    for (const p of [under, underDetail]) band(p, -CABLE_X + TRUSS_W / 2, CABLE_X - TRUSS_W / 2, ys, top, (y) => road(y) - 1.0, { bottom: true })
+    // Floor beams and the bottom lateral bracing, every 50 ft.
+    const ps = panels(span)
+    for (let i = 0; i < ps.length; i += 2) {
+      const y = ps[i]
+      band(underDetail, -CABLE_X, CABLE_X, [y - .25, y + .25], () => road(y) - 1.0, () => road(y) - 2.6, { bottom: true, ends: true })
+      if (i + 2 < ps.length) {
+        const y2 = ps[i + 2]
+        for (const [xa, xb] of [[-1, 1], [1, -1]])
+          strip(web, [xa * CABLE_X, y, bot(y) + .5], [xb * CABLE_X, y2, bot(y2) + .5], .5, [0, 0, 1])
+      }
+    }
+    // Suspenders, one per 50 ft (each is a pair of ropes).
+    for (let i = 0; i < ps.length; i += 2) {
+      const y = ps[i]
+      if (Math.abs(Math.abs(y) - TY) < FACE + 4 || Math.abs(y) > END - 4) continue
+      for (const s of [-1, 1]) {
+        const z1 = cable(y) - CABLE_R * .6
+        if (z1 - top(y) > 1) rod(steelDetail, [s * CABLE_X, y, top(y)], [s * CABLE_X, y, z1], .22, 4)
+      }
+    }
+  }
+
+  // Main cables, housing to housing, over the saddles.
+  const cablePath = (x: number, step: number): V3[] => [
+    [x, -HOUSING[1], road(END) + 3],
+    ...spans.flatMap(([a, b]) => stations(a, b, step).map((y) => [x, y, cable(y)] as V3)),
+    [x, HOUSING[1], road(END) + 3],
+  ]
+  for (const s of [-1, 1]) {
+    tube(steelLow, cablePath(s * CABLE_X, 60), CABLE_R, 5)
+    tube(steelDetail, cablePath(s * CABLE_X, 10), CABLE_R, 10)
+  }
+
+  // Pylons S1 and N1: a concrete leg either side of the roadway, from the
+  // ground up past the deck, housing the cables where they turn down.
+  const HOUSE_TOP = 75.4
+  for (const [sy, ground] of [[-1, SOUTH_GROUND], [1, NORTH_GROUND]] as [number, GroundGrid][]) {
+    const g = (x: number, y: number) => groundAt(ground, x, y)
+    const [ya, yb] = sy < 0 ? [-HOUSING[1], -HOUSING[0]] : [HOUSING[0], HOUSING[1]]
+    for (const s of [-1, 1]) {
+      const xi = s * 12.0, xo = s * 19.1
+      const t = () => HOUSE_TOP
+      footedWall(concrete, [xi, ya], [xo, ya], g, t, [0, -1, 0])
+      footedWall(concrete, [xi, yb], [xo, yb], g, t, [0, 1, 0])
+      footedWall(concrete, [xo, ya], [xo, yb], g, t, [s, 0, 0])
+      footedWall(concrete, [xi, ya], [xi, yb], g, t, [-s, 0, 0])
+      band(concrete, Math.min(xi, xo), Math.max(xi, xo), [ya, yb], t, t, { top: true })
+      // A shallow cap, a step proud of the leg.
+      band(concrete, Math.min(xi, xo) - .4, Math.max(xi, xo) + .4, [ya - .4, yb + .4], () => HOUSE_TOP - .3, () => HOUSE_TOP - 1.4)
+    }
+  }
 
   const ORANGE: Swatch = finish('international-orange', 0xc8553f)
   const ORANGE_SHADE: Swatch = finish('international-orange-shade', 0xa9452f)
   const CONCRETE: Swatch = finish('concrete', 0xd9d3c7)
-  const parts = [{ part: lit, material: ORANGE }, { part: shade, material: ORANGE_SHADE }, { part: pier, material: CONCRETE }]
-  const triangles = countParts(parts)
-  if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)
-  const glb = writeGlb('Golden Gate Bridge tower', parts, {
-    license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres, origin at the pier centre on the water', height: 229.5, bearing: 354.7,
-  })
-  await Bun.write(new URL('../models/sf-golden-gate-bridge.glb', import.meta.url), glb)
-  console.log(`sf-golden-gate-bridge.glb: ${triangles} triangles, ${glb.length} bytes`)
+  const low = [
+    { part: merged(towers(litFar), steelLow), material: ORANGE },
+    { part: merged(towers(shadeFar), under), material: ORANGE_SHADE },
+    { part: merged(towers(pierFar), concrete), material: CONCRETE },
+  ]
+  const detail = [
+    { part: merged(towers(lit), steelDetail, web), material: { ...ORANGE, doubleSided: true } },
+    { part: merged(towers(shade), underDetail), material: ORANGE_SHADE },
+    { part: merged(towers(pier), concrete), material: CONCRETE },
+  ]
+  const extras = {
+    license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin midway between the towers, on the water',
+    bearing: 354.69, elevation: 0, towers: [-TY, TY], ends: [-END, END],
+    roadwayMidspan: road(0), roadwayAtTowers: road(TY), roadwayEnds: road(END),
+  }
+  for (const [file, list, maxTris, maxBytes] of [
+    ['sf-golden-gate-bridge.glb', low, 6500, 250 * 1024],
+    ['sf-golden-gate-bridge.detail.glb', detail, 40000, 1536 * 1024],
+  ] as const) {
+    const tris = countParts([...list])
+    if (tris > maxTris) throw new Error(`${file}: ${tris} triangles, over ${maxTris}`)
+    const glb = writeGlb('Golden Gate Bridge', [...list], extras)
+    if (glb.length > maxBytes) throw new Error(`${file}: ${glb.length} bytes, over ${maxBytes}`)
+    await Bun.write(new URL(`../models/${file}`, import.meta.url), glb)
+    console.log(`${file}: ${tris} triangles, ${glb.length} bytes`)
+  }
 }

@@ -1,7 +1,7 @@
 /**
  * Render a model from any side, to match a photo's viewpoint.
  *
- *   bun tools/view.ts <id|model.glb> <out.png> <from> [elevation=15] [--bearing <deg>] [--size <px>]
+ *   bun tools/view.ts <id|model.glb> <out.png> <from> [elevation=15] [--bearing <deg>] [--size <px>] [--night]
  *
  * <from> is the compass direction from the landmark to the camera, in degrees
  * clockwise from north: 180 stands south of it looking north. That is the
@@ -32,6 +32,8 @@ const option = (name: string) => {
 }
 const bearingArg = option('--bearing')
 const size = Number(option('--size') ?? 700)
+const night = args.includes('--night')
+if (night) args.splice(args.indexOf('--night'), 1)
 const [what, out, from, elevation = '15'] = args
 if (!what || !out || from === undefined) {
   console.error('usage: bun tools/view.ts <id|model.glb> <out.png> <from-deg> [elevation-deg] [--bearing <deg>] [--size <px>]')
@@ -50,6 +52,6 @@ if (!what.endsWith('.glb')) {
 
 const glb = bakePlacement(new Uint8Array(readFileSync(file)), { bearing })
 // render() takes the camera's azimuth counter-clockwise from east.
-const bmp = render(loadScene(glb), size, size, 90 - Number(from), Number(elevation), 2)
+const bmp = render(loadScene(glb), size, size, 90 - Number(from), Number(elevation), 2, night)
 writeFileSync(out, encodePng(bmp.w, bmp.h, bmp.data))
 console.log(out)

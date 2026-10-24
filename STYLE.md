@@ -45,6 +45,17 @@ and photos. Every rule here fixes something that went wrong.
 - **Big readable forms, little detail.** No mullions, ledges, thin ribs,
   railings, fine sculpture or lettering. If it won't read at 200 px on a
   phone, leave it out.
+- **Bridges are the exception, in their detail model.** A suspension
+  bridge's cables, suspenders and stays are what make it itself, so they
+  are modelled, along with trusses and railings, in a detail GLB the map
+  draws close up (see Levels of detail and Bridges in `README.md`). The
+  model owns walkways and tracks on the bridge, surfaces included; the map
+  draws the road surfaces and their markings. The
+  low model keeps the towers, anchorages, cables and the deck structure as
+  solid bands, and drops everything thin. Draw thin members a little
+  thicker than they are (a suspender 0.3–0.45 m, a cable about twice its
+  real diameter) and at no more than half their real density, so they read
+  without shimmering.
 
 ## Ground
 
@@ -120,6 +131,8 @@ and photos. Every rule here fixes something that went wrong.
 
 - At most 5,000 triangles for most landmarks; 6,500 for the most complex,
   and never over Open Landmarks' low-LOD cap of 8,000 triangles and 250 KB.
+- A detail model, where there is one, stays under Open Landmarks' detail
+  cap: 40,000 triangles and 1.5 MB.
 - No textures. Open Landmarks allows none, and its validator rejects them.
 - Use 8 to 12 segments per semicircle and 12 to 16 around a full circle.
 
@@ -151,8 +164,24 @@ only decides what glows.
   roofs and crowns, the Rose Center's cube.
 - **`entrance`**: a main entrance's doors or glazing, which glow at night.
   Only where the model already has a separate material for it.
+- **`lamp`**: light fittings that are part of the landmark's identity at
+  night, such as a bridge's cable lights and lantern heads. Parchment draws
+  them as warm white points at night and not at all by day; other readers
+  draw them in their own colour by day, so give them the fitting's paint
+  rather than a bright colour. Any name starting with `lamp` is a lamp. Draw them as small solid beads, a little larger than
+  the real fitting, at their real spacing or sparser in a low model, so
+  they read as points rather than shimmer.
 
-Everything else is unlit. (Parchment also glows painted `window*` textures
+Everything else is unlit, unless it is floodlit. A landmark whose stone is
+floodlit at night, such as a bridge's towers, carries a `_FLOODLIGHT`
+vertex attribute: a float from 0 to 1 per vertex, how much of the
+floodlighting falls there. The map washes those surfaces back toward their
+own colour in warm white light at night, and ignores the attribute by day.
+Set it with `floodlight` on a material in `mesh.ts`, as a function of each
+vertex's position and normal, so it can be shaped like the real lighting
+(brightest near the fixtures, faces looking up barely lit) and limited to
+the parts that are really lit. It costs no material, and readers that don't
+know it ignore it. (Parchment also glows painted `window*` textures
 by their alpha, for older models; new models have no textures.)
 
 ## Animation (experimental)

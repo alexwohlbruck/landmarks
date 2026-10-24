@@ -17,6 +17,13 @@ export type CatalogModel = {
   source?: string
   /** A credit a map must show while drawing it, for licences that need one (CC-BY). */
   attribution?: string
+  /**
+   * A finer GLB, in the same frame, that a map switches to from `detailZoom`
+   * up: thin parts the low model leaves out, such as a bridge's suspenders.
+   */
+  detail?: string
+  /** Smallest zoom the detail model is drawn at; 17 when absent. */
+  detailZoom?: number
 }
 
 export type CatalogLandmark = {
@@ -69,8 +76,13 @@ export function validateCatalog(catalog: Catalog): string[] {
     if (!SLUG_RE.test(m.id)) problems.push(`model "${m.id}": id must be a lowercase slug`)
     if (models.has(m.id)) problems.push(`model "${m.id}": duplicate id`)
     models.add(m.id)
-    if (!m.file?.endsWith('.glb')) problems.push(`model "${m.id}": file must be a .glb`)
-    if (m.file?.includes('..') || m.file?.startsWith('/')) problems.push(`model "${m.id}": file must stay inside the repo`)
+    for (const [key, file] of [['file', m.file], ['detail', m.detail]] as const) {
+      if (key === 'detail' && file === undefined) continue
+      if (!file?.endsWith('.glb')) problems.push(`model "${m.id}": ${key} must be a .glb`)
+      if (file?.includes('..') || file?.startsWith('/')) problems.push(`model "${m.id}": ${key} must stay inside the repo`)
+    }
+    if (m.detailZoom !== undefined && !(m.detail && m.detailZoom >= 0 && m.detailZoom <= 24))
+      problems.push(`model "${m.id}": detailZoom must be 0-24, on a model with a detail file`)
     if (!m.license) problems.push(`model "${m.id}": license is required`)
     if (!m.author) problems.push(`model "${m.id}": author is required`)
     if (/^CC-BY/i.test(m.license ?? '') && !m.attribution)

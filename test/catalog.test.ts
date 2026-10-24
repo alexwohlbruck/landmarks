@@ -54,6 +54,14 @@ describe('validateCatalog', () => {
     expect(at(NaN)).toHaveLength(1)
   })
 
+  test('takes a detail GLB, and a detail zoom only beside one', () => {
+    const tower = ok.models[0]
+    const at = (m: object) => validateCatalog({ ...ok, models: [{ ...tower, ...m }] })
+    expect(at({ detail: 'models/tower.detail.glb', detailZoom: 16 })).toEqual([])
+    expect(at({ detail: 'models/tower.obj' })).toEqual(['model "tower": detail must be a .glb'])
+    expect(at({ detailZoom: 16 })).toEqual(['model "tower": detailZoom must be 0-24, on a model with a detail file'])
+  })
+
   test('flags a model nothing places', () => {
     const problems = validateCatalog({ ...ok, models: [...ok.models, { ...ok.models[0], id: 'spare' }] })
     expect(problems).toEqual(['model "spare": not placed anywhere'])

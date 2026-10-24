@@ -13,6 +13,23 @@ type Mip = { w: number; h: number; data: Float32Array }
 
 /** The page colour every view is drawn on. */
 export const BACKGROUND = [234, 230, 220]
+/** The page colour at night: the dark map's ground. */
+export const NIGHT_BACKGROUND = [24, 29, 42]
+
+/**
+ * Night, as the map draws it: unlit surfaces sink to a dim blue, windows
+ * and entrances glow warm, `lamp*` materials are drawn as their light (and
+ * not at all by day), and
+ * the `_FLOODLIGHT` attribute washes a surface back toward its own colour
+ * in warm white light. Linear-light colours.
+ */
+const linear = (hex: string) => [1, 3, 5].map((i) => Math.pow(parseInt(hex.slice(i, i + 2), 16) / 255, 2.2))
+const NIGHT = {
+  dim: 0.16, tint: [0.012, 0.016, 0.03], window: [1.0, 0.72, 0.4],
+  // Parchment's LAMP_LIGHT and FLOODLIGHT (web/src/lib/map-objects/landmarks.ts).
+  lamp: linear('#ffe7c4'), flood: linear('#ffeacf'), floodStrength: 0.9,
+}
+const glows = (name: string) => name.startsWith('lamp') ? NIGHT.lamp : name.startsWith('window') || name === 'entrance' ? NIGHT.window : null
 
 /** 8-bit RGBA PNG → bitmap. Enough PNG for generator textures and photos saved as PNG. */
 export function decodePng(png: Uint8Array): Bitmap {
@@ -37,7 +54,7 @@ export function decodePng(png: Uint8Array): Bitmap {
 
 /** A model ready to draw from any side: world-space primitives and their bounds. */
 export type Scene = {
-  primitives: { p: Float32Array; n: Float32Array; uv: any; ix: any; mat: any }[]
+  primitives: { p: Float32Array; n: Float32Array; uv: any; ix: any; mat: any; flood: Float32Array | null }[]
   textures: Mip[][]
   gltf: any
   /** Plan and height bounds in map axes (x east, y north, z up). */
@@ -88,7 +105,7 @@ export function loadScene(bytes: Uint8Array): Scene {
     for (const p of nd.mesh !== undefined ? gltf.meshes[nd.mesh].primitives : []) {
       const P = read(p.attributes.POSITION), N = read(p.attributes.NORMAL), pp = new Float32Array(P.length), nn = new Float32Array(N.length)
       for (let k = 0; k < P.length; k += 3) for (let r = 0; r < 3; r++) { pp[k + r] = m[r] * P[k] + m[4 + r] * P[k + 1] + m[8 + r] * P[k + 2] + m[12 + r]; nn[k + r] = m[r] * N[k] + m[4 + r] * N[k + 1] + m[8 + r] * N[k + 2] }
-      primitives.push({ p: pp, n: nn, uv: p.attributes.TEXCOORD_0 !== undefined ? read(p.attributes.TEXCOORD_0) : null, ix: read(p.indices), mat: gltf.materials[p.material] })
+      primitives.push({ p: pp, n: nn, uv: p.attributes.TEXCOORD_0 !== undefined ? read(p.attributes.TEXCOORD_0) : null, ix: read(p.indices), mat: gltf.materials[p.material], flood: p.attributes._FLOODLIGHT !== undefined ? read(p.attributes._FLOODLIGHT) : null })
     }
     for (const c of nd.children || []) visit(c, m)
   }
@@ -122,18 +139,20 @@ function sample(m: Mip, u: number, v: number): number[] {
  * camera stands, degrees counter-clockwise from east: 270 is due south, 225
  * south-west. Elevation is degrees above the horizon.
  */
-export function render(scene: Scene, w: number, h: number, az: number, el: number, ss = 2): Bitmap {
+export function render(scene: Scene, w: number, h: number, az: number, el: number, ss = 2, night = false): Bitmap {
   const { primitives, textures, gltf, centre, radius } = scene
   const azr = (az * Math.PI) / 180, elr = (el * Math.PI) / 180
   const camera = [Math.cos(azr) * Math.cos(elr), Math.sin(azr) * Math.cos(elr), Math.sin(elr)]
   const right = norm(cross([0, 0, 1], camera)), up = cross(camera, right)
   const target = centre, scale = (Math.min(w, h) * 0.46) / radius, W = w * ss, H = h * ss
   const buffer = new Float32Array(W * H * 3), depth = new Float32Array(W * H).fill(-Infinity)
-  const bgl = BACKGROUND.map((v) => Math.pow(v / 255, 2.2))
+  const bgl = (night ? NIGHT_BACKGROUND : BACKGROUND).map((v) => Math.pow(v / 255, 2.2))
   for (let i = 0; i < W * H; i++) buffer.set(bgl, i * 3)
   const half = norm(sun.map((s, i) => s + camera[i]))
   for (const prim of primitives) {
-    const { p, n, uv, ix, mat } = prim, pbr = mat.pbrMetallicRoughness, tex = pbr.baseColorTexture ? textures[gltf.textures[pbr.baseColorTexture.index].source] : null
+    // The map draws lamps only at night.
+    if (!night && (prim.mat.name ?? '').startsWith('lamp')) continue
+    const { p, n, uv, ix, mat, flood } = prim, glow = night ? glows(mat.name ?? '') : null, pbr = mat.pbrMetallicRoughness, tex = pbr.baseColorTexture ? textures[gltf.textures[pbr.baseColorTexture.index].source] : null
     const pos: number[][] = [], normal: number[][] = []
     for (let i = 0; i < p.length / 3; i++) {
       const v = [p[i * 3] - target[0], -p[i * 3 + 2] - target[1], p[i * 3 + 1] - target[2]]
@@ -181,7 +200,16 @@ export function render(scene: Scene, w: number, h: number, az: number, el: numbe
         const smooth = norm(ns[0].map((v: number, i: number) => wa * v + wb * ns[1][i] + wc * ns[2][i]))
         const light = 0.72 + 0.28 * (dot(smooth, sun) * 0.5 + 0.5)
         const spec = pbr.roughnessFactor < 0.5 ? Math.pow(Math.max(0, dot(smooth, half)), 35) * 0.055 : 0
-        for (let j = 0; j < 3; j++) buffer[at * 3 + j] = Math.min(1, color[j] * Math.pow(light, 2.2) + spec)
+        if (!night) {
+          for (let j = 0; j < 3; j++) buffer[at * 3 + j] = Math.min(1, color[j] * Math.pow(light, 2.2) + spec)
+          continue
+        }
+        const f = flood ? (wa * flood[ids[0]] + wb * flood[ids[1]] + wc * flood[ids[2]]) * NIGHT.floodStrength : 0
+        for (let j = 0; j < 3; j++) {
+          const dim = color[j] * Math.pow(light, 2.2) * NIGHT.dim + NIGHT.tint[j]
+          const lit = color[j] * NIGHT.flood[j] * Math.pow(light, 2.2)
+          buffer[at * 3 + j] = glow ? glow[j] : Math.min(1, dim + (lit - dim) * f)
+        }
       }
     }
   }

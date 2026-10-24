@@ -69,8 +69,9 @@ sorts together.
 
 Look for the city's most recognisable buildings and structures: skyline
 towers, civic buildings, monuments, stadiums and arenas, museums, churches,
-bridge towers, famous sculpture, stations, rides. Prefer things people look
-for on a map and that read in 3D from above.
+bridges (one complete model each; see Bridges in the README), famous
+sculpture, stations, rides. Prefer things people look for on a map and that
+read in 3D from above.
 
 Skip:
 
@@ -146,7 +147,7 @@ merges:
                 "wikidata": "Q...", "replaces": ["way/123"] } }
 ```
 
-A model placed more than once (each tower of a bridge) uses
+A model placed more than once (the Eiffel Tower, in Paris and Las Vegas) uses
 `"landmarks": [ ... ]` instead of `"landmark"`.
 
 - `lng`/`lat`: the outline's centroid.
