@@ -278,11 +278,7 @@ function roadway(x: number, y: number): number {
   return walk && x >= walk[0] && x <= walk[1] ? Math.min(under, walk[2]) : under
 }
 
-/**
- * The lowest deck about (x, y), half a band along and a metre across: a roof
- * triangle spans that far, and taking the higher deck at one corner would lift
- * the triangle through the lower deck beside it where their edge slants.
- */
+/** The lowest deck within a roof triangle's reach of (x, y), so no triangle rises through a lower deck where their edge slants. */
 const lowest = (x: number, y: number) => Math.min(...[-1, 0, 1].flatMap((i) => [-1, 0, 1].map((j) => roadway(x + i, y + (j * TILE) / 2))))
 
 const foot = (x: number, y: number) => g(x, y) - D0
