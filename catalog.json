@@ -15425,6 +15425,66 @@
       ],
       "file": "models/nyc-one-court-square.glb",
       "source": "generators/nyc-one-court-square.ts"
+    },
+    {
+      "id": "nyc-ewr-control-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "tower",
+      "tags": [
+        "airport",
+        "control-tower"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "NewarkAirportControlTower 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:NewarkAirportControlTower_01.jpg",
+          "author": "Djflem",
+          "license": "CC0"
+        },
+        {
+          "title": "NewarkAirportControlTowerMariottHotel.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:NewarkAirportControlTowerMariottHotel.jpg",
+          "author": "Djflem",
+          "license": "CC0"
+        },
+        {
+          "title": "Newark Airport & Control TowerJPG.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Newark_Airport_%26_Control_TowerJPG.jpg",
+          "author": "Sterilgutassistentin",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Newark Liberty ATC & Mariott Hotel.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Newark_Liberty_ATC_%26_Mariott_Hotel.jpg",
+          "author": "hh oldman",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Newark-Liberty.airside.ATCTJPG.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Newark-Liberty.airside.ATCTJPG.jpg",
+          "author": "Sterilgutassistentin",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/nyc-ewr-control-tower.glb",
+      "source": "generators/nyc-ewr-control-tower.ts"
     }
   ],
   "landmarks": [
@@ -27321,6 +27381,21 @@
         "way/286214704",
         "way/286214705",
         "way/286214706"
+      ]
+    },
+    {
+      "id": "nyc-ewr-control-tower",
+      "name": "Newark Airport Control Tower",
+      "model": "nyc-ewr-control-tower",
+      "place": "new-york-area",
+      "lng": -74.1827497,
+      "lat": 40.692581,
+      "bearing": 26,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/437257662",
+        "way/537070755"
       ]
     }
   ],
