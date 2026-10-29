@@ -217,7 +217,7 @@ cbox(brick, rect(-27.3, X0 + 0.1, -5.05, 5.0), 52.6, 54, { b: 0.2, top: roof, bo
   const XS = X0 + 2.0 // the letters' back, just inside the river wall
   const K = 7.0 // metres per letter unit: the D 7 m tall, the words about 23.5 m long
   const WORD = 3.35, yc = -18, yStart = yc + (WORD * K) / 2
-  const zs = WEST + 0.6, zd = zs + 0.6 * K + 0.6
+  const zs = WEST + 2.6, zd = zs + 0.6 * K + 0.6
   // read from the river, looking east: u runs north to south (-y), w toward the river (-x)
   // `slant` leans the script forward, as the real Domino does (about 9°)
   // `climb` raises "Domino"'s baseline toward its end: the word rises to the
