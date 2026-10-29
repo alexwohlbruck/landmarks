@@ -15589,6 +15589,67 @@
       ],
       "file": "models/nyc-ewr-building-1.glb",
       "source": "generators/nyc-ewr-building-1.ts"
+    },
+    {
+      "id": "nyc-pepsi-cola-sign",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "other",
+      "tags": [
+        "sign",
+        "neon",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Pepsi-Colas Sign (DSC04457).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pepsi-Colas_Sign_(DSC04457).jpg",
+          "author": "Polibil",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Long Island City Pepsi Cola Sign - May 2026.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Long_Island_City_Pepsi_Cola_Sign_-_May_2026.jpg",
+          "author": "Anonymouscarrots",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "PepsiCola sign, Gantry Plaza State Park Long Island City 01 (9431665809).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:PepsiCola_sign,_Gantry_Plaza_State_Park_Long_Island_City_01_(9431665809).jpg",
+          "author": "Joe Mabel",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Pepsi-Cola sign in Gantry Plaza State Park, Long Island City, New York.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pepsi-Cola_sign_in_Gantry_Plaza_State_Park,_Long_Island_City,_New_York.jpg",
+          "author": "MusikAnimal",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Pepsi-Cola sign SWW.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pepsi-Cola_sign_SWW.jpg",
+          "author": "Solowomanwalks",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/nyc-pepsi-cola-sign.glb",
+      "source": "generators/nyc-pepsi-cola-sign.ts"
     }
   ],
   "landmarks": [
@@ -27530,6 +27591,19 @@
       "replaces": [
         "way/232382759"
       ]
+    },
+    {
+      "id": "nyc-pepsi-cola-sign",
+      "name": "Pepsi-Cola Sign",
+      "model": "nyc-pepsi-cola-sign",
+      "place": "new-york-area",
+      "lng": -73.9576953,
+      "lat": 40.7474745,
+      "bearing": 110.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q97883006",
+      "replaces": []
     }
   ],
   "places": [
