@@ -128,6 +128,9 @@ Facade rules the reviewer enforces:
 - Real semicircles, not ovals. Symmetry where the building is symmetric.
   Nothing pokes past an edge or a corner.
 - Crowns and signature features get bolder at phone size, not finer.
+- Lettering on a famous sign copies the real letterforms (script, serif,
+  condensed), traced from a photo and built with `generators/lettering.ts`.
+  No pixel or grid fonts; see "Famous signs" in STYLE.md.
 
 ## Reworks
 

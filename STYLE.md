@@ -339,10 +339,21 @@ almost all data.
   the moving part as its own node from the start, even if it ships static,
   so it can be animated later (see Animation). Give it a detail that shows
   the motion, such as the flag stripes on the SkyTower's cabin.
-- **Famous signs** (the Cyclone, a theatre marquee) may carry their
-  lettering when the sign is the landmark. Build the letters as simple
-  extruded block shapes on a flat panel, not a texture, and note the
+- **Famous signs** (the Cyclone, a theatre marquee, the Pepsi-Cola sign)
+  may carry their lettering when the sign is the landmark, and note the
   exception in the generator. Other marquees and signs are plain boxes.
+  - **Copy the real letterforms.** Trace each letter from a licensed photo
+    of the sign: script stays script, serifs stay serifs, a condensed
+    sans stays condensed, and the letters keep their real spacing, slant
+    and baseline curve. Never a pixel, 5 × 7 grid or generic block font,
+    and never a texture.
+  - **Build them with `generators/lettering.ts`.** Draw each letter's
+    centre-lines with `Pen` (lines, Bézier curves, arcs) and extrude them
+    with `strokes` at the real stroke weight. Bend `place` to follow a
+    curved canopy or drum.
+  - **Bold enough for a phone.** If the word vanishes at 200 px, thicken
+    the strokes and the depth a little rather than adding detail. Compare
+    the letters with the photo side by side, as for the rest of the model.
 
 ### Report the doubts
 
