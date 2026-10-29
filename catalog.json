@@ -15723,6 +15723,79 @@
       ],
       "file": "models/nyc-jfk-terminal-5.glb",
       "source": "generators/nyc-jfk-terminal-5.ts"
+    },
+    {
+      "id": "nyc-jfk-terminal-8",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "JFK-SatelliteTerminal-MostlyAA (36774618531).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK-SatelliteTerminal-MostlyAA_(36774618531).jpg",
+          "author": "formulanone",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Terminal 8 at JFKIA 20240602.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Terminal_8_at_JFKIA_20240602.jpg",
+          "author": "颐园居",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "John F. Kennedy Airport T8 20240602.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:John_F._Kennedy_Airport_T8_20240602.jpg",
+          "author": "颐园居",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Terminal 8 departures.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Terminal_8_departures.jpg",
+          "author": "Mybirthday647",
+          "license": "CC0"
+        },
+        {
+          "title": "Aerial view of JFK Terminal 8 from the southwest 01 (9456620628).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_JFK_Terminal_8_from_the_southwest_01_(9456620628).jpg",
+          "author": "Joe Mabel",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "At Long Island 2025 393.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:At_Long_Island_2025_393.jpg",
+          "author": "Mike Peel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "John F. Kennedy Airport 2021b.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:John_F._Kennedy_Airport_2021b.jpg",
+          "author": "Antony-22",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-jfk-terminal-8.glb",
+      "source": "generators/nyc-jfk-terminal-8.ts"
     }
   ],
   "landmarks": [
@@ -27694,6 +27767,21 @@
         "way/284907731"
       ],
       "wikidata": "Q55855384"
+    },
+    {
+      "id": "nyc-jfk-terminal-8",
+      "name": "JFK Airport Terminal 8",
+      "model": "nyc-jfk-terminal-8",
+      "place": "new-york-area",
+      "lng": -73.7919122,
+      "lat": 40.6483557,
+      "bearing": -29.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "relation/9077394"
+      ],
+      "wikidata": "Q55855388"
     }
   ],
   "places": [
