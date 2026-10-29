@@ -15796,6 +15796,73 @@
       ],
       "file": "models/nyc-jfk-terminal-8.glb",
       "source": "generators/nyc-jfk-terminal-8.ts"
+    },
+    {
+      "id": "nyc-jfk-terminal-7",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "JFK Terminal 7 aerial view.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_7_aerial_view.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Exterior of Terminal 7, JFK.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_Terminal_7,_JFK.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "JFK Terminal 7 exterior.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_7_exterior.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "JFK Terminal 7 May 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_7_May_2023.jpg",
+          "author": "Mybirthday647",
+          "license": "CC0"
+        },
+        {
+          "title": "JFK Airport Terminal 7.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Airport_Terminal_7.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "JFK Terminal 7 Alaska Airlines.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_7_Alaska_Airlines.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/nyc-jfk-terminal-7.glb",
+      "source": "generators/nyc-jfk-terminal-7.ts"
     }
   ],
   "landmarks": [
@@ -27782,6 +27849,21 @@
         "relation/9077394"
       ],
       "wikidata": "Q55855388"
+    },
+    {
+      "id": "nyc-jfk-terminal-7",
+      "name": "JFK Airport Terminal 7",
+      "model": "nyc-jfk-terminal-7",
+      "place": "new-york-area",
+      "lng": -73.7828117,
+      "lat": 40.6494974,
+      "bearing": 13.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "relation/3778808"
+      ],
+      "wikidata": "Q55855385"
     }
   ],
   "places": [
