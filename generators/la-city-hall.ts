@@ -57,6 +57,12 @@
  * both show the outer arms stopping at the same shoulder with a 20 m core
  * carrying on, so the tower is modelled four-way symmetrical: arms to
  * 98.5 m, core to 121.6 m. Courtyard floors (z 9) are invented.
+ *
+ * Night: the tower is floodlit from its shoulders over the wings to the
+ * pyramid, which glows over the Civic Center; the podium and wings much
+ * less. So the stone and granite carry a floodlight wash, strong on the
+ * tower, and the pyramid's steps (in the roof material) one of their own
+ * (STYLE.md, "Night").
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish, type Swatch } from './palette'
@@ -489,11 +495,20 @@ function build() {
     bays(win, la, lb, { n: 5, s0: 3.4, s1: 14.6 - 3.4, fill: 0.6, rows: [[126.6, 128.8]] })
   }
 
+  // Floodlit: the tower above the wings' eaves strongly, the podium and wings
+  // a little; the roof material only on the pyramid over the lantern.
+  const lit = (p: V3, n: V3): number => {
+    if (n[2] > 0.7) return p[2] > EAVE + 1 ? 0.4 : 0.1
+    return p[2] > EAVE - 2 ? 0.9 : 0.35
+  }
+  const pyramidLit = (p: V3, n: V3): number => (p[2] < 121 ? 0 : n[2] > 0.7 ? 0.5 : 0.9)
+  const STONE = { ...PALETTE.stone, floodlight: lit }, GRANITE = { ...finish('granite', 0xd8d2c6), floodlight: lit }
+  const ROOF = { ...PALETTE.roof, floodlight: pyramidLit }
   save('la-city-hall', 'Los Angeles City Hall', [
-    { part: stone, material: PALETTE.stone },
-    { part: granite, material: finish('granite', 0xd8d2c6) },
+    { part: stone, material: STONE },
+    { part: granite, material: GRANITE },
     { part: win, material: PALETTE.window },
-    { part: roof, material: PALETTE.roof },
+    { part: roof, material: ROOF },
     { part: tile, material: PALETTE.terracotta },
     { part: door, material: PALETTE.entrance },
   ], { bearing: 37.8, anchor: [34.0536925, -118.2427693], height: TOP, osm: 'relation/6333145' }, 6500)

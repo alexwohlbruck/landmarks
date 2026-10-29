@@ -63,6 +63,9 @@
  * - Simplified: columns, pediments over the windows, sculpture, the
  *   balustrades' balusters, the dome's ribs and the lantern's colonnade
  *   (drawn as a drum with dark openings) are left out or flattened.
+ *
+ * Night: the granite fronts are floodlit, the drum brightest, and the dome
+ * and gilt torch are lit; the pavilion roofs stay dark.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -260,11 +263,19 @@ function range(r: Rect, cornice = R_CORNICE, bal = R_BAL, ridge = R_RIDGE) {
   lathe(gold, x, y, [[0.5, zt + 8.5], [0.8, zt + 8.9], [0.45, zt + 9.3], [0.9, zt + 9.8], [0.01, 59.4]], 8, false)
 }
 
+// At night the fronts are floodlit, the drum brighter, and the dome and its
+// gilt torch are lit from the roofs round them; faces looking up least. The
+// pavilions' copper hips share the dome's material and stay dark.
+const nearDome = (p: V3) => Math.hypot(p[0] - OCT.x, p[1] - OCT.y) < 17
+const GRANITE = { ...finish('loc-granite', 0xe9e5dc), floodlight: (p: V3, n: V3) => (n[2] > 0.8 ? 0.3 : p[2] > 33 && nearDome(p) ? 0.95 : 0.75) }
+const DOME = { ...finish('loc-dome-copper', 0x5b615c), floodlight: (p: V3) => (nearDome(p) && p[2] > 39 ? 0.7 : 0) }
+const GILT = { ...finish('loc-gilt', 0xd2b064), floodlight: () => 0.9 }
+
 await saveModel('dc-jefferson-building', 'Library of Congress, Thomas Jefferson Building', [
-  { part: granite, material: finish('loc-granite', 0xe9e5dc) },
+  { part: granite, material: GRANITE },
   { part: roof, material: finish('loc-slate', 0x97a6b2) },
-  { part: dome, material: finish('loc-dome-copper', 0x5b615c) },
-  { part: gold, material: finish('loc-gilt', 0xd2b064) },
+  { part: dome, material: DOME },
+  { part: gold, material: GILT },
   { part: win, material: PALETTE.window },
   { part: door, material: PALETTE.entrance },
 ], { source: 'generators/dc-jefferson-building.ts', bearing: 359.88, osm: 'relation/1029374', footprint: [133.7, 143.7], height: 59.4 }, 6500)

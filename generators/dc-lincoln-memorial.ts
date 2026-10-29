@@ -51,6 +51,9 @@
  * (too fine), the tripod braziers on the pedestals, the statue (inside), the
  * plaza and stairs below the lower flight (way/1551348210, a separate
  * building), and any water.
+ *
+ * Night: the marble is floodlit, the colonnade and attic brightest and the
+ * steps and granite terrace wall dim; the chamber's portal glows as entrance.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -268,14 +271,23 @@ if (import.meta.main) {
     hipRoof(glass, -10.1, 10.1, y0, y1, ATTIC_ROOF, ATTIC_ROOF + 1.6)
   }
 
+  // At night the memorial is floodlit: the colonnade, entablature and attic
+  // glow white above the Reflecting Pool, the steps and the granite terrace
+  // wall much less, and faces looking up (steps, ledges) least.
+  const marbleLit = (p: V3, n: V3): number => {
+    const up = n[2] > 0.8 ? 0.45 : 1
+    return (p[2] < STYLO - 0.1 ? 0.35 : 1) * up
+  }
+  const graniteLit = (_p: V3, n: V3): number => (n[2] > 0.8 ? 0.1 : 0.25)
+
   const parts = [
     // Colours read off the daylight photos: the white Colorado Yule marble,
     // a touch warm in sun; the greyer granite of the terrace wall; the lawn
     // on the terrace, muted; the peristyle's dark roof membrane, as the
     // library roof pulled a step darker; the blue-grey skylights; the
     // shadowed chamber behind the portal, which is lit at night.
-    { part: marble, material: finish('yule-marble', 0xede8de) },
-    { part: granite, material: finish('granite', 0xcfc8ba) },
+    { part: marble, material: { ...finish('yule-marble', 0xede8de), floodlight: marbleLit } },
+    { part: granite, material: { ...finish('granite', 0xcfc8ba), floodlight: graniteLit } },
     { part: lawn, material: finish('terrace-lawn', 0xa8b48f) },
     { part: roof, material: { ...PALETTE.roof, color: 0x868c91 } },
     { part: glass, material: { ...PALETTE.glass, color: 0x8fa3ad } },

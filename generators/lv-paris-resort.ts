@@ -57,6 +57,10 @@
  * sign box. The slate is sampled from the sunlit mansard in the Matern
  * photo and pulled to the palette's lightness. Left out: statues, the
  * green-patina roof details, dormers, the porte-cochère canopy, signs.
+ *
+ * Night: the balloon is lit up after dark, so its blue and gold are
+ * `neon-paris-balloon` and `neon-paris-gold` and glow in their own colours
+ * (STYLE.md, "Night"); its sign box's screens are `window`.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -229,8 +233,8 @@ const parts = [
   { part: win, material: PALETTE.window },
   { part: blue, material: finish('paris-slate', 0x65859b) },
   { part: flat, material: PALETTE.roof },
-  { part: gold, material: finish('paris-gold', 0xd8b663) },
-  { part: balloon, material: finish('paris-balloon', 0x5f8cc8) },
+  { part: gold, material: finish('neon-paris-gold', 0xd8b663) },
+  { part: balloon, material: finish('neon-paris-balloon', 0x5f8cc8) },
 ]
 const triangles = triangleCount(parts)
 console.log(parts.map((p) => `${p.material.name} ${p.part.triangles}`).join(', '))

@@ -45,6 +45,9 @@
  * Polk and Van Ness, 11 on the north and south centres), the pavilions' six
  * columns and three arched windows, the 16-bay drum with paired columns, the
  * lantern's stages. The corner pavilions' windows are simplified.
+ *
+ * Night: the drum and dome are floodlit (a `floodlight` wash); the
+ * windows are `window`, the skylights dark `glass`.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -55,6 +58,7 @@ const REPLACES = ['relation/7261820', ...[494810783, 494810785, 494810787, 49481
 const ANCHOR = { lng: -122.4192226, lat: 37.7792751 }
 
 const stone = new Part(), win = new Part(), roof = new Part(), skylight = new Part(), slate = new Part(), gold = new Part()
+const drum = new Part() // the drum's granite, its own primitive so only it carries the floodlight
 
 type XY = [number, number]
 const unit = (v: V3): V3 => { const l = Math.hypot(...v) || 1; return v.map((n) => n / l) as V3 }
@@ -422,33 +426,33 @@ function spike(part: Part, a: number, r: number, w: number, z0: number, z1: numb
 
 const STEP = (2 * Math.PI) / 16 // 16 bays round the drum; a window faces each axis
 // Drum podium, plain, with a cornice where the colonnade stands.
-lathe(stone, [[17.7, 34.0], [17.7, 40.5], [18.1, 41.0], [15.6, 41.0]], 24)
+lathe(drum, [[17.7, 34.0], [17.7, 40.5], [18.1, 41.0], [15.6, 41.0]], 24)
 // Colonnade: a 16-sided windowed wall with a pier and a pair of columns at each angle.
 {
   const R = 15.6, half = STEP / 2
   for (let k = 0; k < 16; k++) {
     const a0 = k * STEP - half, a1 = k * STEP + half
     const p = (a: number, z: number, r = R): V3 => [r * Math.cos(a), r * Math.sin(a), z]
-    quad(stone, p(a0, 41), p(a1, 41), p(a1, 51.6), p(a0, 51.6))
+    quad(drum, p(a0, 41), p(a1, 41), p(a1, 51.6), p(a0, 51.6))
     // window centred on the facet (the facet's apothem is R cos(half))
     const ap = R * Math.cos(half) + 0.06, w = 1.15, c = k * STEP
     const q = (t: number, z: number): V3 => [ap * Math.cos(c) - t * Math.sin(c), ap * Math.sin(c) + t * Math.cos(c), z]
     quad(win, q(-w, 42.6), q(w, 42.6), q(w, 49.4), q(-w, 49.4))
     // pier and paired columns at the angle between facets
     const pa = a1
-    radialBox(stone, pa, 14.8, 16.75, 1.35, 41, 51.6)
+    radialBox(drum, pa, 14.8, 16.75, 1.35, 41, 51.6)
     for (const t of [-0.8, 0.8]) {
       const cx = 17.3 * Math.cos(pa) - t * Math.sin(pa), cy = 17.3 * Math.sin(pa) + t * Math.cos(pa)
-      column(stone, [cx, cy], 0.5, 41, 51.4, 6)
+      column(drum, [cx, cy], 0.5, 41, 51.4, 6)
     }
   }
 }
 // Entablature, attic, and the ring of pedestals with finials round the dome's foot.
-lathe(stone, [[15.4, 51.2], [17.9, 51.9], [17.9, 53.0], [15.35, 53.0], [15.35, 56.0], [15.75, 56.6], [14.2, 56.6]], 24)
+lathe(drum, [[15.4, 51.2], [17.9, 51.9], [17.9, 53.0], [15.35, 53.0], [15.35, 56.0], [15.75, 56.6], [14.2, 56.6]], 24)
 for (let k = 0; k < 16; k++) {
   const a = k * STEP + STEP / 2
-  radialBox(stone, a, 15.0, 16.8, 0.85, 53.0, 55.6)
-  radialBox(stone, a, 15.6, 16.6, 0.42, 55.6, 57.8, 0.22) // the urn on its pedestal
+  radialBox(drum, a, 15.0, 16.8, 0.85, 53.0, 55.6)
+  radialBox(drum, a, 15.6, 16.6, 0.42, 55.6, 57.8, 0.22) // the urn on its pedestal
 }
 // Dome: a half-ellipse 14.2 m across at the springing and 15 m tall (lidar fit).
 const DR = 14.2, DZ = 56.5, DH = 15.0
@@ -524,12 +528,21 @@ lathe(gold, [[0.12, 92.3], [0.32, 92.6], [0.3, 92.9], [0.08, 93.1], [0.0, 93.6]]
 
 // sRGB from the photos: the granite in daylight (cool pale grey), the leaded
 // dome (slate grey with a blue cast), its gilding, the teal skylight bands.
+//
+// At night the building is floodlit, the drum and dome brightest; only the
+// drum and the dome's slate carry the wash here (the fronts' and the gilt's
+// would break the file budget).
+// Faces looking up catch little.
+const facingUp = (n: V3, k: number) => (n[2] > 0.7 ? k : 1)
+const drumLit = (p: V3, n: V3): number => facingUp(n, 0.3) * 0.95
+const domeLit = (p: V3, n: V3): number => (p[2] < 34 ? 0 : n[2] > 0.9 ? 0.6 : 1)
 const parts = [
   { part: stone, material: finish('granite', 0xe4e1d9) },
+  { part: drum, material: { ...finish('granite-drum', 0xe4e1d9), floodlight: drumLit } },
   { part: win, material: PALETTE.window },
   { part: roof, material: { ...PALETTE.roof, color: 0xb6bcbf } }, // pale tar and gravel in the aerials
   { part: skylight, material: { name: 'glass', color: 0x88aeaa, roughness: 0.3 } },
-  { part: slate, material: finish('dome-slate', 0x7d878d) },
+  { part: slate, material: { ...finish('dome-slate', 0x7d878d), floodlight: domeLit } },
   { part: gold, material: finish('gilt', 0xd6b24f, 0.5) },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)

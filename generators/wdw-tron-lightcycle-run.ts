@@ -24,7 +24,10 @@
  * show; the arches are kept clear of the track where it runs out under them.
  * Shallow diagonal cushions follow NAIP's rib pattern. It is drawn as the
  * pale panelled roof it reads as by day (it is translucent ETFE), with the
- * dark teal band along its edge.
+ * dark teal band along its edge. After dark the canopy's edge glows in
+ * blue LED light, so the band is `neon-tron-edge` in its day teal (STYLE.md,
+ * "Night"). Its short legs share the band's material and glow with it:
+ * splitting them off would take a seventh material, one over the budget.
  *
  * Profile: Vekoma, LSM launch (RCDB 15286), 3,169 ft (966 m) of track, 78 ft
  * (23.8 m) high, 59.3 mph (95 km/h). Wikipedia's layout: a right turn out of
@@ -87,7 +90,7 @@ const CANOPY: XY[] = [
 ]
 
 const CANOPY_MAT = finish('tron-canopy', 0xeef0f1)
-const EDGE_MAT = finish('tron-edge', 0x3d7f99)
+const EDGE_MAT = finish('neon-tron-edge', 0x3d7f99)
 
 const add = (a: V3, b: V3): V3 => [a[0] + b[0], a[1] + b[1], a[2] + b[2]]
 const subv = (a: V3, b: V3): V3 => [a[0] - b[0], a[1] - b[1], a[2] - b[2]]

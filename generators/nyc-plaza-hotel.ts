@@ -46,6 +46,10 @@
  * (72 m), the bands. The arcade, the balconies, the carved gables, the
  * finials and the flagpoles are left out. The west annex and the low
  * north-west corner are plain boxes.
+ *
+ * Night: the hotel is floodlit, the white upper storeys and the copper
+ * mansard brightest, so stone, trim and copper carry a `floodlight` wash
+ * (STYLE.md, "Night").
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE } from './palette'
@@ -149,11 +153,15 @@ massing({
   boxes: [[WS, CS, CX, CN, 20], [WS, 1.3, WN, 19.6, 30], [-47.1, S + 0.7, WS, 1.3, 38]],
 })
 
+// The floodlights wash the street fronts, strongest on the top storeys and
+// the copper mansard, where they stand on the setbacks; roofs and flat tops
+// catch little.
+const lit = (p: V3, n: V3): number => (p[2] > CORN - 8 ? 1 : 0.55) * (n[2] > 0.7 ? 0.3 : 1)
 finishModel('The Plaza', 'nyc-plaza-hotel', [
-  { part: stone, material: PALETTE.stone },
-  { part: trim, material: PALETTE.trim },
+  { part: stone, material: { ...PALETTE.stone, floodlight: lit } },
+  { part: trim, material: { ...PALETTE.trim, floodlight: lit } },
   { part: win, material: PALETTE.window },
-  { part: copper, material: PALETTE.copper },
+  { part: copper, material: { ...PALETTE.copper, floodlight: lit } },
   { part: roof, material: PALETTE.roof },
   { part: door, material: PALETTE.entrance },
 ], { bearing: 29, osm: 'relation/9771573', height: APEX }, 6500)

@@ -15591,6 +15591,86 @@
       "source": "generators/nyc-ewr-building-1.ts"
     },
     {
+      "id": "nyc-colgate-clock",
+      "file": "models/nyc-colgate-clock.glb",
+      "source": "generators/nyc-colgate-clock.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "other",
+      "tags": [
+        "clock",
+        "sign",
+        "neon",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "role": "creator",
+          "github": "alexwohlbruck"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "9.30.22ColgateClockByLuigiNovi1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:9.30.22ColgateClockByLuigiNovi1.jpg",
+          "author": "Luigi Novi",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "9.30.22ColgateClockByLuigiNovi3.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:9.30.22ColgateClockByLuigiNovi3.jpg",
+          "author": "Luigi Novi",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "9.23.22ColgateClockByLuigiNovi2.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:9.23.22ColgateClockByLuigiNovi2.jpg",
+          "author": "Luigi Novi",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "10.7.22ColgateClockByLuigiNovi10.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:10.7.22ColgateClockByLuigiNovi10.jpg",
+          "author": "Luigi Novi",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Colgate Clock Jersey City.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Colgate_Clock_Jersey_City.jpg",
+          "author": "Hij802",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Colgate Clock von hinten.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Colgate_Clock_von_hinten.JPG",
+          "author": "Daniel Steffens",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Colgate Clock sunset.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Colgate_Clock_sunset.jpg",
+          "author": "Youngking11",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Colgate Clock Jersey City from Battery Park City.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Colgate_Clock_Jersey_City_from_Battery_Park_City.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
       "id": "nyc-pepsi-cola-sign",
       "license": "CC0-1.0",
       "collection": "landmarks",
@@ -27877,6 +27957,19 @@
       "elevation": 0,
       "minzoom": 15,
       "wikidata": "Q97883006",
+      "replaces": []
+    },
+    {
+      "id": "nyc-colgate-clock",
+      "name": "Colgate Clock",
+      "model": "nyc-colgate-clock",
+      "place": "new-york-area",
+      "lng": -74.033862,
+      "lat": 40.712037,
+      "bearing": 3,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1108243",
       "replaces": []
     },
     {

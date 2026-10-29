@@ -50,7 +50,9 @@
  * and arched windows above), the pavilion's three great arched windows, the
  * bay side's 22 lunettes over a glazed ground storey, the end gables' arched
  * windows, the skylight strip along the main ridge. The rooftop "PORT OF SAN
- * FRANCISCO" sign is left out (lettering).
+ * FRANCISCO" sign is left out (lettering). At night the clock tower is
+ * floodlit (a `floodlight` wash from the clock to the dome); the wings show
+ * only their `window`s.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -350,12 +352,18 @@ for (let i = 0; i < 6; i++) {
 stone.quad([X0, Y0, 0], [X0, Y1, 0], [X1, Y1, 0], [X1, Y0, 0])
 stone.quad([PX, PY0, 0], [PX, PY1, 0], [X0, PY1, 0], [X0, PY0, 0])
 
+// At night the clock tower is floodlit, from the clock up to the dome; the
+// long wings stay dark but for their windows. Faces looking up catch little.
+const towerLit = (p: V3, n: V3): number => {
+  if (Math.abs(p[0] - tx) > HS + 1.2 || Math.abs(p[1] - ty) > HS + 1.2 || p[2] < 25) return 0
+  return (n[2] > 0.7 ? 0.3 : 1) * Math.min(1, 0.6 + 0.4 * (p[2] - 25) / 40)
+}
 const parts = [
-  { part: stone, material: finish('ferry-sandstone', 0xe9e5dc) },
+  { part: stone, material: { ...finish('ferry-sandstone', 0xe9e5dc), floodlight: towerLit } },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
-  { part: trim, material: PALETTE.trim },
-  { part: bronze, material: finish('bronze', 0x8f7a5c) },
+  { part: trim, material: { ...PALETTE.trim, floodlight: towerLit } },
+  { part: bronze, material: { ...finish('bronze', 0x8f7a5c), floodlight: towerLit } },
   { part: sky, material: PALETTE.glass },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)

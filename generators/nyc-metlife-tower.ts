@@ -44,6 +44,10 @@
  * peristyle's piers, the cupola's profile. Windows start at 48 m on the
  * south and east faces, which neighbours hide below that (published: none
  * below the 11th/12th floors there).
+ *
+ * Night: the whole tower is floodlit white over Madison Square Park, the
+ * top (loggia, pyramid, cupola) brightest, and the clock dials are lit, so
+ * the marble, trim and gilding carry a floodlight wash (STYLE.md, "Night").
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -186,11 +190,18 @@ capPoly(stone, rect(4.3, 4.3), 195)
   }
 }
 
+// The floodlighting washes the shaft above the neighbouring roofs and
+// builds to the top; faces looking up catch little.
+const towerLit = (p: V3, n: V3): number => {
+  if (p[2] < 40) return 0
+  const h = Math.min(1, (p[2] - 40) / (SHAFT_TOP - 40))
+  return (0.5 + 0.5 * h) * (n[2] > 0.8 ? 0.3 : 1)
+}
 finishModel('Metropolitan Life Insurance Company Tower', 'nyc-metlife-tower', [
-  { part: stone, material: finish('metlife-marble', 0xebe3d3) },
-  { part: trim, material: PALETTE.trim },
+  { part: stone, material: { ...finish('metlife-marble', 0xebe3d3), floodlight: towerLit } },
+  { part: trim, material: { ...PALETTE.trim, floodlight: towerLit } },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
-  { part: gold, material: finish('metlife-gilding', 0xd2b062) },
+  { part: gold, material: { ...finish('metlife-gilding', 0xd2b062), floodlight: towerLit } },
   { part: blue, material: finish('metlife-clock-ring', 0x5b7a93) },
 ], { bearing: 29, osm: 'way/158404390', height: 213.4 }, 5000)

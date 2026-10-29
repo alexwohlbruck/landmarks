@@ -48,6 +48,9 @@
  * all NC-licensed; Mapillary's nearest views are 120 m off and look away),
  * so the walls stay plain steel with no window panels, as no photo shows
  * any, and the red neon name stays out.
+ *
+ * Night: the moon and saguaro are `neon-cj-yellow` and `neon-cj-green` and
+ * glow in their own colours; the white coyote and the doors glow warm.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish, type Swatch } from './palette'
@@ -320,13 +323,14 @@ H.panel(lit, 2, 9.4, 14.6, G, G + 2.7)
 }
 
 // Colours from the photo and aerial: the grey-green corrugated steel and the
-// brown shingles, the neon's yellow and green; the coyote's white neon and
-// the doors glow at night.
+// brown shingles, the neon's yellow and green, named `neon-*` so they glow
+// in their own colours at night; the coyote's white neon and the doors are
+// `entrance` and glow warm.
 await finishModel('coyote-joes', "Coyote Joe's", [
   { part: steel, material: finish('cj-steel', 0xb4b9b5) },
   { part: roof, material: PALETTE.roof },
   { part: shingle, material: finish('cj-shingle', 0x857a70) },
   { part: lit, material: PALETTE.entrance },
-  { part: yellow, material: finish('cj-neon-yellow', 0xe9c85c) },
-  { part: green, material: finish('cj-neon-green', 0x72b56a) },
+  { part: yellow, material: finish('neon-cj-yellow', 0xe9c85c) },
+  { part: green, material: finish('neon-cj-green', 0x72b56a) },
 ], { bearing: 26, osm: 'way/849535273', height: ZH })

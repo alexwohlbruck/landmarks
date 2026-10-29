@@ -53,6 +53,10 @@
  * outline, as the real ones are). No licensed photo of the 40th or 42nd
  * Street fronts was used; they carry the wings' order. The lions, urns,
  * fountains and flagpoles are left out.
+ *
+ * Night: the Fifth Avenue front is floodlit from the terraces, the portico
+ * brightest, so the marble facing the avenue carries a `floodlight` wash
+ * (STYLE.md, "Night"); the other fronts stay dark.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -255,9 +259,17 @@ function build() {
   onWall(marble, bp[0], bp[1], 0, BL, -0.05, 0.5, 22.4, 23.4) // string course under the arches
   onWall(marble, bp[0], bp[1], 0, BL, -0.05, 0.4, 0, 2.8) // base
 
+  // The floodlights stand on the terraces and light the Fifth Avenue front:
+  // faces looking east full, the portico's and pavilions' returns half,
+  // ledges and roofs little; nothing west of the central block.
+  const frontLit = (p: V3, n: V3): number => {
+    if (p[0] < 20) return 0
+    const facing = n[2] > 0.7 ? 0.25 : n[0] > 0.3 ? 1 : n[0] > -0.3 ? 0.5 : 0
+    return facing * (p[0] > XE + 0.5 ? 1 : 0.8)
+  }
   finishModel('New York Public Library, Stephen A. Schwarzman Building', 'nyc-nypl', [
-    { part: marble, material: PALETTE.stone },
-    { part: shade, material: finish('nypl-marble-shade', 0xcdbfaa) },
+    { part: marble, material: { ...PALETTE.stone, floodlight: frontLit } },
+    { part: shade, material: { ...finish('nypl-marble-shade', 0xcdbfaa), floodlight: frontLit } },
     { part: win, material: PALETTE.window },
     { part: roof, material: PALETTE.roof },
     { part: door, material: PALETTE.entrance },

@@ -55,6 +55,11 @@
  * much as the wheel so it hangs plumb. One turn every 120 s; the real wheel
  * turns about once in two to three minutes, near enough to keep. Frame 0 is
  * the static model. It replaces OSM way/742372514, the wheel's outline.
+ *
+ * Night: the rims and spokes carry the wheel's LEDs, so they are
+ * `neon-pacific-wheel`, the same white by day, glowing at night (STYLE.md,
+ * "Night"); the legs, gondolas and hub sign stay unlit. The real LEDs play
+ * coloured shows; white stands for all of them.
  */
 import { Part, axisAngle, cross, sub, writeGlb, type ChannelSpec, type MaterialSpec, type NodeSpec, type Quat, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -277,6 +282,8 @@ function build() {
   }
 
   const WHITE = finish('wheel-white', 0xf1eee6, 0.6)
+  // The rims and spokes, lit by their LEDs at night; the same white by day.
+  const WHEEL_LIT = finish('neon-pacific-wheel', 0xf1eee6, 0.6)
   const SIGN = { ...PALETTE.trim }
   const RED = finish('gondola-red', 0xd0524c, 0.5)
   const YELLOW = finish('gondola-yellow', 0xe9c84b, 0.5)
@@ -297,7 +304,7 @@ function build() {
 
   const nodes: NodeSpec[] = [{
     name: 'wheel', translation: [0, 0, H],
-    parts: [{ part: wheelP, material: WHITE }, { part: sign, material: SIGN }],
+    parts: [{ part: wheelP, material: WHEEL_LIT }, { part: sign, material: SIGN }],
   }]
   const channels: ChannelSpec[] = [{ node: 0, path: 'rotation', values: wheelTurn }]
   for (let k = 0; k < N; k++) {

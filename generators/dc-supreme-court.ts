@@ -57,8 +57,12 @@
  *   sculpture, the inscriptions, the seated statues (drawn as plain blocks
  *   on their pedestals), lamp standards, flagpoles, fountains and the
  *   plaza's balustrade are left out.
+ * - Night: the marble is floodlit, the west portico and pediment brightest
+ *   (the dusk panorama), the other fronts more softly, so the marble carries
+ *   a floodlight wash (STYLE.md, "Night"); the plaza's top and the roofs
+ *   only a little.
  */
-import { Part } from './mesh'
+import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 import { block, cbox, cylinder, gable, grow, hip, panel, qf, rect, tf, type Rect, type Side } from './dc-white-house'
 import { pslab, saveModel } from './dc-nga-west'
@@ -234,9 +238,17 @@ function windows(side: Side, at: number, a0: number, a1: number, n: number, w: n
   pslab(marble, outline(0), 0, PLAZA, 0.1, true)
 }
 
+// Floodlit marble: the west portico and front brightest, the rest softer,
+// upward faces faint.
+const lit = (p: V3, n: V3): number => {
+  if (n[2] > 0.7) return 0.2
+  return p[0] < -XW + 1 ? 0.95 : 0.55
+}
+const MARBLE = { ...finish('sc-marble', 0xf3eee6), floodlight: lit }
+const SHADE = { ...finish('sc-marble-shade', 0xd8d1c5), floodlight: lit }
 await saveModel('dc-supreme-court', 'Supreme Court of the United States', [
-  { part: marble, material: finish('sc-marble', 0xf3eee6) },
-  { part: shade, material: finish('sc-marble-shade', 0xd8d1c5) },
+  { part: marble, material: MARBLE },
+  { part: shade, material: SHADE },
   { part: roof, material: finish('sc-roof-tile', 0xbdb6aa) },
   { part: win, material: PALETTE.window },
   { part: door, material: PALETTE.entrance },

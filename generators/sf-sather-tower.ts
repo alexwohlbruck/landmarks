@@ -33,7 +33,8 @@
  * (2.0 m wide, to 67.4), the band under the belfry, the clock dials (r 2.6,
  * centre 54.3), the slit windows up each face, the corner pilaster strips,
  * the spire's tip (89.5) and the lantern's size. The four sides are drawn
- * alike, as the tower is.
+ * alike, as the tower is. At night it is floodlit from the ground (a
+ * `floodlight` wash on the granite, trim and spire).
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -156,11 +157,15 @@ cube(metal, 0.55, PYR_TIP - 1.4, PYR_TIP + 1.3, 0.12, null)
 pyramid(metal, 0, 0, 0.7, PYR_TIP + 1.3, PYR_TIP + 2.0)
 cube(metal, 0.12, PYR_TIP + 1.9, TOP, 0.04, metal)
 
+// At night the tower is floodlit from the ground: the shaft washed bright,
+// fading a little toward the belfry and the spire. Faces looking up catch
+// little of it.
+const lit = (p: V3, n: V3): number => (n[2] > 0.7 ? 0.3 : 1) * (1 - 0.4 * Math.min(1, p[2] / TOP))
 const parts = [
-  { part: granite, material: finish('sather-granite', 0xebe6dc) },
-  { part: trim, material: PALETTE.trim },
+  { part: granite, material: { ...finish('sather-granite', 0xebe6dc), floodlight: lit } },
+  { part: trim, material: { ...PALETTE.trim, floodlight: lit } },
   { part: win, material: PALETTE.window },
-  { part: spire, material: finish('sather-verdigris', 0x9fc2b2) },
+  { part: spire, material: { ...finish('sather-verdigris', 0x9fc2b2), floodlight: lit } },
   { part: metal, material: finish('sather-bronze', 0x5f6f68) },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)

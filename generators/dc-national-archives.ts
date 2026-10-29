@@ -56,8 +56,10 @@
  * - Simplified: the Corinthian capitals are a flared bell and abacus, the
  *   pediment sculpture and roundels are left out, the windows are one tall
  *   panel per bay.
+ *
+ * Night: the limestone is floodlit on every front, the colonnades brightest.
  */
-import { Part } from './mesh'
+import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 import { cbox, cylinder, gable, grow, panel, qf, rect, type Side } from './dc-white-house'
 import { type XY, pslab, poffset, saveModel } from './dc-nga-west'
@@ -212,9 +214,16 @@ function pediment(front: number, back: number, x: number, sgn: number) {
   for (const sx of [-1, 1]) cbox(stone, rect(sx * 22 - 2.2, sx * 22 + 2.2, YN + 0.5, YN + 5.5), 0, 4.0, { b: 0.25 })
 }
 
+// At night the building is floodlit on every front: the colonnades and
+// porticoes brightest, the attic a little less, the walls behind the columns
+// dimmer, and faces looking up least.
+const stoneLit = (p: V3, n: V3): number => (n[2] > 0.8 ? 0.35 : p[2] > CORNICE ? 0.7 : 0.9)
+const LIMESTONE = { ...finish('archives-limestone', 0xece3d3), floodlight: stoneLit }
+const LIMESTONE_SHADE = { ...finish('archives-limestone-shade', 0xcfc5b6), floodlight: (_p: V3, n: V3) => (n[2] > 0.8 ? 0.2 : 0.5) }
+
 await saveModel('dc-national-archives', 'National Archives Building', [
-  { part: stone, material: finish('archives-limestone', 0xece3d3) },
-  { part: shade, material: finish('archives-limestone-shade', 0xcfc5b6) },
+  { part: stone, material: LIMESTONE },
+  { part: shade, material: LIMESTONE_SHADE },
   { part: roof, material: PALETTE.roof },
   { part: win, material: PALETTE.window },
   { part: door, material: PALETTE.entrance },

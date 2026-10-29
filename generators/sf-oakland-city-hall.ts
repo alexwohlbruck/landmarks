@@ -42,7 +42,8 @@
  * (r 4.5), the lantern's corner piers and arched openings, the clock dials
  * (r 1.05) above them, the dome's profile (r 3.8, a drum to 91.5 m and a
  * half-ellipse 6 m tall), the urns. The back and the cross block's rear are drawn like the
- * sides; no photo shows them square on.
+ * sides; no photo shows them square on. At night the crown's stages, lantern
+ * and dome are floodlit (a `floodlight` wash); the shaft shows its `window`s.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -303,9 +304,12 @@ const CX = 3.3, CY = 0.8
   for (let i = 0; i < 4; i++) trim.tri(q[i], q[(i + 1) % 4], [CX, CY, 99.6])
 }
 
+// At night the tower's top stages, the lantern and the dome are floodlit;
+// the shaft below shows only its windows. Faces looking up catch little.
+const crownLit = (p: V3, n: V3): number => (p[2] < 65.5 ? 0 : (n[2] > 0.7 ? 0.3 : 1) * (p[2] < 72.2 ? 0.6 : 0.95))
 const parts = [
-  { part: stone, material: finish('oakland-granite', 0xe8e4dc) },
-  { part: trim, material: PALETTE.trim },
+  { part: stone, material: { ...finish('oakland-granite', 0xe8e4dc), floodlight: crownLit } },
+  { part: trim, material: { ...PALETTE.trim, floodlight: crownLit } },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
 ]

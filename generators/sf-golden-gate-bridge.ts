@@ -97,6 +97,10 @@
  * - Colour: International Orange from sunlit daylight photos (#c45140 to
  *   #d26053); the recessed faces a shade darker, so the fluting reads in
  *   the map's flat lighting; the pier's concrete pale grey.
+ *
+ * Night: the towers are floodlit (since 1987), warm on every face from the
+ * deck and pier up to the saddles, so the orange near the towers carries a
+ * `floodlight` wash (STYLE.md, "Night"); the cables and span stay dark.
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 import { band, footedWall, groundAt, merged, movedAlong, parabola, rod, stations, strip, truss, tube, type GroundGrid } from './bridge-kit'
@@ -417,8 +421,18 @@ if (import.meta.main) {
     }
   }
 
-  const ORANGE: Swatch = finish('international-orange', 0xc8553f)
-  const ORANGE_SHADE: Swatch = finish('international-orange-shade', 0xa9452f)
+  // The towers' floodlights stand on the piers and the deck: the wash is
+  // strongest just above the roadway and fades a little toward the saddles,
+  // the legs under the deck somewhat dimmer; faces looking up catch little.
+  // Only steel within a tower's footprint is lit.
+  const towerLit = (p: V3, n: V3): number => {
+    if (Math.abs(Math.abs(p[1]) - TY) > 11) return 0
+    const deck = road(TY)
+    const height = p[2] >= deck ? 1 - 0.3 * Math.min(1, (p[2] - deck) / (SADDLE - deck)) : 0.6
+    return height * (n[2] > 0.7 ? 0.3 : 1)
+  }
+  const ORANGE = { ...finish('international-orange', 0xc8553f), floodlight: towerLit }
+  const ORANGE_SHADE = { ...finish('international-orange-shade', 0xa9452f), floodlight: towerLit }
   const CONCRETE: Swatch = finish('concrete', 0xd9d3c7)
   const low = [
     { part: merged(towers(litFar), steelLow), material: ORANGE },

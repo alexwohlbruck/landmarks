@@ -34,7 +34,9 @@
  *
  * Famous-sign exception (STYLE.md): the four TRIBUNE signs carry their
  * lettering, as extruded block letters (a plain sans) standing on the balcony
- * parapet. By day they are cream like the trim, as in the photos.
+ * parapet. By day they are cream like the trim, as in the photos; they are
+ * `neon-tribune-cream` and glow at night (STYLE.md, "Night"), in their day
+ * colour rather than the real red.
  *
  * Estimated from the photos: storey heights (5.5 m ground storey, then 3.6 m),
  * the window bays (three per face, each a pair of windows, drawn as one panel
@@ -50,7 +52,7 @@ import { PALETTE, finish } from './palette'
 type XY = [number, number]
 const BEARING = 26.5
 const ANCHOR = { lng: -122.270827, lat: 37.803054 }
-const brick = new Part(), trim = new Part(), win = new Part(), roof = new Part(), copper = new Part(), metal = new Part()
+const brick = new Part(), trim = new Part(), win = new Part(), roof = new Part(), copper = new Part(), metal = new Part(), letters = new Part()
 
 /** A box with chamfered vertical edges; `top` caps it. */
 function block(p: Part, x0: number, x1: number, y0: number, y1: number, z0: number, z1: number, ch = 0.3, top: Part | null = p, bottom = false) {
@@ -276,12 +278,12 @@ for (const [x, y] of [[TX0, TY0], [TX1, TY0], [TX1, TY1], [TX0, TY1]] as XY[]) {
         const pts = poly.map(([pu, pv]) => [u + pu + shift, z0 + pv] as [number, number])
         // front (outward) and back faces, then the sides
         for (let i = 1; i < pts.length - 1; i++) {
-          trim.tri(at(f, pts[0][0], d1, pts[0][1]), at(f, pts[i][0], d1, pts[i][1]), at(f, pts[i + 1][0], d1, pts[i + 1][1]))
-          trim.tri(at(f, pts[0][0], d0, pts[0][1]), at(f, pts[i + 1][0], d0, pts[i + 1][1]), at(f, pts[i][0], d0, pts[i][1]))
+          letters.tri(at(f, pts[0][0], d1, pts[0][1]), at(f, pts[i][0], d1, pts[i][1]), at(f, pts[i + 1][0], d1, pts[i + 1][1]))
+          letters.tri(at(f, pts[0][0], d0, pts[0][1]), at(f, pts[i + 1][0], d0, pts[i + 1][1]), at(f, pts[i][0], d0, pts[i][1]))
         }
         for (let i = 0; i < pts.length; i++) {
           const A = pts[i], B = pts[(i + 1) % pts.length]
-          trim.quad(at(f, A[0], d0, A[1]), at(f, B[0], d0, B[1]), at(f, B[0], d1, B[1]), at(f, A[0], d1, A[1]))
+          letters.quad(at(f, A[0], d0, A[1]), at(f, B[0], d0, B[1]), at(f, B[0], d1, B[1]), at(f, A[0], d1, A[1]))
         }
       }
       u += widths[k] + GAP
@@ -296,6 +298,7 @@ const parts = [
   { part: roof, material: PALETTE.roof },
   { part: copper, material: PALETTE.copper },
   { part: metal, material: PALETTE.metal },
+  { part: letters, material: finish('neon-tribune-cream', PALETTE.trim.color) },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 if (triangles > 6500) throw new Error(`Triangle budget exceeded: ${triangles}`)

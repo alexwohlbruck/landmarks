@@ -44,6 +44,9 @@
  * south-west).
  *
  * Left out: the U.S. Bank sign on the crown (signage), the Bunker Hill Steps.
+ *
+ * Night: the crown's glass prisms are lit from inside, so they are
+ * `neon-usb-crown`, the glass colour, and glow at night (STYLE.md, "Night").
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish, windowVariant } from './palette'
@@ -310,7 +313,7 @@ const parts = [
   { part: granite, material: finish('usb-granite', 0xe7e3dc) },
   { part: win, material: PALETTE.window },
   { part: ribbon, material: windowVariant(2, 0x6f949c) },
-  { part: crownGlass, material: PALETTE.glass },
+  { part: crownGlass, material: finish('neon-usb-crown', PALETTE.glass.color, 0.24) },
   { part: terrace, material: PALETTE.roof },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)

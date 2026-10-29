@@ -52,6 +52,10 @@
  * showgirls' outline, all colours (pulled to the palette's lightness).
  * Left out: the palm tree, dice and flamingo sculptures on the base, the
  * video screens, the signs on the east face, the zip lines, the bridge.
+ *
+ * Night: the SLOTZILLA letters and the roof beacon are lit, so they are
+ * `neon-slot-gold` and `neon-slot-beacon` and glow in their own colours
+ * (STYLE.md, "Night").
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -64,6 +68,8 @@ const red = new Part()
 const gold = new Part()
 const steel = new Part()
 const glass = new Part()
+const letters = new Part() // SLOTZILLA, neon at night
+const beacon = new Part()
 
 // ------------------------------------------------------------------ plan
 
@@ -166,8 +172,8 @@ onFace(white, rect(-CW, CW, 29.25, 29.6), 0, 0.2)
 {
   const seg = 12, ring = (r: number, z: number): V3[] => Array.from({ length: seg }, (_, k) => [Math.cos((k / seg) * 2 * Math.PI) * r, FRONT + 2.2 + Math.sin((k / seg) * 2 * Math.PI) * r, z] as V3)
   const rings = [ring(0.8, TOP), ring(0.8, TOP + 0.5), ring(0.6, TOP + 0.9)]
-  red.loft(rings)
-  red.cap(rings[2], true)
+  beacon.loft(rings)
+  beacon.cap(rings[2], true)
 }
 
 // ------------------------------------------------------------------ SLOTZILLA
@@ -191,7 +197,7 @@ function stroke(p: Part, x0: number, z0: number, x1: number, z1: number, t: numb
   const str = 'SLOTZILLA', h = 2.2, sx = 0.55, step = h * 0.48, z = 26.75
   let x = -(step * (str.length - 1) + 0.6 * sx * h) / 2
   for (const ch of str) {
-    for (const [a, b, c, d] of GLYPHS[ch]) stroke(gold, x + a * sx * h, z + b * h, x + c * sx * h, z + d * h, 0.34, 0, 0.18)
+    for (const [a, b, c, d] of GLYPHS[ch]) stroke(letters, x + a * sx * h, z + b * h, x + c * sx * h, z + d * h, 0.34, 0, 0.18)
     x += step
   }
 }
@@ -272,6 +278,8 @@ await save('lv-slotzilla', 'SlotZilla', [
   { part: white, material: PALETTE.trim },
   { part: red, material: finish('slot-red', 0xbe4b4e) },
   { part: gold, material: finish('slot-gold', 0xdcb352) },
+  { part: letters, material: finish('neon-slot-gold', 0xdcb352) },
+  { part: beacon, material: finish('neon-slot-beacon', 0xbe4b4e) },
   { part: steel, material: finish('slot-steel', 0xb8bdc1) },
   { part: glass, material: finish('slot-shadow', 0x606870) },
 ], TOP + 0.9, 'Y up, -Z north, +X east, metres; origin at the centroid of way/1093169256; the slot face looks -Y before the bearing', 5000)

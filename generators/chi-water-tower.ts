@@ -42,6 +42,9 @@
  *
  * Left out: the rusticated stonework, the small pinnacles beside the
  * portals, the finial poles on the gables, the corner beads of the shaft.
+ *
+ * Night: the limestone is floodlit, as it is from the plaza; the slate cap
+ * stays dark.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -225,8 +228,12 @@ prism(stone, oct(0, 0, 1.9), 49.6, 50.0, null)
   for (let i = 0; i < 6; i++) dome.tri(spike[i], spike[(i + 1) % 6], [0, 0, 55.6])
 }
 
+// At night the tower is floodlit from the plaza round it: the pump-house
+// block and the shaft glow pale gold, fading a little up the tower; faces
+// looking up are barely lit.
+const stoneLit = (p: V3, n: V3): number => (n[2] > 0.8 ? 0.3 : p[2] < Z1 ? 0.95 : 0.75)
 const parts = [
-  { part: stone, material: finish('joliet-limestone', 0xe6dcc4) },
+  { part: stone, material: { ...finish('joliet-limestone', 0xe6dcc4), floodlight: stoneLit } },
   { part: win, material: PALETTE.window },
   { part: door, material: PALETTE.entrance },
   { part: roof, material: PALETTE.roof },

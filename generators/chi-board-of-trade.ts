@@ -17,7 +17,9 @@
  * stepping in to a steep grey hipped pyramid carrying the aluminium Ceres;
  * the two 21-storey wings flanking a deep court over the base; the base's
  * six tall trading-room windows under the clock; behind it the dark 1980
- * annex with its own glazed hipped roof.
+ * annex with its own glazed hipped roof. At night the limestone is floodlit
+ * where it closes the view down LaSalle: the north fronts and the tower
+ * above the wings carry `floodlight`, rising to the top; the annex is dark.
  *
  * Evidence:
  *  - plan: OSM outline and parts (way/685519267 tower 40.4 × 18.6 m,
@@ -281,9 +283,17 @@ function build() {
     for (let s = 2; s + 3.2 < L - 1; s += 5.4) for (const [z0, z1] of [[3.5, 11], [13, 31]] as [number, number][]) panel(win, a, b, s, s + 3.2, z0, z1)
   }
 
+  // Floodlight: the north fronts on LaSalle and the tower over the wings;
+  // the 1930 lot only (the annex east of it stays dark).
+  const floodlit = (p: V3, n: V3): number => {
+    if (p[0] < W0 - 1 || p[0] > E0 + 1 || p[1] < S0 - 1) return 0
+    const tower = p[2] > WING - 1, north = n[1] > 0.5
+    if (!tower && !north) return 0
+    return (0.55 + 0.45 * Math.min(1, p[2] / 173)) * (n[2] > 0.7 ? 0.3 : 1)
+  }
   return [
-    { part: stone, material: PALETTE.stone },
-    { part: trim, material: PALETTE.trim },
+    { part: stone, material: { ...PALETTE.stone, floodlight: floodlit } },
+    { part: trim, material: { ...PALETTE.trim, floodlight: floodlit } },
     { part: win, material: PALETTE.window },
     // The pyramid's weathered metal, silvery green-grey in the photos
     // (#8eaabf backlit, #727579 in shade): the roofs share it.

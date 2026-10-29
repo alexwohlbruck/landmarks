@@ -42,6 +42,10 @@
  * misses a slender tip), the shallow pilasters on the wings, the podium's
  * ground-storey window band, the north front's relief panel. The latticework
  * is drawn as solid gold faces. South and north fronts are drawn alike.
+ *
+ * Night: the temple is floodlit white on every side, its spires bright over
+ * the hills, so granite, trim and gold carry a `floodlight` wash (STYLE.md,
+ * "Night").
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -172,11 +176,15 @@ for (let k = 0; k < 4; k++) {
   relief(trim, f, T2 - 1.0, T2 + 1.0, 0.1, T1_TOP + 1.0, T2_TOP - 1.0)
 }
 
+// The floodlights stand on the terrace and grounds round the walls: walls
+// and towers full, the spires fading a little toward the finial; faces
+// looking up catch little.
+const lit = (p: V3, n: V3): number => (1 - 0.3 * Math.min(1, Math.max(0, p[2] - CORE_TOP) / (FINIAL - CORE_TOP))) * (n[2] > 0.7 ? 0.3 : 1)
 const parts = [
-  { part: granite, material: finish('oakland-temple-granite', 0xedebe6) },
-  { part: trim, material: PALETTE.trim },
+  { part: granite, material: { ...finish('oakland-temple-granite', 0xedebe6), floodlight: lit } },
+  { part: trim, material: { ...PALETTE.trim, floodlight: lit } },
   { part: roof, material: PALETTE.roof },
-  { part: gold, material: finish('oakland-temple-gold', 0xd2bb72, 0.5) },
+  { part: gold, material: { ...finish('oakland-temple-gold', 0xd2bb72, 0.5), floodlight: lit } },
   { part: win, material: PALETTE.window },
   { part: deck, material: finish('oakland-temple-terrace', 0xd6d3c9) },
 ]

@@ -43,7 +43,9 @@
  * face's layout (no licensed photo of it was found), the colours, pulled
  * towards the palette's lightness. The bulbs round the rim are left out.
  * The white face is `window-2` so it glows at night, as the real cabinet
- * is lit from inside.
+ * is lit from inside; the red letters and star are red neon, and the
+ * yellow rim carries its chasing bulbs, so both are `neon-*` and glow in
+ * their own colours (STYLE.md, "Night").
  */
 import { Part, type V3 } from './mesh'
 import { finish, windowVariant } from './palette'
@@ -195,8 +197,8 @@ text(blue, 'SOON', 0, 3.55, 0.26, -1, 0.95)
 
 await save('lv-welcome-sign', 'Welcome to Fabulous Las Vegas sign', [
   { part: face, material: windowVariant(2, 0xf6f1e8) },
-  { part: rim, material: finish('sign-yellow', 0xecc958) },
-  { part: red, material: finish('sign-red', 0xd65a4e) },
+  { part: rim, material: finish('neon-sign-yellow', 0xecc958) },
+  { part: red, material: finish('neon-sign-red', 0xd65a4e) },
   { part: blue, material: finish('sign-blue', 0x6596c8) },
   { part: silver, material: finish('sign-silver', 0xdcdcd6, 0.5) },
 ], 7.85, 'Y up, -Z north, +X east, metres; origin at node/1485974042; the front faces -Y (south) before the bearing', 6500)

@@ -41,6 +41,10 @@
  * window bay, two floors), the 35th-floor block (set ~2.5 m in, so the turrets
  * at its corners land on OSM's turret ways), the lantern's split between gallery and spire, the
  * small mid-side gold finials.
+ *
+ * Night: the gilded pyramid, lantern and turret caps are floodlit, a gold
+ * crown over the dark tower, so the gilding and the stone of the top stage
+ * carry a floodlight wash (STYLE.md, "Night").
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -126,10 +130,18 @@ gold.loft([oct(2.4, PYR1 + 1.2), oct(2.4, 181.2), oct(2.7, 181.6), oct(2.7, 182.
 }
 gold.loft([oct(2.1, 182.4), oct(1.1, 184.9), oct(0.45, 186.2), oct(0.02, 187.5)])
 
+// The crown's floodlights stand on the tower's top ledges: the pyramid is
+// lit from its foot, fading a little towards the spire; the stone of the
+// 35th-floor stage just under it catches some; flat tops very little.
+const crownLit = (p: V3, n: V3): number => {
+  if (p[2] < 140) return 0
+  const h = Math.min(1, (p[2] - PYR0) / (187.5 - PYR0))
+  return (p[2] < PYR0 - 1 ? 0.6 : 1 - 0.4 * Math.max(0, h)) * (n[2] > 0.8 ? 0.3 : 1)
+}
 finishModel('New York Life Building', 'nyc-new-york-life', [
-  { part: stone, material: finish('nyl-limestone', 0xe2d6c0) },
+  { part: stone, material: { ...finish('nyl-limestone', 0xe2d6c0), floodlight: crownLit } },
   { part: trim, material: PALETTE.trim },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
-  { part: gold, material: finish('nyl-gilded-roof', 0xdcbb55) },
+  { part: gold, material: { ...finish('nyl-gilded-roof', 0xdcbb55), floodlight: crownLit } },
 ], { bearing: 29, osm: 'way/109280421', height: 187.5 }, 5000)

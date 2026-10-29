@@ -13,7 +13,8 @@
  * this frame: +x faces South Tryon Street (south-east), +y faces north-east.
  *
  * Identity, in order:
- *  - the glass pyramid on top, pale and lit, on a stepped cream parapet;
+ *  - the glass pyramid on top, pale and lit, on a stepped cream parapet
+ *    (lit from inside after dark, so it is neon and glows at night);
  *  - the tiered cream tower: a punched-window base with a heavy cornice, a
  *    tall shaft of cream piers and blue glass strips, a big cornice and
  *    setback about two thirds up, a band of square windows, then a narrower
@@ -262,7 +263,7 @@ if (import.meta.main) {
     { part: trim, material: PALETTE.trim },
     { part: win, material: { ...PALETTE.window, color: 0x5f84b0 } },
     { part: roof, material: PALETTE.roof },
-    { part: crown, material: { ...PALETTE.glass, color: 0xd3e2ec } },
+    { part: crown, material: finish('neon-boat-crown', 0xd3e2ec, PALETTE.glass.roughness) },
     { part: metal, material: finish('boat-silver', 0xf2f4f5, 0.45) },
   ])
 }

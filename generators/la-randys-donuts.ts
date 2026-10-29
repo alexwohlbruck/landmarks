@@ -54,6 +54,9 @@
  * - Left out: the "RANDY'S" / "DONUTS" lettering (block letters bent round
  *   the ring did not read as the real script at map scale), the donut's knobbly
  *   gunite texture, wall logos and menus, the floodlights, the parking lot.
+ * - Night: the donut is floodlit from the roof below it, so its finish
+ *   carries a floodlight wash, strongest low on the ring, faint on faces
+ *   looking up (STYLE.md, "Night").
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -194,8 +197,15 @@ for (const s of [-3.5, 3.5]) {
 }
 
 // ---------------------------------------------------------------------------
+// The donut's floodlights stand on the roof under it: the wash is strongest
+// on the ring's lower half and fades toward its top; up-facing faces get
+// little of it.
+const donutLit = (p: V3, n: V3): number => {
+  const h = Math.max(0, Math.min(1, (p[2] - (C[2] - RO)) / (2 * RO)))
+  return (1 - 0.45 * h) * (n[2] > 0.7 ? 0.35 : 1)
+}
 const parts = [
-  { part: donut, material: finish('randys-donut', 0xcdab84) },
+  { part: donut, material: { ...finish('randys-donut', 0xcdab84), floodlight: donutLit } },
   { part: white, material: PALETTE.trim },
   { part: orange, material: finish('randys-orange', 0xdd8f5c) },
   { part: win, material: PALETTE.window },

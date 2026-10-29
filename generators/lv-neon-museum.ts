@@ -45,6 +45,10 @@
  * no licensed photo shows it square on),
  * the shell's thickness (0.35 m). Left out: the boneyard signs, the
  * neighbouring museum building, the planting.
+ *
+ * Night: the glass is `window` and the shells are floodlit from the ground,
+ * as in p3, so both shell finishes carry a floodlight wash (STYLE.md,
+ * "Night").
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE } from './palette'
@@ -164,8 +168,11 @@ for (const [x, y] of [V0, V1, V2]) {
   shellUnder.loft([ring(0), ring(1.0)])
 }
 
+// At night the shells are washed with light from the ground (p3): the
+// undersides and arch edges most, the shells' upper faces less.
+const shellLit = (_p: V3, n: V3): number => (n[2] > 0.7 ? 0.35 : n[2] > 0.2 ? 0.6 : 0.9)
 await save('lv-neon-museum', 'Neon Museum (La Concha lobby)', [
-  { part: shellTop, material: PALETTE.trim },
-  { part: shellUnder, material: PALETTE.stone },
+  { part: shellTop, material: { ...PALETTE.trim, floodlight: shellLit } },
+  { part: shellUnder, material: { ...PALETTE.stone, floodlight: shellLit } },
   { part: glass, material: PALETTE.window },
 ], H, 'Y up, -Z north, +X east, metres; origin at the centroid of way/543178410; the front valley looks -Y before the bearing', 5000)

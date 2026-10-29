@@ -12,6 +12,10 @@
  * charcoal reveals between them, capped by a horizontal parapet. The helix
  * is clipped between the ground-floor band and the parapet, so it emerges
  * and disappears as a tapering wedge, with no end caps.
+ *
+ * At night the white concrete is floodlit, the rotunda's bands glowing over
+ * their dark reveals, so the off-white carries a `floodlight` (STYLE.md,
+ * "Night"); band tops and roofs looking up stay nearly dark.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 
@@ -326,7 +330,7 @@ prism(rect(2.6, -1.8, 8.8, 4.2, 0.5), zF, 32.6, 0, 0.45, concrete, roof)
 // --------------------------------------------------------------- output
 const parts = [
   // Off-white paint: the sunlit band in 02/03, without their sunset and overcast casts.
-  { part: concrete, material: { name: 'off-white concrete', color: 0xe3e0d6, roughness: 0.8 } },
+  { part: concrete, material: { name: 'off-white concrete', color: 0xe3e0d6, roughness: 0.8, floodlight: (_p: V3, n: V3) => n[2] > 0.7 ? 0.2 : 0.9 } },
   // Buff limestone: annex against the bands in p4 (≈0.88 of the white, warmer).
   { part: limestone, material: { name: 'buff limestone', color: 0xcec6b2 } },
   // Reveals and the shade under the avenue band: 03 at 880,192.

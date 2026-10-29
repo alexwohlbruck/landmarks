@@ -43,6 +43,10 @@
  * it, the rib widths. The curtain wall is drawn as one pale glass surface with
  * a floor-line band every six storeys; the real wall's closely spaced pale
  * fins are not drawn one by one.
+ *
+ * Night: the crown's screen glows, lit from inside by Jim Campbell's LED
+ * artwork "Day for Night", so it is `neon-salesforce-crown` in its day white
+ * (STYLE.md, "Night").
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish, windowVariant } from './palette'
@@ -211,7 +215,7 @@ for (let q = 0; q < 4; q++) {
 const parts = [
   { part: curtain, material: windowVariant(2, 0xbccbd7) },
   { part: fins, material: finish('fin-white', 0xf2f1ec) },
-  { part: screen, material: finish('crown-screen', 0xe7eaea) },
+  { part: screen, material: finish('neon-salesforce-crown', 0xe7eaea) },
   { part: roof, material: PALETTE.roof },
   { part: lobby, material: { ...PALETTE.entrance, color: 0x8f9ca6 } },
 ]

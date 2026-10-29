@@ -38,6 +38,10 @@
  * (r 5.55 to 5.3); the ring at the column's foot; the lobby's blocks and the
  * entrance door. The lobby's stepped Art Deco massing is simplified to the
  * OSM outline at one height.
+ *
+ * Night: the tower is floodlit from Pioneer Park, shaft and crown glowing
+ * over Telegraph Hill, so its concrete carries a `floodlight` wash
+ * (STYLE.md, "Night").
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -307,8 +311,16 @@ band()
   for (const [i, j, k] of earcut(ring)) concrete.tri([...ring[k], 0], [...ring[j], 0], [...ring[i], 0])
 }
 
+// The floodlights stand round the base and aim up the shaft: brightest on
+// the shaft, a little less at the crown, the lobby block dimmer; faces
+// looking up catch little.
+const lit = (p: V3, n: V3): number => {
+  const up = n[2] > 0.7 ? 0.3 : 1
+  if (p[2] < PED) return 0.6 * up
+  return (1 - 0.25 * Math.min(1, (p[2] - PED) / (CROWN - PED))) * up
+}
 const parts = [
-  { part: concrete, material: finish('coit-concrete', 0xe6ded0) },
+  { part: concrete, material: { ...finish('coit-concrete', 0xe6ded0), floodlight: lit } },
   { part: windows, material: PALETTE.window },
   { part: roof, material: PALETTE.terracotta },
   { part: door, material: PALETTE.entrance },
