@@ -15182,6 +15182,61 @@
       ],
       "file": "models/nyc-lga-terminal-b.glb",
       "source": "generators/nyc-lga-terminal-b.ts"
+    },
+    {
+      "id": "nyc-jfk-control-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "tower",
+      "tags": [
+        "airport",
+        "control-tower",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "ControlTowerJFK-July2012-01.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:ControlTowerJFK-July2012-01.JPG",
+          "author": "Rehman Abubakr",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "JFK Airport Tower 02.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Airport_Tower_02.JPG",
+          "author": "Ad Meskens",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "JFK Airport Tower and Terminal.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Airport_Tower_and_Terminal.jpg",
+          "author": "Eheik",
+          "license": "Public domain"
+        },
+        {
+          "title": "JFK Control Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Control_Tower.jpg",
+          "author": "Pat Guiney",
+          "license": "CC BY 2.0"
+        }
+      ],
+      "file": "models/nyc-jfk-control-tower.glb",
+      "source": "generators/nyc-jfk-control-tower.ts"
     }
   ],
   "landmarks": [
@@ -26985,6 +27040,20 @@
         "way/644536343",
         "way/664461080",
         "way/701356157"
+      ]
+    },
+    {
+      "id": "nyc-jfk-control-tower",
+      "name": "JFK Airport Control Tower",
+      "model": "nyc-jfk-control-tower",
+      "place": "new-york-area",
+      "lng": -73.7813708,
+      "lat": 40.6425492,
+      "bearing": -29.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/284907735"
       ]
     }
   ],
