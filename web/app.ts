@@ -3,6 +3,7 @@ import type { GeoJSONSource } from 'maplibre-gl'
 import '@google/model-viewer'
 import type { ModelViewerElement } from '@google/model-viewer'
 import type { Asset } from '../src/release'
+import { LandmarkModels } from './map-models'
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T
 const viewer = $<ModelViewerElement>('viewer')
@@ -31,7 +32,7 @@ let filtered: Asset[] = []
 let selected: Asset | undefined
 let ready = false
 let map: maplibregl.Map | undefined
-let selectionMarker: maplibregl.Marker | undefined
+let modelLayer: LandmarkModels | undefined
 const regionById = new Map<string, string>()
 
 function features() {
@@ -44,7 +45,7 @@ function fitAll() {
   if (!map || !filtered.length) return
   const bounds = new maplibregl.LngLatBounds()
   filtered.forEach(a => bounds.extend(a.anchor))
-  map.fitBounds(bounds, { padding: { top: 65, bottom: 45, left: 45, right: 45 }, maxZoom: 15, duration: reducedMotion ? 0 : 900 })
+  map.fitBounds(bounds, { elevation: 0, pitch: filtered.length === 1 ? 60 : 0, padding: { top: 65, bottom: 45, left: 45, right: 45 }, maxZoom: 15, duration: reducedMotion ? 0 : 900 })
 }
 function renderResults() {
   const term = search.value.trim().toLocaleLowerCase()
@@ -76,7 +77,10 @@ function renderResults() {
     fragment.append(empty)
   }
   $('results').replaceChildren(fragment)
-  if (ready) (map!.getSource('landmarks') as GeoJSONSource).setData(features())
+  if (ready) {
+    (map!.getSource('landmarks') as GeoJSONSource).setData(features())
+    modelLayer?.setAssets(filtered, selected?.id)
+  }
 }
 function showModel() {
   if (!selected) return
@@ -102,9 +106,8 @@ function selectAsset(a: Asset, fly = false) {
   showModel()
   document.querySelectorAll<HTMLButtonElement>('.result').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.id === a.id)))
   if (map) {
-    selectionMarker ??= new maplibregl.Marker({ color: '#b66b3d' })
-    selectionMarker.setLngLat(a.anchor).addTo(map)
-    if (fly) map.flyTo({ center: a.anchor, zoom: Math.max(map.getZoom(), 15), duration: reducedMotion ? 0 : 1200 })
+    modelLayer?.setAssets(filtered, a.id)
+    if (fly) modelLayer?.focus(a)
   }
 }
 viewer.addEventListener('load', () => { $('model-status').textContent = '' })
@@ -148,34 +151,37 @@ async function init() {
     regionSelect.append(option)
   }
   renderResults()
-  selectAsset(assets.find(a => a.id === location.hash.slice(1)) ?? assets.find(a => a.id === 'statue-of-liberty') ?? assets[0])
+  selectAsset(assets.find(a => a.id === location.hash.slice(1)) ?? assets.find(a => a.id === 'empire-state-building') ?? assets[0])
   try {
     map = new maplibregl.Map({ container: 'map', style: 'https://tiles.openfreemap.org/styles/positron',
-      center: [-96, 38], zoom: 3, maxZoom: 19, attributionControl: { compact: true }, renderWorldCopies: false })
-    map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right')
+      center: selected!.anchor, zoom: 16.5, pitch: 60, bearing: -25, maxZoom: 20, canvasContextAttributes: { antialias: true }, attributionControl: { compact: true }, renderWorldCopies: false })
+    map.addControl(new maplibregl.NavigationControl({ showCompass: true, visualizePitch: true }), 'top-right')
     map.on('error', event => { console.error(event.error); $('map-status').title = event.error.message; $('map-status').textContent = 'Some map tiles could not load. You can still browse the collection and preview models.' })
     map.on('idle', () => { if (map!.areTilesLoaded()) $('map-status').textContent = '' })
     map.on('load', () => {
-      map!.addSource('landmarks', { type: 'geojson', data: features(), cluster: true, clusterMaxZoom: 16, clusterRadius: 48 })
-      map!.addLayer({ id: 'clusters-halo', type: 'circle', source: 'landmarks', filter: ['has', 'point_count'], paint: {
+      modelLayer = new LandmarkModels(assetUrl, a => selectAsset(a), message => { $('map-status').textContent = message })
+      map!.addLayer(modelLayer)
+      modelLayer.setAssets(filtered, selected!.id)
+      map!.addSource('landmarks', { type: 'geojson', data: features(), cluster: true, clusterMaxZoom: 13, clusterRadius: 48 })
+      map!.addLayer({ id: 'clusters-halo', maxzoom: 14, type: 'circle', source: 'landmarks', filter: ['has', 'point_count'], paint: {
         'circle-color': '#98ad7b', 'circle-opacity': 0.24, 'circle-radius': ['step', ['get', 'point_count'], 25, 20, 31, 70, 38],
       } })
-      map!.addLayer({ id: 'clusters', type: 'circle', source: 'landmarks', filter: ['has', 'point_count'], paint: {
+      map!.addLayer({ id: 'clusters', maxzoom: 14, type: 'circle', source: 'landmarks', filter: ['has', 'point_count'], paint: {
         'circle-color': '#425b3e', 'circle-stroke-color': '#f7f8ee', 'circle-stroke-width': 2,
         'circle-radius': ['step', ['get', 'point_count'], 18, 20, 24, 70, 31],
       } })
-      map!.addLayer({ id: 'cluster-count', type: 'symbol', source: 'landmarks', filter: ['has', 'point_count'], layout: {
+      map!.addLayer({ id: 'cluster-count', maxzoom: 14, type: 'symbol', source: 'landmarks', filter: ['has', 'point_count'], layout: {
         'text-field': ['get', 'point_count_abbreviated'], 'text-font': ['Noto Sans Regular'], 'text-size': 12, 'text-allow-overlap': true,
       }, paint: { 'text-color': '#ffffff' } })
       map!.addLayer({ id: 'landmark-points', type: 'circle', source: 'landmarks', filter: ['!', ['has', 'point_count']], paint: {
-        'circle-color': '#536f48', 'circle-radius': 7, 'circle-stroke-width': 2, 'circle-stroke-color': '#fffef3',
+        'circle-color': '#536f48', 'circle-radius': ['step', ['zoom'], 7, 14, 4], 'circle-stroke-width': 2, 'circle-stroke-color': '#fffef3',
       } })
       map!.on('click', 'clusters', async e => {
         const feature = e.features?.[0]
         if (!feature || feature.geometry.type !== 'Point') return
         try {
           const zoom = await (map!.getSource('landmarks') as GeoJSONSource).getClusterExpansionZoom(feature.properties.cluster_id)
-          map!.easeTo({ center: feature.geometry.coordinates as [number, number], zoom, duration: reducedMotion ? 0 : 650 })
+          map!.easeTo({ center: feature.geometry.coordinates as [number, number], zoom, pitch: zoom >= 14 ? 60 : 0, duration: reducedMotion ? 0 : 650 })
         } catch { $('map-status').textContent = 'The map is updating. Click the circle again to explore.' }
       })
       map!.on('click', 'landmark-points', e => {
@@ -189,11 +195,9 @@ async function init() {
         map!.on('mouseenter', layer, () => { map!.getCanvas().style.cursor = 'pointer' })
         map!.on('mouseleave', layer, () => { map!.getCanvas().style.cursor = '' })
       }
+      modelLayer.focus(selected!)
       ready = true
       $('map-status').textContent = ''
-      selectionMarker ??= new maplibregl.Marker({ color: '#b66b3d' })
-      selectionMarker.setLngLat(selected!.anchor).addTo(map!)
-      fitAll()
     })
   } catch {
     $('map-status').textContent = 'The map needs WebGL support. You can still search the collection and download models.'

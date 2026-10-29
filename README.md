@@ -19,9 +19,17 @@ region, orbit and zoom the 3D previews, play their animations, and download
 the GLB files. Models with a detailed version offer a detail-level selector.
 Each selection has a shareable URL.
 
+At street zoom, the actual GLB models are placed on the map at their catalog
+coordinates, among raised OpenFreeMap buildings. Their bearing, scale, and
+elevation are preserved. The OSM footprints listed by each landmark are hidden
+only after its model loads, replacing the default building extrusion. Zoom out
+to browse numbered clusters; click a model to inspect it. Visible models load
+on demand, animate where supported, and switch to detailed versions at their
+configured zoom level.
+
 The demo uses [MapLibre GL JS](https://maplibre.org/), the free, keyless
-[OpenFreeMap](https://openfreemap.org/) Positron basemap, and
-[`<model-viewer>`](https://modelviewer.dev/). Basemap tiles and fonts need an
+[OpenFreeMap](https://openfreemap.org/) Positron basemap,
+[Three.js](https://threejs.org/) for map models, and [`<model-viewer>`](https://modelviewer.dev/). Basemap tiles and fonts need an
 internet connection. Map and model viewer libraries are bundled with the site.
 
 The dataset is published alongside the demo, starting at
