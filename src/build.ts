@@ -7,7 +7,7 @@
  * Exits non-zero, listing every problem, if the catalog or a model is wrong,
  * so a bad edit never publishes.
  */
-import { mkdirSync, rmSync, writeFileSync } from 'node:fs'
+import { copyFileSync, readFileSync, mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { buildRelease, CatalogError } from './release'
 
@@ -38,12 +38,28 @@ for (const [path, bytes] of release.files) {
 }
 // Pages would otherwise run Jekyll over the tree, for nothing.
 writeFileSync(join(out, '.nojekyll'), '')
-writeFileSync(
-  join(out, 'index.html'),
-  `<!doctype html><meta charset="utf-8"><title>Landmarks</title>
-<p>Static releases of <a href="https://github.com/alexwohlbruck/landmarks">alexwohlbruck/landmarks</a>, in the
-<a href="https://github.com/benjamintd/open-landmarks">Open Landmarks</a> format. Start at
-<a href="api/v1/latest.json">api/v1/latest.json</a>.</p>
-`,
-)
-console.log(`wrote ${release.files.size} files to ${out}`)
+// Bundle the browser-only demo alongside the existing dataset. Everything in
+// dist/ is static and uses dataset-relative URLs, including on GitHub Pages.
+// Retain third-party license text with the bundled dependencies.
+const dependencyRoot = join(root, 'node_modules')
+const licenseFiles = [...new Bun.Glob('**/{LICENSE,LICENSE.*,LICENSE-*,LICENCE,LICENCE.*,NOTICE,NOTICE.*,COPYING}').scanSync({ cwd: dependencyRoot })].sort()
+writeFileSync(join(out, 'third-party-licenses.txt'), licenseFiles.map(file =>
+  `===== ${file} =====\n${readFileSync(join(dependencyRoot, file), 'utf8')}`,
+).join('\n\n'))
+for (const file of ['index.html', 'style.css', 'favicon.svg'])
+  copyFileSync(join(root, 'web', file), join(out, file))
+for (const file of ['maplibre-gl.css', 'maplibre-gl-worker.mjs'])
+  copyFileSync(join(root, 'node_modules/maplibre-gl/dist', file), join(out, file))
+const browser = await Bun.build({
+  entrypoints: [join(root, 'web/app.ts')],
+  outdir: out,
+  target: 'browser',
+  minify: true,
+  naming: 'app.js',
+  define: { 'process.env.NODE_ENV': JSON.stringify('production') },
+})
+if (!browser.success) {
+  console.error(browser.logs)
+  process.exit(1)
+}
+console.log(`wrote ${release.files.size} dataset files and the demo to ${out}`)

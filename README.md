@@ -11,7 +11,21 @@ textures, and uses a shared color palette.
 500+ landmarks in New York, Chicago, Los Angeles, San Francisco, Charlotte,
 Washington DC, Las Vegas, Seattle and a few theme parks.
 
-The dataset is published at **https://alexwohlbruck.github.io/landmarks/**
+**[Explore the interactive demo →](https://alexwohlbruck.github.io/landmarks/)**
+
+Browse every landmark on a MapLibre map with numbered cluster bubbles: click
+one to zoom into the area, then select a point or search by name. Filter by
+region, orbit and zoom the 3D previews, play their animations, and download
+the GLB files. Models with a detailed version offer a detail-level selector.
+Each selection has a shareable URL.
+
+The demo uses [MapLibre GL JS](https://maplibre.org/), the free, keyless
+[OpenFreeMap](https://openfreemap.org/) Positron basemap, and
+[`<model-viewer>`](https://modelviewer.dev/). Basemap tiles and fonts need an
+internet connection. Map and model viewer libraries are bundled with the site.
+
+The dataset is published alongside the demo, starting at
+**[api/v1/latest.json](https://alexwohlbruck.github.io/landmarks/api/v1/latest.json)**,
 in the [Open Landmarks](https://github.com/benjamintd/open-landmarks) format,
 and is drawn in [Parchment](https://github.com/alexwohlbruck/parchment) via
 [Barrelman](https://github.com/alexwohlbruck/barrelman).
@@ -33,6 +47,26 @@ bun install
 | `bun run sheet <id ...>` | Contact sheets for a list of landmarks |
 | `bun run validate` | Check the catalog and every model |
 | `bun test` / `bun run typecheck` | Tests and types |
+
+## Running and publishing the demo
+
+```sh
+bun run build
+python3 -m http.server 4173 --directory dist
+# Open http://localhost:4173
+```
+
+`web/` contains the demo's HTML, CSS, and TypeScript. The build bundles its
+browser dependencies and writes the demo, dataset API, and models into
+`dist/`. It reads the generated release directly, so every catalog placement
+appears automatically. All demo asset URLs are relative to the hosting path,
+including GitHub Pages project subdirectories.
+
+Deploy `dist/` to any static site host; no server runtime, API keys, database,
+or route rewrites are required. The existing
+[Release workflow](.github/workflows/release.yml) runs types and tests, builds
+both the dataset and demo, and deploys to GitHub Pages on pushes to `main`.
+The repository's Pages source is **GitHub Actions**.
 
 ## Contributing a model
 
