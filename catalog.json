@@ -12089,6 +12089,35 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "nyc-brooklyn-tower",
+      "file": "models/nyc-brooklyn-tower.glb",
+      "license": "CC0-1.0",
+      "source": "generators/nyc-brooklyn-tower.ts",
+      "type": "tower",
+      "collection": "landmarks",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "role": "creator",
+          "github": "alexwohlbruck"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "tags": [
+        "skyscraper",
+        "residential",
+        "supertall"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
       "id": "nyc-george-washington-bridge",
       "file": "models/nyc-george-washington-bridge.glb",
       "license": "CC0-1.0",
@@ -23992,6 +24021,22 @@
         "way/250229991"
       ],
       "place": "new-york-area"
+    },
+    {
+      "id": "nyc-brooklyn-tower",
+      "name": "The Brooklyn Tower",
+      "model": "nyc-brooklyn-tower",
+      "lng": -73.9822394,
+      "lat": 40.690548,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q22329554",
+      "place": "new-york-area",
+      "replaces": [
+        "way/1229206093",
+        "way/1039403183"
+      ]
     },
     {
       "id": "nyc-george-washington-bridge-new-jersey",
