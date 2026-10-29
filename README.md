@@ -4,14 +4,12 @@
 
 ![Washington Square Arch and the Empire State Building at night](docs/images/washington-square.jpg)
 
-A map normally draws a building as a plain extruded box. A landmark model
-takes its place: the Eiffel Tower as a tower, the Brooklyn Bridge with its
-cables, a roller coaster with its track. Every model here is generated from
-code, kept small (a few thousand triangles, no textures) and drawn in one
-shared palette, so a city's landmarks look like they belong together.
+3D models of landmarks that replace a building's default extrusion on the
+map. Each model is generated from code, has a few thousand triangles and no
+textures, and uses a shared color palette.
 
-Over 500 landmarks so far, across New York, Chicago, Los Angeles, San
-Francisco, Charlotte, Washington DC, Las Vegas, Seattle and a few theme parks.
+500+ landmarks in New York, Chicago, Los Angeles, San Francisco, Charlotte,
+Washington DC, Las Vegas, Seattle and a few theme parks.
 
 The dataset is published at **https://alexwohlbruck.github.io/landmarks/**
 in the [Open Landmarks](https://github.com/benjamintd/open-landmarks) format,
