@@ -15485,6 +15485,60 @@
       ],
       "file": "models/nyc-ewr-control-tower.glb",
       "source": "generators/nyc-ewr-control-tower.ts"
+    },
+    {
+      "id": "nyc-ewr-terminal-a",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Airtrain near new terminal A.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Airtrain_near_new_terminal_A.jpg",
+          "author": "Schvaxet",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "New terminal A EWR.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:New_terminal_A_EWR.jpg",
+          "author": "Schvaxet",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "New terminal A EWR 2.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:New_terminal_A_EWR_2.jpg",
+          "author": "Schvaxet",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Newark Airport Terminal A 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Newark_Airport_Terminal_A_2023.jpg",
+          "author": "Antony-22",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-ewr-terminal-a.glb",
+      "source": "generators/nyc-ewr-terminal-a.ts"
     }
   ],
   "landmarks": [
@@ -27396,6 +27450,21 @@
       "replaces": [
         "way/437257662",
         "way/537070755"
+      ]
+    },
+    {
+      "id": "nyc-ewr-terminal-a",
+      "name": "Newark Liberty Terminal A",
+      "model": "nyc-ewr-terminal-a",
+      "place": "new-york-area",
+      "lng": -74.1868567,
+      "lat": 40.6839044,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q55889597",
+      "replaces": [
+        "way/802991914"
       ]
     }
   ],
