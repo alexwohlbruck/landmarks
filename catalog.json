@@ -14753,6 +14753,80 @@
       ],
       "file": "models/nyc-whitehall-terminal.glb",
       "source": "generators/nyc-whitehall-terminal.ts"
+    },
+    {
+      "id": "nyc-bb-carousell",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "ride",
+      "tags": [
+        "carousel",
+        "amusement-park",
+        "coney-island",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "B&B Carousel March jeh",
+          "url": "https://commons.wikimedia.org/wiki/File:B%26B_Carousel_March_jeh.JPG",
+          "author": "Jim.henderson",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Carousel at Coney Island",
+          "url": "https://commons.wikimedia.org/wiki/File:Carousel_at_Coney_Island.jpg",
+          "author": "Gswaggy23",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Coney Is Beach td (2018-09-03) 02 - Steeplechase Plaza",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Is_Beach_td_(2018-09-03)_02_-_Steeplechase_Plaza.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Is Beach td (2018-09-03) 01 - Steeplechase Plaza",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Is_Beach_td_(2018-09-03)_01_-_Steeplechase_Plaza.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Island Boardwalk with B&B Carousell",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Boardwalk_with_B%26B_Carousell.png",
+          "author": "Nic shad",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Steeplechase Plaza W16 carousel pavilion construction jeh",
+          "url": "https://commons.wikimedia.org/wiki/File:Steeplechase_Plaza_W16_carousel_pavilion_construction_jeh.jpg",
+          "author": "Jim.henderson",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Jul 2019 36",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_36.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-bb-carousell.glb",
+      "source": "generators/nyc-bb-carousell.ts"
     }
   ],
   "landmarks": [
@@ -26461,6 +26535,21 @@
         "way/213847696",
         "way/213847698",
         "way/213847700"
+      ]
+    },
+    {
+      "id": "nyc-bb-carousell",
+      "name": "B&B Carousell",
+      "model": "nyc-bb-carousell",
+      "place": "new-york-area",
+      "lng": -73.9832374,
+      "lat": 40.5730603,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q55887486",
+      "replaces": [
+        "way/230062419"
       ]
     }
   ],
