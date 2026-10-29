@@ -1,6 +1,6 @@
 # Landmarks
 
-**Hand-made, low-poly 3D landmarks for maps.**
+**Low-poly 3D landmarks for maps.**
 
 ![Washington Square Arch and the Empire State Building at night](docs/images/washington-square.jpg)
 

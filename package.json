@@ -2,7 +2,7 @@
   "name": "landmarks",
   "private": true,
   "type": "module",
-  "description": "Hand-made 3D landmark models for maps, published in the Open Landmarks format",
+  "description": "Low-poly 3D landmark models for maps, published in the Open Landmarks format",
   "license": "CC0-1.0",
   "repository": "github:alexwohlbruck/landmarks",
   "scripts": {
