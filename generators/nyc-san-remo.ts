@@ -40,8 +40,13 @@
  * lidar) and its eight columns, the finial's
  * profile. The pinnacles are simple spikes; the urns, balustrades and
  * carving are left out. The rear (west) courts are drawn from OSM.
+ *
+ * Night: the twin crowns are floodlit over Central Park, the stepped stages,
+ * the tempietti and their finials, so the stone, trim and copper above the
+ * towers' 93 m roofs carry a floodlight wash (STYLE.md, "Night"); the shafts
+ * below are dark.
  */
-import { Part } from './mesh'
+import { Part, type V3 } from './mesh'
 import { finish, PALETTE } from './palette'
 import { finishModel, massing, prism, circle, spire, type Facade, type XY } from './nyc-570-lexington'
 
@@ -100,11 +105,18 @@ for (const cy of [-15.3, 16.9]) {
   spire(metal, circle(cx, cy, 1.3, 10), 115, [cx, cy, cy > 0 ? 124 : 122], true)
 }
 
+// The crowns' floodlights stand on the towers' roofs and the stages'
+// ledges: the stages and tempietti lit strongly, the finials a little less;
+// faces looking up catch little.
+const crownLit = (p: V3, n: V3): number => {
+  if (p[2] < 93.2) return 0
+  return (p[2] > 115 ? 0.7 : 1) * (n[2] > 0.8 ? 0.3 : 1)
+}
 finishModel('The San Remo', 'nyc-san-remo', [
-  { part: stone, material: finish('san-remo-buff', 0xeadcc2) },
-  { part: trim, material: PALETTE.trim },
+  { part: stone, material: { ...finish('san-remo-buff', 0xeadcc2), floodlight: crownLit } },
+  { part: trim, material: { ...PALETTE.trim, floodlight: crownLit } },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
-  { part: shade, material: finish('san-remo-shade', 0xb9ab93) },
-  { part: metal, material: PALETTE.patina },
+  { part: shade, material: { ...finish('san-remo-shade', 0xb9ab93), floodlight: crownLit } },
+  { part: metal, material: { ...PALETTE.patina, floodlight: crownLit } },
 ], { bearing: 29, osm: 'way/269293207', height: 124 }, 6500)

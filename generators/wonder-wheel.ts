@@ -29,6 +29,10 @@
  * The 4.3 m station building it straddles (way/248496318) stays drawn, and
  * the bottom of the wheel dips into it, as the real one does at boarding.
  * The ground is flat here (2.6–2.7 m in the terrain tiles), so elevation 0.
+ *
+ * Night: neon tubes run along the spokes, so the wheel reads as a lit
+ * starburst after dark; the spokes are `neon-wonder-wheel-salmon`, glowing
+ * in their day colour (STYLE.md, "Night"). They turn with the wheel.
  */
 import { Part, axisAngle, cross, sub, writeGlb, type ChannelSpec, type MaterialSpec, type NodeSpec, type Quat, type V3 } from './mesh'
 
@@ -144,7 +148,7 @@ beam(towers, [0, -3.6, H], [0, 3.6, H], circle(0.9, 12), circle(0.9, 12), [1, 0,
 // lattice, salmon spokes, the towers' bright blue, and the cars' red, blue,
 // white and yellow.
 const MINT: MaterialSpec = { name: 'mint', color: 0x86c2a8, roughness: 0.6, doubleSided: true }
-const SALMON: MaterialSpec = { name: 'salmon', color: 0xe9a090, roughness: 0.6 }
+const SALMON: MaterialSpec = { name: 'neon-wonder-wheel-salmon', color: 0xe9a090, roughness: 0.6 }
 const BLUE: MaterialSpec = { name: 'blue', color: 0x2f62a8, roughness: 0.6 }
 const RED: MaterialSpec = { name: 'car-red', color: 0xbc3a3e, roughness: 0.5 }
 const WHITE: MaterialSpec = { name: 'car-white', color: 0xece9e2, roughness: 0.5 }

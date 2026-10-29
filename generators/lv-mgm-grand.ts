@@ -59,6 +59,9 @@
  *
  * Not modelled: the casino podium, the arena and the glass rotunda behind
  * the lion (their own OSM buildings), the signs and lettering.
+ *
+ * Night: the green glass is `window-2`, and the bronze lion is floodlit, so
+ * its finish carries a floodlight wash (STYLE.md, "Night").
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish, windowVariant } from './palette'
@@ -270,7 +273,9 @@ if (import.meta.main) {
     { part: band, material: finish('mgm-emerald', 0x96c3ad) },
     { part: roof, material: PALETTE.roof },
     { part: sky, material: PALETTE.glass },
-    { part: bronze, material: finish('mgm-bronze', 0xc9a25f, 0.5) },
+    // The lion is floodlit gold at night from round its drum; faces looking
+    // up catch less of it.
+    { part: bronze, material: { ...finish('mgm-bronze', 0xc9a25f, 0.5), floodlight: (_p: V3, n: V3) => (n[2] > 0.7 ? 0.4 : 0.9) } },
     { part: stone, material: PALETTE.stone },
   ]
   await save('lv-mgm-grand', 'MGM Grand Las Vegas', parts, H,

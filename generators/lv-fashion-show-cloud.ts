@@ -49,7 +49,8 @@
  * drums fill most of them).
  *
  * The LED screens wrapping the lower columns on the Strip side are `window`,
- * so they glow at night as the real screens do.
+ * so they glow at night as the real screens do. The sign board on the
+ * south mast is lit, so it is `neon-fashion-show-sign` (STYLE.md, "Night").
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -60,6 +61,7 @@ const disc = new Part()
 const steel = new Part()
 const mast = new Part()
 const screen = new Part()
+const sign = new Part() // the FASHION SHOW board, lit at night
 
 // ------------------------------------------------------------------ disc
 const A = 73.0 // half-length (146 m)
@@ -159,7 +161,7 @@ for (const col of COLS) {
   if (col.sign) {
     // The sign board on top, across the axis so it faces the Strip.
     const pl = planeAt(col.c, 0) // profile x runs along +y, extruded across x
-    extrude(pl, [[-5.5, m1], [5.5, m1], [5.5, m1 + 3.6], [-5.5, m1 + 3.6]], -0.35, 0.35, () => steel, steel)
+    extrude(pl, [[-5.5, m1], [5.5, m1], [5.5, m1 + 3.6], [-5.5, m1 + 3.6]], -0.35, 0.35, () => sign, sign)
   }
 }
 
@@ -168,6 +170,7 @@ const parts = [
   { part: steel, material: finish('cloud-steel', 0xc9ccce) },
   { part: mast, material: PALETTE.roof },
   { part: screen, material: PALETTE.window },
+  { part: sign, material: finish('neon-fashion-show-sign', 0xc9ccce) },
 ]
 if (import.meta.main) {
   await save('lv-fashion-show-cloud', 'The Cloud, Fashion Show Las Vegas', parts, 54.4, 'Y up, -Z north, +X east, metres, origin at ground')

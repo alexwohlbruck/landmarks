@@ -12,7 +12,8 @@
  * colonnaded drum with corner pinnacles under a ribbed dome and lantern;
  * the four round tempietti, little domed colonnades, on the corners of the
  * base's roof; the 23-storey base with the narrower tower centred on it;
- * the cream terracotta all over.
+ * the cream terracotta all over. At night the domed temple on top is
+ * floodlit, so its stone and trim carry `floodlight` above the tower's cornice.
  *
  * Evidence:
  *  - plan: OSM outline 50.8 × 43.9 m (the base, way/686198237, 23 levels);
@@ -45,7 +46,7 @@
  * Left out: the arcaded window bands, the clock, the car-lift penthouse
  * glazing on the base's roof, sculpture.
  */
-import { Part } from './mesh'
+import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 import { bays, block, chamfer, lathe, parapetRoof, rect, rows, save, walls, type XY } from './chi-aon-center'
 
@@ -112,9 +113,15 @@ lathe(stone, TCX, TCY, [
 ], 16)
 lathe(trim, TCX, TCY, [[1.5, DOME + 9.6], [1.5, DOME + 12.6], [1.2, DOME + 13.2], [0.6, DOME + 14.2], [0.3, DOME + 15], [0, TOP]], 8)
 
+// Floodlight on the temple stage, brighter towards the dome.
+const templeLit = (p: V3, n: V3): number =>
+  p[2] < SHAFT - 1 ? 0 : (0.7 + 0.3 * Math.min(1, (p[2] - SHAFT) / (TOP - SHAFT))) * (n[2] > 0.7 ? 0.35 : 1)
+const STONE = { ...finish('jewelers-terracotta', 0xe9d4b8), floodlight: templeLit }
+const TRIM = { ...PALETTE.trim, floodlight: templeLit }
+
 await save('chi-jewelers-building', 'Jewelers Building', [41.886527, -87.626793], 0, [
-  { part: stone, material: finish('jewelers-terracotta', 0xe9d4b8) },
-  { part: trim, material: PALETTE.trim },
+  { part: stone, material: STONE },
+  { part: trim, material: TRIM },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
 ])

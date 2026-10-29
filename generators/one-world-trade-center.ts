@@ -12,6 +12,10 @@
  * shape is the building's identity, so it is exact; everything else is kept
  * broad. Heights follow OSM: podium 57 m, roof 417 m, ring 417–421 m, spire
  * tip 541 m.
+ *
+ * Night: the spire is lit to its beacon tip by the LED fixtures on its
+ * mast, so the mast, its collars and the tip carry a floodlight wash
+ * (STYLE.md, "Night"); the curtain wall glows as `window`.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 
@@ -221,6 +225,10 @@ for (const [z, r] of [[440, 3.4], [470, 3.0], [500, 2.2]] as [number, number][])
   cylinder(metal, [[z - .9, r * .7], [z - .9, r], [z + .9, r], [z + .9, r * .7]], 10)
 cylinder(metal, [[530, .9], [537, .55], [541, .12]], 8)
 
+// The spire's lights run up the mast to the beacon: everything on it above
+// the ring's lip is lit evenly, the collars' tops a little less.
+const spireLit = (p: V3, n: V3): number => (p[2] < ZR + 4.7 ? 0 : n[2] > 0.8 ? 0.5 : 0.9)
+
 // sRGB colours from daylight photos.
 const parts = [
   { part: glass, material: { name: 'window', color: 0x6180a6, roughness: .4 } },
@@ -228,10 +236,10 @@ const parts = [
   { part: arris, material: { name: 'stainless-arris', color: 0xbfc8d1, roughness: .4 } },
   { part: wall, material: { name: 'podium-core', color: 0x858d93 } },
   { part: fins, material: { name: 'podium-glass-fins', color: 0xc6cacc, roughness: .6 } },
-  { part: metal, material: { name: 'stainless', color: 0xc3c9ce, roughness: .5 } },
+  { part: metal, material: { name: 'stainless', color: 0xc3c9ce, roughness: .5, floodlight: spireLit } },
   { part: roof, material: { name: 'roof', color: 0xc8968a } },
   { part: ring, material: { name: 'spire-ring', color: 0x464c53 } },
-  { part: spire, material: { name: 'spire-mast', color: 0x5b6168 } },
+  { part: spire, material: { name: 'spire-mast', color: 0x5b6168, floodlight: spireLit } },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)

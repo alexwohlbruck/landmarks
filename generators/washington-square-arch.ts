@@ -11,6 +11,9 @@
  * attic with recessed panels. The two Washington statues stand at the foot of
  * the north face as chunky mirrored forms. Everything is mirrored about both
  * axes (the statues about x only) and stays inside the 19.1 × 7.0 outline.
+ *
+ * Night: the arch is floodlit white from the square, so the marble carries a
+ * `floodlight` wash (STYLE.md, "Night").
  */
 import { Part, addGltfTriangles, cross, sub, writeGlb, type V3 } from './mesh'
 
@@ -303,13 +306,16 @@ for (const sx of [1, -1]) {
 
 // Colours: warm ivory marble per the brief, keeping the photos' warm-neutral
 // hue (photo 02's sunlit pier and robe, photo 01's attic) at daylight value.
+// The floodlights stand in the paving round the arch: the piers and
+// spandrels brightest, the attic a little less, flat tops hardly at all.
+const lit = (p: V3, n: V3): number => (1 - 0.3 * Math.min(1, p[2] / 23.5)) * (n[2] > 0.7 ? 0.35 : 1)
 const parts = [
-  { part: marble, material: { name: 'ivory-marble', color: 0xe3dccc } },
-  { part: trim, material: { name: 'marble-mouldings', color: 0xebe5d7 } },
-  { part: recess, material: { name: 'vault-soffit', color: 0xb0a592 } },
-  { part: relief, material: { name: 'carved-relief', color: 0xd2c8b5 } },
-  { part: statues, material: { name: 'statues', color: 0xccc1ad } },
-  { part: roof, material: { name: 'attic-roof', color: 0xd6cfc0 } },
+  { part: marble, material: { name: 'ivory-marble', color: 0xe3dccc , floodlight: lit } },
+  { part: trim, material: { name: 'marble-mouldings', color: 0xebe5d7 , floodlight: lit } },
+  { part: recess, material: { name: 'vault-soffit', color: 0xb0a592 , floodlight: lit } },
+  { part: relief, material: { name: 'carved-relief', color: 0xd2c8b5 , floodlight: lit } },
+  { part: statues, material: { name: 'statues', color: 0xccc1ad , floodlight: lit } },
+  { part: roof, material: { name: 'attic-roof', color: 0xd6cfc0 , floodlight: lit } },
 ]
 const triangles = parts.reduce((sum, { part }) => sum + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)

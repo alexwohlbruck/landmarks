@@ -50,7 +50,8 @@
  * the crest just under the track, on both the west (West 10th Street) and
  * east faces, as in the photos and the 1988 LPC report. STYLE.md rules out lettering; this is an exception the user asked
  * for, because the sign is the ride's signature. The letters are extruded
- * blocks of a few rectangles each, not a texture.
+ * blocks of a few rectangles each, not a texture. They are red neon after
+ * dark, so they are `neon-cyclone-red` and glow at night (STYLE.md, "Night").
  *
  * Style: the track is one broad smooth ribbon, banked in the turns — a brown
  * wooden deck between red edge bands, with red sides, as the red rails and
@@ -492,18 +493,17 @@ const WORD_W = (WORD.length * ADVANCE - (ADVANCE - 5)) * UNIT
 // ---------------------------------------------------------------- output ---
 // Palette: the white steel is `trim`; the station walls `stone` and roofs
 // `roof`. Two finishes carry the ride's identity: the brown-grey weathered
-// deck boards, and one muted red for the rails, fencing and the sign's
-// letters, pulled towards the palette's lightness.
+// deck boards, and one muted red for the rails and fencing, pulled towards
+// the palette's lightness. The sign's letters are the same red as neon.
 const RED = finish('cyclone-red', 0xb94a42)
 const parts = [
   { part: deck, material: finish('cyclone-deck', 0x8e7462) },
   { part: red, material: RED },
+  { part: letters, material: finish('neon-cyclone-red', 0xb94a42) },
   { part: white, material: PALETTE.trim },
   { part: station, material: PALETTE.stone },
   { part: roof, material: PALETTE.roof },
 ]
-// The letters share the red material; one primitive per material.
-red.pos.push(...letters.pos); red.nrm.push(...letters.nrm); red.uv.push(...letters.uv)
 const triangles = parts.reduce((sum, { part }) => sum + part.triangles, 0)
 
 // Report: length, steepest descent, the elements and an energy check.

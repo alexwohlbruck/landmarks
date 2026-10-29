@@ -69,7 +69,9 @@
  * window panels, one per bay over five or six floors; the curtain-wall towers
  * are their glass colour (maroon, teal, dark slate) with pale floor bands.
  * The statue is a simple bold figure in patina, which also covers the domes
- * and the main entrance roof.
+ * and the main entrance roof. At night the statue is floodlit from its
+ * pedestal, so the patina carries a floodlight wash on the figure only,
+ * fading toward the torch (STYLE.md, "Night").
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish, windowVariant } from './palette'
@@ -604,13 +606,22 @@ panels(win, P['800'], 0, 94, { bay: 5 })
 }
 
 // ------------------------------------------------------------- output ----
+// The statue is floodlit from its pedestal: the figure only (not the domes
+// or the entrance roof, which share the patina), brightest at the robe and
+// fading toward the torch, faces looking up barely lit.
+// Its centre is (85.0, -88.8) in the park frame; the floodlight sees the
+// positions after the shift to the anchor below.
+const statueLit = (p: V3, n: V3): number => {
+  if (Math.hypot(p[0] + ANCHOR[0] - 85.0, p[1] + ANCHOR[1] + 88.8) > 5.5 || p[2] < 16) return 0
+  return (1 - 0.4 * Math.min(1, (p[2] - 16.5) / 29.5)) * (n[2] > 0.7 ? 0.3 : 1)
+}
 const parts = [
   { part: stone, material: PALETTE.stone },
   { part: rose, material: finish('nyny-sandstone', 0xdcae94) },
   { part: win, material: PALETTE.window },
   { part: maroon, material: windowVariant(2, 0xa04a68) },
   { part: teal, material: windowVariant(3, 0x5b97ab) },
-  { part: patina, material: finish('nyny-verdigris', 0x8fc0a6) },
+  { part: patina, material: { ...finish('nyny-verdigris', 0x8fc0a6), floodlight: statueLit } },
 ]
 // Shift from the park frame to the anchor: Part stores glTF (x, z, -y).
 for (const { part } of parts) {

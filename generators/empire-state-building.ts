@@ -5,6 +5,12 @@
  * x = v, y = u, z = metres up. Anchor 40.7485288,-73.9859714;
  * bearing 29°, elevation 0. OSM tier envelopes are preserved. The western
  * 23.8 m annex is excluded. No textures: broad bays and bevels are geometry.
+ *
+ * Night: the top thirty floors and the mast are floodlit by the tower
+ * lights (LED since 2012, in colours that change by occasion), so the
+ * stone and steel above the 255 m setback carry a floodlight wash that
+ * fades in over the first stage (STYLE.md, "Night"). The colours change
+ * too often to give the crown one neon colour.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 
@@ -211,14 +217,20 @@ pole(steel,[[376.5,4.5],[377.5,4.5]])
 pole(steel,[[387,2.6],[390,2.6],[391,2.05],[409,1.55],[422,1.1],[435,.58],[443.2,.16]])
 for(const z of [393,419])pole(steel,[[z,z<410?2.2:1.35],[z+1,z<410?2.2:1.35]])
 
+// The tower lights wash the setbacks from 255 m and the whole mast;
+// upward faces less.
+const crownLit=(p:V3,n:V3):number=>{
+  const k=Math.min(1,Math.max(0,(p[2]-255)/35))
+  return k*(n[2]>.7?.45:.95)
+}
 // sRGB authoring colours, converted by the shared writer.
 const parts=[
-  {part:stone,material:{name:'limestone',color:0xe7dfcd}},
+  {part:stone,material:{name:'limestone',color:0xe7dfcd,floodlight:crownLit}},
   {part:granite,material:{name:'granite',color:0xc5bcaa}},
   {part:glass,material:{name:'window',color:0x829097,roughness:.85}},
   {part:roof,material:{name:'terracotta-terraces',color:0xc8968a}},
   {part:garden,material:{name:'roof-garden',color:0x94a77f}},
-  {part:steel,material:{name:'aluminium-steel',color:0xadb7bb,roughness:.65}},
+  {part:steel,material:{name:'aluminium-steel',color:0xadb7bb,roughness:.65,floodlight:crownLit}},
   {part:dark,material:{name:'window-2',color:0x73818a}},
 ]
 const triangles=parts.reduce((n,{part})=>n+part.triangles,0)

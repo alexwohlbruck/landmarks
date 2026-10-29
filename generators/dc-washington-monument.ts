@@ -29,7 +29,10 @@
  * known face width), and the colour of each marble band. The step between
  * the two bands is drawn a little stronger than the photos show, so the
  * line still reads at phone size (200 and 80 px), where the monument stands
- * at minzoom 13–14. Not modelled: the
+ * at minzoom 13–14. At night the monument is floodlit from the ground on
+ * all four faces, the whole height of the shaft, so both marble bands carry
+ * a floodlight wash (STYLE.md, "Night"), strongest low down and a little
+ * weaker on the pyramidion. Not modelled: the
  * ring of 50 flags, the earth mound and plaza (ground), and the east
  * screening building (way/897141356), which is a separate building outside
  * the outline.
@@ -91,9 +94,14 @@ for (let f = 0; f < 4; f++) {
 // The east doorway, under its carved lintel: face 1 is east.
 panel(door, 1, -1.3, 1.3, 0, 4.2, half)
 
+// The floodlights stand round the foot and light every face to the apex;
+// the wash fades a little with height and is weaker on the pyramidion's
+// sloping faces, which look away from the lamps.
+const lit = (p: V3, n: V3): number =>
+  n[2] > 0.3 ? 0.55 : 0.95 - 0.2 * (p[2] / H_SHAFT)
 const parts = [
-  { part: lower, material: finish('marble-lower', 0xf0ebe2) },
-  { part: upper, material: finish('marble-upper', 0xeadfcb) },
+  { part: lower, material: { ...finish('marble-lower', 0xf0ebe2), floodlight: lit } },
+  { part: upper, material: { ...finish('marble-upper', 0xeadfcb), floodlight: lit } },
   { part: win, material: PALETTE.window },
   { part: door, material: PALETTE.entrance },
 ]

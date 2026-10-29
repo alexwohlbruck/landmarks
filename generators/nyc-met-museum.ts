@@ -60,6 +60,11 @@
  * drawn from the lidar and the orthophoto; one licensed photo shows it.
  * The fountains, flagpoles, cresting sculpture and roof-garden fittings are
  * left out.
+ *
+ * Night: the Fifth Avenue front is floodlit from the plaza (lights renewed
+ * with the 2014 Koch Plaza), Hunt's centre brightest, so the avenue-facing
+ * stone carries a floodlight wash (STYLE.md, "Night"); the park side and
+ * the roofs stay dark.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -264,11 +269,21 @@ for (const [a, b] of parkWalls) {
 }
 void cube
 
+// The floodlights stand along the plaza and wash the Fifth Avenue front
+// upward: brightest at the foot, fading towards the attic, the Hunt centre
+// stronger than the wings. Faces turned away from the avenue get nothing,
+// faces looking up very little.
+const frontLit = (p: V3, n: V3): number => {
+  if (p[0] < WX - 2 || n[0] < -0.3) return 0
+  const centre = p[1] > HY0 - 1 && p[1] < HY1 + 1 ? 1 : 0.7
+  const h = Math.min(1, p[2] / BLK)
+  return centre * (1 - 0.35 * h) * (n[2] > 0.7 ? 0.25 : n[0] > 0.5 ? 1 : 0.7)
+}
 finishModel('The Metropolitan Museum of Art', 'nyc-met-museum', [
-  { part: stone, material: finish('met-limestone', 0xe8e0d2) },
-  { part: shade, material: finish('met-limestone-shade', 0xc6bba8) },
+  { part: stone, material: { ...finish('met-limestone', 0xe8e0d2), floodlight: frontLit } },
+  { part: shade, material: { ...finish('met-limestone-shade', 0xc6bba8), floodlight: frontLit } },
   { part: win, material: PALETTE.window },
   { part: glass, material: PALETTE.glass },
   { part: roof, material: finish('met-flat-roof', 0xcfcdc6) },
-  { part: trim, material: finish('met-limestone-light', 0xf3ece0) },
+  { part: trim, material: { ...finish('met-limestone-light', 0xf3ece0), floodlight: frontLit } },
 ], { bearing: 29, osm: 'relation/3698894', height: HALL }, 6500)

@@ -43,6 +43,9 @@
  *   the slight fall of the shafts' tops toward their outer corners.
  * - Colour: white paint pulled to the palette's lightness; the slot's
  *   depths dark grey.
+ *
+ * Night: the tower is floodlit white from the decks up, so its white steel
+ * carries a `floodlight` wash (STYLE.md, "Night"); the slot stays dark.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { finish } from './palette'
@@ -98,8 +101,16 @@ for (const z of links) {
   }
 }
 
+// The floodlights stand at the decks (55.5 m) and throw their light up the
+// shafts: brightest above the decks, fading a little toward the top; the
+// foot under the decks dimmer; faces looking up catch little.
+const DECK = 55.5
+const lit = (p: V3, n: V3): number => {
+  const height = p[2] >= DECK ? 1 - 0.35 * Math.min(1, (p[2] - DECK) / (TOP_IN - DECK)) : 0.45
+  return height * (n[2] > 0.7 ? 0.3 : 1)
+}
 const parts = [
-  { part: white, material: finish('sas-white', 0xe8e9e6) },
+  { part: white, material: { ...finish('sas-white', 0xe8e9e6), floodlight: lit } },
   { part: dark, material: finish('sas-slot', 0x8e969d) },
   { part: pier, material: finish('concrete', 0xd9d3c7) },
 ]

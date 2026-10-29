@@ -52,6 +52,10 @@
  * Mickey's head, the sunbursts, legs and axle are fixed, as on the real ride,
  * where the face stays upright while the wheel turns behind it. At t = 0 the
  * model is the static one.
+ *
+ * Night: the wheel's rims, rings and tracks are outlined in lights, so the
+ * turning teal is `neon-pal-teal`, the same teal by day, glowing at night
+ * (STYLE.md, "Night"); the fixed braces and teal gondolas stay unlit.
  */
 import { Part, axisAngle, cross, sub, writeGlb, type ChannelSpec, type MaterialSpec, type NodeSpec, type Quat, type V3 } from './mesh'
 import { finish } from './palette'
@@ -77,8 +81,10 @@ const FACE_C = finish('pal-face', 0xf4e2cf)
 const RED = finish('pal-red', 0xc4473f)
 const M = (s: { name: string; color: number; roughness?: number }, doubleSided = false): MaterialSpec => ({ ...s, doubleSided })
 const MT = M(TEAL), MD = M(DARK), MG = M(GOLD), MF = M(FACE_C), MR = M(RED)
+// The turning rims, rings and tracks, outlined in lights at night.
+const MT_LIT = M(finish('neon-pal-teal', 0x5fa9b5))
 
-const rimPart = new Part()      // teal: rims, inner rings, tracks (turning)
+const rimPart = new Part()      // teal: rims, inner rings, tracks (turning; lit at night)
 const spokePart = new Part()    // charcoal spokes (turning)
 const dark = new Part()         // charcoal: legs, axle, head, eyes, nose, mouth
 const gold = new Part()         // sunbursts
@@ -206,7 +212,7 @@ const plumb: Quat[] = turned.map((a) => axisAngle(AXLE, -a))
 const nodes: NodeSpec[] = [{
   name: 'wheel',
   translation: [0, 0, H],
-  parts: [{ part: rimPart, material: MT }, { part: spokePart, material: MD }],
+  parts: [{ part: rimPart, material: MT_LIT }, { part: spokePart, material: MD }],
 }]
 const channels: ChannelSpec[] = [{ node: 0, path: 'rotation', values: wheelTurn }]
 

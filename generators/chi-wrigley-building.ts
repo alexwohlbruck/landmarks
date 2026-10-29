@@ -15,7 +15,10 @@
  * stage, a round colonnade, a little dome and a spire. The north addition
  * has its own small corner-turreted pavilion. Two bridges cross the plaza
  * between them. Whiteness is the identity, so the body is the whitest
- * colour in the set.
+ * colour in the set. It has been floodlit every night since 1921, from
+ * lamps across the river and along Michigan Avenue, so the terracotta and
+ * the clock faces carry `floodlight`: strongest on the river (south) and
+ * avenue (east) fronts and up the tower, faces looking up barely lit.
  *
  * Evidence:
  *  - plan: OSM outer ways 68831071 (north) and 1271821350 (south) and the
@@ -273,12 +276,19 @@ for (const [su, sv] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) {
   }
 }
 
+// Floodlight: the lamps stand south across the river and east along the
+// avenue, so those fronts take the most; it rises up the tower.
+const floodlit = (p: V3, n: V3): number => {
+  const height = 0.6 + 0.4 * Math.min(1, p[2] / 133.5)
+  const facing = n[2] > 0.7 ? 0.25 : n[1] < -0.3 || n[0] > 0.3 ? 1 : 0.6
+  return height * facing
+}
 const parts = [
-  { part: body, material: finish('wrigley-terracotta', 0xfdf8ee) },
+  { part: body, material: { ...finish('wrigley-terracotta', 0xfdf8ee), floodlight: floodlit } },
   { part: roof, material: PALETTE.roof },
   { part: win, material: PALETTE.window },
   { part: metal, material: { ...PALETTE.metal, color: 0x6e6a63 } },
-  { part: clock, material: finish('clock-face', 0xfffbf2) },
+  { part: clock, material: { ...finish('clock-face', 0xfffbf2), floodlight: () => 1 } },
 ]
 const triangles = parts.reduce((s, p) => s + p.part.triangles, 0)
 const glb = writeGlb('Wrigley Building', parts, {

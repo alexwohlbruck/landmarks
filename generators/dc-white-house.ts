@@ -114,8 +114,12 @@
  * - Simplified: window pediments are flat hoods; balusters are a light grey
  *   panel between white piers; the flagpole, lamps and the North Portico's
  *   lantern are left out.
+ * - Night: the residence is floodlit on every side, the north and south
+ *   porticoes brightest, so its white paint and balustrade carry a
+ *   floodlight wash (STYLE.md, "Night"); the wings are left dim, as in
+ *   night photos, and roofs and terraces get only a little spill.
  */
-import { Part, cross, len, sub, writeGlb, type V3 } from './mesh'
+import { Part, cross, len, sub, writeGlb, type MaterialSpec, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 
 // ===========================================================================
@@ -342,7 +346,7 @@ export function balustrade(stone: Part, bal: Part, side: Side, at: number, a0: n
 }
 
 /** Triangle and byte budgets, and the write. */
-export async function save(id: string, name: string, parts: Array<{ part: Part; material: { name: string; color: number; roughness?: number } }>, extras: Record<string, unknown>, maxTris = 5000) {
+export async function save(id: string, name: string, parts: Array<{ part: Part; material: MaterialSpec }>, extras: Record<string, unknown>, maxTris = 5000) {
   const triangles = parts.reduce((s, { part }) => s + part.triangles, 0)
   if (triangles > maxTris) throw new Error(`${id}: triangle budget exceeded: ${triangles}`)
   if (parts.length > 6) throw new Error(`${id}: ${parts.length} materials`)
@@ -547,9 +551,15 @@ function build() {
   const terrace = new Part()
   wings(paint, bal, win, roof, door, terrace)
 
+  // Floodlit: the residence only (main block and both porticoes), walls
+  // brightest, upward faces faint; the colonnades and wings stay dim.
+  const lit = (p: V3, n: V3): number => {
+    if (Math.abs(p[0]) > X + 1 || p[1] < BOW[1] - R_BASE - 1 || p[1] > NP.y1 + 1) return 0
+    return n[2] > 0.7 ? 0.3 : 0.9
+  }
   return [
-    { part: paint, material: finish('white-house-paint', 0xfaf7f1) },
-    { part: bal, material: finish('baluster', 0xd8d6d0) },
+    { part: paint, material: { ...finish('white-house-paint', 0xfaf7f1), floodlight: lit } },
+    { part: bal, material: { ...finish('baluster', 0xd8d6d0), floodlight: lit } },
     { part: win, material: PALETTE.window },
     { part: door, material: PALETTE.entrance },
     { part: roof, material: finish('white-house-roof', 0xcdc9c1) },

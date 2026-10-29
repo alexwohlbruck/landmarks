@@ -26,6 +26,11 @@
  * Estimated: the roof pitch and the cupola's profile (photos and the lidar
  * heights), the portal size (≈ 9 × 13 m, from the Park Avenue photos), the
  * panel rhythm. Dormers, the clock and its sculpture group are left out.
+ *
+ * Night: the tower is floodlit gold down Park Avenue, its walls, copper
+ * roof and gilded cupola, so those carry a floodlight wash (STYLE.md,
+ * "Night"), building up the shaft to the roof; the low middle ranges over
+ * the viaduct are not lit.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -125,11 +130,19 @@ for (const [y, f] of [[T.y1, 1], [-29.3, -1]] as [number, 1 | -1][]) {
   for (const xc of [cx - 15, cx + 15]) arch(y, f, xc, 4.2, 8)
 }
 
+// The floodlighting builds up the walls from the wings' roofs to the
+// cornice, then lights the copper roof and cupola fully; faces looking up
+// catch little. Nothing below the 22 m middle ranges is lit.
+const towerLit = (p: V3, n: V3): number => {
+  if (p[2] < 22) return 0
+  const h = Math.min(1, (p[2] - 22) / (CORNICE - 22))
+  return (0.4 + 0.6 * h) * (n[2] > 0.8 ? 0.3 : 1)
+}
 finishModel('Helmsley Building', 'nyc-helmsley-building', [
-  { part: stone, material: finish('helmsley-stone', 0xddcdb2) },
+  { part: stone, material: { ...finish('helmsley-stone', 0xddcdb2), floodlight: towerLit } },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
-  { part: copper, material: PALETTE.copper },
-  { part: gold, material: finish('helmsley-gilt', 0xd4b56a) },
+  { part: copper, material: { ...PALETTE.copper, floodlight: towerLit } },
+  { part: gold, material: { ...finish('helmsley-gilt', 0xd4b56a), floodlight: towerLit } },
   { part: portal, material: finish('helmsley-portal', 0x4f565c) },
 ], { bearing: 29, osm: 'way/73850655', height: 172 })

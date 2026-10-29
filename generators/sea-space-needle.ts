@@ -66,6 +66,9 @@
  * Left out: elevator cars, railings, the stair, the lattice of the core
  * (drawn solid and dark), the Pavilion ring outside the outline.
  *
+ * Night: the legs and the top house are floodlit white (a `floodlight` wash,
+ * see output); the Loupe and deck glazing are `window`.
+ *
  * Photos (Wikimedia Commons):
  * - "Space Needle - Oct, 2023.jpg", Davidralphhughes, CC BY-SA 4.0 (south-east, telephoto)
  * - "Space Needle on January 12, 2019.jpg", Ron Clausen, CC BY-SA 4.0 (Elliott Bay)
@@ -386,9 +389,17 @@ lathe([[0.65, 171.6], [0.45, 176], [0.15, 184.6], [0, 184.6]], () => dark, 8, 60
 // darker than the top house so the two read apart; the core charcoal (its
 // real black-brown steel, at the style's darkest); the halo's brass rim and
 // deck pulled to the palette's lightness.
+//
+// At night the Needle is floodlit white: lights at the foot wash the legs,
+// brightest low and fading toward the waist, and lights round the halo wash
+// the top house, its roof and spool. Faces looking up catch little of it.
+const legsLit = (p: V3, n: V3): number =>
+  (n[2] > 0.7 ? 0.3 : 1) * (1 - 0.55 * Math.min(1, Math.max(0, p[2] / 150)))
+const topLit = (p: V3, n: V3): number =>
+  p[2] < 149 ? 0 : p[2] < 157 ? 0.6 : n[2] > 0.95 ? 0.5 : 0.85
 const parts = [
-  { part: white, material: PALETTE.trim },
-  { part: cream, material: PALETTE.stone },
+  { part: white, material: { ...PALETTE.trim, floodlight: topLit } },
+  { part: cream, material: { ...PALETTE.stone, floodlight: legsLit } },
   { part: dark, material: finish('needle-core', 0x4a4f57) },
   { part: win, material: PALETTE.window },
   { part: gold, material: finish('needle-halo', 0xc4ad82) },

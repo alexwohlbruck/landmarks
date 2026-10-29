@@ -33,6 +33,10 @@
  * lantern's height (~6 m); the spire's taper. The base's darker shade is a
  * simplification of the graded brick into two tones (below and above the
  * 126 m west wing roof).
+ *
+ * Night: the crown's tiers and the spire are floodlit white over the dark
+ * shaft, so the brick above the 237 m roof and the spire carry a floodlight
+ * wash (STYLE.md, "Night"), strongest on the lower tiers.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -110,13 +114,21 @@ function build() {
   prism({ wall: metal, win: null, roof: metal, ring: chamferRect(cx - 1.5, cy - 1.1, cx + 1.5, cy + 1.1, 0.3), z0: 264.5, z1: 267, facade: null, bevel: 0.2 })
   mast(metal, cx, cy, 267, 290, 0.45)
 
+  // The crown's floodlights, on the 237 m roof and the tiers' ledges, light
+  // the tiers and the spire; strongest low, fading up the spire, flat tops
+  // barely lit. The shaft below is dark.
+  const crownLit = (p: V3, n: V3): number => {
+    if (p[2] < 237.5) return 0
+    const h = Math.min(1, (p[2] - 237) / (290 - 237))
+    return (1 - 0.5 * h) * (n[2] > 0.8 ? 0.3 : 1)
+  }
   finishModel('70 Pine Street', 'nyc-70-pine', [
     { part: base, material: finish('pine-brick-base', 0xcdbfad) },
-    { part: tower, material: finish('pine-brick', 0xe7dcc9) },
+    { part: tower, material: { ...finish('pine-brick', 0xe7dcc9), floodlight: crownLit } },
     { part: win, material: PALETTE.window },
     { part: roof, material: PALETTE.roof },
     { part: glass, material: PALETTE.glass },
-    { part: metal, material: finish('pine-spire', 0xc8c8c2) },
+    { part: metal, material: { ...finish('pine-spire', 0xc8c8c2), floodlight: crownLit } },
   ], { bearing: 38, osm: 'way/278069587', height: 290 }, 6500)
 }
 

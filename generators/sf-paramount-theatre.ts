@@ -37,7 +37,9 @@
  *   public domain).
  *
  * Famous-sign exception (STYLE.md): the blade carries PARAMOUNT as extruded
- * block letters, upright and stacked, on both faces.
+ * block letters, upright and stacked, on both faces. They are red neon after
+ * dark, so they are `neon-paramount-maroon` and glow at night (STYLE.md,
+ * "Night"); the marquee's boards are `window` and glow too.
  *
  * The mosaic is drawn as two flat gold panels in a maroon tile frame, not as
  * figures. Estimated from the photos: the mosaic's extent, the frame's
@@ -50,7 +52,7 @@ import { PALETTE, finish } from './palette'
 type XY = [number, number]
 const BEARING = 27.3
 const ANCHOR = { lng: -122.2685961, lat: 37.8098546 }
-const stucco = new Part(), roof = new Part(), tile = new Part(), mosaic = new Part(), trim = new Part(), win = new Part()
+const stucco = new Part(), roof = new Part(), tile = new Part(), mosaic = new Part(), trim = new Part(), win = new Part(), letters = new Part()
 
 function block(p: Part, x0: number, x1: number, y0: number, y1: number, z0: number, z1: number, ch = 0.3, top: Part | null = p) {
   const r: XY[] = [[x0 + ch, y0], [x1 - ch, y0], [x1, y0 + ch], [x1, y1 - ch], [x1 - ch, y1], [x0 + ch, y1], [x0, y1 - ch], [x0, y0 + ch]]
@@ -201,10 +203,10 @@ block(trim, BX0, BX1 - 0.4, BY - 1.6, BY + 1.6, BZ1 - 2.2, BZ1 - 0.6, 0.2, trim)
       for (const poly of G[c]) {
         const pts = poly.map(([pu, pv]) => [sMid - W / 2 + pu, z0 + pv] as [number, number])
         const d0 = 0.0, d1 = 0.16
-        for (let i = 1; i < pts.length - 1; i++) tile.tri(at(f, pts[0][0], d1, pts[0][1]), at(f, pts[i][0], d1, pts[i][1]), at(f, pts[i + 1][0], d1, pts[i + 1][1]))
+        for (let i = 1; i < pts.length - 1; i++) letters.tri(at(f, pts[0][0], d1, pts[0][1]), at(f, pts[i][0], d1, pts[i][1]), at(f, pts[i + 1][0], d1, pts[i + 1][1]))
         for (let i = 0; i < pts.length; i++) {
           const A = pts[i], B = pts[(i + 1) % pts.length]
-          tile.quad(at(f, A[0], d0, A[1]), at(f, B[0], d0, B[1]), at(f, B[0], d1, B[1]), at(f, A[0], d1, A[1]))
+          letters.quad(at(f, A[0], d0, A[1]), at(f, B[0], d0, B[1]), at(f, B[0], d1, B[1]), at(f, A[0], d1, A[1]))
         }
       }
     })
@@ -218,6 +220,7 @@ const parts = [
   { part: mosaic, material: finish('paramount-mosaic', 0xd39f66) },
   { part: trim, material: PALETTE.trim },
   { part: win, material: PALETTE.window },
+  { part: letters, material: finish('neon-paramount-maroon', 0x9e5552) },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)

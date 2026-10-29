@@ -51,6 +51,11 @@
  *   crown 22 m), the attic bands, the colonnades' column spacing (4.2 m)
  *   and the box groups' four columns, the hall's door panels. Simplified:
  *   no statues, reliefs, urns or weeping women; the planter boxes are plain.
+ *
+ * Night: the rotunda is floodlit over the lagoon. Its dome and red columns
+ * carry a `floodlight` wash (STYLE.md, "Night"); the ochre stone, which
+ * holds most of the model's vertices, does not, as the attribute on it
+ * would put the file over its 250 KB budget.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -415,10 +420,14 @@ function hallRadii(th: number, poly: XY[]): number[] {
 
 // ---- Write -----------------------------------------------------------------
 // sRGB from the daylight photos, pulled to the palette's lightness.
+// The floodlights stand round the lagoon and among the columns, aimed up:
+// the red columns full, the dome a little less; faces looking up catch
+// little.
+const lit = (p: V3, n: V3): number => (p[2] > CORNICE ? 0.75 : 1) * (n[2] > 0.7 ? 0.35 : 1)
 const parts = [
   { part: stone, material: finish('ochre-stone', 0xe0c6a4) },
-  { part: red, material: finish('red-ochre', 0xc27f6a) },
-  { part: dome, material: finish('dome-cream', 0xeee3cc) },
+  { part: red, material: { ...finish('red-ochre', 0xc27f6a), floodlight: lit } },
+  { part: dome, material: { ...finish('dome-cream', 0xeee3cc), floodlight: lit } },
   { part: hall, material: finish('hall-concrete', 0xe6dccb) },
   { part: roof, material: { ...PALETTE.roof, color: 0xaab0b3 } },
   { part: door, material: PALETTE.entrance },

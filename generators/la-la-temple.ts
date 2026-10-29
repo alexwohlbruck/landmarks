@@ -45,6 +45,10 @@
  * long front and back, read off t1 and t3), the tower's column of square
  * screens, the statue's form (a bold figure with its trumpet), the spire's
  * steps. Left out: the forecourt, its pool and gardens, the flagpole.
+ *
+ * Night: the temple is floodlit, the tower to the statue brightest over
+ * the dark grounds (t1, at dusk), so the white stone, its trim and the
+ * statue carry a floodlight wash (STYLE.md, "Night"), faint on roofs.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -158,11 +162,15 @@ block(sq(3.3), 67.0, 0.6, 66.3)
 if (import.meta.main) {
   const [lng, lat] = lngLat(ORIGIN, O[0], O[1])
   console.log(`anchor ${lng.toFixed(7)}, ${lat.toFixed(7)}`)
+  // Floodlit: walls brighter up the tower, upward faces faint.
+  const lit = (p: V3, n: V3): number => (n[2] > 0.7 ? 0.25 : Math.min(1, 0.75 + p[2] / 300))
+  const STONE = { ...PALETTE.stone, floodlight: lit }, TRIM = { ...PALETTE.trim, floodlight: lit }
+  const GOLD = { ...finish('moroni-gold', 0xd9b866, 0.5), floodlight: lit }
   save('la-la-temple', 'Los Angeles California Temple', [
-    { part: stone, material: PALETTE.stone },
-    { part: trim, material: PALETTE.trim },
+    { part: stone, material: STONE },
+    { part: trim, material: TRIM },
     { part: roof, material: { ...PALETTE.roof, color: 0xc4c8ca } },
     { part: win, material: { ...PALETTE.window, color: 0x9aa4ab } },
-    { part: gold, material: finish('moroni-gold', 0xd9b866, 0.5) },
+    { part: gold, material: GOLD },
   ], { bearing: BEARING, elevation: 0, height: 75.6, replaces: ['way/216534845'] })
 }

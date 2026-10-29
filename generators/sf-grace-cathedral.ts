@@ -47,6 +47,10 @@
  * pulled to the palette's lightness: pale warm-grey concrete, slate-grey
  * roofs (the NAIP aerial; they read mauve-brown only in low sun), pale flat
  * aisle roofs (NAIP), a dark green-bronze flèche.
+ *
+ * Night: the west front and its towers are floodlit over Huntington Park, so
+ * the stone and trim there carry a `floodlight` wash (STYLE.md, "Night");
+ * the rest of the church stays dark.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -331,9 +335,16 @@ for (const side of [1, -1]) {
 // Close the bottom so the shadow pass sees a solid.
 stone.quad([APSE_X, -AISLE, 0], [APSE_X, AISLE, 0], [TW1, AISLE, 0], [TW1, -AISLE, 0])
 
+// The floodlights stand on the front plaza: the front and towers full,
+// fading a little toward the tops; nothing behind the towers; faces looking
+// up catch little.
+const lit = (p: V3, n: V3): number => {
+  if (p[0] < TW0 - 0.5) return 0
+  return (1 - 0.3 * Math.min(1, Math.max(0, p[2] - PLAZA) / (TOWER - PLAZA))) * (n[2] > 0.7 ? 0.3 : 1)
+}
 const parts = [
-  { part: stone, material: finish('grace-concrete', 0xe4e0d6) },
-  { part: trim, material: finish('grace-trim', 0xf1eee7) },
+  { part: stone, material: { ...finish('grace-concrete', 0xe4e0d6), floodlight: lit } },
+  { part: trim, material: { ...finish('grace-trim', 0xf1eee7), floodlight: lit } },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
   { part: bronze, material: finish('grace-fleche', 0x667470) },

@@ -29,6 +29,9 @@
  * Estimated: the platform's three steps and end blocks, the arm depth (3.5 m,
  *   photo), the shallow panels on the shaft and arms (the faint relief seen in
  *   the photos, drawn as frames standing 6 cm proud), the 0.25 m chamfers.
+ *
+ * Night: the cross is floodlit from its foot, lit white above the trees, so
+ * its concrete carries a `floodlight` wash (STYLE.md, "Night").
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { finish } from './palette'
@@ -93,8 +96,11 @@ for (const f of ['e', 'w'] as const) {
   panel(concrete, f, HS, HS + 0.4, SPAN - 0.6, ARM_TOP - ARM_D + 0.6, ARM_TOP - 0.6)
 }
 
+// The floodlights stand on the platform and aim up the shaft: brightest
+// low, fading a little toward the top; the arms' tops catch little.
+const lit = (p: V3, n: V3): number => (1 - 0.3 * Math.min(1, p[2] / H)) * (n[2] > 0.7 ? 0.3 : 1)
 const parts = [
-  { part: concrete, material: finish('cross-concrete', 0xdddbd4) },
+  { part: concrete, material: { ...finish('cross-concrete', 0xdddbd4), floodlight: lit } },
   { part: platform, material: finish('platform-concrete', 0xd2cec5) },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)

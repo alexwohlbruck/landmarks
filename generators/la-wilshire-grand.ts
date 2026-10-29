@@ -42,6 +42,9 @@
  * Left out: the LED signs, the white chevron outrigger trusses (w4 shows
  * one over the podium; as plain bands they read as stripes), the spire's
  * lattice.
+ *
+ * Night: the glazed sail is lit, with LED lighting at its crown, so it is
+ * `neon-wg-crown`, the glass colour, and glows at night (STYLE.md, "Night").
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish, windowVariant } from './palette'
@@ -250,7 +253,7 @@ const parts = [
   // silver mullions and spandrels; light, sky-blue reflective glass
   { part: frame, material: finish('wg-silver', 0xe3e7e9) },
   { part: glassWall, material: windowVariant(2, 0x93b2cc) },
-  { part: crown, material: PALETTE.glass },
+  { part: crown, material: finish('neon-wg-crown', PALETTE.glass.color, 0.24) },
   { part: roofs, material: PALETTE.roof },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)

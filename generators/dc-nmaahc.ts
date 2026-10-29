@@ -49,6 +49,10 @@
  * soffit slope. The screen's lattice is drawn as broad bronze faces, as the
  * brief asks, not as a pattern. Not modelled: the oculus, the lawn walls,
  * the fountain, the lettering.
+ *
+ * Night: the corona glows bronze, lit from within and behind its lattice,
+ * so the bronze carries a `floodlight` (STYLE.md, "Night"), softer than a
+ * floodlit stone face and dim on the tiers' tops.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish, windowVariant } from './palette'
@@ -319,7 +323,9 @@ if (import.meta.main) {
     }
   }
 
-  const BRONZE = finish('nmaahc-bronze', 0x6e5a49)
+  // Lit from within at night: the leaning screen faces glow evenly; the
+  // tops of the tiers and the roof edge hardly.
+  const BRONZE = { ...finish('nmaahc-bronze', 0x6e5a49), floodlight: (_p: V3, n: V3) => n[2] > 0.5 ? 0.15 : 0.7 }
   const DARK = finish('nmaahc-shadow', 0x564a40)
   await save('dc-nmaahc', 'National Museum of African American History and Culture', [
     { part: bronze, material: BRONZE },

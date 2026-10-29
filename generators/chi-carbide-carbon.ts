@@ -11,7 +11,9 @@
  *
  * Identity, in order: the gold lantern on top, the "champagne cork"; the
  * dark green tower with its gold-tipped corner pinnacles and gold frieze;
- * the slab it rises from; the black granite base.
+ * the slab it rises from; the black granite base. At night the gold crown
+ * (friezes, pinnacle tips and lantern) is floodlit, so the gold carries
+ * `floodlight` above the tower's upper frieze; the slab's gold coping stays dark.
  *
  * Evidence:
  *  - plan: the Carbide & Carbon part, OSM way/147400407, 39.5 × 25.3 m, at
@@ -46,7 +48,7 @@
  * Left out: the terracotta piers' gold tips down the slab, the lettering
  * and canopy at the entrance, the setback ledges of the slab's rear.
  */
-import { Part } from './mesh'
+import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 import { bays, block, chamfer, lathe, parapetRoof, rect, rows, save, walls, type XY } from './chi-aon-center'
 
@@ -105,10 +107,15 @@ lathe(gold, LX, TY, [[2.7 * 1.08, LANTERN], [2.7, LANTERN + 0.7], [1.9, LANTERN 
 // Its tall windows, the clock oculus above them.
 bays(win, rect(LX - 2.7, TY - 2.7, LX + 2.7, TY + 2.7), [[PARAPET + 4.2, LANTERN - 3.5]], { bay: 0.9, gap: 0.6, end: 0.9, minLen: 4 })
 
+// Floodlight on the crown's gold, rising to the lantern's top.
+const crownLit = (p: V3, n: V3): number =>
+  p[2] < F1 - 0.5 ? 0 : (0.7 + 0.3 * Math.min(1, (p[2] - F1) / (TOP - F1))) * (n[2] > 0.7 ? 0.35 : 1)
+const GOLD = { ...finish('cc-gold', 0xd2b066, 0.6), floodlight: crownLit }
+
 await save('chi-carbide-carbon', 'Carbide & Carbon Building', [41.886526, -87.625008], 359, [
   { part: green, material: finish('cc-green-terracotta', 0x7a9081) },
   { part: base, material: finish('black-granite', 0x4a4f57) },
-  { part: gold, material: finish('cc-gold', 0xd2b066, 0.6) },
+  { part: gold, material: GOLD },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
   { part: annex, material: PALETTE.stone },
