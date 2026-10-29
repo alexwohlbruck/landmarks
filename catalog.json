@@ -15650,6 +15650,280 @@
       ],
       "file": "models/nyc-pepsi-cola-sign.glb",
       "source": "generators/nyc-pepsi-cola-sign.ts"
+    },
+    {
+      "id": "nyc-jfk-terminal-5",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "JFK Terminal 5 aerial view.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_5_aerial_view.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "View from Pool Deck, TWA Hotel (48581250157)",
+          "url": "https://commons.wikimedia.org/wiki/File:View_from_Pool_Deck,_TWA_Hotel,_John_F._Kennedy_International_Airport,_Jamaica,_Queens,_New_York_City,_NY_-_48581250157.jpg",
+          "author": "w_lemay",
+          "license": "CC0"
+        },
+        {
+          "title": "View from Pool Deck, TWA Hotel (48581109591)",
+          "url": "https://commons.wikimedia.org/wiki/File:View_from_Pool_Deck,_TWA_Hotel,_John_F._Kennedy_International_Airport,_Jamaica,_Queens,_New_York_City,_NY_-_48581109591.jpg",
+          "author": "w_lemay",
+          "license": "CC0"
+        },
+        {
+          "title": "View from Pool Deck, TWA Hotel",
+          "url": "https://commons.wikimedia.org/wiki/File:View_from_Pool_Deck,_TWA_Hotel,_John_F._Kennedy_International_Airport,_Jamaica,_Queens,_New_York_City,_NY.jpg",
+          "author": "w_lemay",
+          "license": "CC0"
+        },
+        {
+          "title": "JetBlue Terminal 5 ramp NY1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JetBlue_Terminal_5_ramp_NY1.jpg",
+          "author": "Acroterion",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "2022 JetBlue Terminal 5 JFK Airport 3.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2022_JetBlue_Terminal_5_JFK_Airport_3.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "JFK T5 May 2019 12.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_T5_May_2019_12.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-jfk-terminal-5.glb",
+      "source": "generators/nyc-jfk-terminal-5.ts"
+    },
+    {
+      "id": "nyc-jfk-terminal-8",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "JFK-SatelliteTerminal-MostlyAA (36774618531).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK-SatelliteTerminal-MostlyAA_(36774618531).jpg",
+          "author": "formulanone",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Terminal 8 at JFKIA 20240602.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Terminal_8_at_JFKIA_20240602.jpg",
+          "author": "颐园居",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "John F. Kennedy Airport T8 20240602.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:John_F._Kennedy_Airport_T8_20240602.jpg",
+          "author": "颐园居",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Terminal 8 departures.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Terminal_8_departures.jpg",
+          "author": "Mybirthday647",
+          "license": "CC0"
+        },
+        {
+          "title": "Aerial view of JFK Terminal 8 from the southwest 01 (9456620628).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_JFK_Terminal_8_from_the_southwest_01_(9456620628).jpg",
+          "author": "Joe Mabel",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "At Long Island 2025 393.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:At_Long_Island_2025_393.jpg",
+          "author": "Mike Peel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "John F. Kennedy Airport 2021b.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:John_F._Kennedy_Airport_2021b.jpg",
+          "author": "Antony-22",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-jfk-terminal-8.glb",
+      "source": "generators/nyc-jfk-terminal-8.ts"
+    },
+    {
+      "id": "nyc-jfk-terminal-7",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "JFK Terminal 7 aerial view.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_7_aerial_view.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Exterior of Terminal 7, JFK.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_Terminal_7,_JFK.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "JFK Terminal 7 exterior.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_7_exterior.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "JFK Terminal 7 May 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_7_May_2023.jpg",
+          "author": "Mybirthday647",
+          "license": "CC0"
+        },
+        {
+          "title": "JFK Airport Terminal 7.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Airport_Terminal_7.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "JFK Terminal 7 Alaska Airlines.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_7_Alaska_Airlines.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/nyc-jfk-terminal-7.glb",
+      "source": "generators/nyc-jfk-terminal-7.ts"
+    },
+    {
+      "id": "nyc-jfk-terminal-1",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "At New York City 2024 150.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:At_New_York_City_2024_150.jpg",
+          "author": "Mike Peel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "JFK-Terminal1-VariousAirlinesAerial (36914267725).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK-Terminal1-VariousAirlinesAerial_(36914267725).jpg",
+          "author": "formulanone",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "John F. Kennedy Airport 2021a.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:John_F._Kennedy_Airport_2021a.jpg",
+          "author": "Antony-22",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "JFK Airport td (2021-10-11) 050 - Van Wyck Expressway, Terminal 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Airport_td_(2021-10-11)_050_-_Van_Wyck_Expressway,_Terminal_1.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Terminal 1 JFK Departures.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Terminal_1_JFK_Departures.jpg",
+          "author": "Mybirthday647",
+          "license": "CC0"
+        }
+      ],
+      "file": "models/nyc-jfk-terminal-1.glb",
+      "source": "generators/nyc-jfk-terminal-1.ts"
     }
   ],
   "landmarks": [
@@ -27604,6 +27878,68 @@
       "minzoom": 15,
       "wikidata": "Q97883006",
       "replaces": []
+    },
+    {
+      "id": "nyc-jfk-terminal-5",
+      "name": "JFK Airport Terminal 5",
+      "model": "nyc-jfk-terminal-5",
+      "place": "new-york-area",
+      "lng": -73.7760073,
+      "lat": 40.6461541,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/284907689",
+        "relation/9077350",
+        "way/284907731"
+      ],
+      "wikidata": "Q55855384"
+    },
+    {
+      "id": "nyc-jfk-terminal-8",
+      "name": "JFK Airport Terminal 8",
+      "model": "nyc-jfk-terminal-8",
+      "place": "new-york-area",
+      "lng": -73.7919122,
+      "lat": 40.6483557,
+      "bearing": -29.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "relation/9077394"
+      ],
+      "wikidata": "Q55855388"
+    },
+    {
+      "id": "nyc-jfk-terminal-7",
+      "name": "JFK Airport Terminal 7",
+      "model": "nyc-jfk-terminal-7",
+      "place": "new-york-area",
+      "lng": -73.7828117,
+      "lat": 40.6494974,
+      "bearing": 13.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "relation/3778808"
+      ],
+      "wikidata": "Q55855385"
+    },
+    {
+      "id": "nyc-jfk-terminal-1",
+      "name": "JFK Airport Terminal 1",
+      "model": "nyc-jfk-terminal-1",
+      "place": "new-york-area",
+      "lng": -73.7910574,
+      "lat": 40.6428633,
+      "bearing": 59.9,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/284907685"
+      ],
+      "wikidata": "Q55855378"
     }
   ],
   "places": [
