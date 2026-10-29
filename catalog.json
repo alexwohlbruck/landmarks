@@ -15298,6 +15298,67 @@
       ],
       "file": "models/nyc-jfk-terminal-4.glb",
       "source": "generators/nyc-jfk-terminal-4.ts"
+    },
+    {
+      "id": "nyc-silvercup-sign",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "other",
+      "tags": [
+        "sign",
+        "neon",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Silvercup sign 20190519 130130.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Silvercup_sign_20190519_130130.jpg",
+          "author": "CaptJayRuffins",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Silvercup Studios 21 St & QPS jeh.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Silvercup_Studios_21_St_%26_QPS_jeh.JPG",
+          "author": "Jim.henderson",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Silvercup Studios sign.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Silvercup_Studios_sign.jpg",
+          "author": "MacdaddyCk",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Silvercup Studios and Citicorp Building from Queensboro Bridge.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Silvercup_Studios_and_Citicorp_Building_from_Queensboro_Bridge.jpg",
+          "author": "AAK",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Silvercup.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Silvercup.jpg",
+          "author": "unknown",
+          "license": "Public domain"
+        }
+      ],
+      "file": "models/nyc-silvercup-sign.glb",
+      "source": "generators/nyc-silvercup-sign.ts"
     }
   ],
   "landmarks": [
@@ -27131,6 +27192,18 @@
         "way/284907688"
       ],
       "wikidata": "Q55855382"
+    },
+    {
+      "id": "nyc-silvercup-sign",
+      "name": "Silvercup Sign",
+      "model": "nyc-silvercup-sign",
+      "place": "new-york-area",
+      "lng": -73.9436986,
+      "lat": 40.7513395,
+      "bearing": 124.7,
+      "elevation": 23.1,
+      "minzoom": 15,
+      "replaces": []
     }
   ],
   "places": [
