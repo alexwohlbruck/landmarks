@@ -39,7 +39,7 @@ import { gzipSync } from 'node:zlib'
 import { existsSync, readFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
 import { DEFAULT_MIN_ZOOM, creditsFor, licenseFor, validateCatalog, type Catalog, type CatalogLandmark, type CatalogModel, type Credit, type Place, type ModelType, type Reference } from './catalog'
-import { bakePlacement, glbBounds, triangleCount } from './glb'
+import { bakePlacement, glbBounds, invertedFaces, triangleCount } from './glb'
 import { inspectGlb, type ModelInfo } from './model-info'
 
 export const SCHEMA_VERSION = 1
@@ -168,9 +168,15 @@ export function checkCatalog(root: string, catalog: Catalog, readFile?: ReadFile
         continue
       }
       try {
-        const { height, radius } = glbBounds(readFile ? readFile(file) : new Uint8Array(readFileSync(path)))
+        const bytes = readFile ? readFile(file) : new Uint8Array(readFileSync(path))
+        const { height, radius } = glbBounds(bytes)
         // Standing on its origin, not centred on it.
         if (!(height > 0) || !(radius > 0)) problems.push(`model "${m.id}": ${file} has no extent above its origin`)
+        // Faces wound inward are see-through on the map. A few slivers in
+        // a scanned mesh are tolerated; a surface wound the wrong way is not.
+        for (const f of invertedFaces(bytes)) {
+          if (f.inverted > Math.max(4, f.triangles * 0.02)) problems.push(`model "${m.id}": ${file}: ${f.inverted} of ${f.triangles} "${f.material}" faces are wound inward (see-through on the map)`)
+        }
       } catch (err) {
         problems.push(`model "${m.id}": ${(err as Error).message}`)
       }

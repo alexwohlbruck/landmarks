@@ -434,5 +434,11 @@ model from the photo's side with `bun tools/view.ts` and pair the two with
 - nothing pokes past an edge or a corner;
 - it still reads as itself in the 80 px view.
 
+Every face is wound counter-clockwise seen from outside: the map culls back
+faces by winding, so a face wound inward is see-through on the map even
+when its normals light it correctly. `Part.tri` winds faces to agree with
+any explicit normals it is given, the preview culls by winding as the map
+does, and `bun run validate` rejects a model with surfaces wound inward.
+
 `bun tools/glb-stats.ts <id>` checks the budget: triangles, size, material
 count, and that the lowest point is at y = 0.
