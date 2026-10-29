@@ -14668,6 +14668,91 @@
       ],
       "file": "models/nyc-battery-maritime-building.glb",
       "source": "generators/nyc-battery-maritime-building.ts"
+    },
+    {
+      "id": "nyc-whitehall-terminal",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "ferry-terminal",
+        "transport",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Staten Island Ferry Whitehall Terminal (48126534661).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Staten_Island_Ferry_Whitehall_Terminal_(48126534661).jpg",
+          "author": "Ajay Suresh",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Whitehall Terminal vc.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Whitehall_Terminal_vc.jpg",
+          "author": "Charles Smith",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "South Ferry td (2019-07-18) 09 - Whitehall Terminal.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:South_Ferry_td_(2019-07-18)_09_-_Whitehall_Terminal.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "South Ferry td (2019-07-07) 03 - Whitehall Terminal.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:South_Ferry_td_(2019-07-07)_03_-_Whitehall_Terminal.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Staten Island Ferry Whitehall Terminal.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Staten_Island_Ferry_Whitehall_Terminal.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Staten Island Ferry Whitehall Terminal photo Don Ramey Logan.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Staten_Island_Ferry_Whitehall_Terminal_photo_Don_Ramey_Logan.jpg",
+          "author": "Don Ramey Logan",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Manhattan Island Ferry Terminals photo Don Ramey Logan.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Manhattan_Island_Ferry_Terminals_photo_Don_Ramey_Logan.jpg",
+          "author": "Don Ramey Logan",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Andrew J. Barberi at Staten Island Ferry Whitehall Terminal.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Andrew_J._Barberi_at_Staten_Island_Ferry_Whitehall_Terminal.JPG",
+          "author": "Opencooper",
+          "license": "CC0"
+        },
+        {
+          "title": "Staten Island Ferry terminal.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Staten_Island_Ferry_terminal.jpg",
+          "author": "Daniel Schwen",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-whitehall-terminal.glb",
+      "source": "generators/nyc-whitehall-terminal.ts"
     }
   ],
   "landmarks": [
@@ -26351,6 +26436,31 @@
         "way/213867491",
         "way/213867492",
         "way/213871106"
+      ]
+    },
+    {
+      "id": "nyc-whitehall-terminal",
+      "name": "Staten Island Ferry Whitehall Terminal",
+      "model": "nyc-whitehall-terminal",
+      "place": "new-york-area",
+      "lng": -74.0130622,
+      "lat": 40.7009654,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7603994",
+      "replaces": [
+        "relation/2848024",
+        "way/38868195",
+        "way/213853440",
+        "way/213853441",
+        "way/213853442",
+        "way/213853443",
+        "way/213853444",
+        "way/213847694",
+        "way/213847696",
+        "way/213847698",
+        "way/213847700"
       ]
     }
   ],
