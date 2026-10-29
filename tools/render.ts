@@ -19,7 +19,8 @@ export const NIGHT_BACKGROUND = [24, 29, 42]
 /**
  * Night, as the map draws it: unlit surfaces sink to a dim blue, windows
  * and entrances glow warm, `lamp*` materials are drawn as their light (and
- * not at all by day), and
+ * not at all by day), `neon*` materials (lit signs) glow in their own
+ * colour, and
  * the `_FLOODLIGHT` attribute washes a surface back toward its own colour
  * in warm white light. Linear-light colours.
  */
@@ -30,6 +31,8 @@ const NIGHT = {
   lamp: linear('#ffe7c4'), flood: linear('#ffeacf'), floodStrength: 0.9,
 }
 const glows = (name: string) => name.startsWith('lamp') ? NIGHT.lamp : name.startsWith('window') || name === 'entrance' ? NIGHT.window : null
+/** A lit sign's own colour at night: a little brighter than by day. */
+export const neonGlow = (c: number[]) => c.map((v) => Math.min(1, v * 1.3 + 0.04))
 
 /** 8-bit RGBA PNG → bitmap. Enough PNG for generator textures and photos saved as PNG. */
 export function decodePng(png: Uint8Array): Bitmap {
@@ -152,7 +155,7 @@ export function render(scene: Scene, w: number, h: number, az: number, el: numbe
   for (const prim of primitives) {
     // The map draws lamps only at night.
     if (!night && (prim.mat.name ?? '').startsWith('lamp')) continue
-    const { p, n, uv, ix, mat, flood } = prim, glow = night ? glows(mat.name ?? '') : null, pbr = mat.pbrMetallicRoughness, tex = pbr.baseColorTexture ? textures[gltf.textures[pbr.baseColorTexture.index].source] : null
+    const { p, n, uv, ix, mat, flood } = prim, glow = night ? glows(mat.name ?? '') : null, neon = night && (mat.name ?? '').startsWith('neon'), pbr = mat.pbrMetallicRoughness, tex = pbr.baseColorTexture ? textures[gltf.textures[pbr.baseColorTexture.index].source] : null
     const pos: number[][] = [], normal: number[][] = []
     for (let i = 0; i < p.length / 3; i++) {
       const v = [p[i * 3] - target[0], -p[i * 3 + 2] - target[1], p[i * 3 + 1] - target[2]]
@@ -208,7 +211,7 @@ export function render(scene: Scene, w: number, h: number, az: number, el: numbe
         for (let j = 0; j < 3; j++) {
           const dim = color[j] * Math.pow(light, 2.2) * NIGHT.dim + NIGHT.tint[j]
           const lit = color[j] * NIGHT.flood[j] * Math.pow(light, 2.2)
-          buffer[at * 3 + j] = glow ? glow[j] : Math.min(1, dim + (lit - dim) * f)
+          buffer[at * 3 + j] = glow ? glow[j] : neon ? neonGlow(color)[j] : Math.min(1, dim + (lit - dim) * f)
         }
       }
     }

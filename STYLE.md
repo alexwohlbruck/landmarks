@@ -150,6 +150,14 @@ Shadows fall on the ground under the model.
 
 ## Night
 
+Every landmark is also seen at night, so design its night look on purpose.
+Before finishing, ask what is lit on the real building after dark, from
+night photos where they exist: a neon or illuminated sign, a lit crown or
+spire, floodlit stone, lit windows, cable or lantern lights. Give each the
+material or attribute below, and check `bun run preview <id> --night`
+beside a night photo. What is dark in reality (glass roofs, unlit walls)
+stays dark.
+
 The map lights a landmark at night by glTF material name, the same
 convention as Open Landmarks. Colours stay as they are by day; the name
 only decides what glows.
@@ -160,6 +168,11 @@ only decides what glows.
   unique in a GLB, so a model with several window colours names the rest
   `window-2`, `window-3` and so on: any name starting with `window` is a
   window.
+- **`neon`**: a lit sign that glows in its own colour at night: neon or
+  illuminated letters, a sign's lit face, coloured crown lighting. Drawn in
+  its day colour by day. Any name starting with `neon` is neon
+  (`finish('neon-domino-yellow', 0xe9b93c)`), so a sign keeps its real
+  colour.
 - **`glass`**: structural glazing that stays dark: atria, skylights, glass
   roofs and crowns, the Rose Center's cube.
 - **`entrance`**: a main entrance's doors or glazing, which glow at night.

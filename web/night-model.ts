@@ -5,7 +5,8 @@ const floodColor = linear('#ffeacf')
 const lampColor = linear('#ffe7c4')
 /** Same night palette and authored material conventions as tools/render.ts. */
 export function nightColor(base: number[], name: string, flood: number, light = 1, emissive: number[] = []): number[] {
-  const glow = name.startsWith('lamp') ? lampColor : name.startsWith('window') || name === 'entrance' ? [1, 0.72, 0.4] : null
+  const glow = name.startsWith('lamp') ? lampColor : name.startsWith('window') || name === 'entrance' ? [1, 0.72, 0.4]
+    : name.startsWith('neon') ? base.slice(0, 3).map(v => Math.min(1, v * 1.3 + 0.04)) : null
   const f = Math.max(0, Math.min(1, flood)) * 0.9
   return base.slice(0, 3).map((v, i) => {
     const dim = v * light * 0.16 + [0.012, 0.016, 0.03][i]

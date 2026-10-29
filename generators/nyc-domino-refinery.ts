@@ -62,7 +62,7 @@
  * window rhythm there is assumed the same as the river front.
  */
 import { Part, type V3 } from './mesh'
-import { PALETTE, finish, windowVariant } from './palette'
+import { PALETTE, finish } from './palette'
 import { cbox, rect } from './dc-white-house'
 import { pslab, saveModel, type XY } from './nyc-dime-savings-bank'
 import { Pen, strokes, type Pt } from './lettering'
@@ -248,9 +248,9 @@ cbox(brick, rect(-27.3, X0 + 0.1, -5.05, 5.0), 52.6, 54, { b: 0.2, top: roof, bo
 
 await saveModel('nyc-domino-refinery', 'The Refinery at Domino', [
   { part: brick, material: finish('domino-brick', 0xbd8166) },
-  { part: glass, material: windowVariant(2, 0x93adbd) },
+  { part: glass, material: { ...PALETTE.glass, color: 0x93adbd } },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
-  { part: sign, material: finish('domino-sign-yellow', 0xe9b93c) },
+  { part: sign, material: finish('neon-domino-yellow', 0xe9b93c) },
   { part: steel, material: finish('domino-steel', 0xd9dcdc) },
 ], { source: 'generators/nyc-domino-refinery.ts', bearing: 19.6, osm: 'way/633535211', height: 78.5 }, 6500)
