@@ -14900,6 +14900,103 @@
       ],
       "file": "models/nyc-soarin-eagle.glb",
       "source": "generators/nyc-soarin-eagle.ts"
+    },
+    {
+      "id": "nyc-thunderbolt",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "coaster",
+      "tags": [
+        "roller-coaster",
+        "amusement-park",
+        "coney-island"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Thunderbolt 2014-08-11 view from west",
+          "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt_2014-08-11_view_from_west.JPG",
+          "author": "Qaswed",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Thunderbolt 2014-08-11 view from east",
+          "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt_2014-08-11_view_from_east.JPG",
+          "author": "Qaswed",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Thunderbolt roller coaster, Coney Island (June 2016)",
+          "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt_roller_coaster,_Coney_Island_(June_2016).jpg",
+          "author": "MusikAnimal",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Thunderbolt Coney Island",
+          "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt_Coney_Island.jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Thunderbolt Coney Island 2",
+          "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt_Coney_Island_2.jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Thunderbolt rollercoaster 2014 Coney Island",
+          "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt_rollercoaster_2014_Coney_Island.JPG",
+          "author": "Steven Lek",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Jul 2019 06",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_06.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Jul 2019 07",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_07.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Jul 2019 08",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_08.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Jul 2019 19",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_19.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Is Thunderbolt 03",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Is_Thunderbolt_03.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-thunderbolt.glb",
+      "source": "generators/nyc-thunderbolt.ts"
     }
   ],
   "landmarks": [
@@ -26637,6 +26734,26 @@
       "minzoom": 16,
       "wikidata": "Q7549857",
       "replaces": []
+    },
+    {
+      "id": "nyc-thunderbolt",
+      "name": "Thunderbolt",
+      "model": "nyc-thunderbolt",
+      "place": "new-york-area",
+      "lng": -73.9822942,
+      "lat": 40.5741951,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q17033480",
+      "replaces": [
+        "way/405891529",
+        "way/1017690947",
+        "way/654800206",
+        "way/355344498",
+        "way/654800208",
+        "way/654800209"
+      ]
     }
   ],
   "places": [
