@@ -14576,6 +14576,98 @@
       ],
       "file": "models/nyc-domino-refinery.glb",
       "source": "generators/nyc-domino-refinery.ts"
+    },
+    {
+      "id": "nyc-battery-maritime-building",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "ferry-terminal",
+        "beaux-arts",
+        "transport"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Battery-Maritime-Building Water-View 2021-06-16 15-06.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery-Maritime-Building_Water-View_2021-06-16_15-06.jpg",
+          "author": "Axel Tschentscher",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Battery Maritime Building slips.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building_slips.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Battery Maritime Building, New York 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building,_New_York_1.jpg",
+          "author": "Mike Peel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Battery Maritime Building.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "South Ferry td (2019-07-07) 30 - Battery Maritime Building.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:South_Ferry_td_(2019-07-07)_30_-_Battery_Maritime_Building.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Battery Maritime Building (52302776365).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building_(52302776365).jpg",
+          "author": "Ajay Suresh",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Battery Maritime Building desde el río del este (10074792254).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building_desde_el_r%C3%ADo_del_este-Battery_Maritime_Building_from_the_East_River_(10074792254).jpg",
+          "author": "Andres Alvarado",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Battery Maritime Building April 2022.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building_April_2022.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Battery Maritime Building January 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building_January_2023.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Manhattan Island Ferry Terminals photo Don Ramey Logan.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Manhattan_Island_Ferry_Terminals_photo_Don_Ramey_Logan.jpg",
+          "author": "Don Ramey Logan",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/nyc-battery-maritime-building.glb",
+      "source": "generators/nyc-battery-maritime-building.ts"
     }
   ],
   "landmarks": [
@@ -26238,6 +26330,27 @@
         "way/1243853674",
         "way/1243853675",
         "way/1243853676"
+      ]
+    },
+    {
+      "id": "nyc-battery-maritime-building",
+      "name": "Battery Maritime Building",
+      "model": "nyc-battery-maritime-building",
+      "place": "new-york-area",
+      "lng": -74.0117334,
+      "lat": 40.7010564,
+      "bearing": 343.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2687430",
+      "replaces": [
+        "relation/2848176",
+        "way/169362470",
+        "way/213867489",
+        "way/213867490",
+        "way/213867491",
+        "way/213867492",
+        "way/213871106"
       ]
     }
   ],
