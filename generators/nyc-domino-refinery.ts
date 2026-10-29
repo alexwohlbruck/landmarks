@@ -115,8 +115,9 @@ wall(Y1, 'y', 1, XM + 0.5, X1 - 1, EAST)
     const t0 = (k / N) * Math.PI, t1 = ((k + 1) / N) * Math.PI
     const a: V3 = pt(t0, -GY), b: V3 = pt(t1, -GY), c: V3 = pt(t1, GY), d: V3 = pt(t0, GY)
     const na = nrm(t0), nb = nrm(t1)
-    glass.tri(a, b, c, undefined, undefined, undefined, [na, nb, nb])
-    glass.tri(a, c, d, undefined, undefined, undefined, [na, nb, na])
+    // wound counter-clockwise from outside: the map culls back faces
+    glass.tri(a, c, b, undefined, undefined, undefined, [na, nb, nb])
+    glass.tri(a, d, c, undefined, undefined, undefined, [na, na, nb])
     // flat ends: a fan from the springing line's midpoint
     const m0: V3 = [cx, -GY, GL1], m1: V3 = [cx, GY, GL1]
     glass.tri(m0, pt(t0, -GY), pt(t1, -GY))
