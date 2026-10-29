@@ -14124,6 +14124,72 @@
       ],
       "tags": [],
       "reviewStatus": "unreviewed"
+    },
+    {
+      "id": "nyc-st-george-terminal",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "ferry-terminal",
+        "transport"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "St. George Ferry Terminal, Staten Island, New York City, 20231002 1621.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St._George_Ferry_Terminal,_Staten_Island,_New_York_City,_20231002_1621.jpg",
+          "author": "Jakub Hałun",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Docking at St. George Terminal (9739245386).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Docking_at_St._George_Terminal_(9739245386).jpg",
+          "author": "Shannon from Huntsville, USA",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Staten Island Ferry Terminal (29271095528).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Staten_Island_Ferry_Terminal_(29271095528).jpg",
+          "author": "Eric Kilby",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "St. George from Staten Island Ferry (7231533884).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St._George_from_Staten_Island_Ferry_(7231533884).jpg",
+          "author": "InSapphoWeTrust",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Staten Island Ferry Terminal (7231534458).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Staten_Island_Ferry_Terminal_(7231534458).jpg",
+          "author": "InSapphoWeTrust",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "St. George Terminal td (2022-06-19) 001.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St._George_Terminal_td_(2022-06-19)_001.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-st-george-terminal.glb",
+      "source": "generators/nyc-st-george-terminal.ts"
     }
   ],
   "landmarks": [
@@ -25686,6 +25752,21 @@
         "relation/18229983"
       ],
       "place": "camp-north-end"
+    },
+    {
+      "id": "nyc-st-george-terminal",
+      "name": "St. George Ferry Terminal",
+      "model": "nyc-st-george-terminal",
+      "place": "new-york-area",
+      "lng": -74.0727943,
+      "lat": 40.6441873,
+      "bearing": 56,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5927015",
+      "replaces": [
+        "way/241853804"
+      ]
     }
   ],
   "places": [
