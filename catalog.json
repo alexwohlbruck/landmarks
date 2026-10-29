@@ -15863,6 +15863,67 @@
       ],
       "file": "models/nyc-jfk-terminal-7.glb",
       "source": "generators/nyc-jfk-terminal-7.ts"
+    },
+    {
+      "id": "nyc-jfk-terminal-1",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "At New York City 2024 150.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:At_New_York_City_2024_150.jpg",
+          "author": "Mike Peel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "JFK-Terminal1-VariousAirlinesAerial (36914267725).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK-Terminal1-VariousAirlinesAerial_(36914267725).jpg",
+          "author": "formulanone",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "John F. Kennedy Airport 2021a.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:John_F._Kennedy_Airport_2021a.jpg",
+          "author": "Antony-22",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "JFK Airport td (2021-10-11) 050 - Van Wyck Expressway, Terminal 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Airport_td_(2021-10-11)_050_-_Van_Wyck_Expressway,_Terminal_1.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Terminal 1 JFK Departures.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Terminal_1_JFK_Departures.jpg",
+          "author": "Mybirthday647",
+          "license": "CC0"
+        }
+      ],
+      "file": "models/nyc-jfk-terminal-1.glb",
+      "source": "generators/nyc-jfk-terminal-1.ts"
     }
   ],
   "landmarks": [
@@ -27864,6 +27925,21 @@
         "relation/3778808"
       ],
       "wikidata": "Q55855385"
+    },
+    {
+      "id": "nyc-jfk-terminal-1",
+      "name": "JFK Airport Terminal 1",
+      "model": "nyc-jfk-terminal-1",
+      "place": "new-york-area",
+      "lng": -73.7910574,
+      "lat": 40.6428633,
+      "bearing": 59.9,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/284907685"
+      ],
+      "wikidata": "Q55855378"
     }
   ],
   "places": [
