@@ -15237,6 +15237,67 @@
       ],
       "file": "models/nyc-jfk-control-tower.glb",
       "source": "generators/nyc-jfk-control-tower.ts"
+    },
+    {
+      "id": "nyc-jfk-terminal-4",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "JFKNewYorkTerm4 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFKNewYorkTerm4_1.jpg",
+          "author": "Mike Powell",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Airtrain Terminal 4 JFK NY1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Airtrain_Terminal_4_JFK_NY1.jpg",
+          "author": "Acroterion",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "JFK Terminal 4 (9690230116).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_4_(9690230116).jpg",
+          "author": "Daniel from Calgary, Canada",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "JFK Terminal 4 June 2019 departures.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_4_June_2019_departures.jpg",
+          "author": "Mybirthday647",
+          "license": "CC0"
+        },
+        {
+          "title": "John F. Kennedy International Airport (JFK) Terminal 4 Operations.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:John_F._Kennedy_International_Airport_(JFK)_Terminal_4_Operations.jpg",
+          "author": "Oleg Yunakov",
+          "license": "CC0"
+        }
+      ],
+      "file": "models/nyc-jfk-terminal-4.glb",
+      "source": "generators/nyc-jfk-terminal-4.ts"
     }
   ],
   "landmarks": [
@@ -27055,6 +27116,21 @@
       "replaces": [
         "way/284907735"
       ]
+    },
+    {
+      "id": "nyc-jfk-terminal-4",
+      "name": "JFK Airport Terminal 4",
+      "model": "nyc-jfk-terminal-4",
+      "place": "new-york-area",
+      "lng": -73.7813875,
+      "lat": 40.6421766,
+      "bearing": -29.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/284907688"
+      ],
+      "wikidata": "Q55855382"
     }
   ],
   "places": [
