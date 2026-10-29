@@ -14997,6 +14997,86 @@
       ],
       "file": "models/nyc-thunderbolt.glb",
       "source": "generators/nyc-thunderbolt.ts"
+    },
+    {
+      "id": "nyc-lga-marine-air-terminal",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "art-deco",
+        "airport",
+        "terminal"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Marine Air Terminal Nov 2025 17.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal_Nov_2025_17.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Marine Air Terminal Nov 2025 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal_Nov_2025_01.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Marine Air Terminal Nov 2025 04.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal_Nov_2025_04.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Marine Air Terminal Nov 2025 05.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal_Nov_2025_05.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Marine Air Terminal Nov 2025 10.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal_Nov_2025_10.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Marine Air Terminal Nov 2025 13.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal_Nov_2025_13.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Marine Air Terminal, LaGuardia, corner.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal,_LaGuardia,_corner.jpg",
+          "author": "karla kaulfuss",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Marine Air Terminal, LaGuardia, facade.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal,_LaGuardia,_facade.jpg",
+          "author": "karla kaulfuss",
+          "license": "CC BY 2.0"
+        }
+      ],
+      "file": "models/nyc-lga-marine-air-terminal.glb",
+      "source": "generators/nyc-lga-marine-air-terminal.ts"
     }
   ],
   "landmarks": [
@@ -26754,6 +26834,21 @@
         "way/654800208",
         "way/654800209"
       ]
+    },
+    {
+      "id": "nyc-lga-marine-air-terminal",
+      "name": "Marine Air Terminal",
+      "model": "nyc-lga-marine-air-terminal",
+      "place": "new-york-area",
+      "lng": -73.8857255,
+      "lat": 40.7735292,
+      "bearing": -8,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/284852174"
+      ],
+      "wikidata": "Q6764005"
     }
   ],
   "places": [
