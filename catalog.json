@@ -14447,6 +14447,73 @@
       ],
       "file": "models/nyc-brooklyn-public-library.glb",
       "source": "generators/nyc-brooklyn-public-library.ts"
+    },
+    {
+      "id": "nyc-kings-theatre",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "theatre",
+        "movie-palace"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Lowes Kings Flatbush front jeh.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Lowes_Kings_Flatbush_front_jeh.JPG",
+          "author": "Jim.henderson",
+          "license": "Public domain"
+        },
+        {
+          "title": "Kings Theatre Flatbush finished jeh.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Kings_Theatre_Flatbush_finished_jeh.jpg",
+          "author": "Jim.henderson",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Loew's Kings Theater 1027 Flatbush Avenue.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Loew%27s_Kings_Theater_1027_Flatbush_Avenue.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Kings Theatre Exterior 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Kings_Theatre_Exterior_01.jpg",
+          "author": "Alexandra Silversmith",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Kings Brooklyn Oct2014.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Kings_Brooklyn_Oct2014.jpg",
+          "author": "Keith",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Kings Theater (16318457690).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Kings_Theater_(16318457690).jpg",
+          "author": "Maxim Pierre",
+          "license": "CC BY 2.0"
+        }
+      ],
+      "file": "models/nyc-kings-theatre.glb",
+      "source": "generators/nyc-kings-theatre.ts"
     }
   ],
   "landmarks": [
@@ -26068,6 +26135,21 @@
       "wikidata": "Q5061358",
       "replaces": [
         "way/250229992"
+      ]
+    },
+    {
+      "id": "nyc-kings-theatre",
+      "name": "Kings Theatre",
+      "model": "nyc-kings-theatre",
+      "place": "new-york-area",
+      "lng": -73.9573208,
+      "lat": 40.6459848,
+      "bearing": 357.1,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q6413028",
+      "replaces": [
+        "way/250132955"
       ]
     }
   ],
