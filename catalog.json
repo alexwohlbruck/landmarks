@@ -14190,6 +14190,92 @@
       ],
       "file": "models/nyc-st-george-terminal.glb",
       "source": "generators/nyc-st-george-terminal.ts"
+    },
+    {
+      "id": "nyc-dime-savings-bank",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "bank",
+        "neoclassical",
+        "dome"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Dime Savings Bank Brooklyn.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank_Brooklyn.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Dime Savings Bank - Brooklyn, NY - DSC07874.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank_-_Brooklyn,_NY_-_DSC07874.JPG",
+          "author": "Daderot",
+          "license": "CC0"
+        },
+        {
+          "title": "Dime Savings Bank - Brooklyn, NY - DSC07877.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank_-_Brooklyn,_NY_-_DSC07877.JPG",
+          "author": "Daderot",
+          "license": "CC0"
+        },
+        {
+          "title": "Dime Savings Bank of New York, Sept 2017.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank_of_New_York,_Sept_2017.jpg",
+          "author": "Thomson200",
+          "license": "CC0"
+        },
+        {
+          "title": "Dime Savings Bank Building 005.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank_Building_005.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Dime Savings Bank Building 001.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank_Building_001.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Dime Savings Bank, City Point.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank,_City_Point.jpg",
+          "author": "Nycgirl1997",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Dime Savings Bank.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank.jpg",
+          "author": "Blue23679",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Downtown Brooklyn December 2021 016.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Downtown_Brooklyn_December_2021_016.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-dime-savings-bank.glb",
+      "source": "generators/nyc-dime-savings-bank.ts"
     }
   ],
   "landmarks": [
@@ -25766,6 +25852,21 @@
       "wikidata": "Q5927015",
       "replaces": [
         "way/241853804"
+      ]
+    },
+    {
+      "id": "nyc-dime-savings-bank",
+      "name": "Dime Savings Bank of Brooklyn",
+      "model": "nyc-dime-savings-bank",
+      "place": "new-york-area",
+      "lng": -73.9825285,
+      "lat": 40.6902679,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/248156228",
+        "way/700241894"
       ]
     }
   ],
