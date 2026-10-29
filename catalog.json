@@ -12089,6 +12089,35 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "nyc-brooklyn-tower",
+      "file": "models/nyc-brooklyn-tower.glb",
+      "license": "CC0-1.0",
+      "source": "generators/nyc-brooklyn-tower.ts",
+      "type": "tower",
+      "collection": "landmarks",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "role": "creator",
+          "github": "alexwohlbruck"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "tags": [
+        "skyscraper",
+        "residential",
+        "supertall"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
       "id": "nyc-george-washington-bridge",
       "file": "models/nyc-george-washington-bridge.glb",
       "license": "CC0-1.0",
@@ -14095,6 +14124,1532 @@
       ],
       "tags": [],
       "reviewStatus": "unreviewed"
+    },
+    {
+      "id": "nyc-st-george-terminal",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "ferry-terminal",
+        "transport"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "St. George Ferry Terminal, Staten Island, New York City, 20231002 1621.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St._George_Ferry_Terminal,_Staten_Island,_New_York_City,_20231002_1621.jpg",
+          "author": "Jakub Hałun",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Docking at St. George Terminal (9739245386).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Docking_at_St._George_Terminal_(9739245386).jpg",
+          "author": "Shannon from Huntsville, USA",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Staten Island Ferry Terminal (29271095528).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Staten_Island_Ferry_Terminal_(29271095528).jpg",
+          "author": "Eric Kilby",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "St. George from Staten Island Ferry (7231533884).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St._George_from_Staten_Island_Ferry_(7231533884).jpg",
+          "author": "InSapphoWeTrust",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Staten Island Ferry Terminal (7231534458).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Staten_Island_Ferry_Terminal_(7231534458).jpg",
+          "author": "InSapphoWeTrust",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "St. George Terminal td (2022-06-19) 001.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St._George_Terminal_td_(2022-06-19)_001.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-st-george-terminal.glb",
+      "source": "generators/nyc-st-george-terminal.ts"
+    },
+    {
+      "id": "nyc-dime-savings-bank",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "bank",
+        "neoclassical",
+        "dome"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Dime Savings Bank Brooklyn.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank_Brooklyn.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Dime Savings Bank - Brooklyn, NY - DSC07874.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank_-_Brooklyn,_NY_-_DSC07874.JPG",
+          "author": "Daderot",
+          "license": "CC0"
+        },
+        {
+          "title": "Dime Savings Bank - Brooklyn, NY - DSC07877.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank_-_Brooklyn,_NY_-_DSC07877.JPG",
+          "author": "Daderot",
+          "license": "CC0"
+        },
+        {
+          "title": "Dime Savings Bank of New York, Sept 2017.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank_of_New_York,_Sept_2017.jpg",
+          "author": "Thomson200",
+          "license": "CC0"
+        },
+        {
+          "title": "Dime Savings Bank Building 005.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank_Building_005.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Dime Savings Bank Building 001.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank_Building_001.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Dime Savings Bank, City Point.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank,_City_Point.jpg",
+          "author": "Nycgirl1997",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Dime Savings Bank.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dime_Savings_Bank.jpg",
+          "author": "Blue23679",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Downtown Brooklyn December 2021 016.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Downtown_Brooklyn_December_2021_016.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-dime-savings-bank.glb",
+      "source": "generators/nyc-dime-savings-bank.ts"
+    },
+    {
+      "id": "nyc-brooklyn-borough-hall",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "government",
+        "greek-revival",
+        "cupola"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Brooklyn Borough Hall July 2026.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_July_2026.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_01.jpg",
+          "author": "Ad Meskens",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall November 2022.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_November_2022.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall January 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_January_2023.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall January 2023 001.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_January_2023_001.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall January 2023 002.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_January_2023_002.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall bell tower from the south.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_bell_tower_from_the_south.jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall 2.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_2.JPG",
+          "author": "Michelb101",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/nyc-brooklyn-borough-hall.glb",
+      "source": "generators/nyc-brooklyn-borough-hall.ts"
+    },
+    {
+      "id": "nyc-brooklyn-public-library",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "library",
+        "art-deco"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Brooklyn Public Library (48291925691).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_(48291925691).jpg",
+          "author": "Ajay Suresh",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Brooklyn Public Library - Central Library (48292030712).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_-_Central_Library_(48292030712).jpg",
+          "author": "Ajay Suresh",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Brooklyn Public Library (93880p).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_(93880p).jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Public Library Jan 2010.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_Jan_2010.jpg",
+          "author": "Chris Pruitt",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Brooklyn Public Library (2625883748).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_(2625883748).jpg",
+          "author": "David Berkowitz",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Brooklyn Public Library by DS.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_by_DS.JPG",
+          "author": "David Shankbone",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Brooklyn Public Library, central branch.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library,_central_branch.jpg",
+          "author": "Davidwtucker77",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Public Library sunset jeh.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_sunset_jeh.JPG",
+          "author": "Jim.henderson",
+          "license": "Public domain"
+        },
+        {
+          "title": "BPL Central Library 001.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:BPL_Central_Library_001.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Library side photo Chris Elias 02.png",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Library_side_photo_Chris_Elias_02.png",
+          "author": "Mobyblu",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/nyc-brooklyn-public-library.glb",
+      "source": "generators/nyc-brooklyn-public-library.ts"
+    },
+    {
+      "id": "nyc-kings-theatre",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "theatre",
+        "movie-palace"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Lowes Kings Flatbush front jeh.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Lowes_Kings_Flatbush_front_jeh.JPG",
+          "author": "Jim.henderson",
+          "license": "Public domain"
+        },
+        {
+          "title": "Kings Theatre Flatbush finished jeh.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Kings_Theatre_Flatbush_finished_jeh.jpg",
+          "author": "Jim.henderson",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Loew's Kings Theater 1027 Flatbush Avenue.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Loew%27s_Kings_Theater_1027_Flatbush_Avenue.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Kings Theatre Exterior 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Kings_Theatre_Exterior_01.jpg",
+          "author": "Alexandra Silversmith",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Kings Brooklyn Oct2014.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Kings_Brooklyn_Oct2014.jpg",
+          "author": "Keith",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Kings Theater (16318457690).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Kings_Theater_(16318457690).jpg",
+          "author": "Maxim Pierre",
+          "license": "CC BY 2.0"
+        }
+      ],
+      "file": "models/nyc-kings-theatre.glb",
+      "source": "generators/nyc-kings-theatre.ts"
+    },
+    {
+      "id": "nyc-domino-refinery",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "industrial",
+        "adaptive-reuse",
+        "sign"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Domino Refinery in 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Domino_Refinery_in_2023.jpg",
+          "author": "Kevin Payravi",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Domino Refinery in 2023 (2).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Domino_Refinery_in_2023_(2).jpg",
+          "author": "Kevin Payravi",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Domino Refinery and One Domino Square under construction (2023).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Domino_Refinery_and_One_Domino_Square_under_construction_(2023).jpg",
+          "author": "Kevin Payravi",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Domino Sugar Refinery, New York City, 20231001 1133 1047.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Domino_Sugar_Refinery,_New_York_City,_20231001_1133_1047.jpg",
+          "author": "Jakub Hałun",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Domino Sugar Refinery June 2022.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Domino_Sugar_Refinery_June_2022.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-domino-refinery.glb",
+      "source": "generators/nyc-domino-refinery.ts"
+    },
+    {
+      "id": "nyc-battery-maritime-building",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "ferry-terminal",
+        "beaux-arts",
+        "transport"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Battery-Maritime-Building Water-View 2021-06-16 15-06.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery-Maritime-Building_Water-View_2021-06-16_15-06.jpg",
+          "author": "Axel Tschentscher",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Battery Maritime Building slips.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building_slips.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Battery Maritime Building, New York 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building,_New_York_1.jpg",
+          "author": "Mike Peel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Battery Maritime Building.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "South Ferry td (2019-07-07) 30 - Battery Maritime Building.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:South_Ferry_td_(2019-07-07)_30_-_Battery_Maritime_Building.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Battery Maritime Building (52302776365).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building_(52302776365).jpg",
+          "author": "Ajay Suresh",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Battery Maritime Building desde el río del este (10074792254).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building_desde_el_r%C3%ADo_del_este-Battery_Maritime_Building_from_the_East_River_(10074792254).jpg",
+          "author": "Andres Alvarado",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Battery Maritime Building April 2022.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building_April_2022.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Battery Maritime Building January 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Battery_Maritime_Building_January_2023.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Manhattan Island Ferry Terminals photo Don Ramey Logan.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Manhattan_Island_Ferry_Terminals_photo_Don_Ramey_Logan.jpg",
+          "author": "Don Ramey Logan",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/nyc-battery-maritime-building.glb",
+      "source": "generators/nyc-battery-maritime-building.ts"
+    },
+    {
+      "id": "nyc-whitehall-terminal",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "ferry-terminal",
+        "transport",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Staten Island Ferry Whitehall Terminal (48126534661).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Staten_Island_Ferry_Whitehall_Terminal_(48126534661).jpg",
+          "author": "Ajay Suresh",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Whitehall Terminal vc.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Whitehall_Terminal_vc.jpg",
+          "author": "Charles Smith",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "South Ferry td (2019-07-18) 09 - Whitehall Terminal.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:South_Ferry_td_(2019-07-18)_09_-_Whitehall_Terminal.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "South Ferry td (2019-07-07) 03 - Whitehall Terminal.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:South_Ferry_td_(2019-07-07)_03_-_Whitehall_Terminal.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Staten Island Ferry Whitehall Terminal.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Staten_Island_Ferry_Whitehall_Terminal.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Staten Island Ferry Whitehall Terminal photo Don Ramey Logan.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Staten_Island_Ferry_Whitehall_Terminal_photo_Don_Ramey_Logan.jpg",
+          "author": "Don Ramey Logan",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Manhattan Island Ferry Terminals photo Don Ramey Logan.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Manhattan_Island_Ferry_Terminals_photo_Don_Ramey_Logan.jpg",
+          "author": "Don Ramey Logan",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Andrew J. Barberi at Staten Island Ferry Whitehall Terminal.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Andrew_J._Barberi_at_Staten_Island_Ferry_Whitehall_Terminal.JPG",
+          "author": "Opencooper",
+          "license": "CC0"
+        },
+        {
+          "title": "Staten Island Ferry terminal.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Staten_Island_Ferry_terminal.jpg",
+          "author": "Daniel Schwen",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-whitehall-terminal.glb",
+      "source": "generators/nyc-whitehall-terminal.ts"
+    },
+    {
+      "id": "nyc-bb-carousell",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "ride",
+      "tags": [
+        "carousel",
+        "amusement-park",
+        "coney-island",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "B&B Carousel March jeh",
+          "url": "https://commons.wikimedia.org/wiki/File:B%26B_Carousel_March_jeh.JPG",
+          "author": "Jim.henderson",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Carousel at Coney Island",
+          "url": "https://commons.wikimedia.org/wiki/File:Carousel_at_Coney_Island.jpg",
+          "author": "Gswaggy23",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Coney Is Beach td (2018-09-03) 02 - Steeplechase Plaza",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Is_Beach_td_(2018-09-03)_02_-_Steeplechase_Plaza.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Is Beach td (2018-09-03) 01 - Steeplechase Plaza",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Is_Beach_td_(2018-09-03)_01_-_Steeplechase_Plaza.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Island Boardwalk with B&B Carousell",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Boardwalk_with_B%26B_Carousell.png",
+          "author": "Nic shad",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Steeplechase Plaza W16 carousel pavilion construction jeh",
+          "url": "https://commons.wikimedia.org/wiki/File:Steeplechase_Plaza_W16_carousel_pavilion_construction_jeh.jpg",
+          "author": "Jim.henderson",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Jul 2019 36",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_36.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-bb-carousell.glb",
+      "source": "generators/nyc-bb-carousell.ts"
+    },
+    {
+      "id": "nyc-soarin-eagle",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "coaster",
+      "tags": [
+        "roller-coaster",
+        "amusement-park",
+        "coney-island"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Coney Island Brooklyn July 2024 012",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_July_2024_012.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn July 2024 018",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_July_2024_018.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn July 2024 019",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_July_2024_019.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Sep 2019 06",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Sep_2019_06.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Jul 2019 55",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_55.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Soarin' Eagle 1",
+          "url": "https://commons.wikimedia.org/wiki/File:Soarin%27_Eagle_1.jpg",
+          "author": "Eden, Janine and Jim",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Soaring Eagle Scream Zone Luna Park Coney Island",
+          "url": "https://commons.wikimedia.org/wiki/File:Soaring_Eagle_Scream_Zone_Luna_Park_Coney_Island.JPG",
+          "author": "Eliedion",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/nyc-soarin-eagle.glb",
+      "source": "generators/nyc-soarin-eagle.ts"
+    },
+    {
+      "id": "nyc-thunderbolt",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "coaster",
+      "tags": [
+        "roller-coaster",
+        "amusement-park",
+        "coney-island"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Thunderbolt 2014-08-11 view from west",
+          "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt_2014-08-11_view_from_west.JPG",
+          "author": "Qaswed",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Thunderbolt 2014-08-11 view from east",
+          "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt_2014-08-11_view_from_east.JPG",
+          "author": "Qaswed",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Thunderbolt roller coaster, Coney Island (June 2016)",
+          "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt_roller_coaster,_Coney_Island_(June_2016).jpg",
+          "author": "MusikAnimal",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Thunderbolt Coney Island",
+          "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt_Coney_Island.jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Thunderbolt Coney Island 2",
+          "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt_Coney_Island_2.jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Thunderbolt rollercoaster 2014 Coney Island",
+          "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt_rollercoaster_2014_Coney_Island.JPG",
+          "author": "Steven Lek",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Jul 2019 06",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_06.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Jul 2019 07",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_07.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Jul 2019 08",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_08.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Jul 2019 19",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_19.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Is Thunderbolt 03",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Is_Thunderbolt_03.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-thunderbolt.glb",
+      "source": "generators/nyc-thunderbolt.ts"
+    },
+    {
+      "id": "nyc-lga-marine-air-terminal",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "art-deco",
+        "airport",
+        "terminal"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Marine Air Terminal Nov 2025 17.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal_Nov_2025_17.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Marine Air Terminal Nov 2025 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal_Nov_2025_01.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Marine Air Terminal Nov 2025 04.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal_Nov_2025_04.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Marine Air Terminal Nov 2025 05.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal_Nov_2025_05.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Marine Air Terminal Nov 2025 10.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal_Nov_2025_10.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Marine Air Terminal Nov 2025 13.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal_Nov_2025_13.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Marine Air Terminal, LaGuardia, corner.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal,_LaGuardia,_corner.jpg",
+          "author": "karla kaulfuss",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Marine Air Terminal, LaGuardia, facade.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Marine_Air_Terminal,_LaGuardia,_facade.jpg",
+          "author": "karla kaulfuss",
+          "license": "CC BY 2.0"
+        }
+      ],
+      "file": "models/nyc-lga-marine-air-terminal.glb",
+      "source": "generators/nyc-lga-marine-air-terminal.ts"
+    },
+    {
+      "id": "nyc-lga-control-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "tower",
+      "tags": [
+        "airport",
+        "control-tower",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Grand Central Pkwy td (2022-01-14) 043 - LaGuardia Airport Terminal B Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Grand_Central_Pkwy_td_(2022-01-14)_043_-_LaGuardia_Airport_Terminal_B_Tower.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Grand Central Pkwy td (2022-01-14) 041 - LaGuardia Airport Terminal B Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Grand_Central_Pkwy_td_(2022-01-14)_041_-_LaGuardia_Airport_Terminal_B_Tower.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Grand Central Pkwy td (2022-01-14) 045 - LaGuardia Airport Terminal B.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Grand_Central_Pkwy_td_(2022-01-14)_045_-_LaGuardia_Airport_Terminal_B.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-lga-control-tower.glb",
+      "source": "generators/nyc-lga-control-tower.ts"
+    },
+    {
+      "id": "nyc-lga-terminal-b",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal",
+        "modern",
+        "bridge"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Grand Central Pkwy td (2022-01-14) 043 - LaGuardia Airport Terminal B Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Grand_Central_Pkwy_td_(2022-01-14)_043_-_LaGuardia_Airport_Terminal_B_Tower.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Grand Central Pkwy td (2022-01-14) 044 - LaGuardia Airport Terminal B.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Grand_Central_Pkwy_td_(2022-01-14)_044_-_LaGuardia_Airport_Terminal_B.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Grand Central Pkwy td (2022-01-14) 041 - LaGuardia Airport Terminal B Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Grand_Central_Pkwy_td_(2022-01-14)_041_-_LaGuardia_Airport_Terminal_B_Tower.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "LGA Airport Terminal B Departures.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:LGA_Airport_Terminal_B_Departures.jpg",
+          "author": "JakeTheFanner",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-lga-terminal-b.glb",
+      "source": "generators/nyc-lga-terminal-b.ts"
+    },
+    {
+      "id": "nyc-jfk-control-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "tower",
+      "tags": [
+        "airport",
+        "control-tower",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "ControlTowerJFK-July2012-01.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:ControlTowerJFK-July2012-01.JPG",
+          "author": "Rehman Abubakr",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "JFK Airport Tower 02.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Airport_Tower_02.JPG",
+          "author": "Ad Meskens",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "JFK Airport Tower and Terminal.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Airport_Tower_and_Terminal.jpg",
+          "author": "Eheik",
+          "license": "Public domain"
+        },
+        {
+          "title": "JFK Control Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Control_Tower.jpg",
+          "author": "Pat Guiney",
+          "license": "CC BY 2.0"
+        }
+      ],
+      "file": "models/nyc-jfk-control-tower.glb",
+      "source": "generators/nyc-jfk-control-tower.ts"
+    },
+    {
+      "id": "nyc-jfk-terminal-4",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "JFKNewYorkTerm4 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFKNewYorkTerm4_1.jpg",
+          "author": "Mike Powell",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Airtrain Terminal 4 JFK NY1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Airtrain_Terminal_4_JFK_NY1.jpg",
+          "author": "Acroterion",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "JFK Terminal 4 (9690230116).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_4_(9690230116).jpg",
+          "author": "Daniel from Calgary, Canada",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "JFK Terminal 4 June 2019 departures.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_4_June_2019_departures.jpg",
+          "author": "Mybirthday647",
+          "license": "CC0"
+        },
+        {
+          "title": "John F. Kennedy International Airport (JFK) Terminal 4 Operations.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:John_F._Kennedy_International_Airport_(JFK)_Terminal_4_Operations.jpg",
+          "author": "Oleg Yunakov",
+          "license": "CC0"
+        }
+      ],
+      "file": "models/nyc-jfk-terminal-4.glb",
+      "source": "generators/nyc-jfk-terminal-4.ts"
+    },
+    {
+      "id": "nyc-silvercup-sign",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "other",
+      "tags": [
+        "sign",
+        "neon",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Silvercup sign 20190519 130130.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Silvercup_sign_20190519_130130.jpg",
+          "author": "CaptJayRuffins",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Silvercup Studios 21 St & QPS jeh.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Silvercup_Studios_21_St_%26_QPS_jeh.JPG",
+          "author": "Jim.henderson",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Silvercup Studios sign.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Silvercup_Studios_sign.jpg",
+          "author": "MacdaddyCk",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Silvercup Studios and Citicorp Building from Queensboro Bridge.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Silvercup_Studios_and_Citicorp_Building_from_Queensboro_Bridge.jpg",
+          "author": "AAK",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Silvercup.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Silvercup.jpg",
+          "author": "unknown",
+          "license": "Public domain"
+        }
+      ],
+      "file": "models/nyc-silvercup-sign.glb",
+      "source": "generators/nyc-silvercup-sign.ts"
+    },
+    {
+      "id": "nyc-one-court-square",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "skyscraper",
+        "office"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Citicorp Building by David Shankbone.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Citicorp_Building_by_David_Shankbone.jpg",
+          "author": "David Shankbone",
+          "license": "CC BY 2.5"
+        },
+        {
+          "title": "One Court Square 018.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:One_Court_Square_018.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "One Court Square 024.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:One_Court_Square_024.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "One Court Square 047.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:One_Court_Square_047.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "44th Dr Crescent St Hunter St td (2023-06-26) 12 - One Court Square.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:44th_Dr_Crescent_St_Hunter_St_td_(2023-06-26)_12_-_One_Court_Square.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Long Island City New York October 2016.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Long_Island_City_New_York_October_2016.jpg",
+          "author": "King of Hearts",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-one-court-square.glb",
+      "source": "generators/nyc-one-court-square.ts"
+    },
+    {
+      "id": "nyc-ewr-control-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "tower",
+      "tags": [
+        "airport",
+        "control-tower"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "NewarkAirportControlTower 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:NewarkAirportControlTower_01.jpg",
+          "author": "Djflem",
+          "license": "CC0"
+        },
+        {
+          "title": "NewarkAirportControlTowerMariottHotel.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:NewarkAirportControlTowerMariottHotel.jpg",
+          "author": "Djflem",
+          "license": "CC0"
+        },
+        {
+          "title": "Newark Airport & Control TowerJPG.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Newark_Airport_%26_Control_TowerJPG.jpg",
+          "author": "Sterilgutassistentin",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Newark Liberty ATC & Mariott Hotel.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Newark_Liberty_ATC_%26_Mariott_Hotel.jpg",
+          "author": "hh oldman",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Newark-Liberty.airside.ATCTJPG.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Newark-Liberty.airside.ATCTJPG.jpg",
+          "author": "Sterilgutassistentin",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/nyc-ewr-control-tower.glb",
+      "source": "generators/nyc-ewr-control-tower.ts"
+    },
+    {
+      "id": "nyc-ewr-terminal-a",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Airtrain near new terminal A.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Airtrain_near_new_terminal_A.jpg",
+          "author": "Schvaxet",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "New terminal A EWR.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:New_terminal_A_EWR.jpg",
+          "author": "Schvaxet",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "New terminal A EWR 2.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:New_terminal_A_EWR_2.jpg",
+          "author": "Schvaxet",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Newark Airport Terminal A 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Newark_Airport_Terminal_A_2023.jpg",
+          "author": "Antony-22",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-ewr-terminal-a.glb",
+      "source": "generators/nyc-ewr-terminal-a.ts"
+    },
+    {
+      "id": "nyc-ewr-building-1",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "airport",
+        "art-deco",
+        "streamline-moderne"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "NewarkAirportAdminBldg(restored).tif",
+          "url": "https://commons.wikimedia.org/wiki/File:NewarkAirportAdminBldg(restored).tif",
+          "author": "Djflem",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "HAER NJ-133-B: North (land side) and northwest elevations, looking southeast",
+          "url": "https://commons.wikimedia.org/wiki/File:NORTH_(LAND_SIDE)_AND_NORTHWEST_ELEVATIONS,_LOOKING_SOUTHEAST._ROUTE_ONE_IN_FOREGROUND._-_Newark_International_Airport,_Administration_Building,_Brewster_Road_between_Route_21_HAER_NJ,7-NEARK.V,1B-1.tif",
+          "author": "Peter Brandt (HAER)",
+          "license": "Public domain"
+        },
+        {
+          "title": "HAER NJ-133-B: South (air side) and southwest elevations",
+          "url": "https://commons.wikimedia.org/wiki/File:SOUTH_(AIR_SIDE)_AND_SOUTHWEST_ELEVATIONS,_LOOKING_NORTH-EAST_FROM_BUILDING_340_ROOF._PARKING_LOT_G_IN_FOREGROUND._-_Newark_International_Airport,_Administration_Building,_HAER_NJ,7-NEARK.V,1B-2.tif",
+          "author": "Peter Brandt (HAER)",
+          "license": "Public domain"
+        }
+      ],
+      "file": "models/nyc-ewr-building-1.glb",
+      "source": "generators/nyc-ewr-building-1.ts"
+    },
+    {
+      "id": "nyc-pepsi-cola-sign",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "other",
+      "tags": [
+        "sign",
+        "neon",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Pepsi-Colas Sign (DSC04457).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pepsi-Colas_Sign_(DSC04457).jpg",
+          "author": "Polibil",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Long Island City Pepsi Cola Sign - May 2026.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Long_Island_City_Pepsi_Cola_Sign_-_May_2026.jpg",
+          "author": "Anonymouscarrots",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "PepsiCola sign, Gantry Plaza State Park Long Island City 01 (9431665809).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:PepsiCola_sign,_Gantry_Plaza_State_Park_Long_Island_City_01_(9431665809).jpg",
+          "author": "Joe Mabel",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Pepsi-Cola sign in Gantry Plaza State Park, Long Island City, New York.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pepsi-Cola_sign_in_Gantry_Plaza_State_Park,_Long_Island_City,_New_York.jpg",
+          "author": "MusikAnimal",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Pepsi-Cola sign SWW.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pepsi-Cola_sign_SWW.jpg",
+          "author": "Solowomanwalks",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/nyc-pepsi-cola-sign.glb",
+      "source": "generators/nyc-pepsi-cola-sign.ts"
     }
   ],
   "landmarks": [
@@ -23994,6 +25549,22 @@
       "place": "new-york-area"
     },
     {
+      "id": "nyc-brooklyn-tower",
+      "name": "The Brooklyn Tower",
+      "model": "nyc-brooklyn-tower",
+      "lng": -73.9822394,
+      "lat": 40.690548,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q22329554",
+      "place": "new-york-area",
+      "replaces": [
+        "way/1229206093",
+        "way/1039403183"
+      ]
+    },
+    {
       "id": "nyc-george-washington-bridge-new-jersey",
       "name": "George Washington Bridge (New Jersey tower)",
       "model": "nyc-george-washington-bridge",
@@ -25641,6 +27212,398 @@
         "relation/18229983"
       ],
       "place": "camp-north-end"
+    },
+    {
+      "id": "nyc-st-george-terminal",
+      "name": "St. George Ferry Terminal",
+      "model": "nyc-st-george-terminal",
+      "place": "new-york-area",
+      "lng": -74.0727943,
+      "lat": 40.6441873,
+      "bearing": 56,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5927015",
+      "replaces": [
+        "way/241853804"
+      ]
+    },
+    {
+      "id": "nyc-dime-savings-bank",
+      "name": "Dime Savings Bank of Brooklyn",
+      "model": "nyc-dime-savings-bank",
+      "place": "new-york-area",
+      "lng": -73.9825285,
+      "lat": 40.6902679,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/248156228",
+        "way/700241894"
+      ]
+    },
+    {
+      "id": "nyc-brooklyn-borough-hall",
+      "name": "Brooklyn Borough Hall",
+      "model": "nyc-brooklyn-borough-hall",
+      "place": "new-york-area",
+      "lng": -73.9903048,
+      "lat": 40.6927696,
+      "bearing": 5.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q929403",
+      "replaces": [
+        "way/241846064"
+      ]
+    },
+    {
+      "id": "nyc-brooklyn-public-library",
+      "name": "Central Library, Brooklyn Public Library",
+      "model": "nyc-brooklyn-public-library",
+      "place": "new-york-area",
+      "lng": -73.9681095,
+      "lat": 40.6722383,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5061358",
+      "replaces": [
+        "way/250229992"
+      ]
+    },
+    {
+      "id": "nyc-kings-theatre",
+      "name": "Kings Theatre",
+      "model": "nyc-kings-theatre",
+      "place": "new-york-area",
+      "lng": -73.9573208,
+      "lat": 40.6459848,
+      "bearing": 357.1,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q6413028",
+      "replaces": [
+        "way/250132955"
+      ]
+    },
+    {
+      "id": "nyc-domino-refinery",
+      "name": "The Refinery at Domino",
+      "model": "nyc-domino-refinery",
+      "place": "new-york-area",
+      "lng": -73.9673064,
+      "lat": 40.7144184,
+      "bearing": 19.6,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/633535211",
+        "way/1243440971",
+        "way/1243440972",
+        "way/1243440973",
+        "way/1243440974",
+        "way/1243440975",
+        "way/1243440976",
+        "way/1243440977",
+        "way/1243440978",
+        "way/1243853673",
+        "way/1243853674",
+        "way/1243853675",
+        "way/1243853676"
+      ]
+    },
+    {
+      "id": "nyc-battery-maritime-building",
+      "name": "Battery Maritime Building",
+      "model": "nyc-battery-maritime-building",
+      "place": "new-york-area",
+      "lng": -74.0117334,
+      "lat": 40.7010564,
+      "bearing": 343.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2687430",
+      "replaces": [
+        "relation/2848176",
+        "way/169362470",
+        "way/213867489",
+        "way/213867490",
+        "way/213867491",
+        "way/213867492",
+        "way/213871106"
+      ]
+    },
+    {
+      "id": "nyc-whitehall-terminal",
+      "name": "Staten Island Ferry Whitehall Terminal",
+      "model": "nyc-whitehall-terminal",
+      "place": "new-york-area",
+      "lng": -74.0130622,
+      "lat": 40.7009654,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7603994",
+      "replaces": [
+        "relation/2848024",
+        "way/38868195",
+        "way/213853440",
+        "way/213853441",
+        "way/213853442",
+        "way/213853443",
+        "way/213853444",
+        "way/213847694",
+        "way/213847696",
+        "way/213847698",
+        "way/213847700"
+      ]
+    },
+    {
+      "id": "nyc-bb-carousell",
+      "name": "B&B Carousell",
+      "model": "nyc-bb-carousell",
+      "place": "new-york-area",
+      "lng": -73.9832374,
+      "lat": 40.5730603,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q55887486",
+      "replaces": [
+        "way/230062419"
+      ]
+    },
+    {
+      "id": "nyc-soarin-eagle",
+      "name": "Soarin' Eagle",
+      "model": "nyc-soarin-eagle",
+      "place": "new-york-area",
+      "lng": -73.9805793,
+      "lat": 40.5737903,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q7549857",
+      "replaces": []
+    },
+    {
+      "id": "nyc-thunderbolt",
+      "name": "Thunderbolt",
+      "model": "nyc-thunderbolt",
+      "place": "new-york-area",
+      "lng": -73.9822942,
+      "lat": 40.5741951,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q17033480",
+      "replaces": [
+        "way/405891529",
+        "way/1017690947",
+        "way/654800206",
+        "way/355344498",
+        "way/654800208",
+        "way/654800209"
+      ]
+    },
+    {
+      "id": "nyc-lga-marine-air-terminal",
+      "name": "Marine Air Terminal",
+      "model": "nyc-lga-marine-air-terminal",
+      "place": "new-york-area",
+      "lng": -73.8857255,
+      "lat": 40.7735292,
+      "bearing": -8,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/284852174"
+      ],
+      "wikidata": "Q6764005"
+    },
+    {
+      "id": "nyc-lga-control-tower",
+      "name": "LaGuardia Airport Control Tower",
+      "model": "nyc-lga-control-tower",
+      "place": "new-york-area",
+      "lng": -73.8735314,
+      "lat": 40.7734695,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/284852152",
+        "way/647215656",
+        "way/1222335146"
+      ]
+    },
+    {
+      "id": "nyc-lga-terminal-b",
+      "name": "LaGuardia Airport Terminal B",
+      "model": "nyc-lga-terminal-b",
+      "place": "new-york-area",
+      "lng": -73.8717564,
+      "lat": 40.7730365,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/644536343",
+        "way/664461080",
+        "way/701356157"
+      ]
+    },
+    {
+      "id": "nyc-jfk-control-tower",
+      "name": "JFK Airport Control Tower",
+      "model": "nyc-jfk-control-tower",
+      "place": "new-york-area",
+      "lng": -73.7813708,
+      "lat": 40.6425492,
+      "bearing": -29.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/284907735"
+      ]
+    },
+    {
+      "id": "nyc-jfk-terminal-4",
+      "name": "JFK Airport Terminal 4",
+      "model": "nyc-jfk-terminal-4",
+      "place": "new-york-area",
+      "lng": -73.7813875,
+      "lat": 40.6421766,
+      "bearing": -29.2,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/284907688"
+      ],
+      "wikidata": "Q55855382"
+    },
+    {
+      "id": "nyc-silvercup-sign",
+      "name": "Silvercup Sign",
+      "model": "nyc-silvercup-sign",
+      "place": "new-york-area",
+      "lng": -73.9436986,
+      "lat": 40.7513395,
+      "bearing": 124.7,
+      "elevation": 23.1,
+      "minzoom": 15,
+      "replaces": []
+    },
+    {
+      "id": "nyc-one-court-square",
+      "name": "One Court Square",
+      "model": "nyc-one-court-square",
+      "place": "new-york-area",
+      "lng": -73.9438683,
+      "lat": 40.7470053,
+      "bearing": 14,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q781961",
+      "replaces": [
+        "way/281342538",
+        "way/286214670",
+        "way/286214671",
+        "way/286214672",
+        "way/286214673",
+        "way/286214674",
+        "way/286214675",
+        "way/286214676",
+        "way/286214677",
+        "way/286214678",
+        "way/286214679",
+        "way/286214680",
+        "way/286214681",
+        "way/286214682",
+        "way/286214683",
+        "way/286214684",
+        "way/286214685",
+        "way/286214686",
+        "way/286214687",
+        "way/286214688",
+        "way/286214689",
+        "way/286214690",
+        "way/286214691",
+        "way/286214692",
+        "way/286214693",
+        "way/286214694",
+        "way/286214695",
+        "way/286214696",
+        "way/286214697",
+        "way/286214698",
+        "way/286214699",
+        "way/286214700",
+        "way/286214701",
+        "way/286214702",
+        "way/286214703",
+        "way/286214704",
+        "way/286214705",
+        "way/286214706"
+      ]
+    },
+    {
+      "id": "nyc-ewr-control-tower",
+      "name": "Newark Airport Control Tower",
+      "model": "nyc-ewr-control-tower",
+      "place": "new-york-area",
+      "lng": -74.1827497,
+      "lat": 40.692581,
+      "bearing": 26,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/437257662",
+        "way/537070755"
+      ]
+    },
+    {
+      "id": "nyc-ewr-terminal-a",
+      "name": "Newark Liberty Terminal A",
+      "model": "nyc-ewr-terminal-a",
+      "place": "new-york-area",
+      "lng": -74.1868567,
+      "lat": 40.6839044,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q55889597",
+      "replaces": [
+        "way/802991914"
+      ]
+    },
+    {
+      "id": "nyc-ewr-building-1",
+      "name": "Newark Airport Administration Building (Building One)",
+      "model": "nyc-ewr-building-1",
+      "place": "new-york-area",
+      "lng": -74.1700616,
+      "lat": 40.7044114,
+      "bearing": 1.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/232382759"
+      ]
+    },
+    {
+      "id": "nyc-pepsi-cola-sign",
+      "name": "Pepsi-Cola Sign",
+      "model": "nyc-pepsi-cola-sign",
+      "place": "new-york-area",
+      "lng": -73.9576953,
+      "lat": 40.7474745,
+      "bearing": 110.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q97883006",
+      "replaces": []
     }
   ],
   "places": [

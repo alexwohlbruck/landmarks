@@ -476,7 +476,7 @@ recoloring preserves the camera and custom model/building layers.
 
 Night lighting applies to both the small preview and map models. It uses the same night palette as the offline
 renderer: dim blue ambient surfaces, authored `_FLOODLIGHT` masks, warm window
-and entrance materials, lamp materials, and existing emissive factors. Lighting
+and entrance materials, lamp materials, `neon*` signs in their own colour, and existing emissive factors. Lighting
 is baked into transient vertex colors using `KHR_materials_unlit`; geometry,
 textures, UVs, and animation remain intact. Switching back to day restores the
 original model. Downloads, checksums, and metadata always describe the original

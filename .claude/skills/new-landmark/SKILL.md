@@ -77,8 +77,13 @@ what is estimated.
    silhouette matches before adding any detail.
 4. Add the identifying features, then the facade. Check the 200 and 80 px
    views: if a feature vanishes, make it bigger or bolder, not more
-   detailed. Check `--night`. Stay within the budget in `STYLE.md`.
-5. Optional: check the footprint. Plot the OSM outline and parts from
+   detailed. Stay within the budget in `STYLE.md`.
+5. Night. Decide what is lit on the real landmark after dark (signs,
+   crown, floodlit stone, windows, lamps) and give each its night material
+   from `STYLE.md`, "Night": lit signs `neon*` in their own colour, glass
+   roofs `glass`. Check `bun run preview <id> --night` beside a night
+   photo.
+6. Optional: check the footprint. Plot the OSM outline and parts from
    step 3 to scale, with north up, and compare them with
    `preview/<id>/top.png`. Walls, setbacks and corners should land on the
    OSM lines, within a metre or two, unless photos or lidar show OSM is
