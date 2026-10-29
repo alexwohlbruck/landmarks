@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#f7f7f0">
   <meta name="description" content="Explore an open collection of low-poly 3D landmarks. Find their locations on the map and inspect every model in an interactive viewer.">
   <title>Landmarks — Map &amp; 3D models</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('landmarks-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}</script>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./maplibre-gl.css">
   <link rel="stylesheet" href="./style.css">
@@ -14,13 +15,27 @@
 <body>
   <header class="header">
     <a class="brand" href="./">Landmarks</a>
-    <a href="https://github.com/alexwohlbruck/landmarks">GitHub</a>
+    <nav class="header-actions">
+      <button id="theme-toggle" class="theme-toggle" type="button" role="switch" aria-label="Night mode" aria-checked="false" title="Switch to night mode">
+        <span class="theme-track" aria-hidden="true">
+          <span class="theme-thumb"></span>
+          <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M20 15.3A8.3 8.3 0 0 1 8.7 4a8.3 8.3 0 1 0 11.3 11.3Z"/></svg>
+        </span>
+        <span id="theme-label" class="theme-label" aria-hidden="true">Day</span>
+      </button>
+      <a href="https://github.com/alexwohlbruck/landmarks">GitHub</a>
+    </nav>
   </header>
   <main class="workspace">
     <aside class="collection" aria-label="Landmark collection">
       <div class="filters">
         <input id="search" type="search" placeholder="Search landmarks" aria-label="Search landmarks">
-        <select id="region" aria-label="Filter by region"><option value="">All regions</option></select>
+        <select id="place" aria-label="Filter by place"><option value="">All places</option></select>
+        <select id="type" aria-label="Filter by model type"><option value="">All types</option></select>
+        <select id="tag" aria-label="Filter by tag"><option value="">All tags</option></select>
+        <select id="source-filter" aria-label="Filter by source"><option value="">All sources</option></select>
+        <p id="collection-status" class="credit" role="status"></p>
         <span id="result-count" role="status">Loading…</span>
       </div>
       <div id="results" class="results" aria-label="Search results"></div>
@@ -32,14 +47,51 @@
     </section>
     <aside id="inspector" class="inspector" aria-label="Selected landmark preview">
       <h1 id="place-name">Choose a landmark</h1>
+      <p id="past-version" class="past-version" role="status"></p>
       <div class="viewer-wrap">
-        <model-viewer id="viewer" camera-controls touch-action="pan-y" shadow-intensity="1" exposure="1.1" camera-orbit="-35deg 70deg auto" interaction-prompt="none" autoplay></model-viewer>
+        <model-viewer id="viewer" camera-controls auto-rotate rotation-per-second="12deg" touch-action="pan-y" shadow-intensity="1" exposure="1.1" camera-orbit="-35deg 70deg auto" interaction-prompt="none" autoplay></model-viewer>
         <div id="model-status" class="model-status" role="status">Loading model…</div>
       </div>
       <div class="model-actions">
-        <select id="lod" aria-label="Model detail" hidden><option value="low">Standard model</option><option value="detail">Detailed model</option></select>
+        <select id="lod" aria-label="Model detail" hidden><option value="low">Low LOD</option><option value="detail">High LOD</option></select>
         <a id="download" download>Download GLB</a>
+        <p id="model-stats" class="credit"></p>
+        <p id="model-location" class="credit"></p>
+        <p id="model-description" class="credit"></p>
+        <div id="model-tags" class="tags" aria-label="Model tags"></div>
+        <div id="version-controls" class="version-controls" hidden>
+          <label for="version">Version history</label>
+          <select id="version" aria-label="Model version"><option value="">Current version</option></select>
+        </div>
+        <p id="version-note" class="credit" role="status"></p>
+        <a id="version-commit" hidden>View this commit</a>
+        <a id="git-history">View source history</a>
+        <dl class="model-details">
+          <dt>Source</dt><dd id="source-name"></dd>
+          <dt>Model license</dt><dd id="license"></dd>
+        </dl>
+        <p id="review-status" class="credit"></p>
+        <div><h2>Credits</h2><ul id="authors" class="credits-list"></ul></div>
         <p id="credit" class="credit"></p>
+        <p id="license-scope" class="credit"></p>
+        <p class="credit">Spatial data: <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>, ODbL-1.0.</p>
+        <section class="metadata-section" aria-label="Selected file statistics">
+          <h2>Geometry &amp; file</h2>
+          <p id="inspection-status" class="credit" role="status"></p>
+          <dl id="geometry-details" class="model-details"></dl>
+          <ul id="animation-details" class="credits-list" aria-label="Animation clips"></ul>
+          <ul id="texture-details" class="credits-list" aria-label="Texture images"></ul>
+        </section>
+        <section class="metadata-section" aria-label="Replaced OpenStreetMap features">
+          <h2>Replaced OSM features</h2>
+          <p id="replacement-count" class="credit"></p>
+          <ul id="replacement-details" class="credits-list"></ul>
+        </section>
+        <details open><summary>Model &amp; placement metadata</summary><dl id="placement-details" class="model-details"></dl></details>
+        <details><summary>All published metadata</summary><div id="all-metadata"></div></details>
+        <details><summary>Metadata JSON</summary><pre id="metadata-json" class="metadata-json"></pre></details>
+        <details><summary>Downloads &amp; metadata</summary><div id="downloads" class="downloads"></div><p class="credit">Gzip files need decompression before opening.</p></details>
+        <details id="references-section" hidden><summary>Visual references</summary><ul id="references" class="credits-list"></ul></details>
       </div>
     </aside>
   </main>

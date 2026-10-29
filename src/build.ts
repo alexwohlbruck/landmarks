@@ -11,6 +11,7 @@ import { copyFileSync, readFileSync, mkdirSync, rmSync, writeFileSync } from 'no
 import { createHash } from 'node:crypto'
 import { basename, dirname, join, resolve } from 'node:path'
 import { buildRelease, CatalogError } from './release'
+import { buildHistory } from './history'
 
 const args = process.argv.slice(2)
 const check = args.includes('--check')
@@ -31,6 +32,9 @@ const models = [...release.files.keys()].filter((p) => p.endsWith('.glb')).lengt
 console.log(`${release.release}: ${release.assets.length} landmarks, ${models} model files`)
 if (check) process.exit(0)
 
+const history = buildHistory(root, release)
+console.log(`history: ${history.versions} versions from ${history.commits} commits; ${history.unavailable} unavailable snapshots${history.complete ? '' : ' (partial checkout)'}`)
+
 rmSync(out, { recursive: true, force: true })
 for (const [path, bytes] of release.files) {
   const file = join(out, path)
@@ -47,7 +51,7 @@ const licenseFiles = [...new Bun.Glob('**/{LICENSE,LICENSE.*,LICENSE-*,LICENCE,L
 writeFileSync(join(out, 'third-party-licenses.txt'), licenseFiles.map(file =>
   `===== ${file} =====\n${readFileSync(join(dependencyRoot, file), 'utf8')}`,
 ).join('\n\n'))
-for (const file of ['index.html', 'style.css', 'favicon.svg'])
+for (const file of ['index.html', 'style.css', 'favicon.svg', 'claude.ico', 'open-landmarks.json'])
   copyFileSync(join(root, 'web', file), join(out, file))
 for (const file of ['maplibre-gl.css', 'maplibre-gl-worker.mjs'])
   copyFileSync(join(root, 'node_modules/maplibre-gl/dist', file), join(out, file))

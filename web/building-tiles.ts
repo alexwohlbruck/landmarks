@@ -71,7 +71,7 @@ export class BuildingTiles {
       this.revision++
       this.loadedTiles.clear()
       this.map.getCanvas().dataset.buildingTiles = '0'
-      this.snapshots.set(this.revision, this.active.map(a => ({ geometry: shapes[a.id] ?? [], ids: this.ids(a) })))
+      this.snapshots.set(this.revision, this.active.map(a => ({ geometry: a.replacementFootprint ? (a.replacementFootprint.type === 'Polygon' ? [a.replacementFootprint.coordinates] : a.replacementFootprint.coordinates) as MultiPolygon : shapes[a.id] ?? [], ids: this.ids(a) })))
       while (this.snapshots.size > 4) this.snapshots.delete(this.snapshots.keys().next().value!)
       ;(this.map.getSource(this.sourceId) as VectorTileSource).setTiles([this.template()])
     }, 150)

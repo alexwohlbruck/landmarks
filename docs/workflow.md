@@ -67,7 +67,10 @@ mkdir -p <scratch>/<prefix>/{new,work}
   Only `tools/lidar.py` needs it; the rest use the standard library.
 
 Ids share a prefix for the batch (`chi-`, `sea-`, `clt-`), so the batch
-sorts together.
+sorts together. Pick or create explicit catalog places before building. Places
+can describe cities, towns, villages, sites, countries, or remote regions, with
+parent relationships and optional OSM/Wikidata identities. The lead commits new
+place records first, then supplies their stable IDs to each builder.
 
 ## 2. Choose the candidates
 
@@ -145,11 +148,43 @@ useful beyond one batch goes in the kit, in a commit of its own.
 merges:
 
 ```json
-{ "model": { "id": "<id>", "license": "CC0-1.0", "author": "<author>" },
-  "landmark": { "id": "<id>", "name": "<display name>", "model": "<id>",
-                "lng": 0, "lat": 0, "bearing": 0, "elevation": 0, "minzoom": 15,
-                "wikidata": "Q...", "replaces": ["way/123"] } }
+{
+  "model": {
+    "id": "<id>",
+    "license": "CC0-1.0",
+    "collection": "landmarks",
+    "type": "building",
+    "tags": ["historic"],
+    "reviewStatus": "unreviewed",
+    "credits": [
+      { "name": "Alex Wohlbruck", "kind": "person", "github": "alexwohlbruck", "role": "creator" },
+      { "name": "Claude", "kind": "ai", "model": "Claude Opus 5.5", "role": "procedural modeling" }
+    ]
+  },
+  "landmark": {
+    "id": "<id>",
+    "name": "<display name>",
+    "model": "<id>",
+    "place": "<place-id>",
+    "lng": 0,
+    "lat": 0,
+    "bearing": 0,
+    "elevation": 0,
+    "minzoom": 15,
+    "replaces": ["way/123"]
+  }
+}
 ```
+
+Replace the example credits with the actual contributors and LLM model used.
+Every AI credit requires its own `model` field. `github` is optional and accepts
+an optional `@` prefix. Choose a primary `type`, descriptive slug `tags`, and
+the real license (CC0-1.0 is the default). CC-BY models need `attribution`;
+custom licenses need `licenseUrl`. Include `wikidata` only when known.
+The lead must prepare `<place-id>` in `catalog.places` before merging models;
+the scratch file does not create place records. Keep contributor/source credits
+separate from photo references. Put publishable visual-reference credits in
+`model.references` as well as the generator header.
 
 A model placed more than once (the Eiffel Tower, in Paris and Las Vegas) uses
 `"landmarks": [ ... ]` instead of `"landmark"`.
@@ -183,7 +218,12 @@ For each model:
 5. Check the budget: `bun tools/glb-stats.ts <id>` (at most 6 materials,
    5,000 triangles or 6,500 for complex models, 250 KB, lowest point y = 0).
 6. Check the placement: anchor, bearing, `replaces` against
-   `tools/osm.py buildings`, elevation.
+   `tools/osm.py buildings`, elevation, and explicit place/parent references.
+7. Check both LODs, textures and animation, and night lighting with
+   `bun run preview <id> --night`. Build the site for interactive inspection.
+   Check credits, the required AI model-used field, GitHub identity, tags, license,
+   and source/reference links. Structural validation is not visual or rights
+   approval; leave `reviewStatus` unreviewed/draft until that review is done.
 
 Send the model back with specific fixes when it fails any of these. Expect
 two or three rounds on the famous ones. A weak model that can't be fixed
@@ -209,7 +249,13 @@ tools/merge-model.sh <scratch>/<prefix>/new/<id>.json "Add <Name>"
 It regenerates the GLB, adds or replaces the catalog entries by id,
 validates, typechecks the generator and commits the generator, the model
 and `catalog.json`: one commit per model. Then run `bun test` once the batch
-is merged.
+is merged. New place records must already be committed: the helper only
+upserts model/placement records, and its failure rollback restores `catalog.json`
+from Git. For High LOD additions/updates, commit the detail GLB explicitly
+alongside the generator, Low LOD and catalog changes; this helper stages only
+`models/<id>.glb`. Reworks keep their existing IDs, `detail`, credits, and other
+metadata unless the change intentionally updates them. Do not replace an entry
+with a stripped-down scratch record.
 
 **Catalog conflicts.** Two batch branches both append to `catalog.json`, so
 rebasing one onto the other conflicts at the end of each list. Merge the
@@ -221,8 +267,11 @@ git config merge.catalog.name "catalog.json, merged by id"
 git config merge.catalog.driver "python3 tools/merge-catalog.py %O %A %B"
 ```
 
-Then `bun run validate`. The script's header shows how to run it by hand
-mid-conflict.
+The current merge driver unions `models` and `landmarks`, but takes other
+root fields, including `places`, from ours. Manually reconcile place records
+from both branches by ID before accepting a conflict resolution; verify parent
+links and each placement's `place`. Then run `bun run validate`. The script's
+header shows how to run it by hand mid-conflict.
 
 ## 7. Pull request
 
@@ -269,12 +318,29 @@ sheets and the photos.
 
 Merging to `main` is releasing. The `Release` workflow
 (`.github/workflows/release.yml`) runs `typecheck`, `test` and `build`, and
-deploys `dist/` to GitHub Pages at https://alexwohlbruck.github.io/landmarks/.
+deploys `dist/` to GitHub Pages at https://landmarks.barrelman.dev/.
 There is no version to bump and no tag to cut.
 
 The build is deterministic. The release id (`landmarks-<hash>`) depends only
-on the catalog and the models, so a push that changes no model or placement
-publishes the same release and clients skip it.
+on current catalog metadata, GLBs and source bytes. Metadata-only changes can
+therefore publish a new release. The site build additionally materializes Git
+history; CI fetches full ancestry. Older model/source objects and version indexes
+are rebuilt into each deployment, without preserving old release channel files.
+No manual version numbers are needed when replacing a model.
+
+Before release, run `bun run typecheck`, `bun test`, `bun run validate`, and
+`bun run build`. Smoke-check the built site: source/place/type/tag filtering,
+High LOD default and Low LOD switching, hidden single-version selectors,
+past-version downloads/credits, all OSM IDs, metadata/avatars, dark mode, and
+night lighting. The Day / Night switch must synchronize and persist interface,
+basemap, preview, and map-model lighting together;
+auto-rotation belongs only to the small preview. Details are in the
+[website guide](website.md).
+
+To refresh the external collection, run `bun run sync:sources`, inspect and
+commit `web/open-landmarks.json`, then rebuild. When adding upstream places,
+update `web/upstream-places.json` and place records in `tools/sync-sources.ts`.
+Local dataset releases remain separate from upstream metadata.
 
 ## 9. Deploy
 
@@ -320,14 +386,16 @@ release host.
 
 | Tool | Does |
 |---|---|
-| `bun run preview <id> [dir] [photo.png ...]` | Every review view of one model, plus photo side-by-sides |
+| `bun run preview <id> [dir] [photo.png ...] [--night]` | Every review view of one model, plus photo side-by-sides |
 | `bun run sheet <id ...>` / `--branch-diff` | Contact sheets, with 200 and 80 px views |
 | `bun tools/view.ts <id> <out> <from> [el]` | One render from any compass side, to match a photo |
 | `bun tools/montage.ts <out> <img[=label]> ...` | Photos and renders side by side, PNG or JPEG |
 | `bun tools/glb-stats.ts <id ...>` | Triangles, size, materials, bounds, budget flags |
 | `bun tools/pr-table.ts --prefix <p>` | The PR's model table |
 | `tools/merge-model.sh <placement.json> "<msg>"` | Merge and commit one model |
-| `python3 tools/merge-catalog.py` | Merge two `catalog.json` by id; git merge driver |
+| `bun run sync:sources` | Refresh the pinned OpenLandmarks metadata snapshot |
+| `bun tools/replacement-footprints.ts` | Refresh stored OSM replacement outlines after `replaces` changes |
+| `python3 tools/merge-catalog.py` | Merge model/placement lists by id; reconcile `places` manually |
 | `python3 tools/osm.py buildings\|named\|search` | OSM outlines and parts, named features, Nominatim |
 | `python3 tools/photos.py commons\|openverse` | Licensed photo search, tagged evidence or look-only |
 | `python3 tools/mapillary.py` | Street photos aimed at a landmark, one per side |

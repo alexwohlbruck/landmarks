@@ -10,3 +10,14 @@ https://opendatacommons.org/licenses/odbl/1-0/
 The demo bundles third-party browser libraries under their own licenses.
 The static build includes their license notices in third-party-licenses.txt;
 the repository's CC0 dedication does not apply to those dependencies.
+
+The website also displays OpenLandmarks models and includes a pinned metadata
+snapshot from https://open-landmarks.benmaps.fr/ . Each upstream model retains
+its own artistic license, author credits and attribution in that metadata.
+The website's combined collection does not relicense these models as CC0.
+OpenLandmarks spatial metadata is ODbL-1.0, © OpenStreetMap contributors.
+
+The Claude icon (web/claude.ico) is the Claude favicon from
+https://claude.com/favicon.ico. Claude branding belongs to Anthropic; the
+repository's CC0 dedication does not apply to that brand asset. Contributor
+GitHub avatars are loaded from their GitHub profiles and are not bundled.

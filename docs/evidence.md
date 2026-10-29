@@ -1,8 +1,10 @@
 # Evidence
 
-Every model here is published as CC0 and can be contributed to
-[Open Landmarks](https://github.com/benjamintd/open-landmarks). That only
-holds if the model was shaped from open sources. This page lists the sources
+New original models default to CC0-1.0. Imported models and alternate licenses
+must retain their own license and attribution in the catalog; the combined
+website does not relicense OpenLandmarks assets. Eligibility for contribution
+to [Open Landmarks](https://github.com/benjamintd/open-landmarks) depends on
+its contribution requirements and the model's sources. This page lists the sources
 that are allowed, the ones that aren't, and how to use the lidar, OSM and
 photo tools in `tools/`.
 
@@ -58,6 +60,13 @@ The generator's header comment is the record. For every model it lists:
 - the look-only references, apart from the rest;
 - the doubts: a side no photo shows, an OSM tag that looked wrong, a height
   read from a shadow.
+
+Also copy publishable visual-reference information into the model's catalog
+`references`: `title`, `url`, and optional `author` and `license`. The website
+exposes these separately from model creator credits. Record human/organization
+and AI authors in `credits`, with the actual LLM version in each AI credit's
+`model` field and optional `github` username for profile/attribution links.
+A reference photo's license is not automatically the model's artistic license.
 
 Record sources as you collect them. Rebuilding credits afterwards from
 memory or scratch folders doesn't work.
@@ -215,4 +224,4 @@ it shows SoFi Stadium's field 1.9 m down where the real field is about 30 m
 down. Record the value and its source in the header.
 
 Elevation needs Barrelman 0.10.5 or later to reach the map (see
-[workflow.md](workflow.md#deploy)).
+[workflow.md](workflow.md#9-deploy)).

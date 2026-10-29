@@ -2,6 +2,7 @@ import { MercatorCoordinate, type CustomLayerInterface, type CustomRenderMethodI
 import { AnimationMixer, AmbientLight, Box3, Camera, DirectionalLight, Group, Matrix4, Mesh, Raycaster, Scene, Vector3, WebGLRenderer, type Material } from 'three'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import type { Asset } from '../src/release'
+import { nightGlb } from './night-model'
 import { BuildingTiles } from './building-tiles'
 
 /** OpenFreeMap uses Planetiler IDs: OSM ID * 10 + node/way/relation type. */
@@ -37,6 +38,7 @@ export class LandmarkModels implements CustomLayerInterface {
   private failures = new Map<string, number>()
   private wanted: Asset[] = []
   private assets: Asset[] = []
+  private night = false
   private selectedId?: string
   private focusId?: string
   private origin = MercatorCoordinate.fromLngLat([0, 0])
@@ -48,7 +50,7 @@ export class LandmarkModels implements CustomLayerInterface {
   private replacementKey?: string
 
   constructor(private url: (path: string) => string, private onSelect: (asset: Asset) => void,
-    private onError: (message: string) => void) {}
+    private onError: (message: string) => void, private onActive?: (assets: Asset[]) => void) {}
 
   onAdd(map: LibreMap, gl: WebGL2RenderingContext) {
     this.map = map
@@ -80,6 +82,12 @@ export class LandmarkModels implements CustomLayerInterface {
   setAssets(assets: Asset[], selectedId?: string) {
     this.assets = assets
     this.selectedId = selectedId
+    if (this.map) this.schedule()
+  }
+
+  setNight(night: boolean) {
+    if (this.night === night) return
+    this.night = night
     if (this.map) this.schedule()
   }
 
@@ -140,7 +148,7 @@ export class LandmarkModels implements CustomLayerInterface {
   }
 
   private lodUrl(asset: Asset) {
-    return this.url((this.map.getZoom() >= (asset.detailZoom ?? 17) && asset.lods.detail ? asset.lods.detail : asset.lods.low).url)
+    return this.url((this.map.getZoom() >= (asset.detailZoom ?? 17) && asset.lods.detail ? asset.lods.detail : asset.lods.low).url) + (this.night ? '#night' : '')
   }
 
   private pump() {
@@ -160,7 +168,9 @@ export class LandmarkModels implements CustomLayerInterface {
     try {
       const response = await fetch(url, { signal: controller.signal })
       if (!response.ok) throw new Error(`HTTP ${response.status}`)
-      const gltf = await this.loader.parseAsync(await response.arrayBuffer(), new URL('.', url).href)
+      const original = new Uint8Array(await response.arrayBuffer())
+      const bytes = url.endsWith('#night') ? nightGlb(original) : original
+      const gltf = await this.loader.parseAsync(bytes.buffer as ArrayBuffer, new URL('.', url).href)
       const root = new Group()
       root.add(gltf.scene)
       root.userData.asset = asset
@@ -206,6 +216,7 @@ export class LandmarkModels implements CustomLayerInterface {
     const key = active.map(a => a.id).sort().join(',')
     if (key === this.replacementKey) return
     this.replacementKey = key
+    this.onActive?.(active)
     this.buildings.setAssets(active)
     if (this.map.getLayer('landmark-points')) {
       this.map.setFilter('landmark-points', ['all', ['!', ['has', 'point_count']],

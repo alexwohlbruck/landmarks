@@ -38,13 +38,15 @@ import { createHash } from 'node:crypto'
 import { gzipSync } from 'node:zlib'
 import { existsSync, readFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
-import { DEFAULT_MIN_ZOOM, validateCatalog, type Catalog, type CatalogLandmark, type CatalogModel } from './catalog'
+import { DEFAULT_MIN_ZOOM, creditsFor, licenseFor, validateCatalog, type Catalog, type CatalogLandmark, type CatalogModel, type Credit, type Place, type ModelType, type Reference } from './catalog'
 import { bakePlacement, glbBounds, triangleCount } from './glb'
+import { inspectGlb, type ModelInfo } from './model-info'
 
 export const SCHEMA_VERSION = 1
 export const AXES = 'X east / Y up / Z south'
 export const INDEX_ZOOM = 12
 export const REPOSITORY = 'https://github.com/alexwohlbruck/landmarks'
+export const COLLECTION = { id: 'landmarks', name: 'Landmarks', url: REPOSITORY }
 /** The pointers published. Both name the same release: there is no review queue here. */
 export const CHANNELS = ['latest', 'preview'] as const
 /** The zoom a detail LOD is drawn from when its model doesn't say: Barrelman's default. */
@@ -60,6 +62,7 @@ type Lod = {
   bytes: number
   sha256: string
   triangles: number
+  info?: ModelInfo
   gzip: { url: string; bytes: number; sha256: string; encoding: 'gzip-file' }
 }
 type OsmRef = { type: string; id: number; url: string }
@@ -84,6 +87,21 @@ export type Asset = {
   wikidata?: string
   attribution?: string
   authors: string[]
+  credits?: Credit[]
+  collection?: { id: string; name: string; url: string }
+  place?: Place
+  /** Ancestors, nearest first, for filtering by larger areas. */
+  placeParents?: Place[]
+  type?: ModelType
+  tags?: string[]
+  description?: string
+  assistance?: string
+  references?: Reference[]
+  reviewStatus?: string
+  licenseUrl?: string
+  height?: number
+  /** Upstream footprint, when present (Open Landmarks). */
+  replacementFootprint?: GeoJSON.Polygon | GeoJSON.MultiPolygon
   artisticLicense: string
   spatialDataLicense: 'ODbL-1.0'
   licenseScope: string
@@ -97,6 +115,7 @@ export type Asset = {
   model: string
   placement: { bearing: number; scale: number }
   source?: { url: string; bytes: number; sha256: string }
+  sourcePage?: string
   bounds: [number, number, number, number]
   revision: string
   metadata: string
@@ -138,24 +157,30 @@ export class CatalogError extends Error {
  * Check the catalog and the files it names, without building anything.
  * Everything wrong is reported at once.
  */
-export function checkCatalog(root: string, catalog: Catalog): string[] {
+export type ReadFile = (file: string) => Uint8Array
+export function checkCatalog(root: string, catalog: Catalog, readFile?: ReadFile): string[] {
   const problems = validateCatalog(catalog)
   for (const m of catalog.models ?? []) {
     for (const file of [m.file, ...(m.detail ? [m.detail] : [])]) {
       const path = join(root, file ?? '')
-      if (!file || !existsSync(path)) {
+      if (!file || (!readFile && !existsSync(path))) {
         problems.push(`model "${m.id}": ${file} does not exist`)
         continue
       }
       try {
-        const { height, radius } = glbBounds(new Uint8Array(readFileSync(path)))
+        const { height, radius } = glbBounds(readFile ? readFile(file) : new Uint8Array(readFileSync(path)))
         // Standing on its origin, not centred on it.
         if (!(height > 0) || !(radius > 0)) problems.push(`model "${m.id}": ${file} has no extent above its origin`)
       } catch (err) {
         problems.push(`model "${m.id}": ${(err as Error).message}`)
       }
     }
-    if (m.source && !existsSync(join(root, m.source))) problems.push(`model "${m.id}": source ${m.source} does not exist`)
+    if (m.source) {
+      try {
+        if (readFile) readFile(m.source)
+        else if (!existsSync(join(root, m.source))) throw new Error('missing')
+      } catch { problems.push(`model "${m.id}": source ${m.source} does not exist`) }
+    }
   }
   return problems
 }
@@ -164,8 +189,8 @@ export function checkCatalog(root: string, catalog: Catalog): string[] {
  * Build the release for the catalog at `root`. Throws a CatalogError listing
  * every problem rather than publishing a partial release.
  */
-export function buildRelease(root: string, catalog: Catalog = JSON.parse(readFileSync(join(root, 'catalog.json'), 'utf8'))): Release {
-  const problems = checkCatalog(root, catalog)
+export function buildRelease(root: string, catalog: Catalog = JSON.parse(readFileSync(join(root, 'catalog.json'), 'utf8')), readFile: ReadFile = file => new Uint8Array(readFileSync(join(root, file)))): Release {
+  const problems = checkCatalog(root, catalog, readFile)
   if (problems.length) throw new CatalogError(problems)
 
   const files = new Map<string, Uint8Array>()
@@ -182,7 +207,7 @@ export function buildRelease(root: string, catalog: Catalog = JSON.parse(readFil
     const model = models.get(l.model)!
     const read = (file: string) => {
       let bytes = modelBytes.get(file)
-      if (!bytes) modelBytes.set(file, (bytes = new Uint8Array(readFileSync(join(root, file)))))
+      if (!bytes) modelBytes.set(file, (bytes = readFile(file)))
       return bytes
     }
     const placement = { bearing: l.bearing ?? 0, scale: l.scale ?? 1 }
@@ -210,7 +235,7 @@ export function buildRelease(root: string, catalog: Catalog = JSON.parse(readFil
     if (model.source) {
       source = sources.get(model.source)
       if (!source) {
-        const text = readFileSync(join(root, model.source))
+        const text = readFile(model.source)
         const sha = sha256(text)
         const url = `/objects/${sha}/${basename(model.source)}`
         files.set(url.slice(1), new Uint8Array(text))
@@ -219,6 +244,14 @@ export function buildRelease(root: string, catalog: Catalog = JSON.parse(readFil
     }
 
     const [first, ...rest] = (l.replaces ?? []).map(osmRef)
+    const place = catalog.places?.find(p => p.id === l.place)
+    const placeParents: Place[] = []
+    let parent = place?.parent
+    while (parent) {
+      const p = catalog.places!.find(p => p.id === parent)!
+      placeParents.push(p)
+      parent = p.parent
+    }
     const dLat = radius / 111_320
     const dLng = radius / (111_320 * Math.cos((l.lat * Math.PI) / 180))
     const record: Omit<Asset, 'revision' | 'metadata'> = {
@@ -238,13 +271,24 @@ export function buildRelease(root: string, catalog: Catalog = JSON.parse(readFil
       ...(l.wikidata ? { wikidata: l.wikidata } : {}),
       ...(model.attribution ? { attribution: model.attribution } : {}),
       ...(elevation ? { elevation } : {}),
-      authors: [model.author],
-      artisticLicense: model.license,
+      authors: creditsFor(model).map(c => c.name),
+      credits: creditsFor(model),
+      collection: { ...COLLECTION, ...(model.collection && model.collection !== COLLECTION.id ? { id: model.collection, name: model.collection } : {}) },
+      ...(place ? { place, placeParents } : {}),
+      type: model.type ?? 'landmark',
+      tags: [...(model.tags ?? [])].sort(),
+      ...(model.description ? { description: model.description } : {}),
+      ...(model.references ? { references: model.references } : {}),
+      reviewStatus: model.reviewStatus ?? 'unreviewed',
+      ...(model.licenseUrl ? { licenseUrl: model.licenseUrl } : {}),
+      height: round(height, 2),
+      artisticLicense: licenseFor(model),
       spatialDataLicense: 'ODbL-1.0',
       licenseScope: LICENSE_SCOPE,
       model: model.id,
       placement,
       ...(source ? { source } : {}),
+      ...(model.sourcePage ? { sourcePage: model.sourcePage } : {}),
       bounds: [round(l.lng - dLng), round(l.lat - dLat), round(l.lng + dLng), round(l.lat + dLat)],
     }
     // A revision names this exact record, as Open Landmarks' does, so its
@@ -323,6 +367,7 @@ function lodFor(
     bytes: baked.length,
     sha256: sha,
     triangles: triangleCount(baked),
+    info: inspectGlb(baked),
     gzip: { url: `${url}.gz`, bytes: gz.length, sha256: sha256(gz), encoding: 'gzip-file' },
   }
   byHash.set(sha, lod)

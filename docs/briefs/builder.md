@@ -38,7 +38,7 @@ rules exactly.
      `windowVariant`);
    - y = 0 is the lowest ground under the footprint;
    - don't model ground, grass, paving or water;
-   - night material names (`window*`, `glass`, `entrance`);
+   - night material names (`window*`, `entrance`, `lamp*`; glass stays dark);
    - "Reworking an approved model" and "Rejected looks";
    - "Building a famous or intricate model", and the coaster section for a
      ride.
@@ -172,11 +172,43 @@ terrain or lidar ground. Note the value and its source in the header.
 `SCRATCH/new/<id>.json`:
 
 ```json
-{ "model": { "id": "<id>", "license": "CC0-1.0", "author": "<author>" },
-  "landmark": { "id": "<id>", "name": "<display name>", "model": "<id>", "lng": 0, "lat": 0,
-                "bearing": 0, "elevation": 0, "minzoom": 15,
-                "wikidata": "<Q-id, or omit>", "replaces": ["way/123"] } }
+{
+  "model": {
+    "id": "<id>",
+    "license": "CC0-1.0",
+    "collection": "landmarks",
+    "type": "building",
+    "tags": ["historic"],
+    "reviewStatus": "unreviewed",
+    "credits": [
+      { "name": "Alex Wohlbruck", "kind": "person", "github": "alexwohlbruck", "role": "creator" },
+      { "name": "Claude", "kind": "ai", "model": "Claude Opus 5.5", "role": "procedural modeling" }
+    ]
+  },
+  "landmark": {
+    "id": "<id>",
+    "name": "<display name>",
+    "model": "<id>",
+    "place": "<place-id>",
+    "lng": 0,
+    "lat": 0,
+    "bearing": 0,
+    "elevation": 0,
+    "minzoom": 15,
+    "replaces": ["way/123"]
+  }
+}
 ```
+
+Replace the example credits with the actual contributors and LLM model used.
+Every AI credit requires its own `model` field. `github` is optional and accepts
+an optional `@` prefix. Choose a primary `type`, descriptive slug `tags`, and
+the real license (CC0-1.0 is the default). CC-BY models need `attribution`;
+custom licenses need `licenseUrl`. Include `wikidata` only when known.
+The lead must prepare `<place-id>` in `catalog.places` before merging models;
+the scratch file does not create place records. Keep contributor/source credits
+separate from photo references. Put publishable visual-reference credits in
+`model.references` as well as the generator header.
 
 For a model placed several times (the Eiffel Tower, in Paris and Las Vegas), use
 `"landmarks": [ ... ]`.
@@ -221,3 +253,13 @@ build:
   <id>: <name>, <lng> <lat>, <notes>
   ...
 ```
+
+## Catalog metadata
+
+Follow `docs/reference.md`: choose a durable explicit `place` for every placement;
+include `type`, `tags`, `collection: "landmarks"`, and structured `credits` for
+the actual human/organization and AI assistant. Each AI credit must have a
+separate `model` field identifying the LLM used; use `github` for known contributor
+usernames so the viewer can link their profile and display their avatar.
+Keep existing IDs when updating a model so the website can show its Git-backed version history. Preserve existing
+High LOD paths, tags, places, attribution, and references when making a rework.

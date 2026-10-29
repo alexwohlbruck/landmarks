@@ -6,8 +6,8 @@ argument-hint: "[landmark name, city]"
 
 # New landmark
 
-Recommended model: Claude Opus 5.5 or newer. If you are a smaller model,
-tell the user so before starting.
+Recommended models: Astra, Claude Opus 5.5 or newer, or Claude Fable 5.1
+or newer. If you are not one of these, tell the user so before starting.
 
 Build one landmark model end to end. The user may have named it already:
 
@@ -25,8 +25,12 @@ in which city. Ask nothing else up front. Work the rest out yourself:
   from `catalog.json` (`nyc`, `chi`, `la`, `sf`, `clt`, `dc`, `lv`, `sea`,
   `wdw`, `dlr`, `carowinds`, …). For a new city, propose a short prefix.
   Check the id isn't taken.
-- **Author.** Every model so far is credited to `Barrelman`. Use that
-  unless the user asks for other credit.
+- **Credits.** Record the human/organization creating the model and the actual
+  AI assistant used, with their roles. Every AI credit requires a separate
+  `model` field naming the actual LLM. Add `github` for known usernames.
+  Preserve existing credit when updating a model.
+- **Place.** Reuse an explicit `catalog.places` ID or add a durable record for
+  the city, town, site, or remote region; include its parents when needed.
 
 Then confirm in one short message: name, id, coordinates, the OSM outline
 you'll replace, the author, and anything already in the catalog nearby.
@@ -74,14 +78,27 @@ what is estimated.
 4. Add the identifying features, then the facade. Check the 200 and 80 px
    views: if a feature vanishes, make it bigger or bolder, not more
    detailed. Check `--night`. Stay within the budget in `STYLE.md`.
+5. Optional: check the footprint. Plot the OSM outline and parts from
+   step 3 to scale, with north up, and compare them with
+   `preview/<id>/top.png`. Walls, setbacks and corners should land on the
+   OSM lines, within a metre or two, unless photos or lidar show OSM is
+   wrong. Worth doing for large or irregular plans: stadiums, terminals,
+   campuses, anything that isn't a simple tower.
 
 ## 5. Catalog and checks
 
-- Add the `models` entry (`"license": "CC0-1.0"`, `"author"`,
-  `"file": "models/<id>.glb"`, `"source": "generators/<id>.ts"`) and the
-  `landmarks` entry: anchor, `bearing`, `scale: 1`, `wikidata`, and
-  `replaces` with the outline and every `building:part` the model covers.
-- `bun run validate` and `bun test` must pass.
+- Add the `models` entry with `file`, `source`, `collection: "landmarks"`,
+  `type`, `tags`, license (default CC0-1.0), and structured `credits`; every AI
+  credit includes `model`. Record visual references and attribution as needed.
+- Add the `landmarks` entry with explicit `place`, anchor, `bearing`, scale,
+  optional Wikidata, and every covered OSM outline/part in `replaces`.
+- For updates, preserve model/placement IDs and existing metadata, and regenerate
+  both Low and High LOD files when present. Git supplies revision history.
+- Refresh stored building outlines with `bun tools/replacement-footprints.ts`
+  when `replaces` changes.
+- `bun run validate`, `bun run typecheck`, `bun test`, and `bun run build` must
+  pass. Inspect the built site for LODs, history, credits/avatars, all metadata,
+  and day/night rendering. See `docs/website.md`.
 
 ## 6. Report
 
@@ -91,3 +108,12 @@ photos; never say it looks right without putting a render next to a photo.
 List the sources, the estimates and any doubts. Ask whether to iterate or to
 commit and open a pull request with a contact sheet
 (`bun run sheet <id>`).
+
+## Public catalog metadata
+
+Use the metadata contract in `docs/reference.md`. Add structured `credits` for
+the actual human/organization and AI assistant, including its required `model`.
+Add a primary `type`, descriptive `tags`, and `collection: "landmarks"`. Choose an explicit existing `place` for
+the placement, or add a durable place record for its city, town, site, or remote
+region. Do not infer authorship or place from defaults. Updating a model keeps
+its existing IDs and file paths so Git-backed website history remains intact.

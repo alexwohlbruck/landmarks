@@ -7,6 +7,7 @@
   "repository": "github:alexwohlbruck/landmarks",
   "scripts": {
     "build": "bun src/build.ts",
+    "sync:sources": "bun tools/sync-sources.ts",
     "validate": "bun src/build.ts --check",
     "preview": "bun tools/preview.ts",
     "sheet": "bun tools/sheet.ts",

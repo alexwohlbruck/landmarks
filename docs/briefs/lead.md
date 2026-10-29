@@ -59,6 +59,13 @@ named. Write the list with ids, names, coordinates and one line on why to
 `<scratch>/<prefix>/plan.md`. Aim for 30 to 50 in a big city. Keep a list of
 candidates you didn't build, with reasons, for the PR.
 
+Before starting builders, choose the stable `place` IDs for the batch. Add and
+commit missing `catalog.places` records, including parents, first. Supply the
+IDs and contributor identities to builders. Every AI credit must have a separate
+`model` field; do not substitute an assistant brand name for the LLM version.
+The current local attribution is Alex Wohlbruck (`github: "alexwohlbruck"`) and
+Claude (`model: "Claude Opus 5.5"`); record the actual contributors for new work.
+
 ## 2. Build with sub-agents
 
 Start builder sub-agents in the background, **at most three running at
@@ -116,9 +123,16 @@ tools/merge-model.sh <scratch>/<prefix>/new/<id>.json "Add <Name>"
 ```
 
 One commit per model. Merge a model whose generator holds a shared helper
-before the models that import it; the script refuses the wrong order. Run
-`bun test` at the end. If `catalog.json` conflicts with `main` or another
-batch, merge it by id with `tools/merge-catalog.py` (see its header).
+before the models that import it; the script refuses the wrong order.
+
+The merge helper does not add place records or stage High LOD files; commit
+those explicitly. Reconcile `places` manually when using the catalog merge
+driver, which only unions models and placements. Run `bun run typecheck`,
+`bun test`, `bun run validate`, and `bun run build` at the end. Smoke-check the
+[website behavior](../website.md), including credits/model-used metadata,
+High/Low LOD, version history, all replaced OSM IDs, avatars, and day/night views.
+If `catalog.json` conflicts with `main` or another batch, merge model/placement
+lists by ID with `tools/merge-catalog.py` and reconcile places before validation.
 
 ## 5. The pull request
 
