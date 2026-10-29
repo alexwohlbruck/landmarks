@@ -15359,6 +15359,72 @@
       ],
       "file": "models/nyc-silvercup-sign.glb",
       "source": "generators/nyc-silvercup-sign.ts"
+    },
+    {
+      "id": "nyc-one-court-square",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "skyscraper",
+        "office"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Citicorp Building by David Shankbone.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Citicorp_Building_by_David_Shankbone.jpg",
+          "author": "David Shankbone",
+          "license": "CC BY 2.5"
+        },
+        {
+          "title": "One Court Square 018.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:One_Court_Square_018.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "One Court Square 024.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:One_Court_Square_024.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "One Court Square 047.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:One_Court_Square_047.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "44th Dr Crescent St Hunter St td (2023-06-26) 12 - One Court Square.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:44th_Dr_Crescent_St_Hunter_St_td_(2023-06-26)_12_-_One_Court_Square.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Long Island City New York October 2016.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Long_Island_City_New_York_October_2016.jpg",
+          "author": "King of Hearts",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-one-court-square.glb",
+      "source": "generators/nyc-one-court-square.ts"
     }
   ],
   "landmarks": [
@@ -27204,6 +27270,58 @@
       "elevation": 23.1,
       "minzoom": 15,
       "replaces": []
+    },
+    {
+      "id": "nyc-one-court-square",
+      "name": "One Court Square",
+      "model": "nyc-one-court-square",
+      "place": "new-york-area",
+      "lng": -73.9438683,
+      "lat": 40.7470053,
+      "bearing": 14,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q781961",
+      "replaces": [
+        "way/281342538",
+        "way/286214670",
+        "way/286214671",
+        "way/286214672",
+        "way/286214673",
+        "way/286214674",
+        "way/286214675",
+        "way/286214676",
+        "way/286214677",
+        "way/286214678",
+        "way/286214679",
+        "way/286214680",
+        "way/286214681",
+        "way/286214682",
+        "way/286214683",
+        "way/286214684",
+        "way/286214685",
+        "way/286214686",
+        "way/286214687",
+        "way/286214688",
+        "way/286214689",
+        "way/286214690",
+        "way/286214691",
+        "way/286214692",
+        "way/286214693",
+        "way/286214694",
+        "way/286214695",
+        "way/286214696",
+        "way/286214697",
+        "way/286214698",
+        "way/286214699",
+        "way/286214700",
+        "way/286214701",
+        "way/286214702",
+        "way/286214703",
+        "way/286214704",
+        "way/286214705",
+        "way/286214706"
+      ]
     }
   ],
   "places": [
