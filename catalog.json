@@ -15650,6 +15650,79 @@
       ],
       "file": "models/nyc-pepsi-cola-sign.glb",
       "source": "generators/nyc-pepsi-cola-sign.ts"
+    },
+    {
+      "id": "nyc-jfk-terminal-5",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "airport",
+        "terminal",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "JFK Terminal 5 aerial view.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_Terminal_5_aerial_view.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "View from Pool Deck, TWA Hotel (48581250157)",
+          "url": "https://commons.wikimedia.org/wiki/File:View_from_Pool_Deck,_TWA_Hotel,_John_F._Kennedy_International_Airport,_Jamaica,_Queens,_New_York_City,_NY_-_48581250157.jpg",
+          "author": "w_lemay",
+          "license": "CC0"
+        },
+        {
+          "title": "View from Pool Deck, TWA Hotel (48581109591)",
+          "url": "https://commons.wikimedia.org/wiki/File:View_from_Pool_Deck,_TWA_Hotel,_John_F._Kennedy_International_Airport,_Jamaica,_Queens,_New_York_City,_NY_-_48581109591.jpg",
+          "author": "w_lemay",
+          "license": "CC0"
+        },
+        {
+          "title": "View from Pool Deck, TWA Hotel",
+          "url": "https://commons.wikimedia.org/wiki/File:View_from_Pool_Deck,_TWA_Hotel,_John_F._Kennedy_International_Airport,_Jamaica,_Queens,_New_York_City,_NY.jpg",
+          "author": "w_lemay",
+          "license": "CC0"
+        },
+        {
+          "title": "JetBlue Terminal 5 ramp NY1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JetBlue_Terminal_5_ramp_NY1.jpg",
+          "author": "Acroterion",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "2022 JetBlue Terminal 5 JFK Airport 3.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2022_JetBlue_Terminal_5_JFK_Airport_3.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "JFK T5 May 2019 12.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:JFK_T5_May_2019_12.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-jfk-terminal-5.glb",
+      "source": "generators/nyc-jfk-terminal-5.ts"
     }
   ],
   "landmarks": [
@@ -27604,6 +27677,23 @@
       "minzoom": 15,
       "wikidata": "Q97883006",
       "replaces": []
+    },
+    {
+      "id": "nyc-jfk-terminal-5",
+      "name": "JFK Airport Terminal 5",
+      "model": "nyc-jfk-terminal-5",
+      "place": "new-york-area",
+      "lng": -73.7760073,
+      "lat": 40.6461541,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/284907689",
+        "relation/9077350",
+        "way/284907731"
+      ],
+      "wikidata": "Q55855384"
     }
   ],
   "places": [
