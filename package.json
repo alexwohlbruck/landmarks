@@ -5,6 +5,7 @@
   "description": "Low-poly 3D landmark models for maps, published in the Open Landmarks format",
   "license": "CC0-1.0",
   "repository": "github:alexwohlbruck/landmarks",
+  "homepage": "https://landmarks.barrelman.dev/",
   "scripts": {
     "build": "bun src/build.ts",
     "sync:sources": "bun tools/sync-sources.ts",

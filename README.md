@@ -11,7 +11,7 @@ and are mostly texture-free. Some include animation or authored night lighting.
 500+ landmarks in New York, Chicago, Los Angeles, San Francisco, Charlotte,
 Washington DC, Las Vegas, Seattle and a few theme parks.
 
-**[Explore the interactive demo →](https://landmarks.barrelman.dev/)**
+**Website: [landmarks.barrelman.dev](https://landmarks.barrelman.dev/) · [Dataset API](https://landmarks.barrelman.dev/api/v1/latest.json)**
 
 Browse landmarks on a MapLibre map, search names or credits, and filter by
 place, type, tag, or source. The collection combines local models with
