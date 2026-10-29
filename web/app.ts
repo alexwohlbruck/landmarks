@@ -13,7 +13,7 @@ const lodSelect = $<HTMLSelectElement>('lod')
 const base = new URL('./', window.location.href)
 // Release paths are rooted at the dataset, which may be hosted in a subdirectory.
 const assetUrl = (path: string) => new URL(path.replace(/^\//, ''), base).href
-maplibregl.setWorkerUrl(assetUrl('maplibre-gl-worker.mjs'))
+maplibregl.setWorkerUrl(assetUrl(`maplibre-gl-worker.mjs?v=${maplibregl.getVersion()}`))
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 const regions: [string, number, number][] = [
   ['Paris', 2.29, 48.86], ['New York', -73.97, 40.75], ['Chicago', -87.63, 41.88],
@@ -129,9 +129,19 @@ $('reset-map').addEventListener('click', () => {
   renderResults()
   fitAll()
 })
+function assetFromUrl() {
+  return assets.find(a => a.id === location.hash.slice(1)) ??
+    assets.find(a => a.id === 'empire-state-building') ?? assets[0]
+}
 window.addEventListener('hashchange', () => {
-  const a = assets.find(a => a.id === location.hash.slice(1))
-  if (a) selectAsset(a, true)
+  const asset = assetFromUrl()
+  if (!asset) return
+  if (!filtered.some(a => a.id === asset.id)) {
+    search.value = ''
+    regionSelect.value = ''
+    renderResults()
+  }
+  selectAsset(asset, true)
 })
 async function getJSON(url: string) {
   const response = await fetch(url)
@@ -151,7 +161,7 @@ async function init() {
     regionSelect.append(option)
   }
   renderResults()
-  selectAsset(assets.find(a => a.id === location.hash.slice(1)) ?? assets.find(a => a.id === 'empire-state-building') ?? assets[0])
+  selectAsset(assetFromUrl())
   try {
     map = new maplibregl.Map({ container: 'map', style: 'https://tiles.openfreemap.org/styles/positron',
       center: selected!.anchor, zoom: 16.5, pitch: 60, bearing: -25, maxZoom: 20, canvasContextAttributes: { antialias: true }, attributionControl: { compact: true }, renderWorldCopies: false })

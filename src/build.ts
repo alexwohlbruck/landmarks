@@ -8,7 +8,8 @@
  * so a bad edit never publishes.
  */
 import { copyFileSync, readFileSync, mkdirSync, rmSync, writeFileSync } from 'node:fs'
-import { dirname, join, resolve } from 'node:path'
+import { createHash } from 'node:crypto'
+import { basename, dirname, join, resolve } from 'node:path'
 import { buildRelease, CatalogError } from './release'
 
 const args = process.argv.slice(2)
@@ -55,11 +56,24 @@ const browser = await Bun.build({
   outdir: out,
   target: 'browser',
   minify: true,
-  naming: 'app.js',
+  naming: 'app-[hash].js',
   define: { 'process.env.NODE_ENV': JSON.stringify('production') },
 })
 if (!browser.success) {
   console.error(browser.logs)
   process.exit(1)
 }
+// GitHub Pages caches assets for ten minutes. Content-addressed URLs prevent
+// a newly deployed page from running an older cached app or stylesheet.
+const entry = browser.outputs.find(output => output.kind === 'entry-point')!
+const script = basename(entry.path)
+const css = readFileSync(join(out, 'style.css'))
+const stylesheet = `style-${createHash('sha256').update(css).digest('hex').slice(0, 12)}.css`
+writeFileSync(join(out, stylesheet), css)
+const html = readFileSync(join(out, 'index.html'), 'utf8')
+  .replace('./app.js', `./${script}`)
+  .replace('./style.css', `./${stylesheet}`)
+writeFileSync(join(out, 'index.html'), html)
+// Older cached HTML can still find its entrypoint during the transition.
+writeFileSync(join(out, 'app.js'), `import './${script}';\n`)
 console.log(`wrote ${release.files.size} dataset files and the demo to ${out}`)
