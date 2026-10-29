@@ -6,6 +6,9 @@ argument-hint: "[landmark name, city]"
 
 # New landmark
 
+Recommended model: Claude Opus 5.5 or newer. If you are a smaller model,
+tell the user so before starting.
+
 Build one landmark model end to end. The user may have named it already:
 
 > $ARGUMENTS

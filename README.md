@@ -63,7 +63,11 @@ anchor) and carry a licence the catalog can state.
 
 Most models here were built by [Claude Code](https://claude.com/claude-code).
 The repo ships two slash commands for it. Open Claude Code in the repo and
-run one:
+run one.
+
+**Use Claude Opus 5.5 or newer.** The hard part is judging renders against
+photos and getting proportions right, and smaller models tend to stop
+before the model matches.
 
 | Command | Does |
 |---|---|

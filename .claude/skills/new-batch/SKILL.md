@@ -6,6 +6,9 @@ argument-hint: "[city or park]"
 
 # New batch
 
+Recommended model: Claude Opus 5.5 or newer. If you are a smaller model,
+tell the user so before starting.
+
 Lead one batch of landmarks. The user may have named the city already:
 
 > $ARGUMENTS
