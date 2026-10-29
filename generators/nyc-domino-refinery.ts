@@ -40,7 +40,7 @@
  *   Sugar Refinery June 2022.jpg" (Kidfly182, CC BY-SA 4.0), the shell
  *   during the works.
  * - From the photos: the vault's near-semicircular section across the
- *   building, its ends rounded; the glass reading pale sky-blue; the sign's
+ *   building, a true half-cylinder with flat semicircular glass ends; the glass reading pale sky-blue; the sign's
  *   yellow letters, DOMINO above SUGAR, standing on a light steel frame on
  *   the river half of the roof, south of the chimney; the brick's orange-red
  *   and its rows of small arched windows.
@@ -105,39 +105,25 @@ wall(Y1, 'y', 1, XM + 0.5, X1 - 1, EAST)
 // ---- The glass building, rising out of the shell under a barrel vault.
 {
   cbox(glass, rect(GX0, GX1, -GY, GY), GL0, GL1, { top: true })
-  // the vault: a half-ellipse section across x, its ends quarter ellipsoids
-  const cx = (GX0 + GX1) / 2, half = (GX1 - GX0) / 2, rise = APEX - GL1
-  const D = 6.5, yEnd = GY - D, N = 10, M = 4
-  const pt = (th: number, ph: number, s: number): V3 => [cx + half * Math.cos(th), s * (yEnd + D * Math.sin(th) * Math.cos(ph)), GL1 + rise * Math.sin(th) * Math.sin(ph)]
-  const nrm = (th: number, ph: number, s: number): V3 => {
-    const v: V3 = [Math.cos(th) / half, s * Math.sin(th) * Math.cos(ph) / D, Math.sin(th) * Math.sin(ph) / rise]
-    const l = Math.hypot(...v); return [v[0] / l, v[1] / l, v[2] / l]
-  }
+  // the vault: a true half-cylinder (semicircular section across x) running
+  // the glass building's full length, closed by flat semicircular glass ends
+  const cx = (GX0 + GX1) / 2, half = (GX1 - GX0) / 2, rise = APEX - GL1, N = 12
+  const yEnd = GY
+  const pt = (th: number, y: number): V3 => [cx + half * Math.cos(th), y, GL1 + rise * Math.sin(th)]
+  const nrm = (th: number): V3 => { const v: V3 = [Math.cos(th) / half, 0, Math.sin(th) / rise], l = Math.hypot(...v); return [v[0] / l, 0, v[2] / l] }
   for (let k = 0; k < N; k++) {
     const t0 = (k / N) * Math.PI, t1 = ((k + 1) / N) * Math.PI
-    // the straight run
-    const a: V3 = pt(t0, Math.PI / 2, -1), b: V3 = pt(t1, Math.PI / 2, -1), c: V3 = pt(t1, Math.PI / 2, 1), d: V3 = pt(t0, Math.PI / 2, 1)
-    const na = nrm(t0, Math.PI / 2, 1), nb = nrm(t1, Math.PI / 2, 1)
+    const a: V3 = pt(t0, -GY), b: V3 = pt(t1, -GY), c: V3 = pt(t1, GY), d: V3 = pt(t0, GY)
+    const na = nrm(t0), nb = nrm(t1)
     glass.tri(a, b, c, undefined, undefined, undefined, [na, nb, nb])
     glass.tri(a, c, d, undefined, undefined, undefined, [na, nb, na])
-    // the rounded ends
-    for (const sg of [-1, 1]) {
-      for (let m = 0; m < M; m++) {
-        const p0 = (m / M) * (Math.PI / 2), p1 = ((m + 1) / M) * (Math.PI / 2)
-        const q = [pt(t0, p0, sg), pt(t1, p0, sg), pt(t1, p1, sg), pt(t0, p1, sg)]
-        const qn = [nrm(t0, p0, sg), nrm(t1, p0, sg), nrm(t1, p1, sg), nrm(t0, p1, sg)]
-        if (sg > 0) {
-          glass.tri(q[0], q[1], q[2], undefined, undefined, undefined, [qn[0], qn[1], qn[2]])
-          glass.tri(q[0], q[2], q[3], undefined, undefined, undefined, [qn[0], qn[2], qn[3]])
-        } else {
-          glass.tri(q[0], q[2], q[1], undefined, undefined, undefined, [qn[0], qn[2], qn[1]])
-          glass.tri(q[0], q[3], q[2], undefined, undefined, undefined, [qn[0], qn[3], qn[2]])
-        }
-      }
-    }
+    // flat ends: a fan from the springing line's midpoint
+    const m0: V3 = [cx, -GY, GL1], m1: V3 = [cx, GY, GL1]
+    glass.tri(m0, pt(t0, -GY), pt(t1, -GY))
+    glass.tri(m1, pt(t1, GY), pt(t0, GY))
   }
   // steel ribs over the vault, every 6 m, standing a little proud
-  for (let y = -yEnd; y <= yEnd + 0.01; y += (2 * yEnd) / 9) {
+  for (let y = -yEnd + 0.2; y <= yEnd - 0.19; y += (2 * yEnd - 0.4) / 10) {
     for (let k = 0; k < N; k++) {
       const t0 = (k / N) * Math.PI, t1 = ((k + 1) / N) * Math.PI
       const o = 0.12
@@ -234,16 +220,30 @@ cbox(brick, rect(-27.3, X0 + 0.1, -5.05, 5.0), 52.6, 54, { b: 0.2, top: roof, bo
   const zs = WEST + 0.6, zd = zs + 0.6 * K + 0.6
   // read from the river, looking east: u runs north to south (-y), w toward the river (-x)
   // `slant` leans the script forward, as the real Domino does (about 9°)
-  const place = (z0: number, slant = 0) => (u: number, v: number, w: number): V3 => [XS - w, yStart - (u + slant * v) * K, z0 + v * K]
-  strokes(sign, D.paths, { width: 0.16, depth: 0.08, place: place(zd, 0.16), back: true })
+  // `climb` raises "Domino"'s baseline toward its end: the word rises to the
+  // right, about 0.42 per unit along (Jakub Hałun's frontal river photo),
+  // while SUGAR stays level beneath it.
+  const CLIMB = 0.42
+  const place = (z0: number, slant = 0, climb = 0) => (u: number, v: number, w: number): V3 => [XS - w, yStart - (u + slant * v) * K, z0 + (v + climb * u) * K]
+  strokes(sign, D.paths, { width: 0.16, depth: 0.08, place: place(zd, 0.16, CLIMB), back: true })
   strokes(sign, S.paths, { width: 0.13, depth: 0.08, place: place(zs), back: true })
-  // the light steel frame behind: posts and two rails
+  // the light steel frame behind: posts rising with the word, a level rail
+  // behind SUGAR and a sloping one behind Domino
   const y0 = yStart - WORD * K, y1 = yStart
   for (let k = 0; k <= 6; k++) {
-    const y = y0 + ((y1 - y0) * k) / 6
-    cbox(steel, rect(XS + 0.4, XS + 0.8, y - 0.2, y + 0.2), WEST, zd + 0.55 * K, { top: true })
+    const y = y0 + ((y1 - y0) * k) / 6, u = (yStart - y) / K
+    cbox(steel, rect(XS + 0.4, XS + 0.8, y - 0.2, y + 0.2), WEST, zd + (0.55 + CLIMB * u) * K, { top: true })
   }
-  for (const z of [zs + 0.3 * K, zd + 0.3 * K]) cbox(steel, rect(XS + 0.4, XS + 0.8, y0, y1), z, z + 0.3, { bottom: true })
+  cbox(steel, rect(XS + 0.4, XS + 0.8, y0, y1), zs + 0.3 * K, zs + 0.3 * K + 0.3, { bottom: true })
+  {
+    const zr = (y: number) => zd + (0.3 + CLIMB * (yStart - y) / K) * K
+    const xa = XS + 0.4, xb = XS + 0.8
+    const r = (x: number, y: number, dz: number): V3 => [x, y, zr(y) + dz]
+    steel.quad(r(xa, y1, 0), r(xa, y0, 0), r(xa, y0, 0.3), r(xa, y1, 0.3))
+    steel.quad(r(xb, y0, 0), r(xb, y1, 0), r(xb, y1, 0.3), r(xb, y0, 0.3))
+    steel.quad(r(xa, y1, 0.3), r(xa, y0, 0.3), r(xb, y0, 0.3), r(xb, y1, 0.3))
+    steel.quad(r(xa, y0, 0), r(xa, y1, 0), r(xb, y1, 0), r(xb, y0, 0))
+  }
 }
 
 await saveModel('nyc-domino-refinery', 'The Refinery at Domino', [
