@@ -21,7 +21,11 @@
   },
   "dependencies": {
     "@google/model-viewer": "^4.4.0",
+    "@mapbox/vector-tile": "^3.0.0",
+    "@maplibre/vt-pbf": "^4.3.3",
     "maplibre-gl": "^6.16.0",
+    "pbf": "^5.1.2",
+    "polygon-clipping": "^0.15.7",
     "three": "^0.186.1"
   }
 }

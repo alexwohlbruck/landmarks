@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test'
-import { isInView, replacementFilter, replacementIds } from '../web/map-models'
+import { isInView, replacementIds } from '../web/map-models'
 import type { Asset } from '../src/release'
 
 const asset = {
@@ -12,8 +12,6 @@ test('replacement IDs follow OpenFreeMap Planetiler encoding, including OSM type
   // Empire State Building: verified against the actual OpenFreeMap building tile.
   expect(replacementIds(asset)).toEqual([346338542, 1233, 4561])
   expect(replacementIds({ ...asset, osm: null, additionalOsm: [] })).toEqual([])
-  expect(replacementFilter([asset, asset])).toEqual(['!', ['in', ['id'], ['literal', [346338542, 1233, 4561]]]])
-  expect(replacementFilter([])).toEqual(['!', ['in', ['id'], ['literal', []]]])
 })
 
 test('only load visible models at their zoom, with a selected-model override', () => {

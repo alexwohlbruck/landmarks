@@ -22,7 +22,9 @@ Each selection has a shareable URL.
 At street zoom, the actual GLB models are placed on the map at their catalog
 coordinates, among raised OpenFreeMap buildings. Their bearing, scale, and
 elevation are preserved. The OSM footprints listed by each landmark are hidden
-only after its model loads, replacing the default building extrusion. Zoom out
+only after its model loads, replacing the default building extrusion. Stored
+OSM footprints also remove building parts from merged vector-tile features
+without hiding unrelated neighboring buildings. Zoom out
 to browse numbered clusters; click a model to inspect it. Visible models load
 on demand, animate where supported, and switch to detailed versions at their
 configured zoom level.
@@ -67,7 +69,17 @@ python3 -m http.server 4173 --directory dist
 `web/` contains the demo's HTML, CSS, and TypeScript. The build bundles its
 browser dependencies and writes the demo, dataset API, and models into
 `dist/`. It reads the generated release directly, so every catalog placement
-appears automatically. All demo asset URLs are relative to the hosting path,
+appears automatically. `web/replacement-footprints.json` contains the OSM
+building outlines used to cut the original polygons out of the basemap.
+Refresh those when changing a landmark's `replaces` list:
+
+```sh
+bun tools/replacement-footprints.ts
+```
+
+This is a maintenance command using Overpass, not a build-time or visitor
+runtime dependency. The footprint data is ODbL-1.0, © OpenStreetMap
+contributors. All demo asset URLs are relative to the hosting path,
 including GitHub Pages project subdirectories.
 
 Deploy `dist/` to any static site host; no server runtime, API keys, database,

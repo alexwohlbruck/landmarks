@@ -148,6 +148,11 @@ solid trusses, terrain-footed walls. `nyc-brooklyn-bridge.ts` and
 
 ### What `replaces` must list
 
+The demo additionally uses stored OSM footprint geometry to split merged
+OpenFreeMap building features before drawing them. Refresh its derived
+outlines with `bun tools/replacement-footprints.ts` after changing these
+references. Other clients still rely on the complete OSM ID list below.
+
 The client hides buildings by OSM id. List the outline and every
 `building:part` inside it. Detailed buildings are mapped twice in OSM, an
 outline over the whole footprint and `building:part` polygons inside it, and a

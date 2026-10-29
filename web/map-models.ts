@@ -1,7 +1,8 @@
-import { MercatorCoordinate, type CustomLayerInterface, type CustomRenderMethodInput, type Map as LibreMap, type FilterSpecification, type MapMouseEvent } from 'maplibre-gl'
+import { MercatorCoordinate, type CustomLayerInterface, type CustomRenderMethodInput, type Map as LibreMap, type MapMouseEvent } from 'maplibre-gl'
 import { AnimationMixer, AmbientLight, Box3, Camera, DirectionalLight, Group, Matrix4, Mesh, Raycaster, Scene, Vector3, WebGLRenderer, type Material } from 'three'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import type { Asset } from '../src/release'
+import { BuildingTiles } from './building-tiles'
 
 /** OpenFreeMap uses Planetiler IDs: OSM ID * 10 + node/way/relation type. */
 export function replacementIds(asset: Asset): number[] {
@@ -10,11 +11,6 @@ export function replacementIds(asset: Asset): number[] {
     const kind = { node: 1, way: 2, relation: 3 }[ref.type]
     return kind ? [ref.id * 10 + kind] : []
   })
-}
-
-export function replacementFilter(assets: Asset[]): ['!', ['in', ['id'], ['literal', number[]]]] {
-  const ids = [...new Set(assets.flatMap(replacementIds))]
-  return ['!', ['in', ['id'], ['literal', ids]]]
 }
 
 export function isInView(asset: Asset, bounds: [number, number, number, number], zoom: number, selectedId?: string) {
@@ -47,7 +43,7 @@ export class LandmarkModels implements CustomLayerInterface {
   private frame = new Matrix4()
   private lastFrame = 0
   private removed = false
-  private baseBuildingFilters = new Map<string, FilterSpecification | undefined>()
+  private buildings!: BuildingTiles
   private frameRequest?: number
   private replacementKey?: string
 
@@ -62,17 +58,10 @@ export class LandmarkModels implements CustomLayerInterface {
     const sun = new DirectionalLight(0xfff4df, 2.5)
     sun.position.set(-500, 1000, 500)
     this.scene.add(sun)
-    // Replace the flat building styling with a shared-depth extrusion layer.
-    // Keep all baseline filters so building outlines/parts retain their semantics.
-    for (const layer of map.getStyle().layers) {
-      if ('source-layer' in layer && layer['source-layer'] === 'building' && layer.source === 'openmaptiles') {
-        if (layer.type === 'fill-extrusion') map.removeLayer(layer.id)
-        else this.baseBuildingFilters.set(layer.id, map.getFilter(layer.id) || undefined)
-      }
-    }
+    this.buildings = new BuildingTiles(map, replacementIds)
     const before = map.getStyle().layers.find(l => l.type === 'symbol')?.id
     map.addLayer({
-      id: 'buildings-3d', type: 'fill-extrusion', source: 'openmaptiles', 'source-layer': 'building', minzoom: 14,
+      id: 'buildings-3d', type: 'fill-extrusion', source: this.buildings.sourceId, 'source-layer': 'building', minzoom: 14,
       filter: ['!=', ['get', 'hide_3d'], true],
       paint: {
         'fill-extrusion-color': '#d1cec4',
@@ -217,18 +206,13 @@ export class LandmarkModels implements CustomLayerInterface {
     const key = active.map(a => a.id).sort().join(',')
     if (key === this.replacementKey) return
     this.replacementKey = key
-    const exclude = replacementFilter(active)
-    this.map.setFilter('buildings-3d', ['all', ['!=', ['get', 'hide_3d'], true], exclude])
-    for (const [id, original] of this.baseBuildingFilters) {
-      this.map.setFilter(id, original ? ['all', original, exclude] as FilterSpecification : exclude)
-    }
+    this.buildings.setAssets(active)
     if (this.map.getLayer('landmark-points')) {
       this.map.setFilter('landmark-points', ['all', ['!', ['has', 'point_count']],
         ['!', ['in', ['get', 'id'], ['literal', active.map(a => a.id)]]]])
     }
     // Machine-readable state also makes smoke checks possible without a global debug API.
     this.map.getCanvas().dataset.models = String(active.length)
-    this.map.getCanvas().dataset.replacedBuildings = String(new Set(active.flatMap(replacementIds)).size)
   }
 
   render(_gl: WebGL2RenderingContext, options: CustomRenderMethodInput) {
@@ -283,6 +267,7 @@ export class LandmarkModels implements CustomLayerInterface {
     this.map.off('dragstart', this.cancelFocus)
     this.pending.forEach(p => p.controller.abort())
     this.models.forEach(model => this.dispose(model))
+    this.buildings.dispose()
     this.renderer.dispose()
   }
 }
