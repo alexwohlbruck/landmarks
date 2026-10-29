@@ -51,6 +51,17 @@ export class Part {
   }
 
   tri(a: V3, b: V3, c: V3, ua: number[] = [0, 0], ub: number[] = [0, 0], uc: number[] = [0, 0], normals?: V3[]) {
+    // Explicit (smooth) normals say which side is the outside. If the
+    // winding disagrees, the map culls the face from outside and it shows
+    // through, while its lighting still looks right — so make the winding
+    // follow the normals.
+    if (normals) {
+      const g = cross(sub(b, a), sub(c, a)), s: V3 = [0, 1, 2].map((k) => normals[0][k] + normals[1][k] + normals[2][k]) as V3
+      if (g[0] * s[0] + g[1] * s[1] + g[2] * s[2] < 0) {
+        this.tri(a, c, b, ua, uc, ub, [normals[0], normals[2], normals[1]])
+        return
+      }
+    }
     const n = normalize(cross(sub(b, a), sub(c, a)))
     const corners = [[a, ua], [b, ub], [c, uc]] as [V3, number[]][]
     corners.forEach(([p, t], i) => {

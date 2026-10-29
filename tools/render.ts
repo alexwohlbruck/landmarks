@@ -163,10 +163,12 @@ export function render(scene: Scene, w: number, h: number, az: number, el: numbe
       normal.push([n[i * 3], -n[i * 3 + 2], n[i * 3 + 1]])
     }
     for (let t = 0; t < ix.length; t += 3) {
-      const ids = [ix[t], ix[t + 1], ix[t + 2]], nn = normal[ids[0]]
-      if (dot(nn, camera) < -0.00001 && !mat.doubleSided) continue
+      const ids = [ix[t], ix[t + 1], ix[t + 2]]
       const [a, b, c] = ids.map((i) => pos[i]), det = (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])
       if (Math.abs(det) < 1e-8) continue
+      // Cull by winding, as the map (and any GPU) does: a face wound
+      // clockwise on screen is its back, whatever its normals say.
+      if (det > 0 && !mat.doubleSided) continue
       const xmin = Math.max(0, Math.floor(Math.min(a[0], b[0], c[0]))), xmax = Math.min(W - 1, Math.ceil(Math.max(a[0], b[0], c[0])))
       const ymin = Math.max(0, Math.floor(Math.min(a[1], b[1], c[1]))), ymax = Math.min(H - 1, Math.ceil(Math.max(a[1], b[1], c[1])))
       const dbdx = (c[1] - a[1]) / det, dbdy = -(c[0] - a[0]) / det, dcdx = -(b[1] - a[1]) / det, dcdy = (b[0] - a[0]) / det
