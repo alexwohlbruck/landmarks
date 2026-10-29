@@ -10,9 +10,12 @@ Read [`STYLE.md`](../STYLE.md) and [`reference.md`](reference.md) first. Then
 
 ## Who does what
 
-A batch has a **lead** and several **builders**. With agents, the lead is
-one long-running agent and the builders are sub-agents it starts. The briefs
-to paste into them are in [`briefs/`](briefs/):
+A batch has a **lead** and several **builders**. With
+[Claude Code](https://claude.com/claude-code), the lead is one long-running
+session and the builders are sub-agents it starts. To run a batch, open
+Claude Code in the repo and paste the lead brief followed by the city, id
+prefix and branch. The lead starts the builders itself, with the builder
+brief. The briefs are in [`briefs/`](briefs/):
 
 - [`briefs/lead.md`](briefs/lead.md): plans the list, starts builders,
   reviews every model, merges, opens the PR.

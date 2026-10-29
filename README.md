@@ -59,6 +59,36 @@ Models made in Blender or elsewhere are welcome too, as long as they follow
 the frame contract (+Y up, −Z north, metres, origin on the ground at the
 anchor) and carry a licence the catalog can state.
 
+## Generating models with Claude
+
+Most models here were built by [Claude Code](https://claude.com/claude-code)
+working from the briefs in [`docs/briefs/`](docs/briefs/). Run it from the
+repo root.
+
+**A whole city.** Start a Claude Code session and paste
+[`docs/briefs/lead.md`](docs/briefs/lead.md), followed by the city, an id
+prefix and a branch:
+
+```
+city: Boston
+prefix: bos
+branch: batch/boston
+```
+
+The lead picks 20 to 50 candidates and starts builder sub-agents. It
+reviews every model and merges them, then opens a draft PR with contact
+sheets. Expect a long session.
+
+**A few models.** Paste [`docs/briefs/builder.md`](docs/briefs/builder.md)
+and fill in its "Your assignment" block: `WT` is your checkout, `SCRATCH`
+any directory outside the repo, and the landmarks to build. The
+builder writes the generators and models and stages the placements. You
+then add the placements to `catalog.json` and open the PR.
+
+Either way, review the renders against photos before merging.
+[`docs/workflow.md`](docs/workflow.md) is the full process the lead follows
+and has the rules from past reviews.
+
 ### Before you start, read
 
 - [`STYLE.md`](STYLE.md): the art style, the triangle budget, and what
