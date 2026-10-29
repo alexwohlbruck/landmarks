@@ -15539,6 +15539,56 @@
       ],
       "file": "models/nyc-ewr-terminal-a.glb",
       "source": "generators/nyc-ewr-terminal-a.ts"
+    },
+    {
+      "id": "nyc-ewr-building-1",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "airport",
+        "art-deco",
+        "streamline-moderne"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "NewarkAirportAdminBldg(restored).tif",
+          "url": "https://commons.wikimedia.org/wiki/File:NewarkAirportAdminBldg(restored).tif",
+          "author": "Djflem",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "HAER NJ-133-B: North (land side) and northwest elevations, looking southeast",
+          "url": "https://commons.wikimedia.org/wiki/File:NORTH_(LAND_SIDE)_AND_NORTHWEST_ELEVATIONS,_LOOKING_SOUTHEAST._ROUTE_ONE_IN_FOREGROUND._-_Newark_International_Airport,_Administration_Building,_Brewster_Road_between_Route_21_HAER_NJ,7-NEARK.V,1B-1.tif",
+          "author": "Peter Brandt (HAER)",
+          "license": "Public domain"
+        },
+        {
+          "title": "HAER NJ-133-B: South (air side) and southwest elevations",
+          "url": "https://commons.wikimedia.org/wiki/File:SOUTH_(AIR_SIDE)_AND_SOUTHWEST_ELEVATIONS,_LOOKING_NORTH-EAST_FROM_BUILDING_340_ROOF._PARKING_LOT_G_IN_FOREGROUND._-_Newark_International_Airport,_Administration_Building,_HAER_NJ,7-NEARK.V,1B-2.tif",
+          "author": "Peter Brandt (HAER)",
+          "license": "Public domain"
+        }
+      ],
+      "file": "models/nyc-ewr-building-1.glb",
+      "source": "generators/nyc-ewr-building-1.ts"
     }
   ],
   "landmarks": [
@@ -27465,6 +27515,20 @@
       "wikidata": "Q55889597",
       "replaces": [
         "way/802991914"
+      ]
+    },
+    {
+      "id": "nyc-ewr-building-1",
+      "name": "Newark Airport Administration Building (Building One)",
+      "model": "nyc-ewr-building-1",
+      "place": "new-york-area",
+      "lng": -74.1700616,
+      "lat": 40.7044114,
+      "bearing": 1.5,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/232382759"
       ]
     }
   ],
