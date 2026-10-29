@@ -44,7 +44,7 @@ function fitAll() {
   if (!map || !filtered.length) return
   const bounds = new maplibregl.LngLatBounds()
   filtered.forEach(a => bounds.extend(a.anchor))
-  map.fitBounds(bounds, { padding: { top: 135, bottom: 100, left: 55, right: 55 }, maxZoom: 15, duration: reducedMotion ? 0 : 900 })
+  map.fitBounds(bounds, { padding: { top: 65, bottom: 45, left: 45, right: 45 }, maxZoom: 15, duration: reducedMotion ? 0 : 900 })
 }
 function renderResults() {
   const term = search.value.trim().toLocaleLowerCase()
@@ -52,15 +52,12 @@ function renderResults() {
     `${a.name} ${a.id} ${regionById.get(a.id)}`.toLocaleLowerCase().includes(term))
   $('result-count').textContent = `${filtered.length.toLocaleString()} landmark${filtered.length === 1 ? '' : 's'}`
   const fragment = document.createDocumentFragment()
-  filtered.forEach((a, i) => {
+  filtered.forEach(a => {
     const button = document.createElement('button')
     button.className = 'result'
     button.type = 'button'
     button.dataset.id = a.id
     button.setAttribute('aria-pressed', String(selected?.id === a.id))
-    const index = document.createElement('span')
-    index.className = 'index'
-    index.textContent = String(i + 1).padStart(2, '0')
     const text = document.createElement('span')
     const title = document.createElement('span')
     title.className = 'result-name'
@@ -68,18 +65,14 @@ function renderResults() {
     const region = document.createElement('small')
     region.textContent = regionById.get(a.id)!
     text.append(title, region)
-    const arrow = document.createElement('span')
-    arrow.className = 'arrow'
-    arrow.textContent = '↗'
-    arrow.setAttribute('aria-hidden', 'true')
-    button.append(index, text, arrow)
+    button.append(text)
     button.addEventListener('click', () => selectAsset(a, true))
     fragment.append(button)
   })
   if (!filtered.length) {
     const empty = document.createElement('p')
     empty.className = 'empty'
-    empty.textContent = 'No landmarks found. Try another name or choose Everywhere.'
+    empty.textContent = 'No landmarks found.'
     fragment.append(empty)
   }
   $('results').replaceChildren(fragment)
@@ -89,8 +82,6 @@ function showModel() {
   if (!selected) return
   const lod = lodSelect.value === 'detail' ? selected.lods.detail! : selected.lods.low
   $('model-status').textContent = 'Loading 3D model…'
-  $('triangles').textContent = lod.triangles.toLocaleString()
-  $('model-size').textContent = lod.bytes < 1_000_000 ? `${(lod.bytes / 1000).toFixed(0)} KB` : `${(lod.bytes / 1_000_000).toFixed(1)} MB`
   const url = assetUrl(lod.url)
   const download = $<HTMLAnchorElement>('download')
   download.href = url
@@ -104,18 +95,10 @@ function selectAsset(a: Asset, fly = false) {
   selected = a
   history.replaceState(null, '', `#${encodeURIComponent(a.id)}`)
   $('place-name').textContent = a.name
-  $('place-region').textContent = regionById.get(a.id)!
-  $('coordinates').textContent = `${Math.abs(a.anchor[1]).toFixed(5)}° ${a.anchor[1] >= 0 ? 'N' : 'S'}  /  ${Math.abs(a.anchor[0]).toFixed(5)}° ${a.anchor[0] >= 0 ? 'E' : 'W'}`
-  $('license').textContent = a.artisticLicense
-  $('credit').textContent = `Model by ${a.authors.join(', ')}.${a.attribution ? ` ${a.attribution}` : ''} Placement: © OpenStreetMap contributors, ODbL-1.0.`
-  const osm = $<HTMLAnchorElement>('osm')
-  osm.href = `https://www.openstreetmap.org/?mlat=${a.anchor[1]}&mlon=${a.anchor[0]}#map=18/${a.anchor[1]}/${a.anchor[0]}`
-  const source = $<HTMLAnchorElement>('source')
-  source.hidden = !a.source
-  if (a.source) source.href = assetUrl(a.source.url)
+  $('credit').textContent = a.attribution ?? (a.artisticLicense === 'CC0-1.0' ? '' : `${a.authors.join(', ')} · ${a.artisticLicense}`)
   viewer.alt = `Interactive 3D model of ${a.name}. Drag to rotate and scroll or pinch to zoom.`
   lodSelect.value = 'low'
-  $('lod-label').hidden = !a.lods.detail
+  lodSelect.hidden = !a.lods.detail
   showModel()
   document.querySelectorAll<HTMLButtonElement>('.result').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.id === a.id)))
   if (map) {
@@ -135,10 +118,6 @@ viewer.addEventListener('error', () => {
   $('model-status').replaceChildren(message, retry)
 })
 lodSelect.addEventListener('change', showModel)
-$('rotate').addEventListener('click', () => {
-  viewer.autoRotate = !viewer.autoRotate
-  $('rotate').setAttribute('aria-pressed', String(viewer.autoRotate))
-})
 search.addEventListener('input', () => { renderResults(); fitAll() })
 regionSelect.addEventListener('change', () => { renderResults(); fitAll() })
 $('reset-map').addEventListener('click', () => {
@@ -174,7 +153,6 @@ async function init() {
     map = new maplibregl.Map({ container: 'map', style: 'https://tiles.openfreemap.org/styles/positron',
       center: [-96, 38], zoom: 3, maxZoom: 19, attributionControl: { compact: true }, renderWorldCopies: false })
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right')
-    map.addControl(new maplibregl.ScaleControl({ maxWidth: 90 }), 'bottom-right')
     map.on('error', event => { console.error(event.error); $('map-status').title = event.error.message; $('map-status').textContent = 'Some map tiles could not load. You can still browse the collection and preview models.' })
     map.on('idle', () => { if (map!.areTilesLoaded()) $('map-status').textContent = '' })
     map.on('load', () => {

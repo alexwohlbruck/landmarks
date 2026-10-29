@@ -13,41 +13,34 @@
 </head>
 <body>
   <header class="header">
-    <a class="brand" href="./" aria-label="Landmarks home"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 33V18l10-7v22m0-17 10 6v11m0-23 10-5v28M2 34h36M11 19v3m0 4v3m10-5v5m10-15v5m0 5v5"/></svg><span>Landmarks</span></a>
-    <a class="repo-link" href="https://github.com/alexwohlbruck/landmarks" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">↗</span></a>
+    <a class="brand" href="./">Landmarks</a>
+    <a href="https://github.com/alexwohlbruck/landmarks">GitHub</a>
   </header>
   <main class="workspace">
     <aside class="collection" aria-label="Landmark collection">
-      <div class="collection-head">
-        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a landmark…" aria-label="Search landmarks"></label>
-        <label class="region-label" for="region">Explore a region</label><select id="region"><option value="">Everywhere</option></select>
+      <div class="filters">
+        <input id="search" type="search" placeholder="Search landmarks" aria-label="Search landmarks">
+        <select id="region" aria-label="Filter by region"><option value="">All regions</option></select>
+        <span id="result-count" role="status">Loading…</span>
       </div>
-      <div class="results-heading"><span id="result-count" role="status">Loading collection…</span><span>Name A–Z</span></div>
       <div id="results" class="results" aria-label="Search results"></div>
-      <footer class="collection-footer"><a href="./api/v1/latest.json" title="Open Landmarks dataset API">Dataset ↗</a></footer>
     </aside>
     <section class="map-section" aria-label="Landmark locations">
       <div id="map" role="region" aria-label="Interactive map of landmark locations"></div>
-      <div class="map-caption">Landmark locations</div>
-      <button id="reset-map" class="reset-map" type="button">↗ <span>Show all locations</span></button>
-      <div id="map-status" class="map-status" role="status">Loading the atlas…</div>
-      <div class="map-legend"><span class="legend-bubble">12</span><span>Landmarks in this area<br><b>Click a circle to explore</b></span></div>
+      <button id="reset-map" class="reset-map" type="button">Reset view</button>
+      <div id="map-status" class="map-status" role="status">Loading map…</div>
     </section>
     <aside id="inspector" class="inspector" aria-label="Selected landmark preview">
-      <div class="preview-heading"><span class="eyebrow">3D preview</span><span class="preview-badge">Interactive 3D</span></div>
+      <h1 id="place-name">Choose a landmark</h1>
       <div class="viewer-wrap">
         <model-viewer id="viewer" camera-controls touch-action="pan-y" shadow-intensity="1" exposure="1.1" camera-orbit="-35deg 70deg auto" interaction-prompt="none" autoplay></model-viewer>
-        <div id="model-status" class="model-status" role="status">Choose a landmark to preview</div>
+        <div id="model-status" class="model-status" role="status">Loading model…</div>
       </div>
-      <div class="viewer-toolbar"><span>Drag to orbit · Scroll to zoom</span><button id="rotate" type="button" aria-pressed="false">↻ Auto-rotate</button></div>
-      <div class="details"><div id="place-region" class="eyebrow">The collection</div><h2 id="place-name">Choose a landmark</h2><p id="coordinates" class="coordinates"></p>
-        <dl class="specs"><div><dt>Triangles</dt><dd id="triangles">—</dd></div><div><dt>Model size</dt><dd id="model-size">—</dd></div><div><dt>License</dt><dd id="license">—</dd></div><div><dt>Format</dt><dd>GLB · meters</dd></div></dl>
-        <label id="lod-label" class="lod-label" hidden>Detail level<select id="lod"><option value="low">Standard model</option><option value="detail">Detailed model</option></select></label>
-        <a id="download" class="download" download>Download model <span>↓</span></a>
-        <div class="detail-links"><a id="osm" target="_blank" rel="noopener">OpenStreetMap ↗</a><a id="source" target="_blank" rel="noopener">Model source ↗</a></div>
+      <div class="model-actions">
+        <select id="lod" aria-label="Model detail" hidden><option value="low">Standard model</option><option value="detail">Detailed model</option></select>
+        <a id="download" download>Download GLB</a>
         <p id="credit" class="credit"></p>
       </div>
-      <div class="inspector-footer"><a href="https://github.com/alexwohlbruck/landmarks#licence">Model &amp; placement licenses ↗</a><br><a href="./third-party-licenses.txt">Third-party software licenses ↗</a></div>
     </aside>
   </main>
   <noscript><p class="fatal">Enable JavaScript to explore the map and 3D models. The <a href="./api/v1/latest.json">dataset API</a> is also available directly.</p></noscript>
