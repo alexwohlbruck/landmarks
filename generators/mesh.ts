@@ -5,7 +5,7 @@
  * Geometry is authored in a map-friendly frame — x east, y north, z up,
  * metres, origin at the anchor on the ground — and converted to glTF's Y-up
  * frame on write. That is the frame contract every landmark GLB follows (see
- * `README.md`): +Y up, -Z north, +X east, metres, origin at the
+ * `docs/reference.md`): +Y up, -Z north, +X east, metres, origin at the
  * anchor, so a client places a model with nothing but a position, a bearing
  * and a scale.
  *

@@ -48,7 +48,7 @@ and photos. Every rule here fixes something that went wrong.
 - **Bridges are the exception, in their detail model.** A suspension
   bridge's cables, suspenders and stays are what make it itself, so they
   are modelled, along with trusses and railings, in a detail GLB the map
-  draws close up (see Levels of detail and Bridges in `README.md`). The
+  draws close up (see Levels of detail and Bridges in `docs/reference.md`). The
   model owns walkways and tracks on the bridge, surfaces included; the map
   draws the road surfaces and their markings. The
   low model keeps the towers, anchorages, cables and the deck structure as
@@ -72,7 +72,7 @@ and photos. Every rule here fixes something that went wrong.
   it: a stadium field dug below grade keeps y = 0 at the field, and
   `elevation` is minus the field's depth below the street outside. Never
   move y = 0 off the model's own base to fake either. See Elevation in
-  `README.md`.
+  `docs/reference.md`.
 - **Nothing important in the bottom of the uphill walls.** Doors, plinths
   and the first band of windows on the uphill side end up below ground, so
   start the facade detail at that side's real ground level.

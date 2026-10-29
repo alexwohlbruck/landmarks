@@ -42,7 +42,7 @@ rules exactly.
    - "Reworking an approved model" and "Rejected looks";
    - "Building a famous or intricate model", and the coaster section for a
      ride.
-2. `WT/README.md`: the frame contract (+Y up, -Z north, +X east, metres,
+2. `WT/docs/reference.md`: the frame contract (+Y up, -Z north, +X east, metres,
    origin at the anchor on the ground) and what `replaces` must list.
 3. `WT/docs/evidence.md`: what sources you may use, and the lidar rules.
 4. Worked examples: `generators/empire-state-building.ts`,

@@ -173,7 +173,7 @@ building, and outlines can be out of date.
 
 `buildings` lists every outline and `building:part` in the box. That is
 where `replaces` comes from: the outline and every part the model covers
-(see "What `replaces` must list" in the README).
+(see "What `replaces` must list" in [`reference.md`](reference.md)).
 
 Set `LANDMARKS_USER_AGENT` to a User-Agent with your own contact before
 using these tools much. Nominatim allows one request a second.

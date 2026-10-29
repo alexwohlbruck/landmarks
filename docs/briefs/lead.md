@@ -13,7 +13,8 @@ asked for. This is a long job. Take the time to get each model right.
 
 Read first, all of them:
 
-- `README.md`, especially "Adding a model" and "Batch pull requests";
+- `README.md`, especially "Contributing a model";
+- `docs/reference.md`, especially "Batch pull requests";
 - `STYLE.md`, especially "Reworking an approved model" and "Rejected looks";
 - `docs/workflow.md`: the whole process, which this brief follows;
 - `docs/evidence.md`: what sources may be used;

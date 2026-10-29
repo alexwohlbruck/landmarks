@@ -5,7 +5,7 @@ usually 20 to 50 models. This page is the whole process, from choosing
 candidates to the models showing on the map. It is written so a new session,
 human or agent, can run a batch from scratch.
 
-Read [`STYLE.md`](../STYLE.md) and the [README](../README.md) first. Then
+Read [`STYLE.md`](../STYLE.md) and [`reference.md`](reference.md) first. Then
 [`evidence.md`](evidence.md), for where facts may come from.
 
 ## Who does what
@@ -69,7 +69,7 @@ sorts together.
 
 Look for the city's most recognisable buildings and structures: skyline
 towers, civic buildings, monuments, stadiums and arenas, museums, churches,
-bridges (one complete model each; see Bridges in the README), famous
+bridges (one complete model each; see Bridges in [`reference.md`](reference.md)), famous
 sculpture, stations, rides. Prefer things people look for on a map and that
 read in 3D from above.
 
