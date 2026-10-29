@@ -14276,6 +14276,86 @@
       ],
       "file": "models/nyc-dime-savings-bank.glb",
       "source": "generators/nyc-dime-savings-bank.ts"
+    },
+    {
+      "id": "nyc-brooklyn-borough-hall",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "government",
+        "greek-revival",
+        "cupola"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Brooklyn Borough Hall July 2026.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_July_2026.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_01.jpg",
+          "author": "Ad Meskens",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall November 2022.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_November_2022.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall January 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_January_2023.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall January 2023 001.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_January_2023_001.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall January 2023 002.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_January_2023_002.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall bell tower from the south.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_bell_tower_from_the_south.jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Borough Hall 2.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Borough_Hall_2.JPG",
+          "author": "Michelb101",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/nyc-brooklyn-borough-hall.glb",
+      "source": "generators/nyc-brooklyn-borough-hall.ts"
     }
   ],
   "landmarks": [
@@ -25867,6 +25947,21 @@
       "replaces": [
         "way/248156228",
         "way/700241894"
+      ]
+    },
+    {
+      "id": "nyc-brooklyn-borough-hall",
+      "name": "Brooklyn Borough Hall",
+      "model": "nyc-brooklyn-borough-hall",
+      "place": "new-york-area",
+      "lng": -73.9903048,
+      "lat": 40.6927696,
+      "bearing": 5.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q929403",
+      "replaces": [
+        "way/241846064"
       ]
     }
   ],
