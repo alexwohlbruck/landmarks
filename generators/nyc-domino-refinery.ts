@@ -221,17 +221,17 @@ cbox(brick, rect(-27.3, X0 + 0.1, -5.05, 5.0), 52.6, 54, { b: 0.2, top: roof, bo
   // read from the river, looking east: u runs north to south (-y), w toward the river (-x)
   // `slant` leans the script forward, as the real Domino does (about 9°)
   // `climb` raises "Domino"'s baseline toward its end: the word rises to the
-  // right, about 0.42 per unit along (Jakub Hałun's frontal river photo),
-  // while SUGAR stays level beneath it.
-  const CLIMB = 0.42
+  // right, about 0.33 per unit along (Jakub Hałun's frontal river photo),
+  // while SUGAR stays level beneath it, leaning slightly forward.
+  const CLIMB = 0.33
   const place = (z0: number, slant = 0, climb = 0) => (u: number, v: number, w: number): V3 => [XS - w, yStart - (u + slant * v) * K, z0 + (v + climb * u) * K]
   strokes(sign, D.paths, { width: 0.16, depth: 0.08, place: place(zd, 0.16, CLIMB), back: true })
-  strokes(sign, S.paths, { width: 0.13, depth: 0.08, place: place(zs), back: true })
+  strokes(sign, S.paths, { width: 0.13, depth: 0.08, place: place(zs, 0.12), back: true })
   // the light steel frame behind: posts rising with the word, a level rail
   // behind SUGAR and a sloping one behind Domino
   const y0 = yStart - WORD * K, y1 = yStart
-  for (let k = 0; k <= 6; k++) {
-    const y = y0 + ((y1 - y0) * k) / 6, u = (yStart - y) / K
+  for (const f of [0.15, 0.5, 0.85]) { // three posts, as on the real frame
+    const y = y0 + (y1 - y0) * f, u = (yStart - y) / K
     cbox(steel, rect(XS + 0.4, XS + 0.8, y - 0.2, y + 0.2), WEST, zd + (0.55 + CLIMB * u) * K, { top: true })
   }
   cbox(steel, rect(XS + 0.4, XS + 0.8, y0, y1), zs + 0.3 * K, zs + 0.3 * K + 0.3, { bottom: true })
