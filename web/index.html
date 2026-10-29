@@ -18,29 +18,29 @@
   </header>
   <main class="workspace">
     <aside class="collection" aria-label="Landmark collection">
-      <div class="collection-head"><div class="eyebrow">LANDMARKS <span class="live-dot"></span></div><h1>Landmark models</h1>
+      <div class="collection-head"><div class="eyebrow">Landmarks <span class="live-dot"></span></div><h1>Landmark models</h1>
         <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a landmark…" aria-label="Search landmarks"></label>
         <label class="region-label" for="region">Explore a region</label><select id="region"><option value="">Everywhere</option></select>
       </div>
-      <div class="results-heading"><span id="result-count" role="status">Loading collection…</span><span>NAME A–Z</span></div>
+      <div class="results-heading"><span id="result-count" role="status">Loading collection…</span><span>Name A–Z</span></div>
       <div id="results" class="results" aria-label="Search results"></div>
       <footer class="collection-footer"><a href="./api/v1/latest.json" title="Open Landmarks dataset API">Dataset ↗</a></footer>
     </aside>
     <section class="map-section" aria-label="Landmark locations">
       <div id="map" role="region" aria-label="Interactive map of landmark locations"></div>
-      <div class="map-caption"><span class="live-dot"></span> LANDMARK LOCATIONS</div>
+      <div class="map-caption"><span class="live-dot"></span> Landmark locations</div>
       <button id="reset-map" class="reset-map" type="button">↗ <span>Show all locations</span></button>
       <div id="map-status" class="map-status" role="status">Loading the atlas…</div>
       <div class="map-legend"><span class="legend-bubble">12</span><span>Landmarks in this area<br><b>Click a circle to explore</b></span></div>
     </section>
     <aside id="inspector" class="inspector" aria-label="Selected landmark preview">
-      <div class="preview-heading"><span class="eyebrow">3D PREVIEW</span><span class="preview-badge">INTERACTIVE 3D</span></div>
+      <div class="preview-heading"><span class="eyebrow">3D preview</span><span class="preview-badge">Interactive 3D</span></div>
       <div class="viewer-wrap">
         <model-viewer id="viewer" camera-controls touch-action="pan-y" shadow-intensity="1" exposure="1.1" camera-orbit="-35deg 70deg auto" interaction-prompt="none" autoplay></model-viewer>
         <div id="model-status" class="model-status" role="status">Choose a landmark to preview</div>
       </div>
       <div class="viewer-toolbar"><span>Drag to orbit · Scroll to zoom</span><button id="rotate" type="button" aria-pressed="false">↻ Auto-rotate</button></div>
-      <div class="details"><div id="place-region" class="eyebrow">THE COLLECTION</div><h2 id="place-name">Choose a landmark</h2><p id="coordinates" class="coordinates"></p>
+      <div class="details"><div id="place-region" class="eyebrow">The collection</div><h2 id="place-name">Choose a landmark</h2><p id="coordinates" class="coordinates"></p>
         <dl class="specs"><div><dt>Triangles</dt><dd id="triangles">—</dd></div><div><dt>Model size</dt><dd id="model-size">—</dd></div><div><dt>License</dt><dd id="license">—</dd></div><div><dt>Format</dt><dd>GLB · meters</dd></div></dl>
         <label id="lod-label" class="lod-label" hidden>Detail level<select id="lod"><option value="low">Standard model</option><option value="detail">Detailed model</option></select></label>
         <a id="download" class="download" download>Download model <span>↓</span></a>
