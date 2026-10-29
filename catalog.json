@@ -14827,6 +14827,79 @@
       ],
       "file": "models/nyc-bb-carousell.glb",
       "source": "generators/nyc-bb-carousell.ts"
+    },
+    {
+      "id": "nyc-soarin-eagle",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "coaster",
+      "tags": [
+        "roller-coaster",
+        "amusement-park",
+        "coney-island"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Coney Island Brooklyn July 2024 012",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_July_2024_012.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn July 2024 018",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_July_2024_018.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn July 2024 019",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_July_2024_019.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Sep 2019 06",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Sep_2019_06.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Coney Island Brooklyn Jul 2019 55",
+          "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_55.jpg",
+          "author": "Epicgenius",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Soarin' Eagle 1",
+          "url": "https://commons.wikimedia.org/wiki/File:Soarin%27_Eagle_1.jpg",
+          "author": "Eden, Janine and Jim",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Soaring Eagle Scream Zone Luna Park Coney Island",
+          "url": "https://commons.wikimedia.org/wiki/File:Soaring_Eagle_Scream_Zone_Luna_Park_Coney_Island.JPG",
+          "author": "Eliedion",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/nyc-soarin-eagle.glb",
+      "source": "generators/nyc-soarin-eagle.ts"
     }
   ],
   "landmarks": [
@@ -26551,6 +26624,19 @@
       "replaces": [
         "way/230062419"
       ]
+    },
+    {
+      "id": "nyc-soarin-eagle",
+      "name": "Soarin' Eagle",
+      "model": "nyc-soarin-eagle",
+      "place": "new-york-area",
+      "lng": -73.9805793,
+      "lat": 40.5737903,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q7549857",
+      "replaces": []
     }
   ],
   "places": [
