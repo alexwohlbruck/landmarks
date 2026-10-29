@@ -14514,6 +14514,68 @@
       ],
       "file": "models/nyc-kings-theatre.glb",
       "source": "generators/nyc-kings-theatre.ts"
+    },
+    {
+      "id": "nyc-domino-refinery",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "industrial",
+        "adaptive-reuse",
+        "sign"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Domino Refinery in 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Domino_Refinery_in_2023.jpg",
+          "author": "Kevin Payravi",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Domino Refinery in 2023 (2).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Domino_Refinery_in_2023_(2).jpg",
+          "author": "Kevin Payravi",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Domino Refinery and One Domino Square under construction (2023).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Domino_Refinery_and_One_Domino_Square_under_construction_(2023).jpg",
+          "author": "Kevin Payravi",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Domino Sugar Refinery, New York City, 20231001 1133 1047.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Domino_Sugar_Refinery,_New_York_City,_20231001_1133_1047.jpg",
+          "author": "Jakub Hałun",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Domino Sugar Refinery June 2022.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Domino_Sugar_Refinery_June_2022.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/nyc-domino-refinery.glb",
+      "source": "generators/nyc-domino-refinery.ts"
     }
   ],
   "landmarks": [
@@ -26150,6 +26212,32 @@
       "wikidata": "Q6413028",
       "replaces": [
         "way/250132955"
+      ]
+    },
+    {
+      "id": "nyc-domino-refinery",
+      "name": "The Refinery at Domino",
+      "model": "nyc-domino-refinery",
+      "place": "new-york-area",
+      "lng": -73.9673064,
+      "lat": 40.7144184,
+      "bearing": 19.6,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/633535211",
+        "way/1243440971",
+        "way/1243440972",
+        "way/1243440973",
+        "way/1243440974",
+        "way/1243440975",
+        "way/1243440976",
+        "way/1243440977",
+        "way/1243440978",
+        "way/1243853673",
+        "way/1243853674",
+        "way/1243853675",
+        "way/1243853676"
       ]
     }
   ],
