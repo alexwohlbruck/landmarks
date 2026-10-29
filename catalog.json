@@ -14356,6 +14356,97 @@
       ],
       "file": "models/nyc-brooklyn-borough-hall.glb",
       "source": "generators/nyc-brooklyn-borough-hall.ts"
+    },
+    {
+      "id": "nyc-brooklyn-public-library",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "library",
+        "art-deco"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Alex Wohlbruck",
+          "kind": "person",
+          "github": "alexwohlbruck",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "model": "Claude Opus 5.5",
+          "role": "procedural modeling",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Brooklyn Public Library (48291925691).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_(48291925691).jpg",
+          "author": "Ajay Suresh",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Brooklyn Public Library - Central Library (48292030712).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_-_Central_Library_(48292030712).jpg",
+          "author": "Ajay Suresh",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Brooklyn Public Library (93880p).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_(93880p).jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Public Library Jan 2010.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_Jan_2010.jpg",
+          "author": "Chris Pruitt",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Brooklyn Public Library (2625883748).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_(2625883748).jpg",
+          "author": "David Berkowitz",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Brooklyn Public Library by DS.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_by_DS.JPG",
+          "author": "David Shankbone",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Brooklyn Public Library, central branch.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library,_central_branch.jpg",
+          "author": "Davidwtucker77",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Public Library sunset jeh.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Public_Library_sunset_jeh.JPG",
+          "author": "Jim.henderson",
+          "license": "Public domain"
+        },
+        {
+          "title": "BPL Central Library 001.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:BPL_Central_Library_001.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Brooklyn Library side photo Chris Elias 02.png",
+          "url": "https://commons.wikimedia.org/wiki/File:Brooklyn_Library_side_photo_Chris_Elias_02.png",
+          "author": "Mobyblu",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/nyc-brooklyn-public-library.glb",
+      "source": "generators/nyc-brooklyn-public-library.ts"
     }
   ],
   "landmarks": [
@@ -25962,6 +26053,21 @@
       "wikidata": "Q929403",
       "replaces": [
         "way/241846064"
+      ]
+    },
+    {
+      "id": "nyc-brooklyn-public-library",
+      "name": "Central Library, Brooklyn Public Library",
+      "model": "nyc-brooklyn-public-library",
+      "place": "new-york-area",
+      "lng": -73.9681095,
+      "lat": 40.6722383,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5061358",
+      "replaces": [
+        "way/250229992"
       ]
     }
   ],
