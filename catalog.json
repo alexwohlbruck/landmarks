@@ -20553,6 +20553,137 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "jerusalem-dome-of-the-rock",
+      "file": "models/jerusalem-dome-of-the-rock.glb",
+      "license": "CC0-1.0",
+      "source": "generators/jerusalem-dome-of-the-rock.ts",
+      "type": "building",
+      "collection": "landmarks",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "tags": [
+        "shrine",
+        "dome",
+        "historic",
+        "islamic-architecture",
+        "unesco-world-heritage"
+      ],
+      "description": "The Dome of the Rock (691-692) on the upper platform of the Temple Mount esplanade: the tiled octagon under its gilded dome, the Dome of the Chain, the small domed shrines and the free-standing arcades at the heads of the platform's stairs. The Western Wall and its plaza, at the lower ground level, are the separate plaza-level model.",
+      "references": [
+        {
+          "title": "Jerusalem-2013(2)-View of the Dome of the Rock & Temple Mount 02.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jerusalem-2013(2)-View_of_the_Dome_of_the_Rock_%26_Temple_Mount_02.jpg",
+          "author": "Godot13",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Dome of the Rock seen from the Mount of Olives (12395649153).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dome_of_the_Rock_seen_from_the_Mount_of_Olives_(12395649153).jpg",
+          "author": "askii",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Dome of the Rock from the North.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dome_of_the_Rock_from_the_North.jpg",
+          "author": "Fjmustak",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Dome of the Rock west.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dome_of_the_Rock_west.jpg",
+          "author": "Yaakov Shoham",
+          "license": "Public domain"
+        },
+        {
+          "title": "Dome of the Rock, South Facade (2008) 06.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dome_of_the_Rock,_South_Facade_(2008)_06.jpg",
+          "author": "Godot13",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Jerusalem-2013(2)-Temple Mount-Dome of the Chain (south exposure).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jerusalem-2013(2)-Temple_Mount-Dome_of_the_Chain_(south_exposure).jpg",
+          "author": "Godot13",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Dome of the Rock night view.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Dome_of_the_Rock_night_view.JPG",
+          "author": "Zxc0505",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "id": "jerusalem-dome-of-the-rock-plaza",
+      "file": "models/jerusalem-dome-of-the-rock-plaza.glb",
+      "license": "CC0-1.0",
+      "source": "generators/jerusalem-dome-of-the-rock.ts",
+      "type": "monument",
+      "collection": "landmarks",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "tags": [
+        "retaining-wall",
+        "historic",
+        "plaza",
+        "unesco-world-heritage"
+      ],
+      "description": "The plaza level of the site: the prayer section of the Western Wall, the Temple Mount's Herodian retaining wall, 19 m above the plaza, with the low wall at the edge of the prayer area and the covered Mughrabi Bridge ramp up to the Mughrabi Gate.",
+      "references": [
+        {
+          "title": "Western Wall Plaza - panoramio.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Western_Wall_Plaza_-_panoramio.jpg",
+          "author": "CyberCop",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Western Wall and Dome of the Rock Jerusalem -10 (33400391921).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Western_Wall_and_Dome_of_the_Rock_Jerusalem_-10_(33400391921).jpg",
+          "author": "Gary Bembridge",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Western Wall Plaza (10804490996).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Western_Wall_Plaza_(10804490996).jpg",
+          "author": "Jorge Láscar",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Western Wall at night 2022.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Western_Wall_at_night_2022.jpg",
+          "author": "DGtal",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
       "id": "knight-theater",
       "file": "models/knight-theater.glb",
       "license": "CC0-1.0",
@@ -49184,6 +49315,64 @@
       "place": "charlotte-area"
     },
     {
+      "id": "jerusalem-dome-of-the-rock",
+      "name": "Dome of the Rock and Western Wall",
+      "model": "jerusalem-dome-of-the-rock",
+      "lng": 35.2352958,
+      "lat": 31.7780183,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q172077",
+      "replaces": [
+        "way/4709536",
+        "way/291836699",
+        "way/45099263",
+        "way/749005396",
+        "way/749005397",
+        "way/749521336",
+        "way/749521337",
+        "way/749521338",
+        "way/749521339",
+        "way/749521340",
+        "way/749521341",
+        "way/749521342",
+        "way/749521343",
+        "way/749521344",
+        "way/749521345",
+        "way/749521346",
+        "way/749521347",
+        "way/748953265",
+        "way/748953254",
+        "way/748953257",
+        "way/291841778",
+        "way/748953252",
+        "way/748953246",
+        "way/748953248",
+        "way/748953239",
+        "way/137729566",
+        "way/291836680",
+        "way/291836681",
+        "way/291836713"
+      ],
+      "place": "jerusalem"
+    },
+    {
+      "id": "jerusalem-dome-of-the-rock-plaza",
+      "name": "Dome of the Rock and Western Wall (plaza level)",
+      "model": "jerusalem-dome-of-the-rock-plaza",
+      "lng": 35.2344187,
+      "lat": 31.7766889,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q134821",
+      "replaces": [
+        "way/817206833"
+      ],
+      "place": "jerusalem"
+    },
+    {
       "id": "knight-theater",
       "name": "Knight Theater",
       "model": "knight-theater",
@@ -58967,6 +59156,12 @@
       "id": "houston-area",
       "name": "Houston area",
       "kind": "region"
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "kind": "city",
+      "wikidata": "Q1218"
     },
     {
       "id": "las-vegas-area",
