@@ -26914,6 +26914,67 @@
       "source": "generators/nyc-lga-terminal-b.ts"
     },
     {
+      "id": "nyc-louis-armstrong-stadium",
+      "file": "models/nyc-louis-armstrong-stadium.glb",
+      "license": "CC0-1.0",
+      "author": "Colin",
+      "source": "generators/nyc-louis-armstrong-stadium.ts",
+      "type": "stadium",
+      "collection": "landmarks",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "tags": [
+        "tennis",
+        "retractable-roof",
+        "us-open"
+      ],
+      "reviewStatus": "unreviewed",
+      "references": [
+        {
+          "title": "2021 US Open, Day 12.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2021_US_Open,_Day_12.jpg",
+          "author": "Curlyrnd",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "2021 US Open, Day 13.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2021_US_Open,_Day_13.jpg",
+          "author": "Curlyrnd",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "New Louis Armstrong Stadium.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:New_Louis_Armstrong_Stadium.jpg",
+          "author": "G. Capo",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "2021 US Open Armstrong Stadium practice.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2021_US_Open_Armstrong_Stadium_practice.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "AEW Double or Nothing at Louis Armstrong Stadium in Queens, NY on Sunday, May 24, 2026.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:AEW_Double_or_Nothing_at_Louis_Armstrong_Stadium_in_Queens,_NY_on_Sunday,_May_24,_2026.jpg",
+          "author": "Jrinnyc",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
       "id": "nyc-lyric-theatre-marquee",
       "license": "CC0-1.0",
       "collection": "landmarks",
@@ -52735,6 +52796,21 @@
         "way/664461080",
         "way/701356157"
       ]
+    },
+    {
+      "id": "nyc-louis-armstrong-stadium",
+      "name": "Louis Armstrong Stadium",
+      "model": "nyc-louis-armstrong-stadium",
+      "lng": -73.8454091,
+      "lat": 40.7509981,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q47487977",
+      "replaces": [
+        "way/840573223"
+      ],
+      "place": "new-york-area"
     },
     {
       "id": "nyc-lyric-theatre-marquee",
