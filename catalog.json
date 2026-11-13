@@ -28130,6 +28130,87 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "nyc-police-headquarters",
+      "file": "models/nyc-police-headquarters.glb",
+      "license": "CC0-1.0",
+      "author": "Colin",
+      "source": "generators/nyc-police-headquarters.ts",
+      "type": "building",
+      "collection": "landmarks",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "tags": [
+        "police",
+        "government",
+        "beaux-arts",
+        "dome",
+        "apartments"
+      ],
+      "reviewStatus": "unreviewed",
+      "references": [
+        {
+          "title": "Old Police Headquarters - NYPD (51623900396).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Old_Police_Headquarters_-_NYPD_(51623900396).jpg",
+          "author": "ajay_suresh",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "240 Centre Street (4692089276).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:240_Centre_Street_(4692089276).jpg",
+          "author": "Tony Hisgett",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "240 Centre Street 012.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:240_Centre_Street_012.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "240 Centre Street 018.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:240_Centre_Street_018.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "240 Centre Street 001.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:240_Centre_Street_001.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "240 Centre Street 016.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:240_Centre_Street_016.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Former Police Headquarters NYC.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Former_Police_Headquarters_NYC.JPG",
+          "author": "Fredverillo",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Broome St NYPD HQ 2008 jeh.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Broome_St_NYPD_HQ_2008_jeh.jpg",
+          "author": "Jim.henderson",
+          "license": "Public domain"
+        }
+      ]
+    },
+    {
       "id": "nyc-prison-ship-martyrs",
       "file": "models/nyc-prison-ship-martyrs.glb",
       "license": "CC0-1.0",
@@ -53409,6 +53490,101 @@
         "way/703143221",
         "way/703143222",
         "way/703143223"
+      ],
+      "place": "new-york-area"
+    },
+    {
+      "id": "nyc-police-headquarters",
+      "name": "Police Building (old NYPD Headquarters)",
+      "model": "nyc-police-headquarters",
+      "lng": -73.9979263,
+      "lat": 40.7201229,
+      "bearing": 29.6,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2813546",
+      "replaces": [
+        "way/247867323",
+        "way/381426585",
+        "way/381426586",
+        "way/381426587",
+        "way/381426588",
+        "way/381426589",
+        "way/381426590",
+        "way/381426591",
+        "way/381426592",
+        "way/381426593",
+        "way/381426594",
+        "way/381426595",
+        "way/381426596",
+        "way/381426597",
+        "way/381426598",
+        "way/381426599",
+        "way/381426600",
+        "way/381426601",
+        "way/381426602",
+        "way/381426603",
+        "way/381426604",
+        "way/381426605",
+        "way/381426606",
+        "way/381426607",
+        "way/381426608",
+        "way/381426609",
+        "way/381426610",
+        "way/381426611",
+        "way/381426612",
+        "way/381426613",
+        "way/381426614",
+        "way/381426615",
+        "way/381426616",
+        "way/381426617",
+        "way/381426621",
+        "way/381426624",
+        "way/381426629",
+        "way/381426631",
+        "way/381426632",
+        "way/381426633",
+        "way/381426634",
+        "way/381426635",
+        "way/381426636",
+        "way/381426637",
+        "way/381426638",
+        "way/381426639",
+        "way/381426640",
+        "way/381426641",
+        "way/381426642",
+        "way/381426643",
+        "way/381426644",
+        "way/381426646",
+        "way/381426649",
+        "way/381426652",
+        "way/381426653",
+        "way/381426654",
+        "way/381426655",
+        "way/381426656",
+        "way/381426657",
+        "way/381426658",
+        "way/381426659",
+        "way/381426660",
+        "way/381426661",
+        "way/381426662",
+        "way/381426663",
+        "way/381426664",
+        "way/381426665",
+        "way/381426666",
+        "way/381426667",
+        "way/381426668",
+        "way/381426669",
+        "way/381426670",
+        "way/381426671",
+        "way/381426672",
+        "way/381426673",
+        "way/381426674",
+        "way/381426675",
+        "way/381426676",
+        "way/381426677",
+        "way/381426678",
+        "way/381426679"
       ],
       "place": "new-york-area"
     },
