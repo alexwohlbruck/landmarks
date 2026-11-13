@@ -27700,6 +27700,93 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "nyc-old-st-patricks-cathedral",
+      "file": "models/nyc-old-st-patricks-cathedral.glb",
+      "license": "CC0-1.0",
+      "author": "Colin",
+      "source": "generators/nyc-old-st-patricks-cathedral.ts",
+      "type": "building",
+      "collection": "landmarks",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "tags": [
+        "church",
+        "cathedral",
+        "basilica",
+        "gothic-revival",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "references": [
+        {
+          "title": "Saint Pats Old Cathedral Manh jeh.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Saint_Pats_Old_Cathedral_Manh_jeh.JPG",
+          "author": "Jim.henderson",
+          "license": "Public domain"
+        },
+        {
+          "title": "St. Patrick's Old Cathedral Mulberry Street facade.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St._Patrick%27s_Old_Cathedral_Mulberry_Street_facade.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Basilica of Saint Patrick's Old Cathedral, Manhattan, New York (7237381612).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Basilica_of_Saint_Patrick%27s_Old_Cathedral,_Manhattan,_New_York_(7237381612).jpg",
+          "author": "Ken Lund",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Basilica of Saint Patrick's Old Cathedral, Manhattan, New York (7237381996).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Basilica_of_Saint_Patrick%27s_Old_Cathedral,_Manhattan,_New_York_(7237381996).jpg",
+          "author": "Ken Lund",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Old Saint Patrick's Cathedral - now a simple basilica. - panoramio.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Old_Saint_Patrick%27s_Cathedral_-_now_a_simple_basilica._-_panoramio.jpg",
+          "author": "olekinderhook",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Old St Pats Mott St East door jeh.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Old_St_Pats_Mott_St_East_door_jeh.jpg",
+          "author": "Jim.henderson",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "St. Patrick’s Old Cathedral 020.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St._Patrick%E2%80%99s_Old_Cathedral_020.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "St. Patrick’s Old Cathedral 001.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St._Patrick%E2%80%99s_Old_Cathedral_001.jpg",
+          "author": "Kidfly182",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Basilica of Saint Patrick's Old Cathedral 06.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Basilica_of_Saint_Patrick%27s_Old_Cathedral_06.jpg",
+          "author": "Farragutful",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
       "id": "nyc-one-court-square",
       "license": "CC0-1.0",
       "collection": "landmarks",
@@ -53153,6 +53240,25 @@
       "wikidata": "Q2001751",
       "replaces": [
         "way/278033606"
+      ],
+      "place": "new-york-area"
+    },
+    {
+      "id": "nyc-old-st-patricks-cathedral",
+      "name": "Basilica of St. Patrick's Old Cathedral",
+      "model": "nyc-old-st-patricks-cathedral",
+      "lng": -73.9951976,
+      "lat": 40.7235814,
+      "bearing": 288.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q941763",
+      "replaces": [
+        "way/247845702",
+        "way/381206137",
+        "way/381206138",
+        "way/381206139",
+        "way/381206140"
       ],
       "place": "new-york-area"
     },
