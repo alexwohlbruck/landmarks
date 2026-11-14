@@ -47929,6 +47929,2535 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "seoul-63-building",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "skyscraper",
+        "office"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "63 Building.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:63_Building.jpg",
+          "author": "Sebastian Hoering",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "63 Building from Yongsan Station.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:63_Building_from_Yongsan_Station.jpg",
+          "author": "Ox1997cow",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Hangang Bus 63 Building 20250918 (03).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Hangang_Bus_63_Building_20250918_(03).jpg",
+          "author": "Republic of Korea",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "63 Building Blacked Out.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:63_Building_Blacked_Out.jpg",
+          "author": "Ox1997cow",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/seoul-63-building.glb",
+      "source": "generators/seoul-63-building.ts"
+    },
+    {
+      "id": "seoul-amorepacific",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "office",
+        "modern",
+        "headquarters"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Seoul-metro-429-Sinyongsan-station-entrance-3-20191022-153642",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul-metro-429-Sinyongsan-station-entrance-3-20191022-153642.jpg",
+          "author": "LERK",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Sinyongsan Station 20230408 001",
+          "url": "https://commons.wikimedia.org/wiki/File:Sinyongsan_Station_20230408_001.jpg",
+          "author": "Mobius6",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Amore Pacific World HQ",
+          "url": "https://commons.wikimedia.org/wiki/File:Amore_Pacific_World_HQ.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/seoul-amorepacific.glb",
+      "source": "generators/seoul-amorepacific.ts"
+    },
+    {
+      "id": "seoul-arts-center",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "opera-house",
+        "theatre",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Seoul Arts Center 20",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_Arts_Center_20.JPG",
+          "author": "Piotrus",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Korea-Seoul.Arts.Center-02",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea-Seoul.Arts.Center-02.jpg",
+          "author": "Kai Hendry",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Seoul Arts Center 10",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_Arts_Center_10.JPG",
+          "author": "Piotrus",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Seoul Arts Center 12",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_Arts_Center_12.JPG",
+          "author": "Piotrus",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/seoul-arts-center.glb",
+      "source": "generators/seoul-arts-center.ts"
+    },
+    {
+      "id": "seoul-bosingak",
+      "file": "models/seoul-bosingak.glb",
+      "source": "generators/seoul-bosingak.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "bell-pavilion",
+        "hanok",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The bell pavilion on Jongno (rebuilt 1979): an open two-storey pavilion of 5 × 4 bays with a balcony railing and the great bell inside, under one hipped-and-gabled roof on a granite platform.",
+      "references": [
+        {
+          "title": "Bosingak(20240413).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Bosingak(20240413).jpg",
+          "author": "YellowTurtle9",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Bosingak Bell Pavilion, Seoul (1) (26259311707).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Bosingak_Bell_Pavilion,_Seoul_(1)_(26259311707).jpg",
+          "author": "Richard Mortel",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Bosingak Bell Pavilion, Seoul (2) (40419747494).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Bosingak_Bell_Pavilion,_Seoul_(2)_(40419747494).jpg",
+          "author": "Richard Mortel",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Bosingak Bell Pavilion, Seoul (3) (27257575928).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Bosingak_Bell_Pavilion,_Seoul_(3)_(27257575928).jpg",
+          "author": "Richard Mortel",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "20240413 Bosingak 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20240413_Bosingak_01.jpg",
+          "author": "Jjw",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Bosingak, Seoul.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Bosingak,_Seoul.jpg",
+          "author": "Tristan Surtel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Boshingak.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Boshingak.jpg",
+          "author": "Bcody80",
+          "license": "Public domain"
+        }
+      ]
+    },
+    {
+      "id": "seoul-cheong-wa-dae",
+      "file": "models/seoul-cheong-wa-dae.glb",
+      "source": "generators/seoul-cheong-wa-dae.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "presidential-residence",
+        "government",
+        "hanok",
+        "landmark"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The main building of Cheong Wa Dae, the Blue House (1991): a white two-storey hall under a wide hipped-and-gabled roof of blue-glazed tile, flanked by two forward wings under their own blue roofs with terracotta gables.",
+      "references": [
+        {
+          "title": "Blue House, Seoul (cropped).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Blue_House,_Seoul_(cropped).jpg",
+          "author": "Rtflakfizer",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Blue House Seoul 3.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Blue_House_Seoul_3.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Blue House buildings Aug 2022.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Blue_House_buildings_Aug_2022.jpg",
+          "author": "Takipoint123",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "CheongWaDae 청와대 14.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:CheongWaDae_%EC%B2%AD%EC%99%80%EB%8C%80_14.jpg",
+          "author": "Republic of Korea",
+          "license": "CC BY-SA 2.0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-city-hall",
+      "file": "models/seoul-city-hall.glb",
+      "source": "generators/seoul-city-hall.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "government",
+        "city-hall",
+        "glass",
+        "contemporary",
+        "historic",
+        "library"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The 2012 Seoul City Hall, its glass front curling over the plaza like a breaking wave, with the 1926 old City Hall (now the Seoul Metropolitan Library) and its clock tower in front.",
+      "references": [
+        {
+          "title": "Seoul City Hall from Plaza",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_City_Hall_from_Plaza.jpg",
+          "author": "Tristan Surtel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Seoul Metropolitan Library and Seoul City Hall during Seoul Spring Festa in May 2025",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_Metropolitan_Library_and_Seoul_City_Hall_during_Seoul_Spring_Festa_in_May_2025.jpg",
+          "author": "DtSeoul",
+          "license": "CC0"
+        },
+        {
+          "title": "Seoul City Hall 20190608 001",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_City_Hall_20190608_001.jpg",
+          "author": "Mobius6",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Seoul City Hall (39321822950)",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_City_Hall_(39321822950).jpg",
+          "author": "Richard Mortel",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Seoul City Hall A01",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_City_Hall_A01.JPG",
+          "author": "분당선M",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Seoul-City.Hall-02",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul-City.Hall-02.jpg",
+          "author": "ddol-mang",
+          "license": "Public domain"
+        },
+        {
+          "title": "Seoul Metropolitan Library 20191221 01",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_Metropolitan_Library_20191221_01.jpg",
+          "author": "Ahmed",
+          "license": "CC0"
+        },
+        {
+          "title": "Seoul City Hall At Night",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_City_Hall_At_Night.jpg",
+          "author": "jungwon seo",
+          "license": "CC BY 2.0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-culture-station-284",
+      "file": "models/seoul-culture-station-284.glb",
+      "source": "generators/seoul-culture-station-284.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "railway-station",
+        "historic",
+        "brick",
+        "dome",
+        "museum"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The old Seoul Station (1925), now a cultural venue: red brick and granite under slate mansards, with the green copper dome over its central hall and small domed turrets.",
+      "references": [
+        {
+          "title": "Old-Seoul-station-20181122-072336",
+          "url": "https://commons.wikimedia.org/wiki/File:Old-Seoul-station-20181122-072336.jpg",
+          "author": "LERK",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Old Seoul Station - 1998",
+          "url": "https://commons.wikimedia.org/wiki/File:Old_Seoul_Station_-_1998.jpg",
+          "author": "Yusuke Kawasaki",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Old Seoul Station",
+          "url": "https://commons.wikimedia.org/wiki/File:Old_Seoul_Station.jpg",
+          "author": "콩가루",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "KNR-Seoul-Station-old-other-side-over-view",
+          "url": "https://commons.wikimedia.org/wiki/File:KNR-Seoul-Station-old-other-side-over-view.JPG",
+          "author": "Kanchi1979",
+          "license": "CC BY 2.5"
+        },
+        {
+          "title": "KNR-Seoul-Station-old-other-side-over-view-center-hall",
+          "url": "https://commons.wikimedia.org/wiki/File:KNR-Seoul-Station-old-other-side-over-view-center-hall.JPG",
+          "author": "Kanchi1979",
+          "license": "CC BY 2.5"
+        },
+        {
+          "title": "Old Seoul Station at night 01",
+          "url": "https://commons.wikimedia.org/wiki/File:Old_Seoul_Station_at_night_01.JPG",
+          "author": "Abasaa",
+          "license": "Public domain"
+        }
+      ]
+    },
+    {
+      "id": "seoul-ddp",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "museum",
+        "exhibition-centre",
+        "contemporary",
+        "zaha-hadid"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Dongdaemun, Seoul (1).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dongdaemun,_Seoul_(1).jpg",
+          "author": "Brit in Seoul",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Dongdaemun, Seoul (2).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dongdaemun,_Seoul_(2).jpg",
+          "author": "Brit in Seoul",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Dongdaemun Design Plaza grass.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dongdaemun_Design_Plaza_grass.jpg",
+          "author": "Tristan Surtel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "20240601 144028 Dongdaemun Design Plaza, Seoul 08.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20240601_144028_Dongdaemun_Design_Plaza,_Seoul_08.jpg",
+          "author": "Dwxn",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Zaha Hadid - Dongdaemun Design Plaza & Park - Photo",
+          "url": "https://www.flickr.com/photos/44343967@N00/13371251053",
+          "author": "Forgemind ArchiMedia",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Zaha Hadid - Dongdaemun Design Plaza & Park - Photo",
+          "url": "https://www.flickr.com/photos/44343967@N00/13371087825",
+          "author": "Forgemind ArchiMedia",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Dongdaemun Design Plaza (site model)",
+          "url": "https://www.flickr.com/photos/86137128@N07/8404096587",
+          "author": "Seoul Guide Korea",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Dongdaemun Design Plaza (site model)",
+          "url": "https://www.flickr.com/photos/86137128@N07/8405189774",
+          "author": "Seoul Guide Korea",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Dongdaemun Design Plaza at night, Seoul, Korea.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dongdaemun_Design_Plaza_at_night,_Seoul,_Korea.jpg",
+          "author": "Eugene Lim",
+          "license": "CC BY 2.0"
+        }
+      ],
+      "file": "models/seoul-ddp.glb",
+      "source": "generators/seoul-ddp.ts"
+    },
+    {
+      "id": "seoul-fki-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "skyscraper",
+        "office"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "FKI타워(에프케이아이타워) 2025.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:FKI%ED%83%80%EC%9B%8C(%EC%97%90%ED%94%84%EC%BC%80%EC%9D%B4%EC%95%84%EC%9D%B4%ED%83%80%EC%9B%8C)_2025.jpg",
+          "author": "Narubaru7",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Yeouido Park Lawn 201604.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Yeouido_Park_Lawn_201604.jpg",
+          "author": "Wpcpey",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Korea Bamseom Island 11 (14893525272).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea_Bamseom_Island_11_(14893525272).jpg",
+          "author": "Republic of Korea",
+          "license": "CC BY-SA 2.0"
+        }
+      ],
+      "file": "models/seoul-fki-tower.glb",
+      "source": "generators/seoul-fki-tower.ts"
+    },
+    {
+      "id": "seoul-geunjeongjeon",
+      "file": "models/seoul-geunjeongjeon.glb",
+      "source": "generators/seoul-geunjeongjeon.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "palace",
+        "throne-hall",
+        "hanok",
+        "joseon",
+        "historic",
+        "national-treasure"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The throne hall of Gyeongbokgung (rebuilt 1867): a two-storey-looking hall under a double hipped-and-gabled roof, on a two-tier stone woldae with balustrades.",
+      "references": [
+        {
+          "title": "Front view of the Imperial Throne Hall Geunjeongjeon at Gyeongbokgung Palace with blue sky in Seoul.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Front_view_of_the_Imperial_Throne_Hall_Geunjeongjeon_at_Gyeongbokgung_Palace_with_blue_sky_in_Seoul.jpg",
+          "author": "Basile Morin",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Front view of the Eastern side of the Imperial Throne Hall Geunjeongjeon at Gyeongbokgung Palace in Seoul.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Front_view_of_the_Eastern_side_of_the_Imperial_Throne_Hall_Geunjeongjeon_at_Gyeongbokgung_Palace_in_Seoul.jpg",
+          "author": "Basile Morin",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Side of Geunjeongjeon.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Side_of_Geunjeongjeon.jpg",
+          "author": "AnbyG",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Geunjeongjeon Seoul.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Geunjeongjeon_Seoul.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gyeongbokgung(palace) Geunjeongjeon(hall).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gyeongbokgung(palace)_Geunjeongjeon(hall).jpg",
+          "author": "Brady Bellini",
+          "license": "CC0"
+        },
+        {
+          "title": "Seoul-Gyeongbokgung-Geunjeongjeon-01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul-Gyeongbokgung-Geunjeongjeon-01.jpg",
+          "author": "Richard Fisher",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Seoul Geunjeongjeon 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_Geunjeongjeon_01.jpg",
+          "author": "Spike",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-gocheok-sky-dome",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "stadium",
+      "tags": [
+        "stadium",
+        "baseball",
+        "dome",
+        "sports"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "首爾高尺巨蛋（Gocheok SkyDome）",
+          "url": "https://www.flickr.com/photos/56814157@N03/40167119121",
+          "author": "genewang0123",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Gocheok Dome Baseball Stadium",
+          "url": "https://www.flickr.com/photos/124876385@N03/14256118317",
+          "author": "iparkstory",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "경기장 - panoramio.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:%EA%B2%BD%EA%B8%B0%EC%9E%A5_-_panoramio.jpg",
+          "author": "Bohao Zhao",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Gocheok Sky Dome (36530170325).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gocheok_Sky_Dome_(36530170325).jpg",
+          "author": "redlegsfan21",
+          "license": "CC BY-SA 2.0"
+        }
+      ],
+      "file": "models/seoul-gocheok-sky-dome.glb",
+      "source": "generators/seoul-gocheok-sky-dome.ts"
+    },
+    {
+      "id": "seoul-gt-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "skyscraper",
+        "office",
+        "contemporary",
+        "glass"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Gangnam",
+          "url": "https://www.flickr.com/photos/69327687@N03/19547142271",
+          "author": "AntheaAtlas",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "The wave of G Tower",
+          "url": "https://www.flickr.com/photos/27284887@N03/7111561555",
+          "author": "seafaringwoman",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Gangman,Seúl, Corea Del Sur - panoramio (3).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gangman,Se%C3%BAl,_Corea_Del_Sur_-_panoramio_(3).jpg",
+          "author": "Nelson Pérez",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/seoul-gt-tower.glb",
+      "source": "generators/seoul-gt-tower.ts"
+    },
+    {
+      "id": "seoul-gwanghwamun",
+      "file": "models/seoul-gwanghwamun.glb",
+      "source": "generators/seoul-gwanghwamun.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "gate",
+        "palace",
+        "hanok",
+        "joseon",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The south gate of Gyeongbokgung (wooden pavilion rebuilt 2010): a granite base with three arched passages under a two-storey pavilion with double hipped roofs.",
+      "references": [
+        {
+          "title": "Gwanghwamun (광화문).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gwanghwamun_(광화문).jpg",
+          "author": "Noh Mun Duek",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gwanghwamun 20240413.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gwanghwamun_20240413.jpg",
+          "author": "*Youngjin",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gwanghwamun 2012.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gwanghwamun_2012.jpg",
+          "author": "Komatta",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Gwanghwamun, Gyeongbokgung.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gwanghwamun,_Gyeongbokgung.jpg",
+          "author": "Tristan Surtel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gyeongbokgung - Gwanghwamun Gate.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gyeongbokgung_-_Gwanghwamun_Gate.jpg",
+          "author": "Yuliya Boda",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gwanghwamun December 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gwanghwamun_December_2023.jpg",
+          "author": "Huntsmanleader",
+          "license": "CC0"
+        },
+        {
+          "title": "Gwanghwamun Gate(back side).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gwanghwamun_Gate(back_side).jpg",
+          "author": "Hhk1201",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gwanghwamun Gate (광화문), Seoul, South Korea (Unsplash).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gwanghwamun_Gate_(광화문),_Seoul,_South_Korea_(Unsplash).jpg",
+          "author": "Timothy Ries",
+          "license": "CC0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-gyeonghoeru",
+      "file": "models/seoul-gyeonghoeru.glb",
+      "source": "generators/seoul-gyeonghoeru.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "pavilion",
+        "palace",
+        "hanok",
+        "joseon",
+        "historic",
+        "national-treasure"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The royal banquet pavilion of Gyeongbokgung (rebuilt 1867): an open upper hall under a great hipped-and-gabled roof, raised on 48 stone pillars in its pond.",
+      "references": [
+        {
+          "title": "Gyeonghoeru (Royal Banquet Hall).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_(Royal_Banquet_Hall).jpg",
+          "author": "AnbyG",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gyeonghoeru (Royal Banquet Hall) at Gyeongbokgung Palace, Seoul.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_(Royal_Banquet_Hall)_at_Gyeongbokgung_Palace,_Seoul.jpg",
+          "author": "Frank Schulenburg",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gyeonghoeru Seoul.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_Seoul.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gyeonghoeru 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_1.jpg",
+          "author": "Kim Dae Jeung",
+          "license": "CC0"
+        },
+        {
+          "title": "Gyeonghoeru bridge.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_bridge.jpg",
+          "author": "Tristan Surtel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Eastern Side of the Gyeonghoeru Pavilion in Gyeongbokgung Palace.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Eastern_Side_of_the_Gyeonghoeru_Pavilion_in_Gyeongbokgung_Palace.jpg",
+          "author": "Ethan Doyle White",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gyeongbokgung Gyeonghoeru Front.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gyeongbokgung_Gyeonghoeru_Front.jpg",
+          "author": "Tungdangthanh",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gyeongbokgung Gyeonghoeru Lake Side.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gyeongbokgung_Gyeonghoeru_Lake_Side.jpg",
+          "author": "Tungdangthanh",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gyeonghoeru with Blue Sky.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_with_Blue_Sky.jpg",
+          "author": "Smin630",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-heunginjimun",
+      "file": "models/seoul-heunginjimun.glb",
+      "source": "generators/seoul-heunginjimun.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "gate",
+        "city-wall",
+        "hanok",
+        "joseon",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The east gate of Seoul's Joseon city wall (pavilion 1869): a granite base with one arched passage under a two-storey pavilion with double hipped roofs, wrapped in front by its semicircular crenellated ongseong.",
+      "references": [
+        {
+          "title": "Korea-Seoul-Dongdaemun-02.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-Dongdaemun-02.jpg",
+          "author": "Gaël Chardon",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Heunginjimun Gate, Seoul, 1869 (5) (27243613568).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Heunginjimun_Gate,_Seoul,_1869_(5)_(27243613568).jpg",
+          "author": "Richard Mortel",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Heunginjimun Gate, Seoul, 1869 (6) (39307626730).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Heunginjimun_Gate,_Seoul,_1869_(6)_(39307626730).jpg",
+          "author": "Richard Mortel",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Dongdaemun, Seoul.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dongdaemun,_Seoul.jpg",
+          "author": "Rtflakfizer",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Heunginjimun, Seoul 02.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Heunginjimun,_Seoul_02.jpg",
+          "author": "Tristan Surtel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "20240601 144028 Heunginjimun, Seoul 07.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20240601_144028_Heunginjimun,_Seoul_07.jpg",
+          "author": "Dwxn",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "흥인지문 (Heunginjimun Gate).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:%ED%9D%A5%EC%9D%B8%EC%A7%80%EB%AC%B8_(Heunginjimun_Gate).jpg",
+          "author": "Jiyounnng",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-ifc",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "skyscraper",
+        "office",
+        "hotel",
+        "shopping-mall"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "IFC Seoul 3.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:IFC_Seoul_3.jpg",
+          "author": "Kimahrikku",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "IFC Seoul 2.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:IFC_Seoul_2.jpg",
+          "author": "Kimahrikku",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Yeouido 9.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Yeouido_9.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Yeouido 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Yeouido_1.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/seoul-ifc.glb",
+      "source": "generators/seoul-ifc.ts"
+    },
+    {
+      "id": "seoul-injeongjeon",
+      "file": "models/seoul-injeongjeon.glb",
+      "source": "generators/seoul-injeongjeon.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "palace",
+        "throne-hall",
+        "hanok",
+        "joseon",
+        "historic",
+        "national-treasure"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The throne hall of Changdeokgung (rebuilt 1804): a double hipped-and-gabled roof over ochre lattice, on a plain two-tier stone platform.",
+      "references": [
+        {
+          "title": "Injeongjeon Hall 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Injeongjeon_Hall_01.jpg",
+          "author": "Bernard Gagnon",
+          "license": "CC0"
+        },
+        {
+          "title": "Injeongjeon Hall 02.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Injeongjeon_Hall_02.jpg",
+          "author": "Bernard Gagnon",
+          "license": "CC0"
+        },
+        {
+          "title": "Changdeokgung Injeongjeon in 2026 (1).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Changdeokgung_Injeongjeon_in_2026_(1).jpg",
+          "author": "Sadopaul",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Changdeokgung Injeongjeon in 2026 (2).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Changdeokgung_Injeongjeon_in_2026_(2).jpg",
+          "author": "Sadopaul",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Seoul, Jongno District, Changdeokgung Palace (Injeongjeon).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul,_Jongno_District,_Changdeokgung_Palace_(Injeongjeon).jpg",
+          "author": "Dr. Thomas Liptak",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Korea-Seoul-Changdeokgung-Injeongjeon-Frontal view-01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-Changdeokgung-Injeongjeon-Frontal_view-01.jpg",
+          "author": "Alain Seguin",
+          "license": "CC BY-SA 3.0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-jogyesa",
+      "file": "models/seoul-jogyesa.glb",
+      "source": "generators/seoul-jogyesa.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "temple",
+        "buddhist",
+        "hanok",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The main hall of Jogyesa (1938), head temple of the Jogye Order: a tall single-storey hall of 7 × 4 bays with green lattice doors between red columns under a huge hipped-and-gabled roof, the order's emblem on its gables.",
+      "references": [
+        {
+          "title": "Jogyesa temple.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jogyesa_temple.jpg",
+          "author": "Irma2403",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Jogyesa Temple with Two Dragons.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jogyesa_Temple_with_Two_Dragons.jpg",
+          "author": "Ethan Doyle White",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Seoul, Jongno & Jogyesa Temple (조계사) (15239723850).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul,_Jongno_%26_Jogyesa_Temple_(%EC%A1%B0%EA%B3%84%EC%82%AC)_(15239723850).jpg",
+          "author": "Michael Sean Gallagher",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Jogyesa Temple (1509839597).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jogyesa_Temple_(1509839597).jpg",
+          "author": "Francisco Anzola",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Jogyesa temple in 2026 (2).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jogyesa_temple_in_2026_(2).jpg",
+          "author": "Sadopaul",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Jogyesa temple in 2026 (4).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jogyesa_temple_in_2026_(4).jpg",
+          "author": "Sadopaul",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-jongmyo-jeongjeon",
+      "file": "models/seoul-jongmyo-jeongjeon.glb",
+      "source": "generators/seoul-jongmyo-jeongjeon.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "shrine",
+        "hanok",
+        "joseon",
+        "unesco",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The main hall of Jongmyo, the Joseon royal ancestral shrine: 19 bays of red columns and plank doors under one long, low gabled roof, with its lower end rooms and the two wings turning forward, on its stone terrace.",
+      "references": [
+        {
+          "title": "Jongmyo.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jongmyo.jpg",
+          "author": "Oskar Alexanderson",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Jongmyo-Jeongjeon.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jongmyo-Jeongjeon.jpg",
+          "author": "João Trindade",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Jongmyo-001.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jongmyo-001.jpg",
+          "author": "sean",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Jongmyo-002.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jongmyo-002.jpg",
+          "author": "sean",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Jeongjeon, Jongmyo Shrine (oblique) - Seoul, Korea.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jeongjeon,_Jongmyo_Shrine_(oblique)_-_Seoul,_Korea.jpg",
+          "author": "Daderot",
+          "license": "Public domain"
+        },
+        {
+          "title": "Jeongjeon, Jongmyo Shrine (close up) - Seoul, Korea.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jeongjeon,_Jongmyo_Shrine_(close_up)_-_Seoul,_Korea.jpg",
+          "author": "Daderot",
+          "license": "Public domain"
+        },
+        {
+          "title": "Hall de confort éternel, Jongmyo.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Hall_de_confort_%C3%A9ternel,_Jongmyo.jpg",
+          "author": "SpaceFox",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Jongmyo Shrine 06.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jongmyo_Shrine_06.jpg",
+          "author": "Bgag",
+          "license": "CC0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-jongno-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "skyscraper",
+        "office",
+        "high-tech"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Jongno Tower Seoul - panoramio.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jongno_Tower_Seoul_-_panoramio.jpg",
+          "author": "Schölla Schwarz",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Bosingak Bell Pavilion, Seoul (1) (26259311707).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Bosingak_Bell_Pavilion,_Seoul_(1)_(26259311707).jpg",
+          "author": "Richard Mortel",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Incidental view of Jongno Tower in August 2024.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Incidental_view_of_Jongno_Tower_in_August_2024.jpg",
+          "author": "Immanuelle",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Jongno Tower ―Rafael Viñoly Architects",
+          "url": "https://www.flickr.com/photos/30760976@N04/6281928827",
+          "author": "anokarina",
+          "license": "CC BY-SA 2.0"
+        }
+      ],
+      "file": "models/seoul-jongno-tower.glb",
+      "source": "generators/seoul-jongno-tower.ts"
+    },
+    {
+      "id": "seoul-junghwajeon",
+      "file": "models/seoul-junghwajeon.glb",
+      "source": "generators/seoul-junghwajeon.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "palace",
+        "throne-hall",
+        "hanok",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The throne hall of Deoksugung (rebuilt 1906 with one storey): a hipped-and-gabled roof over red columns and ochre lattice doors, on a low two-tier stone platform.",
+      "references": [
+        {
+          "title": "Deoksugung Palace 20240409 084.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Deoksugung_Palace_20240409_084.jpg",
+          "author": "Mobius6",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Deoksugung Palace 20240409 037.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Deoksugung_Palace_20240409_037.jpg",
+          "author": "Mobius6",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Junghwajeon Front.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Junghwajeon_Front.jpg",
+          "author": "Tungdangthanh",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Junghwajeon - Deoksugung Palace.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Junghwajeon_-_Deoksugung_Palace.jpg",
+          "author": "이창로",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Deoksugung Palace - Junghwajeon.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Deoksugung_Palace_-_Junghwajeon.jpg",
+          "author": "이창로",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Deoksugung Palace, Seoul (32) (39307393550).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Deoksugung_Palace,_Seoul_(32)_(39307393550).jpg",
+          "author": "Richard Mortel",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Junghwajeon.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Junghwajeon.JPG",
+          "author": "Lawinc82",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Junghwajeon Hall IMG 2078.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Junghwajeon_Hall_IMG_2078.jpg",
+          "author": "G41rn8",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-kspo-dome",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "stadium",
+      "tags": [
+        "arena",
+        "dome",
+        "cable-dome",
+        "sports",
+        "1988-olympics"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Seoul Olympic Park from Lotte World Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_Olympic_Park_from_Lotte_World_Tower.jpg",
+          "author": "Tristan Surtel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "View of Seoul Olympic Park from the Lotte World Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:View_of_Seoul_Olympic_Park_from_the_Lotte_World_Tower.jpg",
+          "author": "Christophe95",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Interior of gymnastics arena",
+          "url": "https://www.flickr.com/photos/37996647372@N01/2812629703",
+          "author": "bryangeek",
+          "license": "CC BY-SA 2.0"
+        }
+      ],
+      "file": "models/seoul-kspo-dome.glb",
+      "source": "generators/seoul-kspo-dome.ts"
+    },
+    {
+      "id": "seoul-kyobo-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "skyscraper",
+        "office",
+        "postmodern",
+        "brick"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Mario Botta - Kyobo Tower 01",
+          "url": "https://www.flickr.com/photos/44343967@N00/5052325759",
+          "author": "Forgemind ArchiMedia",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Mario Botta - Kyobo Tower 02",
+          "url": "https://www.flickr.com/photos/44343967@N00/5052943862",
+          "author": "Forgemind ArchiMedia",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Mario Botta - Kyobo Tower 03",
+          "url": "https://www.flickr.com/photos/44343967@N00/5052326237",
+          "author": "Forgemind ArchiMedia",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Gangnam Mario Botta Tower",
+          "url": "https://www.flickr.com/photos/97114498@N04/37078168201",
+          "author": "TCA Think Tank",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Gangnam Mario Botta Tower",
+          "url": "https://www.flickr.com/photos/97114498@N04/37048801152",
+          "author": "TCA Think Tank",
+          "license": "CC BY 2.0"
+        }
+      ],
+      "file": "models/seoul-kyobo-tower.glb",
+      "source": "generators/seoul-kyobo-tower.ts"
+    },
+    {
+      "id": "seoul-lotte-world-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "skyscraper",
+        "supertall",
+        "observation-deck",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Lotte World day view 5",
+          "url": "https://commons.wikimedia.org/wiki/File:Lotte_World_day_view_5.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Lotte World morning view 8",
+          "url": "https://commons.wikimedia.org/wiki/File:Lotte_World_morning_view_8.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Lotte World Tower from Seongsu Bridge",
+          "url": "https://commons.wikimedia.org/wiki/File:Lotte_World_Tower_from_Seongsu_Bridge.jpg",
+          "author": "Ox1997cow",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Lotte World Tower near Cheongdam Bridge 2022",
+          "url": "https://commons.wikimedia.org/wiki/File:Lotte_World_Tower_near_Cheongdam_Bridge_2022.jpg",
+          "author": "Ox1997cow",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Olympic Bridge and Lotte World Tower",
+          "url": "https://commons.wikimedia.org/wiki/File:Olympic_Bridge_and_Lotte_World_Tower.jpg",
+          "author": "lazy fri13th",
+          "license": "Public domain"
+        },
+        {
+          "title": "Han River and Lotte World Tower",
+          "url": "https://commons.wikimedia.org/wiki/File:Han_River_and_Lotte_World_Tower.jpg",
+          "author": "mauveine.kim",
+          "license": "CC0"
+        },
+        {
+          "title": "Lotte World Tower 09",
+          "url": "https://commons.wikimedia.org/wiki/File:Lotte_World_Tower_09_(33435692451).jpg",
+          "author": "Republic of Korea (KOREA.NET)",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Lotte World Tower (3)",
+          "url": "https://commons.wikimedia.org/wiki/File:Lotte_World_Tower_(3).jpg",
+          "author": "Шохбоз",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Lotte World Tower In Jamsil (night)",
+          "url": "https://commons.wikimedia.org/wiki/File:Lotte_World_Tower_In_Jamsil_(144738473).jpeg",
+          "author": "Jongjin Lee",
+          "license": "CC BY 3.0"
+        }
+      ],
+      "file": "models/seoul-lotte-world-tower.glb",
+      "source": "generators/seoul-lotte-world-tower.ts"
+    },
+    {
+      "id": "seoul-myeongdong-cathedral",
+      "file": "models/seoul-myeongdong-cathedral.glb",
+      "source": "generators/seoul-myeongdong-cathedral.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "cathedral",
+        "church",
+        "gothic-revival",
+        "brick",
+        "historic",
+        "spire"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The red and grey brick Gothic Revival cathedral of Seoul (1898): its 45 m front tower and green spire, the clerestoried nave, transepts and apse.",
+      "references": [
+        {
+          "title": "Myeongdong Cathedral front",
+          "url": "https://commons.wikimedia.org/wiki/File:Myeongdong_Cathedral_front.jpg",
+          "author": "Tristan Surtel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Myeongdong Cathedral 01 (cropped)",
+          "url": "https://commons.wikimedia.org/wiki/File:Myeongdong_Cathedral_01_(cropped).jpg",
+          "author": "Asacyan",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Korea Myeongdong Cathedral 08",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea_Myeongdong_Cathedral_08.jpg",
+          "author": "korea.net",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Korea Myeongdong Cathedral 02",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea_Myeongdong_Cathedral_02.jpg",
+          "author": "korea.net",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Myeongdong Cathedral 6",
+          "url": "https://commons.wikimedia.org/wiki/File:Myeongdong_Cathedral_6.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Myeongdong Cathedral at night 20231223",
+          "url": "https://commons.wikimedia.org/wiki/File:Myeongdong_Cathedral_at_night_20231223.jpg",
+          "author": "Nat4Eben",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-n-seoul-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "tower",
+      "tags": [
+        "observation-tower",
+        "telecommunications",
+        "observation-deck",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Namsan and Han River 2022",
+          "url": "https://commons.wikimedia.org/wiki/File:Namsan_and_Han_River_2022.jpg",
+          "author": "Ox1997cow",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Seoul Tower (4394893276)",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_Tower_(4394893276).jpg",
+          "author": "Christopher from Shanghai, China",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Namsan Seoul Tower (49174492933)",
+          "url": "https://commons.wikimedia.org/wiki/File:Namsan_Seoul_Tower_(49174492933).jpg",
+          "author": "Matt Kieffer",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "N Seoul Tower from far",
+          "url": "https://commons.wikimedia.org/wiki/File:N_Seoul_Tower_from_far.jpg",
+          "author": "Devianagloria",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "N Seoul Tower (13952097192)",
+          "url": "https://commons.wikimedia.org/wiki/File:N_Seoul_Tower_(13952097192).jpg",
+          "author": "Eugene Lim",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Seoul tower - panoramio - yamarhythm",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_tower_-_panoramio_-_yamarhythm.jpg",
+          "author": "yamarhythm",
+          "license": "CC BY 3.0"
+        }
+      ],
+      "file": "models/seoul-n-seoul-tower.glb",
+      "source": "generators/seoul-n-seoul-tower.ts"
+    },
+    {
+      "id": "seoul-national-assembly",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "government",
+        "parliament",
+        "dome"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Republic of Korea capitol.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Republic_of_Korea_capitol.jpg",
+          "author": "Cjb8293",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Fountain in National Assembly Building of South Korea.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Fountain_in_National_Assembly_Building_of_South_Korea.jpg",
+          "author": "AnbyG",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Korea-Seoul-Yeouido-National Assembly Building-03.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-Yeouido-National_Assembly_Building-03.jpg",
+          "author": "Alain Seguin",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Pond of the National Assembly in South Korea.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pond_of_the_National_Assembly_in_South_Korea.jpg",
+          "author": "Cjb8293",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/seoul-national-assembly.glb",
+      "source": "generators/seoul-national-assembly.ts"
+    },
+    {
+      "id": "seoul-national-museum",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "museum",
+        "modern",
+        "granite"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "National Museum of Korea (4)",
+          "url": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Korea_(4).jpg",
+          "author": "SJ Yang",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Front view of national museum of korea",
+          "url": "https://commons.wikimedia.org/wiki/File:Front_view_of_national_museum_of_korea.jpg",
+          "author": "Jinah78",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Exterior of the National Museum of Korea in Seoul",
+          "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_the_National_Museum_of_Korea_in_Seoul.jpg",
+          "author": "Ethan Doyle White",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "National Museum of Korea",
+          "url": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Korea.jpg",
+          "author": "sarahkim",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "National Museum of Korea (KOREA.NET)",
+          "url": "https://www.flickr.com/photos/42438955@N05/6387720685",
+          "author": "KOREA.NET - Official page of the Republic of Korea",
+          "license": "CC BY-SA 2.0"
+        }
+      ],
+      "file": "models/seoul-national-museum.glb",
+      "source": "generators/seoul-national-museum.ts"
+    },
+    {
+      "id": "seoul-olympic-stadium",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "stadium",
+      "tags": [
+        "stadium",
+        "olympic",
+        "sports",
+        "1988-olympics"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Seoul Sports Complex.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_Sports_Complex.jpg",
+          "author": "Seoul Institute",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "View of the Seoul Sports Complex from the Jamsil Baseball Stadium.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:View_of_the_Seoul_Sports_Complex_from_the_Jamsil_Baseball_Stadium.jpg",
+          "author": "Christophe95",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Toward Seoul Olympic Stadium.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Toward_Seoul_Olympic_Stadium.jpg",
+          "author": "Danleo",
+          "license": "CC BY 2.5"
+        },
+        {
+          "title": "2014-04-18 15.08.40 종합운동장.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2014-04-18_15.08.40_%EC%A2%85%ED%95%A9%EC%9A%B4%EB%8F%99%EC%9E%A5.jpg",
+          "author": "최광모 (Choe Kwangmo)",
+          "license": "CC0-1.0"
+        },
+        {
+          "title": "Seoul Jamsil Main Stadium.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_Jamsil_Main_Stadium.jpg",
+          "author": "Jeong seolah",
+          "license": "CC0-1.0"
+        },
+        {
+          "title": "蚕室 04.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:%E8%9A%95%E5%AE%A4_04.jpg",
+          "author": "MCFC795",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/seoul-olympic-stadium.glb",
+      "source": "generators/seoul-olympic-stadium.ts"
+    },
+    {
+      "id": "seoul-parc1",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "skyscraper",
+        "office",
+        "hotel",
+        "shopping-mall"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Yeouido 14.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Yeouido_14.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Yeouido 12.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Yeouido_12.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Yeouido 9.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Yeouido_9.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Yeouido Han River Park.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Yeouido_Han_River_Park.jpg",
+          "author": "Brit in Seoul",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/seoul-parc1.glb",
+      "source": "generators/seoul-parc1.ts"
+    },
+    {
+      "id": "seoul-sejong-center",
+      "file": "models/seoul-sejong-center.glb",
+      "source": "generators/seoul-sejong-center.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "theatre",
+        "concert-hall",
+        "modern",
+        "granite",
+        "colonnade"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The Grand Theater of the Sejong Center (1978): tall granite piers with bracket capitals, a beam, rafter ends and a deep hipped eave, abstracting a Korean timber hall in stone and concrete.",
+      "references": [
+        {
+          "title": "Sejong Center for the Performing Arts(20240413)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sejong_Center_for_the_Performing_Arts(20240413).jpg",
+          "author": "YellowTurtle9",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Sejong Center (세종문화회관) - panoramio - 골뱅이",
+          "url": "https://commons.wikimedia.org/wiki/File:Sejong_Center_(%EC%84%B8%EC%A2%85%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80)_-_panoramio_-_%EA%B3%A8%EB%B1%85%EC%9D%B4.jpg",
+          "author": "골뱅이",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Night view of the Sejong Center in May 2025",
+          "url": "https://commons.wikimedia.org/wiki/File:Night_view_of_the_Sejong_Center_in_May_2025.jpg",
+          "author": "DtSeoul",
+          "license": "CC0"
+        },
+        {
+          "title": "Sejongno, Jongno-gu, Seoul, South Korea - panoramio (7)",
+          "url": "https://commons.wikimedia.org/wiki/File:Sejongno,_Jongno-gu,_Seoul,_South_Korea_-_panoramio_(7).jpg",
+          "author": "Schölla Schwarz",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Sejong-daero, Seoul",
+          "url": "https://commons.wikimedia.org/wiki/File:Sejong-daero,_Seoul.jpg",
+          "author": "Tristan Surtel",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-seokjojeon",
+      "file": "models/seoul-seokjojeon.glb",
+      "source": "generators/seoul-seokjojeon.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "palace",
+        "museum",
+        "neoclassical",
+        "historic",
+        "colonnade",
+        "granite"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The neoclassical stone palace of Deoksugung (1910): a giant Ionic order on a raised basement, the pedimented central portico, and colonnaded verandas on both floors.",
+      "references": [
+        {
+          "title": "Seokjojeon 20240409 081",
+          "url": "https://commons.wikimedia.org/wiki/File:Seokjojeon_20240409_081.jpg",
+          "author": "Mobius6",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Deoksugung, Seoul - Seoul3231",
+          "url": "https://commons.wikimedia.org/wiki/File:Deoksugung,_Seoul_-_Seoul3231.jpg",
+          "author": "lumoplank",
+          "license": "CC0"
+        },
+        {
+          "title": "Seokjojeon (Korean Empire History Museum) 20191221 19",
+          "url": "https://commons.wikimedia.org/wiki/File:Seokjojeon_(Korean_Empire_History_Museum)_20191221_19.jpg",
+          "author": "Ahmed",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Seokjojeon (Korean Empire History Museum) 20191221 16",
+          "url": "https://commons.wikimedia.org/wiki/File:Seokjojeon_(Korean_Empire_History_Museum)_20191221_16.jpg",
+          "author": "Ahmed",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Seokjojeon of Deoksugung palace",
+          "url": "https://commons.wikimedia.org/wiki/File:Seokjojeon_of_Deoksugung_palace.jpg",
+          "author": "Pip1024",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Seokjojeon IMG 2079",
+          "url": "https://commons.wikimedia.org/wiki/File:Seokjojeon_IMG_2079.jpg",
+          "author": "G41rn8",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-some-sevit",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "floating-islands",
+        "cultural-center",
+        "modern",
+        "waterfront"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Korea Sevit Island 02",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea_Sevit_Island_02_(15354607748).jpg",
+          "author": "Republic of Korea (KOREA.NET)",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Korea Sevit Island 04",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea_Sevit_Island_04_(15541583392).jpg",
+          "author": "Republic of Korea (KOREA.NET)",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Korea Sevit Island 07",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea_Sevit_Island_07_(14920001864).jpg",
+          "author": "Republic of Korea (KOREA.NET)",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Korea Sevit Island 12",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea_Sevit_Island_12_(15537998931).jpg",
+          "author": "Republic of Korea (KOREA.NET)",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Korea Sevit Island 13",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea_Sevit_Island_13_(15516982386).jpg",
+          "author": "Republic of Korea (KOREA.NET)",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Korea Sevit Island 15",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea_Sevit_Island_15_(15540663165).jpg",
+          "author": "Republic of Korea (KOREA.NET)",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Han river architecture - as seen on TV - panoramio",
+          "url": "https://commons.wikimedia.org/wiki/File:Han_river_architecture_-_as_seen_on_TV_-_panoramio.jpg",
+          "author": "gary4now",
+          "license": "CC BY 3.0"
+        }
+      ],
+      "file": "models/seoul-some-sevit.glb",
+      "source": "generators/seoul-some-sevit.ts"
+    },
+    {
+      "id": "seoul-sungnyemun",
+      "file": "models/seoul-sungnyemun.glb",
+      "source": "generators/seoul-sungnyemun.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "gate",
+        "city-wall",
+        "hanok",
+        "joseon",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "description": "The south gate of Seoul's Joseon city wall (1398, restored 2013 after the 2008 fire): a granite base with one arched passage and a brick parapet under a two-storey pavilion with double hipped roofs and a vertical name board.",
+      "references": [
+        {
+          "title": "Korea-Seoul-Namdaemun-Sungnyemun-11.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-Namdaemun-Sungnyemun-11.jpg",
+          "author": "lwy",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Namdaemun Gate-5.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Namdaemun_Gate-5.jpg",
+          "author": "Immanuelle",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Sungnyemun Gate, front, 2013.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Sungnyemun_Gate,_front,_2013.jpg",
+          "author": "DoulosCore",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Sungnyemun Gate in Seoul.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Sungnyemun_Gate_in_Seoul.jpg",
+          "author": "Bernard Gagnon",
+          "license": "CC0"
+        },
+        {
+          "title": "Korea-Seoul-Namdaemun-Sungnyemun-12.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-Namdaemun-Sungnyemun-12.jpg",
+          "author": "lwy",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Korea-Seoul-Namdaemun-Sungnyemun-26.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-Namdaemun-Sungnyemun-26.jpg",
+          "author": "m-louis",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Korea-Seoul-Namdaemun-Sungnyemun-18.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-Namdaemun-Sungnyemun-18.jpg",
+          "author": "AndrewEick",
+          "license": "CC BY 2.0"
+        }
+      ]
+    },
+    {
+      "id": "seoul-trade-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "skyscraper",
+        "office"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Park Hyatt Seoul view.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Park_Hyatt_Seoul_view.jpg",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Yeongdong-daero, Gangnam-gu, Seoul, South Korea.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Yeongdong-daero,_Gangnam-gu,_Seoul,_South_Korea.jpg",
+          "author": "张元柏",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Korea-Seoul-Bongeunsa-13.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-Bongeunsa-13.jpg",
+          "author": "Gaël Chardon",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "World Trade Center Seoul.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:World_Trade_Center_Seoul.jpg",
+          "author": "Seoul Institute",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/seoul-trade-tower.glb",
+      "source": "generators/seoul-trade-tower.ts"
+    },
+    {
+      "id": "seoul-war-memorial",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "museum",
+        "memorial",
+        "granite",
+        "colonnade"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Korean.War.Memorial.01",
+          "url": "https://commons.wikimedia.org/wiki/File:Korean.War.Memorial.01.jpg",
+          "author": "Andrew Currie",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "KOCIS Korea War Memorial of Korea 20140107 23",
+          "url": "https://commons.wikimedia.org/wiki/File:KOCIS_Korea_War_Memorial_of_Korea_20140107_23_(11850465733).jpg",
+          "author": "Korea.net / Korean Culture and Information Service",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "KOCIS Korea War Memorial of Korea 20140107 27",
+          "url": "https://commons.wikimedia.org/wiki/File:KOCIS_Korea_War_Memorial_of_Korea_20140107_27_(11850464113).jpg",
+          "author": "Korea.net / Korean Culture and Information Service",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "KOCIS Korea War Memorial of Korea 20140107 16",
+          "url": "https://commons.wikimedia.org/wiki/File:KOCIS_Korea_War_Memorial_of_Korea_20140107_16_(11850467443).jpg",
+          "author": "Korea.net / Korean Culture and Information Service",
+          "license": "CC BY-SA 2.0"
+        }
+      ],
+      "file": "models/seoul-war-memorial.glb",
+      "source": "generators/seoul-war-memorial.ts"
+    },
+    {
+      "id": "seoul-world-cup-stadium",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "stadium",
+      "tags": [
+        "stadium",
+        "football",
+        "sports",
+        "membrane-roof"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Seoul World Cup Stadium (from the west)",
+          "url": "https://www.flickr.com/photos/99958070@N02/14887745963",
+          "author": "travel oriented",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Seoul World Cup Stadium (from the west)",
+          "url": "https://www.flickr.com/photos/99958070@N02/14864366542",
+          "author": "travel oriented",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "서울월드컵경기장 Seoul World Cup Stadium",
+          "url": "https://www.flickr.com/photos/56619626@N05/5505348528",
+          "author": "InSapphoWeTrust",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Seoul World Cup Stadium 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_World_Cup_Stadium_01.jpg",
+          "author": "Exj",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "서울월드컵경기장.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:%EC%84%9C%EC%9A%B8%EC%9B%94%EB%93%9C%EC%BB%B5%EA%B2%BD%EA%B8%B0%EC%9E%A5.jpg",
+          "author": "Dan820526",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Seongsan-dong, Mapo-gu, Seoul, South Korea - panoramio.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Seongsan-dong,_Mapo-gu,_Seoul,_South_Korea_-_panoramio.jpg",
+          "author": "张元柏",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Seoul-Worldcupstadium.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul-Worldcupstadium.jpg",
+          "author": "Yanikor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Seoul World Cup Stadium after K-pop Super Live - 2023-08-11 WSJ 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_World_Cup_Stadium_after_K-pop_Super_Live_-_2023-08-11_WSJ_2023.jpg",
+          "author": "Wvdp",
+          "license": "CC0-1.0"
+        }
+      ],
+      "file": "models/seoul-world-cup-stadium.glb",
+      "source": "generators/seoul-world-cup-stadium.ts"
+    },
+    {
+      "id": "seoul-world-peace-gate",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "monument",
+      "tags": [
+        "monument",
+        "gate",
+        "1988-olympics",
+        "public-art"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "올림픽공원 Olympic Park, Seoul (World Peace Gate)",
+          "url": "https://www.flickr.com/photos/56619626@N05/5678836656",
+          "author": "InSapphoWeTrust (Rachel K. So)",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Seoul Olympic Park from Lotte World Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Seoul_Olympic_Park_from_Lotte_World_Tower.jpg",
+          "author": "Tristan Surtel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Olympic Park Seoul 2005.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Olympic_Park_Seoul_2005.jpg",
+          "author": "M. Öcalan",
+          "license": "CC0-1.0"
+        },
+        {
+          "title": "Olympic Park Seoul.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Olympic_Park_Seoul.jpg",
+          "author": "Silas Low",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/seoul-world-peace-gate.glb",
+      "source": "generators/seoul-world-peace-gate.ts"
+    },
+    {
       "id": "sf-101-california",
       "file": "models/sf-101-california.glb",
       "license": "CC0-1.0",
@@ -70673,6 +73202,859 @@
       "place": "seattle-area"
     },
     {
+      "id": "seoul-63-building",
+      "name": "63 Building",
+      "model": "seoul-63-building",
+      "place": "seoul",
+      "lng": 126.940251,
+      "lat": 37.519849,
+      "bearing": 51.8,
+      "elevation": 0,
+      "minzoom": 13,
+      "replaces": [
+        "way/64989671",
+        "way/463188395",
+        "way/463188396",
+        "way/463188397",
+        "way/463384207",
+        "way/463384208",
+        "way/463384209",
+        "way/385228664",
+        "way/463613650",
+        "way/463613651",
+        "way/463613652"
+      ]
+    },
+    {
+      "id": "seoul-amorepacific",
+      "name": "Amorepacific Headquarters",
+      "model": "seoul-amorepacific",
+      "place": "seoul",
+      "lng": 126.9686221,
+      "lat": 37.5287964,
+      "bearing": 36.6,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q55732357",
+      "replaces": [
+        "way/363982568",
+        "way/641066081",
+        "way/641066083",
+        "way/641066085",
+        "way/641066087",
+        "way/641711401",
+        "way/641711402",
+        "way/641711403",
+        "way/641711404"
+      ]
+    },
+    {
+      "id": "seoul-arts-center",
+      "name": "Seoul Arts Center Opera House",
+      "model": "seoul-arts-center",
+      "place": "seoul",
+      "lng": 127.0137681,
+      "lat": 37.4792498,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "relation/8439129"
+      ]
+    },
+    {
+      "id": "seoul-bosingak",
+      "name": "Bosingak",
+      "model": "seoul-bosingak",
+      "place": "seoul",
+      "lng": 126.9836789,
+      "lat": 37.5697883,
+      "bearing": 129.1,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/708772637"
+      ],
+      "wikidata": "Q487603"
+    },
+    {
+      "id": "seoul-cheong-wa-dae",
+      "name": "Cheong Wa Dae",
+      "model": "seoul-cheong-wa-dae",
+      "place": "seoul",
+      "lng": 126.9748842,
+      "lat": 37.5865051,
+      "bearing": 353.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "relation/19333673",
+        "relation/19338601",
+        "way/636449773",
+        "way/1222729682",
+        "way/1222729683",
+        "way/1222729684",
+        "way/1222729685",
+        "way/1222729686",
+        "way/1222729687",
+        "way/1222729688",
+        "way/1222729689",
+        "way/1222729690",
+        "way/1222729691",
+        "way/1222729692",
+        "way/1222729693",
+        "way/1413176341",
+        "way/1413179871",
+        "way/1413179872",
+        "way/1413179873",
+        "way/1413179874",
+        "way/1413179875"
+      ]
+    },
+    {
+      "id": "seoul-city-hall",
+      "name": "Seoul City Hall",
+      "model": "seoul-city-hall",
+      "place": "seoul",
+      "lng": 126.9784227,
+      "lat": 37.5666902,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/198561926",
+        "way/768398467",
+        "way/1275728634",
+        "relation/10757525",
+        "relation/10757526",
+        "relation/18722759",
+        "way/1203368740",
+        "way/1203368741",
+        "way/1415361891",
+        "way/1415361892"
+      ],
+      "wikidata": "Q623908"
+    },
+    {
+      "id": "seoul-culture-station-284",
+      "name": "Culture Station Seoul 284",
+      "model": "seoul-culture-station-284",
+      "place": "seoul",
+      "lng": 126.9715612,
+      "lat": 37.5559594,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/759569673"
+      ]
+    },
+    {
+      "id": "seoul-ddp",
+      "name": "Dongdaemun Design Plaza",
+      "model": "seoul-ddp",
+      "place": "seoul",
+      "lng": 127.009646,
+      "lat": 37.566813,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q5295847",
+      "replaces": [
+        "relation/10647068"
+      ]
+    },
+    {
+      "id": "seoul-fki-tower",
+      "name": "FKI Tower",
+      "model": "seoul-fki-tower",
+      "place": "seoul",
+      "lng": 126.919929,
+      "lat": 37.522173,
+      "bearing": 52,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/681805210"
+      ],
+      "wikidata": "Q16099606"
+    },
+    {
+      "id": "seoul-geunjeongjeon",
+      "name": "Geunjeongjeon",
+      "model": "seoul-geunjeongjeon",
+      "place": "seoul",
+      "lng": 126.9769904,
+      "lat": 37.5785445,
+      "bearing": 2.3,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/170199428",
+        "way/1222920894",
+        "way/1569283607",
+        "way/1569283608",
+        "way/1569283609",
+        "way/1569283610",
+        "way/1569283611",
+        "way/1569283612",
+        "way/1569283613",
+        "way/1569283614",
+        "way/1569283615",
+        "way/1569283616",
+        "way/1569283617",
+        "way/1569283618",
+        "way/1569283619",
+        "way/1569283620",
+        "way/1569283621",
+        "way/1569283622",
+        "way/1569283623",
+        "way/1569283624",
+        "way/1569283625",
+        "way/1569283626",
+        "way/1569283627",
+        "way/1569283628",
+        "way/1569283629",
+        "way/1569283630",
+        "way/1569283631",
+        "way/1569283632",
+        "way/1569283633",
+        "way/1569283634",
+        "way/1569283635",
+        "way/1569283636",
+        "way/1569283637",
+        "way/1569283638",
+        "way/1569283639",
+        "way/1569283640",
+        "way/1569283641",
+        "way/1569283642",
+        "way/1569283643",
+        "way/1569283644",
+        "way/1569283645",
+        "way/1569283646",
+        "way/1569283647",
+        "way/1569283648",
+        "way/1569283649",
+        "way/1569283650",
+        "way/1569283651",
+        "way/1569283652",
+        "way/1569283653",
+        "way/1569283654",
+        "way/1569283655",
+        "way/1569283656",
+        "way/1569283657",
+        "way/1569283658",
+        "way/1569283659",
+        "way/1569283660"
+      ],
+      "wikidata": "Q10855678"
+    },
+    {
+      "id": "seoul-gocheok-sky-dome",
+      "name": "Gocheok Sky Dome",
+      "model": "seoul-gocheok-sky-dome",
+      "place": "seoul",
+      "lng": 126.8670477,
+      "lat": 37.4981957,
+      "bearing": 0,
+      "elevation": -5.6,
+      "minzoom": 14,
+      "wikidata": "Q10855359",
+      "replaces": [
+        "way/258637347",
+        "way/842076947"
+      ]
+    },
+    {
+      "id": "seoul-gt-tower",
+      "name": "GT Tower",
+      "model": "seoul-gt-tower",
+      "place": "seoul",
+      "lng": 127.025944,
+      "lat": 37.498063,
+      "bearing": 159.43,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q17063396",
+      "replaces": [
+        "way/301605795"
+      ]
+    },
+    {
+      "id": "seoul-gwanghwamun",
+      "name": "Gwanghwamun",
+      "model": "seoul-gwanghwamun",
+      "place": "seoul",
+      "lng": 126.9768153,
+      "lat": 37.575932,
+      "bearing": 1.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/170199440",
+        "way/1170008834",
+        "way/1170008836",
+        "way/1170008837",
+        "way/1170008838",
+        "way/1170008839",
+        "way/1170008840",
+        "way/1415432340",
+        "way/1415432341",
+        "way/1415432342",
+        "way/1415432343",
+        "way/1415432344",
+        "way/1415432345",
+        "way/1415432346",
+        "way/1415432347"
+      ],
+      "wikidata": "Q485034"
+    },
+    {
+      "id": "seoul-gyeonghoeru",
+      "name": "Gyeonghoeru",
+      "model": "seoul-gyeonghoeru",
+      "place": "seoul",
+      "lng": 126.9759667,
+      "lat": 37.5797502,
+      "bearing": 272,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/170199469"
+      ]
+    },
+    {
+      "id": "seoul-heunginjimun",
+      "name": "Heunginjimun",
+      "model": "seoul-heunginjimun",
+      "place": "seoul",
+      "lng": 127.0096849,
+      "lat": 37.5711281,
+      "bearing": 260.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/320783808"
+      ],
+      "wikidata": "Q482721"
+    },
+    {
+      "id": "seoul-ifc",
+      "name": "IFC Seoul",
+      "model": "seoul-ifc",
+      "place": "seoul",
+      "lng": 126.925798,
+      "lat": 37.52529,
+      "bearing": 52,
+      "elevation": 0,
+      "minzoom": 13,
+      "replaces": [
+        "way/621752528",
+        "way/621752526",
+        "way/639943641",
+        "way/639943642",
+        "way/639943643",
+        "way/621752527",
+        "way/500362301",
+        "way/621752531",
+        "way/621752532",
+        "way/1465162036",
+        "way/1465162037"
+      ]
+    },
+    {
+      "id": "seoul-injeongjeon",
+      "name": "Injeongjeon",
+      "model": "seoul-injeongjeon",
+      "place": "seoul",
+      "lng": 126.9910907,
+      "lat": 37.579449,
+      "bearing": 353.6,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/380863259"
+      ]
+    },
+    {
+      "id": "seoul-jogyesa",
+      "name": "Jogyesa Daeungjeon",
+      "model": "seoul-jogyesa",
+      "place": "seoul",
+      "lng": 126.9818575,
+      "lat": 37.5739071,
+      "bearing": 357.2,
+      "elevation": 0,
+      "minzoom": 16,
+      "replaces": [
+        "way/432721256"
+      ]
+    },
+    {
+      "id": "seoul-jongmyo-jeongjeon",
+      "name": "Jongmyo Jeongjeon",
+      "model": "seoul-jongmyo-jeongjeon",
+      "place": "seoul",
+      "lng": 126.9939744,
+      "lat": 37.574901,
+      "bearing": 22.5,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/170403802",
+        "way/382428476",
+        "way/382428479"
+      ]
+    },
+    {
+      "id": "seoul-jongno-tower",
+      "name": "Jongno Tower",
+      "model": "seoul-jongno-tower",
+      "place": "seoul",
+      "lng": 126.983621,
+      "lat": 37.570745,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/1206228046",
+        "way/142096703",
+        "way/1203371172",
+        "way/1203371173",
+        "way/1203368744",
+        "way/1203368745",
+        "relation/21361312"
+      ]
+    },
+    {
+      "id": "seoul-junghwajeon",
+      "name": "Junghwajeon",
+      "model": "seoul-junghwajeon",
+      "place": "seoul",
+      "lng": 126.9748217,
+      "lat": 37.5658068,
+      "bearing": 12.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/181574577",
+        "way/772263216",
+        "way/772263217",
+        "way/772263218",
+        "way/772263219",
+        "way/772263220",
+        "way/772263221"
+      ]
+    },
+    {
+      "id": "seoul-kspo-dome",
+      "name": "KSPO Dome",
+      "model": "seoul-kspo-dome",
+      "place": "seoul",
+      "lng": 127.1274701,
+      "lat": 37.5192312,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q487224",
+      "replaces": [
+        "way/75956855"
+      ]
+    },
+    {
+      "id": "seoul-kyobo-tower",
+      "name": "Kyobo Tower",
+      "model": "seoul-kyobo-tower",
+      "place": "seoul",
+      "lng": 127.024118,
+      "lat": 37.503787,
+      "bearing": 339.6,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q134561816",
+      "replaces": [
+        "relation/7747040",
+        "way/304366173",
+        "way/541900102",
+        "way/541900101",
+        "way/541900103",
+        "way/541900105"
+      ]
+    },
+    {
+      "id": "seoul-lotte-world-tower",
+      "name": "Lotte World Tower",
+      "model": "seoul-lotte-world-tower",
+      "place": "seoul",
+      "lng": 127.1026585,
+      "lat": 37.5125414,
+      "bearing": 67.3,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q12616233",
+      "replaces": [
+        "way/914963586",
+        "way/879571752",
+        "way/888605473",
+        "way/888605472",
+        "way/879798717",
+        "way/888605471",
+        "way/879798716",
+        "way/888605470",
+        "way/879571750",
+        "way/635073462",
+        "way/635073469",
+        "way/635073470",
+        "way/878620802",
+        "way/879798696",
+        "way/879798698",
+        "way/879798699",
+        "way/879798700",
+        "way/879798702",
+        "way/879798703",
+        "way/879798704",
+        "way/879798705",
+        "way/879798706",
+        "way/879798707",
+        "way/879798708",
+        "way/879798710",
+        "way/879798711",
+        "way/879798712",
+        "way/879798713",
+        "way/879798714",
+        "way/879798715",
+        "way/879808331",
+        "way/879808332",
+        "way/879808333"
+      ]
+    },
+    {
+      "id": "seoul-myeongdong-cathedral",
+      "name": "Myeongdong Cathedral",
+      "model": "seoul-myeongdong-cathedral",
+      "place": "seoul",
+      "lng": 126.9873401,
+      "lat": 37.5632617,
+      "bearing": 150,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/210335697",
+        "way/1139745172"
+      ],
+      "wikidata": "Q487036"
+    },
+    {
+      "id": "seoul-n-seoul-tower",
+      "name": "N Seoul Tower",
+      "model": "seoul-n-seoul-tower",
+      "place": "seoul",
+      "lng": 126.9882091,
+      "lat": 37.5512447,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q69134",
+      "replaces": [
+        "relation/16474080",
+        "relation/16474081",
+        "way/1214950316",
+        "relation/5501624",
+        "way/370286010",
+        "way/1214950322",
+        "way/1214950323",
+        "relation/19360917",
+        "relation/19360918"
+      ]
+    },
+    {
+      "id": "seoul-national-assembly",
+      "name": "National Assembly Proceeding Hall",
+      "model": "seoul-national-assembly",
+      "place": "seoul",
+      "lng": 126.914197,
+      "lat": 37.531849,
+      "bearing": 52,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/270596342",
+        "way/270594679",
+        "way/608162297",
+        "way/608162749",
+        "way/639632935",
+        "way/639626344",
+        "way/639626347",
+        "way/639626348",
+        "way/639626350",
+        "way/639626351",
+        "way/875733797",
+        "way/875733798",
+        "way/875733799",
+        "way/875733801",
+        "way/876004835",
+        "way/877104966",
+        "way/877104967",
+        "way/877104968",
+        "way/877104969",
+        "way/608164568",
+        "way/608164569",
+        "way/608164570",
+        "way/608164571",
+        "way/608164572",
+        "way/608164573",
+        "way/608164574",
+        "way/608164575",
+        "way/608164576",
+        "way/608164577",
+        "way/608164578",
+        "way/608164579",
+        "way/608164580",
+        "way/608164581",
+        "way/608164582",
+        "way/608164583",
+        "way/608164584",
+        "way/608164585",
+        "way/608164586",
+        "way/608164587",
+        "way/608164588",
+        "way/608164589",
+        "way/608164590",
+        "way/608164591",
+        "way/877366975",
+        "way/877366976",
+        "way/877366977",
+        "way/877366978",
+        "way/877366979",
+        "way/877366980",
+        "way/877366981",
+        "way/877366982",
+        "way/877366983",
+        "way/877366984",
+        "way/877366985",
+        "way/877366986",
+        "way/877366987",
+        "way/877366988"
+      ],
+      "wikidata": "Q488748"
+    },
+    {
+      "id": "seoul-national-museum",
+      "name": "National Museum of Korea",
+      "model": "seoul-national-museum",
+      "place": "seoul",
+      "lng": 126.9800554,
+      "lat": 37.523902,
+      "bearing": 3.42,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q494407",
+      "replaces": [
+        "way/168364800",
+        "way/382079361",
+        "way/382079351"
+      ]
+    },
+    {
+      "id": "seoul-olympic-stadium",
+      "name": "Seoul Olympic Stadium",
+      "model": "seoul-olympic-stadium",
+      "place": "seoul",
+      "lng": 127.0727668,
+      "lat": 37.515831,
+      "bearing": 355.6,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q392086",
+      "replaces": [
+        "relation/20348235"
+      ]
+    },
+    {
+      "id": "seoul-parc1",
+      "name": "Parc.1",
+      "model": "seoul-parc1",
+      "place": "seoul",
+      "lng": 126.928288,
+      "lat": 37.526027,
+      "bearing": 51.5,
+      "elevation": 0,
+      "minzoom": 13,
+      "replaces": [
+        "way/874639189",
+        "way/874639190",
+        "way/874639191",
+        "way/874639192"
+      ]
+    },
+    {
+      "id": "seoul-sejong-center",
+      "name": "Sejong Center for the Performing Arts",
+      "model": "seoul-sejong-center",
+      "place": "seoul",
+      "lng": 126.9756165,
+      "lat": 37.572553,
+      "bearing": 359,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/223158436"
+      ],
+      "wikidata": "Q496974"
+    },
+    {
+      "id": "seoul-seokjojeon",
+      "name": "Seokjojeon",
+      "model": "seoul-seokjojeon",
+      "place": "seoul",
+      "lng": 126.9742409,
+      "lat": 37.566384,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "relation/19357693",
+        "relation/19357694",
+        "relation/19357695",
+        "relation/19357696",
+        "relation/19357697",
+        "relation/19357698",
+        "relation/19357699",
+        "relation/19357700",
+        "relation/19357701",
+        "relation/19357703",
+        "relation/19358426",
+        "relation/19358427",
+        "relation/19358428",
+        "relation/19358429",
+        "relation/19358430",
+        "relation/19358510",
+        "relation/19358511",
+        "relation/19360995",
+        "way/773001489",
+        "way/773001492",
+        "way/773001493"
+      ],
+      "wikidata": "Q115866159"
+    },
+    {
+      "id": "seoul-some-sevit",
+      "name": "Some Sevit",
+      "model": "seoul-some-sevit",
+      "place": "seoul",
+      "lng": 126.9951856,
+      "lat": 37.5119725,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q7451660",
+      "replaces": [
+        "way/414267182",
+        "way/320797228",
+        "way/320797229"
+      ]
+    },
+    {
+      "id": "seoul-sungnyemun",
+      "name": "Sungnyemun",
+      "model": "seoul-sungnyemun",
+      "place": "seoul",
+      "lng": 126.9753602,
+      "lat": 37.559988,
+      "bearing": 41.6,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "relation/10647050",
+        "relation/10647048",
+        "relation/10647049",
+        "way/767663123",
+        "way/767663127",
+        "way/767663128"
+      ],
+      "wikidata": "Q465345"
+    },
+    {
+      "id": "seoul-trade-tower",
+      "name": "Trade Tower",
+      "model": "seoul-trade-tower",
+      "place": "seoul",
+      "lng": 127.060983,
+      "lat": 37.510315,
+      "bearing": 66.87,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q486183",
+      "replaces": [
+        "way/74056379",
+        "way/380067752",
+        "way/380067758",
+        "way/637098865",
+        "way/637098866",
+        "way/637098867",
+        "way/637098868",
+        "way/637098869",
+        "way/637098870",
+        "way/637098871",
+        "way/637098872",
+        "way/637098873",
+        "way/637098874",
+        "way/637098875",
+        "way/637098876",
+        "way/637098877",
+        "way/637322920"
+      ]
+    },
+    {
+      "id": "seoul-war-memorial",
+      "name": "War Memorial of Korea",
+      "model": "seoul-war-memorial",
+      "place": "seoul",
+      "lng": 126.9770556,
+      "lat": 37.5370245,
+      "bearing": -1.42,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q489764",
+      "replaces": [
+        "way/229891120",
+        "way/229995726",
+        "way/229995728"
+      ]
+    },
+    {
+      "id": "seoul-world-cup-stadium",
+      "name": "Seoul World Cup Stadium",
+      "model": "seoul-world-cup-stadium",
+      "place": "seoul",
+      "lng": 126.8972922,
+      "lat": 37.5683503,
+      "bearing": 15,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q175477",
+      "replaces": [
+        "relation/2241251",
+        "relation/2241252",
+        "relation/9176866"
+      ]
+    },
+    {
+      "id": "seoul-world-peace-gate",
+      "name": "World Peace Gate",
+      "model": "seoul-world-peace-gate",
+      "place": "seoul",
+      "lng": 127.1153972,
+      "lat": 37.5183104,
+      "bearing": 68.8,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q12621853",
+      "replaces": [
+        "relation/16563734"
+      ]
+    },
+    {
       "id": "sf-101-california",
       "name": "101 California Street",
       "model": "sf-101-california",
@@ -73129,6 +76511,12 @@
       "id": "seattle-area",
       "name": "Seattle area",
       "kind": "region"
+    },
+    {
+      "id": "seoul",
+      "name": "Seoul",
+      "kind": "city",
+      "wikidata": "Q8684"
     },
     {
       "id": "singapore",
