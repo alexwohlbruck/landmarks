@@ -73,7 +73,7 @@
  * plain; the ribbon boards, flags, light banks on the canopy and the lettering
  * are left out. The River Avenue wall's openings are a guess.
  */
-import { Part, writeGlb, type V3 } from './mesh'
+import { Part, writeGlb, type V3, type MaterialSpec } from './mesh'
 import { PALETTE, finish, type Swatch } from './palette'
 
 export type XY = [number, number]
@@ -272,7 +272,7 @@ export function placeOnRun(run: [XY, XY, number][], s: number, w: number, draw: 
 }
 
 /** Write the GLB, check the budget, print the size. */
-export async function save(id: string, name: string, parts: { part: Part; material: Swatch & { doubleSided?: boolean } }[], extras: Record<string, unknown>, maxTris = 6500) {
+export async function save(id: string, name: string, parts: { part: Part; material: MaterialSpec }[], extras: Record<string, unknown>, maxTris = 6500) {
   const used = parts.filter((p) => p.part.triangles > 0)
   const tris = used.reduce((s, p) => s + p.part.triangles, 0)
   if (used.length > 6) throw new Error(`${id}: ${used.length} materials`)
