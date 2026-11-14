@@ -49385,6 +49385,775 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "prague-charles-bridge",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "bridge",
+      "tags": [
+        "historic",
+        "gothic",
+        "stone-arch-bridge",
+        "statues",
+        "gate-tower"
+      ],
+      "reviewStatus": "unreviewed",
+      "detail": "models/prague-charles-bridge.detail.glb",
+      "detailZoom": 16,
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "North view of Charles Bridge from Mánesův most, Prague 20160808 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:North_view_of_Charles_Bridge_from_M%C3%A1nes%C5%AFv_most,_Prague_20160808_1.jpg",
+          "author": "DXR",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Charles bridge from Vltava, Prague.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Charles_bridge_from_Vltava,_Prague.jpg",
+          "author": "Slyronit",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Praha Charles Bridge from Malá Strana Bridge Tower 20170430 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Praha_Charles_Bridge_from_Mal%C3%A1_Strana_Bridge_Tower_20170430_01.jpg",
+          "author": "Uoaei1",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "The Vltava, Charles Bridge, Old Town Bridge Tower and Church of St. Francis of Assisi",
+          "url": "https://commons.wikimedia.org/wiki/File:The_Vltava,_Charles_Bridge,_Old_Town_Bridge_Tower_and_Church_of_St._Francis_of_Assisi._Prague,_Czech_Republic.jpg",
+          "author": "Ввласенко",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "20190816 Most Karola w Pradze 1713 5404 DxO.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20190816_Most_Karola_w_Pradze_1713_5404_DxO.jpg",
+          "author": "Jakub Hałun",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Prag, Karlsbrücke, Kleinseitner Brückenturm -- 2019 -- 6561.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prag,_Karlsbr%C3%BCcke,_Kleinseitner_Br%C3%BCckenturm_--_2019_--_6561.jpg",
+          "author": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Prag, Karlsbrücke, Altstädter Brückenturm -- 2019 -- 6566.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prag,_Karlsbr%C3%BCcke,_Altst%C3%A4dter_Br%C3%BCckenturm_--_2019_--_6566.jpg",
+          "author": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Malostranské mostecké věže v Praze.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Malostransk%C3%A9_mosteck%C3%A9_v%C4%9B%C5%BEe_v_Praze.jpg",
+          "author": "Jo Venezia",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/prague-charles-bridge.glb",
+      "source": "generators/prague-charles-bridge.ts"
+    },
+    {
+      "id": "prague-dancing-house",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "deconstructivism",
+        "office",
+        "architecture"
+      ],
+      "reviewStatus": "unreviewed",
+      "detail": "models/prague-dancing-house.detail.glb",
+      "detailZoom": 17,
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "The Dancing House in Prague.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:The_Dancing_House_in_Prague.jpg",
+          "author": "LenaSevcikova",
+          "license": "CC0-1.0"
+        },
+        {
+          "title": "Dancing house in 2010.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dancing_house_in_2010.jpg",
+          "author": "Speedbump49",
+          "license": "CC0-1.0"
+        },
+        {
+          "title": "Jiráskovo náměstí, Tatra T3R.P a Tančící dům.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Jir%C3%A1skovo_n%C3%A1m%C4%9Bst%C3%AD,_Tatra_T3R.P_a_Tan%C4%8D%C3%ADc%C3%AD_d%C5%AFm.jpg",
+          "author": "Honza Groh (Jagro)",
+          "license": "CC-BY-SA-3.0"
+        },
+        {
+          "title": "Casa Danzante, Praga, República Checa, 2022-07-01, DD 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Casa_Danzante,_Praga,_Rep%C3%BAblica_Checa,_2022-07-01,_DD_01.jpg",
+          "author": "Diego Delso",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Prague - Dancing House (20743403790).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prague_-_Dancing_House_(20743403790).jpg",
+          "author": "Ștefan Jurcă",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "title": "Dancing House in Prague, at night.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Dancing_House_in_Prague,_at_night.jpg",
+          "author": "Simon Lyngshede",
+          "license": "CC-BY-SA-4.0"
+        }
+      ],
+      "file": "models/prague-dancing-house.glb",
+      "source": "generators/prague-dancing-house.ts"
+    },
+    {
+      "id": "prague-municipal-house",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "art-nouveau",
+        "concert-hall",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "detail": "models/prague-municipal-house.detail.glb",
+      "detailZoom": 17,
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Prague Municipal House 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prague_Municipal_House_01.jpg",
+          "author": "Uoaei1",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Casa municipal, Praga, República Checa, 2022-07-02, DD 09.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Casa_municipal,_Praga,_Rep%C3%BAblica_Checa,_2022-07-02,_DD_09.jpg",
+          "author": "Diego Delso",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Municipal House (Prague).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Municipal_House_(Prague).jpg",
+          "author": "Yair Haklai",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Obecní dům in Prague, 2018.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Obecn%C3%AD_d%C5%AFm_in_Prague,_2018.jpg",
+          "author": "Szczecinolog",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Obecní dům in Prague, 2018 (2).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Obecn%C3%AD_d%C5%AFm_in_Prague,_2018_(2).jpg",
+          "author": "Szczecinolog",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Lascar Obecní dům (Municipal House) (4502264288).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Lascar_Obecn%C3%AD_d%C5%AFm_(Municipal_House)_(4502264288).jpg",
+          "author": "Jorge Láscar",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "title": "Municipal House in Prague, Czech Republic, September 2019.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Municipal_House_in_Prague,_Czech_Republic,_September_2019.jpg",
+          "author": "MichalPL",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Municipal House (Prague) 01(js).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Municipal_House_(Prague)_01(js).jpg",
+          "author": "Jerzy Strzelecki",
+          "license": "CC-BY-SA-3.0"
+        }
+      ],
+      "file": "models/prague-municipal-house.glb",
+      "source": "generators/prague-municipal-house.ts"
+    },
+    {
+      "id": "prague-national-theatre",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "theatre",
+        "neo-renaissance",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "detail": "models/prague-national-theatre.detail.glb",
+      "detailZoom": 17,
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Národní divadlo z Kampy.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:N%C3%A1rodn%C3%AD_divadlo_z_Kampy.jpg",
+          "author": "Tadeáš Gregor",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "National Theatre, Prague (189067931).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:National_Theatre,_Prague_(189067931).jpg",
+          "author": "Luca Florio",
+          "license": "CC-BY-SA-3.0"
+        },
+        {
+          "title": "Lascar Národní Divadlo (National Theatre in Prague) (4504575648).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Lascar_N%C3%A1rodn%C3%AD_Divadlo_(National_Theatre_in_Prague)_(4504575648).jpg",
+          "author": "Jorge Láscar",
+          "license": "CC-BY-2.0"
+        },
+        {
+          "title": "Národní divadlo Praha, Nové Město 20170907 001.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:N%C3%A1rodn%C3%AD_divadlo_Praha,_Nov%C3%A9_M%C4%9Bsto_20170907_001.jpg",
+          "author": "Tilman2007",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Národní divadlo-Prague-2.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:N%C3%A1rodn%C3%AD_divadlo-Prague-2.jpg",
+          "author": "Yair Haklai",
+          "license": "CC-BY-SA-3.0"
+        },
+        {
+          "title": "Národní divadlo, Škoda 15T.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:N%C3%A1rodn%C3%AD_divadlo,_%C5%A0koda_15T.jpg",
+          "author": "Honza Groh (Jagro)",
+          "license": "CC-BY-SA-3.0"
+        }
+      ],
+      "file": "models/prague-national-theatre.glb",
+      "source": "generators/prague-national-theatre.ts"
+    },
+    {
+      "id": "prague-old-town-hall",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "gothic",
+        "town-hall",
+        "clock-tower",
+        "astronomical-clock"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "20190816 Ratusz staromiejski w Pradze 1147 5234.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20190816_Ratusz_staromiejski_w_Pradze_1147_5234.jpg",
+          "author": "Jakub Hałun",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Prague Old Town Square, Czech Republic - Oct 2010.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prague_Old_Town_Square,_Czech_Republic_-_Oct_2010.jpg",
+          "author": "Diliff",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Old Town Hall Prague September 2016-1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Old_Town_Hall_Prague_September_2016-1.jpg",
+          "author": "Alvesgaspar",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Prague Town Hall Clock 2021 16.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prague_Town_Hall_Clock_2021_16.jpg",
+          "author": "Scotch Mist",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Prag, Altstädter Rathaus -- 2019 -- 6723.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prag,_Altst%C3%A4dter_Rathaus_--_2019_--_6723.jpg",
+          "author": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/prague-old-town-hall.glb",
+      "source": "generators/prague-old-town-hall.ts"
+    },
+    {
+      "id": "prague-petrin-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "tower",
+      "tags": [
+        "observation-tower",
+        "lattice-tower",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "detail": "models/prague-petrin-tower.detail.glb",
+      "detailZoom": 17,
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Torre de observación de Petřín, Praga, República Checa, 2022-07-02, DD 163.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Torre_de_observaci%C3%B3n_de_Pet%C5%99%C3%ADn,_Praga,_Rep%C3%BAblica_Checa,_2022-07-02,_DD_163.jpg",
+          "author": "Diego Delso",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Petřín Lookout Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pet%C5%99%C3%ADn_Lookout_Tower.jpg",
+          "author": "Yair Haklai",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Petřínská rozhledna-Prague-2.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pet%C5%99%C3%ADnsk%C3%A1_rozhledna-Prague-2.jpg",
+          "author": "Yair Haklai",
+          "license": "CC-BY-SA-3.0"
+        },
+        {
+          "title": "Petřínská rozhledna - BugWarp 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pet%C5%99%C3%ADnsk%C3%A1_rozhledna_-_BugWarp_01.jpg",
+          "author": "BugWarp",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Petřínská rozhledna, Prague.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pet%C5%99%C3%ADnsk%C3%A1_rozhledna,_Prague.jpg",
+          "author": "Ivan Korostelev",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Petřínská rozhledna, pata.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pet%C5%99%C3%ADnsk%C3%A1_rozhledna,_pata.jpg",
+          "author": "ŠJů",
+          "license": "CC-BY-SA-3.0"
+        },
+        {
+          "title": "Petřín Lookout Tower - Prague, Czech Republic - May 17, 2019.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pet%C5%99%C3%ADn_Lookout_Tower_-_Prague,_Czech_Republic_-_May_17,_2019.jpg",
+          "author": "Giorgio Galeotti",
+          "license": "CC-BY-4.0"
+        },
+        {
+          "title": "Petřín Lookout Tower at night.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pet%C5%99%C3%ADn_Lookout_Tower_at_night.jpg",
+          "author": "Berlinuno",
+          "license": "CC-BY-SA-4.0"
+        }
+      ],
+      "file": "models/prague-petrin-tower.glb",
+      "source": "generators/prague-petrin-tower.ts"
+    },
+    {
+      "id": "prague-powder-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "tower",
+      "tags": [
+        "historic",
+        "gothic",
+        "city-gate",
+        "gate-tower"
+      ],
+      "reviewStatus": "unreviewed",
+      "detail": "models/prague-powder-tower.detail.glb",
+      "detailZoom": 17,
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Praha Prašná brána 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Praha_Pra%C5%A1n%C3%A1_br%C3%A1na_01.jpg",
+          "author": "Uoaei1",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "20190816 Brama Prochowa w Pradze 1859 5460 DxO.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20190816_Brama_Prochowa_w_Pradze_1859_5460_DxO.jpg",
+          "author": "Jakub Hałun",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Prašná brána in Prague, 2018.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pra%C5%A1n%C3%A1_br%C3%A1na_in_Prague,_2018.jpg",
+          "author": "Szczecinolog",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Prag, Pulverturm -- 2019 -- 6602.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prag,_Pulverturm_--_2019_--_6602.jpg",
+          "author": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/prague-powder-tower.glb",
+      "source": "generators/prague-powder-tower.ts"
+    },
+    {
+      "id": "prague-st-vitus-cathedral",
+      "detail": "models/prague-st-vitus-cathedral.detail.glb",
+      "detailZoom": 17,
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "cathedral",
+        "church",
+        "gothic",
+        "historic",
+        "unesco"
+      ],
+      "reviewStatus": "unreviewed",
+      "wikidata": "Q5949",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "St Vitus Prague September 2016-30b.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St_Vitus_Prague_September_2016-30b.jpg",
+          "author": "Alvesgaspar",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "St Vitus Prague September 2016-21.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St_Vitus_Prague_September_2016-21.jpg",
+          "author": "Alvesgaspar",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "St Vitus Prague September 2016-27.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St_Vitus_Prague_September_2016-27.jpg",
+          "author": "Alvesgaspar",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "St Vitus Prague September 2016-5.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St_Vitus_Prague_September_2016-5.jpg",
+          "author": "Alvesgaspar",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "PragueCathedral03.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:PragueCathedral03.jpg",
+          "author": "MathKnight and Zachi Evenor",
+          "license": "CC BY 2.5"
+        },
+        {
+          "title": "Prag, Prager Burg, Veitsdom -- 2019 -- 6621.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prag,_Prager_Burg,_Veitsdom_--_2019_--_6621.jpg",
+          "author": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Prag, Prager Burg, Veitsdom -- 2019 -- 6625.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prag,_Prager_Burg,_Veitsdom_--_2019_--_6625.jpg",
+          "author": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Prag, Prager Burg, Veitsdom -- 2019 -- 6662.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prag,_Prager_Burg,_Veitsdom_--_2019_--_6662.jpg",
+          "author": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "St. Vitus Cathedral – roof and spires over Hradčany from the Great South Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St._Vitus_Cathedral_%E2%80%93_roof_and_spires_over_Hrad%C4%8Dany_from_the_Great_South_Tower.jpg",
+          "author": "Punteador",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "St. Vitus Cathedral in Prague 2016.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St._Vitus_Cathedral_in_Prague_2016.jpg",
+          "author": "JohnCayne",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/prague-st-vitus-cathedral.glb",
+      "source": "generators/prague-st-vitus-cathedral.ts"
+    },
+    {
+      "id": "prague-tyn-church",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "church",
+        "gothic",
+        "historic",
+        "unesco"
+      ],
+      "reviewStatus": "unreviewed",
+      "wikidata": "Q1453427",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Our Lady before Tyn Prague September 2016-1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Our_Lady_before_Tyn_Prague_September_2016-1.jpg",
+          "author": "Alvesgaspar",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Our Lady before Tyn Prague September 2016-2.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Our_Lady_before_Tyn_Prague_September_2016-2.jpg",
+          "author": "Alvesgaspar",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Our Lady before Tyn Prague September 2016-3.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Our_Lady_before_Tyn_Prague_September_2016-3.jpg",
+          "author": "Alvesgaspar",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Prag - Blick vom Altstädter Rathausturm auf die Kirche der Jungfrau Maria vor dem Tein - Pohled z věže Staré radnice na kostel Panny Marie před Týnem - panoramio (1).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prag_-_Blick_vom_Altst%C3%A4dter_Rathausturm_auf_die_Kirche_der_Jungfrau_Maria_vor_dem_Tein_-_Pohled_z_v%C4%9B%C5%BEe_Star%C3%A9_radnice_na_kostel_Panny_Marie_p%C5%99ed_T%C3%BDnem_-_panoramio_(1).jpg",
+          "author": "Edgar El",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Praha, Týnský chrám z Celetné.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Praha,_T%C3%BDnsk%C3%BD_chr%C3%A1m_z_Celetn%C3%A9.jpg",
+          "author": "PatrikPaprika",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Praha Týnský chrám z Letné.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Praha_T%C3%BDnsk%C3%BD_chr%C3%A1m_z_Letn%C3%A9.jpg",
+          "author": "VitVit",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Prag, Teynkirche -- 2019 -- 6584.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prag,_Teynkirche_--_2019_--_6584.jpg",
+          "author": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Prag, Teynkirche -- 2019 -- 6588.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Prag,_Teynkirche_--_2019_--_6588.jpg",
+          "author": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Týnský chrám z Orloje.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:T%C3%BDnsk%C3%BD_chr%C3%A1m_z_Orloje.JPG",
+          "author": "VitVit",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Praha 1, Kostel Matky Boží před Týnem 20170809 005.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Praha_1,_Kostel_Matky_Bo%C5%BE%C3%AD_p%C5%99ed_T%C3%BDnem_20170809_005.jpg",
+          "author": "Tilman2007",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/prague-tyn-church.glb",
+      "source": "generators/prague-tyn-church.ts"
+    },
+    {
+      "id": "prague-zizkov-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "tower",
+      "tags": [
+        "tv-tower",
+        "observation-tower",
+        "sculpture",
+        "brutalism"
+      ],
+      "reviewStatus": "unreviewed",
+      "detail": "models/prague-zizkov-tower.detail.glb",
+      "detailZoom": 16,
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Žižkov Television Tower (Jan 2014).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:%C5%BDi%C5%BEkov_Television_Tower_(Jan_2014).jpg",
+          "author": "Sebaso",
+          "license": "CC-BY-SA-3.0"
+        },
+        {
+          "title": "Žižkov tv tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:%C5%BDi%C5%BEkov_tv_tower.jpg",
+          "author": "Norbert Požár",
+          "license": "CC-BY-SA-3.0"
+        },
+        {
+          "title": "Žižkov Television Tower (1).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:%C5%BDi%C5%BEkov_Television_Tower_(1).jpg",
+          "author": "Huhulenik",
+          "license": "CC-BY-3.0"
+        },
+        {
+          "title": "Wide angle view of Žižkov Television Tower from street level, 2014-03-09.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Wide_angle_view_of_%C5%BDi%C5%BEkov_Television_Tower_from_street_level,_2014-03-09.jpg",
+          "author": "Sage Ross",
+          "license": "CC-BY-SA-3.0"
+        },
+        {
+          "title": "Žižkov Television Tower Prague - babies by David Černý-6446.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:%C5%BDi%C5%BEkov_Television_Tower_Prague_-_babies_by_David_%C4%8Cern%C3%BD-6446.jpg",
+          "author": "Raimond Spekking",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "CZ-Prag-zizkov-tv-turm-babies.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:CZ-Prag-zizkov-tv-turm-babies.jpg",
+          "author": "Balou46",
+          "license": "CC-BY-SA-3.0"
+        },
+        {
+          "title": "Zizkov tower from Vitkov.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Zizkov_tower_from_Vitkov.jpg",
+          "author": "Bystroushaak",
+          "license": "CC-BY-SA-4.0"
+        }
+      ],
+      "file": "models/prague-zizkov-tower.glb",
+      "source": "generators/prague-zizkov-tower.ts"
+    },
+    {
       "id": "queens-museum",
       "file": "models/queens-museum.glb",
       "license": "CC0-1.0",
@@ -81245,6 +82014,421 @@
       "place": "charlotte-area"
     },
     {
+      "id": "prague-charles-bridge",
+      "name": "Charles Bridge",
+      "model": "prague-charles-bridge",
+      "place": "prague",
+      "lng": 14.41015,
+      "lat": 50.08663,
+      "bearing": 12.3,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q204871",
+      "replaces": [
+        "way/119016167",
+        "way/839278890",
+        "way/93479848",
+        "way/482247472",
+        "way/482247473",
+        "way/482247474",
+        "way/482247475",
+        "way/482247476",
+        "way/482247477",
+        "way/482247478",
+        "way/482247479",
+        "way/482310110",
+        "way/839278891",
+        "way/389652949",
+        "way/482310111",
+        "way/482310112",
+        "way/482310113",
+        "way/482310114",
+        "way/482310115",
+        "way/482310116",
+        "way/389652950",
+        "way/482310118",
+        "way/460016966",
+        "way/460016964",
+        "way/460016965"
+      ]
+    },
+    {
+      "id": "prague-dancing-house",
+      "name": "Dancing House",
+      "model": "prague-dancing-house",
+      "place": "prague",
+      "lng": 14.41417,
+      "lat": 50.07543,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q244816",
+      "replaces": [
+        "relation/6751056",
+        "way/456783389",
+        "way/456783390",
+        "way/456783391",
+        "way/456783392",
+        "way/1201366338",
+        "way/1201366339",
+        "way/1201366340",
+        "way/1201366341",
+        "way/319383482",
+        "way/319383483",
+        "way/319383484",
+        "way/319383486",
+        "way/319383487",
+        "way/319383488",
+        "way/319383489",
+        "way/319383490",
+        "way/319383491",
+        "way/319383492",
+        "way/319383493"
+      ]
+    },
+    {
+      "id": "prague-municipal-house",
+      "name": "Municipal House",
+      "model": "prague-municipal-house",
+      "place": "prague",
+      "lng": 14.42776,
+      "lat": 50.08776,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q2334312",
+      "replaces": [
+        "way/27124435",
+        "way/482524690",
+        "way/482524691",
+        "way/482524692",
+        "way/482524693",
+        "way/482524694",
+        "way/482524695"
+      ]
+    },
+    {
+      "id": "prague-national-theatre",
+      "name": "National Theatre",
+      "model": "prague-national-theatre",
+      "place": "prague",
+      "lng": 14.41357,
+      "lat": 50.08086,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q23042822",
+      "replaces": [
+        "way/7649971",
+        "way/379386264",
+        "way/379386266",
+        "way/454893462",
+        "relation/16202318",
+        "way/481972519",
+        "way/481972520",
+        "way/565056632",
+        "way/565056633"
+      ]
+    },
+    {
+      "id": "prague-old-town-hall",
+      "name": "Old Town Hall and Astronomical Clock",
+      "model": "prague-old-town-hall",
+      "place": "prague",
+      "lng": 14.42029,
+      "lat": 50.08698,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/255771323",
+        "way/754559121",
+        "way/754559123",
+        "way/754559124",
+        "way/479289484",
+        "way/479289485",
+        "way/479289486",
+        "way/479289487",
+        "way/479289488",
+        "way/1229641326",
+        "way/391354925",
+        "way/481986568",
+        "way/481986569",
+        "way/481986570",
+        "way/481986571",
+        "way/481986572",
+        "way/481986573",
+        "way/481986574",
+        "way/482235438",
+        "way/462411198",
+        "way/462411199",
+        "way/321115101",
+        "way/482235437"
+      ]
+    },
+    {
+      "id": "prague-petrin-tower",
+      "name": "Petřín Lookout Tower",
+      "model": "prague-petrin-tower",
+      "place": "prague",
+      "lng": 14.395086,
+      "lat": 50.083506,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q12256",
+      "replaces": [
+        "way/7645353",
+        "way/27337091",
+        "way/456174848",
+        "way/467431208",
+        "way/467431211",
+        "way/453258654",
+        "way/453258656"
+      ]
+    },
+    {
+      "id": "prague-powder-tower",
+      "name": "Powder Tower",
+      "model": "prague-powder-tower",
+      "place": "prague",
+      "lng": 14.42776,
+      "lat": 50.08724,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/27124370",
+        "way/482524681",
+        "way/482524682",
+        "way/482524683",
+        "way/482524684",
+        "way/482524685",
+        "way/482524686",
+        "way/482524687",
+        "way/482524688",
+        "way/482524689"
+      ]
+    },
+    {
+      "id": "prague-st-vitus-cathedral",
+      "name": "St. Vitus Cathedral",
+      "model": "prague-st-vitus-cathedral",
+      "place": "prague",
+      "lng": 14.4005639,
+      "lat": 50.0908594,
+      "bearing": 339.4,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q5949",
+      "replaces": [
+        "way/1568419039",
+        "way/243800050",
+        "way/279535799",
+        "way/279535800",
+        "way/279536188",
+        "way/462765675",
+        "way/462765676",
+        "way/462765677",
+        "way/462765678",
+        "way/462765679",
+        "way/462765680",
+        "way/462765681",
+        "way/532171881",
+        "way/532171883",
+        "way/532171884",
+        "way/532171885",
+        "way/532171886",
+        "way/532171887",
+        "way/532171888",
+        "way/532171889",
+        "way/532171890",
+        "way/532171891",
+        "way/532171892",
+        "way/532171893",
+        "way/532171894",
+        "way/532171895",
+        "way/532171896",
+        "way/532171899",
+        "way/532171901",
+        "way/532171902",
+        "way/532171903",
+        "way/532171904",
+        "way/532171906",
+        "way/532171907",
+        "way/532171909",
+        "way/565398669",
+        "way/565398673",
+        "way/762259522",
+        "way/762259523",
+        "way/762259524",
+        "way/762259525",
+        "way/762259526",
+        "way/762259527",
+        "way/762259528",
+        "way/762259529",
+        "way/762259530",
+        "way/762259531",
+        "way/762259532",
+        "way/762259533",
+        "way/762259534",
+        "way/762259535",
+        "way/895259329",
+        "way/895259330",
+        "way/895259331",
+        "way/895259332",
+        "way/896479228",
+        "way/901093470",
+        "way/901093471",
+        "way/901093472",
+        "way/901093473",
+        "way/901093474",
+        "way/901093475",
+        "way/901093476",
+        "way/901093477",
+        "way/901093478",
+        "way/901093479",
+        "way/901093480",
+        "way/901093481",
+        "way/901132773",
+        "way/901132774",
+        "way/901132775",
+        "way/901132776",
+        "way/901132777",
+        "way/901132778",
+        "way/901132779",
+        "way/901132780",
+        "way/901132781",
+        "way/901132782",
+        "way/901132783",
+        "way/901132784",
+        "way/901132785",
+        "way/901132786",
+        "way/901132787",
+        "way/901132788",
+        "way/901132789",
+        "way/901132790",
+        "way/901132791",
+        "way/901132792",
+        "way/901132793",
+        "way/901132794",
+        "way/901132795",
+        "way/901132796",
+        "way/901132797",
+        "way/901132798",
+        "way/901132799",
+        "way/901132800",
+        "way/901132801",
+        "way/901132802",
+        "way/901132803",
+        "way/901132804",
+        "way/901132805",
+        "way/901132806",
+        "way/901132807",
+        "way/901132808",
+        "way/901132809",
+        "way/901132810",
+        "way/901132811",
+        "way/901132812",
+        "way/901132813",
+        "way/901132814",
+        "way/901132815",
+        "way/901132816",
+        "way/901132817",
+        "way/901132818",
+        "way/901132819",
+        "way/901132820",
+        "way/901132821",
+        "way/901132822",
+        "way/901132823",
+        "way/901132824",
+        "way/901132825",
+        "way/901132826",
+        "way/901132827",
+        "way/901132828",
+        "way/901132829",
+        "way/901190401",
+        "way/901190402",
+        "way/901190403",
+        "way/901190404",
+        "way/901190405",
+        "way/901190406",
+        "way/901190407",
+        "way/901190408",
+        "way/901190409",
+        "way/1568419065"
+      ]
+    },
+    {
+      "id": "prague-tyn-church",
+      "name": "Church of Our Lady before Týn",
+      "model": "prague-tyn-church",
+      "place": "prague",
+      "lng": 14.4227209,
+      "lat": 50.0877144,
+      "bearing": 342.3,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1453427",
+      "replaces": [
+        "way/379512802",
+        "way/455314030",
+        "way/455314031",
+        "way/455314032",
+        "way/462196624",
+        "way/492321205",
+        "way/492321213",
+        "way/492321216",
+        "way/492321218",
+        "way/492486635",
+        "way/492486636",
+        "way/492486637",
+        "way/492486638",
+        "way/492486639",
+        "way/492486640",
+        "way/492486641",
+        "way/492486642",
+        "way/492486643",
+        "way/492486644",
+        "way/492486646",
+        "way/492486647",
+        "way/492486648",
+        "way/492486649",
+        "way/492486650",
+        "way/492486651",
+        "way/950050198",
+        "way/950050199",
+        "way/951078829"
+      ]
+    },
+    {
+      "id": "prague-zizkov-tower",
+      "name": "Žižkov Television Tower",
+      "model": "prague-zizkov-tower",
+      "place": "prague",
+      "lng": 14.45106,
+      "lat": 50.08102,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q1413217",
+      "replaces": [
+        "way/457404360",
+        "relation/3917957",
+        "way/294809058",
+        "way/294809059",
+        "way/98887860",
+        "way/98887857",
+        "way/98887854",
+        "way/4929921",
+        "way/50938190",
+        "way/50938191",
+        "way/50938192",
+        "way/654993103",
+        "way/660445112"
+      ]
+    },
+    {
       "id": "queens-museum",
       "name": "Queens Museum",
       "model": "queens-museum",
@@ -86525,6 +87709,12 @@
       "id": "philadelphia-area",
       "name": "Philadelphia area",
       "kind": "region"
+    },
+    {
+      "id": "prague",
+      "name": "Prague",
+      "kind": "city",
+      "wikidata": "Q1085"
     },
     {
       "id": "rio-de-janeiro",
