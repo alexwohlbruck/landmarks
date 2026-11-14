@@ -425,11 +425,16 @@ function build() {
   const mainHalf: AZ[] = [[5.8, 0], [5.8, 3.0], [4.7, 3.0], [4.5, 3.9], [4.0, 4.9], [3.4, 5.8], [3.0, 6.6], [3.6, 6.6], [3.6, 7.4], [2.9, 8.2], [1.6, 8.7], [0, 8.9]]
   for (const [yc, top, main] of [[-58, 26.5, false], [5.5, 31.0, true], [88, 26.5, false]] as [number, number, boolean][]) {
     const D = main ? 1.0 : 0.7, y0 = yc - 5.8, y1 = yc + 5.8
-    cbox(stone, { x0: XW - D, x1: XW + 0.4, y0, y1 }, 0, ZP + 0.3, { top: true, b: 0.25 })
+    // The pier and its crest are one piece of stone: the crest's foot runs
+    // 1.2 m down into the pier (no seam), it is exactly as deep as the pier,
+    // and a ledge at the crest's foot ties it across the pier's full width.
+    cbox(stone, { x0: XW - D, x1: XW + 0.4, y0, y1 }, 0, ZP + 0.3, { top: true })
     const zc = ZP + 0.3, sc = (top - zc) / 8.8
     const half = main ? mainHalf : crestHalf
-    const poly: AZ[] = [...half.map(([a, z]) => [yc + a, zc + z * sc] as AZ), ...[...half].reverse().slice(1, -1).map(([a, z]) => [yc - a, zc + z * sc] as AZ)]
-    wprofile(stone, 'w', XW, poly, main ? 2.0 : 1.4, D, true)
+    const poly: AZ[] = [...half.map(([a, z]) => [yc + a, z === 0 ? zc - 1.2 : zc + z * sc] as AZ), ...[...half].reverse().slice(1, -1).map(([a, z]) => [yc - a, zc + z * sc] as AZ)]
+    poly.push([yc - half[0][0], zc - 1.2])
+    wprofile(stone, 'w', XW, poly, D + 0.4, D, true)
+    cbox(stone, { x0: XW - D - 0.3, x1: XW + 0.4, y0: y0 - 0.3, y1: y1 + 0.3 }, zc - 0.45, zc, { top: true, bottom: true })
     // a cornice break between the storeys, standing proud
     cbox(stone, { x0: XW - D - 0.35, x1: XW - D + 0.05, y0: y0 - 0.3, y1: y1 + 0.3 }, Z2, Z2B, { bottom: true })
     // door, balcony window, the niche (bell niche on the centre)
