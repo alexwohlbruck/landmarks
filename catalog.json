@@ -37078,6 +37078,1806 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "munich-allianz-arena",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "stadium",
+      "tags": [
+        "football",
+        "stadium",
+        "contemporary",
+        "etfe"
+      ],
+      "reviewStatus": "unreviewed",
+      "detail": "models/munich-allianz-arena.detail.glb",
+      "detailZoom": 17,
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Allianz arena daylight Richard Bartz.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Allianz_arena_daylight_Richard_Bartz.jpg",
+          "author": "Richard Bartz",
+          "license": "CC BY-SA 2.5"
+        },
+        {
+          "title": "Allianz arena at night Richard Bartz.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Allianz_arena_at_night_Richard_Bartz.jpg",
+          "author": "Richard Bartz",
+          "license": "CC BY-SA 2.5"
+        },
+        {
+          "title": "Allianz-Arena-München.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Allianz-Arena-M%C3%BCnchen.jpg",
+          "author": "Tobias Alt",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München - Allianz-Arena (Luftbild) (25205631686).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_Allianz-Arena_(Luftbild)_(25205631686).jpg",
+          "author": "Phuoc Nguyen",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Allianz Arena Exterior Detail.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Allianz_Arena_Exterior_Detail.JPG",
+          "author": "Martin Falbisoner",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "20200228 Allianz Arena 02.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20200228_Allianz_Arena_02.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "München, Allianz Arena, innen 2019-11 (3).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_Allianz_Arena,_innen_2019-11_(3).jpg",
+          "author": "HerrAdams",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/munich-allianz-arena.glb",
+      "source": "generators/munich-allianz-arena.ts"
+    },
+    {
+      "id": "munich-altes-rathaus",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "town-hall",
+        "gothic",
+        "clock-tower",
+        "city-gate",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Altes Rathaus München Westseite",
+          "url": "https://commons.wikimedia.org/wiki/File:Altes_Rathaus_M%C3%BCnchen_Westseite.jpg",
+          "author": "Thomas Wolf (Der Wolf im Wald)",
+          "license": "CC0"
+        },
+        {
+          "title": "Altes Rathaus München Ostseite",
+          "url": "https://commons.wikimedia.org/wiki/File:Altes_Rathaus_M%C3%BCnchen_Ostseite.jpg",
+          "author": "Thomas Wolf, www.foto-tw.de",
+          "license": "CC BY-SA 3.0 de"
+        },
+        {
+          "title": "Munich - View from Alter Peter tower - 8249",
+          "url": "https://commons.wikimedia.org/wiki/File:Munich_-_View_from_Alter_Peter_tower_-_8249.jpg",
+          "author": "Jorge Royan",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Munich - View from Alter Peter tower - 8227",
+          "url": "https://commons.wikimedia.org/wiki/File:Munich_-_View_from_Alter_Peter_tower_-_8227.jpg",
+          "author": "Jorge Royan",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Altes Rathaus Munich 01",
+          "url": "https://commons.wikimedia.org/wiki/File:Altes_Rathaus_Munich_01.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/munich-altes-rathaus.glb",
+      "source": "generators/munich-altes-rathaus.ts"
+    },
+    {
+      "id": "munich-bavaria",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "monument",
+      "tags": [
+        "statue",
+        "sculpture",
+        "colonnade",
+        "neoclassical",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Bavaria Statue and Ruhmeshalle Munich, April 2019 -01",
+          "url": "https://commons.wikimedia.org/wiki/File:Bavaria_Statue_and_Ruhmeshalle_Munich,_April_2019_-01.jpg",
+          "author": "Martin Falbisoner",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Bavaria, Patronin von Bayern",
+          "url": "https://commons.wikimedia.org/wiki/File:Bavaria,_Patronin_von_Bayern.jpg",
+          "author": "Karl Schillinger",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München-Schwanthalerhöhe Bavaria 670",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen-Schwanthalerh%C3%B6he_Bavaria_670.jpg",
+          "author": "GFreihalter",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Ruhmeshalle und Bavaria München Schwanthalerhöhe",
+          "url": "https://commons.wikimedia.org/wiki/File:Ruhmeshalle_und_Bavaria_M%C3%BCnchen_Schwanthalerh%C3%B6he.jpg",
+          "author": "Schlaier",
+          "license": "Public domain"
+        },
+        {
+          "title": "2407 - München - Bavaria Statue",
+          "url": "https://commons.wikimedia.org/wiki/File:2407_-_M%C3%BCnchen_-_Bavaria_Statue.JPG",
+          "author": "Andrew Bossi",
+          "license": "CC BY-SA 2.5"
+        },
+        {
+          "title": "Munich Bavaria im Gegenlicht (Luftaufnahme)",
+          "url": "https://commons.wikimedia.org/wiki/File:Munich_Bavaria_im_Gegenlicht_(Luftaufnahme).jpg",
+          "author": "Bahnmoeller",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "detail": "models/munich-bavaria.detail.glb",
+      "detailZoom": 17,
+      "file": "models/munich-bavaria.glb",
+      "source": "generators/munich-bavaria.ts"
+    },
+    {
+      "id": "munich-bmw-museum",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "museum",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "wikidata": "Q703212",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "München, BMW-Museum vom Olympiaberg, 1.jpeg",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_BMW-Museum_vom_Olympiaberg,_1.jpeg",
+          "license": "CC BY-SA 4.0",
+          "author": "Renardo la vulpo"
+        },
+        {
+          "title": "20221108 BMW Museum.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20221108_BMW_Museum.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "BMW tower seen from Olympic tower on a sunny November afternoon.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:BMW_tower_seen_from_Olympic_tower_on_a_sunny_November_afternoon.jpg",
+          "author": "Markus Matern",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "BMW Vierzylinder Tower Munich 2014 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:BMW_Vierzylinder_Tower_Munich_2014_01.jpg",
+          "author": "Julian Herzog",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/munich-bmw-museum.glb",
+      "source": "generators/munich-bmw-museum.ts"
+    },
+    {
+      "id": "munich-bmw-vierzylinder",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "office",
+        "skyscraper",
+        "modern",
+        "headquarters"
+      ],
+      "reviewStatus": "unreviewed",
+      "wikidata": "Q526963",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "BMW Vierzylinder Tower Munich 2014 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:BMW_Vierzylinder_Tower_Munich_2014_01.jpg",
+          "author": "Julian Herzog",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "BMW tower seen from Olympic tower on a sunny November afternoon.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:BMW_tower_seen_from_Olympic_tower_on_a_sunny_November_afternoon.jpg",
+          "author": "Markus Matern",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "BMW Museum und BMW AG Vierzylindergebäude.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:BMW_Museum_und_BMW_AG_Vierzylindergeb%C3%A4ude.jpg",
+          "author": "Herokk",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "BMW tower seen from the West in Munich.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:BMW_tower_seen_from_the_West_in_Munich.jpg",
+          "author": "Alex Sirac",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/munich-bmw-vierzylinder.glb",
+      "source": "generators/munich-bmw-vierzylinder.ts"
+    },
+    {
+      "id": "munich-bmw-welt",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "exhibition",
+        "showroom",
+        "modern",
+        "deconstructivist"
+      ],
+      "reviewStatus": "unreviewed",
+      "wikidata": "Q699614",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "BMW-Welt 9425.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:BMW-Welt_9425.jpg",
+          "author": "Henning Schlottmann (User:H-stt)",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München - BMW-Welt - Panorama.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_BMW-Welt_-_Panorama.jpg",
+          "author": "Guido Radig",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "BMW Welt, Múnich, Alemania16.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:BMW_Welt,_M%C3%BAnich,_Alemania16.jpg",
+          "author": "Diego Delso",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "BMW Welt, Múnich, Alemania, 2013-04-22, DD 03.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:BMW_Welt,_M%C3%BAnich,_Alemania,_2013-04-22,_DD_03.jpg",
+          "author": "Diego Delso",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "BMW Welt Side.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:BMW_Welt_Side.jpg",
+          "author": "Aepryus",
+          "license": "Public domain"
+        }
+      ],
+      "file": "models/munich-bmw-welt.glb",
+      "source": "generators/munich-bmw-welt.ts"
+    },
+    {
+      "id": "munich-chinesischer-turm",
+      "detail": "models/munich-chinesischer-turm.detail.glb",
+      "detailZoom": 17,
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "tower",
+      "tags": [
+        "pagoda",
+        "timber",
+        "chinoiserie",
+        "beer-garden",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "wikidata": "Q3995164",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Chinesischer Turm, München.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Chinesischer_Turm,_M%C3%BCnchen.jpg",
+          "author": "Thomas Ledl",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Chinesischer Turm München.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Chinesischer_Turm_M%C3%BCnchen.jpg",
+          "author": "H.Helmlechner",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Chinese Tower in February.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Chinese_Tower_in_February.JPG",
+          "author": "Martin Falbisoner",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Chinesischer Turm München - Turmspitze.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Chinesischer_Turm_M%C3%BCnchen_-_Turmspitze.jpg",
+          "author": "Maximilian Dörrbecker (Chumwa)",
+          "license": "CC BY-SA 2.5"
+        },
+        {
+          "title": "München Chinesischer Turm bei Nacht April 2018 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Chinesischer_Turm_bei_Nacht_April_2018_1.jpg",
+          "author": "Kajebi II.",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/munich-chinesischer-turm.glb",
+      "source": "generators/munich-chinesischer-turm.ts"
+    },
+    {
+      "id": "munich-deutsches-museum",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "museum",
+        "historic",
+        "tower"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Aerial image of the Deutsches Museum Munich.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Deutsches_Museum_Munich.jpg",
+          "author": "Carsten Steger",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Aerial image of the Deutsches Museum Munich (cropped to building).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Deutsches_Museum_Munich_(cropped_to_building).jpg",
+          "author": "Carsten Steger",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Deutsches Museum Munich 2014 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Deutsches_Museum_Munich_2014_01.jpg",
+          "author": "Julian Herzog",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Deutsches Museum - Isar.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Deutsches_Museum_-_Isar.jpg",
+          "author": "Tiia Monto",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "20230410 Deutsches Museum 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20230410_Deutsches_Museum_01.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Deutsches Museum in the Evening.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Deutsches_Museum_in_the_Evening.JPG",
+          "author": "Martin Falbisoner",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Deutsches Museum Portrait 4.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Deutsches_Museum_Portrait_4.jpg",
+          "author": "Burkhard Mücke",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/munich-deutsches-museum.glb",
+      "source": "generators/munich-deutsches-museum.ts"
+    },
+    {
+      "id": "munich-feldherrnhalle",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "monument",
+      "tags": [
+        "loggia",
+        "memorial",
+        "sculpture",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Feldherrnhalle München",
+          "url": "https://commons.wikimedia.org/wiki/File:Feldherrnhalle_M%C3%BCnchen.jpg",
+          "author": "Thomas Wolf, www.foto-tw.de",
+          "license": "CC BY-SA 3.0 de"
+        },
+        {
+          "title": "20230122 Feldherrnhalle",
+          "url": "https://commons.wikimedia.org/wiki/File:20230122_Feldherrnhalle.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "2007 Feldherrnhalle 01",
+          "url": "https://commons.wikimedia.org/wiki/File:2007_Feldherrnhalle_01.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Feldherrnhalle Muenchen-7",
+          "url": "https://commons.wikimedia.org/wiki/File:Feldherrnhalle_Muenchen-7.jpg",
+          "author": "Rufus46",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Feldherrnhalle Muenchen 2 Loewen-1",
+          "url": "https://commons.wikimedia.org/wiki/File:Feldherrnhalle_Muenchen_2_Loewen-1.jpg",
+          "author": "Rufus46",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Feldherrnhalle in München",
+          "url": "https://commons.wikimedia.org/wiki/File:Feldherrnhalle_in_M%C3%BCnchen.jpg",
+          "author": "Guido Radig",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Feldherrnhalle - Odeonsplatz",
+          "url": "https://commons.wikimedia.org/wiki/File:Feldherrnhalle_-_Odeonsplatz.jpg",
+          "author": "Rafael Fernandes de Oliveira",
+          "license": "CC BY-SA 3.0 de"
+        },
+        {
+          "title": "Feldherrnhalle Muenchen",
+          "url": "https://commons.wikimedia.org/wiki/File:Feldherrnhalle_Muenchen.jpg",
+          "author": "Fritz Rudolf Loewa",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Tilly Feldherrnhalle Munich",
+          "url": "https://commons.wikimedia.org/wiki/File:Tilly_Feldherrnhalle_Munich.jpg",
+          "author": "Jebulon",
+          "license": "CC0"
+        },
+        {
+          "title": "Monument Bavarian army Feldherrnhalle Munich",
+          "url": "https://commons.wikimedia.org/wiki/File:Monument_Bavarian_army_Feldherrnhalle_Munich.jpg",
+          "author": "Jebulon",
+          "license": "CC0"
+        },
+        {
+          "title": "Feldherrnhalle München 2022-09-10 1",
+          "url": "https://commons.wikimedia.org/wiki/File:Feldherrnhalle_M%C3%BCnchen_2022-09-10_1.jpg",
+          "author": "Z thomas",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/munich-feldherrnhalle.glb",
+      "source": "generators/munich-feldherrnhalle.ts"
+    },
+    {
+      "id": "munich-frauenkirche",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "church",
+        "cathedral",
+        "gothic",
+        "brick-gothic",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Frauenkirche Munich - View from Peterskirche Tower",
+          "url": "https://commons.wikimedia.org/wiki/File:Frauenkirche_Munich_-_View_from_Peterskirche_Tower.jpg",
+          "author": "Diliff",
+          "license": "CC BY 2.5"
+        },
+        {
+          "title": "Frauenkirche (Munich) 20150830",
+          "url": "https://commons.wikimedia.org/wiki/File:Frauenkirche_(Munich)_20150830.jpg",
+          "author": "Suicasmo",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Frauenkirche Munich March 2013",
+          "url": "https://commons.wikimedia.org/wiki/File:Frauenkirche_Munich_March_2013.JPG",
+          "author": "Martin Falbisoner",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Frauenkirche Munich, March 2018",
+          "url": "https://commons.wikimedia.org/wiki/File:Frauenkirche_Munich,_March_2018.jpg",
+          "author": "Martin Falbisoner",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Luftbild Frauenkirche (DSC07307)",
+          "url": "https://commons.wikimedia.org/wiki/File:Luftbild_Frauenkirche_Liebfrauendom_Dom_zu_Unserer_Lieben_Frau_1494_-_Kathedral-Bau_in_M%C3%BCnchen_Bayern_-_Foto_Wolfgang_Pehlemann_DSC07307.jpg",
+          "author": "Wolfgang Pehlemann",
+          "license": "CC BY-SA 3.0 de"
+        },
+        {
+          "title": "West facade of the Frauenkirche Munich",
+          "url": "https://commons.wikimedia.org/wiki/File:West_facade_of_the_Frauenkirche_Munich.jpg",
+          "author": "AuHaidhausen",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Modell der Frauenkirche vor der Frauenkirche",
+          "url": "https://commons.wikimedia.org/wiki/File:Modell_der_Frauenkirche_vor_der_Frauenkirche.jpg",
+          "author": "Ankermast",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Frauenkirche Munich Tower WLM 2015",
+          "url": "https://commons.wikimedia.org/wiki/File:Frauenkirche_Munich_Tower_WLM_2015.jpg",
+          "author": "Jebulon",
+          "license": "CC0"
+        },
+        {
+          "title": "Frauenkirche München abends",
+          "url": "https://commons.wikimedia.org/wiki/File:Frauenkirche_M%C3%BCnchen_abends.jpg",
+          "author": "Thomas Wolf, www.foto-tw.de",
+          "license": "CC BY-SA 3.0 de"
+        }
+      ],
+      "file": "models/munich-frauenkirche.glb",
+      "source": "generators/munich-frauenkirche.ts"
+    },
+    {
+      "id": "munich-friedensengel",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "monument",
+      "tags": [
+        "column",
+        "statue",
+        "sculpture",
+        "terrace",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Luitpold terrasse with drone",
+          "url": "https://commons.wikimedia.org/wiki/File:Luitpold_terrasse_with_drone.jpg",
+          "author": "AuHaidhausen",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Friedensengel, München",
+          "url": "https://commons.wikimedia.org/wiki/File:Friedensengel,_M%C3%BCnchen.jpg",
+          "author": "S nova",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "München-Bogenhausen Friedensengel 186",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen-Bogenhausen_Friedensengel_186.jpg",
+          "author": "GFreihalter",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Muefriedensengel04072013d95b1",
+          "url": "https://commons.wikimedia.org/wiki/File:Muefriedensengel04072013d95b1.jpg",
+          "author": "Fentriss",
+          "license": "CC0"
+        },
+        {
+          "title": "Friedensengel Muenchen-14",
+          "url": "https://commons.wikimedia.org/wiki/File:Friedensengel_Muenchen-14.jpg",
+          "author": "Rufus46",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "München - Friedensengel mit Fontäne (tone-mapping)",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_Friedensengel_mit_Font%C3%A4ne_(tone-mapping).jpg",
+          "author": "Guido Radig",
+          "license": "CC BY 3.0"
+        }
+      ],
+      "detail": "models/munich-friedensengel.detail.glb",
+      "detailZoom": 17,
+      "file": "models/munich-friedensengel.glb",
+      "source": "generators/munich-friedensengel.ts"
+    },
+    {
+      "id": "munich-glyptothek",
+      "detail": "models/munich-glyptothek.detail.glb",
+      "detailZoom": 17,
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "museum",
+        "neoclassical",
+        "historic",
+        "sculpture"
+      ],
+      "reviewStatus": "unreviewed",
+      "wikidata": "Q162077",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Glyptothek München Front.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Glyptothek_M%C3%BCnchen_Front.JPG",
+          "author": "Martin Falbisoner",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "20221202 Glyptothek Munich.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20221202_Glyptothek_Munich.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Glyptothek, Königsplatz, Múnich, Alemania06.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Glyptothek,_K%C3%B6nigsplatz,_M%C3%BAnich,_Alemania06.JPG",
+          "author": "Diego Delso",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "München Glyptothek Seite.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Glyptothek_Seite.jpg",
+          "author": "Andreas Praefcke",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Exterior of Glyptothek (München)-rear facade.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_Glyptothek_(M%C3%BCnchen)-rear_facade.jpg",
+          "author": "Yair Haklai",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/munich-glyptothek.glb",
+      "source": "generators/munich-glyptothek.ts"
+    },
+    {
+      "id": "munich-hofbraeuhaus",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "beer-hall",
+        "restaurant",
+        "renaissance-revival",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "München Platzl 9 Hofbräuhaus BW 2017-03-13 19-12-27",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Platzl_9_Hofbr%C3%A4uhaus_BW_2017-03-13_19-12-27.jpg",
+          "author": "Berthold Werner",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Hofbräuhaus am Platzl München",
+          "url": "https://commons.wikimedia.org/wiki/File:Hofbr%C3%A4uhaus_am_Platzl_M%C3%BCnchen.jpg",
+          "author": "H.Helmlechner",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München, Hofbräuhaus am Platzl 01",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_Hofbr%C3%A4uhaus_am_Platzl_01.jpg",
+          "author": "Bayreuth2009",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "München, Hofbräuhaus am Platzl 02",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_Hofbr%C3%A4uhaus_am_Platzl_02.jpg",
+          "author": "Bayreuth2009",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "2023-02-03 Hofbräuhaus am Platzl 07",
+          "url": "https://commons.wikimedia.org/wiki/File:2023-02-03_Hofbr%C3%A4uhaus_am_Platzl_07.jpg",
+          "author": "Burkhard Mücke",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Hofbräuhaus München 2023",
+          "url": "https://commons.wikimedia.org/wiki/File:Hofbr%C3%A4uhaus_M%C3%BCnchen_2023.jpg",
+          "author": "Dr. Frank Gaeth",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München, die Münzstraße mit Hofbräuhaus",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_die_M%C3%BCnzstra%C3%9Fe_mit_Hofbr%C3%A4uhaus.JPG",
+          "author": "Dguendel",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/munich-hofbraeuhaus.glb",
+      "source": "generators/munich-hofbraeuhaus.ts"
+    },
+    {
+      "id": "munich-hvb-tower",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "skyscraper",
+        "office",
+        "modernist"
+      ],
+      "reviewStatus": "unreviewed",
+      "wikidata": "Q896364",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "HVB-Tower in München.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:HVB-Tower_in_M%C3%BCnchen.jpg",
+          "author": "HypoVereinsbank / HG Esch",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "HVB-Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:HVB-Tower.jpg",
+          "author": "HypoVereinsbank / HG Esch",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "2019-03-04-Hypo-Bank-Hochhaus-1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2019-03-04-Hypo-Bank-Hochhaus-1.jpg",
+          "author": "Gunnar Klack",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München - Hypohaus - August 2016.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_Hypohaus_-_August_2016.jpg",
+          "author": "Kajebi II.",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "HypoHochhaus01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:HypoHochhaus01.jpg",
+          "author": "Ordercrazy",
+          "license": "Public domain"
+        },
+        {
+          "title": "HVB-Tower Munich, June 2017.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:HVB-Tower_Munich,_June_2017.jpg",
+          "author": "Martin Falbisoner",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Digitales Orthophoto DOP40 (Bayerische Vermessungsverwaltung)",
+          "url": "https://geodaten.bayern.de/opengeodata/",
+          "author": "Bayerische Vermessungsverwaltung",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/munich-hvb-tower.glb",
+      "source": "generators/munich-hvb-tower.ts"
+    },
+    {
+      "id": "munich-isartor",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "city-gate",
+        "medieval",
+        "fresco",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Isartor, Múnich, Alemania, 2024-04-02, DD 06",
+          "url": "https://commons.wikimedia.org/wiki/File:Isartor,_M%C3%BAnich,_Alemania,_2024-04-02,_DD_06.jpg",
+          "author": "Diego Delso",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Isartor, Múnich, Alemania, 2024-04-02, DD 05",
+          "url": "https://commons.wikimedia.org/wiki/File:Isartor,_M%C3%BAnich,_Alemania,_2024-04-02,_DD_05.jpg",
+          "author": "Diego Delso",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Isartor München, ohne Autos",
+          "url": "https://commons.wikimedia.org/wiki/File:Isartor_M%C3%BCnchen,_ohne_Autos.jpg",
+          "author": "Burkhard Mücke",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München, Isartor -- 2011 -- 1011",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_Isartor_--_2011_--_1011.jpg",
+          "author": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Isartor (München) - Panorama",
+          "url": "https://commons.wikimedia.org/wiki/File:Isartor_(M%C3%BCnchen)_-_Panorama.jpg",
+          "author": "Guido Radig",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Innenhof Isartor München 01",
+          "url": "https://commons.wikimedia.org/wiki/File:Innenhof_Isartor_M%C3%BCnchen_01.jpg",
+          "author": "Burkhard Mücke",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München, die Straße Tal, Blick zum Isartor",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_die_Stra%C3%9Fe_%22Tal%22,_Blick_zum_Isartor.JPG",
+          "author": "Dguendel",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Rückseite Isartor München von Tal aus",
+          "url": "https://commons.wikimedia.org/wiki/File:R%C3%BCckseite_Isartor_M%C3%BCnchen_von_Tal_aus_mit_Coffee_Fellows_und_Hotel_Torbr%C3%A4u_2023-10-30.jpg",
+          "author": "Strubbl",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München-Altstadt Isartor 704",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen-Altstadt_Isartor_704.jpg",
+          "author": "GFreihalter",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/munich-isartor.glb",
+      "source": "generators/munich-isartor.ts"
+    },
+    {
+      "id": "munich-karlstor",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "city-gate",
+        "gothic-revival",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Karlstor night",
+          "url": "https://commons.wikimedia.org/wiki/File:Karlstor_night.jpg",
+          "author": "Jensens",
+          "license": "Public domain"
+        },
+        {
+          "title": "Munich, the Karlstor",
+          "url": "https://commons.wikimedia.org/wiki/File:Munich,_the_Karlstor.JPG",
+          "author": "Dguendel",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Karlstor Munich",
+          "url": "https://commons.wikimedia.org/wiki/File:Karlstor_Munich.jpg",
+          "author": "Rob Faulkner",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Karlstor 2021-06-27",
+          "url": "https://commons.wikimedia.org/wiki/File:Karlstor_2021-06-27.jpg",
+          "author": "Strubbl",
+          "license": "CC0"
+        },
+        {
+          "title": "20180113 Karlstor",
+          "url": "https://commons.wikimedia.org/wiki/File:20180113_Karlstor.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Karlsplatz Karlstor Stachus München",
+          "url": "https://commons.wikimedia.org/wiki/File:Karlsplatz_Karlstor_Stachus_M%C3%BCnchen.jpg",
+          "author": "böhringer friedrich",
+          "license": "CC BY-SA 2.5"
+        }
+      ],
+      "file": "models/munich-karlstor.glb",
+      "source": "generators/munich-karlstor.ts"
+    },
+    {
+      "id": "munich-nationaltheater",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "opera-house",
+        "theatre",
+        "neoclassical",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Nationaltheater München",
+          "url": "https://commons.wikimedia.org/wiki/File:Nationaltheater_M%C3%BCnchen.jpg",
+          "author": "Wilfredor",
+          "license": "CC0"
+        },
+        {
+          "title": "2019-01-26 Bayerische Nationaltheater 03",
+          "url": "https://commons.wikimedia.org/wiki/File:2019-01-26_Bayerische_Nationaltheater_03.jpg",
+          "author": "Burkhard Mücke",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Nationaltheater 2014-08-02",
+          "url": "https://commons.wikimedia.org/wiki/File:Nationaltheater_2014-08-02.jpg",
+          "author": "M(e)ister Eiskalt",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Nationaltheater in München",
+          "url": "https://commons.wikimedia.org/wiki/File:Nationaltheater_in_M%C3%BCnchen.JPG",
+          "author": "Guido Radig",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Muemaxistrnatthea2017c99",
+          "url": "https://commons.wikimedia.org/wiki/File:Muemaxistrnatthea2017c99.jpg",
+          "author": "Fentriss",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München, St. Peter, Blick zum Opernhaus und zur Residenz",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_St._Peter,_Blick_zum_Opernhaus_und_zur_Residenz.jpg",
+          "author": "Dguendel",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "München - Nationaltheater (Luftbild)",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_Nationaltheater_(Luftbild).jpg",
+          "author": "Maximilian Dörrbecker (Chumwa)",
+          "license": "CC BY-SA 2.5"
+        },
+        {
+          "title": "2022-08-01 Nationaltheater München bei Nacht",
+          "url": "https://commons.wikimedia.org/wiki/File:2022-08-01_Nationaltheater_M%C3%BCnchen_bei_Nacht.jpg",
+          "author": "Burkhard Mücke",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/munich-nationaltheater.glb",
+      "source": "generators/munich-nationaltheater.ts"
+    },
+    {
+      "id": "munich-neues-rathaus",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "town-hall",
+        "gothic-revival",
+        "clock-tower",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Neues Rathaus München 2018",
+          "url": "https://commons.wikimedia.org/wiki/File:Neues_Rathaus_M%C3%BCnchen_2018.jpg",
+          "author": "Steffen Flor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Neues Rathaus Munich March 2013",
+          "url": "https://commons.wikimedia.org/wiki/File:Neues_Rathaus_Munich_March_2013.JPG",
+          "author": "Martin Falbisoner",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Neues Rathaus München - 2014 - Alter Peter",
+          "url": "https://commons.wikimedia.org/wiki/File:Neues_Rathaus_M%C3%BCnchen_-_2014_-_Alter_Peter.jpg",
+          "author": "High Contrast",
+          "license": "CC BY 3.0 de"
+        },
+        {
+          "title": "München - Marienplatz (Luftbild)",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_Marienplatz_(Luftbild).jpg",
+          "author": "Maximilian Dörrbecker (Chumwa)",
+          "license": "CC BY-SA 2.5"
+        },
+        {
+          "title": "Turm Neues Rathaus München",
+          "url": "https://commons.wikimedia.org/wiki/File:Turm_Neues_Rathaus_M%C3%BCnchen.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/munich-neues-rathaus.glb",
+      "source": "generators/munich-neues-rathaus.ts"
+    },
+    {
+      "id": "munich-olympiastadion",
+      "detail": "models/munich-olympiastadion.detail.glb",
+      "detailZoom": 16,
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "stadium",
+      "tags": [
+        "stadium",
+        "olympic",
+        "tensile-structure",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "wikidata": "Q131610",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Blick vom Olympiaberg auf das Olympiastadion.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Blick_vom_Olympiaberg_auf_das_Olympiastadion.jpg",
+          "author": "Amrei-Marie",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Olympiastadion München von oben.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Olympiastadion_M%C3%BCnchen_von_oben.jpg",
+          "author": "Deaq",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "20220923 Olympic Stadium Munich.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20220923_Olympic_Stadium_Munich.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "München - Olympiapark (Luftbild).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_Olympiapark_(Luftbild).jpg",
+          "author": "Maximilian Dörrbecker (Chumwa)",
+          "license": "CC BY-SA 2.5"
+        },
+        {
+          "title": "Munich - Frei Otto Tensed structures - 5293.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Munich_-_Frei_Otto_Tensed_structures_-_5293.jpg",
+          "author": "Jorge Royan",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Zeltdach Olympiastadion München.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Zeltdach_Olympiastadion_M%C3%BCnchen.JPG",
+          "author": "Wikiolo",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/munich-olympiastadion.glb",
+      "source": "generators/munich-olympiastadion.ts"
+    },
+    {
+      "id": "munich-olympiaturm",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "tower",
+      "tags": [
+        "tower",
+        "communications-tower",
+        "observation-deck",
+        "olympic",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "wikidata": "Q599148",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Olympiaturm Munich 2014 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Olympiaturm_Munich_2014_01.jpg",
+          "author": "Julian Herzog",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Olympiaturm Munich 2014 02.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Olympiaturm_Munich_2014_02.jpg",
+          "author": "Julian Herzog",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "München, Olympiaturm -- 2011 -- 1015.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_Olympiaturm_--_2011_--_1015.jpg",
+          "author": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München - Olympiapark (Luftbild).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_Olympiapark_(Luftbild).jpg",
+          "author": "Maximilian Dörrbecker (Chumwa)",
+          "license": "CC BY-SA 2.5"
+        }
+      ],
+      "file": "models/munich-olympiaturm.glb",
+      "source": "generators/munich-olympiaturm.ts"
+    },
+    {
+      "id": "munich-propylaeen",
+      "detail": "models/munich-propylaeen.detail.glb",
+      "detailZoom": 17,
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "monument",
+      "tags": [
+        "gate",
+        "neoclassical",
+        "historic",
+        "sculpture"
+      ],
+      "reviewStatus": "unreviewed",
+      "wikidata": "Q822301",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Propyläen München.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Propyl%C3%A4en_M%C3%BCnchen.jpg",
+          "author": "Burkhard Mücke",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Propyläen, Königsplatz, Múnich, Alemania, 2023-12-03, DD 02.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Propyl%C3%A4en,_K%C3%B6nigsplatz,_M%C3%BAnich,_Alemania,_2023-12-03,_DD_02.jpg",
+          "author": "Diego Delso",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Propyläen (München) - Ansicht von Westen.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Propyl%C3%A4en_(M%C3%BCnchen)_-_Ansicht_von_Westen.JPG",
+          "author": "Guido Radig",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München Propyläen Seite.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Propyl%C3%A4en_Seite.jpg",
+          "author": "Andreas Praefcke",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "2019-11-16, Seitenansicht, Propyläen, München, IMG 7535 edit Christoph Braun.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:2019-11-16,_Seitenansicht,_Propyl%C3%A4en,_M%C3%BCnchen,_IMG_7535_edit_Christoph_Braun.JPG",
+          "author": "Christoph Braun",
+          "license": "CC0"
+        },
+        {
+          "title": "Propyläen München - detail - 2013.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Propyl%C3%A4en_M%C3%BCnchen_-_detail_-_2013.jpg",
+          "author": "High Contrast",
+          "license": "CC BY 3.0 de"
+        }
+      ],
+      "file": "models/munich-propylaeen.glb",
+      "source": "generators/munich-propylaeen.ts"
+    },
+    {
+      "id": "munich-schloss-nymphenburg",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "palace",
+        "baroque",
+        "historic",
+        "museum"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Image-Schloss Nymphenburg Munich CC.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Image-Schloss_Nymphenburg_Munich_CC.jpg",
+          "author": "Richard Bartz",
+          "license": "CC BY-SA 2.5"
+        },
+        {
+          "title": "Schloss Nymphenburg main building.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Schloss_Nymphenburg_main_building.jpg",
+          "author": "Peulle",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Aerial image of Schloss Nymphenburg.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Schloss_Nymphenburg.jpg",
+          "author": "Carsten Steger",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "20220923 Nymphenburg Palace 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20220923_Nymphenburg_Palace_01.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Schloss Nymphenburg, Weitwinkelansicht.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Schloss_Nymphenburg,_Weitwinkelansicht.jpg",
+          "author": "Burkhard Mücke",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Wide Panorama of Schloss Nymphenburg in Winter.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Wide_Panorama_of_Schloss_Nymphenburg_in_Winter.jpg",
+          "author": "Lucas Garron",
+          "license": "CC0"
+        },
+        {
+          "title": "Schloss Nymphenburg main entrance.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Schloss_Nymphenburg_main_entrance.jpg",
+          "author": "Peulle",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/munich-schloss-nymphenburg.glb",
+      "source": "generators/munich-schloss-nymphenburg.ts"
+    },
+    {
+      "id": "munich-siegestor",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "monument",
+      "tags": [
+        "triumphal-arch",
+        "quadriga",
+        "sculpture",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Puerta de la Victoria, Múnich, Alemania, 2012-04-30, DD 01",
+          "url": "https://commons.wikimedia.org/wiki/File:Puerta_de_la_Victoria,_M%C3%BAnich,_Alemania,_2012-04-30,_DD_01.JPG",
+          "author": "Diego Delso",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Puerta de la Victoria, Múnich, Alemania, 2012-04-30, DD 03",
+          "url": "https://commons.wikimedia.org/wiki/File:Puerta_de_la_Victoria,_M%C3%BAnich,_Alemania,_2012-04-30,_DD_03.JPG",
+          "author": "Diego Delso",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "20221007 Siegestor 01",
+          "url": "https://commons.wikimedia.org/wiki/File:20221007_Siegestor_01.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Quadriga Siegestor",
+          "url": "https://commons.wikimedia.org/wiki/File:Quadriga_Siegestor.jpg",
+          "author": "Olli1800",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Muestquadriga062019c99",
+          "url": "https://commons.wikimedia.org/wiki/File:Muestquadriga062019c99.jpg",
+          "author": "Fentriss",
+          "license": "CC0"
+        },
+        {
+          "title": "München - Siegestor",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_Siegestor.jpg",
+          "author": "Fred Romero",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "München, Siegestor v S, 13",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_Siegestor_v_S,_13.jpeg",
+          "author": "Renardo la vulpo",
+          "license": "CC0"
+        },
+        {
+          "title": "Siegestor Munich at Dusk",
+          "url": "https://commons.wikimedia.org/wiki/File:Siegestor_Munich_at_Dusk.JPG",
+          "author": "Martin Falbisoner",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "detail": "models/munich-siegestor.detail.glb",
+      "detailZoom": 17,
+      "file": "models/munich-siegestor.glb",
+      "source": "generators/munich-siegestor.ts"
+    },
+    {
+      "id": "munich-st-peter",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "church",
+        "gothic",
+        "baroque",
+        "clock-tower",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Alter Peter und Rindermarkt",
+          "url": "https://commons.wikimedia.org/wiki/File:Alter_Peter_und_Rindermarkt.jpg",
+          "author": "Richard Huber",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Alter-peter vom-rathaus",
+          "url": "https://commons.wikimedia.org/wiki/File:Alter-peter_vom-rathaus.jpg",
+          "author": "Softeis",
+          "license": "CC BY 2.5"
+        },
+        {
+          "title": "Alter Peter (Seitenansicht)",
+          "url": "https://commons.wikimedia.org/wiki/File:Alter_Peter_(Seitenansicht).jpg",
+          "author": "Meister Eiskalt",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Turm St. Peter München 2024-11-09",
+          "url": "https://commons.wikimedia.org/wiki/File:Turm_St._Peter_M%C3%BCnchen_2024-11-09.jpg",
+          "author": "Strubbl",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "St. Peter und Turm vom Talburgtor München 2022-12-17",
+          "url": "https://commons.wikimedia.org/wiki/File:St._Peter_und_Turm_vom_Talburgtor_M%C3%BCnchen_2022-12-17.jpg",
+          "author": "Strubbl",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "München, Alter Peter 2007-10",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_Alter_Peter_2007-10.jpg",
+          "author": "HerrAdams",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "20230304 St. Peter church Munich",
+          "url": "https://commons.wikimedia.org/wiki/File:20230304_St._Peter_church_Munich.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "file": "models/munich-st-peter.glb",
+      "source": "generators/munich-st-peter.ts"
+    },
+    {
+      "id": "munich-theatinerkirche",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "church",
+        "baroque",
+        "dome",
+        "clock-tower",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Exterior of Theatinerkirche, Munich",
+          "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_Theatinerkirche,_Munich.jpg",
+          "author": "Wilfredor",
+          "license": "CC0"
+        },
+        {
+          "title": "Theatinerkirche München 2014",
+          "url": "https://commons.wikimedia.org/wiki/File:Theatinerkirche_M%C3%BCnchen_2014.jpg",
+          "author": "High Contrast",
+          "license": "CC BY 3.0 de"
+        },
+        {
+          "title": "Theatinerkirche Munich, March 2018",
+          "url": "https://commons.wikimedia.org/wiki/File:Theatinerkirche_Munich,_March_2018.jpg",
+          "author": "Martin Falbisoner",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Theatinerkirche Hofgarten Munich München 2009",
+          "url": "https://commons.wikimedia.org/wiki/File:Theatinerkirche_Hofgarten_Munich_M%C3%BCnchen_2009.jpg",
+          "author": "Schlaier",
+          "license": "Public domain"
+        },
+        {
+          "title": "20210102 Theatinerkirche Munich 01",
+          "url": "https://commons.wikimedia.org/wiki/File:20210102_Theatinerkirche_Munich_01.jpg",
+          "author": "Flocci Nivis",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Theatinerstrasse Theatinerkirche Munich",
+          "url": "https://commons.wikimedia.org/wiki/File:Theatinerstrasse_Theatinerkirche_Munich.jpg",
+          "author": "Jebulon",
+          "license": "CC0"
+        },
+        {
+          "title": "München, Theatinerkirche, Turm-Voluten, 2024",
+          "url": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_Theatinerkirche,_Turm-Voluten,_2024.jpg",
+          "author": "Rendor Thuces Al'Nachkar",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Theatinerkirche - Colegiata de San Cayetano",
+          "url": "https://commons.wikimedia.org/wiki/File:Theatinerkirche_-_Colegiata_de_San_Cayetano.jpg",
+          "author": "Pedro J Pacheco",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/munich-theatinerkirche.glb",
+      "source": "generators/munich-theatinerkirche.ts"
+    },
+    {
       "id": "music-factory-amphitheatre",
       "file": "models/music-factory-amphitheatre.glb",
       "license": "CC0-1.0",
@@ -73835,6 +75635,953 @@
       "place": "charlotte-area"
     },
     {
+      "id": "munich-allianz-arena",
+      "name": "Allianz Arena",
+      "model": "munich-allianz-arena",
+      "place": "munich",
+      "lng": 11.6247014,
+      "lat": 48.2187923,
+      "bearing": 343.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q127429",
+      "replaces": [
+        "relation/18413487",
+        "relation/142277",
+        "relation/17308579",
+        "relation/18450456",
+        "way/247029683",
+        "way/247029685",
+        "way/247029687",
+        "way/247029689",
+        "way/247029691",
+        "way/247029694",
+        "way/247029696",
+        "way/247029699",
+        "way/247029700",
+        "way/247029701",
+        "way/247029702",
+        "way/247029703",
+        "way/247029704",
+        "way/247029705",
+        "way/247029706",
+        "way/247029708",
+        "way/247029710",
+        "way/247029711",
+        "way/247029712",
+        "way/247029713",
+        "way/247029714",
+        "way/247029715",
+        "way/247029716",
+        "way/247029717",
+        "way/247029718",
+        "way/247029719",
+        "way/247029720",
+        "way/247029721",
+        "way/247029722",
+        "way/247029723",
+        "way/247029724",
+        "way/247029725",
+        "way/247029726",
+        "way/247029727",
+        "way/247029728",
+        "way/247029729",
+        "way/247029730",
+        "way/247029731",
+        "way/247029732",
+        "way/247029733",
+        "way/247029734",
+        "way/247029735",
+        "way/247029736",
+        "way/247029737",
+        "way/247029738",
+        "way/247029739",
+        "way/247029740",
+        "way/247029741",
+        "way/247029742",
+        "way/247029743",
+        "way/247029744",
+        "way/247029745",
+        "way/247029746",
+        "way/247029747",
+        "way/247029748",
+        "way/247029749",
+        "way/247029750",
+        "way/247029751",
+        "way/247029752",
+        "way/247029753",
+        "way/247029754",
+        "way/247029755",
+        "way/247029756",
+        "way/247029757",
+        "way/247029758",
+        "way/247029759",
+        "way/247029760",
+        "way/247029761",
+        "way/247029762",
+        "way/247029763",
+        "way/247029764",
+        "way/247029765",
+        "way/247029766",
+        "way/247029768",
+        "way/247029769",
+        "way/247029770",
+        "way/247029771",
+        "way/247029772",
+        "way/247029773",
+        "way/247029774",
+        "way/247029775",
+        "way/247029776",
+        "way/247029777",
+        "way/247029778",
+        "way/247029779",
+        "way/247029780",
+        "way/247029781",
+        "way/247029782",
+        "way/247029783",
+        "way/247029785",
+        "way/247029786",
+        "way/247029788",
+        "way/247029790",
+        "way/247029791",
+        "way/247029792",
+        "way/247029793",
+        "way/247029794",
+        "way/247029795",
+        "way/247029796",
+        "way/247029797",
+        "way/247029798",
+        "way/247029799",
+        "way/247029800",
+        "way/247029807",
+        "way/247029808",
+        "way/247029809",
+        "way/247029810",
+        "way/247029812",
+        "way/247029814",
+        "way/247029816",
+        "way/247029819",
+        "way/247029823",
+        "way/247029824",
+        "way/247029827",
+        "way/247029828",
+        "way/247029830",
+        "way/247029832",
+        "way/247029835",
+        "way/247029838",
+        "way/247029839",
+        "way/247029841",
+        "way/247029843",
+        "way/247029844",
+        "way/247029845",
+        "way/247029847",
+        "way/1257888093",
+        "way/1257888094",
+        "way/1257888095",
+        "way/1257888096",
+        "way/1257888097",
+        "way/1257888098",
+        "way/1257888099",
+        "way/1257888100",
+        "way/1257888101",
+        "way/1257888102",
+        "way/1257888103",
+        "way/1257888104",
+        "way/1257888105",
+        "way/1257888106",
+        "way/1257888107",
+        "way/1257888108",
+        "way/1257888109",
+        "way/1257888121",
+        "way/1257888122",
+        "way/1257888123",
+        "way/1257888124",
+        "way/1257888125",
+        "way/1257888126",
+        "way/1257888127",
+        "way/1257888128",
+        "way/1257888129",
+        "way/1257888130",
+        "way/1257888131",
+        "way/1257888132",
+        "way/1257888133",
+        "way/1257888134",
+        "way/1257888135",
+        "way/1257888136",
+        "way/1257888137",
+        "way/1257888138",
+        "way/1257888139",
+        "way/1257888140"
+      ]
+    },
+    {
+      "id": "munich-altes-rathaus",
+      "name": "Altes Rathaus",
+      "model": "munich-altes-rathaus",
+      "place": "munich",
+      "lng": 11.577061,
+      "lat": 48.136825,
+      "bearing": 43,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q439458",
+      "replaces": [
+        "relation/15091588",
+        "relation/3872201",
+        "way/4054817",
+        "way/869099324",
+        "way/869099325",
+        "way/291585566",
+        "way/291585569",
+        "way/291585570",
+        "way/291585572"
+      ]
+    },
+    {
+      "id": "munich-bavaria",
+      "name": "Bavaria and Ruhmeshalle",
+      "model": "munich-bavaria",
+      "place": "munich",
+      "lng": 11.545742,
+      "lat": 48.130712,
+      "bearing": 10.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/400345387",
+        "way/28683728",
+        "way/305422543",
+        "way/305421905",
+        "way/1544870146"
+      ]
+    },
+    {
+      "id": "munich-bmw-museum",
+      "name": "BMW Museum",
+      "model": "munich-bmw-museum",
+      "place": "munich",
+      "lng": 11.5590845,
+      "lat": 48.1767642,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/298266716",
+        "way/302324251",
+        "way/5216004",
+        "way/303382182",
+        "way/305310591",
+        "way/286002864",
+        "way/286002866",
+        "way/286002868",
+        "way/286002869",
+        "way/1435773753",
+        "way/1435773754",
+        "relation/4002450",
+        "way/163408029"
+      ]
+    },
+    {
+      "id": "munich-bmw-vierzylinder",
+      "name": "BMW-Vierzylinder",
+      "model": "munich-bmw-vierzylinder",
+      "place": "munich",
+      "lng": 11.5601328,
+      "lat": 48.1769193,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/146381661",
+        "way/310296322",
+        "relation/2785005",
+        "relation/2785006",
+        "way/193654785",
+        "way/193654786",
+        "way/193654787",
+        "way/193654788",
+        "way/193654789",
+        "way/193654790",
+        "way/193654791",
+        "way/193654792",
+        "way/193654793",
+        "way/193654794",
+        "way/193654795",
+        "way/193654796",
+        "way/193654797",
+        "way/193654798",
+        "way/310279165"
+      ]
+    },
+    {
+      "id": "munich-bmw-welt",
+      "name": "BMW Welt",
+      "model": "munich-bmw-welt",
+      "place": "munich",
+      "lng": 11.5563861,
+      "lat": 48.1772239,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/15804929",
+        "way/307305449",
+        "way/307330230",
+        "way/307345439",
+        "way/307479203",
+        "way/307627834",
+        "way/307634074",
+        "way/617633780"
+      ]
+    },
+    {
+      "id": "munich-chinesischer-turm",
+      "name": "Chinesischer Turm",
+      "model": "munich-chinesischer-turm",
+      "place": "munich",
+      "lng": 11.5920978,
+      "lat": 48.1525608,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q3995164",
+      "replaces": [
+        "way/18961351",
+        "way/1050396291",
+        "way/1050396292",
+        "way/1050396293",
+        "way/1050396294",
+        "way/1050396295"
+      ]
+    },
+    {
+      "id": "munich-deutsches-museum",
+      "name": "Deutsches Museum",
+      "model": "munich-deutsches-museum",
+      "place": "munich",
+      "lng": 11.5830455,
+      "lat": 48.1297894,
+      "bearing": 52,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "relation/3866522",
+        "relation/11809799",
+        "relation/7293787",
+        "relation/7293788",
+        "relation/7293789",
+        "relation/11809800",
+        "way/867308786",
+        "way/865229092",
+        "way/865229093",
+        "relation/11809716",
+        "way/867309371",
+        "relation/11809718",
+        "relation/11809719",
+        "relation/11809717",
+        "way/1077052062",
+        "relation/11809538",
+        "relation/11809537",
+        "relation/11809536",
+        "relation/11809510",
+        "way/30046693"
+      ],
+      "wikidata": "Q131617"
+    },
+    {
+      "id": "munich-feldherrnhalle",
+      "name": "Feldherrnhalle",
+      "model": "munich-feldherrnhalle",
+      "place": "munich",
+      "lng": 11.57731,
+      "lat": 48.141655,
+      "bearing": 17.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q251712",
+      "replaces": [
+        "way/25505402",
+        "way/312008138"
+      ]
+    },
+    {
+      "id": "munich-frauenkirche",
+      "name": "Frauenkirche",
+      "model": "munich-frauenkirche",
+      "place": "munich",
+      "lng": 11.573598,
+      "lat": 48.138593,
+      "bearing": -1,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q167193",
+      "replaces": [
+        "way/225698612",
+        "way/108429818",
+        "way/209452724",
+        "way/222512591",
+        "way/222512592",
+        "way/222512593",
+        "way/222512594",
+        "way/222512595",
+        "way/222512597",
+        "way/222512599",
+        "way/222512600",
+        "way/222512601",
+        "way/222512602"
+      ]
+    },
+    {
+      "id": "munich-friedensengel",
+      "name": "Friedensengel",
+      "model": "munich-friedensengel",
+      "place": "munich",
+      "lng": 11.596993,
+      "lat": 48.141344,
+      "bearing": 18.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q504642",
+      "replaces": [
+        "way/48441018",
+        "way/256336566",
+        "way/256182387",
+        "way/256182388",
+        "way/256182389",
+        "way/256182390",
+        "way/256182392",
+        "way/256182393",
+        "way/256182394",
+        "way/256182395",
+        "way/256182396",
+        "way/256182397",
+        "way/256182398",
+        "way/256182399",
+        "way/256182400",
+        "way/256182401",
+        "way/256182402"
+      ]
+    },
+    {
+      "id": "munich-glyptothek",
+      "name": "Glyptothek",
+      "model": "munich-glyptothek",
+      "place": "munich",
+      "lng": 11.5658254,
+      "lat": 48.1465609,
+      "bearing": 23.1,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q162077",
+      "replaces": [
+        "relation/532621",
+        "way/1576459171",
+        "way/1576459172"
+      ]
+    },
+    {
+      "id": "munich-hofbraeuhaus",
+      "name": "Hofbräuhaus am Platzl",
+      "model": "munich-hofbraeuhaus",
+      "place": "munich",
+      "lng": 11.579929,
+      "lat": 48.137636,
+      "bearing": -51,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q152971",
+      "replaces": [
+        "way/1273939826",
+        "way/1273939823",
+        "way/1273939822",
+        "way/1273939825",
+        "way/1273939824"
+      ]
+    },
+    {
+      "id": "munich-hvb-tower",
+      "name": "HVB Tower",
+      "model": "munich-hvb-tower",
+      "place": "munich",
+      "lng": 11.6173211,
+      "lat": 48.1498111,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q896364",
+      "replaces": [
+        "relation/2833590",
+        "way/211447642",
+        "way/210584887",
+        "way/135353407",
+        "way/210584885",
+        "way/196660576",
+        "way/135350828",
+        "way/196660573",
+        "way/210584882",
+        "way/135353405",
+        "way/210584883",
+        "way/196660574",
+        "way/196660575",
+        "way/211450796"
+      ]
+    },
+    {
+      "id": "munich-isartor",
+      "name": "Isartor",
+      "model": "munich-isartor",
+      "place": "munich",
+      "lng": 11.581787,
+      "lat": 48.135116,
+      "bearing": -36.4,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q260660",
+      "replaces": [
+        "relation/6035286",
+        "way/30982596",
+        "way/222558900",
+        "way/222558901",
+        "way/222558902",
+        "way/402399610",
+        "way/402399611",
+        "way/402456104",
+        "way/402456105",
+        "way/402456106",
+        "way/402456107",
+        "way/402456108",
+        "way/402456109",
+        "way/402456110"
+      ]
+    },
+    {
+      "id": "munich-karlstor",
+      "name": "Karlstor",
+      "model": "munich-karlstor",
+      "place": "munich",
+      "lng": 11.566763,
+      "lat": 48.13901,
+      "bearing": 23.2,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q567400",
+      "replaces": [
+        "way/52103816",
+        "way/379998304",
+        "way/379998305",
+        "way/379998306",
+        "way/379998307",
+        "way/379998308",
+        "way/379998309",
+        "way/379998310",
+        "way/379998311",
+        "way/379998312",
+        "way/379998313",
+        "way/379998314",
+        "way/379998315",
+        "way/379998316",
+        "way/379998317",
+        "way/379998320",
+        "way/379998323",
+        "way/379998327",
+        "way/379998329",
+        "way/379998333",
+        "way/379998336",
+        "way/379998340",
+        "way/379998344",
+        "way/379998346",
+        "way/379998347",
+        "way/379998348",
+        "way/379998349",
+        "way/379998350",
+        "way/379998351",
+        "way/379998352",
+        "way/379998353",
+        "way/379998354",
+        "way/379998355",
+        "way/379998356",
+        "way/379998357",
+        "way/379998358",
+        "way/379998359",
+        "way/379998360",
+        "way/379998361",
+        "way/379998362",
+        "way/379998363",
+        "way/379998364",
+        "way/379998365",
+        "way/379998366",
+        "way/379998367",
+        "way/379998368",
+        "way/379998369",
+        "way/379998370",
+        "way/379998371",
+        "way/379998372",
+        "way/379998373",
+        "way/379998374",
+        "way/379998375",
+        "way/379998377",
+        "way/379998378",
+        "way/379998379",
+        "way/379998380",
+        "way/379998381",
+        "way/379998382",
+        "way/380096805",
+        "way/380096806",
+        "way/380096807",
+        "way/380096808",
+        "way/380096809",
+        "way/380096810",
+        "way/380096811",
+        "way/380096812",
+        "way/380096813",
+        "way/380096814",
+        "way/380096815",
+        "way/380096816",
+        "way/380096817",
+        "way/380096818",
+        "way/380096819",
+        "way/380096820",
+        "way/380096821",
+        "way/380096822",
+        "way/380096823",
+        "way/380096824",
+        "way/380096825",
+        "way/380096826",
+        "way/380096827"
+      ]
+    },
+    {
+      "id": "munich-nationaltheater",
+      "name": "Nationaltheater (Bavarian State Opera)",
+      "model": "munich-nationaltheater",
+      "place": "munich",
+      "lng": 11.57951,
+      "lat": 48.139567,
+      "bearing": 15.8,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q707679",
+      "replaces": [
+        "way/23458583"
+      ]
+    },
+    {
+      "id": "munich-neues-rathaus",
+      "name": "Neues Rathaus",
+      "model": "munich-neues-rathaus",
+      "place": "munich",
+      "lng": 11.575929,
+      "lat": 48.137797,
+      "bearing": 18,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q152979",
+      "replaces": [
+        "relation/147095",
+        "way/219431689",
+        "way/222518027",
+        "way/222518028",
+        "way/222518030",
+        "way/223907239",
+        "way/223907241",
+        "way/223907242",
+        "way/223907278",
+        "way/223907279",
+        "way/223907281",
+        "way/223907284",
+        "way/223907285",
+        "way/224138001",
+        "way/224138002",
+        "way/224138003",
+        "way/224138004",
+        "way/224138007",
+        "way/224138008",
+        "way/224138009",
+        "way/224138010",
+        "way/224138012",
+        "way/224253364",
+        "way/224253365",
+        "way/224253366",
+        "way/224253367",
+        "way/224253368",
+        "way/224253369",
+        "way/224253371",
+        "way/224253375",
+        "way/224253380",
+        "way/224253381",
+        "way/224253385",
+        "way/224253386",
+        "way/224253387",
+        "way/497647021"
+      ]
+    },
+    {
+      "id": "munich-olympiastadion",
+      "name": "Olympiastadion",
+      "model": "munich-olympiastadion",
+      "place": "munich",
+      "lng": 11.5464863,
+      "lat": 48.1731055,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/419656920",
+        "way/25001469",
+        "way/25000070",
+        "way/25000074",
+        "way/25000084",
+        "way/25000101",
+        "way/25000127",
+        "way/25000134",
+        "way/25000142",
+        "way/25000190",
+        "way/25000257",
+        "way/25000275",
+        "way/25000346",
+        "way/25000499",
+        "way/25000506",
+        "way/25000513",
+        "way/25000581",
+        "way/25000591",
+        "way/25001707",
+        "way/25001709",
+        "way/51366119",
+        "way/51366120",
+        "way/51366121",
+        "way/51366122",
+        "way/51366123",
+        "way/51366124",
+        "way/51366125",
+        "way/51366126",
+        "way/51366127",
+        "way/117515278",
+        "way/117515279",
+        "way/117477617",
+        "way/117477619",
+        "way/117479842",
+        "way/117479845",
+        "way/117479850",
+        "way/117479852",
+        "way/117479855",
+        "way/117479858",
+        "way/117479843",
+        "way/117479856"
+      ]
+    },
+    {
+      "id": "munich-olympiaturm",
+      "name": "Olympiaturm",
+      "model": "munich-olympiaturm",
+      "place": "munich",
+      "lng": 11.5537639,
+      "lat": 48.1744112,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "replaces": [
+        "way/164084344",
+        "way/18894695",
+        "way/164084343",
+        "way/1049578248"
+      ]
+    },
+    {
+      "id": "munich-propylaeen",
+      "name": "Propyläen",
+      "model": "munich-propylaeen",
+      "place": "munich",
+      "lng": 11.5642624,
+      "lat": 48.146068,
+      "bearing": 21.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q822301",
+      "replaces": [
+        "way/244969498",
+        "way/10160913",
+        "way/222672551",
+        "way/222672552",
+        "way/222672553",
+        "way/222672554",
+        "way/222672555",
+        "way/222672556",
+        "way/222672558",
+        "way/222672559",
+        "way/222672560",
+        "way/222672561",
+        "way/222672562",
+        "way/222672563",
+        "way/222672564",
+        "way/222672565",
+        "way/222672566",
+        "way/222691794",
+        "way/222895882",
+        "way/222895883",
+        "way/222895884",
+        "way/222895885",
+        "way/222895886",
+        "way/222895887",
+        "way/222895888",
+        "way/222895889",
+        "way/222895890",
+        "way/222895893",
+        "way/222895896",
+        "way/222895899",
+        "way/222895900",
+        "way/222902405",
+        "way/222902406",
+        "way/222902408",
+        "way/222902410",
+        "way/222913606",
+        "way/222913607",
+        "way/222913608",
+        "way/222913609",
+        "way/222913610",
+        "way/222913611",
+        "way/222913612",
+        "way/222913613",
+        "way/222913614",
+        "way/222913615",
+        "way/222913616",
+        "way/222913617",
+        "way/222913618",
+        "way/222913619",
+        "way/222913620",
+        "way/222913621",
+        "way/222913622",
+        "way/222913623",
+        "way/222913624",
+        "way/222913625",
+        "way/222913626",
+        "way/222913627",
+        "way/222913628",
+        "way/222913629",
+        "way/222913630",
+        "way/222913631",
+        "way/222913632",
+        "way/222913633",
+        "way/222913634",
+        "way/222913635",
+        "way/222913636",
+        "way/222913637",
+        "way/222913638",
+        "way/222913639",
+        "way/222913640",
+        "way/222913641",
+        "way/222913642",
+        "way/222913643",
+        "way/222913644",
+        "way/222913645",
+        "way/222913646",
+        "way/222913647",
+        "way/222913648",
+        "way/222913652",
+        "way/222913653",
+        "way/222913654",
+        "way/222913655",
+        "way/222913656",
+        "way/222913657",
+        "way/222913658",
+        "way/222913660",
+        "way/222913661",
+        "way/222913662"
+      ]
+    },
+    {
+      "id": "munich-schloss-nymphenburg",
+      "name": "Schloss Nymphenburg",
+      "model": "munich-schloss-nymphenburg",
+      "place": "munich",
+      "lng": 11.5045175,
+      "lat": 48.1583221,
+      "bearing": 357,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q131631",
+      "replaces": [
+        "relation/2144986",
+        "way/160265535",
+        "way/311978908",
+        "way/311978909",
+        "way/311978905",
+        "way/311978913",
+        "way/311978907",
+        "way/311978914",
+        "way/312000915",
+        "way/311978911",
+        "way/311978915",
+        "way/311978910",
+        "relation/12127738",
+        "relation/12127745"
+      ]
+    },
+    {
+      "id": "munich-siegestor",
+      "name": "Siegestor",
+      "model": "munich-siegestor",
+      "place": "munich",
+      "lng": 11.58214,
+      "lat": 48.15235,
+      "bearing": 18.6,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q254294",
+      "replaces": [
+        "way/22727580"
+      ]
+    },
+    {
+      "id": "munich-st-peter",
+      "name": "St. Peter (Alter Peter)",
+      "model": "munich-st-peter",
+      "place": "munich",
+      "lng": 11.576031,
+      "lat": 48.136473,
+      "bearing": 14,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q707645",
+      "replaces": [
+        "way/228534603",
+        "way/35903317",
+        "way/225717101",
+        "way/225717105",
+        "way/225910817",
+        "way/225910818",
+        "way/225910819",
+        "way/225910820",
+        "way/225910821",
+        "way/225910822",
+        "way/225910823",
+        "way/225984495",
+        "way/225984496",
+        "way/225987427",
+        "way/225987428",
+        "way/225987429",
+        "way/228534639"
+      ]
+    },
+    {
+      "id": "munich-theatinerkirche",
+      "name": "Theatinerkirche St. Kajetan",
+      "model": "munich-theatinerkirche",
+      "place": "munich",
+      "lng": 11.576617,
+      "lat": 48.142069,
+      "bearing": 14.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q259799",
+      "replaces": [
+        "way/25514390",
+        "way/312008156",
+        "way/312008157",
+        "way/497670959",
+        "way/1193085484"
+      ]
+    },
+    {
       "id": "music-factory-amphitheatre",
       "name": "Skyla Credit Union Amphitheatre",
       "model": "music-factory-amphitheatre",
@@ -82831,6 +85578,12 @@
       "name": "Mexico City",
       "kind": "city",
       "wikidata": "Q1489"
+    },
+    {
+      "id": "munich",
+      "name": "Munich",
+      "kind": "city",
+      "wikidata": "Q1726"
     },
     {
       "id": "new-york-area",
