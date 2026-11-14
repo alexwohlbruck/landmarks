@@ -57886,6 +57886,77 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "singapore-supertree-grove",
+      "file": "models/singapore-supertree-grove.glb",
+      "detail": "models/singapore-supertree-grove.detail.glb",
+      "detailZoom": 16,
+      "license": "CC0-1.0",
+      "source": "generators/singapore-supertree-grove.ts",
+      "type": "sculpture",
+      "collection": "landmarks",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "tags": [
+        "garden",
+        "vertical-garden",
+        "observation-deck",
+        "skywalk"
+      ],
+      "description": "The twelve steel Supertrees of Gardens by the Bay's Supertree Grove, 25 to 50 m tall, with the Supertree Observatory in the tallest and the OCBC Skyway 22 m up between the two skyway trees.",
+      "references": [
+        {
+          "title": "Supertree Grove, Gardens by the Bay, Singapore1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Supertree_Grove,_Gardens_by_the_Bay,_Singapore1.jpg",
+          "author": "Mustang Joe",
+          "license": "CC0-1.0"
+        },
+        {
+          "title": "Singapore Supertree-Grove-in-The-Gardens-03.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Singapore_Supertree-Grove-in-The-Gardens-03.jpg",
+          "author": "CEphoto, Uwe Aranas",
+          "license": "CC-BY-SA-3.0"
+        },
+        {
+          "title": "Singapore (SG), Gardens by the Bay, Supertree Grove -- 2019 -- 4752.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Singapore_(SG),_Gardens_by_the_Bay,_Supertree_Grove_--_2019_--_4752.jpg",
+          "author": "Dietmar Rabich",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "20190819 Gardens by the Bay Supertree Grove-2.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:20190819_Gardens_by_the_Bay_Supertree_Grove-2.jpg",
+          "author": "Balon Greyjoy",
+          "license": "CC0-1.0"
+        },
+        {
+          "title": "At Singapore 2023 125 - At Supertree Grove.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:At_Singapore_2023_125_-_At_Supertree_Grove.jpg",
+          "author": "Mike Peel",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "title": "Supertree Grove at night.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Supertree_Grove_at_night.jpg",
+          "author": "Kanzcech",
+          "license": "CC-BY-SA-4.0"
+        }
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
       "id": "snug-harbor",
       "file": "models/snug-harbor.glb",
       "license": "CC0-1.0",
@@ -84993,6 +85064,79 @@
         "way/116800998",
         "way/827847308",
         "way/827847309"
+      ],
+      "place": "singapore"
+    },
+    {
+      "id": "singapore-supertree-grove",
+      "name": "Supertree Grove",
+      "model": "singapore-supertree-grove",
+      "lng": 103.863936,
+      "lat": 1.28194,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "way/172288947",
+        "way/172288948",
+        "way/172288950",
+        "way/172288952",
+        "way/172288953",
+        "way/172288955",
+        "way/172288956",
+        "way/172288958",
+        "way/172288975",
+        "way/572839866",
+        "way/572839867",
+        "way/572839868",
+        "way/572839869",
+        "way/572839870",
+        "way/572839871",
+        "way/572839872",
+        "way/572839873",
+        "way/572839874",
+        "way/572839875",
+        "way/572839876",
+        "way/572839877",
+        "way/572839878",
+        "way/572839879",
+        "way/572839880",
+        "way/572839881",
+        "way/681693634",
+        "way/681693635",
+        "way/681693636",
+        "way/681693637",
+        "way/681695775",
+        "way/681695776",
+        "way/681695777",
+        "way/681695778",
+        "way/681695779",
+        "way/681695780",
+        "way/681695782",
+        "way/681695783",
+        "way/681695784",
+        "way/681695785",
+        "way/681695786",
+        "way/681695787",
+        "way/681695788",
+        "way/681695789",
+        "way/681695790",
+        "way/681695792",
+        "way/681695793",
+        "way/681695794",
+        "way/681695795",
+        "way/681695796",
+        "way/681695797",
+        "way/681695798",
+        "way/681695799",
+        "way/681695800",
+        "way/681695801",
+        "way/681695802",
+        "way/681695804",
+        "way/681695806",
+        "way/681695808",
+        "way/681695810",
+        "way/687915906"
       ],
       "place": "singapore"
     },
