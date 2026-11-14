@@ -39512,6 +39512,86 @@
       "source": "generators/nyc-two-times-square-signs.ts"
     },
     {
+      "id": "nyc-union-square-washington",
+      "file": "models/nyc-union-square-washington.glb",
+      "license": "CC0-1.0",
+      "source": "generators/nyc-union-square-washington.ts",
+      "type": "monument",
+      "collection": "landmarks",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "tags": [
+        "statue",
+        "equestrian-statue",
+        "bronze",
+        "historic",
+        "park"
+      ],
+      "references": [
+        {
+          "title": "Washington equestrian statue Union Square.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Washington_equestrian_statue_Union_Square.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Henry Kirke Brown George Washington statue by David Shankbone.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Henry_Kirke_Brown_George_Washington_statue_by_David_Shankbone.jpg",
+          "author": "David Shankbone",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "George Washington hoch zu Ross am Union Square - panoramio.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:George_Washington_hoch_zu_Ross_am_Union_Square_-_panoramio.jpg",
+          "author": "Martin Furtschegger",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Nyc union square equestrian statue of george washington nov.2024.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Nyc_union_square_equestrian_statue_of_george_washington_nov.2024.jpg",
+          "author": "Artprof23",
+          "license": "CC0"
+        },
+        {
+          "title": "Equestrian statue of George Washington - July 2026 (close up).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Equestrian_statue_of_George_Washington_-_July_2026_(close_up).jpg",
+          "author": "Rorschach",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Union square statue.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Union_square_statue.jpg",
+          "author": "Aude",
+          "license": "CC BY-SA 2.5"
+        },
+        {
+          "title": "George Washington in Union Square New York City, May 2014 - 018.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:George_Washington_in_Union_Square_New_York_City,_May_2014_-_018.jpg",
+          "author": "Another Believer",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Union Square td 30.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Union_Square_td_30.jpg",
+          "author": "Tdorante10",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
       "id": "nyc-united-nations",
       "file": "models/nyc-united-nations.glb",
       "license": "CC0-1.0",
@@ -67361,6 +67441,19 @@
       "elevation": 0,
       "minzoom": 16,
       "replaces": []
+    },
+    {
+      "id": "nyc-union-square-washington",
+      "name": "Equestrian statue of George Washington",
+      "model": "nyc-union-square-washington",
+      "lng": -73.990695,
+      "lat": 40.7353762,
+      "bearing": 29,
+      "elevation": 0,
+      "minzoom": 17,
+      "wikidata": "Q17182170",
+      "replaces": [],
+      "place": "new-york-area"
     },
     {
       "id": "nyc-united-nations",
