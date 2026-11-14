@@ -49478,6 +49478,425 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "rome-arch-of-constantine",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "monument",
+      "tags": [
+        "historic",
+        "ancient-roman",
+        "triumphal-arch",
+        "sculpture"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Arch of Constantine (Rome) - South side, from Via triumphalis.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_(Rome)_-_South_side,_from_Via_triumphalis.jpg",
+          "author": "NikonZ7II (Paris Orlando)",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Arch of Constantine, North face, Rome (8130476116).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Arch_of_Constantine,_North_face,_Rome_(8130476116).jpg",
+          "author": "Carole Raddato",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Arch of Constantine (Rome) ,lateral view.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_(Rome)_,lateral_view.jpg",
+          "author": "Livioandronico2013",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Colosseum and Arch of Constantine seen from Palatine.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Colosseum_and_Arch_of_Constantine_seen_from_Palatine.jpg",
+          "author": "Livioandronico2013",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "ArcoCostDaceN1profilo.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:ArcoCostDaceN1profilo.jpg",
+          "author": "MM",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Arch of Constantine from the Colosseum - Rome, Italy - DSC01410.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_from_the_Colosseum_-_Rome,_Italy_-_DSC01410.jpg",
+          "author": "Daderot",
+          "license": "Public domain"
+        }
+      ],
+      "file": "models/rome-arch-of-constantine.glb",
+      "source": "generators/rome-arch-of-constantine.ts"
+    },
+    {
+      "id": "rome-castel-sant-angelo",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "castle",
+        "fortress",
+        "mausoleum",
+        "ancient-roman",
+        "museum"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Castel Sant'Angelo in Rome (17).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Castel_Sant'Angelo_in_Rome_(17).jpg",
+          "author": "Krzysztof Golik",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Castel Sant'Angelo in Rome (9).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Castel_Sant'Angelo_in_Rome_(9).jpg",
+          "author": "Krzysztof Golik",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Castel Sant'Angelo (Rome).JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Castel_Sant'Angelo_(Rome).JPG",
+          "author": "Gaius Cornelius",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Top of Castel Sant'Angelo.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Top_of_Castel_Sant'Angelo.jpg",
+          "author": "Livioandronico2013",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "StAngelo Bridge Rome.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:StAngelo_Bridge_Rome.jpg",
+          "author": "AngMoKio",
+          "license": "CC BY-SA 2.5"
+        },
+        {
+          "title": "Castel Sant'Angelo Statue of Archangel Michael (48500492251).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Castel_Sant'Angelo_Statue_of_Archangel_Michael_(48500492251).jpg",
+          "author": "Gary Todd",
+          "license": "Public domain"
+        },
+        {
+          "title": "Archange saint Michel - Castel Sant'Angelo.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Archange_saint_Michel_-_Castel_Sant'Angelo.jpg",
+          "author": "Jean-Pol Grandmont",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Castillo de Sant'Angelo, Roma, Italia, 2022-09-14, DD 58-60 HDR.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Castillo_de_Sant'Angelo,_Roma,_Italia,_2022-09-14,_DD_58-60_HDR.jpg",
+          "author": "Diego Delso",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/rome-castel-sant-angelo.glb",
+      "source": "generators/rome-castel-sant-angelo.ts"
+    },
+    {
+      "id": "rome-colosseum",
+      "file": "models/rome-colosseum.glb",
+      "detail": "models/rome-colosseum.detail.glb",
+      "detailZoom": 16,
+      "source": "generators/rome-colosseum.ts",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "monument",
+      "tags": [
+        "historic",
+        "ancient-roman",
+        "amphitheatre",
+        "ruin",
+        "unesco-world-heritage"
+      ],
+      "reviewStatus": "unreviewed",
+      "description": "The Flavian Amphitheatre (AD 70-80) as it stands: the four-storey outer wall on the north between Stern's and Valadier's buttresses, the inner ring as the face of the south side, the broken cavea, the podium and the hypogeum with the rebuilt arena floor.",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Rome Colosseum exterior 2",
+          "url": "https://commons.wikimedia.org/wiki/File:Rome_Colosseum_exterior_2.jpg",
+          "author": "Nicholas Hartmann",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Rome Colosseum exterior 1",
+          "url": "https://commons.wikimedia.org/wiki/File:Rome_Colosseum_exterior_1.jpg",
+          "author": "Nicholas Hartmann",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Rome Colosseum exterior panorama",
+          "url": "https://commons.wikimedia.org/wiki/File:Rome_Colosseum_exterior_panorama.jpg",
+          "author": "Nicholas Hartmann",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Foto aerea del Colosseo",
+          "url": "https://commons.wikimedia.org/wiki/File:Foto_aerea_del_Colosseo.jpg",
+          "author": "Aeroshot.it",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Colosseum Roma 2009",
+          "url": "https://commons.wikimedia.org/wiki/File:Colosseum_Roma_2009.jpg",
+          "author": "Urse Ovidiu",
+          "license": "Public domain"
+        },
+        {
+          "title": "Colosseum-Rome-May-2009",
+          "url": "https://commons.wikimedia.org/wiki/File:Colosseum-Rome-May-2009.jpg",
+          "author": "Acediscovery",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Colosseum and Arch of Constantine seen from Palatine",
+          "url": "https://commons.wikimedia.org/wiki/File:Colosseum_and_Arch_of_Constantine_seen_from_Palatine.jpg",
+          "author": "Livioandronico2013",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Colosseum of Rome and Roman forum",
+          "url": "https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome_and_Roman_forum.jpg",
+          "author": "Wilfredor",
+          "license": "CC0"
+        },
+        {
+          "title": "Colosseum seen from Palatine Hill (1)",
+          "url": "https://commons.wikimedia.org/wiki/File:Colosseum_seen_from_Palatine_Hill_(1).jpg",
+          "author": "Tournasol7",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Rome Colosseum interior panorama 1",
+          "url": "https://commons.wikimedia.org/wiki/File:Rome_Colosseum_interior_panorama_1.jpg",
+          "author": "Nicholas Hartmann",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Colosseum exterior at night, Rome, Italy (Ank Kumar) 11",
+          "url": "https://commons.wikimedia.org/wiki/File:Colosseum_exterior_at_night,_Rome,_Italy_(Ank_Kumar)_11.jpg",
+          "author": "Ank Kumar",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
+      "id": "rome-pantheon",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "ancient-roman",
+        "temple",
+        "church",
+        "dome"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Rome Pantheon facade.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Rome_Pantheon_facade.jpg",
+          "author": "Nicholas Hartmann",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Pantheon in Rome (1).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pantheon_in_Rome_(1).jpg",
+          "author": "Krzysztof Golik",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Pantheon (Rome) - Exterior 04.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Exterior_04.jpg",
+          "author": "John Samuel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Pantheon (Rome) - Exterior 10.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Exterior_10.jpg",
+          "author": "John Samuel",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Pantheon roof 1, Rome.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pantheon_roof_1,_Rome.jpg",
+          "author": "Nhartmannphotos",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Pantheon-Roof-from-Gianicolo-2012.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Pantheon-Roof-from-Gianicolo-2012.JPG",
+          "author": "Bjørn Christian Tørrissen",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Pantheon (Rome) E 2.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_E_2.jpg",
+          "author": "Wknight94",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "0 Pantheon - Rome (1a).JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:0_Pantheon_-_Rome_(1a).JPG",
+          "author": "Jean-Pol Grandmont",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "14 494 Pantheon, Vittoriano, San Agnese.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:14_494_Pantheon,_Vittoriano,_San_Agnese.jpg",
+          "author": "Falk2",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/rome-pantheon.glb",
+      "source": "generators/rome-pantheon.ts"
+    },
+    {
+      "id": "rome-trajans-column",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "monument",
+      "tags": [
+        "historic",
+        "ancient-roman",
+        "column",
+        "sculpture"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "OnlyHudson",
+          "kind": "person",
+          "role": "creator",
+          "github": "TheOnlyHudson"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Trajan's Column HD.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Trajan%27s_Column_HD.jpg",
+          "author": "Livioandronico2013",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Trajans column from north.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Trajans_column_from_north.jpg",
+          "author": "MatthiasKabel",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Trajan's Column (48423825027).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Trajan%27s_Column_(48423825027).jpg",
+          "author": "Gary Todd",
+          "license": "Public domain"
+        },
+        {
+          "title": "Column Base 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Column_Base_01.jpg",
+          "author": "MumblerJamie",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Roma, Colonna Traiana, San Pietro.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Roma,_Colonna_Traiana,_San_Pietro.jpg",
+          "author": "Palickap",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Trajan's Column-Trajan's Forum.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Trajan%27s_Column-Trajan%27s_Forum.jpg",
+          "author": "Yair Haklai",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Colonna Traiana Santissimo Nome di Maria dome Rome.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Colonna_Traiana_Santissimo_Nome_di_Maria_dome_Rome.jpg",
+          "author": "Jebulon",
+          "license": "CC0"
+        },
+        {
+          "title": "Base de la Columna de Trajano (Colonna Traiana). Roma, Italia.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Base_de_la_Columna_de_Trajano_(Colonna_Traiana)._Roma,_Italia.jpg",
+          "author": "Carlos Teixidor Cadenas",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/rome-trajans-column.glb",
+      "source": "generators/rome-trajans-column.ts"
+    },
+    {
       "id": "samarkand-sher-dor-madrasa",
       "file": "models/samarkand-sher-dor-madrasa.glb",
       "license": "CC0-1.0",
@@ -80783,6 +81202,368 @@
       "place": "rio-de-janeiro"
     },
     {
+      "id": "rome-arch-of-constantine",
+      "name": "Arch of Constantine",
+      "model": "rome-arch-of-constantine",
+      "place": "rome",
+      "lng": 12.490667,
+      "lat": 41.889762,
+      "bearing": 12.9,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q5786",
+      "replaces": [
+        "way/23590989"
+      ]
+    },
+    {
+      "id": "rome-castel-sant-angelo",
+      "name": "Castel Sant'Angelo",
+      "model": "rome-castel-sant-angelo",
+      "place": "rome",
+      "lng": 12.466347,
+      "lat": 41.903074,
+      "bearing": 357.3,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q486382",
+      "replaces": [
+        "way/8035487",
+        "relation/2720817",
+        "relation/3533071",
+        "relation/3533072",
+        "relation/3533073",
+        "relation/3533074",
+        "relation/3533076",
+        "relation/3533077",
+        "relation/3533078",
+        "relation/3533079",
+        "relation/3533080",
+        "relation/3533081",
+        "relation/3533082",
+        "relation/3533083",
+        "way/128817397",
+        "way/128817400",
+        "way/128817401",
+        "way/263043346",
+        "way/263043347",
+        "way/263043348",
+        "way/263043349",
+        "way/263043350",
+        "way/263043351",
+        "way/263043352",
+        "way/263043354",
+        "way/263043355",
+        "way/263043359",
+        "way/263043362",
+        "way/263043365",
+        "way/263043366",
+        "way/263043371",
+        "way/263043374",
+        "way/263043375",
+        "way/263043376",
+        "way/263043377",
+        "way/263043378",
+        "way/263043379",
+        "way/263043380",
+        "way/263043381",
+        "way/263043382",
+        "way/263043383",
+        "way/263043384",
+        "way/263043385",
+        "way/263043386",
+        "way/263043387",
+        "way/263043388",
+        "way/263043389",
+        "way/263043390",
+        "way/263043391",
+        "way/263043393",
+        "way/263043394",
+        "way/263043395",
+        "way/263043396",
+        "way/263043397",
+        "way/263043398",
+        "way/263043399",
+        "way/263043400",
+        "way/263043401",
+        "way/263043402",
+        "way/263043403",
+        "way/263043404",
+        "way/263043405",
+        "way/263043406",
+        "way/263043407",
+        "way/263043408",
+        "way/263043409",
+        "way/263043410",
+        "way/263043411",
+        "way/263043412",
+        "way/263043413",
+        "way/263043415",
+        "way/263043416",
+        "way/263043417",
+        "way/263043418",
+        "way/263043419",
+        "way/263043420",
+        "way/263043421",
+        "way/263043422",
+        "way/263043423",
+        "way/263043425",
+        "way/263043426",
+        "way/263043427",
+        "way/263043428",
+        "way/263043429",
+        "way/263043430",
+        "way/263043431",
+        "way/263043432",
+        "way/263043433",
+        "way/263043434",
+        "way/263043435",
+        "way/263043436",
+        "way/263043437",
+        "way/263043439",
+        "way/263043440",
+        "way/263043441",
+        "way/263043442",
+        "way/263043443",
+        "way/263043444",
+        "way/263043445",
+        "way/263043446",
+        "way/263043447",
+        "way/263043448",
+        "way/263043449",
+        "way/263043450",
+        "way/263043451",
+        "way/263043452",
+        "way/263043453",
+        "way/263043454",
+        "way/263043455",
+        "way/263043456",
+        "way/263043457",
+        "way/263043458",
+        "way/263043459",
+        "way/263043460",
+        "way/263043461",
+        "way/263043462",
+        "way/263043463",
+        "way/263043464",
+        "way/263043466",
+        "way/263043468",
+        "way/263043470",
+        "way/263043472",
+        "way/263043473",
+        "way/263043474",
+        "way/263043475",
+        "way/263043476",
+        "way/263043477",
+        "way/263043478",
+        "way/263043479",
+        "way/263043480",
+        "way/263043481",
+        "way/263043482",
+        "way/263043483",
+        "way/263043484",
+        "way/263043485",
+        "way/263043486",
+        "way/263043487",
+        "way/263043488",
+        "way/263043489",
+        "way/263043490",
+        "way/263043491",
+        "way/263043492",
+        "way/263043493",
+        "way/263043494",
+        "way/263043495",
+        "way/263043496",
+        "way/263043497",
+        "way/263043498",
+        "way/263043500",
+        "way/263043503",
+        "way/263043505",
+        "way/263043506",
+        "way/263043507",
+        "way/263043508",
+        "way/263043509",
+        "way/263043510",
+        "way/263043511",
+        "way/263043512",
+        "way/263043513",
+        "way/263043514",
+        "way/263043515",
+        "way/263043516",
+        "way/263043517",
+        "way/263043518",
+        "way/263043519",
+        "way/263043520",
+        "way/263043521",
+        "way/263043522",
+        "way/263043523",
+        "way/263043524",
+        "way/263043525",
+        "way/263043526",
+        "way/263043527",
+        "way/263043528",
+        "way/263043529",
+        "way/263043530",
+        "way/263043531",
+        "way/263043532",
+        "way/263043533",
+        "way/263043534",
+        "way/263043535",
+        "way/263043536",
+        "way/263043537",
+        "way/263043538",
+        "way/263043539",
+        "way/263043540",
+        "way/263043541",
+        "way/263043542",
+        "way/263043543",
+        "way/263043544",
+        "way/263043545",
+        "way/263043546",
+        "way/263043547",
+        "way/263043548",
+        "way/263043551",
+        "way/263043552",
+        "way/263043553",
+        "way/263043558",
+        "way/263043561",
+        "way/263043562",
+        "way/263043564",
+        "way/263043566",
+        "way/263043567",
+        "way/263043569",
+        "way/263043573",
+        "way/263043576",
+        "way/263043577",
+        "way/263043578",
+        "way/263043579",
+        "way/263043580",
+        "way/263043581",
+        "way/263043582",
+        "way/263043583",
+        "way/263043584",
+        "way/263043585",
+        "way/263043587",
+        "way/263043588",
+        "way/263043589",
+        "way/263043590",
+        "way/263043591",
+        "way/263043592",
+        "way/263043593",
+        "way/263043594",
+        "way/263043595",
+        "way/263043596",
+        "way/263043597",
+        "way/263043599",
+        "way/263043600",
+        "way/263043601",
+        "way/263043602",
+        "way/263043603",
+        "way/263043605",
+        "way/263043606",
+        "way/263043607",
+        "way/263043608",
+        "way/263043610",
+        "way/263043611",
+        "way/629813896",
+        "way/629813934",
+        "way/629814073"
+      ]
+    },
+    {
+      "id": "rome-colosseum",
+      "name": "Colosseum",
+      "model": "rome-colosseum",
+      "place": "rome",
+      "lng": 12.492322,
+      "lat": 41.89021,
+      "bearing": 19.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q10285",
+      "replaces": [
+        "relation/1834818",
+        "relation/1834825",
+        "relation/1834826",
+        "relation/1834827",
+        "relation/1834828",
+        "relation/1834829",
+        "relation/1834830",
+        "relation/1834831",
+        "relation/3371742",
+        "relation/19666834",
+        "relation/19666835",
+        "relation/19666836"
+      ]
+    },
+    {
+      "id": "rome-pantheon",
+      "name": "Pantheon",
+      "model": "rome-pantheon",
+      "place": "rome",
+      "lng": 12.476829,
+      "lat": 41.898602,
+      "bearing": 356.5,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q99309",
+      "replaces": [
+        "relation/3374342",
+        "way/23840631",
+        "way/30967221",
+        "way/245621144",
+        "way/251373427",
+        "way/251373434",
+        "way/251373429",
+        "way/251373430",
+        "way/251373431",
+        "way/251373432",
+        "way/251373433",
+        "way/251373435",
+        "way/251373449",
+        "way/251373451",
+        "relation/3373088",
+        "relation/3373279",
+        "relation/3373280",
+        "relation/3373281",
+        "relation/3373282",
+        "relation/3373283",
+        "relation/3373284",
+        "relation/3373285",
+        "relation/3373286",
+        "relation/3373287",
+        "relation/3373288",
+        "relation/3373289",
+        "relation/3373316",
+        "relation/3374343"
+      ]
+    },
+    {
+      "id": "rome-trajans-column",
+      "name": "Trajan's Column",
+      "model": "rome-trajans-column",
+      "place": "rome",
+      "lng": 12.484273,
+      "lat": 41.895809,
+      "bearing": 320,
+      "elevation": -5,
+      "minzoom": 15,
+      "wikidata": "Q192784",
+      "replaces": [
+        "relation/3376015",
+        "relation/3376020",
+        "relation/3376021",
+        "relation/3376030",
+        "way/251621051",
+        "way/251621052",
+        "way/251621053",
+        "way/251621054",
+        "way/251621055",
+        "way/251621056",
+        "way/251621058"
+      ]
+    },
+    {
       "id": "samarkand-sher-dor-madrasa",
       "name": "Sher-Dor Madrasa",
       "model": "samarkand-sher-dor-madrasa",
@@ -85606,6 +86387,12 @@
       "name": "Rio de Janeiro",
       "kind": "city",
       "wikidata": "Q8678"
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "kind": "city",
+      "wikidata": "Q220"
     },
     {
       "id": "samarkand",
