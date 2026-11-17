@@ -8701,6 +8701,80 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "bos-massachusetts-state-house",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "capitol",
+        "government",
+        "dome",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "author": "Colin",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Massachusetts State House Boston November 2016.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Massachusetts_State_House_Boston_November_2016.jpg",
+          "author": "King of Hearts",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Boston -Massachusetts State House (48718911666).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Boston_-Massachusetts_State_House_(48718911666).jpg",
+          "author": "Ajay Suresh",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Massachusetts State House, Boston, Massachusetts - oblique frontal view.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Massachusetts_State_House,_Boston,_Massachusetts_-_oblique_frontal_view.JPG",
+          "author": "Daderot",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "\"New\" Massachusetts State House, July 2014.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:%22New%22_Massachusetts_State_House,_July_2014.JPG",
+          "author": "Kathy92648",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Massachusetts State House, aerial view (8609105065).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Massachusetts_State_House,_aerial_view_(8609105065).jpg",
+          "author": "City of Boston Archives",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Ashburton Place and Bowdoin Street, 2011 (54609230796).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Ashburton_Place_and_Bowdoin_Street,_2011_(54609230796).jpg",
+          "author": "Ethan Long",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Massachusetts State House Expansion Stages.png",
+          "url": "https://commons.wikimedia.org/wiki/File:Massachusetts_State_House_Expansion_Stages.png",
+          "author": "Гоманков Алексей",
+          "license": "CC0"
+        }
+      ],
+      "file": "models/bos-massachusetts-state-house.glb",
+      "source": "generators/bos-massachusetts-state-house.ts"
+    },
+    {
       "id": "bos-old-state-house",
       "license": "CC0-1.0",
       "collection": "landmarks",
@@ -64666,6 +64740,56 @@
         "way/323383462"
       ],
       "place": "charlotte-area"
+    },
+    {
+      "id": "bos-massachusetts-state-house",
+      "name": "Massachusetts State House",
+      "model": "bos-massachusetts-state-house",
+      "place": "boston-area",
+      "lng": -71.0638017,
+      "lat": 42.358561,
+      "bearing": 348.7,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q1150259",
+      "replaces": [
+        "way/29718019",
+        "way/240316587",
+        "way/240316588",
+        "way/240316589",
+        "way/240316590",
+        "way/240316591",
+        "way/240316592",
+        "way/240316593",
+        "way/240316594",
+        "way/240316595",
+        "way/240316596",
+        "way/240316597",
+        "way/240316598",
+        "way/240316599",
+        "way/240316600",
+        "way/240316601",
+        "way/240316602",
+        "way/240316603",
+        "way/240316604",
+        "way/240316605",
+        "way/240316606",
+        "way/240316607",
+        "way/240316608",
+        "way/240316609",
+        "way/240316610",
+        "way/240316611",
+        "way/240316612",
+        "way/240316619",
+        "way/240316620",
+        "way/240316623",
+        "way/240316624",
+        "way/240399428",
+        "way/240399429",
+        "way/240399430",
+        "way/822603180",
+        "way/824935872"
+      ]
     },
     {
       "id": "bos-old-state-house",
