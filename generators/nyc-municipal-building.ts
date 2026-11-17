@@ -32,6 +32,11 @@
  * arch's size (about four storeys, photos); the statue, drawn as a bold
  * gilded figure on a gilded plinth, its top at ~180.5 m (lidar ~179); the
  * panel rhythm (pairs of windows between pilasters, three floors a panel).
+ *
+ * Night: the tower over the slab is floodlit, from the attic up through
+ * the turrets, the colonnaded drum and the gilded Civic Fame, so its stone
+ * and gilding carry a floodlight wash (STYLE.md, "Night"); the slab's walls
+ * below stay dark.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -216,10 +221,18 @@ prism({ wall: stone, win, roof, ring: circle(cx, cy, 4.0, 12), z0: 164.8, z1: 16
   prism({ wall: gold, win: null, roof: gold, ring: circle(cx, cy, 0.75, 10), z0: z0 + 7.5, z1: z0 + 8.1, facade: null, bevel: 0.1 })
 }
 
+// The tower's floodlights stand on the slab's roof and its stages' ledges:
+// the wash is strongest on the lower stages and fades a little towards the
+// statue; faces looking up catch little. The slab's walls are dark.
+const towerLit = (p: V3, n: V3): number => {
+  if (p[2] < SLAB + 0.5) return 0
+  const h = Math.min(1, (p[2] - SLAB) / (180.5 - SLAB))
+  return (1 - 0.35 * h) * (n[2] > 0.8 ? 0.3 : 1)
+}
 finishModel('Manhattan Municipal Building', 'nyc-municipal-building', [
-  { part: stone, material: finish('municipal-limestone', 0xecdcc0) },
+  { part: stone, material: { ...finish('municipal-limestone', 0xecdcc0), floodlight: towerLit } },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
-  { part: gold, material: finish('municipal-gilt', 0xd9b46c) },
+  { part: gold, material: { ...finish('municipal-gilt', 0xd9b46c), floodlight: towerLit } },
   { part: dark, material: { ...PALETTE.window, name: 'window-2', color: 0x5f6f7c } },
 ], { bearing: 36, osm: 'relation/13625437', height: 180.5 }, 6500)

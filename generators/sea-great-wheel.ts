@@ -32,7 +32,9 @@
  *   the rim's section; leg diameter (1.3 m, from the view along the plane).
  * - Simplified: the rim and spokes are trusses; each is drawn as broad solid
  *   members (STYLE.md: no thin ribs). The cable spokes and thin inner ring are
- *   left out. The LED light show is not modelled.
+ *   left out. The LED light show is not modelled as such: the rim, spokes
+ *   and hub ball that carry its LEDs are `neon-wheel-white`, so the wheel
+ *   glows at night (STYLE.md, "Night"); the A-frames stay unlit.
  *
  * It turns (experimental; see "Animation" in STYLE.md), as the Wonder Wheel
  * does: the wheel is a glTF node at the hub, each gondola a child node at its
@@ -152,6 +154,8 @@ function sphere(p: Part, c: V3, r: number, seg = 14, rings = 8) {
 // palette's window slate a shade darker, so the ring of gondolas reads as the
 // dark beads it is against the white rim; it glows at night like the lit cars.
 const WHITE: MaterialSpec = { name: 'wheel-white', color: 0xf1f0ec, roughness: 0.6 }
+// The rim, spokes and hub carry the LED light show: the same white, lit at night.
+const LIT_WHITE: MaterialSpec = { ...WHITE, name: 'neon-wheel-white' }
 const CAR_GLASS: MaterialSpec = { ...PALETTE.window, color: 0x56687a }
 const CANOPY: MaterialSpec = { ...PALETTE.glass, color: 0xd3dfe6, doubleSided: true }
 
@@ -245,7 +249,7 @@ const AXLE: V3 = [0, 1, 0]
 const wheelTurn: Quat[] = turned.map((a) => axisAngle(AXLE, a))
 const plumb: Quat[] = turned.map((a) => axisAngle(AXLE, -a))
 
-const nodes: NodeSpec[] = [{ name: 'wheel', translation: [0, 0, H], parts: [{ part: rim, material: WHITE }] }]
+const nodes: NodeSpec[] = [{ name: 'wheel', translation: [0, 0, H], parts: [{ part: rim, material: LIT_WHITE }] }]
 const channels: ChannelSpec[] = [{ node: 0, path: 'rotation', values: wheelTurn }]
 const carParts = [{ part: carGlass, material: CAR_GLASS }, { part: carShell, material: WHITE }]
 for (let k = 0; k < CARS; k++) {

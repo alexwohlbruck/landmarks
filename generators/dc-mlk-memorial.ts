@@ -45,6 +45,9 @@
  * faces of the Mountain are rough: drawn as flat planes with a jittered top.
  *
  * The plaza, the lawns, the cherry trees and the Tidal Basin are the map's.
+ *
+ * Night: King and the Stone of Hope are floodlit, the Mountain more softly;
+ * the Inscription Wall stays dark.
  */
 import { Part, type V3 } from './mesh'
 import { finish } from './palette'
@@ -187,9 +190,10 @@ band(sh([[-7.1, 29.3], [-4.6, 29.6], [1.8, 34.8], [8.8, 39.0], [14.4, 41.9], [20
 
 await save('dc-mlk-memorial', 'Martin Luther King Jr. Memorial', [
   // The pale, faintly warm granite of the Stone and the Mountain.
-  { part: rock, material: finish('mlk-granite', 0xe9e1d6) },
+  // At night King and the Stone of Hope are floodlit, the Mountain less.
+  { part: rock, material: { ...finish('mlk-granite', 0xe9e1d6), floodlight: (_p: V3, n: V3) => (n[2] > 0.8 ? 0.3 : 0.6) } },
   // King himself, the same stone, a touch lighter where it is polished.
-  { part: figure, material: finish('mlk-figure', 0xf3ece2) },
+  { part: figure, material: { ...finish('mlk-figure', 0xf3ece2), floodlight: (_p: V3, n: V3) => (n[2] > 0.8 ? 0.5 : 0.95) } },
   // The Inscription Wall's dark granite, pulled light.
   { part: wall, material: finish('mlk-wall', 0x8e908f) },
 ], { bearing: 0, osm: 'relation/12268799' })

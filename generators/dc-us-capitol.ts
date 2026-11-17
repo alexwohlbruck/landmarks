@@ -44,7 +44,12 @@
  * over a 13.6 m radius), the pediment pitch (16°) and the stair runs. The
  * pediments of the wing porticos are not in OSM; the photos show them.
  * Not modelled: the West Front terraces and stairs (way/904789847, outside
- * the outline), lawns, the reflecting pool, sculpture, lettering.
+ * the outline), lawns, the reflecting pool, sculpture, lettering. *
+ * Night: the building is floodlit, the dome brightest, white against the
+ * sky. The dome's shell and lantern, above the attic, are their own
+ * `capitol-dome` material carrying a `floodlight` (STYLE.md, "Night"); the
+ * file budget leaves no room to light the peristyle, attic and wings as
+ * well, so they, the roofs and the bronze statue stay unlit.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -536,9 +541,28 @@ for (const s of [-1, 1]) {
 // (palette stone); columns, cornices and the painted cast-iron dome are the
 // brighter trim; roofs are pale grey-green in the aerials; the Statue of
 // Freedom is dark bronze, pulled to the palette's charcoal floor.
+// Floodlit at night: the dome, white over the dimmer fronts; faces looking
+// up barely lit. Only the dome's shell and lantern carry the light (the
+// file budget has no room for the peristyle's and wings' vertices too), so
+// that trim is split off into a material of its own.
+const inDome = (p: V3) => Math.hypot(p[0] - DX, p[1] - DY) < R_STYLO + 1.5 && p[2] > Z_BAND0 - 0.5
+function split(part: Part): [Part, Part] {
+  const a = new Part(), b = new Part()
+  for (let t = 0; t < part.triangles; t++) {
+    const q = part.pos.slice(t * 9, t * 9 + 9)
+    // Stored as glTF (x, z, -y); the centroid in the map frame.
+    const c: V3 = [(q[0] + q[3] + q[6]) / 3, -(q[2] + q[5] + q[8]) / 3, (q[1] + q[4] + q[7]) / 3]
+    const to = inDome(c) ? a : b
+    to.pos.push(...q); to.nrm.push(...part.nrm.slice(t * 9, t * 9 + 9)); to.uv.push(...part.uv.slice(t * 6, t * 6 + 6))
+  }
+  return [a, b]
+}
+const floodlight = (_p: V3, n: V3): number => n[2] > 0.7 ? 0.25 : 1
+const [domeTrim, wingTrim] = split(trim)
 const parts = [
   { part: stone, material: PALETTE.stone },
-  { part: trim, material: PALETTE.trim },
+  { part: wingTrim, material: PALETTE.trim },
+  { part: domeTrim, material: { ...finish('capitol-dome', PALETTE.trim.color), floodlight } },
   { part: roof, material: finish('capitol-roof', 0xb0c3bc) },
   { part: win, material: PALETTE.window },
   { part: bronze, material: finish('bronze', 0x585e5a) },

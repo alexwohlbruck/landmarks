@@ -193,12 +193,16 @@ band(trim, centre, 44.3, 45.5, 0.6)
 {
   const cy = FRONT, R = 34.5, N = 18
   const arcPts = (r: number, z: number): V3[] => Array.from({ length: N + 1 }, (_, i) => { const t = (i / N) * Math.PI; return [CX + r * Math.cos(t), cy + r * Math.sin(t), z] as V3 })
-  // The glass walls of the hall, set back under the canopy's rim.
-  const wall = (r: number) => { const lo = arcPts(r, PLAZA), hi = arcPts(r, 8.2); for (let i = 0; i < N; i++) win.quad(lo[i + 1], lo[i], hi[i], hi[i + 1]) }
-  wall(R - 2.2)
-  // The flat canopy roof and its deep white edge.
-  const rim0 = arcPts(R, 8.2), rim1 = arcPts(R, 9.4)
-  for (let i = 0; i < N; i++) trim.quad(rim0[i + 1], rim0[i], rim1[i], rim1[i + 1])
+  // The glass walls of the hall, set back under the canopy's rim. They stand
+  // on the plaza, but run down to y = 0 like the rest of the front so the
+  // pavilion never floats where the map's ground is flatter than the slope.
+  // The arc runs counter-clockwise, so (i, i + 1) faces out.
+  const wall = (r: number, z0: number, z1: number, part: Part) => { const lo = arcPts(r, z0), hi = arcPts(r, z1); for (let i = 0; i < N; i++) part.quad(lo[i], lo[i + 1], hi[i + 1], hi[i]) }
+  wall(R - 2.2, 0, 8.2, win)
+  // The flat canopy roof, its deep white edge and the soffit under the overhang.
+  wall(R, 8.2, 9.4, trim)
+  const s0 = arcPts(R, 8.2), s1 = arcPts(R - 2.2, 8.2)
+  for (let i = 0; i < N; i++) trim.quad(s0[i + 1], s0[i], s1[i], s1[i + 1])
   const steps: [number, number, number][] = [[R, 30.5, 9.4], [30.5, 26.5, 10.2], [26.5, 22.5, 11.0], [22.5, 18.5, 11.8], [18.5, 14.0, 12.6]]
   steps.forEach(([r0, r1, z], k) => {
     const o = arcPts(r0, z), i0 = arcPts(r1, z)
@@ -206,7 +210,7 @@ band(trim, centre, 44.3, 45.5, 0.6)
     for (let i = 0; i < N; i++) part.quad(o[i], o[i + 1], i0[i + 1], i0[i])
     // The riser up to the next step.
     const next = steps[k + 1]
-    if (next) { const lo = arcPts(r1, z), hi = arcPts(r1, next[2]); for (let i = 0; i < N; i++) glass.quad(lo[i + 1], lo[i], hi[i], hi[i + 1]) }
+    if (next) wall(r1, z, next[2], glass)
   })
 }
 

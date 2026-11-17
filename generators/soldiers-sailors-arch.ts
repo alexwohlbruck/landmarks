@@ -12,6 +12,9 @@
  * y, so the model is built symmetric about y = 0 and shifted by +0.05 at the
  * end, which keeps the bounds and origin exactly where they were.
  * Reference: https://s-media.nyc.gov/agencies/lpc/lp/0821.pdf
+ *
+ * Night: the arch is floodlit from the plaza, granite and bronze groups
+ * alike, so they carry a `floodlight` wash (STYLE.md, "Night").
  */
 import { Part, addGltfTriangles, cross, sub, len, writeGlb, type V3 } from './mesh'
 
@@ -323,14 +326,18 @@ for (let i = 0; i < 12; i++) for (let j = 0; j < 4; j++) {
   }
 }
 
+// The floodlights stand on the plaza round the arch and aim up its faces:
+// strongest on the piers, fading a little toward the quadriga; faces
+// looking straight up catch little.
+const lit = (p: V3, n: V3): number => (1 - 0.3 * Math.min(1, p[2] / TOP)) * (n[2] > 0.7 ? 0.35 : 1)
 // Median sRGB samples from the reference photographs (sunlit faces).
 const parts = [
-  { part: granite, material: { name: 'granite', color: 0xc9c3b8 } }, // 01.jpg sunlit attic, warm grey
-  { part: trim, material: { name: 'granite-trim', color: 0xd6d0c4 } }, // cornices catch the light
-  { part: recess, material: { name: 'granite-shade', color: 0xa39d94 } }, // vault and panels
-  { part: base, material: { name: 'granite-base', color: 0x666867 } }, // 01.jpg dark base course
-  { part: bronze, material: { name: 'bronze', color: 0x1c3237, roughness: .75 } }, // 02.jpg shadowed bronze
-  { part: patina, material: { name: 'bronze-patina', color: 0x46605b, roughness: .75 } }, // 02.jpg lit bronze, plinth
+  { part: granite, material: { name: 'granite', color: 0xc9c3b8 , floodlight: lit } }, // 01.jpg sunlit attic, warm grey
+  { part: trim, material: { name: 'granite-trim', color: 0xd6d0c4 , floodlight: lit } }, // cornices catch the light
+  { part: recess, material: { name: 'granite-shade', color: 0xa39d94 , floodlight: lit } }, // vault and panels
+  { part: base, material: { name: 'granite-base', color: 0x666867 , floodlight: lit } }, // 01.jpg dark base course
+  { part: bronze, material: { name: 'bronze', color: 0x1c3237, roughness: .75 , floodlight: lit } }, // 02.jpg shadowed bronze
+  { part: patina, material: { name: 'bronze-patina', color: 0x46605b, roughness: .75 , floodlight: lit } }, // 02.jpg lit bronze, plinth
 ]
 // Re-centre on the OSM envelope (glTF z = -y).
 for (const { part } of parts) for (let k = 2; k < part.pos.length; k += 3) part.pos[k] -= Y_SHIFT

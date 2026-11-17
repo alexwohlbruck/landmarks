@@ -1,0 +1,37 @@
+import { expect, test } from 'bun:test'
+import { groundGrid, isInView, modelToLngLat, replacementIds } from '../web/map-models'
+import type { Asset } from '../src/release'
+
+const asset = {
+  id: 'example', minZoom: 15, bounds: [-74.01, 40.7, -74, 40.71],
+  osm: { type: 'way', id: 34633854, url: '' },
+  additionalOsm: [{ type: 'relation', id: 123, url: '' }, { type: 'node', id: 456, url: '' }],
+} as Asset
+
+test('replacement IDs follow OpenFreeMap Planetiler encoding, including OSM types', () => {
+  // Empire State Building: verified against the actual OpenFreeMap building tile.
+  expect(replacementIds(asset)).toEqual([346338542, 1233, 4561])
+  expect(replacementIds({ ...asset, osm: null, additionalOsm: [] })).toEqual([])
+})
+
+test('only load visible models at their zoom, with a selected-model override', () => {
+  const view: [number, number, number, number] = [-74.1, 40.6, -73.9, 40.8]
+  expect(isInView(asset, view, 15)).toBe(true)
+  expect(isInView(asset, view, 14)).toBe(false)
+  expect(isInView(asset, view, 14, 'example')).toBe(true)
+  expect(isInView(asset, view, 12, 'example')).toBe(false)
+  expect(isInView(asset, [-122.5, 37.7, -122.4, 37.8], 18)).toBe(false)
+  // A bridge can intersect the view even with its anchor outside it.
+  expect(isInView({ ...asset, bounds: [-74.2, 40.65, -74.05, 40.75] }, view, 15)).toBe(true)
+})
+
+test('the ground is read on a 7 x 7 grid over the plan, east and south of the anchor', () => {
+  const grid = groundGrid({ minX: -30, maxX: 30, minZ: -60, maxZ: 0 })
+  expect(grid).toHaveLength(49)
+  expect(grid[0]).toEqual([-30, 0, -60])
+  expect(grid[48]).toEqual([30, 0, 0])
+  const [lng, lat] = modelToLngLat([-74, 40.7], 100, -100)
+  // 100 m east and 100 m north of the anchor.
+  expect((lng + 74) * 111_320 * Math.cos(40.7 * Math.PI / 180)).toBeCloseTo(100, 0)
+  expect((lat - 40.7) * 110_950).toBeCloseTo(100, -1)
+})

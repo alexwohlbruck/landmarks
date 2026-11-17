@@ -10,6 +10,10 @@
  * (STYLE.md): bevelled granite blocks, the loggia as recessed bands,
  * and a smooth verdigris figure whose head, crown and arm read at 200 px.
  * All geometry is procedural and CC0-1.0; no source mesh or textures.
+ *
+ * At night she is floodlit from the fort below, figure and pedestal, and the
+ * gold flame glows: the figure and stone carry a `floodlight` wash, and the
+ * flame is `neon-liberty-flame` in its day gold (STYLE.md, "Night").
  */
 import { Part, addGltfTriangles, cross, sub, len, writeGlb, type V3 } from './mesh'
 
@@ -329,22 +333,30 @@ smooth(flame, p => solid(p, [
 // Colours are sRGB patch medians from the reference photos (/tmp/nyc-refs):
 // 01.jpg (1280 × 960) and 02.jpg (1280 × 3171), rectangles [l, t, r, b].
 // The writer converts them to linear; they are not adjusted for the map.
+// The floodlights stand on Fort Wood and round the pedestal's terraces: the
+// figure is washed all over, a little less towards the crown and torch; the
+// pedestal a little dimmer; faces looking straight up catch least.
+const lit = (p: V3, n: V3): number => {
+  const up = n[2] > 0.8 ? 0.4 : 1
+  if (p[2] < 36.9) return 0.7 * up
+  return (1 - 0.3 * Math.min(1, (p[2] - 36.9) / (83 - 36.9))) * up
+}
 const parts = [
   // Granite walls, terraces and attic; photo 02 [638, 2736, 740, 2783].
-  { part: granite, material: { name: 'granite', color: 0xada89e } },
+  { part: granite, material: { name: 'granite', color: 0xada89e, floodlight: lit } },
   // Lighter dressed stone: piers, pilasters, courses, cornice, parapet;
   // photo 02 [348, 2410, 375, 2489].
-  { part: trim, material: { name: 'stone-trim', color: 0xc2b9ae } },
+  { part: trim, material: { name: 'stone-trim', color: 0xc2b9ae, floodlight: lit } },
   // Shadowed loggia openings, kept a mid tone so they read as a band, not a
   // hole; photo 02 [565, 2385, 611, 2458] lifted toward the sunlit reveals.
   { part: recess, material: { name: 'loggia-recess', color: 0x55514b } },
   // Sunlit verdigris, photo 01 [608, 265, 665, 387]; the tablet
   // [685, 251, 707, 294] gives a corroborating #50a59c.
-  { part: copper, material: { name: 'verdigris', color: 0x5aa89f } },
+  { part: copper, material: { name: 'verdigris', color: 0x5aa89f, floodlight: lit } },
   // Deep folds and the torch's shaded metal; photo 01 [643, 397, 651, 433].
-  { part: folds, material: { name: 'verdigris-deep', color: 0x1f7568 } },
+  { part: folds, material: { name: 'verdigris-deep', color: 0x1f7568, floodlight: lit } },
   // Sunlit gold leaf on the flame; photo 02 [364, 137, 368, 140].
-  { part: flame, material: { name: 'flame', color: 0xf0cf6a } },
+  { part: flame, material: { name: 'neon-liberty-flame', color: 0xf0cf6a } },
 ]
 const glb = writeGlb('Statue of Liberty', parts, {
   license: 'CC0-1.0',

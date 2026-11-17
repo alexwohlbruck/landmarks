@@ -7,7 +7,9 @@
  * own frame (x east, y up, z south, metres) and its height, and flags
  * anything over budget: more than 5,000 triangles (6,500 is the ceiling for
  * the most complex models), more than 250 KB, more than six materials, or a
- * lowest point that isn't y = 0.
+ * lowest point that isn't y = 0. A model's detail GLB (`<id>.detail.glb`,
+ * named as `<id>.detail`) is held to Open Landmarks' detail budget instead:
+ * 40,000 triangles and 1.5 MB.
  */
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -30,15 +32,16 @@ for (const id of ids) {
       for (let i = 0; i < 3; i++) (min[i] = Math.min(min[i], a.min[i])), (max[i] = Math.max(max[i], a.max[i]))
     }
   const tris = triangleCount(bytes), kb = bytes.length / 1024
+  const detail = /\.detail(\.glb)?$/.test(id)
   const mats: string[] = (json.materials ?? []).map((m: any) => m.name)
   // Hard limits fail the run; 5,000-6,500 triangles is allowed for the most complex models only.
   const hard = [
-    tris > 6500 ? 'over 6,500 tris' : '',
-    kb > 250 ? 'over 250 KB' : '',
+    tris > (detail ? 40000 : 6500) ? `over ${detail ? '40,000' : '6,500'} tris` : '',
+    kb > (detail ? 1536 : 250) ? `over ${detail ? '1.5 MB' : '250 KB'}` : '',
     mats.length > 6 ? `${mats.length} materials (max 6)` : '',
     Math.abs(min[1]) > 0.05 ? `lowest point y = ${min[1].toFixed(2)}, not 0` : '',
   ].filter(Boolean)
-  const soft = tris > 5000 && tris <= 6500 ? ['over 5,000 tris (complex models only)'] : []
+  const soft = !detail && tris > 5000 && tris <= 6500 ? ['over 5,000 tris (complex models only)'] : []
   const flags = [...hard, ...soft]
   if (hard.length) over++
   const f = (v: number) => v.toFixed(1)

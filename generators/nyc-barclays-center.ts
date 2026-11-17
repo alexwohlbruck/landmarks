@@ -54,12 +54,16 @@
  * canopy roof behind the visor); two broad bands standing
  * for the lattice; the corner radii. The lettering is
  * left out.
+ *
+ * Night: the LED marquee lining the oculus is lit, so it is its own
+ * `neon-barclays-marquee` in the glass's slate (STYLE.md, "Night"); the
+ * lobby glass glows as `window`.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 import { type XY, add2, v3, ccw, rayHit, sweep, save } from './nyc-yankee-stadium'
 
-const rust = new Part(), sedum = new Part(), glass = new Part()
+const rust = new Part(), sedum = new Part(), glass = new Part(), screen = new Part()
 
 // The drum: a rounded rectangle, corner radii from the lidar and NAIP.
 const X0 = -58, X1 = 81, Y0 = -66.6, Y1 = 59.5
@@ -164,13 +168,14 @@ const rim = (p: XY) => {
     return [v3(h, SOFFIT + up(h)), v3(h, TOP + up(h)), v3(o, TOP + up(o)), v3(o, SOFFIT + up(o)), v3(h, SOFFIT + up(h))]
   })
   // order: the oculus face, the top, the visor, the soffit
-  sweep(st, (i) => [glass, rust, rust, rust][i]) // the screen lining the oculus is a window-coloured band
+  sweep(st, (i) => [screen, rust, rust, rust][i]) // the LED screen lining the oculus, a band in the glass's colour
 }
 
 await save('nyc-barclays-center', 'Barclays Center', [
   { part: rust, material: finish('barclays-rust', 0x9a6450) },
   { part: sedum, material: finish('sedum-green', 0x8c9a6e) },
   { part: glass, material: PALETTE.window },
+  { part: screen, material: finish('neon-barclays-marquee', PALETTE.window.color) },
 ], {
   bearing: 15.5, elevation: 0, anchor: [40.68265278, -73.97532637], height: 41,
   replaces: ['relation/8610205', 'way/250992428'],

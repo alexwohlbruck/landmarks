@@ -57,7 +57,8 @@
  * along Stonewall) and its 0.8 m projection, read off the photos; the
  * podium's brick, a buff between the red and the tan brick the photos show.
  * The "ally" sign is drawn as plain block letters: it is the one mark that
- * names the tower from the street and the skyline.
+ * names the tower from the street and the skyline. It is lit after dark, so
+ * it is `neon-ally-magenta` and glows magenta at night (STYLE.md, "Night").
  *
  * Doubts: the south-east (back) and south-west faces are unphotographed and
  * are drawn as grid like the Tryon face; the flush block's return along
@@ -194,6 +195,6 @@ if (import.meta.main) {
     { part: sheer, material: windowVariant(2, 0x9fb9cb) },
     { part: screen, material: finish('ally-screen', 0xe9ebea) },
     { part: brick, material: finish('ally-brick', 0xc29a7c) },
-    { part: sign, material: finish('ally-magenta', 0xc0479b, 0.6) },
+    { part: sign, material: finish('neon-ally-magenta', 0xc0479b, 0.6) },
   ])
 }

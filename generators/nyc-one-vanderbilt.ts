@@ -30,6 +30,11 @@
  *
  * Estimated: bay width (≈ 5.5 m), notch depth (2.6 m), the warm base height,
  * the crown's steps and the spire's thickness. The canopy and public hall at 42nd and Vanderbilt are left out.
+ *
+ * Night: the crown is lit (its glass glows as `window`, and its piers are
+ * washed by the crown lighting) and the spire is lit white to the tip, so
+ * the crown's piers and the spire carry a floodlight wash (STYLE.md,
+ * "Night"); the piers lower down stay dark.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish, windowVariant } from './palette'
@@ -120,11 +125,15 @@ const sx = 7.5, sy = 8.5
 prism({ wall: metal, win: null, roof: metal, ring: chamferRect(sx - 1.6, sy - 1.6, sx + 1.6, sy + 1.6, 0.6), z0: 396, z1: 401, facade: null, bevel: 0.2 })
 spire(metal, circle(sx, sy, 0.9, 8), 401, [sx, sy, 427], true)
 
+// The crown lighting: the piers of the glass crown above the lower volumes'
+// roofs, and the spire, lit evenly; faces looking up a little less.
+const crownLit = (p: V3, n: V3): number => (p[2] < 350.5 ? 0 : n[2] > 0.8 ? 0.4 : 0.9)
+
 finishModel('One Vanderbilt', 'nyc-one-vanderbilt', [
   { part: glass, material: { ...windowVariant(1, 0xb4c8d8), name: 'window' } },
   { part: notchGlass, material: windowVariant(2, 0x8fa6b8) },
-  { part: pier, material: finish('vanderbilt-pier', 0xeee7dc) },
+  { part: pier, material: { ...finish('vanderbilt-pier', 0xeee7dc), floodlight: crownLit } },
   { part: warm, material: finish('vanderbilt-terracotta', 0xd6a98c) },
   { part: roof, material: PALETTE.roof },
-  { part: metal, material: finish('vanderbilt-spire', 0xc8cdd0) },
+  { part: metal, material: { ...finish('vanderbilt-spire', 0xc8cdd0), floodlight: crownLit } },
 ], { bearing: 29, osm: 'way/265875648', height: 427 })

@@ -5,7 +5,7 @@
  * Geometry is authored in a map-friendly frame — x east, y north, z up,
  * metres, origin at the anchor on the ground — and converted to glTF's Y-up
  * frame on write. That is the frame contract every landmark GLB follows (see
- * `README.md`): +Y up, -Z north, +X east, metres, origin at the
+ * `docs/reference.md`): +Y up, -Z north, +X east, metres, origin at the
  * anchor, so a client places a model with nothing but a position, a bearing
  * and a scale.
  *
@@ -51,6 +51,17 @@ export class Part {
   }
 
   tri(a: V3, b: V3, c: V3, ua: number[] = [0, 0], ub: number[] = [0, 0], uc: number[] = [0, 0], normals?: V3[]) {
+    // Explicit (smooth) normals say which side is the outside. If the
+    // winding disagrees, the map culls the face from outside and it shows
+    // through, while its lighting still looks right — so make the winding
+    // follow the normals.
+    if (normals) {
+      const g = cross(sub(b, a), sub(c, a)), s: V3 = [0, 1, 2].map((k) => normals[0][k] + normals[1][k] + normals[2][k]) as V3
+      if (g[0] * s[0] + g[1] * s[1] + g[2] * s[2] < 0) {
+        this.tri(a, c, b, ua, uc, ub, [normals[0], normals[2], normals[1]])
+        return
+      }
+    }
     const n = normalize(cross(sub(b, a), sub(c, a)))
     const corners = [[a, ua], [b, ub], [c, uc]] as [V3, number[]][]
     corners.forEach(([p, t], i) => {
@@ -182,6 +193,13 @@ export type MaterialSpec = {
   color: number
   roughness?: number
   doubleSided?: boolean
+  /**
+   * Below 1, a translucent surface: written as glTF `alphaMode: 'BLEND'` with
+   * this as the base colour's alpha, so the map draws what is behind it
+   * through it. For clear glass that should be seen through (a glass cube, a
+   * pavilion); 0.2–0.35 reads as glass. See "Translucent glass" in STYLE.md.
+   */
+  opacity?: number
   /** A PNG whose alpha cuts the surface — lattice, railings, glazing bars. */
   mask?: { png: Uint8Array; cutoff?: number }
   /**
@@ -193,6 +211,12 @@ export type MaterialSpec = {
    * `cell` and `quad` with explicit UVs set them.
    */
   texture?: { png: Uint8Array }
+  /**
+   * How much of the night's floodlighting falls on a vertex, 0–1, from its
+   * map-frame position and normal (in its node's frame, for a moving part).
+   * Written as the `_FLOODLIGHT` attribute; see Night in `STYLE.md`.
+   */
+  floodlight?: (p: V3, n: V3) => number
 }
 
 /** A quaternion, [x, y, z, w], in the map frame like everything else here. */
@@ -235,6 +259,17 @@ export type AnimationSpec = { name: string; times: number[]; channels: ChannelSp
  * the Open Landmarks v1 contract; see "Animation" in `STYLE.md`.
  */
 export type GlbOptions = { nodes?: NodeSpec[]; animation?: AnimationSpec }
+
+/** Each welded vertex's floodlight share, or null when none is lit. glTF (x, y, z) is map (x, -z, y). */
+function floodlightOf(pos: Float32Array, nrm: Float32Array, light: (p: V3, n: V3) => number): Float32Array | null {
+  const out = new Float32Array(pos.length / 3)
+  for (let i = 0; i < out.length; i++) {
+    const p: V3 = [pos[i * 3], -pos[i * 3 + 2], pos[i * 3 + 1]]
+    const n: V3 = [nrm[i * 3], -nrm[i * 3 + 2], nrm[i * 3 + 1]]
+    out[i] = Math.min(1, Math.max(0, light(p, n)))
+  }
+  return out.some((v) => v > 0) ? out : null
+}
 
 /** map frame → glTF frame, the same rotation `Part.tri` applies. */
 const toGltf = (p: V3): V3 => [p[0], p[2], -p[1]]
@@ -317,11 +352,13 @@ export function writeGlb(
       const index = known >= 0 ? known : addMaterial(material)
       const textured = !!(material.mask || material.texture)
       const { pos, nrm, uv, index: corners } = weld(part, textured)
+      const flood = material.floodlight && floodlightOf(pos, nrm, material.floodlight)
       primitives.push({
         attributes: {
           POSITION: accessor(pos, 'VEC3', 34962, true),
           NORMAL: accessor(nrm, 'VEC3', 34962),
           ...(textured ? { TEXCOORD_0: accessor(uv, 'VEC2', 34962) } : {}),
+          ...(flood ? { _FLOODLIGHT: accessor(flood, 'SCALAR', 34962) } : {}),
         },
         indices: accessor(corners, 'SCALAR', 34963),
         material: index,
@@ -334,12 +371,13 @@ export function writeGlb(
     const m: any = {
       name: material.name,
       pbrMetallicRoughness: {
-        baseColorFactor: [...linear(material.color), 1],
+        baseColorFactor: [...linear(material.color), material.opacity ?? 1],
         metallicFactor: 0,
         roughnessFactor: material.roughness ?? 0.85,
       },
     }
     if (material.doubleSided) m.doubleSided = true
+    if (material.opacity !== undefined && material.opacity < 1) m.alphaMode = 'BLEND'
     if (material.texture && !material.mask) {
       images.push({ bufferView: push(material.texture.png), mimeType: 'image/png' })
       textures.push({ source: images.length - 1 })

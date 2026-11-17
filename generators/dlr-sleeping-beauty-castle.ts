@@ -76,6 +76,11 @@
  * pinnacles, banners, crests and gilded trim; the model keeps the ones that
  * make its silhouette. The bridge over the moat is not part of the OSM
  * building and is left to the map.
+ *
+ * Night: the castle is floodlit from the hub and the moat, its walls, towers
+ * and roofs glowing in their own colours; every finish but the windows
+ * carries a `floodlight` (STYLE.md, "Night"), strongest on the hub (south)
+ * side, the roofs a little less, faces looking up hardly at all.
  */
 import { Part, len, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -510,12 +515,15 @@ for (const [x, y, top, tip] of [[-4.0, -8.8, 12.2, 14.3], [1.3, -8.7, 12.2, 14.3
 // point moves 0.648 m east and 1.680 m north. Part stores glTF (x, z, −y),
 // so x grows by 0.648 and glTF z shrinks by 1.680.
 
+// Floodlit from the hub and round the moat: the south faces full, the rest
+// a little less; faces looking up barely lit.
+const lit = (k: number) => (_p: V3, n: V3): number => k * (n[2] > 0.7 ? 0.2 : n[1] < -0.3 ? 1 : 0.75)
 const parts = [
-  { part: stone, material: finish('castle-stone', 0xb3bbcc) },
-  { part: pink, material: finish('castle-pink', 0xf2c5c8) },
-  { part: blue, material: finish('castle-blue', 0x3f66c6, 0.6) },
-  { part: gold, material: finish('castle-gold', 0xd9b45e, 0.5) },
-  { part: white, material: PALETTE.trim },
+  { part: stone, material: { ...finish('castle-stone', 0xb3bbcc), floodlight: lit(1) } },
+  { part: pink, material: { ...finish('castle-pink', 0xf2c5c8), floodlight: lit(1) } },
+  { part: blue, material: { ...finish('castle-blue', 0x3f66c6, 0.6), floodlight: lit(0.7) } },
+  { part: gold, material: { ...finish('castle-gold', 0xd9b45e, 0.5), floodlight: lit(1) } },
+  { part: white, material: { ...PALETTE.trim, floodlight: lit(1) } },
   { part: glazing, material: PALETTE.window },
 ]
 for (const { part } of parts) {

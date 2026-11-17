@@ -36,6 +36,11 @@
  * the elevations show it, with one ripple so it never shows edge-on), drawn with seven broad stripes rather than
  * thirteen thin ones, which would only shimmer at map distance. Rifles,
  * hands and the inscriptions are left out.
+ *
+ * Night: the bronze and the flag are floodlit from the lawn round the base
+ * (the flag flies day and night, lit), so both carry a `floodlight`
+ * (STYLE.md, "Night"), strongest low down and on faces turned out and down
+ * toward the lamps; the granite base stays dark.
  */
 import { Part, cross, type V3 } from './mesh'
 import { finish } from './palette'
@@ -179,12 +184,16 @@ MEN.forEach(m => marine(m))
   strip(blue, 0, 0.4, (STRIPES - 4) / STRIPES, 1)
 }
 
+// Lit from lamps on the lawn: full at the men, fading a little toward the
+// flag at the pole's top; faces looking up catch little of it.
+const floodlight = (p: V3, n: V3): number => (n[2] > 0.7 ? 0.35 : 1) * (1 - 0.4 * Math.min(1, Math.max(0, (p[2] - 8) / 12)))
+
 await save('dc-marine-corps-war-memorial', 'Marine Corps War Memorial', [
   // Dark bronze, a warm brown-olive, held lighter than charcoal.
-  { part: bronze, material: finish('iwo-bronze', 0x6a5d4a) },
+  { part: bronze, material: { ...finish('iwo-bronze', 0x6a5d4a), floodlight } },
   // The polished black granite base, pulled to a deep grey.
   { part: granite, material: finish('iwo-black-granite', 0x55585c) },
-  { part: red, material: finish('flag-red', 0xb4444a) },
-  { part: white, material: finish('flag-white', 0xf2efe8) },
-  { part: blue, material: finish('flag-blue', 0x3e4e78) },
+  { part: red, material: { ...finish('flag-red', 0xb4444a), floodlight } },
+  { part: white, material: { ...finish('flag-white', 0xf2efe8), floodlight } },
+  { part: blue, material: { ...finish('flag-blue', 0x3e4e78), floodlight } },
 ], { bearing: 0 })

@@ -51,6 +51,8 @@
  *   pediment sculpture, capitals, the corner pedestals'
  *   carving (drawn as small domes), balustrades, lamps. The north steps are one smooth flight
  *   (16 m deep, 42 m wide between cheek walls, estimated from the panorama).
+ * Night: the building is floodlit, the dome brightest (a `floodlight` wash on
+ * the sandstone, trim and dome); the windows are `window`.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -223,10 +225,18 @@ function build() {
   }
   lathe(trim, 0, 0, [[0.5, 80.0], [3.4, 80.0], [3.4, 80.7], [2.8, 80.9], [2.2, 81.8], [1.3, 82.4], [0.7, 83.2], [0.25, 86.0], [0.01, 87.0]], 12)
 
+  // At night the building is floodlit, the dome and its drum brightest; the
+  // fronts below the cornice a little dimmer. Faces looking up catch little.
+  const lit = (p: V3, n: V3): number => (n[2] > 0.7 ? 0.25 : 1) * (p[2] < CORN ? 0.6 : 0.9)
+  const domeLit = (_p: V3, n: V3): number => (n[2] > 0.9 ? 0.6 : 1)
+  // Named first: `finishGlb` takes plain swatches, and a floodlight rides along.
+  const sandstone = { ...finish('wsc-sandstone', 0xe4ddd0), floodlight: lit }
+  const trimLit = { ...PALETTE.trim, floodlight: lit }
+  const domeStone = { ...finish('wsc-dome', 0xd9cfbd), floodlight: domeLit }
   return finishGlb('Washington State Capitol', [
-    { part: stone, material: finish('wsc-sandstone', 0xe4ddd0) },
-    { part: trim, material: PALETTE.trim },
-    { part: dome, material: finish('wsc-dome', 0xd9cfbd) },
+    { part: stone, material: sandstone },
+    { part: trim, material: trimLit },
+    { part: dome, material: domeStone },
     { part: roof, material: PALETTE.roof },
     { part: win, material: PALETTE.window },
   ], { bearing: 0, height: 87.0, replaces: ['way/31494476', 'way/612617948'] }, 6500)

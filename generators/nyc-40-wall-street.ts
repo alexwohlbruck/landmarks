@@ -30,6 +30,11 @@
  *
  * Estimated: the gables' width and height and the dormer count (photos);
  * the lantern's size (lidar peak, photos); the panel rhythm.
+ *
+ * Night: the copper pyramid and its lantern are floodlit, a pale green
+ * crown over the dark shaft, so the copper and the stone gables in the
+ * pyramid carry a floodlight wash (STYLE.md, "Night"), brightest at the
+ * eaves and fading up the pyramid; the shaft below stays unlit.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -156,9 +161,17 @@ mast(copper, cx, cy, 279, 283, 0.35)
 // Verdigris cornice round the eaves.
 prism({ wall: copper, win: null, roof: copper, ring: chamferRect(cx - A - 0.3, cy - A - 0.3, cx + A + 0.3, cy + A + 0.3, 2.3), z0: EAVE - 1.4, z1: EAVE + 0.2, facade: null, bevel: 0.25 })
 
+// The crown's floodlights stand round the eaves and throw their light up
+// the pyramid: strongest at its foot, fading towards the spire; flat tops
+// catch little. Nothing below the eaves is lit.
+const crownLit = (p: V3, n: V3): number => {
+  if (p[2] < EAVE - 1.5) return 0
+  const h = Math.min(1, (p[2] - EAVE) / (283 - EAVE))
+  return (1 - 0.5 * h) * (n[2] > 0.8 ? 0.3 : 1)
+}
 finishModel('40 Wall Street', 'nyc-40-wall-street', [
-  { part: stone, material: finish('wall-limestone', 0xe6dccb) },
+  { part: stone, material: { ...finish('wall-limestone', 0xe6dccb), floodlight: crownLit } },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
-  { part: copper, material: finish('wall-copper', 0x86b6a4) },
+  { part: copper, material: { ...finish('wall-copper', 0x86b6a4), floodlight: crownLit } },
 ], { bearing: 37, osm: 'way/278042253', height: 283 }, 6500)

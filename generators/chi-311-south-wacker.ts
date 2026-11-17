@@ -33,6 +33,8 @@
  *    85 ft (26 m) tall, one level below ground (published), so its glass
  *    roof is drawn to ~20 m over the west arm (estimate).
  *  - colour: rose granite, pulled light (finish); the crown glass.
+ *  - night: the crown cylinder and its turrets are lit from inside after
+ *    dark, so they are neon and glow; the winter garden's roof stays dark.
  *
  * Photos (Wikimedia Commons): 311_South_Wacker_Drive_(Chicago,_IL)_from_
  * the_top_of_the_Willis_Tower_29Nov2007.JPG (Ingvar-fed, CC BY-SA 3.0);
@@ -51,7 +53,7 @@ import { PALETTE, finish } from './palette'
 import { cap, inset, lathe, panel, rect, rows, save, walls, type XY } from './chi-aon-center'
 import { box, hipRoof } from './chi-board-of-trade'
 
-const granite = new Part(), trim = new Part(), win = new Part(), roof = new Part(), glass = new Part()
+const granite = new Part(), trim = new Part(), win = new Part(), roof = new Part(), glass = new Part(), crown = new Part()
 
 const CX = 11.3, CY = 0.2 // crown centre
 const ROOF = 261, PIER = 275, TURRET = 284, TOP = 293, WING = 205, POD = 13
@@ -118,12 +120,12 @@ const tips: XY[] = [[CX, CY - 15.5], [CX + 15.5, CY], [CX, CY + 15.5], [CX - 15.
 for (const [x, y] of tips) {
   box(granite, trim, x - 4.2, y - 4.2, x + 4.2, y + 4.2, ROOF - 2, PIER, 0.4)
   // The small glass turret on its pier, a capping ring.
-  lathe(glass, x, y, [[0, PIER], [3.2, PIER], [3.2, TURRET - 1], [0, TURRET - 1]], 16)
+  lathe(crown, x, y, [[0, PIER], [3.2, PIER], [3.2, TURRET - 1], [0, TURRET - 1]], 16)
   lathe(trim, x, y, [[3.35, TURRET - 1], [3.35, TURRET], [2.9, TURRET]], 16)
   lathe(roof, x, y, [[2.9, TURRET - 0.3], [0, TURRET - 0.3]], 16)
 }
 // The crown: the glass cylinder, a ring at its top.
-lathe(glass, CX, CY, [[0, ROOF], [9.3, ROOF], [9.3, TOP - 1.2], [0, TOP - 1.2]], 16)
+lathe(crown, CX, CY, [[0, ROOF], [9.3, ROOF], [9.3, TOP - 1.2], [0, TOP - 1.2]], 16)
 lathe(trim, CX, CY, [[9.5, TOP - 1.2], [9.5, TOP], [8.8, TOP]], 16)
 lathe(roof, CX, CY, [[8.8, TOP - 0.6], [0, TOP - 0.6]], 16)
 
@@ -147,4 +149,5 @@ await save('chi-311-south-wacker', '311 South Wacker Drive', [41.877462, -87.635
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
   { part: glass, material: PALETTE.glass },
+  { part: crown, material: finish('neon-wacker-crown', PALETTE.glass.color, PALETTE.glass.roughness) },
 ], 6500)

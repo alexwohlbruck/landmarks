@@ -49,6 +49,7 @@
  * Exceptions: the marquee carries its lettering ("WRIGLEY FIELD", "HOME OF",
  * "CHICAGO CUBS") as flat block letters on the panel, as STYLE.md allows for
  * a famous sign. The field, the grass and the warning track are the map's.
+ * At night the marquee glows red with white letters, so both are neon.
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -293,7 +294,7 @@ export const textWidth = (text: string, h: number) => (text.length * 6 - 1) * (h
 
 function build() {
   const green = new Part(), dark = new Part(), stone = new Part(), brick = new Part()
-  const red = new Part(), win = new Part()
+  const red = new Part(), win = new Part(), sign = new Part()
 
   // ---- Grandstand -----------------------------------------------------------
   // OSM polylines (local metres), from the left-field end round home plate to
@@ -571,11 +572,11 @@ function build() {
     const L = (s: number, z: number): V3 => Pm(s, z, off)
     quad(dark, [L(-5.7, 5.3), L(5.7, 5.3), L(5.7, 7.6), L(-5.7, 7.6)], n)
     const t1 = 'CHICAGO CUBS', h1 = 1.1
-    letters(stone, t1, L, n, -textWidth(t1, h1) / 2, 7.95, h1)
+    letters(sign, t1, L, n, -textWidth(t1, h1) / 2, 7.95, h1)
     const t2 = 'HOME OF', h2 = 0.55
-    letters(stone, t2, L, n, -textWidth(t2, h2) / 2, 9.25, h2)
+    letters(sign, t2, L, n, -textWidth(t2, h2) / 2, 9.25, h2)
     const t3 = 'WRIGLEY FIELD', h3 = 0.85
-    letters(stone, t3, L, n, -textWidth(t3, h3) / 2, 10.15, h3)
+    letters(sign, t3, L, n, -textWidth(t3, h3) / 2, 10.15, h3)
     // Two steel brackets back to the facade.
     for (const s of [-4.5, 4.5]) box(green, Pm(s, 7.2, -0.9), [ur, n, [0, 0, 1]], [0.25, 0.6, 2.6])
   }
@@ -584,13 +585,16 @@ function build() {
   // The shared palette (STYLE.md) with three identity finishes: the Cubs'
   // painted-steel green (seats, steelwork, the scoreboard), pulled lighter
   // than the real deep green so it sits with the palette; the dark grey of
-  // the roof and screens; and the marquee red. Brick is `terracotta`.
+  // the roof and screens; and the marquee red. Brick is `terracotta`. The
+  // marquee is lit after dark, so its red panel and its letters (in the
+  // stone's colour) are neon (STYLE.md, "Night").
   const parts = [
     { part: green, material: finish('wrigley-green', 0x4f7d62) },
     { part: dark, material: finish('wrigley-roof', 0x5b6168) },
     { part: stone, material: PALETTE.stone },
     { part: brick, material: PALETTE.terracotta },
-    { part: red, material: finish('marquee-red', 0xc8453c) },
+    { part: red, material: finish('neon-marquee-red', 0xc8453c) },
+    { part: sign, material: finish('neon-marquee-white', PALETTE.stone.color) },
     { part: win, material: PALETTE.window },
   ]
   return parts

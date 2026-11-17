@@ -11,7 +11,9 @@
  * Identity: the symmetrical Art Deco wedding cake in pale limestone, set
  * back in tiers on every side; the deep shadowed vertical channels in the
  * middle of every face, between plain piers with punched windows; the long chamfered top tier; the Lindbergh Beacon
- * mast standing on the roof.
+ * mast standing on the roof. At night the limestone is floodlit from the
+ * setbacks, so it carries `floodlight`, rising to the top tier, the roofs of
+ * the setbacks barely lit.
  *
  * Evidence:
  *  - plan: OSM outline, 70 × 32 m, long side east-west on Walton Place.
@@ -150,8 +152,9 @@ for (const [n, u, d, h] of [[[0, -1], [1, 0], 16, 33], [[1, 0], [0, 1], 35, 14],
   for (let i = 0; i < N; i++) metal.tri(tip[i], tip[(i + 1) % N], [0, 0, 172.2])
 }
 
+const floodlit = (p: V3, n: V3): number => (0.45 + 0.55 * Math.min(1, p[2] / 142.6)) * (n[2] > 0.7 ? 0.25 : 1)
 const parts = [
-  { part: stone, material: finish('indiana-limestone', 0xece2d0) },
+  { part: stone, material: { ...finish('indiana-limestone', 0xece2d0), floodlight: floodlit } },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
   { part: metal, material: { ...PALETTE.metal, color: 0xb4b9bd, roughness: .5 } },

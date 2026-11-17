@@ -15,8 +15,8 @@
  * maps the whole museum as one outline with no parts, so it gives no Rose
  * Center footprint or heights of its own.
  *
- * The glass. The renderer has no blending, only opaque and alpha-masked
- * surfaces, so glass cannot be seen through. Instead each glass face is
+ * The glass. Built before translucent glass (STYLE.md), so it is opaque
+ * and cannot be seen through. Instead each glass face is
  * single-sided and faces *into* the cube: with back faces culled, the walls
  * nearest the camera vanish and the far ones show their inside as a pale
  * blue-grey backdrop behind the sphere — from any side, at any bearing, since
@@ -25,6 +25,9 @@
  * light frame (corners, a few broad divisions, the roof's edge and centre cross) is solid and
  * carries the cube's outline. The shadow pass draws both faces, so the cube
  * still casts a full shadow.
+ *
+ * Night: the sphere is lit inside the cube and glows through the glass, so
+ * it carries a `floodlight` wash (STYLE.md, "Night"); the glass stays dark.
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 
@@ -203,10 +206,13 @@ const CH = 0.45
 // Colours from the daylight photos: the steel is painted white, the glass a
 // pale blue-grey (its far side, seen through the near one, a little deeper),
 // the sphere's aluminium skin near white, the podium a dark warm granite.
+// The sphere's lights stand in the cube round its foot and aim up at it:
+// lit all over, its underside and flanks most, its crown a little less.
+const sphereLit = (_p: V3, n: V3): number => (n[2] > 0.7 ? 0.7 : 1)
 const parts = [
   { part: glass, material: { name: 'glass', color: 0xb3c3cb } },
   { part: frame, material: { name: 'frame', color: 0xe4e7e8 } },
-  { part: sphere, material: { name: 'sphere', color: 0xeceae5 } },
+  { part: sphere, material: { name: 'sphere', color: 0xeceae5, floodlight: sphereLit } },
   { part: granite, material: { name: 'granite', color: 0x6e6a65 } },
   { part: deck, material: { name: 'terrace', color: 0xbdb9b1 } },
   { part: floor, material: { name: 'hall-floor', color: 0x9ea3a6 } },

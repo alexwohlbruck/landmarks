@@ -15,7 +15,9 @@
  * a tall, slightly pointed dome with nine ribs, crowned by a small finial.
  * White is the identity, so the body is a near-white finish; the dome's
  * lacework (glass behind pierced concrete) reads a shade greyer than the
- * ribs, which is how the photos show it.
+ * ribs, which is how the photos show it. At night the whole temple is
+ * floodlit white from its grounds, so the white and the dome's lace carry
+ * `floodlight`, the dome and pylons to the full, faces looking up barely.
  *
  * Abstraction: the ornament (tracery, the religious symbols on the pylons,
  * inscriptions) is left out. Each face's entrance is one arched `window`
@@ -194,9 +196,13 @@ for (let k = 0; k < N; k++) {
 }
 lathe(white, 0, 0, [[1.6, DRUM + DOME_H - 0.4], [1.2, DRUM + DOME_H + 0.6], [0.5, DRUM + DOME_H + 1.4], [0.25, 58.2], [0, 58.2]], 9, FACE0)
 
+const floodlit = (p: V3, n: V3): number => (0.75 + 0.25 * Math.min(1, p[2] / 40)) * (n[2] > 0.7 ? 0.3 : 1)
+const WHITE = { ...finish('lace-white', 0xf4f3ee), floodlight: floodlit }
+const LACE = { ...finish('lace-dome', 0xdcddda), floodlight: floodlit }
+
 await save('chi-bahai-temple', "Bahá'í House of Worship", [
-  { part: white, material: finish('lace-white', 0xf4f3ee) },
-  { part: lace, material: finish('lace-dome', 0xdcddda) },
+  { part: white, material: WHITE },
+  { part: lace, material: LACE },
   { part: win, material: { ...PALETTE.window, color: 0x8e9caa } },
   { part: stone, material: PALETTE.stone },
 ], { height: 58.2 })

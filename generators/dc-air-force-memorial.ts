@@ -39,6 +39,8 @@
  * Left out: the Honor Guard statues, the inscription walls and the glass
  * contemplation wall, all small and some way from the spires; the plaza and
  * its star are ground.
+ *
+ * Night: the three spires are floodlit from their feet to the tips.
  */
 import { Part, type V3 } from './mesh'
 import { finish } from './palette'
@@ -102,7 +104,8 @@ for (const { tri, h } of SPIRES) {
 const { save } = await import('./dc-wwii-memorial')
 await save('dc-air-force-memorial', 'United States Air Force Memorial', [
   // Polished stainless steel: a light, cool grey that takes the sky.
-  { part: steel, material: finish('stainless-steel', 0xc8ccd0, 0.35) },
+  // At night the spires are lit from their feet, bright to the tips.
+  { part: steel, material: { ...finish('stainless-steel', 0xc8ccd0, 0.35), floodlight: (p: V3) => Math.max(0.55, 1 - p[2] / 160) } },
   // The dais's dark granite paving edge, pulled light.
   { part: dais, material: finish('af-granite', 0x9a9c9c) },
 ], { bearing: 0 })

@@ -44,7 +44,19 @@ and photos. Every rule here fixes something that went wrong.
   make it feel finished.
 - **Big readable forms, little detail.** No mullions, ledges, thin ribs,
   railings, fine sculpture or lettering. If it won't read at 200 px on a
-  phone, leave it out.
+  phone, leave it out. Two exceptions, below: the tracery of a big
+  window, and doors (see Windows and facades).
+- **Bridges are the exception, in their detail model.** A suspension
+  bridge's cables, suspenders and stays are what make it itself, so they
+  are modelled, along with trusses and railings, in a detail GLB the map
+  draws close up (see Levels of detail and Bridges in `docs/reference.md`). The
+  model owns walkways and tracks on the bridge, surfaces included; the map
+  draws the road surfaces and their markings. The
+  low model keeps the towers, anchorages, cables and the deck structure as
+  solid bands, and drops everything thin. Draw thin members a little
+  thicker than they are (a suspender 0.3–0.45 m, a cable about twice its
+  real diameter) and at no more than half their real density, so they read
+  without shimmering.
 
 ## Ground
 
@@ -61,7 +73,7 @@ and photos. Every rule here fixes something that went wrong.
   it: a stadium field dug below grade keeps y = 0 at the field, and
   `elevation` is minus the field's depth below the street outside. Never
   move y = 0 off the model's own base to fake either. See Elevation in
-  `README.md`.
+  `docs/reference.md`.
 - **Nothing important in the bottom of the uphill walls.** Doors, plinths
   and the first band of windows on the uphill side end up below ground, so
   start the facade detail at that side's real ground level.
@@ -94,6 +106,54 @@ and photos. Every rule here fixes something that went wrong.
 - **Special windows are flush shapes.** Triangles, portholes and rosettes are
   flat `window` (or `glass`) geometry set into the wall, never spikes or
   cones standing proud.
+- **Match the window's real shape.** A pointed lancet is pointed, a
+  round-headed window is a semicircle on its jambs, a square window is
+  square. Take the head, the width and the sill and head heights from the
+  evidence, light by light, rather than one generic window repeated
+  everywhere. A pale stone surround around a window is fine where the
+  building has one.
+- **Tracery is the exception to "no mullions".** Where a big window's
+  tracery is what people recognise (a church's great window, its lancets,
+  a belfry opening), draw it as a few bold `trim` bars set flush in the
+  window: mullions dividing it into its real lights (two to four), the
+  fork of Y tracery, a transom or two. Bars 0.14–0.2 m wide, stopped under
+  the arch, never poking past it. No cusps, foils or fine glazing grids;
+  small windows stay plain panels, a cross of bars at most.
+- **Doors and entryways are modelled.** A landmark's real entrances (the
+  main portal, side doors, porches, steps and entry canopies) are part of
+  how it reads from the street and are drawn, where the evidence shows
+  them: door leaves as a flush panel in a door finish (one material, such
+  as a muted oak), a pale stone surround, and a glazed fanlight or transom
+  over them in `window`, following the real head shape (round, pointed or
+  flat). A gabled porch is a small gabled mass; an open canopy is a slab
+  on posts, not a solid block. Doors sit at the real ground of their wall,
+  not at y = 0. Don't invent a door no evidence shows.
+
+## Translucent glass
+
+Most glass is opaque: a curtain wall is a `window` wall, a glass roof is
+`glass`. Only where seeing *through* the glass is the identity, as with a
+glass cube, a glass pavilion or a glass entrance kiosk, make it translucent:
+give the material an `opacity` (0.2 to 0.35 reads as glass) and the map
+draws what is inside through it, faintly tinted.
+
+- Name it `glass` (or `glass-2`, …) so it stays dark at night, and make it
+  `doubleSided`, so the far walls read through the near ones.
+- Model what is seen through it: the stair, the lift, the logo, the floor.
+  An empty translucent box reads as nothing.
+- Glass gets more opaque toward edge-on, as real glass does, so a wall seen
+  at a slant reads bluer than one seen face on. Glass fins at the panel
+  joints use this: seen edge-on they draw as the tinted lines that divide
+  the panels, with no steel needed.
+- Carry the outline with a thin solid frame: corners, the roof edge, the
+  sills. Glass alone has no edges at map distance.
+- Tint it: a clear blue such as `#7fc4de` reads as glass where the
+  palette's grey-blue `glass` washes out to grey.
+- Translucent glass casts no shadow on the map, and nothing is shadowed by
+  it. A reader without blending draws it opaque in its own colour, so pick
+  a colour that also works as a solid pale glass box (`glass` `#a4c4d9`).
+- Use it sparingly: one or two translucent materials per model, never a
+  whole tower.
 
 ## Colour
 
@@ -120,6 +180,8 @@ and photos. Every rule here fixes something that went wrong.
 
 - At most 5,000 triangles for most landmarks; 6,500 for the most complex,
   and never over Open Landmarks' low-LOD cap of 8,000 triangles and 250 KB.
+- A detail model, where there is one, stays under Open Landmarks' detail
+  cap: 40,000 triangles and 1.5 MB.
 - No textures. Open Landmarks allows none, and its validator rejects them.
 - Use 8 to 12 segments per semicircle and 12 to 16 around a full circle.
 
@@ -137,6 +199,14 @@ Shadows fall on the ground under the model.
 
 ## Night
 
+Every landmark is also seen at night, so design its night look on purpose.
+Before finishing, ask what is lit on the real building after dark, from
+night photos where they exist: a neon or illuminated sign, a lit crown or
+spire, floodlit stone, lit windows, cable or lantern lights. Give each the
+material or attribute below, and check `bun run preview <id> --night`
+beside a night photo. What is dark in reality (glass roofs, unlit walls)
+stays dark.
+
 The map lights a landmark at night by glTF material name, the same
 convention as Open Landmarks. Colours stay as they are by day; the name
 only decides what glows.
@@ -147,12 +217,33 @@ only decides what glows.
   unique in a GLB, so a model with several window colours names the rest
   `window-2`, `window-3` and so on: any name starting with `window` is a
   window.
+- **`neon`**: a lit sign that glows in its own colour at night: neon or
+  illuminated letters, a sign's lit face, coloured crown lighting. Drawn in
+  its day colour by day. Any name starting with `neon` is neon
+  (`finish('neon-domino-yellow', 0xe9b93c)`), so a sign keeps its real
+  colour.
 - **`glass`**: structural glazing that stays dark: atria, skylights, glass
   roofs and crowns, the Rose Center's cube.
 - **`entrance`**: a main entrance's doors or glazing, which glow at night.
   Only where the model already has a separate material for it.
+- **`lamp`**: light fittings that are part of the landmark's identity at
+  night, such as a bridge's cable lights and lantern heads. Parchment draws
+  them as warm white points at night and not at all by day; other readers
+  draw them in their own colour by day, so give them the fitting's paint
+  rather than a bright colour. Any name starting with `lamp` is a lamp. Draw them as small solid beads, a little larger than
+  the real fitting, at their real spacing or sparser in a low model, so
+  they read as points rather than shimmer.
 
-Everything else is unlit. (Parchment also glows painted `window*` textures
+Everything else is unlit, unless it is floodlit. A landmark whose stone is
+floodlit at night, such as a bridge's towers, carries a `_FLOODLIGHT`
+vertex attribute: a float from 0 to 1 per vertex, how much of the
+floodlighting falls there. The map washes those surfaces back toward their
+own colour in warm white light at night, and ignores the attribute by day.
+Set it with `floodlight` on a material in `mesh.ts`, as a function of each
+vertex's position and normal, so it can be shaped like the real lighting
+(brightest near the fixtures, faces looking up barely lit) and limited to
+the parts that are really lit. It costs no material, and readers that don't
+know it ignore it. (Parchment also glows painted `window*` textures
 by their alpha, for older models; new models have no textures.)
 
 ## Animation (experimental)
@@ -302,6 +393,12 @@ almost all data.
 
 ### Towers, rides, sculpture and signs
 
+- **Towers keep their real stages and parapet.** Model a tower's stages as
+  the evidence shows them: a wider lower stage with a ledge where it steps
+  in, the belfry openings at their real height and shape, string courses,
+  and the parapet as it is (solid, crenellated, raised at the corners).
+  Never add pinnacles, spirelets or finials that no photo or source model
+  shows.
 - **Small, famous objects** (sculpture, statues, signs, vehicles) can spend
   more of their budget on detail. Keep every part a bold, simple mass that
   reads at 200 px. Real dimensions and the real pose matter more than
@@ -310,10 +407,21 @@ almost all data.
   the moving part as its own node from the start, even if it ships static,
   so it can be animated later (see Animation). Give it a detail that shows
   the motion, such as the flag stripes on the SkyTower's cabin.
-- **Famous signs** (the Cyclone, a theatre marquee) may carry their
-  lettering when the sign is the landmark. Build the letters as simple
-  extruded block shapes on a flat panel, not a texture, and note the
+- **Famous signs** (the Cyclone, a theatre marquee, the Pepsi-Cola sign)
+  may carry their lettering when the sign is the landmark, and note the
   exception in the generator. Other marquees and signs are plain boxes.
+  - **Copy the real letterforms.** Trace each letter from a licensed photo
+    of the sign: script stays script, serifs stay serifs, a condensed
+    sans stays condensed, and the letters keep their real spacing, slant
+    and baseline curve. Never a pixel, 5 × 7 grid or generic block font,
+    and never a texture.
+  - **Build them with `generators/lettering.ts`.** Draw each letter's
+    centre-lines with `Pen` (lines, Bézier curves, arcs) and extrude them
+    with `strokes` at the real stroke weight. Bend `place` to follow a
+    curved canopy or drum.
+  - **Bold enough for a phone.** If the word vanishes at 200 px, thicken
+    the strokes and the depth a little rather than adding detail. Compare
+    the letters with the photo side by side, as for the rest of the model.
 
 ### Report the doubts
 
@@ -364,6 +472,11 @@ Each of these was built, reviewed and rejected. Don't repeat them.
   short spiky coronet and pale granite with punched windows. It was merged
   from a contact sheet without opening the reference photos.
 - **A rework that redesigns an approved crown** (see above).
+- **Invented pinnacles and generic windows on a church.** Myers Park
+  Presbyterian's first pass gave its bell tower cone pinnacles it doesn't
+  have and drew every opening as the same plain lancet, losing the
+  two-stage tower, the Y-traceried lancets, the round-headed windows and
+  every door. Read each opening's shape from the evidence.
 
 ## Checking a model
 
@@ -380,6 +493,12 @@ model from the photo's side with `bun tools/view.ts` and pair the two with
 - it is symmetrical wherever the building is;
 - nothing pokes past an edge or a corner;
 - it still reads as itself in the 80 px view.
+
+Every face is wound counter-clockwise seen from outside: the map culls back
+faces by winding, so a face wound inward is see-through on the map even
+when its normals light it correctly. `Part.tri` winds faces to agree with
+any explicit normals it is given, the preview culls by winding as the map
+does, and `bun run validate` rejects a model with surfaces wound inward.
 
 `bun tools/glb-stats.ts <id>` checks the budget: triangles, size, material
 count, and that the lowest point is at y = 0.

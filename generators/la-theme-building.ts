@@ -62,6 +62,9 @@
  * - Left out: the cables from the arches to the deck, the deck railing,
  *   the perforations of the screen wall (a dot grid; drawn as a plain
  *   pale wall), the gardens and paving inside it.
+ * - Night: the arches are washed with light from below (coloured since
+ *   1997), so the white carries a floodlight wash on the legs and ribs
+ *   only; the saucer's glass is `window` (STYLE.md, "Night").
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -288,8 +291,19 @@ arch([1, 0, 0])
 // the base building `stone`; deck and roofs `roof`; the restaurant glass
 // `window` (it is lit at night). The core's tiles are a strong blue that is
 // half of the building's identity in every photo, pulled lighter.
+// At night the arches are uplit; the saucer and screen wall, which share
+// the white, are not. The arches lie in the x = 0 and y = 0 planes: lit
+// where they stand clear of the saucer (outside its rim, or above the deck),
+// a little less on faces looking up.
+const archLit = (p: V3, n: V3): number => {
+  const r = Math.hypot(p[0], p[1])
+  if (Math.min(Math.abs(p[0]), Math.abs(p[1])) > 3.5) return 0
+  if (Math.abs(r - SCR_R) < 1 && p[2] < SCR_H + 0.3) return 0
+  if (r < GLASS_TOP_R + 1.5 && p[2] < DECK + 0.5) return 0
+  return n[2] > 0.7 ? 0.5 : 0.9
+}
 const parts = [
-  { part: white, material: PALETTE.trim },
+  { part: white, material: { ...PALETTE.trim, floodlight: archLit } },
   { part: wall, material: PALETTE.stone },
   { part: roof, material: PALETTE.roof },
   { part: glass, material: PALETTE.window },

@@ -52,6 +52,11 @@
  * (west). Everything else is the static root. At t = 0 it is the static
  * model.
  *
+ * Night: the rim carries the wheel's LED lighting (some 2,000 lights, in
+ * shows of changing colour), so the rim is its own `neon` material in the
+ * white of the steel and glows at night (STYLE.md, "Night"); the spokes,
+ * hub, legs and cabins stay unlit. The rim turns with the wheel.
+ *
  * Replaces the attraction outline (way/402543930, not a building, but it is
  * the wheel). The boarding station and the LINQ buildings around the foot
  * stay drawn by the map.
@@ -67,7 +72,8 @@ const CAB = 3.35              // cabin radius, 22 ft across
 const SPINDLE = 16            // spindle ends, either side of the wheel
 const HUB_X = 13.4            // hub flanges, where the cable spokes start
 
-const white = new Part()      // rim, spokes, hub
+const white = new Part()      // spokes, hub
+const rim = new Part()        // the rim, lit at night
 const legs = new Part()       // spindle, A-frames, backstay (static)
 const grey = new Part()       // hub flanges (turning)
 const housings = new Part()   // bearing housings at the spindle ends (static)
@@ -139,8 +145,8 @@ const rect = (a: number, b: number, c: number): Profile =>
   }
   for (let i = 0; i < SEG; i++) for (let k = 0; k < m; k++) {
     const l = (k + 1) % m
-    tri(white, [at(i, k), at(i, l), at(i + 1, l)], [nrm(i, k), nrm(i, k), nrm(i + 1, k)])
-    tri(white, [at(i, k), at(i + 1, l), at(i + 1, k)], [nrm(i, k), nrm(i + 1, k), nrm(i + 1, k)])
+    tri(rim, [at(i, k), at(i, l), at(i + 1, l)], [nrm(i, k), nrm(i, k), nrm(i + 1, k)])
+    tri(rim, [at(i, k), at(i + 1, l), at(i + 1, k)], [nrm(i, k), nrm(i + 1, k), nrm(i + 1, k)])
   }
 }
 
@@ -219,6 +225,8 @@ for (const s of [-1, 1]) {
 const STEEL: MaterialSpec = finish('white-steel', 0xe8e6e1, 0.6)
 const GLASS: MaterialSpec = PALETTE.window
 const GREY: MaterialSpec = PALETTE.roof
+// The rim's LED lighting, drawn in the steel's white.
+const RIM: MaterialSpec = finish('neon-high-roller-white', 0xe8e6e1, 0.6)
 
 // --- Motion --------------------------------------------------------------------------
 const LOOP = 150
@@ -232,7 +240,7 @@ const plumb: Quat[] = turned.map((a) => axisAngle(AXLE, a))
 const nodes: NodeSpec[] = [{
   name: 'wheel',
   translation: [0, 0, H],
-  parts: [{ part: white, material: STEEL }, { part: brackets, material: STEEL }, { part: grey, material: GREY }],
+  parts: [{ part: white, material: STEEL }, { part: rim, material: RIM }, { part: brackets, material: STEEL }, { part: grey, material: GREY }],
 }]
 const channels: ChannelSpec[] = [{ node: 0, path: 'rotation', values: wheelTurn }]
 for (let k = 0; k < 28; k++) {

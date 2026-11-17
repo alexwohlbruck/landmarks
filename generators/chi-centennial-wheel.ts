@@ -16,6 +16,7 @@
  * round hub with a logo disc on each face, and four white tube legs: a
  * near-vertical A-frame on the west side and two long back-stays splayed
  * out to the east (the X that NAIP shows east of the wheel).
+ * At night the rim is lit by its ring of LEDs, so it is neon and glows.
  *
  * Abstraction (STYLE.md: no thin ribs): each face's rim truss is one solid
  * band; the many lattice spokes are twenty-one members per face; each
@@ -195,7 +196,8 @@ const wheelTurn: Quat[] = turned.map((a) => axisAngle(AXLE, a))
 const plumb: Quat[] = turned.map((a) => axisAngle(AXLE, -a))
 
 const WHITE: MaterialSpec = finish('wheel-white', 0xf1f0ec, 0.6)
-const SILVER: MaterialSpec = finish('rim-silver', 0xc3c9ce, 0.5)
+// The rim carries the wheel's LED lights, so it glows after dark.
+const SILVER: MaterialSpec = finish('neon-rim-silver', 0xc3c9ce, 0.5)
 const NAVY: MaterialSpec = finish('gondola-navy', 0x48526a, 0.4)
 const ROUNDEL: MaterialSpec = finish('roundel', 0x6b4650, 0.6)
 

@@ -3,8 +3,11 @@
  * procedural, CC0-1.0, no textures.
  * bun generators/nyc-george-washington-bridge.ts
  *
- * One tower, placed twice (New Jersey and New York; OSM maps both with the
- * same 72.5 x 28 m outline). Map frame: x across the bridge, y along it
+ * One tower, built for both sites (OSM maps both with the same 72.5 x 28 m
+ * outline): this file writes the New Jersey tower, standing on the water,
+ * and exports `writeTower`, which nyc-george-washington-bridge-new-york.ts
+ * uses to stand the New York tower on its shore, at its own roadway
+ * height. Map frame: x across the bridge, y along it
  * (toward New Jersey), z up, metres; origin at the tower's centre on the
  * water. Placed at bearing 284.4°, the line from the New York tower's
  * centroid to the New Jersey one's (1,064 m apart; the published main span
@@ -52,8 +55,10 @@
  * - Colour: lit steel in daylight photos reads #acb3bd to #e0e2e6, a pale
  *   grey with a faint blue; pulled to the palette's lightness, the bracing a
  *   shade deeper so the X panels read against the posts.
- * - y = 0 is the river. The New Jersey tower stands at the shore's edge on
- *   rock a few metres up; the map puts y = 0 at the lowest ground under it.
+ * - y = 0 is the river, -0.7 m NAVD88 in the lidar. Mapterhorn, the map's
+ *   terrain, reads the water under the New Jersey tower at a flat -0.9 m;
+ *   the New York tower stands on land on the Manhattan shore (see its own
+ *   generator).
  *
  * The lattice is drawn as broad plates: corner posts, horizontal struts at
  * each panel line, and one X of two wide plates per panel, on every face of
@@ -62,6 +67,7 @@
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 import { finish, type Swatch } from './palette'
 import { box, countParts } from './nyc-manhattan-bridge'
+import { chamferedRect, footedLoft } from './bridge-kit'
 
 // ---- Helpers (shared with the Verrazzano-Narrows and Hell Gate generators) ----
 
@@ -120,6 +126,8 @@ export type LatticeOpts = {
   pw?: number; sh?: number; st?: number; xw?: number; xt?: number; faces?: string[]
   /** Leave out the X in face f's panel k. */
   skipX?: (f: string, k: number) => boolean
+  /** Run the corner posts down to this ground (hidden in the pier) rather than stopping at the first level. */
+  foot?: (x: number, y: number) => number
 }
 
 /**
@@ -127,10 +135,15 @@ export type LatticeOpts = {
  * on whichever of its four faces `faces` names. x0..x1 by y0..y1 in plan.
  */
 export function latticeBox(post: Part, brace: Part, x0: number, x1: number, y0: number, y1: number,
-  levels: number[], { pw = 3, sh = 2, st = 1.0, xw = 2.2, xt = 0.8, faces = ['s', 'n', 'w', 'e'], skipX = (): boolean => false }: LatticeOpts = {}) {
+  levels: number[], { pw = 3, sh = 2, st = 1.0, xw = 2.2, xt = 0.8, faces = ['s', 'n', 'w', 'e'], skipX = (): boolean => false, foot }: LatticeOpts = {}) {
   const zb = levels[0], zt = levels[levels.length - 1]
-  for (const [x, y] of [[x0, y0], [x1 - pw, y0], [x1 - pw, y1 - pw], [x0, y1 - pw]])
-    box(post, x, x + pw, y, y + pw, zb, zt, { r: 0.35, bottom: false })
+  for (const [x, y] of [[x0, y0], [x1 - pw, y0], [x1 - pw, y1 - pw], [x0, y1 - pw]]) {
+    if (foot) footedLoft(post, foot, [
+      { plan: chamferedRect(x, x + pw, y, y + pw, 0.35), z: 'ground' },
+      { plan: chamferedRect(x, x + pw, y, y + pw, 0.35), z: zt },
+    ], pw)
+    else box(post, x, x + pw, y, y + pw, zb, zt, { r: 0.35, bottom: false })
+  }
   const F: Record<string, [Face, number, number]> = {
     s: [(a, z, n) => [a, y0 + n, z], x0 + pw, x1 - pw],
     n: [(a, z, n) => [a, y1 - n, z], x0 + pw, x1 - pw],
@@ -182,15 +195,30 @@ export function haunches(p: Part, ro: number, zs: number, hx: number, z1: number
 
 // ---- The George Washington Bridge tower ---------------------------------------
 
-if (import.meta.main) {
+/**
+ * How one tower is placed: the upper roadway's height at it and its pier's
+ * top (m above the river), and the ground under its pier, if the pier runs down to it (the
+ * New York tower; see nyc-george-washington-bridge-new-york.ts). Without
+ * `ground` the pier stands on the water at z = 0.
+ */
+export type TowerSite = {
+  id: string
+  deck: number
+  pier?: number
+  ground?: (x: number, y: number) => number
+  extras?: Record<string, unknown>
+}
+
+/** Builds one tower and writes models/<id>.glb. */
+export async function writeTower({ id, deck, pier: pierTop = 4.5, ground, extras = {} }: TowerSite) {
   const steel = new Part()   // posts, struts, attic, arch rings
   const brace = new Part()   // X panels and spandrels, a shade deeper
   const pier = new Part()    // concrete pier
   const road = new Part()    // deck stub's roadway
 
   // Heights (m above the river).
-  const PIER = 4.5
-  const DECK0 = 63, DECK = 74          // deck stub: underside, upper roadway
+  const PIER = pierTop
+  const DECK0 = deck - 11, DECK = deck // deck stub: underside, upper roadway
   const LOW_SPRING = 42                // lower arch, intrados crown 57
   const SPRING = 127                   // upper arch, intrados crown 142
   const SPAN1 = 146.5, SPAN2 = 161.5   // spandrel struts
@@ -201,9 +229,23 @@ if (import.meta.main) {
   const D = 7.75                       // half depth along the bridge (lidar 15.5 m)
   const R = XI, RO = XI + 2.4          // arch intrados = the legs' inner faces; ring 2.4 m
 
-  // Pier.
-  box(pier, -36.2, 36.2, -14, 14, 0, PIER - 0.8, { r: 0.8, bottom: false })
-  box(pier, -34.5, 34.5, -11, 11, PIER - 0.8, PIER, { r: 0.6, top: 0.3, bottom: false })
+  // Pier: on the water, or from the ground under it with the same steps.
+  // The step's own wall runs on down to the ground inside the pier, hidden,
+  // so that nothing but feet stands at the bottom of the model.
+  if (ground) {
+    const outer = chamferedRect(-36.2, 36.2, -14, 14, 0.8), step = chamferedRect(-34.5, 34.5, -11, 11, 0.6)
+    footedLoft(pier, ground, [
+      { plan: outer, z: 'ground' },
+      { plan: outer, z: PIER - 0.8 },
+      { plan: step, z: PIER - 0.8 },
+      { plan: step, z: PIER - 0.3 },
+      { plan: chamferedRect(-34.2, 34.2, -10.7, 10.7, 0.48), z: PIER },
+    ], 5)
+    footedLoft(pier, ground, [{ plan: step, z: 'ground' }, { plan: step, z: PIER - 0.8 }], 5, false)
+  } else {
+    box(pier, -36.2, 36.2, -14, 14, 0, PIER - 0.8, { r: 0.8, bottom: false })
+    box(pier, -34.5, 34.5, -11, 11, PIER - 0.8, PIER, { r: 0.6, top: 0.3, bottom: false })
+  }
 
   // Legs: four X panels on each face below the deck, the deck zone, seven above.
   const levels = [PIER]
@@ -215,6 +257,7 @@ if (import.meta.main) {
     latticeBox(steel, brace, x0, x1, -D, D, levels, {
       // The inner face behind the deck stub is hidden.
       skipX: (f, k) => (f === (s > 0 ? 'w' : 'e') && k === 4),
+      foot: ground,
     })
   }
 
@@ -274,9 +317,11 @@ if (import.meta.main) {
   if (triangles > 6500) throw new Error(`Triangle budget exceeded: ${triangles}`)
   const glb = writeGlb('George Washington Bridge tower', parts, {
     license: 'CC0-1.0', frame: 'Y up, -Z north, +X east, metres; origin at the tower centre on the water',
-    height: TOP, bearing: 284.4, elevation: 0,
+    height: TOP, bearing: 284.4, elevation: 0, ...extras,
   })
   if (glb.length > 256000) throw new Error(`File budget exceeded: ${glb.length}`)
-  await Bun.write(new URL('../models/nyc-george-washington-bridge.glb', import.meta.url), glb)
-  console.log(`nyc-george-washington-bridge.glb: ${triangles} triangles, ${glb.length} bytes`)
+  await Bun.write(new URL(`../models/${id}.glb`, import.meta.url), glb)
+  console.log(`${id}.glb: ${triangles} triangles, ${glb.length} bytes`)
 }
+
+if (import.meta.main) await writeTower({ id: 'nyc-george-washington-bridge', deck: 74 })

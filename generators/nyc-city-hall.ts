@@ -42,6 +42,11 @@
  * the wing ends and the rear are drawn with the front's rhythm), the
  * cupola's stage sizes (photos scaled to the lidar's 40 m top), the statue
  * (a bold standing figure with the scales raised, 3.8 m).
+ *
+ * Night: the front and the cupola are floodlit, white over the dark park;
+ * the wing ends and the rear much less. So the limestone and granite carry
+ * a floodlight wash (STYLE.md, "Night"), strongest on the south front and
+ * all round the cupola above the roof.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -362,9 +367,18 @@ function build() {
   const hand = figure(stone, cx, cy, Z4 + 0.7, 3.9, { raise: 1 })
   if (hand) block(stone, hand[0] - 0.35, cy - 0.06, hand[0] + 0.35, cy + 0.06, hand[2] - 0.05, hand[2] + 0.05)
 
+  // Floodlit: the south front and the cupola (above 23 m) bright, the rest
+  // dim, upward faces faint.
+  const lit = (p: V3, n: V3): number => {
+    if (p[2] > 23) return n[2] > 0.7 ? 0.5 : 0.95
+    if (n[2] > 0.7) return 0.15
+    return n[1] < -0.5 ? 0.9 : 0.35
+  }
+  const LIMESTONE = { ...finish('cityhall-limestone', 0xf0ece3), floodlight: lit }
+  const GRANITE = { ...finish('cityhall-granite', 0xd9c5bf), floodlight: lit }
   finishModel('New York City Hall', 'nyc-city-hall', [
-    { part: stone, material: finish('cityhall-limestone', 0xf0ece3) },
-    { part: granite, material: finish('cityhall-granite', 0xd9c5bf) },
+    { part: stone, material: LIMESTONE },
+    { part: granite, material: GRANITE },
     { part: win, material: PALETTE.window },
     { part: roof, material: finish('cityhall-roof', 0xc3c6c6) },
     { part: dark, material: { ...PALETTE.window, name: 'window-2', color: 0x5d6c78 } },

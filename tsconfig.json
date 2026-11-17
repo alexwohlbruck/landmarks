@@ -5,8 +5,9 @@
     "moduleResolution": "bundler",
     "types": ["bun"],
     "strict": true,
+    "resolveJsonModule": true,
     "noEmit": true,
     "skipLibCheck": true
   },
-  "include": ["src", "tools", "test", "generators"]
+  "include": ["src", "tools", "test", "generators", "web"]
 }

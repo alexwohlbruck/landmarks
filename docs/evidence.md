@@ -1,8 +1,10 @@
 # Evidence
 
-Every model here is published as CC0 and can be contributed to
-[Open Landmarks](https://github.com/benjamintd/open-landmarks). That only
-holds if the model was shaped from open sources. This page lists the sources
+New original models default to CC0-1.0. Imported models and alternate licenses
+must retain their own license and attribution in the catalog; the combined
+website does not relicense OpenLandmarks assets. Eligibility for contribution
+to [Open Landmarks](https://github.com/benjamintd/open-landmarks) depends on
+its contribution requirements and the model's sources. This page lists the sources
 that are allowed, the ones that aren't, and how to use the lidar, OSM and
 photo tools in `tools/`.
 
@@ -13,7 +15,8 @@ photo tools in `tools/`.
 | OpenStreetMap | Footprint, building parts, tagged heights and levels, names, Wikidata ids | ODbL | `tools/osm.py` |
 | USGS 3DEP lidar point clouds | Real heights of every tier, roof shapes, edges | Public domain | `tools/lidar.py` |
 | USGS NAIP orthophotos | The true plan, roof colours, shadows | Public domain | `tools/usgs.py naip` |
-| USGS 3DEP bare-earth DEM | How the site slopes | Public domain | `tools/usgs.py dem` |
+| Mapterhorn terrain (from USGS 3DEP in the US) | The ground the map draws under a model, and how the site slopes | Open; see mapterhorn.com/attribution | `tools/terrain.ts` |
+| USGS 3DEP bare-earth DEM | How the site slopes, at finer spacing | Public domain | `tools/usgs.py dem` |
 | County and city open data | Lidar-derived footprints and heights, historic-landmark records | Usually public domain or open; check each | `tools/lacounty.py` for LA County |
 | Wikimedia Commons | Photos | Per file: CC0, PD, CC BY, CC BY-SA | `tools/photos.py commons` |
 | Openverse (Flickr and others) | Photos | Per photo | `tools/photos.py openverse` |
@@ -58,6 +61,13 @@ The generator's header comment is the record. For every model it lists:
 - the look-only references, apart from the rest;
 - the doubts: a side no photo shows, an OSM tag that looked wrong, a height
   read from a shadow.
+
+Also copy publishable visual-reference information into the model's catalog
+`references`: `title`, `url`, and optional `author` and `license`. The website
+exposes these separately from model creator credits. Record human/organization
+and AI authors in `credits`, with the actual LLM version in each AI credit's
+`model` field and optional `github` username for profile/attribution links.
+A reference photo's license is not automatically the model's artistic license.
 
 Record sources as you collect them. Rebuilding credits afterwards from
 memory or scratch folders doesn't work.
@@ -173,7 +183,7 @@ building, and outlines can be out of date.
 
 `buildings` lists every outline and `building:part` in the box. That is
 where `replaces` comes from: the outline and every part the model covers
-(see "What `replaces` must list" in the README).
+(see "What `replaces` must list" in [`reference.md`](reference.md)).
 
 Set `LANDMARKS_USER_AGENT` to a User-Agent with your own contact before
 using these tools much. Nominatim allows one request a second.
@@ -214,5 +224,32 @@ The terrain is often too coarse or older than the dig, and under-reads pits:
 it shows SoFi Stadium's field 1.9 m down where the real field is about 30 m
 down. Record the value and its source in the header.
 
+### The map's terrain
+
+The map's 3D terrain is Mapterhorn: terrarium tiles at z15, about 2 m a
+pixel in the US, built from USGS 3DEP lidar. Lidar bare earth counts raised
+plazas, podiums, grand stairs and theme-park rockwork as ground, so the
+terrain often shows part of a landmark too. The map takes that copy out:
+inside a landmark's footprint it fills the terrain from the ground just
+outside, never higher than the real ground, and the model draws what was
+there. So build those parts to their real heights from the usual evidence;
+the terrain is not evidence for them.
+
+Read the ground around the site before modelling the base
+(`bun tools/terrain.ts grid <lon> <lat> <half-m> [step] --bearing <deg>`),
+and check the finished model with `bun tools/terrain.ts check <id>`. The
+check stands the model on the terrain the way the map does and lists every
+visible top (a deck, a step, a plaza, a planter) that ends up under the
+drawn ground. What it usually means:
+
+- **A long face near the ground.** The map lifts each vertex by the ground
+  under it, so a long quad stays flat where the ground bulges. Split low
+  faces into pieces no longer than about 5 m.
+- **A low top right at the footprint's edge**, where the ground outside
+  rises above it: check its height against photos. If it is right, say so
+  in the header and the PR.
+- **Terrain that is wrong for the site** (a hill since cut away, a newer
+  dig): keep the model true to the photos and say so in the header.
+
 Elevation needs Barrelman 0.10.5 or later to reach the map (see
-[workflow.md](workflow.md#deploy)).
+[workflow.md](workflow.md#9-deploy)).

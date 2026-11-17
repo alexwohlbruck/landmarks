@@ -69,6 +69,9 @@
  * portico's centre line; the photos show eight across with an open middle.
  * Not modelled: the statue, the pediment sculpture, the column flutes and
  * volutes, the plaza beyond the bottom step, and any water.
+ *
+ * Night: the marble is floodlit (colonnade, portico and dome brightest, the
+ * terrace wall and steps dim), and the chamber's openings glow as entrance.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -321,11 +324,19 @@ orient(marble, [[-PX, PY0, COL_TOP], [PX, PY0, COL_TOP], [PX, PY1, COL_TOP], [-P
 // Shift from the rotunda's centre to the outline centroid: map y → glTF −z.
 for (const p of [marble, roof, lawn, dark]) for (let i = 2; i < p.pos.length; i += 3) p.pos[i] -= OY
 
+// At night the memorial is floodlit from the terrace: the colonnade, portico
+// and dome glow white over the dark basin, the terrace wall and steps much
+// less, and faces looking up (steps, ledges) least.
+const marbleLit = (p: V3, n: V3): number => {
+  const up = n[2] > 0.8 ? 0.45 : 1
+  if (p[2] < STYLO - 0.1) return 0.3 * up
+  return (p[2] > COL_TOP + 2 ? 0.85 : 1) * up
+}
 const parts = [
   // Colours off the daylight photos: Danby marble, white with a faint warm
   // grey; the flat roofs, a pale grey; the terrace lawn, muted; the shadowed
   // openings into the chamber, which is lit at night.
-  { part: marble, material: finish('danby-marble', 0xece8df) },
+  { part: marble, material: { ...finish('danby-marble', 0xece8df), floodlight: marbleLit } },
   { part: roof, material: { ...PALETTE.roof, color: 0xc9c8c2 } },
   { part: lawn, material: finish('terrace-lawn', 0xa8b48f) },
   { part: dark, material: { name: 'entrance', color: 0x6f6b64, roughness: 0.85 } },

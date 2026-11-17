@@ -42,6 +42,8 @@
  *
  * Colours are the castle's since its 2021 repaint: grey stone base, pale
  * rose-pink upper walls, royal-blue roofs and gold finials and spire.
+ * At night the whole castle is floodlit (a `floodlight` wash on every
+ * surface but the windows, which are `window`).
  *
  * Doubts: heights other than OSM's and the published total are estimated
  * from photos taken from the ground, which foreshorten the top. The turrets
@@ -508,11 +510,16 @@ windowPanel(glazing, 's', -0.5 - 1.9, -7.5, 0.7, 25.5, 27.5, true)
 // reads as grey stone, rose pink and royal blue with gold. The blue is the
 // one dark colour, kept well clear of charcoal because the roofs are what
 // everyone knows it by; the stone and pink sit at the palette's lightness.
+//
+// At night the whole castle is floodlit from round the moat and the hub (in
+// changing colours; the wash here is warm white): the walls and towers bright,
+// the steep roofs nearly as bright, flat tops barely.
+const lit = (_p: V3, n: V3): number => (n[2] > 0.9 ? 0.3 : n[2] > 0.5 ? 0.7 : 0.95)
 const parts = [
-  { part: stone, material: finish('castle-stone', 0xc3c6cc) },
-  { part: pink, material: finish('castle-pink', 0xefd0ca) },
-  { part: blue, material: finish('castle-blue', 0x4a72c4, 0.6) },
-  { part: gold, material: finish('castle-gold', 0xd9b45e, 0.5) },
+  { part: stone, material: { ...finish('castle-stone', 0xc3c6cc), floodlight: lit } },
+  { part: pink, material: { ...finish('castle-pink', 0xefd0ca), floodlight: lit } },
+  { part: blue, material: { ...finish('castle-blue', 0x4a72c4, 0.6), floodlight: lit } },
+  { part: gold, material: { ...finish('castle-gold', 0xd9b45e, 0.5), floodlight: lit } },
   { part: glazing, material: PALETTE.window },
 ]
 const triangles = parts.reduce((sum, { part }) => sum + part.triangles, 0)

@@ -13,6 +13,12 @@
  * with its own copper roof and pale skylight ridge; the lower north office
  * block up to the MetLife Building, which is a separate building and is not
  * modelled here.
+ *
+ * Night: the 42nd Street front is floodlit, the clock, the sculpture group
+ * and the three great windows glowing over the viaduct, and the side fronts
+ * much less; so the stone, granite and sculpture carry a floodlight wash,
+ * strongest on that front, and the clock face, backlit Tiffany glass, is
+ * `neon` in its gold (STYLE.md, "Night").
  */
 import { Part, addGltfTriangles, len, writeGlb, type V3 } from './mesh'
 
@@ -436,14 +442,20 @@ corners(office, BASE, OFFICE_TOP, [3, 5])
 // Street front, the pinker granite podium, the dark blue-grey glazing behind
 // the window grilles, the patinated copper roofs seen from above, and the
 // weathered sculpture group.
+// Floodlit: the south (42nd Street) front brightest; the side fronts and the
+// north wall dimly; upward faces faint.
+const lit = (p: V3, n: V3): number => {
+  if (n[2] > 0.7) return p[1] < YS + 4 ? 0.4 : 0.1
+  return n[1] < -0.5 && p[1] < YS + 4 ? 0.95 : 0.3
+}
 const parts = [
-  { part: stone, material: { name: 'limestone', color: 0xd8cbb3 } },
-  { part: granite, material: { name: 'granite', color: 0xbcab9a } },
+  { part: stone, material: { name: 'limestone', color: 0xd8cbb3, floodlight: lit } },
+  { part: granite, material: { name: 'granite', color: 0xbcab9a, floodlight: lit } },
   { part: glass, material: { name: 'window', color: 0x6c7d8a } },
   { part: copper, material: { name: 'copper-roof', color: 0x9dba95 } },
   { part: terrace, material: { name: 'flat-roof', color: 0xbdb9b1 } },
-  { part: sculpture, material: { name: 'sculpture', color: 0x8c8374 } },
-  { part: gold, material: { name: 'clock', color: 0xc9a548 } },
+  { part: sculpture, material: { name: 'sculpture', color: 0x8c8374, floodlight: lit } },
+  { part: gold, material: { name: 'neon-grand-central-clock', color: 0xc9a548 } },
 ]
 const triangles = parts.reduce((s, { part }) => s + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)

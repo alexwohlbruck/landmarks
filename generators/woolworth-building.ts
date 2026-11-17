@@ -8,7 +8,9 @@
  * way/75363809 and its eleven building:parts: the U-shaped 120 m base, the
  * 120–170 m shaft with its corner turrets, the 170–194 m stage, and the crown
  * (corner pinnacles and the copper pyramid, lantern to 241 m). No textures:
- * piers, recessed window bands and Gothic arches are geometry.
+ * piers, recessed window bands and Gothic arches are geometry. At night the
+ * tower is floodlit, brightest on the crown and copper pyramid (a
+ * `floodlight` wash); the window bands are `window`.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 
@@ -285,12 +287,18 @@ for (const [cx, cy] of [[3.25, -8.7], [20.75, -8.7], [20.75, 8.7], [3.25, 8.7]] 
 
 // sRGB colours from daylight photos: cream glazed terracotta, dark-glazed
 // bays, verdigris copper.
+// At night the tower is floodlit from its setbacks: the wash starts faint
+// over the base, grows up the shaft and is brightest on the crown and the
+// copper pyramid. Faces looking up catch little of it.
+const towerLit = (p: V3, n: V3): number =>
+  p[2] < 120 ? 0 : (n[2] > .7 ? .3 : 1) * Math.min(1, .4 + .6 * (p[2] - 120) / 80)
+const crownLit = (p: V3, n: V3): number => (p[2] < 170 ? 0 : n[2] > .9 ? .5 : .9)
 const parts = [
-  { part: terracotta, material: { name: 'cream-terracotta', color: 0xe6dfcb } },
+  { part: terracotta, material: { name: 'cream-terracotta', color: 0xe6dfcb, floodlight: towerLit } },
   { part: glass, material: { name: 'window', color: 0x87949b } },
   { part: roof, material: { name: 'terracotta-terraces', color: 0xc8968a } },
-  { part: copper, material: { name: 'green-copper', color: 0x67a08a, roughness: .7 } },
-  { part: copperDark, material: { name: 'copper-shadow', color: 0x46705f } },
+  { part: copper, material: { name: 'green-copper', color: 0x67a08a, roughness: .7, floodlight: crownLit } },
+  { part: copperDark, material: { name: 'copper-shadow', color: 0x46705f, floodlight: crownLit } },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)

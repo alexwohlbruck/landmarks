@@ -17,6 +17,10 @@
  * The lattice is not drawn member by member. Six broad corner legs and a few
  * broad horizontal bands make the shaft read as open steel; the canopy is a
  * solid scalloped ring on twelve chunky trussed arms.
+ *
+ * Night: LEDs (since 2006) run along the legs and the canopy's arms and play
+ * coloured patterns over the whole tower, so its red steel is
+ * `neon-parachute-red` and glows in its day red (STYLE.md, "Night").
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 
@@ -273,7 +277,7 @@ beam(steel, Array.from({ length: 12 }, (_, i) => polar(10, i * TAU / 12, 71.8)),
 // deeper; the yellow is the pavilion band (#dfbc46 in photo 01); the blue
 // piers are photo 01's shaded #1a4070 lifted to their sunlit value.
 const parts = [
-  { part: steel, material: { name: 'red-steel', color: 0xbd3a44, roughness: 0.7, doubleSided: true } },
+  { part: steel, material: { name: 'neon-parachute-red', color: 0xbd3a44, roughness: 0.7, doubleSided: true } },
   { part: gold, material: { name: 'yellow', color: 0xdfbc46, roughness: 0.7, doubleSided: true } },
   { part: pavRed, material: { name: 'pavilion-red', color: 0xa92e39, roughness: 0.8, doubleSided: true } },
   { part: blue, material: { name: 'pavilion-blue', color: 0x2a5b9e, roughness: 0.8, doubleSided: true } },

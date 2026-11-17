@@ -51,6 +51,10 @@
  * drawn at 10 m), the horns' curve. Left out: the guardian lions, the
  * dragon relief (drawn as a plain bronze panel), the masks on the columns,
  * the screen walls' shrine niches and the signs.
+ *
+ * Night: the gate is floodlit from the forecourt, its coral columns, green
+ * roof and stone frame glowing over the dark auditorium; the gate's
+ * finishes carry a `floodlight` limited to it (STYLE.md, "Night").
  */
 import { Part, lerp, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -307,13 +311,17 @@ horn(1)
 }
 
 // ---------- write ----------
+// Night: the gate (columns, frame, pagoda roof and horns) is floodlit from
+// the forecourt; nothing behind it or beside it.
+const floodlight = (p: V3, n: V3): number =>
+  Math.abs(p[0] - GX) < 9 && p[1] < -18 && p[1] > FRONT - 1.5 ? (n[2] > 0.85 ? 0.3 : n[1] < -0.3 ? 1 : 0.7) : 0
 const parts = [
-  { part: stone, material: PALETTE.stone },
+  { part: stone, material: { ...PALETTE.stone, floodlight } },
   // NAIP shows the auditorium's roofs pale, not the palette's slate grey
   { part: roof, material: finish('chinese-roof', 0xcfcabf) },
-  { part: sage, material: finish('chinese-sage', 0xc3cbbd) },
-  { part: bronze, material: finish('chinese-jade', 0x86ad95) },
-  { part: coral, material: finish('chinese-coral', 0xd9825f) },
+  { part: sage, material: { ...finish('chinese-sage', 0xc3cbbd), floodlight } },
+  { part: bronze, material: { ...finish('chinese-jade', 0x86ad95), floodlight } },
+  { part: coral, material: { ...finish('chinese-coral', 0xd9825f), floodlight } },
   { part: dark, material: finish('chinese-bronze-dark', 0x4f5a54) },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)

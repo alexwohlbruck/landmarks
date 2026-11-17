@@ -62,6 +62,10 @@
  *   the front, the belfry's eight arches a face (drawn as two broad
  *   ones), cornices and the stairs to the plaza are left out; the north
  *   wings' roofs are drawn flat.
+ * - Night: the basilica is floodlit, the Trinity Dome and the Knights'
+ *   Tower brightest; the stone, recess, blue tile and gold carry a
+ *   `floodlight` shaped that way (STYLE.md, "Night"). The tile roofs stay
+ *   dark.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -342,15 +346,23 @@ function build() {
     spire(gold, mid, [cx, cy, 100.3])
   }
 
+  // Floodlit at night: the dome (drum to finial) and the Knights' Tower
+  // full, the fronts and walls below a little less; faces looking up hardly
+  // at all.
+  const floodlight = (p: V3, n: V3): number => {
+    const dome = Math.hypot(p[0] - 0.3, p[1] - 4.6) < 16 && p[2] > 38
+    const tower = Math.hypot(p[0] + 31, p[1] + 55) < 9
+    return (dome || tower ? 1 : 0.7) * (n[2] > 0.7 ? 0.25 : 1)
+  }
   return [
-    { part: stone, material: PALETTE.stone },
+    { part: stone, material: { ...PALETTE.stone, floodlight } },
     { part: tile, material: PALETTE.terracotta },
     { part: win, material: PALETTE.window },
     // The great arch's recess and the porches: a shade of the stone.
-    { part: shade, material: finish('shrine-recess', 0xcac0b1) },
+    { part: shade, material: { ...finish('shrine-recess', 0xcac0b1), floodlight } },
     // The Trinity Dome's and the spire's blue tile, pulled to the palette's lightness.
-    { part: blue, material: finish('shrine-blue-tile', 0x4f6a9a) },
-    { part: gold, material: finish('shrine-gold', 0xd2b062) },
+    { part: blue, material: { ...finish('shrine-blue-tile', 0x4f6a9a), floodlight } },
+    { part: gold, material: { ...finish('shrine-gold', 0xd2b062), floodlight } },
   ]
 }
 

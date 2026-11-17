@@ -33,7 +33,9 @@
  *   Theater of Oakland, Wide.jpg" (Cy2005, CC BY-SA 4.0).
  *
  * Famous-sign exception (STYLE.md): the blade carries FOX across its crest
- * and OAKLAND stacked below, as extruded block letters on both faces.
+ * and OAKLAND stacked below, as extruded block letters on both faces. The
+ * letters are neon after dark, so they are `neon-fox-cream` and glow at
+ * night (STYLE.md, "Night"); the marquee's boards are `window` and glow too.
  *
  * Estimated from the photos: storey heights, the wings' bays (~4.5 m, one
  * window panel per bay over floors two and three with the terracotta
@@ -47,7 +49,7 @@ import { PALETTE, finish } from './palette'
 type XY = [number, number]
 const BEARING = 11.3
 const ANCHOR = { lng: -122.2705411, lat: 37.8080679 }
-const brick = new Part(), trim = new Part(), win = new Part(), roof = new Part(), red = new Part(), tile = new Part()
+const brick = new Part(), trim = new Part(), win = new Part(), roof = new Part(), red = new Part(), tile = new Part(), letters = new Part()
 
 function block(p: Part, x0: number, x1: number, y0: number, y1: number, z0: number, z1: number, ch = 0.3, top: Part | null = p) {
   const r: XY[] = [[x0 + ch, y0], [x1 - ch, y0], [x1, y0 + ch], [x1, y1 - ch], [x1 - ch, y1], [x0 + ch, y1], [x0, y1 - ch], [x0, y0 + ch]]
@@ -237,10 +239,10 @@ const PAV = { x0: 33, y0: -8, y1: 8, h: 21 } // the entrance pavilion
   const faces = [face([x0, BY - BT], [x1, BY - BT]), face([x1, BY + BT], [x0, BY + BT])]
   const draw = (f: Face, poly: Poly, s0: number, zb: number, d1: number) => {
     const pts = poly.map(([pu, pv]) => [s0 + pu, zb + pv] as [number, number])
-    for (let i = 1; i < pts.length - 1; i++) trim.tri(at(f, pts[0][0], d1, pts[0][1]), at(f, pts[i][0], d1, pts[i][1]), at(f, pts[i + 1][0], d1, pts[i + 1][1]))
+    for (let i = 1; i < pts.length - 1; i++) letters.tri(at(f, pts[0][0], d1, pts[0][1]), at(f, pts[i][0], d1, pts[i][1]), at(f, pts[i + 1][0], d1, pts[i + 1][1]))
     for (let i = 0; i < pts.length; i++) {
       const A = pts[i], B = pts[(i + 1) % pts.length]
-      trim.quad(at(f, A[0], 0.04, A[1]), at(f, B[0], 0.04, B[1]), at(f, B[0], d1, B[1]), at(f, A[0], d1, A[1]))
+      letters.quad(at(f, A[0], 0.04, A[1]), at(f, B[0], 0.04, B[1]), at(f, B[0], d1, B[1]), at(f, A[0], d1, A[1]))
     }
   }
   for (const f of faces) {
@@ -261,6 +263,7 @@ const parts = [
   { part: roof, material: PALETTE.roof },
   { part: red, material: finish('fox-red', 0xbe5a4e) },
   { part: tile, material: finish('fox-blue-tile', 0x6f93ae) },
+  { part: letters, material: finish('neon-fox-cream', PALETTE.trim.color) },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 if (triangles > 6500) throw new Error(`Triangle budget exceeded: ${triangles}`)

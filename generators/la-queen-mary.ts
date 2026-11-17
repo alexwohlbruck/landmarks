@@ -54,6 +54,10 @@
  *   for the lidar), 109 m aft; window rows.
  * - Left out: ventilator cowls, davits, rigging, deck clutter, the
  *   breakwater, the dockside gangways and hotel buildings.
+ * - Night: the three red funnels are floodlit, the brightest thing on the
+ *   ship after dark, so the red carries a floodlight wash above the boat
+ *   deck only, not on the boot-topping (STYLE.md, "Night"). The strings of
+ *   lights along the rigging are left out with the rigging.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -213,7 +217,9 @@ block(white, rectXY(-78, -30, 10), 27.8, 30.0, 0.3, white)
 }
 
 const HULL = finish('hull-black', 0x4a4f57, 0.6)
-const RED = finish('cunard-red', 0xd2623f, 0.7)
+// Floodlit funnels: the red above the boat deck, none at the waterline.
+const funnelLit = (p: V3, n: V3): number => (p[2] < 27 ? 0 : n[2] > 0.7 ? 0.4 : 0.9)
+const RED = { ...finish('cunard-red', 0xd2623f, 0.7), floodlight: funnelLit }
 const parts = [
   { part: hull, material: HULL },
   { part: white, material: PALETTE.trim },

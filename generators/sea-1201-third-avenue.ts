@@ -34,6 +34,10 @@
  *   (crown detail), Cody Logan 2007.
  * Estimated: storey groups (three storeys a panel on the corner piers), the
  * barrels' arc, the lunettes' size, the podium's facade.
+ *
+ * Night: the crown is floodlit, the four barrel-vaulted arms and the pale
+ * stepped pyramid and lantern over them, so the granite above the corner
+ * blocks and the crown carry a floodlight wash (STYLE.md, "Night").
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -180,11 +184,16 @@ function build() {
     capRing(Q.roof, r, Q.z1)
   }
 
+  // The crown's floodlights stand on the corner blocks' roofs and light the
+  // arms' gables and the pyramid; faces looking up catch little.
+  const crownLit = (p: V3, n: V3): number => (p[2] < P.corner + 0.3 ? 0 : n[2] > 0.8 ? 0.35 : 1)
+  const GRANITE = { ...finish('wm-granite', 0xe2d2be), floodlight: crownLit }
+  const CROWN = { ...finish('wm-crown', 0xf1e7d8), floodlight: crownLit }
   return finishGlb('sea-1201-third-avenue', '1201 Third Avenue', [
-    { part: granite, material: finish('wm-granite', 0xe2d2be) },
+    { part: granite, material: GRANITE },
     { part: win, material: { ...PALETTE.window, color: 0x6a8f9c } },
     { part: roof, material: { ...PALETTE.roof, color: 0xbcc2c6 } },
-    { part: lantern, material: finish('wm-crown', 0xf1e7d8) },
+    { part: lantern, material: CROWN },
   ], { bearing: 328.8, height: P.lantern, replaces: ['way/140436171', 'way/331322651', 'way/331322649', 'way/331424981', 'way/488923802', 'way/331322650', 'way/331324934'] })
 }
 

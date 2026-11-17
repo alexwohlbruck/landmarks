@@ -42,7 +42,9 @@
  *
  * Famous-sign exception (STYLE.md): the sign carries its lettering, as simple
  * extruded block letters (a plain sans, not the real serif face) standing on
- * a frame of chunky posts and rails in place of the real open lattice.
+ * a frame of chunky posts and rails in place of the real open lattice. The
+ * letters are lit after dark, so they are `neon-ghirardelli-cream` and glow
+ * at night (STYLE.md, "Night"); the frame stays dark.
  *
  * Estimated from the photos: letter sizes (cap 6.4 m, x-height 4.4 m, from
  * the lidar's two top levels and the photos' ratio), the frame's posts, the
@@ -59,7 +61,7 @@ type XY = [number, number]
 const BEARING = 351
 const ANCHOR = { lng: -122.42283442, lat: 37.80560018 }
 const brick = new Part(), trim = new Part(), win = new Part(), roof = new Part(), slate = new Part(), dark = new Part()
-const letters = trim // the sign's letters are the same warm white as the trim
+const letters = new Part() // the sign's letters, the trim's warm white, neon at night
 
 const STREET = 3.7 // North Point Street above y = 0
 
@@ -309,6 +311,7 @@ const parts = [
   { part: roof, material: PALETTE.roof },
   { part: slate, material: finish('slate', 0x8e867d) },
   { part: dark, material: finish('sign-steel', 0x6e747b) },
+  { part: letters, material: finish('neon-ghirardelli-cream', PALETTE.trim.color) },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 if (triangles > 6500) throw new Error(`Triangle budget exceeded: ${triangles}`)

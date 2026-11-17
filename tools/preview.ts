@@ -1,22 +1,26 @@
 /**
  * Preview a landmark GLB the way the map lights it, without a browser.
  *
- *   bun run preview <model.glb|id> [out-dir] [photo.png ...]
+ *   bun run preview <model.glb|id> [out-dir] [photo.png ...] [--night]
  *
  * Writes a standard set of views: front (south), side (west), a high
  * three-quarter from the south-west (the usual phone view), its reverse, top,
  * and phone-size 200 px and 80 px versions, plus a contact sheet. Any PNG
  * photos given are put beside the three-quarter view in `compare-N.png`.
- * The out dir defaults to `preview/<id>/`, which git ignores.
+ * The out dir defaults to `preview/<id>/`, which git ignores. `--night`
+ * draws every view as the map does at night (see `render.ts`), into
+ * `preview/<id>-night/`.
  *
  * A development tool for authoring models; the release build never runs it.
  */
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
 import { encodePng } from '../generators/mesh'
-import { blit, canvas, decodePng, loadScene, render, resample, type Bitmap } from './render'
+import { blit, canvas, decodePng, loadScene, NIGHT_BACKGROUND, render, resample, type Bitmap } from './render'
 
-const [arg, outArg, ...photos] = process.argv.slice(2)
+const args = process.argv.slice(2)
+const night = args.includes('--night')
+const [arg, outArg, ...photos] = args.filter((a) => a !== '--night')
 if (!arg) {
   console.error('usage: bun run preview <model.glb|id> [out-dir] [photo.png ...]')
   process.exit(1)
@@ -24,7 +28,7 @@ if (!arg) {
 // A bare id is a model in models/.
 const source = arg.endsWith('.glb') ? arg : join(import.meta.dir, '../models', `${arg}.glb`)
 const id = basename(source, '.glb')
-const out = outArg ?? join(import.meta.dir, '../preview', id)
+const out = outArg ?? join(import.meta.dir, '../preview', night ? `${id}-night` : id)
 mkdirSync(out, { recursive: true })
 
 const bytes = readFileSync(source)
@@ -33,7 +37,7 @@ const save = (name: string, bmp: Bitmap) => {
   writeFileSync(join(out, `${name}.png`), encodePng(bmp.w, bmp.h, bmp.data))
   return bmp
 }
-const view = (name: string, w: number, h: number, az: number, el: number, ss = 2) => save(name, render(scene, w, h, az, el, ss))
+const view = (name: string, w: number, h: number, az: number, el: number, ss = 2) => save(name, render(scene, w, h, az, el, ss, night))
 
 const views = [
   view('front-south', 600, 600, 270, 4),
@@ -48,7 +52,7 @@ view('phone-80', 80, 80, 225, 35, 6)
 // Contact sheet: the five views in a row of three over two, then the phone view.
 {
   const cw = 600, ch = 600, cols = 3
-  const sheet = canvas(cw * cols, ch * 2)
+  const sheet = canvas(cw * cols, ch * 2, night ? NIGHT_BACKGROUND : undefined)
   ;[...views, phone200].forEach((im, i) => {
     blit(sheet, im, ((i % cols) * cw + (cw - im.w) / 2) | 0, (Math.floor(i / cols) * ch + (ch - im.h) / 2) | 0)
   })

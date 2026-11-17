@@ -61,6 +61,9 @@
  *   parapet), the shutters (drawn as the window panel), the steps (one),
  *   the basement windows, the west porches and the conservatory's glazed
  *   arcade (drawn as the wing's arched windows) are left out.
+ *
+ * Night: the portico and east front are floodlit, so the house shows on its
+ * hill from across the river; the other faces are dim.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -185,14 +188,22 @@ function build() {
   }
 
   return [
-    { part: stucco, material: STUCCO },
+    { part: stucco, material: { ...STUCCO, floodlight: frontLit } },
     { part: shade, material: STUCCO_SHADE },
-    { part: trim, material: PALETTE.trim },
+    { part: trim, material: { ...PALETTE.trim, floodlight: frontLit } },
     { part: roof, material: PALETTE.roof },
     { part: win, material: PALETTE.window },
     { part: door, material: PALETTE.entrance },
   ]
 }
+
+/**
+ * At night the house is floodlit from the east, so it shows on its ridge from
+ * across the river: the portico and east front bright, the other faces dim,
+ * faces looking up least.
+ */
+const frontLit = (p: V3, n: V3): number =>
+  n[2] > 0.8 ? 0.3 : n[0] > 0.3 || (p[0] > XE + 0.1 && Math.abs(p[1]) < YB) ? 0.95 : 0.3
 
 /** The buff-pink painted stucco, pulled to the palette's lightness. */
 const STUCCO = finish('arlington-stucco', 0xe7cfb5)

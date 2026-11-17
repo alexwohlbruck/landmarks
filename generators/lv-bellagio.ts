@@ -46,6 +46,10 @@
  * building 180 m south-west, left to the map), the casino podium and
  * conservatory (relation/1599958, left on the map), the lake and
  * fountains, signs, balustrades.
+ *
+ * Night: the cream facade is floodlit, most strongly on the faces toward
+ * the lake, so the cream and trim carry a floodlight wash; faces looking up
+ * barely catch it (STYLE.md, "Night").
  */
 import { Part } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -86,7 +90,15 @@ export function pitched(slope: Part, flat: Part, ring: XY[], z: number, run: num
 
 const cream = new Part(), trim = new Part(), roof = new Part(), win = new Part()
 
-const CREAM = finish('bellagio-cream', 0xecdcbc)
+// The facade's floodlighting, from the lake front and the drives round the
+// tower: faces toward the lake (east) take most of it, the rest less, a
+// little stronger higher up toward the cornice and lantern.
+const facadeLit = (p: [number, number, number], n: [number, number, number]): number => {
+  if (n[2] > 0.7) return 0.15
+  const facing = n[0] > 0.3 ? 1 : 0.55
+  return facing * (0.7 + 0.3 * Math.min(1, Math.max(0, p[2] / 128)))
+}
+const CREAM = { ...finish('bellagio-cream', 0xecdcbc), floodlight: facadeLit }
 
 // Plan, from way/25723909. The main storeys: the arms up to their lower
 // ends, the hub and the west wing; the round bay is drawn on its own.
@@ -189,7 +201,7 @@ lathe([cream, roof], HUB, [[1.2, LZ + LH + 6.4], [1.2, LZ + LH + 8.6], [0, LZ + 
 
 await save('lv-bellagio', 'Bellagio', [
   { part: cream, material: CREAM },
-  { part: trim, material: PALETTE.trim },
+  { part: trim, material: { ...PALETTE.trim, floodlight: facadeLit } },
   { part: roof, material: PALETTE.roof },
   { part: win, material: PALETTE.window },
 ], 155, 'Y up, -Z north, +X east, metres; origin at the way/25723909 centroid; bearing 0', 6500)

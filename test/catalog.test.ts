@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'bun:test'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { validateCatalog, type Catalog } from '../src/catalog'
+import { formatCatalog, validateCatalog, type Catalog } from '../src/catalog'
 import { glbBounds } from '../src/glb'
 import { checkCatalog } from '../src/release'
 import { box, material, writeGlb } from './helpers'
@@ -14,6 +14,11 @@ describe('the catalog', () => {
   test('is valid, and every model it lists exists and stands on its origin', () => {
     const catalog = JSON.parse(readFileSync(join(ROOT, 'catalog.json'), 'utf8')) as Catalog
     expect(checkCatalog(ROOT, catalog)).toEqual([])
+  })
+
+  test('is stored sorted by id, so pull requests adding landmarks merge', () => {
+    const stored = readFileSync(join(ROOT, 'catalog.json'), 'utf8')
+    expect(formatCatalog(JSON.parse(stored)) === stored).toBe(true)
   })
 })
 
@@ -52,6 +57,14 @@ describe('validateCatalog', () => {
     expect(at(200)).toEqual([])
     expect(at(-200.5)).toEqual(['landmark "the-tower": elevation must be a number of metres within ±200'])
     expect(at(NaN)).toHaveLength(1)
+  })
+
+  test('takes a detail GLB, and a detail zoom only beside one', () => {
+    const tower = ok.models[0]
+    const at = (m: object) => validateCatalog({ ...ok, models: [{ ...tower, ...m }] })
+    expect(at({ detail: 'models/tower.detail.glb', detailZoom: 16 })).toEqual([])
+    expect(at({ detail: 'models/tower.obj' })).toEqual(['model "tower": detail must be a .glb'])
+    expect(at({ detailZoom: 16 })).toEqual(['model "tower": detailZoom must be 0-24, on a model with a detail file'])
   })
 
   test('flags a model nothing places', () => {

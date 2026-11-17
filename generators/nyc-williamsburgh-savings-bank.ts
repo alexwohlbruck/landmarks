@@ -38,6 +38,11 @@
  * clock stage's window and belfry layout, the drum's size (lidar: ~12 m
  * across), the lantern. The east side, hemmed in by neighbours, is drawn
  * like the west.
+ *
+ * Night: the clock tower and the gilded dome are floodlit over Downtown
+ * Brooklyn, with the clock dials lit, so the clock tower's stone and trim
+ * and the dome carry a floodlight wash (STYLE.md, "Night"); the slabs and
+ * wings below stay dark.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -153,10 +158,18 @@ for (const [x, y] of CT) block(stone, x - (x < cx ? 0 : 1.6), y - (y < cy ? 0 : 
   gold.loft([lr(0.6, lz), lr(0.6, lz + 0.8), lr(0.15, lz + 1.6)])
 }
 
+// The floodlights light the clock tower from the slab's roof up, and the
+// drum and dome over it; faces looking up catch little. Only what stands on
+// the clock tower's square is lit.
+const towerLit = (p: V3, n: V3): number => {
+  const [x0, y0] = CT[0], [x1, y1] = CT[2]
+  if (p[2] < CZ0 - 0.1 || p[0] < x0 - 0.6 || p[0] > x1 + 0.6 || p[1] < y0 - 0.6 || p[1] > y1 + 0.6) return 0
+  return n[2] > 0.8 ? 0.3 : 1
+}
 finishModel('Williamsburgh Savings Bank Tower', 'nyc-williamsburgh-savings-bank', [
-  { part: stone, material: finish('wsb-limestone', 0xe4dac8) },
-  { part: trim, material: PALETTE.trim },
+  { part: stone, material: { ...finish('wsb-limestone', 0xe4dac8), floodlight: towerLit } },
+  { part: trim, material: { ...PALETTE.trim, floodlight: towerLit } },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
-  { part: gold, material: finish('wsb-gilded-dome', 0xcfae5f) },
+  { part: gold, material: { ...finish('wsb-gilded-dome', 0xcfae5f), floodlight: towerLit } },
 ], { bearing: -6.7, osm: 'way/250979509', height: 158 }, 5000)

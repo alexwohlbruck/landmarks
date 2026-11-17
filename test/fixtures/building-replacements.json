@@ -1,0 +1,60 @@
+[
+  {
+    "id": "clt-cne-1701-n-graham",
+    "tile": {
+      "z": 14,
+      "x": 4513,
+      "y": 6476
+    },
+    "source": "https://tiles.openfreemap.org/planet/20261025_080012_pt/14/4513/6476.pbf",
+    "featureIds": [
+      8358089210,
+      3232012770,
+      3231950870,
+      87935200
+    ],
+    "overlapBefore": 50279.59816824731,
+    "neighborArea": 200784.40183175268
+  },
+  {
+    "id": "nyc-30-hudson-yards",
+    "tile": {
+      "z": 14,
+      "x": 4824,
+      "y": 6157
+    },
+    "source": "https://tiles.openfreemap.org/planet/20261025_080012_pt/14/4824/6157.pbf",
+    "featureIds": [
+      2646512560,
+      3984403632,
+      2797865690,
+      14855162802,
+      14855162782,
+      2797900910,
+      14855162820,
+      14855162842,
+      2646566262,
+      14858489800
+    ],
+    "overlapBefore": 65380.80498694966,
+    "neighborArea": 124432.69501305034
+  },
+  {
+    "id": "dc-national-archives",
+    "tile": {
+      "z": 14,
+      "x": 4686,
+      "y": 6267
+    },
+    "source": "https://tiles.openfreemap.org/planet/20261025_080012_pt/14/4686/6267.pbf",
+    "featureIds": [
+      4278151240,
+      4278151270,
+      480412740,
+      664189532,
+      4278151262
+    ],
+    "overlapBefore": 90668.98713917099,
+    "neighborArea": 197355.012860829
+  }
+]

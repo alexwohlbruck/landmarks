@@ -51,6 +51,9 @@
  * The kit below (rings, ear clipping, bevelled blocks, columns, lathe,
  * gables) is adapted from chi-field-museum.ts and exported for this
  * builder's other Chicago models.
+ *
+ * Night: the main block's stone is floodlit and the dome lit; the
+ * pavilions and the space center stay dark.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, type Swatch } from './palette'
@@ -375,12 +378,18 @@ function build() {
   for (let i = 0; i <= 6; i++) { const t = (i / 6) * (Math.PI / 2); sc.push([14 * Math.cos(t), 11.5 + 11 * Math.sin(t)]) }
   lathe(roof, 140, -38, sc, 18)
 
+  // At night the main block is floodlit, porticoes and colonnades glowing
+  // pale over the lawns and lagoon, and the dome is lit on its drum; the
+  // pavilions, connectors and space center are left dark, and faces
+  // looking up are barely lit.
+  const inMain = (p: V3) => p[0] > X0 - 1 && p[0] < X1 + 1 && p[1] > Y0 - 12 && p[1] < Y1 + 12
+  const palaceLit = (p: V3, n: V3): number => (!inMain(p) ? 0 : n[2] > 0.8 ? 0.3 : 0.85)
   return [
-    { part: stone, material: PALETTE.stone },
-    { part: trim, material: PALETTE.trim },
+    { part: stone, material: { ...PALETTE.stone, floodlight: palaceLit } },
+    { part: trim, material: { ...PALETTE.trim, floodlight: palaceLit } },
     { part: roof, material: PALETTE.roof },
     { part: green, material: PALETTE.patina },
-    { part: dome, material: PALETTE.copper },
+    { part: dome, material: { ...PALETTE.copper, floodlight: (p: V3) => (Math.hypot(p[0] - CX, p[1] - CY) < 20 ? 0.6 : 0) } },
     { part: win, material: PALETTE.window },
   ]
 }

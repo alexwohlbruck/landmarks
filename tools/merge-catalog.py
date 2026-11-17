@@ -3,13 +3,13 @@
 
     python3 tools/merge-catalog.py <base.json> <ours.json> <theirs.json>
 
-Writes the result over ours.json: every model and landmark from both sides,
-theirs first in their order, then ours that theirs lacks; where both have an
-id, ours wins. base is accepted for git's merge-driver interface and unused.
+Writes the result over ours.json: every place, model and landmark from both
+sides, sorted by id; where both have an id, ours wins. base is accepted for
+git's merge-driver interface and unused.
 
-Two batches both append to catalog.json, so git sees every rebase or merge
-between them as a conflict at the end of each list. To have git use this
-instead, once per clone (.gitattributes already names the driver):
+catalog.json is kept sorted by id, so branches adding different landmarks
+usually merge cleanly; this is for when two add neighbouring ids. To have
+git use it, once per clone (.gitattributes already names the driver):
 
     git config merge.catalog.name "catalog.json, merged by id"
     git config merge.catalog.driver "python3 tools/merge-catalog.py %O %A %B"
@@ -32,14 +32,16 @@ _, ours_path, theirs_path = sys.argv[1:4]
 ours, theirs = (json.load(open(p)) for p in (ours_path, theirs_path))
 
 
+LISTS = ('places', 'models', 'landmarks')
+
+
 def union(key):
-    merged = {x['id']: x for x in theirs[key]}
-    merged.update({x['id']: x for x in ours[key]})
-    order = [x['id'] for x in theirs[key]]
-    order += [x['id'] for x in ours[key] if x['id'] not in set(order)]
-    return [merged[i] for i in order]
+    merged = {x['id']: x for x in theirs.get(key, [])}
+    merged.update({x['id']: x for x in ours.get(key, [])})
+    return [merged[i] for i in sorted(merged)]
 
 
-out = {**theirs, **{k: v for k, v in ours.items() if k not in ('models', 'landmarks')}, 'models': union('models'), 'landmarks': union('landmarks')}
+out = {**theirs, **{k: v for k, v in ours.items() if k not in LISTS}}
+out.update({k: union(k) for k in LISTS if k in ours or k in theirs})
 with open(ours_path, 'w') as f:
     f.write(json.dumps(out, indent=2, ensure_ascii=False) + '\n')

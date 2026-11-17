@@ -39,14 +39,15 @@
  * weathered mid grey; the lantern's base ring, domed cap and beacon
  * housing are white, its glazing bars and the gallery railing charcoal metal,
  * with `glass` between. The gallery railing is drawn as posts
- * and a rail, the one fine detail kept, since it frames the lantern.
+ * and a rail, the one fine detail kept, since it frames the lantern. The
+ * beacon still shines at night, so its white housing is `lamp-beacon`.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 
 const BEARING = 45
 const ANCHOR = { lng: -122.4222949, lat: 37.8262541 }
-const concrete = new Part(), glass = new Part(), windows = new Part(), rail = new Part(), trim = new Part()
+const concrete = new Part(), glass = new Part(), windows = new Part(), rail = new Part(), trim = new Part(), beacon = new Part()
 
 /** Corners of a regular n-gon, `flats` across the flats, with a flat facing +y and +x when n % 4 == 0. */
 const ngon = (n: number, flats: number, z: number): V3[] => {
@@ -152,7 +153,7 @@ frustum(trim, LAN, 2 * LR + 0.2, G1, 2 * LR + 0.2, G1 + 0.15, false, true)
   trim.cap(rings[rings.length - 1], true)
   frustum(rail, 8, 0.3, z0 + h, 0.3, z0 + h + 0.35, true) // vent
   frustum(rail, 8, 0.12, z0 + h + 0.35, 0.12, z0 + h + 1.1, false) // beacon mast
-  frustum(trim, 8, 0.45, z0 + h + 1.1, 0.45, z0 + h + 1.45, true, true) // beacon lamp
+  frustum(beacon, 8, 0.45, z0 + h + 1.1, 0.45, z0 + h + 1.45, true, true) // beacon lamp
 }
 
 // Gallery railing: posts at the corners and a top rail, dark.
@@ -179,6 +180,7 @@ const parts = [
   { part: glass, material: PALETTE.glass },
   { part: windows, material: PALETTE.window },
   { part: rail, material: finish('lantern-metal', 0x4a4f57) },
+  { part: beacon, material: finish('lamp-beacon', PALETTE.trim.color) },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)

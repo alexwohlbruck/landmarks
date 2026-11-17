@@ -38,6 +38,10 @@
  * scaled to the 41 m tower, the spire's lucarnes, the chancel block's
  * massing (lidar 11–20 m, partly hidden by trees). Crenellations are drawn
  * as plain parapets.
+ *
+ * Night: the tower and spire are floodlit over the churchyard, the church
+ * body less, so the brownstone carries a `floodlight` wash (STYLE.md,
+ * "Night").
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -222,8 +226,16 @@ faces.forEach(([a, b], i) => {
   block(stone, TX - 0.6, TY - 0.1, TX + 0.6, TY + 0.1, TOP + 0.8, TOP + 1.05)
 }
 
+// The floodlights stand in the churchyard and on Broadway: the tower and
+// spire full, fading a little toward the cross; the church body dimmer;
+// faces looking up catch little.
+const lit = (p: V3, n: V3): number => {
+  const up = n[2] > 0.7 ? 0.3 : 1
+  if (p[1] > NY1 - 0.5) return up * (1 - 0.3 * Math.min(1, p[2] / 88))
+  return up * 0.5
+}
 finishModel('Trinity Church', 'nyc-trinity-church', [
-  { part: stone, material: finish('trinity-brownstone', 0x927d73) },
+  { part: stone, material: { ...finish('trinity-brownstone', 0x927d73), floodlight: lit } },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
   { part: dark, material: { ...PALETTE.window, name: 'window-2', color: 0x57636d } },

@@ -6,6 +6,10 @@
  * with the Americas facing west, three orbital rings and a conical tripod
  * base. Catalog bearing 0: the model's north is the map's north. No pool is
  * included: this artwork replaces no OSM building extrusion.
+ *
+ * Night: the globe is floodlit from the fountain pool below (relit with LEDs
+ * in 2010), so the globe and rings carry a `floodlight` wash (STYLE.md,
+ * "Night"); the dark base stays unlit.
  */
 import { Part, cross, sub, len, writeGlb, type V3 } from './mesh'
 
@@ -273,13 +277,19 @@ for (let leg = 0; leg < 3; leg++) {
   pedestal.cap(rings[rings.length - 1], true)
 }
 
+// The floodlights stand round the pool and aim up at the globe: faces
+// turned down and out catch the most, the top of the globe a little less.
+const globeLit = (p: V3, n: V3): number => {
+  const h = Math.min(1, Math.max(0, (p[2] - CENTRE[2] + RADIUS) / (2 * RADIUS)))
+  return (1 - 0.35 * h) * (n[2] > 0.7 ? 0.6 : 1)
+}
 const parts = [
   // Mid-grey brushed steel, taken from the shaded half of photo 02 rather
   // than its specular glints; the continents a step lighter, the base the
   // dark painted steel of the real pedestal.
-  { part: grid, material: { name: 'steel-grid', color: 0x7f868e, roughness: 0.55, doubleSided: true } },
-  { part: land, material: { name: 'steel-continents', color: 0xbcc0c5, roughness: 0.6, doubleSided: true } },
-  { part: orbits, material: { name: 'steel-orbits', color: 0xaab0b7, roughness: 0.45, doubleSided: true } },
+  { part: grid, material: { name: 'steel-grid', color: 0x7f868e, roughness: 0.55, doubleSided: true, floodlight: globeLit } },
+  { part: land, material: { name: 'steel-continents', color: 0xbcc0c5, roughness: 0.6, doubleSided: true, floodlight: globeLit } },
+  { part: orbits, material: { name: 'steel-orbits', color: 0xaab0b7, roughness: 0.45, doubleSided: true, floodlight: globeLit } },
   { part: pedestal, material: { name: 'steel-base', color: 0x50565f, roughness: 0.7 } },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)

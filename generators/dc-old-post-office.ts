@@ -67,6 +67,9 @@
  *   left out. Colours: the granite is a light warm grey, pulled to the
  *   palette's lightness; the rock-faced base a shade darker; the slate a
  *   mid blue-grey.
+ *
+ * Night: the clock tower's granite is floodlit full height, the fronts below
+ * more softly.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -376,9 +379,14 @@ function build() {
   // ---- The 12th Street entrance: one big arch in the recessed centre.
   edgeArch(door, [[-27.0, 11.3], [-27.0, -6.5]], 6.4, 11.4, 0.6, 8.0, 6, 0.4)
 
+  // At night the clock tower is floodlit full height over Pennsylvania
+  // Avenue; the fronts below are washed more softly, faces looking up least.
+  const inTower = (p: V3) => p[0] > TOWER_X0 - 0.5 && p[0] < TOWER_X1 + 0.5 && p[1] > 32.0
+  const graniteLit = (p: V3, n: V3): number => (n[2] > 0.8 ? 0.3 : inTower(p) ? 0.95 : 0.5)
+  const rusticLit = (p: V3, n: V3): number => (n[2] > 0.8 ? 0.2 : inTower(p) ? 0.8 : 0.4)
   return [
-    { part: granite, material: finish('opo-granite', 0xe4ded4) },
-    { part: rustic, material: finish('opo-rock-faced', 0xd3ccc1) },
+    { part: granite, material: { ...finish('opo-granite', 0xe4ded4), floodlight: graniteLit } },
+    { part: rustic, material: { ...finish('opo-rock-faced', 0xd3ccc1), floodlight: rusticLit } },
     { part: slate, material: finish('opo-slate', 0x8a949e) },
     { part: win, material: PALETTE.window },
     { part: glass, material: PALETTE.glass },

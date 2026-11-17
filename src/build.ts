@@ -7,15 +7,24 @@
  * Exits non-zero, listing every problem, if the catalog or a model is wrong,
  * so a bad edit never publishes.
  */
-import { mkdirSync, rmSync, writeFileSync } from 'node:fs'
-import { dirname, join, resolve } from 'node:path'
+import { copyFileSync, readFileSync, mkdirSync, rmSync, writeFileSync } from 'node:fs'
+import { createHash } from 'node:crypto'
+import { basename, dirname, join, resolve } from 'node:path'
 import { buildRelease, CatalogError } from './release'
+import { formatCatalog } from './catalog'
+import { buildHistory } from './history'
 
 const args = process.argv.slice(2)
 const check = args.includes('--check')
 const outAt = args.indexOf('--out')
 const out = resolve(outAt >= 0 ? args[outAt + 1] : join(import.meta.dir, '../dist'))
 const root = join(import.meta.dir, '..')
+
+const stored = readFileSync(join(root, 'catalog.json'), 'utf8')
+if (formatCatalog(JSON.parse(stored)) !== stored) {
+  console.error('catalog.json is not sorted by id: run bun tools/sort-catalog.ts')
+  process.exit(1)
+}
 
 let release
 try {
@@ -30,6 +39,9 @@ const models = [...release.files.keys()].filter((p) => p.endsWith('.glb')).lengt
 console.log(`${release.release}: ${release.assets.length} landmarks, ${models} model files`)
 if (check) process.exit(0)
 
+const history = buildHistory(root, release)
+console.log(`history: ${history.versions} versions from ${history.commits} commits; ${history.unavailable} unavailable snapshots${history.complete ? '' : ' (partial checkout)'}`)
+
 rmSync(out, { recursive: true, force: true })
 for (const [path, bytes] of release.files) {
   const file = join(out, path)
@@ -38,12 +50,47 @@ for (const [path, bytes] of release.files) {
 }
 // Pages would otherwise run Jekyll over the tree, for nothing.
 writeFileSync(join(out, '.nojekyll'), '')
-writeFileSync(
-  join(out, 'index.html'),
-  `<!doctype html><meta charset="utf-8"><title>Landmarks</title>
-<p>Static releases of <a href="https://github.com/alexwohlbruck/landmarks">alexwohlbruck/landmarks</a>, in the
-<a href="https://github.com/benjamintd/open-landmarks">Open Landmarks</a> format. Start at
-<a href="api/v1/latest.json">api/v1/latest.json</a>.</p>
-`,
-)
-console.log(`wrote ${release.files.size} files to ${out}`)
+// Bundle the browser-only demo alongside the existing dataset. Everything in
+// dist/ is static and uses dataset-relative URLs, including on GitHub Pages.
+// Retain third-party license text with the bundled dependencies.
+const dependencyRoot = join(root, 'node_modules')
+const licenseFiles = [...new Bun.Glob('**/{LICENSE,LICENSE.*,LICENSE-*,LICENCE,LICENCE.*,NOTICE,NOTICE.*,COPYING}').scanSync({ cwd: dependencyRoot })].sort()
+writeFileSync(join(out, 'third-party-licenses.txt'), licenseFiles.map(file =>
+  `===== ${file} =====\n${readFileSync(join(dependencyRoot, file), 'utf8')}`,
+).join('\n\n'))
+for (const file of ['index.html', 'style.css', 'favicon.svg', 'claude.ico', 'og-image.jpg', 'open-landmarks.json'])
+  copyFileSync(join(root, 'web', file), join(out, file))
+for (const file of ['maplibre-gl.css', 'maplibre-gl-worker.mjs'])
+  copyFileSync(join(root, 'node_modules/maplibre-gl/dist', file), join(out, file))
+mkdirSync(join(out, 'fonts'), { recursive: true })
+for (const [family, weights] of [['geist-sans', [400, 500, 600]], ['geist-mono', [400]]] as const)
+  for (const weight of weights) {
+    const file = `${family}-latin-${weight}-normal.woff2`
+    copyFileSync(join(root, `node_modules/@fontsource/${family}/files`, file), join(out, 'fonts', file))
+  }
+const browser = await Bun.build({
+  entrypoints: [join(root, 'web/app.ts')],
+  outdir: out,
+  target: 'browser',
+  minify: true,
+  naming: 'app-[hash].js',
+  define: { 'process.env.NODE_ENV': JSON.stringify('production') },
+})
+if (!browser.success) {
+  console.error(browser.logs)
+  process.exit(1)
+}
+// GitHub Pages caches assets for ten minutes. Content-addressed URLs prevent
+// a newly deployed page from running an older cached app or stylesheet.
+const entry = browser.outputs.find(output => output.kind === 'entry-point')!
+const script = basename(entry.path)
+const css = readFileSync(join(out, 'style.css'))
+const stylesheet = `style-${createHash('sha256').update(css).digest('hex').slice(0, 12)}.css`
+writeFileSync(join(out, stylesheet), css)
+const html = readFileSync(join(out, 'index.html'), 'utf8')
+  .replace('./app.js', `./${script}`)
+  .replace('./style.css', `./${stylesheet}`)
+writeFileSync(join(out, 'index.html'), html)
+// Older cached HTML can still find its entrypoint during the transition.
+writeFileSync(join(out, 'app.js'), `import './${script}';\n`)
+console.log(`wrote ${release.files.size} dataset files and the demo to ${out}`)

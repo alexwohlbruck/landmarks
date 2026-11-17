@@ -50,12 +50,26 @@
  * - Colour: the steel reads a faded crimson to mauve in daylight photos
  *   (maroon in shade, pink at sunset), drawn at the palette's terracotta
  *   lightness; the towers' granite buff-grey (#c5b9a9 to #d4cdbb lit).
- * - y = 0 is the river. The towers stand on ground 6–8 m up and sink into it.
+ * - y = 0 is the river as the lidar reads it, -1 m NAVD88, and every height
+ *   above is a lidar height over it, so the track (46.5 m) is 45.5 m NAVD88.
+ *
+ * Standing on the terrain: the towers stand on ground 4–11 m up (Mapterhorn,
+ * the map's terrain, which reads the river itself at -1.6 m). Their bases run
+ * down to that ground vertex by vertex, every 2.5 m round the plinth, from
+ * 2 m tables of Mapterhorn heights plus 1 m taken in this frame
+ * (`QUEENS_GROUND`, `RANDALLS_GROUND`), so every foot sits at the DEM's own
+ * height above the -1 m datum. The plinth, its ledge and the battered shaft
+ * keep their heights (5.5, 7 m) where the ground is lower and stop at the
+ * ground where it is higher, so nothing reaches below it. A map that reads
+ * a model's ground from its lowest vertices sees them line up with its
+ * terrain and drapes the bridge over it, rather than lifting it rigidly by
+ * the mean rise of its footprint.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { finish, type Swatch } from './palette'
 import { box, beam, countParts } from './nyc-manhattan-bridge'
 import { quadOut, hexa, type Face } from './nyc-george-washington-bridge'
+import { chamferedRect, footedLoft, groundAt, type GroundGrid } from './bridge-kit'
 
 const steel = new Part()  // arch trusses, hangers, deck girders
 const stone = new Part()  // towers
@@ -131,6 +145,46 @@ box(road, -14.4, 14.4, -SPAN, SPAN, DECK - 0.5, DECK, { r: 0, bottom: false })
 
 // ---- The towers -------------------------------------------------------------------
 
+// Mapterhorn z15 (the map's terrain) under the towers plus 1 m, metres above
+// the river datum, every 2 m in this frame: rows along y, columns across x.
+const QUEENS_GROUND: GroundGrid = { y0: -180, x0: -22, step: 2, z: [
+  [10.0, 10.1, 10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8, 10.9, 10.9, 10.9, 10.9, 11.0, 11.0, 11.0, 11.1, 11.2, 11.2, 11.3, 11.3, 11.3, 11.3],
+  [9.7, 9.8, 9.9, 10.1, 10.2, 10.4, 10.6, 10.6, 10.7, 10.8, 10.8, 10.8, 10.9, 10.9, 11.0, 11.0, 11.0, 11.1, 11.1, 11.1, 11.2, 11.0, 11.0],
+  [9.4, 9.5, 9.7, 9.8, 10.0, 10.3, 10.4, 10.3, 10.3, 10.4, 10.4, 10.5, 10.6, 10.6, 10.7, 10.7, 10.8, 11.0, 11.0, 10.9, 10.9, 10.8, 10.7],
+  [9.0, 9.2, 9.4, 9.5, 9.7, 9.9, 9.9, 10.0, 10.0, 10.0, 10.0, 10.1, 10.1, 10.2, 10.3, 10.3, 10.4, 10.7, 10.9, 10.7, 10.6, 10.5, 10.5],
+  [8.8, 8.9, 9.1, 9.2, 9.4, 9.4, 9.5, 9.6, 9.7, 9.7, 9.6, 9.7, 9.7, 9.8, 9.8, 9.9, 10.0, 10.3, 10.6, 10.7, 10.5, 10.3, 10.2],
+  [8.4, 8.5, 8.7, 8.8, 8.9, 9.0, 9.1, 9.3, 9.4, 9.3, 9.3, 9.2, 9.3, 9.4, 9.4, 9.4, 9.5, 9.8, 10.2, 10.6, 10.4, 10.2, 10.0],
+  [8.0, 8.2, 8.3, 8.5, 8.5, 8.6, 8.8, 8.9, 9.1, 9.0, 8.9, 8.9, 8.9, 8.9, 9.0, 9.0, 9.1, 9.3, 9.8, 10.2, 10.4, 10.2, 9.8],
+  [7.7, 7.8, 7.9, 8.0, 8.2, 8.3, 8.4, 8.6, 8.7, 8.7, 8.6, 8.5, 8.5, 8.5, 8.5, 8.6, 8.7, 8.8, 9.2, 9.8, 10.2, 10.2, 9.6],
+  [7.3, 7.4, 7.6, 7.7, 7.8, 8.0, 8.1, 8.3, 8.4, 8.4, 8.3, 8.2, 8.1, 8.1, 8.1, 8.2, 8.2, 8.4, 8.7, 9.3, 9.8, 10.0, 9.2],
+  [6.9, 7.1, 7.2, 7.3, 7.5, 7.6, 7.8, 7.9, 8.1, 8.1, 8.0, 7.9, 7.8, 7.7, 7.7, 7.7, 7.8, 7.9, 8.2, 8.8, 9.3, 9.5, 8.8],
+  [6.6, 6.7, 6.8, 7.0, 7.1, 7.3, 7.4, 7.6, 7.8, 7.8, 7.7, 7.6, 7.5, 7.4, 7.3, 7.3, 7.4, 7.5, 7.7, 8.2, 8.8, 8.9, 8.2],
+  [6.2, 6.3, 6.5, 6.6, 6.8, 6.9, 7.1, 7.3, 7.4, 7.5, 7.4, 7.3, 7.2, 7.1, 7.0, 7.0, 7.0, 7.0, 7.2, 7.7, 8.2, 8.1, 7.4],
+  [5.8, 5.9, 6.1, 6.3, 6.4, 6.5, 6.7, 6.9, 7.1, 7.2, 7.1, 7.0, 6.9, 6.8, 6.7, 6.6, 6.6, 6.6, 6.7, 7.2, 7.5, 7.2, 6.7],
+  [5.4, 5.5, 5.8, 5.9, 6.1, 6.2, 6.4, 6.6, 6.8, 6.8, 6.8, 6.7, 6.6, 6.5, 6.4, 6.3, 6.2, 6.2, 6.3, 6.6, 6.7, 6.3, 6.0],
+  [5.2, 5.3, 5.4, 5.6, 5.7, 5.9, 6.1, 6.3, 6.4, 6.5, 6.4, 6.4, 6.3, 6.2, 6.1, 6.0, 5.9, 5.8, 5.8, 6.0, 5.9, 5.7, 5.5],
+  [5.1, 5.1, 5.2, 5.3, 5.4, 5.5, 5.7, 5.9, 6.1, 6.2, 6.1, 6.0, 5.9, 5.9, 5.8, 5.7, 5.6, 5.5, 5.5, 5.5, 5.4, 5.3, 5.2],
+] }
+const RANDALLS_GROUND: GroundGrid = { y0: 150, x0: -22, step: 2, z: [
+  [8.3, 8.3, 8.2, 8.0, 7.8, 7.5, 7.4, 7.3, 7.3, 7.2, 7.2, 7.2, 7.1, 7.1, 7.0, 7.0, 7.0, 6.9, 6.9, 6.9, 6.9, 6.8, 6.8],
+  [8.4, 8.4, 8.3, 8.0, 7.8, 7.7, 7.6, 7.5, 7.4, 7.3, 7.4, 7.3, 7.3, 7.3, 7.2, 7.2, 7.1, 7.0, 7.0, 6.9, 6.9, 7.0, 7.0],
+  [8.4, 8.4, 8.2, 8.0, 7.9, 7.8, 7.7, 7.6, 7.5, 7.4, 7.5, 7.5, 7.5, 7.5, 7.4, 7.4, 7.3, 7.3, 7.1, 6.9, 6.9, 6.9, 7.0],
+  [8.4, 8.4, 8.2, 8.1, 8.0, 7.9, 7.8, 7.7, 7.6, 7.5, 7.5, 7.8, 7.7, 7.7, 7.7, 7.6, 7.6, 7.5, 7.2, 7.0, 6.9, 6.9, 6.9],
+  [8.4, 8.4, 8.3, 8.2, 8.1, 8.0, 7.8, 7.7, 7.6, 7.6, 7.6, 7.9, 8.0, 7.9, 7.9, 7.8, 7.8, 7.7, 7.4, 7.1, 7.0, 6.9, 6.9],
+  [8.5, 8.5, 8.4, 8.3, 8.2, 8.0, 7.9, 7.8, 7.7, 7.7, 7.7, 7.9, 8.2, 8.2, 8.1, 8.1, 8.0, 7.9, 7.6, 7.3, 7.1, 6.9, 6.8],
+  [8.6, 8.6, 8.5, 8.4, 8.2, 8.1, 8.0, 7.9, 7.8, 7.8, 7.8, 8.0, 8.3, 8.3, 8.3, 8.3, 8.2, 8.0, 7.8, 7.5, 7.2, 7.0, 6.7],
+  [8.6, 8.6, 8.6, 8.5, 8.3, 8.2, 8.1, 8.0, 7.9, 7.9, 7.9, 8.0, 8.4, 8.6, 8.5, 8.5, 8.4, 8.2, 7.9, 7.7, 7.4, 7.1, 6.8],
+  [8.7, 8.7, 8.6, 8.5, 8.4, 8.2, 8.2, 8.1, 8.0, 8.0, 8.0, 8.1, 8.4, 8.8, 8.8, 8.7, 8.6, 8.4, 8.1, 7.8, 7.6, 7.2, 6.9],
+  [8.7, 8.7, 8.7, 8.6, 8.5, 8.3, 8.2, 8.2, 8.1, 8.1, 8.1, 8.2, 8.5, 8.9, 9.0, 8.9, 8.8, 8.6, 8.3, 8.0, 7.7, 7.3, 7.0],
+  [8.7, 8.8, 8.7, 8.7, 8.5, 8.4, 8.3, 8.3, 8.2, 8.2, 8.2, 8.3, 8.4, 8.9, 9.2, 9.1, 9.0, 8.8, 8.5, 8.2, 7.8, 7.3, 6.9],
+  [8.7, 8.8, 8.8, 8.7, 8.6, 8.5, 8.4, 8.3, 8.3, 8.3, 8.3, 8.3, 8.5, 8.9, 9.3, 9.3, 9.2, 8.9, 8.7, 8.4, 8.0, 7.4, 7.0],
+  [8.7, 8.8, 8.8, 8.7, 8.7, 8.6, 8.5, 8.4, 8.3, 8.4, 8.4, 8.4, 8.5, 8.8, 9.5, 9.6, 9.4, 9.1, 8.9, 8.6, 8.1, 7.6, 7.0],
+  [8.7, 8.7, 8.8, 8.8, 8.7, 8.7, 8.6, 8.5, 8.4, 8.5, 8.5, 8.6, 8.6, 8.8, 9.5, 9.7, 9.6, 9.4, 9.2, 8.8, 8.3, 7.7, 7.1],
+  [8.7, 8.8, 8.7, 8.8, 8.8, 8.7, 8.6, 8.5, 8.5, 8.6, 8.6, 8.7, 8.7, 8.9, 9.4, 9.9, 9.9, 9.7, 9.5, 9.1, 8.7, 7.8, 7.1],
+  [8.6, 8.7, 8.7, 8.7, 8.7, 8.7, 8.7, 8.6, 8.6, 8.7, 8.7, 8.8, 8.8, 8.9, 9.3, 9.6, 9.8, 9.8, 9.7, 9.5, 8.7, 7.7, 7.0],
+] }
+
+
 const TC = 165                     // tower centres, |y|
 const SILL = 47, SPRING = 57.5, R = 4.5, CORN0 = 66, CORN1 = 68.5, TOP = 74.1
 
@@ -146,11 +200,18 @@ function archHead(p: Part, F: Face, r: number, zs: number, z1: number, n0: numbe
 
 for (const s of [-1, 1]) {
   const yc = s * TC
-  // Plinth, then a battered shaft up to the sills.
-  box(stone, -22, 22, yc - 13.75, yc + 13.75, 0, 5.5, { r: 0.5, bottom: false })
-  box(stone, -21, 21, yc - 13, yc + 13, 5.5, 7, { r: 0.4, top: 0.4, bottom: false })
-  const ring = (z: number, hx: number, hy: number): V3[] => [[-hx, yc - hy, z], [hx, yc - hy, z], [hx, yc + hy, z], [-hx, yc + hy, z]]
-  hexa(stone, ring(7, 19.5, 12.5), ring(SILL, 17.3, 11.2), { capA: false })
+  // Plinth, then a battered shaft up to the sills, from the ground under them.
+  const grid = s < 0 ? QUEENS_GROUND : RANDALLS_GROUND
+  const g = (x: number, y: number) => groundAt(grid, x, y)
+  footedLoft(stone, g, [
+    { plan: chamferedRect(-22, 22, yc - 13.75, yc + 13.75, 0.5), z: 'ground' },
+    { plan: chamferedRect(-22, 22, yc - 13.75, yc + 13.75, 0.5), z: 5.5 },        // plinth
+    { plan: chamferedRect(-21, 21, yc - 13, yc + 13, 0.4), z: 5.5 },
+    { plan: chamferedRect(-21, 21, yc - 13, yc + 13, 0.4), z: 6.6 },           // ledge, its top edge chamfered
+    { plan: chamferedRect(-20.6, 20.6, yc - 12.6, yc + 12.6, 0.24), z: 7 },
+    { plan: chamferedRect(-19.5, 19.5, yc - 12.5, yc + 12.5, 0), z: 7 },
+    { plan: chamferedRect(-17.3, 17.3, yc - 11.2, yc + 11.2, 0), z: SILL },        // battered shaft
+  ])
 
   // Top stage: four corner piers around crossing openings, an arch head over
   // each opening, a sill ledge under each.

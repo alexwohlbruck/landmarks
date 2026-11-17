@@ -440,3 +440,42 @@ function floats(json: any, bin: Uint8Array, index: number | undefined): Float32A
   const bytes = bin.slice(start, start + accessor.count * per * 4)
   return bytes.length === accessor.count * per * 4 ? new Float32Array(bytes.buffer) : null
 }
+
+/**
+ * Materials with faces wound against their own normals: per material, how
+ * many triangles have a geometric normal ((b − a) × (c − a)) opposite the
+ * normals stored at their corners, and how many it has. The map culls a
+ * face by its winding but lights it by its normals, so such a face looks
+ * right in a preview and is see-through on the map. Double-sided materials
+ * and primitives without normals are skipped.
+ */
+export function invertedFaces(glb: Uint8Array): { material: string; inverted: number; triangles: number }[] {
+  const gltf = parseGlb(glb), { json } = gltf
+  const data = new DataView(gltf.bin.buffer, gltf.bin.byteOffset, gltf.bin.byteLength)
+  const out = new Map<string, { inverted: number; triangles: number }>()
+  for (const mesh of json.meshes ?? []) for (const p of mesh.primitives) {
+    const material = json.materials?.[p.material ?? -1]
+    if ((p.mode ?? 4) !== 4 || material?.doubleSided || p.attributes.NORMAL === undefined) continue
+    const pos = floatElements(gltf, p.attributes.POSITION), nrm = floatElements(gltf, p.attributes.NORMAL)
+    let index = (i: number) => i, count = pos.count
+    if (p.indices !== undefined) {
+      const a = json.accessors[p.indices], view = json.bufferViews[a.bufferView]
+      const size = a.componentType === 5125 ? 4 : a.componentType === 5123 ? 2 : 1
+      const start = (view.byteOffset ?? 0) + (a.byteOffset ?? 0)
+      index = (i) => size === 4 ? data.getUint32(start + i * 4, true) : size === 2 ? data.getUint16(start + i * 2, true) : data.getUint8(start + i)
+      count = a.count
+    }
+    const tally = out.get(material?.name ?? '') ?? { inverted: 0, triangles: 0 }
+    for (let t = 0; t + 2 < count; t += 3) {
+      const ids = [index(t), index(t + 1), index(t + 2)], v = ids.map((i) => pos.get(i))
+      const e1 = v[1].map((x, k) => x - v[0][k]), e2 = v[2].map((x, k) => x - v[0][k])
+      const g = [e1[1] * e2[2] - e1[2] * e2[1], e1[2] * e2[0] - e1[0] * e2[2], e1[0] * e2[1] - e1[1] * e2[0]]
+      if (Math.hypot(g[0], g[1], g[2]) < 1e-6) continue
+      const n = ids.map((i) => nrm.get(i)).reduce((s, m) => s.map((x, k) => x + m[k]), [0, 0, 0])
+      tally.triangles++
+      if (g[0] * n[0] + g[1] * n[1] + g[2] * n[2] < 0) tally.inverted++
+    }
+    out.set(material?.name ?? '', tally)
+  }
+  return [...out].map(([material, t]) => ({ material, ...t }))
+}

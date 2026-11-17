@@ -13,7 +13,8 @@ asked for. This is a long job. Take the time to get each model right.
 
 Read first, all of them:
 
-- `README.md`, especially "Adding a model" and "Batch pull requests";
+- `README.md`, especially "Contributing a model";
+- `docs/reference.md`, especially "Batch pull requests";
 - `STYLE.md`, especially "Reworking an approved model" and "Rejected looks";
 - `docs/workflow.md`: the whole process, which this brief follows;
 - `docs/evidence.md`: what sources may be used;
@@ -58,6 +59,15 @@ named. Write the list with ids, names, coordinates and one line on why to
 `<scratch>/<prefix>/plan.md`. Aim for 30 to 50 in a big city. Keep a list of
 candidates you didn't build, with reasons, for the PR.
 
+Before starting builders, choose the stable `place` IDs for the batch. Add and
+commit missing `catalog.places` records, including parents, first. Supply the
+IDs and contributor identities to builders. Every AI credit must have a separate
+`model` field; do not substitute an assistant brand name for the LLM version.
+Credit the person the user named, with the username they gave (`github`,
+`gitlab`, `codeberg` or `bitbucket`, or a profile `url`); never guess one. For
+example, Alex Wohlbruck (`github: "alexwohlbruck"`) and Claude
+(`model: "Claude Opus 5.5"`).
+
 ## 2. Build with sub-agents
 
 Start builder sub-agents in the background, **at most three running at
@@ -97,14 +107,18 @@ Send a model back to the same builder, with specific fixes, when:
 - anything sticks past an edge;
 - the facade uses per-floor stripes or dot grids;
 - the placement, `replaces` or elevation is wrong;
+- `bun tools/terrain.ts check <id>` reports visible tops under the map's
+  terrain;
 - for a rework, the approved form changed without clear evidence.
 
 A builder's "it reads well" is not evidence. Accept only models you would
 show the user beside the photo. Expect several rounds on the famous ones.
 If a model still can't be made good, keep it and flag it as weak in the PR.
 
-Make a contact sheet of the batch so far now and then, and look at it at
-phone size: `bun run sheet --branch-diff --out <scratch>/<prefix>/sheets`.
+Make a contact sheet of the batch so far now and then, to see the models
+together by day and at night:
+`bun run sheet --branch-diff --out <scratch>/<prefix>/sheets`. Check phone
+sizes in each model's `bun run preview` views.
 
 ## 4. Merge accepted models
 
@@ -115,9 +129,15 @@ tools/merge-model.sh <scratch>/<prefix>/new/<id>.json "Add <Name>"
 ```
 
 One commit per model. Merge a model whose generator holds a shared helper
-before the models that import it; the script refuses the wrong order. Run
-`bun test` at the end. If `catalog.json` conflicts with `main` or another
-batch, merge it by id with `tools/merge-catalog.py` (see its header).
+before the models that import it; the script refuses the wrong order.
+
+The merge helper does not add place records or stage High LOD files; commit
+those explicitly, keeping `places` sorted by id. Run `bun run typecheck`,
+`bun test`, `bun run validate`, and `bun run build` at the end. Smoke-check the
+[website behavior](../website.md), including credits/model-used metadata,
+High/Low LOD, version history, all replaced OSM IDs, avatars, and day/night views.
+If `catalog.json` conflicts with `main` or another batch, merge it by id with
+`tools/merge-catalog.py`, then rerun `bun tools/replacement-footprints.ts`.
 
 ## 5. The pull request
 
@@ -133,7 +153,7 @@ Follow `docs/workflow.md`, "Pull request":
    credits (photo URL, author and licence per model). End with
    `🤖 Generated with [Claude Code](https://claude.com/claude-code)`.
 4. Remove `review/` in a last commit before the PR is merged. The release
-   refuses to publish while it exists.
+   warns while it exists on `main`.
 5. Link the PR with the t3-code `link_pull_request` tool if it is available.
 
 ## Report back

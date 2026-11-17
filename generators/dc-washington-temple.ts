@@ -51,6 +51,10 @@
  *   the gaps are narrow art-glass slits that do not read at map scale);
  *   each tower's stepped crown of small fins is two plain bands; Moroni is
  *   a slender gilded post.
+ * - Night: the temple is floodlit all over, walls and spires to their
+ *   gilded tips, so it stands white against the dark trees ("At Dusk"
+ *   photo); the marble and the gold carry a floodlight wash (STYLE.md,
+ *   "Night"), faint on the flat roof's upward faces.
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -154,11 +158,13 @@ function build() {
     spire(gold, ring(0.28, 87.4), [cx, cy, 88.0])
   }
 
+  // Floodlit from the grounds: every wall, fin and spire face, upward faces faint.
+  const lit = (_p: V3, n: V3): number => (n[2] > 0.7 ? 0.3 : 0.95)
   return [
-    { part: marble, material: finish('temple-marble', 0xf3f1ec) },
-    { part: wall, material: finish('temple-marble-shade', 0xd9d6cf) },
+    { part: marble, material: { ...finish('temple-marble', 0xf3f1ec), floodlight: lit } },
+    { part: wall, material: { ...finish('temple-marble-shade', 0xd9d6cf), floodlight: lit } },
     { part: roof, material: PALETTE.roof },
-    { part: gold, material: finish('temple-gold', 0xd6b25e) },
+    { part: gold, material: { ...finish('temple-gold', 0xd6b25e), floodlight: lit } },
   ]
 }
 

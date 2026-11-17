@@ -16,6 +16,11 @@
  *
  * Built with its faces on the axes; the catalog's `bearing` turns it to the
  * real tower's 44°.
+ *
+ * At night the whole tower is lit gold from inside its own ironwork, by
+ * lamps set in the structure from the legs to the top, so every part carries
+ * a `floodlight` (STYLE.md, "Night"): near full on the lattice, a little
+ * less on the decks' tops and the crown.
  */
 import { Part, lerp, square, writeGlb, encodePng, type V3 } from './mesh'
 
@@ -134,15 +139,19 @@ function latticeMask(size = 128): Uint8Array {
   return encodePng(size, size, px)
 }
 
+// The lighting is inside the structure, so it reaches every face; the
+// decks' upper faces and the top above the third floor catch a little less.
+const floodlight = (p: V3, n: V3): number => (n[2] > 0.7 ? 0.6 : 0.95) * (p[2] > FLOOR_3 ? 0.8 : 1)
+
 const glb = writeGlb(
   'Eiffel Tower',
   [
     {
       part: lattice,
-      material: { name: 'ironwork', color: 0x8a6a50, doubleSided: true, mask: { png: latticeMask() } },
+      material: { name: 'ironwork', color: 0x8a6a50, doubleSided: true, mask: { png: latticeMask() }, floodlight },
     },
-    { part: platforms, material: { name: 'decks', color: 0x9c7b5e, doubleSided: true } },
-    { part: crown, material: { name: 'crown', color: 0x7b5d45 } },
+    { part: platforms, material: { name: 'decks', color: 0x9c7b5e, doubleSided: true, floodlight } },
+    { part: crown, material: { name: 'crown', color: 0x7b5d45, floodlight } },
   ],
   { frame: 'Y up, -Z north, +X east, metres, origin at the anchor on the ground' },
 )

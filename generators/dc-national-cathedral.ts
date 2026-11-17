@@ -65,6 +65,9 @@
  *   the low ranges round the garth are one 13 m block with the
  *   administration range on it. The central tower is drawn without the
  *   repair scaffolding it carried in 2014–2024.
+ *
+ * Night: the stone above the eaves (the central and west towers) is
+ * floodlit, the walls below more softly.
  */
 import { Part, cross, len, sub, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -484,9 +487,13 @@ function build() {
     }
   }
 
+  // At night the towers are floodlit, the Gloria in Excelsis tower over the
+  // crossing and the west towers standing pale on the hill; the walls below
+  // the eaves are washed more softly, faces looking up least.
+  const towerLit = (p: V3, n: V3): number => (n[2] > 0.8 ? 0.25 : p[2] > D + 31.5 ? 0.95 : 0.45)
   return [
-    { part: stone, material: PALETTE.stone },
-    { part: trim, material: PALETTE.trim },
+    { part: stone, material: { ...PALETTE.stone, floodlight: towerLit } },
+    { part: trim, material: { ...PALETTE.trim, floodlight: towerLit } },
     { part: roof, material: PALETTE.roof },
     { part: win, material: PALETTE.window },
     { part: door, material: PALETTE.entrance },

@@ -13,7 +13,8 @@
  * Washington Street (north) end, an openwork Gothic lantern ringed with
  * pinnacles and a tall slender octagonal spire; the pinnacled Gothic
  * parapet round the top of that north end; the plain slab below with its
- * window columns.
+ * window columns. At night the lantern and spire are floodlit, so the stone
+ * and trim carry `floodlight` above the north end's parapet.
  *
  * Evidence:
  *  - plan: OSM outline, 25.4 × 55.6 m. The raised north end, the lantern and
@@ -154,9 +155,15 @@ for (const [a, b] of [[[HX, N], [-HX, N]], [[-HX, N], [-HX, NS]]] as [XY, XY][])
   for (let k = 0; k < n; k++) for (const [z0, z1] of top) panel(win, a, b, 2.2 + k * pitch + pitch * 0.33, 2.2 + (k + 1) * pitch - pitch * 0.33, z0, z1)
 }
 
+// Floodlight on the lantern and spire, rising to the cross.
+const spireLit = (p: V3, n: V3): number =>
+  p[2] < H2 - 1 ? 0 : (0.65 + 0.35 * Math.min(1, (p[2] - H2) / (TIP - H2))) * (n[2] > 0.7 ? 0.3 : 1)
+const STONE = { ...PALETTE.stone, floodlight: spireLit }
+const TRIM = { ...PALETTE.trim, floodlight: spireLit }
+
 await save('chi-chicago-temple', 'Chicago Temple Building', [41.882859, -87.630615], 359.5, [
-  { part: stone, material: PALETTE.stone },
-  { part: trim, material: PALETTE.trim },
+  { part: stone, material: STONE },
+  { part: trim, material: TRIM },
   { part: win, material: PALETTE.window },
   { part: roof, material: PALETTE.roof },
 ])

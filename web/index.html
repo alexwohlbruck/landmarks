@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f9f8f6">
+  <meta name="description" content="Explore an open collection of low-poly 3D landmarks. Find their locations on the map and inspect every model in an interactive viewer.">
+  <title>Landmarks — Map &amp; 3D models</title>
+  <link rel="canonical" href="https://landmarks.barrelman.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Landmarks">
+  <meta property="og:url" content="https://landmarks.barrelman.dev/">
+  <meta property="og:title" content="Landmarks — Open 3D models for maps">
+  <meta property="og:description" content="An open collection of low-poly 3D landmarks. Find them on the map and inspect every model in an interactive viewer.">
+  <meta property="og:image" content="https://landmarks.barrelman.dev/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Low-poly Washington Square Arch with the Empire State Building behind it at night">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@parchmentmaps">
+  <meta name="twitter:title" content="Landmarks — Open 3D models for maps">
+  <meta name="twitter:description" content="An open collection of low-poly 3D landmarks. Find them on the map and inspect every model in an interactive viewer.">
+  <meta name="twitter:image" content="https://landmarks.barrelman.dev/og-image.jpg">
+  <meta name="twitter:image:alt" content="Low-poly Washington Square Arch with the Empire State Building behind it at night">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('landmarks-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}</script>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./fonts/geist-sans-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./maplibre-gl.css">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div id="map" role="region" aria-label="Interactive map of landmark locations"></div>
+
+  <aside class="panel browse" aria-label="Landmark collection">
+    <div class="sheet-grip" aria-hidden="true"></div>
+    <header class="brand-bar">
+      <a class="brand" href="./">
+        <span class="brand-mark"><i data-icon="landmark"></i></span>
+        <span class="brand-text"><strong>Landmarks</strong><small>Open 3D models for maps</small></span>
+      </a>
+      <div class="brand-actions">
+        <button id="theme-toggle" class="icon-button" type="button" role="switch" aria-label="Night mode" aria-checked="false" title="Switch to night mode">
+          <span class="theme-sun"><i data-icon="sun"></i></span><span class="theme-moon"><i data-icon="moon"></i></span>
+          <span id="theme-label" class="visually-hidden">Day</span>
+        </button>
+        <a class="icon-button" href="https://github.com/alexwohlbruck/landmarks" aria-label="GitHub repository" title="GitHub"><i data-icon="github"></i></a>
+      </div>
+    </header>
+
+    <div class="search-area">
+      <label class="search-field">
+        <i data-icon="search"></i>
+        <input id="search" type="search" placeholder="Search name, place, tag or contributor" aria-label="Search landmarks" autocomplete="off" spellcheck="false">
+        <kbd aria-hidden="true">/</kbd>
+        <button id="clear-search" class="field-clear" type="button" aria-label="Clear search" hidden><i data-icon="x"></i></button>
+      </label>
+      <div class="chips" role="group" aria-label="Filters">
+        <label class="chip" data-filter="place"><span class="chip-label">Place</span><i data-icon="chevron-down"></i>
+          <select id="place" aria-label="Filter by place"><option value="">All places</option></select></label>
+        <label class="chip" data-filter="type"><span class="chip-label">Type</span><i data-icon="chevron-down"></i>
+          <select id="type" aria-label="Filter by model type"><option value="">All types</option></select></label>
+        <label class="chip" data-filter="tag"><span class="chip-label">Tag</span><i data-icon="chevron-down"></i>
+          <select id="tag" aria-label="Filter by tag"><option value="">All tags</option></select></label>
+        <label class="chip" data-filter="source"><span class="chip-label">Source</span><i data-icon="chevron-down"></i>
+          <select id="source-filter" aria-label="Filter by source"><option value="">All sources</option></select></label>
+      </div>
+    </div>
+
+    <div class="results-bar">
+      <span id="result-count" role="status">Loading…</span>
+      <button id="reset-map" class="text-button" type="button" title="Clear filters and fit the whole collection">Reset view</button>
+    </div>
+    <p id="collection-status" class="notice" role="status"></p>
+    <div id="results" class="results" aria-label="Search results"></div>
+  </aside>
+
+  <div id="map-status" class="map-status" role="status">Loading map…</div>
+
+  <aside id="inspector" class="panel inspector" aria-label="Selected landmark">
+    <div class="sheet-grip" aria-hidden="true"></div>
+    <div class="viewer-wrap">
+      <model-viewer id="viewer" camera-controls auto-rotate rotation-per-second="12deg" touch-action="pan-y" shadow-intensity="1" exposure="1.1" camera-orbit="-35deg 70deg auto" interaction-prompt="none" autoplay></model-viewer>
+      <div id="model-status" class="model-status" role="status">Loading model…</div>
+      <div id="lod-control" class="segmented viewer-lod" role="radiogroup" aria-label="Preview detail" hidden>
+        <button type="button" role="radio" data-lod="low" aria-checked="false">Low LOD</button>
+        <button type="button" role="radio" data-lod="detail" aria-checked="true">High LOD</button>
+      </div>
+      <button id="close-inspector" class="icon-button viewer-close" type="button" aria-label="Hide details" title="Hide details"><i data-icon="panel-right"></i></button>
+      <span class="viewer-hint" aria-hidden="true">Drag to orbit · scroll to zoom</span>
+    </div>
+
+    <div id="past-version" class="past-version" role="status" hidden>
+      <i data-icon="history"></i>
+      <span id="past-version-text"></span>
+      <a id="version-commit" hidden>View commit</a>
+      <button id="current-version" class="text-button" type="button">Current version</button>
+    </div>
+
+    <header class="inspector-head">
+      <button id="sheet-close" class="icon-button sheet-close" type="button" aria-label="Back to the list" title="Back to the list"><i data-icon="x"></i></button>
+      <p id="model-location" class="eyebrow"></p>
+      <h1 id="place-name">Choose a landmark</h1>
+      <div id="badges" class="badges"></div>
+    </header>
+
+    <dl id="model-stats" class="stats" aria-label="Selected file summary"></dl>
+
+    <div class="actions">
+      <a id="download" class="button primary" download><i data-icon="download"></i><span>Download GLB</span></a>
+      <button id="copy-link" class="button outline" type="button" title="Copy a link to this landmark"><i data-icon="link"></i><span>Copy link</span></button>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Landmark details">
+      <button type="button" role="tab" id="tab-overview" aria-controls="pane-overview" aria-selected="true">Overview</button>
+      <button type="button" role="tab" id="tab-file" aria-controls="pane-file" aria-selected="false" tabindex="-1">File</button>
+      <button type="button" role="tab" id="tab-placement" aria-controls="pane-placement" aria-selected="false" tabindex="-1">Placement</button>
+      <button type="button" role="tab" id="tab-data" aria-controls="pane-data" aria-selected="false" tabindex="-1">Metadata</button>
+    </div>
+
+    <section id="pane-overview" class="pane" role="tabpanel" aria-labelledby="tab-overview">
+      <p id="model-description" class="lede"></p>
+      <div id="model-tags" class="tag-list" aria-label="Model tags"></div>
+
+      <div class="block">
+        <h2>Credits</h2>
+        <ul id="authors" class="credits-list"></ul>
+        <p id="credit" class="fine"></p>
+      </div>
+
+      <div class="block">
+        <h2>License &amp; source</h2>
+        <dl class="kv">
+          <dt>Source</dt><dd id="source-name"></dd>
+          <dt>Model license</dt><dd id="license"></dd>
+          <dt>Review</dt><dd id="review-status"></dd>
+        </dl>
+        <p id="license-scope" class="fine"></p>
+        <p class="fine">Spatial data: <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>, ODbL-1.0.</p>
+      </div>
+
+      <div class="block">
+        <h2>History</h2>
+        <div id="version-controls" class="select-field" hidden>
+          <select id="version" aria-label="Model version"><option value="">Current version</option></select>
+          <i data-icon="chevron-down"></i>
+        </div>
+        <p id="version-note" class="fine" role="status"></p>
+        <a id="git-history" class="inline-link">View source history <i data-icon="external-link"></i></a>
+      </div>
+
+      <div id="references-section" class="block" hidden>
+        <h2>Visual references</h2>
+        <ul id="references" class="link-list"></ul>
+      </div>
+    </section>
+
+    <section id="pane-file" class="pane" role="tabpanel" aria-labelledby="tab-file" hidden>
+      <div class="block">
+        <h2>Geometry &amp; file</h2>
+        <p id="inspection-status" class="fine" role="status"></p>
+        <dl id="geometry-details" class="kv"></dl>
+        <ul id="animation-details" class="plain-list" aria-label="Animation clips"></ul>
+        <ul id="texture-details" class="plain-list" aria-label="Texture images"></ul>
+      </div>
+      <div class="block">
+        <h2>Downloads</h2>
+        <div id="downloads" class="link-list"></div>
+        <p class="fine">Gzip files need decompression before opening.</p>
+      </div>
+    </section>
+
+    <section id="pane-placement" class="pane" role="tabpanel" aria-labelledby="tab-placement" hidden>
+      <div class="block">
+        <h2>Replaced OSM features</h2>
+        <p id="replacement-count" class="fine"></p>
+        <ul id="replacement-details" class="osm-list"></ul>
+      </div>
+      <div class="block">
+        <h2>Model &amp; placement</h2>
+        <dl id="placement-details" class="kv"></dl>
+      </div>
+    </section>
+
+    <section id="pane-data" class="pane" role="tabpanel" aria-labelledby="tab-data" hidden>
+      <details class="disclosure" open><summary>All published metadata</summary><div id="all-metadata"></div></details>
+      <details class="disclosure"><summary>Metadata JSON</summary><pre id="metadata-json" class="metadata-json"></pre></details>
+    </section>
+  </aside>
+
+  <button id="open-inspector" class="pill reopen" type="button" hidden><i data-icon="landmark"></i><span>Show details</span></button>
+  <noscript><p class="fatal">Enable JavaScript to explore the map and 3D models. The <a href="./api/v1/latest.json">dataset API</a> is also available directly.</p></noscript>
+</body>
+</html>

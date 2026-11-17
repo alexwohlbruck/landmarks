@@ -12,8 +12,8 @@
 # or "landmarks": [ ... ] for a model placed more than once (a bridge's towers).
 #
 # It regenerates models/<id>.glb from the generator, then puts the entries in
-# catalog.json: an id already there is replaced where it stands (a rework), a
-# new one is appended. Then it validates, typechecks the generator and
+# catalog.json: an id already there is replaced (a rework), a new one is
+# added, and every list stays sorted by id. Then it validates, typechecks the generator and
 # commits generators/<id>.ts, models/<id>.glb and catalog.json. On any
 # failure catalog.json is put back and nothing is committed.
 #
@@ -49,6 +49,8 @@ def upsert(rows, new):
         if n['id'] in at: rows[at[n['id']]] = n
         else: rows.append(n)
 upsert(c['models'], [m]); upsert(c['landmarks'], ls)
+for key in ('places', 'models', 'landmarks'):
+    if key in c: c[key].sort(key=lambda r: r['id'])
 open('catalog.json', 'w').write(json.dumps(c, indent=2, ensure_ascii=False) + '\n')
 PY
 

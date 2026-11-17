@@ -47,6 +47,9 @@
  *   height.
  * - Left out: the sculpture over the entrance, balustrades, urns, the
  *   columns' fluting, lamps, the fountain and garden (ground).
+ * - Night: the tower is floodlit, from the belfry stage to the lantern, the
+ *   dome glowing over the dark wings; its stone, trim, tile and copper carry
+ *   a `floodlight` limited to the tower (STYLE.md, "Night").
  */
 import { Part, cross, sub, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -434,11 +437,15 @@ const DOME_R = 7.9, DOME_Z = DZ1 + 0.3, DOME_TOP = 58
 // the lantern and the cupolas (`patina`), windows `window`; open arches and
 // loggias are a shadowed recess, a light warm grey so they read as openings
 // without going dark.
+// Night: the tower over the wings' roofs is floodlit; its flat tops
+// barely (the dome's curve stays lit nearly to the lantern).
+const floodlight = (p: V3, n: V3): number =>
+  Math.abs(p[0] - TX) < 11.5 && Math.abs(p[1]) < 11.5 && p[2] > 21 ? (n[2] > 0.85 ? 0.25 : 1) : 0
 const parts = [
-  { part: stone, material: PALETTE.stone },
-  { part: trim, material: PALETTE.trim },
-  { part: tile, material: PALETTE.terracotta },
-  { part: copper, material: PALETTE.patina },
+  { part: stone, material: { ...PALETTE.stone, floodlight } },
+  { part: trim, material: { ...PALETTE.trim, floodlight } },
+  { part: tile, material: { ...PALETTE.terracotta, floodlight } },
+  { part: copper, material: { ...PALETTE.patina, floodlight } },
   { part: win, material: PALETTE.window },
   { part: shade, material: finish('pch-arch-shade', 0x8f8a80) },
 ]

@@ -20,12 +20,13 @@ const option = (name: string) => {
   return at < 0 ? undefined : args.splice(at, 2)[1]
 }
 const H = Number(option('--height') ?? 520)
+const colsArg = option('--cols')
 const [out, ...files] = args
 if (!out || !files.length) {
   console.error('usage: bun tools/montage.ts <out.png> [--cols <n>] [--height <px>] <image[=label]> ...')
   process.exit(1)
 }
-const cols = Number(option('--cols') ?? files.length)
+const cols = Number(colsArg ?? files.length)
 const GAP = 20, LABEL = 28, BG = '#e9e5dc'
 const escape = (s: string) => s.replace(/[&<>"]/g, (c) => `&#${c.charCodeAt(0)};`)
 

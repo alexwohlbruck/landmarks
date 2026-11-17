@@ -51,6 +51,11 @@
  * blue panel with a gold diamond per face; the marquee's ironwork crest as a
  * half-disc. Balconies, railings, lettering and the scroll consoles at the
  * shaft top are left out (the bell-shaped transition stands in for them).
+ *
+ * Night: the marquee's sign boards and its gold band of bulbs are lit, and
+ * the tower is floodlit. With six materials already, these carry a
+ * `floodlight` on the stone, blue and gold (STYLE.md, "Night"), limited to
+ * the marquee's boards and band and to the tower; the rest stays unlit.
  */
 import { Part, cross, len, sub, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -492,8 +497,12 @@ for (const f of [2, 3]) {
 // The V marquee wrapped round the north-west corner: a navy box along each
 // of the two faces, its white sign boards, gold lamp fascia beneath and an
 // ironwork crest (a half-disc) above each sign.
+// Where the marquee's sign boards and bulb band are, in plan, for the
+// night lighting: one box per arm, and the height bands of each.
+const MARQUEE: Array<[number, number, number, number]> = []
+const MQ_Z0 = 3.6, MQ_Z1 = 5.5
 {
-  const r = R_SHAFT - 0.1, D = 1.9, Z0 = 3.6, Z1 = 5.5
+  const r = R_SHAFT - 0.1, D = 1.9, Z0 = MQ_Z0, Z1 = MQ_Z1
   const apex = corner(8, 3, r, OCT_PHASE)           // the north-west corner
   const aN = corner(8, 2, r, OCT_PHASE), aW = corner(8, 4, r, OCT_PHASE)
   const out: XY = [Math.cos((3 * Math.PI) / 4), Math.sin((3 * Math.PI) / 4)]
@@ -519,6 +528,7 @@ for (const f of [2, 3]) {
     const sgn = (sw.n[0] * n[0] + sw.n[1] * n[1]) > 0 ? 1 : -1
     const face = sgn > 0 ? sw : wall(tip, oEnd)
     const Lf = Math.hypot(oEnd[0] - tip[0], oEnd[1] - tip[1])
+    MARQUEE.push([Math.min(tip[0], oEnd[0]) - 0.3, Math.max(tip[0], oEnd[0]) + 0.3, Math.min(tip[1], oEnd[1]) - 0.3, Math.max(tip[1], oEnd[1]) + 0.3])
     panel(stone, face, 0.35, Lf - 0.35, Z0 + 0.45, Z1 - 0.3, 0.03)
     panel(gold, face, 0.1, Lf - 0.1, Z0 + 0.05, Z0 + 0.3, 0.03)
     // Crest: a half-disc standing on the box, set back from the face.
@@ -543,13 +553,19 @@ for (const f of [2, 3]) {
 // White stucco as the palette's stone; the flat roofs `roof`; the red tile
 // pent roofs `terracotta`; the belfry's blue-and-gold tile and the navy
 // marquee as two identity finishes, muted.
+// Night: the marquee's boards (stone) and bulb band (gold) glow full; the
+// tower above the marquee is floodlit, faces looking up barely.
+const inMarquee = (p: V3, z0: number, z1: number) =>
+  p[2] > z0 && p[2] < z1 && MARQUEE.some(([x0, x1, y0, y1]) => p[0] > x0 && p[0] < x1 && p[1] > y0 && p[1] < y1)
+const inTower = (p: V3) => Math.hypot(p[0] - TC[0], p[1] - TC[1]) < R_SHAFT + 1.2 && p[2] > MQ_Z1 + 0.5
+const towerLit = (p: V3, n: V3) => inTower(p) ? (n[2] > 0.7 ? 0.25 : 0.85) : 0
 const parts = [
-  { part: stone, material: PALETTE.stone },
+  { part: stone, material: { ...PALETTE.stone, floodlight: (p: V3, n: V3) => inMarquee(p, MQ_Z0 + 0.4, MQ_Z1 - 0.25) && n[2] < 0.5 ? 1 : towerLit(p, n) } },
   { part: roof, material: PALETTE.roof },
   { part: tile, material: PALETTE.terracotta },
   { part: win, material: PALETTE.window },
-  { part: blue, material: finish('carthay-tile-blue', 0x55709f) },
-  { part: gold, material: finish('carthay-tile-gold', 0xd6b064) },
+  { part: blue, material: { ...finish('carthay-tile-blue', 0x55709f), floodlight: towerLit } },
+  { part: gold, material: { ...finish('carthay-tile-gold', 0xd6b064), floodlight: (p: V3, n: V3) => inMarquee(p, MQ_Z0 - 0.05, MQ_Z0 + 0.4) ? 1 : towerLit(p, n) } },
 ]
 const triangles = parts.reduce((sum, { part }) => sum + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)

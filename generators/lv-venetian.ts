@@ -57,6 +57,9 @@
  * the crowns (cream above 133 m on the main tower, 90 m on Venezia) and
  * pavilions (14 m deep, 5 m above the roof). Left out: the canal water, the
  * lagoon columns, gondola poles, statues, signs and lettering.
+ *
+ * Night: the campanile and the Doge's Palace front are floodlit, so their
+ * finishes carry a floodlight wash there only (STYLE.md, "Night").
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -508,12 +511,23 @@ if (import.meta.main) {
   // The small building at the bridge's south-west foot, way/543728945.
   prism(trim, trim, [[-170.7, -34.1], [-168.2, -37.0], [-158.3, -37.4], [-156.2, -34.5], [-163.3, -23.6], [-168.1, -25.2]], 0, 6.5)
 
+  // At night the Strip front's replicas are floodlit: the campanile, from
+  // its base to Gabriel, fading a little with height, and the Doge's
+  // Palace's arcades and pink wall. The towers, podium and other blocks that
+  // share these finishes stay dark; faces looking up barely catch it.
+  const frontLit = (p: V3, n: V3): number => {
+    const up = n[2] > 0.7 ? 0.2 : 1
+    if (Math.hypot(p[0] + 185.1, p[1] + 27.7) < 12) return up * (1 - 0.3 * Math.min(1, p[2] / 96))
+    if (p[0] > -111 && p[0] < -79 && p[1] > 15 && p[1] < 82 && p[2] < 25) return up * 0.9
+    return 0
+  }
+  const lit = <T extends object>(m: T) => ({ ...m, floodlight: frontLit })
   await save('lv-venetian', 'The Venetian', [
-    { part: trim, material: PALETTE.trim },
-    { part: rose, material: finish('venetian-rose', 0xe2b39c) },
+    { part: trim, material: lit(PALETTE.trim) },
+    { part: rose, material: lit(finish('venetian-rose', 0xe2b39c)) },
     { part: win, material: PALETTE.window },
-    { part: brick, material: PALETTE.terracotta },
-    { part: cap, material: PALETTE.copper },
-    { part: gold, material: finish('venetian-gold', 0xd6b46c) },
+    { part: brick, material: lit(PALETTE.terracotta) },
+    { part: cap, material: lit(PALETTE.copper) },
+    { part: gold, material: lit(finish('venetian-gold', 0xd6b46c)) },
   ], 151, 'Y up, -Z north, +X east, metres; origin at the relation/7770314 outline centroid; bearing 0', 6500)
 }

@@ -52,6 +52,9 @@
  * - Left out: the Astronomers Monument, the Greek-key bands, the stairs to
  *   the roof terraces, the underground 2006 wing and its café terrace, the
  *   dome ribs.
+ * - Night: the observatory is floodlit, white on the dark hill as the city
+ *   sees it, the domes dimmer above the walls; the walls, domes and lantern
+ *   carry a `floodlight` (STYLE.md, "Night"), faces looking up barely lit.
  */
 import { Part, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
@@ -242,12 +245,15 @@ for (const sx of [-1, 1]) {
 }
 
 // ---------- write ----------
+// Floodlit at night: the white walls full, the domes and lantern less;
+// faces looking up barely (the domes' crowns too).
+const lit = (k: number) => (_p: V3, n: V3): number => k * (n[2] > 0.8 ? 0.2 : 1)
 const parts = [
-  { part: wall, material: finish('griffith-white', 0xf7f5f0) },
+  { part: wall, material: { ...finish('griffith-white', 0xf7f5f0), floodlight: lit(0.9) } },
   { part: roof, material: PALETTE.roof },
   { part: win, material: PALETTE.window },
-  { part: dome, material: finish('griffith-bronze', 0x847a6d) },
-  { part: lantern, material: PALETTE.copper },
+  { part: dome, material: { ...finish('griffith-bronze', 0x847a6d), floodlight: lit(0.6) } },
+  { part: lantern, material: { ...PALETTE.copper, floodlight: lit(0.6) } },
 ]
 const triangles = parts.reduce((n, { part }) => n + part.triangles, 0)
 if (triangles > 5000) throw new Error(`Triangle budget exceeded: ${triangles}`)

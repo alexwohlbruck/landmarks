@@ -38,11 +38,11 @@ rules exactly.
      `windowVariant`);
    - y = 0 is the lowest ground under the footprint;
    - don't model ground, grass, paving or water;
-   - night material names (`window*`, `glass`, `entrance`);
+   - night material names (`window*`, `entrance`, `lamp*`; glass stays dark);
    - "Reworking an approved model" and "Rejected looks";
    - "Building a famous or intricate model", and the coaster section for a
      ride.
-2. `WT/README.md`: the frame contract (+Y up, -Z north, +X east, metres,
+2. `WT/docs/reference.md`: the frame contract (+Y up, -Z north, +X east, metres,
    origin at the anchor on the ground) and what `replaces` must list.
 3. `WT/docs/evidence.md`: what sources you may use, and the lidar rules.
 4. Worked examples: `generators/empire-state-building.ts`,
@@ -71,6 +71,10 @@ imagery, Street View, or any 3D tiles.** Use only:
   then `python3 WT/tools/lidar_frame.py <out>.json <bearing> ...` to read it
   in your model's frame. Run `lidar.py find <lon> <lat>` to see which
   datasets cover the point.
+- **The map's terrain** (Mapterhorn) under the site, before you model the
+  base: `bun WT/tools/terrain.ts grid <lon> <lat> <half-m> 5 --bearing <deg>`.
+  It prints the ground in your model's frame. Note how much it slopes and
+  whether it already shows a plaza, podium or steps you are about to build.
 - **USGS NAIP** aerials for plan, roof colours and shadows:
   `python3 WT/tools/usgs.py naip <lon> <lat> <half-m> <out.png>`.
 - **Published facts**: height, floors, dimensions, dates (Wikipedia, the
@@ -118,6 +122,10 @@ Don't delete other builders' files.
   that don't read as the real building.
 - Budget: `bun tools/glb-stats.ts <id>`. At most 5,000 triangles (6,500 if
   the model is complex), 250 KB, and six materials. Lowest point at y = 0.
+- Terrain: `bun tools/terrain.ts check <id>` (after the placement is in
+  the catalog, or with `--lng --lat --bearing`). It must print `ok`. If it
+  reports buried tops, follow "The map's terrain" in `docs/evidence.md`,
+  and put the check's last result in your report.
 
 Facade rules the reviewer enforces:
 
@@ -128,6 +136,14 @@ Facade rules the reviewer enforces:
 - Real semicircles, not ovals. Symmetry where the building is symmetric.
   Nothing pokes past an edge or a corner.
 - Crowns and signature features get bolder at phone size, not finer.
+- Plan the night look: whatever is lit on the real landmark after dark
+  (signs, crowns, floodlit stone, lit windows, lamps) gets the matching
+  material or `_FLOODLIGHT` (STYLE.md, "Night"); a lit sign is `neon*` in
+  its own colour; glass roofs stay `glass`. Check `--night` against a night
+  photo.
+- Lettering on a famous sign copies the real letterforms (script, serif,
+  condensed), traced from a photo and built with `generators/lettering.ts`.
+  No pixel or grid fonts; see "Famous signs" in STYLE.md.
 
 ## Reworks
 
@@ -172,13 +188,47 @@ terrain or lidar ground. Note the value and its source in the header.
 `SCRATCH/new/<id>.json`:
 
 ```json
-{ "model": { "id": "<id>", "license": "CC0-1.0", "author": "<author>" },
-  "landmark": { "id": "<id>", "name": "<display name>", "model": "<id>", "lng": 0, "lat": 0,
-                "bearing": 0, "elevation": 0, "minzoom": 15,
-                "wikidata": "<Q-id, or omit>", "replaces": ["way/123"] } }
+{
+  "model": {
+    "id": "<id>",
+    "license": "CC0-1.0",
+    "collection": "landmarks",
+    "type": "building",
+    "tags": ["historic"],
+    "reviewStatus": "unreviewed",
+    "credits": [
+      { "name": "Alex Wohlbruck", "kind": "person", "github": "alexwohlbruck", "role": "creator" },
+      { "name": "Claude", "kind": "ai", "model": "Claude Opus 5.5", "role": "procedural modeling" }
+    ]
+  },
+  "landmark": {
+    "id": "<id>",
+    "name": "<display name>",
+    "model": "<id>",
+    "place": "<place-id>",
+    "lng": 0,
+    "lat": 0,
+    "bearing": 0,
+    "elevation": 0,
+    "minzoom": 15,
+    "replaces": ["way/123"]
+  }
+}
 ```
 
-For a model placed several times (each tower of a bridge), use
+Replace the example credits with the actual contributors and LLM model used.
+Use the creator and username the lead gave you; never guess one. Every AI
+credit requires its own `model` field. A person's profile is optional: a
+`github`, `gitlab`, `codeberg` or `bitbucket` username (an `@` prefix is
+accepted), or any other profile as `url`. Choose a primary `type`, descriptive slug `tags`, and
+the real license (CC0-1.0 is the default). CC-BY models need `attribution`;
+custom licenses need `licenseUrl`. Include `wikidata` only when known.
+The lead must prepare `<place-id>` in `catalog.places` before merging models;
+the scratch file does not create place records. Keep contributor/source credits
+separate from photo references. Put publishable visual-reference credits in
+`model.references` as well as the generator header.
+
+For a model placed several times (the Eiffel Tower, in Paris and Las Vegas), use
 `"landmarks": [ ... ]`.
 
 ## The generator header
@@ -221,3 +271,14 @@ build:
   <id>: <name>, <lng> <lat>, <notes>
   ...
 ```
+
+## Catalog metadata
+
+Follow `docs/reference.md`: choose a durable explicit `place` for every placement;
+include `type`, `tags`, `collection: "landmarks"`, and structured `credits` for
+the actual human/organization and AI assistant. Each AI credit must have a
+separate `model` field identifying the LLM used; use the contributor's `github`
+username so the viewer can link their profile and display their avatar
+(`gitlab`, `codeberg` and `bitbucket` link the profile only).
+Keep existing IDs when updating a model so the website can show its Git-backed version history. Preserve existing
+High LOD paths, tags, places, attribution, and references when making a rework.

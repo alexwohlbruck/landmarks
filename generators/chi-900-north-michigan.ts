@@ -30,7 +30,8 @@
  *    ≈ 244.5 m, the lanterns 10 m square, glass to ≈ 253.5 m and the
  *    pyramids to ≈ 262 m, finials to 265 m. Expect ±4 m on the breaks.
  *  - colour: cream limestone near `stone`; green-tinted glass drawn as a
- *    green-slate window; the lantern roofs pale silver metal.
+ *    green-slate window; the lantern roofs pale silver metal. The four
+ *    glass lanterns are lit after dark, so they are neon and glow at night.
  *
  * Photos (Wikimedia Commons): 900_North_Michigan_Avenue.jpg (Marketing900,
  * CC BY-SA 4.0); Chicago_900_North_Michigan_Avenue_(27940356553).jpg and
@@ -219,7 +220,7 @@ const parts = [
   { part: stone, material: finish('cream-limestone', 0xf0e6d4) },
   { part: win, material: { ...PALETTE.window, color: 0x5d7774 } },
   { part: roof, material: PALETTE.roof },
-  { part: lantern, material: PALETTE.glass },
+  { part: lantern, material: finish('neon-lantern-glass', PALETTE.glass.color, PALETTE.glass.roughness) },
   { part: cap, material: finish('lantern-metal', 0xd2d7da, .45) },
 ]
 const triangles = parts.reduce((s, p) => s + p.part.triangles, 0)

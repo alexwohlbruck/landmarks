@@ -42,13 +42,21 @@
  * forms (drawn as bold masses: chest, neck and head, coiled fish tail, and
  * the reed plinth between each pair). Left out: the pool water (the map's),
  * the rococo shells, the jets. The basins' water is drawn (see BASIN).
+ *
+ * Night: the marble tiers are floodlit from lamps in the pools; the
+ * seahorses stay dark. The coloured light show plays on the jets, which are
+ * not drawn.
  */
 import { Part, addGltfTriangles, writeGlb, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 
-const MARBLE = finish('pink-marble', 0xe2c4b2)
-const LIP = finish('pink-marble-light', 0xf0dccd)
-const DEEP = finish('pink-marble-deep', 0xcfae9c)
+// At night the marble tiers are lit from lamps in the pools, the basin walls
+// glowing over the dark water; faces looking up (the lips' tops) less. The
+// great pool's coping, out past the lower basin, stays dark.
+const tierLit = (p: V3, n: V3): number => (Math.hypot(p[0], p[1]) > 17 ? 0 : n[2] > 0.8 ? 0.45 : 0.9)
+const MARBLE = { ...finish('pink-marble', 0xe2c4b2), floodlight: tierLit }
+const LIP = { ...finish('pink-marble-light', 0xf0dccd), floodlight: tierLit }
+const DEEP = { ...finish('pink-marble-deep', 0xcfae9c), floodlight: tierLit }
 // The fountain's own raised basins hold water at 2-7 m, above any ground the
 // map draws; a pale spray-lit water tone is what makes the tiers read from
 // above (NAIP shows them pale). The pool at ground level is left to the map.
