@@ -44575,6 +44575,74 @@
       "source": "generators/nyc-new-amsterdam-theatre-sign.ts"
     },
     {
+      "id": "nyc-new-york-county-courthouse",
+      "file": "models/nyc-new-york-county-courthouse.glb",
+      "source": "generators/nyc-new-york-county-courthouse.ts",
+      "license": "CC0-1.0",
+      "author": "Colin",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "courthouse",
+        "neoclassical",
+        "civic",
+        "historic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "New York State Supreme Courthouse 60 Centre Street from west.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:New_York_State_Supreme_Courthouse_60_Centre_Street_from_west.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "New York State Supreme Courthouse 60 Centre Street from southwest.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:New_York_State_Supreme_Courthouse_60_Centre_Street_from_southwest.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "New York County Courthouse - Angle Shot (48129112547).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:New_York_County_Courthouse_-_Angle_Shot_(48129112547).jpg",
+          "author": "Ajay Suresh",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "New York County Supreme Court 2021-06-25 11-35.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:New_York_County_Supreme_Court_2021-06-25_11-35.jpg",
+          "author": "Axel Tschentscher",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Courthouses on Foley Square.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Courthouses_on_Foley_Square.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Neo-Classical - New York, NY - New York County Courthouse (4).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Neo-Classical_-_New_York,_NY_-_New_York_County_Courthouse_(4).jpg",
+          "author": "Bmzuckerman",
+          "license": "CC BY 4.0"
+        }
+      ]
+    },
+    {
       "id": "nyc-new-york-life",
       "file": "models/nyc-new-york-life.glb",
       "license": "CC0-1.0",
@@ -82010,6 +82078,21 @@
       "minzoom": 17,
       "replaces": [
         "way/591988931"
+      ]
+    },
+    {
+      "id": "nyc-new-york-county-courthouse",
+      "name": "New York County Courthouse",
+      "model": "nyc-new-york-county-courthouse",
+      "place": "new-york-area",
+      "wikidata": "Q2790405",
+      "lng": -74.001542,
+      "lat": 40.7142864,
+      "bearing": 15,
+      "elevation": 0,
+      "minzoom": 15,
+      "replaces": [
+        "relation/3696430"
       ]
     },
     {
