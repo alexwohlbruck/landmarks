@@ -60661,6 +60661,104 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "tor-cn-tower",
+      "file": "models/tor-cn-tower.glb",
+      "source": "generators/tor-cn-tower.ts",
+      "license": "CC0-1.0",
+      "author": "Colin",
+      "collection": "landmarks",
+      "type": "tower",
+      "tags": [
+        "observation-tower",
+        "communications-tower",
+        "concrete",
+        "skyline"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Toronto - ON - Toronto Harbourfront7.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Toronto_-_ON_-_Toronto_Harbourfront7.jpg",
+          "author": "Taxiarchos228 (Wladyslaw)",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Toronto - ON - CN Tower Turmkorb.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Toronto_-_ON_-_CN_Tower_Turmkorb.jpg",
+          "author": "Taxiarchos228 (Wladyslaw)",
+          "license": "CC BY 3.0"
+        },
+        {
+          "title": "Toronto - ON - CN Tower - Antennenspitze.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Toronto_-_ON_-_CN_Tower_-_Antennenspitze.jpg",
+          "author": "Taxiarchos228 (Wladyslaw)",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Toronto - ON - Schaft des CN Tower.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Toronto_-_ON_-_Schaft_des_CN_Tower.jpg",
+          "author": "Taxiarchos228 (Wladyslaw)",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "CN Tower, Toronto, Canada9.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:CN_Tower,_Toronto,_Canada9.jpg",
+          "author": "Diego Delso",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "DSC08940 - CN Tower (37078782931).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:DSC08940_-_CN_Tower_(37078782931).jpg",
+          "author": "Dennis G. Jarvis",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Base of the CN Tower Toronto Canada 2025-09-07 16-20-13 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Base_of_the_CN_Tower_Toronto_Canada_2025-09-07_16-20-13_1.jpg",
+          "author": "G. Edward Johnson",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "CN Tower Base (20111603654).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:CN_Tower_Base_(20111603654).jpg",
+          "author": "Evan Delshaw",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Toronto - ON - CN Tower from Heli.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Toronto_-_ON_-_CN_Tower_from_Heli.jpg",
+          "author": "Taxiarchos228 (Wladyslaw)",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "CN Tower by night.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:CN_Tower_by_night.jpg",
+          "author": "Christophe Krief",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "CN Tower Turmkorb-Modell.png",
+          "url": "https://commons.wikimedia.org/wiki/File:CN_Tower_Turmkorb-Modell.png",
+          "author": "Niabot",
+          "license": "CC BY-SA 3.0"
+        }
+      ]
+    },
+    {
       "id": "truist-center-charlotte",
       "file": "models/truist-center-charlotte.glb",
       "license": "CC0-1.0",
@@ -88676,6 +88774,34 @@
         "way/557938595"
       ],
       "place": "tokyo"
+    },
+    {
+      "id": "tor-cn-tower",
+      "name": "CN Tower",
+      "model": "tor-cn-tower",
+      "place": "toronto",
+      "wikidata": "Q134883",
+      "lng": -79.3870828,
+      "lat": 43.6425876,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 13,
+      "replaces": [
+        "way/32742038",
+        "way/288273451",
+        "way/288273452",
+        "way/288273453",
+        "way/288273454",
+        "way/288273455",
+        "way/288273456",
+        "way/288273458",
+        "way/288273459",
+        "way/288273460",
+        "way/288273461",
+        "way/288273793",
+        "way/288273794",
+        "way/288273795"
+      ]
     },
     {
       "id": "truist-center-charlotte",
