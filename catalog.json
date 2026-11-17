@@ -8969,6 +8969,86 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "bos-boston-public-library",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "library",
+        "historic",
+        "renaissance-revival",
+        "beaux-arts"
+      ],
+      "reviewStatus": "unreviewed",
+      "author": "Colin",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "2017 Boston Public Library McKim Building.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2017_Boston_Public_Library_McKim_Building.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Boston Public Library, McKim Building (2019).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Boston_Public_Library,_McKim_Building_(2019).jpg",
+          "author": "Lëa-Kim Châteauneuf",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Boston Public Library, McKim Building (11-2019).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Boston_Public_Library,_McKim_Building_(11-2019).jpg",
+          "author": "Lëa-Kim Châteauneuf",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Boston Library eb1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Boston_Library_eb1.jpg",
+          "author": "Fcb981",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "2017 Boston Public Library Johnson Building.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2017_Boston_Public_Library_Johnson_Building.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Johnson building bpl.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Johnson_building_bpl.jpg",
+          "author": "David Jones",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Courtyard - Boston Public Library, McKim Building - DSC09277.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Courtyard_-_Boston_Public_Library,_McKim_Building_-_DSC09277.JPG",
+          "author": "Daderot",
+          "license": "CC0"
+        },
+        {
+          "title": "Boston Public Library's McKim Building at Night.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Boston_Public_Library%27s_McKim_Building_at_Night.jpg",
+          "author": "TanRo",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/bos-boston-public-library.glb",
+      "source": "generators/bos-boston-public-library.ts"
+    },
+    {
       "id": "bos-bunker-hill-monument",
       "license": "CC0-1.0",
       "collection": "landmarks",
@@ -65516,6 +65596,40 @@
         "way/323383462"
       ],
       "place": "charlotte-area"
+    },
+    {
+      "id": "bos-boston-public-library",
+      "name": "Boston Public Library",
+      "model": "bos-boston-public-library",
+      "place": "boston-area",
+      "lng": -71.0782886,
+      "lat": 42.3493254,
+      "bearing": 340,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q894583",
+      "replaces": [
+        "relation/63755",
+        "way/241925728",
+        "way/241925731",
+        "way/241925739",
+        "way/241925740",
+        "way/241925748",
+        "way/241925754",
+        "way/241925759",
+        "way/241925767",
+        "way/241925777",
+        "way/241925782",
+        "way/241925785",
+        "way/241925789",
+        "way/241925795",
+        "way/241925800",
+        "way/241925805",
+        "way/241925809",
+        "way/241925812",
+        "way/241925820",
+        "way/241925824"
+      ]
     },
     {
       "id": "bos-bunker-hill-monument",
