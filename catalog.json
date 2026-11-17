@@ -6610,6 +6610,73 @@
       "source": "generators/atx-central-library.ts"
     },
     {
+      "id": "atx-frost-bank-tower",
+      "license": "CC0-1.0",
+      "author": "Colin",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "office",
+        "skyscraper",
+        "postmodern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Frost Bank Tower - Austin, Texas - DSC08342.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Frost_Bank_Tower_-_Austin,_Texas_-_DSC08342.jpg",
+          "author": "Daderot",
+          "license": "CC0"
+        },
+        {
+          "title": "Frost Bank Tower - Austin, Texas - DSC08325.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Frost_Bank_Tower_-_Austin,_Texas_-_DSC08325.jpg",
+          "author": "Daderot",
+          "license": "CC0"
+        },
+        {
+          "title": "FrostBankTower-Jul2010-a.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:FrostBankTower-Jul2010-a.JPG",
+          "author": "LoneStarMike",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Frost Bank Tower Austin.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Frost_Bank_Tower_Austin.jpg",
+          "author": "HanFSolo",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Frostbanktoweraustintx.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Frostbanktoweraustintx.jpg",
+          "author": "CMBJ",
+          "license": "CC BY-SA 2.5"
+        },
+        {
+          "title": "The upper reaches of Frost Bank Tower, a prominent Austin, Texas, skyscraper",
+          "url": "https://commons.wikimedia.org/wiki/File:The_upper_reaches_of_Frost_Bank_Tower,_a_prominent_Austin,_Texas,_skyscraper_LCCN2014631900.tif",
+          "author": "Carol M. Highsmith",
+          "license": "Public domain"
+        }
+      ],
+      "file": "models/atx-frost-bank-tower.glb",
+      "source": "generators/atx-frost-bank-tower.ts"
+    },
+    {
       "id": "atx-google-tower",
       "license": "CC0-1.0",
       "author": "Colin",
@@ -64148,6 +64215,21 @@
       "wikidata": "Q122841225",
       "replaces": [
         "way/516271467"
+      ]
+    },
+    {
+      "id": "atx-frost-bank-tower",
+      "name": "Frost Bank Tower",
+      "model": "atx-frost-bank-tower",
+      "place": "austin-area",
+      "lng": -97.7427211,
+      "lat": 30.2663845,
+      "bearing": 17.7,
+      "elevation": 0,
+      "minzoom": 13,
+      "wikidata": "Q3089263",
+      "replaces": [
+        "way/37546502"
       ]
     },
     {
