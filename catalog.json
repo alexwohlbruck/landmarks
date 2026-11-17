@@ -33635,6 +33635,75 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "mem-pyramid",
+      "file": "models/mem-pyramid.glb",
+      "source": "generators/mem-pyramid.ts",
+      "license": "CC0-1.0",
+      "author": "Colin",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "pyramid",
+        "retail",
+        "stainless-steel",
+        "former-arena",
+        "observation-deck"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Memphis Pyramid (Great American Pyramid) - Memphis, TN.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Memphis_Pyramid_(Great_American_Pyramid)_-_Memphis,_TN.jpg",
+          "author": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Pyramide Memphis, TN.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pyramide_Memphis,_TN.jpg",
+          "author": "Morten Haan",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Memphis IMG 2820 Pyramid Arena.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Memphis_IMG_2820_Pyramid_Arena.jpg",
+          "author": "Bjoertvedt",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Memphis, Tennessee 20161011 162548.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Memphis,_Tennessee_20161011_162548.jpg",
+          "author": "Jonathansammy",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Bass Pro Shops at the Pyramid in Memphis, T.N.",
+          "url": "https://www.flickr.com/photos/184676626@N03/51573339880",
+          "author": "Flickr user 184676626@N03",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Bass Pro Pyramid",
+          "url": "https://www.flickr.com/photos/37527185@N05/22552622038",
+          "author": "Tyler Merbler",
+          "license": "CC BY 2.0"
+        }
+      ]
+    },
+    {
       "id": "metalmorphosis",
       "file": "models/metalmorphosis.glb",
       "license": "CC0-1.0",
@@ -77046,6 +77115,21 @@
         "way/131139724"
       ],
       "place": "charlotte-area"
+    },
+    {
+      "id": "mem-pyramid",
+      "name": "Memphis Pyramid",
+      "model": "mem-pyramid",
+      "place": "memphis-area",
+      "wikidata": "Q2226897",
+      "lng": -90.051905,
+      "lat": 35.155977,
+      "bearing": 18,
+      "elevation": 0,
+      "minzoom": 14,
+      "replaces": [
+        "way/118647101"
+      ]
     },
     {
       "id": "metalmorphosis",
