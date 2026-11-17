@@ -8701,6 +8701,74 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "bos-old-state-house",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "government",
+        "georgian",
+        "museum"
+      ],
+      "reviewStatus": "unreviewed",
+      "author": "Colin",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "USA Old State House 1 MA.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:USA_Old_State_House_1_MA.jpg",
+          "author": "Daniel Schwen",
+          "license": "CC BY-SA 2.5"
+        },
+        {
+          "title": "Old State House, Boston.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Old_State_House,_Boston.jpg",
+          "author": "Marco Almbauer",
+          "license": "Public domain"
+        },
+        {
+          "title": "Old State House Boston 2009f.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Old_State_House_Boston_2009f.JPG",
+          "author": "Chensiyuan",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Boston Old State House NE StateCongressSt 9445 20190429.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Boston_Old_State_House_NE_StateCongressSt_9445_20190429.jpg",
+          "author": "Karlunun",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Old State House, Boston (western elevation detail, 2026).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Old_State_House,_Boston_(western_elevation_detail,_2026).jpg",
+          "author": "Seasider53",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Old State House at night 03.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Old_State_House_at_night_03.jpg",
+          "author": "Runner1928",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/bos-old-state-house.glb",
+      "source": "generators/bos-old-state-house.ts"
+    },
+    {
       "id": "camp-north-end-water-tower",
       "file": "models/camp-north-end-water-tower.glb",
       "license": "CC0-1.0",
@@ -64598,6 +64666,35 @@
         "way/323383462"
       ],
       "place": "charlotte-area"
+    },
+    {
+      "id": "bos-old-state-house",
+      "name": "Old State House",
+      "model": "bos-old-state-house",
+      "place": "boston-area",
+      "lng": -71.0574679,
+      "lat": 42.3587304,
+      "bearing": 357,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q1320533",
+      "replaces": [
+        "way/29608515",
+        "way/240370259",
+        "way/240370263",
+        "way/240370267",
+        "way/240370271",
+        "way/240370272",
+        "way/240370273",
+        "way/240370275",
+        "way/240370281",
+        "way/240370282",
+        "way/240370285",
+        "way/240370294",
+        "way/240370295",
+        "way/240370301",
+        "way/240370304"
+      ]
     },
     {
       "id": "camp-north-end-water-tower",
