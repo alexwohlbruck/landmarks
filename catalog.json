@@ -8701,6 +8701,73 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "bos-city-hall",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "government",
+        "brutalist",
+        "city-hall"
+      ],
+      "reviewStatus": "unreviewed",
+      "author": "Colin",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Boston city hall.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Boston_city_hall.jpg",
+          "author": "Daniel Schwen",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Boston City Hall May 2026.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Boston_City_Hall_May_2026.jpg",
+          "author": "4300streetcar",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Boston City Hall - Boston, MA - DSC04704 (cropped).JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Boston_City_Hall_-_Boston,_MA_-_DSC04704_(cropped).JPG",
+          "author": "Daderot",
+          "license": "CC0"
+        },
+        {
+          "title": "2017 Boston City Hall side view.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2017_Boston_City_Hall_side_view.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "2017 Boston City Hall rear view.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2017_Boston_City_Hall_rear_view.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Boston City Hall (8658248374).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Boston_City_Hall_(8658248374).jpg",
+          "author": "City of Boston Archives",
+          "license": "CC BY 2.0"
+        }
+      ],
+      "file": "models/bos-city-hall.glb",
+      "source": "generators/bos-city-hall.ts"
+    },
+    {
       "id": "bos-massachusetts-state-house",
       "license": "CC0-1.0",
       "collection": "landmarks",
@@ -64740,6 +64807,35 @@
         "way/323383462"
       ],
       "place": "charlotte-area"
+    },
+    {
+      "id": "bos-city-hall",
+      "name": "Boston City Hall",
+      "model": "bos-city-hall",
+      "place": "boston-area",
+      "lng": -71.0579642,
+      "lat": 42.360367,
+      "bearing": 353.1,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q250773",
+      "replaces": [
+        "way/788015166",
+        "way/1420293154",
+        "way/1420293155",
+        "way/1420293156",
+        "way/1420293157",
+        "way/1420293158",
+        "way/1420293159",
+        "way/1420293160",
+        "way/1420293161",
+        "way/1420293162",
+        "way/1420293163",
+        "relation/19430363",
+        "relation/19430364",
+        "relation/19430365",
+        "relation/19430366"
+      ]
     },
     {
       "id": "bos-massachusetts-state-house",
