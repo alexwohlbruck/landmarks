@@ -9177,6 +9177,86 @@
       "source": "generators/bos-city-hall.ts"
     },
     {
+      "id": "bos-fenway-park",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "stadium",
+      "tags": [
+        "baseball",
+        "ballpark",
+        "historic",
+        "sports"
+      ],
+      "reviewStatus": "unreviewed",
+      "author": "Colin",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Fenway Park seen from Prudential Skywalk.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Fenway_Park_seen_from_Prudential_Skywalk.jpg",
+          "author": "Melikamp",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Fenway Park from Prudential Tower, November 2012.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Fenway_Park_from_Prudential_Tower,_November_2012.jpg",
+          "author": "clry2",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "Green Monster.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Green_Monster.jpg",
+          "author": "Aidan Siegel",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Fenway Park 20-April-2021.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Fenway_Park_20-April-2021.jpg",
+          "author": "Dmoore5556",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Fenway Park - Lansdowne Street (54954428668).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Fenway_Park_-_Lansdowne_Street_(54954428668).jpg",
+          "author": "ajay_suresh",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Fenway park 20060619.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Fenway_park_20060619.jpg",
+          "author": "Jared C. Benedict",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Fenway red sox stadium.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Fenway_red_sox_stadium.JPG",
+          "author": "WonderWhy",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "Fenway Park01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Fenway_Park01.jpg",
+          "author": "Bernard Gagnon",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "file": "models/bos-fenway-park.glb",
+      "source": "generators/bos-fenway-park.ts"
+    },
+    {
       "id": "bos-massachusetts-state-house",
       "license": "CC0-1.0",
       "collection": "landmarks",
@@ -65694,6 +65774,39 @@
         "relation/19430364",
         "relation/19430365",
         "relation/19430366"
+      ]
+    },
+    {
+      "id": "bos-fenway-park",
+      "name": "Fenway Park",
+      "model": "bos-fenway-park",
+      "place": "boston-area",
+      "lng": -71.097272,
+      "lat": 42.3464607,
+      "bearing": 0,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q49136",
+      "replaces": [
+        "relation/11188464",
+        "way/813683134",
+        "way/813683142",
+        "way/813683143",
+        "way/813683144",
+        "way/813683146",
+        "way/813683147",
+        "way/813683148",
+        "way/813683149",
+        "way/813683152",
+        "way/813710192",
+        "way/813739687",
+        "way/814020157",
+        "way/814020183",
+        "way/814360194",
+        "way/814442744",
+        "way/814812936",
+        "way/814812940",
+        "way/814982634"
       ]
     },
     {
