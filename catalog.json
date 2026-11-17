@@ -59840,6 +59840,68 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "stl-gateway-arch",
+      "file": "models/stl-gateway-arch.glb",
+      "source": "generators/stl-gateway-arch.ts",
+      "license": "CC0-1.0",
+      "author": "Colin",
+      "collection": "landmarks",
+      "type": "monument",
+      "tags": [
+        "arch",
+        "stainless-steel",
+        "national-park",
+        "modernist"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "St Louis Gateway Arch.jpg (from the Illinois bank)",
+          "url": "https://commons.wikimedia.org/wiki/File:St_Louis_Gateway_Arch.jpg",
+          "author": "Flickr user 11399912@N",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Gateway Arch, St. Louis, Missouri.jpg (from the west lawn)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gateway_Arch,_St._Louis,_Missouri.jpg",
+          "author": "Bobindrums",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Gateway Arch, St. Louis.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gateway_Arch,_St._Louis.jpg",
+          "author": "Lewis Hulbert",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "St. Louis Gateway Arch.jpg (leg detail)",
+          "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Gateway_Arch.jpg",
+          "author": "TheWB",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "St Louis night expblend.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:St_Louis_night_expblend.jpg",
+          "author": "Daniel Schwen",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
       "id": "sydney-opera-house",
       "file": "models/sydney-opera-house.glb",
       "license": "CC0-1.0",
@@ -87680,6 +87742,53 @@
         "way/229651147"
       ],
       "place": "new-york-area"
+    },
+    {
+      "id": "stl-gateway-arch",
+      "name": "Gateway Arch",
+      "model": "stl-gateway-arch",
+      "place": "st-louis-area",
+      "wikidata": "Q45234",
+      "lng": -90.18497,
+      "lat": 38.62461,
+      "bearing": 17.8,
+      "elevation": 0,
+      "minzoom": 13,
+      "replaces": [
+        "relation/12813920",
+        "way/1419494392",
+        "way/1419494393",
+        "way/1419494394",
+        "way/1419494395",
+        "way/1419494396",
+        "way/1419494397",
+        "way/1419494398",
+        "way/1419494399",
+        "way/1419494400",
+        "way/1419494401",
+        "way/1419494402",
+        "way/1419494403",
+        "way/1419494404",
+        "way/1419494405",
+        "way/1419494406",
+        "way/1419494407",
+        "way/1419494408",
+        "way/1419494409",
+        "way/1419494410",
+        "way/1419494411",
+        "way/1419494412",
+        "way/1419494413",
+        "way/1419494414",
+        "way/1419494415",
+        "way/1419494416",
+        "way/1419494417",
+        "way/1419494418",
+        "way/1419494419",
+        "way/1419494420",
+        "way/1419494421",
+        "way/1419494422",
+        "way/1419494423"
+      ]
     },
     {
       "id": "sydney-opera-house",
