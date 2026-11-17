@@ -6549,6 +6549,67 @@
       "source": "generators/atl-world-of-coca-cola.ts"
     },
     {
+      "id": "atx-central-library",
+      "license": "CC0-1.0",
+      "author": "Colin",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "library",
+        "modern",
+        "civic"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Austin Public Library August 2019 02.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Austin_Public_Library_August_2019_02.jpg",
+          "author": "Michael Barera",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Austin Public Library August 2019 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Austin_Public_Library_August_2019_01.jpg",
+          "author": "Michael Barera",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Austin Public Library August 2019 10 (Roof Garden).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Austin_Public_Library_August_2019_10_(Roof_Garden).jpg",
+          "author": "Michael Barera",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Austin public library from Cesar Chavez entrance.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Austin_public_library_from_Cesar_Chavez_entrance.jpg",
+          "author": "Mikerussell",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Austin Public Library, downtown branch.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Austin_Public_Library,_downtown_branch.jpg",
+          "author": "CarmenEsparzaAmoux",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/atx-central-library.glb",
+      "source": "generators/atx-central-library.ts"
+    },
+    {
       "id": "atx-google-tower",
       "license": "CC0-1.0",
       "author": "Colin",
@@ -64012,6 +64073,21 @@
         "way/810387778"
       ],
       "wikidata": "Q2201410"
+    },
+    {
+      "id": "atx-central-library",
+      "name": "Austin Central Library",
+      "model": "atx-central-library",
+      "place": "austin-area",
+      "lng": -97.7517529,
+      "lat": 30.2659719,
+      "bearing": 17.7,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q122841225",
+      "replaces": [
+        "way/516271467"
+      ]
     },
     {
       "id": "atx-google-tower",
