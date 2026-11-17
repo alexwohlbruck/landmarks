@@ -88853,6 +88853,11 @@
       "wikidata": "Q1492"
     },
     {
+      "id": "boston-area",
+      "name": "Boston area",
+      "kind": "region"
+    },
+    {
       "id": "camp-north-end",
       "name": "Camp North End",
       "kind": "site",
@@ -88928,6 +88933,11 @@
     {
       "id": "los-angeles-area",
       "name": "Los Angeles area",
+      "kind": "region"
+    },
+    {
+      "id": "memphis-area",
+      "name": "Memphis area",
       "kind": "region"
     },
     {
@@ -89020,6 +89030,11 @@
       "name": "Six Flags Over Texas",
       "kind": "site",
       "parent": "dallas-area"
+    },
+    {
+      "id": "st-louis-area",
+      "name": "St. Louis area",
+      "kind": "region"
     },
     {
       "id": "sydney",
