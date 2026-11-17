@@ -9313,6 +9313,86 @@
       "source": "generators/bos-old-state-house.ts"
     },
     {
+      "id": "bos-paul-revere-house",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "historic",
+        "house",
+        "colonial",
+        "museum"
+      ],
+      "reviewStatus": "unreviewed",
+      "author": "Colin",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "2017 Paul Revere House from east.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2017_Paul_Revere_House_from_east.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "2017 Paul Revere House from south.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:2017_Paul_Revere_House_from_south.jpg",
+          "author": "Beyond My Ken",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Paul Revere House 1 front.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Paul_Revere_House_1_front.jpg",
+          "author": "Rhonda McCloughan",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Paul Revere House 2 back side.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Paul_Revere_House_2_back_side.jpg",
+          "author": "Rhonda McCloughan",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Paul Revere House, Boston, 2023-02-21.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Paul_Revere_House,_Boston,_2023-02-21.jpg",
+          "author": "Crisco 1492",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Paul Revere House in Boston (rear elevation).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Paul_Revere_House_in_Boston_(rear_elevation).jpg",
+          "author": "Education Prof",
+          "license": "CC0"
+        },
+        {
+          "title": "Paul Revere House, 2012-06-28.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Paul_Revere_House,_2012-06-28.jpg",
+          "author": "Cbaile19",
+          "license": "CC0"
+        },
+        {
+          "title": "Paul Revere House.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Paul_Revere_House.jpg",
+          "author": "Sabisteb",
+          "license": "Public domain"
+        }
+      ],
+      "file": "models/bos-paul-revere-house.glb",
+      "source": "generators/bos-paul-revere-house.ts"
+    },
+    {
       "id": "camp-north-end-water-tower",
       "file": "models/camp-north-end-water-tower.glb",
       "license": "CC0-1.0",
@@ -65611,6 +65691,21 @@
         "way/240370295",
         "way/240370301",
         "way/240370304"
+      ]
+    },
+    {
+      "id": "bos-paul-revere-house",
+      "name": "Paul Revere House",
+      "model": "bos-paul-revere-house",
+      "place": "boston-area",
+      "lng": -71.05369,
+      "lat": 42.3637345,
+      "bearing": 292,
+      "elevation": 0,
+      "minzoom": 16,
+      "wikidata": "Q2061878",
+      "replaces": [
+        "way/240376785"
       ]
     },
     {
