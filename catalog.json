@@ -89056,6 +89056,12 @@
       "wikidata": "Q1490"
     },
     {
+      "id": "toronto",
+      "name": "Toronto",
+      "kind": "city",
+      "wikidata": "Q172"
+    },
+    {
       "id": "ucla",
       "name": "UCLA",
       "kind": "site",
