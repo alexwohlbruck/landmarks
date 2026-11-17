@@ -6549,6 +6549,85 @@
       "source": "generators/atl-world-of-coca-cola.ts"
     },
     {
+      "id": "atx-google-tower",
+      "license": "CC0-1.0",
+      "author": "Colin",
+      "collection": "landmarks",
+      "type": "building",
+      "tags": [
+        "office",
+        "skyscraper",
+        "modern"
+      ],
+      "reviewStatus": "unreviewed",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Block 185 from Lady Bird Lake.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Block_185_from_Lady_Bird_Lake.jpg",
+          "author": "Pixelsandbacon",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Block 185 - Austin, TX (54987420388).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Block_185_-_Austin,_TX_(54987420388).jpg",
+          "author": "ajay_suresh",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "Block 185 Tower-Austin TX.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Block_185_Tower-Austin_TX.jpg",
+          "author": "Farbod Farbod",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Block 185-Austin TX-Sept 15 2023.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Block_185-Austin_TX-Sept_15_2023.jpg",
+          "author": "Farbod Farbod",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Downtown Austin skyline featuring Block 185 along Lady Bird Lake.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Downtown_Austin_skyline_featuring_Block_185_along_Lady_Bird_Lake.jpg",
+          "author": "Oleg Yunakov",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Downtown Austin skyline featuring the triangular Block 185 tower along Lady Bird Lake.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Downtown_Austin_skyline_featuring_the_triangular_Block_185_tower_along_Lady_Bird_Lake.jpg",
+          "author": "Oleg Yunakov",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Block 185 construction, west side 2021-08-10.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Block_185_construction,_west_side_2021-08-10.jpg",
+          "author": "Xnatedawgx",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Block 185 construction, NE corner 2021-08-10.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Block_185_construction,_NE_corner_2021-08-10.jpg",
+          "author": "Xnatedawgx",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/atx-google-tower.glb",
+      "source": "generators/atx-google-tower.ts"
+    },
+    {
       "id": "atx-texas-state-capitol",
       "file": "models/atx-texas-state-capitol.glb",
       "license": "CC0-1.0",
@@ -63933,6 +64012,21 @@
         "way/810387778"
       ],
       "wikidata": "Q2201410"
+    },
+    {
+      "id": "atx-google-tower",
+      "name": "Google Tower (Block 185)",
+      "model": "atx-google-tower",
+      "place": "austin-area",
+      "lng": -97.7504255,
+      "lat": 30.265565,
+      "bearing": 17.7,
+      "elevation": 0,
+      "minzoom": 14,
+      "wikidata": "Q65117994",
+      "replaces": [
+        "way/961789209"
+      ]
     },
     {
       "id": "atx-texas-state-capitol",
