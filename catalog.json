@@ -8701,6 +8701,67 @@
       "reviewStatus": "unreviewed"
     },
     {
+      "id": "bos-bunker-hill-monument",
+      "license": "CC0-1.0",
+      "collection": "landmarks",
+      "type": "monument",
+      "tags": [
+        "obelisk",
+        "historic",
+        "memorial"
+      ],
+      "reviewStatus": "unreviewed",
+      "author": "Colin",
+      "credits": [
+        {
+          "name": "Colin",
+          "kind": "person",
+          "role": "creator"
+        },
+        {
+          "name": "Claude",
+          "kind": "ai",
+          "role": "procedural modeling",
+          "model": "Claude Opus 5.5",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "references": [
+        {
+          "title": "Monumento de Bunker Hill, Boston, EE.UU., 2007-08-01 DD 280.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Monumento_de_Bunker_Hill,_Boston,_EE.UU.,_2007-08-01_DD_280.jpg",
+          "author": "Diego Delso",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Bunker Hill Monument (36286).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Bunker_Hill_Monument_(36286).jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Bunker Hill Lodge.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Bunker_Hill_Lodge.jpg",
+          "author": "Swampyank",
+          "license": "Public domain"
+        },
+        {
+          "title": "Bunker Hill Monument, Charlestown, MA 2023-02-20.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Bunker_Hill_Monument,_Charlestown,_MA_2023-02-20.jpg",
+          "author": "Crisco 1492",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "Bunker Hill Monument 20201128 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Bunker_Hill_Monument_20201128_01.jpg",
+          "author": "Peacearth",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "file": "models/bos-bunker-hill-monument.glb",
+      "source": "generators/bos-bunker-hill-monument.ts"
+    },
+    {
       "id": "bos-city-hall",
       "license": "CC0-1.0",
       "collection": "landmarks",
@@ -64807,6 +64868,42 @@
         "way/323383462"
       ],
       "place": "charlotte-area"
+    },
+    {
+      "id": "bos-bunker-hill-monument",
+      "name": "Bunker Hill Monument",
+      "model": "bos-bunker-hill-monument",
+      "place": "boston-area",
+      "lng": -71.0607674,
+      "lat": 42.3763523,
+      "bearing": 17.3,
+      "elevation": 0,
+      "minzoom": 15,
+      "wikidata": "Q1009561",
+      "replaces": [
+        "way/212124093",
+        "way/240874184",
+        "way/240874185",
+        "way/240874186",
+        "way/240874188",
+        "way/240874189",
+        "way/29787114",
+        "way/240874172",
+        "way/240874173",
+        "way/240874174",
+        "way/240874175",
+        "way/240874176",
+        "way/240874178",
+        "way/240874179",
+        "way/240874180",
+        "way/240874181",
+        "way/240874182",
+        "way/240874183",
+        "way/240874187",
+        "way/240874190",
+        "way/240874191",
+        "way/240874192"
+      ]
     },
     {
       "id": "bos-city-hall",
