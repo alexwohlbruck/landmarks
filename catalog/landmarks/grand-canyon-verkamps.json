@@ -1,0 +1,14 @@
+{
+  "id": "grand-canyon-verkamps",
+  "name": "Verkamp's Visitor Center",
+  "model": "grand-canyon-verkamps",
+  "place": "grand-canyon",
+  "lng": -112.135698,
+  "lat": 36.05763,
+  "bearing": 344.3,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/144433047"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "grand-canyon-verkamps",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "shop",
+    "visitor-center"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Verkamp's Curio Store",
+      "author": "Upstateherd",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Verkamp%27s_Curio_Store.jpg"
+    },
+    {
+      "title": "0048 Verkamps Visitor Center, Grand Canyon NP",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:0048_Verkamps_Visitor_Center_Grand_Canyon_NP_(5575458581).jpg"
+    },
+    {
+      "title": "0546 0113 Verkamp's Visitor Center",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:0546_0113_Verkamp%27s_Visitor_Center_(4761248791).jpg"
+    }
+  ],
+  "file": "models/grand-canyon-verkamps.glb",
+  "source": "generators/grand-canyon-verkamps.ts"
+}
