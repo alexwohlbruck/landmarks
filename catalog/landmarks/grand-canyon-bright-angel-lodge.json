@@ -1,0 +1,16 @@
+{
+  "id": "grand-canyon-bright-angel-lodge",
+  "name": "Bright Angel Lodge",
+  "model": "grand-canyon-bright-angel-lodge",
+  "place": "grand-canyon",
+  "lng": -112.140678,
+  "lat": 36.056878,
+  "bearing": 29.5,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q4967380",
+  "replaces": [
+    "way/164580572",
+    "way/164580573"
+  ]
+}
