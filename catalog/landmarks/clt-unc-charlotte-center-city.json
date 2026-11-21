@@ -1,0 +1,19 @@
+{
+  "id": "clt-unc-charlotte-center-city",
+  "name": "UNC Charlotte Center City",
+  "model": "clt-unc-charlotte-center-city",
+  "place": "charlotte-area",
+  "lng": -80.8350723,
+  "lat": 35.2284525,
+  "bearing": 49.5,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/1004213300",
+    "way/1356460440",
+    "way/1356460441",
+    "way/1356460442",
+    "way/1356460443"
+  ],
+  "wikidata": "Q113335212"
+}

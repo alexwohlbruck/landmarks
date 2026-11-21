@@ -1,0 +1,47 @@
+{
+  "id": "clt-unc-charlotte-center-city",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "university",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Dubois Center UNC Charlotte northeastern face July 2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dubois_Center_UNC_Charlotte_northeastern_face_July_2022.jpg",
+      "author": "OwenCKing",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "UNC Charlotte Center City Campus.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:UNC_Charlotte_Center_City_Campus.jpg",
+      "author": "Nautilus14",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "UNC Charlotte's Center City Campus.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:UNC_Charlotte%27s_Center_City_Campus.jpg",
+      "author": "Nautilus14",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/clt-unc-charlotte-center-city.glb",
+  "source": "generators/clt-unc-charlotte-center-city.ts"
+}
