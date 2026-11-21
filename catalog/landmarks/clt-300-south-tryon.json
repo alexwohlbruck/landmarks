@@ -1,0 +1,16 @@
+{
+  "id": "clt-300-south-tryon",
+  "name": "300 South Tryon",
+  "model": "clt-300-south-tryon",
+  "place": "charlotte-area",
+  "lng": -80.8462194,
+  "lat": 35.2259454,
+  "bearing": 47.93,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/1047699840",
+    "way/1047699844"
+  ],
+  "wikidata": "Q19870990"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "clt-300-south-tryon",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "office",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "300 South Tryon December 2023.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:300_South_Tryon_December_2023.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "300 S Tryon Office.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:300_S_Tryon_Office.jpg",
+      "author": "Jt12081988 at English Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/clt-300-south-tryon.glb",
+  "source": "generators/clt-300-south-tryon.ts"
+}
