@@ -1,0 +1,14 @@
+{
+  "id": "clt-first-baptist",
+  "name": "First Baptist Church Charlotte",
+  "model": "clt-first-baptist",
+  "place": "charlotte-area",
+  "lng": -80.8404994,
+  "lat": 35.2204335,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "relation/16014018"
+  ]
+}

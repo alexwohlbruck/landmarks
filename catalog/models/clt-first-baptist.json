@@ -1,0 +1,61 @@
+{
+  "id": "clt-first-baptist",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "place-of-worship",
+    "modernist",
+    "campanile"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "First Baptist Church Charlotte 01",
+      "url": "https://commons.wikimedia.org/wiki/File:First_Baptist_Church_Charlotte_01.jpg",
+      "author": "Dclemens1971",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "First Baptist Church Charlotte 03",
+      "url": "https://commons.wikimedia.org/wiki/File:First_Baptist_Church_Charlotte_03.jpg",
+      "author": "Dclemens1971",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "First Baptist Church Charlotte 05",
+      "url": "https://commons.wikimedia.org/wiki/File:First_Baptist_Church_Charlotte_05.jpg",
+      "author": "Dclemens1971",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "First Baptist Church Charlotte 07",
+      "url": "https://commons.wikimedia.org/wiki/File:First_Baptist_Church_Charlotte_07.jpg",
+      "author": "Dclemens1971",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "First Baptist Church Charlotte 09",
+      "url": "https://commons.wikimedia.org/wiki/File:First_Baptist_Church_Charlotte_09.jpg",
+      "author": "Dclemens1971",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/clt-first-baptist.glb",
+  "source": "generators/clt-first-baptist.ts"
+}
