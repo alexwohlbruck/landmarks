@@ -1,0 +1,60 @@
+{
+  "id": "grand-canyon-kolb-studio",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "studio",
+    "house"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "4856 Grand Canyon Kolb Studio at Bright Angel Trailhead (2011)",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:4856_Grand_Canyon_Kolb_Studio_at_Bright_Angel_Trailhead_(2011)_(5676552711).jpg"
+    },
+    {
+      "title": "0617 01 Grand Canyon National Park Kolb Studio (2010)",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:0617_01_Grand_Canyon_National_Park_Kolb_Studio_(2010)_(4761253743).jpg"
+    },
+    {
+      "title": "Grand Canyon National Park, Kolb Studio (2006 photo) 0617 08",
+      "author": "Grand Canyon National Park",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park,_Kolb_Studio_(2006_photo)_0617_08_-_Flickr_-_Grand_Canyon_NPS.jpg"
+    },
+    {
+      "title": "Grand Canyon National Park, Kolb Studio (2006 photo) 0237",
+      "author": "Grand Canyon National Park",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park,_Kolb_Studio_(2006_photo)_0237_-_Flickr_-_Grand_Canyon_NPS.jpg"
+    },
+    {
+      "title": "Kolb Studio Replacement Project 2024",
+      "author": "Grand Canyon Conservancy",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Kolb_Studio_Replacement_Project_2024.jpg"
+    }
+  ],
+  "file": "models/grand-canyon-kolb-studio.glb",
+  "source": "generators/grand-canyon-kolb-studio.ts"
+}
