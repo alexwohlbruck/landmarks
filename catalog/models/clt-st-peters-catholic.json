@@ -1,0 +1,48 @@
+{
+  "id": "clt-st-peters-catholic",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "historic",
+    "gothic-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Saint Peter Catholic Church (Charlottle, North Carolina) - view from across S. Tryon Street.JPG",
+      "author": "Nheyob",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Saint_Peter_Catholic_Church_(Charlottle,_North_Carolina)_-_view_from_across_S._Tryon_Street.JPG"
+    },
+    {
+      "title": "St. Peters church front view (April 2022).jpg",
+      "author": "Kiran891",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Peters_church_front_view_(April_2022).jpg"
+    },
+    {
+      "title": "Saint Peter Catholic Church (Charlotte, North Carolina) - view from Duke Energy Building.jpg",
+      "author": "Nheyob",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Saint_Peter_Catholic_Church_(Charlotte,_North_Carolina)_-_view_from_Duke_Energy_Building.jpg"
+    }
+  ],
+  "file": "models/clt-st-peters-catholic.glb",
+  "source": "generators/clt-st-peters-catholic.ts"
+}

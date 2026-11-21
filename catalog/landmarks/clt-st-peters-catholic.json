@@ -1,0 +1,14 @@
+{
+  "id": "clt-st-peters-catholic",
+  "name": "St. Peter's Catholic Church",
+  "model": "clt-st-peters-catholic",
+  "place": "charlotte-area",
+  "lng": -80.847309,
+  "lat": 35.2238468,
+  "bearing": 46.3,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/500195164"
+  ]
+}
