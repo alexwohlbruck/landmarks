@@ -1,0 +1,42 @@
+{
+  "id": "clt-carolinas-medical-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "hospital",
+    "medical",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Carolinas Medical Center.jpg",
+      "author": "Atrium Health",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Carolinas_Medical_Center.jpg"
+    },
+    {
+      "title": "Carolinas Medical Center, Charlotte, NC - panoramio.jpg",
+      "author": "James Willamor",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Carolinas_Medical_Center,_Charlotte,_NC_-_panoramio.jpg"
+    }
+  ],
+  "file": "models/clt-carolinas-medical-center.glb",
+  "source": "generators/clt-carolinas-medical-center.ts"
+}

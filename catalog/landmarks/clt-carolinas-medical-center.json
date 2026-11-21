@@ -1,0 +1,17 @@
+{
+  "id": "clt-carolinas-medical-center",
+  "name": "Atrium Health Carolinas Medical Center",
+  "model": "clt-carolinas-medical-center",
+  "place": "charlotte-area",
+  "lng": -80.8385721,
+  "lat": 35.2036952,
+  "bearing": 330.6,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/239256536",
+    "way/239265600",
+    "way/239265602",
+    "relation/6259021"
+  ]
+}
