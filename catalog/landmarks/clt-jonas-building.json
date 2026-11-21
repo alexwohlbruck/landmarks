@@ -1,0 +1,25 @@
+{
+  "id": "clt-jonas-building",
+  "name": "Charles R. Jonas Federal Building",
+  "model": "clt-jonas-building",
+  "place": "charlotte-area",
+  "lng": -80.8468152,
+  "lat": 35.2292993,
+  "bearing": 49.55,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/983721762",
+    "way/1580339636",
+    "way/1580339637",
+    "way/1580339638",
+    "way/1580339639",
+    "way/1580339640",
+    "way/1580339641",
+    "way/1580339643",
+    "way/1580339644",
+    "way/1580339645",
+    "way/1580339648",
+    "relation/22077040"
+  ]
+}

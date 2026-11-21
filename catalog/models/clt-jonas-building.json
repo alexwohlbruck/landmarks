@@ -1,0 +1,37 @@
+{
+  "id": "clt-jonas-building",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "courthouse",
+    "neoclassical",
+    "government"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Charles R. Jonas Federal Building, Charlotte (Mecklenburg County, North Carolina).jpg",
+      "author": "Unknown",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Charles_R._Jonas_Federal_Building,_Charlotte_(Mecklenburg_County,_North_Carolina).jpg"
+    }
+  ],
+  "file": "models/clt-jonas-building.glb",
+  "source": "generators/clt-jonas-building.ts"
+}
