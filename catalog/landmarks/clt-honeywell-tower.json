@@ -1,0 +1,24 @@
+{
+  "id": "clt-honeywell-tower",
+  "name": "Honeywell Tower",
+  "model": "clt-honeywell-tower",
+  "place": "charlotte-area",
+  "lng": -80.8515522,
+  "lat": 35.2242414,
+  "bearing": 49.7,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/1046848108",
+    "way/1351679677",
+    "way/1351679678",
+    "way/1351679680",
+    "way/1351679681",
+    "way/1351679682",
+    "way/1351679683",
+    "way/1351679684",
+    "way/1351679685",
+    "way/1351679686",
+    "relation/18559362"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "clt-honeywell-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "office",
+    "headquarters",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Honeywell Tower in Charlotte, NC, USA.jpg",
+      "author": "Quintin Soloviev",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Honeywell_Tower_in_Charlotte,_NC,_USA.jpg"
+    },
+    {
+      "title": "Honeywell Tower S Mint St.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Honeywell_Tower_S_Mint_St.jpg"
+    },
+    {
+      "title": "Legacy Union April 2023.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Legacy_Union_April_2023.jpg"
+    }
+  ],
+  "file": "models/clt-honeywell-tower.glb",
+  "source": "generators/clt-honeywell-tower.ts"
+}
