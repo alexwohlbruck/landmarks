@@ -1,0 +1,14 @@
+{
+  "id": "clt-101-south-tryon",
+  "name": "One South at The Plaza",
+  "model": "clt-101-south-tryon",
+  "place": "charlotte-area",
+  "lng": -80.8433515,
+  "lat": 35.2265277,
+  "bearing": 46.55,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/90480712"
+  ]
+}

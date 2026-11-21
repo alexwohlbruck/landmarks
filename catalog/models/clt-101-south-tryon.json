@@ -1,0 +1,53 @@
+{
+  "id": "clt-101-south-tryon",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "office",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "One South at The Plaza December 2023.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:One_South_at_The_Plaza_December_2023.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "BofA plaza.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:BofA_plaza.jpg",
+      "author": "Jt12081988",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Bank of America Plaza with Bank of America Corporate Center reflection.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bank_of_America_Plaza_with_Bank_of_America_Corporate_Center_reflection.jpg",
+      "author": "Ron Miguel",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Independence Square—Intersection of Trade and Tryon Streets.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Independence_Square%E2%80%94Intersection_of_Trade_and_Tryon_Streets.jpg",
+      "author": "Algorhythms",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/clt-101-south-tryon.glb",
+  "source": "generators/clt-101-south-tryon.ts"
+}
