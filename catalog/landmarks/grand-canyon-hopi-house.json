@@ -1,0 +1,14 @@
+{
+  "id": "grand-canyon-hopi-house",
+  "name": "Hopi House",
+  "model": "grand-canyon-hopi-house",
+  "place": "grand-canyon",
+  "lng": -112.136779,
+  "lat": 36.057828,
+  "bearing": 41.4,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/144433041"
+  ]
+}
