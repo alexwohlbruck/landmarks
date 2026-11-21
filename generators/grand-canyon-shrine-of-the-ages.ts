@@ -50,8 +50,18 @@
  *   lidar, measured;
  * - fascia band 1.2 m: estimated from photos 0019 and 0030 (a fifth of the
  *   wall);
- * - portals: span 5.6 m, springing 3.0, crown 5.8: estimated from photo
- *   0030; windows from photo 0019.
+ * - portals: span 7 m, springing 2.9, outer crown 7.4: estimated from
+ *   photo 0030; windows from photo 0019.
+ *
+ * Rework (lead review): the walls carry flush darker stones over their
+ * faces in the photos' warmer tan and brown (#d2b993 and #b39570, pulled to
+ * the palette's lightness); the board fascia is dark charcoal-green; the
+ * two portals are rebuilt to photo 0030's proportions (spring 2.9, outer
+ * crown 7.4, ribs 1.0 m, one shared middle pier) in weathered grey-brown
+ * timber, standing just above the canopy so they read from above, and
+ * the canopy's front fascia block that hid them is moved behind them.
+ * Stone placement is invented (seeded). Plan, anchor, bearing and the
+ * warped roof are unchanged.
  *
  * Not modelled: downpipes, the lettering, the walks and planting.
  *
@@ -64,7 +74,34 @@ import { Part, type V3 } from './mesh'
 import { PALETTE, finish } from './palette'
 import { box, face, panels, prism, rect, save, type XY } from './grand-canyon-bright-angel-lodge'
 
-const stone = new Part(), fascia = new Part(), roof = new Part(), win = new Part()
+const stone = new Part(), rubble = new Part(), fascia = new Part(), timber = new Part(), roof = new Part(), win = new Part()
+
+// Seeded random numbers, so the stonework is the same on every build.
+let seed = 1970
+const rnd = () => { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296 }
+const lerp = (a: number, b: number) => a + (b - a) * rnd()
+
+/**
+ * Flush darker stones on a wall face from A to B (outward to the right of
+ * A→B), bottom z0 to top z1 (a number or a function of the distance along
+ * the face), skipping the spans in `gaps`, so the wall reads as
+ * random-coursed limestone (photos 0019 and the front close-up).
+ */
+function stones(A: XY, B: XY, z0: number, z1: number | ((t: number) => number), n: number, gaps: [number, number, number, number][] = []) {
+  const L = Math.hypot(B[0] - A[0], B[1] - A[1]), u: XY = [(B[0] - A[0]) / L, (B[1] - A[1]) / L]
+  const nrm: V3 = [u[1], -u[0], 0], top = typeof z1 === 'number' ? () => z1 : z1
+  for (let k = 0, tries = 0; k < n && tries < n * 6; tries++) {
+    const w = lerp(0.6, 1.2), h = lerp(0.35, 0.6)
+    const s = lerp(0.15, L - 0.15 - w)
+    const zt = Math.min(top(s), top(s + w)) - 0.1
+    if (zt - h < z0) continue
+    const z = lerp(z0, zt - h)
+    if (gaps.some(([g0, g1, h0, h1]) => s < g1 && s + w > g0 && z < h1 && z + h > h0)) continue
+    const P = (t: number, zz: number): V3 => [A[0] + u[0] * t + nrm[0] * 0.03, A[1] + u[1] * t + nrm[1] * 0.03, zz]
+    face(rubble, [P(s, z), P(s + w, z), P(s + w, z + h), P(s, z + h)], nrm)
+    k++
+  }
+}
 
 const FLAT = 6.8, BAND = 1.2
 
@@ -99,11 +136,13 @@ panels(win, [-3, 8.7], [-3, -7.2], 3, 4.4, 0.6, 5.6, 0.6)
 // The east side's glazed doors (the service entrance).
 panels(win, [7, -7.2], [7, 8.7], 1, 3.0, 1.5, 4.2, 6)
 
-// The two arched timber portals in front of the glass, with a fascia beam
-// over them: semicircular heads on square jambs.
-const PX0 = -5.2, PX1 = -4.2, SPRING = 3.0, R = 2.8, RIB = 0.7
+// The two arched timber portals in front of the glass (photo 0030): big
+// laminated arches that spring low and meet the fascia at their crowns,
+// sharing a middle pier. They stand a little proud of the canopy so they
+// read from above.
+const PX0 = -5.9, PX1 = -4.2, SPRING = 2.9, R = 3.5, RIB = 1.0
 for (const yc of [-2.6, 4.5]) {
-  for (const s of [-1, 1]) box(fascia, PX0, PX1, yc + s * R - RIB / 2, yc + s * R + RIB / 2, 0, SPRING, 0)
+  for (const s of [-1, 1]) box(timber, PX0, PX1, yc + s * R - RIB / 2, yc + s * R + RIB / 2, 0, SPRING, 0)
   const N = 10
   for (let k = 0; k < N; k++) {
     const a0 = (Math.PI * k) / N, a1 = (Math.PI * (k + 1)) / N
@@ -112,24 +151,39 @@ for (const yc of [-2.6, 4.5]) {
     const [yi0, zi0] = ring(R - RIB / 2, a0), [yi1, zi1] = ring(R - RIB / 2, a1)
     const q = (x: number, y: number, z: number): V3 => [x, y, z]
     const mid = (a0 + a1) / 2, out: V3 = [0, Math.cos(mid), Math.sin(mid)]
-    face(fascia, [q(PX0, yo0, zo0), q(PX1, yo0, zo0), q(PX1, yo1, zo1), q(PX0, yo1, zo1)], out)
-    face(fascia, [q(PX0, yi0, zi0), q(PX1, yi0, zi0), q(PX1, yi1, zi1), q(PX0, yi1, zi1)], [0, -out[1], -out[2]])
-    for (const [x, n] of [[PX0, -1], [PX1, 1]] as const) face(fascia, [q(x, yo0, zo0), q(x, yo1, zo1), q(x, yi1, zi1), q(x, yi0, zi0)], [n, 0, 0])
+    face(timber, [q(PX0, yo0, zo0), q(PX1, yo0, zo0), q(PX1, yo1, zo1), q(PX0, yo1, zo1)], out)
+    face(timber, [q(PX0, yi0, zi0), q(PX1, yi0, zi0), q(PX1, yi1, zi1), q(PX0, yi1, zi1)], [0, -out[1], -out[2]])
+    for (const [x, n] of [[PX0, -1], [PX1, 1]] as const) face(timber, [q(x, yo0, zo0), q(x, yo1, zo1), q(x, yi1, zi1), q(x, yi0, zi0)], [n, 0, 0])
   }
 }
-// The flat canopy from the portals back to the hall.
-box(fascia, PX0, -3, -7.2, 8.7, FLAT - BAND, FLAT, 0, null)
-box(roof, PX0, -3, -7.2, 8.7, FLAT, FLAT + 0.05, 0)
+// The flat canopy from the portals back to the hall, its fascia behind them.
+box(fascia, PX1, -3, -7.2, 8.7, FLAT - BAND, FLAT, 0, null)
+box(roof, PX1, -3, -7.2, 8.7, FLAT, FLAT + 0.05, 0)
 
 // The meeting rooms' big windows in the south block.
 panels(win, [-15, -21], [7, -21], 2, 3.4, 1.0, 4.4, 2)
 panels(win, [-15, -7], [-15, -21], 2, 3.4, 1.0, 4.4, 2)
 
+// Random-coursed stone over every stone face, round the openings.
+const audTop = (x: number, y: number) => zr([x, y]) - BAND
+stones([-15, 8.5], [-3, 8.5], 0.2, (t) => audTop(-15 + t, 8.5), 14)
+stones([7, 8.5], [7, 33], 0.2, (t) => audTop(7, 8.5 + t), 26)
+stones([7, 33], [-15, 33], 0.2, (t) => audTop(7 - t, 33), 26)
+stones([-15, 33], [-15, 8.5], 0.2, (t) => audTop(-15, 33 - t), 34)
+const S = FLAT - BAND
+stones([-15, -21], [7, -21], 0.2, S, 22, [[4.7, 8.3, 0.9, 4.5], [13.7, 17.3, 0.9, 4.5]])
+stones([-15, -7], [-15, -21], 0.2, S, 14, [[4.7, 8.3, 0.9, 4.5], [10, 14, 0.9, 4.5]])
+stones([7, -21], [7, -7], 0.2, S, 16)
+stones([-3, -7], [-15, -7], 0.2, S, 14)
+stones([7, -7.2], [7, 8.7], 0.2, S, 12, [[6.3, 9.6, 1.4, 4.3]])
+
 await save('grand-canyon-shrine-of-the-ages', 'Shrine of the Ages', [
-  // Buff random-coursed limestone, the dark grey-green board fascia and
-  // timber portals, pale grey roofs.
-  { part: stone, material: finish('shrine-stone', 0xd8c09c) },
-  { part: fascia, material: finish('shrine-fascia', 0x6b716c) },
+  // Warm tan random-coursed limestone and its darker brown stones, the dark
+  // board fascia, the weathered grey-brown timber portals, pale grey roofs.
+  { part: stone, material: finish('shrine-stone', 0xd2b993) },
+  { part: rubble, material: finish('shrine-rubble', 0xb39570) },
+  { part: fascia, material: finish('shrine-fascia', 0x4d524f) },
+  { part: timber, material: finish('shrine-timber', 0x8c7f6c) },
   { part: roof, material: PALETTE.roof },
   { part: win, material: PALETTE.window },
 ], { bearing: 350, elevation: 0, height: 11.5 })
