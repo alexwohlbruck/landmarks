@@ -1,0 +1,48 @@
+{
+  "id": "grand-canyon-lookout-studio",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "studio",
+    "observation"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Lookout Studio Grand Canyon Village 09 2017 5296",
+      "author": "Mariordo (Mario Roberto Durán Ortiz)",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Lookout_Studio_Grand_Canyon_Village_09_2017_5296.jpg"
+    },
+    {
+      "title": "Grand Canyon National Park Lookout Studio D1457 (4690625725)",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park_Lookout_Studio_D1457_(4690625725).jpg"
+    },
+    {
+      "title": "Grand Canyon Village-Look-Out Studio-1914",
+      "author": "Marine 69-71",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Village-Look-Out_Studio-1914.jpg"
+    }
+  ],
+  "file": "models/grand-canyon-lookout-studio.glb",
+  "source": "generators/grand-canyon-lookout-studio.ts"
+}

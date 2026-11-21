@@ -1,0 +1,15 @@
+{
+  "id": "grand-canyon-lookout-studio",
+  "name": "Lookout Studio",
+  "model": "grand-canyon-lookout-studio",
+  "place": "grand-canyon",
+  "lng": -112.14131,
+  "lat": 36.057816,
+  "bearing": 12,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q6675514",
+  "replaces": [
+    "way/164580569"
+  ]
+}
