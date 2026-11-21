@@ -1,0 +1,47 @@
+{
+  "id": "clt-fifth-third-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "office",
+    "postmodern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Fifth Third Center December 2023.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Fifth_Third_Center_December_2023.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Fifth Third Center Charlotte.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Fifth_Third_Center_Charlotte.jpg",
+      "author": "James Willamor",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Fifth Third Center (Charlotte) top.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Fifth_Third_Center_(Charlotte)_top.jpg",
+      "author": "Chris Short",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/clt-fifth-third-center.glb",
+  "source": "generators/clt-fifth-third-center.ts"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "clt-fifth-third-center",
+  "name": "201 North Tryon",
+  "model": "clt-fifth-third-center",
+  "place": "charlotte-area",
+  "lng": -80.8418303,
+  "lat": 35.2285785,
+  "bearing": 52.67,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/498314236",
+    "way/1327048769",
+    "way/1327048766",
+    "way/1327048767"
+  ]
+}
