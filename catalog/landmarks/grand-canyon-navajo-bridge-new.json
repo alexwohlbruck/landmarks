@@ -1,0 +1,12 @@
+{
+  "id": "grand-canyon-navajo-bridge-new",
+  "name": "Navajo Bridge (1995)",
+  "model": "grand-canyon-navajo-bridge-new",
+  "place": "marble-canyon",
+  "lng": -111.631644,
+  "lat": 36.817248,
+  "bearing": 120.2,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": []
+}
