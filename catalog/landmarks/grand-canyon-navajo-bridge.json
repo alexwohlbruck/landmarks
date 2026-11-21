@@ -1,0 +1,13 @@
+{
+  "id": "grand-canyon-navajo-bridge",
+  "name": "Navajo Bridge (1929)",
+  "model": "grand-canyon-navajo-bridge",
+  "place": "marble-canyon",
+  "lng": -111.63205,
+  "lat": 36.81802,
+  "bearing": 119.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q6981625",
+  "replaces": []
+}

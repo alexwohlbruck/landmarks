@@ -1,0 +1,56 @@
+{
+  "id": "grand-canyon-navajo-bridge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "footbridge",
+    "arch-bridge",
+    "steel-arch",
+    "historic",
+    "colorado-river"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Navajo Bridge, Coconino County, AZ, US",
+      "author": "Jud McCranie",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Navajo_Bridge,_Coconino_County,_AZ,_US.jpg"
+    },
+    {
+      "title": "Navajo bridge old span",
+      "author": "Nicholas Hartmann",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Navajo_bridge_old_span.jpg"
+    },
+    {
+      "title": "Navajo Bridge from East",
+      "author": "Sebastian Kasten",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Navajo_Bridge_from_East.jpg"
+    },
+    {
+      "title": "Navajo Bridge (Wikipedia)",
+      "author": "Wikipedia contributors",
+      "license": "CC BY-SA 4.0",
+      "url": "https://en.wikipedia.org/wiki/Navajo_Bridge"
+    }
+  ],
+  "file": "models/grand-canyon-navajo-bridge.glb",
+  "source": "generators/grand-canyon-navajo-bridge.ts"
+}
