@@ -1,0 +1,55 @@
+{
+  "id": "grand-canyon-skywalk",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "landmark",
+  "tags": [
+    "observation-deck",
+    "cantilever",
+    "glass-floor",
+    "visitor-center"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Grand Canyon Skywalk - aerial",
+      "author": "Werner Keulen (labete)",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Skywalk_-_aerial.jpg"
+    },
+    {
+      "title": "Grand Canyon Skywalk 09 2017 4832",
+      "author": "Mariordo (Mario Roberto Durán Ortiz)",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Skywalk_09_2017_4832.jpg"
+    },
+    {
+      "title": "Back of Skywalk Grand Canyon 2014 - panoramio",
+      "author": "Robert Meszaros",
+      "license": "CC BY 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Back_of_Skywalk_Grand_Canyon_2014_-_panoramio.jpg"
+    },
+    {
+      "title": "USGS NAIP orthoimagery",
+      "author": "U.S. Geological Survey",
+      "license": "Public domain",
+      "url": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-national-agriculture-imagery-program-naip"
+    }
+  ],
+  "file": "models/grand-canyon-skywalk.glb",
+  "source": "generators/grand-canyon-skywalk.ts"
+}
