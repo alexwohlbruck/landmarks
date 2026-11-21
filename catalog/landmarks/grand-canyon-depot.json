@@ -1,0 +1,14 @@
+{
+  "id": "grand-canyon-depot",
+  "name": "Grand Canyon Railway Depot",
+  "model": "grand-canyon-depot",
+  "place": "grand-canyon",
+  "lng": -112.136673,
+  "lat": 36.056799,
+  "bearing": 350.4,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/171147658"
+  ]
+}
