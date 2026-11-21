@@ -1,0 +1,55 @@
+{
+  "id": "grand-canyon-phantom-ranch",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "lodge",
+    "mary-colter",
+    "rustic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Phantom Ranch",
+      "author": "Michael Quinn (National Park Service)",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Phantom_Ranch.jpg"
+    },
+    {
+      "title": "Grand Canyon Phantom Ranch Lodge 0322",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Phantom_Ranch_Lodge_0322_(5951207957).jpg"
+    },
+    {
+      "title": "Grand Canyon Phantom Ranch Lodge 2878",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Phantom_Ranch_Lodge_2878_(5941414695).jpg"
+    },
+    {
+      "title": "Busy Day at the Canteen",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Busy_Day_at_the_Canteen_(50534315601).jpg"
+    }
+  ],
+  "file": "models/grand-canyon-phantom-ranch.glb",
+  "source": "generators/grand-canyon-phantom-ranch.ts"
+}
