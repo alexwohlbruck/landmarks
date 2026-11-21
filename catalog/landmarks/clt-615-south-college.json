@@ -1,0 +1,18 @@
+{
+  "id": "clt-615-south-college",
+  "name": "615 South College",
+  "model": "clt-615-south-college",
+  "place": "charlotte-area",
+  "lng": -80.8480876,
+  "lat": 35.221516,
+  "bearing": 49.3,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/713125795",
+    "way/1351490869",
+    "way/1351490870",
+    "way/1351490871"
+  ],
+  "wikidata": "Q29791440"
+}

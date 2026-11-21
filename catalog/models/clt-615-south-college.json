@@ -1,0 +1,41 @@
+{
+  "id": "clt-615-south-college",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "office",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "615 S College building.jpg",
+      "author": "Jt12081988",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:615_S_College_building.jpg"
+    },
+    {
+      "title": "615 Regions viewed from South Tryon St bridge Mid-September 2025.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:615_Regions_viewed_from_South_Tryon_St_bridge_Mid-September_2025.jpg"
+    }
+  ],
+  "file": "models/clt-615-south-college.glb",
+  "source": "generators/clt-615-south-college.ts"
+}
