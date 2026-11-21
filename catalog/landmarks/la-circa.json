@@ -1,0 +1,17 @@
+{
+  "id": "la-circa",
+  "name": "Circa Los Angeles",
+  "model": "la-circa",
+  "lng": -118.2665426,
+  "lat": 34.0410945,
+  "bearing": -52.3,
+  "elevation": 0,
+  "minzoom": 13,
+  "place": "los-angeles-area",
+  "replaces": [
+    "way/582055207",
+    "way/641096673",
+    "way/641096674",
+    "way/1497498041"
+  ]
+}

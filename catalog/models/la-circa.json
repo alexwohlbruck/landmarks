@@ -1,0 +1,47 @@
+{
+  "id": "la-circa",
+  "file": "models/la-circa.glb",
+  "detail": "models/la-circa.detail.glb",
+  "detailZoom": 16,
+  "source": "generators/la-circa.ts",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "residential",
+    "twin-towers",
+    "modern",
+    "mixed-use"
+  ],
+  "reviewStatus": "draft",
+  "credits": [
+    {
+      "name": "Coping3174",
+      "kind": "person",
+      "role": "creator"
+    },
+    {
+      "name": "Codex",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "GPT-6"
+    }
+  ],
+  "description": "Circa twin towers and shared podium. Roof/sign levels follow supplied elevations: roof 394 ft 3 in; screen high 416 ft 11 in; logo top 417 ft 11 in. Image-derived details are provisional; supplied reference licenses are unverified, including Google-watermarked Flower Street views. Not cleared for upstream publication. See generator for estimates.",
+  "references": [
+    {
+      "title": "OSM complex and building parts",
+      "url": "https://www.openstreetmap.org/way/582055207",
+      "author": "OpenStreetMap contributors",
+      "license": "ODbL-1.0"
+    },
+    {
+      "title": "Structural engineer project facts",
+      "url": "https://www.ckcps.com/projects/circa"
+    },
+    {
+      "title": "Downtown LA building record",
+      "url": "https://downtownla.com/building/circa"
+    }
+  ]
+}
