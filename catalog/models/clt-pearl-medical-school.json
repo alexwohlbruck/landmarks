@@ -1,0 +1,42 @@
+{
+  "id": "clt-pearl-medical-school",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "university",
+    "medical",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "The Pearl Early June 2025.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Pearl_Early_June_2025.jpg"
+    },
+    {
+      "title": "The Pearl at the corner of South McDowell St and Pearl Park Wy Early September 2026.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Pearl_at_the_corner_of_South_McDowell_St_and_Pearl_Park_Wy_Early_September_2026.jpg"
+    }
+  ],
+  "file": "models/clt-pearl-medical-school.glb",
+  "source": "generators/clt-pearl-medical-school.ts"
+}

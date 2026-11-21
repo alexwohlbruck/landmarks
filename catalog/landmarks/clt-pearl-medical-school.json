@@ -1,0 +1,14 @@
+{
+  "id": "clt-pearl-medical-school",
+  "name": "Wake Forest University School of Medicine Charlotte (Levine Center)",
+  "model": "clt-pearl-medical-school",
+  "place": "charlotte-area",
+  "lng": -80.8415088,
+  "lat": 35.213993,
+  "bearing": 43,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/1558943296"
+  ]
+}
