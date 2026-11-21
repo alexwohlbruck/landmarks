@@ -177,7 +177,10 @@ export function truss(
   ys: number[],
   top: (y: number) => number,
   bot: (y: number) => number,
-  { chordW = 0.5, topD = 0.55, botD = 0.75, member = 0.32, post = member, flip = false, minWeb = 0, curve = ys } = {},
+  { chordW = 0.5, topD = 0.55, botD = 0.75, member = 0.32, post = member, flip = false, minWeb = 0, curve = ys }: {
+    chordW?: number; topD?: number; botD?: number; member?: number; post?: number
+    flip?: boolean; minWeb?: number; curve?: number[]
+  } = {},
 ) {
   const x0 = xc - chordW / 2, x1 = xc + chordW / 2
   band(chords, x0, x1, curve, top, (y) => top(y) - topD, { out: true, in: true, top: true, bottom: true })

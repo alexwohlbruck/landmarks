@@ -1,0 +1,55 @@
+{
+  "id": "lv-hoover-dam-visitor-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "visitor-center",
+    "museum",
+    "hoover-dam"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q55896078",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hoover Dam from Memorial Bridge.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hoover_Dam_from_Memorial_Bridge.jpg",
+      "author": "Noah Wulf",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hoover Dam, Nevada (Arizona-Nevada, USA) -- 2012 -- 6132.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hoover_Dam,_Nevada_(Arizona-Nevada,_USA)_--_2012_--_6132.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hoover Dam Visitor's Center.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hoover_Dam_Visitor%27s_Center.jpg",
+      "author": "Michael180 (ThePlaz)",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "title": "Hoover Dam Visitor Center and Exhibits - DSC3637 HDR - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hoover_Dam_Visitor_Center_and_Exhibits_-_DSC3637_HDR_-_panoramio.jpg",
+      "author": "Robert Dimov",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/lv-hoover-dam-visitor-center.glb",
+  "source": "generators/lv-hoover-dam-visitor-center.ts"
+}

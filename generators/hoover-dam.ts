@@ -14,16 +14,20 @@
  * the lowest ground under the model.
  *
  * Standing in a canyon. The map's terrain (Mapterhorn, from USGS 3DEP lidar)
- * keeps the dam's face, its crest and the base of the powerhouse as ground, and
- * the canyon walls rise in front of the face's ends. So the model is built on
- * that terrain, as a bridge's terrain-footed walls are (docs/reference.md,
- * Bridges): every foot, and every vertex of the face below the crest, stands
- * on the DEM in `hoover-dam-terrain.ts`, 0.2 m under it, and a face triangle
- * that is wholly under the canyon wall is left out. The map then finds the
- * model following its terrain, rather than flat, and stands it where it was
- * built instead of lifting it by the mean height of the canyon. Below the
- * steep top, the face stands 1.5 m proud of the DEM's own copy of it, so the
- * terrain never shows through it; its edges against the walls stay 0.2 m under.
+ * keeps the dam's face, its crest and the base of the powerhouse as ground,
+ * and the canyon walls rise in front of the face's ends. So the model is built
+ * on that terrain, as a bridge's terrain-footed walls are (docs/reference.md,
+ * Bridges): every foot stands on the DEM in `hoover-dam-terrain.ts`, 0.2 m
+ * under it. The map then finds the model following its terrain, rather than
+ * flat, and stands it where it was built instead of lifting it by the mean
+ * height of the canyon. The downstream face is one continuous wall from
+ * abutment to abutment: each ring of it spans the line where the DEM's canyon
+ * wall rises 4 m above the profile (smoothed; above r 120, where the 4 m DEM
+ * smears the near-vertical top, run straight to the crest's measured ends),
+ * carried 1.5° on into the rock and ended 0.2 m under it, so the canyon wall
+ * clips the face along a clean line. Inside that, the face follows the
+ * profile, or stands 1.5 m proud of the DEM's own copy of it where that is
+ * higher, so the terrain never shows through it.
  *
  * The placement's `elevation` is 0.1 m, which makes it rigid. The map's drape
  * reads the ground on a 7 × 7 grid, about 50 × 70 m here, and lets every
@@ -74,7 +78,9 @@
  * (photos, about 3° = 7 m apart), the pylons' extent down the face (photos,
  * about 25 m), the towers' 12 sides and fins (photos), the trash racks' extent
  * (to 4 m under the tower decks), the powerhouse bays' count and size (photos,
- * lidar shows their height), the window panels, the tailrace decks' plan. The
+ * lidar shows their height), the window panels, the tailrace decks' plan, the
+ * transformer yards on the wing roofs (photo: Wulf, and NAIP: a dark band
+ * about 14 m wide along each wing's river edge, two transformers a bay). The
  * base roof is drawn at 238.3 m, 1.3 m over the lidar, to clear the DEM's
  * copy of it. The face below the lake line
  * and the dam's buried heel are not drawn: the lake hides them.
@@ -154,8 +160,10 @@ const ROAD: MaterialSpec = { ...PALETTE.roof, color: 0x8f969c }
 const RACK: MaterialSpec = PALETTE.metal
 const WINDOW: MaterialSpec = PALETTE.window
 const LAMP: MaterialSpec = { ...finish('lamp', 0x8a8478) }
+/** The transformer yards on the powerhouse roofs: grey steel and oil tanks. */
+const GEAR: MaterialSpec = { ...finish('hoover-transformers', 0x6f706c) }
 
-const conc = new Part(), deck = new Part(), road = new Part(), rack = new Part(), win = new Part(), lamp = new Part()
+const conc = new Part(), deck = new Part(), gear = new Part(), road = new Part(), rack = new Part(), win = new Part(), lamp = new Part()
 
 // ---- helpers ------------------------------------------------------------------
 
@@ -202,25 +210,73 @@ const ngon = (cx: number, cy: number, r: number, n: number, rot = 0): P2[] =>
 // ---- the downstream face --------------------------------------------------------
 
 /**
- * A polar grid from the toe to the crest. Below the steep top, each vertex
- * stands on the DEM, which there is the face itself; under the canyon walls
- * and on the powerhouse roof it stands on that ground instead, and a triangle
- * standing wholly on such ground is left out. The steep top follows the
- * profile, which the 2 m DEM can't resolve.
+ * Where a ring of the face meets the canyon wall on each side: the first
+ * angle out from the axis where the ground stands clearly above the face.
+ * The DEM's rock is noisy at 4 m, so the lines are smoothed down the face.
+ */
+function abutments(rings: number[]): [number, number][] {
+  const scan = (r: number): [number, number] => {
+    const f = profile(r)
+    const edge = (dir: number, limit: number) => {
+      for (let t = 0; Math.abs(t) <= Math.abs(limit); t += dir * 0.5) {
+        const [x, y] = polar(r, t)
+        if (dem(x, y) > f + ROCK) return t
+      }
+      return limit
+    }
+    return [edge(-1, TH_NV), edge(1, TH_AZ)]
+  }
+  // Above r 120 the 4 m DEM smears the near-vertical top into a slope, so
+  // the line runs straight from there to the crest's measured ends.
+  const low = scan(TOP_SCAN)
+  const raw = rings.map((r): [number, number] => {
+    if (r <= TOP_SCAN) return scan(r)
+    const t = (r - TOP_SCAN) / (R_DOWN - TOP_SCAN)
+    return [low[0] + (TH_NV - low[0]) * t, low[1] + (TH_AZ - low[1]) * t]
+  })
+  // Widening upward: a ring never reaches past the one above it.
+  for (let i = raw.length - 2; i >= 0; i--) {
+    raw[i][0] = Math.max(raw[i][0], raw[i + 1][0])
+    raw[i][1] = Math.min(raw[i][1], raw[i + 1][1])
+  }
+  return raw.map((_, i) => {
+    const near = [raw[i - 1] ?? raw[i], raw[i], raw[i + 1] ?? raw[i]]
+    return [0, 1].map(k => (near[0][k] + 2 * near[1][k] + near[2][k]) / 4) as [number, number]
+  })
+}
+/** The highest ring whose abutments are read from the DEM. */
+const TOP_SCAN = 120
+/** How far above the face the ground must stand to count as the canyon wall. */
+const ROCK = 4
+/** How far past the abutment line the face runs into the rock, in degrees. */
+const KEY = 1.5
+
+/**
+ * One continuous wall from abutment to abutment, ring by ring from the toe
+ * to the crest. Each ring spans its own abutments (above), run KEY degrees
+ * into the rock and ended just under the ground there, so the canyon wall
+ * clips the face along a clean line. Inside, the face follows the profile,
+ * or stands FACE_LIFT proud of the DEM where the DEM's own copy of the face
+ * is higher, so the terrain never shows through it.
  */
 function downstreamFace() {
-  const rings = [48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 132, 135, 137]
-  const ths: number[] = []
-  for (let t = -72; t <= 78; t += 2) ths.push(t)
-  type Vx = { p: V3; off: boolean; n: V3 }
-  const grid: Vx[][] = rings.map(r => ths.map(th => {
-    const [x, y] = polar(r, th)
-    const g = dem(x, y), f = profile(r)
-    const rock = g > f + 3 || (th < TH_NV || th > TH_AZ)
-    const roof = !rock && g < 43.5 && r > 50
-    const z = rock || roof ? g - FOOT : r <= 128 ? g + FACE_LIFT : Math.max(f, g + FACE_LIFT)
-    return { p: [x, y, z] as V3, off: rock || roof, n: [0, 0, 0] as V3 }
-  }))
+  const rings = [52, 58, 64, 72, 80, 88, 96, 104, 112, 120, 126, 130, 133, 135, 136.5, 137]
+  const edges = abutments(rings)
+  const COLS = 36
+  type Vx = { p: V3; n: V3 }
+  const grid: Vx[][] = rings.map((r, i) => {
+    const [a, b] = [edges[i][0] - KEY, edges[i][1] + KEY]
+    const f = profile(r)
+    return Array.from({ length: COLS + 1 }, (_, j) => {
+      const th = a + ((b - a) * j) / COLS
+      const [x, y] = polar(r, th)
+      const g = dem(x, y)
+      const end = j === 0 || j === COLS
+      const z = end ? Math.min(Math.max(f, g + FACE_LIFT), Math.max(g - FOOT, 0)) : Math.min(Math.max(f, g + FACE_LIFT), CREST)
+      return { p: [x, y, z] as V3, n: [0, 0, 0] as V3 }
+    })
+  })
+  const ths = grid[0]
   // Smooth normals from the grid's own triangles.
   const tris: [Vx, Vx, Vx][] = []
   for (let i = 0; i + 1 < rings.length; i++)
@@ -234,7 +290,6 @@ function downstreamFace() {
     for (const v of t) for (let k = 0; k < 3; k++) v.n[k] += n[k]
   }
   for (const t of tris) {
-    if (t.every(v => v.off)) continue
     const ns = t.map(v => { const l = Math.hypot(...v.n) || 1; return v.n.map(c => c / l) as V3 })
     conc.tri(t[0].p, t[1].p, t[2].p, undefined, undefined, undefined, ns)
   }
@@ -402,6 +457,19 @@ function wing(main: P2[], step: P2[], side: number) {
     const box: P2[] = [at(t0, 0), at(t1, 0), at(t1, inner), at(t0, inner)]
     footedLoft(conc, ground, [{ plan: ccw(box), z: 'ground' }, { plan: ccw(box), z: BAY_TOP }], 6, true)
   }
+  // The transformer yard on the roof, along its river edge (photo: Wulf;
+  // NAIP): a dark deck 14 m wide and a row of transformers, two per bay.
+  const [e0, e1] = side < 0 ? [step[0], step[3]] : [step[1], step[2]]
+  const along = (t: number, dx: number): P2 => [e0[0] + (e1[0] - e0[0]) * t - side * dx, e0[1] + (e1[1] - e0[1]) * t]
+  const t0 = 0.04, t1 = 0.96
+  const yard = [along(t0, 2), along(t1, 2), along(t1, 16), along(t0, 16)]
+  const z = WING_ROOF + 0.06
+  gear.cap(ccw(yard).map(([x, y]): V3 => [x, y, z]), true)
+  for (let i = 0; i < n * 2; i++) {
+    const t = t0 + ((t1 - t0) * (i + 0.5)) / (n * 2)
+    const box = [along(t - 0.014, 5), along(t + 0.014, 5), along(t + 0.014, 12), along(t - 0.014, 12)]
+    block(gear, box, () => z, z + 3.2, [0, 0])
+  }
 }
 
 // ---- lamps ---------------------------------------------------------------------------
@@ -426,6 +494,7 @@ lamps()
 const parts = [
   { part: conc, material: CONCRETE },
   { part: deck, material: ROOFDECK },
+  { part: gear, material: GEAR },
   { part: road, material: ROAD },
   { part: rack, material: RACK },
   { part: win, material: WINDOW },

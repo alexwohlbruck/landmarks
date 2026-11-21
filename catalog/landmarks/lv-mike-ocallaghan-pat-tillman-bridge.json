@@ -1,0 +1,15 @@
+{
+  "id": "lv-mike-ocallaghan-pat-tillman-bridge",
+  "name": "Mike O'Callaghan–Pat Tillman Memorial Bridge",
+  "model": "lv-mike-ocallaghan-pat-tillman-bridge",
+  "place": "hoover-dam",
+  "lng": -114.74181,
+  "lat": 36.012727,
+  "bearing": 300.3,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1293993",
+  "replaces": [
+    "way/1041460706"
+  ]
+}

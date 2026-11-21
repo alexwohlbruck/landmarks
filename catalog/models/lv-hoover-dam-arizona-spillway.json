@@ -1,0 +1,48 @@
+{
+  "id": "lv-hoover-dam-arizona-spillway",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "infrastructure",
+  "tags": [
+    "dam",
+    "spillway",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hoover Dam Arizona spillway, USA - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hoover_Dam_Arizona_spillway,_USA_-_panoramio.jpg",
+      "author": "MARELBU",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Hoover Dam and Arizona Spillway, 1983.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hoover_Dam_and_Arizona_Spillway,_1983.jpg",
+      "author": "Bureau of Reclamation",
+      "license": "Public domain"
+    },
+    {
+      "title": "Arizona Spillway - Hoover Dam, Nv.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arizona_Spillway_-_Hoover_Dam,_Nv.jpg",
+      "author": "Jarek Tuszynski (Jarekt)",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/lv-hoover-dam-arizona-spillway.glb",
+  "source": "generators/lv-hoover-dam-arizona-spillway.ts"
+}

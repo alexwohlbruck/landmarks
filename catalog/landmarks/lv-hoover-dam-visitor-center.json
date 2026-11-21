@@ -1,0 +1,15 @@
+{
+  "id": "lv-hoover-dam-visitor-center",
+  "name": "Hoover Dam Visitor Center",
+  "model": "lv-hoover-dam-visitor-center",
+  "place": "hoover-dam",
+  "lng": -114.739352,
+  "lat": 36.016137,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q55896078",
+  "replaces": [
+    "way/89604268"
+  ]
+}

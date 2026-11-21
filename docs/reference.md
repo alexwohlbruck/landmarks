@@ -366,6 +366,11 @@ park, usually 20 to 50 models.
   Mapterhorn terrain at its real height (drape, fill, base sink and
   `elevation`), with the ground around it drawn; always pass it.
 
+Where several models share one site (a dam, its spillways and its bridge),
+add a combined view too, every model on one patch of terrain:
+
+    bun tools/scene.ts review/<batch>/combined-day.png <id ...> --from <deg> [--night]
+
 GitHub has no API for attaching images to a pull request, so the sheets are
 committed on the PR branch and linked by commit:
 

@@ -1,0 +1,50 @@
+{
+  "id": "lv-mike-ocallaghan-pat-tillman-bridge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "bridge",
+    "arch-bridge",
+    "concrete",
+    "infrastructure"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q1293993",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Mike O'Callaghan–Pat Tillman Memorial Bridge - Oct 2021.jpg",
+      "author": "APK",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Mike_O%27Callaghan%E2%80%93Pat_Tillman_Memorial_Bridge_-_Oct_2021.jpg"
+    },
+    {
+      "title": "Mike O'Callaghan–Pat Tillman Memorial Bridge from Hoover Dam.jpg",
+      "author": "APK",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Mike_O%27Callaghan%E2%80%93Pat_Tillman_Memorial_Bridge_from_Hoover_Dam.jpg"
+    },
+    {
+      "title": "Mike O'Callaghan–Pat Tillman Memorial Bridge 09 2017 4768.jpg",
+      "author": "Mariordo (Mario Roberto Durán Ortiz)",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Mike_O%27Callaghan%E2%80%93Pat_Tillman_Memorial_Bridge_09_2017_4768.jpg"
+    }
+  ],
+  "file": "models/lv-mike-ocallaghan-pat-tillman-bridge.glb",
+  "source": "generators/lv-mike-ocallaghan-pat-tillman-bridge.ts"
+}

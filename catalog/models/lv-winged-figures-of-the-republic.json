@@ -1,0 +1,51 @@
+{
+  "id": "lv-winged-figures-of-the-republic",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "sculpture",
+  "tags": [
+    "monument",
+    "art-deco",
+    "bronze",
+    "hoover-dam",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q55935118",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Winged Figures of the Republic - 3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Winged_Figures_of_the_Republic_-_3.jpg",
+      "author": "APK",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Winged Figures of the Republic Right Statue.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Winged_Figures_of_the_Republic_Right_Statue.jpg",
+      "author": "Noah Wulf",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Winged Figures of the Republic - 4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Winged_Figures_of_the_Republic_-_4.jpg",
+      "author": "APK",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/lv-winged-figures-of-the-republic.glb",
+  "source": "generators/lv-winged-figures-of-the-republic.ts"
+}

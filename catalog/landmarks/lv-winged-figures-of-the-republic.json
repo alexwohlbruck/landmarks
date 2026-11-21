@@ -1,0 +1,13 @@
+{
+  "id": "lv-winged-figures-of-the-republic",
+  "name": "Winged Figures of the Republic",
+  "model": "lv-winged-figures-of-the-republic",
+  "place": "hoover-dam",
+  "lng": -114.739049,
+  "lat": 36.016669,
+  "bearing": 338.6,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q55935118",
+  "replaces": []
+}

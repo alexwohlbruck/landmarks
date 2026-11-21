@@ -1,0 +1,12 @@
+{
+  "id": "lv-hoover-dam-nevada-spillway",
+  "name": "Hoover Dam Nevada Spillway",
+  "model": "lv-hoover-dam-nevada-spillway",
+  "place": "hoover-dam",
+  "lng": -114.737136,
+  "lat": 36.01888,
+  "bearing": 45,
+  "elevation": 0.1,
+  "minzoom": 15,
+  "replaces": []
+}

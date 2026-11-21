@@ -1,0 +1,48 @@
+{
+  "id": "lv-hoover-dam-nevada-spillway",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "infrastructure",
+  "tags": [
+    "dam",
+    "spillway",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Spillway, Hoover Dam, NV-AZ",
+      "url": "https://www.flickr.com/photos/59081381@N03/28222786198",
+      "author": "w_lemay",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Hoover Dam and Arizona Spillway, 1983.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hoover_Dam_and_Arizona_Spillway,_1983.jpg",
+      "author": "Bureau of Reclamation",
+      "license": "Public domain"
+    },
+    {
+      "title": "Boulder Dam, looking upstream through Nevada spillway channel from point on center line - NARA - 293898.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Boulder_Dam,_looking_upstream_through_Nevada_spillway_channel_from_point_on_center_line_-_NARA_-_293898.jpg",
+      "author": "Bureau of Reclamation",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/lv-hoover-dam-nevada-spillway.glb",
+  "source": "generators/lv-hoover-dam-nevada-spillway.ts"
+}
