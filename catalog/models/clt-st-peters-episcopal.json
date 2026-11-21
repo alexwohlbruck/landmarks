@@ -1,0 +1,42 @@
+{
+  "id": "clt-st-peters-episcopal",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "church",
+    "gothic-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "St. Peter's Episcopal Church, Charlotte, North Carolina.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Peter%27s_Episcopal_Church,_Charlotte,_North_Carolina.jpg",
+      "author": "Jason Trommetter",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Door of St. Peter's Episcopal Church, Charlotte, North Carolina.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Door_of_St._Peter%27s_Episcopal_Church,_Charlotte,_North_Carolina.jpg",
+      "author": "Wesley Fryer",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/clt-st-peters-episcopal.glb",
+  "source": "generators/clt-st-peters-episcopal.ts"
+}

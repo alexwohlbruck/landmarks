@@ -1,0 +1,14 @@
+{
+  "id": "clt-st-peters-episcopal",
+  "name": "St. Peter's Episcopal Church",
+  "model": "clt-st-peters-episcopal",
+  "place": "charlotte-area",
+  "lng": -80.8404837,
+  "lat": 35.2298431,
+  "bearing": 46,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/397369783"
+  ]
+}
