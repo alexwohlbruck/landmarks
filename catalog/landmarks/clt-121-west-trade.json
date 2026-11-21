@@ -1,0 +1,16 @@
+{
+  "id": "clt-121-west-trade",
+  "name": "121 West Trade",
+  "model": "clt-121-west-trade",
+  "place": "charlotte-area",
+  "lng": -80.8439483,
+  "lat": 35.22743,
+  "bearing": 47.97,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/397369786",
+    "way/766641154",
+    "way/766641155"
+  ]
+}
