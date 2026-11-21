@@ -1,0 +1,15 @@
+{
+  "id": "clt-imaginon",
+  "name": "ImaginOn",
+  "model": "clt-imaginon",
+  "place": "charlotte-area",
+  "lng": -80.8376938,
+  "lat": 35.226928,
+  "bearing": 30.7,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/322278769"
+  ],
+  "wikidata": "Q69857334"
+}
