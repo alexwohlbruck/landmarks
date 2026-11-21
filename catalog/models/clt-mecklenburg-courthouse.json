@@ -1,0 +1,42 @@
+{
+  "id": "clt-mecklenburg-courthouse",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "civic",
+    "courthouse",
+    "government"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Mecklenburg County Courthouse along 4th St Mid-March 2024",
+      "url": "https://commons.wikimedia.org/wiki/File:Mecklenburg_County_Courthouse_along_4th_St_Mid-March_2024.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Mecklenburg County Courthouse Entrance from across the street Mid-March 2024",
+      "url": "https://commons.wikimedia.org/wiki/File:Mecklenburg_County_Courthouse_Entrance_from_across_the_street_Mid-March_2024.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/clt-mecklenburg-courthouse.glb",
+  "source": "generators/clt-mecklenburg-courthouse.ts"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "clt-mecklenburg-courthouse",
+  "name": "Mecklenburg County Courthouse",
+  "model": "clt-mecklenburg-courthouse",
+  "place": "charlotte-area",
+  "lng": -80.8370377,
+  "lat": 35.2195992,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/9916859"
+  ]
+}
