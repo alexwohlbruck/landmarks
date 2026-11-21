@@ -1,0 +1,47 @@
+{
+  "id": "grand-canyon-shrine-of-the-ages",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "auditorium",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Grand Canyon National Park Shrine of Ages 0030",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park_Shrine_of_Ages_0030_(7451155900).jpg"
+    },
+    {
+      "title": "Grand Canyon National Park Shrine of Ages 0019",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park_Shrine_of_Ages_0019_(7451160908).jpg"
+    },
+    {
+      "title": "Shrine of the Ages - Front of Building",
+      "author": "National Park Service",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Shrine_of_the_Ages_-_Front_of_Building_(d97f1258-f230-4fc0-a8a6-ba00634ff41a).JPG"
+    }
+  ],
+  "file": "models/grand-canyon-shrine-of-the-ages.glb",
+  "source": "generators/grand-canyon-shrine-of-the-ages.ts"
+}
