@@ -1,0 +1,17 @@
+{
+  "id": "clt-latta-arcade",
+  "name": "Latta Arcade",
+  "model": "clt-latta-arcade",
+  "place": "charlotte-area",
+  "lng": -80.8462695,
+  "lat": 35.2254639,
+  "bearing": 47.93,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/1047699822",
+    "way/1047699832",
+    "way/1047699833"
+  ],
+  "wikidata": "Q6497023"
+}
