@@ -1,0 +1,15 @@
+{
+  "id": "clt-discovery-place",
+  "name": "Discovery Place Science",
+  "model": "clt-discovery-place",
+  "place": "charlotte-area",
+  "lng": -80.8409863,
+  "lat": 35.2295784,
+  "bearing": 49.6,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/174231925"
+  ],
+  "wikidata": "Q5281960"
+}
