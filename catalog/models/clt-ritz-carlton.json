@@ -1,0 +1,54 @@
+{
+  "id": "clt-ritz-carlton",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "hotel",
+    "modern",
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Ritz Carlton Uptown Charlotte.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ritz_Carlton_Uptown_Charlotte.jpg"
+    },
+    {
+      "title": "The Ritz-Carlton Hotel, Charlotte.jpg",
+      "author": "Kiran891",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Ritz-Carlton_Hotel,_Charlotte.jpg"
+    },
+    {
+      "title": "Ritz Carlton 2019.jpg",
+      "author": "Cmett003",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ritz_Carlton_2019.jpg"
+    },
+    {
+      "title": "Ritz Charlotte.jpg",
+      "author": "Jt12081988",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ritz_Charlotte.jpg"
+    }
+  ],
+  "file": "models/clt-ritz-carlton.glb",
+  "source": "generators/clt-ritz-carlton.ts"
+}

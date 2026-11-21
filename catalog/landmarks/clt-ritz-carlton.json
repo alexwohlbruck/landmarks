@@ -1,0 +1,14 @@
+{
+  "id": "clt-ritz-carlton",
+  "name": "The Ritz-Carlton, Charlotte",
+  "model": "clt-ritz-carlton",
+  "place": "charlotte-area",
+  "lng": -80.8414749,
+  "lat": 35.2261491,
+  "bearing": 49.3,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/380092604"
+  ]
+}
