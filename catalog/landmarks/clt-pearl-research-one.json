@@ -1,0 +1,18 @@
+{
+  "id": "clt-pearl-research-one",
+  "name": "Research One at The Pearl",
+  "model": "clt-pearl-research-one",
+  "place": "charlotte-area",
+  "lng": -80.8423644,
+  "lat": 35.2145497,
+  "bearing": 44.1,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/1558943000",
+    "way/1562203552",
+    "way/1562203553",
+    "way/1562203554",
+    "way/1562203555"
+  ]
+}
