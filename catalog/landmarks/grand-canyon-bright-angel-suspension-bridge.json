@@ -1,0 +1,13 @@
+{
+  "id": "grand-canyon-bright-angel-suspension-bridge",
+  "name": "Bright Angel Suspension Bridge",
+  "model": "grand-canyon-bright-angel-suspension-bridge",
+  "place": "grand-canyon",
+  "lng": -112.09555,
+  "lat": 36.09766,
+  "bearing": 10.9,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q75610697",
+  "replaces": []
+}

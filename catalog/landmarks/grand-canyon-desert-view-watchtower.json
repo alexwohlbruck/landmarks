@@ -1,0 +1,16 @@
+{
+  "id": "grand-canyon-desert-view-watchtower",
+  "name": "Desert View Watchtower",
+  "model": "grand-canyon-desert-view-watchtower",
+  "place": "grand-canyon",
+  "lng": -111.826258,
+  "lat": 36.04402,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q2062022",
+  "replaces": [
+    "way/171444052",
+    "way/207657874"
+  ]
+}

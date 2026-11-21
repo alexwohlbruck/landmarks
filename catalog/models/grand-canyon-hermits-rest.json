@@ -1,0 +1,48 @@
+{
+  "id": "grand-canyon-hermits-rest",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "rest-house",
+    "shop"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hermit's Rest",
+      "author": "Michael Quinn, National Park Service",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Hermit%27s_Rest.jpg"
+    },
+    {
+      "title": "Grand Canyon National Park Hermits Rest 20100612 5852",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park_Hermits_Rest_20100612_5852_(4701862912).jpg"
+    },
+    {
+      "title": "Grand Canyon National Park Hermits Rest 007",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park_Hermits_Rest_007_(5952622693).jpg"
+    }
+  ],
+  "file": "models/grand-canyon-hermits-rest.glb",
+  "source": "generators/grand-canyon-hermits-rest.ts"
+}

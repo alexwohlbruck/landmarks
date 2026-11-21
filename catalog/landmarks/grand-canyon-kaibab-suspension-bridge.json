@@ -1,0 +1,13 @@
+{
+  "id": "grand-canyon-kaibab-suspension-bridge",
+  "name": "Kaibab Suspension Bridge",
+  "model": "grand-canyon-kaibab-suspension-bridge",
+  "place": "grand-canyon",
+  "lng": -112.089305,
+  "lat": 36.100925,
+  "bearing": 323.9,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q17300121",
+  "replaces": []
+}

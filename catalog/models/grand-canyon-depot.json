@@ -1,0 +1,47 @@
+{
+  "id": "grand-canyon-depot",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "train-station"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Grand Canyon Railway Station 2015 003",
+      "author": "Mike Peel",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Railway_Station_2015_003.jpg"
+    },
+    {
+      "title": "Grand Canyon Village - Grand Canyon Railroad Depot - 1901",
+      "author": "Marine 69-71",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Village-Grand_Canyon_Railroad_Depot-1901-1.jpg"
+    },
+    {
+      "title": "Railway station and El Tovar Hotel, facing WNW (HAER, 1994)",
+      "author": "Brian C. Grogan, HAER",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:RAILWAY_STATION_AND_EL_TOVAR_HOTEL,_FACING_WNW_Grand_Canyon_Village._1994,_HAER.jpg"
+    }
+  ],
+  "file": "models/grand-canyon-depot.glb",
+  "source": "generators/grand-canyon-depot.ts"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "grand-canyon-el-tovar",
+  "name": "El Tovar Hotel",
+  "model": "grand-canyon-el-tovar",
+  "place": "grand-canyon",
+  "lng": -112.137583,
+  "lat": 36.057431,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/144432994"
+  ]
+}

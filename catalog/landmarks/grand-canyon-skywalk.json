@@ -1,0 +1,15 @@
+{
+  "id": "grand-canyon-skywalk",
+  "name": "Grand Canyon Skywalk",
+  "model": "grand-canyon-skywalk",
+  "place": "grand-canyon-west",
+  "lng": -113.81105,
+  "lat": 36.01203,
+  "bearing": 30,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q1542550",
+  "replaces": [
+    "way/170214302"
+  ]
+}

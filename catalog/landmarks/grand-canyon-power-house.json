@@ -1,0 +1,15 @@
+{
+  "id": "grand-canyon-power-house",
+  "name": "Grand Canyon Power House",
+  "model": "grand-canyon-power-house",
+  "place": "grand-canyon",
+  "lng": -112.140666,
+  "lat": 36.055703,
+  "bearing": 8.3,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q5594359",
+  "replaces": [
+    "way/122426184"
+  ]
+}

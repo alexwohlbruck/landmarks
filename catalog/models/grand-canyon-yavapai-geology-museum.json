@@ -1,0 +1,48 @@
+{
+  "id": "grand-canyon-yavapai-geology-museum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "museum",
+    "observation-station"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Yavapai Geology Museum",
+      "author": "Michael Quinn, National Park Service",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Yavapai_Geology_Museum.jpg"
+    },
+    {
+      "title": "Yavapai Geology Museum - south-facing exterior",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Yavapai_Geology_Museum_-_south-facing_exterior.jpg"
+    },
+    {
+      "title": "09431 Yavapai Geology Museum Grand Canyon",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:09431_Yavapai_Geology_Museum_Grand_Canyon_(5590084543).jpg"
+    }
+  ],
+  "file": "models/grand-canyon-yavapai-geology-museum.glb",
+  "source": "generators/grand-canyon-yavapai-geology-museum.ts"
+}

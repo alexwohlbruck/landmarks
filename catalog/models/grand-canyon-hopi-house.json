@@ -1,0 +1,47 @@
+{
+  "id": "grand-canyon-hopi-house",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "shop"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hopi House 2021",
+      "author": "Austin Smith",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Hopi_House_2021.jpg"
+    },
+    {
+      "title": "Grand Canyon Village - Hopi House",
+      "author": "Jared from Clermont",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Village_-_Hopi_House_(34933475853).jpg"
+    },
+    {
+      "title": "Grand Canyon Hopi House 0216",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Hopi_House_0216_(5953038542).jpg"
+    }
+  ],
+  "file": "models/grand-canyon-hopi-house.glb",
+  "source": "generators/grand-canyon-hopi-house.ts"
+}

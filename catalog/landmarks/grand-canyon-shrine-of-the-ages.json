@@ -1,0 +1,14 @@
+{
+  "id": "grand-canyon-shrine-of-the-ages",
+  "name": "Shrine of the Ages",
+  "model": "grand-canyon-shrine-of-the-ages",
+  "place": "grand-canyon",
+  "lng": -112.12364,
+  "lat": 36.05433,
+  "bearing": 350,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/204082736"
+  ]
+}

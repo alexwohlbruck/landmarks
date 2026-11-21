@@ -1,0 +1,14 @@
+{
+  "id": "grand-canyon-phantom-ranch",
+  "name": "Phantom Ranch Canteen",
+  "model": "grand-canyon-phantom-ranch",
+  "place": "grand-canyon",
+  "lng": -112.095019,
+  "lat": 36.105073,
+  "bearing": 355.4,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/230992578"
+  ]
+}

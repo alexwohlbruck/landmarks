@@ -1,0 +1,59 @@
+{
+  "id": "grand-canyon-el-tovar",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "hotel"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "El Tovar north facing the rim",
+      "author": "Wolfgang Moroder",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:El_Tovar_north_facing_the_rim.jpg"
+    },
+    {
+      "title": "El Tovar north face",
+      "author": "Wolfgang Moroder",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:El_Tovar_north_face.jpg"
+    },
+    {
+      "title": "El Tovar Hotel s-aspect",
+      "author": "Wolfgang Moroder",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:El_Tovar_Hotel_s-aspect.JPG"
+    },
+    {
+      "title": "Grand Canyon Village - El Tovar Hotel - 1903",
+      "author": "Marine 69-71",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Village-El_Tovar_Hotel-1903.jpg"
+    },
+    {
+      "title": "Railway station and El Tovar Hotel, facing WNW (HAER, 1994)",
+      "author": "Brian C. Grogan, HAER",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:RAILWAY_STATION_AND_EL_TOVAR_HOTEL,_FACING_WNW_Grand_Canyon_Village._1994,_HAER.jpg"
+    }
+  ],
+  "file": "models/grand-canyon-el-tovar.glb",
+  "source": "generators/grand-canyon-el-tovar.ts"
+}

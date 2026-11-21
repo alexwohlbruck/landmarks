@@ -1,0 +1,48 @@
+{
+  "id": "grand-canyon-bright-angel-lodge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "hotel",
+    "lodge"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Bright Angel Lodge NPS1.jpg",
+      "author": "National Park Service",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Bright_Angel_Lodge_NPS1.jpg"
+    },
+    {
+      "title": "Grand Canyon National Park Bright Angel Lodge 1007 (7412152968)",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park_Bright_Angel_Lodge_1007_(7412152968).jpg"
+    },
+    {
+      "title": "Bright Angel Lodge Grand Canyon Village 09 2017 5333",
+      "author": "Mariordo (Mario Roberto Durán Ortiz)",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Bright_Angel_Lodge_Grand_Canyon_Village_09_2017_5333.jpg"
+    }
+  ],
+  "file": "models/grand-canyon-bright-angel-lodge.glb",
+  "source": "generators/grand-canyon-bright-angel-lodge.ts"
+}

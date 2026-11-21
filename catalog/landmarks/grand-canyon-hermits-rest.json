@@ -1,0 +1,15 @@
+{
+  "id": "grand-canyon-hermits-rest",
+  "name": "Hermits Rest",
+  "model": "grand-canyon-hermits-rest",
+  "place": "grand-canyon",
+  "lng": -112.2111,
+  "lat": 36.06206,
+  "bearing": 330,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q2623583",
+  "replaces": [
+    "way/174994338"
+  ]
+}
