@@ -1,0 +1,43 @@
+{
+  "id": "clt-city-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "civic",
+    "city-hall",
+    "historic",
+    "neoclassical"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Old City Hall East Trade St March 2024",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_City_Hall_East_Trade_St_March_2024.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "City hall, Charlotte, N. C. (postcard)",
+      "url": "https://commons.wikimedia.org/wiki/File:City_hall,_Charlotte,_N._C._(5755507357).jpg",
+      "author": "Boston Public Library",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/clt-city-hall.glb",
+  "source": "generators/clt-city-hall.ts"
+}

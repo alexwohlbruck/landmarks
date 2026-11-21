@@ -1,0 +1,14 @@
+{
+  "id": "clt-city-hall",
+  "name": "Charlotte City Hall",
+  "model": "clt-city-hall",
+  "place": "charlotte-area",
+  "lng": -80.8381699,
+  "lat": 35.2220888,
+  "bearing": 46.5,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/322278241"
+  ]
+}
