@@ -1,0 +1,48 @@
+{
+  "id": "clt-westin",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "hotel",
+    "skyscraper",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Uptown Charlotte Westin November 2023.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Uptown_Charlotte_Westin_November_2023.jpg"
+    },
+    {
+      "title": "Westin Hotel, Charlotte, NC IMG 5236.JPG",
+      "author": "Billy Hathorn",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Westin_Hotel,_Charlotte,_NC_IMG_5236.JPG"
+    },
+    {
+      "title": "Westin Charlotte.jpg",
+      "author": "James Willamor",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Westin_Charlotte.jpg"
+    }
+  ],
+  "file": "models/clt-westin.glb",
+  "source": "generators/clt-westin.ts"
+}
