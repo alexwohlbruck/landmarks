@@ -1,0 +1,15 @@
+{
+  "id": "clt-charlotte-plaza",
+  "name": "Charlotte Plaza",
+  "model": "clt-charlotte-plaza",
+  "place": "charlotte-area",
+  "lng": -80.8433166,
+  "lat": 35.2248987,
+  "bearing": 50.31,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/397372378",
+    "way/1186330025"
+  ]
+}

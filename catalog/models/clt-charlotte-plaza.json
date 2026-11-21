@@ -1,0 +1,53 @@
+{
+  "id": "clt-charlotte-plaza",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "office",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Charlotte Plaza S College.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Charlotte_Plaza_S_College.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Charlotte Plaza December 2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Charlotte_Plaza_December_2022.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Charlotte Plaza.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Charlotte_Plaza.jpg",
+      "author": "Kylebassphotography",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Fountain and Charlotte Plaza.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Fountain_and_Charlotte_Plaza.jpg",
+      "author": "Andrew Simpson",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/clt-charlotte-plaza.glb",
+  "source": "generators/clt-charlotte-plaza.ts"
+}
