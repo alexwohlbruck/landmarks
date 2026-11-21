@@ -1,0 +1,16 @@
+{
+  "id": "clt-government-center",
+  "name": "Charlotte-Mecklenburg Government Center",
+  "model": "clt-government-center",
+  "place": "charlotte-area",
+  "lng": -80.8394852,
+  "lat": 35.2212571,
+  "bearing": 1.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/1113509383",
+    "way/499337303",
+    "way/131139742"
+  ]
+}

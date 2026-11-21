@@ -1,0 +1,55 @@
+{
+  "id": "clt-government-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "civic",
+    "government",
+    "office",
+    "postmodern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Charlotte Mecklenburg Government Center Mid-March 2024",
+      "url": "https://commons.wikimedia.org/wiki/File:Charlotte_Mecklenburg_Government_Center_Mid-March_2024.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Charlotte-Mecklenburg Government Center December 2023",
+      "url": "https://commons.wikimedia.org/wiki/File:Charlotte-Mecklenburg_Government_Center_December_2023.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Charlotte-Mecklenburg Government Center August 2007",
+      "url": "https://commons.wikimedia.org/wiki/File:Charlotte-Mecklenburg_Government_Center_August_2007.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Charlotte Mecklenburg Government Center Entrance Mid-March 2024",
+      "url": "https://commons.wikimedia.org/wiki/File:Charlotte_Mecklenburg_Government_Center_Entrance_Mid-March_2024.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/clt-government-center.glb",
+  "source": "generators/clt-government-center.ts"
+}
