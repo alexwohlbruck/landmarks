@@ -1,0 +1,15 @@
+{
+  "id": "clt-main-library",
+  "name": "Charlotte Mecklenburg Library Main Library",
+  "model": "clt-main-library",
+  "place": "charlotte-area",
+  "lng": -80.840215,
+  "lat": 35.228675,
+  "bearing": 46.3,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/174171802"
+  ],
+  "wikidata": "Q69857276"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "clt-main-library",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "library",
+    "civic",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Main Library and former First Baptist Church 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Main_Library_and_former_First_Baptist_Church_01.jpg",
+      "author": "Dclemens1971",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Main Library and former First Baptist Church 02",
+      "url": "https://commons.wikimedia.org/wiki/File:Main_Library_and_former_First_Baptist_Church_02.jpg",
+      "author": "Dclemens1971",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Charlotte Main Library (Snøhetta project page, renderings)",
+      "url": "https://snohetta.com/projects/charlotte-mecklenburg-new-main-library",
+      "author": "Snøhetta"
+    },
+    {
+      "title": "New Main Library",
+      "url": "https://www.cmlibrary.org/new-main-library",
+      "author": "Charlotte Mecklenburg Library"
+    }
+  ],
+  "file": "models/clt-main-library.glb",
+  "source": "generators/clt-main-library.ts"
+}
