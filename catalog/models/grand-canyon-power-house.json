@@ -1,0 +1,54 @@
+{
+  "id": "grand-canyon-power-house",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "industrial",
+    "power-station"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Grand Canyon National Park- Powerhouse (2014) 8314",
+      "author": "Grand Canyon National Park",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park-_Powerhouse_(2014)_8314_(13204265764).jpg"
+    },
+    {
+      "title": "Grand Canyon National Park - Powerhouse Southeast Exposure",
+      "author": "Grand Canyon NPS",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park_-_Powerhouse_Southeast_Exposure.jpg"
+    },
+    {
+      "title": "Grand Canyon National Park - Powerhouse East Exposure",
+      "author": "Grand Canyon NPS",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park_-_Powerhouse_East_Exposure.jpg"
+    },
+    {
+      "title": "Grand Canyon Village-Grand Canyon Power House-1926",
+      "author": "Marine 69-71",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Village-Grand_Canyon_Power_House-1926.jpg"
+    }
+  ],
+  "file": "models/grand-canyon-power-house.glb",
+  "source": "generators/grand-canyon-power-house.ts"
+}
