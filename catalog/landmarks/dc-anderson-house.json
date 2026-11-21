@@ -1,0 +1,14 @@
+{
+  "id": "dc-anderson-house",
+  "name": "Anderson House",
+  "model": "dc-anderson-house",
+  "place": "washington-area",
+  "lng": -77.04771675,
+  "lat": 38.91071298,
+  "bearing": 25.4,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/66646611"
+  ]
+}

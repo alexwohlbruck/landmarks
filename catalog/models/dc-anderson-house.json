@@ -1,0 +1,52 @@
+{
+  "id": "dc-anderson-house",
+  "file": "models/dc-anderson-house.glb",
+  "source": "generators/dc-anderson-house.ts",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "historic-house"
+  ],
+  "description": "The Society of the Cincinnati’s headquarters and historic house museum, built in 1902–1905 for Larz and Isabel Anderson. Original low-poly model with a curved columned portico, paired entrance gateways and garden terrace; front refined against a licensed photograph. Rear and side details remain approximate.",
+  "credits": [
+    {
+      "name": "Salty Pancakes",
+      "kind": "person",
+      "github": "saltypancakes-1",
+      "role": "creator"
+    },
+    {
+      "name": "OpenAI Codex",
+      "kind": "ai",
+      "model": "GPT-6",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Mapped footprint",
+      "url": "https://www.openstreetmap.org/way/66646611",
+      "author": "OpenStreetMap contributors",
+      "license": "ODbL-1.0"
+    },
+    {
+      "title": "National Historic Landmark nomination, architectural description",
+      "url": "https://npgallery.nps.gov/NRHP/GetAsset/548abe2d-6b5f-498c-bf0f-eb61942fac68",
+      "author": "National Park Service"
+    },
+    {
+      "title": "2022 DC lidar, NOAA Digital Coast 9837",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/9837/dc2022_wash_dc_metadata.html",
+      "author": "District of Columbia Office of the Chief Technology Officer"
+    },
+    {
+      "title": "Front exterior photograph used for visual comparison",
+      "url": "https://commons.wikimedia.org/wiki/File:Larz_Anderson_House_-_Society_of_the_Cincinatti.jpg",
+      "author": "APK",
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "reviewStatus": "draft"
+}
