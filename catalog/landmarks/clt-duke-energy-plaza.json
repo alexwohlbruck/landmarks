@@ -1,0 +1,19 @@
+{
+  "id": "clt-duke-energy-plaza",
+  "name": "Duke Energy Plaza",
+  "model": "clt-duke-energy-plaza",
+  "place": "charlotte-area",
+  "lng": -80.8474495,
+  "lat": 35.2232334,
+  "bearing": 48.7,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/1332536425",
+    "way/1332536426",
+    "way/1332536429",
+    "way/1332536447",
+    "way/1332536446",
+    "way/1332536448"
+  ]
+}
