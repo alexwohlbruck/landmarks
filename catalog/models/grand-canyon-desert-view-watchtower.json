@@ -1,0 +1,54 @@
+{
+  "id": "grand-canyon-desert-view-watchtower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "tower",
+    "observation"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Desert View Watchtower (LCCN2011633952)",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Desert_View_Watchtower,_located_on_the_South_Rim_of_the_Grand_Canyon_within_Grand_Canyon_National_Park,_Arizona_LCCN2011633952.tif"
+    },
+    {
+      "title": "Grand-canyon-watchtower-D4325.JPG",
+      "author": "NPS / Michael Quinn",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand-canyon-watchtower-D4325.JPG"
+    },
+    {
+      "title": "Desert View Watchtower, Grand Canyon 9-15",
+      "author": "Don Graham",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Desert_View_Watchtower,_Grand_Canyon_9-15_(21272245233).jpg"
+    },
+    {
+      "title": "Desert View Watchtower Grand Canyon 09 2017 5521",
+      "author": "Mariordo (Mario Roberto Durán Ortiz)",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Desert_View_Watchtower_Grand_Canyon_09_2017_5521.jpg"
+    }
+  ],
+  "file": "models/grand-canyon-desert-view-watchtower.glb",
+  "source": "generators/grand-canyon-desert-view-watchtower.ts"
+}
