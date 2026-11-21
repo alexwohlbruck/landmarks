@@ -1,0 +1,15 @@
+{
+  "id": "grand-canyon-yavapai-geology-museum",
+  "name": "Yavapai Geology Museum",
+  "model": "grand-canyon-yavapai-geology-museum",
+  "place": "grand-canyon",
+  "lng": -112.11763,
+  "lat": 36.06606,
+  "bearing": 15,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q96252771",
+  "replaces": [
+    "way/126467052"
+  ]
+}
