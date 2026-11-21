@@ -1,0 +1,63 @@
+{
+  "id": "grand-canyon-kaibab-suspension-bridge",
+  "detail": "models/grand-canyon-kaibab-suspension-bridge.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "footbridge",
+    "suspension-bridge",
+    "historic",
+    "colorado-river"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Black Bridge Grand Canyon",
+      "author": "Fredlyfish4",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Black_Bridge_Grand_Canyon.JPG"
+    },
+    {
+      "title": "Grand Canyon National Park - Kaibab Suspension Bridge 8578",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park_-_Kaibab_Suspension_Bridge_8578_(5054522627).jpg"
+    },
+    {
+      "title": "D 1247 South Kaibab Trail Kaibab Suspension Bridge.",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:D_1247_South_Kaibab_Trail_Kaibab_Suspension_Bridge._(4758430371).jpg"
+    },
+    {
+      "title": "02244 Grand Canyon Historic Kaibab Trail Suspension Bridge",
+      "author": "Grand Canyon National Park",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:02244_Grand_Canyon_Historic_Kaibab_Trail_Suspension_Bridge_(6997293821).jpg"
+    },
+    {
+      "title": "USGS 3DEP AZ_GrandCanyonNP_1_2019",
+      "author": "U.S. Geological Survey",
+      "license": "Public domain",
+      "url": "https://www.usgs.gov/3d-elevation-program"
+    }
+  ],
+  "file": "models/grand-canyon-kaibab-suspension-bridge.glb",
+  "source": "generators/grand-canyon-kaibab-suspension-bridge.ts"
+}
