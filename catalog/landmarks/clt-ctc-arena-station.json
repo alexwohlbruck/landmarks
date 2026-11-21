@@ -1,0 +1,13 @@
+{
+  "id": "clt-ctc-arena-station",
+  "name": "CTC/Arena station",
+  "model": "clt-ctc-arena-station",
+  "place": "charlotte-area",
+  "lng": -80.8408876,
+  "lat": 35.2253235,
+  "bearing": 45.98,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [],
+  "wikidata": "Q5086171"
+}

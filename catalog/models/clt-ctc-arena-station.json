@@ -1,0 +1,67 @@
+{
+  "id": "clt-ctc-arena-station",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "infrastructure",
+  "tags": [
+    "light-rail-station",
+    "canopy",
+    "transit",
+    "bridge"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Charlotte Transportation Center Light Rail Station February 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Charlotte_Transportation_Center_Light_Rail_Station_February_2024.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Light Rail Train Entering Charlotte Transportation Center Station March 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Light_Rail_Train_Entering_Charlotte_Transportation_Center_Station_March_2024.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Charlotte Transportation Center Light Rail Platform March 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Charlotte_Transportation_Center_Light_Rail_Platform_March_2024.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Charlotte Transportation Center Second Floor Landing March 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Charlotte_Transportation_Center_Second_Floor_Landing_March_2024.jpg",
+      "author": "City Dweller 2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Charlotte Transportation Center 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Charlotte_Transportation_Center_01.jpg",
+      "author": "Mark Clifton",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Charlotte Transportation Center Arena (LYNX station).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Charlotte_Transportation_Center_Arena_(LYNX_station).jpg",
+      "author": "Patriarca12",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/clt-ctc-arena-station.glb",
+  "source": "generators/clt-ctc-arena-station.ts"
+}
