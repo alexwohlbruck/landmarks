@@ -1,0 +1,80 @@
+{
+  "id": "paris-parc-des-princes",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "football",
+    "stadium",
+    "brutalist",
+    "concrete"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Parc des Princes @ Paris 16 (32835075813).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Parc_des_Princes_@_Paris_16_(32835075813).jpg",
+      "author": "Guilhem Vellut",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Avenue Parc Princes - Paris XVI (FR75) - 2021-08-11 - 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Avenue_Parc_Princes_-_Paris_XVI_(FR75)_-_2021-08-11_-_1.jpg",
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Paris Stade Jean-Bouin.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_Stade_Jean-Bouin.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 DE"
+    },
+    {
+      "title": "Parc des Princes @ Ballon de Paris @ Parc André Citroën @ Paris (28822113445).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Parc_des_Princes_@_Ballon_de_Paris_@_Parc_Andr%C3%A9_Citro%C3%ABn_@_Paris_(28822113445).jpg",
+      "author": "Guilhem Vellut",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Paris Parc des Princes 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_Parc_des_Princes_1.jpg",
+      "author": "Валерий Дед",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Parc des princes - Ligue 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Parc_des_princes_-_Ligue_1.jpg",
+      "author": "Kilyac",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "La tribune Boulogne du Parc des Princes vue de l'extérieur",
+      "url": "https://www.flickr.com/photos/10671903@N00/3019232349",
+      "author": "psgmag.net",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Parc des Princes et Périph'",
+      "url": "https://www.flickr.com/photos/10671903@N00/3255424514",
+      "author": "psgmag.net",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/paris-parc-des-princes.glb",
+  "source": "generators/paris-parc-des-princes.ts"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "paris-parc-des-princes",
+  "name": "Parc des Princes",
+  "model": "paris-parc-des-princes",
+  "place": "paris",
+  "lng": 2.2530715,
+  "lat": 48.8414341,
+  "bearing": 36.3,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/152838"
+  ],
+  "wikidata": "Q193431"
+}
