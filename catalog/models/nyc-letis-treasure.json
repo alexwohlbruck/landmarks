@@ -1,0 +1,69 @@
+{
+  "id": "nyc-letis-treasure",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "ride",
+  "tags": [
+    "log-flume",
+    "water-ride",
+    "amusement-park",
+    "coney-island"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "Leti's Treasure, the 12 m log flume in Luna Park (built as the Super Flume, opened 2023), with its station and boardwalk gate.",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Coney Island Brooklyn July 2024 031",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_July_2024_031.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Coney Island Brooklyn July 2024 032",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_July_2024_032.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Coney Island Brooklyn July 2024 033",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_July_2024_033.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Coney Island Brooklyn July 2024 035",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_July_2024_035.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Coney Island Brooklyn July 2024 041",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_July_2024_041.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Luna Park",
+      "url": "https://www.flickr.com/photos/32916425@N04/53159273620",
+      "author": "Roller Coaster Philosophy",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/nyc-letis-treasure.glb",
+  "source": "generators/nyc-letis-treasure.ts"
+}

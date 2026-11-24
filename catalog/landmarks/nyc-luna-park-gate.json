@@ -1,0 +1,12 @@
+{
+  "id": "nyc-luna-park-gate",
+  "name": "Luna Park entrance gate",
+  "model": "nyc-luna-park-gate",
+  "place": "new-york-area",
+  "lng": -73.9783574,
+  "lat": 40.5753112,
+  "bearing": 5,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nyc-sea-serpent",
+  "name": "Sea Serpent",
+  "model": "nyc-sea-serpent",
+  "place": "new-york-area",
+  "lng": -73.97903,
+  "lat": 40.5737701,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/952516017",
+    "way/1065967700"
+  ]
+}

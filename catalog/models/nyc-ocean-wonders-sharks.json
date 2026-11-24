@@ -1,0 +1,49 @@
+{
+  "id": "nyc-ocean-wonders-sharks",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "aquarium",
+    "contemporary",
+    "coney-island"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "New York Aquarium Ocean Wonders shark pavilion facade",
+      "url": "https://commons.wikimedia.org/wiki/File:New_York_Aquarium_Ocean_Wonders_shark_pavilion_facade.jpg",
+      "author": "Oleg Yunakov",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "New York Aquarium Ocean Wonders",
+      "url": "https://commons.wikimedia.org/wiki/File:New_York_Aquarium_Ocean_Wonders.jpg",
+      "author": "Oleg Yunakov",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "New York Aquarium Aquatheater dome",
+      "url": "https://commons.wikimedia.org/wiki/File:New_York_Aquarium_Aquatheater_dome.jpg",
+      "author": "Oleg Yunakov",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/nyc-ocean-wonders-sharks.glb",
+  "source": "generators/nyc-ocean-wonders-sharks.ts"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "a2-michigan-stadium",
+  "file": "models/a2-michigan-stadium.glb",
+  "license": "CC0-1.0",
+  "source": "generators/a2-michigan-stadium.ts",
+  "type": "stadium",
+  "collection": "landmarks",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "tags": [
+    "american-football",
+    "college-football",
+    "university",
+    "bowl"
+  ],
+  "reviewStatus": "unreviewed",
+  "references": [
+    {
+      "title": "Michigan Stadium Aerial",
+      "url": "https://commons.wikimedia.org/wiki/File:Michigan_Stadium_Aerial.jpg",
+      "author": "Lectrician2",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Drone flight around Michigan Stadium (frame)",
+      "url": "https://commons.wikimedia.org/wiki/File:My_experience_of_flying_my_drone_around_Michigan_Stadium_aka_The_Big_House_-_03.05.22_-_was_not_good.webm",
+      "author": "Chris Cafiero",
+      "license": "CC-BY-3.0"
+    },
+    {
+      "title": "Michigan Stadium and Crisler Arena",
+      "url": "https://commons.wikimedia.org/wiki/File:Michigan_Stadium_and_Crisler_Arena,_Ann_Arbor,_Michigan.JPG",
+      "author": "Dwight Burdette",
+      "license": "CC-BY-3.0"
+    },
+    {
+      "title": "Michigan Stadium at Night",
+      "url": "https://commons.wikimedia.org/wiki/File:Michigan_Stadium_at_Night,_University_of_Michigan,_Ann_Arbor,_Michigan_-_panoramio.jpg",
+      "author": "Dwight Burdette",
+      "license": "CC-BY-3.0"
+    },
+    {
+      "title": "University of Michigan August 2013 248 (Michigan Stadium)",
+      "url": "https://commons.wikimedia.org/wiki/File:University_of_Michigan_August_2013_248_(Michigan_Stadium).jpg",
+      "author": "Michael Barera",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "University of Michigan August 2013 251 (Michigan Stadium)",
+      "url": "https://commons.wikimedia.org/wiki/File:University_of_Michigan_August_2013_251_(Michigan_Stadium).jpg",
+      "author": "Michael Barera",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Michigan Stadium, south scoreboard",
+      "url": "https://commons.wikimedia.org/wiki/File:Michigan_Stadium,_University_of_Michigan,_Ann_Arbor,_Michigan_(21556601710).jpg",
+      "author": "Ken Lund",
+      "license": "CC-BY-SA-2.0"
+    },
+    {
+      "title": "Michigan Stadium, from field level",
+      "url": "https://commons.wikimedia.org/wiki/File:Michigan_Stadium,_University_of_Michigan,_Ann_Arbor,_Michigan_(21718534636).jpg",
+      "author": "Ken Lund",
+      "license": "CC-BY-SA-2.0"
+    },
+    {
+      "title": "Michigan Stadium and Chrysler Arena, January 6, 2014",
+      "url": "https://commons.wikimedia.org/wiki/File:Michigan_Stadium_and_Chrysler_Arena,_Ann_Arbor,_MI,_January_6,_2014.JPG",
+      "author": "Bgirardot",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Michigan Stadium Entry",
+      "url": "https://commons.wikimedia.org/wiki/File:Michigan_Stadium_Entry_(8295130075).jpg",
+      "author": "Ajay Suresh",
+      "license": "CC-BY-2.0"
+    }
+  ]
+}

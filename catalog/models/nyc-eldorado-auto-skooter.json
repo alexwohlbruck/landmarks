@@ -1,0 +1,44 @@
+{
+  "id": "nyc-eldorado-auto-skooter",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "ride",
+  "tags": [
+    "bumper-cars",
+    "amusement-park",
+    "sign",
+    "coney-island"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "2008-05-17 Coney Island, Long Island 008 Coney Island, Surf Avenue",
+      "url": "https://www.flickr.com/photos/28577026@N02/2677827799",
+      "author": "Allie_Caulfield",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Bump Your Ass Off",
+      "url": "https://commons.wikimedia.org/wiki/File:Bump_Your_Ass_Off.JPG",
+      "author": "Dane Unknoen",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/nyc-eldorado-auto-skooter.glb",
+  "source": "generators/nyc-eldorado-auto-skooter.ts"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "nyc-ocean-wonders-sharks",
+  "name": "Ocean Wonders: Sharks!",
+  "model": "nyc-ocean-wonders-sharks",
+  "place": "new-york-area",
+  "lng": -73.9739821,
+  "lat": 40.574026,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/604729335"
+  ]
+}

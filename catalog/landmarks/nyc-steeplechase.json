@@ -1,0 +1,15 @@
+{
+  "id": "nyc-steeplechase",
+  "name": "Steeplechase",
+  "model": "nyc-steeplechase",
+  "place": "new-york-area",
+  "lng": -73.9799239,
+  "lat": 40.5737376,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/952516012",
+    "way/355345474"
+  ]
+}

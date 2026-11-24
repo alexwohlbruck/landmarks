@@ -1,0 +1,16 @@
+{
+  "id": "nyc-letis-treasure",
+  "name": "Leti's Treasure",
+  "model": "nyc-letis-treasure",
+  "place": "new-york-area",
+  "lng": -73.9825189,
+  "lat": 40.573345,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/1483353309",
+    "way/1483353310",
+    "way/1483353311"
+  ]
+}

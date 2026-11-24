@@ -1,0 +1,15 @@
+{
+  "id": "nyc-nathans-famous",
+  "name": "Nathan's Famous",
+  "model": "nyc-nathans-famous",
+  "place": "new-york-area",
+  "lng": -73.981459,
+  "lat": 40.575224,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/248474744",
+    "way/248474704"
+  ]
+}

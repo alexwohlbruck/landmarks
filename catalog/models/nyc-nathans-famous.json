@@ -1,0 +1,86 @@
+{
+  "id": "nyc-nathans-famous",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "restaurant",
+    "sign",
+    "historic",
+    "coney-island"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "MTA Coney Is Stillwell 26 - Nathan's Famous",
+      "url": "https://commons.wikimedia.org/wiki/File:MTA_Coney_Is_Stillwell_26_-_Nathan's_Famous.jpg",
+      "author": "Tdorante10",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "NathansHotDog-1 (48034164583)",
+      "url": "https://commons.wikimedia.org/wiki/File:NathansHotDog-1_(48034164583).jpg",
+      "author": "Ajay Suresh",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "The Original Nathans Hot Dogs Coney Island, NY 2 (48596261392)",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Original_Nathans_Hot_Dogs_Coney_Island,_NY_2_(48596261392).jpg",
+      "author": "Mike Kalasnik",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Nathan's Famous Coney Island 002",
+      "url": "https://commons.wikimedia.org/wiki/File:Nathan's_Famous_Coney_Island_002.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Nathan's Famous Coney Island 004",
+      "url": "https://commons.wikimedia.org/wiki/File:Nathan's_Famous_Coney_Island_004.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Nathan's Famous Coney Island 009",
+      "url": "https://commons.wikimedia.org/wiki/File:Nathan's_Famous_Coney_Island_009.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Nathan's Famous frankfurters (1310 Surf Avenue, Coney Island, New York) 001",
+      "url": "https://commons.wikimedia.org/wiki/File:Nathan's_Famous_frankfurters_(1310_Surf_Avenue,_Coney_Island,_New_York)_001.jpg",
+      "author": "Leonard J. DeFrancisci",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Coney Island Surf Av 08 - Nathan's Famous",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Surf_Av_08_-_Nathan's_Famous.jpg",
+      "author": "Tdorante10",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Coney Island Brooklyn Jul 2019 02",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_02.jpg",
+      "author": "Epicgenius",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/nyc-nathans-famous.glb",
+  "source": "generators/nyc-nathans-famous.ts"
+}

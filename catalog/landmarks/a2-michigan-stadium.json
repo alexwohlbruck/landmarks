@@ -1,0 +1,20 @@
+{
+  "id": "a2-michigan-stadium",
+  "name": "Michigan Stadium",
+  "model": "a2-michigan-stadium",
+  "place": "ann-arbor-area",
+  "lng": -83.7487018,
+  "lat": 42.2658778,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1640118",
+  "replaces": [
+    "relation/1637002",
+    "relation/21070731",
+    "way/560433244",
+    "way/560433245",
+    "way/560433246",
+    "way/560433247"
+  ]
+}

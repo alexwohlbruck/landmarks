@@ -1,0 +1,43 @@
+{
+  "id": "nyc-zenobio",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "ride",
+  "tags": [
+    "amusement-ride",
+    "amusement-park",
+    "coney-island"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Coney Island Brooklyn Sep 2019 02",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Sep_2019_02.jpg",
+      "author": "Epicgenius",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Coney Island Brooklyn Sep 2019 17",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Sep_2019_17.jpg",
+      "author": "Epicgenius",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/nyc-zenobio.glb",
+  "source": "generators/nyc-zenobio.ts"
+}

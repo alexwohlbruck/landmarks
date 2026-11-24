@@ -1,0 +1,122 @@
+{
+  "id": "nyc-phoenix-coaster",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "coaster",
+  "tags": [
+    "roller-coaster",
+    "suspended-coaster",
+    "amusement-park",
+    "coney-island"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "The Phoenix Roller Coaster",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Phoenix_Roller_Coaster.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Phoenix Roller Coaster 001",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Phoenix_Roller_Coaster_001.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Phoenix Roller Coaster 002",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Phoenix_Roller_Coaster_002.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Phoenix Roller Coaster 003",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Phoenix_Roller_Coaster_003.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Phoenix Roller Coaster 004",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Phoenix_Roller_Coaster_004.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Phoenix Roller Coaster 005",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Phoenix_Roller_Coaster_005.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Phoenix Roller Coaster 006",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Phoenix_Roller_Coaster_006.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Phoenix Roller Coaster 007",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Phoenix_Roller_Coaster_007.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Phoenix Roller Coaster 008",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Phoenix_Roller_Coaster_008.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Phoenix Roller Coaster 009",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Phoenix_Roller_Coaster_009.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Phoenix Roller Coaster 010",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Phoenix_Roller_Coaster_010.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Phoenix Roller Coaster 011",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Phoenix_Roller_Coaster_011.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Phoenix Rollercoaster",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_Rollercoaster.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "PHOENIX Roller Coaster 2021",
+      "url": "https://commons.wikimedia.org/wiki/File:PHOENIX_Roller_Coaster_2021.jpg",
+      "author": "Wil540 art",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Phoenix (Deno's Wonder Wheel Amusement Park) 1",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_(Deno%27s_Wonder_Wheel_Amusement_Park)_1.jpg",
+      "author": "Eden, Janine and Jim",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/nyc-phoenix-coaster.glb",
+  "source": "generators/nyc-phoenix-coaster.ts"
+}

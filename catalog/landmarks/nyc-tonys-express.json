@@ -1,0 +1,19 @@
+{
+  "id": "nyc-tonys-express",
+  "name": "Tony's Express",
+  "model": "nyc-tonys-express",
+  "place": "new-york-area",
+  "lng": -73.9825425,
+  "lat": 40.5733721,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/1483353313",
+    "way/1483353314",
+    "way/1483353315",
+    "way/1483353316",
+    "way/1483353312",
+    "way/1483353311"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "nyc-sea-serpent",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "coaster",
+  "tags": [
+    "roller-coaster",
+    "family-coaster",
+    "amusement-park",
+    "coney-island"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Sea Serpent",
+      "url": "https://www.flickr.com/photos/10485077@N06/3960757287",
+      "author": "edenpictures",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Sea Serpent",
+      "url": "https://www.flickr.com/photos/10485077@N06/7917653006",
+      "author": "edenpictures",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Sabena & Eden",
+      "url": "https://www.flickr.com/photos/10485077@N06/7917607510",
+      "author": "edenpictures",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/nyc-sea-serpent.glb",
+  "source": "generators/nyc-sea-serpent.ts"
+}

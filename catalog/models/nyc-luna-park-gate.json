@@ -1,0 +1,49 @@
+{
+  "id": "nyc-luna-park-gate",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "monument",
+  "tags": [
+    "gate",
+    "amusement-park",
+    "coney-island"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "LunaParkConeyIsland",
+      "url": "https://commons.wikimedia.org/wiki/File:LunaParkConeyIsland.JPG",
+      "author": "BuickCenturyDriver",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Entrance to Luna Park Coney Island",
+      "url": "https://commons.wikimedia.org/wiki/File:Entrance_to_Luna_Park_Coney_Island.JPG",
+      "author": "Eliedion",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Luna Park",
+      "url": "https://www.flickr.com/photos/30624156@N00/6920230386",
+      "author": "Loozrboy",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/nyc-luna-park-gate.glb",
+  "source": "generators/nyc-luna-park-gate.ts"
+}

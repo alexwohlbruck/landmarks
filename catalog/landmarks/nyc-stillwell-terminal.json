@@ -1,0 +1,17 @@
+{
+  "id": "nyc-stillwell-terminal",
+  "name": "Coney Island–Stillwell Avenue station",
+  "model": "nyc-stillwell-terminal",
+  "place": "new-york-area",
+  "lng": -73.98125,
+  "lat": 40.57754,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q2614974",
+  "replaces": [
+    "way/248496231",
+    "way/248495804",
+    "way/1360333381"
+  ]
+}

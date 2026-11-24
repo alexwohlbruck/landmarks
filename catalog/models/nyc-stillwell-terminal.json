@@ -1,0 +1,85 @@
+{
+  "id": "nyc-stillwell-terminal",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "train-station",
+    "subway",
+    "coney-island"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Coney Island-Stillwell Avenue Terminus",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island-Stillwell_Avenue_Terminus.jpg",
+      "author": "Allie_Caulfield",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "2008-05-17 Coney Island, Long Island 004 Coney Island, Stillwell Avenue, Railroad Station (2677810751)",
+      "url": "https://commons.wikimedia.org/wiki/File:2008-05-17_Coney_Island,_Long_Island_004_Coney_Island,_Stillwell_Avenue,_Railroad_Station_(2677810751).jpg",
+      "author": "Allie_Caulfield",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Coney Island Stillwell Station by David Shankbone",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Stillwell_Station_by_David_Shankbone.JPG",
+      "author": "David Shankbone",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "Coney Island Stillwell Ave Sep 2019 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Stillwell_Ave_Sep_2019_01.jpg",
+      "author": "Epicgenius",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Coney Island Stillwell Avenue Terminal Building",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Stillwell_Avenue_Terminal_Building.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "MTA Coney Is Stillwell 01",
+      "url": "https://commons.wikimedia.org/wiki/File:MTA_Coney_Is_Stillwell_01.jpg",
+      "author": "Tdorante10",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Coney IslandStillwell",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_IslandStillwell.JPG",
+      "author": "Jonathan71",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "NYC Coney Island Stillwell 3",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC_Coney_Island_Stillwell_3.jpg",
+      "author": "Daniel Schwen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Stillwell 04 06 03 045",
+      "url": "https://commons.wikimedia.org/wiki/File:Stillwell_04_06_03_045.jpg",
+      "author": "Ecombetz",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/nyc-stillwell-terminal.glb",
+  "source": "generators/nyc-stillwell-terminal.ts"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "nyc-slingshot",
+  "name": "Slingshot",
+  "model": "nyc-slingshot",
+  "place": "new-york-area",
+  "lng": -73.9802359,
+  "lat": 40.5737444,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": []
+}

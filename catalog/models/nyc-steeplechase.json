@@ -1,0 +1,62 @@
+{
+  "id": "nyc-steeplechase",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "coaster",
+  "tags": [
+    "roller-coaster",
+    "amusement-park",
+    "coney-island",
+    "launched-coaster"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Luna Park - Steeplechase - side view",
+      "url": "https://commons.wikimedia.org/wiki/File:Luna_Park_-_Steeplechase_-_side_view.jpg",
+      "author": "Larry Syverson",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Luna Park - Steeplechase - underneath",
+      "url": "https://commons.wikimedia.org/wiki/File:Luna_Park_-_Steeplechase_-_underneath.jpg",
+      "author": "Larry Syverson",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Luna Park - Steeplechase - train closeup",
+      "url": "https://commons.wikimedia.org/wiki/File:Luna_Park_-_Steeplechase_-_train_closeup.jpg",
+      "author": "Larry Syverson",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Steeplechase Scream Zone Luna Park Coney Island",
+      "url": "https://commons.wikimedia.org/wiki/File:Steeplechase_Scream_Zone_Luna_Park_Coney_Island.JPG",
+      "author": "Eliedion",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Steeplechase Amusement Park",
+      "url": "https://commons.wikimedia.org/wiki/File:Steeplechase_Amusement_Park.jpg",
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/nyc-steeplechase.glb",
+  "source": "generators/nyc-steeplechase.ts"
+}

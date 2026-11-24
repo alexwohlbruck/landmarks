@@ -1,0 +1,14 @@
+{
+  "id": "nyc-phoenix-coaster",
+  "name": "The Phoenix",
+  "model": "nyc-phoenix-coaster",
+  "place": "new-york-area",
+  "lng": -73.9793493,
+  "lat": 40.5743308,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/1025732072"
+  ]
+}

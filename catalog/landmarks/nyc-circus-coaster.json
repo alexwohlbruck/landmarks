@@ -1,0 +1,14 @@
+{
+  "id": "nyc-circus-coaster",
+  "name": "Circus Coaster",
+  "model": "nyc-circus-coaster",
+  "place": "new-york-area",
+  "lng": -73.9788216,
+  "lat": 40.5739101,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/952516015"
+  ]
+}

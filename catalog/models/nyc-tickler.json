@@ -1,0 +1,56 @@
+{
+  "id": "nyc-tickler",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "coaster",
+  "tags": [
+    "roller-coaster",
+    "amusement-park",
+    "coney-island",
+    "spinning-coaster"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "The Tickler Luna Park Coney Island",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Tickler_Luna_Park_Coney_Island.JPG",
+      "author": "Eliedion",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "The Tickler Luna Park Coney Island 2",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Tickler_Luna_Park_Coney_Island_2.JPG",
+      "author": "Eliedion",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Tickler (Coney Island, New York) 001",
+      "url": "https://commons.wikimedia.org/wiki/File:Tickler_(Coney_Island,_New_York)_001.jpg",
+      "author": "Leonard J. DeFrancisci",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Coney Island Brooklyn Jul 2019 97",
+      "url": "https://commons.wikimedia.org/wiki/File:Coney_Island_Brooklyn_Jul_2019_97.jpg",
+      "author": "Epicgenius",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/nyc-tickler.glb",
+  "source": "generators/nyc-tickler.ts"
+}

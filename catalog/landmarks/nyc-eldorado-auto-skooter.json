@@ -1,0 +1,14 @@
+{
+  "id": "nyc-eldorado-auto-skooter",
+  "name": "Eldorado Auto Skooter",
+  "model": "nyc-eldorado-auto-skooter",
+  "place": "new-york-area",
+  "lng": -73.9801719,
+  "lat": 40.5751118,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/405892190"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "nyc-zenobio",
+  "name": "Zenobio",
+  "model": "nyc-zenobio",
+  "place": "new-york-area",
+  "lng": -73.9802539,
+  "lat": 40.5740246,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": []
+}

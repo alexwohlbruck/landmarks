@@ -1,0 +1,49 @@
+{
+  "id": "nyc-aquatheater",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "aquarium",
+    "amphitheatre",
+    "coney-island"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Osborne, the Sea Lion; New York Aquarium",
+      "url": "https://www.flickr.com/photos/25464516@N07/4415956944",
+      "author": "jschauma",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Aquatheater",
+      "url": "https://www.flickr.com/photos/10485077@N06/9699082865",
+      "author": "edenpictures",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "New York Aquarium / Coney Island Beach",
+      "url": "https://www.flickr.com/photos/25464516@N07/4415167375",
+      "author": "jschauma",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/nyc-aquatheater.glb",
+  "source": "generators/nyc-aquatheater.ts"
+}

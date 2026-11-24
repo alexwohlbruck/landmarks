@@ -1,0 +1,44 @@
+{
+  "id": "nyc-circus-coaster",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "coaster",
+  "tags": [
+    "roller-coaster",
+    "amusement-park",
+    "coney-island",
+    "family-coaster"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Circus Coaster at Luna Park Coney Island",
+      "url": "https://www.flickr.com/photos/9036889@N06/4860625078",
+      "author": "milst1",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Circus Coaster at Luna Park Coney Island 2010",
+      "url": "https://www.flickr.com/photos/9036889@N06/4860004489",
+      "author": "milst1",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/nyc-circus-coaster.glb",
+  "source": "generators/nyc-circus-coaster.ts"
+}
