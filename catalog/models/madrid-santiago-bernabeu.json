@@ -1,0 +1,104 @@
+{
+  "id": "madrid-santiago-bernabeu",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "football",
+    "stadium",
+    "retractable-roof",
+    "steel-facade"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Estadio Santiago Bernabéu 39.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_Santiago_Bernab%C3%A9u_39.jpg",
+      "author": "Luis García (Zaqarbal)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "M-estadio-santiago-bernabeu-diciembre-2024-a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:M-estadio-santiago-bernabeu-diciembre-2024-a.jpg",
+      "author": "MottaW",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "M-estadio-santiago-bernabeu-diciembre-2024-b.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:M-estadio-santiago-bernabeu-diciembre-2024-b.jpg",
+      "author": "MottaW",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "M-estadio-santiago-bernabeu-diciembre-2024-c.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:M-estadio-santiago-bernabeu-diciembre-2024-c.jpg",
+      "author": "MottaW",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Estadio Santiago Bernabeu (53988716884).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_Santiago_Bernabeu_(53988716884).jpg",
+      "author": "Daniel from Glasgow, United Kingdom",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Estadio Santiago Bernabeu (53988637723).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_Santiago_Bernabeu_(53988637723).jpg",
+      "author": "Daniel from Glasgow, United Kingdom",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Estadio Santiago Bernabeu (53987507417).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_Santiago_Bernabeu_(53987507417).jpg",
+      "author": "Daniel from Glasgow, United Kingdom",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Estadio Santiago Bernabeu (53988406201).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_Santiago_Bernabeu_(53988406201).jpg",
+      "author": "Daniel from Glasgow, United Kingdom",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Mavidad Bernabéu 2025.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mavidad_Bernab%C3%A9u_2025.jpg",
+      "author": "Badefa",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Estadio Santiago Bernabéu Madrid.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_Santiago_Bernab%C3%A9u_Madrid.jpg",
+      "author": "Zoser",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "New Roof (52738870203).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:New_Roof_(52738870203).jpg",
+      "author": "dom fellowes from UK",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "PNOA orthophoto (pnoa-ma WMS)",
+      "url": "https://pnoa.ign.es/",
+      "author": "Instituto Geográfico Nacional / CNIG",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/madrid-santiago-bernabeu.glb",
+  "source": "generators/madrid-santiago-bernabeu.ts"
+}

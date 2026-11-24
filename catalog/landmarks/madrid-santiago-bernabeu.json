@@ -1,0 +1,16 @@
+{
+  "id": "madrid-santiago-bernabeu",
+  "name": "Estadio Santiago Bernabéu",
+  "model": "madrid-santiago-bernabeu",
+  "place": "madrid",
+  "lng": -3.6882858,
+  "lat": 40.4530548,
+  "bearing": 4.25,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "relation/21041481",
+    "way/1507411898"
+  ],
+  "wikidata": "Q164027"
+}
