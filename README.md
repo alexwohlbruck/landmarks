@@ -204,6 +204,37 @@ Review the renders against the photos before merging. The commands live in
 - [`docs/bridge-heights.md`](docs/bridge-heights.md): checking a bridge's
   roadway heights against lidar and correcting them in OSM.
 
+## Contributing to Open Landmarks
+
+The published dataset is read by Open Landmarks clients; contributing a model to
+the Open Landmarks repository itself is a separate export, because a
+submission there is stricter than a release here:
+
+    bun run open-landmarks <open-landmarks checkout>
+    blender -b --factory-startup --python tools/open-landmarks-blend.py -- <checkout>/collection <id ...>
+    cd <checkout> && node tools/render-previews.mjs <id ...>   # then click Render
+
+The first writes `collection/<id>/` for every placement Open Landmarks
+doesn't already have (matched by OSM element, Wikidata item or footprint),
+with `asset.json`, both LODs and `spatial-source.json`, and adds the finishes
+the models need to their `materials.json`. On the way it:
+
+- flattens the model to one static node, moving parts in their rest pose;
+- cuts away footings below y = 0, since they stand a model on its lowest point;
+- converts colours exactly: our kit encodes with a 2.2 gamma, they check the
+  sRGB curve, so a colour off their swatches becomes a finish named after the
+  model rather than being snapped to one;
+- clips `window` panels to the walls behind them, setting proud panels 2 cm
+  off the wall, and keeps any glazing with no wall behind it as a
+  `<model>-glazing` finish in the window colour;
+- folds the closest colours together where a model would otherwise use more
+  than their six materials, and says so in the asset's notes.
+
+Ids there name the landmark (`sutro-tower`), not our batch. OSM versions,
+tags and geometry come from the OSM API and Commons credits from the Commons
+API, cached in `.cache/open-landmarks/`. Textured models are skipped: v1
+takes plain colour only.
+
 ## Licence
 
 Code and models default to [CC0-1.0](LICENSE). A model can declare a different
@@ -212,3 +243,6 @@ license and any required attribution. OpenLandmarks models keep their upstream
 licenses and credits; the repository's CC0 dedication does not cover them.
 Placements are derived from OpenStreetMap and are ODbL-1.0,
 © OpenStreetMap contributors.
+Copies contributed to Open Landmarks are CC BY 4.0, under their
+contributor grant, credited to Alex Wohlbruck; the CC0 originals here are
+unaffected.
