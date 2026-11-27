@@ -1,0 +1,17 @@
+{
+  "id": "atx-sixth-and-guadalupe",
+  "name": "Sixth and Guadalupe",
+  "model": "atx-sixth-and-guadalupe",
+  "place": "austin-area",
+  "lng": -97.7467036,
+  "lat": 30.2696429,
+  "bearing": 17.9,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/972654803",
+    "way/972654804",
+    "way/972654805",
+    "way/972654806"
+  ]
+}
