@@ -1,0 +1,15 @@
+{
+  "id": "atx-cota-observation-tower",
+  "name": "Circuit of the Americas Observation Tower",
+  "model": "atx-cota-observation-tower",
+  "place": "austin-area",
+  "lng": -97.637866,
+  "lat": 30.134243,
+  "bearing": 326.5,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/847781224",
+    "way/847781223"
+  ]
+}

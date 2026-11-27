@@ -1,0 +1,72 @@
+{
+  "id": "atx-cota-observation-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "observation-tower",
+    "motorsport",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tower at Circuit of the Americas.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_at_Circuit_of_the_Americas.jpg",
+      "author": "Earl McGehee",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Copa Tower (11121910464).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Copa_Tower_(11121910464).jpg",
+      "author": "Glenn Harper",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Tower (31641665621).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_(31641665621).jpg",
+      "author": "el_ave",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Circuit of the Americas (30183010830).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Circuit_of_the_Americas_(30183010830).jpg",
+      "author": "pedrik",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "COTA Observation Tower with X Games 2014 Signage.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:COTA_Observation_Tower_with_X_Games_2014_Signage.jpg",
+      "author": "RM VM",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Austin360 amphitheater from tower 2013.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin360_amphitheater_from_tower_2013.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "COTA Tower 217.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:COTA_Tower_217.jpg",
+      "author": "gillfoto",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/atx-cota-observation-tower.glb",
+  "source": "generators/atx-cota-observation-tower.ts"
+}
