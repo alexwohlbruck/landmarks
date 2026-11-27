@@ -1,0 +1,18 @@
+{
+  "id": "bos-prudential-tower",
+  "name": "Prudential Tower",
+  "model": "bos-prudential-tower",
+  "place": "boston-area",
+  "lng": -71.082507,
+  "lat": 42.347172,
+  "bearing": 339.6,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q606823",
+  "replaces": [
+    "way/29869880",
+    "way/240259392",
+    "way/240259391",
+    "way/240259389"
+  ]
+}
