@@ -1,0 +1,26 @@
+{
+  "id": "stl-eads-bridge",
+  "name": "Eads Bridge",
+  "model": "stl-eads-bridge",
+  "place": "st-louis-area",
+  "lng": -90.178916,
+  "lat": 38.628916,
+  "bearing": 97.75,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/575157629",
+    "way/1264883705",
+    "way/1264883707",
+    "way/1264883706",
+    "way/1264883699",
+    "way/1264883702",
+    "way/1264858675",
+    "way/1326162840",
+    "way/1326162884",
+    "way/1305108163",
+    "way/1315970780",
+    "way/1326162826"
+  ],
+  "wikidata": "Q1239907"
+}

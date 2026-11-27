@@ -1,0 +1,96 @@
+{
+  "id": "stl-eads-bridge",
+  "detail": "models/stl-eads-bridge.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "bridge",
+    "arch-bridge",
+    "steel",
+    "historic",
+    "national-historic-landmark",
+    "light-rail"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "description": "James B. Eads's bridge over the Mississippi (1867-74), the first major steel bridge: three ribbed steel tube arches of 502, 520 and 502 ft on granite piers, the road deck over the MetroLink lower deck, the stone arcades at each bank, the Laclede's Landing approach with its brick lower-deck arcade, and the 1990s East St. Louis approach.",
+  "references": [
+    {
+      "title": "Eads Bridge plan diagram 1987.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Eads_Bridge_plan_diagram_1987.png",
+      "author": "U.S. Department of Transportation",
+      "license": "Public domain"
+    },
+    {
+      "title": "Eads Bridge 2025a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Eads_Bridge_2025a.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Eads Bridge 2025c.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Eads_Bridge_2025c.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Eads Bridge 2025d.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Eads_Bridge_2025d.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Eads Bridge from Laclede's Landing, Sep 2012.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Eads_Bridge_from_Laclede%27s_Landing,_Sep_2012.jpg",
+      "author": "Mitchell Schultheis",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Eads Bridge over the Mississippi River.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Eads_Bridge_over_the_Mississippi_River.jpg",
+      "author": "Chris Light",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Laclede's Landing MetroLink exterior 2016.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Laclede%27s_Landing_MetroLink_exterior_2016.jpg",
+      "author": "Lightmetro",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Eads Bridge from Malcolm W. Martin Memorial Park, East St. Louis, IL.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Eads_Bridge_from_Malcolm_W._Martin_Memorial_Park,_East_St._Louis,_IL.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "0806C15",
+      "url": "https://www.flickr.com/photos/21050990@N03/2684147133",
+      "author": "syntheticaperture",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "St. Louis and the Eads Bridge at night",
+      "url": "https://www.flickr.com/photos/44038067@N00/122345458",
+      "author": "Herkie",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/stl-eads-bridge.glb",
+  "source": "generators/stl-eads-bridge.ts"
+}
