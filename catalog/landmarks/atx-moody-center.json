@@ -1,0 +1,16 @@
+{
+  "id": "atx-moody-center",
+  "name": "Moody Center",
+  "model": "atx-moody-center",
+  "place": "austin-area",
+  "lng": -97.730639,
+  "lat": 30.280974,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/953200132",
+    "way/968961472",
+    "way/1052351566"
+  ]
+}
