@@ -1,0 +1,60 @@
+{
+  "id": "atx-q2-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "soccer",
+    "mls",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Q2 Stadium Austin Texas 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Q2_Stadium_Austin_Texas_2021.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Austin FC Stadium vs. Columbus Crew.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_FC_Stadium_vs._Columbus_Crew.jpg",
+      "author": "Daniel Ziegler",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Austin Fc Vs FC Dallas in August 2026.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_Fc_Vs_FC_Dallas_in_August_2026.jpg",
+      "author": "Kushinumi",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Austin FC VS FC Dallas by cornfield948 (20210830150401).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_FC_VS_FC_Dallas_by_cornfield948_(20210830150401).jpg",
+      "author": "cornfield948",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Austin FC Stadium Construction July 2020.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_FC_Stadium_Construction_July_2020.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/atx-q2-stadium.glb",
+  "source": "generators/atx-q2-stadium.ts"
+}
