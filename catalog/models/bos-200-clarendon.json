@@ -1,0 +1,74 @@
+{
+  "id": "bos-200-clarendon",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "modernist",
+    "glass"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q798416",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "2017 Prudential Skywalk - John Hancock Tower (ENE)",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Prudential_Skywalk_-_John_Hancock_Tower_(ENE).jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "John Hancock Tower - Boston, Mass - DSC06111",
+      "url": "https://commons.wikimedia.org/wiki/File:John_Hancock_Tower_-_Boston,_Mass_-_DSC06111.jpg",
+      "author": "Daderot",
+      "license": "CC0"
+    },
+    {
+      "title": "Trinity Church and Hancock Tower, Boston, Massachusetts",
+      "url": "https://commons.wikimedia.org/wiki/File:Trinity_Church_and_Hancock_Tower,_Boston,_Massachusetts.jpg",
+      "author": "Rizka",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "John Hancock Tower from Charles River Dam",
+      "url": "https://commons.wikimedia.org/wiki/File:John_Hancock_Tower_from_Charles_River_Dam.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "John Hancock Tower from Clarendon Street, April 2021",
+      "url": "https://commons.wikimedia.org/wiki/File:John_Hancock_Tower_from_Clarendon_Street,_April_2021.jpg",
+      "author": "Fletcher",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "John Hancock Tower - Boston, MA - DSC08138",
+      "url": "https://commons.wikimedia.org/wiki/File:John_Hancock_Tower_-_Boston,_MA_-_DSC08138.JPG",
+      "author": "Daderot",
+      "license": "CC0"
+    },
+    {
+      "title": "Hancock Tower Boston djhb",
+      "url": "https://commons.wikimedia.org/wiki/File:Hancock_Tower_Boston_djhb.jpg",
+      "author": "Luciof",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/bos-200-clarendon.glb",
+  "source": "generators/bos-200-clarendon.ts"
+}
