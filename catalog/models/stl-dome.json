@@ -1,0 +1,49 @@
+{
+  "id": "stl-dome",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "stadium",
+    "sports",
+    "convention"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q1292739",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Edward Jones Dome (9721837046).jpg",
+      "author": "Paul Sableman",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Edward_Jones_Dome_(9721837046).jpg"
+    },
+    {
+      "title": "South to the Edward Jones Dome (6075476144).jpg",
+      "author": "Paul Sableman",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:South_to_the_Edward_Jones_Dome_(6075476144).jpg"
+    },
+    {
+      "title": "Edward Jones Dome August 2004 01.jpg",
+      "author": "Michael Barera",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Edward_Jones_Dome_August_2004_01.jpg"
+    }
+  ],
+  "file": "models/stl-dome.glb",
+  "source": "generators/stl-dome.ts"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "stl-dome",
+  "name": "The Dome at America's Center",
+  "model": "stl-dome",
+  "place": "st-louis-area",
+  "lng": -90.1885503,
+  "lat": 38.6328219,
+  "bearing": 15.1,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/24963449",
+    "way/616870972",
+    "way/1317474252"
+  ]
+}
