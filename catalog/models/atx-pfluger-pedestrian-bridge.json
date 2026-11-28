@@ -1,0 +1,76 @@
+{
+  "id": "atx-pfluger-pedestrian-bridge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "pedestrian-bridge",
+    "steel",
+    "girder-bridge",
+    "lake",
+    "trail"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/atx-pfluger-pedestrian-bridge.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Pfluger pedestrian bridge",
+      "url": "https://commons.wikimedia.org/wiki/File:Pfluger_pedestrian_bridge.JPG",
+      "author": "Bryan Rutherford",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Pfluger pedestrian bridge substructure",
+      "url": "https://commons.wikimedia.org/wiki/File:Pfluger_pedestrian_bridge_substructure.JPG",
+      "author": "Bryan Rutherford",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Pfluger Pedestrian Bridge",
+      "url": "https://commons.wikimedia.org/wiki/File:Pfluger_Pedestrian_Bridge.jpg",
+      "author": "Sk5893",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lamar Boulevard in winter",
+      "url": "https://commons.wikimedia.org/wiki/File:Lamar_Boulevard_in_winter.JPG",
+      "author": "Airainix",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Ramp Pfluger Pedestrian Bridge Austin Texas 2023",
+      "url": "https://commons.wikimedia.org/wiki/File:Ramp_Pfluger_Pedestrian_Bridge_Austin_Texas_2023.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Pfluger Pedestrian Bridge - panoramio",
+      "url": "https://commons.wikimedia.org/wiki/File:Pfluger_Pedestrian_Bridge_-_panoramio.jpg",
+      "author": "Todd Dwyer",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Pfluger Bridge-1",
+      "url": "https://www.flickr.com/photos/8666640@N06/6906754432",
+      "author": "mrlaugh",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/atx-pfluger-pedestrian-bridge.glb",
+  "source": "generators/atx-pfluger-pedestrian-bridge.ts"
+}
