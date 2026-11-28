@@ -1,0 +1,69 @@
+{
+  "id": "bos-faneuil-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "georgian",
+    "market",
+    "meeting-hall",
+    "cupola"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q49137",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Faneuil Hall Boston Massachusetts",
+      "url": "https://commons.wikimedia.org/wiki/File:Faneuil_Hall_Boston_Massachusetts.JPG",
+      "author": "Daderot",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Faneuil Hall (6001395851)",
+      "url": "https://commons.wikimedia.org/wiki/File:Faneuil_Hall_(6001395851).jpg",
+      "author": "Francisco Anzola",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Boston Faneuil Hall 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_Faneuil_Hall_01.jpg",
+      "author": "Miguel Hermoso Cuesta",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Faneuil Hall Mar 2025 06",
+      "url": "https://commons.wikimedia.org/wiki/File:Faneuil_Hall_Mar_2025_06.jpg",
+      "author": "Epicgenius",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Faneuil Hall Mar 2025 12",
+      "url": "https://commons.wikimedia.org/wiki/File:Faneuil_Hall_Mar_2025_12.jpg",
+      "author": "Epicgenius",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Faneuil Hall Mar 2025 27",
+      "url": "https://commons.wikimedia.org/wiki/File:Faneuil_Hall_Mar_2025_27.jpg",
+      "author": "Epicgenius",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-faneuil-hall.glb",
+  "source": "generators/bos-faneuil-hall.ts"
+}
