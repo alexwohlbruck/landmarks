@@ -1,0 +1,15 @@
+{
+  "id": "kc-municipal-auditorium",
+  "name": "Municipal Auditorium",
+  "model": "kc-municipal-auditorium",
+  "place": "kansas-city-area",
+  "lng": -94.5863852,
+  "lat": 39.0980232,
+  "bearing": 2.2,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/38501327"
+  ],
+  "wikidata": "Q14704450"
+}

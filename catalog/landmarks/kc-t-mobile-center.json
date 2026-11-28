@@ -1,0 +1,14 @@
+{
+  "id": "kc-t-mobile-center",
+  "name": "T-Mobile Center",
+  "model": "kc-t-mobile-center",
+  "place": "kansas-city-area",
+  "lng": -94.5799441,
+  "lat": 39.097276,
+  "bearing": 328.8,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/38501411"
+  ]
+}

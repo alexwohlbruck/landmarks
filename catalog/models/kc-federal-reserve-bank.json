@@ -1,0 +1,49 @@
+{
+  "id": "kc-federal-reserve-bank",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "office",
+    "bank",
+    "modern",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kansas City Federal Reserve 2025a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_Federal_Reserve_2025a.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "New Federal Reserve Bank Kansas City MO.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:New_Federal_Reserve_Bank_Kansas_City_MO.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "Views from Liberty Memorial 6135.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Views_from_Liberty_Memorial_6135.JPG",
+      "author": "Dual Freq",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/kc-federal-reserve-bank.glb",
+  "source": "generators/kc-federal-reserve-bank.ts"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "kc-city-hall",
+  "name": "Kansas City City Hall",
+  "model": "kc-city-hall",
+  "place": "kansas-city-area",
+  "lng": -94.5779159,
+  "lat": 39.1006055,
+  "bearing": 2.2,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/118650979",
+    "way/1345294940",
+    "way/1345294941",
+    "way/1345294942",
+    "way/1345294943",
+    "way/1345294944",
+    "way/1345294945",
+    "way/1345294946",
+    "way/1345294950"
+  ],
+  "wikidata": "Q7485892"
+}

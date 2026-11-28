@@ -1,0 +1,14 @@
+{
+  "id": "kc-plaza-giralda-tower",
+  "name": "Giralda Tower",
+  "model": "kc-plaza-giralda-tower",
+  "place": "kansas-city-area",
+  "lng": -94.588356,
+  "lat": 39.0420355,
+  "bearing": 1.8,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/1193201279"
+  ]
+}

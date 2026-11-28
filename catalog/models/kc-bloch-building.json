@@ -1,0 +1,61 @@
+{
+  "id": "kc-bloch-building",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "art-museum",
+    "contemporary",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Bloch Building Nelson-Atkins Museum Kansas City.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bloch_Building_Nelson-Atkins_Museum_Kansas_City.jpg",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "Bloch Building, Nelson-Atkins Art Museum, Kansas City, Missouri LCCN2010630149.tif",
+      "url": "https://commons.wikimedia.org/wiki/File:Bloch_Building,_Nelson-Atkins_Art_Museum,_Kansas_City,_Missouri_LCCN2010630149.tif",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "Bloch rooz aftabi.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Bloch_rooz_aftabi.JPG",
+      "author": "Nightryder84",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Nelson-atkins museum of art (32068827280).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nelson-atkins_museum_of_art_(32068827280).jpg",
+      "author": "Dean Hochman",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Exterior of Nelson-Atkins Museum of Art.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_Nelson-Atkins_Museum_of_Art.jpg",
+      "author": "Yungryan07",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-bloch-building.glb",
+  "source": "generators/kc-bloch-building.ts"
+}

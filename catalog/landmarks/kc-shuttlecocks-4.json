@@ -1,0 +1,12 @@
+{
+  "id": "kc-shuttlecocks-4",
+  "name": "Shuttlecocks (far south lawn)",
+  "model": "kc-shuttlecocks-tipped",
+  "place": "kansas-city-area",
+  "lng": -94.5808667,
+  "lat": 39.0425783,
+  "bearing": 195,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": []
+}

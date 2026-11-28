@@ -1,0 +1,74 @@
+{
+  "id": "kc-whittaker-courthouse",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "courthouse",
+    "civic",
+    "government",
+    "postmodern",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Charles Evans Whittaker Courthouse.jpeg",
+      "url": "https://commons.wikimedia.org/wiki/File:Charles_Evans_Whittaker_Courthouse.jpeg",
+      "author": "Voidxor",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Whittaker Federal Courthouse-south view-KCMO.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Whittaker_Federal_Courthouse-south_view-KCMO.jpg",
+      "author": "User:Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "Charles Evans Whittaker US District Court",
+      "url": "https://www.flickr.com/photos/97760565@N07/53575083001",
+      "author": "bjwhite66212",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Federal Courthouse",
+      "url": "https://www.flickr.com/photos/65067366@N00/49743774103",
+      "author": "Steam Pipe Trunk Distribution Venue",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "909 Walnut in the distance past the Federal Courthouse",
+      "url": "https://www.flickr.com/photos/65067366@N00/49744319876",
+      "author": "Steam Pipe Trunk Distribution Venue",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Federal courthouse",
+      "url": "https://www.flickr.com/photos/65067366@N00/44898528984",
+      "author": "Steam Pipe Trunk Distribution Venue",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Kansas City Downtown Aerial (12448426133).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_Downtown_Aerial_(12448426133).jpg",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/kc-whittaker-courthouse.glb",
+  "source": "generators/kc-whittaker-courthouse.ts"
+}

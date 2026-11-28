@@ -1,0 +1,15 @@
+{
+  "id": "kc-kansas-speedway",
+  "name": "Kansas Speedway",
+  "model": "kc-kansas-speedway",
+  "place": "kansas-city-area",
+  "lng": -94.8339389,
+  "lat": 39.1163872,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1723946",
+  "replaces": [
+    "way/42240743"
+  ]
+}

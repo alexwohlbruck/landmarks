@@ -1,0 +1,12 @@
+{
+  "id": "kc-jc-nichols-fountain",
+  "name": "J.C. Nichols Memorial Fountain",
+  "model": "kc-jc-nichols-fountain",
+  "place": "kansas-city-area",
+  "lng": -94.587542,
+  "lat": 39.042623,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": []
+}

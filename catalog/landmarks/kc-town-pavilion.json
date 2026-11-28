@@ -1,0 +1,16 @@
+{
+  "id": "kc-town-pavilion",
+  "name": "Town Pavilion",
+  "model": "kc-town-pavilion",
+  "place": "kansas-city-area",
+  "lng": -94.58262,
+  "lat": 39.1005482,
+  "bearing": 2,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q7829998",
+  "replaces": [
+    "way/132570890",
+    "way/466813909"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "kc-asb-bridge",
+  "name": "ASB Bridge",
+  "model": "kc-asb-bridge",
+  "place": "kansas-city-area",
+  "lng": -94.5799099,
+  "lat": 39.1168858,
+  "bearing": 345.5,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q4654082",
+  "replaces": [
+    "way/706022488"
+  ]
+}

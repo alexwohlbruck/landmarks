@@ -1,0 +1,55 @@
+{
+  "id": "kc-western-auto-building",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "neon-sign",
+    "lofts",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Western Auto.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Western_Auto.jpg",
+      "author": "Caleb Zahnd",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Western Auto Building seen from the west.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Western_Auto_Building_seen_from_the_west.jpg",
+      "author": "Paul Sableman",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Western Auto - Flickr - KellyK.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Western_Auto_-_Flickr_-_KellyK.jpg",
+      "author": "Kelly from Parsons, Kansas",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Western Auto Building.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Western_Auto_Building.jpg",
+      "author": "elisfkc2",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-western-auto-building.glb",
+  "source": "generators/kc-western-auto-building.ts"
+}

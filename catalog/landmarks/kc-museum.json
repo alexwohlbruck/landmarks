@@ -1,0 +1,15 @@
+{
+  "id": "kc-museum",
+  "name": "Kansas City Museum",
+  "model": "kc-museum",
+  "place": "kansas-city-area",
+  "lng": -94.5422106,
+  "lat": 39.11576,
+  "bearing": 2,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q16998098",
+  "replaces": [
+    "way/499028053"
+  ]
+}

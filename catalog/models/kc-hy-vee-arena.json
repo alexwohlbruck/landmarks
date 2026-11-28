@@ -1,0 +1,56 @@
+{
+  "id": "kc-hy-vee-arena",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "arena",
+    "space-frame",
+    "modernist",
+    "helmut-jahn",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hy-Vee Arena 2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hy-Vee_Arena_2022.jpg",
+      "author": "Conman33",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kemper Arena 11-22-14.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kemper_Arena_11-22-14.jpg",
+      "author": "GorianEmpathy",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kemper-arena1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kemper-arena1.jpg",
+      "author": "Americasroof",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "title": "Kemper Arena.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Kemper_Arena.JPG",
+      "author": "Garrett Fuller",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-hy-vee-arena.glb",
+  "source": "generators/kc-hy-vee-arena.ts"
+}

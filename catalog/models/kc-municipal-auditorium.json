@@ -1,0 +1,48 @@
+{
+  "id": "kc-municipal-auditorium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "art-deco",
+    "arena",
+    "theatre",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "KCMO Auditorium and ConventionCenter.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KCMO_Auditorium_and_ConventionCenter.jpg",
+      "license": "Public domain"
+    },
+    {
+      "title": "Kc-memorial-auditorium.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kc-memorial-auditorium.jpg",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "title": "Municipal Auditorium - Kansas City, Missouri.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Municipal_Auditorium_-_Kansas_City,_Missouri.jpg",
+      "author": "Noah Bohland",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-municipal-auditorium.glb",
+  "source": "generators/kc-municipal-auditorium.ts"
+}

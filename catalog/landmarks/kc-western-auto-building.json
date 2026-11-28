@@ -1,0 +1,15 @@
+{
+  "id": "kc-western-auto-building",
+  "name": "Western Auto Building",
+  "model": "kc-western-auto-building",
+  "place": "kansas-city-area",
+  "lng": -94.5812326,
+  "lat": 39.0874855,
+  "bearing": 3.1,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q7987597",
+  "replaces": [
+    "way/288033189"
+  ]
+}

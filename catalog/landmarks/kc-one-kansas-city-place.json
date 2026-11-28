@@ -1,0 +1,23 @@
+{
+  "id": "kc-one-kansas-city-place",
+  "name": "One Kansas City Place",
+  "model": "kc-one-kansas-city-place",
+  "place": "kansas-city-area",
+  "lng": -94.5837544,
+  "lat": 39.0996844,
+  "bearing": 2.1,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q7092770",
+  "replaces": [
+    "way/132570884",
+    "way/1345389972",
+    "way/1345389973",
+    "way/1345389974",
+    "way/1345389975",
+    "way/1345389976",
+    "way/1345389977",
+    "way/1345389978",
+    "way/1346067802"
+  ]
+}
