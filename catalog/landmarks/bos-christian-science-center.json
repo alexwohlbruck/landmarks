@@ -1,0 +1,14 @@
+{
+  "id": "bos-christian-science-center",
+  "name": "Christian Science Center Administration Building",
+  "model": "bos-christian-science-center",
+  "place": "boston-area",
+  "lng": -71.08279,
+  "lat": 42.34494,
+  "bearing": 313,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/29551225"
+  ]
+}
