@@ -1,0 +1,63 @@
+{
+  "id": "kc-asb-bridge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "vertical-lift-bridge",
+    "truss-bridge",
+    "railway",
+    "missouri-river",
+    "historic",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "ASB Bridge 2025b.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ASB_Bridge_2025b.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "ASB Bridge from southwest in 2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ASB_Bridge_from_southwest_in_2022.jpg",
+      "author": "David Brossard",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "ASB Bridge with train crossing, 2013.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ASB_Bridge_with_train_crossing,_2013.jpg",
+      "author": "Nikky",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "ASB Bridge and Heart of America Bridge.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ASB_Bridge_and_Heart_of_America_Bridge.jpg",
+      "author": "Todd Wade",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Drawing ASB Bridge, Kansas City, Missouri.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Drawing_ASB_Bridge,_Kansas_City,_Missouri.jpg",
+      "author": "Historic American Engineering Record",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/kc-asb-bridge.glb",
+  "source": "generators/kc-asb-bridge.ts"
+}
