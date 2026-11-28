@@ -1,0 +1,59 @@
+{
+  "id": "van-maritime-museum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Vancouver Maritime Museum in June 2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Maritime_Museum_in_June_2022.jpg",
+      "author": "Richard N Horne",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Vancouver Maritime Museum.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Maritime_Museum.jpg",
+      "author": "Darren Kirby",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Vancouver Maritime Museum exterior at night.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Maritime_Museum_exterior_at_night.jpg",
+      "author": "Ccyyrree",
+      "license": "CC0"
+    },
+    {
+      "title": "Vancouver Maritime Museum 2026.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Maritime_Museum_2026.JPG",
+      "author": "Canmenwalker",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Vancouver Maritime Museum from False Creek 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Maritime_Museum_from_False_Creek_01.jpg",
+      "author": "Joe Mabel",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/van-maritime-museum.glb",
+  "source": "generators/van-maritime-museum.ts"
+}

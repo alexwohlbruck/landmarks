@@ -1,0 +1,15 @@
+{
+  "id": "van-maritime-museum",
+  "name": "Vancouver Maritime Museum",
+  "model": "van-maritime-museum",
+  "place": "vancouver",
+  "lng": -123.1474508,
+  "lat": 49.2775216,
+  "bearing": 1.6,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q1139295",
+  "replaces": [
+    "way/174530913"
+  ]
+}
