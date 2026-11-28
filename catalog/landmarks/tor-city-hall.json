@@ -1,0 +1,25 @@
+{
+  "id": "tor-city-hall",
+  "name": "Toronto City Hall",
+  "model": "tor-city-hall",
+  "place": "toronto",
+  "lng": -79.383955,
+  "lat": 43.65353,
+  "bearing": 343.5,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1093941",
+  "replaces": [
+    "relation/542980",
+    "way/198500761",
+    "way/27767543",
+    "way/27767544",
+    "way/27767545",
+    "way/963504341",
+    "way/963504342",
+    "way/963504343",
+    "way/963504344",
+    "way/963504345",
+    "way/293907515"
+  ]
+}

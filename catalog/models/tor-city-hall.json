@@ -1,0 +1,66 @@
+{
+  "id": "tor-city-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "civic",
+    "city-hall",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Toronto city hall August 2017 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Toronto_city_hall_August_2017_01.jpg",
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Toronto - ON - Rathaus und Nathan Phillips Square.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Toronto_-_ON_-_Rathaus_und_Nathan_Phillips_Square.jpg",
+      "author": "Taxiarchos228",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "City Hall, Toronto, Ontario.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:City_Hall,_Toronto,_Ontario.jpg",
+      "author": "Jerome Decq",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Toronto City Hall Council Chamber and green roof.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Toronto_City_Hall_Council_Chamber_and_green_roof.jpg",
+      "author": "Alaney2k",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Toronto City Hall from CN Tower, Toronto, Ontario (21652093330).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Toronto_City_Hall_from_CN_Tower,_Toronto,_Ontario_(21652093330).jpg",
+      "author": "Ken Lund",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "City of Toronto 3D Massing 2025",
+      "url": "https://open.toronto.ca/dataset/3d-massing/",
+      "author": "City of Toronto",
+      "license": "Open Government Licence – Toronto"
+    }
+  ],
+  "file": "models/tor-city-hall.glb",
+  "source": "generators/tor-city-hall.ts"
+}
