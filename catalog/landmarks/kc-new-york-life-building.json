@@ -1,0 +1,15 @@
+{
+  "id": "kc-new-york-life-building",
+  "name": "New York Life Building",
+  "model": "kc-new-york-life-building",
+  "place": "kansas-city-area",
+  "lng": -94.5840621,
+  "lat": 39.1039134,
+  "bearing": 2.4,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q7013709",
+  "replaces": [
+    "way/132571955"
+  ]
+}
