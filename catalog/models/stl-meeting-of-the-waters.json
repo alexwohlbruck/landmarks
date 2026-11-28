@@ -1,0 +1,49 @@
+{
+  "id": "stl-meeting-of-the-waters",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "fountain",
+  "tags": [
+    "sculpture",
+    "fountain",
+    "bronze",
+    "public-art"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "St. Louis, Missouri, USA - Carl Milles fountain The Meeting of the Waters - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis,_Missouri,_USA_-_Carl_Milles_fountain_The_Meeting_of_the_Waters_-_panoramio.jpg",
+      "author": "MARELBU",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "St. Louis, Missouri, USA - Aloe Plaza - Carl Milles fountain The Meeting of the Waters 1936-40 - Union Station - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis,_Missouri,_USA_-_Aloe_Plaza_-_Carl_Milles_fountain_The_Meeting_of_the_Waters_1936-40_-_Union_Station_-_panoramio.jpg",
+      "author": "MARELBU",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "St. Louis Union Station (17577826564).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Union_Station_(17577826564).jpg",
+      "author": "Dustin Batt",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/stl-meeting-of-the-waters.glb",
+  "source": "generators/stl-meeting-of-the-waters.ts"
+}
