@@ -1,0 +1,71 @@
+{
+  "id": "osaka-castle",
+  "file": "models/osaka-castle.glb",
+  "detail": "models/osaka-castle.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/osaka-castle.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "castle",
+    "historic",
+    "museum",
+    "japanese-architecture"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "The main tower of Osaka Castle, the 1931 reinforced-concrete reconstruction: five roofs of pale green copper tile over eight floors, white lattice gables with gold crests, a black top storey with gilded tigers and gold shachihoko, on its 13 m stone base.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "2018 Osaka Castle 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2018_Osaka_Castle_01.jpg",
+      "author": "Kakidai",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Castle, Keep tower, South view 20190415 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Castle,_Keep_tower,_South_view_20190415_1.jpg",
+      "author": "DXR",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Castle Keep Tower in 201409.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_Keep_Tower_in_201409.JPG",
+      "author": "Mc681",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Castle 03bs3200.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_03bs3200.jpg",
+      "author": "663highland",
+      "license": "CC-BY-2.5"
+    },
+    {
+      "title": "Detail on the Osaka Castle Keep Tower (V).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Detail_on_the_Osaka_Castle_Keep_Tower_(V).jpg",
+      "author": "Ethan Doyle White",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Castle Keep Tower in 201504 005.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_Keep_Tower_in_201504_005.JPG",
+      "author": "Mc681",
+      "license": "CC-BY-SA-4.0"
+    }
+  ]
+}

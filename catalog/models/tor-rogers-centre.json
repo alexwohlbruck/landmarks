@@ -1,0 +1,80 @@
+{
+  "id": "tor-rogers-centre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/tor-rogers-centre.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Rogers Centre from CN Tower, Toronto, Ontario, 2026-06-28.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Rogers_Centre_from_CN_Tower,_Toronto,_Ontario,_2026-06-28.jpg",
+      "author": "Chris Woodrich",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rogers Centre closed.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Rogers_Centre_closed.JPG",
+      "author": "Taxiarchos228",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Rogers Centre open and closed.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Rogers_Centre_open_and_closed.jpg",
+      "author": "Rrburke and Taxiarchos228",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Rogers Centre from CN Tower, Toronto, Ontario (29919996661).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Rogers_Centre_from_CN_Tower,_Toronto,_Ontario_(29919996661).jpg",
+      "author": "Ken Lund",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Rogers Centre, Toronto, Canada (29889590712).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Rogers_Centre,_Toronto,_Canada_(29889590712).jpg",
+      "author": "Ken Lund",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "SkyDome, 2012 12 10.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:SkyDome,_2012_12_10.jpg",
+      "author": "booledozer",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Renaissance Toronto Hotel, Rogers Centre, Toronto, Ontario (29375328404).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Renaissance_Toronto_Hotel,_Rogers_Centre,_Toronto,_Ontario_(29375328404).jpg",
+      "author": "Ken Lund",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Rogers Centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Rogers_Centre.jpg",
+      "author": "Fabian Roudra Baroi",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/tor-rogers-centre.glb",
+  "source": "generators/tor-rogers-centre.ts"
+}

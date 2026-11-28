@@ -1,0 +1,129 @@
+{
+  "id": "manchester-old-trafford",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/manchester-old-trafford.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "2023 07 31 arne mueseler 00052-Verbessert-RR (53106449339).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2023_07_31_arne_mueseler_00052-Verbessert-RR_(53106449339).jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "2023 07 31 arne mueseler 00056-Verbessert-RR (53106240431).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2023_07_31_arne_mueseler_00056-Verbessert-RR_(53106240431).jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "2023 07 31 arne mueseler 00060-Verbessert-RR (53106651455).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2023_07_31_arne_mueseler_00060-Verbessert-RR_(53106651455).jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "2023 07 31 arne mueseler 00057-Verbessert-RR (53106748093).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2023_07_31_arne_mueseler_00057-Verbessert-RR_(53106748093).jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "2023 07 31 arne mueseler 00058-Verbessert-RR (53106747328).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2023_07_31_arne_mueseler_00058-Verbessert-RR_(53106747328).jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Manchester United Old Trafford.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Manchester_United_Old_Trafford.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "Old Trafford december 2023.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_Trafford_december_2023.jpg",
+      "author": "Joris van Rooden",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Old Trafford stadium - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_Trafford_stadium_-_panoramio.jpg",
+      "author": "Alexander Kachkaev",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Bridgewater Canal and Old Trafford football stadium.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bridgewater_Canal_and_Old_Trafford_football_stadium.jpg",
+      "author": "Parr",
+      "license": "Public domain"
+    },
+    {
+      "title": "Old Trafford Football Stadium from Salford Quays - geograph.org.uk - 2693717.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_Trafford_Football_Stadium_from_Salford_Quays_-_geograph.org.uk_-_2693717.jpg",
+      "author": "Steve Daniels",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "The Stretford End, Old Trafford Stadium - geograph.org.uk - 2433352.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Stretford_End,_Old_Trafford_Stadium_-_geograph.org.uk_-_2433352.jpg",
+      "author": "Richard Humphrey",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "East stand at Old Trafford football stadium - geograph.org.uk - 2433326.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:East_stand_at_Old_Trafford_football_stadium_-_geograph.org.uk_-_2433326.jpg",
+      "author": "Richard Humphrey",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Inside Old Trafford Football Stadium - geograph.org.uk - 1777320.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Inside_Old_Trafford_Football_Stadium_-_geograph.org.uk_-_1777320.jpg",
+      "author": "Anthony Parkes",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Sir Bobby Charlton Stand (South Stand).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sir_Bobby_Charlton_Stand_(South_Stand).jpg",
+      "author": "WDM10",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Sir Bobby Charlton Stand - Old Trafford Stadium - geograph.org.uk - 5670089.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Sir_Bobby_Charlton_Stand_-_Old_Trafford_Stadium_-_geograph.org.uk_-_5670089.jpg",
+      "author": "Anthony Parkes",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Manchester , Trafford - Old Trafford Stadium - geograph.org.uk - 3724146.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Manchester_,_Trafford_-_Old_Trafford_Stadium_-_geograph.org.uk_-_3724146.jpg",
+      "author": "Lewis Clarke",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/manchester-old-trafford.glb",
+  "source": "generators/manchester-old-trafford.ts"
+}

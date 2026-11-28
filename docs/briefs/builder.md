@@ -107,6 +107,12 @@ Don't delete other builders' files.
 
 ## Build, check, iterate
 
+**One building per model.** If your assignment covers several buildings
+that stand apart (joined only underground, by a people mover, or not at
+all), build each as its own model with its own id, anchor and `replaces`;
+one generator may write all of them. Wings and piers that meet above ground
+stay in one model. Tell the lead which ids you made.
+
 - `cd WT && bun generators/<id>.ts`, then `bun run preview <id>`. It writes
   every review view, including 200 px and 80 px, into `WT/preview/<id>/`.
 - Render from a photo's own side with

@@ -1,0 +1,7 @@
+{
+  "id": "nairobi",
+  "name": "Nairobi",
+  "kind": "city",
+  "parent": "kenya",
+  "wikidata": "Q3870"
+}

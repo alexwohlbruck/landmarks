@@ -1,0 +1,69 @@
+{
+  "id": "osaka-station",
+  "file": "models/osaka-station.glb",
+  "detail": "models/osaka-station.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/osaka-station.ts",
+  "collection": "landmarks",
+  "type": "infrastructure",
+  "tags": [
+    "railway-station",
+    "roof",
+    "truss"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "The great roof of Osaka Station City (2011), 180 m by 100 m over the platforms between the North and South Gate Buildings, rising from ~30 m on the south to ~50 m on the north, on white ribs, edge trusses and columns.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "JR大阪駅 Osaka Sta. - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:JR大阪駅_Osaka_Sta._-_panoramio.jpg",
+      "author": "iloverjoa",
+      "license": "CC-BY-3.0"
+    },
+    {
+      "title": "JR Osaka station - Jul 30, 2011.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:JR_Osaka_station_-_Jul_30,_2011.jpg",
+      "author": "Toshiyuki IMAI",
+      "license": "CC-BY-SA-2.0"
+    },
+    {
+      "title": "Osaka Station City.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Station_City.JPG",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Osaka station (13382816253).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_station_(13382816253).jpg",
+      "author": "Guilhem Vellut",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "Osaka station (13383026434).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_station_(13383026434).jpg",
+      "author": "Guilhem Vellut",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "Toki-no-hiroba Plaza, Osaka Station 時空の広場 - Feb 17, 2014.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Toki-no-hiroba_Plaza,_Osaka_Station_時空の広場_-_Feb_17,_2014.jpg",
+      "author": "yagi-s",
+      "license": "CC-BY-2.0"
+    }
+  ]
+}

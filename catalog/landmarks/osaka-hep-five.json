@@ -1,0 +1,16 @@
+{
+  "id": "osaka-hep-five",
+  "name": "HEP Five",
+  "model": "osaka-hep-five",
+  "place": "osaka",
+  "lng": 135.50032,
+  "lat": 34.704054,
+  "bearing": 355.5,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q138666211",
+  "replaces": [
+    "way/161451126",
+    "way/332292139"
+  ]
+}

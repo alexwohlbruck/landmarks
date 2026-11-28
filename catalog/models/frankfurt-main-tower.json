@@ -1,0 +1,62 @@
+{
+  "id": "frankfurt-main-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "skyline",
+    "observation-deck"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Maintower Frankfurt.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maintower_Frankfurt.jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "2015-03-04 Top of Main Tower Frankfurt Main Hesse Germany.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2015-03-04_Top_of_Main_Tower_Frankfurt_Main_Hesse_Germany.jpg",
+      "author": "Norbert Nagel",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Maintower in Frankfurt.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maintower_in_Frankfurt.jpg",
+      "author": "Matthias90Saar at German Wikipedia",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Maintower (Taunusanlage)a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maintower_(Taunusanlage)a.jpg",
+      "author": "brionv",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Kiefer Maintower, Frankfurt (13568632993).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kiefer_Maintower,_Frankfurt_(13568632993).jpg",
+      "author": "Kiefer. from Darmstadt, Germany",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/frankfurt-main-tower.glb",
+  "source": "generators/frankfurt-main-tower.ts"
+}

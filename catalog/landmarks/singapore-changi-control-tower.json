@@ -1,0 +1,26 @@
+{
+  "id": "singapore-changi-control-tower",
+  "name": "Changi Airport Control Tower",
+  "model": "singapore-changi-control-tower",
+  "place": "singapore",
+  "lng": 103.9893323,
+  "lat": 1.3591693,
+  "bearing": 23.1,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/173010406",
+    "way/319987004",
+    "way/738597396",
+    "way/738597391",
+    "way/738597393",
+    "way/738597392",
+    "way/533598051",
+    "way/738597394",
+    "way/166327057",
+    "way/738597395",
+    "way/533598052",
+    "way/738597389",
+    "way/738597390"
+  ]
+}

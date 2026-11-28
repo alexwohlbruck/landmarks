@@ -1,0 +1,63 @@
+{
+  "id": "osaka-tenmangu",
+  "file": "models/osaka-tenmangu.glb",
+  "license": "CC0-1.0",
+  "source": "generators/osaka-tenmangu.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "shrine",
+    "shinto",
+    "historic",
+    "japanese-architecture"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "Ōsaka Tenmangū: the 1843 main hall under its sweeping copper hip-and-gable roofs, and the great south gate with its shimenawa and zodiac compass plaque.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Osaka Tenmangu Shrine ao 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Tenmangu_Shrine_ao_01.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Osaka Tenmangu Shrine ao 03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Tenmangu_Shrine_ao_03.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Osaka Tenmangu Shrine ao 04.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Tenmangu_Shrine_ao_04.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Osaka Tenmangu01n3390.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Tenmangu01n3390.jpg",
+      "author": "663highland",
+      "license": "CC-BY-2.5"
+    },
+    {
+      "title": "Osaka Tenmangu Houiban.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Tenmangu_Houiban.jpg",
+      "author": "Kuribo",
+      "license": "CC-BY-SA-3.0"
+    }
+  ]
+}

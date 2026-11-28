@@ -1,0 +1,19 @@
+{
+  "id": "madrid-barajas-control-tower",
+  "name": "Madrid-Barajas North Control Tower",
+  "model": "madrid-barajas-control-tower",
+  "place": "madrid",
+  "lng": -3.5690548,
+  "lat": 40.4918375,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/1058537191",
+    "way/1058537190",
+    "way/87201143",
+    "way/205771487",
+    "way/205771486",
+    "way/205769733"
+  ]
+}

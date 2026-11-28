@@ -1,0 +1,93 @@
+{
+  "id": "valencia-mestalla",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/valencia-mestalla.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "MestallaValencia2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MestallaValencia2024.jpg",
+      "author": "Vysotsky",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Camp de Mestalla 2023.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Camp_de_Mestalla_2023.jpg",
+      "author": "Francesc Fort",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "CAMP DE MESTALLA 2014.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:CAMP_DE_MESTALLA_2014.jpg",
+      "author": "Valencia CF",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Mestalla 05.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Mestalla_05.JPG",
+      "author": "Dorieo",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Mestalla 06.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Mestalla_06.JPG",
+      "author": "Dorieo",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Mestalla 01.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Mestalla_01.JPG",
+      "author": "Dorieo",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Mestalla Stadium Valencia vs Villarreal 2026.6.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mestalla_Stadium_Valencia_vs_Villarreal_2026.6.jpg",
+      "author": "Byxelized",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Mestalla - panoramio (10).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mestalla_-_panoramio_(10).jpg",
+      "author": "Mister No",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Mestalla - panoramio (7).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mestalla_-_panoramio_(7).jpg",
+      "author": "Mister No",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Mestalla antes del partido Valencia-Barcelona LaLiga 2023-2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mestalla_antes_del_partido_Valencia-Barcelona_LaLiga_2023-2024.jpg",
+      "author": "Anidae",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/valencia-mestalla.glb",
+  "source": "generators/valencia-mestalla.ts"
+}

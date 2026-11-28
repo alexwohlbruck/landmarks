@@ -1,0 +1,81 @@
+{
+  "id": "tokyo-haneda-terminal-1",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Haneda Airport - panoramio - oimo.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda_Airport_-_panoramio_-_oimo.jpg",
+      "author": "oimo",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Haneda-Airport-Terminal3---2025-06-15 044.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda-Airport-Terminal3---2025-06-15_044.jpg",
+      "author": "RuinDig/Yuki Uchida",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "HND Terminal 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HND_Terminal_1.jpg",
+      "author": "JobanLineE531 (TC411-507)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Tokyo International Airport Terminal 1 -01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tokyo_International_Airport_Terminal_1_-01.jpg",
+      "author": "Aimaimyi",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Tokyo International Airport - Terminal 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tokyo_International_Airport_-_Terminal_1.jpg",
+      "author": "Project Kei",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tokyo International Airport terminal-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tokyo_International_Airport_terminal-1.jpg",
+      "author": "melvil",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Haneda Airport Terminal 1 north wing 2025-03-15.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda_Airport_Terminal_1_north_wing_2025-03-15.jpg",
+      "author": "ERIC SALARD",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Haneda Airport T1 Night View.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda_Airport_T1_Night_View.JPG",
+      "author": "Banbam1029",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/tokyo-haneda-terminal-1.detail.glb",
+  "detailZoom": 16,
+  "file": "models/tokyo-haneda-terminal-1.glb",
+  "source": "generators/tokyo-haneda-terminal-1.ts"
+}

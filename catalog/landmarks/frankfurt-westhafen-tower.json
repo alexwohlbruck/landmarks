@@ -1,0 +1,17 @@
+{
+  "id": "frankfurt-westhafen-tower",
+  "name": "Westhafen Tower",
+  "model": "frankfurt-westhafen-tower",
+  "place": "frankfurt",
+  "lng": 8.664409,
+  "lat": 50.101251,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q882664",
+  "replaces": [
+    "way/33175111",
+    "way/1512255040",
+    "relation/20673838"
+  ]
+}

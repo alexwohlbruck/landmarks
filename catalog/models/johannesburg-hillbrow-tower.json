@@ -1,0 +1,64 @@
+{
+  "id": "johannesburg-hillbrow-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "tv-tower",
+    "telecommunications",
+    "concrete",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hillbrow Tower (4612443934).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hillbrow_Tower_(4612443934).jpg",
+      "author": "Jorge Láscar",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Hillbrow Tower-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hillbrow_Tower-1.jpg",
+      "author": "Thuvack",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "View of Hillbrow skyline with Hillbrow Tower, Johannesburg, South Africa.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:View_of_Hillbrow_skyline_with_Hillbrow_Tower,_Johannesburg,_South_Africa.jpg",
+      "author": "Bertrand van der Berg",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Joburg at night.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Joburg_at_night.jpg",
+      "author": "Nico Roets",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Cityscape, Johannesburg, Gauteng, South Africa.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cityscape,_Johannesburg,_Gauteng,_South_Africa.jpg",
+      "author": "South African Tourism",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "detail": "models/johannesburg-hillbrow-tower.detail.glb",
+  "detailZoom": 16,
+  "file": "models/johannesburg-hillbrow-tower.glb",
+  "source": "generators/johannesburg-hillbrow-tower.ts"
+}

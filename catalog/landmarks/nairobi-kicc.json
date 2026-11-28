@@ -1,0 +1,18 @@
+{
+  "id": "nairobi-kicc",
+  "name": "Kenyatta International Convention Centre",
+  "model": "nairobi-kicc",
+  "place": "nairobi",
+  "lng": 36.823138,
+  "lat": -1.288583,
+  "bearing": 333.6,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/1577485374",
+    "way/1553682723",
+    "way/123414928",
+    "way/1396270912",
+    "way/123414930"
+  ]
+}

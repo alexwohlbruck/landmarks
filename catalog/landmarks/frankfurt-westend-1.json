@@ -1,0 +1,18 @@
+{
+  "id": "frankfurt-westend-1",
+  "name": "Westendstrasse 1",
+  "model": "frankfurt-westend-1",
+  "place": "frankfurt",
+  "lng": 8.662376,
+  "lat": 50.110574,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q657979",
+  "replaces": [
+    "way/183069536",
+    "way/1177171890",
+    "way/1177171891",
+    "way/1177171892"
+  ]
+}

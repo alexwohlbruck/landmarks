@@ -1,0 +1,15 @@
+{
+  "id": "london-heathrow-terminal-5",
+  "name": "Heathrow Terminal 5",
+  "model": "london-heathrow-terminal-5",
+  "place": "london",
+  "lng": -0.4879054,
+  "lat": 51.4716115,
+  "bearing": -0.35,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/23231957"
+  ],
+  "wikidata": "Q3783997"
+}

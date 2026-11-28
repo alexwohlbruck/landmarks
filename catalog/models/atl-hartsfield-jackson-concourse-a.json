@@ -1,0 +1,58 @@
+{
+  "id": "atl-hartsfield-jackson-concourse-a",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "concourse",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/atl-hartsfield-jackson-concourse-a.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "ATL Terminal T and A 2018",
+      "url": "https://commons.wikimedia.org/wiki/File:ATL_Terminal_T_and_A_2018.jpg",
+      "author": "Matthew Groh",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "ATL FROM 777 N860DA FLIGHT ATL-JFK (7260474670)",
+      "url": "https://commons.wikimedia.org/wiki/File:ATL_FROM_777_N860DA_FLIGHT_ATL-JFK_(7260474670).jpg",
+      "author": "Eric Salard",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Atlanta Hartsfield-Jackson Airport Concourse A aerial",
+      "url": "https://commons.wikimedia.org/wiki/File:Atlanta_Hartsfield-Jackson_Airport_Concourse_A_aerial_(49054916886).jpg",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "BetweenABgatesATLaerial-May2017",
+      "url": "https://commons.wikimedia.org/wiki/File:BetweenABgatesATLaerial-May2017_(33992092654).jpg",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/atl-hartsfield-jackson-concourse-a.glb",
+  "source": "generators/atl-hartsfield-jackson-concourse-t.ts"
+}

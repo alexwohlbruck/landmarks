@@ -1,0 +1,92 @@
+{
+  "id": "van-bc-place",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/van-bc-place.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "BC Place (Vancouver).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:BC_Place_(Vancouver).jpg",
+      "author": "Quintin Soloviev",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "BC Place, Vancouver, British Columbia, Canada.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:BC_Place,_Vancouver,_British_Columbia,_Canada.jpg",
+      "author": "Quintin Soloviev",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "BC Place, Vancouver (2012) - 01.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:BC_Place,_Vancouver_(2012)_-_01.JPG",
+      "author": "Another Believer",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "BC Place, Vancouver (2012) - 03.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:BC_Place,_Vancouver_(2012)_-_03.JPG",
+      "author": "Another Believer",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "BC Place Stadium - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:BC_Place_Stadium_-_panoramio.jpg",
+      "author": "Ryan Adams",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Terry Fox Statue with BC Place.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Terry_Fox_Statue_with_BC_Place.jpg",
+      "author": "GoToVan",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Australia vs Türkiye at BC Place - June 13, 2026.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Australia_vs_T%C3%BCrkiye_at_BC_Place_-_June_13,_2026.jpg",
+      "author": "Aeacad",
+      "license": "CC0"
+    },
+    {
+      "title": "BC Place Stadium (2015).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:BC_Place_Stadium_(2015).jpg",
+      "author": "Mike",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "New BC Place stadium. MORE INFO IN PANORAMIO-DESCRIPTION - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:New_BC_Place_stadium._MORE_INFO_IN_PANORAMIO-DESCRIPTION_-_panoramio.jpg",
+      "author": "John Newcomb",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "BC Place with retractable roof (7735443396).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:BC_Place_with_retractable_roof_(7735443396).jpg",
+      "author": "Robert Ashworth",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/van-bc-place.glb",
+  "source": "generators/van-bc-place.ts"
+}

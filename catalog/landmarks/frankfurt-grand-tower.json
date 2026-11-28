@@ -1,0 +1,22 @@
+{
+  "id": "frankfurt-grand-tower",
+  "name": "Grand Tower",
+  "model": "frankfurt-grand-tower",
+  "place": "frankfurt",
+  "lng": 8.654446,
+  "lat": 50.108519,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q42000794",
+  "replaces": [
+    "way/375714704",
+    "way/1391177593",
+    "way/1391177594",
+    "way/1391177595",
+    "way/1391177596",
+    "way/1391177597",
+    "way/1391177598",
+    "way/1078292395"
+  ]
+}

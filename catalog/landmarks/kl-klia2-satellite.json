@@ -1,0 +1,20 @@
+{
+  "id": "kl-klia2-satellite",
+  "name": "klia2 Satellite, Piers P and Q and Skybridge",
+  "model": "kl-klia2-satellite",
+  "place": "kuala-lumpur",
+  "lng": 101.6885529,
+  "lat": 2.7394903,
+  "bearing": 325.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/1033454793",
+    "way/1033454789",
+    "way/1033454790",
+    "way/1033454788",
+    "way/1033454791",
+    "way/1033454792",
+    "relation/13829161"
+  ]
+}

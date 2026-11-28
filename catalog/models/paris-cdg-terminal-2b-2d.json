@@ -1,0 +1,57 @@
+{
+  "id": "paris-cdg-terminal-2b-2d",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "CDG Terminal 2A from A320 F-GJVW",
+      "url": "https://commons.wikimedia.org/wiki/File:CDG_TERMINAL_2A_FROM_A320_F-GJVW_AIR_FRANCE_TAKE_OFF_FLIGHT_CDG-VCE_(16644015646).jpg",
+      "author": "Eric Salard",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Terminal 2D, Paris-Charles de Gaulle (02-2018)",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal-2D-Paris-Charles-de-Gaulle-Roissy-en-France-02-2018.jpg",
+      "author": "Gunnar Klack",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Vue 2B 2D",
+      "url": "https://commons.wikimedia.org/wiki/File:Vue_2B_2D.jpg",
+      "author": "Greenboost",
+      "license": "Public domain"
+    },
+    {
+      "title": "Paris - Charles de Gaulle (Roissy) (CDG - LFPG) AN0844044",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_-_Charles_de_Gaulle_(Roissy)_(CDG_-_LFPG)_AN0844044.jpg",
+      "author": "Dmitry Avdeev",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/paris-cdg-terminal-2b-2d.detail.glb",
+  "detailZoom": 16,
+  "file": "models/paris-cdg-terminal-2b-2d.glb",
+  "source": "generators/paris-cdg-terminal-2a-2c.ts"
+}

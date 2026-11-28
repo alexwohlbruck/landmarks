@@ -1,0 +1,45 @@
+{
+  "id": "dal-dfw-terminal-e-satellite",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/dal-dfw-terminal-e-satellite.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "Terminal E at Dallas Fort Worth International Airport, aerial view from cabin window during takeoff",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_E_at_Dallas_Fort_Worth_International_Airport,_aerial_view_from_cabin_window_during_takeoff,_2023-02-18.jpg",
+      "author": "Tim Kiser",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "DFW E Gates - remote",
+      "url": "https://commons.wikimedia.org/wiki/File:DFW_E_Gates_-_remote_(29271885391).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/dal-dfw-terminal-e-satellite.glb",
+  "source": "generators/dal-dfw-terminal-e.ts"
+}

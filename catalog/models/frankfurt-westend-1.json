@@ -1,0 +1,70 @@
+{
+  "id": "frankfurt-westend-1",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "skyline",
+    "postmodern"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/frankfurt-westend-1.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Westendstraße 1, Frankfurt, West view 20200516 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Westendstraße_1,_Frankfurt,_West_view_20200516_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt Am Main-Westend Tower-Ansicht vom Maintower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Westend_Tower-Ansicht_vom_Maintower.jpg",
+      "author": "Mylius",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Frankfurt am Main - Westend Tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main_-_Westend_Tower.jpg",
+      "author": "Dr. Thomas Liptak",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Westend Tower 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Westend_Tower_01.jpg",
+      "author": "Immanuel Giel",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt Westend Tower dk2489.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Westend_Tower_dk2489.jpg",
+      "author": "DrKssn",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Westendstraße 1, Frankfurt, West view 20170226 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Westendstraße_1,_Frankfurt,_West_view_20170226_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/frankfurt-westend-1.glb",
+  "source": "generators/frankfurt-westend-1.ts"
+}

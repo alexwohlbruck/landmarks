@@ -1,0 +1,15 @@
+{
+  "id": "lusail-stadium",
+  "name": "Lusail Stadium",
+  "model": "lusail-stadium",
+  "place": "lusail",
+  "lng": 51.490349,
+  "lat": 25.420796,
+  "bearing": 348,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1186333",
+  "replaces": [
+    "relation/9489554"
+  ]
+}

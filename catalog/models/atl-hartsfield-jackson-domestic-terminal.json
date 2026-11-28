@@ -1,0 +1,64 @@
+{
+  "id": "atl-hartsfield-jackson-domestic-terminal",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "canopy",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/atl-hartsfield-jackson-domestic-terminal.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "Hartsfield-Jackson South Terminal Aerial",
+      "url": "https://commons.wikimedia.org/wiki/File:Hartsfield-Jackson_South_Terminal_Aerial_(50923459703).jpg",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Atlanta Concourse T and Transportation Area",
+      "url": "https://commons.wikimedia.org/wiki/File:Atlanta_Concourse_T_and_Transportation_Area_(50401170512).jpg",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Atlanta airport domestic terminal dropoff",
+      "url": "https://commons.wikimedia.org/wiki/File:Atlanta_airport_domestic_terminal_dropoff.jpg",
+      "author": "LGH13",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "KATL Terminal South departures area",
+      "url": "https://commons.wikimedia.org/wiki/File:KATL_Terminal_South_departures_area.jpg",
+      "author": "Mccunicano",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "ATL Terminal Superstructure",
+      "url": "https://commons.wikimedia.org/wiki/File:ATL_Terminal_Superstructure_(39120301770).jpg",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/atl-hartsfield-jackson-domestic-terminal.glb",
+  "source": "generators/atl-hartsfield-jackson-domestic-terminal.ts"
+}

@@ -59,6 +59,10 @@ named. Write the list with ids, names, coordinates and one line on why to
 `<scratch>/<prefix>/plan.md`. Aim for 30 to 50 in a big city. Keep a list of
 candidates you didn't build, with reasons, for the PR.
 
+List one model per freestanding building: an airport's concourses and
+satellites, a campus's halls, a stadium and its separate garage are
+separate entries, even when one builder makes them all.
+
 Before starting builders, choose the stable `place` IDs for the batch. Add and
 commit missing `catalog/places/` records, including parents, first. Supply the
 IDs and contributor identities to builders. Every AI credit must have a separate

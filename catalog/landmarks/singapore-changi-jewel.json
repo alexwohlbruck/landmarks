@@ -1,0 +1,18 @@
+{
+  "id": "singapore-changi-jewel",
+  "name": "Jewel Changi Airport",
+  "model": "singapore-changi-jewel",
+  "place": "singapore",
+  "lng": 103.9897491,
+  "lat": 1.3602219,
+  "bearing": 23.1,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/744520551",
+    "way/547383951",
+    "way/744528858",
+    "way/743758480",
+    "way/743758495"
+  ]
+}

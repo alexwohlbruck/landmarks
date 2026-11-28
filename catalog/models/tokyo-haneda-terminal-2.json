@@ -1,0 +1,75 @@
+{
+  "id": "tokyo-haneda-terminal-2",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Haneda Bigbird Terminal 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda_Bigbird_Terminal_2.jpg",
+      "author": "unknown (Commons)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "HND Airport Terminal 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HND_Airport_Terminal_2.jpg",
+      "author": "JobanLineE531 (TC411-507)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Tokyo International Airport Terminal 2 -01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tokyo_International_Airport_Terminal_2_-01.jpg",
+      "author": "Aimaimyi",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Tokyo International Airport Terminal 2 -03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tokyo_International_Airport_Terminal_2_-03.jpg",
+      "author": "Aimaimyi",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Haneda Airport Terminal 2 International Flight Facilities, Tokyo, Japan.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda_Airport_Terminal_2_International_Flight_Facilities,_Tokyo,_Japan.jpg",
+      "author": "KyoritsuJP",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tokyo International Airport Terminal 2 Apron (2023 Feb).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tokyo_International_Airport_Terminal_2_Apron_(2023_Feb).jpg",
+      "author": "SuFlyer",
+      "license": "CC0"
+    },
+    {
+      "title": "Haneda Airport - panoramio - oimo.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda_Airport_-_panoramio_-_oimo.jpg",
+      "author": "oimo",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/tokyo-haneda-terminal-2.detail.glb",
+  "detailZoom": 16,
+  "file": "models/tokyo-haneda-terminal-2.glb",
+  "source": "generators/tokyo-haneda-terminal-2.ts"
+}

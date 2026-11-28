@@ -1,0 +1,25 @@
+{
+  "id": "johannesburg-hillbrow-tower",
+  "name": "Hillbrow Tower",
+  "model": "johannesburg-hillbrow-tower",
+  "place": "johannesburg",
+  "lng": 28.0492796,
+  "lat": -26.1870345,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/62930800",
+    "way/759038968",
+    "way/759038972",
+    "way/759038973",
+    "way/759038974",
+    "way/759038975",
+    "way/759038976",
+    "way/759038977",
+    "way/759038978",
+    "way/759038979",
+    "way/759038980"
+  ],
+  "wikidata": "Q1563940"
+}

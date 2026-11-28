@@ -1,0 +1,52 @@
+{
+  "id": "atl-hartsfield-jackson-concourse-b",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "concourse",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/atl-hartsfield-jackson-concourse-b.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "ATL FROM 777 N860DA FLIGHT ATL-JFK (7260474670)",
+      "url": "https://commons.wikimedia.org/wiki/File:ATL_FROM_777_N860DA_FLIGHT_ATL-JFK_(7260474670).jpg",
+      "author": "Eric Salard",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "ATL Concourse B - June 2016",
+      "url": "https://commons.wikimedia.org/wiki/File:ATL_Concourse_B_-_June_2016_(29445195857).jpg",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "BetweenABgatesATLaerial-May2017",
+      "url": "https://commons.wikimedia.org/wiki/File:BetweenABgatesATLaerial-May2017_(33992092654).jpg",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/atl-hartsfield-jackson-concourse-b.glb",
+  "source": "generators/atl-hartsfield-jackson-concourse-t.ts"
+}

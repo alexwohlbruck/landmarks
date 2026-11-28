@@ -1,0 +1,18 @@
+{
+  "id": "london-heathrow-control-tower",
+  "name": "Heathrow Control Tower",
+  "model": "london-heathrow-control-tower",
+  "place": "london",
+  "lng": -0.465509,
+  "lat": 51.47176,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/1392144236",
+    "way/220594308",
+    "way/1392144239",
+    "way/1392144238",
+    "way/1392144237"
+  ]
+}

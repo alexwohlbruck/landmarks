@@ -1,0 +1,57 @@
+{
+  "id": "frankfurt-europaturm",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "tv-tower",
+    "communications-tower",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Europaturm, Frankfurt, North-West View 140612 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Europaturm,_Frankfurt,_North-West_View_140612_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Frankfurt, Europaturm, 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt,_Europaturm,_2024.jpg",
+      "author": "Dr. Thomas Liptak",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Europaturm Frankfurt am Main 2021-08-17 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Europaturm_Frankfurt_am_Main_2021-08-17_02.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    },
+    {
+      "title": "Europaturm Frankfurt am Main at night 2021-04-04 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Europaturm_Frankfurt_am_Main_at_night_2021-04-04_01.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    }
+  ],
+  "detail": "models/frankfurt-europaturm.detail.glb",
+  "detailZoom": 16,
+  "file": "models/frankfurt-europaturm.glb",
+  "source": "generators/frankfurt-europaturm.ts"
+}

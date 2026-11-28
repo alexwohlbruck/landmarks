@@ -1,0 +1,63 @@
+{
+  "id": "dubai-dxb-concourse-a",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "concourse",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Dubai Terminal",
+      "url": "https://www.flickr.com/photos/89165847@N00/27342276785",
+      "author": "mikecogh",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Dubai Airport Concourse A",
+      "url": "https://www.flickr.com/photos/90739672@N07/14240660311",
+      "author": "nabeelhashmi39",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "ISS-65 Dubai International Airport and Dubai Creek (cropped).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ISS-65_Dubai_International_Airport_and_Dubai_Creek_(cropped).jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    },
+    {
+      "title": "Dubai Airport overview.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dubai_Airport_overview.jpg",
+      "author": "Umair Shaikh",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Flights at Dawn.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Flights_at_Dawn.jpg",
+      "author": "2muchnate",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/dubai-dxb-concourse-a.detail.glb",
+  "detailZoom": 16,
+  "file": "models/dubai-dxb-concourse-a.glb",
+  "source": "generators/dubai-dxb-concourse-a.ts"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "la-lax-control-tower",
+  "name": "LAX Airport Traffic Control Tower",
+  "model": "la-lax-control-tower",
+  "place": "los-angeles-area",
+  "lng": -118.403822,
+  "lat": 33.9440004,
+  "bearing": 351,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/413226266",
+    "way/534332717"
+  ]
+}

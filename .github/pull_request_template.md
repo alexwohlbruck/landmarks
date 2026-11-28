@@ -18,8 +18,8 @@ commit them, and link each image by that commit's SHA:
 
     ![sheet 1](https://raw.githubusercontent.com/alexwohlbruck/landmarks/<sha>/review/<batch-or-id>/sheet-1.png)
 
-A bot also posts the sheets as a comment once checks run, but put your own
-here so reviewers see what you saw.
+Always pass --terrain. No bot posts sheets; these are the only ones
+reviewers see, so redraw and re-link them after every model change.
 -->
 
 ## Photos and credits

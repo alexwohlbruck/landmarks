@@ -1,0 +1,14 @@
+{
+  "id": "la-lax-west-gates",
+  "name": "LAX West Gates",
+  "model": "la-lax-west-gates",
+  "place": "los-angeles-area",
+  "lng": -118.41507,
+  "lat": 33.94344,
+  "bearing": 353,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/831597425"
+  ]
+}

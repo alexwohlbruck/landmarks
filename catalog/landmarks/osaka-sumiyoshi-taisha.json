@@ -1,0 +1,18 @@
+{
+  "id": "osaka-sumiyoshi-taisha",
+  "name": "Sumiyoshi Taisha",
+  "model": "osaka-sumiyoshi-taisha",
+  "place": "osaka",
+  "lng": 135.4934116,
+  "lat": 34.6123914,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/234511289",
+    "way/234511288",
+    "way/234736155",
+    "way/234736161",
+    "way/1255495861"
+  ]
+}

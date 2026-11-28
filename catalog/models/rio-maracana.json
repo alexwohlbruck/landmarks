@@ -1,0 +1,100 @@
+{
+  "id": "rio-maracana",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/rio-maracana.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Maracanã 2014 e.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maracan%C3%A3_2014_e.jpg",
+      "author": "Daniel Basil / Portal da Copa",
+      "license": "CC BY 3.0 BR"
+    },
+    {
+      "title": "Maracanã 2014 d.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maracan%C3%A3_2014_d.jpg",
+      "author": "Daniel Basil / Portal da Copa",
+      "license": "CC BY 3.0 BR"
+    },
+    {
+      "title": "Estádio Maracanã 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_Maracan%C3%A3_1.jpg",
+      "author": "Diego Baravelli",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Estádio Maracanã 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_Maracan%C3%A3_2.jpg",
+      "author": "Diego Baravelli",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Estádio Maracanã 3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_Maracan%C3%A3_3.jpg",
+      "author": "Diego Baravelli",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Maracana 2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maracana_2022.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 DE"
+    },
+    {
+      "title": "Rio de Janeiro Maracanã Stadium 5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Rio_de_Janeiro_Maracan%C3%A3_Stadium_5.jpg",
+      "author": "Валерий Дед",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Estádio do Maracanã structure.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_do_Maracan%C3%A3_structure.jpg",
+      "author": "GilbertoSilvaFan",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Estádio do Maracanã no início de 2020.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_do_Maracan%C3%A3_no_in%C3%ADcio_de_2020.jpg",
+      "author": "Boaventuravinicius",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Maracanã stadium.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maracan%C3%A3_stadium.jpg",
+      "author": "Leandro Neumann Ciuffo",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Aerial view of the Maracanã Stadium.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Maracan%C3%A3_Stadium.jpg",
+      "author": "Pedro Lopez",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/rio-maracana.glb",
+  "source": "generators/rio-maracana.ts"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "algiers-maqam-echahid",
+  "name": "Maqam Echahid",
+  "model": "algiers-maqam-echahid",
+  "place": "algiers",
+  "lng": 3.06973,
+  "lat": 36.74571,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/1271711154",
+    "way/247632875",
+    "way/370342095"
+  ],
+  "wikidata": "Q3056085"
+}

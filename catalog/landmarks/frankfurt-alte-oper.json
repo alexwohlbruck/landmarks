@@ -1,0 +1,28 @@
+{
+  "id": "frankfurt-alte-oper",
+  "name": "Alte Oper",
+  "model": "frankfurt-alte-oper",
+  "place": "frankfurt",
+  "lng": 8.6719798,
+  "lat": 50.116035,
+  "bearing": 19.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q436079",
+  "replaces": [
+    "way/384153099",
+    "way/929915107",
+    "way/929915108",
+    "way/929915109",
+    "way/929915110",
+    "way/929915111",
+    "way/929915112",
+    "way/929915113",
+    "way/929915114",
+    "way/929915115",
+    "way/929915116",
+    "way/929915117",
+    "way/929915118",
+    "way/929915119"
+  ]
+}

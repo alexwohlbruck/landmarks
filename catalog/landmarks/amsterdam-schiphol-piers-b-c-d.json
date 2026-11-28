@@ -1,0 +1,30 @@
+{
+  "id": "amsterdam-schiphol-piers-b-c-d",
+  "name": "Amsterdam Airport Schiphol piers B, C and D",
+  "model": "amsterdam-schiphol-piers-b-c-d",
+  "place": "amsterdam",
+  "lng": 4.767736,
+  "lat": 52.307487,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/268641325",
+    "way/923134614",
+    "way/268641346",
+    "way/1468985448",
+    "way/268641326",
+    "way/516883757",
+    "way/268641409",
+    "way/268641405",
+    "way/521074364",
+    "way/268641330",
+    "way/516883761",
+    "way/516883762",
+    "way/516883758",
+    "way/516883759",
+    "way/516883760",
+    "way/583002453",
+    "way/268641402"
+  ]
+}

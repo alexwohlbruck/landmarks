@@ -1,0 +1,61 @@
+{
+  "id": "chi-ohare-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "O'Hare Control Tower 2022",
+      "url": "https://commons.wikimedia.org/wiki/File:O%27Hare_Control_Tower_2022.jpg",
+      "author": "Lexington42",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Chicago O'Hare Tower",
+      "url": "https://commons.wikimedia.org/wiki/File:Chicago_O%27Hare_Tower.JPG",
+      "author": "My name",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "OhareControlTower",
+      "url": "https://commons.wikimedia.org/wiki/File:OhareControlTower.jpg",
+      "author": "PlusMinus",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Terminals 2 and 3, Chicago O'Hare International Airport",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminals_2_and_3,_Chicago_O%27Hare_International_Airport,_Chicago,_IL_(54600736995.jpg",
+      "author": "Warren LeMay",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "At Chicago 2024 106",
+      "url": "https://commons.wikimedia.org/wiki/File:At_Chicago_2024_106.jpg",
+      "author": "Mike Peel",
+      "license": "CC-BY-SA-4.0"
+    }
+  ],
+  "file": "models/chi-ohare-control-tower.glb",
+  "source": "generators/chi-ohare-control-tower.ts"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "paris-cdg-terminal-2a-2c",
+  "name": "Paris-CDG Terminals 2A and 2C",
+  "model": "paris-cdg-terminal-2a-2c",
+  "place": "paris",
+  "lng": 2.5642842,
+  "lat": 49.0027773,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/319030302",
+    "way/172836959",
+    "way/172836957",
+    "way/141149076",
+    "way/40016329",
+    "way/1227121965",
+    "way/319030331",
+    "way/140910242"
+  ]
+}

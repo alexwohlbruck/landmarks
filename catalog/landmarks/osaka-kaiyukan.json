@@ -1,0 +1,18 @@
+{
+  "id": "osaka-kaiyukan",
+  "name": "Kaiyukan",
+  "model": "osaka-kaiyukan",
+  "place": "osaka",
+  "lng": 135.4289214,
+  "lat": 34.6545484,
+  "bearing": 318.6,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q1191885",
+  "replaces": [
+    "way/143328734",
+    "way/151816196",
+    "way/1565558766",
+    "way/1565558767"
+  ]
+}

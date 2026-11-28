@@ -5,6 +5,7 @@ import { validateCatalog, type Catalog } from '../src/catalog'
 import { readCatalog, storageProblems } from '../src/catalog-files'
 import { glbBounds } from '../src/glb'
 import { checkCatalog } from '../src/release'
+import { catalogInScope } from '../src/scope'
 import { box, material, writeGlb } from './helpers'
 import { axisAngle } from '../generators/mesh'
 
@@ -14,8 +15,10 @@ const model = (id: string) => new Uint8Array(readFileSync(join(ROOT, 'models', `
 describe('the catalog', () => {
   test('is valid, and every model it lists exists and stands on its origin', () => {
     const catalog = readCatalog(ROOT)
-    expect(checkCatalog(ROOT, catalog)).toEqual([])
-    // Reads and measures every GLB: about 5 s for 1,200 models, longer under load.
+    expect(validateCatalog(catalog)).toEqual([])
+    // Reads and measures the GLBs of changed landmarks locally, every GLB on
+    // CI or with LANDMARKS_ALL=1 (src/scope.ts): about 5 s for 1,200 models.
+    expect(checkCatalog(ROOT, catalogInScope(ROOT, catalog))).toEqual([])
   }, 30_000)
 
   test('is stored one formatted file per entry, named by id, so pull requests merge', () => {

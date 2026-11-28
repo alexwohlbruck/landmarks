@@ -1,0 +1,118 @@
+{
+  "id": "alexandria-bibliotheca",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "library",
+    "modern",
+    "snohetta",
+    "planetarium"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "BA roof.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:BA_roof.jpg",
+      "author": "Mido",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "BibAlex from the sea (2715600208).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:BibAlex_from_the_sea_(2715600208).jpg",
+      "author": "Filip Maljković",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "BA outside view.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:BA_outside_view.jpg",
+      "author": "Mahmoud Saaid",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "Alexandria library (1).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Alexandria_library_(1).jpg",
+      "author": "Ahmedsalahemam",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Alexandria Library View.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Alexandria_Library_View.jpg",
+      "author": "Ahmed Hagrasi",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "BA outside (2).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:BA_outside_(2).jpg",
+      "author": "Avocato",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Bibliotheca Alexandrina planetarium.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bibliotheca_Alexandrina_planetarium.jpg",
+      "author": "Nikola Smolenski",
+      "license": "CC BY-SA 3.0 rs"
+    },
+    {
+      "title": "Alexandria library outside.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Alexandria_library_outside.jpg",
+      "author": "Mmelouk",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Library of Alexandria -1.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Library_of_Alexandria_-1.JPG",
+      "author": "Ahmed Younis Sif Saad",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Flickr - dlisbona - Alexandria library and conference centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Flickr_-_dlisbona_-_Alexandria_library_and_conference_centre.jpg",
+      "author": "David Lisbona",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Alexandrie - Egypte 2008 11.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Alexandrie_-_Egypte_2008_11.jpg",
+      "author": "Alacoolwiki",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Bibliotheca Alexandrina GLAM EGY 05.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bibliotheca_Alexandrina_GLAM_EGY_05.jpg",
+      "author": "Hassan Hamdy wahidy",
+      "license": "Public domain"
+    },
+    {
+      "title": "BA night water.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:BA_night_water.jpg",
+      "author": "Bibliotheca Alexandrina",
+      "license": "Public domain"
+    },
+    {
+      "title": "AlexBibliothecaNight1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:AlexBibliothecaNight1.jpg",
+      "author": "Roland Unger",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/alexandria-bibliotheca.detail.glb",
+  "detailZoom": 17,
+  "file": "models/alexandria-bibliotheca.glb",
+  "source": "generators/alexandria-bibliotheca.ts"
+}

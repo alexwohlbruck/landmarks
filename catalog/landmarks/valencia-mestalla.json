@@ -1,0 +1,18 @@
+{
+  "id": "valencia-mestalla",
+  "name": "Mestalla",
+  "model": "valencia-mestalla",
+  "place": "valencia",
+  "lng": -0.358237,
+  "lat": 39.4746135,
+  "bearing": 11.4,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q202762",
+  "replaces": [
+    "relation/7886308",
+    "way/8082830",
+    "way/1122832534",
+    "way/1239685453"
+  ]
+}

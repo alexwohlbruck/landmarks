@@ -1,0 +1,21 @@
+{
+  "id": "osaka-nakanoshima-library",
+  "name": "Osaka Prefectural Nakanoshima Library",
+  "model": "osaka-nakanoshima-library",
+  "place": "osaka",
+  "lng": 135.503156,
+  "lat": 34.693653,
+  "bearing": 183,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/1270372191",
+    "way/1270372184",
+    "way/1270372186",
+    "way/1270372183",
+    "way/1270372185",
+    "way/1270372180",
+    "way/1270372181",
+    "way/1460791709"
+  ]
+}

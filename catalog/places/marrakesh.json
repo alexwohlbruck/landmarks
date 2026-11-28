@@ -1,0 +1,7 @@
+{
+  "id": "marrakesh",
+  "name": "Marrakesh",
+  "kind": "city",
+  "parent": "morocco",
+  "wikidata": "Q101625"
+}

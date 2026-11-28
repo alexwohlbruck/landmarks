@@ -1,0 +1,57 @@
+{
+  "id": "osaka-castle-sengan-yagura",
+  "file": "models/osaka-castle-sengan-yagura.glb",
+  "license": "CC0-1.0",
+  "source": "generators/osaka-castle-sengan-yagura.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "castle",
+    "turret",
+    "historic",
+    "japanese-architecture"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "Sengan-yagura, the two-storey corner turret guarding the Ōtemon of Osaka Castle from its stone wall over the west outer moat (posts raised 1620; Important Cultural Property).",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Osaka Osaka-jo Sengan-yagura 6.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Osaka-jo_Sengan-yagura_6.jpg",
+      "author": "Zairon",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Osaka-jo Sengan-yagura 3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Osaka-jo_Sengan-yagura_3.jpg",
+      "author": "Zairon",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Castle 05s5s4272.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_05s5s4272.jpg",
+      "author": "663highland",
+      "license": "CC-BY-2.5"
+    },
+    {
+      "title": "Sengan-Yagura Turret and Otemon Gate (5239981198).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sengan-Yagura_Turret_and_Otemon_Gate_(5239981198).jpg",
+      "author": "KimonBerlin",
+      "license": "CC-BY-SA-2.0"
+    }
+  ]
+}

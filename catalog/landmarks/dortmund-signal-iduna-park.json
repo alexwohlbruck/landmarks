@@ -1,0 +1,18 @@
+{
+  "id": "dortmund-signal-iduna-park",
+  "name": "Signal Iduna Park",
+  "model": "dortmund-signal-iduna-park",
+  "place": "dortmund",
+  "lng": 7.4518179,
+  "lat": 51.4926047,
+  "bearing": 351.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q150928",
+  "replaces": [
+    "relation/531985",
+    "way/17235929",
+    "way/1024885273",
+    "way/1024885274"
+  ]
+}

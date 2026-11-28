@@ -1,0 +1,57 @@
+{
+  "id": "frankfurt-paulskirche",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "historic",
+    "classicist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Frankfurt am Main, Paulskirche -- 2015 -- 6740",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_Paulskirche_--_2015_--_6740.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt Am Main-Paulskirche-Ansicht vom Maintower",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Paulskirche-Ansicht_vom_Maintower.jpg",
+      "author": "Mylius",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Paulskirche Frankfurt am Main 2021-08-17 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Paulskirche_Frankfurt_am_Main_2021-08-17_01.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    },
+    {
+      "title": "Frankfurt-Paulskirche-04-2016-gje",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt-Paulskirche-04-2016-gje.jpg",
+      "author": "Gerd Eichmann",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "detail": "models/frankfurt-paulskirche.detail.glb",
+  "detailZoom": 17,
+  "file": "models/frankfurt-paulskirche.glb",
+  "source": "generators/frankfurt-paulskirche.ts"
+}

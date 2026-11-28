@@ -1,0 +1,19 @@
+{
+  "id": "frankfurt-ecb",
+  "name": "European Central Bank",
+  "model": "frankfurt-ecb",
+  "place": "frankfurt",
+  "lng": 8.70292,
+  "lat": 50.10963,
+  "bearing": -10.4,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/156432555",
+    "way/300429302",
+    "way/300429304",
+    "way/786057242",
+    "way/300429306",
+    "way/910256771"
+  ]
+}

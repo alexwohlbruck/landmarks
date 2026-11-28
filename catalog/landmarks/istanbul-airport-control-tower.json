@@ -1,0 +1,15 @@
+{
+  "id": "istanbul-airport-control-tower",
+  "name": "Istanbul Airport Control Tower",
+  "model": "istanbul-airport-control-tower",
+  "place": "istanbul",
+  "lng": 28.7175436,
+  "lat": 41.2840568,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/572703385",
+    "way/572703382"
+  ]
+}

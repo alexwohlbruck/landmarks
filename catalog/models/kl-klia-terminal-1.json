@@ -1,0 +1,95 @@
+{
+  "id": "kl-klia-terminal-1",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern",
+    "hyperbolic-paraboloid"
+  ],
+  "description": "KLIA's Main Terminal Building (Kisho Kurokawa, 1998): 39 square shell units on a 38.4 m grid, each a tent of four curved shells rising from its corner columns to a central apex, with skylights on the hips and pointed arches along every eave; with the contact pier under its long green-grey vault.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "KLIA MTB%26pier.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA_MTB%26pier.jpg",
+      "author": "Pizzaboy1",
+      "license": "Public domain"
+    },
+    {
+      "title": "KLIA MTB.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA_MTB.jpg",
+      "author": "Craig",
+      "license": "Public domain"
+    },
+    {
+      "title": "KLIA Main terminal.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA_Main_terminal.JPG",
+      "author": "Descon7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Kuala Lumpur airport terminal.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kuala_Lumpur_airport_terminal.jpg",
+      "author": "Maksym Kozlenko",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "KLIA, Malaysia.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA,_Malaysia.jpg",
+      "author": "Tahir mq",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "KLIA MTB%26Tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA_MTB%26Tower.jpg",
+      "author": "Craig",
+      "license": "Public domain"
+    },
+    {
+      "title": "KLIA PTC%2BTower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA_PTC%2BTower.jpg",
+      "author": "Craig",
+      "license": "Public domain"
+    },
+    {
+      "title": "KLIA C-Pier.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA_C-Pier.jpg",
+      "author": "Craig",
+      "license": "Public domain"
+    },
+    {
+      "title": "KLIA Contact Pier.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA_Contact_Pier.jpg",
+      "author": "Craig",
+      "license": "Public domain"
+    },
+    {
+      "title": "Aerial photograph of Malaysia on 15 January 2026 - 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Malaysia_on_15_January_2026_-_02.jpg",
+      "author": "Yu Chu Chin",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/kl-klia-terminal-1.detail.glb",
+  "detailZoom": 16,
+  "file": "models/kl-klia-terminal-1.glb",
+  "source": "generators/kl-klia-terminal-1.ts"
+}

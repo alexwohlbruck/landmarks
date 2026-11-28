@@ -1,0 +1,7 @@
+{
+  "id": "accra",
+  "name": "Accra",
+  "kind": "city",
+  "parent": "ghana",
+  "wikidata": "Q3761"
+}

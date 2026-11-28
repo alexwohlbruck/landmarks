@@ -1,0 +1,83 @@
+{
+  "id": "osaka-umeda-sky-building",
+  "file": "models/osaka-umeda-sky-building.glb",
+  "detail": "models/osaka-umeda-sky-building.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/osaka-umeda-sky-building.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "observation-deck",
+    "twin-towers",
+    "high-tech"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "Hiroshi Hara's 173 m twin towers (1993), joined at the top by the Floating Garden Observatory ring deck, with escalator tubes crossing the void through the ring, lattice lift shafts and the 22nd-floor bridge.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "2018 Umeda Sky Building.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2018_Umeda_Sky_Building.jpg",
+      "author": "Kakidai",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Umeda Sky Building 2026.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Umeda_Sky_Building_2026.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Umeda Sky Building from Umekita Park Osaka 16 June 2026 dllu.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Umeda_Sky_Building_from_Umekita_Park_Osaka_16_June_2026_dllu.jpg",
+      "author": "Daniel Lu (dllu)",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "梅田スカイビル.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:梅田スカイビル.jpg",
+      "author": "加茂川の民",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Shin-Umeda-City-01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shin-Umeda-City-01.jpg",
+      "author": "J o",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Umeda Sky Building, Osaka, November 2016 -01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Umeda_Sky_Building,_Osaka,_November_2016_-01.jpg",
+      "author": "Martin Falbisoner",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Umeda Sky Buildng.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Umeda_Sky_Buildng.jpg",
+      "author": "Syced",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Umeda Sky Building seen from Lucua 202508.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Umeda_Sky_Building_seen_from_Lucua_202508.jpg",
+      "author": "掬茶",
+      "license": "CC-BY-SA-4.0"
+    }
+  ]
+}

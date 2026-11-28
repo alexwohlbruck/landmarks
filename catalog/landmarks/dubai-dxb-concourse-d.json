@@ -1,0 +1,15 @@
+{
+  "id": "dubai-dxb-concourse-d",
+  "name": "Dubai International Airport Concourse D",
+  "model": "dubai-dxb-concourse-d",
+  "place": "dubai",
+  "lng": 55.3441659,
+  "lat": 25.2578588,
+  "bearing": 32.2,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/302538629"
+  ],
+  "wikidata": "Q58880293"
+}

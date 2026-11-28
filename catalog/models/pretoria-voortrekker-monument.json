@@ -1,0 +1,71 @@
+{
+  "id": "pretoria-voortrekker-monument",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "monument",
+  "tags": [
+    "monument",
+    "granite",
+    "art-deco",
+    "historic",
+    "sculpture"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Pretoria Voortrekker Monument seen from the northeast.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Pretoria_Voortrekker_Monument_seen_from_the_northeast.jpg",
+      "author": "Ymblanter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Pretoria Voortrekker Monument seen from the bottom of the stairs.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Pretoria_Voortrekker_Monument_seen_from_the_bottom_of_the_stairs.jpg",
+      "author": "Ymblanter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Voortrekker Monument 922580097.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Voortrekker_Monument_922580097.jpg",
+      "author": "Leon Pelser",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "The Voortrekker Monument, Pretoria, South Africa.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Voortrekker_Monument,_Pretoria,_South_Africa.jpg",
+      "author": "CivArmy",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Voortrekker Monument, Pretoria, South Africa.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Voortrekker_Monument,_Pretoria,_South_Africa.jpg",
+      "author": "JRamatsui",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Pretoria Voortrekker Monument seen from Skool op Wiele.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Pretoria_Voortrekker_Monument_seen_from_Skool_op_Wiele.jpg",
+      "author": "Ymblanter",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/pretoria-voortrekker-monument.detail.glb",
+  "detailZoom": 17,
+  "file": "models/pretoria-voortrekker-monument.glb",
+  "source": "generators/pretoria-voortrekker-monument.ts"
+}

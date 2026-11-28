@@ -1,0 +1,14 @@
+{
+  "id": "atl-hartsfield-jackson-concourse-a",
+  "name": "Hartsfield-Jackson Concourse A",
+  "model": "atl-hartsfield-jackson-concourse-a",
+  "place": "atlanta-area",
+  "lng": -84.4391868,
+  "lat": 33.6404394,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/24445165"
+  ]
+}

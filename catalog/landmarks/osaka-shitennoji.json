@@ -1,0 +1,22 @@
+{
+  "id": "osaka-shitennoji",
+  "name": "Shitennō-ji",
+  "model": "osaka-shitennoji",
+  "place": "osaka",
+  "lng": 135.5164544,
+  "lat": 34.6536284,
+  "bearing": 358,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/258846917",
+    "way/258846859",
+    "way/1525716509",
+    "way/1525716508",
+    "way/490792812",
+    "way/1525716505",
+    "way/1525716506",
+    "way/1525716504",
+    "way/1525716507"
+  ]
+}

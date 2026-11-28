@@ -1,0 +1,17 @@
+{
+  "id": "durban-moses-mabhida-stadium",
+  "name": "Moses Mabhida Stadium",
+  "model": "durban-moses-mabhida-stadium",
+  "place": "durban",
+  "lng": 31.0303995,
+  "lat": -29.828989,
+  "bearing": 20.8,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "relation/318673",
+    "way/172893308",
+    "relation/1136344"
+  ],
+  "wikidata": "Q175289"
+}

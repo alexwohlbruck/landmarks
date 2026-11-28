@@ -1,0 +1,87 @@
+{
+  "id": "madrid-barajas-terminals-1-3",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Aeropuerto de Madrid-Barajas - Exterior 02",
+      "url": "https://commons.wikimedia.org/wiki/File:Aeropuerto_de_Madrid-Barajas_-_Exterior_02.jpg",
+      "author": "jsmjr",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Madrid Barajas tower",
+      "url": "https://www.flickr.com/photos/10226584@N06/4324356337",
+      "author": "slasher-fun",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Aeropuerto de Madrid-Barajas02",
+      "url": "https://commons.wikimedia.org/wiki/File:Aeropuerto_de_Madrid-Barajas02.jpg",
+      "author": "Carlos Delgado",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Barajas-torre-tierra",
+      "url": "https://commons.wikimedia.org/wiki/File:Barajas-torre-tierra.jpg",
+      "author": "FDV",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Taxis en el terminal 3 de Barajas, Madrid, España",
+      "url": "https://commons.wikimedia.org/wiki/File:Taxis_en_el_terminal_3_de_Barajas,_Madrid,_Espa%C3%B1a.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "T-1 BARAJAS,MADRID.SPAIN - panoramio",
+      "url": "https://commons.wikimedia.org/wiki/File:T-1_BARAJAS,MADRID.SPAIN_-_panoramio.jpg",
+      "author": "Kayhan Ertugrul",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "T3-Barajas-Airside",
+      "url": "https://commons.wikimedia.org/wiki/File:T3-Barajas-Airside.jpg",
+      "author": "FDV",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Barajas T1 dique sur",
+      "url": "https://commons.wikimedia.org/wiki/File:Barajas_T1_dique_sur.jpg",
+      "author": "Daniel Lobo",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "PNOA orthophoto (PNOA-MA WMS)",
+      "url": "https://www.ign.es/wms-inspire/pnoa-ma",
+      "author": "Instituto Geográfico Nacional",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "detail": "models/madrid-barajas-terminals-1-3.detail.glb",
+  "detailZoom": 16,
+  "file": "models/madrid-barajas-terminals-1-3.glb",
+  "source": "generators/madrid-barajas-terminals-1-3.ts"
+}

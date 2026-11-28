@@ -1,0 +1,14 @@
+{
+  "id": "osaka-castle-sengan-yagura",
+  "name": "Sengan-yagura, Osaka Castle",
+  "model": "osaka-castle-sengan-yagura",
+  "place": "osaka",
+  "lng": 135.522897,
+  "lat": 34.6856573,
+  "bearing": 356,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/48123162"
+  ]
+}

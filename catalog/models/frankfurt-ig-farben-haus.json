@@ -1,0 +1,55 @@
+{
+  "id": "frankfurt-ig-farben-haus",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "university",
+    "modernist",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Poelzig-Bau, Frankfurt, South partial view 20140827 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Poelzig-Bau,_Frankfurt,_South_partial_view_20140827_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Poelzig-Bau, Frankfurt, South-west partial view 20140827 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Poelzig-Bau,_Frankfurt,_South-west_partial_view_20140827_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "IG Farben Building Back 1 Jan2009.jpeg",
+      "url": "https://commons.wikimedia.org/wiki/File:IG_Farben_Building_Back_1_Jan2009.jpeg",
+      "author": "Marcin Cieślak",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "2017-08-09 171052 IG-Farben-Haus.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2017-08-09_171052_IG-Farben-Haus.jpg",
+      "author": "Tim Rademacher",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/frankfurt-ig-farben-haus.glb",
+  "source": "generators/frankfurt-ig-farben-haus.ts"
+}

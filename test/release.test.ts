@@ -1,6 +1,8 @@
 import { describe, expect, test, setDefaultTimeout } from 'bun:test'
 
-// Each test builds the whole catalog (400+ landmarks), which takes seconds.
+// Each test builds the catalog, which takes seconds for the whole of it.
+// Locally that is the landmarks this branch changes plus the fixtures below
+// (src/scope.ts); on CI, or with LANDMARKS_ALL=1, it is every landmark.
 setDefaultTimeout(120_000)
 import { createHash } from 'node:crypto'
 import { gunzipSync } from 'node:zlib'
@@ -10,14 +12,18 @@ import { buildRelease, CatalogError, indexTile, type Asset } from '../src/releas
 import type { Catalog } from '../src/catalog'
 import { place, worldVertices } from './helpers'
 import { readCatalog } from '../src/catalog-files'
+import { catalogInScope, scopeCatalog } from '../src/scope'
 
 const ROOT = join(import.meta.dir, '..')
-const shipped = (): Catalog => readCatalog(ROOT)
+/** Landmarks these tests name, kept in every scoped run. */
+const FIXTURES = ['eiffel-tower', 'paris-las-vegas-eiffel-tower', 'statue-of-liberty', 'chrysler-building']
+const inScope = new Set(catalogInScope(ROOT, readCatalog(ROOT), FIXTURES).landmarks.map(l => l.id))
+const shipped = (): Catalog => scopeCatalog(readCatalog(ROOT), inScope)
 const sha = (b: Uint8Array) => createHash('sha256').update(b).digest('hex')
 const text = (b: Uint8Array) => JSON.parse(new TextDecoder().decode(b))
 
 describe('the release', () => {
-  const release = buildRelease(ROOT)
+  const release = buildRelease(ROOT, shipped())
   const file = (url: string) => {
     const bytes = release.files.get(url.replace(/^\//, ''))
     if (!bytes) throw new Error(`${url} is not in the release`)
@@ -123,8 +129,8 @@ describe('the release', () => {
 
 describe('the release id', () => {
   test('is the same for the same catalog, file for file', () => {
-    const a = buildRelease(ROOT)
-    const b = buildRelease(ROOT)
+    const a = buildRelease(ROOT, shipped())
+    const b = buildRelease(ROOT, shipped())
     expect(a.release).toBe(b.release)
     expect([...a.files.keys()]).toEqual([...b.files.keys()])
     for (const [path, bytes] of a.files) expect(sha(b.files.get(path)!)).toBe(sha(bytes))

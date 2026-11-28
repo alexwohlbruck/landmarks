@@ -1,0 +1,70 @@
+{
+  "id": "kl-klia-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern"
+  ],
+  "description": "KLIA's original 130 m control tower (Tower East, 1998), shaped like an Olympic torch: fluted white shaft, a collar of V-shaped teeth, a goblet-shaped bowl with a glazed band, the octagonal control room on top, and the crescent operations building at its foot.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "SMS0437 KLIA control tower s.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:SMS0437_KLIA_control_tower_s.jpg",
+      "author": "R8cocin8 (uploader)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "KLIA Tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA_Tower.jpg",
+      "author": "Craig",
+      "license": "Public domain"
+    },
+    {
+      "title": "KLIA PTC%2BTower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA_PTC%2BTower.jpg",
+      "author": "Craig",
+      "license": "Public domain"
+    },
+    {
+      "title": "Aerial photograph of Malaysia on 15 January 2026 - 03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Malaysia_on_15_January_2026_-_03.jpg",
+      "author": "Yu Chu Chin",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Aerial photograph of Malaysia on 15 January 2026 - 04.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Malaysia_on_15_January_2026_-_04.jpg",
+      "author": "Yu Chu Chin",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "KLIA-Tower-kualalumpur.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA-Tower-kualalumpur.jpg",
+      "author": "Mausmaus",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/kl-klia-control-tower.detail.glb",
+  "detailZoom": 16,
+  "file": "models/kl-klia-control-tower.glb",
+  "source": "generators/kl-klia-control-tower.ts"
+}

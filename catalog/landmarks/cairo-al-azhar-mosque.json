@@ -1,0 +1,20 @@
+{
+  "id": "cairo-al-azhar-mosque",
+  "name": "Al-Azhar Mosque",
+  "model": "cairo-al-azhar-mosque",
+  "place": "cairo",
+  "lng": 31.26268,
+  "lat": 30.045719,
+  "bearing": 125.8,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q312342",
+  "replaces": [
+    "way/24749059",
+    "way/1312943041",
+    "way/1312943042",
+    "way/1312943043",
+    "way/1312943044",
+    "way/1146736211"
+  ]
+}

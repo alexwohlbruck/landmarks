@@ -1,0 +1,78 @@
+{
+  "id": "rabat-hassan-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "minaret",
+    "almohad",
+    "ruins",
+    "historic",
+    "unesco-world-heritage"
+  ],
+  "description": "The unfinished Almohad minaret of Rabat (begun 1191): a 44 m sandstone tower with its full-width sebka lattice over three lobed arches and a framed horseshoe-arch panel, among the 261 stout, pale column stumps of its never-finished mosque.",
+  "reviewStatus": "unreviewed",
+  "detail": "models/rabat-hassan-tower.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hassan Tower, Rabat - face",
+      "url": "https://commons.wikimedia.org/wiki/File:Hassan_Tower,_Rabat_-_face.jpg",
+      "author": "Aemazy",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hassan Tower, Rabat - facade along columns",
+      "url": "https://commons.wikimedia.org/wiki/File:Hassan_Tower,_Rabat_-_facade_along_columns.jpg",
+      "author": "Aemazy",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hassan Tower, Rabat - corner view",
+      "url": "https://commons.wikimedia.org/wiki/File:Hassan_Tower,_Rabat_-_corner_view.jpg",
+      "author": "Aemazy",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hassan Tower, Rabat - view from garden terrace",
+      "url": "https://commons.wikimedia.org/wiki/File:Hassan_Tower,_Rabat_-_view_from_garden_terrace.jpg",
+      "author": "Aemazy",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "\"Unvollendet geblieben sind Turm und Moschee\". 09",
+      "url": "https://commons.wikimedia.org/wiki/File:%22Unvollendet_geblieben_sind_Turm_und_Moschee%22._09.jpg",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "14042012-Tour Hassan - Morocco (7089700255)",
+      "url": "https://commons.wikimedia.org/wiki/File:14042012-Tour_Hassan_-_Morocco_(7089700255).jpg",
+      "author": "WiLPrZ",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "HassanTower4",
+      "url": "https://commons.wikimedia.org/wiki/File:HassanTower4.jpg",
+      "author": "Jklamo",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/rabat-hassan-tower.glb",
+  "source": "generators/rabat-hassan-tower.ts"
+}
