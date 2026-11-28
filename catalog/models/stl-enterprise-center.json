@@ -1,0 +1,48 @@
+{
+  "id": "stl-enterprise-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "arena",
+    "sports"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q1067700",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Scottrade 2015.jpg",
+      "author": "Lightmetro",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Scottrade_2015.jpg"
+    },
+    {
+      "title": "Scottrade center 2010.jpg",
+      "author": "Chris Yunker",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Scottrade_center_2010.jpg"
+    },
+    {
+      "title": "Enterprise All Star.jpg",
+      "author": "Lightmetro",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Enterprise_All_Star.jpg"
+    }
+  ],
+  "file": "models/stl-enterprise-center.glb",
+  "source": "generators/stl-enterprise-center.ts"
+}
