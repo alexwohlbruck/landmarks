@@ -1,0 +1,37 @@
+{
+  "id": "atx-barton-springs-bathhouse",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "moderne",
+    "bathhouse",
+    "park"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Barton Springs Pool main building in winter",
+      "url": "https://www.flickr.com/photos/75062596@N00/15365527325",
+      "author": "Lars Plougmann",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/atx-barton-springs-bathhouse.glb",
+  "source": "generators/atx-barton-springs-bathhouse.ts"
+}
