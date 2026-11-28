@@ -1,0 +1,62 @@
+{
+  "id": "tor-commerce-court-north",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "historic",
+    "art-deco",
+    "bank"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "The Canadian Bank of Commerce Building (Commerce Court North)",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Canadian_Bank_of_Commerce_Building_(Commerce_Court_North).jpg",
+      "author": "Spudgun67",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Commerce Court North",
+      "url": "https://commons.wikimedia.org/wiki/File:Commerce_Court_North.JPG",
+      "author": "SimonP (English Wikipedia)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "CIBC Commerce Court North Tower, 1930s (F1257 s1057 it0409)",
+      "url": "https://commons.wikimedia.org/wiki/File:CIBC_Commerce_Court_North_Tower,_1930s_(F1257_s1057_it0409).jpg",
+      "author": "Alexandra Studio",
+      "license": "Public domain"
+    },
+    {
+      "title": "Scotia Bank Plaza as seen from Toronto Dominion Centre",
+      "url": "https://commons.wikimedia.org/wiki/File:Scotia_Bank_Plaza_as_seen_from_Toronto_Dominion_Centre.jpg",
+      "author": "Maksims Sokolov (maxergon.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "City of Toronto 3D Massing 2025",
+      "url": "https://open.toronto.ca/dataset/3d-massing/",
+      "author": "City of Toronto",
+      "license": "Open Government Licence – Toronto"
+    }
+  ],
+  "file": "models/tor-commerce-court-north.glb",
+  "source": "generators/tor-commerce-court-north.ts"
+}

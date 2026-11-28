@@ -1,0 +1,19 @@
+{
+  "id": "tor-commerce-court-north",
+  "name": "Commerce Court North",
+  "model": "tor-commerce-court-north",
+  "place": "toronto",
+  "lng": -79.3790268,
+  "lat": 43.6485896,
+  "bearing": 343.3,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/43417400",
+    "way/306196018",
+    "way/306196017",
+    "way/306196016",
+    "way/306196015",
+    "way/306196014"
+  ]
+}
