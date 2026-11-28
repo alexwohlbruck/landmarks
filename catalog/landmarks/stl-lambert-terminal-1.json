@@ -1,0 +1,17 @@
+{
+  "id": "stl-lambert-terminal-1",
+  "name": "Lambert Airport Terminal 1",
+  "model": "stl-lambert-terminal-1",
+  "place": "st-louis-area",
+  "lng": -90.3659872,
+  "lat": 38.74277,
+  "bearing": 32.2,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/176906196",
+    "way/176906202",
+    "way/176906197",
+    "way/176906199"
+  ]
+}
