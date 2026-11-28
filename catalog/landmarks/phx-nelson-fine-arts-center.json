@@ -1,0 +1,14 @@
+{
+  "id": "phx-nelson-fine-arts-center",
+  "name": "Nelson Fine Arts Center",
+  "model": "phx-nelson-fine-arts-center",
+  "place": "phoenix-area",
+  "lng": -111.9382932,
+  "lat": 33.4186734,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "relation/12350154"
+  ]
+}
