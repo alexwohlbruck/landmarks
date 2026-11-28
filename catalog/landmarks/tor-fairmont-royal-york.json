@@ -1,0 +1,20 @@
+{
+  "id": "tor-fairmont-royal-york",
+  "name": "Fairmont Royal York",
+  "model": "tor-fairmont-royal-york",
+  "place": "toronto",
+  "lng": -79.3815237,
+  "lat": 43.6459096,
+  "bearing": 343.3,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1393350",
+  "replaces": [
+    "way/177879879",
+    "way/31728160",
+    "way/290194023",
+    "way/290194022",
+    "way/231977103",
+    "way/231977104"
+  ]
+}
