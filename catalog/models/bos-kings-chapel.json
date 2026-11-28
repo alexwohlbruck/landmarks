@@ -1,0 +1,54 @@
+{
+  "id": "bos-kings-chapel",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "historic",
+    "georgian"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kings chapel boston 2009h.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Kings_chapel_boston_2009h.JPG",
+      "author": "Chensiyuan",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Boston - King's Chapel (48718908106).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_-_King%27s_Chapel_(48718908106).jpg",
+      "author": "Ajay Suresh",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "King's Chapel aerial 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:King%27s_Chapel_aerial_2024.jpg",
+      "author": "Seasider53",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "King's Chapel Evening.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:King%27s_Chapel_Evening.jpg",
+      "author": "Diegolpzir",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-kings-chapel.glb",
+  "source": "generators/bos-kings-chapel.ts"
+}

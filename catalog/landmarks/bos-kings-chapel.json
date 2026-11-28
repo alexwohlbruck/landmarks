@@ -1,0 +1,15 @@
+{
+  "id": "bos-kings-chapel",
+  "name": "King's Chapel",
+  "model": "bos-kings-chapel",
+  "place": "boston-area",
+  "lng": -71.0600301,
+  "lat": 42.3580349,
+  "bearing": 20.8,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q1139921",
+  "replaces": [
+    "way/29551954"
+  ]
+}
