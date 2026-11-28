@@ -1,0 +1,61 @@
+{
+  "id": "stl-climatron",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "greenhouse",
+    "geodesic-dome",
+    "botanical-garden"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Climatron, Missouri Botanical Gardens",
+      "author": "unknown",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Climatron,_Missouri_Botanical_Gardens.jpg"
+    },
+    {
+      "title": "The Climatron at the Missouri Botanical Garden - panoramio",
+      "author": "hakkun",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Climatron_at_the_Missouri_Botanical_Garden_-_panoramio.jpg"
+    },
+    {
+      "title": "Climatron, WEST SEGMENT HABS MO,96-SALU,105L-3",
+      "author": "Jet Lowe (HABS)",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Climatron,_WEST_SEGMENT_HABS_MO,96-SALU,105L-3.jpg"
+    },
+    {
+      "title": "Climatron INTERIOR VIEW, HABS MO,96-SALU,105L-8",
+      "author": "Jet Lowe (HABS)",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Climatron_INTERIOR_VIEW,_HABS_MO,96-SALU,105L-8.jpg"
+    },
+    {
+      "title": "Gfp-climatron-at-st-louis-botanical-gardens",
+      "author": "Yinan Chen",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Gfp-climatron-at-st-louis-botanical-gardens.jpg"
+    }
+  ],
+  "wikidata": "Q2091524",
+  "file": "models/stl-climatron.glb",
+  "source": "generators/stl-climatron.ts"
+}
