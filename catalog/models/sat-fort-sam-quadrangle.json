@@ -1,0 +1,61 @@
+{
+  "id": "sat-fort-sam-quadrangle",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "military",
+    "historic",
+    "clock-tower",
+    "limestone"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Fort Sam Houston Quadrangle Clock Tower (26097884708).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Fort_Sam_Houston_Quadrangle_Clock_Tower_(26097884708).jpg",
+      "author": "Nan Palmero",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Fort Sam Houston Quadrangle Clock Tower (26097885368).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Fort_Sam_Houston_Quadrangle_Clock_Tower_(26097885368).jpg",
+      "author": "Nan Palmero",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Quadrangle, Fort Sam Houston 03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Quadrangle,_Fort_Sam_Houston_03.jpg",
+      "author": "Articseahorse",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Quadrangle, Fort Sam Houston 05.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Quadrangle,_Fort_Sam_Houston_05.jpg",
+      "author": "Articseahorse",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Fort Sam Houston Quadrangle, San Antonio, Texas, US.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Fort_Sam_Houston_Quadrangle,_San_Antonio,_Texas,_US.jpg",
+      "author": "Clyde Charles Brown",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/sat-fort-sam-quadrangle.glb",
+  "source": "generators/sat-fort-sam-quadrangle.ts"
+}
