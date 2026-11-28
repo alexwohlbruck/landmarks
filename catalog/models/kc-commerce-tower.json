@@ -1,0 +1,49 @@
+{
+  "id": "kc-commerce-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "skyscraper",
+    "office",
+    "mid-century-modern",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Commerce Tower Kansas City MO.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Commerce_Tower_Kansas_City_MO.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "Commerce Tower, KC.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Commerce_Tower,_KC.jpg",
+      "author": "SakuraAvalon86",
+      "license": "Public domain"
+    },
+    {
+      "title": "Commerce Tower shot at night.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Commerce_Tower_shot_at_night.jpg",
+      "author": "Noah Bohland",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-commerce-tower.glb",
+  "source": "generators/kc-commerce-tower.ts"
+}
