@@ -1,0 +1,29 @@
+{
+  "id": "van-paradox-hotel",
+  "name": "Paradox Hotel Vancouver",
+  "model": "van-paradox-hotel",
+  "place": "vancouver",
+  "lng": -123.1241881,
+  "lat": 49.286838,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q2155353",
+  "replaces": [
+    "way/362187535",
+    "way/305776179",
+    "way/362300477",
+    "way/362187537",
+    "way/362300478",
+    "way/362187538",
+    "way/362300479",
+    "way/362187539",
+    "way/362300480",
+    "way/362187540",
+    "way/362300481",
+    "way/362187536",
+    "way/362300482",
+    "way/362307867",
+    "way/362347387"
+  ]
+}

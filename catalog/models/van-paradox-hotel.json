@@ -1,0 +1,55 @@
+{
+  "id": "van-paradox-hotel",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "hotel",
+    "residential",
+    "twisting-tower"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Trump Tower Vancouver, August 2016.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Trump_Tower_Vancouver,_August_2016.jpg",
+      "author": "SounderBruce",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Trump International Hotel and Tower – Vancouver, BC – (2018-10-06).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Trump_International_Hotel_and_Tower_%E2%80%93_Vancouver,_BC_%E2%80%93_(2018-10-06).jpg",
+      "author": "Ryan Sharpe",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Paradox Vancouver on June 12, 2026.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Paradox_Vancouver_on_June_12,_2026.jpg",
+      "author": "Yuet Man Lee",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Twisted Trump (26789520440).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Twisted_Trump_(26789520440).jpg",
+      "author": "Edna Winti",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/van-paradox-hotel.glb",
+  "source": "generators/van-paradox-hotel.ts"
+}
