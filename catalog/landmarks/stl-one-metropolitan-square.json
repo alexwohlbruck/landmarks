@@ -1,0 +1,20 @@
+{
+  "id": "stl-one-metropolitan-square",
+  "name": "One Metropolitan Square",
+  "model": "stl-one-metropolitan-square",
+  "place": "st-louis-area",
+  "lng": -90.1898346,
+  "lat": 38.6275209,
+  "bearing": 17.2,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/108706791",
+    "way/1363019939",
+    "way/1363019940",
+    "way/1363019941",
+    "way/1363019942",
+    "way/1363019943",
+    "way/1363019944"
+  ]
+}
