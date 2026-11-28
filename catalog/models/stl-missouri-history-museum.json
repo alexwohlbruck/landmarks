@@ -1,0 +1,49 @@
+{
+  "id": "stl-missouri-history-museum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "historic",
+    "neoclassical"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Missouri History Museum - Front 2012",
+      "author": "Marcus Qwertyus",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Missouri_History_Museum_-_Front_2012.JPG"
+    },
+    {
+      "title": "Missouri History Museum - Rear 2012",
+      "author": "Marcus Qwertyus",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Missouri_History_Museum_-_Rear_2012.JPG"
+    },
+    {
+      "title": "Missouri History Museum - panoramio (1)",
+      "author": "Bohao Zhao",
+      "license": "CC BY 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Missouri_History_Museum_-_panoramio_(1).jpg"
+    }
+  ],
+  "wikidata": "Q1351391",
+  "file": "models/stl-missouri-history-museum.glb",
+  "source": "generators/stl-missouri-history-museum.ts"
+}
