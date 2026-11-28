@@ -1,0 +1,14 @@
+{
+  "id": "phx-soleri-bridge",
+  "name": "Soleri Bridge",
+  "model": "phx-soleri-bridge",
+  "place": "phoenix-area",
+  "lng": -111.92665,
+  "lat": 33.50125,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/1564814339"
+  ]
+}
