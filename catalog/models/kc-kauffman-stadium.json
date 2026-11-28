@@ -1,0 +1,74 @@
+{
+  "id": "kc-kauffman-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "stadium",
+    "baseball",
+    "mlb",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q1737017",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kauffman Stadium 08-31-2013.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_Stadium_08-31-2013.jpg",
+      "author": "Ichabod",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Kauffman Stadium (72926816).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_Stadium_(72926816).jpg",
+      "author": "Kelly from Parsons, Kansas",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Kauffman Stadium exterior.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_Stadium_exterior.jpg",
+      "author": "Justin Brockie",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Kauffman Stadium - New Video Board.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_Stadium_-_New_Video_Board.jpg",
+      "author": "Vanguard27",
+      "license": "Public domain"
+    },
+    {
+      "title": "Kauffman Stadium Pano 2.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_Stadium_Pano_2.JPG",
+      "author": "Mr.Konerko",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kauffman Fountains pano.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_Fountains_pano.JPG",
+      "author": "Mr.Konerko",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kauffman Stadium Scoreboard",
+      "url": "https://www.flickr.com/photos/37171504@N00/14430381546",
+      "author": "compujeramey",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/kc-kauffman-stadium.glb",
+  "source": "generators/kc-kauffman-stadium.ts"
+}
