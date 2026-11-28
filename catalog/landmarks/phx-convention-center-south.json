@@ -1,0 +1,14 @@
+{
+  "id": "phx-convention-center-south",
+  "name": "Phoenix Convention Center South Building",
+  "model": "phx-convention-center-south",
+  "place": "phoenix-area",
+  "lng": -112.0686398,
+  "lat": 33.4473001,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/37057886"
+  ]
+}
