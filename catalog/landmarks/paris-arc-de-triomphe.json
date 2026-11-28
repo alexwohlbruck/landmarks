@@ -1,0 +1,30 @@
+{
+  "id": "paris-arc-de-triomphe",
+  "name": "Arc de Triomphe",
+  "model": "paris-arc-de-triomphe",
+  "place": "paris",
+  "lng": 2.2950373,
+  "lat": 48.8737774,
+  "bearing": 25,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q64436",
+  "replaces": [
+    "way/226413508",
+    "way/226413509",
+    "way/226413510",
+    "way/226413511",
+    "way/226413512",
+    "way/226413513",
+    "way/226413514",
+    "way/226413515",
+    "way/226413516",
+    "way/226413517",
+    "way/226413519",
+    "way/226413520",
+    "way/226413521",
+    "way/226413522",
+    "way/226520145",
+    "way/226520146"
+  ]
+}

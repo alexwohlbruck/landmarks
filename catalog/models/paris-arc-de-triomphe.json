@@ -1,0 +1,42 @@
+{
+  "id": "paris-arc-de-triomphe",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "monument",
+    "triumphal-arch"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Arc Triomphe.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arc_Triomphe.jpg",
+      "author": "Benh LIEU SONG",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Arc de Triomphe de l'Étoile in July 2011",
+      "url": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_de_l%27%C3%89toile_in_July_2011.jpg",
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/paris-arc-de-triomphe.glb",
+  "source": "generators/paris-arc-de-triomphe.ts"
+}
