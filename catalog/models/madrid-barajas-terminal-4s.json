@@ -1,0 +1,100 @@
+{
+  "id": "madrid-barajas-terminal-4s",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern",
+    "high-tech"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Madrid Barajas Airport-Terminal 4S (7146509957)",
+      "url": "https://commons.wikimedia.org/wiki/File:Madrid_Barajas_Airport-Terminal_4S_(7146509957).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Madrid Barajas Airport-Terminal 4S (7161901698)",
+      "url": "https://commons.wikimedia.org/wiki/File:Madrid_Barajas_Airport-Terminal_4S_(7161901698).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Madrid Barajas Airport (MAD) Terminal 4S (7173540886)",
+      "url": "https://commons.wikimedia.org/wiki/File:Madrid_Barajas_Airport_(MAD)_Terminal_4S_(7173540886).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Madrid Barajas Airport ATC T4 2",
+      "url": "https://commons.wikimedia.org/wiki/File:Madrid_Barajas_Airport_ATC_T4_2.jpg",
+      "author": "Slashme",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Barajas t4s 1",
+      "url": "https://commons.wikimedia.org/wiki/File:Barajas_t4s_1.jpg",
+      "author": "MdeVicente",
+      "license": "CC0"
+    },
+    {
+      "title": "Barajas t4s 2",
+      "url": "https://commons.wikimedia.org/wiki/File:Barajas_t4s_2.jpg",
+      "author": "MdeVicente",
+      "license": "CC0"
+    },
+    {
+      "title": "Barajas-T4S-271210-1",
+      "url": "https://commons.wikimedia.org/wiki/File:Barajas-T4S-271210-1.jpg",
+      "author": "FDV",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Barajas-T4S-271210-2",
+      "url": "https://commons.wikimedia.org/wiki/File:Barajas-T4S-271210-2.jpg",
+      "author": "FDV",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "ES-Madrid-Barajas-T4S-2012",
+      "url": "https://commons.wikimedia.org/wiki/File:ES-Madrid-Barajas-T4S-2012.JPG",
+      "author": "Bbb-Commons",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Terminal 4S, Aeropuerto de Barajas, Madrid, España, 2013-10-17, DD 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_4S,_Aeropuerto_de_Barajas,_Madrid,_Espa%C3%B1a,_2013-10-17,_DD_01.JPG",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "PNOA orthophoto (PNOA-MA WMS)",
+      "url": "https://www.ign.es/wms-inspire/pnoa-ma",
+      "author": "Instituto Geográfico Nacional",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "detail": "models/madrid-barajas-terminal-4s.detail.glb",
+  "detailZoom": 16,
+  "file": "models/madrid-barajas-terminal-4s.glb",
+  "source": "generators/madrid-barajas-terminal-4s.ts"
+}

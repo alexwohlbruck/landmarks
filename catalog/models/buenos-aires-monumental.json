@@ -1,0 +1,67 @@
+{
+  "id": "buenos-aires-monumental",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Aerial view of Estadio Monumental (Buenos Aires).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Estadio_Monumental_(Buenos_Aires).jpg",
+      "author": "Py4nf",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "002.Buenos Aires desde el cielo (Estadio de River).JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:002.Buenos_Aires_desde_el_cielo_(Estadio_de_River).JPG",
+      "author": "Elemaki",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Estadio mas monumental.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_mas_monumental.jpg",
+      "author": "Dibumartinez23",
+      "license": "CC0"
+    },
+    {
+      "title": "Estadio Mâs Monumental (Noviembre de 2025) - (1).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_M%C3%A2s_Monumental_(Noviembre_de_2025)_-_(1).jpg",
+      "author": "Just a Man",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Estadio mas monumental logo exterior.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_mas_monumental_logo_exterior.jpg",
+      "author": "Fernando Martello",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Estadio Antonio Vespucio Liberti, Buenos Aires, Argentina (46511339261).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_Antonio_Vespucio_Liberti,_Buenos_Aires,_Argentina_(46511339261).jpg",
+      "author": "Matt Kieffer",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/buenos-aires-monumental.glb",
+  "source": "generators/buenos-aires-monumental.ts"
+}

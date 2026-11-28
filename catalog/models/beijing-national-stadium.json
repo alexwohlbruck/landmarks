@@ -1,0 +1,89 @@
+{
+  "id": "beijing-national-stadium",
+  "file": "models/beijing-national-stadium.glb",
+  "detail": "models/beijing-national-stadium.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/beijing-national-stadium.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "olympic",
+    "steel-lattice"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "The 2008 Olympic stadium (Herzog & de Meuron, Arup): a saddle-shaped oval woven from huge interlaced grey steel box members round a red concrete seating bowl, with a translucent membrane roof round an oval opening.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Beijing China Beijing-National-Stadium-01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_China_Beijing-National-Stadium-01.jpg",
+      "author": "CEphoto, Uwe Aranas",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Beijing China Beijing-National-Stadium-02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_China_Beijing-National-Stadium-02.jpg",
+      "author": "CEphoto, Uwe Aranas",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Beijing China Beijing-National-Stadium-03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_China_Beijing-National-Stadium-03.jpg",
+      "author": "CEphoto, Uwe Aranas",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Beijing national stadium 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_national_stadium_1.jpg",
+      "author": "Arne Müseler",
+      "license": "CC-BY-SA-3.0-DE"
+    },
+    {
+      "title": "Beijing national stadium 4 cropped.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_national_stadium_4_cropped.jpg",
+      "author": "Arne Müseler",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Beijing National Stadium from the Central Axis (20220905140702).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_National_Stadium_from_the_Central_Axis_(20220905140702).jpg",
+      "author": "N509FZ",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Beijing national stadium.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_national_stadium.jpg",
+      "author": "Peter23",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Beijing National Stadium Interior.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Beijing_National_Stadium_Interior.jpg",
+      "author": "WiNG",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "National Stadium Beijing 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:National_Stadium_Beijing_2.jpg",
+      "author": "Galaxyharrylion",
+      "license": "public-domain"
+    }
+  ]
+}

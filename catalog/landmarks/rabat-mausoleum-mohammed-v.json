@@ -1,0 +1,32 @@
+{
+  "id": "rabat-mausoleum-mohammed-v",
+  "name": "Mausoleum of Mohammed V",
+  "model": "rabat-mausoleum-mohammed-v",
+  "place": "rabat",
+  "lng": -6.821425,
+  "lat": 34.02266,
+  "bearing": 335.6,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q219028",
+  "replaces": [
+    "way/278577671",
+    "way/486655925",
+    "way/485144561",
+    "way/485659368",
+    "way/484636436",
+    "way/485144564",
+    "way/485022662",
+    "relation/7150024",
+    "way/484842415",
+    "way/484842416",
+    "way/485144563",
+    "way/486584471",
+    "way/486584476",
+    "way/486584479",
+    "way/485017195",
+    "way/485017196",
+    "way/485017197",
+    "way/485144562"
+  ]
+}

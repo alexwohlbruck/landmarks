@@ -1,0 +1,88 @@
+{
+  "id": "singapore-national-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football",
+    "dome"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/singapore-national-stadium.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Singapore (SG), National Stadium -- 2019 -- 4721.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Singapore_(SG),_National_Stadium_--_2019_--_4721.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Singapore Singapore-Sports-Hub-with-National-Stadium-01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Singapore_Singapore-Sports-Hub-with-National-Stadium-01.jpg",
+      "author": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Interior of National Stadium, Singapore, 2023.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Interior_of_National_Stadium,_Singapore,_2023.jpg",
+      "author": "Robertsky",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Singapore National Stadium from Kallang Footbridge.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Singapore_National_Stadium_from_Kallang_Footbridge.jpg",
+      "author": "Exec8",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Retractable Roof of Singapore National Stadium.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Retractable_Roof_of_Singapore_National_Stadium.jpg",
+      "author": "Exec8",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Bridge and stadium (27276460206).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bridge_and_stadium_(27276460206).jpg",
+      "author": "Mike Cartmell",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "New Singapore National Stadium.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:New_Singapore_National_Stadium.JPG",
+      "author": "Deoma12",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Inside the Singapore National Stadium.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Inside_the_Singapore_National_Stadium.jpg",
+      "author": "Exec8",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Singapore (SG), View from Marina Bay Sands, Singapore Flyer -- 2019 -- 4720.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Singapore_(SG),_View_from_Marina_Bay_Sands,_Singapore_Flyer_--_2019_--_4720.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/singapore-national-stadium.glb",
+  "source": "generators/singapore-national-stadium.ts"
+}

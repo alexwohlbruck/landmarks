@@ -1,0 +1,15 @@
+{
+  "id": "athens-panathenaic-stadium",
+  "name": "Panathenaic Stadium",
+  "model": "athens-panathenaic-stadium",
+  "place": "athens",
+  "lng": 23.74111,
+  "lat": 37.9682121,
+  "bearing": 328.5,
+  "elevation": 4,
+  "minzoom": 14,
+  "wikidata": "Q208811",
+  "replaces": [
+    "relation/19023846"
+  ]
+}

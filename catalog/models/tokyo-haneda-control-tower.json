@@ -1,0 +1,73 @@
+{
+  "id": "tokyo-haneda-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Haneda-Airport-Terminal3---2025-06-15 034.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda-Airport-Terminal3---2025-06-15_034.jpg",
+      "author": "RuinDig/Yuki Uchida",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Control Tower of Haneda Airport 羽田空港管制塔 - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Control_Tower_of_Haneda_Airport_羽田空港管制塔_-_panoramio.jpg",
+      "author": "AMANO Jun-ichi",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Control Tower",
+      "url": "https://www.flickr.com/photos/36516818@N00/4281953012",
+      "author": "mrhayata",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "control tower",
+      "url": "https://www.flickr.com/photos/72396314@N00/4173626403",
+      "author": "OiMax",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "New control tower in Haneda Airport",
+      "url": "https://www.flickr.com/photos/45431488@N07/4981326365",
+      "author": "Atsushi Kase",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Haneda Airport control tower (16262012210).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda_Airport_control_tower_(16262012210).jpg",
+      "author": "Takayuki Suzuki",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Haneda International Airport, Tokyo; August 2009 (01).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda_International_Airport,_Tokyo;_August_2009_(01).jpg",
+      "author": "MIKI Yoshihito",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/tokyo-haneda-control-tower.glb",
+  "source": "generators/tokyo-haneda-control-tower.ts"
+}

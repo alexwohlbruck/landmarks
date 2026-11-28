@@ -1,0 +1,22 @@
+{
+  "id": "osaka-umeda-sky-building",
+  "name": "Umeda Sky Building",
+  "model": "osaka-umeda-sky-building",
+  "place": "osaka",
+  "lng": 135.490137,
+  "lat": 34.705293,
+  "bearing": 3.7,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q1151808",
+  "replaces": [
+    "relation/3389505",
+    "way/252485324",
+    "way/252708901",
+    "way/252708902",
+    "way/252708903",
+    "way/252708904",
+    "way/588689730",
+    "way/649098944"
+  ]
+}

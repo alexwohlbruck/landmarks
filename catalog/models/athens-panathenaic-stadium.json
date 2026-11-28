@@ -1,0 +1,89 @@
+{
+  "id": "athens-panathenaic-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "historic",
+    "olympic"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "The all-marble Kallimarmaro: a long open horseshoe of 47 white Pentelic marble rows as real steps, split by a diazoma into two zones and climbed by stair aisles, with the sphendone at one end and tall end walls at the open entrance, the arena's low marble wall, the two herms, the gate posts and the Olympic rings above the sphendone.",
+  "detail": "models/athens-panathenaic-stadium.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Panathenaic stadium, Pangrati borrough, from Acropolis, Athens, Greece.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Panathenaic_stadium,_Pangrati_borrough,_from_Acropolis,_Athens,_Greece.jpg",
+      "author": "Jebulon",
+      "license": "CC0"
+    },
+    {
+      "title": "The Panathenaic Stadium on 2 October 2018.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Panathenaic_Stadium_on_2_October_2018.jpg",
+      "author": "George E. Koronaios",
+      "license": "CC0"
+    },
+    {
+      "title": "Inside the Panathenaic Stadium on July 19, 2019.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Inside_the_Panathenaic_Stadium_on_July_19,_2019.jpg",
+      "author": "George E. Koronaios",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Side view of the entrance to the Panathenaic Stadium from Ardittos Hill. In the distance Mount Lycabettus.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Side_view_of_the_entrance_to_the_Panathenaic_Stadium_from_Ardittos_Hill._In_the_distance_Mount_Lycabettus.jpg",
+      "author": "George E. Koronaios",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Panathenaic Stadium, Athens, 20240601 1003 0039.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Panathenaic_Stadium,_Athens,_20240601_1003_0039.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Panathenaic Stadium (Athens) from the north 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Panathenaic_Stadium_(Athens)_from_the_north_01.jpg",
+      "author": "John Samuel",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Panathenaic Stadium at night on March 13, 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Panathenaic_Stadium_at_night_on_March_13,_2024.jpg",
+      "author": "George E. Koronaios",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Panathenaic Stadium, Athens, 20240601 1013 0058.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Panathenaic_Stadium,_Athens,_20240601_1013_0058.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "The Panathenaic Stadium (Kallimarmaro) of Athens.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Panathenaic_Stadium_(Kallimarmaro)_of_Athens.jpg",
+      "author": "George E. Koronaios",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/athens-panathenaic-stadium.glb",
+  "source": "generators/athens-panathenaic-stadium.ts"
+}

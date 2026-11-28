@@ -1,0 +1,14 @@
+{
+  "id": "dubai-dxb-control-tower",
+  "name": "Dubai International Airport Control Tower",
+  "model": "dubai-dxb-control-tower",
+  "place": "dubai",
+  "lng": 55.3575999,
+  "lat": 25.250642,
+  "bearing": 30.65,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/385965965"
+  ]
+}

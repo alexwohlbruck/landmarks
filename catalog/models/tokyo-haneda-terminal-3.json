@@ -1,0 +1,75 @@
+{
+  "id": "tokyo-haneda-terminal-3",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "New International Terminal of Tokyo International Airport (4934805392).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:New_International_Terminal_of_Tokyo_International_Airport_(4934805392).jpg",
+      "author": "Kentaro Iemoto",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "New International Terminal! (5043120391).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:New_International_Terminal!_(5043120391).jpg",
+      "author": "Kentaro Iemoto",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Tokyo International Airport Terminal 3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tokyo_International_Airport_Terminal_3.jpg",
+      "author": "きりしまゆうき",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Haneda airport international terminal building-2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda_airport_international_terminal_building-2.jpg",
+      "author": "AD Train",
+      "license": "CC BY-SA 1.0"
+    },
+    {
+      "title": "Tokyo International Airport T3 20240604.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tokyo_International_Airport_T3_20240604.jpg",
+      "author": "颐园居",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Haneda-Airport-Terminal3---2025-06-15 189.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda-Airport-Terminal3---2025-06-15_189.jpg",
+      "author": "RuinDig/Yuki Uchida",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Haneda-Airport-Terminal3---2025-06-15 046.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haneda-Airport-Terminal3---2025-06-15_046.jpg",
+      "author": "RuinDig/Yuki Uchida",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "detail": "models/tokyo-haneda-terminal-3.detail.glb",
+  "detailZoom": 16,
+  "file": "models/tokyo-haneda-terminal-3.glb",
+  "source": "generators/tokyo-haneda-terminal-3.ts"
+}

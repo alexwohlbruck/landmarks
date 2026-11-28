@@ -1,0 +1,15 @@
+{
+  "id": "frankfurt-goethe-haus",
+  "name": "Goethe-Haus",
+  "model": "frankfurt-goethe-haus",
+  "place": "frankfurt",
+  "lng": 8.6775754,
+  "lat": 50.1112157,
+  "bearing": 9.3,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q896039",
+  "replaces": [
+    "way/174501393"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "lusail-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "The round golden vessel of the 2022 World Cup final: a bowl of flat triangular gold panels with triangular openings, crossed by a big diamond diagrid, standing on 24 pale plinths over a raised podium, under a white PTFE cable-net roof in radial pillows with an oval oculus over the pitch; two tiers of pale seats inside.",
+  "detail": "models/lusail-stadium.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Lusail Stadium - Finale AFC Asian 2023",
+      "url": "https://www.flickr.com/photos/198128242@N04/54317997709",
+      "author": "Bahraini Carguy",
+      "license": "Public Domain Mark 1.0"
+    },
+    {
+      "title": "Aerial view of Lusail Stadium during the daytime.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Lusail_Stadium_during_the_daytime.png",
+      "author": "Djawed_vlog",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Lusail Stadium, 23 km north of Doha, Qatar - 15 Nov 2022 (52511219242).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lusail_Stadium,_23_km_north_of_Doha,_Qatar_-_15_Nov_2022_(52511219242).jpg",
+      "author": "Pierre Markuse (contains modified Copernicus Sentinel data)",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "17 11 2021 - Visita ao Estádio Lusail (51686581152).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:17_11_2021_-_Visita_ao_Est%C3%A1dio_Lusail_(51686581152).jpg",
+      "author": "Palácio do Planalto",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "17 11 2021 - Visita ao Estádio Lusail (51688052549).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:17_11_2021_-_Visita_ao_Est%C3%A1dio_Lusail_(51688052549).jpg",
+      "author": "Palácio do Planalto",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "17 11 2021 - Visita ao Estádio Lusail (51688281780).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:17_11_2021_-_Visita_ao_Est%C3%A1dio_Lusail_(51688281780).jpg",
+      "author": "Palácio do Planalto",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/lusail-stadium.glb",
+  "source": "generators/lusail-stadium.ts"
+}

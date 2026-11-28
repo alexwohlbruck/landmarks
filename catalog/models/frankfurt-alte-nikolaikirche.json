@@ -1,0 +1,57 @@
+{
+  "id": "frankfurt-alte-nikolaikirche",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "gothic",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Alte Nikolaikirche, Frankfurt, North view 20191013 1",
+      "url": "https://commons.wikimedia.org/wiki/File:Alte_Nikolaikirche,_Frankfurt,_North_view_20191013_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt Am Main-Alte Nikolaikirche-Aufmass-Nordseite",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Alte_Nikolaikirche-Aufmass-Nordseite.jpg",
+      "author": "Städtische Hochbauinspektion II",
+      "license": "Public domain"
+    },
+    {
+      "title": "Frankfurt am Main, Nikolaikirche -- 2015 -- 6731",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_Nikolaikirche_--_2015_--_6731.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Alte Nikolaikirche Frankfurt am Main 2018-09-21 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Alte_Nikolaikirche_Frankfurt_am_Main_2018-09-21_01.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    }
+  ],
+  "detail": "models/frankfurt-alte-nikolaikirche.detail.glb",
+  "detailZoom": 17,
+  "file": "models/frankfurt-alte-nikolaikirche.glb",
+  "source": "generators/frankfurt-alte-nikolaikirche.ts"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "buenos-aires-monumental",
+  "name": "Estadio Mâs Monumental",
+  "model": "buenos-aires-monumental",
+  "place": "buenos-aires",
+  "lng": -58.449733,
+  "lat": -34.545302,
+  "bearing": 10.5,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q276354",
+  "replaces": [
+    "relation/17609324",
+    "relation/1646999",
+    "relation/17471695",
+    "relation/17471711",
+    "relation/17471712",
+    "relation/17471713",
+    "relation/17471714",
+    "relation/17471715",
+    "relation/17471697",
+    "relation/17471698",
+    "relation/17471699",
+    "relation/17471701",
+    "relation/17608102",
+    "relation/17471702",
+    "relation/17471707",
+    "relation/17471710"
+  ]
+}

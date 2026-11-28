@@ -1,0 +1,15 @@
+{
+  "id": "osaka-tsutenkaku",
+  "name": "Tsutenkaku",
+  "model": "osaka-tsutenkaku",
+  "place": "osaka",
+  "lng": 135.5063099,
+  "lat": 34.6525394,
+  "bearing": 15.5,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1148463",
+  "replaces": [
+    "way/254319878"
+  ]
+}

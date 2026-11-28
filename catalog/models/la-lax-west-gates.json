@@ -1,0 +1,51 @@
+{
+  "id": "la-lax-west-gates",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "KLAX7",
+      "url": "https://commons.wikimedia.org/wiki/File:KLAX7.jpg",
+      "author": "Vmzp85",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "KLAX8",
+      "url": "https://commons.wikimedia.org/wiki/File:KLAX8.jpg",
+      "author": "Vmzp85",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Looking outside the West Gates at Tom Bradley International",
+      "url": "https://commons.wikimedia.org/wiki/File:Looking_outside_the_West_Gates_at_Tom_Bradley_International.jpg",
+      "author": "ActivBowser9177",
+      "license": "CC0-1.0"
+    }
+  ],
+  "detail": "models/la-lax-west-gates.detail.glb",
+  "detailZoom": 16,
+  "file": "models/la-lax-west-gates.glb",
+  "source": "generators/la-lax-west-gates.ts"
+}

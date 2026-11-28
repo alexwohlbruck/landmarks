@@ -1,0 +1,14 @@
+{
+  "id": "osaka-station",
+  "name": "Osaka Station roof",
+  "model": "osaka-station",
+  "place": "osaka",
+  "lng": 135.495907,
+  "lat": 34.702403,
+  "bearing": 328.5,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/332292140"
+  ]
+}

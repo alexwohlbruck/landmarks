@@ -1,0 +1,15 @@
+{
+  "id": "lalibela-bete-giyorgis",
+  "name": "Bete Giyorgis (Church of Saint George)",
+  "model": "lalibela-bete-giyorgis",
+  "place": "lalibela",
+  "lng": 39.041142,
+  "lat": 12.031626,
+  "bearing": 9.5,
+  "elevation": -9,
+  "minzoom": 16,
+  "replaces": [
+    "way/266054164"
+  ],
+  "wikidata": "Q7971367"
+}

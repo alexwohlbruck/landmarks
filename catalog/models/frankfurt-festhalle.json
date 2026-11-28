@@ -1,0 +1,77 @@
+{
+  "id": "frankfurt-festhalle",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "event-venue",
+    "exhibition-hall",
+    "dome",
+    "historic",
+    "neo-baroque"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Festhalle (Frankfurt, GER) 2018",
+      "url": "https://commons.wikimedia.org/wiki/File:Festhalle_(Frankfurt,_GER)_2018.jpg",
+      "author": "Daniel Falke",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Festhalle Frankfurt 2016",
+      "url": "https://commons.wikimedia.org/wiki/File:Festhalle_Frankfurt_2016.jpg",
+      "author": "Whgler",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Festhalle Frankfurt and Messe grounds from the Maritim Hotel (2025)",
+      "url": "https://commons.wikimedia.org/wiki/File:Festhalle_Frankfurt_and_Messe_grounds_from_the_Maritim_Hotel_(2025).jpg",
+      "author": "Paul Colin Hennig firstdorsal.eu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Festhalle and Messeturm seen from the Maritim Hotel, Frankfurt (2025)",
+      "url": "https://commons.wikimedia.org/wiki/File:Festhalle_and_Messeturm_seen_from_the_Maritim_Hotel,_Frankfurt_(2025).jpg",
+      "author": "Paul Colin Hennig firstdorsal.eu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Festhalle-ffm005",
+      "url": "https://commons.wikimedia.org/wiki/File:Festhalle-ffm005.jpg",
+      "author": "dontworry",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Messe-Marriot-0195",
+      "url": "https://commons.wikimedia.org/wiki/File:Messe-Marriot-0195.jpg",
+      "author": "Messe Frankfurt GmbH",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "Frankfurt Messe bei Nacht - panoramio",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Messe_bei_Nacht_-_panoramio.jpg",
+      "author": "Bohao Zhao",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "detail": "models/frankfurt-festhalle.detail.glb",
+  "detailZoom": 17,
+  "file": "models/frankfurt-festhalle.glb",
+  "source": "generators/frankfurt-festhalle.ts"
+}

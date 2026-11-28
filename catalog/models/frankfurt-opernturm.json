@@ -1,0 +1,73 @@
+{
+  "id": "frankfurt-opernturm",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "skyline"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Opernturm.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Opernturm.jpg",
+      "author": "Thomas Wolf (Der Wolf im Wald)",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Opernplatz, Frankfurt, East view 20180408 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Opernplatz,_Frankfurt,_East_view_20180408_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Opernturm Frankfurt am Main 2019-09-15 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Opernturm_Frankfurt_am_Main_2019-09-15_01.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    },
+    {
+      "title": "Opernturm Frankfurt am Main 2019-09-15 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Opernturm_Frankfurt_am_Main_2019-09-15_02.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    },
+    {
+      "title": "Frankfurt Opernturm (Taunusanlage).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Opernturm_(Taunusanlage).jpg",
+      "author": "Tilman AB",
+      "license": "CC0"
+    },
+    {
+      "title": "Frankfurt am Main, Alte Oper und Opernturm.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_Alte_Oper_und_Opernturm.jpg",
+      "author": "Dguendel",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Opernturm bei Nacht - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Opernturm_bei_Nacht_-_panoramio.jpg",
+      "author": "Bohao Zhao",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/frankfurt-opernturm.glb",
+  "source": "generators/frankfurt-opernturm.ts"
+}

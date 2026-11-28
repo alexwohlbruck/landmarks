@@ -1,0 +1,99 @@
+{
+  "id": "istanbul-airport-terminal",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "İstanbul Yeni Havalimanı airport Dec 2019",
+      "url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul_Yeni_Havaliman%C4%B1_airport_Dec_2019.jpg",
+      "author": "Kulttuurinavigaattori",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Istanbul Airport (IST) Turkey (51863891833)",
+      "url": "https://commons.wikimedia.org/wiki/File:Istanbul_Airport_(IST)_Turkey_(51863891833).jpg",
+      "author": "Sharon Hahn Darlin",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Istanbul Airport (IST) Turkey (51863894878)",
+      "url": "https://commons.wikimedia.org/wiki/File:Istanbul_Airport_(IST)_Turkey_(51863894878).jpg",
+      "author": "Sharon Hahn Darlin",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Istanbul New Airport 2018.09.23",
+      "url": "https://commons.wikimedia.org/wiki/File:Istanbul_New_Airport_2018.09.23.jpg",
+      "author": "Jekader",
+      "license": "CC0"
+    },
+    {
+      "title": "IstanbulAirport (1)",
+      "url": "https://commons.wikimedia.org/wiki/File:IstanbulAirport_(1).jpg",
+      "author": "CeeGee",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "IstanbulAirport (2)",
+      "url": "https://commons.wikimedia.org/wiki/File:IstanbulAirport_(2).jpg",
+      "author": "CeeGee",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Istanbul Airport, Turkey",
+      "url": "https://commons.wikimedia.org/wiki/File:Istanbul_Airport,_Turkey.jpg",
+      "author": "Andrey Filippov",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "İstanbul Havalimanı Airport 2019 18",
+      "url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul_Havaliman%C4%B1_Airport_2019_18.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "İstanbul Havalimanı Airport 2019 21",
+      "url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul_Havaliman%C4%B1_Airport_2019_21.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Aéroport d'Istanbul",
+      "url": "https://commons.wikimedia.org/wiki/File:A%C3%A9roport_d%27Istanbul.jpg",
+      "author": "Nicoleon",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Istanbul Airport (IST) Turkey, interior",
+      "url": "https://www.flickr.com/photos/41980486@N07/51863787951",
+      "author": "Sharon Hahn Darlin",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "detail": "models/istanbul-airport-terminal.detail.glb",
+  "detailZoom": 16,
+  "file": "models/istanbul-airport-terminal.glb",
+  "source": "generators/istanbul-airport-terminal.ts"
+}

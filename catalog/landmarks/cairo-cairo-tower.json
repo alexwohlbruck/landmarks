@@ -1,0 +1,18 @@
+{
+  "id": "cairo-cairo-tower",
+  "name": "Cairo Tower",
+  "model": "cairo-cairo-tower",
+  "place": "cairo",
+  "lng": 31.224313,
+  "lat": 30.04603,
+  "bearing": 358.8,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q614684",
+  "replaces": [
+    "way/767933342",
+    "way/999697744",
+    "way/999697745",
+    "way/1000929041"
+  ]
+}

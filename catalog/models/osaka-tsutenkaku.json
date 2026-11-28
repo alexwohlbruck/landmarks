@@ -1,0 +1,88 @@
+{
+  "id": "osaka-tsutenkaku",
+  "file": "models/osaka-tsutenkaku.glb",
+  "detail": "models/osaka-tsutenkaku.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/osaka-tsutenkaku.ts",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "observation-tower",
+    "lattice",
+    "historic"
+  ],
+  "description": "108 m steel lattice observation tower (1956, Tachū Naitō) in Shinsekai, on four legs straddling the street under a glazed podium, with its sign letters, outrigger frames, octagonal observation head and round weather-light crown.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tsutenkaku 108m.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tsutenkaku_108m.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "New Tsutenkaku, Osaka.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:New_Tsutenkaku,_Osaka.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Osaka Tsutenkaku yoru 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Tsutenkaku_yoru_01.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Tsūtenkaku on 29th September 2023 (9).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Ts%C5%ABtenkaku_on_29th_September_2023_(9).jpg",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Tsutenkaku-Hondori Shopping Street and Tsutenkaku Tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tsutenkaku-Hondori_Shopping_Street_and_Tsutenkaku_Tower.jpg",
+      "author": "そらみみ",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Tsutenkaku, Osaka.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tsutenkaku,_Osaka.jpg",
+      "author": "David Kernan",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "title": "Tsutenkaku 2020-11.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tsutenkaku_2020-11.jpg",
+      "author": "Mr.ちゅらさん",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Tsutenkaku 2023-11.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tsutenkaku_2023-11.jpg",
+      "author": "Mr.ちゅらさん",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Tsutenkaku at day.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Tsutenkaku_at_day.JPG",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC0-1.0"
+    }
+  ]
+}

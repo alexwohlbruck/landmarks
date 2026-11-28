@@ -1,0 +1,64 @@
+{
+  "id": "paris-cdg-terminal-2e-2f",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern",
+    "shell"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Le Mesnil-Amelot - CDG Terminal 2F",
+      "url": "https://commons.wikimedia.org/wiki/File:Le_Mesnil-Amelot_-_CDG_Terminal_2F_20171027.jpg",
+      "author": "Pymouss",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Paris Charles de Gaulle Airport (CDG) - Overview of Terminals 2E and 2F",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_Charles_de_Gaulle_Airport_(CDG)_-_Overview_of_Terminals_2E_and_2F_(43790637690).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Terminals 2E-2F, Paris-Charles de Gaulle (02-2018a)",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminals-2E-2F-Paris-Charles-de-Gaulle-Roissy-en-France-02-2018a.jpg",
+      "author": "Gunnar Klack",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Terminals 2E-2F, Paris-Charles de Gaulle (02-2018b)",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminals-2E-2F-Paris-Charles-de-Gaulle-Roissy-en-France-02-2018b.jpg",
+      "author": "Gunnar Klack",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Charles de Gaulle Airport terminal 2E",
+      "url": "https://commons.wikimedia.org/wiki/File:Charles_de_Gaulle_Airport_terminal_2E.jpg",
+      "author": "Syced",
+      "license": "CC0"
+    }
+  ],
+  "detail": "models/paris-cdg-terminal-2e-2f.detail.glb",
+  "detailZoom": 16,
+  "file": "models/paris-cdg-terminal-2e-2f.glb",
+  "source": "generators/paris-cdg-terminal-2e-2f.ts"
+}

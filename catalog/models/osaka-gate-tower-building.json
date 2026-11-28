@@ -1,0 +1,70 @@
+{
+  "id": "osaka-gate-tower-building",
+  "file": "models/osaka-gate-tower-building.glb",
+  "detail": "models/osaka-gate-tower-building.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/osaka-gate-tower-building.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "office",
+    "expressway",
+    "round-tower"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "Round 16-storey office tower (1992) through whose 5th to 7th floors the Hanshin Expressway's Umeda exit ramp passes, with the hooded ramp segment through it and its rooftop helipad.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "TKP Gate Tower Building - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:TKP_Gate_Tower_Building_-_panoramio.jpg",
+      "author": "DVMG",
+      "license": "CC-BY-3.0"
+    },
+    {
+      "title": "Gate tower building - Osaka (2206807411).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Gate_tower_building_-_Osaka_(2206807411).jpg",
+      "author": "Daniel Rubio",
+      "license": "CC-BY-SA-2.0"
+    },
+    {
+      "title": "Building penetrated by an expressway 001 OSAKA JPN.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Building_penetrated_by_an_expressway_001_OSAKA_JPN.jpg",
+      "author": "ignis",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Gate Tower Building Umeda Exit.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Gate_Tower_Building_Umeda_Exit.jpg",
+      "author": "ja:User:ユニ",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Gate Tower Bldg DSC00218 (6503327115).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Gate_Tower_Bldg_DSC00218_(6503327115).jpg",
+      "author": "Hiroshi Nakai",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "TKP GATE TOWER BUILDING.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:TKP_GATE_TOWER_BUILDING.jpg",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC-BY-SA-4.0"
+    }
+  ]
+}

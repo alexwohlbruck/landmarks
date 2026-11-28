@@ -1,0 +1,21 @@
+{
+  "id": "amsterdam-schiphol-control-tower",
+  "name": "Schiphol control tower",
+  "model": "amsterdam-schiphol-control-tower",
+  "place": "amsterdam",
+  "lng": 4.7624393,
+  "lat": 52.307517,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/515330421",
+    "way/241077084",
+    "way/515354374",
+    "way/515330420",
+    "way/515330419",
+    "way/268643506",
+    "way/516989638"
+  ],
+  "wikidata": "Q2052814"
+}

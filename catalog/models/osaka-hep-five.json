@@ -1,0 +1,82 @@
+{
+  "id": "osaka-hep-five",
+  "file": "models/osaka-hep-five.glb",
+  "detail": "models/osaka-hep-five.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/osaka-hep-five.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "shopping-centre",
+    "ferris-wheel",
+    "animated"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "Umeda shopping building (1998) in silver cladding with its red rooftop Ferris wheel, 75 m across and 106 m to the top, whose rim runs down into a glazed atrium on the west front. The wheel turns.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "HEP FIVE 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HEP_FIVE_01.jpg",
+      "author": "W236",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "HEP FIVE 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HEP_FIVE_02.jpg",
+      "author": "W236",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "HEP-FIVE in 201409 001.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:HEP-FIVE_in_201409_001.JPG",
+      "author": "Mc681",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "HEP Five in 201411.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:HEP_Five_in_201411.JPG",
+      "author": "Mc681",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "HEP in 201409.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:HEP_in_201409.JPG",
+      "author": "Mc681",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "HEP at Night in 201408.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:HEP_at_Night_in_201408.JPG",
+      "author": "Mc681",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "HEP FIVE.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HEP_FIVE.jpg",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "HEP FIVE on 26th March 2025.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HEP_FIVE_on_26th_March_2025.jpg",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC0-1.0"
+    }
+  ]
+}

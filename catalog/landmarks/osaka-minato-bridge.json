@@ -1,0 +1,15 @@
+{
+  "id": "osaka-minato-bridge",
+  "name": "Minato Bridge",
+  "model": "osaka-minato-bridge",
+  "place": "osaka",
+  "lng": 135.4382564,
+  "lat": 34.6449439,
+  "bearing": 27.88,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q3397064",
+  "replaces": [
+    "way/574361955"
+  ]
+}

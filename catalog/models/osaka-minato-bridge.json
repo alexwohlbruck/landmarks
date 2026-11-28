@@ -1,0 +1,83 @@
+{
+  "id": "osaka-minato-bridge",
+  "file": "models/osaka-minato-bridge.glb",
+  "detail": "models/osaka-minato-bridge.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/osaka-minato-bridge.ts",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "truss-bridge",
+    "cantilever-bridge",
+    "double-deck",
+    "expressway"
+  ],
+  "description": "The red double-deck Gerber (cantilever) truss of 1974 carrying the Hanshin Expressway across the Port of Osaka: 235 + 510 + 235 m, with the arched lower chords sweeping down to the two main piers, and its approach viaducts.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Minato Ohashi Osaka JPN 001.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Minato_Ohashi_Osaka_JPN_001.jpg",
+      "author": "ignis",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Minato Bridge 1181716.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Minato_Bridge_1181716.jpg",
+      "author": "Hiroshi Nakai",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "Minato Bridge 1181776.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Minato_Bridge_1181776.jpg",
+      "author": "Hiroshi Nakai",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "Minato Bridge 1181750.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Minato_Bridge_1181750.jpg",
+      "author": "Hiroshi Nakai",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "Minato Bridge 1181784 パノラマ写真.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Minato_Bridge_1181784_%E3%83%91%E3%83%8E%E3%83%A9%E3%83%9E%E5%86%99%E7%9C%9F.jpg",
+      "author": "Hiroshi Nakai",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "Minato Ohashi Osaka1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Minato_Ohashi_Osaka1.jpg",
+      "author": "KENPEI",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Minato Bridge.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Minato_Bridge.jpg",
+      "author": "Likadog from Taiwan",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "Minato Bridge (15917537615).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Minato_Bridge_(15917537615).jpg",
+      "author": "rsakaism",
+      "license": "CC-BY-SA-2.0"
+    }
+  ]
+}

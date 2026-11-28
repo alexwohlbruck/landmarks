@@ -1,0 +1,19 @@
+{
+  "id": "pretoria-voortrekker-monument",
+  "name": "Voortrekker Monument",
+  "model": "pretoria-voortrekker-monument",
+  "place": "pretoria",
+  "lng": 28.1757962,
+  "lat": -25.7763668,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/239878491",
+    "way/1432854382",
+    "way/1432854383",
+    "way/1432854367",
+    "way/1432854368"
+  ],
+  "wikidata": "Q963472"
+}

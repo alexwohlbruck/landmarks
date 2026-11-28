@@ -1,0 +1,69 @@
+{
+  "id": "montevideo-estadio-centenario",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football",
+    "historic",
+    "tower"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Estadio Centenario (vista aérea).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_Centenario_(vista_a%C3%A9rea).jpg",
+      "author": "Marcelo Campi",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Estadio Centenario 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_Centenario_2021.jpg",
+      "author": "Marcelo Campi",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "El Estadio Centenario y la Torre de los Homenajes, Montevideo, Uruguay - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:El_Estadio_Centenario_y_la_Torre_de_los_Homenajes,_Montevideo,_Uruguay_-_panoramio.jpg",
+      "author": "rodoluca",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Torre de los Homenajes (Estadio Centenario, Montevideo) above Tribuna Olimpica.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Torre_de_los_Homenajes_(Estadio_Centenario,_Montevideo)_above_Tribuna_Olimpica.jpg",
+      "author": "Uwebart",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Estadio Centenario Montevideo Uruguay.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_Centenario_Montevideo_Uruguay.jpg",
+      "author": "TitiNicola",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Estadio Centenario, Montevideo, Uruguay.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Estadio_Centenario,_Montevideo,_Uruguay.JPG",
+      "author": "Ismael Cordero",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/montevideo-estadio-centenario.glb",
+  "source": "generators/montevideo-estadio-centenario.ts"
+}

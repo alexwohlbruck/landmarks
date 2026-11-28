@@ -1,0 +1,77 @@
+{
+  "id": "durban-moses-mabhida-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "stadium",
+    "football",
+    "world-cup-2010",
+    "arch",
+    "membrane-roof"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Moses Mabhida Stadium",
+      "url": "https://www.flickr.com/photos/51048785@N00/3263805888",
+      "author": "Chris Bloom",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Moses Mabhida Stadium, Durban",
+      "url": "https://www.flickr.com/photos/33791380@N08/4085235899",
+      "author": "Sir. Mikhael",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Moses Mabhida Stadium, Durban (panorama)",
+      "url": "https://www.flickr.com/photos/33791380@N08/4085229747",
+      "author": "Sir. Mikhael",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Moses Mabhida Stadium, Durban, KwaZulu-Natal, South Africa",
+      "url": "https://www.flickr.com/photos/25779097@N08/20504803572",
+      "author": "South African Tourism",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "View of Moses Mabhida Stadium, Durban, KwaZulu-Natal",
+      "url": "https://www.flickr.com/photos/25779097@N08/20325195540",
+      "author": "South African Tourism",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Moses Mabhida Stadium, Durban, KwaZulu-Natal, South Africa",
+      "url": "https://www.flickr.com/photos/25779097@N08/20504823892",
+      "author": "South African Tourism",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Moses Mabhida Stadium, Durban, KwaZulu-Natal, South Africa",
+      "url": "https://www.flickr.com/photos/25779097@N08/19892694813",
+      "author": "South African Tourism",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "detail": "models/durban-moses-mabhida-stadium.detail.glb",
+  "detailZoom": 16,
+  "file": "models/durban-moses-mabhida-stadium.glb",
+  "source": "generators/durban-moses-mabhida-stadium.ts"
+}

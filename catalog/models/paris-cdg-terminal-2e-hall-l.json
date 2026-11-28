@@ -1,0 +1,46 @@
+{
+  "id": "paris-cdg-terminal-2e-hall-l",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "concourse",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Overview of Terminals 2E, gates L and M, at the Paris Charles de Gaulle Airport (CDG), Roissy, France",
+      "url": "https://commons.wikimedia.org/wiki/File:Overview_of_Terminals_2E,_gates_L_and_M,_at_the_Paris_Charles_de_Gaulle_Airport_(CDG),_Roissy,_France_(21475287384).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Paris Charles de Gaulle Airport (CDG) - Overview of Terminals 2E and 2F",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_Charles_de_Gaulle_Airport_(CDG)_-_Overview_of_Terminals_2E_and_2F_(43790637690).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "detail": "models/paris-cdg-terminal-2e-hall-l.detail.glb",
+  "detailZoom": 16,
+  "file": "models/paris-cdg-terminal-2e-hall-l.glb",
+  "source": "generators/paris-cdg-terminal-2e-hall-l.ts"
+}

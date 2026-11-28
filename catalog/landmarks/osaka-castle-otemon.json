@@ -1,0 +1,15 @@
+{
+  "id": "osaka-castle-otemon",
+  "name": "Ōtemon and Tamon-yagura, Osaka Castle",
+  "model": "osaka-castle-otemon",
+  "place": "osaka",
+  "lng": 135.5232505,
+  "lat": 34.6851247,
+  "bearing": 356,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/48123164",
+    "way/48123163"
+  ]
+}

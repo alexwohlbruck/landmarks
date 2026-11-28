@@ -1,0 +1,93 @@
+{
+  "id": "incheon-airport-terminal-1",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "SEOUL INCHEON AIRPORT SOUTH KOREA OCT 2012 (8643117346).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:SEOUL_INCHEON_AIRPORT_SOUTH_KOREA_OCT_2012_(8643117346).jpg",
+      "author": "calflier001",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "SEOUL INCHEON AIRPORT SOUTH KOREA OCT 2012 (8192510981).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:SEOUL_INCHEON_AIRPORT_SOUTH_KOREA_OCT_2012_(8192510981).jpg",
+      "author": "calflier001",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "SEOUL INCHEON AIRPORT SOUTH KOREA OCT 2012 (8294115500).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:SEOUL_INCHEON_AIRPORT_SOUTH_KOREA_OCT_2012_(8294115500).jpg",
+      "author": "calflier001",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Seoul-Incheon Airport (ICN)",
+      "url": "https://www.flickr.com/photos/94064020@N00/6231766186",
+      "author": "JasonParis",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "202403 Aerial View of Incheon International Airport.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:202403_Aerial_View_of_Incheon_International_Airport.jpg",
+      "author": "MNXANL",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Unseo-dong, Jung-gu, Incheon, South Korea - panoramio (2).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Unseo-dong,_Jung-gu,_Incheon,_South_Korea_-_panoramio_(2).jpg",
+      "author": "Fumihiko Ueno",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Unseo-dong, Jung-gu, Incheon, South Korea - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Unseo-dong,_Jung-gu,_Incheon,_South_Korea_-_panoramio.jpg",
+      "author": "Fumihiko Ueno",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "인천공항T1 전경2 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:인천공항T1_전경2_2024.jpg",
+      "author": "Narubaru7",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Incheon International Airport Terminal 1 Departure.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Incheon_International_Airport_Terminal_1_Departure.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 DE"
+    },
+    {
+      "title": "Incheon Airport1.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Incheon_Airport1.JPG",
+      "author": "Jnpet",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/incheon-airport-terminal-1.detail.glb",
+  "detailZoom": 16,
+  "file": "models/incheon-airport-terminal-1.glb",
+  "source": "generators/incheon-airport-terminal-1.ts"
+}

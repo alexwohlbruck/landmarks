@@ -1,0 +1,71 @@
+{
+  "id": "djenne-great-mosque",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mosque",
+    "sudano-sahelian",
+    "mud-brick",
+    "unesco",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Great Mosque of Djenne 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Djenne_2.jpg",
+      "author": "JM",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Great Mosque of Djenné 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Djenn%C3%A9_1.jpg",
+      "author": "Andy Gilham",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Djenne great mud mosque.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Djenne_great_mud_mosque.jpg",
+      "author": "Ruud Zwart",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "The Great Mosque, Djenne.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Great_Mosque,_Djenne.jpg",
+      "author": "Jurgen",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Moschee von Djenné.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Moschee_von_Djenn%C3%A9.jpg",
+      "author": "qiv",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Djenné Moschee(Dach)1990.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Djenn%C3%A9_Moschee(Dach)1990.jpg",
+      "author": "Albert Backer",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/djenne-great-mosque.detail.glb",
+  "detailZoom": 17,
+  "file": "models/djenne-great-mosque.glb",
+  "source": "generators/djenne-great-mosque.ts"
+}

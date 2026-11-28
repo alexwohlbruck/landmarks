@@ -1,0 +1,18 @@
+{
+  "id": "atl-hartsfield-jackson-domestic-terminal",
+  "name": "Hartsfield-Jackson Domestic Terminal",
+  "model": "atl-hartsfield-jackson-domestic-terminal",
+  "place": "atlanta-area",
+  "lng": -84.4433762,
+  "lat": 33.6409658,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/10189710",
+    "way/44488347",
+    "way/44488346",
+    "way/737702225",
+    "way/737702226"
+  ]
+}

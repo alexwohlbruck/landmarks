@@ -1,0 +1,62 @@
+{
+  "id": "johannesburg-fnb-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "stadium",
+    "football",
+    "world-cup-2010",
+    "calabash"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "FNB Stadium (The Calabash).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:FNB_Stadium_(The_Calabash).jpg",
+      "author": "Kabelo Serutle",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "FNB Stadium and mooifontein Arrial View - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:FNB_Stadium_and_mooifontein_Arrial_View_-_panoramio.jpg",
+      "author": "fading",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Toy Run Bikers with Soccercity in the background - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Toy_Run_Bikers_with_Soccercity_in_the_background_-_panoramio.jpg",
+      "author": "Hendrik van den Berg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Soccer City - Johannesburg",
+      "url": "https://www.flickr.com/photos/17509603@N00/4719161222",
+      "author": "Celso Flores",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Soccer City - Johannesburg (night)",
+      "url": "https://www.flickr.com/photos/17509603@N00/4719159322",
+      "author": "Celso Flores",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/johannesburg-fnb-stadium.glb",
+  "source": "generators/johannesburg-fnb-stadium.ts"
+}

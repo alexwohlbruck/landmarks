@@ -1,0 +1,19 @@
+{
+  "id": "osaka-castle",
+  "name": "Osaka Castle Main Tower",
+  "model": "osaka-castle",
+  "place": "osaka",
+  "lng": 135.5258558,
+  "lat": 34.6873727,
+  "bearing": 5,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q321242",
+  "replaces": [
+    "way/34619038",
+    "way/1223142998",
+    "way/1223142999",
+    "way/1223143000",
+    "way/1223143001"
+  ]
+}

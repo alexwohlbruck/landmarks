@@ -1,0 +1,19 @@
+{
+  "id": "osaka-cosmo-tower",
+  "name": "Sakishima Cosmo Tower",
+  "model": "osaka-cosmo-tower",
+  "place": "osaka",
+  "lng": 135.4147179,
+  "lat": 34.6380763,
+  "bearing": 318.6,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q1201344",
+  "replaces": [
+    "way/43979655",
+    "way/1034338448",
+    "way/1034338449",
+    "way/1034338450",
+    "way/245266285"
+  ]
+}

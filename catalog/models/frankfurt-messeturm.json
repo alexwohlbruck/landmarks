@@ -1,0 +1,68 @@
+{
+  "id": "frankfurt-messeturm",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "skyline",
+    "postmodern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "01-01-2014 - Messeturm - trade fair tower - Frankfurt- Germany - 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:01-01-2014_-_Messeturm_-_trade_fair_tower_-_Frankfurt-_Germany_-_01.jpg",
+      "author": "Norbert Nagel",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Messeturm, Frankfurt, South view 20170325 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Messeturm,_Frankfurt,_South_view_20170325_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Messeturm, Frankfurt, Southwest detail view 20170325 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Messeturm,_Frankfurt,_Southwest_detail_view_20170325_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kiefer Bleistift, Messeturm Frankfurt (13632505905).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kiefer_Bleistift,_Messeturm_Frankfurt_(13632505905).jpg",
+      "author": "Kiefer. from Darmstadt, Germany",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Messeturm, Frankfurt, North view 20200612 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Messeturm,_Frankfurt,_North_view_20200612_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Messeturm Frankfurt bei Nacht.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Messeturm_Frankfurt_bei_Nacht.jpg",
+      "author": "Atelier Ralf Majewska",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/frankfurt-messeturm.glb",
+  "source": "generators/frankfurt-messeturm.ts"
+}

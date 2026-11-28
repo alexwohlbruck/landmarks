@@ -1,0 +1,29 @@
+{
+  "id": "frankfurt-europaturm",
+  "name": "Europaturm",
+  "model": "frankfurt-europaturm",
+  "place": "frankfurt",
+  "lng": 8.654641,
+  "lat": 50.135325,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q701496",
+  "replaces": [
+    "way/673138931",
+    "way/10612387",
+    "way/673157695",
+    "way/673157697",
+    "way/673157696",
+    "way/673138928",
+    "way/673138930",
+    "way/673138929",
+    "way/673275122",
+    "way/673157694",
+    "relation/9358222",
+    "relation/9358223",
+    "relation/9358224",
+    "relation/9358225",
+    "relation/9358226"
+  ]
+}

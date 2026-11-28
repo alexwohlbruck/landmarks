@@ -1,0 +1,63 @@
+{
+  "id": "la-lax-tom-bradley-terminal",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tom Bradley International Terminal taken from departing flight March 2016",
+      "url": "https://commons.wikimedia.org/wiki/File:Tom_Bradley_International_Terminal_taken_from_departing_flight_March_2016.jpg",
+      "author": "Agarre16",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Tom Bradley International Terminal (TBIT), Los Angeles International Airport (LAX), El Segundo, California (USA) (51719901131)",
+      "url": "https://commons.wikimedia.org/wiki/File:Tom_Bradley_International_Terminal_(TBIT),_Los_Angeles_International_Airport_(LAX),_El_Segundo,_California_(USA)_(51719901131).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "LAX Tom Bradley Aerial",
+      "url": "https://commons.wikimedia.org/wiki/File:LAX_Tom_Bradley_Aerial.jpg",
+      "author": "Junkyard kahrs",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Tom Bradley International Terminal photo Don Ramey Logan",
+      "url": "https://commons.wikimedia.org/wiki/File:Tom_Bradley_International_Terminal_photo_Don_Ramey_Logan.jpg",
+      "author": "Don Ramey Logan",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "title": "LAX Tom Bradley International Terminal (10940503103)",
+      "url": "https://commons.wikimedia.org/wiki/File:LAX_Tom_Bradley_International_Terminal_(10940503103).jpg",
+      "author": "Prayitno",
+      "license": "CC-BY-2.0"
+    }
+  ],
+  "detail": "models/la-lax-tom-bradley-terminal.detail.glb",
+  "detailZoom": 16,
+  "file": "models/la-lax-tom-bradley-terminal.glb",
+  "source": "generators/la-lax-tom-bradley-terminal.ts"
+}

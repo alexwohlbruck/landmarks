@@ -1,0 +1,57 @@
+{
+  "id": "la-lax-terminals-1-3",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Delta Sky Club Sky Deck View Los Angeles Delta Air Lines Boeing 737-900ER N907DN",
+      "url": "https://commons.wikimedia.org/wiki/File:Delta_Sky_Club_Sky_Deck_View_Los_Angeles_Delta_Air_Lines_Boeing_737-900ER_N907DN.jpg",
+      "author": "David Aughinbaugh II",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "LAX Commercial Terminal buildings photo Don Ramey Logan",
+      "url": "https://commons.wikimedia.org/wiki/File:LAX_Commercial_Terminal_buildings_photo_Don_Ramey_Logan.jpg",
+      "author": "Don Ramey Logan",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "LAX Terminal 1, Southwest 737-800 fleet",
+      "url": "https://commons.wikimedia.org/wiki/File:LAX_Terminal_1,_Southwest_737-800_fleet_(5315024425).jpg",
+      "author": "Moto \"Club4AG\" Miwa",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "Tom Bradley International Terminal taken from departing flight March 2016",
+      "url": "https://commons.wikimedia.org/wiki/File:Tom_Bradley_International_Terminal_taken_from_departing_flight_March_2016.jpg",
+      "author": "Agarre16",
+      "license": "CC-BY-SA-4.0"
+    }
+  ],
+  "detail": "models/la-lax-terminals-1-3.detail.glb",
+  "detailZoom": 16,
+  "file": "models/la-lax-terminals-1-3.glb",
+  "source": "generators/la-lax-terminals-1-3.ts"
+}

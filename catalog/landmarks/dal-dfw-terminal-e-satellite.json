@@ -1,0 +1,19 @@
+{
+  "id": "dal-dfw-terminal-e-satellite",
+  "name": "DFW Airport Terminal E Satellite",
+  "model": "dal-dfw-terminal-e-satellite",
+  "place": "dallas-area",
+  "lng": -97.0343782,
+  "lat": 32.8878184,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/446373513",
+    "way/448018751",
+    "way/448018752",
+    "way/448018753",
+    "way/448018754",
+    "way/448018755"
+  ]
+}

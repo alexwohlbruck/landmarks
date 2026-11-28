@@ -1,0 +1,26 @@
+{
+  "id": "amsterdam-schiphol-terminal",
+  "name": "Amsterdam Airport Schiphol terminal",
+  "model": "amsterdam-schiphol-terminal",
+  "place": "amsterdam",
+  "lng": 4.762773,
+  "lat": 52.309903,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/268641398",
+    "way/268641343",
+    "way/521074357",
+    "way/521074358",
+    "way/521074359",
+    "way/521074360",
+    "way/521074361",
+    "way/521074362",
+    "way/521074363",
+    "way/521074365",
+    "way/521074366",
+    "way/521074367",
+    "way/521074368"
+  ]
+}

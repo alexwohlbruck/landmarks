@@ -1,0 +1,18 @@
+{
+  "id": "cairo-egyptian-museum",
+  "name": "Egyptian Museum",
+  "model": "cairo-egyptian-museum",
+  "place": "cairo",
+  "lng": 31.233607,
+  "lat": 30.047797,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q201219",
+  "replaces": [
+    "way/10873198",
+    "way/1426262310",
+    "way/1426262311",
+    "way/1426262312"
+  ]
+}

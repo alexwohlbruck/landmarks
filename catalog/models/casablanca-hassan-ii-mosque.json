@@ -1,0 +1,89 @@
+{
+  "id": "casablanca-hassan-ii-mosque",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mosque",
+    "minaret",
+    "religious",
+    "moroccan-architecture"
+  ],
+  "description": "Casablanca's great mosque (1993) on its deck over the Atlantic: the 210 m minaret, turned 45 degrees to the prayer hall, with its sebka lattice, green zellige band, stepped merlons and lantern, and the hall's green-tiled roofs, clerestory and courtyard arcades.",
+  "reviewStatus": "unreviewed",
+  "detail": "models/casablanca-hassan-ii-mosque.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hassan II Mosque - general framing, Casablanca, Morocco",
+      "url": "https://commons.wikimedia.org/wiki/File:Hassan_II_Mosque_-_general_framing,_Casablanca,_Morocco.jpg",
+      "author": "Tinuzzo",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Minaret tower of the Hassan II Mosque, Casablanca, Morocco",
+      "url": "https://commons.wikimedia.org/wiki/File:Minaret_tower_of_the_Hassan_II_Mosque,_Casablanca,_Morocco.jpg",
+      "author": "Tinuzzo",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Mosquée Hassan 2 front view",
+      "url": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_Hassan_2_front_view.jpg",
+      "author": "Cesar.mx22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hassan II Mosque and Its Minaret in Casablanca, Morocco 2",
+      "url": "https://commons.wikimedia.org/wiki/File:Hassan_II_Mosque_and_Its_Minaret_in_Casablanca,_Morocco_2.jpg",
+      "author": "Dahbi fatima zahrae",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Whispers of Gold - Hassan II Mosque at Dusk",
+      "url": "https://commons.wikimedia.org/wiki/File:Whispers_of_Gold_-_Hassan_II_Mosque_at_Dusk.jpg",
+      "author": "OussamaHamama",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Open Area of Hassan II Mosque - Casablanca Morocco",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Open_Area_of_Hassan_II_Mosque_-_Casablanca_Morocco.jpg",
+      "author": "Ayman.mesa25",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Casablanca panorama",
+      "url": "https://commons.wikimedia.org/wiki/File:Casablanca_panorama.jpg",
+      "author": "Sgroey",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Mosquee Hassan II - panoramio",
+      "url": "https://commons.wikimedia.org/wiki/File:Mosquee_Hassan_II_-_panoramio.jpg",
+      "author": "Jürgen Schneider",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Minaret de Casablanca -2-",
+      "url": "https://commons.wikimedia.org/wiki/File:Minaret_de_Casablanca_-2-.jpg",
+      "author": "Farid mernissi",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/casablanca-hassan-ii-mosque.glb",
+  "source": "generators/casablanca-hassan-ii-mosque.ts"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "rabat-hassan-tower",
+  "name": "Hassan Tower",
+  "model": "rabat-hassan-tower",
+  "place": "rabat",
+  "lng": -6.822788,
+  "lat": 34.024135,
+  "bearing": 335.6,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q579331",
+  "replaces": [
+    "way/253426261"
+  ]
+}

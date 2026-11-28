@@ -1,0 +1,19 @@
+{
+  "id": "amsterdam-schiphol-piers-e-h",
+  "name": "Amsterdam Airport Schiphol piers E, F, G and H",
+  "model": "amsterdam-schiphol-piers-e-h",
+  "place": "amsterdam",
+  "lng": 4.761681,
+  "lat": 52.312022,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/268641332",
+    "way/268641334",
+    "way/268641335",
+    "way/268641337",
+    "way/268641362",
+    "way/749201920"
+  ]
+}

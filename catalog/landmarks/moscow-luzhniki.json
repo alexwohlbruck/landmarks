@@ -1,0 +1,20 @@
+{
+  "id": "moscow-luzhniki",
+  "name": "Luzhniki Stadium",
+  "model": "moscow-luzhniki",
+  "place": "moscow",
+  "lng": 37.5537595,
+  "lat": 55.7157388,
+  "bearing": 136,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q202163",
+  "replaces": [
+    "relation/4112951",
+    "relation/3644276",
+    "relation/3646204",
+    "relation/3646205",
+    "relation/3646206",
+    "relation/3646234"
+  ]
+}

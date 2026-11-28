@@ -1,0 +1,57 @@
+{
+  "id": "istanbul-airport-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Istanbul airport tower",
+      "url": "https://commons.wikimedia.org/wiki/File:Istanbul_airport_tower.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "Istanbul Airport \"Lalekule\"",
+      "url": "https://commons.wikimedia.org/wiki/File:Istanbul_Airport_%22Lalekule%22.jpg",
+      "author": "TurkAviator",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tower of Istanbul Airport",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_of_Istanbul_Airport.jpg",
+      "author": "BSRF",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Istanbul new airport under construction, April 13, 2018",
+      "url": "https://commons.wikimedia.org/wiki/File:Istanbul_new_airport_under_construction,_April_13,_2018.jpg",
+      "author": "Mark Lowen",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/istanbul-airport-control-tower.detail.glb",
+  "detailZoom": 16,
+  "file": "models/istanbul-airport-control-tower.glb",
+  "source": "generators/istanbul-airport-control-tower.ts"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "london-stamford-bridge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/london-stamford-bridge.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "London Stamford Bridge.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:London_Stamford_Bridge.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "2023 09 09 arne mueseler 12 51 33 00728-Verbessert-RR (53284589160).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2023_09_09_arne_mueseler_12_51_33_00728-Verbessert-RR_(53284589160).jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Stamford Bridge - Home of Chelsea FC - geograph.org.uk - 5775784.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stamford_Bridge_-_Home_of_Chelsea_FC_-_geograph.org.uk_-_5775784.jpg",
+      "author": "Anthony Parkes",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Stamford Bridge Clear Skies.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Stamford_Bridge_Clear_Skies.JPG",
+      "author": "Lachlan Fearnley",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Inside of Stamford Bridge Stadium.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Inside_of_Stamford_Bridge_Stadium.jpg",
+      "author": "Kinkreet",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "The East Stand at Stamford Bridge - geograph.org.uk - 5661317.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_East_Stand_at_Stamford_Bridge_-_geograph.org.uk_-_5661317.jpg",
+      "author": "Steve Daniels",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Back of the East Stand - geograph.org.uk - 8037328.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Back_of_the_East_Stand_-_geograph.org.uk_-_8037328.jpg",
+      "author": "Mr Ignavy",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/london-stamford-bridge.glb",
+  "source": "generators/london-stamford-bridge.ts"
+}

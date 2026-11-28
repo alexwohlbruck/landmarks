@@ -1,0 +1,51 @@
+{
+  "id": "chi-ohare-terminal-5",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Chicago O'Hare Terminal 5 Aerial",
+      "url": "https://www.flickr.com/photos/formulanone/49972571983",
+      "author": "formulanone",
+      "license": "CC-BY-SA-2.0"
+    },
+    {
+      "title": "At Chicago 2024 107",
+      "url": "https://commons.wikimedia.org/wiki/File:At_Chicago_2024_107.jpg",
+      "author": "Mike Peel",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "At Chicago 2024 108",
+      "url": "https://commons.wikimedia.org/wiki/File:At_Chicago_2024_108.jpg",
+      "author": "Mike Peel",
+      "license": "CC-BY-SA-4.0"
+    }
+  ],
+  "detail": "models/chi-ohare-terminal-5.detail.glb",
+  "detailZoom": 16,
+  "file": "models/chi-ohare-terminal-5.glb",
+  "source": "generators/chi-ohare-terminal-5.ts"
+}

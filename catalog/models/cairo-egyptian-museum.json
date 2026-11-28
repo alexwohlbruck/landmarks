@@ -1,0 +1,68 @@
+{
+  "id": "cairo-egyptian-museum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "neoclassical",
+    "historic",
+    "dome"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Facade of the Egyptian Museum, Tahrir Square, Cairo, Egypt1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Facade_of_the_Egyptian_Museum,_Tahrir_Square,_Cairo,_Egypt1.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Egyptian Museum entrance DSCF0770.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Egyptian_Museum_entrance_DSCF0770.jpg",
+      "author": "R Prazeres",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Egyptian Museum in Cairo in May 2015.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Egyptian_Museum_in_Cairo_in_May_2015.JPG",
+      "author": "MusikAnimal",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Egyptian Museum in Cairo Far view.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Egyptian_Museum_in_Cairo_Far_view.JPG",
+      "author": "Johnny 201",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Egyptian Museum, in Cairo - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Egyptian_Museum,_in_Cairo_-_panoramio.jpg",
+      "author": "Maris Teteris",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "The Egyptian Museum in Cairo, Egypt (2743500211).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Egyptian_Museum_in_Cairo,_Egypt_(2743500211).jpg",
+      "author": "V Manninen",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/cairo-egyptian-museum.glb",
+  "source": "generators/cairo-egyptian-museum.ts"
+}

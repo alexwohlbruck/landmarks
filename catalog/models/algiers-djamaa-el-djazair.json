@@ -1,0 +1,88 @@
+{
+  "id": "algiers-djamaa-el-djazair",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mosque",
+    "minaret",
+    "contemporary",
+    "religious"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Djamaa El Djazaïr 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Djamaa_El_Djazaïr_2.jpg",
+      "author": "Abdellah zou",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Djamae El Djazayer- جامع الجزائر.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Djamae_El_Djazayer-_جامع_الجزائر.jpg",
+      "author": "Abdellah zou",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Djamaa el Djazaïr جامع الجزائر.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Djamaa_el_Djazaïr_جامع_الجزائر.jpg",
+      "author": "Idir Amokrane",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "La cour et le minaret de Djamaâ El Djazaïr.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:La_cour_et_le_minaret_de_Djamaâ_El_Djazaïr.jpg",
+      "author": "Riad Salih",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Mosque of Algiers dome 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mosque_of_Algiers_dome_2.jpg",
+      "author": "Abdellah zou",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Djamaâ El Djazaïr – The Great Mosque of Algiers 5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Djamaâ_El_Djazaïr_–_The_Great_Mosque_of_Algiers_5.jpg",
+      "author": "Rachid Hamatou",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Djamaa el Djazaïr 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Djamaa_el_Djazaïr_1.jpg",
+      "author": "Rachid Hamatou",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Djamaa el Djazaïr night.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Djamaa_el_Djazaïr_night.jpg",
+      "author": "Rachid Hamatou",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Djamaâ El-Djazaïr - 20240405 201122293.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Djamaâ_El-Djazaïr_-_20240405_201122293.jpg",
+      "author": "Riad Salih",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "detail": "models/algiers-djamaa-el-djazair.detail.glb",
+  "detailZoom": 17,
+  "file": "models/algiers-djamaa-el-djazair.glb",
+  "source": "generators/algiers-djamaa-el-djazair.ts"
+}

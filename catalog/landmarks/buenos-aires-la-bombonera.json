@@ -1,0 +1,17 @@
+{
+  "id": "buenos-aires-la-bombonera",
+  "name": "La Bombonera",
+  "model": "buenos-aires-la-bombonera",
+  "place": "buenos-aires",
+  "lng": -58.364665,
+  "lat": -34.635625,
+  "bearing": 333.3,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q499855",
+  "replaces": [
+    "way/369948707",
+    "way/503647155",
+    "way/248598885"
+  ]
+}

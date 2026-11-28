@@ -1,0 +1,105 @@
+{
+  "id": "giza-grand-egyptian-museum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "contemporary",
+    "obelisk"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Grand Egyptian Museum - EGWUG Trip (2).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum_-_EGWUG_Trip_(2).jpg",
+      "author": "Ibrahim.ID",
+      "license": "Public domain"
+    },
+    {
+      "title": "Grand Egyptian Museum 2025 (57645).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum_2025_(57645).jpg",
+      "author": "Amr F.Nagy",
+      "license": "Public domain"
+    },
+    {
+      "title": "Grand Egyptian Museum 2025 (77418).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum_2025_(77418).jpg",
+      "author": "Amr F.Nagy",
+      "license": "Public domain"
+    },
+    {
+      "title": "Grand Egyptian Museum Facade 3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum_Facade_3.jpg",
+      "author": "Slyronit",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Grand Egyptian Museum 2019-11-05a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum_2019-11-05a.jpg",
+      "author": "Djehouty",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Grand Egyptian Museum 2019-11-07b.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum_2019-11-07b.jpg",
+      "author": "Djehouty",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Grand Egyptian Museum.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum.jpg",
+      "author": "Mohamed abdelzaher",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Grand Egyptian Museum 2019-11-07j.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum_2019-11-07j.jpg",
+      "author": "Djehouty",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Main Galleries plan in grand egyptian museum.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Main_Galleries_plan_in_grand_egyptian_museum.jpg",
+      "author": "Richard Mortel",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Grand Egyptian Museum (GEM) 2025 00.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum_(GEM)_2025_00.jpg",
+      "author": "ولاء",
+      "license": "Public domain"
+    },
+    {
+      "title": "Grand Egyptian Museum (GEM) 2025 12.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum_(GEM)_2025_12.jpg",
+      "author": "ولاء",
+      "license": "Public domain"
+    },
+    {
+      "title": "Grand Egyptian Museum (GEM) 2025 13.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum_(GEM)_2025_13.jpg",
+      "author": "ولاء",
+      "license": "Public domain"
+    }
+  ],
+  "detail": "models/giza-grand-egyptian-museum.detail.glb",
+  "detailZoom": 17,
+  "file": "models/giza-grand-egyptian-museum.glb",
+  "source": "generators/giza-grand-egyptian-museum.ts"
+}

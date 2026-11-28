@@ -1,0 +1,75 @@
+{
+  "id": "osaka-tempozan-ferris-wheel",
+  "file": "models/osaka-tempozan-ferris-wheel.glb",
+  "detail": "models/osaka-tempozan-ferris-wheel.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/osaka-tempozan-ferris-wheel.ts",
+  "collection": "landmarks",
+  "type": "ride",
+  "tags": [
+    "ferris-wheel",
+    "animated"
+  ],
+  "description": "112.5 m Ferris wheel (1997) at Tempozan Harbor Village: a 100 m truss rim on crossed spokes, two white lattice A-frames, 60 gondolas in arcs of colour, and the LED rim that forecasts the weather at night. It turns.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Grand ferris wheel of Tempozan Harbor Village.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_ferris_wheel_of_Tempozan_Harbor_Village.jpg",
+      "author": "そらみみ",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Grand ferris wheel of Tempozan Harbor Village 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_ferris_wheel_of_Tempozan_Harbor_Village_2.jpg",
+      "author": "そらみみ",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Grand ferris wheel of Tempozan Harbor Village 3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_ferris_wheel_of_Tempozan_Harbor_Village_3.jpg",
+      "author": "そらみみ",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Grand ferris wheel of Tempozan Harbor Village from Tempozan Park.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_ferris_wheel_of_Tempozan_Harbor_Village_from_Tempozan_Park.jpg",
+      "author": "そらみみ",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Tempozan giant wheel02s2048.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tempozan_giant_wheel02s2048.jpg",
+      "author": "663highland",
+      "license": "CC-BY-2.5"
+    },
+    {
+      "title": "Tempozan Giant Ferris Wheel upwards view.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tempozan_Giant_Ferris_Wheel_upwards_view.jpg",
+      "author": "Jason Zhang",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Ajigawa River and grand ferris wheel of Tempozan Harbor Village from Tempozan Ferry.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Ajigawa_River_and_grand_ferris_wheel_of_Tempozan_Harbor_Village_from_Tempozan_Ferry.jpg",
+      "author": "そらみみ",
+      "license": "CC-BY-SA-4.0"
+    }
+  ]
+}

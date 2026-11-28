@@ -1,0 +1,57 @@
+{
+  "id": "london-heathrow-terminal-3",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Heathrow Airport Terminal 3 from the air (5145243)",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_Airport_Terminal_3_from_the_air_-_geograph.org.uk_-_5145243.jpg",
+      "author": "Thomas Nugent",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Heathrow Airport Terminal 3 from the air (5145240)",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_Airport_Terminal_3_from_the_air_-_geograph.org.uk_-_5145240.jpg",
+      "author": "Thomas Nugent",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Heathrow Airport Terminal 3 (August 2023) 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_Airport_Terminal_3_(August_2023)_01.jpg",
+      "author": "DiscoA340",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Forecourt of Heathrow Terminal 3 (geograph 6090219)",
+      "url": "https://commons.wikimedia.org/wiki/File:Forecourt_of_Heathrow_Terminal_3_(geograph_6090219).jpg",
+      "author": "David Martin",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "detail": "models/london-heathrow-terminal-3.detail.glb",
+  "detailZoom": 16,
+  "file": "models/london-heathrow-terminal-3.glb",
+  "source": "generators/london-heathrow-terminal-3.ts"
+}

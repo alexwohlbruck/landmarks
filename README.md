@@ -72,8 +72,8 @@ bun install
 | `bun run preview <id> [--night]` | Render a model from every side into `preview/<id>/` |
 | `bun run sheet --terrain <id ...>` | Contact sheets for a list of landmarks, on the map's terrain |
 | `bun run sync:sources` | Refresh the checked-in OpenLandmarks metadata snapshot |
-| `bun run validate` | Check the catalog and every model |
-| `bun test` / `bun run typecheck` | Tests and types |
+| `bun run validate` | Check the catalog, and the models this branch adds or changes (`--all` for every model) |
+| `bun test` / `bun run typecheck` | Tests (against changed models; `LANDMARKS_ALL=1` for all) and types |
 
 ## Running and publishing the demo
 

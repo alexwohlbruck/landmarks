@@ -1,0 +1,16 @@
+{
+  "id": "frankfurt-alte-nikolaikirche",
+  "name": "Alte Nikolaikirche",
+  "model": "frankfurt-alte-nikolaikirche",
+  "place": "frankfurt",
+  "lng": 8.6823425,
+  "lat": 50.1099787,
+  "bearing": -14.7,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q436054",
+  "replaces": [
+    "way/27769415",
+    "way/174637354"
+  ]
+}

@@ -396,12 +396,10 @@ committed on the PR branch and linked by commit:
    stay reachable through the PR's commits. The release workflow warns on
    `main` if `review/` is still there.
 
-The `Contact sheets` workflow also draws the sheets for every pull request
-that touches `models/`, `generators/` or `catalog/`, and
-`Contact sheets comment` posts them as one comment, updated on each push.
-The images live on the `pr-sheets` branch. The comment is a backstop for
-pull requests that came without sheets; still put your own in the
-description.
+No workflow draws or posts sheets: whoever opens the pull request (you or
+your agent) makes them with `--terrain`, commits them and embeds them in the
+description before asking for review. Redraw and re-link them after any
+change to a model, so the description always shows the PR's head.
 
 ## Releases
 

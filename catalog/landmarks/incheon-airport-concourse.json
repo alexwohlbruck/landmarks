@@ -1,0 +1,14 @@
+{
+  "id": "incheon-airport-concourse",
+  "name": "Incheon International Airport Concourse",
+  "model": "incheon-airport-concourse",
+  "place": "incheon",
+  "lng": 126.4449697,
+  "lat": 37.4559138,
+  "bearing": -35.3,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/6309696"
+  ]
+}

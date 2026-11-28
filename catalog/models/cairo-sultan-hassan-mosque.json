@@ -1,0 +1,78 @@
+{
+  "id": "cairo-sultan-hassan-mosque",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mosque",
+    "madrasa",
+    "mamluk",
+    "historic",
+    "dome",
+    "minaret"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Madrassa of Sultan Hassan & Al-Rifa'i Mosque seen from the Citadel, Cairo (2272266941).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Madrassa_of_Sultan_Hassan_%26_Al-Rifa%27i_Mosque_seen_from_the_Citadel,_Cairo_(2272266941).jpg",
+      "author": "Dan from Brussels",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Al-Rifa'i & Sultan Hassan Mosques.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Al-Rifa'i_%26_Sultan_Hassan_Mosques.jpg",
+      "author": "Hesham Ebaid",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Kairo Sultan Hassan Moschee BW 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kairo_Sultan_Hassan_Moschee_BW_1.jpg",
+      "author": "Berthold Werner",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Mosque-Madrassa of Sultan Hassan - Cairo, Egypt.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mosque-Madrassa_of_Sultan_Hassan_-_Cairo,_Egypt.jpg",
+      "author": "David Berkowitz",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Sultan Hasan Main Entrance.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sultan_Hasan_Main_Entrance.jpg",
+      "author": "Keladawy",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cairo, the Mosque of Sultan Hassan and the Ar-Rif (6201079985).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cairo,_the_Mosque_of_Sultan_Hassan_and_the_Ar-Rif_(6201079985).jpg",
+      "author": "Arian Zwegers",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Mosque-Madrasa of Sultan Hasan plan.svg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mosque-Madrasa_of_Sultan_Hasan_plan.svg",
+      "author": "براء",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/cairo-sultan-hassan-mosque.detail.glb",
+  "detailZoom": 17,
+  "file": "models/cairo-sultan-hassan-mosque.glb",
+  "source": "generators/cairo-sultan-hassan-mosque.ts"
+}

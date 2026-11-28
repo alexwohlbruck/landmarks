@@ -1,0 +1,57 @@
+{
+  "id": "dal-dfw-terminal-b",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/dal-dfw-terminal-b.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "DFW Terminal",
+      "url": "https://commons.wikimedia.org/wiki/File:DFW_Terminal_(4726436388).jpg",
+      "author": "Bill Larkins",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "DFW Skylink",
+      "url": "https://www.flickr.com/photos/34128007@N04/52112908762",
+      "author": "Thank You (23 Millions+)",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Terminal E at Dallas Fort Worth International Airport, aerial view from cabin window during takeoff",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_E_at_Dallas_Fort_Worth_International_Airport,_aerial_view_from_cabin_window_during_takeoff,_2023-02-18.jpg",
+      "author": "Tim Kiser",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Skylink at Terminal E",
+      "url": "https://commons.wikimedia.org/wiki/File:Skylink_at_Terminal_E.jpg",
+      "author": "Baseball Watcher",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/dal-dfw-terminal-b.glb",
+  "source": "generators/dal-dfw-terminal-b.ts"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "frankfurt-commerzbank-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "skyline",
+    "high-tech"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/frankfurt-commerzbank-tower.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Commerzbank Tower from Main Tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Commerzbank_Tower_from_Main_Tower.jpg",
+      "author": "T. Gozdziewicz",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Commerzbank Tower Frankfurt.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Commerzbank_Tower_Frankfurt.jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "2015-03-04 Top of Commerzbank Tower Frankfurt Main Hesse Germany.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2015-03-04_Top_of_Commerzbank_Tower_Frankfurt_Main_Hesse_Germany.jpg",
+      "author": "Norbert Nagel",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Frankfurt Commerzbank Tower (Kaiserplatz).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Commerzbank_Tower_(Kaiserplatz).jpg",
+      "author": "Tilman AB",
+      "license": "CC0"
+    },
+    {
+      "title": "Frankfurt Am Main-Commerzbank Tower-Ansicht vom Eisernen Steg.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Commerzbank_Tower-Ansicht_vom_Eisernen_Steg.jpg",
+      "author": "Mylius",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Commerzbank Tower Night View.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Commerzbank_Tower_Night_View.jpg",
+      "author": "Andreas Trojak",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/frankfurt-commerzbank-tower.glb",
+  "source": "generators/frankfurt-commerzbank-tower.ts"
+}

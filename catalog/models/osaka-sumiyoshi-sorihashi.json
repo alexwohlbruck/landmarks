@@ -1,0 +1,51 @@
+{
+  "id": "osaka-sumiyoshi-sorihashi",
+  "file": "models/osaka-sumiyoshi-sorihashi.glb",
+  "license": "CC0-1.0",
+  "source": "generators/osaka-sumiyoshi-sorihashi.ts",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "shrine",
+    "footbridge",
+    "historic",
+    "japanese-architecture"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "The Sorihashi of Sumiyoshi Taisha: a steep vermilion arched footbridge, about 20 m long and 4.4 m high, on Keichō-era stone piers over the shrine pond.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Sorihashi Bridge in Sumiyoshi Grand Shrine.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sorihashi_Bridge_in_Sumiyoshi_Grand_Shrine.jpg",
+      "author": "Soramimi",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Sorihashi Bridge in Sumiyoshi Grand Shrine 6.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sorihashi_Bridge_in_Sumiyoshi_Grand_Shrine_6.jpg",
+      "author": "Soramimi",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Sorihashi Bridge, Sumiyoshi-taisha Shrine - Oct 15, 2015.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sorihashi_Bridge,_Sumiyoshi-taisha_Shrine_-_Oct_15,_2015.jpg",
+      "author": "chiron3636",
+      "license": "CC-BY-2.0"
+    }
+  ]
+}

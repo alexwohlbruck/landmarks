@@ -1,0 +1,16 @@
+{
+  "id": "frankfurt-opernturm",
+  "name": "OpernTurm",
+  "model": "frankfurt-opernturm",
+  "place": "frankfurt",
+  "lng": 8.670129,
+  "lat": 50.116132,
+  "bearing": 20.1,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q686644",
+  "replaces": [
+    "way/117615942",
+    "way/317389956"
+  ]
+}

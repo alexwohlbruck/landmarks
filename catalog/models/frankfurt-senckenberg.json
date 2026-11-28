@@ -1,0 +1,83 @@
+{
+  "id": "frankfurt-senckenberg",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "natural-history-museum",
+    "historic",
+    "neo-baroque",
+    "dinosaur"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Senckenberg Naturmuseum",
+      "url": "https://commons.wikimedia.org/wiki/File:Senckenberg_Naturmuseum.jpg",
+      "author": "Daniel Falke",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Senckenberg Museum building",
+      "url": "https://commons.wikimedia.org/wiki/File:Senckenberg_Museum_building.jpg",
+      "author": "Yair Haklai",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Front facade - Naturmuseum Senckenberg - DSC02288",
+      "url": "https://commons.wikimedia.org/wiki/File:Front_facade_-_Naturmuseum_Senckenberg_-_DSC02288.JPG",
+      "author": "Daderot",
+      "license": "CC0"
+    },
+    {
+      "title": "Chronos and relief - Naturmuseum Senckenberg - DSC02283",
+      "url": "https://commons.wikimedia.org/wiki/File:Chronos_and_relief_-_Naturmuseum_Senckenberg_-_DSC02283.JPG",
+      "author": "Daderot",
+      "license": "CC0"
+    },
+    {
+      "title": "Senckenberg Museum Frankfurt",
+      "url": "https://commons.wikimedia.org/wiki/File:Senckenberg_Museum_Frankfurt.jpg",
+      "author": "Grimes2",
+      "license": "CC0"
+    },
+    {
+      "title": "Senckenberg Museum Frankfurt am Main",
+      "url": "https://commons.wikimedia.org/wiki/File:Senckenberg_Museum_Frankfurt_am_Main.jpg",
+      "author": "Ugureisberg",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "ETH-BIB-Senckenberg, Museum, Universität, Fliegerbild, Frankfurt am Main-Dia 247-02466",
+      "url": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Senckenberg,_Museum,_Universit%C3%A4t,_Fliegerbild,_Frankfurt_am_Main-Dia_247-02466.tif",
+      "author": "Leo Wehrli",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Bundesarchiv B 145 Bild-F049012-0014, Frankfurt-Main, Universität",
+      "url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F049012-0014,_Frankfurt-Main,_Universit%C3%A4t.jpg",
+      "author": "Detlef Gräfingholt",
+      "license": "CC BY-SA 3.0 de"
+    }
+  ],
+  "detail": "models/frankfurt-senckenberg.detail.glb",
+  "detailZoom": 17,
+  "file": "models/frankfurt-senckenberg.glb",
+  "source": "generators/frankfurt-senckenberg.ts"
+}

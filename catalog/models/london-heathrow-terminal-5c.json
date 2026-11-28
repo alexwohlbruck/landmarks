@@ -1,0 +1,46 @@
+{
+  "id": "london-heathrow-terminal-5c",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "concourse",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Gate C62, London Heathrow Terminal 5C",
+      "url": "https://commons.wikimedia.org/wiki/File:Gate_C62,_London_Heathrow_Terminal_5C_-_geograph.org.uk_-_7866579.jpg",
+      "author": "Richard Cooke",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Heathrow terminal 5 from air",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_terminal_5_from_air.JPG",
+      "author": "Clayton Tang",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/london-heathrow-terminal-5c.detail.glb",
+  "detailZoom": 16,
+  "file": "models/london-heathrow-terminal-5c.glb",
+  "source": "generators/london-heathrow-terminal-5c.ts"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "la-lax-terminals-4-8",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "LAX Terminal 4",
+      "url": "https://commons.wikimedia.org/wiki/File:LAX_Terminal_4_(27658741614).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "LAX - Delta Air Lines Terminal 5",
+      "url": "https://commons.wikimedia.org/wiki/File:LAX_-_Delta_Air_Lines_Terminal_5_(24162227815).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "LAX - UA at Terminal 7 (2)",
+      "url": "https://commons.wikimedia.org/wiki/File:LAX_-_UA_at_Terminal_7_(2)_(24165494775).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "LAX Terminal 8",
+      "url": "https://commons.wikimedia.org/wiki/File:LAX_Terminal_8_(5801982092).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC-BY-2.0"
+    }
+  ],
+  "detail": "models/la-lax-terminals-4-8.detail.glb",
+  "detailZoom": 16,
+  "file": "models/la-lax-terminals-4-8.glb",
+  "source": "generators/la-lax-terminals-4-8.ts"
+}

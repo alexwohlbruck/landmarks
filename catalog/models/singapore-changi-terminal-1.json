@@ -1,0 +1,61 @@
+{
+  "id": "singapore-changi-terminal-1",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Changi Airport Terminal 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_Airport_Terminal_1.jpg",
+      "author": "Nigos",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Changi Airport, Terminal 1.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_Airport,_Terminal_1.JPG",
+      "author": "Terence Ong",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "Changi Airport, Terminal 1, Departure Driveway.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_Airport,_Terminal_1,_Departure_Driveway.JPG",
+      "author": "Terence Ong",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "Vu d’extérieur de Jewel Changi.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vu_d%E2%80%99ext%C3%A9rieur_de_Jewel_Changi.jpg",
+      "author": "ArnoBOUJIKA",
+      "license": "CC0"
+    },
+    {
+      "title": "Jewel Mall - Near.Singapore.Terminal 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jewel_Mall_-_Near.Singapore.Terminal_1.jpg",
+      "author": "Samyamlpradhan",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/singapore-changi-terminal-1.glb",
+  "source": "generators/singapore-changi-terminal-1.ts"
+}

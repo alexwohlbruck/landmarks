@@ -1,0 +1,89 @@
+{
+  "id": "singapore-changi-jewel",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "mall",
+    "dome",
+    "glass",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Jewel Changi Airport exterior with control tower.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Jewel_Changi_Airport_exterior_with_control_tower.png",
+      "author": "RectorRocks",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Jewel-Changi Airport.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jewel-Changi_Airport.jpg",
+      "author": "LanBo0428",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Night Light Jewel Changi Singapore Feb23 R16 06864.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Night_Light_Jewel_Changi_Singapore_Feb23_R16_06864.jpg",
+      "author": "Timothy A. Gonsalves",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Jewel Mall within Changi Airport area in Singapore - Ypphotography.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jewel_Mall_within_Changi_Airport_area_in_Singapore_-_Ypphotography.jpg",
+      "author": "Phuan Yan Penh",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Singapore Airport, Jewel Changi, 20230722 (2) (53337065472).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Singapore_Airport,_Jewel_Changi,_20230722_(2)_(53337065472).jpg",
+      "author": "Takeshi Aida from Hong Kong, Hong Kong",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Jewel Mall - Near.Singapore.Terminal 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jewel_Mall_-_Near.Singapore.Terminal_1.jpg",
+      "author": "Samyamlpradhan",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Singapore Changi Airport with Jewel in the background.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Singapore_Changi_Airport_with_Jewel_in_the_background.jpg",
+      "author": "George Tan from Singapore",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Jewel Changi Airport sunset.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jewel_Changi_Airport_sunset.jpg",
+      "author": "Gerald Waldo Luis",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Project Jewel Photo 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Project_Jewel_Photo_1.jpg",
+      "author": "Changi Airport Group",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "detail": "models/singapore-changi-jewel.detail.glb",
+  "detailZoom": 16,
+  "file": "models/singapore-changi-jewel.glb",
+  "source": "generators/singapore-changi-jewel.ts"
+}

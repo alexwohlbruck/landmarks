@@ -1,0 +1,17 @@
+{
+  "id": "osaka-tenmangu",
+  "name": "Ōsaka Tenmangū",
+  "model": "osaka-tenmangu",
+  "place": "osaka",
+  "lng": 135.5126671,
+  "lat": 34.6958892,
+  "bearing": 356,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q385793",
+  "replaces": [
+    "way/164672867",
+    "way/231529765",
+    "way/179076090"
+  ]
+}

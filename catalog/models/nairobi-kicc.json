@@ -1,0 +1,82 @@
+{
+  "id": "nairobi-kicc",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "convention-centre",
+    "skyscraper",
+    "modernist",
+    "helipad"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kenyatta International Convention Centre 07.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kenyatta_International_Convention_Centre_07.jpg",
+      "author": "Francis Akuka for the Wikimedia Foundation",
+      "license": "CC0"
+    },
+    {
+      "title": "Kenyatta International Convention Centre 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kenyatta_International_Convention_Centre_02.jpg",
+      "author": "Francis Akuka for the Wikimedia Foundation",
+      "license": "CC0"
+    },
+    {
+      "title": "Kenyatta International Convention Centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kenyatta_International_Convention_Centre.jpg",
+      "author": "Francis Akuka for the Wikimedia Foundation",
+      "license": "CC0"
+    },
+    {
+      "title": "Kenyatta International Convention Centre, Nairobi, by Karl Henrik Nøstvik architect, general.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kenyatta_International_Convention_Centre,_Nairobi,_by_Karl_Henrik_N%C3%B8stvik_architect,_general.jpg",
+      "author": "IndicibleEspace",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Jomo Kenyatta Statue and KICC.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jomo_Kenyatta_Statue_and_KICC.jpg",
+      "author": "Jnncreatives",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kenyatta International Convention Centre - BugWarp (6).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kenyatta_International_Convention_Centre_-_BugWarp_(6).jpg",
+      "author": "BugWarp",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lascar Kenyatta International Conference Center (4522598390).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lascar_Kenyatta_International_Conference_Center_(4522598390).jpg",
+      "author": "Jorge Láscar",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "The Kenyatta International Convention Centre Amphitheatre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Kenyatta_International_Convention_Centre_Amphitheatre.jpg",
+      "author": "Giluwa",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/nairobi-kicc.detail.glb",
+  "detailZoom": 17,
+  "file": "models/nairobi-kicc.glb",
+  "source": "generators/nairobi-kicc.ts"
+}

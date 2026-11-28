@@ -1,0 +1,93 @@
+{
+  "id": "liverpool-anfield",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/liverpool-anfield.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "2023 07 31 arne mueseler 00001-Verbessert-RR (53106257591).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2023_07_31_arne_mueseler_00001-Verbessert-RR_(53106257591).jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "2023 07 31 arne mueseler 00005-Verbessert-RR (53106668815).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2023_07_31_arne_mueseler_00005-Verbessert-RR_(53106668815).jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "2023 07 31 arne mueseler 00008-Verbessert-RR (53106256081).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2023_07_31_arne_mueseler_00008-Verbessert-RR_(53106256081).jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "2023 07 31 arne mueseler 00010-Verbessert-RR (53106461109).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2023_07_31_arne_mueseler_00010-Verbessert-RR_(53106461109).jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "2023 07 31 arne mueseler 00027-Verbessert-RR (53105679317).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2023_07_31_arne_mueseler_00027-Verbessert-RR_(53105679317).jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Anfield Main Stand from Anfield Road.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Anfield_Main_Stand_from_Anfield_Road.jpg",
+      "author": "Rodhullandemu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Anfield Main Stand from Walton Breck Road.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Anfield_Main_Stand_from_Walton_Breck_Road.jpg",
+      "author": "Rodhullandemu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Anfield stadium in May 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Anfield_stadium_in_May_2024.jpg",
+      "author": "FYI2023",
+      "license": "CC0"
+    },
+    {
+      "title": "Anfield Road Stand in May 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Anfield_Road_Stand_in_May_2024.jpg",
+      "author": "FYI2023",
+      "license": "CC0"
+    },
+    {
+      "title": "Across Stanley Park to Anfield Stadium - geograph.org.uk - 7693643.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Across_Stanley_Park_to_Anfield_Stadium_-_geograph.org.uk_-_7693643.jpg",
+      "author": "Anthony Parkes",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/liverpool-anfield.glb",
+  "source": "generators/liverpool-anfield.ts"
+}
