@@ -1,0 +1,16 @@
+{
+  "id": "tor-first-canadian-place",
+  "name": "First Canadian Place",
+  "model": "tor-first-canadian-place",
+  "place": "toronto",
+  "lng": -79.3816906,
+  "lat": 43.6487663,
+  "bearing": 343.3,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q1052475",
+  "replaces": [
+    "way/27767627",
+    "way/289330446"
+  ]
+}

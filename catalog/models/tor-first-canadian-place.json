@@ -1,0 +1,49 @@
+{
+  "id": "tor-first-canadian-place",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "modernist",
+    "skyline"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "First Canadian Place August 2017 01",
+      "url": "https://commons.wikimedia.org/wiki/File:First_Canadian_Place_August_2017_01.jpg",
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Toronto Financial District August 2017",
+      "url": "https://commons.wikimedia.org/wiki/File:Toronto_Financial_District_August_2017.jpg",
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "City of Toronto 3D Massing 2025",
+      "url": "https://open.toronto.ca/dataset/3d-massing/",
+      "author": "City of Toronto",
+      "license": "Open Government Licence – Toronto"
+    }
+  ],
+  "file": "models/tor-first-canadian-place.glb",
+  "source": "generators/tor-first-canadian-place.ts"
+}
