@@ -1,0 +1,49 @@
+{
+  "id": "phx-mesa-arizona-temple",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "religious",
+    "temple",
+    "neoclassical",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Mesa Temple.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mesa_Temple.jpg",
+      "author": "midiman from Tempe",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Mesa Temple - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mesa_Temple_-_panoramio.jpg",
+      "author": "runt35",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "TempleMesaArizona.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:TempleMesaArizona.JPG",
+      "author": "Maithe38",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/phx-mesa-arizona-temple.glb",
+  "source": "generators/phx-mesa-arizona-temple.ts"
+}
