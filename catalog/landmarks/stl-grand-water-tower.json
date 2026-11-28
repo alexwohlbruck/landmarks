@@ -1,0 +1,14 @@
+{
+  "id": "stl-grand-water-tower",
+  "name": "Grand Avenue Water Tower",
+  "model": "stl-grand-water-tower",
+  "place": "st-louis-area",
+  "lng": -90.2085226,
+  "lat": 38.670465,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/238580241"
+  ]
+}
