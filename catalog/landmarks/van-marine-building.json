@@ -1,0 +1,23 @@
+{
+  "id": "van-marine-building",
+  "name": "Marine Building",
+  "model": "van-marine-building",
+  "place": "vancouver",
+  "lng": -123.117102,
+  "lat": 49.2875133,
+  "bearing": 45.7,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1326540",
+  "replaces": [
+    "way/125579375",
+    "way/360437838",
+    "way/360437839",
+    "way/360437840",
+    "way/360437841",
+    "way/360575454",
+    "way/360575455",
+    "way/360575458",
+    "way/360575460"
+  ]
+}

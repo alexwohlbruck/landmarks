@@ -1,0 +1,61 @@
+{
+  "id": "van-marine-building",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "art-deco",
+    "historic",
+    "office",
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Vancouver Marine Building.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Marine_Building.jpg",
+      "author": "Zhatt",
+      "license": "Public domain"
+    },
+    {
+      "title": "Marine Building Vancouver BC.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Marine_Building_Vancouver_BC.jpg",
+      "author": "Darren Kirby",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "View of the marine building from Howe street.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:View_of_the_marine_building_from_Howe_street.jpg",
+      "author": "Jc1599",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Marine Building - Vancouver, Canada - DSC06701.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Marine_Building_-_Vancouver,_Canada_-_DSC06701.JPG",
+      "author": "Daderot",
+      "license": "CC0"
+    },
+    {
+      "title": "City of Vancouver building footprints 2009 (lidar heights)",
+      "url": "https://opendata.vancouver.ca/explore/dataset/building-footprints-2009/",
+      "author": "City of Vancouver",
+      "license": "Open Government Licence - Vancouver"
+    }
+  ],
+  "file": "models/van-marine-building.glb",
+  "source": "generators/van-marine-building.ts"
+}
