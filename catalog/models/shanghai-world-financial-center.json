@@ -1,0 +1,67 @@
+{
+  "id": "shanghai-world-financial-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/shanghai-world-financial-center.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Shanghai Tower, Shanghai World Financial Center and Jin Mao Tower 20251126.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shanghai_Tower,_Shanghai_World_Financial_Center_and_Jin_Mao_Tower_20251126.jpg",
+      "author": "Supanut Arunopra",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Pudong Shanghai November 2017 panorama.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Pudong_Shanghai_November_2017_panorama.jpg",
+      "author": "King of Hearts",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Shanghai World Financial Center (Top).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shanghai_World_Financial_Center_(Top).jpg",
+      "author": "Gerbil",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Shanghai World Financial Center 20260418.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shanghai_World_Financial_Center_20260418.jpg",
+      "author": "DvTor8303",
+      "license": "CC0"
+    },
+    {
+      "title": "Shanghai World Financial Center from Shanghai Tower.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Shanghai_World_Financial_Center_from_Shanghai_Tower.png",
+      "author": "Sebastiandoe5",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Shanghai World Financial Center at night 03.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Shanghai_World_Financial_Center_at_night_03.JPG",
+      "author": "Römert",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/shanghai-world-financial-center.glb",
+  "source": "generators/shanghai-world-financial-center.ts"
+}

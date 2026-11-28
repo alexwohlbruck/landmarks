@@ -1,0 +1,67 @@
+{
+  "id": "kuwait-al-hamra-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/kuwait-al-hamra-tower.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Al Hamra Tower (Flickr 8013932911)",
+      "url": "https://www.flickr.com/photos/45953381@N05/8013932911",
+      "author": "robef (Rob Faulkner)",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Al-Hamra Tower. (Flickr 54191786972)",
+      "url": "https://www.flickr.com/photos/14759783@N04/54191786972",
+      "author": "young shanahan",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Kuwait City Kuwait Towers View to the al-Hamra Tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kuwait_City_Kuwait_Towers_View_to_the_al-Hamra_Tower.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Kuwait City Skyline 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kuwait_City_Skyline_2.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Kuwait City Kuwait Towers Panoramic View 4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kuwait_City_Kuwait_Towers_Panoramic_View_4.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Al Hamra Kuwait Mai 2010.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Al_Hamra_Kuwait_Mai_2010.jpg",
+      "author": "J.Stiegler",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/kuwait-al-hamra-tower.glb",
+  "source": "generators/kuwait-al-hamra-tower.ts"
+}

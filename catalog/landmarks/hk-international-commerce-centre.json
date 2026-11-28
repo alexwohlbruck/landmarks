@@ -1,0 +1,26 @@
+{
+  "id": "hk-international-commerce-centre",
+  "name": "International Commerce Centre",
+  "model": "hk-international-commerce-centre",
+  "place": "hong-kong",
+  "lng": 114.1602256,
+  "lat": 22.3033785,
+  "bearing": 42.3,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q317034",
+  "replaces": [
+    "way/25590249",
+    "way/200726092",
+    "way/1047822855",
+    "way/1047822856",
+    "way/1047822857",
+    "way/1047822858",
+    "way/1047822859",
+    "way/1047822860",
+    "way/1047822861",
+    "way/1047822862",
+    "way/1047822863",
+    "way/1047822864"
+  ]
+}

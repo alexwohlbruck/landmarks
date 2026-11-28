@@ -1,0 +1,15 @@
+{
+  "id": "chongqing-international-land-sea-center",
+  "name": "International Land-Sea Center",
+  "model": "chongqing-international-land-sea-center",
+  "place": "chongqing",
+  "lng": 106.5132279,
+  "lat": 29.5534317,
+  "bearing": 10,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q1666430",
+  "replaces": [
+    "way/1379102418"
+  ]
+}

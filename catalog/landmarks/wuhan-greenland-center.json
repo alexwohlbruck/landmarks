@@ -1,0 +1,15 @@
+{
+  "id": "wuhan-greenland-center",
+  "name": "Wuhan Greenland Center",
+  "model": "wuhan-greenland-center",
+  "place": "wuhan",
+  "lng": 114.3174016,
+  "lat": 30.5858044,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q143235",
+  "replaces": [
+    "way/533413541"
+  ]
+}

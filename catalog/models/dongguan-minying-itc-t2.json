@@ -1,0 +1,61 @@
+{
+  "id": "dongguan-minying-itc-t2",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/dongguan-minying-itc-t2.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Minying International Trade Center T2 in 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Minying_International_Trade_Center_T2_in_2021.jpg",
+      "author": "David290",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Minying International Trade Center, Dongguan-2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Minying_International_Trade_Center,_Dongguan-2022.jpg",
+      "author": "David290",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "东莞民盈国贸大厦T2 13122024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E4%B8%9C%E8%8E%9E%E6%B0%91%E7%9B%88%E5%9B%BD%E8%B4%B8%E5%A4%A7%E5%8E%A6T2_13122024.jpg",
+      "author": "TaiZiThee 832",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Dongguan, February 12, 2024 (2).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dongguan,_February_12,_2024_(2).jpg",
+      "author": "メイド理世",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "東莞國際貿易中心.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E8%8E%9E%E5%9C%8B%E9%9A%9B%E8%B2%BF%E6%98%93%E4%B8%AD%E5%BF%83.jpg",
+      "author": "David290",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/dongguan-minying-itc-t2.glb",
+  "source": "generators/dongguan-minying-itc-t2.ts"
+}

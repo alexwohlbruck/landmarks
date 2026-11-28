@@ -1,0 +1,73 @@
+{
+  "id": "shenzhen-kk100",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/shenzhen-kk100.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "KK100 exterior southeast.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KK100_exterior_southeast.jpg",
+      "author": "Charlie fong",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Skyline KK101&Shun Hing Square2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Skyline_KK101%26Shun_Hing_Square2021.jpg",
+      "author": "Charlie fong",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "KINGKEY 100 (67).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KINGKEY_100_(67).jpg",
+      "author": "Dinkun Chen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "KINGKEY 100 (33).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KINGKEY_100_(33).jpg",
+      "author": "Dinkun Chen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "KINGKEY 100 (64).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KINGKEY_100_(64).jpg",
+      "author": "Dinkun Chen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "KINGKEY 100 (30).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KINGKEY_100_(30).jpg",
+      "author": "Dinkun Chen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "京基100 - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E4%BA%AC%E5%9F%BA100_-_panoramio.jpg",
+      "author": "ken93110",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/shenzhen-kk100.glb",
+  "source": "generators/shenzhen-kk100.ts"
+}

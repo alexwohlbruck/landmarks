@@ -1,0 +1,49 @@
+{
+  "id": "wuhan-greenland-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/wuhan-greenland-center.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "(CHN-Hubei) Wuhan Greenland Center 2024-12-01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:(CHN-Hubei)_Wuhan_Greenland_Center_2024-12-01.jpg",
+      "author": "S5A-0043",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Greenland Wuhan Center by2020(9to16).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Greenland_Wuhan_Center_by2020(9to16).jpg",
+      "author": "WiNG",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "武汉绿地中心.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:武汉绿地中心.jpg",
+      "author": "Denisvldk",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/wuhan-greenland-center.glb",
+  "source": "generators/wuhan-greenland-center.ts"
+}

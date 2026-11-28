@@ -1,0 +1,17 @@
+{
+  "id": "wuhan-center",
+  "name": "Wuhan Center",
+  "model": "wuhan-center",
+  "place": "wuhan",
+  "lng": 114.2396688,
+  "lat": 30.5966386,
+  "bearing": 26,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q2484373",
+  "replaces": [
+    "way/450740194",
+    "way/450740191",
+    "way/628441291"
+  ]
+}

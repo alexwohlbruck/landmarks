@@ -1,0 +1,55 @@
+{
+  "id": "shenzhen-citymark-centre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/shenzhen-citymark-centre.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Citymark Centre - Chengmai Center Shenzhen 2025.jpeg",
+      "url": "https://commons.wikimedia.org/wiki/File:Citymark_Centre_-_Chengmai_Center_Shenzhen_2025.jpeg",
+      "author": "Ubahnverleih",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "SUNGANG EAST ROAD, LUOHU DISTRICT, SHENZHEN (91).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:SUNGANG_EAST_ROAD,_LUOHU_DISTRICT,_SHENZHEN_(91).jpg",
+      "author": "Dinkun Chen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Citymark Centre Shenzhen, 2025.jpeg",
+      "url": "https://commons.wikimedia.org/wiki/File:Citymark_Centre_Shenzhen,_2025.jpeg",
+      "author": "Ubahnverleih",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "HONGLING NORTH ROAD, SHENZHEN (8).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HONGLING_NORTH_ROAD,_SHENZHEN_(8).jpg",
+      "author": "Dinkun Chen",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/shenzhen-citymark-centre.glb",
+  "source": "generators/shenzhen-citymark-centre.ts"
+}

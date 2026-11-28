@@ -1,0 +1,67 @@
+{
+  "id": "hk-ifc",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/hk-ifc.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "HK International Finance Centre 200809",
+      "url": "https://commons.wikimedia.org/wiki/File:HK_International_Finance_Centre_200809.jpg",
+      "author": "WiNG",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "International Finance Centre - panoramio",
+      "url": "https://commons.wikimedia.org/wiki/File:International_Finance_Centre_-_panoramio.jpg",
+      "author": "Jim Bowen",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Overlook International Finance Centre",
+      "url": "https://commons.wikimedia.org/wiki/File:Overlook_International_Finance_Centre.jpg",
+      "author": "Exploringlife",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Two International Finance Centre (2 IFC) - Hong Kong - taken in 2015",
+      "url": "https://commons.wikimedia.org/wiki/File:Two_International_Finance_Centre_(2_IFC)_-_Hong_Kong_-_taken_in_2015.jpg",
+      "author": "Wiki.cullin",
+      "license": "CC0"
+    },
+    {
+      "title": "Two International Finance Centre in Hong Kong in 2016",
+      "url": "https://commons.wikimedia.org/wiki/File:Two_International_Finance_Centre_in_Hong_Kong_in_2016.jpg",
+      "author": "Choinowski",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Victoria Harbour skyscrapers",
+      "url": "https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg",
+      "author": "Wilfredor",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/hk-ifc.glb",
+  "source": "generators/hk-ifc.ts"
+}

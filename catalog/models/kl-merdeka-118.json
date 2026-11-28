@@ -1,0 +1,82 @@
+{
+  "id": "kl-merdeka-118",
+  "detail": "models/kl-merdeka-118.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "supertall",
+    "megatall"
+  ],
+  "description": "Merdeka 118 (2023, Fender Katsalidis), Malaysia's tallest building at 678.9 m: a faceted blue glass shaft folded into big triangles in three stacked tiers, after the songket pattern, lined with LED strips on every fold, under a sloped crown and a 160 m faceted spire.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Merdeka Tower 20241022 - full 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Merdeka_Tower_20241022_-_full_2.jpg",
+      "author": "Ahmad Ali Karim",
+      "license": "CC0"
+    },
+    {
+      "title": "Merdeka Tower 20241022 - full 3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Merdeka_Tower_20241022_-_full_3.jpg",
+      "author": "Ahmad Ali Karim",
+      "license": "CC0"
+    },
+    {
+      "title": "Merdeka Tower 20241022 - top 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Merdeka_Tower_20241022_-_top_1.jpg",
+      "author": "Ahmad Ali Karim",
+      "license": "CC0"
+    },
+    {
+      "title": "Merdeka Tower 20241022 - with other towers 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Merdeka_Tower_20241022_-_with_other_towers_1.jpg",
+      "author": "Ahmad Ali Karim",
+      "license": "CC0"
+    },
+    {
+      "title": "Merdeka 118 on a clear day.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Merdeka_118_on_a_clear_day.jpg",
+      "author": "Juniper Jia-En",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Merdeka 118 Pasar Seni.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Merdeka_118_Pasar_Seni.jpg",
+      "author": "ThopazProductions",
+      "license": "CC0"
+    },
+    {
+      "title": "Merdeka PNB 118, Kuala Lumpur.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Merdeka_PNB_118,_Kuala_Lumpur.jpg",
+      "author": "Sean Doan",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Merdeka 118 illuminated at night.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Merdeka_118_illuminated_at_night.jpg",
+      "author": "Wlsrudals",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/kl-merdeka-118.glb",
+  "source": "generators/kl-merdeka-118.ts"
+}

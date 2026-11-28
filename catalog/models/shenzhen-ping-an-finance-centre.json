@@ -1,0 +1,61 @@
+{
+  "id": "shenzhen-ping-an-finance-centre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/shenzhen-ping-an-finance-centre.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Pingan International Finance Center2020.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Pingan_International_Finance_Center2020.jpg",
+      "author": "Charlie fong",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "平安金融中心 2019-12-23.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E5%B9%B3%E5%AE%89%E9%87%91%E8%9E%8D%E4%B8%AD%E5%BF%83_2019-12-23.jpg",
+      "author": "Mx. Granger",
+      "license": "CC0"
+    },
+    {
+      "title": "PING AN FINANCE CENTER, SHENZHEN (17).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:PING_AN_FINANCE_CENTER,_SHENZHEN_(17).jpg",
+      "author": "Dinkun Chen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Ping'an International Financial Center 20160307-2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Ping%27an_International_Financial_Center_20160307-2.jpg",
+      "author": "そらみみ",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "PING AN FINANCE CENTER, SHENZHEN (26).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:PING_AN_FINANCE_CENTER,_SHENZHEN_(26).jpg",
+      "author": "Dinkun Chen",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/shenzhen-ping-an-finance-centre.glb",
+  "source": "generators/shenzhen-ping-an-finance-centre.ts"
+}

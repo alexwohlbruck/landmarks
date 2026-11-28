@@ -1,0 +1,24 @@
+{
+  "id": "kl-merdeka-118",
+  "name": "Merdeka 118",
+  "model": "kl-merdeka-118",
+  "place": "kuala-lumpur",
+  "wikidata": "Q7969454",
+  "lng": 101.7006802,
+  "lat": 3.1416115,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/645604854",
+    "way/471963796",
+    "way/629114913",
+    "way/629114914",
+    "way/629126589",
+    "way/630111262",
+    "way/629126767",
+    "way/629746150",
+    "way/629116776",
+    "way/629116778"
+  ]
+}

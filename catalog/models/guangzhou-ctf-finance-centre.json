@@ -1,0 +1,79 @@
+{
+  "id": "guangzhou-ctf-finance-centre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/guangzhou-ctf-finance-centre.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Guangzhou CTF Finance Center 20241027.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Guangzhou_CTF_Finance_Center_20241027.jpg",
+      "author": "Tim Wu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guangzhou CTF Finance Centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Guangzhou_CTF_Finance_Centre.jpg",
+      "author": "Shujianyang",
+      "license": "CC0"
+    },
+    {
+      "title": "Guangzhou twin towers (4to3).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Guangzhou_twin_towers_(4to3).jpg",
+      "author": "Sergei Gussev",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "ChowTaiFookFinanceCentreDecember2015.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ChowTaiFookFinanceCentreDecember2015.jpg",
+      "author": "Brian Sterling",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Guangzhou CTF Finance Centre 02-10-2018.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Guangzhou_CTF_Finance_Centre_02-10-2018.jpg",
+      "author": "Milkomède",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guangzhou Chow Tai Fook Finance Center from Huacheng Square.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Guangzhou_Chow_Tai_Fook_Finance_Center_from_Huacheng_Square.jpg",
+      "author": "そらみみ",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "TCF Centra Guangzhou.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:TCF_Centra_Guangzhou.jpg",
+      "author": "Topous",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The top of GZCTFFC 20210712-01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_top_of_GZCTFFC_20210712-01.jpg",
+      "author": "中少",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/guangzhou-ctf-finance-centre.glb",
+  "source": "generators/guangzhou-ctf-finance-centre.ts"
+}

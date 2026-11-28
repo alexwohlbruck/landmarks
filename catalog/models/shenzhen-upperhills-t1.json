@@ -1,0 +1,43 @@
+{
+  "id": "shenzhen-upperhills-t1",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/shenzhen-upperhills-t1.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "SZ 深圳 Shenzhen 福田 Futian 筍崗西路 Sungang West Road 筆架山公園 Bijiashan Park Passover footbridge view UpperHills November 2023 R12S 06.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E7%AD%8D%E5%B4%97%E8%A5%BF%E8%B7%AF_Sungang_West_Road_%E7%AD%86%E6%9E%B6%E5%B1%B1%E5%85%AC%E5%9C%92_Bijiashan_Park_Passover_footbridge_view_UpperHills_November_2023_R12S_06.jpg",
+      "author": "Husyewl Lmsiuyu RAUOM",
+      "license": "CC0"
+    },
+    {
+      "title": "Shum Yip Upperhills Towers2020.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shum_Yip_Upperhills_Towers2020.jpg",
+      "author": "K3liu",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/shenzhen-upperhills-t1.glb",
+  "source": "generators/shenzhen-upperhills-t1.ts"
+}

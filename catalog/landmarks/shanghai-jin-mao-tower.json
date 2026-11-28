@@ -1,0 +1,23 @@
+{
+  "id": "shanghai-jin-mao-tower",
+  "name": "Jin Mao Tower",
+  "model": "shanghai-jin-mao-tower",
+  "place": "shanghai",
+  "lng": 121.501406,
+  "lat": 31.237251,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q80813",
+  "replaces": [
+    "way/376075961",
+    "way/188377486",
+    "way/376016310",
+    "way/376016312",
+    "way/167061956",
+    "way/167061957",
+    "way/167061961",
+    "way/524263611",
+    "way/167061959"
+  ]
+}

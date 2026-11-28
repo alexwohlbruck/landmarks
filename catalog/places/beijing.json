@@ -2,5 +2,6 @@
   "id": "beijing",
   "name": "Beijing",
   "kind": "city",
+  "parent": "china",
   "wikidata": "Q956"
 }

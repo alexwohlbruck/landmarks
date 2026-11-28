@@ -1,0 +1,33 @@
+{
+  "id": "shanghai-tower",
+  "name": "Shanghai Tower",
+  "model": "shanghai-tower",
+  "place": "shanghai",
+  "lng": 121.501271,
+  "lat": 31.235555,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q18547",
+  "replaces": [
+    "way/165792123",
+    "way/376023554",
+    "way/1573412415",
+    "way/1573412414",
+    "way/1573438273",
+    "way/1573412413",
+    "way/1573437671",
+    "way/1573412412",
+    "way/1573432465",
+    "way/1573412411",
+    "way/1573425008",
+    "way/1573425009",
+    "way/1573423824",
+    "way/1573423825",
+    "way/1573423826",
+    "way/967281057",
+    "way/967281058",
+    "relation/21824254",
+    "relation/21824349"
+  ]
+}

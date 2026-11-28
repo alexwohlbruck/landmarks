@@ -1,0 +1,67 @@
+{
+  "id": "nanjing-zifeng-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/nanjing-zifeng-tower.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Zifeng Tower in 2017.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Zifeng_Tower_in_2017.jpg",
+      "author": "Haha169",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Zifeng Tower 2017.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Zifeng_Tower_2017.jpg",
+      "author": "Haha169",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Zifeng Tower 8.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Zifeng_Tower_8.jpg",
+      "author": "钉钉",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Zifeng Tower 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Zifeng_Tower_1.jpg",
+      "author": "钉钉",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Zifeng Tower (Shot from Metro Mansion), Aug 18 2023.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Zifeng_Tower_%28Shot_from_Metro_Mansion%29%2C_Aug_18_2023.jpg",
+      "author": "A Chinese ID",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Nanjing Zifeng Tower 紫峰大厦2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nanjing_Zifeng_Tower_%E7%B4%AB%E5%B3%B0%E5%A4%A7%E5%8E%A62.jpg",
+      "author": "_大面",
+      "license": "CC BY 2.5"
+    }
+  ],
+  "file": "models/nanjing-zifeng-tower.glb",
+  "source": "generators/nanjing-zifeng-tower.ts"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "shenzhen-upperhills-t1",
+  "name": "Shum Yip Upperhills Tower 1",
+  "model": "shenzhen-upperhills-t1",
+  "place": "shenzhen",
+  "lng": 114.0667574,
+  "lat": 22.5595427,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/684494961"
+  ]
+}

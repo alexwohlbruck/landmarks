@@ -1,0 +1,15 @@
+{
+  "id": "dongguan-minying-itc-t2",
+  "name": "Minying International Trade Center T2",
+  "model": "dongguan-minying-itc-t2",
+  "place": "dongguan",
+  "lng": 113.7581353,
+  "lat": 23.0141904,
+  "bearing": 10,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q19458189",
+  "replaces": [
+    "way/1287829518"
+  ]
+}

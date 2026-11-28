@@ -1,0 +1,18 @@
+{
+  "id": "hcmc-landmark-81",
+  "name": "Landmark 81",
+  "model": "hcmc-landmark-81",
+  "place": "ho-chi-minh-city",
+  "lng": 106.721754,
+  "lat": 10.7948403,
+  "bearing": 52,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q18640924",
+  "replaces": [
+    "way/622296615",
+    "way/622296616",
+    "way/622296617",
+    "way/622296618"
+  ]
+}

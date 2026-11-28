@@ -1,0 +1,67 @@
+{
+  "id": "egypt-iconic-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/egypt-iconic-tower.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Iconic Tower Egypt(18-6-2023) (cropped).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Iconic_Tower_Egypt(18-6-2023)_(cropped).jpg",
+      "author": "Mohamed Ouda",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Iconic Tower Egypt(18-6-2023).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Iconic_Tower_Egypt(18-6-2023).jpg",
+      "author": "Mohamed Ouda",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Iconic Tower Egypt.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Iconic_Tower_Egypt.jpg",
+      "author": "Mohamed Ouda",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Central business district, New Administrative Capital.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Central_business_district,_New_Administrative_Capital.jpg",
+      "author": "Abdelrhman 1990",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Central business district 3, New Administrative Capital.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Central_business_district_3,_New_Administrative_Capital.jpg",
+      "author": "Abdelrhman 1990",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Iconic Tower Maquette.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Iconic_Tower_Maquette.jpg",
+      "author": "Ziad Rashad",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/egypt-iconic-tower.glb",
+  "source": "generators/egypt-iconic-tower.ts"
+}

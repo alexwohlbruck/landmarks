@@ -1,0 +1,16 @@
+{
+  "id": "nanjing-financial-city-c1",
+  "name": "Nanjing Financial City C1",
+  "model": "nanjing-financial-city-c1",
+  "place": "nanjing",
+  "lng": 118.7090336,
+  "lat": 31.9858063,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/1396179801",
+    "way/1396179802",
+    "way/1417999719"
+  ]
+}

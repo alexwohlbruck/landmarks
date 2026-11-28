@@ -1,0 +1,17 @@
+{
+  "id": "guangzhou-ctf-finance-centre",
+  "name": "Guangzhou CTF Finance Centre",
+  "model": "guangzhou-ctf-finance-centre",
+  "place": "guangzhou",
+  "lng": 113.3205608,
+  "lat": 23.1202004,
+  "bearing": 1,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q168575",
+  "replaces": [
+    "way/299687657",
+    "way/511404889",
+    "way/511404888"
+  ]
+}

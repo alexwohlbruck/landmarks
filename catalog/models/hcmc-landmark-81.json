@@ -1,0 +1,67 @@
+{
+  "id": "hcmc-landmark-81",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/hcmc-landmark-81.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Landmark 81 (32099609868) (4to3).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Landmark_81_(32099609868)_(4to3).jpg",
+      "author": "Christine und Hagen Graf",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Landmark 81 (3).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Landmark_81_(3).jpg",
+      "author": "Gzzz",
+      "license": "CC0"
+    },
+    {
+      "title": "Landmark 81 view from Saigon River.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Landmark_81_view_from_Saigon_River.jpg",
+      "author": "Josemite",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tòa nhà Landmark 81 (52353066123).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:T%C3%B2a_nh%C3%A0_Landmark_81_(52353066123).jpg",
+      "author": "Kien Mike",
+      "license": "Public domain"
+    },
+    {
+      "title": "Landmark 81 viewed from Thu Thiem.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Landmark_81_viewed_from_Thu_Thiem.png",
+      "author": "Cuong Tran",
+      "license": "CC0"
+    },
+    {
+      "title": "Landmark 81, Ho Chi Minh City, Vietnam - February 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Landmark_81,_Ho_Chi_Minh_City,_Vietnam_-_February_2021.jpg",
+      "author": "Thomas Galvez",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/hcmc-landmark-81.glb",
+  "source": "generators/hcmc-landmark-81.ts"
+}

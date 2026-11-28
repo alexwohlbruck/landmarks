@@ -1,0 +1,67 @@
+{
+  "id": "hk-international-commerce-centre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/hk-international-commerce-centre.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "Hong Kong International Commerce Centre (15512862984) 2",
+      "url": "https://commons.wikimedia.org/wiki/File:Hong_Kong_International_Commerce_Centre_(15512862984)_2.jpg",
+      "author": "Bernard Spragg. NZ",
+      "license": "CC0"
+    },
+    {
+      "title": "International Commerce Centre 201408",
+      "url": "https://commons.wikimedia.org/wiki/File:International_Commerce_Centre_201408.jpg",
+      "author": "Wing1990hk",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "International Commerce Centre 201010",
+      "url": "https://commons.wikimedia.org/wiki/File:International_Commerce_Centre_201010.JPG",
+      "author": "T1NH0",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Hong Kong International Commerce Centre; November 2014",
+      "url": "https://commons.wikimedia.org/wiki/File:Hong_Kong_International_Commerce_Centre;_November_2014.jpg",
+      "author": "Bernard Spragg. NZ",
+      "license": "CC0"
+    },
+    {
+      "title": "International Commerce Centre in 201008",
+      "url": "https://commons.wikimedia.org/wiki/File:International_Commerce_Centre_in_201008.jpg",
+      "author": "WiNG",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "International Commerce Centre on Victoria Harbour",
+      "url": "https://commons.wikimedia.org/wiki/File:International_Commerce_Centre_on_Victoria_Harbour.jpg",
+      "author": "Wilfredor",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/hk-international-commerce-centre.glb",
+  "source": "generators/hk-international-commerce-centre.ts"
+}

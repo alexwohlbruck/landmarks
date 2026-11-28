@@ -1,0 +1,30 @@
+{
+  "id": "nanjing-zifeng-tower",
+  "name": "Zifeng Tower",
+  "model": "nanjing-zifeng-tower",
+  "place": "nanjing",
+  "lng": 118.7778115,
+  "lat": 32.0628836,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q382121",
+  "replaces": [
+    "way/1567789358",
+    "way/1567789343",
+    "way/1567789344",
+    "way/1567789345",
+    "way/1567789346",
+    "way/1567789347",
+    "way/1567789348",
+    "way/1567789349",
+    "way/1567789350",
+    "way/1567789351",
+    "way/1567789352",
+    "way/1567789353",
+    "way/1567789354",
+    "way/1567789355",
+    "way/1567789356",
+    "way/1567789357"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "shenzhen-kk100",
+  "name": "KK100",
+  "model": "shenzhen-kk100",
+  "place": "shenzhen",
+  "lng": 114.101581,
+  "lat": 22.545734,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q1470046",
+  "replaces": [
+    "way/164033632",
+    "way/781166572",
+    "way/781166573"
+  ]
+}

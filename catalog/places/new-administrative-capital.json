@@ -1,0 +1,7 @@
+{
+  "id": "new-administrative-capital",
+  "name": "New Administrative Capital",
+  "kind": "city",
+  "parent": "egypt",
+  "wikidata": "Q19588497"
+}

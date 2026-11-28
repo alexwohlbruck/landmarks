@@ -1,0 +1,61 @@
+{
+  "id": "shanghai-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/shanghai-tower.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Pudong Shanghai November 2017 panorama.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Pudong_Shanghai_November_2017_panorama.jpg",
+      "author": "King of Hearts",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Shanghai Tower, Shanghai World Financial Center and Jin Mao Tower 20251126.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shanghai_Tower,_Shanghai_World_Financial_Center_and_Jin_Mao_Tower_20251126.jpg",
+      "author": "Supanut Arunopra",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "20191114 Shanghai Tower-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:20191114_Shanghai_Tower-1.jpg",
+      "author": "Balon Greyjoy",
+      "license": "CC0"
+    },
+    {
+      "title": "Shanghai - Shanghai Tower - 0001.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shanghai_-_Shanghai_Tower_-_0001.jpg",
+      "author": "Stefan Fussan",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Shanghai Tower, August 2023.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shanghai_Tower,_August_2023.jpg",
+      "author": "Francisco Javier PB",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/shanghai-tower.glb",
+  "source": "generators/shanghai-tower.ts"
+}

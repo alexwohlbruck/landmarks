@@ -1,0 +1,14 @@
+{
+  "id": "ningbo-central-plaza",
+  "name": "Ningbo Central Plaza",
+  "model": "ningbo-central-plaza",
+  "place": "ningbo",
+  "lng": 121.6089394,
+  "lat": 29.8637965,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/1347205434"
+  ]
+}

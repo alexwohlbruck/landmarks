@@ -1,0 +1,15 @@
+{
+  "id": "kl-exchange-106",
+  "name": "The Exchange 106",
+  "model": "kl-exchange-106",
+  "place": "kuala-lumpur",
+  "wikidata": "Q27670200",
+  "lng": 101.71869,
+  "lat": 3.1418098,
+  "bearing": 63.4,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/503451214"
+  ]
+}

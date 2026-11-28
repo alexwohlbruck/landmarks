@@ -1,0 +1,20 @@
+{
+  "id": "busan-lct-landmark-tower",
+  "name": "Haeundae LCT The Sharp",
+  "model": "busan-lct-landmark-tower",
+  "place": "busan",
+  "lng": 129.1688353,
+  "lat": 35.160446,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q5961370",
+  "replaces": [
+    "way/1467804490",
+    "way/780727742",
+    "way/789212890",
+    "way/842313393",
+    "way/842313394",
+    "way/1467804481"
+  ]
+}

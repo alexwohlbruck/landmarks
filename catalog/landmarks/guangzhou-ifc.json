@@ -1,0 +1,15 @@
+{
+  "id": "guangzhou-ifc",
+  "name": "Guangzhou International Finance Center",
+  "model": "guangzhou-ifc",
+  "place": "guangzhou",
+  "lng": 113.3179,
+  "lat": 23.120273,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q1043438",
+  "replaces": [
+    "way/184738716"
+  ]
+}

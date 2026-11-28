@@ -1,0 +1,67 @@
+{
+  "id": "changsha-ifs-t1",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/changsha-ifs-t1.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Changsha IFS Tower 24 August 2023c.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changsha_IFS_Tower_24_August_2023c.jpg",
+      "author": "Huangdan2060",
+      "license": "CC0"
+    },
+    {
+      "title": "Changsha IFS 20250401E.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changsha_IFS_20250401E.jpg",
+      "author": "Huangdan2060",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Changsha IFS 20250401B.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changsha_IFS_20250401B.jpg",
+      "author": "Huangdan2060",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "长沙IFS国金中心.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:长沙IFS国金中心.jpg",
+      "author": "維基小霸王",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Changsha IFS Tower 18 September 2023b.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changsha_IFS_Tower_18_September_2023b.jpg",
+      "author": "Huangdan2060",
+      "license": "CC0"
+    },
+    {
+      "title": "Changsha IFS 10971-Changsha (48549538781).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changsha_IFS_10971-Changsha_(48549538781).jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/changsha-ifs-t1.glb",
+  "source": "generators/changsha-ifs-t1.ts"
+}

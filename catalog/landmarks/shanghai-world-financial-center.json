@@ -1,0 +1,27 @@
+{
+  "id": "shanghai-world-financial-center",
+  "name": "Shanghai World Financial Center",
+  "model": "shanghai-world-financial-center",
+  "place": "shanghai",
+  "lng": 121.503041,
+  "lat": 31.236577,
+  "bearing": 355,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q80852",
+  "replaces": [
+    "way/10691100",
+    "way/279942892",
+    "way/279942893",
+    "way/279942894",
+    "way/279942895",
+    "way/279942896",
+    "way/279942897",
+    "way/279942898",
+    "way/279942899",
+    "way/279942900",
+    "way/279942901",
+    "way/279942902",
+    "way/279942903"
+  ]
+}

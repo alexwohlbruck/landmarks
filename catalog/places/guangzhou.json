@@ -1,0 +1,7 @@
+{
+  "id": "guangzhou",
+  "name": "Guangzhou",
+  "kind": "city",
+  "parent": "china",
+  "wikidata": "Q16572"
+}

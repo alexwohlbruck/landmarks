@@ -1,0 +1,15 @@
+{
+  "id": "beijing-citic-tower",
+  "name": "CITIC Tower (China Zun)",
+  "model": "beijing-citic-tower",
+  "place": "beijing",
+  "lng": 116.460236,
+  "lat": 39.911501,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q197833",
+  "replaces": [
+    "way/599547918"
+  ]
+}

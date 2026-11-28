@@ -1,0 +1,15 @@
+{
+  "id": "tianjin-ctf-finance-centre",
+  "name": "Tianjin CTF Finance Centre",
+  "model": "tianjin-ctf-finance-centre",
+  "place": "tianjin",
+  "lng": 117.698459,
+  "lat": 39.021374,
+  "bearing": 24,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q10939987",
+  "replaces": [
+    "way/764674838"
+  ]
+}

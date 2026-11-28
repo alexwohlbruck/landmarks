@@ -1,0 +1,20 @@
+{
+  "id": "shenzhen-china-merchants-bank-hq",
+  "name": "China Merchants Bank Global Headquarters",
+  "model": "shenzhen-china-merchants-bank-hq",
+  "place": "shenzhen",
+  "lng": 113.965175,
+  "lat": 22.525341,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q65054387",
+  "replaces": [
+    "way/1443942674",
+    "way/1443942675",
+    "way/1443942676",
+    "way/1443942677",
+    "way/1443942678",
+    "way/1443942679"
+  ]
+}

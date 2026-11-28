@@ -1,0 +1,55 @@
+{
+  "id": "tianjin-ctf-finance-centre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/tianjin-ctf-finance-centre.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tianjin CTF Finance Centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tianjin_CTF_Finance_Centre.jpg",
+      "author": "H2v5o68z",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "天津周大福金融中心北1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:天津周大福金融中心北1.jpg",
+      "author": "KangTyngrwey",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tianjin CTF Finance Centre, 24 of 24(cropped).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tianjin_CTF_Finance_Centre,_24_of_24(cropped).jpg",
+      "author": "BD2412",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tianjin CTF Finance Centre in 2019.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tianjin_CTF_Finance_Centre_in_2019.jpg",
+      "author": "BD2412",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/tianjin-ctf-finance-centre.glb",
+  "source": "generators/tianjin-ctf-finance-centre.ts"
+}

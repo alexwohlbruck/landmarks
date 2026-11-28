@@ -1,0 +1,18 @@
+{
+  "id": "dubai-princess-tower",
+  "name": "Princess Tower",
+  "model": "dubai-princess-tower",
+  "place": "dubai",
+  "lng": 55.1467718,
+  "lat": 25.088646,
+  "bearing": 45.8,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q19492",
+  "replaces": [
+    "way/186351092",
+    "way/295954577",
+    "way/288039567",
+    "way/295954576"
+  ]
+}

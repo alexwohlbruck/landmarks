@@ -1,0 +1,49 @@
+{
+  "id": "shenzhen-china-merchants-bank-hq",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/shenzhen-china-merchants-bank-hq.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "招银环球金融中心.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%8B%9B%E9%93%B6%E7%8E%AF%E7%90%83%E9%87%91%E8%9E%8D%E4%B8%AD%E5%BF%83.jpg",
+      "author": "Lhzss8",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "招银环球金融中心主楼背部.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%8B%9B%E9%93%B6%E7%8E%AF%E7%90%83%E9%87%91%E8%9E%8D%E4%B8%AD%E5%BF%83%E4%B8%BB%E6%A5%BC%E8%83%8C%E9%83%A8.jpg",
+      "author": "Lhzss8",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "招银环球金融中心主楼侧边.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E6%8B%9B%E9%93%B6%E7%8E%AF%E7%90%83%E9%87%91%E8%9E%8D%E4%B8%AD%E5%BF%83%E4%B8%BB%E6%A5%BC%E4%BE%A7%E8%BE%B9.jpg",
+      "author": "Lhzss8",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/shenzhen-china-merchants-bank-hq.glb",
+  "source": "generators/shenzhen-china-merchants-bank-hq.ts"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "chongqing",
+  "name": "Chongqing",
+  "kind": "city",
+  "parent": "china",
+  "wikidata": "Q11725"
+}

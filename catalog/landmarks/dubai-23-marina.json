@@ -1,0 +1,18 @@
+{
+  "id": "dubai-23-marina",
+  "name": "23 Marina",
+  "model": "dubai-23-marina",
+  "place": "dubai",
+  "lng": 55.1507089,
+  "lat": 25.0897481,
+  "bearing": 355.7,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q216264",
+  "replaces": [
+    "way/186351097",
+    "way/907717855",
+    "way/1575886769",
+    "way/186351102"
+  ]
+}

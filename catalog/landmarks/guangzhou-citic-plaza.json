@@ -1,0 +1,29 @@
+{
+  "id": "guangzhou-citic-plaza",
+  "name": "CITIC Plaza",
+  "model": "guangzhou-citic-plaza",
+  "place": "guangzhou",
+  "lng": 113.319384,
+  "lat": 23.144363,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q245246",
+  "replaces": [
+    "way/926228208",
+    "way/1548063152",
+    "way/1548063153",
+    "way/1548063154",
+    "way/1548063155",
+    "way/1548063156",
+    "way/1548063157",
+    "way/1548063158",
+    "way/1548063159",
+    "way/1548063160",
+    "way/1548063161",
+    "way/1548063162",
+    "way/1548063163",
+    "way/1548063164",
+    "way/1548063165"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "busan-lct-landmark-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/busan-lct-landmark-tower.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "La plage Haeundae à Busan (Corée du sud)",
+      "url": "https://www.flickr.com/photos/72746018@N00/49020894681",
+      "author": "dalbera",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Haeundae Beach May 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haeundae_Beach_May_2024.jpg",
+      "author": "Brit in Seoul",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Haeundae Beach and Haeundae LCT The Sharp.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Haeundae_Beach_and_Haeundae_LCT_The_Sharp.jpg",
+      "author": "A Fun Couple",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "LCT From Dongbaek Island 2020.01.04 (2).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:LCT_From_Dongbaek_Island_2020.01.04_(2).jpg",
+      "author": "생각하는 나무",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "HaeundaeLCT atNight.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HaeundaeLCT_atNight.jpg",
+      "author": "308 Bees",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/busan-lct-landmark-tower.glb",
+  "source": "generators/busan-lct-landmark-tower.ts"
+}

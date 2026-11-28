@@ -1,0 +1,69 @@
+{
+  "id": "kl-exchange-106",
+  "detail": "models/kl-exchange-106.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "supertall"
+  ],
+  "description": "The Exchange 106 (2019, Johnson Pilton Walker), the 453.6 m centrepiece of Tun Razak Exchange: a gently tapering deep-blue glass shaft with stepped corners and tall silver frames on each face, under a narrower crown of silver glass folded into diamond pyramids, lit at night.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "The Exchange 106 20241022 - full.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Exchange_106_20241022_-_full.jpg",
+      "author": "Ahmad Ali Karim",
+      "license": "CC0"
+    },
+    {
+      "title": "The Exchange 106 20241022 - top.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Exchange_106_20241022_-_top.jpg",
+      "author": "Ahmad Ali Karim",
+      "license": "CC0"
+    },
+    {
+      "title": "The Exchange 106 with other buildings.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Exchange_106_with_other_buildings.jpg",
+      "author": "Ahmad Ali Karim",
+      "license": "CC0"
+    },
+    {
+      "title": "The Exchange 106 20231216 (3).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Exchange_106_20231216_(3).jpg",
+      "author": "InterEdit88",
+      "license": "CC0"
+    },
+    {
+      "title": "The Exchange 106 Towers at night (231211).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Exchange_106_Towers_at_night_(231211).jpg",
+      "author": "angys*",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Exchange 106 MyTown Roof.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Exchange_106_MyTown_Roof.jpg",
+      "author": "Capt'n London",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kl-exchange-106.glb",
+  "source": "generators/kl-exchange-106.ts"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "egypt-iconic-tower",
+  "name": "Iconic Tower",
+  "model": "egypt-iconic-tower",
+  "place": "new-administrative-capital",
+  "lng": 31.6938483,
+  "lat": 30.0127354,
+  "bearing": 45,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q102281065",
+  "replaces": [
+    "way/819256088"
+  ]
+}

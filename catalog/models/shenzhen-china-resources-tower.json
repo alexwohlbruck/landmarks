@@ -1,0 +1,61 @@
+{
+  "id": "shenzhen-china-resources-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/shenzhen-china-resources-tower.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "China Resources Headquarters by the side of shenzhen bay2020.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:China_Resources_Headquarters_by_the_side_of_shenzhen_bay2020.jpg",
+      "author": "Charlie fong",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "China Resources Headquarters 2019 july.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:China_Resources_Headquarters_2019_july.jpg",
+      "author": "Nord794ub",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "China Resources Headquarters Shenzhen.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:China_Resources_Headquarters_Shenzhen.jpg",
+      "author": "Dlm423",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "China Resources Headquarters, Shenzhen 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:China_Resources_Headquarters,_Shenzhen_2021.jpg",
+      "author": "钉钉",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "ChinaResourcesHeadquartersinShenzhen20209.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ChinaResourcesHeadquartersinShenzhen20209.jpg",
+      "author": "Charlie fong",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/shenzhen-china-resources-tower.glb",
+  "source": "generators/shenzhen-china-resources-tower.ts"
+}

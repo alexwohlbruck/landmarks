@@ -1,0 +1,15 @@
+{
+  "id": "shenzhen-citymark-centre",
+  "name": "Citymark Centre",
+  "model": "shenzhen-citymark-centre",
+  "place": "shenzhen",
+  "lng": 114.100107,
+  "lat": 22.560966,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q130693037",
+  "replaces": [
+    "way/1271754601"
+  ]
+}

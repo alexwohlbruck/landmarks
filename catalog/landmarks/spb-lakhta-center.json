@@ -1,0 +1,22 @@
+{
+  "id": "spb-lakhta-center",
+  "name": "Lakhta Center",
+  "model": "spb-lakhta-center",
+  "place": "saint-petersburg",
+  "lng": 30.178102,
+  "lat": 59.987032,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q4255374",
+  "replaces": [
+    "relation/18102137",
+    "relation/18102140",
+    "relation/14667933",
+    "way/566178960",
+    "way/566178961",
+    "way/566178962",
+    "way/566178963",
+    "way/566178964"
+  ]
+}

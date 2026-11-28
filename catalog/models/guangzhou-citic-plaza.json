@@ -1,0 +1,61 @@
+{
+  "id": "guangzhou-citic-plaza",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/guangzhou-citic-plaza.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "CITIC Plaza 2017.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:CITIC_Plaza_2017.jpg",
+      "author": "そらみみ",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "CITIC Plaza 2018 07.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:CITIC_Plaza_2018_07.jpg",
+      "author": "Nissangeniss",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "中信廣場 CITIC Plaza - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E4%BF%A1%E5%BB%A3%E5%A0%B4_CITIC_Plaza_-_panoramio.jpg",
+      "author": "Bohao Zhao",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "中信大厦南侧 - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E4%BF%A1%E5%A4%A7%E5%8E%A6%E5%8D%97%E4%BE%A7_-_panoramio.jpg",
+      "author": "zengsx",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Guangzhou CITIC Plaza at Night.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Guangzhou_CITIC_Plaza_at_Night.jpg",
+      "author": "JULIANISME",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/guangzhou-citic-plaza.glb",
+  "source": "generators/guangzhou-citic-plaza.ts"
+}

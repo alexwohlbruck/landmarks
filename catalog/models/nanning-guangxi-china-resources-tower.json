@@ -1,0 +1,55 @@
+{
+  "id": "nanning-guangxi-china-resources-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/nanning-guangxi-china-resources-tower.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Guangxi China Resource Tower A 2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Guangxi_China_Resource_Tower_A_2022.jpg",
+      "author": "EditQ",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Dongmeng CBD 3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dongmeng_CBD_3.jpg",
+      "author": "EditQ",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Skyline of China-ASEAN Business Center in Qingxiu District.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Skyline_of_China-ASEAN_Business_Center_in_Qingxiu_District.jpg",
+      "author": "EditQ",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dongmeng CBD, Nanning.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dongmeng_CBD%2C_Nanning.jpg",
+      "author": "EditQ",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/nanning-guangxi-china-resources-tower.glb",
+  "source": "generators/nanning-guangxi-china-resources-tower.ts"
+}

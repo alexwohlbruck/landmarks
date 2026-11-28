@@ -1,0 +1,37 @@
+{
+  "id": "nanjing-financial-city-c1",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/nanjing-financial-city-c1.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "南京金融城二期C1 (20250325).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E4%BA%AC%E9%87%91%E8%9E%8D%E5%9F%8E%E4%BA%8C%E6%9C%9FC1_%2820250325%29.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/nanjing-financial-city-c1.glb",
+  "source": "generators/nanjing-financial-city-c1.ts"
+}

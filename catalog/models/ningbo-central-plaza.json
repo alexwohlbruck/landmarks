@@ -1,0 +1,43 @@
+{
+  "id": "ningbo-central-plaza",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/ningbo-central-plaza.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Ningbo Center 2025-07-20.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Ningbo_Center_2025-07-20.jpg",
+      "author": "Cz4523",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "20230521建设中的宁波中心.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:20230521%E5%BB%BA%E8%AE%BE%E4%B8%AD%E7%9A%84%E5%AE%81%E6%B3%A2%E4%B8%AD%E5%BF%83.jpg",
+      "author": "Cz4523",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/ningbo-central-plaza.glb",
+  "source": "generators/ningbo-central-plaza.ts"
+}

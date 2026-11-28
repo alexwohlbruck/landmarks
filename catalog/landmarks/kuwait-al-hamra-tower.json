@@ -1,0 +1,16 @@
+{
+  "id": "kuwait-al-hamra-tower",
+  "name": "Al Hamra Tower",
+  "model": "kuwait-al-hamra-tower",
+  "place": "kuwait-city",
+  "lng": 47.9930928,
+  "lat": 29.3793408,
+  "bearing": 9.4,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q557933",
+  "replaces": [
+    "way/188381326",
+    "way/1456434410"
+  ]
+}

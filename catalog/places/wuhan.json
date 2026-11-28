@@ -1,0 +1,7 @@
+{
+  "id": "wuhan",
+  "name": "Wuhan",
+  "kind": "city",
+  "parent": "china",
+  "wikidata": "Q11746"
+}

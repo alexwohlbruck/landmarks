@@ -1,0 +1,16 @@
+{
+  "id": "dubai-marina-101",
+  "name": "Marina 101",
+  "model": "dubai-marina-101",
+  "place": "dubai",
+  "lng": 55.1486244,
+  "lat": 25.0890563,
+  "bearing": 40.6,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q1165269",
+  "replaces": [
+    "way/195527261",
+    "way/1074877791"
+  ]
+}

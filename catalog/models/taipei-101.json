@@ -1,0 +1,85 @@
+{
+  "id": "taipei-101",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/taipei-101.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "Taipei 101 2009 amk",
+      "url": "https://commons.wikimedia.org/wiki/File:Taipei_101_2009_amk.jpg",
+      "author": "AngMoKio",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Taipei, November 25, 2024 - 008",
+      "url": "https://commons.wikimedia.org/wiki/File:Taipei,_November_25,_2024_-_008.jpg",
+      "author": "Another Believer",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Taipei Taiwan Taipei-101-Tower-01",
+      "url": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Taipei-101-Tower-01.jpg",
+      "author": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Taipei 101 from Xinyi",
+      "url": "https://commons.wikimedia.org/wiki/File:Taipei_101_from_Xinyi.jpg",
+      "author": "Rutger van der Maar",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Taipei 101, toppen",
+      "url": "https://commons.wikimedia.org/wiki/File:Taipei_101,_toppen.jpg",
+      "author": "Johan Jönsson (Julle)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Taipei 101 at night",
+      "url": "https://commons.wikimedia.org/wiki/File:Taipei_101_at_night.jpg",
+      "author": "Meow",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "2010-12-27 Taipei 101 with its mall and Taipei WTC Hall 3",
+      "url": "https://commons.wikimedia.org/wiki/File:2010-12-27_Taipei_101_with_its_mall_and_Taipei_WTC_Hall_3.jpg",
+      "author": "Bernard McManus",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Taipei 101 Mall 20120405",
+      "url": "https://commons.wikimedia.org/wiki/File:Taipei_101_Mall_20120405.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Taipei 101 Mall and Dog Off-Leash Area 20240204",
+      "url": "https://commons.wikimedia.org/wiki/File:Taipei_101_Mall_and_Dog_Off-Leash_Area_20240204.jpg",
+      "author": "玄史生",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/taipei-101.glb",
+  "source": "generators/taipei-101.ts"
+}

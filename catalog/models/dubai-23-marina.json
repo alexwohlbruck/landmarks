@@ -1,0 +1,49 @@
+{
+  "id": "dubai-23-marina",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/dubai-23-marina.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Dubai Marina Skyline.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dubai_Marina_Skyline.jpg",
+      "author": "Norlando Pobre",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "The Tallest Block (29839279175).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Tallest_Block_(29839279175).jpg",
+      "author": "Steven Straiton",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Mage 2024-05-14 at 19.29.21.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mage_2024-05-14_at_19.29.21.jpg",
+      "author": "BS2024",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/dubai-23-marina.glb",
+  "source": "generators/dubai-23-marina.ts"
+}

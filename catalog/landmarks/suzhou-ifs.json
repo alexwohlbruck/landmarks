@@ -1,0 +1,15 @@
+{
+  "id": "suzhou-ifs",
+  "name": "Suzhou International Finance Square",
+  "model": "suzhou-ifs",
+  "place": "suzhou",
+  "lng": 120.7126653,
+  "lat": 31.3241953,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q617082",
+  "replaces": [
+    "way/477238586"
+  ]
+}

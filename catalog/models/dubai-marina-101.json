@@ -1,0 +1,49 @@
+{
+  "id": "dubai-marina-101",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/dubai-marina-101.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Dubai Marina Skyline.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dubai_Marina_Skyline.jpg",
+      "author": "Norlando Pobre",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "The Tallest Block (29839279175).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Tallest_Block_(29839279175).jpg",
+      "author": "Steven Straiton",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Marina 101.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Marina_101.png",
+      "author": "Jackedi07",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/dubai-marina-101.glb",
+  "source": "generators/dubai-marina-101.ts"
+}

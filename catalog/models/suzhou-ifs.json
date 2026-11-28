@@ -1,0 +1,61 @@
+{
+  "id": "suzhou-ifs",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/suzhou-ifs.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Suzhou IFS 2018.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Suzhou_IFS_2018.jpg",
+      "author": "Milkomède",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Suzhou IFS 27-10-2018.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Suzhou_IFS_27-10-2018.jpg",
+      "author": "Milkomède",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Suzhou ferris wheel and other buildings-20241004 (Suzhou IFS).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Suzhou_ferris_wheel_and_other_buildings-20241004_%28Suzhou_IFS%29.jpg",
+      "author": "Shwangtianyuan",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Suzhou IFS-20180829.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Suzhou_IFS-20180829.jpg",
+      "author": "Shwangtianyuan",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Skylines of Jinji Lake.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Skylines_of_Jinji_Lake.jpg",
+      "author": "钉钉",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/suzhou-ifs.glb",
+  "source": "generators/suzhou-ifs.ts"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "wuhan-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/wuhan-center.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Wuhan Center 201704.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Wuhan_Center_201704.jpg",
+      "author": "Baycrest",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "title": "Wuhan Center Tower 201901 （view from the Central Square of Wuhan CBD）.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Wuhan_Center_Tower_201901_（view_from_the_Central_Square_of_Wuhan_CBD）.jpg",
+      "author": "Wuchernchau",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Wuhan Center and its surrounding areas in September 2023.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Wuhan_Center_and_its_surrounding_areas_in_September_2023.jpg",
+      "author": "Zheng Zhou",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "武汉中心 直戳云霄.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:武汉中心_直戳云霄.jpg",
+      "author": "Duane",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/wuhan-center.glb",
+  "source": "generators/wuhan-center.ts"
+}

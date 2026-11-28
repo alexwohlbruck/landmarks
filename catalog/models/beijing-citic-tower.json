@@ -1,0 +1,67 @@
+{
+  "id": "beijing-citic-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/beijing-citic-tower.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "China Zun 05-11-2018.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:China_Zun_05-11-2018.jpg",
+      "author": "Milkomède",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "CITIC Tower 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:CITIC_Tower_2021.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "China Zun head.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:China_Zun_head.jpg",
+      "author": "維基小霸王",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "China Zun from 300X (20180628141217).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:China_Zun_from_300X_(20180628141217).jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "China Zun.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:China_Zun.jpg",
+      "author": "維基小霸王",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "China Zun and Samsung China Headquarters.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:China_Zun_and_Samsung_China_Headquarters.jpg",
+      "author": "Bairuilong",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/beijing-citic-tower.glb",
+  "source": "generators/beijing-citic-tower.ts"
+}

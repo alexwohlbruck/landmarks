@@ -1,0 +1,67 @@
+{
+  "id": "shanghai-jin-mao-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/shanghai-jin-mao-tower.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Jin Mao Tower 20260418.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jin_Mao_Tower_20260418.jpg",
+      "author": "DvTor8303",
+      "license": "CC0"
+    },
+    {
+      "title": "Shanghai Jin Mao Tower 5166298.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shanghai_Jin_Mao_Tower_5166298.jpg",
+      "author": "Ermell",
+      "license": "CC0"
+    },
+    {
+      "title": "Based of Jin Mao Tower from SWFC.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Based_of_Jin_Mao_Tower_from_SWFC.jpg",
+      "author": "Tim Sheerman-Chase",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Shanghai Tower, Shanghai World Financial Center and Jin Mao Tower 20251126.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shanghai_Tower,_Shanghai_World_Financial_Center_and_Jin_Mao_Tower_20251126.jpg",
+      "author": "Supanut Arunopra",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Pudong Shanghai November 2017 panorama.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Pudong_Shanghai_November_2017_panorama.jpg",
+      "author": "King of Hearts",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Jin Mao Tower at night 20260417.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jin_Mao_Tower_at_night_20260417.jpg",
+      "author": "DvTor8303",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/shanghai-jin-mao-tower.glb",
+  "source": "generators/shanghai-jin-mao-tower.ts"
+}
