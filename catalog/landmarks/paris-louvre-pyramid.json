@@ -1,0 +1,18 @@
+{
+  "id": "paris-louvre-pyramid",
+  "name": "Pyramide du Louvre",
+  "model": "paris-louvre-pyramid",
+  "place": "paris",
+  "lng": 2.3358526,
+  "lat": 48.8610123,
+  "bearing": 20.5,
+  "elevation": 8.8,
+  "minzoom": 15,
+  "wikidata": "Q13397",
+  "replaces": [
+    "way/375076234",
+    "way/53815259",
+    "way/53815260",
+    "way/53815261"
+  ]
+}

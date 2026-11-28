@@ -1,0 +1,43 @@
+{
+  "id": "paris-louvre-pyramid",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "glass",
+    "modern",
+    "pyramid"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Cour Napoléon seen from the pavillon de l'Horloge, Louvre 8 July 2016",
+      "url": "https://commons.wikimedia.org/wiki/File:Cour_Napol%C3%A9on_seen_from_the_pavillon_de_l%27Horloge,_Louvre_8_July_2016.jpg",
+      "author": "Tangopaso",
+      "license": "Public domain"
+    },
+    {
+      "title": "Louvre Museum Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Louvre_Museum_Wikimedia_Commons.jpg",
+      "author": "Benh LIEU SONG",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/paris-louvre-pyramid.glb",
+  "source": "generators/paris-louvre-pyramid.ts"
+}
