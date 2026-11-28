@@ -1,0 +1,43 @@
+{
+  "id": "stl-st-francis-de-sales",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "religious",
+    "church"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q7588040",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Saint Francis de Sales Oratory.jpg",
+      "author": "Phillip B. Roussin",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Saint_Francis_de_Sales_Oratory.jpg"
+    },
+    {
+      "title": "St Francis De Sales facade 23.jpg",
+      "author": "Parker Botanical",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St_Francis_De_Sales_facade_23.jpg"
+    }
+  ],
+  "file": "models/stl-st-francis-de-sales.glb",
+  "source": "generators/stl-st-francis-de-sales.ts"
+}
