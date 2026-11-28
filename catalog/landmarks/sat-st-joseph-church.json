@@ -1,0 +1,15 @@
+{
+  "id": "sat-st-joseph-church",
+  "name": "St. Joseph Catholic Church",
+  "model": "sat-st-joseph-church",
+  "place": "san-antonio-area",
+  "lng": -98.486418,
+  "lat": 29.423725,
+  "bearing": 11.2,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/78604538"
+  ],
+  "wikidata": "Q17021352"
+}
