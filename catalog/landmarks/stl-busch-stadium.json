@@ -1,0 +1,17 @@
+{
+  "id": "stl-busch-stadium",
+  "name": "Busch Stadium",
+  "model": "stl-busch-stadium",
+  "place": "st-louis-area",
+  "lng": -90.1929826,
+  "lat": 38.622525,
+  "bearing": 63,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q253546",
+  "replaces": [
+    "relation/2511955",
+    "way/42341545",
+    "way/1301409955"
+  ]
+}
