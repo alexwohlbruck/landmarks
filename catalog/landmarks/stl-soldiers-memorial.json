@@ -1,0 +1,15 @@
+{
+  "id": "stl-soldiers-memorial",
+  "name": "Soldiers Memorial",
+  "model": "stl-soldiers-memorial",
+  "place": "st-louis-area",
+  "lng": -90.2000443,
+  "lat": 38.629035,
+  "bearing": 14.9,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/108704943",
+    "way/615408468"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "stl-soldiers-memorial",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "memorial",
+    "museum"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q7557360",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Soldiers Memorial Military Museum, St. Louis, Missouri LCCN2010630560",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Soldiers_Memorial_Military_Museum,_St._Louis,_Missouri_LCCN2010630560.tif"
+    },
+    {
+      "title": "Soldiers Memorial Military Museum, St. Louis, Missouri LCCN2010630554",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Soldiers_Memorial_Military_Museum,_St._Louis,_Missouri_LCCN2010630554.tif"
+    },
+    {
+      "title": "St. Louis, Missouri - Soldiers' Memorial Military Museum - panoramio (2).jpg",
+      "author": "MARELBU",
+      "license": "CC BY 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis,_Missouri_-_Soldiers%27_Memorial_Military_Museum_-_panoramio_(2).jpg"
+    },
+    {
+      "title": "Soldiers Memorial, Chestnut Street, St. Louis, MO.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Soldiers_Memorial,_Chestnut_Street,_St._Louis,_MO.jpg"
+    }
+  ],
+  "file": "models/stl-soldiers-memorial.glb",
+  "source": "generators/stl-soldiers-memorial.ts"
+}
