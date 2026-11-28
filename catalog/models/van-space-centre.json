@@ -1,0 +1,60 @@
+{
+  "id": "van-space-centre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "planetarium",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Museum of Vancouver - Flickr - Reg Natarajan.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Museum_of_Vancouver_-_Flickr_-_Reg_Natarajan.jpg",
+      "author": "Reg Natarajan",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Museum of Vancouver.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Museum_of_Vancouver.jpg",
+      "author": "Ɱ",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Museum of Vancouver and H.R. MacMillan Space Centre WLM2012.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Museum_of_Vancouver_and_H.R._MacMillan_Space_Centre_WLM2012.JPG",
+      "author": "MRDXII",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Museum of Vancouver back.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Museum_of_Vancouver_back.jpg",
+      "author": "Jeff Hitchcock",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "H.R. MacMillan Space Centre Crab.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:H.R._MacMillan_Space_Centre_Crab.jpg",
+      "author": "Stokedonfooty",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/van-space-centre.glb",
+  "source": "generators/van-space-centre.ts"
+}

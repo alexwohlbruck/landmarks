@@ -1,0 +1,21 @@
+{
+  "id": "van-space-centre",
+  "name": "H. R. MacMillan Space Centre and Museum of Vancouver",
+  "model": "van-space-centre",
+  "place": "vancouver",
+  "lng": -123.1444232,
+  "lat": 49.2763319,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q1478298",
+  "replaces": [
+    "relation/7440597",
+    "way/512393023",
+    "way/512393024",
+    "way/512393026",
+    "way/609628578",
+    "way/609628579",
+    "relation/8464682"
+  ]
+}
