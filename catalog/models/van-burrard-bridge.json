@@ -1,0 +1,60 @@
+{
+  "id": "van-burrard-bridge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "truss-bridge",
+    "art-deco",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Puente Burrard, Vancouver, Canadá, 2017-08-14, DD 27.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Puente_Burrard,_Vancouver,_Canad%C3%A1,_2017-08-14,_DD_27.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Burrard Bridge from the east.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Burrard_Bridge_from_the_east.jpg",
+      "author": "Ymblanter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Burrard Bridge 02.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Burrard_Bridge_02.JPG",
+      "author": "Xicotencatl",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Burrard Street Bridge as gateway.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Burrard_Street_Bridge_as_gateway.jpg",
+      "author": "Alethe",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Burrard Street Bridge in Night.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Burrard_Street_Bridge_in_Night.JPG",
+      "author": "Jayaddev",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/van-burrard-bridge.glb",
+  "source": "generators/van-burrard-bridge.ts"
+}

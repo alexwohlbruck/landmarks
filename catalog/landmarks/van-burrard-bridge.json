@@ -1,0 +1,15 @@
+{
+  "id": "van-burrard-bridge",
+  "name": "Burrard Bridge",
+  "model": "van-burrard-bridge",
+  "place": "vancouver",
+  "lng": -123.1367968,
+  "lat": 49.2755247,
+  "bearing": 63.84,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q919808",
+  "replaces": [
+    "way/492631024"
+  ]
+}
