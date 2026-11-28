@@ -1,0 +1,55 @@
+{
+  "id": "paris-centre-pompidou",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "high-tech",
+    "modern",
+    "library"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Centre Georges-Pompidou - panoramio (14)",
+      "url": "https://commons.wikimedia.org/wiki/File:Centre_Georges-Pompidou_-_panoramio_(14).jpg",
+      "author": "bynyalcin",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Centre Pompidou - panoramio - mayatomo",
+      "url": "https://commons.wikimedia.org/wiki/File:Centre_Pompidou_-_panoramio_-_mayatomo.jpg",
+      "author": "mayatomo",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Paris Montmartre Blick aufs Centre Georges-Pompidou",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_Montmartre_Blick_aufs_Centre_Georges-Pompidou.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Le Centre Georges-Pompidou en travaux (2026)",
+      "url": "https://commons.wikimedia.org/wiki/File:Le_Centre_Georges-Pompidou_en_travaux_(2026).jpg",
+      "author": "JeremyJeanguenin",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/paris-centre-pompidou.glb",
+  "source": "generators/paris-centre-pompidou.ts"
+}

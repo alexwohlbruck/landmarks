@@ -1,0 +1,21 @@
+{
+  "id": "paris-centre-pompidou",
+  "name": "Centre Pompidou",
+  "model": "paris-centre-pompidou",
+  "place": "paris",
+  "lng": 2.3524396,
+  "lat": 48.8605305,
+  "bearing": 19.8,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q178065",
+  "replaces": [
+    "way/55503397",
+    "way/55507596",
+    "way/55507597",
+    "way/55507609",
+    "way/55507607",
+    "way/55507608",
+    "way/55507613"
+  ]
+}
