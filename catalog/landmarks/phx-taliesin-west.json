@@ -1,0 +1,26 @@
+{
+  "id": "phx-taliesin-west",
+  "name": "Taliesin West",
+  "model": "phx-taliesin-west",
+  "place": "phoenix-area",
+  "lng": -111.845123,
+  "lat": 33.606322,
+  "bearing": 34.3,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q1208310",
+  "replaces": [
+    "way/1498897839",
+    "way/1498906503",
+    "way/1498902780",
+    "way/1498910891",
+    "way/1498902779",
+    "way/1498902781",
+    "way/1498906504",
+    "way/1498906505",
+    "way/1498902778",
+    "way/1498897834",
+    "way/1498902782",
+    "way/1498897833"
+  ]
+}

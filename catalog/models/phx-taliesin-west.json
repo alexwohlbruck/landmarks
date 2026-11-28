@@ -1,0 +1,55 @@
+{
+  "id": "phx-taliesin-west",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "house",
+    "school",
+    "frank-lloyd-wright"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "SW Main Building Pano Taliesin West Mar23 R16 07189-90 Pano.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:SW_Main_Building_Pano_Taliesin_West_Mar23_R16_07189-90_Pano.jpg",
+      "author": "Timothy A. Gonsa",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Taliesin West, view of the southside.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Taliesin_West,_view_of_the_southside.jpg",
+      "author": "Bigmacthealmanac",
+      "license": "CC0"
+    },
+    {
+      "title": "Taliesin West (4297337555).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Taliesin_West_(4297337555).jpg",
+      "author": "John Fowler",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "TaliesinWest2010.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:TaliesinWest2010.JPG",
+      "author": "AndrewHorne",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/phx-taliesin-west.glb",
+  "source": "generators/phx-taliesin-west.ts"
+}
