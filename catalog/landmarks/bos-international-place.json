@@ -1,0 +1,22 @@
+{
+  "id": "bos-international-place",
+  "name": "International Place",
+  "model": "bos-international-place",
+  "place": "boston-area",
+  "lng": -71.05205,
+  "lat": 42.356,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/241176918",
+    "way/241176915",
+    "way/241176919",
+    "way/29742432",
+    "way/240487676",
+    "way/240431628",
+    "way/29608963",
+    "way/484949460",
+    "way/484949459"
+  ]
+}

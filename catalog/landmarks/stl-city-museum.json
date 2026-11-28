@@ -1,0 +1,15 @@
+{
+  "id": "stl-city-museum",
+  "name": "City Museum",
+  "model": "stl-city-museum",
+  "place": "st-louis-area",
+  "lng": -90.2004459,
+  "lat": 38.6336076,
+  "bearing": 14.9,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/202269269",
+    "way/1357830053"
+  ]
+}

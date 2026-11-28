@@ -1,0 +1,14 @@
+{
+  "id": "phx-hayden-flour-mill-silos",
+  "name": "Hayden Flour Mill Silos",
+  "model": "phx-hayden-flour-mill-silos",
+  "place": "phoenix-area",
+  "lng": -111.9392606,
+  "lat": 33.4288585,
+  "bearing": 4.8,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/544822358"
+  ]
+}

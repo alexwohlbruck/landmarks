@@ -1,0 +1,16 @@
+{
+  "id": "atl-hartsfield-jackson-international-terminal",
+  "name": "Maynard H. Jackson International Terminal and Concourse F",
+  "model": "atl-hartsfield-jackson-international-terminal",
+  "place": "atlanta-area",
+  "lng": -84.4193825,
+  "lat": 33.6396942,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/169784353",
+    "way/328278997",
+    "way/575713368"
+  ]
+}

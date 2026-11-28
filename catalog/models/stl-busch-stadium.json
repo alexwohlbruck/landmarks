@@ -1,0 +1,73 @@
+{
+  "id": "stl-busch-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "baseball",
+    "mlb",
+    "ballpark"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Busch Stadium III, St. Louis, third base entrance",
+      "author": "Paul.hawke",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Busch_Stadium_III,_St._Louis,_third_base_entrance.jpg"
+    },
+    {
+      "title": "Busch Stadium 2022",
+      "author": "Lightmetro",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Busch_Stadium_2022.jpg"
+    },
+    {
+      "title": "Busch Pano 2022",
+      "author": "Lightmetro",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Busch_Pano_2022.jpg"
+    },
+    {
+      "title": "Busch Stadium 24 August 2013",
+      "author": "Fredlyfish4",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Busch_Stadium_24_August_2013.JPG"
+    },
+    {
+      "title": "Busch Stadium from the Gateway Arch, St. Louis, September 10, 2017",
+      "author": "HeatherMarieKosur",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Busch_Stadium_from_the_Gateway_Arch,_St._Louis,_September_10,_2017.jpg"
+    },
+    {
+      "title": "Busch Stadium 004",
+      "author": "binkle_28",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Busch_Stadium_004_(2335167947).jpg"
+    },
+    {
+      "title": "Busch Stadium 17",
+      "author": "pvsbond",
+      "license": "CC BY-SA 2.0",
+      "url": "https://www.flickr.com/photos/56141425@N00/689287251"
+    }
+  ],
+  "wikidata": "Q253546",
+  "file": "models/stl-busch-stadium.glb",
+  "source": "generators/stl-busch-stadium.ts"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "bos-symphony-hall",
+  "name": "Symphony Hall",
+  "model": "bos-symphony-hall",
+  "place": "boston-area",
+  "lng": -71.08567,
+  "lat": 42.34281,
+  "bearing": 42,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/29560864",
+    "way/240474014"
+  ]
+}

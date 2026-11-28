@@ -1,0 +1,57 @@
+{
+  "id": "kc-scout",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "sculpture",
+  "tags": [
+    "historic",
+    "statue",
+    "equestrian",
+    "bronze",
+    "park",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q7762663",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "The Scout statue.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Scout_statue.jpg",
+      "author": "Dean R Specker",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Scout (195590495).jpeg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Scout_(195590495).jpeg",
+      "author": "Benjamin White",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "KC Scout.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KC_Scout.jpg",
+      "license": "Public domain"
+    },
+    {
+      "title": "The Scout.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Scout.jpg",
+      "author": "Megan Hader",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-scout.glb",
+  "source": "generators/kc-scout.ts"
+}

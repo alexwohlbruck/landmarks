@@ -1,0 +1,58 @@
+{
+  "id": "chi-ohare-terminal-3",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern",
+    "mid-century"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Chicago O'Hare concourses",
+      "url": "https://commons.wikimedia.org/wiki/File:Chicago_O%27Hare_concourses.jpg",
+      "author": "Sahmeditor",
+      "license": "PD"
+    },
+    {
+      "title": "American Airlines Terminal 3 at O'Hare International Airport",
+      "url": "https://commons.wikimedia.org/wiki/File:American_Airlines_Terminal_3_at_O%27Hare_International_Airport.jpg",
+      "author": "S340",
+      "license": "PD"
+    },
+    {
+      "title": "Terminals 2 and 3, Chicago O'Hare International Airport",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminals_2_and_3,_Chicago_O%27Hare_International_Airport,_Chicago,_IL_(54600736995.jpg",
+      "author": "Warren LeMay",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "At Chicago 2024 107",
+      "url": "https://commons.wikimedia.org/wiki/File:At_Chicago_2024_107.jpg",
+      "author": "Mike Peel",
+      "license": "CC-BY-SA-4.0"
+    }
+  ],
+  "detail": "models/chi-ohare-terminal-3.detail.glb",
+  "detailZoom": 16,
+  "file": "models/chi-ohare-terminal-3.glb",
+  "source": "generators/chi-ohare-terminal-3.ts"
+}

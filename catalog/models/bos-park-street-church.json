@@ -1,0 +1,54 @@
+{
+  "id": "bos-park-street-church",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "historic",
+    "federal"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "2024 Park Street Church - Boston 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2024_Park_Street_Church_-_Boston_01.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Park Street Church Boston DSC 0070 AD.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Park_Street_Church_Boston_DSC_0070_AD.JPG",
+      "author": "Adavyd",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "2017 Park Street Church steeple.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Park_Street_Church_steeple.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Park Street headhouse and Park Street Church, June 2008.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Park_Street_headhouse_and_Park_Street_Church,_June_2008.jpg",
+      "author": "Eric Kilby",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/bos-park-street-church.glb",
+  "source": "generators/bos-park-street-church.ts"
+}

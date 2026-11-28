@@ -1,0 +1,37 @@
+{
+  "id": "dubai-dxb-concourse-d",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "concourse",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "ISS-65 Dubai International Airport and Dubai Creek (cropped).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ISS-65_Dubai_International_Airport_and_Dubai_Creek_(cropped).jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/dubai-dxb-concourse-d.glb",
+  "source": "generators/dubai-dxb-concourse-d.ts"
+}

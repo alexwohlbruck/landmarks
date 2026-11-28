@@ -1,0 +1,17 @@
+{
+  "id": "stl-citypark",
+  "name": "Energizer Park",
+  "model": "stl-citypark",
+  "place": "st-louis-area",
+  "lng": -90.21024,
+  "lat": 38.6315451,
+  "bearing": 14.8,
+  "elevation": -12.2,
+  "minzoom": 14,
+  "replaces": [
+    "relation/11502812",
+    "relation/20127811",
+    "way/1469620556",
+    "way/1469620552"
+  ]
+}

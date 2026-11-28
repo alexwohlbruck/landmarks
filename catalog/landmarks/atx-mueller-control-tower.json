@@ -1,0 +1,14 @@
+{
+  "id": "atx-mueller-control-tower",
+  "name": "Robert Mueller Municipal Airport Control Tower",
+  "model": "atx-mueller-control-tower",
+  "place": "austin-area",
+  "lng": -97.698951,
+  "lat": 30.29197,
+  "bearing": 11.3,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/352204762"
+  ]
+}

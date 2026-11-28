@@ -1,0 +1,49 @@
+{
+  "id": "stl-priory-chapel",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "religious",
+    "church",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q7401652",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Exterior of the Priory Chapel at Saint Louis Abbey.jpg",
+      "author": "ArentYouJustAdorable",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_the_Priory_Chapel_at_Saint_Louis_Abbey.jpg"
+    },
+    {
+      "title": "Priory Chapel at Saint Louis Abbey - July 2013.jpg",
+      "author": "Magdalena424",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Priory_Chapel_at_Saint_Louis_Abbey_-_July_2013.jpg"
+    },
+    {
+      "title": "St. Anselm Parish Church (Priory Chapel), St. Louis Abbey, Mason Road",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://www.flickr.com/photos/59081381@N03/54223895575"
+    }
+  ],
+  "file": "models/stl-priory-chapel.glb",
+  "source": "generators/stl-priory-chapel.ts"
+}

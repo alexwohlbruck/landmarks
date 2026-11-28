@@ -1,0 +1,19 @@
+{
+  "id": "van-bc-place",
+  "name": "BC Place",
+  "model": "van-bc-place",
+  "place": "vancouver",
+  "lng": -123.1120067,
+  "lat": 49.2766985,
+  "bearing": 50.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q612227",
+  "replaces": [
+    "way/24705904",
+    "relation/5836463",
+    "way/390133855",
+    "way/390133856",
+    "way/1415412262"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "bos-millennium-tower",
+  "name": "Millennium Tower",
+  "model": "bos-millennium-tower",
+  "place": "boston-area",
+  "lng": -71.059506,
+  "lat": 42.355728,
+  "bearing": 41,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q17109414",
+  "replaces": [
+    "way/95035761",
+    "way/1281259198",
+    "way/1281259199"
+  ]
+}

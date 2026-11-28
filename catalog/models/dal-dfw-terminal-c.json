@@ -1,0 +1,57 @@
+{
+  "id": "dal-dfw-terminal-c",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/dal-dfw-terminal-c.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "DFW Terminals ACD View from Takeoff",
+      "url": "https://commons.wikimedia.org/wiki/File:DFW_Terminals_ACD_View_from_Takeoff_(52831109800).jpg",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "American Airlines Boeing 737 at Terminal C",
+      "url": "https://commons.wikimedia.org/wiki/File:American_Airlines_Boeing_737_at_Terminal_C.jpg",
+      "author": "MackenzieKram",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "DFW Terminal C",
+      "url": "https://www.flickr.com/photos/18583359@N00/79879678",
+      "author": "notdavidbrooks",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Skylink at Terminal E",
+      "url": "https://commons.wikimedia.org/wiki/File:Skylink_at_Terminal_E.jpg",
+      "author": "Baseball Watcher",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/dal-dfw-terminal-c.glb",
+  "source": "generators/dal-dfw-terminal-c.ts"
+}

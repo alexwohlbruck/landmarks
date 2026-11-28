@@ -1,0 +1,15 @@
+{
+  "id": "phx-hotel-valley-ho",
+  "name": "Hotel Valley Ho",
+  "model": "phx-hotel-valley-ho",
+  "place": "phoenix-area",
+  "lng": -111.933818,
+  "lat": 33.493376,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q5912068",
+  "replaces": [
+    "way/554797665"
+  ]
+}

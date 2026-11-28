@@ -1,0 +1,19 @@
+{
+  "id": "kc-union-station",
+  "name": "Kansas City Union Station",
+  "model": "kc-union-station",
+  "place": "kansas-city-area",
+  "lng": -94.58567,
+  "lat": 39.08516,
+  "bearing": 342.3,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q7886071",
+  "replaces": [
+    "way/23770231",
+    "way/1214640380",
+    "way/1214640381",
+    "way/1214640382",
+    "way/1214640383"
+  ]
+}

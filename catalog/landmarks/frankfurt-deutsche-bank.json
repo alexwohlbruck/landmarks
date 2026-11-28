@@ -1,0 +1,17 @@
+{
+  "id": "frankfurt-deutsche-bank",
+  "name": "Deutsche Bank Twin Towers",
+  "model": "frankfurt-deutsche-bank",
+  "place": "frankfurt",
+  "lng": 8.668243,
+  "lat": 50.113866,
+  "bearing": 348,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q701538",
+  "replaces": [
+    "way/174461753",
+    "way/174461751",
+    "way/174461752"
+  ]
+}

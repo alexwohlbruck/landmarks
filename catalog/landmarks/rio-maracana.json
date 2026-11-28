@@ -1,0 +1,31 @@
+{
+  "id": "rio-maracana",
+  "name": "Maracanã",
+  "model": "rio-maracana",
+  "place": "rio-de-janeiro",
+  "lng": -43.230177,
+  "lat": -22.912155,
+  "bearing": 31,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q155174",
+  "replaces": [
+    "relation/4587734",
+    "relation/5588917",
+    "relation/5597035",
+    "relation/5597036",
+    "relation/5597037",
+    "relation/5597038",
+    "relation/5588906",
+    "relation/5588907",
+    "relation/5588908",
+    "relation/5588909",
+    "relation/5588910",
+    "relation/5588911",
+    "relation/5588896",
+    "relation/5588899",
+    "way/1578331406",
+    "way/1578331416",
+    "way/1578325888"
+  ]
+}

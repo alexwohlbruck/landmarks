@@ -1,0 +1,42 @@
+{
+  "id": "sat-sunset-station",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "railway-station",
+    "mission-revival",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "San Antonio Train Station.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_Train_Station.jpg",
+      "author": "Tony Kent",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "San Antonio Station.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_Station.jpg",
+      "author": "Ironmatic1",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/sat-sunset-station.glb",
+  "source": "generators/sat-sunset-station.ts"
+}

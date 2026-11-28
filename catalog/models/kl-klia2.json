@@ -1,0 +1,70 @@
+{
+  "id": "kl-klia2",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "description": "klia2 (2014): the white-roofed main terminal under five parallel vaults, its airside nose and the long low piers J and K/L.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "View Over KLIA2",
+      "url": "https://www.flickr.com/photos/26978304@N08/16642762245",
+      "author": "Jason Thien",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "KLIA2 2016 October.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA2_2016_October.jpg",
+      "author": "Morio",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "KLIA2 4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA2_4.jpg",
+      "author": "Yjfstorehouse",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "KLIA2 entrance.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA2_entrance.jpg",
+      "author": "Yjfstorehouse",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kuala Lumpur International Airport 20240509.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kuala_Lumpur_International_Airport_20240509.jpg",
+      "author": "Eugene Ormandy",
+      "license": "CC0"
+    },
+    {
+      "title": "Bird-eye view of KLIA and KLIA2 - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bird-eye_view_of_KLIA_and_KLIA2_-_panoramio.jpg",
+      "author": "CK Tan",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "detail": "models/kl-klia2.detail.glb",
+  "detailZoom": 16,
+  "file": "models/kl-klia2.glb",
+  "source": "generators/kl-klia2.ts"
+}

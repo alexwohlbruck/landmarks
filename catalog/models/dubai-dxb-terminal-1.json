@@ -1,0 +1,56 @@
+{
+  "id": "dubai-dxb-terminal-1",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Dubai International Airport",
+      "url": "https://www.flickr.com/photos/65783662@N00/2187618962",
+      "author": "Sergey Vladimirov",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "DXB T1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:DXB_T1.jpg",
+      "author": "Vitorabdala",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dubai Airport overview.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dubai_Airport_overview.jpg",
+      "author": "Umair Shaikh",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "ISS-65 Dubai International Airport and Dubai Creek (cropped).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ISS-65_Dubai_International_Airport_and_Dubai_Creek_(cropped).jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    }
+  ],
+  "detail": "models/dubai-dxb-terminal-1.detail.glb",
+  "detailZoom": 16,
+  "file": "models/dubai-dxb-terminal-1.glb",
+  "source": "generators/dubai-dxb-terminal-1.ts"
+}

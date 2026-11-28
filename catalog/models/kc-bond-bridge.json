@@ -1,0 +1,76 @@
+{
+  "id": "kc-bond-bridge",
+  "detail": "models/kc-bond-bridge.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "cable-stayed-bridge",
+    "missouri-river",
+    "interstate",
+    "contemporary",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Christopher Bond Bridge U0T7762.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Christopher_Bond_Bridge_U0T7762.jpg",
+      "author": "Todd Wade",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Christopher Bond Bridge U0T7104.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Christopher_Bond_Bridge_U0T7104.jpg",
+      "author": "Todd Wade",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Christopher S. Bond Bridge 2025a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Christopher_S._Bond_Bridge_2025a.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Christopher S. Bond Bridge 2025b.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Christopher_S._Bond_Bridge_2025b.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Christopher S. Bond Bridge 2025c.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Christopher_S._Bond_Bridge_2025c.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "New Paseo Bridge, Kansas City, Missouri.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:New_Paseo_Bridge,_Kansas_City,_Missouri.jpg",
+      "author": "Smuckola",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Paseo bridge (ICON/Bond bridge)",
+      "url": "https://www.flickr.com/photos/22433418@N04/6804871515",
+      "author": "davedehetre",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/kc-bond-bridge.glb",
+  "source": "generators/kc-bond-bridge.ts"
+}

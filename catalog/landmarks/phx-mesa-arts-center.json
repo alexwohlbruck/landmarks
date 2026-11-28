@@ -1,0 +1,15 @@
+{
+  "id": "phx-mesa-arts-center",
+  "name": "Mesa Arts Center",
+  "model": "phx-mesa-arts-center",
+  "place": "phoenix-area",
+  "lng": -111.830325,
+  "lat": 33.414157,
+  "bearing": 20.7,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q6821052",
+  "replaces": [
+    "way/134185633"
+  ]
+}

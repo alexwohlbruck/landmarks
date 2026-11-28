@@ -1,0 +1,14 @@
+{
+  "id": "incheon-airport-terminal-2",
+  "name": "Incheon International Airport Terminal 2",
+  "model": "incheon-airport-terminal-2",
+  "place": "incheon",
+  "lng": 126.4341534,
+  "lat": 37.4681526,
+  "bearing": -30.7,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "relation/9310847"
+  ]
+}

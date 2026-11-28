@@ -1,0 +1,47 @@
+{
+  "id": "phx-burton-barr-central-library",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "library",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Phoenix Central Library - North East Corner - 2008-12-27.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_Central_Library_-_North_East_Corner_-_2008-12-27.jpg",
+      "author": "Cygnusloop99",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Burton Barr Central Library-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Burton_Barr_Central_Library-1.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Phoenix City Library - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_City_Library_-_panoramio.jpg",
+      "author": "davidpinter",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/phx-burton-barr-central-library.glb",
+  "source": "generators/phx-burton-barr-central-library.ts"
+}

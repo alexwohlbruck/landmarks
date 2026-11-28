@@ -1,0 +1,15 @@
+{
+  "id": "sat-mission-san-jose",
+  "name": "Mission San José",
+  "model": "sat-mission-san-jose",
+  "place": "san-antonio-area",
+  "lng": -98.479837,
+  "lat": 29.362344,
+  "bearing": 27,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/368488495"
+  ],
+  "wikidata": "Q6878730"
+}

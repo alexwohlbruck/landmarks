@@ -1,0 +1,15 @@
+{
+  "id": "dubai-dxb-terminal-1",
+  "name": "Dubai International Airport Terminal 1",
+  "model": "dubai-dxb-terminal-1",
+  "place": "dubai",
+  "lng": 55.352952,
+  "lat": 25.2491766,
+  "bearing": 31.5,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/98425196"
+  ],
+  "wikidata": "Q56451410"
+}

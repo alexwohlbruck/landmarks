@@ -1,0 +1,14 @@
+{
+  "id": "phx-wrigley-mansion",
+  "name": "Wrigley Mansion",
+  "model": "phx-wrigley-mansion",
+  "place": "phoenix-area",
+  "lng": -112.026714,
+  "lat": 33.5228344,
+  "bearing": 332,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/156733794"
+  ]
+}

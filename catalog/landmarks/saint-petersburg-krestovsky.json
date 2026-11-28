@@ -1,0 +1,16 @@
+{
+  "id": "saint-petersburg-krestovsky",
+  "name": "Krestovsky Stadium (Gazprom Arena)",
+  "model": "saint-petersburg-krestovsky",
+  "place": "saint-petersburg",
+  "lng": 30.2205079,
+  "lat": 59.9729904,
+  "bearing": 5.6,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q722970",
+  "replaces": [
+    "relation/8841754",
+    "relation/8846006"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "stl-central-library",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "library",
+    "civic"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q7589673",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "STLCentrallibrary.jpg",
+      "author": "Garfield226",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:STLCentrallibrary.jpg"
+    },
+    {
+      "title": "St. Louis Central Public Library, Olive Street, St. Louis, MO.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Central_Public_Library,_Olive_Street,_St._Louis,_MO.jpg"
+    },
+    {
+      "title": "St. Louis Central Public Library, Olive Street, St. Louis, MO - 53125463731.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Central_Public_Library,_Olive_Street,_St._Louis,_MO_-_53125463731.jpg"
+    }
+  ],
+  "file": "models/stl-central-library.glb",
+  "source": "generators/stl-central-library.ts"
+}

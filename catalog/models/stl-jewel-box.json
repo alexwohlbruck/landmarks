@@ -1,0 +1,61 @@
+{
+  "id": "stl-jewel-box",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "greenhouse",
+    "art-deco",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "JewelBox2013",
+      "author": "Marcus Qwertyus",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:JewelBox2013.jpg"
+    },
+    {
+      "title": "Jewel box, angled view",
+      "author": "MauraWen",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Jewel_box,_angled_view.jpg"
+    },
+    {
+      "title": "Jewel Box St Louis",
+      "author": "Fredlyfish4",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Jewel_Box_St_Louis.JPG"
+    },
+    {
+      "title": "Jewel box front view, Feb 2026",
+      "author": "MauraWen",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Jewel_box_front_view,_Feb_2026.jpg"
+    },
+    {
+      "title": "Jewel box interior",
+      "author": "MauraWen",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Jewel_box_interior.jpg"
+    }
+  ],
+  "wikidata": "Q1688605",
+  "file": "models/stl-jewel-box.glb",
+  "source": "generators/stl-jewel-box.ts"
+}

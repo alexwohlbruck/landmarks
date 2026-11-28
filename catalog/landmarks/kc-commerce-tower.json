@@ -1,0 +1,15 @@
+{
+  "id": "kc-commerce-tower",
+  "name": "Commerce Tower",
+  "model": "kc-commerce-tower",
+  "place": "kansas-city-area",
+  "lng": -94.582664,
+  "lat": 39.1031914,
+  "bearing": 2,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q5152438",
+  "replaces": [
+    "way/132575342"
+  ]
+}

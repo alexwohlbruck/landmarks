@@ -1,0 +1,60 @@
+{
+  "id": "phx-tempe-center-for-the-arts",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "theatre",
+    "arts-centre",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tempe Center for the Arts - NWC - 2009-09-04.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Tempe_Center_for_the_Arts_-_NWC_-_2009-09-04.JPG",
+      "author": "Cygnusloop99",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Tempe Center for the Arts - South - 2009-09-04.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tempe_Center_for_the_Arts_-_South_-_2009-09-04.jpg",
+      "author": "Cygnusloop99",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Tempe Center for the Arts - East - 2009-09-04.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Tempe_Center_for_the_Arts_-_East_-_2009-09-04.JPG",
+      "author": "Cygnusloop99",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Tempe Center for the Arts, Tempe, Arizona - panoramio (3).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tempe_Center_for_the_Arts,_Tempe,_Arizona_-_panoramio_(3).jpg",
+      "author": "davidpinter",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Northern View, Tempe Center for the Arts, Tempe, Arizona - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Northern_View,_Tempe_Center_for_the_Arts,_Tempe,_Arizona_-_panoramio.jpg",
+      "author": "davidpinter",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/phx-tempe-center-for-the-arts.glb",
+  "source": "generators/phx-tempe-center-for-the-arts.ts"
+}

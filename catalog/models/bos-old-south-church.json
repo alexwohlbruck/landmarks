@@ -1,0 +1,54 @@
+{
+  "id": "bos-old-south-church",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "historic",
+    "gothic-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Old South Church - Boston 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_South_Church_-_Boston_01.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2017 Old South Church tower, 645 Boylston Street, Boston, Massachusetts.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Old_South_Church_tower,_645_Boylston_Street,_Boston,_Massachusetts.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2017 Prudential Skywalk - Old South Church (NE).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Prudential_Skywalk_-_Old_South_Church_(NE).jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Old South Church - Boston 07.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_South_Church_-_Boston_07.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-old-south-church.glb",
+  "source": "generators/bos-old-south-church.ts"
+}

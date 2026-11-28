@@ -1,0 +1,15 @@
+{
+  "id": "sat-randolph-taj-mahal",
+  "name": "Randolph Field Administration Building (Taj Mahal)",
+  "model": "sat-randolph-taj-mahal",
+  "place": "san-antonio-area",
+  "lng": -98.2826785,
+  "lat": 29.5359527,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q16056132",
+  "replaces": [
+    "way/531304130"
+  ]
+}

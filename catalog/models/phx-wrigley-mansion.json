@@ -1,0 +1,48 @@
+{
+  "id": "phx-wrigley-mansion",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mansion",
+    "historic",
+    "spanish-colonial-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Wrigley Mansion-2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Wrigley_Mansion-2.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Phoenix-Wrigley Mansion-1929-1.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix-Wrigley_Mansion-1929-1.JPG",
+      "author": "Tony the Marine",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Phoenix-Wrigley Mansion-1929-2.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix-Wrigley_Mansion-1929-2.JPG",
+      "author": "Tony the Marine",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/phx-wrigley-mansion.glb",
+  "source": "generators/phx-wrigley-mansion.ts"
+}

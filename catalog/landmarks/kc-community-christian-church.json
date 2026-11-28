@@ -1,0 +1,15 @@
+{
+  "id": "kc-community-christian-church",
+  "name": "Community Christian Church",
+  "model": "kc-community-christian-church",
+  "place": "kansas-city-area",
+  "lng": -94.586407,
+  "lat": 39.043178,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q5154675",
+  "replaces": [
+    "way/331463804"
+  ]
+}

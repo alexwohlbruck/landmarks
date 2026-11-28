@@ -1,0 +1,42 @@
+{
+  "id": "phx-hyatt-regency",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "hotel",
+    "revolving-restaurant",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hyatt Regency Phoenix 2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hyatt_Regency_Phoenix_2022.jpg",
+      "author": "Cazzy82",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "HyattRegencyPhoenix.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:HyattRegencyPhoenix.JPG",
+      "author": "Jimmybeverage",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/phx-hyatt-regency.glb",
+  "source": "generators/phx-hyatt-regency.ts"
+}

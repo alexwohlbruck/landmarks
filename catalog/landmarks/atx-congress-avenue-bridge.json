@@ -1,0 +1,15 @@
+{
+  "id": "atx-congress-avenue-bridge",
+  "name": "Ann W. Richards Congress Avenue Bridge",
+  "model": "atx-congress-avenue-bridge",
+  "place": "austin-area",
+  "lng": -97.7452919,
+  "lat": 30.261393,
+  "bearing": 17.88,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q4766731",
+  "replaces": [
+    "way/708605258"
+  ]
+}

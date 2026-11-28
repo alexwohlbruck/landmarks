@@ -1,0 +1,61 @@
+{
+  "id": "la-lax-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Los Angeles International Airport Air Traffic Control Tower 2019",
+      "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles_International_Airport_Air_Traffic_Control_Tower_2019.jpg",
+      "author": "Steven Lek",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Los Angeles International Airport, Air Traffic Control Tower 1 2018-05-20",
+      "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles_International_Airport,_Air_Traffic_Control_Tower_1_2018-05-20.jpg",
+      "author": "FASTILY",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Control tower at LAX",
+      "url": "https://commons.wikimedia.org/wiki/File:Control_tower_at_LAX_(6030868843).jpg",
+      "author": "Moto \"Club4AG\" Miwa",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "LAX ATCT Closeup",
+      "url": "https://commons.wikimedia.org/wiki/File:LAX_ATCT_Closeup_(2970224921).jpg",
+      "author": "John Murphy",
+      "license": "CC-BY-SA-2.0"
+    },
+    {
+      "title": "Cold Night at LAX",
+      "url": "https://commons.wikimedia.org/wiki/File:Cold_Night_at_LAX_(2144886849).jpg",
+      "author": "John Murphy",
+      "license": "CC-BY-SA-2.0"
+    }
+  ],
+  "file": "models/la-lax-control-tower.glb",
+  "source": "generators/la-lax-control-tower.ts"
+}

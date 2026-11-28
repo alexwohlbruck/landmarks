@@ -1,0 +1,48 @@
+{
+  "id": "bos-symphony-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "concert-hall",
+    "historic",
+    "beaux-arts"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "2018 Symphony Hall Boston from southwest",
+      "url": "https://commons.wikimedia.org/wiki/File:2018_Symphony_Hall_Boston_from_southwest.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2018 Symphony Hall Boston",
+      "url": "https://commons.wikimedia.org/wiki/File:2018_Symphony_Hall_Boston.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Symphony Hall corner view",
+      "url": "https://commons.wikimedia.org/wiki/File:Symphony_Hall_corner_view.jpg",
+      "author": "MyCatIsAChonk",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-symphony-hall.glb",
+  "source": "generators/bos-symphony-hall.ts"
+}

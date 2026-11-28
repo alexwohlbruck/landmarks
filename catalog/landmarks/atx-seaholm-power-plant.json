@@ -1,0 +1,15 @@
+{
+  "id": "atx-seaholm-power-plant",
+  "name": "Seaholm Power Plant",
+  "model": "atx-seaholm-power-plant",
+  "place": "austin-area",
+  "lng": -97.752625,
+  "lat": 30.266572,
+  "bearing": 18,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/352112927",
+    "way/965043811"
+  ]
+}

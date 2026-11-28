@@ -1,0 +1,15 @@
+{
+  "id": "phx-st-marys-basilica",
+  "name": "St. Mary's Basilica",
+  "model": "phx-st-marys-basilica",
+  "place": "phoenix-area",
+  "lng": -112.0693994,
+  "lat": 33.4507751,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q4543167",
+  "replaces": [
+    "way/37057984"
+  ]
+}

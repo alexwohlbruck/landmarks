@@ -1,0 +1,21 @@
+{
+  "id": "sat-tower-of-the-americas",
+  "name": "Tower of the Americas",
+  "model": "sat-tower-of-the-americas",
+  "place": "san-antonio-area",
+  "lng": -98.4835734,
+  "lat": 29.4190402,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q1300520",
+  "replaces": [
+    "way/78485919",
+    "way/351672055",
+    "way/351672056",
+    "way/351672057",
+    "way/351672058",
+    "way/351672059",
+    "way/351672060"
+  ]
+}

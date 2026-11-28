@@ -1,0 +1,16 @@
+{
+  "id": "atx-barton-springs-bathhouse",
+  "name": "Barton Springs Bathhouse",
+  "model": "atx-barton-springs-bathhouse",
+  "place": "austin-area",
+  "lng": -97.771354,
+  "lat": 30.264083,
+  "bearing": 345,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "relation/13599348",
+    "way/1015712051",
+    "way/1015712052"
+  ]
+}

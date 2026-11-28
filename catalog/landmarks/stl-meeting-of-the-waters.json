@@ -1,0 +1,12 @@
+{
+  "id": "stl-meeting-of-the-waters",
+  "name": "Meeting of the Waters",
+  "model": "stl-meeting-of-the-waters",
+  "place": "st-louis-area",
+  "lng": -90.2076884,
+  "lat": 38.6299543,
+  "bearing": 14.8,
+  "elevation": 0,
+  "minzoom": 17,
+  "replaces": []
+}

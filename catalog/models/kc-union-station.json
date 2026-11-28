@@ -1,0 +1,86 @@
+{
+  "id": "kc-union-station",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "train-station",
+    "beaux-arts",
+    "museum",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kansas City Union Station 2025a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_Union_Station_2025a.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kansas City Union Station 2025b.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_Union_Station_2025b.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kansas City Union Station 2025c.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_Union_Station_2025c.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kansas City Union Station 2025d.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_Union_Station_2025d.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kansas City Union Station 2025e.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_Union_Station_2025e.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kansas City Union Station, from the tower (14635653101).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_Union_Station,_from_the_tower_(14635653101).jpg",
+      "author": "smallcurio",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Views from Liberty Memorial 6120.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Views_from_Liberty_Memorial_6120.JPG",
+      "author": "Dual Freq",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Union Station in Kansas City at Night.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Union_Station_in_Kansas_City_at_Night.jpg",
+      "author": "RuralResurrection",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Union Station Kansas City floor plan.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Union_Station_Kansas_City_floor_plan.jpg",
+      "author": "John A. Droege (1916)",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/kc-union-station.glb",
+  "source": "generators/kc-union-station.ts"
+}

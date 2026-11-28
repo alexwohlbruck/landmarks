@@ -1,0 +1,54 @@
+{
+  "id": "sat-spanish-governors-palace",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "spanish-colonial",
+    "museum"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "The Spanish Governor's Palace in San Antonio, Texas LCCN2014633550.tif",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Spanish_Governor%27s_Palace_in_San_Antonio,_Texas_LCCN2014633550.tif",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "Courtyard of the Spanish Governor's Palace in San Antonio, Texas LCCN2014633577.tif",
+      "url": "https://commons.wikimedia.org/wiki/File:Courtyard_of_the_Spanish_Governor%27s_Palace_in_San_Antonio,_Texas_LCCN2014633577.tif",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "San Antonio TX Spanish Govenors Palace.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_TX_Spanish_Govenors_Palace.jpg",
+      "author": "Lutz Fischer-Lamprecht",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "HABS TX-3540, Spanish Governor's Palace, sheets 4-5",
+      "url": "https://commons.wikimedia.org/wiki/File:East_and_West_Elevations_-_Spanish_Governor%27s_Palace,_105_Plaza_de_Armas,_San_Antonio,_Bexar_County,_TX_HABS_TX-3540_(sheet_5_of_15).png",
+      "author": "Historic American Buildings Survey",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/sat-spanish-governors-palace.glb",
+  "source": "generators/sat-spanish-governors-palace.ts"
+}

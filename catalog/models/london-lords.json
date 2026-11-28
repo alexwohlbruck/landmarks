@@ -1,0 +1,125 @@
+{
+  "id": "london-lords",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "cricket",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "Lord's: separate stands round the outfield, with the red-brick Victorian Pavilion and its two towers, the white Media Centre pod on two legs, the Mound Stand's tents, the curved timber-soffit roofs of the Compton and Edrich Stands and the Grand Stand's bowstring truss and mast.",
+  "detail": "models/london-lords.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Lord's, the changed view from the Compton Stand - geograph.org.uk - 7172939.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lord%27s,_the_changed_view_from_the_Compton_Stand_-_geograph.org.uk_-_7172939.jpg",
+      "author": "John Sutton",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Lords-Cricket-Ground-Pavilion-06-08-2017.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lords-Cricket-Ground-Pavilion-06-08-2017.jpg",
+      "author": "Yorkspotter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Pavilion - Lord's Cricket Ground.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Pavilion_-_Lord%27s_Cricket_Ground.JPG",
+      "author": "PaddyBriggs",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Lords Compton Stand Oct 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lords_Compton_Stand_Oct_2021.jpg",
+      "author": "Spike 'em",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lords Edrich Stand Oct 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lords_Edrich_Stand_Oct_2021.jpg",
+      "author": "Spike 'em",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lords Nursery End Oct 202.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lords_Nursery_End_Oct_202.jpg",
+      "author": "Spike 'em",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lord's, a view from the Warner Stand - geograph.org.uk - 7462550.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lord%27s,_a_view_from_the_Warner_Stand_-_geograph.org.uk_-_7462550.jpg",
+      "author": "John Sutton",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Lord's, the new Warner Stand - geograph.org.uk - 5448306.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lord%27s,_the_new_Warner_Stand_-_geograph.org.uk_-_5448306.jpg",
+      "author": "John Sutton",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Tavern Stand and Mound Stand, Lord's - geograph.org.uk - 3430213.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tavern_Stand_and_Mound_Stand,_Lord%27s_-_geograph.org.uk_-_3430213.jpg",
+      "author": "Paul Gillett",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Lord's Cricket Ground, The Grandstand - geograph.org.uk - 3934871.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lord%27s_Cricket_Ground,_The_Grandstand_-_geograph.org.uk_-_3934871.jpg",
+      "author": "John Sutton",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Lord's Media Centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lord%27s_Media_Centre.jpg",
+      "author": "PaddyBriggs",
+      "license": "Public domain"
+    },
+    {
+      "title": "Lord's, The Nursery End before the Final - geograph.org.uk - 3664475.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lord%27s,_The_Nursery_End_before_the_Final_-_geograph.org.uk_-_3664475.jpg",
+      "author": "John Sutton",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "J P Morgan Media Centre, Lord's - geograph.org.uk - 3430380.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:J_P_Morgan_Media_Centre,_Lord%27s_-_geograph.org.uk_-_3430380.jpg",
+      "author": "Paul Gillett",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Lords Cricket Ground.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lords_Cricket_Ground.jpg",
+      "author": "Shryta234",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lords Cricket Ground, June 2011.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lords_Cricket_Ground,_June_2011.jpg",
+      "author": "Gareth Williams",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/london-lords.glb",
+  "source": "generators/london-lords.ts"
+}

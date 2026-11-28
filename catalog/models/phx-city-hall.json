@@ -1,0 +1,48 @@
+{
+  "id": "phx-city-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "civic",
+    "skyscraper",
+    "postmodern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Phoenix City Hall-3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_City_Hall-3.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Phoenix City Hall-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_City_Hall-1.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Phoenix City Hall (25325678478).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_City_Hall_(25325678478).jpg",
+      "author": "Gage Skidmore",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/phx-city-hall.glb",
+  "source": "generators/phx-city-hall.ts"
+}

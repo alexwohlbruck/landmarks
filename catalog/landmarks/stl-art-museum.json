@@ -1,0 +1,17 @@
+{
+  "id": "stl-art-museum",
+  "name": "Saint Louis Art Museum",
+  "model": "stl-art-museum",
+  "place": "st-louis-area",
+  "lng": -90.2946472,
+  "lat": 38.6390722,
+  "bearing": 37,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q1760539",
+  "replaces": [
+    "relation/20743888",
+    "relation/20743890",
+    "way/483555579"
+  ]
+}

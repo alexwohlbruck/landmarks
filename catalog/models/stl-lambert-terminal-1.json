@@ -1,0 +1,48 @@
+{
+  "id": "stl-lambert-terminal-1",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "modernist",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Terminal 1, St. Louis Lambert International Airport, St. Louis, MO - 52832831855.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_1,_St._Louis_Lambert_International_Airport,_St._Louis,_MO_-_52832831855.jpg"
+    },
+    {
+      "title": "Terminal 1, St. Louis Lambert International Airport, St. Louis, MO - 52832875783.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_1,_St._Louis_Lambert_International_Airport,_St._Louis,_MO_-_52832875783.jpg"
+    },
+    {
+      "title": "Lambert-terminal.jpg",
+      "author": "unknown",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Lambert-terminal.jpg"
+    }
+  ],
+  "file": "models/stl-lambert-terminal-1.glb",
+  "source": "generators/stl-lambert-terminal-1.ts"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "kc-kansas-speedway",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "motor-racing",
+    "grandstand",
+    "speedway",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "The Kansas Speedway.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Kansas_Speedway.jpg",
+      "author": "Balaji",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Kansas Speedway stands and track (August 2025).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_Speedway_stands_and_track_(August_2025).jpg",
+      "author": "Wikipedialuva",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Kansas Speedway Aerial.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_Speedway_Aerial.jpg",
+      "author": "Lectrician2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kansas Speedway (44619764251).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_Speedway_(44619764251).jpg",
+      "author": "elisfkc",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/kc-kansas-speedway.glb",
+  "source": "generators/kc-kansas-speedway.ts"
+}

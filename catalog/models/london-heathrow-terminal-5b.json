@@ -1,0 +1,64 @@
+{
+  "id": "london-heathrow-terminal-5b",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "concourse",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "North-East Corner of London Heathrow Terminal 5B",
+      "url": "https://commons.wikimedia.org/wiki/File:North-East_Corner_of_London_Heathrow_Terminal_5B_-_geograph.org.uk_-_8391446.jpg",
+      "author": "Richard Cooke",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "North End of Heathrow Terminal 5B",
+      "url": "https://commons.wikimedia.org/wiki/File:North_End_of_Heathrow_Terminal_5B_-_geograph.org.uk_-_8126753.jpg",
+      "author": "Richard Cooke",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Satellite building 5b, Heathrow Airport Terminal 5 (8247209)",
+      "url": "https://commons.wikimedia.org/wiki/File:Satellite_building_5b,_Heathrow_Airport_Terminal_5_-_geograph.org.uk_-_8247209.jpg",
+      "author": "Derek Harper",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Satellite building 5b, Heathrow Airport Terminal 5 (8247283)",
+      "url": "https://commons.wikimedia.org/wiki/File:Satellite_building_5b,_Heathrow_Airport_Terminal_5_-_geograph.org.uk_-_8247283.jpg",
+      "author": "Derek Harper",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Heathrow terminal 5 from air",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_terminal_5_from_air.JPG",
+      "author": "Clayton Tang",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/london-heathrow-terminal-5b.detail.glb",
+  "detailZoom": 16,
+  "file": "models/london-heathrow-terminal-5b.glb",
+  "source": "generators/london-heathrow-terminal-5b.ts"
+}

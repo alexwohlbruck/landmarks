@@ -1,0 +1,48 @@
+{
+  "id": "stl-st-louis-wheel",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "ride",
+  "tags": [
+    "observation-wheel",
+    "ferris-wheel",
+    "animated"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Ferris wheel called, simply, 'The St. Louis Wheel'",
+      "url": "https://www.loc.gov/item/2020742812/",
+      "author": "Carol M. Highsmith",
+      "license": "CC0"
+    },
+    {
+      "title": "St. Louis Wheel, St. Louis Union Station, Market Street, St. Louis, MO",
+      "url": "https://www.flickr.com/photos/59081381@N03/53051062073",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "St. Louis Wheel, St. Louis Union Station, Market Street, St. Louis, MO",
+      "url": "https://www.flickr.com/photos/59081381@N03/53050574961",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/stl-st-louis-wheel.glb",
+  "source": "generators/stl-st-louis-wheel.ts"
+}

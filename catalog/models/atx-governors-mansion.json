@@ -1,0 +1,67 @@
+{
+  "id": "atx-governors-mansion",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "greek-revival",
+    "residence",
+    "government"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Texas governors mansion.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Texas_governors_mansion.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Texas Governors Mansion Highsmith.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Texas_Governors_Mansion_Highsmith.jpg",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "HABS TX-33-C-4, Governor's Mansion, sheet 3 of 11 (elevations)",
+      "url": "https://commons.wikimedia.org/wiki/File:Governor%27s_Mansion,_1010_Colorado_Street,_Austin,_Travis_County,_TX_HABS_TEX,226,-AUST,3-_(sheet_3_of_11).png",
+      "author": "Historic American Buildings Survey",
+      "license": "Public domain"
+    },
+    {
+      "title": "HABS TX-33-C-4, Governor's Mansion, sheet 2 of 11 (second floor plan)",
+      "url": "https://commons.wikimedia.org/wiki/File:Governor%27s_Mansion,_1010_Colorado_Street,_Austin,_Travis_County,_TX_HABS_TEX,226,-AUST,3-_(sheet_2_of_11).png",
+      "author": "Historic American Buildings Survey",
+      "license": "Public domain"
+    },
+    {
+      "title": "East (front) elevation from southeast, HABS TEX,226-AUST,3-6",
+      "url": "https://commons.wikimedia.org/wiki/File:EAST_(FRONT)_ELEVATION_FROM_SOUTHEAST_-_Governor%27s_Mansion,_1010_Colorado_Street,_Austin,_Travis_County,_TX_HABS_TEX,226,-AUST,3-6.tif",
+      "author": "Jack E. Boucher",
+      "license": "Public domain"
+    },
+    {
+      "title": "West elevation, HABS TEX,226-AUST,3-9",
+      "url": "https://commons.wikimedia.org/wiki/File:WEST_ELEVATION_-_Governor%27s_Mansion,_1010_Colorado_Street,_Austin,_Travis_County,_TX_HABS_TEX,226,-AUST,3-9.tif",
+      "author": "Jack Boucher",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/atx-governors-mansion.glb",
+  "source": "generators/atx-governors-mansion.ts"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "phx-luhrs-tower",
+  "name": "Luhrs Tower",
+  "model": "phx-luhrs-tower",
+  "place": "phoenix-area",
+  "lng": -112.0747708,
+  "lat": 33.4468407,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q6699887",
+  "replaces": [
+    "way/37057924"
+  ]
+}

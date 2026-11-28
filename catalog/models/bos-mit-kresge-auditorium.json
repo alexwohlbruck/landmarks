@@ -1,0 +1,49 @@
+{
+  "id": "bos-mit-kresge-auditorium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "university",
+    "auditorium",
+    "modernist",
+    "thin-shell"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kresge Auditorium, MIT (view with Green Building).JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Kresge_Auditorium,_MIT_(view_with_Green_Building).JPG",
+      "author": "Daderot",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "MIT Chapel Kresge Auditorium aerial.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:MIT_Chapel_Kresge_Auditorium_aerial.JPG",
+      "author": "Nick Allen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "MIT Kresge Auditorium (8223258618).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MIT_Kresge_Auditorium_(8223258618).jpg",
+      "author": "Aleksandr Zykov",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/bos-mit-kresge-auditorium.glb",
+  "source": "generators/bos-mit-kresge-auditorium.ts"
+}

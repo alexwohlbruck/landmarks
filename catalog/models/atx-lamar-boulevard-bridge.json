@@ -1,0 +1,70 @@
+{
+  "id": "atx-lamar-boulevard-bridge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "historic",
+    "arch-bridge",
+    "concrete",
+    "road-bridge",
+    "lake"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/atx-lamar-boulevard-bridge.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Lamar Bridge 2007",
+      "url": "https://commons.wikimedia.org/wiki/File:Lamar_Bridge_2007.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Lamar Boulevard Bridge 20160904185436",
+      "url": "https://commons.wikimedia.org/wiki/File:Lamar_Boulevard_Bridge_20160904185436.jpg",
+      "author": "Spawnzilla",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lamar Boulevard Bridge 20160904185556",
+      "url": "https://commons.wikimedia.org/wiki/File:Lamar_Boulevard_Bridge_20160904185556.jpg",
+      "author": "Spawnzilla",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lamar Bridge",
+      "url": "https://commons.wikimedia.org/wiki/File:Lamar_Bridge.jpg",
+      "author": "Claudia Durand",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Lamar Blvd Bridge Austin Substructure",
+      "url": "https://commons.wikimedia.org/wiki/File:Lamar_Blvd_Bridge_Austin_Substructure.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Lamar St Bridge, Austin TX",
+      "url": "https://commons.wikimedia.org/wiki/File:Lamar_St_Bridge,_Austin_TX.jpg",
+      "author": "sbmeaper1",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/atx-lamar-boulevard-bridge.glb",
+  "source": "generators/atx-lamar-boulevard-bridge.ts"
+}

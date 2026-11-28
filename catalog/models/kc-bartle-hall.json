@@ -1,0 +1,55 @@
+{
+  "id": "kc-bartle-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "convention-center",
+    "sculpture",
+    "public-art",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Bartle Hall from southwest.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bartle_Hall_from_southwest.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "Bartle Hall from Broadway Blvd.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bartle_Hall_from_Broadway_Blvd.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "Bartle Hall Sky Stations Kansas City MO.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bartle_Hall_Sky_Stations_Kansas_City_MO.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "Bartle Hall Convention Ctr Pylon 01.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Bartle_Hall_Convention_Ctr_Pylon_01.JPG",
+      "author": "Nightryder84",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/kc-bartle-hall.glb",
+  "source": "generators/kc-bartle-hall.ts"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "phx-chase-field",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "baseball",
+    "ballpark",
+    "retractable-roof",
+    "sports"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Chase Field aerial.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Chase_Field_aerial.jpg",
+      "author": "Dicklyon",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Chase Field - 2011-07-11 - Exterior North West.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Chase_Field_-_2011-07-11_-_Exterior_North_West.jpg",
+      "author": "Cygnusloop99",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Chase Field - 2011-07-11 - Exterior North East (1).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Chase_Field_-_2011-07-11_-_Exterior_North_East_(1).jpg",
+      "author": "Cygnusloop99",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Chase Field-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Chase_Field-1.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Chase Field (6377888151).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Chase_Field_(6377888151).jpg",
+      "author": "Alan Stark",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Chase field satellite view.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Chase_field_satellite_view.png",
+      "author": "NASA",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/phx-chase-field.glb",
+  "source": "generators/phx-chase-field.ts"
+}

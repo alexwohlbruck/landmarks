@@ -1,0 +1,15 @@
+{
+  "id": "atx-w-austin",
+  "name": "W Austin and ACL Live at the Moody Theater",
+  "model": "atx-w-austin",
+  "place": "austin-area",
+  "lng": -97.746953,
+  "lat": 30.2656381,
+  "bearing": 17.9,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/134807228",
+    "way/516289346"
+  ]
+}

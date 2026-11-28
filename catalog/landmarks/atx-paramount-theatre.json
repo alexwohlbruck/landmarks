@@ -1,0 +1,15 @@
+{
+  "id": "atx-paramount-theatre",
+  "name": "Paramount Theatre",
+  "model": "atx-paramount-theatre",
+  "place": "austin-area",
+  "lng": -97.741863,
+  "lat": 30.269379,
+  "bearing": 17.5,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q7756086",
+  "replaces": [
+    "way/328526454"
+  ]
+}

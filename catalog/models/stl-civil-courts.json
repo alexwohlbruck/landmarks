@@ -1,0 +1,56 @@
+{
+  "id": "stl-civil-courts",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "civic",
+    "courthouse",
+    "skyscraper"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q5124455",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Civil Courts Building (2011).jpg",
+      "author": "United States District Court for the Eastern District of Missouri",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Civil_Courts_Building_(2011).jpg"
+    },
+    {
+      "title": "St Louis Civil Courts, 2007.jpg",
+      "author": "Matthew Black",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St_Louis_Civil_Courts,_2007.jpg"
+    },
+    {
+      "title": "St. Louis Civil Courts Building rear facade.jpg",
+      "author": "Triciaburmeister",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Civil_Courts_Building_rear_facade.jpg"
+    },
+    {
+      "title": "St. Louis Civil Courts Building 10252023 KV1.jpg",
+      "author": "Kvescovo",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Civil_Courts_Building_10252023_KV1.jpg"
+    }
+  ],
+  "file": "models/stl-civil-courts.glb",
+  "source": "generators/stl-civil-courts.ts"
+}

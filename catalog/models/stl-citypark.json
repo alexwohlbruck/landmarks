@@ -1,0 +1,49 @@
+{
+  "id": "stl-citypark",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "stadium",
+    "sports",
+    "soccer"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q30591730",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Centene Stadium (52449556638).jpg",
+      "author": "Chris Yunker",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Centene_Stadium_(52449556638).jpg"
+    },
+    {
+      "title": "Centene Stadium (52448517197).jpg",
+      "author": "Chris Yunker",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Centene_Stadium_(52448517197).jpg"
+    },
+    {
+      "title": "STL City S.C. CityPark.jpg",
+      "author": "Bluefiredragon09",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:STL_City_S.C._CityPark.jpg"
+    }
+  ],
+  "file": "models/stl-citypark.glb",
+  "source": "generators/stl-citypark.ts"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "atx-st-marys-cathedral",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "church",
+    "cathedral",
+    "gothic-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "St. Mary - Austin 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Mary_-_Austin_01.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "St. Mary - Austin 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Mary_-_Austin_02.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "St. Mary - Austin 03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Mary_-_Austin_03.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "St. Mary - Austin 04.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Mary_-_Austin_04.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "St. Mary - Austin 05.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Mary_-_Austin_05.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "St. Mary - Austin 13.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Mary_-_Austin_13.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "St. Mary - Austin 15.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Mary_-_Austin_15.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "St Mary Cathedral, Austin, Texas (HDR).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St_Mary_Cathedral,_Austin,_Texas_(HDR).jpg",
+      "author": "Ed Uthman",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/atx-st-marys-cathedral.glb",
+  "source": "generators/atx-st-marys-cathedral.ts"
+}

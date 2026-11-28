@@ -1,0 +1,16 @@
+{
+  "id": "atx-long-center",
+  "name": "The Long Center for the Performing Arts",
+  "model": "atx-long-center",
+  "place": "austin-area",
+  "lng": -97.751191,
+  "lat": 30.260191,
+  "bearing": 48,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/187668220",
+    "way/452460572"
+  ],
+  "wikidata": "Q6672445"
+}

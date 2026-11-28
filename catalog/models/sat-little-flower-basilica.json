@@ -1,0 +1,43 @@
+{
+  "id": "sat-little-flower-basilica",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "basilica",
+    "church",
+    "spanish-baroque",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Basilica of the Little Flower in San Antonio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilica_of_the_Little_Flower_in_San_Antonio.jpg",
+      "author": "Michaelluckey",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Church of the Little Flower Basilica.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Church_of_the_Little_Flower_Basilica.JPG",
+      "author": "Peacehood",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/sat-little-flower-basilica.glb",
+  "source": "generators/sat-little-flower-basilica.ts"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "frankfurt-eschenheimer-turm",
+  "name": "Eschenheimer Turm",
+  "model": "frankfurt-eschenheimer-turm",
+  "place": "frankfurt",
+  "lng": 8.679687,
+  "lat": 50.116946,
+  "bearing": -9.5,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q883643",
+  "replaces": [
+    "way/53671623",
+    "way/96390549",
+    "way/1071371036"
+  ]
+}

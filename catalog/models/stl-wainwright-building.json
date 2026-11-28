@@ -1,0 +1,55 @@
+{
+  "id": "stl-wainwright-building",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "skyscraper",
+    "office"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q1143548",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Wainwright building st louis USA.jpg",
+      "author": "unknown (public domain)",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Wainwright_building_st_louis_USA.jpg"
+    },
+    {
+      "title": "Wainwright Building, St. Louis - 4.jpg",
+      "author": "dwhartwig",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Wainwright_Building,_St._Louis_-_4.jpg"
+    },
+    {
+      "title": "Wainwright Building, St. Louis - 9.jpg",
+      "author": "dwhartwig",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Wainwright_Building,_St._Louis_-_9.jpg"
+    },
+    {
+      "title": "Wainwright Building, 7th Street and Chestnut Street, St. Louis, MO.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Wainwright_Building,_7th_Street_and_Chestnut_Street,_St._Louis,_MO.jpg"
+    }
+  ],
+  "file": "models/stl-wainwright-building.glb",
+  "source": "generators/stl-wainwright-building.ts"
+}

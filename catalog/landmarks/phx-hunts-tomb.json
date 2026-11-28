@@ -1,0 +1,15 @@
+{
+  "id": "phx-hunts-tomb",
+  "name": "Hunt's Tomb",
+  "model": "phx-hunts-tomb",
+  "place": "phoenix-area",
+  "lng": -111.9443878,
+  "lat": 33.4518971,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q24192027",
+  "replaces": [
+    "way/287818676"
+  ]
+}

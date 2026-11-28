@@ -1,0 +1,52 @@
+{
+  "id": "atl-hartsfield-jackson-concourse-e",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "concourse",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/atl-hartsfield-jackson-concourse-e.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "ATL FROM 777 N860DA FLIGHT ATL-JFK (7255635922)",
+      "url": "https://commons.wikimedia.org/wiki/File:ATL_FROM_777_N860DA_FLIGHT_ATL-JFK_(7255635922).jpg",
+      "author": "Eric Salard",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "ATL FROM 777 N860DA FLIGHT ATL-JFK (7255636860)",
+      "url": "https://commons.wikimedia.org/wiki/File:ATL_FROM_777_N860DA_FLIGHT_ATL-JFK_(7255636860).jpg",
+      "author": "Eric Salard",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Atlanta Airport Aerial Angle",
+      "url": "https://commons.wikimedia.org/wiki/File:Atlanta_Airport_Aerial_Angle_(31435634003).jpg",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/atl-hartsfield-jackson-concourse-e.glb",
+  "source": "generators/atl-hartsfield-jackson-concourse-c.ts"
+}

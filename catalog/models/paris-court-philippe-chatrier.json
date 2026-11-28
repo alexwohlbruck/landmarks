@@ -1,0 +1,142 @@
+{
+  "id": "paris-court-philippe-chatrier",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "tennis"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "Roland-Garros' centre court: grey concrete stands in two tiers round the court with a dark green wall and box band, a broad white ring roof cantilevered over the facades and the 2020 retractable roof drawn open, its eleven white wings stacked over the north stand.",
+  "detail": "models/paris-court-philippe-chatrier.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Court Philippe Chatrier - Paris XVI (FR75) - 2024-02-18 - 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Philippe_Chatrier_-_Paris_XVI_(FR75)_-_2024-02-18_-_1.jpg",
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Court Philippe Chatrier - Paris XVI (FR75) - 2024-02-18 - 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Philippe_Chatrier_-_Paris_XVI_(FR75)_-_2024-02-18_-_2.jpg",
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Court Philippe Chatrier - Paris XVI (FR75) - 2024-02-18 - 4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Philippe_Chatrier_-_Paris_XVI_(FR75)_-_2024-02-18_-_4.jpg",
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Court Philippe Chatrier - Paris XVI (FR75) - 2024-02-18 - 5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Philippe_Chatrier_-_Paris_XVI_(FR75)_-_2024-02-18_-_5.jpg",
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Court Philippe Chatrier - Paris XVI (FR75) - 2024-02-18 - 6.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Philippe_Chatrier_-_Paris_XVI_(FR75)_-_2024-02-18_-_6.jpg",
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Court Philippe Chatrier - Paris XVI (FR75) - 2024-02-18 - 7.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Philippe_Chatrier_-_Paris_XVI_(FR75)_-_2024-02-18_-_7.jpg",
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Court Philippe Chatrier - Paris XVI (FR75) - 2024-02-18 - 8.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Philippe_Chatrier_-_Paris_XVI_(FR75)_-_2024-02-18_-_8.jpg",
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Court Philippe Chatrier 2024 vue extérieure.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Philippe_Chatrier_2024_vue_extérieure.jpg",
+      "author": "MFonzatti",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Court Philippe Chatrier 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Philippe_Chatrier_2024.jpg",
+      "author": "MFonzatti",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Court Philippe-Chatrier at the 2024 Summer Olympics (1).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Philippe-Chatrier_at_the_2024_Summer_Olympics_(1).jpg",
+      "author": "Like tears in rain",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Court Philippe-Chatrier at the 2024 Summer Olympics (2).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Philippe-Chatrier_at_the_2024_Summer_Olympics_(2).jpg",
+      "author": "Like tears in rain",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Court Philippe-Chatrier at the 2024 Summer Olympics (3).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Philippe-Chatrier_at_the_2024_Summer_Olympics_(3).jpg",
+      "author": "Like tears in rain",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Roland Garros 2023 - court central - Zverev-Molcan 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Roland_Garros_2023_-_court_central_-_Zverev-Molcan_01.jpg",
+      "author": "Remi Mathis",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Roland Garros 2023 - court central - Zverev-Molcan 03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Roland_Garros_2023_-_court_central_-_Zverev-Molcan_03.jpg",
+      "author": "Remi Mathis",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Roland Garros 2023 - court central - Zverev-Molcan 05.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Roland_Garros_2023_-_court_central_-_Zverev-Molcan_05.jpg",
+      "author": "Remi Mathis",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Court Chatrier Paris Major 2024 toit fermé.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Chatrier_Paris_Major_2024_toit_fermé.jpg",
+      "author": "Hombrey",
+      "license": "CC0"
+    },
+    {
+      "title": "Court Chatrier Paris Major 2024 nuit.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Chatrier_Paris_Major_2024_nuit.jpg",
+      "author": "Hombrey",
+      "license": "CC0"
+    },
+    {
+      "title": "Court Chatrier Paris Major 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Court_Chatrier_Paris_Major_2024.jpg",
+      "author": "Hombrey",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/paris-court-philippe-chatrier.glb",
+  "source": "generators/paris-court-philippe-chatrier.ts"
+}

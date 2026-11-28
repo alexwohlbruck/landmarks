@@ -1,0 +1,27 @@
+{
+  "id": "atx-q2-stadium",
+  "name": "Q2 Stadium",
+  "model": "atx-q2-stadium",
+  "place": "austin-area",
+  "lng": -97.71948,
+  "lat": 30.38786,
+  "bearing": 339.2,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/13704106",
+    "way/1034643928",
+    "way/897365979",
+    "way/961741983",
+    "way/961741984",
+    "way/1023431472",
+    "way/1023431473",
+    "way/1023431474",
+    "way/1023431475",
+    "way/1023431476",
+    "way/1023431477",
+    "way/1023431478",
+    "way/1023431479"
+  ],
+  "wikidata": "Q56278477"
+}

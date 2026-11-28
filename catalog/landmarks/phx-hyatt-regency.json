@@ -1,0 +1,18 @@
+{
+  "id": "phx-hyatt-regency",
+  "name": "Hyatt Regency Phoenix",
+  "model": "phx-hyatt-regency",
+  "place": "phoenix-area",
+  "lng": -112.0718325,
+  "lat": 33.4498334,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/37057945",
+    "way/209097279",
+    "way/209289534",
+    "way/116513539",
+    "way/209097288"
+  ]
+}

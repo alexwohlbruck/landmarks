@@ -1,0 +1,56 @@
+{
+  "id": "bos-hatch-shell",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "bandshell",
+    "art-deco",
+    "music-venue",
+    "park"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q5681035",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hatch Memorial Shell, photographed Nov. 14, 2026",
+      "url": "https://commons.wikimedia.org/wiki/File:Hatch_Memorial_Shell,_photographed_Nov._14,_2026.jpg",
+      "author": "Abzeronow",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "2017 Prudential Skywalk - Hatch Shell (NNE)",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Prudential_Skywalk_-_Hatch_Shell_(NNE).jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Backside of DCR's Hatch Memorial Shell",
+      "url": "https://commons.wikimedia.org/wiki/File:Backside_of_DCR%27s_Hatch_Memorial_Shell.jpg",
+      "author": "AbhiSuryawanshi",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hatch Memorial Shell 2023a",
+      "url": "https://commons.wikimedia.org/wiki/File:Hatch_Memorial_Shell_2023a.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-hatch-shell.glb",
+  "source": "generators/bos-hatch-shell.ts"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "atx-littlefield-fountain",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "fountain",
+  "tags": [
+    "sculpture",
+    "memorial",
+    "university",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "University of Texas at Austin August 2019 30 (Littlefield Fountain and Main Building).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:University_of_Texas_at_Austin_August_2019_30_%28Littlefield_Fountain_and_Main_Building%29.jpg",
+      "author": "Michael Barera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Littlefield Fountain ... LCCN2014632361",
+      "url": "https://commons.wikimedia.org/wiki/File:Littlefield_Fountain%2C_a_monument_by_Italian-born_sculptor_Pompeo_Coppini_located_on_the_main_campus_of_The_University_of_Texas_at_Austin_in_Austin%2C_Texas_LCCN2014632361.tif",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "Littlefield Fountain ... LCCN2014632058",
+      "url": "https://commons.wikimedia.org/wiki/File:Littlefield_Fountain%2C_a_monument_by_Italian-born_sculptor_Pompeo_Coppini_located_on_the_main_campus_of_The_University_of_Texas_at_Austin_in_Austin%2C_Texas_LCCN2014632058.tif",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "Littlefield Fountain at the University of Texas at Austin LCCN2014632050",
+      "url": "https://commons.wikimedia.org/wiki/File:Littlefield_Fountain_at_the_University_of_Texas_at_Austin_LCCN2014632050.tif",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "Littlefield fountain UT.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Littlefield_fountain_UT.JPG",
+      "author": "Alisonnitsche",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/atx-littlefield-fountain.glb",
+  "source": "generators/atx-littlefield-fountain.ts"
+}

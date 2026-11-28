@@ -1,0 +1,93 @@
+{
+  "id": "atx-pennybacker-bridge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "arch-bridge",
+    "steel",
+    "road-bridge",
+    "lake"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/atx-pennybacker-bridge.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "PennybackerBridge",
+      "url": "https://commons.wikimedia.org/wiki/File:PennybackerBridge.jpg",
+      "author": "Dbtfz",
+      "license": "Public domain"
+    },
+    {
+      "title": "Lake Austin Pennybacker Bridge",
+      "url": "https://commons.wikimedia.org/wiki/File:Lake_Austin_Pennybacker_Bridge.JPG",
+      "author": "CQui",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "title": "Pennybacker Bridge",
+      "url": "https://commons.wikimedia.org/wiki/File:Pennybacker_Bridge.jpg",
+      "author": "Ramir Borja",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "title": "Pennybacker Bridge September 2018",
+      "url": "https://commons.wikimedia.org/wiki/File:Pennybacker_Bridge_September_2018.jpg",
+      "author": "Haythemhammour",
+      "license": "CC0"
+    },
+    {
+      "title": "Austin, Pennybacker Bridge",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin,_Pennybacker_Bridge.jpg",
+      "author": "Jeff Gunn",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Pennybacker Bridge View",
+      "url": "https://commons.wikimedia.org/wiki/File:Pennybacker_Bridge_View.jpg",
+      "author": "Eric Hunt",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "Pennybacker Bridge - June 2019 (1)",
+      "url": "https://commons.wikimedia.org/wiki/File:Pennybacker_Bridge_-_June_2019_(1).jpg",
+      "author": "MX",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Under 360 Bridge, Austin TX",
+      "url": "https://www.flickr.com/photos/142289055@N04/28794974245",
+      "author": "sbmeaper1",
+      "license": "CC0"
+    },
+    {
+      "title": "Loop 360 Bridge",
+      "url": "https://www.flickr.com/photos/62405508@N00/2853652223",
+      "author": "kperkins14",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Pennybacker Bridge, Austin Texas",
+      "url": "https://commons.wikimedia.org/wiki/File:Pennybacker_Bridge,_Austin_Texas.jpg",
+      "author": "Jared Tennant",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/atx-pennybacker-bridge.glb",
+  "source": "generators/atx-pennybacker-bridge.ts"
+}

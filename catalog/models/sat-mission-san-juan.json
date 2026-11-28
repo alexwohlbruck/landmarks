@@ -1,0 +1,44 @@
+{
+  "id": "sat-mission-san-juan",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mission",
+    "chapel",
+    "spanish-colonial",
+    "unesco",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Mission san juan capistrano 2014.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mission_san_juan_capistrano_2014.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Mission San Juan Capistrano 648.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mission_San_Juan_Capistrano_648.jpg",
+      "author": "Chris Light",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/sat-mission-san-juan.glb",
+  "source": "generators/sat-mission-san-juan.ts"
+}

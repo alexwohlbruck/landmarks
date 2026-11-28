@@ -1,0 +1,12 @@
+{
+  "id": "sat-alamo-cenotaph",
+  "name": "Alamo Cenotaph",
+  "model": "sat-alamo-cenotaph",
+  "place": "san-antonio-area",
+  "lng": -98.48669,
+  "lat": 29.42616,
+  "bearing": 10,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": []
+}

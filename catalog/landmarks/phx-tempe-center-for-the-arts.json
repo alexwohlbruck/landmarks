@@ -1,0 +1,15 @@
+{
+  "id": "phx-tempe-center-for-the-arts",
+  "name": "Tempe Center for the Arts",
+  "model": "phx-tempe-center-for-the-arts",
+  "place": "phoenix-area",
+  "lng": -111.9485828,
+  "lat": 33.431812,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q7698247",
+  "replaces": [
+    "way/288087998"
+  ]
+}

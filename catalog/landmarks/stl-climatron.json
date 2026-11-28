@@ -1,0 +1,15 @@
+{
+  "id": "stl-climatron",
+  "name": "Climatron",
+  "model": "stl-climatron",
+  "place": "st-louis-area",
+  "lng": -90.2588704,
+  "lat": 38.6140934,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q2091524",
+  "replaces": [
+    "way/149736800"
+  ]
+}

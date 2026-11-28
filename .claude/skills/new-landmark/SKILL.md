@@ -39,6 +39,11 @@ front. Work the rest out yourself:
 - **Place.** Reuse an explicit `catalog/places/` ID or add a durable record for
   the city, town, site, or remote region; include its parents when needed.
 
+- **One building per model.** If the landmark is several buildings that
+  stand apart (joined only underground, by a people mover, or not at all),
+  make each its own model and placement; one generator may write them all.
+  Wings and piers that meet above ground stay in one model.
+
 Then confirm in one short message: name, id, coordinates, the OSM outline
 you'll replace, the author, and anything already in the catalog nearby.
 Start once the user agrees.

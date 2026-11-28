@@ -1,0 +1,49 @@
+{
+  "id": "paris-cdg-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Paris Charles de Gaulle Airport Control Tower",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_Charles_de_Gaulle_Airport_Control_Tower.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "Tour de contrôle - aéroport Paris-Charles-de-Gaulle (juin 2023)",
+      "url": "https://commons.wikimedia.org/wiki/File:Tour_de_contr%C3%B4le_-_a%C3%A9roport_Paris-Charles-de-Gaulle_(juin_2023).jpg",
+      "author": "Benoît Prieur",
+      "license": "CC0"
+    },
+    {
+      "title": "Paris-Charles de Gaulle Airport control tower",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris-Charles_de_Gaulle_Airport_control_tower.jpg",
+      "author": "Avi1111 dr. avishai teicher",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/paris-cdg-control-tower.glb",
+  "source": "generators/paris-cdg-control-tower.ts"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "london-heathrow-terminal-3",
+  "name": "Heathrow Terminal 3",
+  "model": "london-heathrow-terminal-3",
+  "place": "london",
+  "lng": -0.4597941,
+  "lat": 51.4710936,
+  "bearing": -34.5,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/18911624",
+    "way/42432280",
+    "way/722642847",
+    "way/446320645"
+  ],
+  "wikidata": "Q6670468"
+}

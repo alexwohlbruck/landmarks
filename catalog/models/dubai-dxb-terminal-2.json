@@ -1,0 +1,60 @@
+{
+  "id": "dubai-dxb-terminal-2",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Dubai International Airport - 2024-10-24 - Andy Mabbett - 64.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dubai_International_Airport_-_2024-10-24_-_Andy_Mabbett_-_64.jpg",
+      "author": "Andy Mabbett",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dubai International Airport - 2024-10-24 - Andy Mabbett - 65.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dubai_International_Airport_-_2024-10-24_-_Andy_Mabbett_-_65.jpg",
+      "author": "Andy Mabbett",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dubai Airport Terminal 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dubai_Airport_Terminal_2.jpg",
+      "author": "Ravi Dwivedi",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "VT-JBQ (7107170119).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:VT-JBQ_(7107170119).jpg",
+      "author": "Kurush Pawar",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "ISS-65 Dubai International Airport and Dubai Creek (cropped).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ISS-65_Dubai_International_Airport_and_Dubai_Creek_(cropped).jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/dubai-dxb-terminal-2.glb",
+  "source": "generators/dubai-dxb-terminal-2.ts"
+}

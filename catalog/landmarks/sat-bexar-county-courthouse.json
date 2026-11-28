@@ -1,0 +1,15 @@
+{
+  "id": "sat-bexar-county-courthouse",
+  "name": "Bexar County Courthouse",
+  "model": "sat-bexar-county-courthouse",
+  "place": "san-antonio-area",
+  "lng": -98.493623,
+  "lat": 29.423232,
+  "bearing": 7.7,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/60586392"
+  ],
+  "wikidata": "Q4899771"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "stl-old-cathedral",
+  "name": "Basilica of Saint Louis, King of France (Old Cathedral)",
+  "model": "stl-old-cathedral",
+  "place": "st-louis-area",
+  "lng": -90.1872854,
+  "lat": 38.6240535,
+  "bearing": 17.2,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/42645792"
+  ]
+}

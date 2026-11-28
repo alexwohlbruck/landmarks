@@ -1,0 +1,16 @@
+{
+  "id": "atx-bullock-museum",
+  "name": "Bullock Texas State History Museum",
+  "model": "atx-bullock-museum",
+  "place": "austin-area",
+  "lng": -97.739128,
+  "lat": 30.280298,
+  "bearing": 18,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q10858643",
+  "replaces": [
+    "way/27397820",
+    "way/1020770315"
+  ]
+}

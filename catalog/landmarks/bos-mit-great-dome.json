@@ -1,0 +1,24 @@
+{
+  "id": "bos-mit-great-dome",
+  "name": "MIT Great Dome (Building 10)",
+  "model": "bos-mit-great-dome",
+  "place": "boston-area",
+  "lng": -71.092015,
+  "lat": 42.359683,
+  "bearing": 335.9,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/32517642",
+    "way/1242048060",
+    "way/1264589540",
+    "way/479313188",
+    "way/1246917360",
+    "way/1264282655",
+    "way/1264282656",
+    "way/1264282657",
+    "way/1264282658",
+    "way/1264282659",
+    "way/1246917361"
+  ]
+}

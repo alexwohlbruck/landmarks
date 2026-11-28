@@ -1,0 +1,18 @@
+{
+  "id": "bos-quincy-market",
+  "name": "Quincy Market",
+  "model": "bos-quincy-market",
+  "place": "boston-area",
+  "lng": -71.0548035,
+  "lat": 42.3602173,
+  "bearing": 352.8,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q901885",
+  "replaces": [
+    "way/29573399",
+    "way/484942339",
+    "way/240370254",
+    "way/240370257"
+  ]
+}

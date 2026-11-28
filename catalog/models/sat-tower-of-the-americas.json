@@ -1,0 +1,67 @@
+{
+  "id": "sat-tower-of-the-americas",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "observation-tower",
+    "revolving-restaurant",
+    "hemisfair",
+    "brutalist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "San Antonio May 2018 8 (Tower of the Americas).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_May_2018_8_(Tower_of_the_Americas).jpg",
+      "author": "Michael Barera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tower of the americas 2013.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_of_the_americas_2013.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Tower of Americas at Night.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_of_Americas_at_Night.jpg",
+      "author": "jcutrer",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kusch House & Tower of the Americas - Hemisfair (2025-12-12).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kusch_House_%26_Tower_of_the_Americas_-_Hemisfair_(2025-12-12).jpg",
+      "author": "Adrianna Chavez",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tower of the Americas San Antonio elevator.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_of_the_Americas_San_Antonio_elevator.jpg",
+      "author": "Runner1928",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Entrance to Tower of the Americas IMG 4576.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Entrance_to_Tower_of_the_Americas_IMG_4576.JPG",
+      "author": "Billy Hathorn",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/sat-tower-of-the-americas.glb",
+  "source": "generators/sat-tower-of-the-americas.ts"
+}

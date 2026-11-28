@@ -1,0 +1,55 @@
+{
+  "id": "sat-museum-of-art",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "brewery",
+    "historic",
+    "romanesque-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "SAMA (1).JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:SAMA_(1).JPG",
+      "author": "Zereshk",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "San Antonio Museum of Art (16652192717).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_Museum_of_Art_(16652192717).jpg",
+      "author": "Nan Palmero",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "San Antonio Museum of Art (2015-03-12 18.38.28 by Nan Palmero).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_Museum_of_Art_(2015-03-12_18.38.28_by_Nan_Palmero).jpg",
+      "author": "Nan Palmero",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "FirstLoneStarBrewery.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:FirstLoneStarBrewery.JPG",
+      "author": "unknown",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/sat-museum-of-art.glb",
+  "source": "generators/sat-museum-of-art.ts"
+}

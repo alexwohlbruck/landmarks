@@ -1,0 +1,17 @@
+{
+  "id": "phx-sun-devil-stadium",
+  "name": "Mountain America Stadium",
+  "model": "phx-sun-devil-stadium",
+  "place": "phoenix-area",
+  "lng": -111.932605,
+  "lat": 33.426445,
+  "bearing": 14,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1849318",
+  "replaces": [
+    "relation/15635252",
+    "way/675557448",
+    "way/1156816190"
+  ]
+}

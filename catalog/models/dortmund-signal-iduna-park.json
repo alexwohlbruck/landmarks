@@ -1,0 +1,75 @@
+{
+  "id": "dortmund-signal-iduna-park",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/dortmund-signal-iduna-park.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Signal iduna park stadium dortmund 5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Signal_iduna_park_stadium_dortmund_5.jpg",
+      "author": "Arne Müseler / www.arne-mueseler.com",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "Signal iduna park stadium dortmund 6.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Signal_iduna_park_stadium_dortmund_6.jpg",
+      "author": "Arne Müseler / www.arne-mueseler.com",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "Signal iduna park stadium dortmund 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Signal_iduna_park_stadium_dortmund_2.jpg",
+      "author": "Arne Müseler / www.arne-mueseler.com",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "Westfalenstadion von oben.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Westfalenstadion_von_oben.jpg",
+      "author": "Hornymanatee (uploader)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Dortmund Blick vom Florianturm auf den Signal Iduna Park 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dortmund_Blick_vom_Florianturm_auf_den_Signal_Iduna_Park_2.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2012-02-26 Dortmund01 (6791756854).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2012-02-26_Dortmund01_(6791756854).jpg",
+      "author": "Markus Unger",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Westfalenstadion Signal-Iduna-Park Westtribüne von-NW März-2013.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Westfalenstadion_Signal-Iduna-Park_Westtrib%C3%BCne_von-NW_M%C3%A4rz-2013.JPG",
+      "author": "Matthias Nonnenmacher",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/dortmund-signal-iduna-park.glb",
+  "source": "generators/dortmund-signal-iduna-park.ts"
+}

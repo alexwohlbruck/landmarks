@@ -1,0 +1,63 @@
+{
+  "id": "london-emirates-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/london-emirates-stadium.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "London Emirates Stadium arsenal.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:London_Emirates_Stadium_arsenal.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "Emirates Stadium aerial 2020-07.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Emirates_Stadium_aerial_2020-07.jpg",
+      "author": "Ed g2s",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Emirates Stadium - geograph.org.uk - 4006374.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Emirates_Stadium_-_geograph.org.uk_-_4006374.jpg",
+      "author": "Russel Wills",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Emirates Stadium, Holloway - geograph.org.uk - 4780925.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Emirates_Stadium,_Holloway_-_geograph.org.uk_-_4780925.jpg",
+      "author": "Jim Osley",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Emirates Stadium 2009.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Emirates_Stadium_2009.jpg",
+      "author": "Wonker",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/london-emirates-stadium.glb",
+  "source": "generators/london-emirates-stadium.ts"
+}

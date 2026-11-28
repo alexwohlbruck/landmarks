@@ -1,0 +1,53 @@
+{
+  "id": "kc-jc-nichols-fountain",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "fountain",
+  "tags": [
+    "historic",
+    "sculpture",
+    "fountain",
+    "country-club-plaza",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Jesse Clyde Nichols Memorial, KC MO - general view 1.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Jesse_Clyde_Nichols_Memorial,_KC_MO_-_general_view_1.JPG",
+      "license": "Public domain"
+    },
+    {
+      "title": "Jesse Clyde Nichols Memorial, KC MO - general view 2.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Jesse_Clyde_Nichols_Memorial,_KC_MO_-_general_view_2.JPG",
+      "license": "Public domain"
+    },
+    {
+      "title": "Jesse Clyde Nichols Memorial, KC MO - general view 3.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Jesse_Clyde_Nichols_Memorial,_KC_MO_-_general_view_3.JPG",
+      "license": "Public domain"
+    },
+    {
+      "title": "JC Nichols Fountain by Henri-Léon Gréber Kansas City.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:JC_Nichols_Fountain_by_Henri-L%C3%A9on_Gr%C3%A9ber_Kansas_City.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/kc-jc-nichols-fountain.glb",
+  "source": "generators/kc-jc-nichols-fountain.ts"
+}

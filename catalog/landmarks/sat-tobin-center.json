@@ -1,0 +1,14 @@
+{
+  "id": "sat-tobin-center",
+  "name": "Tobin Center for the Performing Arts",
+  "model": "sat-tobin-center",
+  "place": "san-antonio-area",
+  "lng": -98.4886981,
+  "lat": 29.4306853,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/296769581"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "frankfurt-ecb",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "market-hall",
+    "deconstructivist",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Europäische Zentralbank Frankfurt.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Europ%C3%A4ische_Zentralbank_Frankfurt.jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 DE"
+    },
+    {
+      "title": "Frankfurt EZB.Nordwest-2.20141228.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_EZB.Nordwest-2.20141228.jpg",
+      "author": "Epizentrum",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Frankfurt EZB-Neubau.Osten.20140209.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_EZB-Neubau.Osten.20140209.jpg",
+      "author": "Epizentrum",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Frankfurt-Main ECB-Headquarters seen from CBT, 46th floor 2013-02-05.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt-Main_ECB-Headquarters_seen_from_CBT,_46th_floor_2013-02-05.jpg",
+      "author": "#Reaper",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Frankfurt am Main, Seat of the European Central Bank (Skytower (ECB)).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_Seat_of_the_European_Central_Bank_(Skytower_(ECB)).jpg",
+      "author": "Dr. Thomas Liptak",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "European Central Bank on seventh of April 2013 from south-east.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:European_Central_Bank_on_seventh_of_April_2013_from_south-east.jpg",
+      "author": "Jürgen Matern",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "EZB Großmarkthalle.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:EZB_Gro%C3%9Fmarkthalle.jpg",
+      "author": "Prinz eisenherz",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Grossmarkthalle Frankfurt.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grossmarkthalle_Frankfurt.jpg",
+      "author": "Falkenreich",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "Frankfurt - New headquarters for the European Central Bank (ECB) (16334894341).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_-_New_headquarters_for_the_European_Central_Bank_(ECB)_(16334894341).jpg",
+      "author": "Fred Romero",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "detail": "models/frankfurt-ecb.detail.glb",
+  "detailZoom": 16,
+  "file": "models/frankfurt-ecb.glb",
+  "source": "generators/frankfurt-ecb.ts"
+}

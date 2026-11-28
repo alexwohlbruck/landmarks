@@ -1,0 +1,48 @@
+{
+  "id": "sat-emily-morgan-hotel",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "hotel",
+    "gothic-revival",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Emily Morgan Hotel, San Antonio, Texas, 2011.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Emily_Morgan_Hotel,_San_Antonio,_Texas,_2011.jpg",
+      "author": "Leaflet",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Emily Morgan Hotel (4762555455).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Emily_Morgan_Hotel_(4762555455).jpg",
+      "author": "Tony Kent",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Cenotaph & Morgan Hotel (48874537178).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cenotaph_%26_Morgan_Hotel_(48874537178).jpg",
+      "author": "Eden, Janine and Jim",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/sat-emily-morgan-hotel.glb",
+  "source": "generators/sat-emily-morgan-hotel.ts"
+}

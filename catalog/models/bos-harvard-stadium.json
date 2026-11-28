@@ -1,0 +1,50 @@
+{
+  "id": "bos-harvard-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "historic",
+    "university",
+    "football",
+    "reinforced-concrete",
+    "classical-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Harvard Stadium aerial axonometric.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Harvard_Stadium_aerial_axonometric.JPG",
+      "author": "Nick Allen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Harvard Stadium in Allston, Boston.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Harvard_Stadium_in_Allston,_Boston.jpg",
+      "author": "Kenneth C. Zirkel",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Harvard Stadium, Cambridge, Boston.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Harvard_Stadium,_Cambridge,_Boston.jpg",
+      "author": "Brian-R-Phillips",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-harvard-stadium.glb",
+  "source": "generators/bos-harvard-stadium.ts"
+}

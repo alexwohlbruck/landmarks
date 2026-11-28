@@ -1,0 +1,69 @@
+{
+  "id": "kc-museum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "museum",
+    "beaux-arts",
+    "mansion",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q16998098",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kansas City Museum.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_Museum.jpg",
+      "author": "Jack Boucher (HABS)",
+      "license": "Public domain"
+    },
+    {
+      "title": "General view of the Kansas City Museum.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:General_view_of_the_Kansas_City_Museum.jpg",
+      "author": "Jack Boucher (HABS)",
+      "license": "Public domain"
+    },
+    {
+      "title": "Kansas City Museum at Corinthian Hall (Robert A. Long House) - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_Museum_at_Corinthian_Hall_(Robert_A._Long_House)_-_The_72-room_French_Renaissance_mansion,_located_on_3218_Gladstone_Blvd._http-www.ralonghistoricalsociety.org_-_panoramio.jpg",
+      "author": "MARELBU",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Kansas City Museum of History and Science.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_Museum_of_History_and_Science.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "Museum of Kansas City 2025a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Museum_of_Kansas_City_2025a.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Museum of Kansas City 2025b.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Museum_of_Kansas_City_2025b.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-museum.glb",
+  "source": "generators/kc-museum.ts"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "kc-shuttlecocks-tipped",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "sculpture",
+  "tags": [
+    "public-art",
+    "pop-art",
+    "museum",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Nelson-Atkins",
+      "url": "https://www.flickr.com/photos/98602044@N05/11957247344",
+      "author": "Debbie_Long",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Shuttlecocks @ Nelson-Atkins Museum of Art",
+      "url": "https://www.flickr.com/photos/36521980095@N01/",
+      "author": "danxoneil",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Shuttlecock at the Kansas City museum.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shuttlecock_at_the_Kansas_City_museum.jpg",
+      "author": "FeldBum",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-shuttlecocks-tipped.glb",
+  "source": "generators/kc-shuttlecocks-tipped.ts"
+}

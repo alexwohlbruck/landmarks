@@ -1,0 +1,15 @@
+{
+  "id": "kc-power-and-light-building",
+  "name": "Kansas City Power & Light Building",
+  "model": "kc-power-and-light-building",
+  "place": "kansas-city-area",
+  "lng": -94.5847189,
+  "lat": 39.097554,
+  "bearing": 2.2,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q4352432",
+  "replaces": [
+    "way/65582850"
+  ]
+}

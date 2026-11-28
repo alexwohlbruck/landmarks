@@ -1,0 +1,32 @@
+{
+  "id": "frankfurt-festhalle",
+  "name": "Festhalle Frankfurt",
+  "model": "frankfurt-festhalle",
+  "place": "frankfurt",
+  "lng": 8.6508558,
+  "lat": 50.1118731,
+  "bearing": 170,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q59518",
+  "replaces": [
+    "way/1390237893",
+    "way/401730564",
+    "way/401730566",
+    "way/1391815417",
+    "way/1390237891",
+    "way/1390237892",
+    "way/1390237890",
+    "way/1077516896",
+    "way/401730565",
+    "way/1077516897",
+    "way/401730570",
+    "way/1390237889",
+    "way/401730571",
+    "way/401730572",
+    "way/401730573",
+    "way/551912627",
+    "way/1390237894",
+    "way/401730569"
+  ]
+}

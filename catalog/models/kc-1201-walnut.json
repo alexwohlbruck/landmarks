@@ -1,0 +1,49 @@
+{
+  "id": "kc-1201-walnut",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "skyscraper",
+    "office",
+    "glass-tower",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "1201 Walnut-Kansas City MO.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:1201_Walnut-Kansas_City_MO.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "1201 Walnut.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:1201_Walnut.jpg",
+      "author": "Noah Bohland",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "One Kansas City Place Complex and Town Pavilion.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:One_Kansas_City_Place_Complex_and_Town_Pavilion.JPG",
+      "author": "Baylor98",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-1201-walnut.glb",
+  "source": "generators/kc-1201-walnut.ts"
+}

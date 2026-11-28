@@ -1,0 +1,16 @@
+{
+  "id": "sat-menger-hotel",
+  "name": "Menger Hotel",
+  "model": "sat-menger-hotel",
+  "place": "san-antonio-area",
+  "lng": -98.48599,
+  "lat": 29.424654,
+  "bearing": 17,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "relation/1204761",
+    "way/80186437"
+  ],
+  "wikidata": "Q6816982"
+}

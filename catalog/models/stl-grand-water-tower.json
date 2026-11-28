@@ -1,0 +1,48 @@
+{
+  "id": "stl-grand-water-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "water-tower",
+    "column",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "STL North Grand Water Tower",
+      "author": "Onegentlemanofverona",
+      "license": "CC BY 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:STL_North_Grand_Water_Tower.JPG"
+    },
+    {
+      "title": "Grand Avenue Water Tower, Grand Avenue and North 20th Street, College Hill, St. Louis, MO",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Avenue_Water_Tower,_Grand_Avenue_and_North_20th_Street,_College_Hill,_St._Louis,_MO.jpg"
+    },
+    {
+      "title": "Grand Avenue Water Tower and Bissell Street Water Tower from Grand Avenue",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Avenue_Water_Tower_and_Bissell_Street_Water_Tower_from_Grand_Avenue,_College_Hill,_St._Louis,_MO.jpg"
+    }
+  ],
+  "file": "models/stl-grand-water-tower.glb",
+  "source": "generators/stl-grand-water-tower.ts"
+}

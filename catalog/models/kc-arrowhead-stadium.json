@@ -1,0 +1,74 @@
+{
+  "id": "kc-arrowhead-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "stadium",
+    "american-football",
+    "nfl",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q544553",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Aerial view of Arrowhead Stadium 08-31-2013 crop.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Arrowhead_Stadium_08-31-2013_crop.jpg",
+      "author": "Ichabod",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Arrowhead Stadium exterior.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arrowhead_Stadium_exterior.jpg",
+      "author": "Justin Brockie",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Arrowhead Stadium, Kansas City, Missouri, US.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arrowhead_Stadium,_Kansas_City,_Missouri,_US.jpg",
+      "author": "Ichabod",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Arrowhead world cup prep, May 2025.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arrowhead_world_cup_prep,_May_2025.jpg",
+      "author": "PCN02WPS",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Arrowhead Stadium for Chiefs vs Chargers 10-22-2023 (1) (53283857054).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arrowhead_Stadium_for_Chiefs_vs_Chargers_10-22-2023_(1)_(53283857054).jpg",
+      "author": "Larry Koester",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Arrowhead Stadium for Chiefs vs Chargers 10-22-2023 (10) (53283485226).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arrowhead_Stadium_for_Chiefs_vs_Chargers_10-22-2023_(10)_(53283485226).jpg",
+      "author": "Larry Koester",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Netherlands vs Tunisia - 2026 FIFA World Cup, Kansas City.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Netherlands_vs_Tunisia_-_2026_FIFA_World_Cup,_Kansas_City.jpg",
+      "author": "CNC33",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/kc-arrowhead-stadium.glb",
+  "source": "generators/kc-arrowhead-stadium.ts"
+}

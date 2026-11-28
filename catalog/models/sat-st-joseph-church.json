@@ -1,0 +1,42 @@
+{
+  "id": "sat-st-joseph-church",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "gothic-revival",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "San Antonio May 2018 3 (St. Joseph Catholic Church).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_May_2018_3_(St._Joseph_Catholic_Church).jpg",
+      "author": "Michael Barera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Gfp-texas-san-antonio-tower-to-st-joseph-church.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Gfp-texas-san-antonio-tower-to-st-joseph-church.jpg",
+      "author": "Yinan Chen",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/sat-st-joseph-church.glb",
+  "source": "generators/sat-st-joseph-church.ts"
+}

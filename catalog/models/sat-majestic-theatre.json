@@ -1,0 +1,60 @@
+{
+  "id": "sat-majestic-theatre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "theatre",
+    "historic",
+    "atmospheric-theatre"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Sign as seen in San Antonio, Texas.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sign_as_seen_in_San_Antonio,_Texas.jpg",
+      "author": "NVCStudent2021",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Majestic Theater (1 of 1).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Majestic_Theater_(1_of_1).jpg",
+      "author": "Renelibrary",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Majestic (12).JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Majestic_(12).JPG",
+      "author": "Zereshk",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "The Majestic Theatre - San Antonio",
+      "url": "https://www.flickr.com/photos/14146962@N07/3059569759",
+      "author": "TravelingOtter",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Majestic Theater (Carol M. Highsmith)",
+      "url": "https://www.flickr.com/photos/39735679@N00/481790635",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/sat-majestic-theatre.glb",
+  "source": "generators/sat-majestic-theatre.ts"
+}

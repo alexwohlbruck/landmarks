@@ -1,0 +1,56 @@
+{
+  "id": "kc-community-christian-church",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "church",
+    "frank-lloyd-wright",
+    "modernist",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Community Christian Church KCMO.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Community_Christian_Church_KCMO.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "Community Church in Kansas City, Missouri 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Community_Church_in_Kansas_City,_Missouri_01.jpg",
+      "author": "Roseisuppose",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Community Church in Kansas City, Missouri 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Community_Church_in_Kansas_City,_Missouri_02.jpg",
+      "author": "Roseisuppose",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Community Church in Kansas City, Missouri 04.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Community_Church_in_Kansas_City,_Missouri_04.jpg",
+      "author": "Roseisuppose",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-community-christian-church.glb",
+  "source": "generators/kc-community-christian-church.ts"
+}

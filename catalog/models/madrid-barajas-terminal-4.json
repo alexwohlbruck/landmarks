@@ -1,0 +1,118 @@
+{
+  "id": "madrid-barajas-terminal-4",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern",
+    "high-tech"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Madrid Barajas Airport-Terminal 4S (7146509957)",
+      "url": "https://commons.wikimedia.org/wiki/File:Madrid_Barajas_Airport-Terminal_4S_(7146509957).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Madrid Barajas Airport-Terminal 4 (7000292700)",
+      "url": "https://commons.wikimedia.org/wiki/File:Madrid_Barajas_Airport-Terminal_4_(7000292700).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Madrid Barajas Airport-Terminal 4 (7146382753)",
+      "url": "https://commons.wikimedia.org/wiki/File:Madrid_Barajas_Airport-Terminal_4_(7146382753).jpg",
+      "author": "Charles from Port Chester, New York",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Terminal T-4 Madrid - Barajas Airport (8520153689)b",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_T-4_Madrid_-_Barajas_Airport_(8520153689)b.jpg",
+      "author": "Magic Aviation",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "Exterior - Aeropuerto de Madrid-Barajas T4 - Madrid 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Exterior_-_Aeropuerto_de_Madrid-Barajas_T4_-_Madrid_01.jpg",
+      "author": "Javier Perez Montes",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Terminal 4 del aeropuerto de Madrid-Barajas, España, 2013-01-09, DD 07",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_4_del_aeropuerto_de_Madrid-Barajas,_Espa%C3%B1a,_2013-01-09,_DD_07.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Terminal 4 del aeropuerto de Madrid-Barajas, España, 2013-01-09, DD 13",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_4_del_aeropuerto_de_Madrid-Barajas,_Espa%C3%B1a,_2013-01-09,_DD_13.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Terminal 4 del aeropuerto de Madrid-Barajas, España, 2013-01-09, DD 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_4_del_aeropuerto_de_Madrid-Barajas,_Espa%C3%B1a,_2013-01-09,_DD_01.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Terminal 4 del aeropuerto de Madrid-Barajas, España, 2013-01-09, DD 16",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_4_del_aeropuerto_de_Madrid-Barajas,_Espa%C3%B1a,_2013-01-09,_DD_16.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "20210629 Terminal 4, Aeropuerto de Barajas, Madrid, España",
+      "url": "https://commons.wikimedia.org/wiki/File:20210629_Terminal_4,_Aeropuerto_de_Barajas,_Madrid,_Espa%C3%B1a.jpg",
+      "author": "Cabeza2000",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Barajas T4 03",
+      "url": "https://commons.wikimedia.org/wiki/File:Barajas_T4_03.JPG",
+      "author": "Ángel Riesgo Martínez",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "Barajas Airport (Madrid) (4653538178)",
+      "url": "https://commons.wikimedia.org/wiki/File:Barajas_Airport_(Madrid)_(4653538178).jpg",
+      "author": "Jean-Pierre Dalbéra",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Barajas Airport (Madrid) (4685194730)",
+      "url": "https://commons.wikimedia.org/wiki/File:Barajas_Airport_(Madrid)_(4685194730).jpg",
+      "author": "Jean-Pierre Dalbéra",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "PNOA orthophoto (PNOA-MA WMS)",
+      "url": "https://www.ign.es/wms-inspire/pnoa-ma",
+      "author": "Instituto Geográfico Nacional",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "detail": "models/madrid-barajas-terminal-4.detail.glb",
+  "detailZoom": 16,
+  "file": "models/madrid-barajas-terminal-4.glb",
+  "source": "generators/madrid-barajas-terminal-4.ts"
+}

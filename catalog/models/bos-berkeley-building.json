@@ -1,0 +1,67 @@
+{
+  "id": "bos-berkeley-building",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "historic",
+    "art-deco",
+    "office"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Old Hancock Building.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_Hancock_Building.jpg",
+      "author": "Eric Kilby",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Berkeley Building (54954549480).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Berkeley_Building_(54954549480).jpg",
+      "author": "ajay_suresh",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Back Bay Skyline at Dusk.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Back_Bay_Skyline_at_Dusk.jpg",
+      "author": "EgorovaSvetlana",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Old John Hancock Building (Berkeley Building) (8610213324).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_John_Hancock_Building_(Berkeley_Building)_(8610213324).jpg",
+      "author": "City of Boston Archives",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Boston - Old and New John Hancock Buildings (4724927067).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_-_Old_and_New_John_Hancock_Buildings_(4724927067).jpg",
+      "author": "Roger W",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "2017 John Hancock Tower 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_John_Hancock_Tower_2.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-berkeley-building.glb",
+  "source": "generators/bos-berkeley-building.ts"
+}

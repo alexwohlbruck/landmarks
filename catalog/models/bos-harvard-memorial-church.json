@@ -1,0 +1,63 @@
+{
+  "id": "bos-harvard-memorial-church",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "university",
+    "church",
+    "memorial",
+    "georgian-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q3459140",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Memorial Church of Harvard University (54939978802).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Memorial_Church_of_Harvard_University_(54939978802).jpg",
+      "author": "ajay_suresh",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Harvard Memorial Church Saulenportikus S 9367 20190427.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Harvard_Memorial_Church_Saulenportikus_S_9367_20190427.jpg",
+      "author": "Karlunun",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cambridge - USA - Harvard University - Memorial Church - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cambridge_-_USA_-_Harvard_University_-_Memorial_Church_-_panoramio.jpg",
+      "author": "Edgar El",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Memorial Church in Harvard Yard.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Memorial_Church_in_Harvard_Yard.jpg",
+      "author": "Chris Rycroft",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "USA-Harvard Memorial Church.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:USA-Harvard_Memorial_Church.jpg",
+      "author": "Ingfbruno",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/bos-harvard-memorial-church.glb",
+  "source": "generators/bos-harvard-memorial-church.ts"
+}

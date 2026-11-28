@@ -1,0 +1,55 @@
+{
+  "id": "kc-nelson-atkins-museum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "art-museum",
+    "neoclassical",
+    "historic",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Nelson-Atkins Museum of Art 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nelson-Atkins_Museum_of_Art_2024.jpg",
+      "author": "Peterspexarth",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Nelson-Atkins Museum of Art - panorama of facade.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nelson-Atkins_Museum_of_Art_-_panorama_of_facade.jpg",
+      "license": "Public domain"
+    },
+    {
+      "title": "Side facade - Nelson-Atkins Museum of Art - DSC08014.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Side_facade_-_Nelson-Atkins_Museum_of_Art_-_DSC08014.JPG",
+      "author": "Daderot",
+      "license": "Public domain"
+    },
+    {
+      "title": "Exterior of Nelson-Atkins Museum of Art.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_Nelson-Atkins_Museum_of_Art.jpg",
+      "author": "Yungryan07",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-nelson-atkins-museum.glb",
+  "source": "generators/kc-nelson-atkins-museum.ts"
+}

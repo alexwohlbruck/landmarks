@@ -1,0 +1,61 @@
+{
+  "id": "bos-mit-great-dome",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "university",
+    "historic",
+    "dome",
+    "neoclassical"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Great Dome, MIT - IMG 8390.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Great_Dome,_MIT_-_IMG_8390.JPG",
+      "author": "Daderot",
+      "license": "Public domain"
+    },
+    {
+      "title": "2017 Maclaurin Buildings (MIT Building 10) and Great Dome.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Maclaurin_Buildings_(MIT_Building_10)_and_Great_Dome.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "MIT Killian Court.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MIT_Killian_Court.jpg",
+      "author": "Madcoverboy",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Great dome of MIT, Feb 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Great_dome_of_MIT,_Feb_2021.jpg",
+      "author": "Peacearth",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "MIT Main Campus aerial.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MIT_Main_Campus_aerial.jpg",
+      "author": "Nick Allen",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-mit-great-dome.glb",
+  "source": "generators/bos-mit-great-dome.ts"
+}

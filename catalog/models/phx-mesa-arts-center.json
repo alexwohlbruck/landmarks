@@ -1,0 +1,54 @@
+{
+  "id": "phx-mesa-arts-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "performing-arts",
+    "theater",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Downtown Mesa Arizona.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Downtown_Mesa_Arizona.jpg",
+      "author": "Ixnayonthetimmay",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Mesa arts center.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mesa_arts_center.jpg",
+      "author": "Walt Lockley",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Mesa Arts Center - West - 2009-09-16.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Mesa_Arts_Center_-_West_-_2009-09-16.JPG",
+      "author": "Cygnusloop99",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Mesa Center for the Arts",
+      "url": "https://www.flickr.com/photos/12836528@N00/7427161338",
+      "author": "Kevin Dooley",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/phx-mesa-arts-center.glb",
+  "source": "generators/phx-mesa-arts-center.ts"
+}

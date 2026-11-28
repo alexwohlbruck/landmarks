@@ -1,0 +1,55 @@
+{
+  "id": "singapore-changi-terminal-4",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Singapore Changi Airport Terminal 4 (165259).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Singapore_Changi_Airport_Terminal_4_(165259).jpg",
+      "author": "Moheen Reeyad",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Singapore Changi Airport Terminal 4, exterior wall logo 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Singapore_Changi_Airport_Terminal_4,_exterior_wall_logo_1.jpg",
+      "author": "JuneAugust",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Changi Airport - Terminal 4 - Departure 4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_Airport_-_Terminal_4_-_Departure_4.jpg",
+      "author": "Renek78",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Artist's impression of Terminal 4 departure hall at Singapore Changi Airport.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Artist%27s_impression_of_Terminal_4_departure_hall_at_Singapore_Changi_Airport.jpg",
+      "author": "Changi Airport Group",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/singapore-changi-terminal-4.glb",
+  "source": "generators/singapore-changi-terminal-4.ts"
+}

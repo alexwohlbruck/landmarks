@@ -1,0 +1,23 @@
+{
+  "id": "frankfurt-messeturm",
+  "name": "Messeturm",
+  "model": "frankfurt-messeturm",
+  "place": "frankfurt",
+  "lng": 8.652718,
+  "lat": 50.112377,
+  "bearing": 35.1,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q156198",
+  "replaces": [
+    "way/23916129",
+    "way/930215227",
+    "way/927655685",
+    "way/927655686",
+    "way/927655687",
+    "way/927655688",
+    "way/183063659",
+    "way/183063660",
+    "way/183063661"
+  ]
+}

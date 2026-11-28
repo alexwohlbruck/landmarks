@@ -1,0 +1,19 @@
+{
+  "id": "atx-360-condominiums",
+  "name": "360 Condominiums",
+  "model": "atx-360-condominiums",
+  "place": "austin-area",
+  "lng": -97.7497586,
+  "lat": 30.2674128,
+  "bearing": 17.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/328839215",
+    "way/328839141",
+    "way/516271605",
+    "way/972380479",
+    "way/972380480",
+    "way/972380481"
+  ]
+}

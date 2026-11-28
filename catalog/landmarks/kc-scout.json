@@ -1,0 +1,13 @@
+{
+  "id": "kc-scout",
+  "name": "The Scout",
+  "model": "kc-scout",
+  "place": "kansas-city-area",
+  "lng": -94.592798,
+  "lat": 39.075666,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q7762663",
+  "replaces": []
+}

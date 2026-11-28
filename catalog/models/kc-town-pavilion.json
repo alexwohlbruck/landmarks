@@ -1,0 +1,56 @@
+{
+  "id": "kc-town-pavilion",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "glass-tower",
+    "lit-crown",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Town Pavilion KCMO.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Town_Pavilion_KCMO.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "TownPavillion.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:TownPavillion.jpg",
+      "author": "Hello2020121212",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "One Kansas City Place Complex and Town Pavilion.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:One_Kansas_City_Place_Complex_and_Town_Pavilion.JPG",
+      "author": "Baylor98",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Town Pavilion.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Town_Pavilion.JPG",
+      "author": "Little Mountain 5",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/kc-town-pavilion.glb",
+  "source": "generators/kc-town-pavilion.ts"
+}

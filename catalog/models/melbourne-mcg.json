@@ -1,0 +1,125 @@
+{
+  "id": "melbourne-mcg",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "cricket",
+    "australian-football"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "The huge round bowl of the MCG: three-tier stands closed all round, the Great Southern Stand's roof with its row of teal trusses, the Northern Stand's higher roof hung from tall raked masts, two big video screens at the junctions and six white light towers with tilted trapezoidal heads.",
+  "detail": "models/melbourne-mcg.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "AFL Grand Final 2010 on the Melbourne Cricket Ground.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:AFL_Grand_Final_2010_on_the_Melbourne_Cricket_Ground.jpg",
+      "author": "Alexander Sheko",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Melbourne (AU), View from Eureka Tower, Melbourne Cricket Ground -- 2019 -- 1450.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Melbourne_(AU),_View_from_Eureka_Tower,_Melbourne_Cricket_Ground_--_2019_--_1450.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "MCG from Eureka Skydeck.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MCG_from_Eureka_Skydeck.jpg",
+      "author": "SuperJew",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Melbourne Cricket Ground PD.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Melbourne_Cricket_Ground_PD.jpg",
+      "author": "Telluride749",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "MCG (Melbourne Cricket Ground).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MCG_(Melbourne_Cricket_Ground).jpg",
+      "author": "Donaldytong",
+      "license": "Public domain"
+    },
+    {
+      "title": "MCG August 2007.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MCG_August_2007.jpg",
+      "author": "AussieNickuss",
+      "license": "Public domain"
+    },
+    {
+      "title": "Melbourne Cricket Ground, west remote view 20230219 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Melbourne_Cricket_Ground,_west_remote_view_20230219_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "MCG Light towers (6077748020).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MCG_Light_towers_(6077748020).jpg",
+      "author": "Rexness",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "MCG light tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MCG_light_tower.jpg",
+      "author": "Jimmy Harris",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "MCG Light Tower, Richmond vs. Essendon 2013-05-05 (8837957002).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MCG_Light_Tower,_Richmond_vs._Essendon_2013-05-05_(8837957002).jpg",
+      "author": "Simon Yeo",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Melbourne Cricket Ground exterior.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Melbourne_Cricket_Ground_exterior.jpg",
+      "author": "Joanna Holman",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Melbourne Cricket Ground Panorama.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Melbourne_Cricket_Ground_Panorama.jpg",
+      "author": "richardmu (Flickr)",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Melbourne Cricket Ground, Melbourne, Victoria.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Melbourne_Cricket_Ground,_Melbourne,_Victoria.jpg",
+      "author": "Abhishek050592",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Melbourne Cricket Club Member's Reserve Dec 2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Melbourne_Cricket_Club_Member's_Reserve_Dec_2022.jpg",
+      "author": "Jason L",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "MCG at night from Eureka Tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MCG_at_night_from_Eureka_Tower.jpg",
+      "author": "David Chau",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/melbourne-mcg.glb",
+  "source": "generators/melbourne-mcg.ts"
+}

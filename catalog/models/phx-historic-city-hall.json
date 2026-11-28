@@ -1,0 +1,62 @@
+{
+  "id": "phx-historic-city-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "civic",
+    "courthouse",
+    "spanish-colonial-revival",
+    "art-deco"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Maricopa County Courthouse October 6 2013 Phoenix Arizona 2816x2112 Rear.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Maricopa_County_Courthouse_October_6_2013_Phoenix_Arizona_2816x2112_Rear.JPG",
+      "author": "Zeb Micelli",
+      "license": "CC0"
+    },
+    {
+      "title": "Maricopa County Courthouse and Old City Hall.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maricopa_County_Courthouse_and_Old_City_Hall.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Maricopa County Courthouse.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maricopa_County_Courthouse.jpg",
+      "author": "Tony the Marine",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Maricopa County Courthouse-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maricopa_County_Courthouse-1.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "HABS AZ-71-1, City Hall elevation - County-City Administration Building",
+      "url": "https://commons.wikimedia.org/wiki/File:City_Hall_elevation_-_County-City_Administration_Building,_Washington_Street,_Phoenix,_Maricopa_County,_AZ_HABS_ARIZ,7-PHEN,11-1.tif",
+      "author": "Historic American Buildings Survey",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/phx-historic-city-hall.glb",
+  "source": "generators/phx-historic-city-hall.ts"
+}

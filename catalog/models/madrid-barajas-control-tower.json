@@ -1,0 +1,73 @@
+{
+  "id": "madrid-barajas-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Madrid Barajas Airport ATC T4 2",
+      "url": "https://commons.wikimedia.org/wiki/File:Madrid_Barajas_Airport_ATC_T4_2.jpg",
+      "author": "Slashme",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Torre de control de Madrid-Barajas - 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Torre_de_control_de_Madrid-Barajas_-_01.jpg",
+      "author": "Carlos Delgado",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "MAD-LEMD Torre de Control desde su base",
+      "url": "https://commons.wikimedia.org/wiki/File:MAD-LEMD_Torre_de_Control_desde_su_base.jpg",
+      "author": "Felipealvarez",
+      "license": "Public domain"
+    },
+    {
+      "title": "Torre de control Aeropuerto de Madrid",
+      "url": "https://commons.wikimedia.org/wiki/File:Torre_de_control_Aeropuerto_de_Madrid.jpg",
+      "author": "JoseIgnaciodelPino",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Madrid Barajas ATC Spain",
+      "url": "https://commons.wikimedia.org/wiki/File:Madrid_Barajas_ATC_Spain.jpg",
+      "author": "Andres Rueda",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Madrid Airport - tower",
+      "url": "https://commons.wikimedia.org/wiki/File:Madrid_Airport_-_tower.jpg",
+      "author": "Tiia Monto",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Torre de Control del Aeropuerto de Barajas de Madrid - panoramio",
+      "url": "https://commons.wikimedia.org/wiki/File:Torre_de_Control_del_Aeropuerto_de_Barajas_de_Madrid_-_panoramio.jpg",
+      "author": "Ricardo Ricote Rodríguez",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/madrid-barajas-control-tower.glb",
+  "source": "generators/madrid-barajas-control-tower.ts"
+}

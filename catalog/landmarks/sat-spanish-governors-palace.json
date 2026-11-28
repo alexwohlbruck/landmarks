@@ -1,0 +1,15 @@
+{
+  "id": "sat-spanish-governors-palace",
+  "name": "Spanish Governor's Palace",
+  "model": "sat-spanish-governors-palace",
+  "place": "san-antonio-area",
+  "lng": -98.49581,
+  "lat": 29.424825,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/628863906"
+  ],
+  "wikidata": "Q6564718"
+}

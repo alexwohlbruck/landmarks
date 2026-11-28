@@ -1,0 +1,61 @@
+{
+  "id": "atx-sixth-and-guadalupe",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "mixed-use",
+    "residential",
+    "office"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Sixth and Guadalupe, Austin, TX",
+      "url": "https://commons.wikimedia.org/wiki/File:Sixth_and_Guadalupe,_Austin,_TX.jpg",
+      "author": "TerraFrost",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Sixth and Guadalupe - Dec 2022",
+      "url": "https://commons.wikimedia.org/wiki/File:Sixth_and_Guadalupe_-_Dec_2022.jpg",
+      "author": "TerraFrost",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sixth and Gudalupe from the Southwest",
+      "url": "https://commons.wikimedia.org/wiki/File:Sixth_and_Gudalupe_from_the_Southwest.png",
+      "author": "Lily Wilkerson",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sixth and Guadalupe Construction Austin Texas Nov 2022",
+      "url": "https://commons.wikimedia.org/wiki/File:Sixth_and_Guadalupe_Construction_Austin_Texas_Nov_2022.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Austin Texas skyline, December 2023 - Day",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_Texas_skyline,_December_2023_-_Day.jpg",
+      "author": "Steve",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/atx-sixth-and-guadalupe.glb",
+  "source": "generators/atx-sixth-and-guadalupe.ts"
+}

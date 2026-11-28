@@ -1,0 +1,61 @@
+{
+  "id": "sat-frost-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "office",
+    "skyscraper",
+    "glass",
+    "postmodern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Frost Tower San Antonio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frost_Tower_San_Antonio.jpg",
+      "author": "Medialecent",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Frost Tower, San Antonio, Texas (50288787141).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frost_Tower,_San_Antonio,_Texas_(50288787141).jpg",
+      "author": "Nicolas Henderson",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Frost Tower from the corner of Flores and Travis streets.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frost_Tower_from_the_corner_of_Flores_and_Travis_streets.jpg",
+      "author": "Wynne-Candy",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frost Tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frost_Tower.jpg",
+      "author": "Blas J",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frost Tower SA.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frost_Tower_SA.jpg",
+      "author": "Shalev97",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/sat-frost-tower.glb",
+  "source": "generators/sat-frost-tower.ts"
+}

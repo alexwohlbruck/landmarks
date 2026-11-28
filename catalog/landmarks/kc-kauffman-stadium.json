@@ -1,0 +1,15 @@
+{
+  "id": "kc-kauffman-stadium",
+  "name": "Kauffman Stadium",
+  "model": "kc-kauffman-stadium",
+  "place": "kansas-city-area",
+  "wikidata": "Q1737017",
+  "lng": -94.4805413,
+  "lat": 39.0514489,
+  "bearing": 47.3,
+  "elevation": -9.4,
+  "minzoom": 14,
+  "replaces": [
+    "relation/12661405"
+  ]
+}

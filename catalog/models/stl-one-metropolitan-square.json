@@ -1,0 +1,53 @@
+{
+  "id": "stl-one-metropolitan-square",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "One metropolitan square St. Louis.jpg",
+      "author": "Johnhochi",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:One_metropolitan_square_St._Louis.jpg"
+    },
+    {
+      "title": "One metropolitan square from the south.jpg",
+      "author": "Johnhochi",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:One_metropolitan_square_from_the_south.jpg"
+    },
+    {
+      "title": "One Metropolitan Square.jpg",
+      "author": "Matthew Black",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:One_Metropolitan_Square.jpg"
+    },
+    {
+      "title": "One Metropolitian Square.jpg",
+      "author": "Lightmetro",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:One_Metropolitian_Square.jpg"
+    }
+  ],
+  "file": "models/stl-one-metropolitan-square.glb",
+  "source": "generators/stl-one-metropolitan-square.ts"
+}

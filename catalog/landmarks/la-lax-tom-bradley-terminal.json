@@ -1,0 +1,15 @@
+{
+  "id": "la-lax-tom-bradley-terminal",
+  "name": "Tom Bradley International Terminal",
+  "model": "la-lax-tom-bradley-terminal",
+  "place": "los-angeles-area",
+  "lng": -118.4099031,
+  "lat": 33.9430998,
+  "bearing": 353,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q55733495",
+  "replaces": [
+    "way/413226032"
+  ]
+}

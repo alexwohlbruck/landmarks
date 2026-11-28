@@ -1,0 +1,49 @@
+{
+  "id": "sat-alamo-cenotaph",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "monument",
+  "tags": [
+    "memorial",
+    "sculpture",
+    "art-deco",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Cenotaph & Morgan Hotel (48874537178).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cenotaph_%26_Morgan_Hotel_(48874537178).jpg",
+      "author": "Eden, Janine and Jim",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "The Alamo Cenotaph.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Alamo_Cenotaph.jpg",
+      "author": "Batlise",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "ALAMO CENOTAPH.png",
+      "url": "https://commons.wikimedia.org/wiki/File:ALAMO_CENOTAPH.png",
+      "author": "Michaelluckey",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/sat-alamo-cenotaph.glb",
+  "source": "generators/sat-alamo-cenotaph.ts"
+}

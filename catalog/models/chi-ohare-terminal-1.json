@@ -1,0 +1,52 @@
+{
+  "id": "chi-ohare-terminal-1",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern",
+    "vault"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Concourse B",
+      "url": "https://commons.wikimedia.org/wiki/File:Concourse_B.jpg",
+      "author": "commonsabhay",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Concourse B, Chicago O'Hare airport",
+      "url": "https://commons.wikimedia.org/wiki/File:Concourse_B,_Chicago_O%27Hare_airport.jpg",
+      "author": "Dllu",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "At Chicago 2024 106",
+      "url": "https://commons.wikimedia.org/wiki/File:At_Chicago_2024_106.jpg",
+      "author": "Mike Peel",
+      "license": "CC-BY-SA-4.0"
+    }
+  ],
+  "detail": "models/chi-ohare-terminal-1.detail.glb",
+  "detailZoom": 16,
+  "file": "models/chi-ohare-terminal-1.glb",
+  "source": "generators/chi-ohare-terminal-1.ts"
+}

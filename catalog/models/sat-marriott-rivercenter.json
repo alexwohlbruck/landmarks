@@ -1,0 +1,61 @@
+{
+  "id": "sat-marriott-rivercenter",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "hotel",
+    "skyscraper",
+    "postmodern",
+    "granite"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Marriott Rivercenter.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Marriott_Rivercenter.jpg",
+      "author": "Raevaz",
+      "license": "Public domain"
+    },
+    {
+      "title": "Marriottrivercentersantx.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Marriottrivercentersantx.JPG",
+      "author": "Sahmeditor",
+      "license": "Public domain"
+    },
+    {
+      "title": "LookupatMarriottRivercenter.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:LookupatMarriottRivercenter.jpg",
+      "author": "Stinkie Pinkie",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Marriott Hotel, San Antonio, TX IMG 7595 1 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Marriott_Hotel,_San_Antonio,_TX_IMG_7595_1_1.jpg",
+      "author": "Billy Hathorn",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "San Antonio, Texas (2018) - 061.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio,_Texas_(2018)_-_061.jpg",
+      "author": "Another Believer",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/sat-marriott-rivercenter.glb",
+  "source": "generators/sat-marriott-rivercenter.ts"
+}

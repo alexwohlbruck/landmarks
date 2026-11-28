@@ -1,0 +1,15 @@
+{
+  "id": "sat-central-library",
+  "name": "San Antonio Central Library",
+  "model": "sat-central-library",
+  "place": "san-antonio-area",
+  "lng": -98.4928486,
+  "lat": 29.4323936,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q107318484",
+  "replaces": [
+    "way/78595854"
+  ]
+}

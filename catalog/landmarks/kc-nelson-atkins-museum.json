@@ -1,0 +1,15 @@
+{
+  "id": "kc-nelson-atkins-museum",
+  "name": "Nelson-Atkins Museum of Art",
+  "model": "kc-nelson-atkins-museum",
+  "place": "kansas-city-area",
+  "lng": -94.5809512,
+  "lat": 39.0449606,
+  "bearing": 2.4,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1976985",
+  "replaces": [
+    "relation/15394221"
+  ]
+}

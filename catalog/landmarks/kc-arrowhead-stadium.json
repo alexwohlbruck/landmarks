@@ -1,0 +1,15 @@
+{
+  "id": "kc-arrowhead-stadium",
+  "name": "GEHA Field at Arrowhead Stadium",
+  "model": "kc-arrowhead-stadium",
+  "place": "kansas-city-area",
+  "wikidata": "Q544553",
+  "lng": -94.4840276,
+  "lat": 39.0489163,
+  "bearing": 137.5,
+  "elevation": -12.5,
+  "minzoom": 14,
+  "replaces": [
+    "relation/4587811"
+  ]
+}

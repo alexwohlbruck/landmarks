@@ -1,0 +1,62 @@
+{
+  "id": "bos-widener-library",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "university",
+    "library",
+    "beaux-arts"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q1060854",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Widener Library, Harvard University.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Widener_Library,_Harvard_University.jpg",
+      "author": "Kenneth C. Zirkel",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Widener library 2009.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Widener_library_2009.JPG",
+      "author": "chensiyuan",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Widener Memorial Library - Harvard University (54941110519).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Widener_Memorial_Library_-_Harvard_University_(54941110519).jpg",
+      "author": "ajay_suresh",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Cambridge - USA - Harvard University - Harry Elkins Widener Memorial Library - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cambridge_-_USA_-_Harvard_University_-_Harry_Elkins_Widener_Memorial_Library_-_panoramio.jpg",
+      "author": "giggel",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "HarvardUniversity WidenerLibrary SecondFloorPlan SneadIronWorks.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HarvardUniversity_WidenerLibrary_SecondFloorPlan_SneadIronWorks.jpg",
+      "author": "Horace Trumbauer & Associates",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/bos-widener-library.glb",
+  "source": "generators/bos-widener-library.ts"
+}

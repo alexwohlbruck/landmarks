@@ -1,0 +1,28 @@
+{
+  "id": "bos-custom-house-tower",
+  "name": "Custom House Tower",
+  "model": "bos-custom-house-tower",
+  "place": "boston-area",
+  "lng": -71.0535673,
+  "lat": 42.3590452,
+  "bearing": 345.3,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q3007905",
+  "replaces": [
+    "way/29719177",
+    "way/240371454",
+    "way/240371455",
+    "way/244559596",
+    "way/244559597",
+    "way/244559598",
+    "way/244559599",
+    "way/244559600",
+    "way/244559601",
+    "way/244559604",
+    "way/244559605",
+    "way/244559606",
+    "way/458711348",
+    "way/458711349"
+  ]
+}

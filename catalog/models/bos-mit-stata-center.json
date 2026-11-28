@@ -1,0 +1,72 @@
+{
+  "id": "bos-mit-stata-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "university",
+    "deconstructivist",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Stata Center and Alumni Pool.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stata_Center_and_Alumni_Pool.jpg",
+      "author": "Nickknack00",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Stata Center in the Winter (MIT).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stata_Center_in_the_Winter_(MIT).jpg",
+      "author": "Rizka",
+      "license": "CC0"
+    },
+    {
+      "title": "Ray and Maria Stata Center - MIT, Cambridge (16868722144).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Ray_and_Maria_Stata_Center_-_MIT,_Cambridge_(16868722144).jpg",
+      "author": "Tony Webster",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Stata Center (05675p).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stata_Center_(05675p).jpg",
+      "author": "Rhododendrites",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "MIT Stata Center in Snow 20220107.png",
+      "url": "https://commons.wikimedia.org/wiki/File:MIT_Stata_Center_in_Snow_20220107.png",
+      "author": "Peacearth",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Stata-04.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stata-04.jpg",
+      "author": "Sintakso",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Stata Center (05659).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stata_Center_(05659).jpg",
+      "author": "Rhododendrites",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-mit-stata-center.glb",
+  "source": "generators/bos-mit-stata-center.ts"
+}

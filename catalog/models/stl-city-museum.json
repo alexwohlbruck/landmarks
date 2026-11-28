@@ -1,0 +1,55 @@
+{
+  "id": "stl-city-museum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "historic",
+    "attraction"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q5123311",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "St. Louis City Museum (building outside).jpg",
+      "author": "Atomicdragon136",
+      "license": "CC BY 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_City_Museum_(building_outside).jpg"
+    },
+    {
+      "title": "City Museum outdoor structures.jpg",
+      "author": "Chris857",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:City_Museum_outdoor_structures.jpg"
+    },
+    {
+      "title": "City Museum, St. Louis (8133090734).jpg",
+      "author": "Jon DeJong",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:City_Museum,_St._Louis_(8133090734).jpg"
+    },
+    {
+      "title": "City Museum, St Louis MO 988773 1280.jpg",
+      "author": "stefib230",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:City_Museum,_St_Louis_MO_988773_1280.jpg"
+    }
+  ],
+  "file": "models/stl-city-museum.glb",
+  "source": "generators/stl-city-museum.ts"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "stl-bissell-water-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "water-tower",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "STL Bissell and Blair Water Tower 01",
+      "author": "Onegentlemanofverona",
+      "license": "CC BY 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:STL_Bissell_and_Blair_Water_Tower_01.JPG"
+    },
+    {
+      "title": "Bissell Street Water Tower, Bissell Street and Blair Avenue, College Hill, St. Louis, MO - 53134676493",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Bissell_Street_Water_Tower,_Bissell_Street_and_Blair_Avenue,_College_Hill,_St._Louis,_MO_-_53134676493.jpg"
+    }
+  ],
+  "wikidata": "Q4918447",
+  "file": "models/stl-bissell-water-tower.glb",
+  "source": "generators/stl-bissell-water-tower.ts"
+}

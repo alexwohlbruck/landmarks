@@ -1,0 +1,17 @@
+{
+  "id": "lisbon-estadio-da-luz",
+  "name": "Estádio da Luz",
+  "model": "lisbon-estadio-da-luz",
+  "place": "lisbon",
+  "lng": -9.1846895,
+  "lat": 38.7526899,
+  "bearing": 343.8,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q7875112",
+  "replaces": [
+    "relation/9143921",
+    "relation/16349886",
+    "way/71229178"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "atx-congress-avenue-bridge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "historic",
+    "arch-bridge",
+    "concrete",
+    "road-bridge",
+    "lake"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/atx-congress-avenue-bridge.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Congress Avenue Bridge",
+      "url": "https://commons.wikimedia.org/wiki/File:Congress_Avenue_Bridge.jpg",
+      "author": "Stuart Seeger",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Congress Ave. Bridge atop Lake Lady Bird, Austin, TX IMG 6286",
+      "url": "https://commons.wikimedia.org/wiki/File:Congress_Ave._Bridge_atop_Lake_Lady_Bird,_Austin,_TX_IMG_6286.JPG",
+      "author": "Bil (no machine-readable author)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "CongressAveBridge-Apr2010",
+      "url": "https://commons.wikimedia.org/wiki/File:CongressAveBridge-Apr2010.JPG",
+      "author": "LoneStarMike",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Congress-ave-bridge-austin",
+      "url": "https://commons.wikimedia.org/wiki/File:Congress-ave-bridge-austin.jpg",
+      "author": "Dtobias",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Bat-bridge-austin-3",
+      "url": "https://commons.wikimedia.org/wiki/File:Bat-bridge-austin-3.jpg",
+      "author": "Dtobias",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Austin August 2019 26 (Ann W. Richards Congress Avenue Bridge)",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_August_2019_26_(Ann_W._Richards_Congress_Avenue_Bridge).jpg",
+      "author": "Michael Barera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "CongressAveBridge-Jan2009",
+      "url": "https://commons.wikimedia.org/wiki/File:CongressAveBridge-Jan2009.JPG",
+      "author": "LoneStarMike",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/atx-congress-avenue-bridge.glb",
+  "source": "generators/atx-congress-avenue-bridge.ts"
+}

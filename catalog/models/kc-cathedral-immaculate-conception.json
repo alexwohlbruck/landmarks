@@ -1,0 +1,62 @@
+{
+  "id": "kc-cathedral-immaculate-conception",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "church",
+    "cathedral",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q5052446",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Cathedral of the Immaculate Conception Kansas City 2025a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Immaculate_Conception_Kansas_City_2025a.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cathedral of the Immaculate Conception Kansas City 2025b.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Immaculate_Conception_Kansas_City_2025b.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cathedral of the Immaculate Conception Kansas City 2025c.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Immaculate_Conception_Kansas_City_2025c.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cathedral of the Immaculate Conception Kansas City 2025d.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Immaculate_Conception_Kansas_City_2025d.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cathedral of the Immaculate Conception Kansas City 2025f.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Immaculate_Conception_Kansas_City_2025f.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-cathedral-immaculate-conception.glb",
+  "source": "generators/kc-cathedral-immaculate-conception.ts"
+}

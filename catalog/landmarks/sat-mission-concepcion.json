@@ -1,0 +1,16 @@
+{
+  "id": "sat-mission-concepcion",
+  "name": "Mission Concepción",
+  "model": "sat-mission-concepcion",
+  "place": "san-antonio-area",
+  "lng": -98.491157,
+  "lat": 29.391033,
+  "bearing": 4.3,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/120248909",
+    "way/120248905"
+  ],
+  "wikidata": "Q2312403"
+}

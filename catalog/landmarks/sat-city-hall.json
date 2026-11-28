@@ -1,0 +1,14 @@
+{
+  "id": "sat-city-hall",
+  "name": "San Antonio City Hall",
+  "model": "sat-city-hall",
+  "place": "san-antonio-area",
+  "lng": -98.495125,
+  "lat": 29.424599,
+  "bearing": 0.5,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/78601538"
+  ]
+}

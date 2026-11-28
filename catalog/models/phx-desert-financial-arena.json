@@ -1,0 +1,48 @@
+{
+  "id": "phx-desert-financial-arena",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "arena",
+    "university",
+    "brutalist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tent City at Wells Fargo Arena",
+      "url": "https://commons.wikimedia.org/wiki/File:Tent_City_at_Wells_Fargo_Arena.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Wellsfargo.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Wellsfargo.jpg",
+      "author": "YF12s (en.wikipedia)",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "Desert Financial Arena - February 4, 2025",
+      "url": "https://commons.wikimedia.org/wiki/File:Desert_Financial_Arena_-_February_4,_2025.jpg",
+      "author": "Dc55555",
+      "license": "CC0-1.0"
+    }
+  ],
+  "file": "models/phx-desert-financial-arena.glb",
+  "source": "generators/phx-desert-financial-arena.ts"
+}

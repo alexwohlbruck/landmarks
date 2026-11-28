@@ -1,0 +1,55 @@
+{
+  "id": "phx-soleri-bridge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "bridge",
+    "pedestrian-bridge",
+    "public-art",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Soleri bridge Scottsdale 003.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Soleri_bridge_Scottsdale_003.JPG",
+      "author": "Pedro Xing",
+      "license": "CC0"
+    },
+    {
+      "title": "Soleri Bridge",
+      "url": "https://www.flickr.com/photos/14544437@N07/5688673845",
+      "author": "Dru Bloomfield - At Home",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Soleri Bridge",
+      "url": "https://www.flickr.com/photos/14544437@N07/5689245438",
+      "author": "Dru Bloomfield - At Home",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Soleri Bridge",
+      "url": "https://www.flickr.com/photos/14544437@N07/5688673561",
+      "author": "Dru Bloomfield - At Home",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/phx-soleri-bridge.glb",
+  "source": "generators/phx-soleri-bridge.ts"
+}

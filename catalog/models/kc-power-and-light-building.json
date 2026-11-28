@@ -1,0 +1,74 @@
+{
+  "id": "kc-power-and-light-building",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "art-deco",
+    "skyscraper",
+    "lit-crown",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kansas City Power and Light Building 1931.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_Power_and_Light_Building_1931.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "PowerLight KCPL.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:PowerLight_KCPL.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "Kansas City Power and Light Building",
+      "url": "https://www.flickr.com/photos/9591442@N08/1083010129",
+      "author": "stevekc",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Power and Light",
+      "url": "https://www.flickr.com/photos/16069488@N00/52260388477",
+      "author": "string_bass_dave",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Power and Light Building",
+      "url": "https://www.flickr.com/photos/16069488@N00/52288907445",
+      "author": "string_bass_dave",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "PowerandLightBuilding.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:PowerandLightBuilding.jpg",
+      "author": "Hello2020121212",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Power and Light Building.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Power_and_Light_Building.jpg",
+      "author": "Noah Bohland",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-power-and-light-building.glb",
+  "source": "generators/kc-power-and-light-building.ts"
+}

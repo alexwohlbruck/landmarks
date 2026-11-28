@@ -1,0 +1,14 @@
+{
+  "id": "sat-sunset-station",
+  "name": "Sunset Station",
+  "model": "sat-sunset-station",
+  "place": "san-antonio-area",
+  "lng": -98.478205,
+  "lat": 29.420411,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/42817372"
+  ]
+}

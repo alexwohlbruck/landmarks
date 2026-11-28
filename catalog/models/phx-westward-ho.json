@@ -1,0 +1,56 @@
+{
+  "id": "phx-westward-ho",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "hotel",
+    "broadcast-mast",
+    "neon-sign",
+    "spanish-colonial-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Westward Ho Afar.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Westward_Ho_Afar.jpg",
+      "author": "Alan Stark",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Phoenix-Westward Ho Hotel-1929.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix-Westward_Ho_Hotel-1929.jpg",
+      "author": "Marine 69-71",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Westward Ho Building Tower Top.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Westward_Ho_Building_Tower_Top.jpg",
+      "author": "Alan Levine",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Westward Ho Hotel.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Westward_Ho_Hotel.jpg",
+      "author": "Lajurgen",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/phx-westward-ho.glb",
+  "source": "generators/phx-westward-ho.ts"
+}

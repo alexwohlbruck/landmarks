@@ -1,0 +1,36 @@
+{
+  "id": "sat-our-lady-of-the-lake",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "university",
+    "gothic-revival",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "OLLU1.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:OLLU1.JPG",
+      "author": "Zereshk",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/sat-our-lady-of-the-lake.glb",
+  "source": "generators/sat-our-lady-of-the-lake.ts"
+}

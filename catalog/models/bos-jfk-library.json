@@ -1,0 +1,54 @@
+{
+  "id": "bos-jfk-library",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "library",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "John F Kennedy Presidential Library June 2017",
+      "url": "https://commons.wikimedia.org/wiki/File:John_F_Kennedy_Presidential_Library_June_2017.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "JFK library Stitch Crop",
+      "url": "https://commons.wikimedia.org/wiki/File:JFK_library_Stitch_Crop.jpg",
+      "author": "Fcb981",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "John F. Kennedy Presidential Library and Museum (NARA)",
+      "url": "https://commons.wikimedia.org/wiki/File:John_F._Kennedy_Presidential_Library_and_Museum_(NARA).jpg",
+      "author": "U.S. National Archives",
+      "license": "Public domain"
+    },
+    {
+      "title": "JFK-Library-Museum-01",
+      "url": "https://commons.wikimedia.org/wiki/File:JFK-Library-Museum-01.jpg",
+      "author": "Sintakso",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-jfk-library.glb",
+  "source": "generators/bos-jfk-library.ts"
+}

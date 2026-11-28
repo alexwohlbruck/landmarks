@@ -1,0 +1,26 @@
+{
+  "id": "bos-park-street-church",
+  "name": "Park Street Church",
+  "model": "bos-park-street-church",
+  "place": "boston-area",
+  "lng": -71.0620295,
+  "lat": 42.3568442,
+  "bearing": 318.8,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/240317867",
+    "way/240317873",
+    "way/240706868",
+    "way/240706869",
+    "way/240706870",
+    "way/240706871",
+    "way/240706872",
+    "way/240706873",
+    "way/240706874",
+    "way/240706875",
+    "way/240706876",
+    "way/240706877",
+    "way/240706878"
+  ]
+}

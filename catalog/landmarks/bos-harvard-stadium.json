@@ -1,0 +1,14 @@
+{
+  "id": "bos-harvard-stadium",
+  "name": "Harvard Stadium",
+  "model": "bos-harvard-stadium",
+  "place": "boston-area",
+  "lng": -71.1269368,
+  "lat": 42.3665215,
+  "bearing": 36,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/29680202"
+  ]
+}

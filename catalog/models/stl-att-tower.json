@@ -1,0 +1,54 @@
+{
+  "id": "stl-att-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q9137449",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "One AT&T Center.jpg",
+      "author": "Matthew Black",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:One_AT%26T_Center.jpg"
+    },
+    {
+      "title": "One AT&T Center - Saint Louis, Missouri - April 1, 2014.jpg",
+      "author": "Lee Ann Ratledge",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:One_AT%26T_Center_-_Saint_Louis,_Missouri_-_April_1,_2014.jpg"
+    },
+    {
+      "title": "AT&T Center, St- Louis, MO- 2014-04-21 13-26.jpg",
+      "author": "Carbone1979",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:AT%26T_Center,_St-_Louis,_MO-_2014-04-21_13-26.jpg"
+    },
+    {
+      "title": "909 chestnut street.jpg",
+      "author": "Johnhochi",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:909_chestnut_street.jpg"
+    }
+  ],
+  "file": "models/stl-att-tower.glb",
+  "source": "generators/stl-att-tower.ts"
+}

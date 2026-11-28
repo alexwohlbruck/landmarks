@@ -1,0 +1,15 @@
+{
+  "id": "atx-lamar-boulevard-bridge",
+  "name": "Lamar Boulevard Bridge",
+  "model": "atx-lamar-boulevard-bridge",
+  "place": "austin-area",
+  "lng": -97.7565675,
+  "lat": 30.2658527,
+  "bearing": 19.64,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q14710932",
+  "replaces": [
+    "way/679083604"
+  ]
+}

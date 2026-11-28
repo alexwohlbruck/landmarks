@@ -1,0 +1,14 @@
+{
+  "id": "madrid-barajas-terminal-4s",
+  "name": "Madrid-Barajas Terminal 4S",
+  "model": "madrid-barajas-terminal-4s",
+  "place": "madrid",
+  "lng": -3.5674823,
+  "lat": 40.4944935,
+  "bearing": -0.29,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/27836635"
+  ]
+}

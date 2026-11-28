@@ -1,0 +1,14 @@
+{
+  "id": "phx-sky-harbor-control-tower",
+  "name": "Phoenix Sky Harbor Air Traffic Control Tower",
+  "model": "phx-sky-harbor-control-tower",
+  "place": "phoenix-area",
+  "lng": -112.005883,
+  "lat": 33.435319,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/180190838"
+  ]
+}

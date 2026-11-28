@@ -1,0 +1,15 @@
+{
+  "id": "kc-hy-vee-arena",
+  "name": "Hy-Vee Arena",
+  "model": "kc-hy-vee-arena",
+  "place": "kansas-city-area",
+  "lng": -94.6057874,
+  "lat": 39.0917714,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1489399",
+  "replaces": [
+    "way/318617359"
+  ]
+}

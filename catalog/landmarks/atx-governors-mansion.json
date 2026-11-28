@@ -1,0 +1,16 @@
+{
+  "id": "atx-governors-mansion",
+  "name": "Texas Governor's Mansion",
+  "model": "atx-governors-mansion",
+  "place": "austin-area",
+  "lng": -97.743152,
+  "lat": 30.272787,
+  "bearing": 17.5,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/363500532",
+    "way/1461481616",
+    "way/1461481617"
+  ]
+}

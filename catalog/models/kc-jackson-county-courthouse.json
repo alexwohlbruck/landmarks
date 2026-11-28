@@ -1,0 +1,50 @@
+{
+  "id": "kc-jackson-county-courthouse",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "art-deco",
+    "civic",
+    "courthouse",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Jackson County Kansas City Courthouse 20161026-7020-7029.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jackson_County_Kansas_City_Courthouse_20161026-7020-7029.jpg",
+      "author": "Kbh3rd",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Jackson County Kansas City Courthouse 20161026-7036-7038.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jackson_County_Kansas_City_Courthouse_20161026-7036-7038.jpg",
+      "author": "Kbh3rd",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Jackson County Courthouse (postcard)",
+      "url": "https://www.flickr.com/photos/23083686@N00/3463061080",
+      "author": "The DLC",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/kc-jackson-county-courthouse.glb",
+  "source": "generators/kc-jackson-county-courthouse.ts"
+}
