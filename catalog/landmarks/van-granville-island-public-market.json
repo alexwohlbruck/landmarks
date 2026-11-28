@@ -1,0 +1,20 @@
+{
+  "id": "van-granville-island-public-market",
+  "name": "Granville Island Public Market",
+  "model": "van-granville-island-public-market",
+  "place": "vancouver",
+  "lng": -123.1349698,
+  "lat": 49.2725506,
+  "bearing": 50.3,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q114841864",
+  "replaces": [
+    "way/480330054",
+    "way/27926613",
+    "way/1526558935",
+    "way/1456059708",
+    "way/1526558936",
+    "way/962460810"
+  ]
+}

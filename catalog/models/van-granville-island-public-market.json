@@ -1,0 +1,53 @@
+{
+  "id": "van-granville-island-public-market",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "market",
+    "industrial-heritage"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Granvill Island's Public Market",
+      "url": "https://www.flickr.com/photos/49539505@N04/7802578648",
+      "author": "La Citta Vita",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Granville Island Public Market",
+      "url": "https://www.flickr.com/photos/38601566@N00/14595723898",
+      "author": "niftyniall",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Granville Island Public Market 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Granville_Island_Public_Market_1.jpg",
+      "author": "Ymblanter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Granville Island Public Market 2015.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Granville_Island_Public_Market_2015.jpg",
+      "author": "Jay Esplana",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/van-granville-island-public-market.glb",
+  "source": "generators/van-granville-island-public-market.ts"
+}
