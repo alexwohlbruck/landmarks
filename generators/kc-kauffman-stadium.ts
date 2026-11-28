@@ -72,6 +72,8 @@
  * fountain basins and water (below the map's ground), the outfield
  * buildings (Hall of Fame, taproom, concourse canopy: OSM's own), signs,
  * flagpoles, the 2009 outfield concourse's small structures.
+ * The right-centre walls stop at 31 degrees, short of the Blue Moon Taproom
+ * (OSM way/938224121, the map's), which stands where they would continue.
  * Doubts: the fountains can only show as their rear walls at plaza level,
  * since the basins step down below the map's ground; the crown's tip
  * count is from two photos (k8 by day, k10 at night); the outer facade is
@@ -272,7 +274,9 @@ function lightStandards() {
 
 /** The water spectacular's rear walls at the plaza (k4, k9): the basins below them are under the map's ground. */
 function fountains() {
-  const walls: [number, number][] = [[10, 16], [17, 23], [24, 30], [31, 37], [38, 44], [-16, -10], [-23, -17], [-29, -24]]
+  // right-centre stops at 31 degrees: beyond it stands the Blue Moon Taproom (OSM way/938224121,
+  // 33-52 degrees, 134-151 m out; lidar shows its roof at 17-19 m there, not fountain walls)
+  const walls: [number, number][] = [[10, 16], [17, 23], [24, 31], [-16, -10], [-23, -17], [-29, -24]]
   for (const [a0, a1] of walls) {
     const r0 = 138.5, r1 = 140.5, z1 = 12.3 // a parapet 1.5 m over the centre-field concourse (10.6-11 m, lidar)
     for (let a = a0; a < a1 - 1e-6; a += 3) {
