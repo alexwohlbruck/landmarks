@@ -1,0 +1,26 @@
+{
+  "id": "paris-opera-garnier",
+  "name": "Opéra Garnier",
+  "model": "paris-opera-garnier",
+  "place": "paris",
+  "lng": 2.3317167,
+  "lat": 48.8720167,
+  "bearing": 344,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q187840",
+  "replaces": [
+    "way/54667456",
+    "way/822290986",
+    "way/822290987",
+    "way/822290988",
+    "way/822290989",
+    "way/822290990",
+    "way/822290991",
+    "way/822290992",
+    "way/822290993",
+    "way/822291000",
+    "way/822291001",
+    "way/822291002"
+  ]
+}

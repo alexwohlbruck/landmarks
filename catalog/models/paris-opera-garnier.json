@@ -1,0 +1,56 @@
+{
+  "id": "paris-opera-garnier",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "theatre",
+    "opera-house",
+    "beaux-arts",
+    "second-empire"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Nouvel Opéra. Élévation de la façade latérale ouest et du pavillon de l'Empereur",
+      "url": "https://commons.wikimedia.org/wiki/File:Nouvel_Op%C3%A9ra._%C3%89l%C3%A9vation_de_la_fa%C3%A7ade_lat%C3%A9rale_ouest_et_du_pavillon_de_l%27Empereur_-_dessin_-_Charles_Garnier_-_btv1b52524263x.jpg",
+      "author": "Charles Garnier",
+      "license": "Public domain"
+    },
+    {
+      "title": "Façade principale Palais Garnier Paris 4",
+      "url": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_principale_Palais_Garnier_Paris_4.jpg",
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "West facade of Palais Garnier, Paris 2017",
+      "url": "https://commons.wikimedia.org/wiki/File:West_facade_of_Palais_Garnier,_Paris_2017.jpg",
+      "author": "Peter Menzel",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Paris Palais Garnier @AEMohr",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_Palais_Garnier_@AEMohr.jpg",
+      "author": "AEMohr58",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/paris-opera-garnier.glb",
+  "source": "generators/paris-opera-garnier.ts"
+}
