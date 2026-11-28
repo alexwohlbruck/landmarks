@@ -1,0 +1,54 @@
+{
+  "id": "phx-arizona-science-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "science-museum",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Arizonasciencecenter.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arizonasciencecenter.jpg",
+      "author": "Kirs10",
+      "license": "Public domain"
+    },
+    {
+      "title": "Arizona Science Center 2011.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arizona_Science_Center_2011.jpg",
+      "author": "Kirs10",
+      "license": "CC0"
+    },
+    {
+      "title": "Arizona Science Center-5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arizona_Science_Center-5.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Arizona Science Center 1, 600 East Washington Street, Phonenix.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arizona_Science_Center_1,_600_East_Washington_Street,_Phonenix.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/phx-arizona-science-center.glb",
+  "source": "generators/phx-arizona-science-center.ts"
+}
