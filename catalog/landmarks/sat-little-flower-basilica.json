@@ -1,0 +1,15 @@
+{
+  "id": "sat-little-flower-basilica",
+  "name": "Basilica of the Little Flower",
+  "model": "sat-little-flower-basilica",
+  "place": "san-antonio-area",
+  "lng": -98.525471,
+  "lat": 29.446085,
+  "bearing": 6.6,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/521482347"
+  ],
+  "wikidata": "Q4867415"
+}
