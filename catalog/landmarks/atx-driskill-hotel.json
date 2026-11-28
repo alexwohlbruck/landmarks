@@ -1,0 +1,15 @@
+{
+  "id": "atx-driskill-hotel",
+  "name": "The Driskill",
+  "model": "atx-driskill-hotel",
+  "place": "austin-area",
+  "lng": -97.741715,
+  "lat": 30.268115,
+  "bearing": 17.5,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q5307819",
+  "replaces": [
+    "way/313917989"
+  ]
+}

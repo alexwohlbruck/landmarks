@@ -1,0 +1,60 @@
+{
+  "id": "atx-driskill-hotel",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "hotel",
+    "romanesque-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "The historic Driskill Hotel in downtown Austin, Texas (LCCN2014632495)",
+      "url": "https://commons.wikimedia.org/wiki/File:The_historic_Driskill_Hotel_in_downtown_Austin,_Texas._A_Romanesque-style_building_completed_in_1886,_the_Driskill_is_one_of_the_best-known_hotels_in_Texas_LCCN2014632495.tif",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "Driskill austin 2006.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Driskill_austin_2006.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Driskill Hotel - Austin, Texas - DSC09367.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Driskill_Hotel_-_Austin,_Texas_-_DSC09367.jpg",
+      "author": "Daderot",
+      "license": "CC0"
+    },
+    {
+      "title": "Driskill Hotel Exterior.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Driskill_Hotel_Exterior.jpg",
+      "author": "Kenneth C. Zirkel",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Driskill Hotel, Austin, Texas (8511756450).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Driskill_Hotel,_Austin,_Texas_(8511756450).jpg",
+      "author": "Nicolas Henderson",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/atx-driskill-hotel.glb",
+  "source": "generators/atx-driskill-hotel.ts"
+}
