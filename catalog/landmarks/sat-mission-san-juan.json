@@ -1,0 +1,15 @@
+{
+  "id": "sat-mission-san-juan",
+  "name": "Mission San Juan Capistrano",
+  "model": "sat-mission-san-juan",
+  "place": "san-antonio-area",
+  "lng": -98.455337,
+  "lat": 29.333008,
+  "bearing": 8.8,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/130922311"
+  ],
+  "wikidata": "Q3295780"
+}
