@@ -1,0 +1,16 @@
+{
+  "id": "phx-westward-ho",
+  "name": "Westward Ho",
+  "model": "phx-westward-ho",
+  "place": "phoenix-area",
+  "lng": -112.0745618,
+  "lat": 33.4551692,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q7989806",
+  "replaces": [
+    "way/37057962",
+    "way/1110477052"
+  ]
+}
