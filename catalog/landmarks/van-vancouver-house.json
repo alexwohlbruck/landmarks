@@ -1,0 +1,16 @@
+{
+  "id": "van-vancouver-house",
+  "name": "Vancouver House",
+  "model": "van-vancouver-house",
+  "place": "vancouver",
+  "lng": -123.1309014,
+  "lat": 49.2749049,
+  "bearing": 44.3,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q55636956",
+  "replaces": [
+    "way/742009401",
+    "way/1092241825"
+  ]
+}

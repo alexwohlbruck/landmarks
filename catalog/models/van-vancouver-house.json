@@ -1,0 +1,54 @@
+{
+  "id": "van-vancouver-house",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "residential",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Vancouver House - 22.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_House_-_22.jpg",
+      "author": "Haatu",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Vancouver House, Vancouver, British Columbia 02 - Nov 30, 2019.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_House,_Vancouver,_British_Columbia_02_-_Nov_30,_2019.jpg",
+      "author": "Ken Lund",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Vancouver House, Vancouver, British Columbia 04 - Nov 30, 2019.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_House,_Vancouver,_British_Columbia_04_-_Nov_30,_2019.jpg",
+      "author": "Ken Lund",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Vancouver House, southwest view 20240831 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_House,_southwest_view_20240831_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/van-vancouver-house.glb",
+  "source": "generators/van-vancouver-house.ts"
+}
