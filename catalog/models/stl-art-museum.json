@@ -1,0 +1,61 @@
+{
+  "id": "stl-art-museum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "historic",
+    "beaux-arts"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Saint Louis Art Museum (SLAM)",
+      "author": "Perpigfr",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Saint_Louis_Art_Museum_(SLAM).jpg"
+    },
+    {
+      "title": "Saint Louis Art Museum",
+      "author": "Laraquelx",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Saint_Louis_Art_Museum.jpg"
+    },
+    {
+      "title": "St. Louis Art Museum in Forest Park",
+      "author": "AmyBautz",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Art_Museum_in_Forest_Park.jpg"
+    },
+    {
+      "title": "St louis Art Museum",
+      "author": "unknown",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:St_louis_Art_Museum.jpg"
+    },
+    {
+      "title": "East Building, St. Louis Art Museum (SLAM)",
+      "author": "HOUYIMIN",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:East_Building,_St._Louis_Art_Museum_(SLAM).jpg"
+    }
+  ],
+  "wikidata": "Q1760539",
+  "file": "models/stl-art-museum.glb",
+  "source": "generators/stl-art-museum.ts"
+}
