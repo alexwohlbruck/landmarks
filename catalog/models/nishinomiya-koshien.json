@@ -1,0 +1,82 @@
+{
+  "id": "nishinomiya-koshien",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "baseball",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/nishinomiya-koshien.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Koshien Stadium aerial photograph 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Koshien_Stadium_aerial_photograph_2021.jpg",
+      "author": "国土地理院 (GSI)",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "阪神甲子園球場 全景.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E9%98%AA%E7%A5%9E%E7%94%B2%E5%AD%90%E5%9C%92%E7%90%83%E5%A0%B4_%E5%85%A8%E6%99%AF.jpg",
+      "author": "やねまか",
+      "license": "CC0"
+    },
+    {
+      "title": "Koshien Stadium Ginsan and Liner Vision.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Koshien_Stadium_Ginsan_and_Liner_Vision.jpg",
+      "author": "Yasu",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Hanshin Koshien Stadium 220809g.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hanshin_Koshien_Stadium_220809g.jpg",
+      "author": "江戸村のとくぞう",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hanshin Koshien Stadium 220809c.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hanshin_Koshien_Stadium_220809c.jpg",
+      "author": "江戸村のとくぞう",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hanshin Koshien Stadium 220809e.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hanshin_Koshien_Stadium_220809e.jpg",
+      "author": "江戸村のとくぞう",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Around the Koshien Stadium 20250901a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Around_the_Koshien_Stadium_20250901a.jpg",
+      "author": "掬茶",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Around the Koshien Stadium 20250901c.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Around_the_Koshien_Stadium_20250901c.jpg",
+      "author": "掬茶",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/nishinomiya-koshien.glb",
+  "source": "generators/nishinomiya-koshien.ts"
+}

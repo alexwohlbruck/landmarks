@@ -1,0 +1,65 @@
+{
+  "id": "kl-klia-satellite-a",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "concourse",
+    "modern"
+  ],
+  "description": "The X-shaped satellite of KLIA Terminal 1 (Kisho Kurokawa, 1998): four glass-walled piers under green-grey vaults with rolled-down ends, a domed central hall and the open-air rainforest atrium in its middle.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "KLIA pier%26satellite.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA_pier%26satellite.jpg",
+      "author": "Pizzaboy1",
+      "license": "Public domain"
+    },
+    {
+      "title": "KLIA MTB%2BPier buildings.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA_MTB%2BPier_buildings.jpg",
+      "author": "Craig",
+      "license": "Public domain"
+    },
+    {
+      "title": "Aerial photograph of Malaysia on 15 January 2026 - 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Malaysia_on_15_January_2026_-_01.jpg",
+      "author": "Yu Chu Chin",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "KLIA-satellite building-LANDSCAPE.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KLIA-satellite_building-LANDSCAPE.jpg",
+      "author": "Wkong (assumed)",
+      "license": "Public domain"
+    },
+    {
+      "title": "KUL-Satellite2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:KUL-Satellite2.jpg",
+      "author": "Skatebiker",
+      "license": "Public domain"
+    }
+  ],
+  "detail": "models/kl-klia-satellite-a.detail.glb",
+  "detailZoom": 16,
+  "file": "models/kl-klia-satellite-a.glb",
+  "source": "generators/kl-klia-satellite-a.ts"
+}

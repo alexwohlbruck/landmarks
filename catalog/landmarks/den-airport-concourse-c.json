@@ -1,0 +1,14 @@
+{
+  "id": "den-airport-concourse-c",
+  "name": "Denver International Airport, Concourse C",
+  "model": "den-airport-concourse-c",
+  "place": "denver-area",
+  "lng": -104.672052,
+  "lat": 39.863054,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/81294907"
+  ]
+}

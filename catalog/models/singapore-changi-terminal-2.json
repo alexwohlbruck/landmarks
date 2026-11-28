@@ -1,0 +1,61 @@
+{
+  "id": "singapore-changi-terminal-2",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Changi Airport, Terminal 2, Departure Driveway 2.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_Airport,_Terminal_2,_Departure_Driveway_2.JPG",
+      "author": "Terence Ong",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "Changi Airport, Terminal 2, Arrival Driveway.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_Airport,_Terminal_2,_Arrival_Driveway.JPG",
+      "author": "Terence Ong",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "3 Skytrains between T1 and T2.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:3_Skytrains_between_T1_and_T2.JPG",
+      "author": "Self",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Singapore Changi Airport T2 - viewing gallery silhouette - Flickr - GeorgeTan^5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Singapore_Changi_Airport_T2_-_viewing_gallery_silhouette_-_Flickr_-_GeorgeTan%5E5.jpg",
+      "author": "GeorgeTan#5",
+      "license": "CC0"
+    },
+    {
+      "title": "Changi Airport Control Tower (3187275465).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_Airport_Control_Tower_(3187275465).jpg",
+      "author": "edwin.11",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/singapore-changi-terminal-2.glb",
+  "source": "generators/singapore-changi-terminal-2.ts"
+}

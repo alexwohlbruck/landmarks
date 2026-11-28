@@ -1,0 +1,63 @@
+{
+  "id": "dubai-dxb-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Dubai Airport Control Tower",
+      "url": "https://www.flickr.com/photos/39551170@N02/52060264803",
+      "author": "Simon_sees",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Dubai Airport control tower",
+      "url": "https://www.flickr.com/photos/47737664@N00/732252495",
+      "author": "crucially",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Emirates Terminal 3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Emirates_Terminal_3.jpg",
+      "author": "Ahmedn97",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Dubai Airport Trip 2009 215.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dubai_Airport_Trip_2009_215.jpg",
+      "author": "MoHasanie",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "1 Dubai International Airport Terminal 3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:1_Dubai_International_Airport_Terminal_3.jpg",
+      "author": "EditQ",
+      "license": "CC0"
+    }
+  ],
+  "detail": "models/dubai-dxb-control-tower.detail.glb",
+  "detailZoom": 16,
+  "file": "models/dubai-dxb-control-tower.glb",
+  "source": "generators/dubai-dxb-control-tower.ts"
+}

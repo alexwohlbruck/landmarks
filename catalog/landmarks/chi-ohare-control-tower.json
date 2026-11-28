@@ -1,0 +1,15 @@
+{
+  "id": "chi-ohare-control-tower",
+  "name": "O'Hare Control Tower",
+  "model": "chi-ohare-control-tower",
+  "place": "chicago-area",
+  "lng": -87.90326564,
+  "lat": 41.97597279,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/163500116",
+    "way/682380605"
+  ]
+}

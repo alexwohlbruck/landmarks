@@ -1,0 +1,15 @@
+{
+  "id": "osaka-central-public-hall",
+  "name": "Osaka City Central Public Hall",
+  "model": "osaka-central-public-hall",
+  "place": "osaka",
+  "lng": 135.504005,
+  "lat": 34.693534,
+  "bearing": 1.8,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q10938355",
+  "replaces": [
+    "way/162382613"
+  ]
+}

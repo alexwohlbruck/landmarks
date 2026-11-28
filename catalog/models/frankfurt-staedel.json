@@ -1,0 +1,88 @@
+{
+  "id": "frankfurt-staedel",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "art-museum",
+    "historic",
+    "neo-renaissance"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Städel Museum, Frankfurt am Main, Außenansicht (cropped)",
+      "url": "https://commons.wikimedia.org/wiki/File:St%C3%A4del_Museum,_Frankfurt_am_Main,_Au%C3%9Fenansicht_(cropped).jpg",
+      "author": "Städel Museum",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt am Main, das Städel - Museum",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_das_St%C3%A4del_-_Museum_.jpg",
+      "author": "Dguendel",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Das Städel Museum",
+      "url": "https://commons.wikimedia.org/wiki/File:Das_St%C3%A4del_Museum.jpg",
+      "author": "Städel Museum",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Frankfurt Museumsuferfest 2025 - 04 (Städel)",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Museumsuferfest_2025_-_04_(St%C3%A4del).jpg",
+      "author": "Dr. Bernd Gross",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt am Main - Städel Museum",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main_-_St%C3%A4del_Museum.jpg",
+      "author": "Fred Romero",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Frankfurt am Main - Städel Museum (1)",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main_-_St%C3%A4del_Museum_(1).jpg",
+      "author": "Fred Romero",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Frankfurt am Main - Städel Museum (2)",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main_-_St%C3%A4del_Museum_(2).jpg",
+      "author": "Fred Romero",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Das Städel Museum mit Städel Garten",
+      "url": "https://commons.wikimedia.org/wiki/File:Das_St%C3%A4del_Museum_mit_St%C3%A4del_Garten.jpg",
+      "author": "Städel Museum",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Staedel-Frankfurt-2013-Ffm-862-867",
+      "url": "https://commons.wikimedia.org/wiki/File:Staedel-Frankfurt-2013-Ffm-862-867.jpg",
+      "author": "Simsalabimbam",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/frankfurt-staedel.detail.glb",
+  "detailZoom": 17,
+  "file": "models/frankfurt-staedel.glb",
+  "source": "generators/frankfurt-staedel.ts"
+}

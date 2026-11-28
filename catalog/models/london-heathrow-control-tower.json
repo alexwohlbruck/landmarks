@@ -1,0 +1,56 @@
+{
+  "id": "london-heathrow-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern",
+    "high-tech"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Heathrow Air Traffic Control Tower 2009-11-15",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_Air_Traffic_Control_Tower_2009-11-15.jpg",
+      "author": "David Jones",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "LHR Control Tower",
+      "url": "https://commons.wikimedia.org/wiki/File:LHR_Control_Tower.jpg",
+      "author": "Horocassi234",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Base of the Air Traffic Control Tower, Heathrow Airport",
+      "url": "https://commons.wikimedia.org/wiki/File:Base_of_the_Air_Traffic_Control_Tower,_Heathrow_Airport_-_geograph.org.uk_-_5566654.jpg",
+      "author": "Ian S",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Control tower at London Heathrow Airport",
+      "url": "https://commons.wikimedia.org/wiki/File:Control_tower_at_London_Heathrow_Airport_-_geograph.org.uk_-_3512743.jpg",
+      "author": "Anthony Parkes",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/london-heathrow-control-tower.glb",
+  "source": "generators/london-heathrow-control-tower.ts"
+}

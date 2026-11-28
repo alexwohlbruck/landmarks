@@ -1,0 +1,16 @@
+{
+  "id": "el-jem-amphitheatre",
+  "name": "Amphitheatre of El Jem",
+  "model": "el-jem-amphitheatre",
+  "place": "el-jem",
+  "lng": 10.706952,
+  "lat": 35.29642,
+  "bearing": 350,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/2894555",
+    "way/218657180"
+  ],
+  "wikidata": "Q2914326"
+}

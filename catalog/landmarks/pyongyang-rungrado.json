@@ -1,0 +1,32 @@
+{
+  "id": "pyongyang-rungrado",
+  "name": "Rungrado 1st of May Stadium",
+  "model": "pyongyang-rungrado",
+  "place": "pyongyang",
+  "lng": 125.775324,
+  "lat": 39.049711,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q211618",
+  "replaces": [
+    "relation/6365399",
+    "way/23697757",
+    "way/1279416700",
+    "way/1279416701",
+    "way/1279416702",
+    "way/1279416703",
+    "way/1279416704",
+    "way/1279416705",
+    "way/1279416706",
+    "way/1279416707",
+    "way/1279416708",
+    "way/1279416709",
+    "way/1279416710",
+    "way/1279416711",
+    "way/1279416712",
+    "way/1279416713",
+    "way/1279416714",
+    "way/1279416715"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "frankfurt-ig-farben-haus",
+  "name": "IG-Farben-Haus",
+  "model": "frankfurt-ig-farben-haus",
+  "place": "frankfurt",
+  "lng": 8.6674953,
+  "lat": 50.1254781,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q663140",
+  "replaces": [
+    "way/321136070",
+    "way/192302479",
+    "way/23909727",
+    "way/192302468",
+    "way/192302466",
+    "way/229650593",
+    "way/321136071",
+    "way/229650592",
+    "way/192302473",
+    "way/192302482",
+    "way/192302471",
+    "way/192302485",
+    "way/192302461",
+    "way/321136069",
+    "way/1279349525"
+  ]
+}

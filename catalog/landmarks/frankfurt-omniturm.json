@@ -1,0 +1,15 @@
+{
+  "id": "frankfurt-omniturm",
+  "name": "Omniturm",
+  "model": "frankfurt-omniturm",
+  "place": "frankfurt",
+  "lng": 8.673086,
+  "lat": 50.111562,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q15107362",
+  "replaces": [
+    "way/598133203"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "la-lax-terminals-1-3",
+  "name": "LAX Terminals 1-3",
+  "model": "la-lax-terminals-1-3",
+  "place": "los-angeles-area",
+  "lng": -118.4042,
+  "lat": 33.9459,
+  "bearing": 353,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/413226242",
+    "way/857253634",
+    "way/413226245",
+    "way/983655042",
+    "way/1279233925"
+  ]
+}

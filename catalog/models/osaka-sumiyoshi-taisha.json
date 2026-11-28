@@ -1,0 +1,58 @@
+{
+  "id": "osaka-sumiyoshi-taisha",
+  "file": "models/osaka-sumiyoshi-taisha.glb",
+  "license": "CC0-1.0",
+  "source": "generators/osaka-sumiyoshi-taisha.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "shrine",
+    "shinto",
+    "historic",
+    "national-treasure",
+    "japanese-architecture"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "The four main halls of Sumiyoshi Taisha (1810, National Treasures) in Sumiyoshi-zukuri: straight cypress-bark gabled roofs with chigi and katsuogi, vermilion posts on white walls, each in its vermilion fence with its heiden in front.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Backview of 2nd Hongu of Sumiyoshi Grand Shrine.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Backview_of_2nd_Hongu_of_Sumiyoshi_Grand_Shrine.jpg",
+      "author": "Soramimi",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Backview of 3rd Hongu of Sumiyoshi Grand Shrine.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Backview_of_3rd_Hongu_of_Sumiyoshi_Grand_Shrine.jpg",
+      "author": "Soramimi",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Sumi 3 und 4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sumi_3_und_4.jpg",
+      "author": "Fraxinus2",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Sumiyoshi Taisha Shinto shrine, Osaka, Japan (2) - September 2015.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sumiyoshi_Taisha_Shinto_shrine,_Osaka,_Japan_(2)_-_September_2015.jpg",
+      "author": "Rickard Törnblad",
+      "license": "CC-BY-SA-4.0"
+    }
+  ]
+}

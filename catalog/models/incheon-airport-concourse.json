@@ -1,0 +1,64 @@
+{
+  "id": "incheon-airport-concourse",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "concourse",
+    "control-tower",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "ICN 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ICN_02.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "ICN 09.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ICN_09.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "ICN 10.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ICN_10.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "02-NOV-2023 - KC910 ICN-ALA (EI-KEB - B767-300) (03).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:02-NOV-2023_-_KC910_ICN-ALA_(EI-KEB_-_B767-300)_(03).jpg",
+      "author": "Simply Aviation",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Korea-Incheon-International-Airport-New-Satellite-buildingA-under-construction.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Korea-Incheon-International-Airport-New-Satellite-buildingA-under-construction.JPG",
+      "author": "Kanchi1979",
+      "license": "CC BY 2.5"
+    }
+  ],
+  "detail": "models/incheon-airport-concourse.detail.glb",
+  "detailZoom": 16,
+  "file": "models/incheon-airport-concourse.glb",
+  "source": "generators/incheon-airport-concourse.ts"
+}

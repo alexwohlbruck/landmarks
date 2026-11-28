@@ -1,0 +1,22 @@
+{
+  "id": "kl-klia2",
+  "name": "klia2 (main terminal, piers J and K/L)",
+  "model": "kl-klia2",
+  "place": "kuala-lumpur",
+  "lng": 101.6863733,
+  "lat": 2.7427777,
+  "bearing": 325.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/1033454787",
+    "way/1033454803",
+    "way/1033454802",
+    "way/1033454804",
+    "way/1560211281",
+    "way/1033454786",
+    "relation/13829161",
+    "way/1315521984",
+    "way/1560211283"
+  ]
+}

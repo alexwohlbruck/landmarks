@@ -1,0 +1,15 @@
+{
+  "id": "johannesburg-ponte-city",
+  "name": "Ponte City",
+  "model": "johannesburg-ponte-city",
+  "place": "johannesburg",
+  "lng": 28.0571619,
+  "lat": -26.1905784,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/759354705"
+  ],
+  "wikidata": "Q1812844"
+}

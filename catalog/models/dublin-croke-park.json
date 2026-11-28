@@ -1,0 +1,81 @@
+{
+  "id": "dublin-croke-park",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "gaelic-games"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/dublin-croke-park.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Croke Park (48139459926).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Croke_Park_(48139459926).jpg",
+      "author": "Metro Centric",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Croke Park (48139486498).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Croke_Park_(48139486498).jpg",
+      "author": "Metro Centric",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Croke Park (48139486223).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Croke_Park_(48139486223).jpg",
+      "author": "Metro Centric",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Croke Park stadium, Dublin - geograph.org.uk - 5345386.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Croke_Park_stadium,_Dublin_-_geograph.org.uk_-_5345386.jpg",
+      "author": "Gareth James",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Croke Park panorama.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Croke_Park_panorama.jpg",
+      "author": "Rob Hurson",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Croke Park 2018.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Croke_Park_2018.jpg",
+      "author": "John Seb Barber",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Croke Park stadium, viewed from Phibsborough.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Croke_Park_stadium,_viewed_from_Phibsborough.jpg",
+      "author": "O'Dea",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Croke Park fans on the hill.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Croke_Park_fans_on_the_hill.jpg",
+      "author": "Dearbhla",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/dublin-croke-park.glb",
+  "source": "generators/dublin-croke-park.ts"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "pyongyang-rungrado",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/pyongyang-rungrado.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Rŭngrado May First Stadium.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:R%C5%ADngrado_May_First_Stadium.JPG",
+      "author": "Nicor (Views from Yanggakdo International Hotel)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "May Day Stadium - 01 - Near the entrance.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:May_Day_Stadium_-_01_-_Near_the_entrance.jpg",
+      "author": "Jan Engelhardt",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rungrado 1st of May Stadium.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Rungrado_1st_of_May_Stadium.jpg",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Interior of the Rungrado 1st of May Stadium 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Interior_of_the_Rungrado_1st_of_May_Stadium_2.jpg",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "North Korea-Rungrado May Day Stadium-01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:North_Korea-Rungrado_May_Day_Stadium-01.jpg",
+      "author": "Ryuugakusei",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "May Day Stadium4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:May_Day_Stadium4.jpg",
+      "author": "Mike Connolly",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "May Day Stadium, Pyongyang (5063684320).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:May_Day_Stadium,_Pyongyang_(5063684320).jpg",
+      "author": "David Stanley",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Mayday Stadium (6647199727).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mayday_Stadium_(6647199727).jpg",
+      "author": "Michael Day",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/pyongyang-rungrado.glb",
+  "source": "generators/pyongyang-rungrado.ts"
+}

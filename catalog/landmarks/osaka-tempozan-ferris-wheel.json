@@ -1,0 +1,15 @@
+{
+  "id": "osaka-tempozan-ferris-wheel",
+  "name": "Tempozan Ferris Wheel",
+  "model": "osaka-tempozan-ferris-wheel",
+  "place": "osaka",
+  "lng": 135.4309727,
+  "lat": 34.656205,
+  "bearing": 48.5,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q548263",
+  "replaces": [
+    "way/382746499"
+  ]
+}

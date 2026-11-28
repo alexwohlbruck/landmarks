@@ -1,0 +1,69 @@
+{
+  "id": "osaka-abeno-harukas",
+  "file": "models/osaka-abeno-harukas.glb",
+  "license": "CC0-1.0",
+  "source": "generators/osaka-abeno-harukas.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "observation-deck",
+    "department-store",
+    "hotel"
+  ],
+  "description": "300 m glass skyscraper (2014) over Osaka-Abenobashi station, in three blocks stepping back over white V-truss bands, with open frames on the setback roofs and round the roof, its department-store base and the Wing.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Abeno Harukas Osaka Japan01-r.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Abeno_Harukas_Osaka_Japan01-r.jpg",
+      "author": "Oilstreet",
+      "license": "CC-BY-2.5"
+    },
+    {
+      "title": "Abeno Harukas 2021-03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Abeno_Harukas_2021-03.jpg",
+      "author": "Mr.ちゅらさん",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Abeno Harukas from Tsutenkaku Tower @ Shinsekai @ Osaka (13382473483).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Abeno_Harukas_from_Tsutenkaku_Tower_@_Shinsekai_@_Osaka_(13382473483).jpg",
+      "author": "Guilhem Vellut",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "あべのハルカス.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E3%81%82%E3%81%B9%E3%81%AE%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9.jpg",
+      "author": "加茂川",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Abeno Harukas.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Abeno_Harukas.jpg",
+      "author": "Kimiwind1184",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Illuminated Tennōji Park and Abeno Harukas, November 2015, Osaka.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Illuminated_Tenn%C5%8Dji_Park_and_Abeno_Harukas,_November_2015,_Osaka.jpg",
+      "author": "Laitche",
+      "license": "CC-BY-SA-4.0"
+    }
+  ]
+}

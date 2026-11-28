@@ -1,0 +1,20 @@
+{
+  "id": "osaka-abeno-harukas",
+  "name": "Abeno Harukas",
+  "model": "osaka-abeno-harukas",
+  "place": "osaka",
+  "lng": 135.5142781,
+  "lat": 34.6457626,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q16318627",
+  "replaces": [
+    "way/187296989",
+    "way/488467176",
+    "way/602589263",
+    "way/187896585",
+    "way/977755844",
+    "way/1499503024"
+  ]
+}

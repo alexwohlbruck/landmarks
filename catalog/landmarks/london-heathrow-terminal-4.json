@@ -1,0 +1,15 @@
+{
+  "id": "london-heathrow-terminal-4",
+  "name": "Heathrow Terminal 4",
+  "model": "london-heathrow-terminal-4",
+  "place": "london",
+  "lng": -0.4469366,
+  "lat": 51.4598266,
+  "bearing": 42,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/151625568"
+  ],
+  "wikidata": "Q6670470"
+}

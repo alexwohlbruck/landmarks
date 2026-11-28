@@ -1,0 +1,94 @@
+{
+  "id": "frankfurt-alte-oper",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "concert-hall",
+    "opera-house",
+    "historic",
+    "neo-renaissance"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Alte Oper, Frankfurt, South view 20190914 1",
+      "url": "https://commons.wikimedia.org/wiki/File:Alte_Oper,_Frankfurt,_South_view_20190914_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Alte Oper Frankfurt 2019",
+      "url": "https://commons.wikimedia.org/wiki/File:Alte_Oper_Frankfurt_2019.jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "Alte Oper Frankfurt am Main 2012",
+      "url": "https://commons.wikimedia.org/wiki/File:Alte_Oper_Frankfurt_am_Main_2012.jpg",
+      "author": "Felix König",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Alte Oper Frankfurt am Main 2019-09-15 02",
+      "url": "https://commons.wikimedia.org/wiki/File:Alte_Oper_Frankfurt_am_Main_2019-09-15_02.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    },
+    {
+      "title": "Alte Oper front facade - Frankfurt am Main - 2026-10-17",
+      "url": "https://commons.wikimedia.org/wiki/File:Alte_Oper_front_facade_-_Frankfurt_am_Main_-_2026-10-17.jpg",
+      "author": "Norbert Nagel",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt-Alte Oper-08-2016-gje",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt-Alte_Oper-08-2016-gje.jpg",
+      "author": "Gerd Eichmann",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Alte Oper Frankfurt am Main 2024-10-02 05",
+      "url": "https://commons.wikimedia.org/wiki/File:Alte_Oper_Frankfurt_am_Main_2024-10-02_05.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    },
+    {
+      "title": "Alte Oper am Opernplatz in Frankfurt am Main Mohammad Nemat Zadeh 24",
+      "url": "https://commons.wikimedia.org/wiki/File:Alte_Oper_am_Opernplatz_in_Frankfurt_am_Main_Mohammad_Nemat_Zadeh_24.jpg",
+      "author": "Mohammad Nemat Zadeh",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Alte Oper Frankfurt and surroundings",
+      "url": "https://commons.wikimedia.org/wiki/File:Alte_Oper_Frankfurt_and_surroundings.jpg",
+      "author": "Jorgecft",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Alte Oper Frankfurt abends 2011-07",
+      "url": "https://commons.wikimedia.org/wiki/File:Alte_Oper_Frankfurt_abends_2011-07.jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/frankfurt-alte-oper.detail.glb",
+  "detailZoom": 17,
+  "file": "models/frankfurt-alte-oper.glb",
+  "source": "generators/frankfurt-alte-oper.ts"
+}

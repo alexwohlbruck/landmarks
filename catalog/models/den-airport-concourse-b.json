@@ -1,0 +1,75 @@
+{
+  "id": "den-airport-concourse-b",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "concourse",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/den-airport-concourse-b.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "Central portion of Concourse B at Denver International Airport (2021)",
+      "url": "https://commons.wikimedia.org/wiki/File:Central_portion_of_Concourse_B_at_Denver_International_Airport_(2021).jpg",
+      "author": "Steve Morgan",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Denver concourse B west ramp",
+      "url": "https://commons.wikimedia.org/wiki/File:Denver_concourse_B_west_ramp_(29657388588).jpg",
+      "author": "airbus777",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Denver Airport Concourse B East",
+      "url": "https://www.flickr.com/photos/69502324@N00/53113489761",
+      "author": "airbus777",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "DIA Concourse B 2026",
+      "url": "https://commons.wikimedia.org/wiki/File:DIA_Concourse_B_2026.jpg",
+      "author": "ECTran71",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Concourse B Denver International Airport 2024",
+      "url": "https://commons.wikimedia.org/wiki/File:Concourse_B_Denver_International_Airport_2024.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "2022_08_20_ege-den-sba_048b",
+      "url": "https://www.flickr.com/photos/52614599@N00/52303997376",
+      "author": "Doc Searls",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "DEN Air Traffic Control Tower",
+      "url": "https://commons.wikimedia.org/wiki/File:DEN_Air_Traffic_Control_Tower.jpg",
+      "author": "Bmurphy380",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/den-airport-concourse-b.glb",
+  "source": "generators/den-airport-concourse-b.ts"
+}

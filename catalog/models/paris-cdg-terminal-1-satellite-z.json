@@ -1,0 +1,51 @@
+{
+  "id": "paris-cdg-terminal-1-satellite-z",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Terminal 1 CDG Paris Airport (aerial)",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal1_CDGParisAirport.jpg",
+      "author": "Citizen59",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Terminal 1 of CDG Airport",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_1_of_CDG_Airport.jpg",
+      "author": "Dmitry Avdeev",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "CDG Terminal 1 from A320 F-GJVW",
+      "url": "https://commons.wikimedia.org/wiki/File:CDG_TERMINAL_1_FROM_A320_F-GJVW_AIR_FRANCE_TAKE_OFF_FLIGHT_CDG-VCE_(16554098828).jpg",
+      "author": "Eric Salard",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "detail": "models/paris-cdg-terminal-1-satellite-z.detail.glb",
+  "detailZoom": 16,
+  "file": "models/paris-cdg-terminal-1-satellite-z.glb",
+  "source": "generators/paris-cdg-terminal-1.ts"
+}

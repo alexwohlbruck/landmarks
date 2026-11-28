@@ -1,0 +1,67 @@
+{
+  "id": "den-airport-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "DEN Air Traffic Control Tower",
+      "url": "https://commons.wikimedia.org/wiki/File:DEN_Air_Traffic_Control_Tower.jpg",
+      "author": "Bmurphy380",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Denver International Airport zsdfgb",
+      "url": "https://commons.wikimedia.org/wiki/File:Denver_International_Airport_zsdfgb.jpg",
+      "author": "Luciof",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Denver A Terminal",
+      "url": "https://commons.wikimedia.org/wiki/File:Denver_A_Terminal.jpg",
+      "author": "TastyPoutine",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Southwest 737s in Denver",
+      "url": "https://commons.wikimedia.org/wiki/File:Southwest_737s_in_Denver_(7921580338).jpg",
+      "author": "DearEdward",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Denver International Airport - Colorado",
+      "url": "https://commons.wikimedia.org/wiki/File:Denver_International_Airport_-_Colorado_(54124034645).jpg",
+      "author": "Tony Webster",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Denver Airport Control Tower",
+      "url": "https://commons.wikimedia.org/wiki/File:Denver_Airport_Control_Tower_(53910491201).jpg",
+      "author": "Tony Webster",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/den-airport-control-tower.glb",
+  "source": "generators/den-airport-control-tower.ts"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "frankfurt-main-tower",
+  "name": "Main Tower",
+  "model": "frankfurt-main-tower",
+  "place": "frankfurt",
+  "lng": 8.672189,
+  "lat": 50.112521,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q321291",
+  "replaces": [
+    "way/11526963",
+    "way/1299371966",
+    "way/183071928",
+    "way/183071934",
+    "way/183071941",
+    "way/183072519"
+  ]
+}

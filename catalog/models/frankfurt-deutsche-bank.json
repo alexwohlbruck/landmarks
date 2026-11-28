@@ -1,0 +1,68 @@
+{
+  "id": "frankfurt-deutsche-bank",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "skyline",
+    "twin-towers"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Deutsche Bank Taunusanlage.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Deutsche_Bank_Taunusanlage.jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "Deutsche Bank tower Frankfurt am Main 2019-09-15 03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Deutsche_Bank_tower_Frankfurt_am_Main_2019-09-15_03.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    },
+    {
+      "title": "Deutsche Bank tower Frankfurt am Main 2019-09-15 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Deutsche_Bank_tower_Frankfurt_am_Main_2019-09-15_01.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    },
+    {
+      "title": "Deutsche Bank tower Frankfurt am Main 2019-09-15 04.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Deutsche_Bank_tower_Frankfurt_am_Main_2019-09-15_04.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    },
+    {
+      "title": "Deutsche Bank Twin Towers - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Deutsche_Bank_Twin_Towers_-_panoramio.jpg",
+      "author": "pyraniton",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "TaunusAnlage Park & Deutsche Bank Twin Towers.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:TaunusAnlage_Park_&_Deutsche_Bank_Twin_Towers.jpg",
+      "author": "Edison McCullen",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/frankfurt-deutsche-bank.glb",
+  "source": "generators/frankfurt-deutsche-bank.ts"
+}

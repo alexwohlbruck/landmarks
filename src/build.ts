@@ -2,7 +2,11 @@
  * Validate the catalog and build the static release.
  *
  *   bun run build [--out dist]   write the release to dist/
- *   bun run validate             check everything the build checks, write nothing
+ *   bun run validate [--all]     check what the build checks, write nothing
+ *
+ * Locally, validate reads and bakes only the models of landmarks this branch
+ * adds or changes (src/scope.ts); the whole catalog's JSON is still checked.
+ * --all, LANDMARKS_ALL=1 or CI checks every model, as the build always does.
  *
  * Exits non-zero, listing every problem, if the catalog or a model is wrong,
  * so a bad edit never publishes.
@@ -13,6 +17,8 @@ import { basename, dirname, join, resolve } from 'node:path'
 import { buildRelease, CatalogError } from './release'
 import { readCatalog, storageProblems } from './catalog-files'
 import { buildHistory } from './history'
+import { validateCatalog } from './catalog'
+import { changedScope, scopeCatalog } from './scope'
 
 const args = process.argv.slice(2)
 const check = args.includes('--check')
@@ -34,6 +40,29 @@ const unrefreshed = readCatalog(root).landmarks
 if (unrefreshed.length) {
   console.error(`web/replacement-footprints.json is out of date for ${unrefreshed.join(', ')}: run bun tools/replacement-footprints.ts`)
   process.exit(1)
+}
+
+if (check) {
+  const catalog = readCatalog(root)
+  const scope = changedScope(root, catalog)
+  if (!scope.all) {
+    const problems = validateCatalog(catalog)
+    if (!problems.length) {
+      try {
+        buildRelease(root, scopeCatalog(catalog, scope.landmarks))
+      } catch (err) {
+        if (!(err instanceof CatalogError)) throw err
+        problems.push(...err.problems)
+      }
+    }
+    if (problems.length) {
+      console.error(new CatalogError(problems).message)
+      process.exit(1)
+    }
+    console.log(`checked ${scope.landmarks.size} of ${catalog.landmarks.length} landmarks, the ones changed since ${scope.base.slice(0, 8)}; --all checks every model`)
+    process.exit(0)
+  }
+  console.log(`checking every model (${scope.reason})`)
 }
 
 let release

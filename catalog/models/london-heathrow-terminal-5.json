@@ -1,0 +1,76 @@
+{
+  "id": "london-heathrow-terminal-5",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern",
+    "high-tech"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Terminal 5 at London Heathrow Airport, 2008",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_5_at_London_Heathrow_Airport,_2008.jpg",
+      "author": "Warren Rohner",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Heathrow, Terminal 5, from above",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow,Terminal_5,_from_above_-_geograph.org.uk_-_3013192.jpg",
+      "author": "M J Richardson",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Heathrow Terminal 5 from the air",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_Terminal_5_from_the_air.jpg",
+      "author": "Thomas Nugent",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "London Heathrow Terminal 5 (geograph 5327180)",
+      "url": "https://commons.wikimedia.org/wiki/File:London_Heathrow_Terminal_5_-_geograph.org.uk_-_5327180.jpg",
+      "author": "James Emmans",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Heathrow airport Terminal 5",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_airport_Terminal_5.jpg",
+      "author": "CedarGlen86",
+      "license": "CC0"
+    },
+    {
+      "title": "Heathrow Airport Terminal 5",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_Airport_Terminal_5.jpg",
+      "author": "CedarGlen86",
+      "license": "CC0"
+    },
+    {
+      "title": "London Heathrow Terminal 5 (geograph 3196264)",
+      "url": "https://commons.wikimedia.org/wiki/File:London_Heathrow_Terminal_5_-_geograph.org.uk_-_3196264.jpg",
+      "author": "Richard Cooke",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "detail": "models/london-heathrow-terminal-5.detail.glb",
+  "detailZoom": 16,
+  "file": "models/london-heathrow-terminal-5.glb",
+  "source": "generators/london-heathrow-terminal-5.ts"
+}

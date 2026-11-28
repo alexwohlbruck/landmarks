@@ -1,0 +1,82 @@
+{
+  "id": "amsterdam-schiphol-piers-b-c-d",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "pier",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Schiphol Airport Pier D (7325964516)",
+      "url": "https://commons.wikimedia.org/wiki/File:Schiphol_Airport_Pier_D_(7325964516).jpg",
+      "author": "-JvL-",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Schiphol Airport Pier D (7325966610)",
+      "url": "https://commons.wikimedia.org/wiki/File:Schiphol_Airport_Pier_D_(7325966610).jpg",
+      "author": "-JvL-",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "AMS pirs D",
+      "url": "https://commons.wikimedia.org/wiki/File:AMS_pirs_D.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Overview D-gates (2391143559)",
+      "url": "https://commons.wikimedia.org/wiki/File:Overview_D-gates_(2391143559).jpg",
+      "author": "Pieter van Marion",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Amsterdam Airport Schiphol apron overview (4532485694)",
+      "url": "https://commons.wikimedia.org/wiki/File:Amsterdam_Airport_Schiphol_apron_overview_(4532485694).jpg",
+      "author": "Maarten Visser",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Schiphol control tower, pier D",
+      "url": "https://commons.wikimedia.org/wiki/File:SCHIPHOL_CONTROL_TOWER_,_PIER_D_-_panoramio.jpg",
+      "author": "Kayhan ERTUGRUL",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Schiphol Tower",
+      "url": "https://commons.wikimedia.org/wiki/File:Schiphol_Tower.jpg",
+      "author": "Ikreis",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Ams-above-2007",
+      "url": "https://commons.wikimedia.org/wiki/File:Ams-above-2007.jpg",
+      "author": "Fyodor Borisov",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/amsterdam-schiphol-piers-b-c-d.detail.glb",
+  "detailZoom": 16,
+  "file": "models/amsterdam-schiphol-piers-b-c-d.glb",
+  "source": "generators/amsterdam-schiphol-piers-b-c-d.ts"
+}

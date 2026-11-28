@@ -1,0 +1,14 @@
+{
+  "id": "osaka-sumiyoshi-sorihashi",
+  "name": "Sorihashi, Sumiyoshi Taisha",
+  "model": "osaka-sumiyoshi-sorihashi",
+  "place": "osaka",
+  "lng": 135.4922437,
+  "lat": 34.6125094,
+  "bearing": 8,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/185396181"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "istanbul-airport-piers",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "concourse",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "İstanbul Yeni Havalimanı airport Dec 2019",
+      "url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul_Yeni_Havaliman%C4%B1_airport_Dec_2019.jpg",
+      "author": "Kulttuurinavigaattori",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Istanbul Airport (IST) Turkey (51863891833)",
+      "url": "https://commons.wikimedia.org/wiki/File:Istanbul_Airport_(IST)_Turkey_(51863891833).jpg",
+      "author": "Sharon Hahn Darlin",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Istanbul Airport (IST) Turkey (51863894878)",
+      "url": "https://commons.wikimedia.org/wiki/File:Istanbul_Airport_(IST)_Turkey_(51863894878).jpg",
+      "author": "Sharon Hahn Darlin",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Istanbul New Airport 2018.09.23",
+      "url": "https://commons.wikimedia.org/wiki/File:Istanbul_New_Airport_2018.09.23.jpg",
+      "author": "Jekader",
+      "license": "CC0"
+    },
+    {
+      "title": "Istanbul Airport (IST) Turkey",
+      "url": "https://www.flickr.com/photos/41980486@N07/51863803491",
+      "author": "Sharon Hahn Darlin",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "detail": "models/istanbul-airport-piers.detail.glb",
+  "detailZoom": 16,
+  "file": "models/istanbul-airport-piers.glb",
+  "source": "generators/istanbul-airport-piers.ts"
+}

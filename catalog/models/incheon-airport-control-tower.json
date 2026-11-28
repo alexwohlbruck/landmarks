@@ -1,0 +1,55 @@
+{
+  "id": "incheon-airport-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "ATC TOWER AT SEOUL INCHEON AIRPORT SOUTH KOREA OCT 2012 (8178456597).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ATC_TOWER_AT_SEOUL_INCHEON_AIRPORT_SOUTH_KOREA_OCT_2012_(8178456597).jpg",
+      "author": "calflier001",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Incheon International Airport Air Traffic Control tower and terminal 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Incheon_International_Airport_Air_Traffic_Control_tower_and_terminal_2.jpg",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "02-NOV-2023 - KC910 ICN-ALA (EI-KEB - B767-300) (03).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:02-NOV-2023_-_KC910_ICN-ALA_(EI-KEB_-_B767-300)_(03).jpg",
+      "author": "Simply Aviation",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "202403 Aerial View of Incheon International Airport.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:202403_Aerial_View_of_Incheon_International_Airport.jpg",
+      "author": "MNXANL",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/incheon-airport-control-tower.glb",
+  "source": "generators/incheon-airport-control-tower.ts"
+}

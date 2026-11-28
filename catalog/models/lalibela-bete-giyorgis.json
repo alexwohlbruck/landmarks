@@ -1,0 +1,80 @@
+{
+  "id": "lalibela-bete-giyorgis",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "rock-hewn",
+    "world-heritage",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Bete Giyorgis 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_01.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Bete Giyorgis 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_02.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Bete Giyorgis 03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_03.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Bete Giyorgis 04.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_04.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Bete Giyorgis 06.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_06.jpg",
+      "author": "Bernard Gagnon",
+      "license": "Public domain"
+    },
+    {
+      "title": "Bete Giyorgis-Lalibela (1).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis-Lalibela_(1).jpg",
+      "author": "Ji-Elle",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Bete Giyorgis Lalibela.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_Lalibela.jpg",
+      "author": "Hulivili",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Lalibela, san giorgio, esterno 24.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lalibela,_san_giorgio,_esterno_24.jpg",
+      "author": "Sailko",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/lalibela-bete-giyorgis.glb",
+  "source": "generators/lalibela-bete-giyorgis.ts"
+}

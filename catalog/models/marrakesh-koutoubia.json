@@ -1,0 +1,76 @@
+{
+  "id": "marrakesh-koutoubia",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mosque",
+    "minaret",
+    "almohad",
+    "historic",
+    "unesco-world-heritage"
+  ],
+  "description": "The Almohad great mosque of Marrakesh (1147-58): its 77 m sandstone minaret with recessed lobed-arch panels, the zellige band under stepped merlons, and the lantern with three gilded balls, over the prayer hall's parallel tiled roofs and courtyard.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Koutoubia (11277940404)",
+      "url": "https://commons.wikimedia.org/wiki/File:Koutoubia_(11277940404).jpg",
+      "author": "Mzximvs VdB",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Das Minarett der Koutoubia-Moschee, Marrakesch - panoramio",
+      "url": "https://commons.wikimedia.org/wiki/File:Das_Minarett_der_Koutoubia-Moschee,_Marrakesch_-_panoramio.jpg",
+      "author": "Martin Furtschegger",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Blick von den Koutoubia-Gärten auf Moschee und Minarett, Marrakesch - panoramio",
+      "url": "https://commons.wikimedia.org/wiki/File:Blick_von_den_Koutoubia-G%C3%A4rten_auf_Moschee_und_Minarett,_Marrakesch_-_panoramio.jpg",
+      "author": "Martin Furtschegger",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Koutoubia Minaret-Marrakech",
+      "url": "https://commons.wikimedia.org/wiki/File:Koutoubia_Minaret-Marrakech.jpg",
+      "author": "Yair Haklai",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Koutoubia's Minaret (216279933)",
+      "url": "https://commons.wikimedia.org/wiki/File:Koutoubia%27s_Minaret_(216279933).jpg",
+      "author": "Jean-Marc Astesana",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "ETH-BIB Marrakech aus 200 m Höhe, La Koutoubia, Tschadseeflug 1930-31",
+      "url": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Marrakech_aus_200_m_H%C3%B6he,_im_Vordergrund-_La_Koutoubia-Tschadseeflug_1930-31-LBS_MH02-08-0446.tif",
+      "author": "Walter Mittelholzer",
+      "license": "Public domain"
+    },
+    {
+      "title": "Floor plan of the Kutubiyya Mosques (with labels)",
+      "url": "https://commons.wikimedia.org/wiki/File:Floor_plan_of_the_Kutubiyya_Mosques_(with_labels).png",
+      "author": "R Prazeres",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/marrakesh-koutoubia.glb",
+  "source": "generators/marrakesh-koutoubia.ts"
+}

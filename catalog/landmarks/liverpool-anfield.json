@@ -1,0 +1,19 @@
+{
+  "id": "liverpool-anfield",
+  "name": "Anfield",
+  "model": "liverpool-anfield",
+  "place": "liverpool",
+  "lng": -2.9608963,
+  "lat": 53.4309644,
+  "bearing": 39.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q45671",
+  "replaces": [
+    "way/4830206",
+    "way/188699284",
+    "way/188699283",
+    "way/188699282",
+    "way/188699281"
+  ]
+}

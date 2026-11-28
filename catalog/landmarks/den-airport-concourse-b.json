@@ -1,0 +1,14 @@
+{
+  "id": "den-airport-concourse-b",
+  "name": "Denver International Airport, Concourse B",
+  "model": "den-airport-concourse-b",
+  "place": "denver-area",
+  "lng": -104.672967,
+  "lat": 39.858725,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/15409558"
+  ]
+}

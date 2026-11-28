@@ -1,0 +1,82 @@
+{
+  "id": "pretoria-union-buildings",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "government",
+    "historic",
+    "edwardian",
+    "sandstone"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Uniegebou.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Uniegebou.jpg",
+      "author": "Davinci77",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Pretoria Union Buildings-001.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Pretoria_Union_Buildings-001.jpg",
+      "author": "Leo za1",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "The Union Buildings, Pretoria, South Africa.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Union_Buildings,_Pretoria,_South_Africa.jpg",
+      "author": "Jcgill1000",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Union Buildings Pretoria 002.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Union_Buildings_Pretoria_002.jpg",
+      "author": "PHParsons",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Union Buildings Pretoria 003.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Union_Buildings_Pretoria_003.jpg",
+      "author": "PHParsons",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Union Buildings, Pretoria, South Africa.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Union_Buildings,_Pretoria,_South_Africa.JPG",
+      "author": "Portiatn",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Union Buildings in Pretoria ( Uniegebou).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Union_Buildings_in_Pretoria_(_Uniegebou).jpg",
+      "author": "Pierre André Leclercq",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "1 Aspect of Union Buildings - Pretoria - South Africa.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:1_Aspect_of_Union_Buildings_-_Pretoria_-_South_Africa.jpg",
+      "author": "Hein waschefort",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/pretoria-union-buildings.detail.glb",
+  "detailZoom": 17,
+  "file": "models/pretoria-union-buildings.glb",
+  "source": "generators/pretoria-union-buildings.ts"
+}

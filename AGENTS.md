@@ -37,6 +37,14 @@ Anywhere else, read the file and follow it step by step. Ignore the
   shaped against them can't be published.
 - **Start from OSM and photos.** Fetch the OSM outline and parts and
   licensed photos from several sides before writing a generator.
+- **One building per model.** A model is one freestanding building or
+  structure. Buildings that stand apart, joined only by a tunnel, a people
+  mover or nothing (airport concourses and satellites, campus halls, a
+  terminal and its car park) each get their own model, id and catalog
+  entry, with their own anchor and `replaces`. Wings, piers and links that
+  meet above ground stay in one model. Several models may share one
+  generator. Never put two separate buildings in one model to save work or
+  placements.
 - **Compare renders with photos.** Render with `bun run preview` and put
   each view beside a photo from the same direction. Don't call a model done
   until you have named what still differs.
@@ -54,4 +62,6 @@ Anywhere else, read the file and follow it step by step. Ignore the
   GitHub username (or GitLab, Codeberg or Bitbucket username, or profile
   URL) unless the user has said. Never guess one.
 - Bun runs everything: `bun install` once, then `bun run validate` and
-  `bun test` before handing back.
+  `bun test` before handing back. Locally both check only the models your
+  branch adds or changes (plus everything when `src/` or `test/` changed);
+  CI checks every model. Use `--all` or `LANDMARKS_ALL=1` to check all.

@@ -1,0 +1,16 @@
+{
+  "id": "paris-cdg-terminal-1",
+  "name": "Paris-CDG Terminal 1",
+  "model": "paris-cdg-terminal-1",
+  "place": "paris",
+  "lng": 2.5418484,
+  "lat": 49.0144005,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/171883502",
+    "way/401466258",
+    "way/1222485014"
+  ]
+}

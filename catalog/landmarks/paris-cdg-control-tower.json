@@ -1,0 +1,16 @@
+{
+  "id": "paris-cdg-control-tower",
+  "name": "Paris-CDG Tour Sud (control tower)",
+  "model": "paris-cdg-control-tower",
+  "place": "paris",
+  "lng": 2.5735082,
+  "lat": 49.0034516,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/52667314",
+    "way/1222110810",
+    "way/1222110811"
+  ]
+}

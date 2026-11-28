@@ -1,0 +1,69 @@
+{
+  "id": "kigali-convention-centre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "convention-centre",
+    "dome",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kigali convention centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kigali_convention_centre.jpg",
+      "author": "Schlawgclart",
+      "license": "CC0"
+    },
+    {
+      "title": "An aerial of Kigali Convention Center on June 19, 2019. Photo by Emmanuel Kwizera.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:An_aerial_of_Kigali_Convention_Center_on_June_19,_2019._Photo_by_Emmanuel_Kwizera.jpg",
+      "author": "Emmanuelkwizera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kigali Convention Centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kigali_Convention_Centre.jpg",
+      "author": "Igiraneza Divine",
+      "license": "CC0"
+    },
+    {
+      "title": "Kigali Convention Centre dome under construction.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kigali_Convention_Centre_dome_under_construction.jpg",
+      "author": "leesean",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Kigali Convention Center.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kigali_Convention_Center.jpg",
+      "author": "IGANZE",
+      "license": "CC0"
+    },
+    {
+      "title": "Umusozi wa Jali.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Umusozi_wa_Jali.jpg",
+      "author": "Endikuemmy",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/kigali-convention-centre.detail.glb",
+  "detailZoom": 17,
+  "file": "models/kigali-convention-centre.glb",
+  "source": "generators/kigali-convention-centre.ts"
+}

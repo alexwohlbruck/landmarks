@@ -1,0 +1,17 @@
+{
+  "id": "alexandria-bibliotheca",
+  "name": "Bibliotheca Alexandrina",
+  "model": "alexandria-bibliotheca",
+  "place": "alexandria",
+  "lng": 29.90929,
+  "lat": 31.20882,
+  "bearing": 340,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/97409601",
+    "way/1245270052",
+    "way/157879323"
+  ],
+  "wikidata": "Q501851"
+}

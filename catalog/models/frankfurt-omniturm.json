@@ -1,0 +1,70 @@
+{
+  "id": "frankfurt-omniturm",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "residential",
+    "skyline"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Omniturm Frankfurt 09-19.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Omniturm_Frankfurt_09-19.jpg",
+      "author": "Silesia711",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Omniturm Frankfurt am Main.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Omniturm_Frankfurt_am_Main.jpg",
+      "author": "Choinowski",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Omniturm Frankfurt 08-19.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Omniturm_Frankfurt_08-19.jpg",
+      "author": "Silesia711",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Omniturm Frankfurt 05-19.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Omniturm_Frankfurt_05-19.jpg",
+      "author": "Silesia711",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Omniturm Frankfurt 02-19 B.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Omniturm_Frankfurt_02-19_B.jpg",
+      "author": "Silesia711",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Marienturm und Omniturm.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Marienturm_und_Omniturm.jpg",
+      "author": "Jonathan Naumann",
+      "license": "CC BY-SA 3.0 de"
+    }
+  ],
+  "detail": "models/frankfurt-omniturm.detail.glb",
+  "detailZoom": 16,
+  "file": "models/frankfurt-omniturm.glb",
+  "source": "generators/frankfurt-omniturm.ts"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "el-jem-amphitheatre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "amphitheatre",
+    "roman",
+    "ruins",
+    "world-heritage"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Amphitheatre El Jem - vue exterieur.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Amphitheatre_El_Jem_-_vue_exterieur.jpg",
+      "author": "Skander zarrad",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Amphitheatre of El Djem 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Amphitheatre_of_El_Djem_01.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Amphitheatre El Jem(js)3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Amphitheatre_El_Jem(js)3.jpg",
+      "author": "Jerzystrzelecki",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Amphitheatre of El Jem external 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Amphitheatre_of_El_Jem_external_01.jpg",
+      "author": "AQVA121",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Amphitheatre El Jem Front Entrance.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Amphitheatre_El_Jem_Front_Entrance.jpg",
+      "author": "Fatma Hamdi",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Plan and section views of the Amphitheatre of El Jem.svg",
+      "url": "https://commons.wikimedia.org/wiki/File:Plan_and_section_views_of_the_Amphitheatre_of_El_Jem.svg",
+      "author": "Habib M'henni",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Amphitheatre-of-El-Jem 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Amphitheatre-of-El-Jem_01.jpg",
+      "author": "Vajta",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Amphitheatre El Jem(js)7.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Amphitheatre_El_Jem(js)7.jpg",
+      "author": "Jerzystrzelecki",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "3000 years of history.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:3000_years_of_history.jpg",
+      "author": "Dennis Jarvis",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Amphitheatre of El Jem, Tunisia in January 2023.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Amphitheatre_of_El_Jem,_Tunisia_in_January_2023.jpg",
+      "author": "Ridiculopathy",
+      "license": "CC0"
+    }
+  ],
+  "detail": "models/el-jem-amphitheatre.detail.glb",
+  "detailZoom": 17,
+  "file": "models/el-jem-amphitheatre.glb",
+  "source": "generators/el-jem-amphitheatre.ts"
+}

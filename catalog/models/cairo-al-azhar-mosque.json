@@ -1,0 +1,78 @@
+{
+  "id": "cairo-al-azhar-mosque",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mosque",
+    "fatimid",
+    "mamluk",
+    "historic",
+    "minaret",
+    "dome"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "The Al-Azhar Mosque in Cairo 2026 07.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Al-Azhar_Mosque_in_Cairo_2026_07.jpg",
+      "author": "CumaliOnal",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Al-Azhar Mosque in Cairo 2026 13.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Al-Azhar_Mosque_in_Cairo_2026_13.jpg",
+      "author": "CumaliOnal",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Al-Azhar Mosque in Cairo 2026 21.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Al-Azhar_Mosque_in_Cairo_2026_21.jpg",
+      "author": "CumaliOnal",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Al-Azhar Mosque in Cairo 2026 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Al-Azhar_Mosque_in_Cairo_2026_01.jpg",
+      "author": "CumaliOnal",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Al-Azhar Mosque in Cairo 2026 08.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Al-Azhar_Mosque_in_Cairo_2026_08.jpg",
+      "author": "CumaliOnal",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cairo - Islamic district - Al Azhar Mosque and University.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Cairo_-_Islamic_district_-_Al_Azhar_Mosque_and_University.JPG",
+      "author": "Daniel Mayer",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Al-azhar floor plan.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Al-azhar_floor_plan.jpg",
+      "author": "Nableezy; modified by Robert Prazeres",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/cairo-al-azhar-mosque.detail.glb",
+  "detailZoom": 17,
+  "file": "models/cairo-al-azhar-mosque.glb",
+  "source": "generators/cairo-al-azhar-mosque.ts"
+}

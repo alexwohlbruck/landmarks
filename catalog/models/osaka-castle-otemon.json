@@ -1,0 +1,69 @@
+{
+  "id": "osaka-castle-otemon",
+  "file": "models/osaka-castle-otemon.glb",
+  "license": "CC0-1.0",
+  "source": "generators/osaka-castle-otemon.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "castle",
+    "gate",
+    "historic",
+    "japanese-architecture"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "The main entrance of Osaka Castle: the black kōraimon gate and the white Tamon-yagura gate tower with its long wing on the granite walls of the Ōte-guchi masugata (Important Cultural Properties, 1628/1848).",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tamon-yagura Turret - 2 Osakajo, Chuo Ward, Osaka, 540-0002, Japan.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tamon-yagura_Turret_-_2_Osakajo,_Chuo_Ward,_Osaka,_540-0002,_Japan.jpg",
+      "author": "Spudgun67",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Otemon Gate - 2-2 Osakajo, Chuo Ward, Osaka, 540-0002, Japan.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Otemon_Gate_-_2-2_Osakajo,_Chuo_Ward,_Osaka,_540-0002,_Japan.jpg",
+      "author": "Spudgun67",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Osaka Castle Tamon-yagura Turret1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_Tamon-yagura_Turret1.jpg",
+      "author": "KENPEI",
+      "license": "CC-BY-3.0"
+    },
+    {
+      "title": "Osaka Osaka-jo Ote-mon 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Osaka-jo_Ote-mon_1.jpg",
+      "author": "Zairon",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Side view of Tamon-Yagura of Osaka Castle.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Side_view_of_Tamon-Yagura_of_Osaka_Castle.JPG",
+      "author": "Soramimi",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Castle 01bs3200.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_01bs3200.jpg",
+      "author": "663highland",
+      "license": "CC-BY-2.5"
+    }
+  ]
+}

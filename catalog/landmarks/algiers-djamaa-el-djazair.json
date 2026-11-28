@@ -1,0 +1,18 @@
+{
+  "id": "algiers-djamaa-el-djazair",
+  "name": "Djamaa el Djazaïr",
+  "model": "algiers-djamaa-el-djazair",
+  "place": "algiers",
+  "lng": 3.14033,
+  "lat": 36.73475,
+  "bearing": 16.2,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "relation/17805398",
+    "way/459813182",
+    "way/1254691661",
+    "way/1463523069"
+  ],
+  "wikidata": "Q23012984"
+}

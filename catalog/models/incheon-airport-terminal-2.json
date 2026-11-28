@@ -1,0 +1,81 @@
+{
+  "id": "incheon-airport-terminal-2",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "02-NOV-2023 - KC910 ICN-ALA (EI-KEB - B767-300) (03).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:02-NOV-2023_-_KC910_ICN-ALA_(EI-KEB_-_B767-300)_(03).jpg",
+      "author": "Simply Aviation",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2025-10-14 17.32.53 Incheon International Airport.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2025-10-14_17.32.53_Incheon_International_Airport.jpg",
+      "author": "Choikwangmo25",
+      "license": "CC0"
+    },
+    {
+      "title": "2025-10-14 17.34.10 Incheon International Airport.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2025-10-14_17.34.10_Incheon_International_Airport.jpg",
+      "author": "Choikwangmo25",
+      "license": "CC0"
+    },
+    {
+      "title": "인천공항T2 풍경 오후 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:인천공항T2_풍경_오후_2024.jpg",
+      "author": "Narubaru7",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "인천공항T2 주차장측 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:인천공항T2_주차장측_2024.jpg",
+      "author": "Narubaru7",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "인천공항T2 입구 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:인천공항T2_입구_2024.jpg",
+      "author": "Narubaru7",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Incheon International Airport Air Traffic Control tower and terminal 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Incheon_International_Airport_Air_Traffic_Control_tower_and_terminal_2.jpg",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Incheon Morning departures (51121781050).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Incheon_Morning_departures_(51121781050).jpg",
+      "author": "Tony",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "detail": "models/incheon-airport-terminal-2.detail.glb",
+  "detailZoom": 16,
+  "file": "models/incheon-airport-terminal-2.glb",
+  "source": "generators/incheon-airport-terminal-2.ts"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "london-stamford-bridge",
+  "name": "Stamford Bridge",
+  "model": "london-stamford-bridge",
+  "place": "london",
+  "lng": -0.1910569,
+  "lat": 51.4816645,
+  "bearing": 324,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q171458",
+  "replaces": [
+    "way/5986169",
+    "way/1312905892",
+    "way/1312905893",
+    "way/1312905894",
+    "way/1312905895",
+    "way/715157655"
+  ]
+}

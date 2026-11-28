@@ -1,0 +1,75 @@
+{
+  "id": "frankfurt-tower-185",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "skyline"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tower 185, Frankfurt, South view 20170325 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_185,_Frankfurt,_South_view_20170325_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tower 185.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_185.jpg",
+      "author": "Thomas Wolf (Der Wolf im Wald)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Tower 185 Frankfurt am Main.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_185_Frankfurt_am_Main.jpg",
+      "author": "Choinowski",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tower 185 - Frankfürt.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_185_-_Frankfürt.jpg",
+      "author": "Edison McCullen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt Tower 185.Süden.20140508.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Tower_185.Süden.20140508.jpg",
+      "author": "Epizentrum",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Tower 185 (220937975).jpeg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_185_(220937975).jpeg",
+      "author": "A Krebs60",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Tower-185-2010-ffm-059-t.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower-185-2010-ffm-059-t.jpg",
+      "author": "Dontworry",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/frankfurt-tower-185.detail.glb",
+  "detailZoom": 16,
+  "file": "models/frankfurt-tower-185.glb",
+  "source": "generators/frankfurt-tower-185.ts"
+}

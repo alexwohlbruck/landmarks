@@ -1,0 +1,20 @@
+{
+  "id": "chi-ohare-terminal-1-concourse-c",
+  "name": "O'Hare Terminal 1 Concourse C",
+  "model": "chi-ohare-terminal-1-concourse-c",
+  "place": "chicago-area",
+  "lng": -87.9103406,
+  "lat": 41.9787727,
+  "bearing": 8.5,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/13749364",
+    "way/167029900",
+    "way/680795927",
+    "way/680795940",
+    "way/680795949",
+    "way/1265418600",
+    "way/1426003665"
+  ]
+}

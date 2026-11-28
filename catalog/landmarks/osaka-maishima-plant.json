@@ -1,0 +1,15 @@
+{
+  "id": "osaka-maishima-plant",
+  "name": "Maishima Incineration Plant",
+  "model": "osaka-maishima-plant",
+  "place": "osaka",
+  "lng": 135.4066047,
+  "lat": 34.6656237,
+  "bearing": 8.4,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/8374661",
+    "way/596710406"
+  ]
+}

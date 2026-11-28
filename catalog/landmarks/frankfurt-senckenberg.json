@@ -1,0 +1,19 @@
+{
+  "id": "frankfurt-senckenberg",
+  "name": "Senckenberg Naturmuseum",
+  "model": "frankfurt-senckenberg",
+  "place": "frankfurt",
+  "lng": 8.651495,
+  "lat": 50.1175308,
+  "bearing": 5.8,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q706441",
+  "replaces": [
+    "way/30119021",
+    "way/30119022",
+    "way/958603755",
+    "way/958603756",
+    "way/958603757"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "montreal-olympic-stadium",
+  "name": "Olympic Stadium (Stade olympique)",
+  "model": "montreal-olympic-stadium",
+  "place": "montreal",
+  "lng": -73.5516318,
+  "lat": 45.5577033,
+  "bearing": 351.4,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q285467",
+  "replaces": [
+    "way/108505523",
+    "way/20213158"
+  ]
+}

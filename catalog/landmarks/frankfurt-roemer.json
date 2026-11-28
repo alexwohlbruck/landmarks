@@ -1,0 +1,19 @@
+{
+  "id": "frankfurt-roemer",
+  "name": "Römer",
+  "model": "frankfurt-roemer",
+  "place": "frankfurt",
+  "lng": 8.6816174,
+  "lat": 50.1105192,
+  "bearing": 16.2,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q195146",
+  "replaces": [
+    "way/72449456",
+    "way/72449466",
+    "way/174469545",
+    "way/174469544",
+    "way/174469543"
+  ]
+}

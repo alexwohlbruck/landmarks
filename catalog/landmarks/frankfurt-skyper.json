@@ -1,0 +1,15 @@
+{
+  "id": "frankfurt-skyper",
+  "name": "Skyper",
+  "model": "frankfurt-skyper",
+  "place": "frankfurt",
+  "lng": 8.669424,
+  "lat": 50.110384,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q166893",
+  "replaces": [
+    "way/174435268"
+  ]
+}

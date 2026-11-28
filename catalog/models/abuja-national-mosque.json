@@ -1,0 +1,69 @@
+{
+  "id": "abuja-national-mosque",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mosque",
+    "dome",
+    "minaret"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "National Mosque Abuja.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:National_Mosque_Abuja.jpg",
+      "author": "Tarikhaldun",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "AbujaNationalMosque.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:AbujaNationalMosque.jpg",
+      "author": "Shiraz Chakera",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Abuja Central mosque.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Abuja_Central_mosque.jpg",
+      "author": "Taifayan",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Abuja National Mosque.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Abuja_National_Mosque.jpg",
+      "author": "Mark Fischer",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Nigerian National Mosque.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nigerian_National_Mosque.jpg",
+      "author": "Blossom Ozurumba",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The National Mosque .jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_National_Mosque_.jpg",
+      "author": "Wang-gp",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/abuja-national-mosque.detail.glb",
+  "detailZoom": 17,
+  "file": "models/abuja-national-mosque.glb",
+  "source": "generators/abuja-national-mosque.ts"
+}

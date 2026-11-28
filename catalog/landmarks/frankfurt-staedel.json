@@ -1,0 +1,15 @@
+{
+  "id": "frankfurt-staedel",
+  "name": "Städel Museum",
+  "model": "frankfurt-staedel",
+  "place": "frankfurt",
+  "lng": 8.6739189,
+  "lat": 50.1031953,
+  "bearing": 144,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q163804",
+  "replaces": [
+    "way/794404905"
+  ]
+}

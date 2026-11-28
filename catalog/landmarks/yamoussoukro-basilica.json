@@ -1,0 +1,23 @@
+{
+  "id": "yamoussoukro-basilica",
+  "name": "Basilica of Our Lady of Peace",
+  "model": "yamoussoukro-basilica",
+  "place": "yamoussoukro",
+  "lng": -5.297022,
+  "lat": 6.811127,
+  "bearing": 31.2,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/89584501",
+    "way/120564183",
+    "way/295958129",
+    "way/89584498",
+    "way/120562630",
+    "way/295958125",
+    "way/295958126",
+    "way/295958127",
+    "way/295958128"
+  ],
+  "wikidata": "Q815584"
+}

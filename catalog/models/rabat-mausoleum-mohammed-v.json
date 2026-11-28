@@ -1,0 +1,75 @@
+{
+  "id": "rabat-mausoleum-mohammed-v",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "monument",
+  "tags": [
+    "mausoleum",
+    "mosque",
+    "moroccan-architecture",
+    "unesco-world-heritage"
+  ],
+  "description": "The white marble mausoleum of Mohammed V (1971) on its terrace facing the Hassan Tower: lobed-arch loggias, sebka panels, stepped merlons and a green-tiled pyramid with a gilded finial, with the ochre royal mosque beside it.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Morocco - Mausoleum of Mohammed V",
+      "url": "https://commons.wikimedia.org/wiki/File:Morocco_-_Mausoleum_of_Mohammed_V.jpg",
+      "author": "P. Hughes",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Rabat - Mausoleum of Mohammed V - 2024-10-14",
+      "url": "https://commons.wikimedia.org/wiki/File:Rabat_-_Mausoleum_of_Mohammed_V_-_2024-10-14.jpg",
+      "author": "UmaimaJM",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Mausoleum of Mohammed V 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Mausoleum_of_Mohammed_V_01.jpg",
+      "author": "IssamBarhoumi",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Mausoleo di Mohammed V 2",
+      "url": "https://commons.wikimedia.org/wiki/File:Mausoleo_di_Mohammed_V_2.jpg",
+      "author": "Photo2023",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Mausoleum of Mohammed V, Rabat - roofline",
+      "url": "https://commons.wikimedia.org/wiki/File:Mausoleum_of_Mohammed_V,_Rabat_-_roofline.jpg",
+      "author": "Aemazy",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hassan Mosque & Mausoleum of Mohammed V, Rabat",
+      "url": "https://commons.wikimedia.org/wiki/File:Hassan_Mosque_%26_Mausoleum_of_Mohammed_V,_Rabat.jpg",
+      "author": "Aemazy",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "\"Ein architektonisches Meisterwerk\" Mausoleum of Mohamed V 2",
+      "url": "https://commons.wikimedia.org/wiki/File:%22Ein_architektonisches_Meisterwerk%22_Mausoleum_of_Mohamed_V_2.jpg",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/rabat-mausoleum-mohammed-v.glb",
+  "source": "generators/rabat-mausoleum-mohammed-v.ts"
+}

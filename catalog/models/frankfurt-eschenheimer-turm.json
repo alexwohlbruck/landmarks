@@ -1,0 +1,56 @@
+{
+  "id": "frankfurt-eschenheimer-turm",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "gate-tower",
+    "medieval",
+    "gothic",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Eschenheimer Turm in the evening sun from north west.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Eschenheimer_Turm_in_the_evening_sun_from_north_west.jpg",
+      "author": "Jürgen Matern",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Eschenheimer Turm Frankfurt November 2012.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Eschenheimer_Turm_Frankfurt_November_2012.jpg",
+      "author": "Felix König",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Eschenheimer Turm Frankfurt am Main 2024-10-02 06.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Eschenheimer_Turm_Frankfurt_am_Main_2024-10-02_06.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    },
+    {
+      "title": "Eschenheimer Turm Frankfurt am Main 2024-10-02 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Eschenheimer_Turm_Frankfurt_am_Main_2024-10-02_02.jpg",
+      "author": "Leonhard Lenz",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/frankfurt-eschenheimer-turm.glb",
+  "source": "generators/frankfurt-eschenheimer-turm.ts"
+}

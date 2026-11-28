@@ -1,0 +1,58 @@
+{
+  "id": "frankfurt-roemer",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "town-hall",
+    "historic",
+    "gothic",
+    "stepped-gable"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Frankfurt am Main, Römer -- 2015 -- 6695-9",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_R%C3%B6mer_--_2015_--_6695-9.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt city centre",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_city_centre.jpg",
+      "author": "AlbusTheWhite",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt, Römer (Rathaus) auf dem Römerberg (13552663995)",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt,_R%C3%B6mer_(Rathaus)_auf_dem_R%C3%B6merberg_--_Frankfurt,_Roemer_(city_hall)_on_the_Roemer_Hill_(13552663995).jpg",
+      "author": "Heribert Pohl",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Facade details city hall Römer Frankfurt Hesse Germany",
+      "url": "https://commons.wikimedia.org/wiki/File:Facade_details_city_hall_R%C3%B6mer_Frankfurt_Hesse_Germany.JPG",
+      "author": "ArcCan",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/frankfurt-roemer.detail.glb",
+  "detailZoom": 17,
+  "file": "models/frankfurt-roemer.glb",
+  "source": "generators/frankfurt-roemer.ts"
+}

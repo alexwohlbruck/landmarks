@@ -1,0 +1,89 @@
+{
+  "id": "yamoussoukro-basilica",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "basilica",
+    "dome",
+    "colonnade",
+    "neoclassical"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Basilique notre Dame de la Paix de Yamoussoukro.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilique_notre_Dame_de_la_Paix_de_Yamoussoukro.jpg",
+      "author": "Didierwiki",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Basilique notre Dame de la Paix de Yamoussoukro 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilique_notre_Dame_de_la_Paix_de_Yamoussoukro_1.jpg",
+      "author": "Didierwiki",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Basilique notre Dame de la Paix de Yamoussoukro 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilique_notre_Dame_de_la_Paix_de_Yamoussoukro_2.jpg",
+      "author": "Didierwiki",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Basilique notre Dame de la Paix de Yamoussoukro 4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilique_notre_Dame_de_la_Paix_de_Yamoussoukro_4.jpg",
+      "author": "Didierwiki",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Basilique notre Dame de la Paix de Yamoussoukro 11.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilique_notre_Dame_de_la_Paix_de_Yamoussoukro_11.jpg",
+      "author": "Didierwiki",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Basilique notre Dame de la Paix de Yamoussoukro 12.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilique_notre_Dame_de_la_Paix_de_Yamoussoukro_12.jpg",
+      "author": "Didierwiki",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Basilique notre Dame de la Paix de Yamoussoukro 16.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilique_notre_Dame_de_la_Paix_de_Yamoussoukro_16.jpg",
+      "author": "Didierwiki",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Basilique notre Dame de la Paix de Yamoussoukro 20.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilique_notre_Dame_de_la_Paix_de_Yamoussoukro_20.jpg",
+      "author": "Didierwiki",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Notre-Dame-de-la-Paix de Yamoussoukro 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Notre-Dame-de-la-Paix_de_Yamoussoukro_2.jpg",
+      "author": "Gregor Rom",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/yamoussoukro-basilica.detail.glb",
+  "detailZoom": 17,
+  "file": "models/yamoussoukro-basilica.glb",
+  "source": "generators/yamoussoukro-basilica.ts"
+}

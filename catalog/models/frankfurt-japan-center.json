@@ -1,0 +1,67 @@
+{
+  "id": "frankfurt-japan-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "postmodern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Japan Center, Frankfurt, South view 20211016 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Japan_Center,_Frankfurt,_South_view_20211016_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Japan Center, Frankfurt, Southwest view 20211016 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Japan_Center,_Frankfurt,_Southwest_view_20211016_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt Japan Center.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Japan_Center.JPG",
+      "author": "Tilman AB",
+      "license": "CC0"
+    },
+    {
+      "title": "Frankfurt am Main - Japan Center.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main_-_Japan_Center.jpg",
+      "author": "Fred Romero",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Japan Center Frankfurt Hesse Germany.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Japan_Center_Frankfurt_Hesse_Germany.JPG",
+      "author": "ArcCan",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Frankfurt.Japan-Center.Taunustor 2-4.20150909.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt.Japan-Center.Taunustor_2-4.20150909.jpg",
+      "author": "Epizentrum",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/frankfurt-japan-center.glb",
+  "source": "generators/frankfurt-japan-center.ts"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "alexandria-qaitbay-citadel",
+  "name": "Citadel of Qaitbay",
+  "model": "alexandria-qaitbay-citadel",
+  "place": "alexandria",
+  "lng": 29.88601,
+  "lat": 31.21373,
+  "bearing": 353.8,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "relation/8410048",
+    "way/602123355",
+    "way/1238877505",
+    "way/1238877506"
+  ],
+  "wikidata": "Q1938065"
+}

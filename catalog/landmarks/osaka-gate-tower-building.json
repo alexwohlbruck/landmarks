@@ -1,0 +1,16 @@
+{
+  "id": "osaka-gate-tower-building",
+  "name": "Gate Tower Building",
+  "model": "osaka-gate-tower-building",
+  "place": "osaka",
+  "lng": 135.489537,
+  "lat": 34.69805,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q850547",
+  "replaces": [
+    "way/136809309",
+    "way/151798486"
+  ]
+}

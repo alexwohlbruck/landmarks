@@ -1,0 +1,16 @@
+{
+  "id": "dubai-dxb-terminal-3",
+  "name": "Dubai International Airport Terminal 3",
+  "model": "dubai-dxb-terminal-3",
+  "place": "dubai",
+  "lng": 55.3599963,
+  "lat": 25.245603,
+  "bearing": 30.65,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/98425182",
+    "way/1360329006"
+  ],
+  "wikidata": "Q17008342"
+}

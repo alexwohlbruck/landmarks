@@ -1,0 +1,16 @@
+{
+  "id": "johannesburg-fnb-stadium",
+  "name": "FNB Stadium",
+  "model": "johannesburg-fnb-stadium",
+  "place": "johannesburg",
+  "lng": 27.982642,
+  "lat": -26.2347326,
+  "bearing": 2,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/952173",
+    "relation/1639587"
+  ],
+  "wikidata": "Q163521"
+}
