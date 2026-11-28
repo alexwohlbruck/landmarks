@@ -1,0 +1,14 @@
+{
+  "id": "phx-rosson-house",
+  "name": "Rosson House",
+  "model": "phx-rosson-house",
+  "place": "phoenix-area",
+  "lng": -112.0659406,
+  "lat": 33.4502015,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/109818819"
+  ]
+}
