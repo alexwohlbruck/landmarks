@@ -1,0 +1,49 @@
+{
+  "id": "sat-espada-aqueduct",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "infrastructure",
+  "tags": [
+    "aqueduct",
+    "spanish-colonial",
+    "unesco",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Espada Acequia, Piedras Creek Aqueduct (HAER TX-1A, sheet 1 of 1)",
+      "url": "https://commons.wikimedia.org/wiki/File:Espada_Acequia,_Piedras_Creek_Aqueduct,_Spanning_Piedras_Creek_east_of_Espada_Road,_San_Antonio,_Bexar_County,_TX_HAER_TEX,15-SANT.V,4A-_(sheet_1_of_1).png",
+      "author": "Historic American Engineering Record",
+      "license": "Public domain"
+    },
+    {
+      "title": "Espada Aqueduct TX NPS.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Espada_Aqueduct_TX_NPS.jpg",
+      "author": "National Park Service",
+      "license": "Public domain"
+    },
+    {
+      "title": "Mission Espada Aqueduct Texas.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mission_Espada_Aqueduct_Texas.jpg",
+      "author": "Chris Light",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/sat-espada-aqueduct.glb",
+  "source": "generators/sat-espada-aqueduct.ts"
+}
