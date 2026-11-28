@@ -1,0 +1,26 @@
+{
+  "id": "bos-berkeley-building",
+  "name": "Berkeley Building",
+  "model": "bos-berkeley-building",
+  "place": "boston-area",
+  "lng": -71.0735263,
+  "lat": 42.349702,
+  "bearing": 339.6,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/29650724",
+    "relation/3240726",
+    "way/240266346",
+    "way/240282207",
+    "way/240266174",
+    "way/240266176",
+    "way/240266167",
+    "way/240266168",
+    "way/240266169",
+    "way/240282205",
+    "way/240282209",
+    "way/240266177",
+    "way/240529605"
+  ]
+}
