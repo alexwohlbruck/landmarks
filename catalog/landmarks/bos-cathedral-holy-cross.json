@@ -1,0 +1,15 @@
+{
+  "id": "bos-cathedral-holy-cross",
+  "name": "Cathedral of the Holy Cross",
+  "model": "bos-cathedral-holy-cross",
+  "place": "boston-area",
+  "lng": -71.06953,
+  "lat": 42.34077,
+  "bearing": 22.5,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q2942887",
+  "replaces": [
+    "way/29612019"
+  ]
+}

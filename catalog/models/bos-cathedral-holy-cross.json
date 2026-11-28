@@ -1,0 +1,55 @@
+{
+  "id": "bos-cathedral-holy-cross",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "cathedral",
+    "gothic-revival",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Holy Cross Cathedral - Boston 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Holy_Cross_Cathedral_-_Boston_01.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Holy Cross Cathedral - Boston 03",
+      "url": "https://commons.wikimedia.org/wiki/File:Holy_Cross_Cathedral_-_Boston_03.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Holy Cross Cathedral - Boston 04",
+      "url": "https://commons.wikimedia.org/wiki/File:Holy_Cross_Cathedral_-_Boston_04.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Holy Cross Cathedral - Boston 05",
+      "url": "https://commons.wikimedia.org/wiki/File:Holy_Cross_Cathedral_-_Boston_05.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-cathedral-holy-cross.glb",
+  "source": "generators/bos-cathedral-holy-cross.ts"
+}
