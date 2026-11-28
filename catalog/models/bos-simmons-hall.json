@@ -1,0 +1,54 @@
+{
+  "id": "bos-simmons-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "university",
+    "dormitory",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Simmons Hall, MIT, Cambridge, Massachusetts.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Simmons_Hall,_MIT,_Cambridge,_Massachusetts.JPG",
+      "author": "Daderot",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "MIT Simmons Hall.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MIT_Simmons_Hall.jpg",
+      "author": "Madcoverboy",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Simmons Hall and Briggs Field.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Simmons_Hall_and_Briggs_Field.jpg",
+      "author": "Chris Rycroft",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Simmons Hall, MIT - Cambridge, MA - DSC07607.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Simmons_Hall,_MIT_-_Cambridge,_MA_-_DSC07607.jpg",
+      "author": "Daderot",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/bos-simmons-hall.glb",
+  "source": "generators/bos-simmons-hall.ts"
+}
