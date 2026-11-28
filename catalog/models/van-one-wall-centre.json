@@ -1,0 +1,54 @@
+{
+  "id": "van-one-wall-centre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "hotel",
+    "residential"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "One Wall Centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:One_Wall_Centre.jpg",
+      "author": "Klazu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Vancouver Wall Centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Wall_Centre.jpg",
+      "author": "ItzaFineDay",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "One Wall Centre from the crossing of Burrard and Nelson Streets.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:One_Wall_Centre_from_the_crossing_of_Burrard_and_Nelson_Streets.jpg",
+      "author": "Ymblanter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "City of Vancouver building footprints 2009 (lidar heights)",
+      "url": "https://opendata.vancouver.ca/explore/dataset/building-footprints-2009/",
+      "author": "City of Vancouver",
+      "license": "Open Government Licence - Vancouver"
+    }
+  ],
+  "file": "models/van-one-wall-centre.glb",
+  "source": "generators/van-one-wall-centre.ts"
+}

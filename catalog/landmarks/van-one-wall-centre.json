@@ -1,0 +1,18 @@
+{
+  "id": "van-one-wall-centre",
+  "name": "One Wall Centre",
+  "model": "van-one-wall-centre",
+  "place": "vancouver",
+  "lng": -123.1255557,
+  "lat": 49.2805245,
+  "bearing": 6.6,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q683915",
+  "replaces": [
+    "way/91998089",
+    "way/91998091",
+    "way/1363418928",
+    "way/1363418929"
+  ]
+}
