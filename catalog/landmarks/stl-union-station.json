@@ -1,0 +1,21 @@
+{
+  "id": "stl-union-station",
+  "name": "St. Louis Union Station",
+  "model": "stl-union-station",
+  "place": "st-louis-area",
+  "lng": -90.2081157,
+  "lat": 38.6281556,
+  "bearing": 14.85,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q2320348",
+  "replaces": [
+    "way/108705187",
+    "way/481462775",
+    "way/481462774",
+    "way/1297482014",
+    "way/1297259666",
+    "way/1297259667",
+    "way/1232062728"
+  ]
+}
