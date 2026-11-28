@@ -1,0 +1,15 @@
+{
+  "id": "phx-oconnor-courthouse",
+  "name": "Sandra Day O'Connor U.S. Courthouse",
+  "model": "phx-oconnor-courthouse",
+  "place": "phoenix-area",
+  "lng": -112.0804575,
+  "lat": 33.4476699,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q7416587",
+  "replaces": [
+    "way/37057889"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "phx-oconnor-courthouse",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "courthouse",
+    "civic",
+    "modernist",
+    "glass"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Sandra Day OConnor US Courthouse Phoenix, Arizona.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sandra_Day_OConnor_US_Courthouse_Phoenix,_Arizona.jpg",
+      "author": "Gonzo fan2007",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Sandra Day O'Connor U.S. Federal Courthouse, Phoenix, Arizona.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sandra_Day_O%27Connor_U.S._Federal_Courthouse,_Phoenix,_Arizona.jpg",
+      "author": "Tony Webster",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Sandra Day O'Connor United States Courthouse - Phoenix, Arizona (49343843277).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sandra_Day_O%27Connor_United_States_Courthouse_-_Phoenix,_Arizona_(49343843277).jpg",
+      "author": "Tony Webster",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/phx-oconnor-courthouse.glb",
+  "source": "generators/phx-oconnor-courthouse.ts"
+}
