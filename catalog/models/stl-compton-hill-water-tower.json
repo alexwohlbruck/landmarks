@@ -1,0 +1,48 @@
+{
+  "id": "stl-compton-hill-water-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "water-tower",
+    "romanesque-revival",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Compton Hill Water Tower",
+      "author": "Millbrooky",
+      "license": "CC BY 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Compton_Hill_Water_Tower.jpg"
+    },
+    {
+      "title": "Compton Hill Water Tower and \"The Naked Truth\"",
+      "author": "Hparmer",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Compton_Hill_Water_Tower_and_%22The_Naked_Truth%22.jpg"
+    },
+    {
+      "title": "Compton Hill Water Tower from Grand",
+      "author": "Maria E. Brown",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Compton_Hill_Water_Tower_from_Grand.jpg"
+    }
+  ],
+  "file": "models/stl-compton-hill-water-tower.glb",
+  "source": "generators/stl-compton-hill-water-tower.ts"
+}

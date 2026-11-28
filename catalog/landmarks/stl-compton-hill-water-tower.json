@@ -1,0 +1,14 @@
+{
+  "id": "stl-compton-hill-water-tower",
+  "name": "Compton Hill Water Tower",
+  "model": "stl-compton-hill-water-tower",
+  "place": "st-louis-area",
+  "lng": -90.2389743,
+  "lat": 38.6149923,
+  "bearing": 8,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/201356010"
+  ]
+}
