@@ -1,0 +1,55 @@
+{
+  "id": "atx-st-edwards-main-building",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "university",
+    "gothic-revival",
+    "historic",
+    "clock-tower"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "St Edwards Main Building.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St_Edwards_Main_Building.jpg",
+      "author": "Mulder416 at English Wikipedia",
+      "license": "Public domain"
+    },
+    {
+      "title": "St Edwards main building SE.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St_Edwards_main_building_SE.jpg",
+      "author": "Mulder416 at English Wikipedia",
+      "license": "Public domain"
+    },
+    {
+      "title": "StEdwardsUniversity-April2008-b.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:StEdwardsUniversity-April2008-b.JPG",
+      "author": "LoneStarMike",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Neighborhood ATX-17.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Neighborhood_ATX-17.jpg",
+      "author": "Hensbread",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/atx-st-edwards-main-building.glb",
+  "source": "generators/atx-st-edwards-main-building.ts"
+}

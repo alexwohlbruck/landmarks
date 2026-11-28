@@ -1,0 +1,15 @@
+{
+  "id": "atx-st-edwards-main-building",
+  "name": "St. Edward's University Main Building",
+  "model": "atx-st-edwards-main-building",
+  "place": "austin-area",
+  "lng": -97.755041,
+  "lat": 30.229653,
+  "bearing": 25.5,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q38252034",
+  "replaces": [
+    "way/188589266"
+  ]
+}
