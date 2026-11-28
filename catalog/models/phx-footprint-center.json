@@ -1,0 +1,48 @@
+{
+  "id": "phx-footprint-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "arena",
+    "basketball",
+    "concert-venue"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Footprint Center 2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Footprint_Center_2022.jpg",
+      "author": "Troutfarm27",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "US Airways Center-4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:US_Airways_Center-4.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "AmericaWestArenasouthsidedec2005.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:AmericaWestArenasouthsidedec2005.jpg",
+      "author": "combusean",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/phx-footprint-center.glb",
+  "source": "generators/phx-footprint-center.ts"
+}
