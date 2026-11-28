@@ -1,0 +1,61 @@
+{
+  "id": "atx-mueller-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "historic",
+    "airport",
+    "control-tower",
+    "mid-century-modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Robert Mueller Municipal Airport Tower November 2016",
+      "url": "https://commons.wikimedia.org/wiki/File:Robert_Mueller_Municipal_Airport_Tower_November_2016.png",
+      "author": "Skyler Spaeth",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "RMMA Tower Close-up",
+      "url": "https://commons.wikimedia.org/wiki/File:RMMA_Tower_Close-up.png",
+      "author": "Skyler Spaeth",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Mueller control tower May 2026-1",
+      "url": "https://commons.wikimedia.org/wiki/File:Mueller_control_tower_May_2026-1.jpg",
+      "author": "Sunnya343",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Mueller control tower May 2026-2",
+      "url": "https://commons.wikimedia.org/wiki/File:Mueller_control_tower_May_2026-2.jpg",
+      "author": "Sunnya343",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "RMMAControlTowerAustin",
+      "url": "https://commons.wikimedia.org/wiki/File:RMMAControlTowerAustin.JPG",
+      "author": "WhisperToMe",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/atx-mueller-control-tower.glb",
+  "source": "generators/atx-mueller-control-tower.ts"
+}
