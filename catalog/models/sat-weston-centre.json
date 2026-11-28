@@ -1,0 +1,55 @@
+{
+  "id": "sat-weston-centre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "office",
+    "skyscraper",
+    "postmodern",
+    "granite"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "San Antonio Weston Centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_Weston_Centre.jpg",
+      "author": "Tenticle",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "WestonCentersantx.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:WestonCentersantx.JPG",
+      "author": "Sahmeditor",
+      "license": "Public domain"
+    },
+    {
+      "title": "Downtown San Antonio, Texas, with the prominent Weston Centre office building (LCCN2014632649)",
+      "url": "https://commons.wikimedia.org/wiki/File:Downtown_San_Antonio,_Texas,_with_the_prominent_Weston_Centre_office_building,_which_opened_in_1989,_as_its_most_prominent_tower_LCCN2014632649.tif",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "Sunset between Weston Centre and the former Wyndham San Antonio River Walk.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sunset_between_Weston_Centre_and_the_former_Wyndham_San_Antonio_River_Walk.jpg",
+      "author": "Corey Leopold",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/sat-weston-centre.glb",
+  "source": "generators/sat-weston-centre.ts"
+}
