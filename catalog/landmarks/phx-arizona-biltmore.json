@@ -1,0 +1,14 @@
+{
+  "id": "phx-arizona-biltmore",
+  "name": "Arizona Biltmore",
+  "model": "phx-arizona-biltmore",
+  "place": "phoenix-area",
+  "lng": -112.0233287,
+  "lat": 33.5235984,
+  "bearing": 22,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/921096611"
+  ]
+}
