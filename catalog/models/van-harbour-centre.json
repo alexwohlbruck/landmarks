@@ -1,0 +1,66 @@
+{
+  "id": "van-harbour-centre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "skyscraper",
+    "observation-deck",
+    "office"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Harbour Centre, Vancouver, Canadá, 2017-08-14, DD 30.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Harbour_Centre,_Vancouver,_Canad%C3%A1,_2017-08-14,_DD_30.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Vancouver (BC, Canada), Harbour Centre -- 2022 -- 1860.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_(BC,_Canada),_Harbour_Centre_--_2022_--_1860.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Vancouver (BC, Canada), Harbour Centre -- 2022 -- 1840.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_(BC,_Canada),_Harbour_Centre_--_2022_--_1840.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Vancouver Lookout, Harbour Centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Lookout,_Harbour_Centre.jpg",
+      "author": "David Herrera",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Vancouver - Harbour Centre 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_-_Harbour_Centre_01.jpg",
+      "author": "Joe Mabel",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "City of Vancouver building footprints 2009 (lidar heights)",
+      "url": "https://opendata.vancouver.ca/explore/dataset/building-footprints-2009/",
+      "author": "City of Vancouver",
+      "license": "Open Government Licence - Vancouver"
+    }
+  ],
+  "file": "models/van-harbour-centre.glb",
+  "source": "generators/van-harbour-centre.ts"
+}
