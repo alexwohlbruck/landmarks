@@ -1,0 +1,69 @@
+{
+  "id": "bos-old-south-meeting-house",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "georgian",
+    "meeting-house",
+    "church",
+    "steeple",
+    "museum"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Old South Meeting House, Boston, MA, 2023-02-21 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_South_Meeting_House,_Boston,_MA,_2023-02-21_01.jpg",
+      "author": "Crisco 1492",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2017 Old South Meeting House steeple 3",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Old_South_Meeting_House_steeple_3.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Boston Old South Meeting House NW PICT0018 19940925",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_Old_South_Meeting_House_NW_PICT0018_19940925.jpg",
+      "author": "Karlunun",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Old South Meetinghouse, Milk and Washington Sts. Downtown",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_South_Meetinghouse,_Milk_and_Washington_Sts._Downtown.jpg",
+      "author": "Hsin Ju HSU",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Old South Meetinghouse BW (HABS)",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_South_Meetinghouse_BW.jpg",
+      "author": "Cortlandt V.D. Hubbard",
+      "license": "Public domain"
+    },
+    {
+      "title": "Old South Meeting House (53826239858)",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_South_Meeting_House_(53826239858).jpg",
+      "author": "Ethan Long",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/bos-old-south-meeting-house.glb",
+  "source": "generators/bos-old-south-meeting-house.ts"
+}
