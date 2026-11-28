@@ -1,0 +1,43 @@
+{
+  "id": "paris-pantheon",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "monument",
+    "mausoleum",
+    "dome"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Panthéon de Paris in July 2022",
+      "url": "https://commons.wikimedia.org/wiki/File:Panth%C3%A9on_de_Paris_in_July_2022.jpg",
+      "author": "Maksim Sokolov (maxergon.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Le tambour et le dôme du Panthéon, Paris 2021",
+      "url": "https://commons.wikimedia.org/wiki/File:Le_tambour_et_le_d%C3%B4me_du_Panth%C3%A9on,_Paris_2021.jpg",
+      "author": "Jean-Pierre Dalbéra",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/paris-pantheon.glb",
+  "source": "generators/paris-pantheon.ts"
+}
