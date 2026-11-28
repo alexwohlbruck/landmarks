@@ -1,0 +1,18 @@
+{
+  "id": "bos-hatch-shell",
+  "name": "Edward A. Hatch Memorial Shell",
+  "model": "bos-hatch-shell",
+  "place": "boston-area",
+  "lng": -71.073677,
+  "lat": 42.3573289,
+  "bearing": 14,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q5681035",
+  "replaces": [
+    "way/832645690",
+    "way/832387208",
+    "way/832645689",
+    "way/826329211"
+  ]
+}
