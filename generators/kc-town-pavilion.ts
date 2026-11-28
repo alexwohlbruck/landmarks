@@ -25,7 +25,10 @@
  * Evidence
  * - OSM way/132570890 (the whole complex outline, Q7829998) and the tower
  *   part way/466813909 (180 m, 38 levels). The outline is the model's: the
- *   podium is drawn over all of it.
+ *   podium is drawn over all of it and no further. OSM rings are turned by
+ *   the bearing into the model's frame, so the podium stops at the party
+ *   walls of Harzfeld's (way/195846009) and the Boley Building
+ *   (way/466815004), which stay the map's; no windows on those walls.
  * - USGS 3DEP lidar MO_FEMANRCS_1_2020 (2020 flight), 1 m, read at bearing
  *   2. Heights above the lowest ground (266.9 m NAVD88), measured: tower
  *   glass roof 142.5 over x -21..37.5, y -23..20.5; the north-south spine's
@@ -34,7 +37,8 @@
  *   faces; the pyramid's base block ±12.5 m about (0, -1) to 157.5, apex
  *   171; the spire 175.5. Published 180 m (591 ft), 38 floors (Wikipedia,
  *   CTBUH). Podium: ~18 m over the west and south-west, 27 m over the
- *   north-east wing and the block south-east of the tower, the atrium
+ *   north-east wing and the block south-east of the tower (which follows
+ *   the Boley Building's north wall), the atrium
  *   between them a glazed gable (eaves ~19, ridge ~26).
  * - Photos: "Town Pavilion KCMO.jpg" (User:Charvex, public domain; from the
  *   south: the spine ~18 m wide, left of centre, its gable and three
@@ -58,30 +62,43 @@
  */
 import { Part, type V3 } from './mesh'
 import { PALETTE, finish, windowVariant } from './palette'
-import { block, cap, rect, save, walls, inset, type XY } from './chi-aon-center'
+import { block, cap, rect, save, walls, inset, turn, type XY } from './chi-aon-center'
 import { Tower, groups } from './kc-power-and-light-building'
 import { hipRoof } from './chi-board-of-trade'
+
+const BEARING = 2
 
 function build() {
   const glass = new Part(), granite = new Part(), win = new Part(), roof = new Part(), trim = new Part(), atrium = new Part()
   const T = new Tower(granite, roof, win)
 
   // --- podium over the whole outline (OSM way/132570890, counter-clockwise)
-  const outline: XY[] = ([[0.6, 39.0], [1.1, 51.4], [9.2, 51.1], [9.3, 53.4], [36.0, 52.4], [39.0, 49.0], [37.8, 16.6], [36.1, -22.1], [36.0, -26.8], [35.9, -29.0], [35.9, -31.2], [35.8, -33.8], [6.6, -32.9], [6.3, -42.6], [1.6, -42.4], [1.2, -55.1], [-3.3, -55.0], [-3.3, -56.4], [-7.7, -56.2], [-22.0, -55.6], [-21.8, -52.3], [-24.0, -53.9], [-26.4, -55.7], [-33.5, -55.4], [-37.6, -50.8], [-37.3, -43.0], [-33.3, -39.4], [-37.0, -39.2], [-35.6, -5.0], [-33.8, 40.4]] as XY[]).reverse()
+  // OSM rings are measured north-up about the anchor; W() turns them into
+  // the model's frame (the placement turns the model 2° clockwise).
+  const W = (r: XY[]) => turn(r, BEARING)
+  const outline: XY[] = W(([[0.6, 39.0], [1.1, 51.4], [9.2, 51.1], [9.3, 53.4], [36.0, 52.4], [39.0, 49.0], [37.8, 16.6], [36.1, -22.1], [36.0, -26.8], [35.9, -29.0], [35.9, -31.2], [35.8, -33.8], [6.6, -32.9], [6.3, -42.6], [1.6, -42.4], [1.2, -55.1], [-3.3, -55.0], [-3.3, -56.4], [-7.7, -56.2], [-22.0, -55.6], [-21.8, -52.3], [-24.0, -53.9], [-26.4, -55.7], [-33.5, -55.4], [-37.6, -50.8], [-37.3, -43.0], [-33.3, -39.4], [-37.0, -39.2], [-35.6, -5.0], [-33.8, 40.4]] as XY[]).reverse())
+  // The neighbours (OSM way/195846009 Harzfeld's, way/466815004 Boley),
+  // only so no window is drawn on the party walls; not drawn.
+  const harzfeld = W([[-33.2, 55.0], [-26.1, 54.7], [1.2, 53.6], [1.1, 51.4], [0.6, 39.0], [-33.8, 40.4]].reverse() as XY[])
+  const boley = W([[35.0, -60.5], [1.1, -59.4], [1.2, -55.1], [1.6, -42.4], [6.3, -42.6], [6.6, -32.9], [35.8, -33.8]].reverse() as XY[])
   const TX0 = -21, TX1 = 37.5, TY0 = -23, TY1 = 20.5
   const towerRing = rect(TX0, TY0, TX1, TY1)
   T.mass(outline, 0, 18, 0.4)
-  const ne: XY[] = [[1.1, TY1], [37.9, TY1], [38.9, 49], [36, 52.4], [9.3, 53.4], [9.2, 51.1], [1.1, 51.4]]
+  // the 27 m wings: north-east of the tower, and between it and the Boley
+  // Building (following Boley's north wall and the outline's east side)
+  const ne: XY[] = W([[1.1, 20], [37.9, 20], [38.9, 49], [36, 52.4], [9.3, 53.4], [9.2, 51.1], [1.1, 51.4]])
   T.mass(ne, 18, 27, 0.4)
-  const se = rect(6.6, -33.6, 36, TY0)
+  const se: XY[] = W([[6.6, -32.9], [35.8, -33.8], [36.1, -22.5], [6.6, -22.5]])
   T.mass(se, 18, 27, 0.4)
-  // the atrium: glazed gables either side of the tower
-  for (const [y0, y1] of [[TY1, 39], [-45, TY0]]) {
-    const x0 = -9, x1 = 1, xr = -3, e = 18, r = 25.5
-    atrium.quad([x0, y0, e], [xr, y0, r], [xr, y1, r], [x0, y1, e])
-    atrium.quad([xr, y0, r], [x1, y0, e], [x1, y1, e], [xr, y1, r])
-    atrium.tri([x0, y0, e], [x1, y0, e], [xr, y0, r])
-    atrium.tri([x1, y1, e], [x0, y1, e], [xr, y1, r])
+  T.masses.push({ r: harzfeld, z0: 0, z1: 45 }, { r: boley, z0: 0, z1: 30 })
+  // the atrium: glazed gables either side of the tower, x -9..0.6 north-up
+  for (const [y0, y1] of [[20, 39], [-45, -22.5]]) {
+    const x0 = -9, x1 = 0.6, xr = -3, e = 18, r = 25.5
+    const q = (x: number, y: number, z: number): V3 => { const [[a, b]] = W([[x, y]]); return [a, b, z] }
+    atrium.quad(q(x0, y0, e), q(xr, y0, r), q(xr, y1, r), q(x0, y1, e))
+    atrium.quad(q(xr, y0, r), q(x1, y0, e), q(x1, y1, e), q(xr, y1, r))
+    atrium.tri(q(x0, y0, e), q(x1, y0, e), q(xr, y0, r))
+    atrium.tri(q(x1, y1, e), q(x0, y1, e), q(xr, y1, r))
   }
   T.masses.push({ r: towerRing, z0: 18, z1: 142.5 })
   T.windows(outline, [[4, 8.5], [10.5, 16]], { bay: 6, fill: 0.62, end: 2, minLen: 8 })
@@ -149,4 +166,4 @@ function build() {
   ]
 }
 
-if (import.meta.main) await save('kc-town-pavilion', 'Town Pavilion', [39.1005482, -94.58262], 2, build(), 6500)
+if (import.meta.main) await save('kc-town-pavilion', 'Town Pavilion', [39.1005482, -94.58262], BEARING, build(), 6500)
