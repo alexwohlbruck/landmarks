@@ -1,0 +1,55 @@
+{
+  "id": "bos-millennium-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "residential",
+    "glass"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q17109414",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Millennium Tower Boston",
+      "url": "https://commons.wikimedia.org/wiki/File:Millennium_Tower_Boston.jpg",
+      "author": "Percival Kestreltail",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Millennium Tower, Boston, Massachusetts",
+      "url": "https://commons.wikimedia.org/wiki/File:Millennium_Tower,_Boston,_Massachusetts.jpg",
+      "author": "Jhern668",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Millennium Tower - Boston",
+      "url": "https://commons.wikimedia.org/wiki/File:Millennium_Tower_-_Boston.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Millennium Tower from Common",
+      "url": "https://commons.wikimedia.org/wiki/File:Millennium_Tower_from_Common.jpg",
+      "author": "Fletcher",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/bos-millennium-tower.glb",
+  "source": "generators/bos-millennium-tower.ts"
+}

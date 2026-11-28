@@ -1,0 +1,14 @@
+{
+  "id": "bos-old-south-meeting-house",
+  "name": "Old South Meeting House",
+  "model": "bos-old-south-meeting-house",
+  "place": "boston-area",
+  "lng": -71.0583758,
+  "lat": 42.35699,
+  "bearing": 31,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/29620426"
+  ]
+}

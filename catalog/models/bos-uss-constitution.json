@@ -1,0 +1,62 @@
+{
+  "id": "bos-uss-constitution",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "other",
+  "tags": [
+    "ship",
+    "frigate",
+    "historic",
+    "museum-ship"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q944436",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Flickr - Official U.S. Navy Imagery - USS Constitution sets sail. (1)",
+      "url": "https://commons.wikimedia.org/wiki/File:Flickr_-_Official_U.S._Navy_Imagery_-_USS_Constitution_sets_sail._(1).jpg",
+      "author": "U.S. Navy",
+      "license": "Public domain"
+    },
+    {
+      "title": "USS Constitution at Charlestown Navy Yard (53825931403)",
+      "url": "https://commons.wikimedia.org/wiki/File:USS_Constitution_at_Charlestown_Navy_Yard_(53825931403).jpg",
+      "author": "Ethan Long",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "USS Constitution wm",
+      "url": "https://commons.wikimedia.org/wiki/File:USS_Constitution_wm.jpg",
+      "author": "Pbohnhof",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "USS Constitution, Charlestown, MA, 2023-02-20 01",
+      "url": "https://commons.wikimedia.org/wiki/File:USS_Constitution,_Charlestown,_MA,_2023-02-20_01.jpg",
+      "author": "Crisco 1492",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Boston Navy Week 2012 120630-N-WX378-031",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_Navy_Week_2012_120630-N-WX378-031.jpg",
+      "author": "U.S. Navy",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/bos-uss-constitution.glb",
+  "source": "generators/bos-uss-constitution.ts"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "bos-one-dalton",
+  "name": "One Dalton",
+  "model": "bos-one-dalton",
+  "place": "boston-area",
+  "lng": -71.083956,
+  "lat": 42.345722,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q17986468",
+  "replaces": [
+    "relation/11207403",
+    "way/818117637",
+    "way/816334360",
+    "way/818117636",
+    "way/833091391"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "bos-custom-house-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "historic",
+    "clock-tower",
+    "greek-revival",
+    "hotel"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q3007905",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Custom House Tower, Boston - DSC05443",
+      "url": "https://commons.wikimedia.org/wiki/File:Custom_House_Tower,_Boston_-_DSC05443.JPG",
+      "author": "Daderot",
+      "license": "CC0"
+    },
+    {
+      "title": "Custom House Tower, Boston, MA - view 1",
+      "url": "https://commons.wikimedia.org/wiki/File:Custom_House_Tower,_Boston,_MA_-_view_1.JPG",
+      "author": "Daderot",
+      "license": "Public domain"
+    },
+    {
+      "title": "Custom House Tower from Rose Kennedy Greenway",
+      "url": "https://commons.wikimedia.org/wiki/File:Custom_House_Tower_from_Rose_Kennedy_Greenway.jpg",
+      "author": "Fletcher6",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Custom House Tower - Boston, MA",
+      "url": "https://commons.wikimedia.org/wiki/File:Custom_House_Tower_-_Boston,_MA.jpg",
+      "author": "HTBFTBO",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2017 Custom House Tower from Government Center",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Custom_House_Tower_from_Government_Center.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-custom-house-tower.glb",
+  "source": "generators/bos-custom-house-tower.ts"
+}

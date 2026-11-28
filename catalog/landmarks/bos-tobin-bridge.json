@@ -1,0 +1,14 @@
+{
+  "id": "bos-tobin-bridge",
+  "name": "Maurice J. Tobin Memorial Bridge",
+  "model": "bos-tobin-bridge",
+  "place": "boston-area",
+  "lng": -71.0491658,
+  "lat": 42.3831035,
+  "bearing": 33.57,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/631109724"
+  ]
+}

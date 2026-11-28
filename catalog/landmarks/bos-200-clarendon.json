@@ -1,0 +1,18 @@
+{
+  "id": "bos-200-clarendon",
+  "name": "200 Clarendon",
+  "model": "bos-200-clarendon",
+  "place": "boston-area",
+  "lng": -71.07519,
+  "lat": 42.34917,
+  "bearing": 43.4,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q798416",
+  "replaces": [
+    "way/405843558",
+    "way/29623484",
+    "way/236608503",
+    "way/816334373"
+  ]
+}

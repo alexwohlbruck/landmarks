@@ -1,0 +1,60 @@
+{
+  "id": "bos-ica",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "art-museum",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Institute of Contemporary Art, Boston (54960644036)",
+      "url": "https://commons.wikimedia.org/wiki/File:Institute_of_Contemporary_Art,_Boston_(54960644036).jpg",
+      "author": "ajay_suresh",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "2017 Institute of Contemporary Art from Boston Harbor",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Institute_of_Contemporary_Art_from_Boston_Harbor.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "ICA (36339)",
+      "url": "https://commons.wikimedia.org/wiki/File:ICA_(36339).jpg",
+      "author": "Rhododendrites",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Institute of Contemporary Art, Boston, and Harborwalk",
+      "url": "https://commons.wikimedia.org/wiki/File:Institute_of_Contemporary_Art,_Boston,_and_Harborwalk.JPG",
+      "author": "NewtonCourt",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Institute of Contemporary Art Boston",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Institute_of_Contemporary_Art_Boston.jpg",
+      "author": "Alacoolwiki",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-ica.glb",
+  "source": "generators/bos-ica.ts"
+}

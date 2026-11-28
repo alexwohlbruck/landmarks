@@ -1,0 +1,62 @@
+{
+  "id": "bos-prudential-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "modernist",
+    "observation-deck"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q606823",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Prudential Tower from the John Hancock Tower 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Prudential_Tower_from_the_John_Hancock_Tower_01.jpg",
+      "author": "Wikieditor101",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Prudential tower boston",
+      "url": "https://commons.wikimedia.org/wiki/File:Prudential_tower_boston.JPG",
+      "author": "Luciof",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Boston skyline - John Hancock Tower, 111 Huntington Avenue and Prudential Tower from Charles River Dam",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_skyline_-_John_Hancock_Tower,_111_Huntington_Avenue_and_Prudential_Tower_from_Charles_River_Dam.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Prudential Tower at dusk from Huntington Avenue",
+      "url": "https://commons.wikimedia.org/wiki/File:Prudential_Tower_at_dusk_from_Huntington_Avenue.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Boston night Hancock and Prudential dfjkn",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_night_Hancock_and_Prudential_dfjkn.jpg",
+      "author": "Luciof",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/bos-prudential-tower.glb",
+  "source": "generators/bos-prudential-tower.ts"
+}

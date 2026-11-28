@@ -1,0 +1,55 @@
+{
+  "id": "bos-international-place",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "postmodern",
+    "complex"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "One International Place & Two International Place (54960644391)",
+      "url": "https://commons.wikimedia.org/wiki/File:One_International_Place_%26_Two_International_Place_(54960644391).jpg",
+      "author": "ajay_suresh",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "2017 International Place and Custom House Tower from Boston Harbor",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_International_Place_and_Custom_House_Tower_from_Boston_Harbor.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "One International Place, Boston MA",
+      "url": "https://commons.wikimedia.org/wiki/File:One_International_Place,_Boston_MA.jpg",
+      "author": "Orthochrome",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "International Place (Boston)",
+      "url": "https://commons.wikimedia.org/wiki/File:International_Place_(Boston).jpg",
+      "author": "Solarapex",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/bos-international-place.glb",
+  "source": "generators/bos-international-place.ts"
+}

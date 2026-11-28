@@ -1,0 +1,17 @@
+{
+  "id": "bos-jfk-library",
+  "name": "John F. Kennedy Presidential Library and Museum",
+  "model": "bos-jfk-library",
+  "place": "boston-area",
+  "lng": -71.0342,
+  "lat": 42.3162,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q2007919",
+  "replaces": [
+    "way/217512570",
+    "way/830076701",
+    "way/217512167"
+  ]
+}

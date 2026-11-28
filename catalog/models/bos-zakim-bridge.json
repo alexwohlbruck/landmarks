@@ -1,0 +1,105 @@
+{
+  "id": "bos-zakim-bridge",
+  "detail": "models/bos-zakim-bridge.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "cable-stayed-bridge",
+    "big-dig",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q151914",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Zakim Bridge Aerial",
+      "url": "https://commons.wikimedia.org/wiki/File:Zakim_Bridge_Aerial.jpg",
+      "author": "Edward Orde",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Zakim Bridge as seen from the south",
+      "url": "https://commons.wikimedia.org/wiki/File:Zakim_Bridge_as_seen_from_the_south.jpg",
+      "author": "4300streetcar",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Zakim Bridge from Below, August 2024",
+      "url": "https://commons.wikimedia.org/wiki/File:Zakim_Bridge_from_Below,_August_2024.jpg",
+      "author": "4300streetcar",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Zakim Bridge P1030253",
+      "url": "https://commons.wikimedia.org/wiki/File:Zakim_Bridge_P1030253.jpg",
+      "author": "NewtonCourt",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Zakim Bridge and railroad bridge Boston P1010835",
+      "url": "https://commons.wikimedia.org/wiki/File:Zakim_Bridge_and_railroad_bridge_Boston_P1010835.jpg",
+      "author": "NewtonCourt",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Zakim Bridge, Boston, from below P1010837",
+      "url": "https://commons.wikimedia.org/wiki/File:Zakim_Bridge,_Boston,_from_below_P1010837.jpg",
+      "author": "NewtonCourt",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Zakim Bridge closer from Bunker Hill",
+      "url": "https://commons.wikimedia.org/wiki/File:Zakim_Bridge_closer_from_Bunker_Hill.jpg",
+      "author": "VidTheKid",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Leonard P. Zakim Bunker Hill Memorial Bridge from Charlestown September 2025",
+      "url": "https://commons.wikimedia.org/wiki/File:Leonard_P._Zakim_Bunker_Hill_Memorial_Bridge_from_Charlestown_September_2025.jpg",
+      "author": "4300streetcar",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Zakim Bridge underside September 2024",
+      "url": "https://commons.wikimedia.org/wiki/File:Zakim_Bridge_underside_September_2024.jpg",
+      "author": "4300streetcar",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Boston, Zakim Bridge, December 28, 2011 (6588687977)",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston,_Zakim_Bridge,_December_28,_2011_(6588687977).jpg",
+      "author": "MassDOT",
+      "license": "Public domain"
+    },
+    {
+      "title": "Boston Zakim Bridge SW 9429 20190428",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_Zakim_Bridge_SW_9429_20190428.jpg",
+      "author": "Karlunun",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Zakim Bridge at Dusk",
+      "url": "https://commons.wikimedia.org/wiki/File:Zakim_Bridge_at_Dusk.jpg",
+      "author": "Eric Kilby",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/bos-zakim-bridge.glb",
+  "source": "generators/bos-zakim-bridge.ts"
+}

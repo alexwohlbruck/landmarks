@@ -1,0 +1,55 @@
+{
+  "id": "bos-td-garden",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "arena",
+    "sports",
+    "station"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q432105",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "TD Garden 2013",
+      "url": "https://commons.wikimedia.org/wiki/File:TD_Garden_2013.jpg",
+      "author": "Kid Clutch from RAIN CITY USA",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "TD Garden from Charlestown bridge, Boston",
+      "url": "https://commons.wikimedia.org/wiki/File:TD_Garden_from_Charlestown_bridge,_Boston.jpg",
+      "author": "Benoît Prieur",
+      "license": "CC0"
+    },
+    {
+      "title": "TD Garden from Lechmere (8427797138)",
+      "url": "https://commons.wikimedia.org/wiki/File:TD_Garden_from_Lechmere_(8427797138).jpg",
+      "author": "andrewjsan",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Zakim bridge and the TD Garden (9097726826)",
+      "url": "https://commons.wikimedia.org/wiki/File:Zakim_bridge_and_the_TD_Garden_(9097726826).jpg",
+      "author": "Robbie Shade",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/bos-td-garden.glb",
+  "source": "generators/bos-td-garden.ts"
+}

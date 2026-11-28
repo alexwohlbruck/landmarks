@@ -1,0 +1,55 @@
+{
+  "id": "bos-federal-reserve-bank",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q1400070",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Federal Reserve Bank Building (36344p)",
+      "url": "https://commons.wikimedia.org/wiki/File:Federal_Reserve_Bank_Building_(36344p).jpg",
+      "author": "Rhododendrites",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Federal Reserve Bank Building (Boston) (54959754982)",
+      "url": "https://commons.wikimedia.org/wiki/File:Federal_Reserve_Bank_Building_(Boston)_(54959754982).jpg",
+      "author": "ajay_suresh",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "2017 Federal Reserve Bank of Boston Building",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Federal_Reserve_Bank_of_Boston_Building.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Federal Reserve from South Boston",
+      "url": "https://commons.wikimedia.org/wiki/File:Federal_Reserve_from_South_Boston.jpg",
+      "author": "Beland",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/bos-federal-reserve-bank.glb",
+  "source": "generators/bos-federal-reserve-bank.ts"
+}

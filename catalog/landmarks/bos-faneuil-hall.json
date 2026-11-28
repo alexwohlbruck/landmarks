@@ -1,0 +1,18 @@
+{
+  "id": "bos-faneuil-hall",
+  "name": "Faneuil Hall",
+  "model": "bos-faneuil-hall",
+  "place": "boston-area",
+  "lng": -71.0562341,
+  "lat": 42.3600335,
+  "bearing": 352,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q49137",
+  "replaces": [
+    "way/29551702",
+    "way/240522078",
+    "way/240370278",
+    "way/240370310"
+  ]
+}

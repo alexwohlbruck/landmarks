@@ -1,0 +1,60 @@
+{
+  "id": "bos-south-station",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "train-station",
+    "historic",
+    "beaux-arts"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "South Station from 45 High Street, June 2012",
+      "url": "https://commons.wikimedia.org/wiki/File:South_Station_from_45_High_Street,_June_2012.JPG",
+      "author": "Pi.1415926535",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "South Station from Atlantic Avenue, September 2010",
+      "url": "https://commons.wikimedia.org/wiki/File:South_Station_from_Atlantic_Avenue,_September_2010.jpg",
+      "author": "Michael Hicks",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "South Station from Dewey Square, November 2019",
+      "url": "https://commons.wikimedia.org/wiki/File:South_Station_from_Dewey_Square,_November_2019.jpg",
+      "author": "Another Believer",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "South Station top",
+      "url": "https://commons.wikimedia.org/wiki/File:South_Station_top.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Bus lane on Summer Street at South Station, December 2019",
+      "url": "https://commons.wikimedia.org/wiki/File:Bus_lane_on_Summer_Street_at_South_Station,_December_2019.JPG",
+      "author": "Pi.1415926535",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/bos-south-station.glb",
+  "source": "generators/bos-south-station.ts"
+}

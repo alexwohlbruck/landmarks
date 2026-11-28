@@ -1,0 +1,50 @@
+{
+  "id": "bos-rowes-wharf",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "hotel",
+    "postmodern",
+    "waterfront",
+    "arch"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q12067645",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "2017 Rowes Wharf from Boston Harbor 1",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Rowes_Wharf_from_Boston_Harbor_1.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rowes-Wharf-Boston-Harbor-Hotel-05-2018",
+      "url": "https://commons.wikimedia.org/wiki/File:Rowes-Wharf-Boston-Harbor-Hotel-05-2018.jpg",
+      "author": "Gunnar Klack",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rowes Wharf & Boston Skyline (54960820583)",
+      "url": "https://commons.wikimedia.org/wiki/File:Rowes_Wharf_%26_Boston_Skyline_(54960820583).jpg",
+      "author": "ajay_suresh",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/bos-rowes-wharf.glb",
+  "source": "generators/bos-rowes-wharf.ts"
+}

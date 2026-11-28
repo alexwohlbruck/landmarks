@@ -1,0 +1,18 @@
+{
+  "id": "bos-zakim-bridge",
+  "name": "Leonard P. Zakim Bunker Hill Memorial Bridge",
+  "model": "bos-zakim-bridge",
+  "place": "boston-area",
+  "lng": -71.0632212,
+  "lat": 42.3687237,
+  "bearing": 319.83,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/508557869",
+    "way/485005954",
+    "way/485005963",
+    "way/816957205",
+    "way/816957206"
+  ]
+}

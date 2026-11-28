@@ -1,0 +1,20 @@
+{
+  "id": "bos-td-garden",
+  "name": "TD Garden",
+  "model": "bos-td-garden",
+  "place": "boston-area",
+  "lng": -71.0621483,
+  "lat": 42.3663149,
+  "bearing": 325,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q432105",
+  "replaces": [
+    "way/25123637",
+    "way/474893799",
+    "way/838051723",
+    "way/838051724",
+    "way/838051725",
+    "way/838051726"
+  ]
+}

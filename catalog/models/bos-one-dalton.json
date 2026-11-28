@@ -1,0 +1,50 @@
+{
+  "id": "bos-one-dalton",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "hotel",
+    "residential",
+    "glass"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q17986468",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "One Dalton, Boston",
+      "url": "https://commons.wikimedia.org/wiki/File:One_Dalton,_Boston.jpg",
+      "author": "Kenneth C. Zirkel",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2023-0322-One Dalton",
+      "url": "https://commons.wikimedia.org/wiki/File:2023-0322-One_Dalton.jpg",
+      "author": "Bobak Ha'Eri",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Boston Skyline from Back Bay Fens",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_Skyline_from_Back_Bay_Fens.jpg",
+      "author": "Joe Passe",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/bos-one-dalton.glb",
+  "source": "generators/bos-one-dalton.ts"
+}

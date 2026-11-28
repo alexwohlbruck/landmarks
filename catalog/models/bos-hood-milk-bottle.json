@@ -1,0 +1,48 @@
+{
+  "id": "bos-hood-milk-bottle",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "novelty-architecture",
+    "roadside",
+    "food-stand"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hood Milk Bottle (54960892944)",
+      "url": "https://commons.wikimedia.org/wiki/File:Hood_Milk_Bottle_(54960892944).jpg",
+      "author": "ajay_suresh",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Boston Hood Milk Bottle June 2026",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_Hood_Milk_Bottle_June_2026.jpg",
+      "author": "4300streetcar",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Boston, Museum Wharf, Hood Milk Bottle",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston,_Museum_Wharf,_Hood_Milk_Bottle.jpg",
+      "author": "openroads.com",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/bos-hood-milk-bottle.glb",
+  "source": "generators/bos-hood-milk-bottle.ts"
+}

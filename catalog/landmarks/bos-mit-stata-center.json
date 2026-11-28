@@ -1,0 +1,20 @@
+{
+  "id": "bos-mit-stata-center",
+  "name": "Ray and Maria Stata Center",
+  "model": "bos-mit-stata-center",
+  "place": "boston-area",
+  "lng": -71.090569,
+  "lat": 42.361621,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q3312712",
+  "replaces": [
+    "way/27078002",
+    "way/1374405984",
+    "way/1374405985",
+    "way/1374405986",
+    "way/1374405987",
+    "way/349283256"
+  ]
+}

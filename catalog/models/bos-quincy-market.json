@@ -1,0 +1,57 @@
+{
+  "id": "bos-quincy-market",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "greek-revival",
+    "market",
+    "dome",
+    "granite"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q901885",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Quincy Market south-east sides (HABS)",
+      "url": "https://commons.wikimedia.org/wiki/File:Quincy_Market_south-east_sides.jpg",
+      "author": "Jack Boucher",
+      "license": "Public domain"
+    },
+    {
+      "title": "View of central area from south, elevation of dome - Quincy Market (HABS MASS,13-BOST,118-10)",
+      "url": "https://commons.wikimedia.org/wiki/File:VIEW_OF_CENTRAL_AREA_FROM_SOUTH,_ELEVATION_OF_DOME_-_Quincy_Market,_South_Market_Street,_Boston,_Suffolk_County,_MA_HABS_MASS,13-BOST,118-10.tif",
+      "author": "Jack Boucher",
+      "license": "Public domain"
+    },
+    {
+      "title": "Quincy Market from Custom House",
+      "url": "https://commons.wikimedia.org/wiki/File:Quincy_Market_from_Custom_House.jpg",
+      "author": "Av9",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Quincy Market, Boston, Massachusetts, April 2011 - Flickr - PhillipC (1)",
+      "url": "https://commons.wikimedia.org/wiki/File:Quincy_Market,_Boston,_Massachusetts,_April_2011_-_Flickr_-_PhillipC_(1).jpg",
+      "author": "Phillip Capper",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/bos-quincy-market.glb",
+  "source": "generators/bos-quincy-market.ts"
+}

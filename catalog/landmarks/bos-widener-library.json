@@ -1,0 +1,15 @@
+{
+  "id": "bos-widener-library",
+  "name": "Widener Library",
+  "model": "bos-widener-library",
+  "place": "boston-area",
+  "lng": -71.1164893,
+  "lat": 42.3734629,
+  "bearing": 13,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/29725638"
+  ],
+  "wikidata": "Q1060854"
+}

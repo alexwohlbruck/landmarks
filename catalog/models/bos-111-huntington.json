@@ -1,0 +1,56 @@
+{
+  "id": "bos-111-huntington",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "postmodern",
+    "dome"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q170441",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "2017 Prudential Skywalk - 111 Huntington Avenue (SE)",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Prudential_Skywalk_-_111_Huntington_Avenue_(SE).jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "111-Huntington-Ave",
+      "url": "https://commons.wikimedia.org/wiki/File:111-Huntington-Ave.jpg",
+      "author": "Fogster",
+      "license": "Public domain"
+    },
+    {
+      "title": "111 Huntington Avenue (6222850995)",
+      "url": "https://commons.wikimedia.org/wiki/File:111_Huntington_Avenue_(6222850995).jpg",
+      "author": "Tony Hisgett",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Boston night Hancock and Prudential dfjkn",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_night_Hancock_and_Prudential_dfjkn.jpg",
+      "author": "Luciof",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/bos-111-huntington.glb",
+  "source": "generators/bos-111-huntington.ts"
+}

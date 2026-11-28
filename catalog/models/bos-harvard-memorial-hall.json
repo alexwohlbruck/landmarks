@@ -1,0 +1,63 @@
+{
+  "id": "bos-harvard-memorial-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "university",
+    "memorial",
+    "gothic-revival",
+    "high-victorian-gothic"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q6815427",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "USA-Harvard Memorial Hall0.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:USA-Harvard_Memorial_Hall0.jpg",
+      "author": "Ingfbruno",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Harvard University Memorial Hall far.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Harvard_University_Memorial_Hall_far.jpg",
+      "author": "Ryan Pflaum",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Memorial Hall (Harvard University) - Akash Puthraya.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Memorial_Hall_(Harvard_University)_-_Akash_Puthraya.jpg",
+      "author": "Akashputhraya",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Memorial Hall, Harvard University backside.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Memorial_Hall,_Harvard_University_backside.jpg",
+      "author": "Ario Barzan",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Memorial Hall at Harvard University.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Memorial_Hall_at_Harvard_University.JPG",
+      "author": "Pknelson",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/bos-harvard-memorial-hall.glb",
+  "source": "generators/bos-harvard-memorial-hall.ts"
+}

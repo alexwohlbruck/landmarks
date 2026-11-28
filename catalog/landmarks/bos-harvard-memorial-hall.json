@@ -1,0 +1,17 @@
+{
+  "id": "bos-harvard-memorial-hall",
+  "name": "Memorial Hall",
+  "model": "bos-harvard-memorial-hall",
+  "place": "boston-area",
+  "lng": -71.1150882,
+  "lat": 42.3759776,
+  "bearing": 9,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q6815427",
+  "replaces": [
+    "way/29530473",
+    "way/842255489",
+    "way/1334154153"
+  ]
+}

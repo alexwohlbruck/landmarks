@@ -1,0 +1,73 @@
+{
+  "id": "bos-mother-church",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "historic",
+    "dome",
+    "neoclassical",
+    "romanesque-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "The First Church of Christ, Scientist, Boston, aerial shot (2), 19 July 2011",
+      "url": "https://commons.wikimedia.org/wiki/File:The_First_Church_of_Christ,_Scientist,_Boston,_aerial_shot_(2),_19_July_2011.jpg",
+      "author": "Sarah Nichols",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "2024 The First Church of Christ, Scientist - Boston 01",
+      "url": "https://commons.wikimedia.org/wiki/File:2024_The_First_Church_of_Christ,_Scientist_-_Boston_01.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2024 The First Church of Christ, Scientist - Boston 02",
+      "url": "https://commons.wikimedia.org/wiki/File:2024_The_First_Church_of_Christ,_Scientist_-_Boston_02.jpg",
+      "author": "Farragutful",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The First Church of Christ, Scientist, Boston, 17 April 2011 (1)",
+      "url": "https://commons.wikimedia.org/wiki/File:The_First_Church_of_Christ,_Scientist,_Boston,_17_April_2011_(1).jpg",
+      "author": "Cryptic C62",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Christian Science Mother Church, Boston, Massachusetts",
+      "url": "https://commons.wikimedia.org/wiki/File:Christian_Science_Mother_Church,_Boston,_Massachusetts.JPG",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "The First Church of Christ, Scientist - Boston, MA - DSC03992",
+      "url": "https://commons.wikimedia.org/wiki/File:The_First_Church_of_Christ,_Scientist_-_Boston,_MA_-_DSC03992.JPG",
+      "author": "Daderot",
+      "license": "CC0"
+    },
+    {
+      "title": "Boston First Church of Christ Scientist Kuppel S 9484 20190430",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_First_Church_of_Christ_Scientist_Kuppel_S_9484_20190430.jpg",
+      "author": "Karlunun",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-mother-church.glb",
+  "source": "generators/bos-mother-church.ts"
+}

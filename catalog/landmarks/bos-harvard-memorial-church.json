@@ -1,0 +1,15 @@
+{
+  "id": "bos-harvard-memorial-church",
+  "name": "Memorial Church",
+  "model": "bos-harvard-memorial-church",
+  "place": "boston-area",
+  "lng": -71.1160331,
+  "lat": 42.3749104,
+  "bearing": 13,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q3459140",
+  "replaces": [
+    "way/29789985"
+  ]
+}

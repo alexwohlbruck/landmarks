@@ -1,0 +1,16 @@
+{
+  "id": "bos-south-station",
+  "name": "South Station",
+  "model": "bos-south-station",
+  "place": "boston-area",
+  "lng": -71.05517,
+  "lat": 42.35196,
+  "bearing": 345,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q54453",
+  "replaces": [
+    "way/241933476",
+    "way/241933504"
+  ]
+}
