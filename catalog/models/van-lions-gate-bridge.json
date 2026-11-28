@@ -1,0 +1,74 @@
+{
+  "id": "van-lions-gate-bridge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "suspension-bridge",
+    "historic",
+    "national-historic-site"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/van-lions-gate-bridge.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Lions Gate Bridge (air).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lions_Gate_Bridge_(air).jpg",
+      "author": "Tawker",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Lions Gate Bridge (First Narrows Bridge) 2.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Lions_Gate_Bridge_(First_Narrows_Bridge)_2.JPG",
+      "author": "Xiao23",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Lions Gate Bridge North Approach.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lions_Gate_Bridge_North_Approach.jpg",
+      "author": "Thank You (21 Millions+) views from Los Angeles, USA",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Lions-Gate-Bridge-North-Shore.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lions-Gate-Bridge-North-Shore.jpg",
+      "author": "Penapox",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lions Gate Bridge (From Stanley Park).JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Lions_Gate_Bridge_(From_Stanley_Park).JPG",
+      "author": "LeGrosJR",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Lions Gate Bridge south side.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lions_Gate_Bridge_south_side.jpg",
+      "author": "Emma0mb",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Lions Gate Bridge Night.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lions_Gate_Bridge_Night.jpg",
+      "author": "Alexey Golubev",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/van-lions-gate-bridge.glb",
+  "source": "generators/van-lions-gate-bridge.ts"
+}

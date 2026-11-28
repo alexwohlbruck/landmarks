@@ -1,0 +1,18 @@
+{
+  "id": "van-lions-gate-bridge",
+  "name": "Lions Gate Bridge",
+  "model": "van-lions-gate-bridge",
+  "place": "vancouver",
+  "lng": -123.1385017,
+  "lat": 49.3155064,
+  "bearing": 31.109,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q124352",
+  "replaces": [
+    "way/497479013",
+    "way/497479012",
+    "way/497479011",
+    "way/497479010"
+  ]
+}
