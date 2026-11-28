@@ -1,0 +1,54 @@
+{
+  "id": "bos-fort-independence",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "fort",
+    "historic",
+    "military"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Fort Independence, Boston, August 2024",
+      "url": "https://commons.wikimedia.org/wiki/File:Fort_Independence,_Boston,_August_2024.jpg",
+      "author": "Fletcher",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "2017 Fort Independence, Castle Island from Boston Harbor 1",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Fort_Independence,_Castle_Island_from_Boston_Harbor_1.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Castle Island - Fort Independence",
+      "url": "https://commons.wikimedia.org/wiki/File:Castle_Island_-_Fort_Independence.jpg",
+      "author": "Eric Kilby",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Fort Independence, Castle Island, South Boston",
+      "url": "https://commons.wikimedia.org/wiki/File:Fort_Independence,_Castle_Island,_South_Boston.jpg",
+      "author": "Paul Keleher",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/bos-fort-independence.glb",
+  "source": "generators/bos-fort-independence.ts"
+}
