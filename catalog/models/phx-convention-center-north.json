@@ -1,0 +1,52 @@
+{
+  "id": "phx-convention-center-north",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "convention-center"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Phoenix Convention Center - South on 3rd St - 2009-07-06.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_Convention_Center_-_South_on_3rd_St_-_2009-07-06.jpg",
+      "author": "Cygnusloop99",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Phoenix Convention Center by Gage Skidmore.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_Convention_Center_by_Gage_Skidmore.jpg",
+      "author": "Gage Skidmore",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Phoenix Convention Center-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_Convention_Center-1.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "2021 Phoenix Convention Center, North Building.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2021_Phoenix_Convention_Center,_North_Building.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/phx-convention-center-north.glb",
+  "source": "generators/phx-convention-center-north.ts"
+}
