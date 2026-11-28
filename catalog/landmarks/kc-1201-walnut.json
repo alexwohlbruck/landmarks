@@ -1,0 +1,15 @@
+{
+  "id": "kc-1201-walnut",
+  "name": "1201 Walnut",
+  "model": "kc-1201-walnut",
+  "place": "kansas-city-area",
+  "lng": -94.5817501,
+  "lat": 39.099608,
+  "bearing": 2.5,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q4548077",
+  "replaces": [
+    "way/132570882"
+  ]
+}
