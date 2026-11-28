@@ -1,0 +1,14 @@
+{
+  "id": "phx-hayden-flour-mill",
+  "name": "Hayden Flour Mill",
+  "model": "phx-hayden-flour-mill",
+  "place": "phoenix-area",
+  "lng": -111.9395548,
+  "lat": 33.4289801,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/544822355"
+  ]
+}

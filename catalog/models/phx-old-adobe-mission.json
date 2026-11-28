@@ -1,0 +1,43 @@
+{
+  "id": "phx-old-adobe-mission",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "church",
+    "mission-revival",
+    "adobe"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "SD-Old Adobe Mission 1933.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:SD-Old_Adobe_Mission_1933.jpg",
+      "author": "Tony the Marine",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Old Adobe Mission in Scottsdale",
+      "url": "https://www.flickr.com/photos/37996646802@N01/2275635991",
+      "author": "cogdogblog (Alan Levine)",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/phx-old-adobe-mission.glb",
+  "source": "generators/phx-old-adobe-mission.ts"
+}

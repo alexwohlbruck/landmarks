@@ -1,0 +1,48 @@
+{
+  "id": "phx-tempe-city-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "city-hall",
+    "government",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tempe City Hall - Tempe, AZ.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Tempe_City_Hall_-_Tempe,_AZ.JPG",
+      "author": "Daderot",
+      "license": "Public domain"
+    },
+    {
+      "title": "Tempe Municipal Building-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tempe_Municipal_Building-1.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Tempe Municipal Building-5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tempe_Municipal_Building-5.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/phx-tempe-city-hall.glb",
+  "source": "generators/phx-tempe-city-hall.ts"
+}

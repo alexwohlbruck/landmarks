@@ -1,0 +1,55 @@
+{
+  "id": "phx-asu-old-main",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "university",
+    "victorian",
+    "romanesque-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "ASU Old Main",
+      "url": "https://commons.wikimedia.org/wiki/File:ASU_Old_Main.jpg",
+      "author": "Tito (en.wikipedia)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "2021 Arizona State University, Tempe Campus, Old Main",
+      "url": "https://commons.wikimedia.org/wiki/File:2021_Arizona_State_University,_Tempe_Campus,_Old_Main.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Old Main - daylight",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_Main_-_daylight.jpg",
+      "author": "Landon Wiggs (Wiggsphoto)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Old Main - Arizona State University - Tempe, AZ - DSC05889",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_Main_-_Arizona_State_University_-_Tempe,_AZ_-_DSC05889.JPG",
+      "author": "Daderot",
+      "license": "CC0-1.0"
+    }
+  ],
+  "file": "models/phx-asu-old-main.glb",
+  "source": "generators/phx-asu-old-main.ts"
+}

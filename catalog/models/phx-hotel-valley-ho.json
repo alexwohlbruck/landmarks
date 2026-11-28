@@ -1,0 +1,54 @@
+{
+  "id": "phx-hotel-valley-ho",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "hotel",
+    "mid-century-modern",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "HotelValleyHo-at-dawn.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HotelValleyHo-at-dawn.jpg",
+      "author": "Binksternet",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Valley Ho Hotel.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Valley_Ho_Hotel.jpg",
+      "author": "Dru Bloomfield",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Valley Ho Hotel east wing.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Valley_Ho_Hotel_east_wing.jpg",
+      "author": "Dru Bloomfield",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Scottsdale-Hotel Valley Ho-1956-1.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Scottsdale-Hotel_Valley_Ho-1956-1.JPG",
+      "author": "Marine 69-71",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/phx-hotel-valley-ho.glb",
+  "source": "generators/phx-hotel-valley-ho.ts"
+}

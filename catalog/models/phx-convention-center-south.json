@@ -1,0 +1,46 @@
+{
+  "id": "phx-convention-center-south",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "convention-center"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Phoenix Convention Center South Building, 3rd Street and Washington Street, Phoenix, AZ",
+      "url": "https://www.flickr.com/photos/59081381@N03/54442798961",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Phoenix Convention Center South Building, 3rd Street and Washington Street, Phoenix, AZ",
+      "url": "https://www.flickr.com/photos/59081381@N03/54441941897",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Phoenix Convention Center South Building, 3rd Street and Washington Street, Phoenix, AZ",
+      "url": "https://www.flickr.com/photos/59081381@N03/54443177195",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/phx-convention-center-south.glb",
+  "source": "generators/phx-convention-center-south.ts"
+}

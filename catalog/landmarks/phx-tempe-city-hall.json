@@ -1,0 +1,14 @@
+{
+  "id": "phx-tempe-city-hall",
+  "name": "Tempe City Hall",
+  "model": "phx-tempe-city-hall",
+  "place": "phoenix-area",
+  "lng": -111.9384113,
+  "lat": 33.4249199,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/182798022"
+  ]
+}

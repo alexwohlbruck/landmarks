@@ -1,0 +1,16 @@
+{
+  "id": "phx-heard-museum",
+  "name": "Heard Museum",
+  "model": "phx-heard-museum",
+  "place": "phoenix-area",
+  "lng": -112.0722587,
+  "lat": 33.4719432,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "relation/1983722",
+    "way/146999345",
+    "way/146999338"
+  ]
+}

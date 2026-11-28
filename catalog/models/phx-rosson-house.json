@@ -1,0 +1,60 @@
+{
+  "id": "phx-rosson-house",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "house-museum",
+    "victorian"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "2021 Heritage Square, Rosson House Museum from west.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2021_Heritage_Square,_Rosson_House_Museum_from_west.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2021 Heritage Square, Rosson House Museum from northwest.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2021_Heritage_Square,_Rosson_House_Museum_from_northwest.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "RossonHousePhoenix gobeirne.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:RossonHousePhoenix_gobeirne.jpg",
+      "author": "gobeirne",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "Rosson House 1 (6408552757).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Rosson_House_1_(6408552757).jpg",
+      "author": "Alan Levine",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Rosson House 2 (6408552929).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Rosson_House_2_(6408552929).jpg",
+      "author": "Alan Levine",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/phx-rosson-house.glb",
+  "source": "generators/phx-rosson-house.ts"
+}

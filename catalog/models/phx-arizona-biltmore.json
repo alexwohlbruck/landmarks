@@ -1,0 +1,54 @@
+{
+  "id": "phx-arizona-biltmore",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "hotel",
+    "historic",
+    "art-deco"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Arizona Biltmore Hotel, Missouri Ave, Biltmore Area, Phoenix, AZ - 54437952669.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arizona_Biltmore_Hotel,_Missouri_Ave,_Biltmore_Area,_Phoenix,_AZ_-_54437952669.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Arizona Biltmore Hotel, Missouri Ave, Biltmore Area, Phoenix, AZ - 54437952704.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arizona_Biltmore_Hotel,_Missouri_Ave,_Biltmore_Area,_Phoenix,_AZ_-_54437952704.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Arizona Biltmore Hotel, Missouri Ave, Biltmore Area, Phoenix, AZ - 54436901437.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arizona_Biltmore_Hotel,_Missouri_Ave,_Biltmore_Area,_Phoenix,_AZ_-_54436901437.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Phoenix-Arizona Biltmore Hotel-1929.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix-Arizona_Biltmore_Hotel-1929.JPG",
+      "author": "Tony the Marine",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/phx-arizona-biltmore.glb",
+  "source": "generators/phx-arizona-biltmore.ts"
+}

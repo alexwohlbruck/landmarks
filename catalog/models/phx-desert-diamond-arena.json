@@ -1,0 +1,55 @@
+{
+  "id": "phx-desert-diamond-arena",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "arena",
+    "ice-hockey",
+    "basketball",
+    "concert-venue"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "2024 Fiesta Bowl –1264 (Desert Diamond Arena).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2024_Fiesta_Bowl_%E2%80%931264_(Desert_Diamond_Arena).jpg",
+      "author": "SecretName101",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Exterior of Desert Diamond Arena, Glendale, AZ (Aug 2023).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_Desert_Diamond_Arena,_Glendale,_AZ_(Aug_2023).jpg",
+      "author": "Mliu92",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Gila River Arena Gate 4 Entrance.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Gila_River_Arena_Gate_4_Entrance.jpg",
+      "author": "Kyvuh",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Glendale-arena.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Glendale-arena.jpg",
+      "author": "Paul Kucher",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/phx-desert-diamond-arena.glb",
+  "source": "generators/phx-desert-diamond-arena.ts"
+}

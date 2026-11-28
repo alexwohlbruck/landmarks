@@ -1,0 +1,54 @@
+{
+  "id": "phx-phoenix-art-museum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "art-museum",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Main entrance to Phoenix Art Museum - 19 June 2008.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Main_entrance_to_Phoenix_Art_Museum_-_19_June_2008.jpg",
+      "author": "Chanel Wheeler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Phoenix Art museum outside main entrance.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_Art_museum_outside_main_entrance.JPG",
+      "author": "Tomwsulcer",
+      "license": "CC0"
+    },
+    {
+      "title": "Phoenix Art Museum-4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_Art_Museum-4.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Phoenix Art Museum-3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix_Art_Museum-3.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/phx-phoenix-art-museum.glb",
+  "source": "generators/phx-phoenix-art-museum.ts"
+}

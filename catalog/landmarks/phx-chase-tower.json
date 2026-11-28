@@ -1,0 +1,18 @@
+{
+  "id": "phx-chase-tower",
+  "name": "Chase Tower",
+  "model": "phx-chase-tower",
+  "place": "phoenix-area",
+  "lng": -112.0731048,
+  "lat": 33.4508795,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q2943678",
+  "replaces": [
+    "way/37057933",
+    "way/537036314",
+    "way/537036316",
+    "way/537036318"
+  ]
+}

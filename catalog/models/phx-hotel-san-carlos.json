@@ -1,0 +1,49 @@
+{
+  "id": "phx-hotel-san-carlos",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "hotel",
+    "neon-sign",
+    "renaissance-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hotel San Carlos - South East Corner - 2009-12-08.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Hotel_San_Carlos_-_South_East_Corner_-_2009-12-08.JPG",
+      "author": "Cygnusloop99",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Hotel San Carlos, Copper Square, Phoenix, Arizona - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hotel_San_Carlos,_Copper_Square,_Phoenix,_Arizona_-_panoramio.jpg",
+      "author": "davidpinter",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "San Carlos (6962485526).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Carlos_(6962485526).jpg",
+      "author": "Alan Stark",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/phx-hotel-san-carlos.glb",
+  "source": "generators/phx-hotel-san-carlos.ts"
+}

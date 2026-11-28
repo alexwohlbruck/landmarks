@@ -1,0 +1,55 @@
+{
+  "id": "phx-nelson-fine-arts-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "theatre",
+    "university",
+    "postmodern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Nelson Fine Arts Center, Arizona State University, 10th Street, Tempe, AZ.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nelson_Fine_Arts_Center,_Arizona_State_University,_10th_Street,_Tempe,_AZ.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Nelson Fine Arts Center, Arizona State University, 10th Street, Tempe, AZ - 54438012508.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nelson_Fine_Arts_Center,_Arizona_State_University,_10th_Street,_Tempe,_AZ_-_54438012508.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Arizona State University Art Museum - Arizona State University - Tempe, AZ - DSC05997.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Arizona_State_University_Art_Museum_-_Arizona_State_University_-_Tempe,_AZ_-_DSC05997.JPG",
+      "author": "Daderot",
+      "license": "CC0"
+    },
+    {
+      "title": "ASU Art Museum-5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ASU_Art_Museum-5.jpg",
+      "author": "sean hobson",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/phx-nelson-fine-arts-center.glb",
+  "source": "generators/phx-nelson-fine-arts-center.ts"
+}

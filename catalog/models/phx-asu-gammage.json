@@ -1,0 +1,61 @@
+{
+  "id": "phx-asu-gammage",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "theatre",
+    "frank-lloyd-wright",
+    "university",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tempe-Grady Gammage Memorial Auditorium-1950.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Tempe-Grady_Gammage_Memorial_Auditorium-1950.JPG",
+      "author": "Marine 69-71",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Grady Gammage Memorial Auditorium-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grady_Gammage_Memorial_Auditorium-1.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "FLW Gammage Auditorium ASU Tempe AZ 20154.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:FLW_Gammage_Auditorium_ASU_Tempe_AZ_20154.JPG",
+      "author": "Wars",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "FLW Gammage Auditorium ASU PHX AZ 20186.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:FLW_Gammage_Auditorium_ASU_PHX_AZ_20186.JPG",
+      "author": "Wars",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "2021 Arizona State University, Tempe Campus, Gammage Auditorium from northeast.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2021_Arizona_State_University,_Tempe_Campus,_Gammage_Auditorium_from_northeast.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/phx-asu-gammage.glb",
+  "source": "generators/phx-asu-gammage.ts"
+}

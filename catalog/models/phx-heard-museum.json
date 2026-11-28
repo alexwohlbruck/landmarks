@@ -1,0 +1,54 @@
+{
+  "id": "phx-heard-museum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "historic",
+    "spanish-colonial-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "HeardMuseum May2013.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HeardMuseum_May2013.jpg",
+      "author": "Yassie",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Phoenix-Heard Museum-1929-3.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix-Heard_Museum-1929-3.JPG",
+      "author": "Tony the Marine",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Heard Museum-3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Heard_Museum-3.jpg",
+      "author": "Visitor7",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "HeardMuseum.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HeardMuseum.jpg",
+      "author": "Kirs10",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/phx-heard-museum.glb",
+  "source": "generators/phx-heard-museum.ts"
+}
