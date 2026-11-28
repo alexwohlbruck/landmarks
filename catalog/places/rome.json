@@ -2,5 +2,6 @@
   "id": "rome",
   "name": "Rome",
   "kind": "city",
+  "parent": "italy",
   "wikidata": "Q220"
 }
