@@ -1,0 +1,15 @@
+{
+  "id": "stl-att-tower",
+  "name": "One AT&T Center (909 Chestnut)",
+  "model": "stl-att-tower",
+  "place": "st-louis-area",
+  "lng": -90.1945206,
+  "lat": 38.627842,
+  "bearing": 17.2,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/108706673",
+    "way/481461446"
+  ]
+}
