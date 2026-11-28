@@ -1,0 +1,42 @@
+{
+  "id": "stl-fox-theatre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "theatre"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q5477004",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Fox Theatre, Grand Boulevard, Grand Center, St. Louis, MO.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Fox_Theatre,_Grand_Boulevard,_Grand_Center,_St._Louis,_MO.jpg"
+    },
+    {
+      "title": "Fox Theatre (St. Louis).jpg",
+      "author": "Paul Sableman",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Fox_Theatre_(St._Louis).jpg"
+    }
+  ],
+  "file": "models/stl-fox-theatre.glb",
+  "source": "generators/stl-fox-theatre.ts"
+}
