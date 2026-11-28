@@ -1,0 +1,43 @@
+{
+  "id": "kc-plaza-triangle-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "historic",
+    "clock-tower",
+    "spanish-revival",
+    "country-club-plaza",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kansas City, Missouri - Country Club Plaza, Clock Tower - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City,_Missouri_-_Country_Club_Plaza,_Clock_Tower_-_panoramio.jpg",
+      "author": "MARELBU",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Country Club Plaza, KC MO - misc tower 2.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Country_Club_Plaza,_KC_MO_-_misc_tower_2.JPG",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/kc-plaza-triangle-tower.glb",
+  "source": "generators/kc-plaza-triangle-tower.ts"
+}

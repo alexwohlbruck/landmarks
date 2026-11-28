@@ -1,0 +1,14 @@
+{
+  "id": "kc-plaza-triangle-tower",
+  "name": "Triangle Building Clock Tower",
+  "model": "kc-plaza-triangle-tower",
+  "place": "kansas-city-area",
+  "lng": -94.589785,
+  "lat": 39.042594,
+  "bearing": 2.4,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/113102968"
+  ]
+}
