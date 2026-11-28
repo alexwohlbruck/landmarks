@@ -1,0 +1,58 @@
+{
+  "id": "rome-st-peters-square",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "monument",
+  "tags": [
+    "colonnade",
+    "piazza",
+    "obelisk",
+    "fountain",
+    "baroque",
+    "historic",
+    "world-heritage"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "St Peter's Square, Vatican City - April 2007",
+      "url": "https://commons.wikimedia.org/wiki/File:St_Peter%27s_Square,_Vatican_City_-_April_2007.jpg",
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "01 Bernini St Peter's Colonnade",
+      "url": "https://commons.wikimedia.org/wiki/File:01_Bernini_St_Peter%27s_Colonnade.jpg",
+      "author": "NateBergin",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "0 Fontana “Antica” (C. Maderno) - Piazza S. Pietro - Vatican (1)",
+      "url": "https://commons.wikimedia.org/wiki/File:0_Fontana_%E2%80%9CAntica%E2%80%9D_(C._Maderno)_-_Piazza_S._Pietro_-_Vatican_(1).jpg",
+      "author": "Jean-Pol Grandmont",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "View of saint Peter basilica from a roof",
+      "url": "https://commons.wikimedia.org/wiki/File:View_of_saint_Peter_basilica_from_a_roof.jpg",
+      "author": "Alberto Luccaroni",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/rome-st-peters-square.glb",
+  "source": "generators/rome-st-peters-square.ts"
+}
