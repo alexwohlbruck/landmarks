@@ -1,0 +1,61 @@
+{
+  "id": "tor-td-bank-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "modernist",
+    "mies-van-der-rohe"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Toronto Financial District August 2017",
+      "url": "https://commons.wikimedia.org/wiki/File:Toronto_Financial_District_August_2017.jpg",
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "First Canadian Place August 2017 01",
+      "url": "https://commons.wikimedia.org/wiki/File:First_Canadian_Place_August_2017_01.jpg",
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "TD Tower (3600902026)",
+      "url": "https://commons.wikimedia.org/wiki/File:TD_Tower_(3600902026).jpg",
+      "author": "veggiefrog",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Toronto-Dominion Centre, Toronto, Ontario (21652484160)",
+      "url": "https://commons.wikimedia.org/wiki/File:Toronto-Dominion_Centre,_Toronto,_Ontario_(21652484160).jpg",
+      "author": "Ken Lund",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "City of Toronto 3D Massing 2025",
+      "url": "https://open.toronto.ca/dataset/3d-massing/",
+      "author": "City of Toronto",
+      "license": "Open Government Licence – Toronto"
+    }
+  ],
+  "file": "models/tor-td-bank-tower.glb",
+  "source": "generators/tor-td-bank-tower.ts"
+}
