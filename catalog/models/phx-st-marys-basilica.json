@@ -1,0 +1,48 @@
+{
+  "id": "phx-st-marys-basilica",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "church",
+    "mission-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "St Mary's Basilica (6377886805).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St_Mary%27s_Basilica_(6377886805).jpg",
+      "author": "Alan Stark",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "St. Mary's Basilica exterior.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Mary%27s_Basilica_exterior.jpg",
+      "author": "Fr James Bradley",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "St. Mary's Roman Catholic Basilica, Phoenix, Arizona, USA (54221040743).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Mary%27s_Roman_Catholic_Basilica,_Phoenix,_Arizona,_USA_(54221040743).jpg",
+      "author": "Domenico Convertini",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/phx-st-marys-basilica.glb",
+  "source": "generators/phx-st-marys-basilica.ts"
+}
