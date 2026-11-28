@@ -1,0 +1,49 @@
+{
+  "id": "sat-san-fernando-cathedral",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "cathedral",
+    "church",
+    "gothic-revival",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "San Fernando Cathedral.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Fernando_Cathedral.jpg",
+      "author": "Daniel Schwen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cathedral of San Fernando rear.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cathedral_of_San_Fernando_rear.jpg",
+      "author": "GoneBefore",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "San Fernando Cathedral in the Main and Military Plazas Historic District, San Antonio, Texas.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Fernando_Cathedral_in_the_Main_and_Military_Plazas_Historic_District,_San_Antonio,_Texas.jpg",
+      "author": "Tedcampbell",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/sat-san-fernando-cathedral.glb",
+  "source": "generators/sat-san-fernando-cathedral.ts"
+}
