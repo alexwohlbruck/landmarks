@@ -1,0 +1,49 @@
+{
+  "id": "phx-veterans-memorial-coliseum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "arena",
+    "modernist",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q670890",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Phoenix-Arizona Veterans Memorial Coliseum-1965-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix-Arizona_Veterans_Memorial_Coliseum-1965-1.jpg",
+      "author": "Marine 69-71",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Phoenix-Arizona Veterans Memorial Coliseum-1965-2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix-Arizona_Veterans_Memorial_Coliseum-1965-2.jpg",
+      "author": "Marine 69-71",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Arizona Veterans Memorial Coliseum.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arizona_Veterans_Memorial_Coliseum.jpg",
+      "author": "Pacman5 at English Wikipedia",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/phx-veterans-memorial-coliseum.glb",
+  "source": "generators/phx-veterans-memorial-coliseum.ts"
+}
