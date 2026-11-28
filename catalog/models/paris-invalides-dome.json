@@ -1,0 +1,43 @@
+{
+  "id": "paris-invalides-dome",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "religious",
+    "church",
+    "dome"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "South facade of Dôme des Invalides",
+      "url": "https://commons.wikimedia.org/wiki/File:South_facade_of_D%C3%B4me_des_Invalides.jpg",
+      "author": "Maksim Sokolov (maxergon.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hôtel des Invalides, North View, Paris 7e 140402 1",
+      "url": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_des_Invalides,_North_View,_Paris_7e_140402_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/paris-invalides-dome.glb",
+  "source": "generators/paris-invalides-dome.ts"
+}
