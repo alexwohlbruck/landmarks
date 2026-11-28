@@ -1,0 +1,15 @@
+{
+  "id": "kc-bond-bridge",
+  "name": "Christopher S. Bond Bridge",
+  "model": "kc-bond-bridge",
+  "place": "kansas-city-area",
+  "lng": -94.5658579,
+  "lat": 39.1233336,
+  "bearing": 340.2,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q5113181",
+  "replaces": [
+    "way/708969114"
+  ]
+}
