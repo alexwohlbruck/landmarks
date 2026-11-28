@@ -1,0 +1,15 @@
+{
+  "id": "kc-kauffman-center",
+  "name": "Kauffman Center for the Performing Arts",
+  "model": "kc-kauffman-center",
+  "place": "kansas-city-area",
+  "lng": -94.5874227,
+  "lat": 39.0941188,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q6378664",
+  "replaces": [
+    "way/175514558"
+  ]
+}

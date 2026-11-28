@@ -1,0 +1,74 @@
+{
+  "id": "kc-kauffman-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "performing-arts",
+    "concert-hall",
+    "theatre",
+    "contemporary",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kauffman Center for the Performing Arts.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_Center_for_the_Performing_Arts.jpg",
+      "author": "Little Mountain 5",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Kauffman Center.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_Center.jpg",
+      "author": "Hayden Gascoigne",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kauffman and the Crossroads (15856169773).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_and_the_Crossroads_(15856169773).jpg",
+      "author": "Jeff Julian",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Kauffman Center Kansas City 2025.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_Center_Kansas_City_2025.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kauffman Center for Performing Arts 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_Center_for_Performing_Arts_2.jpg",
+      "author": "Rex Hughes",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kauffman Center for the Performing Arts - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_Center_for_the_Performing_Arts_-_panoramio.jpg",
+      "author": "Stephen Edmonds",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Kauffman center for the performing arts (16852146719).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kauffman_center_for_the_performing_arts_(16852146719).jpg",
+      "author": "Dean Hochman",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/kc-kauffman-center.glb",
+  "source": "generators/kc-kauffman-center.ts"
+}
