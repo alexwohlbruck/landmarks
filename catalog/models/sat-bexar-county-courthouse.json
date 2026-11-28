@@ -1,0 +1,55 @@
+{
+  "id": "sat-bexar-county-courthouse",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "courthouse",
+    "civic",
+    "historic",
+    "romanesque-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "San Antonio July 2017 06 (Bexar County Courthouse).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_July_2017_06_(Bexar_County_Courthouse).jpg",
+      "author": "Michael Barera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Bexar County Courthouse (2023).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bexar_County_Courthouse_(2023).jpg",
+      "author": "Lily Thomas",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "NORTH FRONT ELEVATION, FROM NORTHWEST - Bexar County Courthouse (HABS TEX,15-SANT,36-3)",
+      "url": "https://commons.wikimedia.org/wiki/File:NORTH_FRONT_ELEVATION,_FROM_NORTHWEST_-_Bexar_County_Courthouse,_20_Dolorosa_Street,_San_Antonio,_Bexar_County,_TX_HABS_TEX,15-SANT,36-3.tif",
+      "author": "Historic American Buildings Survey",
+      "license": "Public domain"
+    },
+    {
+      "title": "EAST (SIDE) AND SOUTH (REAR) ELEVATIONS (HABS TEX,15-SANT,36-5)",
+      "url": "https://commons.wikimedia.org/wiki/File:EAST_(SIDE)_AND_SOUTH_(REAR)_ELEVATIONS,_FROM_SOUTHEAST_-_Bexar_County_Courthouse,_20_Dolorosa_Street,_San_Antonio,_Bexar_County,_TX_HABS_TEX,15-SANT,36-5.tif",
+      "author": "Historic American Buildings Survey",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/sat-bexar-county-courthouse.glb",
+  "source": "generators/sat-bexar-county-courthouse.ts"
+}
