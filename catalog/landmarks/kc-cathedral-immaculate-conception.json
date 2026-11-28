@@ -1,0 +1,19 @@
+{
+  "id": "kc-cathedral-immaculate-conception",
+  "name": "Cathedral of the Immaculate Conception",
+  "model": "kc-cathedral-immaculate-conception",
+  "place": "kansas-city-area",
+  "lng": -94.5893084,
+  "lat": 39.1006474,
+  "bearing": 2,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q5052446",
+  "replaces": [
+    "way/195845986",
+    "way/1343095314",
+    "way/1344425381",
+    "way/1344425382",
+    "way/1344425383"
+  ]
+}
