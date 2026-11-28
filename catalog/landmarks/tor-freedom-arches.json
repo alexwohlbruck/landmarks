@@ -1,0 +1,12 @@
+{
+  "id": "tor-freedom-arches",
+  "name": "Freedom Arches",
+  "model": "tor-freedom-arches",
+  "place": "toronto",
+  "lng": -79.3832007,
+  "lat": 43.6522986,
+  "bearing": 343.5,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": []
+}

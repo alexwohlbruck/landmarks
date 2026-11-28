@@ -1,0 +1,54 @@
+{
+  "id": "tor-freedom-arches",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "monument",
+  "tags": [
+    "arch",
+    "modernist",
+    "public-square"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Nathan Phillips Square arches 2010.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nathan_Phillips_Square_arches_2010.jpg",
+      "author": "Benson Kua",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Arches Toronto 2010.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Arches_Toronto_2010.jpg",
+      "author": "Benson Kua",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Nathan Phillips Square May 2012.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nathan_Phillips_Square_May_2012.jpg",
+      "author": "Terry Ozon",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Toronto - ON - Rathaus und Nathan Phillips Square.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Toronto_-_ON_-_Rathaus_und_Nathan_Phillips_Square.jpg",
+      "author": "Taxiarchos228",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/tor-freedom-arches.glb",
+  "source": "generators/tor-freedom-arches.ts"
+}
