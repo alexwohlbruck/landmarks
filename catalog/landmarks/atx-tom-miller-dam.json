@@ -1,0 +1,16 @@
+{
+  "id": "atx-tom-miller-dam",
+  "name": "Tom Miller Dam",
+  "model": "atx-tom-miller-dam",
+  "place": "austin-area",
+  "lng": -97.78607,
+  "lat": 30.29393,
+  "bearing": 6,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q7816897",
+  "replaces": [
+    "way/188468899",
+    "way/382685792"
+  ]
+}

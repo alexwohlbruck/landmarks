@@ -1,0 +1,56 @@
+{
+  "id": "atx-tom-miller-dam",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "infrastructure",
+  "tags": [
+    "dam",
+    "hydroelectric",
+    "historic",
+    "concrete",
+    "lake"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tom miller dam austin 2014",
+      "url": "https://commons.wikimedia.org/wiki/File:Tom_miller_dam_austin_2014.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Austin - Tom Miller Dam - 1",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_-_Tom_Miller_Dam_-_1.jpg",
+      "author": "Peter Potrowl",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Austin - Tom Miller Dam - 3",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_-_Tom_Miller_Dam_-_3.jpg",
+      "author": "Peter Potrowl",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Austin - Tom Miller Dam - 6",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_-_Tom_Miller_Dam_-_6.jpg",
+      "author": "Peter Potrowl",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/atx-tom-miller-dam.glb",
+  "source": "generators/atx-tom-miller-dam.ts"
+}
