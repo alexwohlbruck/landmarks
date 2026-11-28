@@ -1,0 +1,15 @@
+{
+  "id": "kc-whittaker-courthouse",
+  "name": "Charles Evans Whittaker U.S. Courthouse",
+  "model": "kc-whittaker-courthouse",
+  "place": "kansas-city-area",
+  "lng": -94.5777719,
+  "lat": 39.1039224,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/118650973",
+    "way/466563343"
+  ]
+}
