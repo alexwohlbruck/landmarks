@@ -1,0 +1,14 @@
+{
+  "id": "phx-tovrea-castle",
+  "name": "Tovrea Castle",
+  "model": "phx-tovrea-castle",
+  "place": "phoenix-area",
+  "lng": -111.9717296,
+  "lat": 33.4481607,
+  "bearing": 4,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/136668541"
+  ]
+}
