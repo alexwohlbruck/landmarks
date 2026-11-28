@@ -1,0 +1,15 @@
+{
+  "id": "phx-old-adobe-mission",
+  "name": "Old Adobe Mission",
+  "model": "phx-old-adobe-mission",
+  "place": "phoenix-area",
+  "lng": -111.92429,
+  "lat": 33.492004,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q133017737",
+  "replaces": [
+    "way/552954306"
+  ]
+}
