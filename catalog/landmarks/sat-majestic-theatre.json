@@ -1,0 +1,15 @@
+{
+  "id": "sat-majestic-theatre",
+  "name": "Majestic Theatre",
+  "model": "sat-majestic-theatre",
+  "place": "san-antonio-area",
+  "lng": -98.4907015,
+  "lat": 29.4261583,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/100056523",
+    "way/1225918339"
+  ]
+}
