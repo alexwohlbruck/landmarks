@@ -1,0 +1,14 @@
+{
+  "id": "stl-college-church",
+  "name": "St. Francis Xavier College Church",
+  "model": "stl-college-church",
+  "place": "st-louis-area",
+  "lng": -90.2334678,
+  "lat": 38.6370488,
+  "bearing": 285,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/202545486"
+  ]
+}
