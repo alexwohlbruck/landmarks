@@ -1,0 +1,42 @@
+{
+  "id": "rome-santa-maria-in-aracoeli",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "church",
+    "romanesque"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Santa Maria in Aracoeli (Rome) - Facade.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Santa_Maria_in_Aracoeli_(Rome)_-_Facade.jpg",
+      "author": "ThePhotografer",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "14 536 Santa Maria in Aracoeli, Campidoglio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:14_536_Santa_Maria_in_Aracoeli,_Campidoglio.jpg",
+      "author": "Falk2",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/rome-santa-maria-in-aracoeli.glb",
+  "source": "generators/rome-santa-maria-in-aracoeli.ts"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "rome-santa-maria-in-aracoeli",
+  "name": "Santa Maria in Aracoeli",
+  "model": "rome-santa-maria-in-aracoeli",
+  "place": "rome",
+  "lng": 12.4831827,
+  "lat": 41.8939608,
+  "bearing": 259,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q318660",
+  "replaces": [
+    "way/25640152"
+  ]
+}
