@@ -1,0 +1,49 @@
+{
+  "id": "phx-hunts-tomb",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "monument",
+  "tags": [
+    "tomb",
+    "memorial",
+    "historic",
+    "pyramid"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hunts Tomb Papago Park Phoenix AZ.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hunts_Tomb_Papago_Park_Phoenix_AZ.jpg",
+      "author": "DaveByers",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2014, Papago Park Features Created by the Works Progress Administration, The Honoroable George W.P. Hunt Family Tomb on the Hilltop - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2014,_Papago_Park_Features_Created_by_the_Works_Progress_Administration,_The_Honoroable_George_W.P._Hunt_Family_Tomb_on_the_Hilltop_-_panoramio.jpg",
+      "author": "Chris English",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "2013, Resting Place of the late Governor George W. P. Hunt - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2013,_Resting_Place_of_the_late_Governor_George_W._P._Hunt_-_panoramio.jpg",
+      "author": "Chris English",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/phx-hunts-tomb.glb",
+  "source": "generators/phx-hunts-tomb.ts"
+}
