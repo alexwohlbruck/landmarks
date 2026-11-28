@@ -1,0 +1,55 @@
+{
+  "id": "paris-notre-dame",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "religious",
+    "cathedral",
+    "gothic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Notre Dame Cathedral in Paris July 2025",
+      "url": "https://commons.wikimedia.org/wiki/File:Notre_Dame_Cathedral_in_Paris_July_2025.jpg",
+      "author": "Dmarcovitz",
+      "license": "CC0"
+    },
+    {
+      "title": "Cathédrale Notre-Dame de Paris en 2026 05",
+      "url": "https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Notre-Dame_de_Paris_en_2026_05.jpg",
+      "author": "Gargarapalvin",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Paris 4e Cathédrale Notre-Dame 684",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_4e_Cath%C3%A9drale_Notre-Dame_684.jpg",
+      "author": "GFreihalter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Le chevet de Notre-Dame de Paris, 27 mars 2018",
+      "url": "https://commons.wikimedia.org/wiki/File:Le_chevet_de_Notre-Dame_de_Paris,_27_mars_2018.jpg",
+      "author": "Jean-Pierre Dalbéra",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/paris-notre-dame.glb",
+  "source": "generators/paris-notre-dame.ts"
+}
