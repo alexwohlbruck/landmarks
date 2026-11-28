@@ -1,0 +1,66 @@
+{
+  "id": "van-waterfront-station",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "train-station",
+    "neoclassical"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Waterfront Station Vancouver 04.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Waterfront_Station_Vancouver_04.JPG",
+      "author": "Xicotencatl",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Waterfront Station Vancouver 01.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Waterfront_Station_Vancouver_01.JPG",
+      "author": "Xicotencatl",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Vancouver Waterfront Station.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Waterfront_Station.jpg",
+      "author": "Zhatt",
+      "license": "Public domain"
+    },
+    {
+      "title": "Waterfront station Vancouver (42914420220).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Waterfront_station_Vancouver_(42914420220).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Harbour Centre, Vancouver, Canadá, 2017-08-14, DD 30.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Harbour_Centre,_Vancouver,_Canad%C3%A1,_2017-08-14,_DD_30.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "City of Vancouver building footprints 2009 (lidar heights)",
+      "url": "https://opendata.vancouver.ca/explore/dataset/building-footprints-2009/",
+      "author": "City of Vancouver",
+      "license": "Open Government Licence - Vancouver"
+    }
+  ],
+  "file": "models/van-waterfront-station.glb",
+  "source": "generators/van-waterfront-station.ts"
+}

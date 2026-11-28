@@ -1,0 +1,15 @@
+{
+  "id": "van-waterfront-station",
+  "name": "Waterfront Station",
+  "model": "van-waterfront-station",
+  "place": "vancouver",
+  "lng": -123.1117633,
+  "lat": 49.2857085,
+  "bearing": 134.7,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q1625437",
+  "replaces": [
+    "way/78393326"
+  ]
+}
