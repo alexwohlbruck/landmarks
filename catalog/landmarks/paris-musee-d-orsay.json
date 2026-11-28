@@ -1,0 +1,16 @@
+{
+  "id": "paris-musee-d-orsay",
+  "name": "Musée d'Orsay",
+  "model": "paris-musee-d-orsay",
+  "place": "paris",
+  "lng": 2.3265366,
+  "lat": 48.8599294,
+  "bearing": 24,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q23402",
+  "replaces": [
+    "way/63178753",
+    "way/63178762"
+  ]
+}

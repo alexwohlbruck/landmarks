@@ -1,0 +1,43 @@
+{
+  "id": "paris-musee-d-orsay",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "museum",
+    "railway-station",
+    "beaux-arts"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Paris 20130809 - Musée d'Orsay from Grande roue des Tuileries",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_20130809_-_Mus%C3%A9e_d%27Orsay_from_Grande_roue_des_Tuileries.jpg",
+      "author": "Martin Robson",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Musée d'Orsay (22284728710)",
+      "url": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_d%27Orsay_(22284728710).jpg",
+      "author": "Jorge Láscar",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/paris-musee-d-orsay.glb",
+  "source": "generators/paris-musee-d-orsay.ts"
+}
