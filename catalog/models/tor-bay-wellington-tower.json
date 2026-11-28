@@ -1,0 +1,49 @@
+{
+  "id": "tor-bay-wellington-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "postmodern",
+    "skyline"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Bay Wellington Tower",
+      "url": "https://commons.wikimedia.org/wiki/File:Bay_Wellington_Tower.jpg",
+      "author": "SimonP at English Wikipedia",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Brookfield Place 2025-05-24",
+      "url": "https://commons.wikimedia.org/wiki/File:Brookfield_Place_2025-05-24.jpg",
+      "author": "JK Liu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "City of Toronto 3D Massing 2025",
+      "url": "https://open.toronto.ca/dataset/3d-massing/",
+      "author": "City of Toronto",
+      "license": "Open Government Licence – Toronto"
+    }
+  ],
+  "file": "models/tor-bay-wellington-tower.glb",
+  "source": "generators/tor-bay-wellington-tower.ts"
+}

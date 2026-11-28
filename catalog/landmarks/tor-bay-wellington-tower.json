@@ -1,0 +1,22 @@
+{
+  "id": "tor-bay-wellington-tower",
+  "name": "Bay Wellington Tower",
+  "model": "tor-bay-wellington-tower",
+  "place": "toronto",
+  "lng": -79.3783477,
+  "lat": 43.6473472,
+  "bearing": 343.3,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/286525278",
+    "way/340695625",
+    "way/340695623",
+    "way/340695624",
+    "way/340695621",
+    "way/340695622",
+    "way/340695627",
+    "way/340695628",
+    "way/340695626"
+  ]
+}
