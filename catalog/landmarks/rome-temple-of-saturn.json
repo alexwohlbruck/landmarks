@@ -1,0 +1,25 @@
+{
+  "id": "rome-temple-of-saturn",
+  "name": "Temple of Saturn",
+  "model": "rome-temple-of-saturn",
+  "place": "rome",
+  "lng": 12.4842015,
+  "lat": 41.8925079,
+  "bearing": 35.5,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "relation/1849876",
+    "relation/1849862",
+    "relation/1767597",
+    "relation/1849870",
+    "way/131557561",
+    "way/131557601",
+    "way/131557596",
+    "way/131557584",
+    "way/131557606",
+    "way/131557570",
+    "way/1000529938",
+    "way/1000529939"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "rome-temple-of-saturn",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "monument",
+  "tags": [
+    "historic",
+    "ruins",
+    "ancient-roman",
+    "temple",
+    "roman-forum"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Temple of Saturn, Rome.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_of_Saturn,_Rome.jpg",
+      "author": "Diana Ringo",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Temple of Saturn (seen from Tabularium) - Roman Forum - Rome 2016.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_of_Saturn_(seen_from_Tabularium)_-_Roman_Forum_-_Rome_2016.jpg",
+      "author": "José Luiz",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/rome-temple-of-saturn.glb",
+  "source": "generators/rome-temple-of-saturn.ts"
+}
