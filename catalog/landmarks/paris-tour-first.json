@@ -1,0 +1,26 @@
+{
+  "id": "paris-tour-first",
+  "name": "Tour First",
+  "model": "paris-tour-first",
+  "place": "paris",
+  "lng": 2.2516124,
+  "lat": 48.888825,
+  "bearing": 25.1,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q1509747",
+  "replaces": [
+    "way/82466977",
+    "way/226254484",
+    "way/226254482",
+    "way/226254483",
+    "way/227353364",
+    "way/227353365",
+    "way/226254481",
+    "way/227324158",
+    "way/227324160",
+    "way/227324159",
+    "way/227353363",
+    "way/226245904"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "paris-tour-first",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "la-defense",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tours First et Saint-Gobain (42975144462)",
+      "url": "https://commons.wikimedia.org/wiki/File:Tours_First_et_Saint-Gobain_(42975144462).jpg",
+      "author": "Arthur Weidmann",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Tourfirst240309",
+      "url": "https://commons.wikimedia.org/wiki/File:Tourfirst240309.jpg",
+      "author": "Spartida",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Paris Tour Eiffel Blick von der 3. Ebene auf La Défense 2",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_Tour_Eiffel_Blick_von_der_3._Ebene_auf_La_D%C3%A9fense_2.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/paris-tour-first.glb",
+  "source": "generators/paris-tour-first.ts"
+}
