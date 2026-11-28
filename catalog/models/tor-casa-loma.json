@@ -1,0 +1,73 @@
+{
+  "id": "tor-casa-loma",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "castle",
+    "historic",
+    "gothic-revival",
+    "museum"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Casa Loma 2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Casa_Loma_2022.jpg",
+      "author": "Evelyncyuzu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Casa Loma in Toronto 08 2025.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Casa_Loma_in_Toronto_08_2025.jpg",
+      "author": "Dpalma01",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Casa Loma, el castillo de Toronto.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Casa_Loma,_el_castillo_de_Toronto.JPG",
+      "author": "Maria Carmen",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "View of Casa Loma, Toronto from the South - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:View_of_Casa_Loma,_Toronto_from_the_South_-_panoramio.jpg",
+      "author": "A J Butler",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Casa Loma's east tower (49932155893).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Casa_Loma%27s_east_tower_(49932155893).jpg",
+      "author": "Vlad Litvinov",
+      "license": "CC0"
+    },
+    {
+      "title": "Casa Loma Towers (9159945801).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Casa_Loma_Towers_(9159945801).jpg",
+      "author": "Richie Diesterheft",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "City of Toronto 3D Massing 2025",
+      "url": "https://open.toronto.ca/dataset/3d-massing/",
+      "author": "City of Toronto",
+      "license": "Open Government Licence – Toronto"
+    }
+  ],
+  "file": "models/tor-casa-loma.glb",
+  "source": "generators/tor-casa-loma.ts"
+}
