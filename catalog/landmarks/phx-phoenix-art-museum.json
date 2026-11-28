@@ -1,0 +1,16 @@
+{
+  "id": "phx-phoenix-art-museum",
+  "name": "Phoenix Art Museum",
+  "model": "phx-phoenix-art-museum",
+  "place": "phoenix-area",
+  "lng": -112.0727346,
+  "lat": 33.4667602,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q977015",
+  "replaces": [
+    "relation/2048105",
+    "way/151494786"
+  ]
+}
