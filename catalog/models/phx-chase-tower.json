@@ -1,0 +1,54 @@
+{
+  "id": "phx-chase-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "modernist"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Chase Tower Phoenix 2022.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Chase_Tower_Phoenix_2022.jpg",
+      "author": "Cazzy82",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Chase Tower (Phoenix).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Chase_Tower_(Phoenix).jpg",
+      "author": "Khamis Hammoudeh",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Chase Tower - panoramio (2).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Chase_Tower_-_panoramio_(2).jpg",
+      "author": "Chris English",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Chase Tower, Downtown PHX 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Chase_Tower,_Downtown_PHX_1.jpg",
+      "author": "Mike Ruiz",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/phx-chase-tower.glb",
+  "source": "generators/phx-chase-tower.ts"
+}
