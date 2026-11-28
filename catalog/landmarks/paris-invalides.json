@@ -1,0 +1,21 @@
+{
+  "id": "paris-invalides",
+  "name": "Hôtel des Invalides",
+  "model": "paris-invalides",
+  "place": "paris",
+  "lng": 2.3126275,
+  "lat": 48.8559477,
+  "bearing": 4.2,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q188977",
+  "replaces": [
+    "relation/1463538",
+    "relation/3311813",
+    "relation/3311814",
+    "relation/3311815",
+    "relation/3325221",
+    "relation/3325376",
+    "way/244945090"
+  ]
+}
