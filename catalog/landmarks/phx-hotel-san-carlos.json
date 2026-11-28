@@ -1,0 +1,15 @@
+{
+  "id": "phx-hotel-san-carlos",
+  "name": "Hotel San Carlos",
+  "model": "phx-hotel-san-carlos",
+  "place": "phoenix-area",
+  "lng": -112.0741846,
+  "lat": 33.450611,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/37057883",
+    "way/1086578117"
+  ]
+}
