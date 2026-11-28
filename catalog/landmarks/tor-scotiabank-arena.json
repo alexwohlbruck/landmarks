@@ -1,0 +1,26 @@
+{
+  "id": "tor-scotiabank-arena",
+  "name": "Scotiabank Arena",
+  "model": "tor-scotiabank-arena",
+  "place": "toronto",
+  "lng": -79.379168,
+  "lat": 43.6434626,
+  "bearing": 343.3,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q406972",
+  "replaces": [
+    "way/19882585",
+    "way/1104128156",
+    "way/1104128153",
+    "way/1104128155",
+    "way/1104128154",
+    "way/1104128157",
+    "way/1104128152",
+    "way/1104128158",
+    "way/1104128159",
+    "way/1104128160",
+    "way/1104128161",
+    "way/1104128162"
+  ]
+}

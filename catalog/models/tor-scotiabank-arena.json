@@ -1,0 +1,55 @@
+{
+  "id": "tor-scotiabank-arena",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "arena",
+    "hockey",
+    "basketball",
+    "art-deco"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Scotiabank Arena - 2018 (cropped)",
+      "url": "https://commons.wikimedia.org/wiki/File:Scotiabank_Arena_-_2018_(cropped).jpg",
+      "author": "Paperfire",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Air Canada Centre from CN Tower",
+      "url": "https://commons.wikimedia.org/wiki/File:Air_Canada_Centre_from_CN_Tower.jpg",
+      "author": "Balcer",
+      "license": "Public domain"
+    },
+    {
+      "title": "Postal terminal now Air Canada Centre",
+      "url": "https://commons.wikimedia.org/wiki/File:Postal_terminal_now_Air_Canada_Centre.jpg",
+      "author": "Andy Burgess",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "City of Toronto 3D Massing 2025",
+      "url": "https://open.toronto.ca/dataset/3d-massing/",
+      "author": "City of Toronto",
+      "license": "Open Government Licence – Toronto"
+    }
+  ],
+  "file": "models/tor-scotiabank-arena.glb",
+  "source": "generators/tor-scotiabank-arena.ts"
+}
