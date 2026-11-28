@@ -1,0 +1,12 @@
+{
+  "id": "kc-shuttlecocks-3",
+  "name": "Shuttlecocks (south lawn)",
+  "model": "kc-shuttlecocks",
+  "place": "kansas-city-area",
+  "lng": -94.5812539,
+  "lat": 39.0434256,
+  "bearing": 8,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": []
+}
