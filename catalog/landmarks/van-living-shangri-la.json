@@ -1,0 +1,22 @@
+{
+  "id": "van-living-shangri-la",
+  "name": "Living Shangri-La",
+  "model": "van-living-shangri-la",
+  "place": "vancouver",
+  "lng": -123.1237697,
+  "lat": 49.2857163,
+  "bearing": 45,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/91998136",
+    "way/360939768",
+    "way/360939769",
+    "way/360939770",
+    "way/360939771",
+    "way/360939772",
+    "way/360939773",
+    "way/360939774",
+    "way/360939775"
+  ]
+}

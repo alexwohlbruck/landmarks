@@ -1,0 +1,54 @@
+{
+  "id": "van-living-shangri-la",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "hotel",
+    "residential"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Living Shangri-La from One Wall Centre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Living_Shangri-La_from_One_Wall_Centre.jpg",
+      "author": "Klazu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Shangri La hotel and residences, Vancouver.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shangri_La_hotel_and_residences,_Vancouver.jpg",
+      "author": "Darren Kirby",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Living Shangri la - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Living_Shangri_la_-_panoramio.jpg",
+      "author": "Larry LaRose",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "City of Vancouver building footprints 2009 (lidar heights)",
+      "url": "https://opendata.vancouver.ca/explore/dataset/building-footprints-2009/",
+      "author": "City of Vancouver",
+      "license": "Open Government Licence - Vancouver"
+    }
+  ],
+  "file": "models/van-living-shangri-la.glb",
+  "source": "generators/van-living-shangri-la.ts"
+}
