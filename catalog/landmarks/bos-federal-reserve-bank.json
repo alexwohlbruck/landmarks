@@ -1,0 +1,22 @@
+{
+  "id": "bos-federal-reserve-bank",
+  "name": "Federal Reserve Bank of Boston",
+  "model": "bos-federal-reserve-bank",
+  "place": "boston-area",
+  "lng": -71.053596,
+  "lat": 42.352655,
+  "bearing": 28.5,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q1400070",
+  "replaces": [
+    "way/139974603",
+    "way/240446157",
+    "way/240446158",
+    "way/240446159",
+    "way/240446160",
+    "way/240446161",
+    "way/240446162",
+    "way/240446163"
+  ]
+}
