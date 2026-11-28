@@ -1,0 +1,73 @@
+{
+  "id": "atx-moonlight-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "historic",
+    "tower",
+    "lighting",
+    "lattice"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Moonlight tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Moonlight_tower.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Moonlight Tower East Side Drive Austin Texas 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Moonlight_Tower_East_Side_Drive_Austin_Texas_2021.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "9302018.Moon.Light.towers.NRSID76002071 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:9302018.Moon.Light.towers.NRSID76002071_01.jpg",
+      "author": "Paula K Campos",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Moonlight tower Austin 2007.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Moonlight_tower_Austin_2007.jpg",
+      "author": "Chris Eason",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Moonlight Tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Moonlight_Tower.jpg",
+      "author": "Tim Patterson",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Moon-twr-speedway.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Moon-twr-speedway.JPG",
+      "author": "Lombana",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Austin Moontower at Night.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_Moontower_at_Night.jpg",
+      "author": "Matthewrutledge",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/atx-moonlight-tower.glb",
+  "source": "generators/atx-moonlight-tower.ts"
+}
