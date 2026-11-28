@@ -1,0 +1,15 @@
+{
+  "id": "kc-bartle-hall",
+  "name": "Bartle Hall and the Sky Stations",
+  "model": "kc-bartle-hall",
+  "place": "kansas-city-area",
+  "lng": -94.5878205,
+  "lat": 39.0976644,
+  "bearing": 1.7,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q4865353",
+  "replaces": [
+    "way/38500669"
+  ]
+}
