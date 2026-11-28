@@ -1,0 +1,15 @@
+{
+  "id": "kc-bloch-building",
+  "name": "Bloch Building, Nelson-Atkins Museum of Art",
+  "model": "kc-bloch-building",
+  "place": "kansas-city-area",
+  "lng": -94.5800571,
+  "lat": 39.0445365,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "relation/15394221",
+    "way/71551994"
+  ]
+}
