@@ -1,0 +1,12 @@
+{
+  "id": "stl-zoo-flight-cage",
+  "name": "1904 World's Fair Flight Cage",
+  "model": "stl-zoo-flight-cage",
+  "place": "st-louis-area",
+  "lng": -90.2874758,
+  "lat": 38.6355517,
+  "bearing": 109.8,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": []
+}
