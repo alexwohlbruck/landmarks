@@ -1,0 +1,30 @@
+{
+  "id": "manchester-old-trafford",
+  "name": "Old Trafford",
+  "model": "manchester-old-trafford",
+  "place": "manchester",
+  "lng": -2.2914024,
+  "lat": 53.4631537,
+  "bearing": 70.8,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q83457",
+  "replaces": [
+    "way/99403577",
+    "way/351220227",
+    "way/351220229",
+    "way/351220231",
+    "way/351220232",
+    "way/351208267",
+    "way/351208268",
+    "way/351208269",
+    "way/351208270",
+    "way/351208271",
+    "way/351208272",
+    "way/351208273",
+    "way/351208274",
+    "way/351209222",
+    "way/351220228",
+    "way/351220230"
+  ]
+}

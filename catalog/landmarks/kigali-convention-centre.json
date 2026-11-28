@@ -1,0 +1,16 @@
+{
+  "id": "kigali-convention-centre",
+  "name": "Kigali Convention Centre",
+  "model": "kigali-convention-centre",
+  "place": "kigali",
+  "lng": 30.094251,
+  "lat": -1.95471,
+  "bearing": 13,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/13200013",
+    "way/454634582"
+  ],
+  "wikidata": "Q25043410"
+}

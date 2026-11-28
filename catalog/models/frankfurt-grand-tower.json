@@ -1,0 +1,69 @@
+{
+  "id": "frankfurt-grand-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "residential",
+    "skyline"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Grand Tower, Frankfurt, West view 20200516 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Tower,_Frankfurt,_West_view_20200516_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Grand Tower Frankfurt 01-20.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Tower_Frankfurt_01-20.jpg",
+      "author": "Silesia711",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt, Grand Tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt,_Grand_Tower.jpg",
+      "author": "Dr. Thomas Liptak",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Grand Tower Frankfurt am Main 24 Oktober 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Tower_Frankfurt_am_Main_24_Oktober_2021.jpg",
+      "author": "Stefan Oberreuter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Grand Tower Frankfurt 09-19.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Tower_Frankfurt_09-19.jpg",
+      "author": "Silesia711",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Base view Grand Tower Frankfurt am Main 24 Oktober 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Base_view_Grand_Tower_Frankfurt_am_Main_24_Oktober_2021.jpg",
+      "author": "Stefan Oberreuter",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/frankfurt-grand-tower.detail.glb",
+  "detailZoom": 16,
+  "file": "models/frankfurt-grand-tower.glb",
+  "source": "generators/frankfurt-grand-tower.ts"
+}

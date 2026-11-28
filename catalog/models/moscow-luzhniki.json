@@ -1,0 +1,88 @@
+{
+  "id": "moscow-luzhniki",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/moscow-luzhniki.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "LuzhnikiStadium.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:LuzhnikiStadium.jpg",
+      "author": "Government of Moscow Press centre",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Стадион Лужники (29 марта 2017) · 26.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%A1%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD_%D0%9B%D1%83%D0%B6%D0%BD%D0%B8%D0%BA%D0%B8_(29_%D0%BC%D0%B0%D1%80%D1%82%D0%B0_2017)_%C2%B7_26.jpg",
+      "author": "Комплекс градостроительной политики и строительства города Москвы",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Moscow-Exterior of Luzhniki Stadium (1).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Moscow-Exterior_of_Luzhniki_Stadium_(1).jpg",
+      "author": "Ji-Elle",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Moscow-Exterior of Luzhniki Stadium (2).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Moscow-Exterior_of_Luzhniki_Stadium_(2).jpg",
+      "author": "Ji-Elle",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Luzhniki Olympic Complex 08.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Luzhniki_Olympic_Complex_08.jpg",
+      "author": "MBH",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Luzhniki Olympic Complex 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Luzhniki_Olympic_Complex_02.jpg",
+      "author": "MBH",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Стадион Лужники 2017 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%A1%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD_%D0%9B%D1%83%D0%B6%D0%BD%D0%B8%D0%BA%D0%B8_2017_1.jpg",
+      "author": "Presidential Press and Information Office",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Luzhniki Stadium, Moscow, Russia.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Luzhniki_Stadium,_Moscow,_Russia.jpg",
+      "author": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Luzhniki Stadium1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Luzhniki_Stadium1.jpg",
+      "author": "Mos.ru",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/moscow-luzhniki.glb",
+  "source": "generators/moscow-luzhniki.ts"
+}

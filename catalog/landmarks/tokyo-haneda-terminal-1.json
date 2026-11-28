@@ -1,0 +1,15 @@
+{
+  "id": "tokyo-haneda-terminal-1",
+  "name": "Haneda Airport Terminal 1",
+  "model": "tokyo-haneda-terminal-1",
+  "place": "tokyo",
+  "lng": 139.7833805,
+  "lat": 35.549563,
+  "bearing": -30,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/500688113",
+    "way/1026001770"
+  ]
+}

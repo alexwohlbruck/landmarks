@@ -1,0 +1,14 @@
+{
+  "id": "kl-klia-satellite-a",
+  "name": "KLIA Satellite Building A",
+  "model": "kl-klia-satellite-a",
+  "place": "kuala-lumpur",
+  "lng": 101.7135996,
+  "lat": 2.7479883,
+  "bearing": 325.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/4504617"
+  ]
+}

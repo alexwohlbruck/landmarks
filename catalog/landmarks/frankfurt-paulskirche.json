@@ -1,0 +1,25 @@
+{
+  "id": "frankfurt-paulskirche",
+  "name": "Paulskirche",
+  "model": "frankfurt-paulskirche",
+  "place": "frankfurt",
+  "lng": 8.6807568,
+  "lat": 50.111193,
+  "bearing": -13,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q198106",
+  "replaces": [
+    "way/11526375",
+    "way/186000388",
+    "way/186000386",
+    "way/186000387",
+    "way/189097341",
+    "way/186000385",
+    "way/388174266",
+    "way/388174269",
+    "way/388174262",
+    "way/388174274",
+    "way/388174279"
+  ]
+}

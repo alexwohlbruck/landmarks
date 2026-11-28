@@ -1,0 +1,118 @@
+{
+  "id": "alexandria-qaitbay-citadel",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "castle",
+    "fortress",
+    "mamluk",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "A front view of Citadel of Qaitbay.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:A_front_view_of_Citadel_of_Qaitbay.jpg",
+      "author": "Aymanrefaat09",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Citadel of Qaitbay, Alexandria, Egypt.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Citadel_of_Qaitbay,_Alexandria,_Egypt.jpg",
+      "author": "Argenberg",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Alexandria - Citadel of Qaitbay from the Corniche.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Alexandria_-_Citadel_of_Qaitbay_from_the_Corniche.JPG",
+      "author": "Daniel Mayer",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Castillo de Qaitbay-Alejandria.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Castillo_de_Qaitbay-Alejandria.jpg",
+      "author": "Alberto-g-rovi",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Alexandria citadel.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Alexandria_citadel.jpg",
+      "author": "Costaashmawy",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Citadel of Kaitbay.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Citadel_of_Kaitbay.jpg",
+      "author": "Ahmed Yousry Mahfouz",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Alexandria Qaitbay citadel.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Alexandria_Qaitbay_citadel.jpg",
+      "author": "Mmelouk",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Castle of Qitbay -14.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Castle_of_Qitbay_-14.JPG",
+      "author": "Ahmed Younis Sif Saad",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Citadel of Qaitbay.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Citadel_of_Qaitbay.jpg",
+      "author": "ZoologistLouca",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Castle of Qitbay-13.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Castle_of_Qitbay-13.JPG",
+      "author": "Ahmed Younis Sif Saad",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cidadade de Qaitbay 59.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cidadade_de_Qaitbay_59.jpg",
+      "author": "Cecioka",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cidadade de Qaitbay 61.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cidadade_de_Qaitbay_61.jpg",
+      "author": "Cecioka",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Citadel of Qaitbay 054.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Citadel_of_Qaitbay_054.JPG",
+      "author": "لا روسا",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Alexandria fortress Qaitbay.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Alexandria_fortress_Qaitbay.jpg",
+      "author": "Yiossif",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/alexandria-qaitbay-citadel.detail.glb",
+  "detailZoom": 17,
+  "file": "models/alexandria-qaitbay-citadel.glb",
+  "source": "generators/alexandria-qaitbay-citadel.ts"
+}

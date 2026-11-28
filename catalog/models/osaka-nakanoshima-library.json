@@ -1,0 +1,77 @@
+{
+  "id": "osaka-nakanoshima-library",
+  "file": "models/osaka-nakanoshima-library.glb",
+  "detail": "models/osaka-nakanoshima-library.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/osaka-nakanoshima-library.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "library",
+    "neo-baroque",
+    "dome"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "The 1904 Osaka Prefectural Nakanoshima Library: grey granite, a Corinthian portico with its pediment facing Midosuji, and a ribbed copper dome over the central hall, with the 1922 wings.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Front elevation of Osaka Prefectural Nakanoshima Library.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Front_elevation_of_Osaka_Prefectural_Nakanoshima_Library.jpg",
+      "author": "Magoichi Noguchi / Yutaka Hidaka",
+      "license": "public-domain"
+    },
+    {
+      "title": "Sectional detail of the dome of the Osaka Prefectural Nakanoshima Library.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sectional_detail_of_the_dome_of_the_Osaka_Prefectural_Nakanoshima_Library.jpg",
+      "author": "Magoichi Noguchi / Yutaka Hidaka",
+      "license": "public-domain"
+    },
+    {
+      "title": "Osaka Prefectural Nakanoshima Library ao.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Prefectural_Nakanoshima_Library_ao.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Facade of Osaka Prefectural Nakanoshima Library.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Facade_of_Osaka_Prefectural_Nakanoshima_Library.jpg",
+      "author": "掬茶",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Prefectural Nakanoshima Library 2019-10 ac.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Prefectural_Nakanoshima_Library_2019-10_ac.jpg",
+      "author": "Asturio Cantabrio",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Prefectural Nakanoshima Library in 201504 003.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Prefectural_Nakanoshima_Library_in_201504_003.JPG",
+      "author": "Mc681",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Prefectural Nakanoshima Library at night.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Prefectural_Nakanoshima_Library_at_night.jpg",
+      "author": "Fumihiro Kato",
+      "license": "CC-BY-4.0"
+    }
+  ]
+}

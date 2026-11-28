@@ -1,0 +1,24 @@
+{
+  "id": "montevideo-estadio-centenario",
+  "name": "Estadio Centenario",
+  "model": "montevideo-estadio-centenario",
+  "place": "montevideo",
+  "lng": -56.15282,
+  "lat": -34.894512,
+  "bearing": 329,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q498245",
+  "replaces": [
+    "relation/8725753",
+    "relation/8725750",
+    "relation/8725751",
+    "relation/8725752",
+    "relation/8725754",
+    "relation/8725772",
+    "way/1552527230",
+    "way/1552527231",
+    "way/1552527232",
+    "way/1552527233"
+  ]
+}

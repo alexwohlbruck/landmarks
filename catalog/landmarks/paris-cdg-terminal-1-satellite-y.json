@@ -1,0 +1,21 @@
+{
+  "id": "paris-cdg-terminal-1-satellite-y",
+  "name": "Paris-CDG Terminal 1 Satellite Y",
+  "model": "paris-cdg-terminal-1-satellite-y",
+  "place": "paris",
+  "lng": 2.5385285,
+  "lat": 49.0145927,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/172859843",
+    "way/1222070382",
+    "way/1222070383",
+    "way/1222070384",
+    "way/1222070385",
+    "way/1222070386",
+    "way/1222070387",
+    "way/1222070388"
+  ]
+}

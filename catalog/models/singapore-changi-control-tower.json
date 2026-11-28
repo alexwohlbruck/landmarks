@@ -1,0 +1,67 @@
+{
+  "id": "singapore-changi-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "The tower at Singapore's Changi Airport.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_tower_at_Singapore%27s_Changi_Airport.jpg",
+      "author": "Hanluga",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Changi airport tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_airport_tower.jpg",
+      "author": "Sam Wilson  (taken with Samsung Galaxy S21 FE 5G)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Changi Airport Control Tower (3187275465).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_Airport_Control_Tower_(3187275465).jpg",
+      "author": "edwin.11",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "WSSS tower 20110731.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:WSSS_tower_20110731.jpg",
+      "author": "gtknj",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Changi Airport, Control Tower 5.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_Airport,_Control_Tower_5.JPG",
+      "author": "Terence Ong",
+      "license": "CC BY 2.5"
+    },
+    {
+      "title": "Singapore Changi Airport with Jewel in the background.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Singapore_Changi_Airport_with_Jewel_in_the_background.jpg",
+      "author": "George Tan from Singapore",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/singapore-changi-control-tower.glb",
+  "source": "generators/singapore-changi-control-tower.ts"
+}

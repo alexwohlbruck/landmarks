@@ -1,0 +1,68 @@
+{
+  "id": "osaka-cosmo-tower",
+  "file": "models/osaka-cosmo-tower.glb",
+  "license": "CC0-1.0",
+  "source": "generators/osaka-cosmo-tower.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "observation-deck",
+    "government"
+  ],
+  "description": "The 256 m Osaka Prefectural Government Sakishima Building (1995, formerly the Osaka World Trade Center): blue-green glass in a white frame, shoulders stepping in near the top, a crown with an inverted-pyramid notch on each face over the Cosmo Tower observatory, and white fins at its foot.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Osaka-WTC-01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka-WTC-01.jpg",
+      "author": "J o",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "WTC01s3200.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:WTC01s3200.jpg",
+      "author": "663highland",
+      "license": "CC-BY-2.5"
+    },
+    {
+      "title": "Sakishima Cosmo Tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sakishima_Cosmo_Tower.jpg",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Prefectural Government Sakishima Building.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Prefectural_Government_Sakishima_Building.jpg",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Cosmo Tower @ Sakishima Island @ Osaka (13382078703).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cosmo_Tower_@_Sakishima_Island_@_Osaka_(13382078703).jpg",
+      "author": "Guilhem Vellut",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "WTC Cosmo Tower - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:WTC_Cosmo_Tower_-_panoramio.jpg",
+      "author": "DVMG",
+      "license": "CC-BY-3.0"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "djenne-great-mosque",
+  "name": "Great Mosque of Djenné",
+  "model": "djenne-great-mosque",
+  "place": "djenne",
+  "lng": -4.555466,
+  "lat": 13.905097,
+  "bearing": 1,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "relation/11916275"
+  ],
+  "wikidata": "Q683632"
+}

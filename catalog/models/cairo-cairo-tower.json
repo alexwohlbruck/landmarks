@@ -1,0 +1,70 @@
+{
+  "id": "cairo-cairo-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "observation-tower",
+    "modernist",
+    "concrete",
+    "lattice"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Cairotower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cairotower.jpg",
+      "author": "Ahmedsantos",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Cairo Tower in 2025.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cairo_Tower_in_2025.jpg",
+      "author": "BavKraft",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Cairo Tower 2011.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Cairo_Tower_2011.JPG",
+      "author": "Christophe Badoux",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Cairo Tower Entrance.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cairo_Tower_Entrance.jpg",
+      "author": "LeCaire",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Cairo tower on the Nile.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cairo_tower_on_the_Nile.jpg",
+      "author": "Kormoran",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Cairo Tower 2012.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Cairo_Tower_2012.JPG",
+      "author": "Mohamed Ouda",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/cairo-cairo-tower.detail.glb",
+  "detailZoom": 17,
+  "file": "models/cairo-cairo-tower.glb",
+  "source": "generators/cairo-cairo-tower.ts"
+}

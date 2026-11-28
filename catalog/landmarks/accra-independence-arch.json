@@ -1,0 +1,15 @@
+{
+  "id": "accra-independence-arch",
+  "name": "Independence Arch",
+  "model": "accra-independence-arch",
+  "place": "accra",
+  "lng": -0.192408,
+  "lat": 5.546475,
+  "bearing": 348.6,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/169866122"
+  ],
+  "wikidata": "Q1661042"
+}

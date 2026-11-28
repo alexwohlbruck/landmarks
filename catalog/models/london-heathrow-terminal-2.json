@@ -1,0 +1,81 @@
+{
+  "id": "london-heathrow-terminal-2",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Looking to Terminal 2 at Heathrow",
+      "url": "https://commons.wikimedia.org/wiki/File:Looking_to_Terminal_2_at_Heathrow.jpg",
+      "author": "M J Richardson",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Terminal 2 at Heathrow (geograph 3012298)",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_2_at_Heathrow_(geograph_3012298).jpg",
+      "author": "M J Richardson",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "London - Heathrow Airport - Terminal 2 (geograph 5257264)",
+      "url": "https://commons.wikimedia.org/wiki/File:London_-_Heathrow_Airport_-_Terminal_2_(geograph_5257264).jpg",
+      "author": "Lewis Clarke",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "South-West Corner of Heathrow Terminal 2",
+      "url": "https://commons.wikimedia.org/wiki/File:South-West_Corner_of_Heathrow_Terminal_2_-_geograph.org.uk_-_5753017.jpg",
+      "author": "Richard Cooke",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "London Heathrow Airport - Terminal Two (geograph 5244405)",
+      "url": "https://commons.wikimedia.org/wiki/File:London_Heathrow_Airport_-_Terminal_Two_(geograph_5244405).jpg",
+      "author": "Lewis Clarke",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Heathrow Airport Terminal 2, London, England - Diliff",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_Airport_Terminal_2,_London,_England_-_Diliff.jpg",
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Terminal 2 The Queen's Terminal",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_2_The_Queen's_Terminal.jpg",
+      "author": "Panek",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Terminal 2, Heathrow Airport (geograph 7131372)",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminal_2,_Heathrow_Airport_-_geograph.org.uk_-_7131372.jpg",
+      "author": "Bill Boaden",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "detail": "models/london-heathrow-terminal-2.detail.glb",
+  "detailZoom": 16,
+  "file": "models/london-heathrow-terminal-2.glb",
+  "source": "generators/london-heathrow-terminal-2.ts"
+}

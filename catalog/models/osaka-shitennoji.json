@@ -1,0 +1,66 @@
+{
+  "id": "osaka-shitennoji",
+  "file": "models/osaka-shitennoji.glb",
+  "detail": "models/osaka-shitennoji.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/osaka-shitennoji.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "temple",
+    "buddhist",
+    "pagoda",
+    "historic",
+    "japanese-architecture"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "The central precinct of Shitennō-ji, rebuilt 1957–63 in Asuka style: the five-storey pagoda with its gilt sōrin, the Kondō, the Chūmon and the vermilion roofed corridor with its side gates.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Shitennoji-pagoda.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shitennoji-pagoda.jpg",
+      "author": "Pufacz",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Shitennoji07s3200.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Shitennoji07s3200.jpg",
+      "author": "663highland",
+      "license": "CC-BY-2.5"
+    },
+    {
+      "title": "Kondo and Gojunoto Tower of Shitennoji Temple 2.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Kondo_and_Gojunoto_Tower_of_Shitennoji_Temple_2.JPG",
+      "author": "Soramimi",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Chumon of Shitennoji Temple and Abeno Harukas.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Chumon_of_Shitennoji_Temple_and_Abeno_Harukas.JPG",
+      "author": "Soramimi",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Harukas 300 Osaka (26466296051).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Harukas_300_Osaka_(26466296051).jpg",
+      "author": "KimonBerlin",
+      "license": "CC-BY-SA-2.0"
+    }
+  ]
+}

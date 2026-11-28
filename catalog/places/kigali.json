@@ -1,0 +1,7 @@
+{
+  "id": "kigali",
+  "name": "Kigali",
+  "kind": "city",
+  "parent": "rwanda",
+  "wikidata": "Q3859"
+}

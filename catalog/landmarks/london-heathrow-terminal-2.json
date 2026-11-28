@@ -1,0 +1,19 @@
+{
+  "id": "london-heathrow-terminal-2",
+  "name": "Heathrow Terminal 2, The Queen's Terminal",
+  "model": "london-heathrow-terminal-2",
+  "place": "london",
+  "lng": -0.4495547,
+  "lat": 51.4697136,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/133146402",
+    "way/570155575",
+    "way/570155700",
+    "way/570155792",
+    "way/570155793"
+  ],
+  "wikidata": "Q6670466"
+}

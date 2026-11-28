@@ -1,0 +1,72 @@
+{
+  "id": "frankfurt-skyper",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Skyper Frankfurt.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Skyper_Frankfurt.jpg",
+      "author": "Luidger",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Frankfurt am Main, Taunusstraße 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_Taunusstraße_2021.jpg",
+      "author": "Choinowski",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt Taunusanlage 1.Taunusstraße 2.20130401.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Taunusanlage_1.Taunusstraße_2.20130401.jpg",
+      "author": "Epizentrum",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Frankfurt, Skyper.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt,_Skyper.jpg",
+      "author": "LBM1948",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt Skyper.Süden.20130603.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Skyper.Süden.20130603.jpg",
+      "author": "Epizentrum",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Skyper Silver Tower.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Skyper_Silver_Tower.JPG",
+      "author": "Lennart Kudling",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "SkyperFrankfurtM P1250540.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:SkyperFrankfurtM_P1250540.JPG",
+      "author": "JuergenG",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/frankfurt-skyper.glb",
+  "source": "generators/frankfurt-skyper.ts"
+}

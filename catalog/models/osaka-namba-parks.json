@@ -1,0 +1,74 @@
+{
+  "id": "osaka-namba-parks",
+  "file": "models/osaka-namba-parks.glb",
+  "license": "CC0-1.0",
+  "source": "generators/osaka-namba-parks.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "shopping-mall",
+    "roof-garden",
+    "skyscraper"
+  ],
+  "description": "Jon Jerde's terraced shopping canyon (2003-07): curving sandstone-striated terraces with roof gardens stepping along an open-air valley, and the 149 m Parks Tower.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "150328 Namba Parks Osaka Japan01bs3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:150328_Namba_Parks_Osaka_Japan01bs3.jpg",
+      "author": "663highland",
+      "license": "CC-BY-2.5"
+    },
+    {
+      "title": "150328 Namba Parks Osaka Japan02s5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:150328_Namba_Parks_Osaka_Japan02s5.jpg",
+      "author": "663highland",
+      "license": "CC-BY-2.5"
+    },
+    {
+      "title": "150328 Namba Parks Osaka Japan03bs3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:150328_Namba_Parks_Osaka_Japan03bs3.jpg",
+      "author": "663highland",
+      "license": "CC-BY-2.5"
+    },
+    {
+      "title": "150328 Namba Parks Osaka Japan04s3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:150328_Namba_Parks_Osaka_Japan04s3.jpg",
+      "author": "663highland",
+      "license": "CC-BY-2.5"
+    },
+    {
+      "title": "NAMBA PARKS Overview 201306.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:NAMBA_PARKS_Overview_201306.jpg",
+      "author": "Wpcpey",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Namba Parks.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Namba_Parks.jpg",
+      "author": "BradBeattie",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Parks Tower (Namba Parks) 20100418-001.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Parks_Tower_(Namba_Parks)_20100418-001.jpg",
+      "author": "J o",
+      "license": "CC-BY-SA-3.0"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "osaka-central-public-hall",
+  "file": "models/osaka-central-public-hall.glb",
+  "detail": "models/osaka-central-public-hall.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/osaka-central-public-hall.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "neo-renaissance",
+    "assembly-hall",
+    "brick"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "Osaka's 1918 public hall on Nakanoshima: red brick banded with white granite, the great striped arch and copper vault over a giant-columned porch, and copper-domed towers.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Osaka City Central Public Hall main facade 2026 dllu.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_City_Central_Public_Hall_main_facade_2026_dllu.jpg",
+      "author": "Daniel Lu (dllu)",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "2020 大阪市中央公会堂.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:2020_大阪市中央公会堂.jpg",
+      "author": "Zhizhou Deng",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "Osaka Central Public Hall in 201504 001.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Central_Public_Hall_in_201504_001.JPG",
+      "author": "Mc681",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka City Central Public Hall ao.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_City_Central_Public_Hall_ao.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Osaka Central Public Hall 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Central_Public_Hall_02.jpg",
+      "author": "Kakidai",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka City Central Public Hall.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_City_Central_Public_Hall.jpg",
+      "author": "DoctorAB",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "中之島公会堂(Nakanoshima Kokaido) - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:中之島公会堂(Nakanoshima_Kokaido)_-_panoramio.jpg",
+      "author": "yukisuke",
+      "license": "CC-BY-3.0"
+    }
+  ]
+}

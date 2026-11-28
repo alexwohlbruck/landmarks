@@ -1,0 +1,15 @@
+{
+  "id": "kl-klia-terminal-1",
+  "name": "KLIA Terminal 1 (Main Terminal Building and Contact Pier)",
+  "model": "kl-klia-terminal-1",
+  "place": "kuala-lumpur",
+  "lng": 101.7051762,
+  "lat": 2.7533403,
+  "bearing": 325.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/6848621",
+    "way/1561097813"
+  ]
+}

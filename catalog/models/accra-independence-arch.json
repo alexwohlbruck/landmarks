@@ -1,0 +1,70 @@
+{
+  "id": "accra-independence-arch",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "monument",
+  "tags": [
+    "arch",
+    "gate",
+    "monument",
+    "independence"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Independence Arch - Accra, Ghana1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Independence_Arch_-_Accra,_Ghana1.jpg",
+      "author": "George Appiah",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Black Star Gate 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Black_Star_Gate_1.jpg",
+      "author": "Ivy Gbeze",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Black Star Accra 2013-08-29 B002a.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Black_Star_Accra_2013-08-29_B002a.jpg",
+      "author": "Official photographer of the US Embassy",
+      "license": "Public domain"
+    },
+    {
+      "title": "Independence Square, Korle-Klottey (IMG 20230201 120939).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Independence_Square,_Korle-Klottey_(IMG_20230201_120939).jpg",
+      "author": "Matti Blume",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Black Star Gate located in Accra.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Black_Star_Gate_located_in_Accra.jpg",
+      "author": "Uprising Man",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Arche de l’indépendance vue de nuit.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Arche_de_l%E2%80%99ind%C3%A9pendance_vue_de_nuit.JPG",
+      "author": "Cyriac Gbogou",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/accra-independence-arch.detail.glb",
+  "detailZoom": 17,
+  "file": "models/accra-independence-arch.glb",
+  "source": "generators/accra-independence-arch.ts"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "cairo-muhammad-ali-mosque",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mosque",
+    "ottoman",
+    "historic",
+    "dome",
+    "minaret"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Cairo, Cairo Citadel, Muhammad Ali Mosque, Egypt.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cairo,_Cairo_Citadel,_Muhammad_Ali_Mosque,_Egypt.jpg",
+      "author": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Muhammad Ali Mosque 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Muhammad_Ali_Mosque_1.jpg",
+      "author": "kallerna",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Muhammad Ali Mosque, Citadel, Cairo, Egypt3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Muhammad_Ali_Mosque,_Citadel,_Cairo,_Egypt3.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Muhammad Ali Mosque, Citadel, Cairo, Egypt5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Muhammad_Ali_Mosque,_Citadel,_Cairo,_Egypt5.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Mosque of Muhammad Ali, Selah-Al-Din (Saladin) Citadel, Cairo (9797492034).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mosque_of_Muhammad_Ali,_Selah-Al-Din_(Saladin)_Citadel,_Cairo_(9797492034).jpg",
+      "author": "Gary Todd",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Mosque of Muhammad Ali, Selah-Al-Din (Saladin) Citadel, Cairo (9808214484).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mosque_of_Muhammad_Ali,_Selah-Al-Din_(Saladin)_Citadel,_Cairo_(9808214484).jpg",
+      "author": "Gary Todd",
+      "license": "CC0 1.0"
+    },
+    {
+      "title": "Mosque of Muhammad Ali and Cairo Citadel from Sayyida Aisha Square.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mosque_of_Muhammad_Ali_and_Cairo_Citadel_from_Sayyida_Aisha_Square.jpg",
+      "author": "Hassan Hamdy wahidy",
+      "license": "Public domain"
+    }
+  ],
+  "detail": "models/cairo-muhammad-ali-mosque.detail.glb",
+  "detailZoom": 17,
+  "file": "models/cairo-muhammad-ali-mosque.glb",
+  "source": "generators/cairo-muhammad-ali-mosque.ts"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dakar-african-renaissance",
+  "name": "African Renaissance Monument",
+  "model": "dakar-african-renaissance",
+  "place": "dakar",
+  "lng": -17.495,
+  "lat": 14.722153,
+  "bearing": 286,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [],
+  "wikidata": "Q470763"
+}

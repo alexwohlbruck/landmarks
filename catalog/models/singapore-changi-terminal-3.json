@@ -1,0 +1,61 @@
+{
+  "id": "singapore-changi-terminal-3",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Changi Airport Terminal 3 (3188085530).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_Airport_Terminal_3_(3188085530).jpg",
+      "author": "edwin.11",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Changi Airport Terminal 3 Departure Kerbside.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_Airport_Terminal_3_Departure_Kerbside.jpg",
+      "author": "Cagccwiki",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Singapore T3 outside at night.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Singapore_T3_outside_at_night.jpg",
+      "author": "Orderinchaos",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Changi airport T3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Changi_airport_T3.jpg",
+      "author": "ProjectManhattan",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Airport of Singapore, Crowne Plaza.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Airport_of_Singapore,_Crowne_Plaza.JPG",
+      "author": "Lars Curfs (Grashoofd)",
+      "license": "CC BY-SA 3.0 nl"
+    }
+  ],
+  "file": "models/singapore-changi-terminal-3.glb",
+  "source": "generators/singapore-changi-terminal-3.ts"
+}

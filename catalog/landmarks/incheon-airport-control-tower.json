@@ -1,0 +1,12 @@
+{
+  "id": "incheon-airport-control-tower",
+  "name": "Incheon International Airport Control Tower",
+  "model": "incheon-airport-control-tower",
+  "place": "incheon",
+  "lng": 126.4405567,
+  "lat": 37.4609978,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "osaka-kaiyukan",
+  "file": "models/osaka-kaiyukan.glb",
+  "license": "CC0-1.0",
+  "source": "generators/osaka-kaiyukan.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "aquarium",
+    "museum",
+    "mural"
+  ],
+  "description": "Peter Chermayeff's Osaka Aquarium (1990): a navy-tiled base painted with fish, a red band and four sloping glass corner blocks round a cross-shaped core, the whale shark on the front, and the entrance building.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Osaka Aquarium \"Kaiyukan\" 20190201-2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Aquarium_%22Kaiyukan%22_20190201-2.jpg",
+      "author": "そらみみ",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Aquarium \"Kaiyukan\" 20190201.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Aquarium_%22Kaiyukan%22_20190201.jpg",
+      "author": "そらみみ",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Entrance of Osaka Aquarium \"Kaiyukan\".jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg",
+      "author": "そらみみ",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "大阪海遊館俯視圖.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E9%98%AA%E6%B5%B7%E9%81%8A%E9%A4%A8%E4%BF%AF%E8%A6%96%E5%9C%96.jpg",
+      "author": "臺灣象象",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Aquarium Kaiyukan 2022-04-24.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Aquarium_Kaiyukan_2022-04-24.jpg",
+      "author": "Dick Thomas Johnson",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "Osaka Kaiyukan01s3872.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Kaiyukan01s3872.jpg",
+      "author": "663highland",
+      "license": "CC-BY-2.5"
+    },
+    {
+      "title": "Osaka Aquarium Kaiyukan.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Aquarium_Kaiyukan.jpg",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Osaka Aquarium KAIYUKAN and Ferris wheel.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Aquarium_KAIYUKAN_and_Ferris_wheel.jpg",
+      "author": "KishujiRapid",
+      "license": "CC-BY-4.0"
+    }
+  ]
+}

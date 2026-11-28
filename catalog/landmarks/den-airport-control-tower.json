@@ -1,0 +1,15 @@
+{
+  "id": "den-airport-control-tower",
+  "name": "Denver International Airport, FAA Control Tower",
+  "model": "den-airport-control-tower",
+  "place": "denver-area",
+  "lng": -104.673697,
+  "lat": 39.862493,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/1121488193",
+    "way/1121488192"
+  ]
+}

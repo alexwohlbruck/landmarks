@@ -1,0 +1,24 @@
+{
+  "id": "abuja-national-mosque",
+  "name": "Abuja National Mosque",
+  "model": "abuja-national-mosque",
+  "place": "abuja",
+  "lng": 7.489807,
+  "lat": 9.060197,
+  "bearing": 0.7,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/188837229",
+    "way/564467263",
+    "way/564467264",
+    "way/564467265",
+    "way/564467266",
+    "way/564467267",
+    "way/564467268",
+    "way/564467269",
+    "way/564467270",
+    "way/564467271",
+    "way/564467272"
+  ]
+}

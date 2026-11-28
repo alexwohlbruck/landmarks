@@ -1,0 +1,52 @@
+{
+  "id": "chi-ohare-terminal-2",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "modern",
+    "mid-century"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Terminals 2 and 3, Chicago O'Hare International Airport",
+      "url": "https://commons.wikimedia.org/wiki/File:Terminals_2_and_3,_Chicago_O%27Hare_International_Airport,_Chicago,_IL_(54600736995.jpg",
+      "author": "Warren LeMay",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "title": "Parked at the gate at O'Hare",
+      "url": "https://commons.wikimedia.org/wiki/File:Parked_at_the_gate_at_O%27Hare_(2452160728).jpg",
+      "author": "Shawn from Airdrie",
+      "license": "CC-BY-SA-2.0"
+    },
+    {
+      "title": "Chicago O'Hare concourses",
+      "url": "https://commons.wikimedia.org/wiki/File:Chicago_O%27Hare_concourses.jpg",
+      "author": "Sahmeditor",
+      "license": "PD"
+    }
+  ],
+  "detail": "models/chi-ohare-terminal-2.detail.glb",
+  "detailZoom": 16,
+  "file": "models/chi-ohare-terminal-2.glb",
+  "source": "generators/chi-ohare-terminal-2.ts"
+}

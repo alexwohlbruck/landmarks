@@ -1,0 +1,27 @@
+{
+  "id": "kl-klia-control-tower",
+  "name": "KLIA Air Traffic Control Tower",
+  "model": "kl-klia-control-tower",
+  "place": "kuala-lumpur",
+  "lng": 101.7024503,
+  "lat": 2.7570637,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/866700357",
+    "way/866700345",
+    "way/866700346",
+    "way/866700347",
+    "way/866700348",
+    "way/866700349",
+    "way/866700350",
+    "way/866700351",
+    "way/866700352",
+    "way/866700353",
+    "way/866700354",
+    "way/866700355",
+    "way/866700358",
+    "way/866700356"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "amsterdam-schiphol-piers-e-h",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "pier",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "EHAM Terminal E",
+      "url": "https://commons.wikimedia.org/wiki/File:EHAM_Terminal_E.jpg",
+      "author": "Mark Brouwer",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "title": "Schiphol pier E",
+      "url": "https://commons.wikimedia.org/wiki/File:SCHIPHOL_PIER_E_-_panoramio.jpg",
+      "author": "Kayhan ERTUGRUL",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Aerial photograph of Exit 2 Schiphol",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Exit_2_Schiphol-08MAR2019-1.jpg",
+      "author": "Milliped",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cityhopper apron at Schiphol",
+      "url": "https://commons.wikimedia.org/wiki/File:Cityhopper_apron_at_Schiphol.JPG",
+      "author": "Robert EA Harvey",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Amsterdam Airport Schiphol apron overview (4532485694)",
+      "url": "https://commons.wikimedia.org/wiki/File:Amsterdam_Airport_Schiphol_apron_overview_(4532485694).jpg",
+      "author": "Maarten Visser",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Ams-above-2007",
+      "url": "https://commons.wikimedia.org/wiki/File:Ams-above-2007.jpg",
+      "author": "Fyodor Borisov",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "detail": "models/amsterdam-schiphol-piers-e-h.detail.glb",
+  "detailZoom": 16,
+  "file": "models/amsterdam-schiphol-piers-e-h.glb",
+  "source": "generators/amsterdam-schiphol-piers-e-h.ts"
+}

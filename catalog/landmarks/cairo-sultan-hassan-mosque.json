@@ -1,0 +1,15 @@
+{
+  "id": "cairo-sultan-hassan-mosque",
+  "name": "Mosque-Madrasa of Sultan Hasan",
+  "model": "cairo-sultan-hassan-mosque",
+  "place": "cairo",
+  "lng": 31.256234,
+  "lat": 30.032308,
+  "bearing": 121.7,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1430119",
+  "replaces": [
+    "way/24908268"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "alexandria",
+  "name": "Alexandria",
+  "kind": "city",
+  "parent": "egypt",
+  "wikidata": "Q87"
+}

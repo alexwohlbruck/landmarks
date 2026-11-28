@@ -1,0 +1,7 @@
+{
+  "id": "osaka",
+  "name": "Osaka",
+  "kind": "city",
+  "parent": "japan",
+  "wikidata": "Q35765"
+}

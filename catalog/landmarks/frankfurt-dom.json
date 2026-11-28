@@ -1,0 +1,27 @@
+{
+  "id": "frankfurt-dom",
+  "name": "Kaiserdom St. Bartholomäus",
+  "model": "frankfurt-dom",
+  "place": "frankfurt",
+  "lng": 8.6853514,
+  "lat": 50.1106673,
+  "bearing": -5.2,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q57341",
+  "replaces": [
+    "way/11018815",
+    "way/174503727",
+    "way/505854016",
+    "way/505859761",
+    "way/505859760",
+    "way/505920703",
+    "way/505868007",
+    "way/505868008",
+    "way/505868009",
+    "way/505854015",
+    "way/505854017",
+    "way/505875634",
+    "way/505920704"
+  ]
+}

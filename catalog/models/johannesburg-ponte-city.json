@@ -1,0 +1,57 @@
+{
+  "id": "johannesburg-ponte-city",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "residential",
+    "skyscraper",
+    "brutalist",
+    "cylindrical",
+    "neon-sign"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "View from the Top of Africa building - Ponte City Apartments on the centre",
+      "url": "https://www.flickr.com/photos/8721758@N06/4611826497",
+      "author": "Jorge Láscar",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Ponte City apartments inner courtyard.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Ponte_City_apartments_inner_courtyard.jpg",
+      "author": "NGunasena (WMF)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Ponte City.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Ponte_City.jpg",
+      "author": "Geoffrey Hancock",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Cityscape, Johannesburg, Gauteng, South Africa.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cityscape,_Johannesburg,_Gauteng,_South_Africa.jpg",
+      "author": "South African Tourism",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/johannesburg-ponte-city.glb",
+  "source": "generators/johannesburg-ponte-city.ts"
+}

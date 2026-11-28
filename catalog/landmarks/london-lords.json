@@ -1,0 +1,23 @@
+{
+  "id": "london-lords",
+  "name": "Lord's Cricket Ground",
+  "model": "london-lords",
+  "place": "london",
+  "lng": -0.1727891,
+  "lat": 51.5294531,
+  "bearing": 54,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q331613",
+  "replaces": [
+    "way/429408675",
+    "way/429408677",
+    "way/429408672",
+    "way/429408670",
+    "way/224810338",
+    "way/429408671",
+    "way/429408674",
+    "way/429408676",
+    "way/429408669"
+  ]
+}

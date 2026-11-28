@@ -1,0 +1,18 @@
+{
+  "id": "melbourne-mcg",
+  "name": "Melbourne Cricket Ground",
+  "model": "melbourne-mcg",
+  "place": "melbourne",
+  "lng": 144.983456,
+  "lat": -37.8199836,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q330136",
+  "replaces": [
+    "way/32000530",
+    "way/131709272",
+    "way/131709273",
+    "way/131709274"
+  ]
+}

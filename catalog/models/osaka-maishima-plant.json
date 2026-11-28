@@ -1,0 +1,74 @@
+{
+  "id": "osaka-maishima-plant",
+  "file": "models/osaka-maishima-plant.glb",
+  "license": "CC0-1.0",
+  "source": "generators/osaka-maishima-plant.ts",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "industrial",
+    "hundertwasser",
+    "chimney"
+  ],
+  "description": "Hundertwasser's Maishima incineration plant (2001): a long white body with red and yellow stripes, wavy rooflines lined with gold balls, a slender red chequered tower, gold onion domes and irregular windows, and the 120 m sky-blue chimney with red veins under its gold ball.",
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Maishima waste treatment center Osaka JPN 001.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maishima_waste_treatment_center_Osaka_JPN_001.jpg",
+      "author": "ignis",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Maishima waste treatment center Osaka JPN 002.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maishima_waste_treatment_center_Osaka_JPN_002.jpg",
+      "author": "ignis",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Maishima waste treatment center Osaka JPN 003.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maishima_waste_treatment_center_Osaka_JPN_003.jpg",
+      "author": "ignis",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Osaka City Environment Directorate - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_City_Environment_Directorate_-_panoramio.jpg",
+      "author": "studio IRONY",
+      "license": "CC-BY-3.0"
+    },
+    {
+      "title": "大阪舞洲垃圾处理厂 - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E9%98%AA%E8%88%9E%E6%B4%B2%E5%9E%83%E5%9C%BE%E5%A4%84%E7%90%86%E5%8E%82_-_panoramio.jpg",
+      "author": "空之境界",
+      "license": "CC-BY-3.0"
+    },
+    {
+      "title": "Mai-shima 3 - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mai-shima_3_-_panoramio.jpg",
+      "author": "5xile",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Munchkin - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Munchkin_-_panoramio.jpg",
+      "author": "Jun Maegawa",
+      "license": "CC-BY-SA-3.0"
+    }
+  ]
+}

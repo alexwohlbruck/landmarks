@@ -1,0 +1,15 @@
+{
+  "id": "osaka-kyocera-dome",
+  "name": "Kyocera Dome Osaka",
+  "model": "osaka-kyocera-dome",
+  "place": "osaka",
+  "lng": 135.476097,
+  "lat": 34.669314,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q128836",
+  "replaces": [
+    "way/149991212"
+  ]
+}

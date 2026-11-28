@@ -1,0 +1,76 @@
+{
+  "id": "den-airport-concourse-a",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "concourse",
+    "bridge",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/den-airport-concourse-a.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "Denver Airport at Sunset",
+      "url": "https://commons.wikimedia.org/wiki/File:Denver_Airport_at_Sunset_(54126632282).jpg",
+      "author": "Tony Webster",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Denver Intl Airport Concourse A",
+      "url": "https://commons.wikimedia.org/wiki/File:Denver_Intl_Airport_Concourse_A_(202521963).jpeg",
+      "author": "Eric Johnson",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "New Concourse A Denver International Airport",
+      "url": "https://commons.wikimedia.org/wiki/File:New_Concourse_A_Denver_International_Airport.jpg",
+      "author": "Colin Venable",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "DEN Air Traffic Control Tower",
+      "url": "https://commons.wikimedia.org/wiki/File:DEN_Air_Traffic_Control_Tower.jpg",
+      "author": "Bmurphy380",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Denver A Terminal",
+      "url": "https://commons.wikimedia.org/wiki/File:Denver_A_Terminal.jpg",
+      "author": "TastyPoutine",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Denver concourse B west ramp",
+      "url": "https://commons.wikimedia.org/wiki/File:Denver_concourse_B_west_ramp_(29657388588).jpg",
+      "author": "airbus777",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Central portion of Concourse B at Denver International Airport (2021)",
+      "url": "https://commons.wikimedia.org/wiki/File:Central_portion_of_Concourse_B_at_Denver_International_Airport_(2021).jpg",
+      "author": "Steve Morgan",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/den-airport-concourse-a.glb",
+  "source": "generators/den-airport-concourse-a.ts"
+}

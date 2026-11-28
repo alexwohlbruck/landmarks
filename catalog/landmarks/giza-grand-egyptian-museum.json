@@ -1,0 +1,19 @@
+{
+  "id": "giza-grand-egyptian-museum",
+  "name": "Grand Egyptian Museum",
+  "model": "giza-grand-egyptian-museum",
+  "place": "giza",
+  "lng": 31.11907,
+  "lat": 29.99458,
+  "bearing": 338.5,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/16783121",
+    "way/652382736",
+    "way/1228653668",
+    "way/1228653673",
+    "way/1230333867"
+  ],
+  "wikidata": "Q2583681"
+}

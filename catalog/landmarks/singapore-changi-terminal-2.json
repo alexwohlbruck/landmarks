@@ -1,0 +1,16 @@
+{
+  "id": "singapore-changi-terminal-2",
+  "name": "Changi Airport Terminal 2",
+  "model": "singapore-changi-terminal-2",
+  "place": "singapore",
+  "lng": 103.9897101,
+  "lat": 1.3546323,
+  "bearing": 23.1,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/173010412",
+    "way/173018917",
+    "way/173018918"
+  ]
+}

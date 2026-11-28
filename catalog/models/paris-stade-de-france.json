@@ -1,0 +1,100 @@
+{
+  "id": "paris-stade-de-france",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football",
+    "rugby"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/paris-stade-de-france.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Stade de France @ Saint-Denis (28359861273).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stade_de_France_@_Saint-Denis_(28359861273).jpg",
+      "author": "Guilhem Vellut",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Stade France & Centre Aquatique Olympique - Saint-Denis (FR93) - 2024-02-17 - 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stade_France_%26_Centre_Aquatique_Olympique_-_Saint-Denis_(FR93)_-_2024-02-17_-_1.jpg",
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Le Stade de France vu des jardins de l'écluse.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Le_Stade_de_France_vu_des_jardins_de_l%27%C3%A9cluse.jpg",
+      "author": "Chris93",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "ParisSaintDenisFromSky April2016.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:ParisSaintDenisFromSky_April2016.jpg",
+      "author": "Citizen59",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Stade de France (48109589528).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stade_de_France_(48109589528).jpg",
+      "author": "Daniel from Glasgow, United Kingdom",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Stade de France (48109593483).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stade_de_France_(48109593483).jpg",
+      "author": "Daniel from Glasgow, United Kingdom",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Stade de France tour (48097725477).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stade_de_France_tour_(48097725477).jpg",
+      "author": "Daniel from Glasgow, United Kingdom",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Stade de France 5 August 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stade_de_France_5_August_2024.jpg",
+      "author": "Ilan Costica",
+      "license": "CC0"
+    },
+    {
+      "title": "Stade de France, Olympics 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stade_de_France,_Olympics_2024.jpg",
+      "author": "Rmpbedford",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "StadeFranceNationsLeague2018.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:StadeFranceNationsLeague2018.jpg",
+      "author": "Darthvadrouw",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Stade de France tour (48097725477).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stade_de_France_tour_(48097725477).jpg",
+      "author": "Daniel from Glasgow",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/paris-stade-de-france.glb",
+  "source": "generators/paris-stade-de-france.ts"
+}

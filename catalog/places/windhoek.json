@@ -1,0 +1,7 @@
+{
+  "id": "windhoek",
+  "name": "Windhoek",
+  "kind": "city",
+  "parent": "namibia",
+  "wikidata": "Q3935"
+}

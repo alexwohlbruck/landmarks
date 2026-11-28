@@ -1,0 +1,74 @@
+{
+  "id": "frankfurt-westhafen-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Westhafen Tower 2019.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Westhafen_Tower_2019.jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "Westhafen Tower, Frankfurt, East view 20170514 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Westhafen_Tower,_Frankfurt,_East_view_20170514_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Westhafen Tower, Frankfurt, Southeast view 20170205 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Westhafen_Tower,_Frankfurt,_Southeast_view_20170205_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt am Main, de Westhafen Tower IMG 1450 2024-05-26 09.50.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_de_Westhafen_Tower_IMG_1450_2024-05-26_09.50.jpg",
+      "author": "Michielverbeek",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Westhafen Tower, Frankfurt, East detail view 20170205 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Westhafen_Tower,_Frankfurt,_East_detail_view_20170205_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Frankfurt Westhafen Tower 2011b.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Westhafen_Tower_2011b.jpg",
+      "author": "Andreas Praefcke",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Westhafen Tower 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Westhafen_Tower_01.jpg",
+      "author": "Immanuel Giel",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "detail": "models/frankfurt-westhafen-tower.detail.glb",
+  "detailZoom": 16,
+  "file": "models/frankfurt-westhafen-tower.glb",
+  "source": "generators/frankfurt-westhafen-tower.ts"
+}

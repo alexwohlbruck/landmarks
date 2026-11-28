@@ -1,0 +1,70 @@
+{
+  "id": "osaka-kyocera-dome",
+  "file": "models/osaka-kyocera-dome.glb",
+  "detail": "models/osaka-kyocera-dome.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "source": "generators/osaka-kyocera-dome.ts",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "baseball",
+    "dome",
+    "stadium"
+  ],
+  "reviewStatus": "unreviewed",
+  "description": "Kyocera Dome Osaka (1997): a 207 m round dome stadium, its sloping skirt and blue band ringed by 36 silver cushion lobes with curving dark grooves, under a terraced silver dome rising to 83 m.",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kyocera Dome Osaka1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kyocera_Dome_Osaka1.jpg",
+      "author": "KENPEI",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "Kyocera Dome Osaka (27265570595).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kyocera_Dome_Osaka_(27265570595).jpg",
+      "author": "redlegsfan21",
+      "license": "CC-BY-SA-2.0"
+    },
+    {
+      "title": "Osaka-Dome-Kyocera-Dome (5376982945).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka-Dome-Kyocera-Dome_(5376982945).jpg",
+      "author": "Ai Amo",
+      "license": "CC-BY-2.0"
+    },
+    {
+      "title": "京セラドーム大阪 (5424664283).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:京セラドーム大阪_(5424664283).jpg",
+      "author": "Kohei Fujii",
+      "license": "CC-BY-SA-2.0"
+    },
+    {
+      "title": "Osaka Dome from shin naniwa suji.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Osaka_Dome_from_shin_naniwa_suji.JPG",
+      "author": "ARICA13",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "title": "京セラドーム大阪20120629.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:京セラドーム大阪20120629.jpg",
+      "author": "Sakuraikubuki",
+      "license": "CC-BY-SA-3.0"
+    }
+  ]
+}

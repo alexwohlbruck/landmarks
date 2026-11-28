@@ -1,0 +1,64 @@
+{
+  "id": "rome-stadio-olimpico",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football",
+    "athletics"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/rome-stadio-olimpico.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Olympic Stadium Rome Bird's-eye view.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Olympic_Stadium_Rome_Bird%27s-eye_view.jpg",
+      "author": "Carola.Puglia24",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Stadio Olimpico e Stadio dei Marmi.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stadio_Olimpico_e_Stadio_dei_Marmi.jpg",
+      "author": "Messapi",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Stadio Olimpico 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stadio_Olimpico_2024.jpg",
+      "author": "Messapi, cropped by Blackcat",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Stadio Olimpico roof.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stadio_Olimpico_roof.jpg",
+      "author": "Andrea 93",
+      "license": "Public domain"
+    },
+    {
+      "title": "Stadio Olimpico (Roma, ITA).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stadio_Olimpico_(Roma,_ITA).jpg",
+      "author": "ildirettore",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/rome-stadio-olimpico.glb",
+  "source": "generators/rome-stadio-olimpico.ts"
+}

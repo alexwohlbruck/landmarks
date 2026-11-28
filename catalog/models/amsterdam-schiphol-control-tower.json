@@ -1,0 +1,91 @@
+{
+  "id": "amsterdam-schiphol-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "airport",
+    "control-tower",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Schiphol Tower",
+      "url": "https://commons.wikimedia.org/wiki/File:Schiphol_Tower.jpg",
+      "author": "Ikreis",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "140823 Schiphol airport tower",
+      "url": "https://commons.wikimedia.org/wiki/File:140823-Schiphol-airport-tower.jpg",
+      "author": "Krzysztof Maria Różański",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "De Schipholtoren 2026",
+      "url": "https://commons.wikimedia.org/wiki/File:De_Schipholtoren_2026.png",
+      "author": "Deerpeter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Schiphol tower",
+      "url": "https://commons.wikimedia.org/wiki/File:Schiphol_tower.JPG",
+      "author": "Ad Meskens",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Schiphol tower 2",
+      "url": "https://commons.wikimedia.org/wiki/File:Schiphol_tower_2.JPG",
+      "author": "Ad Meskens",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Schiphol main control tower",
+      "url": "https://commons.wikimedia.org/wiki/File:Schiphol_main_control_tower.JPG",
+      "author": "Supercarwaar",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Schiphol Airport Schipholtoren from the observation deck",
+      "url": "https://commons.wikimedia.org/wiki/File:Schiphol_Airport_Schipholtoren_from_the_observation_deck.jpg",
+      "author": "Ymblanter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Schiphol control tower, pier D",
+      "url": "https://commons.wikimedia.org/wiki/File:SCHIPHOL_CONTROL_TOWER_,_PIER_D_-_panoramio.jpg",
+      "author": "Kayhan ERTUGRUL",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Schiphol pier E",
+      "url": "https://commons.wikimedia.org/wiki/File:SCHIPHOL_PIER_E_-_panoramio.jpg",
+      "author": "Kayhan ERTUGRUL",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Schiphol Plaza",
+      "url": "https://commons.wikimedia.org/wiki/File:Schiphol_Plaza.jpg",
+      "author": "Steven Lek",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/amsterdam-schiphol-control-tower.glb",
+  "source": "generators/amsterdam-schiphol-control-tower.ts"
+}

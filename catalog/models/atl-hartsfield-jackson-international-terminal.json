@@ -1,0 +1,64 @@
+{
+  "id": "atl-hartsfield-jackson-international-terminal",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "airport",
+    "terminal",
+    "concourse",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "detail": "models/atl-hartsfield-jackson-international-terminal.detail.glb",
+  "detailZoom": 16,
+  "references": [
+    {
+      "title": "Atlanta International Terminal",
+      "url": "https://commons.wikimedia.org/wiki/File:Atlanta_International_Terminal_(23606017723).jpg",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "ATL Concourse F During Takeoff - February 2016",
+      "url": "https://www.flickr.com/photos/30552029@N00/52187967225",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "ATL Terminal F",
+      "url": "https://commons.wikimedia.org/wiki/File:ATL_Terminal_F_(22183473160).jpg",
+      "author": "formulanone",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Atlanta Airport International Terminal Dec 2021 1",
+      "url": "https://commons.wikimedia.org/wiki/File:Atlanta_Airport_International_Terminal_Dec_2021_1.jpg",
+      "author": "Thomson200",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Atlanta Airport International Terminal Dec 2021 2",
+      "url": "https://commons.wikimedia.org/wiki/File:Atlanta_Airport_International_Terminal_Dec_2021_2.jpg",
+      "author": "Thomson200",
+      "license": "CC0-1.0"
+    }
+  ],
+  "file": "models/atl-hartsfield-jackson-international-terminal.glb",
+  "source": "generators/atl-hartsfield-jackson-international-terminal.ts"
+}

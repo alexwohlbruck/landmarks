@@ -1,0 +1,87 @@
+{
+  "id": "windhoek-christuskirche",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "lutheran",
+    "neo-romanesque",
+    "art-nouveau",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Iglesia de Cristo, Windhoek, Namibia, 2018-08-04, DD 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Iglesia_de_Cristo,_Windhoek,_Namibia,_2018-08-04,_DD_02.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Iglesia de Cristo, Windhoek, Namibia, 2018-08-04, DD 05.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Iglesia_de_Cristo,_Windhoek,_Namibia,_2018-08-04,_DD_05.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Windhuk Christuskirche Chor 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Windhuk_Christuskirche_Chor_1.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Windhuk Christuskirche Nordseite 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Windhuk_Christuskirche_Nordseite_1.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Windhuk Christuskirche Fassade 3.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Windhuk_Christuskirche_Fassade_3.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Windhuk Christuskirche Südseite 4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Windhuk_Christuskirche_S%C3%BCdseite_4.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Windhuk Christuskirche Nordseite 9.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Windhuk_Christuskirche_Nordseite_9.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Christ Church in Windhoek, Namibia.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Christ_Church_in_Windhoek,_Namibia.jpg",
+      "author": "Christoph Strässler",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Windhoek Christuskirche Church.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Windhoek_Christuskirche_Church.jpg",
+      "author": "Gwasheya",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/windhoek-christuskirche.glb",
+  "source": "generators/windhoek-christuskirche.ts"
+}

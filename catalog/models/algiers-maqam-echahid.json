@@ -1,0 +1,81 @@
+{
+  "id": "algiers-maqam-echahid",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "monument",
+  "tags": [
+    "memorial",
+    "modernist",
+    "concrete",
+    "sculpture"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Maqam Echahid Algiers.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maqam_Echahid_Algiers.jpg",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Maqam Echahid la nuit, Alger.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Maqam_Echahid_la_nuit,_Alger.jpg",
+      "author": "Riad Salih",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Alger Memorial-du-Martyr IMG 1160.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Alger_Memorial-du-Martyr_IMG_1160.JPG",
+      "author": "Poudou99",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Alger Memorial-du-Martyr 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Alger_Memorial-du-Martyr_2.jpg",
+      "author": "Mouh2jijel",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Martyrs Memorial. Algiers, Algeria.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Martyrs_Memorial._Algiers,_Algeria.jpg",
+      "author": "Boumediene15",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Monument of the Martyrs closeup.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Monument_of_the_Martyrs_closeup.jpg",
+      "author": "Simona from Rome",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Ryadh El Feth رياض الفتح.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Ryadh_El_Feth_رياض_الفتح.jpg",
+      "author": "Habib kaki",
+      "license": "CC0"
+    },
+    {
+      "title": "Martyrs Memorial Algiers.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Martyrs_Memorial_Algiers.jpg",
+      "author": "Mehnimalik",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "detail": "models/algiers-maqam-echahid.detail.glb",
+  "detailZoom": 17,
+  "file": "models/algiers-maqam-echahid.glb",
+  "source": "generators/algiers-maqam-echahid.ts"
+}

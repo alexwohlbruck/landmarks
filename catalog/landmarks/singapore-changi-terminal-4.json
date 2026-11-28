@@ -1,0 +1,16 @@
+{
+  "id": "singapore-changi-terminal-4",
+  "name": "Changi Airport Terminal 4",
+  "model": "singapore-changi-terminal-4",
+  "place": "singapore",
+  "lng": 103.9839006,
+  "lat": 1.3384646,
+  "bearing": 23.1,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/409015814",
+    "way/937078222",
+    "way/544755541"
+  ]
+}

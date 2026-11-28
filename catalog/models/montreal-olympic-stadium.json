@@ -1,0 +1,104 @@
+{
+  "id": "montreal-olympic-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/montreal-olympic-stadium.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Aerial view of Olympic Stadium of Montreal.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Olympic_Stadium_of_Montreal.jpg",
+      "author": "Wilfredor",
+      "license": "CC0"
+    },
+    {
+      "title": "Montreal-Olympic-Stadium-May-2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Montreal-Olympic-Stadium-May-2024.jpg",
+      "author": "Acediscovery",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Montreal Olympic Stadium from Mont Royal.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Montreal_Olympic_Stadium_from_Mont_Royal.JPG",
+      "author": "Declan Martin",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Olympic Stadium from Tower - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Olympic_Stadium_from_Tower_-_panoramio.jpg",
+      "author": "Eric Marshall",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Montreal - Olympic Park panorama - Cropped version.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Montreal_-_Olympic_Park_panorama_-_Cropped_version.jpg",
+      "author": "Paolo Costa Baldi",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Stade olympique de Montreal 01.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Stade_olympique_de_Montreal_01.JPG",
+      "author": "Jeangagnon",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Montreal Tower, La Tour de Montréal 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Montreal_Tower,_La_Tour_de_Montr%C3%A9al_01.jpg",
+      "author": "Bohemian Baltimore",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Olympic Stadium @ Montreal (30394986356).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Olympic_Stadium_@_Montreal_(30394986356).jpg",
+      "author": "Guilhem Vellut",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "À l'intérieur du stade olympique lors des rénovations de 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%C3%80_l%27int%C3%A9rieur_du_stade_olympique_lors_des_r%C3%A9novations_de_2024.jpg",
+      "author": "Quintin Soloviev",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Stade olympique de Montréal vue aérienne (2350811667).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stade_olympique_de_Montr%C3%A9al_vue_a%C3%A9rienne_(2350811667).jpg",
+      "author": "abdallahh",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Montreal Stadium full mast.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Montreal_Stadium_full_mast.jpg",
+      "author": "Roger Hart",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Olympic Stadium Montreal, July 26 2025 (04).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Olympic_Stadium_Montreal,_July_26_2025_(04).jpg",
+      "author": "Dillan Payne",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/montreal-olympic-stadium.glb",
+  "source": "generators/montreal-olympic-stadium.ts"
+}

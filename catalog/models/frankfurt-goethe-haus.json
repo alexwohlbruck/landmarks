@@ -1,0 +1,56 @@
+{
+  "id": "frankfurt-goethe-haus",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "historic",
+    "baroque",
+    "house"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Frankfurt Am Main-Goethe-Haus-Ansicht am Grossen Hirschgraben",
+      "url": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Goethe-Haus-Ansicht_am_Grossen_Hirschgraben.jpg",
+      "author": "Mylius",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Goethe-Haus in Frankfurt am Main",
+      "url": "https://commons.wikimedia.org/wiki/File:Goethe-Haus_in_Frankfurt_am_Main.jpg",
+      "author": "Munin2005",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Goethe-Haus FotoThalerTamas1",
+      "url": "https://commons.wikimedia.org/wiki/File:Goethe-Haus_FotoThalerTamas1.jpg",
+      "author": "Thaler Tamas",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Goethe House Plan Cross-section",
+      "url": "https://commons.wikimedia.org/wiki/File:Goethe_House_Plan_Cross-section.jpg",
+      "author": "Rudolf Jung",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/frankfurt-goethe-haus.glb",
+  "source": "generators/frankfurt-goethe-haus.ts"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "turin-allianz-stadium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/turin-allianz-stadium.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Allianz Stadium dal Colle della Maddalena.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Allianz_Stadium_dal_Colle_della_Maddalena.jpg",
+      "author": "Matteo Aresca 05",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Allianz stadium in Italy hosting the Nations League 2021 finals.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Allianz_stadium_in_Italy_hosting_the_Nations_League_2021_finals.jpg",
+      "author": "Wackotaku",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Turin Juventus Stadium 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Turin_Juventus_Stadium_1.jpg",
+      "author": "Валерий Дед",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Turin Juventus Stadium 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Turin_Juventus_Stadium_2.jpg",
+      "author": "Валерий Дед",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Juventus v Real Madrid, Champions League, Stadium, Turin, 2013.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Juventus_v_Real_Madrid,_Champions_League,_Stadium,_Turin,_2013.jpg",
+      "author": "forzaq8",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/turin-allianz-stadium.glb",
+  "source": "generators/turin-allianz-stadium.ts"
+}

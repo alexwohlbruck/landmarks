@@ -1,0 +1,7 @@
+{
+  "id": "dakar",
+  "name": "Dakar",
+  "kind": "city",
+  "parent": "senegal",
+  "wikidata": "Q3718"
+}
