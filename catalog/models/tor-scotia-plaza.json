@@ -1,0 +1,67 @@
+{
+  "id": "tor-scotia-plaza",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "postmodern",
+    "skyline"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Scotia Plaza 2025-05-24 (cropped)",
+      "url": "https://commons.wikimedia.org/wiki/File:Scotia_Plaza_2025-05-24_(cropped).jpg",
+      "author": "JK Liu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Scotia Plaza 2009",
+      "url": "https://commons.wikimedia.org/wiki/File:Scotia_Plaza_2009.JPG",
+      "author": "SimonP",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Toronto-Dominion Centre and Scotia Plaza from CN Tower, Toronto, Ontario (21652084160)",
+      "url": "https://commons.wikimedia.org/wiki/File:Toronto-Dominion_Centre_and_Scotia_Plaza_from_CN_Tower,_Toronto,_Ontario_(21652084160).jpg",
+      "author": "Ken Lund",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Scotia Bank Plaza as seen from Toronto Dominion Centre",
+      "url": "https://commons.wikimedia.org/wiki/File:Scotia_Bank_Plaza_as_seen_from_Toronto_Dominion_Centre.jpg",
+      "author": "Maksims Sokolov (maxergon.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Scotia Plaza, Toronto, Ontario (21814386916)",
+      "url": "https://commons.wikimedia.org/wiki/File:Scotia_Plaza,_Toronto,_Ontario_(21814386916).jpg",
+      "author": "Ken Lund",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "City of Toronto 3D Massing 2025",
+      "url": "https://open.toronto.ca/dataset/3d-massing/",
+      "author": "City of Toronto",
+      "license": "Open Government Licence – Toronto"
+    }
+  ],
+  "file": "models/tor-scotia-plaza.glb",
+  "source": "generators/tor-scotia-plaza.ts"
+}
