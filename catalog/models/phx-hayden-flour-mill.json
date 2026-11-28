@@ -1,0 +1,48 @@
+{
+  "id": "phx-hayden-flour-mill",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "industrial",
+    "mill"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hayden Flour Mill Tempe 03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hayden_Flour_Mill_Tempe_03.jpg",
+      "author": "Olaf2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "231029-1 Hayden Flour Mill.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:231029-1_Hayden_Flour_Mill.jpg",
+      "author": "Hunter Trick (TrickHunter)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hayden Flour Mill Tempe 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hayden_Flour_Mill_Tempe_01.jpg",
+      "author": "Olaf2",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/phx-hayden-flour-mill.glb",
+  "source": "generators/phx-hayden-flour-mill.ts"
+}
