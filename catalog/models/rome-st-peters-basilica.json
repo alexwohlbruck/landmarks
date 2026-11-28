@@ -1,0 +1,82 @@
+{
+  "id": "rome-st-peters-basilica",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "basilica",
+    "dome",
+    "renaissance",
+    "baroque",
+    "historic",
+    "world-heritage"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "St. Peter's Basilica (Basilica Sancti Petri) seen from St. Angelo (cropped)",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Peter%27s_Basilica_(Basilica_Sancti_Petri)_seen_from_St._Angelo_(cropped).jpg",
+      "author": "JanST",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Basilica di San Pietro in Vaticano September 2015-1a",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dome of Saint Peter's Basilica from the Vatican gardens",
+      "url": "https://commons.wikimedia.org/wiki/File:Dome_of_Saint_Peter%27s_Basilica_from_the_Vatican_gardens.jpg",
+      "author": "Quentin Lowagie (Klow)",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "St. Peter's from Vatican Museums (9035975901)",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Peter%27s_from_Vatican_Museums_(9035975901).jpg",
+      "author": "Bradley Weber",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "SanPietrodalGianicolo02",
+      "url": "https://commons.wikimedia.org/wiki/File:SanPietrodalGianicolo02.jpg",
+      "author": "Stivi",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2016 Views from the dome of Saint Peter's Basilica 02",
+      "url": "https://commons.wikimedia.org/wiki/File:2016_Views_from_the_dome_of_Saint_Peter%27s_Basilica_02.jpg",
+      "author": "Jordiferrer",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "2016 - Roof of the Saint Peter's Basilica",
+      "url": "https://commons.wikimedia.org/wiki/File:2016_-_Roof_of_the_Saint_Peter%27s_Basilica.jpg",
+      "author": "Jordiferrer",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "View of saint Peter basilica from a roof",
+      "url": "https://commons.wikimedia.org/wiki/File:View_of_saint_Peter_basilica_from_a_roof.jpg",
+      "author": "Alberto Luccaroni",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/rome-st-peters-basilica.glb",
+  "source": "generators/rome-st-peters-basilica.ts"
+}
