@@ -1,0 +1,19 @@
+{
+  "id": "kc-jackson-county-courthouse",
+  "name": "Jackson County Courthouse",
+  "model": "kc-jackson-county-courthouse",
+  "place": "kansas-city-area",
+  "lng": -94.5779876,
+  "lat": 39.0992103,
+  "bearing": 2.2,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/118650981",
+    "way/466561680",
+    "way/1344842520",
+    "way/1344842521",
+    "way/1344842522"
+  ],
+  "wikidata": "Q14704325"
+}
