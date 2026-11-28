@@ -1,0 +1,56 @@
+{
+  "id": "sat-tobin-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "performing-arts",
+    "theatre",
+    "historic",
+    "spanish-colonial-revival",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tobin Center (48875069586).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tobin_Center_(48875069586).jpg",
+      "author": "Eden, Janine and Jim",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Tobin Center.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tobin_Center.jpg",
+      "author": "Corey Leopold",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "TCFTPA Nima 01.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:TCFTPA_Nima_01.JPG",
+      "author": "Nightryder84",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "TCFTPA Nima 04.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:TCFTPA_Nima_04.JPG",
+      "author": "Nightryder84",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/sat-tobin-center.glb",
+  "source": "generators/sat-tobin-center.ts"
+}
