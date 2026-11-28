@@ -1,0 +1,14 @@
+{
+  "id": "stl-old-post-office",
+  "name": "Old Post Office",
+  "model": "stl-old-post-office",
+  "place": "st-louis-area",
+  "lng": -90.1928002,
+  "lat": 38.6291114,
+  "bearing": 17.2,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/42323065"
+  ]
+}
