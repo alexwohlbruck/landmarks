@@ -1,0 +1,49 @@
+{
+  "id": "kc-t-mobile-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "stadium",
+  "tags": [
+    "arena",
+    "contemporary",
+    "glass",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kansas City June 2022 14 (T-Mobile Center).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City_June_2022_14_(T-Mobile_Center).jpg",
+      "author": "Michael Barera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sprint Center Kansas City Missouri.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sprint_Center_Kansas_City_Missouri.jpg",
+      "author": "Charvex",
+      "license": "Public domain"
+    },
+    {
+      "title": "Sprint Center and Power & Light District.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Sprint_Center_and_Power_%26_Light_District.JPG",
+      "author": "Baylor98",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/kc-t-mobile-center.glb",
+  "source": "generators/kc-t-mobile-center.ts"
+}
