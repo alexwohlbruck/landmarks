@@ -1,0 +1,14 @@
+{
+  "id": "stl-powell-hall",
+  "name": "Powell Hall at the Jack C. Taylor Music Center",
+  "model": "stl-powell-hall",
+  "place": "st-louis-area",
+  "lng": -90.2299637,
+  "lat": 38.6401338,
+  "bearing": 29.3,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/202425813"
+  ]
+}

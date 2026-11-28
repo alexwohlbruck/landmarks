@@ -1,0 +1,42 @@
+{
+  "id": "stl-powell-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "concert-hall"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q7236070",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Powell Symphony hall",
+      "author": "Matthew Black",
+      "license": "CC BY-SA 2.0",
+      "url": "https://www.flickr.com/photos/60099286@N00/1236268411"
+    },
+    {
+      "title": "Powell Symphony Hall",
+      "author": "Chris Yunker",
+      "license": "CC BY 2.0",
+      "url": "https://www.flickr.com/photos/99785739@N00/4608213398"
+    }
+  ],
+  "file": "models/stl-powell-hall.glb",
+  "source": "generators/stl-powell-hall.ts"
+}
