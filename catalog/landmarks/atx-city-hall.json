@@ -1,0 +1,23 @@
+{
+  "id": "atx-city-hall",
+  "name": "Austin City Hall",
+  "model": "atx-city-hall",
+  "place": "austin-area",
+  "lng": -97.7473118,
+  "lat": 30.2648316,
+  "bearing": 17.9,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/204413180",
+    "way/1039387743",
+    "way/1039387744",
+    "way/1039387745",
+    "way/1039387746",
+    "way/1039387747",
+    "way/1039387750",
+    "way/1039387756",
+    "way/1039387757",
+    "way/1039387764"
+  ]
+}

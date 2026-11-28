@@ -1,0 +1,16 @@
+{
+  "id": "atx-the-austonian",
+  "name": "The Austonian",
+  "model": "atx-the-austonian",
+  "place": "austin-area",
+  "lng": -97.7444472,
+  "lat": 30.2647759,
+  "bearing": 17.9,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q3297809",
+  "replaces": [
+    "way/204413181",
+    "way/516289335"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "atx-seaholm-power-plant",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "industrial",
+    "power-plant",
+    "art-moderne",
+    "sign"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Seaholm power plant austin 2013.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Seaholm_power_plant_austin_2013.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "City of Austin TX Power Plant.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:City_of_Austin_TX_Power_Plant.jpg",
+      "author": "Vuemobi Media",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Seaholm plant sign.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Seaholm_plant_sign.jpg",
+      "author": "robzand",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Old Austin Power Plant",
+      "url": "https://www.flickr.com/photos/72248790@N00/2056189776",
+      "author": "Tim Patterson",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Seaholm Power Plant 20160904211410.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Seaholm_Power_Plant_20160904211410.jpg",
+      "author": "Spawnzilla",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Red. The Seaholm Power Plant in Austin, Texas. - Flickr - Night Photo.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Red._The_Seaholm_Power_Plant_in_Austin,_Texas._-_Flickr_-_Night_Photo.jpg",
+      "author": "Maxx@night",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/atx-seaholm-power-plant.glb",
+  "source": "generators/atx-seaholm-power-plant.ts"
+}

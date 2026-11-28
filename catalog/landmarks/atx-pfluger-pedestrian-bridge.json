@@ -1,0 +1,15 @@
+{
+  "id": "atx-pfluger-pedestrian-bridge",
+  "name": "James D. Pfluger Pedestrian Bridge",
+  "model": "atx-pfluger-pedestrian-bridge",
+  "place": "austin-area",
+  "lng": -97.755748,
+  "lat": 30.265675,
+  "bearing": 31,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q21161747",
+  "replaces": [
+    "relation/9429067"
+  ]
+}

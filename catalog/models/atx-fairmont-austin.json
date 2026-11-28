@@ -1,0 +1,53 @@
+{
+  "id": "atx-fairmont-austin",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "hotel"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Fairmont Austin 2021-08-10.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Fairmont_Austin_2021-08-10.jpg",
+      "author": "Xnatedawgx",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Fairmont Austin on an Overcast Day.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Fairmont_Austin_on_an_Overcast_Day.jpg",
+      "author": "Pixelsandbacon",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Fairmont Austin Heart.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Fairmont_Austin_Heart.jpg",
+      "author": "Sk5893",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Fairmont Austin Under Construction 2017.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Fairmont_Austin_Under_Construction_2017.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/atx-fairmont-austin.glb",
+  "source": "generators/atx-fairmont-austin.ts"
+}

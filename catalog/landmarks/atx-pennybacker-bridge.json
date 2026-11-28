@@ -1,0 +1,15 @@
+{
+  "id": "atx-pennybacker-bridge",
+  "name": "Pennybacker Bridge",
+  "model": "atx-pennybacker-bridge",
+  "place": "austin-area",
+  "lng": -97.797188,
+  "lat": 30.3494717,
+  "bearing": 28.84,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q7164471",
+  "replaces": [
+    "way/708944434"
+  ]
+}

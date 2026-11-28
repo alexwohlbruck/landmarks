@@ -1,0 +1,64 @@
+{
+  "id": "atx-bullock-museum",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Bullock Museum Capitol Mall Austin Texas 2023.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bullock_Museum_Capitol_Mall_Austin_Texas_2023.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Texas state history museum.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Texas_state_history_museum.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "The Bullock Texas State History Museum in Austin, Texas LCCN2014632347",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Bullock_Texas_State_History_Museum_in_Austin,_Texas_LCCN2014632347.tif",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "The Bullock Texas State History Museum in Austin, Texas LCCN2014632346",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Bullock_Texas_State_History_Museum_in_Austin,_Texas_LCCN2014632346.tif",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "Austin August 2019 03 (Bullock Texas State History Museum).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_August_2019_03_(Bullock_Texas_State_History_Museum).jpg",
+      "author": "Michael Barera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "BobBullockMuseumAustinTX.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:BobBullockMuseumAustinTX.JPG",
+      "author": "WhisperToMe",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/atx-bullock-museum.glb",
+  "source": "generators/atx-bullock-museum.ts"
+}

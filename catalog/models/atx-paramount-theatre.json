@@ -1,0 +1,61 @@
+{
+  "id": "atx-paramount-theatre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "theatre",
+    "sign",
+    "neoclassical"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Paramount Theatre Congress Avenue.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Paramount_Theatre_Congress_Avenue.jpg",
+      "author": "Kenneth C. Zirkel",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Paramount Theatre & State Theatre - Austin, TX (54987519220).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Paramount_Theatre_%26_State_Theatre_-_Austin,_TX_(54987519220).jpg",
+      "author": "ajay_suresh",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Austin Texas Paramount and State Theaters March 2019.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_Texas_Paramount_and_State_Theaters_March_2019.jpg",
+      "author": "Paul Hudson",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Paramount Theatre (Austin, TX) at night, SXSW 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Paramount_Theatre_(Austin,_TX)_at_night,_SXSW_2024.jpg",
+      "author": "Kevin Payravi",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The old Paramount Theatre, left, and the adjacent, newer State Theater in downtown Austin, Texas",
+      "url": "https://commons.wikimedia.org/wiki/File:The_old_Paramount_Theatre,_left,_and_the_adjacent,_newer_State_Theater_in_downtown_Austin,_Texas_LCCN2014632497.tif",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/atx-paramount-theatre.glb",
+  "source": "generators/atx-paramount-theatre.ts"
+}

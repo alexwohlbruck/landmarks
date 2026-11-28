@@ -1,0 +1,48 @@
+{
+  "id": "atx-long-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "theatre",
+    "performing-arts",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Austin August 2019 12 (Long Center for the Performing Arts).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_August_2019_12_(Long_Center_for_the_Performing_Arts).jpg",
+      "author": "Michael Barera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "LongCenter-2010a.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:LongCenter-2010a.JPG",
+      "author": "LoneStarMike",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Long Center for the Performing Arts 2016.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Long_Center_for_the_Performing_Arts_2016.JPG",
+      "author": "Fredlyfish4",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/atx-long-center.glb",
+  "source": "generators/atx-long-center.ts"
+}

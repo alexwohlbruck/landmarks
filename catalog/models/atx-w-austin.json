@@ -1,0 +1,55 @@
+{
+  "id": "atx-w-austin",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "hotel",
+    "residential",
+    "music-venue"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "WHotelAustin-Jun2010.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:WHotelAustin-Jun2010.JPG",
+      "author": "LoneStarMike",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "WHotelAustin-Jun2010-2.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:WHotelAustin-Jun2010-2.JPG",
+      "author": "LoneStarMike",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "WHOtelDowntownAustin.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:WHOtelDowntownAustin.JPG",
+      "author": "WhisperToMe",
+      "license": "CC0"
+    },
+    {
+      "title": "W Austin Hotel & Residences From North",
+      "url": "https://www.flickr.com/photos/61343559@N05/5635857471",
+      "author": "ATXHarrisonTran",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/atx-w-austin.glb",
+  "source": "generators/atx-w-austin.ts"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "atx-capitol-visitors-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "museum",
+    "government",
+    "rundbogenstil"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "General land office building 2006.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:General_land_office_building_2006.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "The old Texas General Land Office Building, now the Texas Capitol Visitors Center, in Austin, Texas",
+      "url": "https://commons.wikimedia.org/wiki/File:The_old_Texas_General_Land_Office_Building,_now_the_Texas_Capitol_Visitor_Center,_in_Austin,_Texas_LCCN2014632482.tif",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/atx-capitol-visitors-center.glb",
+  "source": "generators/atx-capitol-visitors-center.ts"
+}

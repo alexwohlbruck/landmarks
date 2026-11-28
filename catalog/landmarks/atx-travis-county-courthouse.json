@@ -1,0 +1,15 @@
+{
+  "id": "atx-travis-county-courthouse",
+  "name": "Heman Marion Sweatt Travis County Courthouse",
+  "model": "atx-travis-county-courthouse",
+  "place": "austin-area",
+  "lng": -97.745271,
+  "lat": 30.273387,
+  "bearing": 17.4,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q44747926",
+  "replaces": [
+    "way/516187643"
+  ]
+}

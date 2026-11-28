@@ -1,0 +1,12 @@
+{
+  "id": "atx-moonlight-tower",
+  "name": "Moonlight Tower (Zilker Park)",
+  "model": "atx-moonlight-tower",
+  "place": "austin-area",
+  "lng": -97.771192,
+  "lat": 30.266387,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": []
+}

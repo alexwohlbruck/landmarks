@@ -1,0 +1,14 @@
+{
+  "id": "atx-capitol-visitors-center",
+  "name": "Capitol Complex Visitors Center (General Land Office Building)",
+  "model": "atx-capitol-visitors-center",
+  "place": "austin-area",
+  "lng": -97.739287,
+  "lat": 30.272647,
+  "bearing": 17.9,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/42806381"
+  ]
+}

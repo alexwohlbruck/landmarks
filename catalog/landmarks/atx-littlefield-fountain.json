@@ -1,0 +1,13 @@
+{
+  "id": "atx-littlefield-fountain",
+  "name": "Littlefield Fountain",
+  "model": "atx-littlefield-fountain",
+  "place": "austin-area",
+  "lng": -97.739618,
+  "lat": 30.283904,
+  "bearing": 4.3,
+  "elevation": 0,
+  "minzoom": 17,
+  "wikidata": "Q6652941",
+  "replaces": []
+}
