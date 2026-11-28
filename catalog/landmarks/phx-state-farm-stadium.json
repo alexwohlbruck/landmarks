@@ -1,0 +1,14 @@
+{
+  "id": "phx-state-farm-stadium",
+  "name": "State Farm Stadium",
+  "model": "phx-state-farm-stadium",
+  "place": "phoenix-area",
+  "lng": -112.26252,
+  "lat": 33.5276732,
+  "bearing": 328.5,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "relation/7370103"
+  ]
+}
