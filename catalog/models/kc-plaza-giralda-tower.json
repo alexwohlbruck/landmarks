@@ -1,0 +1,54 @@
+{
+  "id": "kc-plaza-giralda-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "historic",
+    "bell-tower",
+    "moorish-revival",
+    "country-club-plaza",
+    "kansas-city"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Country Club Plaza, KC MO - Giralda Tower.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Country_Club_Plaza,_KC_MO_-_Giralda_Tower.JPG",
+      "license": "Public domain"
+    },
+    {
+      "title": "Country Club Plaza, KC MO - Giralda Tower in context.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Country_Club_Plaza,_KC_MO_-_Giralda_Tower_in_context.JPG",
+      "license": "Public domain"
+    },
+    {
+      "title": "Kansas City, Missouri - Country Club Plaza - Giralda Tower - panoramio (1).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kansas_City,_Missouri_-_Country_Club_Plaza_-_Giralda_Tower_-_panoramio_(1).jpg",
+      "author": "MARELBU",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Giralda, Kansas City, MO.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Giralda,_Kansas_City,_MO.jpg",
+      "author": "Asterion (English Wikipedia)",
+      "license": "CC BY 2.5"
+    }
+  ],
+  "file": "models/kc-plaza-giralda-tower.glb",
+  "source": "generators/kc-plaza-giralda-tower.ts"
+}
