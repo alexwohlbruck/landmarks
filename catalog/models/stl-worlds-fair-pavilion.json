@@ -1,0 +1,49 @@
+{
+  "id": "stl-worlds-fair-pavilion",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "pavilion",
+    "mission-revival",
+    "historic",
+    "park"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "World Fair Pavilion",
+      "author": "Reading Tom",
+      "license": "CC BY 2.0",
+      "url": "https://www.flickr.com/photos/16801915@N06/5946647764"
+    },
+    {
+      "title": "World Fair Pavilion",
+      "author": "Reading Tom",
+      "license": "CC BY 2.0",
+      "url": "https://www.flickr.com/photos/16801915@N06/5946648150"
+    },
+    {
+      "title": "Forest Park, St Louis",
+      "author": "Kris from Seattle",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Forest_Park,_St_Louis.jpg"
+    }
+  ],
+  "file": "models/stl-worlds-fair-pavilion.glb",
+  "source": "generators/stl-worlds-fair-pavilion.ts"
+}
