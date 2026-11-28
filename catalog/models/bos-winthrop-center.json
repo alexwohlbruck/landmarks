@@ -1,0 +1,44 @@
+{
+  "id": "bos-winthrop-center",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "office",
+    "residential",
+    "glass"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q28446352",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Winthrop Center completed",
+      "url": "https://commons.wikimedia.org/wiki/File:Winthrop_Center_completed.jpg",
+      "author": "Jazzman989",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Winthrop Center under construction",
+      "url": "https://commons.wikimedia.org/wiki/File:Winthrop_Center_under_construction.jpg",
+      "author": "Anthonyt31201",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/bos-winthrop-center.glb",
+  "source": "generators/bos-winthrop-center.ts"
+}
