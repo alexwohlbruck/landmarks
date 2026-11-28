@@ -1,0 +1,15 @@
+{
+  "id": "bos-uss-constitution",
+  "name": "USS Constitution",
+  "model": "bos-uss-constitution",
+  "place": "boston-area",
+  "lng": -71.0565311,
+  "lat": 42.3724353,
+  "bearing": 122.5,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q944436",
+  "replaces": [
+    "way/166151194"
+  ]
+}
