@@ -1,0 +1,19 @@
+{
+  "id": "bos-mit-kresge-auditorium",
+  "name": "Kresge Auditorium",
+  "model": "bos-mit-kresge-auditorium",
+  "place": "boston-area",
+  "lng": -71.09505,
+  "lat": 42.35815,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q6436787",
+  "replaces": [
+    "way/24494029",
+    "way/1264585699",
+    "way/1264585700",
+    "way/1264585701",
+    "way/1264585702"
+  ]
+}
