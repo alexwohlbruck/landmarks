@@ -1,0 +1,43 @@
+{
+  "id": "sat-bank-of-america-plaza",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "office",
+    "skyscraper",
+    "postmodern",
+    "granite"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Bank of America Plaza, San Antonio, cropped.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Bank_of_America_Plaza,_San_Antonio,_cropped.JPG",
+      "author": "ZeChief",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "San Antonio Texas 7106.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_Texas_7106.jpg",
+      "author": "gillfoto",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/sat-bank-of-america-plaza.glb",
+  "source": "generators/sat-bank-of-america-plaza.ts"
+}
