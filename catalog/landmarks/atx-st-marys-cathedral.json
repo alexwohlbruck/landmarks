@@ -1,0 +1,15 @@
+{
+  "id": "atx-st-marys-cathedral",
+  "name": "St. Mary Cathedral",
+  "model": "atx-st-marys-cathedral",
+  "place": "austin-area",
+  "lng": -97.739999,
+  "lat": 30.27108,
+  "bearing": 17.8,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/328649889",
+    "way/1033406107"
+  ]
+}
