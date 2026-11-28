@@ -1,0 +1,15 @@
+{
+  "id": "sat-marriott-rivercenter",
+  "name": "San Antonio Marriott Rivercenter",
+  "model": "sat-marriott-rivercenter",
+  "place": "san-antonio-area",
+  "lng": -98.4840863,
+  "lat": 29.4233278,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "wikidata": "Q3294853",
+  "replaces": [
+    "way/99940093"
+  ]
+}
