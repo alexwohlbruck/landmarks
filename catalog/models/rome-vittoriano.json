@@ -1,0 +1,43 @@
+{
+  "id": "rome-vittoriano",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "monument",
+  "tags": [
+    "historic",
+    "monument",
+    "neoclassical",
+    "memorial"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Altar della Patria September 2015-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Altar_della_Patria_September_2015-1.jpg",
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "VittorianoOst.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:VittorianoOst.jpg",
+      "author": "Rabax63",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/rome-vittoriano.glb",
+  "source": "generators/rome-vittoriano.ts"
+}
