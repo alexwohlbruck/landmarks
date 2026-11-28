@@ -1,0 +1,14 @@
+{
+  "id": "kc-scarritt-building",
+  "name": "Scarritt Building",
+  "model": "kc-scarritt-building",
+  "place": "kansas-city-area",
+  "lng": -94.5811095,
+  "lat": 39.1037159,
+  "bearing": 2.4,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/170990177"
+  ]
+}
