@@ -1,0 +1,53 @@
+{
+  "id": "van-brockton-point-lighthouse",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "lighthouse",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Vancouver (BC, Canada), Brockton Point Lighthouse -- 2022 -- 2050.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_(BC,_Canada),_Brockton_Point_Lighthouse_--_2022_--_2050.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Portal - Brockton Point Lighthouse - Stanley Park.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Portal_-_Brockton_Point_Lighthouse_-_Stanley_Park.jpg",
+      "author": "Enoch Leung",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Brockton Point Lighthouse and North Vancouver.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Brockton_Point_Lighthouse_and_North_Vancouver.jpg",
+      "author": "Ymblanter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Brockton Point Lighthouse - Vancouver BC.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Brockton_Point_Lighthouse_-_Vancouver_BC.jpg",
+      "author": "Kenny Louie",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/van-brockton-point-lighthouse.glb",
+  "source": "generators/van-brockton-point-lighthouse.ts"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "van-brockton-point-lighthouse",
+  "name": "Brockton Point Lighthouse",
+  "model": "van-brockton-point-lighthouse",
+  "place": "vancouver",
+  "lng": -123.1169939,
+  "lat": 49.3008892,
+  "bearing": 13.7,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q19460680",
+  "replaces": [
+    "way/363578417"
+  ]
+}
