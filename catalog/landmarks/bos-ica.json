@@ -1,0 +1,15 @@
+{
+  "id": "bos-ica",
+  "name": "Institute of Contemporary Art",
+  "model": "bos-ica",
+  "place": "boston-area",
+  "lng": -71.04295,
+  "lat": 42.35281,
+  "bearing": 30.5,
+  "elevation": 3.4,
+  "minzoom": 15,
+  "wikidata": "Q3152226",
+  "replaces": [
+    "way/117888922"
+  ]
+}
