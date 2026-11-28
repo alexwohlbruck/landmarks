@@ -1,0 +1,15 @@
+{
+  "id": "sat-mcnay",
+  "name": "McNay Art Museum",
+  "model": "sat-mcnay",
+  "place": "san-antonio-area",
+  "lng": -98.456318,
+  "lat": 29.4858103,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q286389",
+  "replaces": [
+    "relation/6283056"
+  ]
+}
