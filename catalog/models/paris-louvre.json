@@ -1,0 +1,80 @@
+{
+  "id": "paris-louvre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "palace",
+    "museum",
+    "renaissance",
+    "second-empire"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Louvre Paris from top",
+      "url": "https://commons.wikimedia.org/wiki/File:Louvre_Paris_from_top.jpg",
+      "author": "Matthias Kabel",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Musée du Louvre along the Quai François Mitterrand (Panorama)",
+      "url": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_du_Louvre_along_the_Quai_Fran%C3%A7ois_Mitterrand_(Panorama)_(22287914199).jpg",
+      "author": "Jorge Láscar",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Louvre Cour Carrée June 2010",
+      "url": "https://commons.wikimedia.org/wiki/File:Louvre_Cour_Carr%C3%A9e_June_2010.jpg",
+      "author": "King of Hearts",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Pavillon de l'Horloge, Musée du Louvre in July 2022",
+      "url": "https://commons.wikimedia.org/wiki/File:Pavillon_de_l%27Horloge,_Mus%C3%A9e_du_Louvre_in_July_2022.jpg",
+      "author": "DiscoA340",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Pavillon de Flore from the Tuileries Garden, Paris 5 November 2019",
+      "url": "https://commons.wikimedia.org/wiki/File:Pavillon_de_Flore_from_the_Tuileries_Garden,_Paris_5_November_2019.jpg",
+      "author": "Ali Sabbagh",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "Cour Napoléon seen from the pavillon de l'Horloge, Louvre 8 July 2016",
+      "url": "https://commons.wikimedia.org/wiki/File:Cour_Napol%C3%A9on_seen_from_the_pavillon_de_l%27Horloge,_Louvre_8_July_2016.jpg",
+      "author": "Tangopaso",
+      "license": "Public domain"
+    },
+    {
+      "title": "Louvre Museum Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Louvre_Museum_Wikimedia_Commons.jpg",
+      "author": "Benh LIEU SONG",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Louvre toits",
+      "url": "https://commons.wikimedia.org/wiki/File:Louvre_toits.JPG",
+      "author": "Jebulon",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/paris-louvre.glb",
+  "source": "generators/paris-louvre.ts"
+}
