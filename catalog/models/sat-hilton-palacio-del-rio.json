@@ -1,0 +1,61 @@
+{
+  "id": "sat-hilton-palacio-del-rio",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "hotel",
+    "modular",
+    "modernist",
+    "hemisfair"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Hilton Palacio del Rio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hilton_Palacio_del_Rio.jpg",
+      "author": "Toohool",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hilton Palacio del RIo, San Antonio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hilton_Palacio_del_RIo,_San_Antonio.jpg",
+      "author": "Blas J",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hilton Palacio Del Rio from River Walk, northside.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hilton_Palacio_Del_Rio_from_River_Walk,_northside.jpg",
+      "author": "Robert Simmons",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "HiltondelRiosantx.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:HiltondelRiosantx.JPG",
+      "author": "Sahmeditor",
+      "license": "Public domain"
+    },
+    {
+      "title": "Hilton Palacio Del Rio hotel, cropped.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Hilton_Palacio_Del_Rio_hotel,_cropped.JPG",
+      "author": "ZeChief",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/sat-hilton-palacio-del-rio.glb",
+  "source": "generators/sat-hilton-palacio-del-rio.ts"
+}

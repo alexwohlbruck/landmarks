@@ -1,0 +1,15 @@
+{
+  "id": "sat-hilton-palacio-del-rio",
+  "name": "Hilton Palacio del Rio",
+  "model": "sat-hilton-palacio-del-rio",
+  "place": "san-antonio-area",
+  "lng": -98.4878407,
+  "lat": 29.4223935,
+  "bearing": 21.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q16984186",
+  "replaces": [
+    "way/79156153"
+  ]
+}
