@@ -1,0 +1,49 @@
+{
+  "id": "paris-sacre-coeur",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "church",
+    "basilica",
+    "romano-byzantine"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Basilique du Sacré-Cœur de Montmartre - Paris - GT-01 - 2024",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre_-_Paris_-_GT-01_-_2024.jpg",
+      "author": "Terragio67",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sacré-Coeur @ Square Marcel Bleustein Blanchet @ Montmartre @ Paris",
+      "url": "https://commons.wikimedia.org/wiki/File:Sacr%C3%A9-Coeur_@_Square_Marcel_Bleustein_Blanchet_@_Montmartre_@_Paris_(33416192413).jpg",
+      "author": "Guilhem Vellut",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Paris - Basilique Sacré-Cœur de Montmartre (nuit)",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_-_Basilique_Sacr%C3%A9-C%C5%93ur_de_Montmartre_(nuit).jpg",
+      "author": "Kev22",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/paris-sacre-coeur.glb",
+  "source": "generators/paris-sacre-coeur.ts"
+}
