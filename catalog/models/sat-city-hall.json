@@ -1,0 +1,43 @@
+{
+  "id": "sat-city-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "city-hall",
+    "civic",
+    "historic",
+    "renaissance-revival"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "San Antonio July 2017 07 (City Hall).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_July_2017_07_(City_Hall).jpg",
+      "author": "Michael Barera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "San Antonio City Hall.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_City_Hall.jpg",
+      "author": "Paul Sableman",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/sat-city-hall.glb",
+  "source": "generators/sat-city-hall.ts"
+}
