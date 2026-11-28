@@ -1,0 +1,14 @@
+{
+  "id": "sat-ollu-sacred-heart-chapel",
+  "name": "Sacred Heart Conventual Chapel",
+  "model": "sat-ollu-sacred-heart-chapel",
+  "place": "san-antonio-area",
+  "lng": -98.543886,
+  "lat": 29.425622,
+  "bearing": 7,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/912208751"
+  ]
+}
