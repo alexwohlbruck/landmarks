@@ -1,0 +1,60 @@
+{
+  "id": "sat-torch-of-friendship",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "sculpture",
+  "tags": [
+    "public-art",
+    "steel",
+    "monument"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Torch Of Friendship, San Antonio, Texas",
+      "url": "https://www.flickr.com/photos/76792851@N07/50194277967",
+      "author": "Nicolas Henderson",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Torch of Friendship",
+      "url": "https://www.flickr.com/photos/97708873@N00/3136385209",
+      "author": "Corey Leopold",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "La Antorcha de la Amistad",
+      "url": "https://www.flickr.com/photos/83346641@N00/4215995084",
+      "author": "JD Hancock",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Torch of Friendship",
+      "url": "https://www.flickr.com/photos/37996646802@N01/291586686",
+      "author": "Alan Levine (cogdogblog)",
+      "license": "CC0-1.0"
+    },
+    {
+      "title": "The Torch",
+      "url": "https://www.flickr.com/photos/37996646802@N01/291586733",
+      "author": "Alan Levine (cogdogblog)",
+      "license": "CC0-1.0"
+    }
+  ],
+  "file": "models/sat-torch-of-friendship.glb",
+  "source": "generators/sat-torch-of-friendship.ts"
+}
