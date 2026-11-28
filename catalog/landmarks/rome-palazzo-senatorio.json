@@ -1,0 +1,21 @@
+{
+  "id": "rome-palazzo-senatorio",
+  "name": "Palazzo Senatorio",
+  "model": "rome-palazzo-senatorio",
+  "place": "rome",
+  "lng": 12.4835877,
+  "lat": 41.8929489,
+  "bearing": 304,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q927092",
+  "replaces": [
+    "relation/1691910",
+    "way/123817559",
+    "way/123817461",
+    "way/123817462",
+    "way/123817552",
+    "way/131557516",
+    "relation/1841130"
+  ]
+}

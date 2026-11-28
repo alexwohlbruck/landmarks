@@ -1,0 +1,49 @@
+{
+  "id": "rome-palazzo-senatorio",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "palace",
+    "renaissance",
+    "town-hall"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Campidoglio (Palacio Senatorio) September 2015-1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Campidoglio_(Palacio_Senatorio)_September_2015-1.jpg",
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rome Forum Romanum Tabularium.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Rome_Forum_Romanum_Tabularium.JPG",
+      "author": "Rita1234",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Palazzo Senatorio Torre.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Palazzo_Senatorio_Torre.jpg",
+      "author": "Hugo DK",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/rome-palazzo-senatorio.glb",
+  "source": "generators/rome-palazzo-senatorio.ts"
+}
