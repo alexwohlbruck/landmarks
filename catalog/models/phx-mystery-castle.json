@@ -1,0 +1,60 @@
+{
+  "id": "phx-mystery-castle",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "house",
+    "historic",
+    "folk-architecture"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Mystery Castle (14242518270).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mystery_Castle_(14242518270).jpg",
+      "author": "ksblack99",
+      "license": "Public domain"
+    },
+    {
+      "title": "Side of House (14242512188).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Side_of_House_(14242512188).jpg",
+      "author": "ksblack99",
+      "license": "Public domain"
+    },
+    {
+      "title": "Phoenix-Mystery Castle-2.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix-Mystery_Castle-2.JPG",
+      "author": "Marine 69-71",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Phoenix-Mystery Castle-3.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix-Mystery_Castle-3.JPG",
+      "author": "Marine 69-71",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Mystery Castle Phoenix Arizona2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mystery_Castle_Phoenix_Arizona2.jpg",
+      "author": "Lockley",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/phx-mystery-castle.glb",
+  "source": "generators/phx-mystery-castle.ts"
+}
