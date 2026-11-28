@@ -1,0 +1,15 @@
+{
+  "id": "kc-federal-reserve-bank",
+  "name": "Federal Reserve Bank of Kansas City",
+  "model": "kc-federal-reserve-bank",
+  "place": "kansas-city-area",
+  "lng": -94.5862896,
+  "lat": 39.0748631,
+  "bearing": 4.6,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q2166296",
+  "replaces": [
+    "relation/8505077"
+  ]
+}
