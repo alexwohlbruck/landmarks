@@ -1,0 +1,66 @@
+{
+  "id": "tor-union-station",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "beaux-arts",
+    "train-station"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Front of Union Station in Toronto, April 3 2026",
+      "url": "https://commons.wikimedia.org/wiki/File:Front_of_Union_Station_in_Toronto,_April_3_2026.jpg",
+      "author": "Dillan Payne",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Union Station on Front Street",
+      "url": "https://commons.wikimedia.org/wiki/File:Union_Station_on_Front_Street.jpg",
+      "author": "Doug Letterman",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Union Station, Toronto (20799517161)",
+      "url": "https://commons.wikimedia.org/wiki/File:Union_Station,_Toronto_(20799517161).jpg",
+      "author": "Umair Khan",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Union Station from CN Tower, Toronto, Ontario, 2026-06-28",
+      "url": "https://commons.wikimedia.org/wiki/File:Union_Station_from_CN_Tower,_Toronto,_Ontario,_2026-06-28.jpg",
+      "author": "Chris Woodrich",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Union Station Toronto August 2017 01",
+      "url": "https://commons.wikimedia.org/wiki/File:Union_Station_Toronto_August_2017_01.jpg",
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "City of Toronto 3D Massing 2025",
+      "url": "https://open.toronto.ca/dataset/3d-massing/",
+      "author": "City of Toronto",
+      "license": "Open Government Licence – Toronto"
+    }
+  ],
+  "file": "models/tor-union-station.glb",
+  "source": "generators/tor-union-station.ts"
+}
