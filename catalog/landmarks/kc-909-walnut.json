@@ -1,0 +1,16 @@
+{
+  "id": "kc-909-walnut",
+  "name": "909 Walnut",
+  "model": "kc-909-walnut",
+  "place": "kansas-city-area",
+  "lng": -94.5815712,
+  "lat": 39.1032259,
+  "bearing": 2.4,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q4645620",
+  "replaces": [
+    "way/203837841",
+    "way/466563977"
+  ]
+}
