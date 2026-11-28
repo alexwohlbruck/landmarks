@@ -1,0 +1,15 @@
+{
+  "id": "rome-sistine-chapel",
+  "name": "Sistine Chapel",
+  "model": "rome-sistine-chapel",
+  "place": "vatican-city",
+  "lng": 12.454404,
+  "lat": 41.902934,
+  "bearing": 359.2,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q2943",
+  "replaces": [
+    "way/215289671"
+  ]
+}

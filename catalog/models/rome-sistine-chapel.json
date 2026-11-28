@@ -1,0 +1,50 @@
+{
+  "id": "rome-sistine-chapel",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "chapel",
+    "church",
+    "renaissance",
+    "historic",
+    "world-heritage"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Cappella Sistina - 2005",
+      "url": "https://commons.wikimedia.org/wiki/File:Cappella_Sistina_-_2005.jpg",
+      "author": "Maus-Trauden (de.wikipedia)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Veduta della cappella sistina dai giardini vaticani, 04",
+      "url": "https://commons.wikimedia.org/wiki/File:Veduta_della_cappella_sistina_dai_giardini_vaticani,_04.jpg",
+      "author": "Sailko",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Sistine Chapel-St. Peter's Basilica Dome",
+      "url": "https://commons.wikimedia.org/wiki/File:Sistine_Chapel-St._Peter%27s_Basilica_Dome.jpg",
+      "author": "Yair Haklai",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/rome-sistine-chapel.glb",
+  "source": "generators/rome-sistine-chapel.ts"
+}
