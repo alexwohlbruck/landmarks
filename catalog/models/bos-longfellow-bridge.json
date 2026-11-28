@@ -1,0 +1,76 @@
+{
+  "id": "bos-longfellow-bridge",
+  "detail": "models/bos-longfellow-bridge.detail.glb",
+  "detailZoom": 16,
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "arch-bridge",
+    "steel-arch",
+    "historic",
+    "red-line"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q1479078",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Longfellow Bridge Boston November 2016",
+      "url": "https://commons.wikimedia.org/wiki/File:Longfellow_Bridge_Boston_November_2016.jpg",
+      "author": "King of Hearts",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Aerial photos of Longfellow Bridge and downtown Boston skyline",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_photos_of_Longfellow_Bridge_and_downtown_Boston_skyline.jpg",
+      "author": "CaribDigita",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Main Piers Longfellow Bridge",
+      "url": "https://commons.wikimedia.org/wiki/File:Main_Piers_Longfellow_Bridge.jpg",
+      "author": "EgorovaSvetlana",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Longfellow Bridge with towers (34602)",
+      "url": "https://commons.wikimedia.org/wiki/File:Longfellow_Bridge_with_towers_(34602).jpg",
+      "author": "CaribDigita",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Boston Skyline and Longfellow Bridge August 2024",
+      "url": "https://commons.wikimedia.org/wiki/File:Boston_Skyline_and_Longfellow_Bridge_August_2024.jpg",
+      "author": "4300streetcar",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Longfellow Bridge Span 9 Arch Repairs (25842203004)",
+      "url": "https://commons.wikimedia.org/wiki/File:Longfellow_Bridge_Span_9_Arch_Repairs_(25842203004).jpg",
+      "author": "MassDOT",
+      "license": "Public domain"
+    },
+    {
+      "title": "Longfellow Bridge at Night (53812970692)",
+      "url": "https://commons.wikimedia.org/wiki/File:Longfellow_Bridge_at_Night_(53812970692).jpg",
+      "author": "Ethan Long",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/bos-longfellow-bridge.glb",
+  "source": "generators/bos-longfellow-bridge.ts"
+}

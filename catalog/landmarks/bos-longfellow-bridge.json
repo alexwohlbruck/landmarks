@@ -1,0 +1,26 @@
+{
+  "id": "bos-longfellow-bridge",
+  "name": "Longfellow Bridge",
+  "model": "bos-longfellow-bridge",
+  "place": "boston-area",
+  "lng": -71.0754094,
+  "lat": 42.3615117,
+  "bearing": 95.87,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/148646760",
+    "way/817410123",
+    "way/817410124",
+    "way/817410125",
+    "way/817410126",
+    "way/817410131",
+    "way/817410132",
+    "way/817406995",
+    "way/817406996",
+    "way/817775831",
+    "way/817775832",
+    "way/817775833",
+    "way/817775834"
+  ]
+}
