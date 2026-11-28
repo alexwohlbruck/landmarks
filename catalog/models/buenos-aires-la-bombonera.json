@@ -1,0 +1,62 @@
+{
+  "id": "buenos-aires-la-bombonera",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Vista aérea del Estadio Alberto J. Armando \"La Bombonera\" 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Alberto_J._Armando_%22La_Bombonera%22_01.jpg",
+      "author": "ProtoplasmaKid",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Vista aérea del Estadio Alberto J. Armando \"La Bombonera\" 05.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Alberto_J._Armando_%22La_Bombonera%22_05.jpg",
+      "author": "ProtoplasmaKid",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Vista aérea del Estadio Alberto J. Armando \"La Bombonera\" 09.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Alberto_J._Armando_%22La_Bombonera%22_09.jpg",
+      "author": "ProtoplasmaKid",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "La Bombonera - Buenos Aires - Argentina.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:La_Bombonera_-_Buenos_Aires_-_Argentina.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Palcos en 2012.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Palcos_en_2012.JPG",
+      "author": "Nandofer18",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/buenos-aires-la-bombonera.glb",
+  "source": "generators/buenos-aires-la-bombonera.ts"
+}

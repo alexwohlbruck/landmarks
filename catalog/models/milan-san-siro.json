@@ -1,0 +1,105 @@
+{
+  "id": "milan-san-siro",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/milan-san-siro.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "San Siro (15817752319).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Siro_(15817752319).jpg",
+      "author": "Jose Hidalgo",
+      "license": "Public domain"
+    },
+    {
+      "title": "Stadio Giuseppe Meazza (San Siro), Milan, May 2018 (01).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stadio_Giuseppe_Meazza_(San_Siro),_Milan,_May_2018_(01).jpg",
+      "author": "Ardfern",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "San Siro 2009 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Siro_2009_2.jpg",
+      "author": "Cyril",
+      "license": "Public domain"
+    },
+    {
+      "title": "Milano stadion San Siro.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Milano_stadion_San_Siro.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "San siro Stadium, Milan, Italy - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_siro_Stadium,_Milan,_Italy_-_panoramio.jpg",
+      "author": "Jie Yang",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "Giuseppe Meazza (San Siro) stadium, exterior view.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Giuseppe_Meazza_(San_Siro)_stadium,_exterior_view.jpg",
+      "author": "johnseb (Flickr)",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Stadio Giuseppe Meazza roof element exterior.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stadio_Giuseppe_Meazza_roof_element_exterior.jpg",
+      "author": "Neville Borg",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "San Siro Corner.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Siro_Corner.jpg",
+      "author": "Revol Web",
+      "license": "Public domain"
+    },
+    {
+      "title": "San Siro 2005.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Siro_2005.jpg",
+      "author": "Dan Heap",
+      "license": "Public domain"
+    },
+    {
+      "title": "Milano - stadio Giuseppe Meazza - 202209050049.jpeg",
+      "url": "https://commons.wikimedia.org/wiki/File:Milano_-_stadio_Giuseppe_Meazza_-_202209050049.jpeg",
+      "author": "POAN68",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Stadio Giuseppe Meazza, San Siro, Milan (3326869632).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stadio_Giuseppe_Meazza,_San_Siro,_Milan_(3326869632).jpg",
+      "author": "Bjørn Giesenbauer",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Stadio Giuseppe Meazza 6.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stadio_Giuseppe_Meazza_6.jpg",
+      "author": "Prelvini",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/milan-san-siro.glb",
+  "source": "generators/milan-san-siro.ts"
+}

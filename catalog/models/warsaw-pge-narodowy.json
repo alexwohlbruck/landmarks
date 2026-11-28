@@ -1,0 +1,75 @@
+{
+  "id": "warsaw-pge-narodowy",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "stadium",
+    "sport",
+    "football"
+  ],
+  "reviewStatus": "unreviewed",
+  "detail": "models/warsaw-pge-narodowy.detail.glb",
+  "detailZoom": 16,
+  "credits": [
+    {
+      "name": "OnlyHudson",
+      "kind": "person",
+      "role": "creator",
+      "github": "TheOnlyHudson"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "role": "procedural modeling",
+      "model": "Claude Opus 5.5",
+      "url": "https://claude.ai/"
+    }
+  ],
+  "references": [
+    {
+      "title": "National Stadium Warsaw aerial view (cropped).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:National_Stadium_Warsaw_aerial_view_(cropped).jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "National Stadium Warsaw aerial view 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:National_Stadium_Warsaw_aerial_view_2.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "title": "Stadion narodowy panorama.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Stadion_narodowy_panorama.jpg",
+      "author": "XEvansGambitx",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Kazimierz Górski National Stadium, 2026, Warsaw, Poland.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kazimierz_G%C3%B3rski_National_Stadium,_2026,_Warsaw,_Poland.jpg",
+      "author": "Igor123121",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Kazimierz Górski National Stadium, 2026, Warsaw Poland.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kazimierz_G%C3%B3rski_National_Stadium,_2026,_Warsaw_Poland.jpg",
+      "author": "Igor123121",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Warsaw National Stadium roof.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Warsaw_National_Stadium_roof.jpg",
+      "author": "Joern Fehrmann",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "National Stadium in Warsaw from the Vistula (5).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:National_Stadium_in_Warsaw_from_the_Vistula_(5).jpg",
+      "author": "Artur am1974",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/warsaw-pge-narodowy.glb",
+  "source": "generators/warsaw-pge-narodowy.ts"
+}

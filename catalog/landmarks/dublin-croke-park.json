@@ -1,0 +1,22 @@
+{
+  "id": "dublin-croke-park",
+  "name": "Croke Park",
+  "model": "dublin-croke-park",
+  "place": "dublin",
+  "lng": -6.2511279,
+  "lat": 53.3607524,
+  "bearing": 19.3,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q478225",
+  "replaces": [
+    "relation/3235289",
+    "relation/3235290",
+    "relation/3235291",
+    "relation/3235292",
+    "relation/3235293",
+    "relation/19510621",
+    "relation/19510622",
+    "way/564099741"
+  ]
+}

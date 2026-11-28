@@ -1,0 +1,19 @@
+{
+  "id": "nishinomiya-koshien",
+  "name": "Hanshin Koshien Stadium",
+  "model": "nishinomiya-koshien",
+  "place": "nishinomiya",
+  "lng": 135.361636,
+  "lat": 34.721376,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q959811",
+  "replaces": [
+    "way/707987397",
+    "way/707987399",
+    "way/707987401",
+    "way/71400321",
+    "way/707987400"
+  ]
+}

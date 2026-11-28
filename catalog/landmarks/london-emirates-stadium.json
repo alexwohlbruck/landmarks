@@ -1,0 +1,19 @@
+{
+  "id": "london-emirates-stadium",
+  "name": "Emirates Stadium",
+  "model": "london-emirates-stadium",
+  "place": "london",
+  "lng": -0.1084002,
+  "lat": 51.5550424,
+  "bearing": 1.1,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q163995",
+  "replaces": [
+    "way/25651711",
+    "way/193811136",
+    "way/193811138",
+    "way/193811140",
+    "way/193811141"
+  ]
+}
