@@ -1,0 +1,15 @@
+{
+  "id": "atx-ellsworth-kelly-austin",
+  "name": "Austin (Ellsworth Kelly)",
+  "model": "atx-ellsworth-kelly-austin",
+  "place": "austin-area",
+  "lng": -97.737822,
+  "lat": 30.281686,
+  "bearing": 4.5,
+  "elevation": 0,
+  "minzoom": 16,
+  "wikidata": "Q22073172",
+  "replaces": [
+    "way/575579280"
+  ]
+}

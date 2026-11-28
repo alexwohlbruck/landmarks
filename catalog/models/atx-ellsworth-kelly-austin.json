@@ -1,0 +1,60 @@
+{
+  "id": "atx-ellsworth-kelly-austin",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "art",
+    "chapel",
+    "museum"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Austin Building Southeast Corner 2018.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_Building_Southeast_Corner_2018.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Austin Building West Elevation 2018.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_Building_West_Elevation_2018.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Austin Building East Elevation 2018.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_Building_East_Elevation_2018.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Ellsworth Kelly's Austin from the northwest--photo by Steven Saylor.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Ellsworth_Kelly%27s_Austin_from_the_northwest--photo_by_Steven_Saylor.jpg",
+      "author": "Stevensaylor",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Ellsworth Kelly's Austin from the north--photo by Steven Saylor.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Ellsworth_Kelly%27s_Austin_from_the_north--photo_by_Steven_Saylor.jpg",
+      "author": "Stevensaylor",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/atx-ellsworth-kelly-austin.glb",
+  "source": "generators/atx-ellsworth-kelly-austin.ts"
+}
