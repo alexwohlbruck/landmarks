@@ -1,0 +1,48 @@
+{
+  "id": "phx-sky-harbor-control-tower",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "tower",
+  "tags": [
+    "air-traffic-control",
+    "airport",
+    "contemporary"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Sky Harbor - 2008-08-29 - Control Tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sky_Harbor_-_2008-08-29_-_Control_Tower.jpg",
+      "author": "Cygnusloop99",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "PHX control tower 20250508.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:PHX_control_tower_20250508.jpg",
+      "author": "Designism",
+      "license": "CC0"
+    },
+    {
+      "title": "Phoenix-sky-harbor-control-tower.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Phoenix-sky-harbor-control-tower.jpg",
+      "author": "Braboowi at en.wikipedia",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/phx-sky-harbor-control-tower.glb",
+  "source": "generators/phx-sky-harbor-control-tower.ts"
+}
