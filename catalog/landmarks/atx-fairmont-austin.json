@@ -1,0 +1,16 @@
+{
+  "id": "atx-fairmont-austin",
+  "name": "Fairmont Austin",
+  "model": "atx-fairmont-austin",
+  "place": "austin-area",
+  "lng": -97.7382109,
+  "lat": 30.2621232,
+  "bearing": 17.9,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/134786106",
+    "way/850607753"
+  ],
+  "wikidata": "Q17509961"
+}
