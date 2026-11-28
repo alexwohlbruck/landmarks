@@ -1,0 +1,72 @@
+{
+  "id": "atx-city-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "civic",
+    "government",
+    "modern"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Austin August 2019 31 (Austin City Hall).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_August_2019_31_(Austin_City_Hall).jpg",
+      "author": "Michael Barera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Austin August 2019 30 (Austin City Hall).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_August_2019_30_(Austin_City_Hall).jpg",
+      "author": "Michael Barera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "AustinTXCityHall.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:AustinTXCityHall.JPG",
+      "author": "WhisperToMe",
+      "license": "Public domain"
+    },
+    {
+      "title": "Austin City Hall Front.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_City_Hall_Front.JPG",
+      "author": "M.Fitzsimmons",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Austin City Hall Aug2010.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_City_Hall_Aug2010.JPG",
+      "author": "M.Fitzsimmons",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Austin City Hall (54987519110).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Austin_City_Hall_(54987519110).jpg",
+      "author": "ajay_suresh",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Austintexascityhall 3715x2651.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Austintexascityhall_3715x2651.JPG",
+      "author": "Kevinkuhn",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "file": "models/atx-city-hall.glb",
+  "source": "generators/atx-city-hall.ts"
+}
