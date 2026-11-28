@@ -1,0 +1,17 @@
+{
+  "id": "tor-royal-bank-plaza",
+  "name": "Royal Bank Plaza",
+  "model": "tor-royal-bank-plaza",
+  "place": "toronto",
+  "lng": -79.3800414,
+  "lat": 43.6465369,
+  "bearing": 343.3,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q1848303",
+  "replaces": [
+    "way/27767625",
+    "way/27767624",
+    "way/151519194"
+  ]
+}
