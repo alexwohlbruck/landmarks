@@ -1,0 +1,14 @@
+{
+  "id": "stl-enterprise-center",
+  "name": "Enterprise Center",
+  "model": "stl-enterprise-center",
+  "place": "st-louis-area",
+  "lng": -90.2026201,
+  "lat": 38.6268126,
+  "bearing": 17.2,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/42369176"
+  ]
+}

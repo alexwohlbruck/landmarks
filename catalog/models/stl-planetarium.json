@@ -1,0 +1,48 @@
+{
+  "id": "stl-planetarium",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "planetarium",
+    "modernist",
+    "concrete-shell"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "James S. McDonnell Planetarium, Saint Louis Science Center",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://www.flickr.com/photos/59081381@N03/53144143869"
+    },
+    {
+      "title": "James S. McDonnell Planetarium, Saint Louis Science Center",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://www.flickr.com/photos/59081381@N03/53144420608"
+    },
+    {
+      "title": "McDonnell-Planetarium",
+      "author": "Colin.faulkingham",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:McDonnell-Planetarium.jpg"
+    }
+  ],
+  "file": "models/stl-planetarium.glb",
+  "source": "generators/stl-planetarium.ts"
+}

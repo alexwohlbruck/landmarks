@@ -1,0 +1,61 @@
+{
+  "id": "stl-cathedral-basilica",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "religious",
+    "cathedral"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q128058",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "St. Louis Cathedral exterior 2026h.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Cathedral_exterior_2026h.jpg"
+    },
+    {
+      "title": "St. Louis Cathedral exterior 2026a.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Cathedral_exterior_2026a.jpg"
+    },
+    {
+      "title": "St. Louis Cathedral exterior 2026m.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Cathedral_exterior_2026m.jpg"
+    },
+    {
+      "title": "Cathedral Basilica of Saint Louis (St. Louis, MO) - exterior, quarter view.jpg",
+      "author": "Nheyob",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Cathedral_Basilica_of_Saint_Louis_(St._Louis,_MO)_-_exterior,_quarter_view.jpg"
+    },
+    {
+      "title": "Cathedral Basilica of Saint Louis.JPG",
+      "author": "Starfire1118",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Cathedral_Basilica_of_Saint_Louis.JPG"
+    }
+  ],
+  "file": "models/stl-cathedral-basilica.glb",
+  "source": "generators/stl-cathedral-basilica.ts"
+}

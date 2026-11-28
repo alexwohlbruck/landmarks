@@ -1,0 +1,22 @@
+{
+  "id": "stl-cathedral-basilica",
+  "name": "Cathedral Basilica of Saint Louis",
+  "model": "stl-cathedral-basilica",
+  "place": "st-louis-area",
+  "lng": -90.2546541,
+  "lat": 38.6425276,
+  "bearing": 15,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/477985197",
+    "way/617120621",
+    "way/617120622",
+    "way/617120623",
+    "way/617120624",
+    "way/617120625",
+    "way/617120626",
+    "way/617120627",
+    "way/617223807"
+  ]
+}

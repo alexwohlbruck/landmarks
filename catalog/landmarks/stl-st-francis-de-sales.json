@@ -1,0 +1,14 @@
+{
+  "id": "stl-st-francis-de-sales",
+  "name": "Oratory of St. Francis de Sales",
+  "model": "stl-st-francis-de-sales",
+  "place": "st-louis-area",
+  "lng": -90.2262123,
+  "lat": 38.6041749,
+  "bearing": 290,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/139761891"
+  ]
+}

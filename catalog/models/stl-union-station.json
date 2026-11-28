@@ -1,0 +1,81 @@
+{
+  "id": "stl-union-station",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "railway-station",
+    "romanesque-revival",
+    "national-historic-landmark",
+    "clock-tower"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q2320348",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "St. Louis Union Station (17577826564).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Union_Station_(17577826564).jpg",
+      "author": "Dustin Batt",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "St. Louis Union Station, Market Street, St. Louis, MO - 53050963215.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Union_Station,_Market_Street,_St._Louis,_MO_-_53050963215.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Tower, St. Louis Union Station, Market Street, St. Louis, MO.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower,_St._Louis_Union_Station,_Market_Street,_St._Louis,_MO.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "St. Louis Union Station (1986).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Union_Station_(1986).jpg",
+      "author": "Jack Boucher (HABS)",
+      "license": "Public domain"
+    },
+    {
+      "title": "St. Louis Union Station & The Aloe Plaza (1983).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_Union_Station_%26_The_Aloe_Plaza_(1983).jpg",
+      "author": "Dwaynep2018",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "St. Louis, Missouri, USA - Aloe Plaza - Carl Milles fountain The Meeting of the Waters 1936-40 - Union Station - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis,_Missouri,_USA_-_Aloe_Plaza_-_Carl_Milles_fountain_The_Meeting_of_the_Waters_1936-40_-_Union_Station_-_panoramio.jpg",
+      "author": "MARELBU",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "St. Louis' Union Station",
+      "url": "https://www.flickr.com/photos/26329029@N06/7173191659",
+      "author": "artistmac",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "title": "Ferris wheel called, simply, 'The St. Louis Wheel'",
+      "url": "https://www.loc.gov/item/2020742812/",
+      "author": "Carol M. Highsmith",
+      "license": "CC0"
+    }
+  ],
+  "file": "models/stl-union-station.glb",
+  "source": "generators/stl-union-station.ts"
+}

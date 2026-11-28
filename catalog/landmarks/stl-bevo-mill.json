@@ -1,0 +1,14 @@
+{
+  "id": "stl-bevo-mill",
+  "name": "Bevo Mill",
+  "model": "stl-bevo-mill",
+  "place": "st-louis-area",
+  "lng": -90.2668386,
+  "lat": 38.5819017,
+  "bearing": 28,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/624381546"
+  ]
+}

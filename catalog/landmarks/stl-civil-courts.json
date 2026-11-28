@@ -1,0 +1,15 @@
+{
+  "id": "stl-civil-courts",
+  "name": "Clyde S. Cahill Courts Building (Civil Courts Building)",
+  "model": "stl-civil-courts",
+  "place": "st-louis-area",
+  "lng": -90.1971931,
+  "lat": 38.6275759,
+  "bearing": 16.1,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/565578443",
+    "way/565578444"
+  ]
+}

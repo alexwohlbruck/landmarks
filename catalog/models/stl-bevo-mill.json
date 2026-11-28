@@ -1,0 +1,48 @@
+{
+  "id": "stl-bevo-mill",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "windmill",
+    "restaurant"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Bevo Mill Restaurant 20150905-190.jpg",
+      "author": "Kbh3rd",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Bevo_Mill_Restaurant_20150905-190.jpg"
+    },
+    {
+      "title": "BevoMillOutAndAbout.jpg",
+      "author": "binkle_28 / Tyson Blanchard",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:BevoMillOutAndAbout.jpg"
+    },
+    {
+      "title": "Bevo Mill Restaurant, Gravois Avenue & Morgonford Road, Saint Louis",
+      "author": "John Margolies",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Bevo_Mill_Restaurant,_Gravois_Avenue_%26_Morgonford_Road,_Saint_Louis,_Missouri_LCCN2017703391.tif"
+    }
+  ],
+  "file": "models/stl-bevo-mill.glb",
+  "source": "generators/stl-bevo-mill.ts"
+}

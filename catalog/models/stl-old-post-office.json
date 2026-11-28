@@ -1,0 +1,48 @@
+{
+  "id": "stl-old-post-office",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "civic"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q7889715",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "US Customhouse and post office St Louis.jpg",
+      "author": "Piaget (HABS)",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:US_Customhouse_and_post_office_St_Louis.jpg"
+    },
+    {
+      "title": "Old Post Office, Saint Louis.jpg",
+      "author": "Zmerkle13",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_Post_Office,_Saint_Louis.jpg"
+    },
+    {
+      "title": "Old Post Office from 9th St..JPG",
+      "author": "BirgitteSB",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Old_Post_Office_from_9th_St..JPG"
+    }
+  ],
+  "file": "models/stl-old-post-office.glb",
+  "source": "generators/stl-old-post-office.ts"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "stl-city-hall",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "civic",
+    "city-hall"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q65091119",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "St. Louis City Hall 2023.jpg",
+      "author": "Triciaburmeister",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_City_Hall_2023.jpg"
+    },
+    {
+      "title": "St. Louis City Hall 2015.jpg",
+      "author": "Lightmetro",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_City_Hall_2015.jpg"
+    },
+    {
+      "title": "St. Louis City Hall, Market Street and Tucker Boulevard, St. Louis, MO.jpg",
+      "author": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:St._Louis_City_Hall,_Market_Street_and_Tucker_Boulevard,_St._Louis,_MO.jpg"
+    }
+  ],
+  "file": "models/stl-city-hall.glb",
+  "source": "generators/stl-city-hall.ts"
+}

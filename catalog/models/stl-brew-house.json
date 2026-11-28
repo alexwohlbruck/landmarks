@@ -1,0 +1,42 @@
+{
+  "id": "stl-brew-house",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "industrial",
+    "brewery"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Anheuser-Busch Brewery, Broadway & Pestalozzi, Saint Louis (St. Louis City County, Missouri)",
+      "author": "Piaget - van Ravenswaay (HABS)",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Anheuser-Busch_Brewery,_Broadway_%26_Pestalozzi_,_Saint_Louis_(St._Louis_City_County,_Missouri).jpg"
+    },
+    {
+      "title": "Anheuser Busch Brewery Brew House and Boiler House, Ninth and Pestalozzi Streets",
+      "author": "unknown",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Anheuser_Busch_Brewery_Brew_House_and_Boiler_House,_Ninth_and_Pestalozzi_Streets.jpg"
+    }
+  ],
+  "file": "models/stl-brew-house.glb",
+  "source": "generators/stl-brew-house.ts"
+}

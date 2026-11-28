@@ -1,0 +1,14 @@
+{
+  "id": "stl-central-library",
+  "name": "St. Louis Central Public Library",
+  "model": "stl-central-library",
+  "place": "st-louis-area",
+  "lng": -90.1994667,
+  "lat": 38.6307616,
+  "bearing": 14.9,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "relation/18049260"
+  ]
+}

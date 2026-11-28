@@ -1,0 +1,55 @@
+{
+  "id": "stl-old-cathedral",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "religious",
+    "church"
+  ],
+  "reviewStatus": "unreviewed",
+  "wikidata": "Q2942378",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Basilica of St. Louis 2025a.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilica_of_St._Louis_2025a.jpg"
+    },
+    {
+      "title": "Basilica of St. Louis 2025c.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilica_of_St._Louis_2025c.jpg"
+    },
+    {
+      "title": "Basilica of St. Louis 2025b.jpg",
+      "author": "Antony-22",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Basilica_of_St._Louis_2025b.jpg"
+    },
+    {
+      "title": "Cathedral-Basilica of Saint Louis, King of France IMG 6121.jpg",
+      "author": "Don McCulley",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Cathedral-Basilica_of_Saint_Louis,_King_of_France_IMG_6121.jpg"
+    }
+  ],
+  "file": "models/stl-old-cathedral.glb",
+  "source": "generators/stl-old-cathedral.ts"
+}

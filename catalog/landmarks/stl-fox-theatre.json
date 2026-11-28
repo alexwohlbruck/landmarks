@@ -1,0 +1,14 @@
+{
+  "id": "stl-fox-theatre",
+  "name": "The Fabulous Fox",
+  "model": "stl-fox-theatre",
+  "place": "st-louis-area",
+  "lng": -90.2323367,
+  "lat": 38.6391226,
+  "bearing": 29.4,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/202419428"
+  ]
+}

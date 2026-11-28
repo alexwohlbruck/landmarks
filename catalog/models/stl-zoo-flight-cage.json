@@ -1,0 +1,43 @@
+{
+  "id": "stl-zoo-flight-cage",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "landmark",
+  "tags": [
+    "aviary",
+    "zoo",
+    "historic",
+    "worlds-fair"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "1904 Flight Cage",
+      "author": "Robert Lawton",
+      "license": "CC BY-SA 2.5",
+      "url": "https://commons.wikimedia.org/wiki/File:1904_Flight_Cage.JPG"
+    },
+    {
+      "title": "U.S. Government Bird Cage at the 1904 World's Fair",
+      "author": "Official Photographic Company",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:U.S._Government_Bird_Cage_at_the_1904_World%27s_Fair.jpg"
+    }
+  ],
+  "file": "models/stl-zoo-flight-cage.glb",
+  "source": "generators/stl-zoo-flight-cage.ts"
+}

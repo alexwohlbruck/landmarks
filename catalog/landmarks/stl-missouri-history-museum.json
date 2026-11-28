@@ -1,0 +1,15 @@
+{
+  "id": "stl-missouri-history-museum",
+  "name": "Missouri History Museum",
+  "model": "stl-missouri-history-museum",
+  "place": "st-louis-area",
+  "lng": -90.2858171,
+  "lat": 38.6451656,
+  "bearing": 7.3,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q1351391",
+  "replaces": [
+    "relation/20071806"
+  ]
+}
