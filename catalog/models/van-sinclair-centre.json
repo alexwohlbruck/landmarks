@@ -1,0 +1,92 @@
+{
+  "id": "van-sinclair-centre",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "historic",
+    "post-office",
+    "clock-tower",
+    "edwardian-baroque",
+    "shopping-centre"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Vancouver Former Main Post Office WLM2012.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Vancouver_Former_Main_Post_Office_WLM2012.JPG",
+      "author": "MRDXII",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Sinclair Centre Vancouver 01.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Sinclair_Centre_Vancouver_01.JPG",
+      "author": "Xicotencatl",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sinclair Centre Vancouver 02.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Sinclair_Centre_Vancouver_02.JPG",
+      "author": "Xicotencatl",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sinclair Centre Vancouver 03.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Sinclair_Centre_Vancouver_03.JPG",
+      "author": "Xicotencatl",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sinclair Centre in Vancouver.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sinclair_Centre_in_Vancouver.jpg",
+      "author": "Tmv",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sinclair Centre (17330067269).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sinclair_Centre_(17330067269).jpg",
+      "author": "GoToVan",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Sinclair Centre (16894011194).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sinclair_Centre_(16894011194).jpg",
+      "author": "GoToVan",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "WinchBuilding.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:WinchBuilding.jpg",
+      "author": "Bob",
+      "license": "Public domain"
+    },
+    {
+      "title": "CustomsExaminingWarehouse.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:CustomsExaminingWarehouse.jpg",
+      "author": "Bob",
+      "license": "Public domain"
+    },
+    {
+      "title": "City of Vancouver building footprints 2009 (lidar heights)",
+      "url": "https://opendata.vancouver.ca/explore/dataset/building-footprints-2009/",
+      "author": "City of Vancouver",
+      "license": "Open Government Licence - Vancouver"
+    }
+  ],
+  "file": "models/van-sinclair-centre.glb",
+  "source": "generators/van-sinclair-centre.ts"
+}
