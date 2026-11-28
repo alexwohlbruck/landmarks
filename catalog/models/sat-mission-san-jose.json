@@ -1,0 +1,50 @@
+{
+  "id": "sat-mission-san-jose",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mission",
+    "church",
+    "spanish-colonial",
+    "unesco",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Mission San Jose, San Antonio, Texas with clouds.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mission_San_Jose,_San_Antonio,_Texas_with_clouds.jpg",
+      "author": "P. Hughes",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "MIssion San Jose y San Miguel de Aguayo 733.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MIssion_San_Jose_y_San_Miguel_de_Aguayo_733.jpg",
+      "author": "Chris Light",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "NORTH WALL WITH DOME - Mission San Jose y San Miguel de Aguayo (HABS TEX,15-SANT,V,5E-4)",
+      "url": "https://commons.wikimedia.org/wiki/File:NORTH_WALL_WITH_DOME_-_Mission_San_Jose_y_San_Miguel_de_Aguayo,_Church,_6539_San_Jose_Road,_San_Antonio,_Bexar_County,_TX_HABS_TEX,15-SANT,V,5E-4.tif",
+      "author": "Historic American Buildings Survey",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/sat-mission-san-jose.glb",
+  "source": "generators/sat-mission-san-jose.ts"
+}

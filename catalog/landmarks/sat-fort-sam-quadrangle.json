@@ -1,0 +1,16 @@
+{
+  "id": "sat-fort-sam-quadrangle",
+  "name": "The Quadrangle, Fort Sam Houston",
+  "model": "sat-fort-sam-quadrangle",
+  "place": "san-antonio-area",
+  "lng": -98.4623556,
+  "lat": 29.4444277,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/130623065",
+    "way/130623048",
+    "way/130623053"
+  ]
+}

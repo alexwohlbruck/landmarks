@@ -1,0 +1,15 @@
+{
+  "id": "sat-museum-of-art",
+  "name": "San Antonio Museum of Art",
+  "model": "sat-museum-of-art",
+  "place": "san-antonio-area",
+  "lng": -98.4820781,
+  "lat": 29.4373424,
+  "bearing": 137,
+  "elevation": 0,
+  "minzoom": 15,
+  "wikidata": "Q1647706",
+  "replaces": [
+    "way/78602493"
+  ]
+}

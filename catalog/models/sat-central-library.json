@@ -1,0 +1,54 @@
+{
+  "id": "sat-central-library",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "library",
+    "postmodern",
+    "mexican-modernism"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "San Antonio Central Library.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:San_Antonio_Central_Library.jpg",
+      "author": "MagicM100",
+      "license": "CC0"
+    },
+    {
+      "title": "Central Library I (48875268292).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Central_Library_I_(48875268292).jpg",
+      "author": "Eden, Janine and Jim",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Central Library II (48874533928).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Central_Library_II_(48874533928).jpg",
+      "author": "Eden, Janine and Jim",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "San Antonio Central Library",
+      "url": "https://www.flickr.com/photos/130019385@N02/16554664835",
+      "author": "digtexorg",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "file": "models/sat-central-library.glb",
+  "source": "generators/sat-central-library.ts"
+}

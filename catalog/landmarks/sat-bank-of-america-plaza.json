@@ -1,0 +1,18 @@
+{
+  "id": "sat-bank-of-america-plaza",
+  "name": "Bank of America Plaza",
+  "model": "sat-bank-of-america-plaza",
+  "place": "san-antonio-area",
+  "lng": -98.4901731,
+  "lat": 29.4295373,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q4856042",
+  "replaces": [
+    "way/104470540",
+    "way/639207311",
+    "way/639207312",
+    "way/639207315"
+  ]
+}

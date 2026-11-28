@@ -1,0 +1,48 @@
+{
+  "id": "sat-hays-street-bridge",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "bridge",
+  "tags": [
+    "truss-bridge",
+    "footbridge",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "HaysStreetBridge.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:HaysStreetBridge.jpg",
+      "author": "SoylentPurple",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Hays Street Bridge (1 of 1).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hays_Street_Bridge_(1_of_1).jpg",
+      "author": "Renelibrary",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Hays Street Bridge- concrete approach.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Hays_Street_Bridge-_concrete_approach.JPG",
+      "author": "Patrick Sparks",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/sat-hays-street-bridge.glb",
+  "source": "generators/sat-hays-street-bridge.ts"
+}

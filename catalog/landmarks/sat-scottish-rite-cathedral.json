@@ -1,0 +1,17 @@
+{
+  "id": "sat-scottish-rite-cathedral",
+  "name": "Scottish Rite Cathedral",
+  "model": "sat-scottish-rite-cathedral",
+  "place": "san-antonio-area",
+  "lng": -98.484241,
+  "lat": 29.427527,
+  "bearing": 46,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/100577297",
+    "way/100577313",
+    "way/100577294"
+  ],
+  "wikidata": "Q7437954"
+}

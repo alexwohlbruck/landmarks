@@ -1,0 +1,43 @@
+{
+  "id": "sat-ollu-sacred-heart-chapel",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "church",
+    "chapel",
+    "gothic-revival",
+    "university"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Sacred Heart Conventual Chapel San Antonio Texas 2021.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sacred_Heart_Conventual_Chapel_San_Antonio_Texas_2021.jpg",
+      "author": "Larry D. Moore",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Our Lady of the Lake University, San Antonio, Texas.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Our_Lady_of_the_Lake_University,_San_Antonio,_Texas.jpg",
+      "author": "Zereshk",
+      "license": "CC BY 3.0"
+    }
+  ],
+  "file": "models/sat-ollu-sacred-heart-chapel.glb",
+  "source": "generators/sat-ollu-sacred-heart-chapel.ts"
+}

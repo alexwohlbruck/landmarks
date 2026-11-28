@@ -1,0 +1,12 @@
+{
+  "id": "sat-espada-aqueduct",
+  "name": "Espada Aqueduct",
+  "model": "sat-espada-aqueduct",
+  "place": "san-antonio-area",
+  "lng": -98.46128,
+  "lat": 29.332548,
+  "bearing": 357,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": []
+}

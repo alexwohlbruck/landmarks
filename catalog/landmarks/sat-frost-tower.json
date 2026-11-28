@@ -1,0 +1,14 @@
+{
+  "id": "sat-frost-tower",
+  "name": "Frost Tower",
+  "model": "sat-frost-tower",
+  "place": "san-antonio-area",
+  "lng": -98.494921,
+  "lat": 29.426919,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 13,
+  "replaces": [
+    "way/581781219"
+  ]
+}

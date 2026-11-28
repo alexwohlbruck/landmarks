@@ -1,0 +1,50 @@
+{
+  "id": "sat-mission-concepcion",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mission",
+    "church",
+    "spanish-colonial",
+    "unesco",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Mission Concepcion, San Antonio, Texas.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mission_Concepcion,_San_Antonio,_Texas.jpg",
+      "author": "Jkulick",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Mission Concepción 1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mission_Concepci%C3%B3n_1.jpg",
+      "author": "Ligocsicnarf89",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Mission Concepción in San Antonio, Texas.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mission_Concepci%C3%B3n_in_San_Antonio,_Texas.jpg",
+      "author": "Michaelluckey",
+      "license": "CC BY 4.0"
+    }
+  ],
+  "file": "models/sat-mission-concepcion.glb",
+  "source": "generators/sat-mission-concepcion.ts"
+}

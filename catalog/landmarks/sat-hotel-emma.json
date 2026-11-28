@@ -1,0 +1,14 @@
+{
+  "id": "sat-hotel-emma",
+  "name": "Hotel Emma",
+  "model": "sat-hotel-emma",
+  "place": "san-antonio-area",
+  "lng": -98.4811729,
+  "lat": 29.4426794,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/80319865"
+  ]
+}

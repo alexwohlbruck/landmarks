@@ -1,0 +1,61 @@
+{
+  "id": "sat-tower-life-building",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "skyscraper",
+    "gothic-revival",
+    "historic",
+    "nrhp"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Tower Life Building, San Antonio, 2011.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_Life_Building,_San_Antonio,_2011.jpg",
+      "author": "Leaflet",
+      "license": "Public domain"
+    },
+    {
+      "title": "Tower Life Building 2024.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_Life_Building_2024.jpg",
+      "author": "Jumpy542",
+      "license": "CC0"
+    },
+    {
+      "title": "Tower Life Building.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_Life_Building.jpg",
+      "author": "Blas J",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tower Life Building from Tower of the Americas.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_Life_Building_from_Tower_of_the_Americas.jpg",
+      "author": "Runner1928",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Tower Life Bldg SA TX.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_Life_Bldg_SA_TX.jpg",
+      "author": "KelliMays",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/sat-tower-life-building.glb",
+  "source": "generators/sat-tower-life-building.ts"
+}

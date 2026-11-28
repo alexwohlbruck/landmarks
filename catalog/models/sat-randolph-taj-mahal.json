@@ -1,0 +1,55 @@
+{
+  "id": "sat-randolph-taj-mahal",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "military",
+    "spanish-colonial-revival",
+    "water-tower",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Randolph Air Force Base - Taj Mahal Building.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Randolph_Air_Force_Base_-_Taj_Mahal_Building.jpg",
+      "author": "Carol M. Highsmith",
+      "license": "Public domain"
+    },
+    {
+      "title": "Randolph-air-force-base-taj-mahal.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Randolph-air-force-base-taj-mahal.jpg",
+      "author": "Rich McFadden",
+      "license": "Public domain"
+    },
+    {
+      "title": "Randolph AFB Taj.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Randolph_AFB_Taj.jpg",
+      "author": "Travis K. Witt",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Randolph Field - 1938 - Administration Building.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Randolph_Field_-_1938_-_Administration_Building.jpg",
+      "author": "United States Army Air Corps",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/sat-randolph-taj-mahal.glb",
+  "source": "generators/sat-randolph-taj-mahal.ts"
+}

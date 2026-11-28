@@ -1,0 +1,44 @@
+{
+  "id": "sat-mission-espada",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "mission",
+    "chapel",
+    "spanish-colonial",
+    "unesco",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Mission Espada in San Antonio, Texas.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mission_Espada_in_San_Antonio,_Texas.jpg",
+      "author": "Michaelluckey",
+      "license": "CC BY 4.0"
+    },
+    {
+      "title": "Mission San Francisco de la Espada Including Portales at Sunrise.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mission_San_Francisco_de_la_Espada_Including_Portales_at_Sunrise.jpg",
+      "author": "Carlos Noriega",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "file": "models/sat-mission-espada.glb",
+  "source": "generators/sat-mission-espada.ts"
+}

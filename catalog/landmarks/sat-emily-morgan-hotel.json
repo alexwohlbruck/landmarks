@@ -1,0 +1,15 @@
+{
+  "id": "sat-emily-morgan-hotel",
+  "name": "Emily Morgan Hotel",
+  "model": "sat-emily-morgan-hotel",
+  "place": "san-antonio-area",
+  "lng": -98.485794,
+  "lat": 29.426579,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/79156552"
+  ],
+  "wikidata": "Q56427673"
+}

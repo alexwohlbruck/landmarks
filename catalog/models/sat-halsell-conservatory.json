@@ -1,0 +1,55 @@
+{
+  "id": "sat-halsell-conservatory",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "conservatory",
+    "greenhouse",
+    "contemporary",
+    "botanical-garden"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Moon over the Conservatory.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Moon_over_the_Conservatory.jpg",
+      "author": "Corey Leopold",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Lucile Halsell Conservatory at sunset1.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lucile_Halsell_Conservatory_at_sunset1.jpg",
+      "author": "Corey Leopold",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Lucile Halsell Conservatory at sunset.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lucile_Halsell_Conservatory_at_sunset.jpg",
+      "author": "Corey Leopold",
+      "license": "CC BY 2.0"
+    },
+    {
+      "title": "Big Sky over the Gardens.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Big_Sky_over_the_Gardens.jpg",
+      "author": "Corey Leopold",
+      "license": "CC BY 2.0"
+    }
+  ],
+  "file": "models/sat-halsell-conservatory.glb",
+  "source": "generators/sat-halsell-conservatory.ts"
+}

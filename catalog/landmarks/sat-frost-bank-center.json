@@ -1,0 +1,14 @@
+{
+  "id": "sat-frost-bank-center",
+  "name": "Frost Bank Center",
+  "model": "sat-frost-bank-center",
+  "place": "san-antonio-area",
+  "lng": -98.437505,
+  "lat": 29.426983,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "replaces": [
+    "way/25313089"
+  ]
+}

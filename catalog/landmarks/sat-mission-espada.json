@@ -1,0 +1,15 @@
+{
+  "id": "sat-mission-espada",
+  "name": "Mission Espada",
+  "model": "sat-mission-espada",
+  "place": "san-antonio-area",
+  "lng": -98.451238,
+  "lat": 29.318076,
+  "bearing": 5.1,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": [
+    "way/120248309"
+  ],
+  "wikidata": "Q2393728"
+}

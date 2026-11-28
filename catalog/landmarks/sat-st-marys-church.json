@@ -1,0 +1,14 @@
+{
+  "id": "sat-st-marys-church",
+  "name": "St. Mary's Catholic Church",
+  "model": "sat-st-marys-church",
+  "place": "san-antonio-area",
+  "lng": -98.4910782,
+  "lat": 29.4256436,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/100056502"
+  ]
+}

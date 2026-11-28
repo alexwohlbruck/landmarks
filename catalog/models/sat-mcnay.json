@@ -1,0 +1,60 @@
+{
+  "id": "sat-mcnay",
+  "license": "CC0-1.0",
+  "collection": "landmarks",
+  "type": "building",
+  "tags": [
+    "museum",
+    "spanish-colonial-revival",
+    "historic"
+  ],
+  "reviewStatus": "unreviewed",
+  "credits": [
+    {
+      "name": "Alex Wohlbruck",
+      "kind": "person",
+      "github": "alexwohlbruck",
+      "role": "creator"
+    },
+    {
+      "name": "Claude",
+      "kind": "ai",
+      "model": "Claude Opus 5.5",
+      "role": "procedural modeling"
+    }
+  ],
+  "references": [
+    {
+      "title": "Mcnay front1 Nima.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Mcnay_front1_Nima.JPG",
+      "author": "Zereshk",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "McNay courtyard Nima1.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:McNay_courtyard_Nima1.JPG",
+      "author": "Zereshk",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "McNay Viguier Nima.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:McNay_Viguier_Nima.JPG",
+      "author": "Zereshk",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "McNay Art Museum - panoramio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:McNay_Art_Museum_-_panoramio.jpg",
+      "author": "NODE of Texas",
+      "license": "CC BY 3.0"
+    },
+    {
+      "title": "McNayArtMuseum.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:McNayArtMuseum.jpg",
+      "author": "Csyberblue",
+      "license": "Public domain"
+    }
+  ],
+  "file": "models/sat-mcnay.glb",
+  "source": "generators/sat-mcnay.ts"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "sat-our-lady-of-the-lake",
+  "name": "Our Lady of the Lake University Main Building",
+  "model": "sat-our-lady-of-the-lake",
+  "place": "san-antonio-area",
+  "lng": -98.543717,
+  "lat": 29.426182,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/912208746"
+  ]
+}

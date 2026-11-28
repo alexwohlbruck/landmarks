@@ -1,0 +1,12 @@
+{
+  "id": "sat-halsell-conservatory",
+  "name": "Lucile Halsell Conservatory",
+  "model": "sat-halsell-conservatory",
+  "place": "san-antonio-area",
+  "lng": -98.4568762,
+  "lat": 29.4580904,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 16,
+  "replaces": []
+}

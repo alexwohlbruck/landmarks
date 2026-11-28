@@ -1,0 +1,21 @@
+{
+  "id": "sat-tower-life-building",
+  "name": "Tower Life Building",
+  "model": "sat-tower-life-building",
+  "place": "san-antonio-area",
+  "lng": -98.4913878,
+  "lat": 29.4228678,
+  "bearing": 0,
+  "elevation": 0,
+  "minzoom": 14,
+  "wikidata": "Q3535937",
+  "replaces": [
+    "way/60586390",
+    "way/360103243",
+    "way/79788377",
+    "way/80312693",
+    "way/80312696",
+    "way/360103238",
+    "way/360103237"
+  ]
+}

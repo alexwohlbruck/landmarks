@@ -1,0 +1,15 @@
+{
+  "id": "sat-san-fernando-cathedral",
+  "name": "San Fernando Cathedral",
+  "model": "sat-san-fernando-cathedral",
+  "place": "san-antonio-area",
+  "lng": -98.494194,
+  "lat": 29.424539,
+  "bearing": 4.5,
+  "elevation": 0,
+  "minzoom": 15,
+  "replaces": [
+    "way/80647022"
+  ],
+  "wikidata": "Q4347159"
+}
